@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:46:28.675584",
+    "last_updated": "2026-04-07T07:44:06.552863",
     "total_pages": 42,
-    "session_id": "2026-04-03T07:46:24.152696"
+    "session_id": "2026-04-07T07:44:01.331647"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MerchantTokenNotificationServices.json": {
       "hash": "a3cdb11bb99e7e426171d660fe7061c140faa0a61f3a1007afbce96a29ce7bdc",
-      "last_checked": "2026-04-03T07:46:24.433318",
+      "last_checked": "2026-04-07T07:44:01.771101",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"5efb6238ee403b0603b49b56295be062\"",
       "file_path": "documentation/MerchantTokenNotificationServices/MerchantTokenNotificationServices.md"
     },
     "https://developer.apple.com/documentation/MerchantTokenNotificationServices": {
       "hash": "a3cdb11bb99e7e426171d660fe7061c140faa0a61f3a1007afbce96a29ce7bdc",
-      "last_checked": "2026-04-03T07:46:24.321632",
+      "last_checked": "2026-04-07T07:44:01.671861",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"5efb6238ee403b0603b49b56295be062\"",
       "file_path": "documentation/MerchantTokenNotificationServices/MerchantTokenNotificationServices.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/send-merchant-token-event.json": {
       "hash": "f18bfcf6275867f37a0df365aa03a7925ec7e8cb91a9930812230c94b478f60b",
-      "last_checked": "2026-04-03T07:46:24.836123",
+      "last_checked": "2026-04-07T07:44:02.050399",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"35dcbd705830e1020944d3432277ce88\"",
       "file_path": "documentation/MerchantTokenNotificationServices/send-merchant-token-event.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchant-token-event-retrieval.json": {
       "hash": "2219ebc3cef63e8f1eb9fee1ee3eb77321e9c1703175b2cdc7ed8ed9f6cee36d",
-      "last_checked": "2026-04-03T07:46:25.190044",
+      "last_checked": "2026-04-07T07:44:02.542034",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"48c9582f165b9eb1d23ba4f264188601\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchant-token-event-retrieval.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttokeneventresponse.json": {
       "hash": "f8fa24d38fad54587eb89eb9dde31cc52adb8b2c88199ac14570760032d9b6b5",
-      "last_checked": "2026-04-03T07:46:25.374266",
+      "last_checked": "2026-04-07T07:44:02.704429",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"05832378a68fa21161ce1eb2aba0d829\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttokeneventresponse.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttokenmetadata.json": {
       "hash": "1b05bc8d371cb79883de44bb1a47909544fcb64bf8cef1555e3d04971c4fd69e",
-      "last_checked": "2026-04-03T07:46:25.705406",
+      "last_checked": "2026-04-07T07:44:03.004010",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"17eaa70e426fc9aadf53c6fbbcf250ba\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttokenmetadata.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/cardart.json": {
       "hash": "2e1bfe9a87c1b1cfb069d584356a5389384afc6482d5a6b8e2234c2ee46399ce",
-      "last_checked": "2026-04-03T07:46:25.870323",
+      "last_checked": "2026-04-07T07:44:03.163327",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"9f0ca3e8580020749cda5642934737c5\"",
       "file_path": "documentation/MerchantTokenNotificationServices/cardart.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/cardmetadata.json": {
       "hash": "7b786ed79571fed0788cd7caf8180ae84d4ef8ac17ad6358a1c7898e41609554",
-      "last_checked": "2026-04-03T07:46:26.046754",
+      "last_checked": "2026-04-07T07:44:03.460234",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"fe105aac4a427f0549cb1caa219daf5f\"",
       "file_path": "documentation/MerchantTokenNotificationServices/cardmetadata.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/unlinking-merchanttoken.json": {
       "hash": "8dad73676344262e3c381b5bf95a1d54462a4bf30b0fb8cbd9e83512180abe6c",
-      "last_checked": "2026-04-03T07:46:27.174217",
+      "last_checked": "2026-04-07T07:44:04.936848",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"91d84f1254abaac8f2eb9985c9232484\"",
       "file_path": "documentation/MerchantTokenNotificationServices/unlinking-merchanttoken.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttokenunlinkrequest.json": {
       "hash": "fbe1284452b52475e2aeafe1d013954bdc8ca0e530d95fa6c6db4caef30ee570",
-      "last_checked": "2026-04-03T07:46:27.494850",
+      "last_checked": "2026-04-07T07:44:05.262846",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"f3cd56991d693db79b40371bb090e279\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttokenunlinkrequest.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/errorresponse.json": {
       "hash": "784329dcdc717279df3efa9d37c7209656d485d1e01f455a1b6e3c300c23b21e",
-      "last_checked": "2026-04-03T07:46:27.632438",
+      "last_checked": "2026-04-07T07:44:05.417029",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"37f5a150597649512aa8ac1fe2cdc16d\"",
       "file_path": "documentation/MerchantTokenNotificationServices/errorresponse.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/update-merchant-metadata.json": {
       "hash": "093c74de67f2b687cda0c94ca9616797019e1ee5309db659b4360ea8672df063",
-      "last_checked": "2026-04-03T07:46:24.995833",
+      "last_checked": "2026-04-07T07:44:02.364243",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"5a91652520a44d89b9fbd3ef3825c7e6\"",
       "file_path": "documentation/MerchantTokenNotificationServices/update-merchant-metadata.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/retrieve-merchant-token-public-key.json": {
       "hash": "8b9a61780dd505dbc3b021bba3c31bfa50c48f752f78ef5dae99f668817e354c",
-      "last_checked": "2026-04-03T07:46:26.232369",
+      "last_checked": "2026-04-07T07:44:03.797408",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"e11aeeea78404780dc546ddf6d51e48a\"",
       "file_path": "documentation/MerchantTokenNotificationServices/retrieve-merchant-token-public-key.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttoken-usage-data-availability-notification.json": {
       "hash": "11a1a5630088832fedbc11cfd0b6ed707f131650bed4a7a61326b7d2061b70ba",
-      "last_checked": "2026-04-03T07:46:26.553380",
+      "last_checked": "2026-04-07T07:44:04.100607",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"b3316012db308f5bf4a642e7790141ac\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttoken-usage-data-availability-notification.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttokenusagedataavailabilitynotificationrequest.json": {
       "hash": "eb4a299e6d1a2575b0d53964ecf6759839d6cb2ebb11c29ba66fc3103c76e884",
-      "last_checked": "2026-04-03T07:46:26.704817",
+      "last_checked": "2026-04-07T07:44:04.277868",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"3ff3b276161f6f6ca41ba025b0b4fed6\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttokenusagedataavailabilitynotificationrequest.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/get-merchanttoken-usage-information-package.json": {
       "hash": "ba1eb4eded035309d7290d0798b5a935cfdfb41e712995c3b4588739921e20fa",
-      "last_checked": "2026-04-03T07:46:26.845541",
+      "last_checked": "2026-04-07T07:44:04.470828",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"e71e3a75ad43bffdc01bd264d6892ef8\"",
       "file_path": "documentation/MerchantTokenNotificationServices/get-merchanttoken-usage-information-package.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/getmerchanttokenusageinformationpackageresponse.json": {
       "hash": "c691d7e491eabfc29be541dd141f4665fbae99994aa39dc79ab98ca799bb482c",
-      "last_checked": "2026-04-03T07:46:27.032672",
+      "last_checked": "2026-04-07T07:44:04.774497",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"42c5b0067fa2594fe813f83e3586b3dc\"",
       "file_path": "documentation/MerchantTokenNotificationServices/getmerchanttokenusageinformationpackageresponse.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchantmetadata.json": {
       "hash": "5849ac115e700a7447d30d9fff509a0407f5f8b6e8dd83ccef91fb86ae08ffe6",
-      "last_checked": "2026-04-03T07:46:27.961253",
+      "last_checked": "2026-04-07T07:44:05.580794",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"b8661109cc7789b64dd208df1169fee4\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchantmetadata.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/merchanttokenusagemetadata.json": {
       "hash": "29a6f088761b90e5190c14fe5a6d8b226a1f6b72e341714cf26c07bbaaf78fe3",
-      "last_checked": "2026-04-03T07:46:28.103840",
+      "last_checked": "2026-04-07T07:44:05.880284",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"f89dc3f72f367f3608838badd3ca6fa3\"",
       "file_path": "documentation/MerchantTokenNotificationServices/merchanttokenusagemetadata.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/retrievemerchanttokenpublickeyrequest.json": {
       "hash": "4e3aebfc8797b194e5cc4884f82904e865236132c4e00f1653b47b1c401324c3",
-      "last_checked": "2026-04-03T07:46:28.291155",
+      "last_checked": "2026-04-07T07:44:06.048608",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"0a91b32a7c6e0834a953eff959caace5\"",
       "file_path": "documentation/MerchantTokenNotificationServices/retrievemerchanttokenpublickeyrequest.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/retrievemerchanttokenpublickeyresponse.json": {
       "hash": "833daf87517f0458e986527a8431fbd470623e2d539884f271ac3a6b0a753682",
-      "last_checked": "2026-04-03T07:46:28.460687",
+      "last_checked": "2026-04-07T07:44:06.377150",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"d44f393dde6d23b62270bd72e8798cf6\"",
       "file_path": "documentation/MerchantTokenNotificationServices/retrievemerchanttokenpublickeyresponse.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/merchanttokennotificationservices/updatemerchantmetadatarequest.json": {
       "hash": "2a2f7dc84124346d7f04c3feefc82c7e327939790004b64f32d6a894adcd1e43",
-      "last_checked": "2026-04-03T07:46:28.654816",
+      "last_checked": "2026-04-07T07:44:06.550276",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:24.152696",
+      "session_id": "2026-04-07T07:44:01.331647",
       "etag": "W/\"898d74b4671596f9ad134a626adebba9\"",
       "file_path": "documentation/MerchantTokenNotificationServices/updatemerchantmetadatarequest.md"
     },

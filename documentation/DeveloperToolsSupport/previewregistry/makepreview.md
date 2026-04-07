@@ -20,6 +20,13 @@
 static func makePreview() throws -> Preview
 ```
 
+## See Also
+
+- [static var preview: Preview](previewregistry/preview.md)
+- [static var column: Int](previewregistry/column.md)
+- [static var fileID: String](previewregistry/fileid.md)
+- [static var line: Int](previewregistry/line.md)
+
 
 ---
 

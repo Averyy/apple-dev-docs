@@ -32,7 +32,7 @@ For example, you can create custom cameras from the top, leading, and front view
 
 ## Topics
 
-### Initializers
+### Creating a preview camera
 - [init(from: UnitPoint3D, zoom: Double, name: String?)](previewcamera/init(from:zoom:name:).md)
   Creates a camera that looks toward the preview center from a specified unit point.
 - [init(lookingAt: Point3D, from: Point3D, name: String?)](previewcamera/init(lookingat:from:name:).md)

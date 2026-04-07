@@ -28,13 +28,15 @@ Preview macros make use of this protocol on your behalf. Don’t use it directly
 
 ## Topics
 
-### Type Properties
+### Making a preview
+- [static func makePreview() throws -> Preview](previewregistry/makepreview.md)
+- [static var preview: Preview](previewregistry/preview.md)
 - [static var column: Int](previewregistry/column.md)
 - [static var fileID: String](previewregistry/fileid.md)
 - [static var line: Int](previewregistry/line.md)
-- [static var preview: Preview](previewregistry/preview.md)
-### Type Methods
-- [static func makePreview() throws -> Preview](previewregistry/makepreview.md)
+### Getting errors
+- [struct PreviewUnavailable](previewunavailable.md)
+  An error that the system throws when a preview is unavailable at runtime.
 
 ## See Also
 

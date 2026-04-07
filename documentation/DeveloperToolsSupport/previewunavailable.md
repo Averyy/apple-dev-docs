@@ -26,7 +26,7 @@ This type supports the expansion of preview macros. You don’t use it directly.
 
 ## Topics
 
-### Initializers
+### Creating an instance
 - [init()](previewunavailable/init.md)
 
 ## Relationships

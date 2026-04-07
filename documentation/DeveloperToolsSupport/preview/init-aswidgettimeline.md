@@ -24,6 +24,17 @@ init(_ name: String? = nil, as family: WidgetFamily, widget: @escaping () -> som
 
 The `#Preview` macro expands into a declaration that calls this initializer. To create a preview that appears in the canvas, you must use the macro, not instantiate a Preview directly.
 
+## See Also
+
+- [init<Attributes>(String?, as: ActivityPreviewViewKind, using: Attributes, widget: () -> some Widget, contentStates: () async -> [Attributes.ContentState])](preview/init(_:as:using:widget:contentstates:).md)
+  Creates a preview of a live activity widget.
+- [init<Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> some Widget, timelineProvider: () -> Provider)](preview/init(_:as:using:widget:timelineprovider:)-1if5u.md)
+  Creates a preview of a widget with an `AppIntent` configuration.
+- [init<Provider>(String?, as: WidgetFamily, using: Provider.Intent, widget: () -> some Widget, timelineProvider: () -> Provider)](preview/init(_:as:using:widget:timelineprovider:)-5335n.md)
+  Creates a preview of a widget with an `INIntent` configuration.
+- [init(String?, as: WidgetFamily, widget: () -> some Widget, timelineProvider: () -> some TimelineProvider)](preview/init(_:as:widget:timelineprovider:).md)
+  Creates a preview of a widget with a static configuration.
+
 
 ---
 

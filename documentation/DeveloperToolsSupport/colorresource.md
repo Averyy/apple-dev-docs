@@ -22,7 +22,7 @@ struct ColorResource
 
 ## Topics
 
-### Initializers
+### Creating a color resource
 - [init(name: String, bundle: Bundle)](colorresource/init(name:bundle:).md)
   Creates a color from a resource with the specified name in the given bundle.
 

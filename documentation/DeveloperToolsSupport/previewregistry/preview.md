@@ -19,6 +19,13 @@
 static var preview: Preview { get }
 ```
 
+## See Also
+
+- [static func makePreview() throws -> Preview](previewregistry/makepreview.md)
+- [static var column: Int](previewregistry/column.md)
+- [static var fileID: String](previewregistry/fileid.md)
+- [static var line: Int](previewregistry/line.md)
+
 
 ---
 

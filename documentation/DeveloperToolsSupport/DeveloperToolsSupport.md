@@ -22,37 +22,35 @@ To add items to the library, create a structure that conforms to the [`LibraryCo
 
 ## Topics
 
-### Library Customization
+### Library customization
 - [protocol LibraryContentProvider](librarycontentprovider.md)
   A source of Xcode library and code completion content.
 - [struct LibraryItem](libraryitem.md)
   A single item to add to the Xcode library.
-### Preview Registration
-- [protocol PreviewRegistry](previewregistry.md)
-  A protocol that the system uses to locate previews at runtime.
+### Preview definition
 - [struct Preview](preview.md)
   A base type that preview macros use to create previews.
 - [enum PreviewLayout](previewlayout.md)
   A size constraint for a preview.
 - [struct PreviewTrait](previewtrait.md)
   Customizations that you can apply to a preview.
-### Resource Definition
-- [struct ColorResource](colorresource.md)
-  A color resource.
-- [struct ImageResource](imageresource.md)
-  An image resource.
-### Camera Management
+- [protocol PreviewRegistry](previewregistry.md)
+  A protocol that the system uses to locate previews at runtime.
+### Preview camera management
 - [struct PreviewCamera](previewcamera.md)
   A camera that defines a viewpoint in a preview.
 - [struct PreviewCameraBuilder](previewcamerabuilder.md)
   A builder type that composes a collection of cameras for previewing a view in a 3D scene.
+### Resource definition
+- [struct ColorResource](colorresource.md)
+  A color resource.
+- [struct ImageResource](imageresource.md)
+  An image resource.
 ### Structures
 - [struct PreviewBodyBuilder](previewbodybuilder.md)
   Builder for preview body content within a `#Preview` macro.
 - [struct PreviewMacroBodyBuilder](previewmacrobodybuilder.md)
   Builder for preview body content within a `#Preview` macro.
-- [struct PreviewUnavailable](previewunavailable.md)
-  An error that the system throws when a preview is unavailable at runtime.
 
 
 ---

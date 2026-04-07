@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:45:24.712878",
+    "last_updated": "2026-04-07T07:43:10.470843",
     "total_pages": 216,
-    "session_id": "2026-04-03T07:45:12.947234"
+    "session_id": "2026-04-07T07:42:58.315907"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ContactProvider.json": {
       "hash": "c9a8e16980ecdd8d19abd92ab7be74ad485d55e5dea9ead3e63949fc80a3199a",
-      "last_checked": "2026-04-03T07:45:13.283953",
+      "last_checked": "2026-04-07T07:42:58.689603",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"493275fcead8004fba3ae504e5967551\"",
       "file_path": "documentation/ContactProvider/ContactProvider.md"
     },
     "https://developer.apple.com/documentation/ContactProvider": {
       "hash": "c9a8e16980ecdd8d19abd92ab7be74ad485d55e5dea9ead3e63949fc80a3199a",
-      "last_checked": "2026-04-03T07:45:13.195805",
+      "last_checked": "2026-04-07T07:42:58.603556",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"493275fcead8004fba3ae504e5967551\"",
       "file_path": "documentation/ContactProvider/ContactProvider.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderextension.json": {
       "hash": "f5305dd16e178d6d42a40d70f055a2840ca524afff1233afde704d142465032c",
-      "last_checked": "2026-04-03T07:45:13.517724",
+      "last_checked": "2026-04-07T07:42:59.122329",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"a6279dffdfde029917b40802f058c607\"",
       "file_path": "documentation/ContactProvider/contactproviderextension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager.json": {
       "hash": "094e4a9454d70bb6a8782cbed53b4ab240e58fba974af32a7af1349eac2a9a27",
-      "last_checked": "2026-04-03T07:45:13.695975",
+      "last_checked": "2026-04-07T07:42:59.412697",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"438e08ef32b9b7e7411f7b5e2435a9c9\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderdomain.json": {
       "hash": "2778e99ddc67593c5900a28db46ffc68f001a7ec57fa24c8b2db7381d8937d32",
-      "last_checked": "2026-04-03T07:45:13.825414",
+      "last_checked": "2026-04-07T07:42:59.568603",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"3c34dfc2d06669694302c8a75e67268f\"",
       "file_path": "documentation/ContactProvider/contactproviderdomain.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/defaultcontactproviderdomain.json": {
       "hash": "eb64d821353d5d27eb4ca26aec83ad124255317f64bbb16d3d3765b2a72f05e1",
-      "last_checked": "2026-04-03T07:45:14.005503",
+      "last_checked": "2026-04-07T07:42:59.882753",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"c9e5508a21d43741c97473d03a87c71a\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem.json": {
       "hash": "44b155ea83553283f29a57b962c0928fd01c5761ce2bf069db4301a160870372",
-      "last_checked": "2026-04-03T07:45:14.194471",
+      "last_checked": "2026-04-07T07:43:00.111156",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"6c3d73ec943ddd66c98d394c6b6163ab\"",
       "file_path": "documentation/ContactProvider/contactitem.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerating.json": {
       "hash": "0843ae0472967c1373bb9084156fb3c6b0e3022eaaa98e9366cb44f36a4cade5",
-      "last_checked": "2026-04-03T07:45:14.328464",
+      "last_checked": "2026-04-07T07:43:00.402545",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"f44513e15c40d4d64fb1d4bafa15d577\"",
       "file_path": "documentation/ContactProvider/contactitemenumerating.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerator.json": {
       "hash": "f5b7680fc3b87d35c9640fb8ae1da9e3b3569386699c43bd59c89e1c801db71e",
-      "last_checked": "2026-04-03T07:45:14.461580",
+      "last_checked": "2026-04-07T07:43:00.713009",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"0177e4b54b4869cb301e18793bedaa71\"",
       "file_path": "documentation/ContactProvider/contactitemenumerator.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver.json": {
       "hash": "4a1fd2f5df91a4330c90e138989d5b0ed1bc4b5e98cdb7a284d82972be0aa828",
-      "last_checked": "2026-04-03T07:45:14.642125",
+      "last_checked": "2026-04-07T07:43:00.874032",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"fb380c662b10492da40c39ee901f820f\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver.json": {
       "hash": "754890d5c21e1aa1b535bdf185d8ec35e140d4a491dd7d719e486210b542315d",
-      "last_checked": "2026-04-03T07:45:14.786298",
+      "last_checked": "2026-04-07T07:43:01.043419",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"f4e65daa03a64089a067484634c6a028\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror.json": {
       "hash": "84f1e04cd9da42bb6dfb10c9ed7d1d3a750c02238d4f77fa1a238d834174fff8",
-      "last_checked": "2026-04-03T07:45:14.923472",
+      "last_checked": "2026-04-07T07:43:01.210719",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"87248fdf3d898ffa96d5079a1cc4cc79\"",
       "file_path": "documentation/ContactProvider/contactprovidererror.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderextension/configure(for:).json": {
       "hash": "50e089569beb0f0b7ac26daece918770ff53dde2da520c551bb82a65be9f6d69",
-      "last_checked": "2026-04-03T07:45:15.122830",
+      "last_checked": "2026-04-07T07:43:01.509470",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"8d1c726dd0daf7adde18fb326235111b\"",
       "file_path": "documentation/ContactProvider/contactproviderextension/configure-for.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderextension/invalidate().json": {
       "hash": "9405d00c2717e2c3dbce0ede431a6503ad3bfc548831b0bfa6175ba2e893b871",
-      "last_checked": "2026-04-03T07:45:15.264794",
+      "last_checked": "2026-04-07T07:43:01.618548",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"2e2e8dc5064ca8b0c225c0cafe87a751\"",
       "file_path": "documentation/ContactProvider/contactproviderextension/invalidate.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/init(domainidentifier:).json": {
       "hash": "ef504ef052e2af2538ea4426196e52d79045a029fa3f8fa996b5ad684c178275",
-      "last_checked": "2026-04-03T07:45:15.403059",
+      "last_checked": "2026-04-07T07:43:01.819657",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"3bbf542fdf14c992b88ffb85d16b67b4\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/init-domainidentifier.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/signalenumerator(for:).json": {
       "hash": "451917f2efdde6904eddc861de85e4e04b7a1ad36127f1bd6c98c307613411d5",
-      "last_checked": "2026-04-03T07:45:15.542731",
+      "last_checked": "2026-04-07T07:43:01.982507",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"a9747138d69e27bec5825ab2bc452df7\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/signalenumerator-for.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/invalidate().json": {
       "hash": "a5ed1c2b43d406d3365f9f194463a72d40864d895df681f24c76e175b05e5f5f",
-      "last_checked": "2026-04-03T07:45:15.737225",
+      "last_checked": "2026-04-07T07:43:02.153877",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"6f01ff495604fe74207f9775b14e156e\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/invalidate.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/domain.json": {
       "hash": "b094cad9cd635e373ac14db69402281a233c027412861ef188eebede1f738b98",
-      "last_checked": "2026-04-03T07:45:15.921975",
+      "last_checked": "2026-04-07T07:43:02.483141",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"a7565da648e2f36b4d2edf58c534c3a0\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/domain.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/enable().json": {
       "hash": "564ea2f1ab2793963b5da08a761be9d89886663a9a5ccff624ef7d7a5da573af",
-      "last_checked": "2026-04-03T07:45:16.117187",
+      "last_checked": "2026-04-07T07:43:02.611413",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"50f1509e0b417b065a70478bf06a396d\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/enable.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/isenabled.json": {
       "hash": "3c68e8ba9d44370a3c0cb0aa2d5edf96973c1a746ea5c8f0a96dd50a86655fc0",
-      "last_checked": "2026-04-03T07:45:16.301605",
+      "last_checked": "2026-04-07T07:43:02.920442",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"16d437bd7746b33d19204e74789b203b\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/isenabled.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/reset().json": {
       "hash": "ac10dcbd1a2c1275c81feb1e83001ac1670aab06edd4f0e0f1526234c304ee03",
-      "last_checked": "2026-04-03T07:45:16.500090",
+      "last_checked": "2026-04-07T07:43:03.227263",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"b4820e8c33dd64f3a93b7c14568d08b1\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/reset.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidermanager/disable().json": {
       "hash": "ef2e42c9e6459c5707e278a67d3579cfdd224a791cd77465c6c765d807c7846e",
-      "last_checked": "2026-04-03T07:45:16.682443",
+      "last_checked": "2026-04-07T07:43:03.380546",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"7e82cf8b465eecba9095b52b0eafc07d\"",
       "file_path": "documentation/ContactProvider/contactprovidermanager/disable.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderdomain/displayname.json": {
       "hash": "79b68f3573019f8e62baa01035821b6c5e3c52cfcc69d371d5cb942861d8ca24",
-      "last_checked": "2026-04-03T07:45:16.865878",
+      "last_checked": "2026-04-07T07:43:03.552543",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"55098ecd693a625184af070d8ff242be\"",
       "file_path": "documentation/ContactProvider/contactproviderdomain/displayname.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderdomain/identifier.json": {
       "hash": "dba1461540a9edbe6c204aa5b452224c8cad7b37be7c9cb926eff04f020cacc9",
-      "last_checked": "2026-04-03T07:45:16.999131",
+      "last_checked": "2026-04-07T07:43:03.673784",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"ade7d53dcb6a0d60f45a28390188b976\"",
       "file_path": "documentation/ContactProvider/contactproviderdomain/identifier.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactproviderdomain/userinfo.json": {
       "hash": "9e77c855d666b4d77fb915bae75609f336dfee7c3ca870f0e68939ae62e5a770",
-      "last_checked": "2026-04-03T07:45:17.136981",
+      "last_checked": "2026-04-07T07:43:03.837610",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"770aa42e96a0046dbe0880592de946c2\"",
       "file_path": "documentation/ContactProvider/contactproviderdomain/userinfo.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/defaultcontactproviderdomain/init().json": {
       "hash": "96cfef29dcb9364b20369ce0646f155eade8b08cadb95d059e0aadb705a71e3b",
-      "last_checked": "2026-04-03T07:45:17.318616",
+      "last_checked": "2026-04-07T07:43:04.021543",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"bf6fdab48b8341421f37f3f11fa93c66\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain/init.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/defaultcontactproviderdomain/displayname.json": {
       "hash": "7f5cb40d20b3f5910ee270d0c07143d0c5b26f91efebab00d50e7bf609072394",
-      "last_checked": "2026-04-03T07:45:17.498902",
+      "last_checked": "2026-04-07T07:43:04.326491",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"b2f6ccc0fc4942ab38c601299aca6c6d\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain/displayname.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem/contact(_:_:).json": {
       "hash": "92077a93f2d580931a9d1382bf79b93e40928d4f32b07a31b92a8d0de42d2832",
-      "last_checked": "2026-04-03T07:45:17.807444",
+      "last_checked": "2026-04-07T07:43:04.751113",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"0418d15dff2ceec13c1b19baacea27ac\"",
       "file_path": "documentation/ContactProvider/contactitem/contact.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem/identifier.json": {
       "hash": "dac2f8a851f3e7ca21560d91d8911c30e0fe8db32a58be4b975607ea758ac945",
-      "last_checked": "2026-04-03T07:45:17.944878",
+      "last_checked": "2026-04-07T07:43:04.871168",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"032a2c2f7c4b1bc719768decfc8e9a38\"",
       "file_path": "documentation/ContactProvider/contactitem/identifier.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerating/enumerator(for:).json": {
       "hash": "769133120f007f81c3e042e96302ee8f82f0134cb2706929d2565d39158a30c4",
-      "last_checked": "2026-04-03T07:45:18.110564",
+      "last_checked": "2026-04-07T07:43:05.040188",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"744e9920bbe7ae1921edf9c58fd9aa1b\"",
       "file_path": "documentation/ContactProvider/contactitemenumerating/enumerator-for.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerator/enumeratecontent(in:for:).json": {
       "hash": "778fbffd08ae9ec01a16db35e319f63fcb113ec68340e70cb7f9a0caf6022aec",
-      "last_checked": "2026-04-03T07:45:18.249567",
+      "last_checked": "2026-04-07T07:43:05.220869",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"cfa4bc98981568314c765db44cc17868\"",
       "file_path": "documentation/ContactProvider/contactitemenumerator/enumeratecontent-infor.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitempage.json": {
       "hash": "6f9f4ae73c468fd3a6362abcea99dd7d7780321f79710f410a6d48380a3a3de8",
-      "last_checked": "2026-04-03T07:45:18.443899",
+      "last_checked": "2026-04-07T07:43:05.379916",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"4c47e662b0987a9fbf2420e6376db53c\"",
       "file_path": "documentation/ContactProvider/contactitempage.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerator/enumeratechanges(startingat:for:).json": {
       "hash": "974e7e587a9aff6d3954ff91f4c8663a370e441d4e0a96ae22c7f31432e69df8",
-      "last_checked": "2026-04-03T07:45:18.581662",
+      "last_checked": "2026-04-07T07:43:05.539604",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"62a45e1ba9dd548ca8d5ee96ac51a30d\"",
       "file_path": "documentation/ContactProvider/contactitemenumerator/enumeratechanges-startingatfor.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemsyncanchor.json": {
       "hash": "0d17e5d517dac81e1584e2d9b4a14b98f7ca1a684f593bf565e8dfab77ae8259",
-      "last_checked": "2026-04-03T07:45:18.726432",
+      "last_checked": "2026-04-07T07:43:05.709932",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"197e8830cdf17617083d4306d4687c58\"",
       "file_path": "documentation/ContactProvider/contactitemsyncanchor.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemenumerator/invalidate().json": {
       "hash": "e3f1ae50ce93461c36bb337881c510dd54af71b4db480e46d1d32c99bf854e87",
-      "last_checked": "2026-04-03T07:45:18.876412",
+      "last_checked": "2026-04-07T07:43:05.836502",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"7d573ff79c1d00a33b96c7673eed2e95\"",
       "file_path": "documentation/ContactProvider/contactitemenumerator/invalidate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver/didenumerate(_:).json": {
       "hash": "d5b176c867a93d7a25b09d75a7a707801d2bd09f4fc20001c488cb25ceaced2a",
-      "last_checked": "2026-04-03T07:45:19.019414",
+      "last_checked": "2026-04-07T07:43:06.006434",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"ffbb0362037434d5f0ebd44353492232\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver/didenumerate.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver/didfinishenumeratingcontent(upto:).json": {
       "hash": "9ca679e015e90ab079491a38d8424724ecf6444741b83d0c905d47ec4c0f23e4",
-      "last_checked": "2026-04-03T07:45:19.196641",
+      "last_checked": "2026-04-07T07:43:06.116405",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"eba887d98ccc50f54f9d9b1d7ee212f4\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver/didfinishenumeratingcontent-upto.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver/didfinishenumeratingpage(upto:).json": {
       "hash": "8a3c2a966e03364088f550d195aa17c6285ac7612200c9c994f8b742d6d4ec96",
-      "last_checked": "2026-04-03T07:45:19.343612",
+      "last_checked": "2026-04-07T07:43:06.249920",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"4434b465633fb8e7c0c152806cd5368d\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver/didfinishenumeratingpage-upto.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver/didfinishenumeratingcontentwitherror(_:).json": {
       "hash": "0a050cd7bb58e299aad2c1e1ab838984297d34150690aa7443f20860ea33455b",
-      "last_checked": "2026-04-03T07:45:19.484768",
+      "last_checked": "2026-04-07T07:43:06.415384",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"712424fe457d795644f98bbf4860aabf\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver/didfinishenumeratingcontentwitherror.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemcontentobserver/suggestedpagesize.json": {
       "hash": "51cbcf71e1df11bbb97f96fb276fe23c39ed673cd9dcff2fb05fd59c0a6a811a",
-      "last_checked": "2026-04-03T07:45:19.611507",
+      "last_checked": "2026-04-07T07:43:06.554563",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"cd106cbcc59b4ba623d8eaff8ffa91aa\"",
       "file_path": "documentation/ContactProvider/contactitemcontentobserver/suggestedpagesize.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver/didupdate(_:).json": {
       "hash": "47f2326d100acdc2b18725768b0d6356063786d38ce596d8b7238c11413c6ab3",
-      "last_checked": "2026-04-03T07:45:19.740898",
+      "last_checked": "2026-04-07T07:43:06.707760",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"aeebcdeb0d67a74f976d679383c98623\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver/didupdate.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver/diddelete(_:).json": {
       "hash": "aa2d86059b71310d3dcdfe8ef90a4282e6a8267926f02e9a39a97e744e0df94c",
-      "last_checked": "2026-04-03T07:45:19.867361",
+      "last_checked": "2026-04-07T07:43:06.839067",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"5761476e1499dbe6b36e677866442bfc\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver/diddelete.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver/didfinishenumeratingchanges(upto:morecoming:).json": {
       "hash": "2fa7e41cd9fd2ef8062aa125f0ed3d65a33121918d5701148fff78d02c3ec01c",
-      "last_checked": "2026-04-03T07:45:20.035111",
+      "last_checked": "2026-04-07T07:43:07.018521",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"05124bec37fc01cf40b04407f995cb8e\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver/didfinishenumeratingchanges-uptomorecoming.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver/didfinishenumeratingchangeswitherror(_:).json": {
       "hash": "964199d62ef4d3094abe032f3bf59396c3b0ec3d4db1769bb6b992d9cdf3a3d9",
-      "last_checked": "2026-04-03T07:45:20.181069",
+      "last_checked": "2026-04-07T07:43:07.137527",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"dfd7cdd605789566f769f4dd0d96f6ef\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver/didfinishenumeratingchangeswitherror.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemchangeobserver/suggestedbatchsize.json": {
       "hash": "9919cf3654a8d1399231b672d1986d6b3f7c60108fdde846520a9235724e5b36",
-      "last_checked": "2026-04-03T07:45:20.317795",
+      "last_checked": "2026-04-07T07:43:07.313865",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"e88857e1cad7e46e017053a0b930df1a\"",
       "file_path": "documentation/ContactProvider/contactitemchangeobserver/suggestedbatchsize.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/featurenotavailable.json": {
       "hash": "d0e4c57d443fbb0a02fb56981c9b9cdb4d55aef6977b3eebb5db36d9842427dd",
-      "last_checked": "2026-04-03T07:45:20.495310",
+      "last_checked": "2026-04-07T07:43:07.492497",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"8e4b75ccd4f56e7bb05d28eb7dc7bc56\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/featurenotavailable.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/deniedbyuser.json": {
       "hash": "f3e18974ff090cdfc747ec2ea27cc524a2b89d67520b5a5cab9dbab8c9d59fbc",
-      "last_checked": "2026-04-03T07:45:20.634036",
+      "last_checked": "2026-04-07T07:43:07.636719",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"73b7f5526e94848f6b8f717d1d08d142\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/deniedbyuser.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/extensionnotfound.json": {
       "hash": "45d487d3b3416f7afd44fd4ad164603598cc184e70e903435e001b2701f6df10",
-      "last_checked": "2026-04-03T07:45:20.774471",
+      "last_checked": "2026-04-07T07:43:07.761832",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"9545e227eee001e264e91ab798369867\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/extensionnotfound.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/itemslimitreached.json": {
       "hash": "8db4127c04e26c59f60eba25a1a55b2cb8235f4f3b33283ccc8938fc0fc91af2",
-      "last_checked": "2026-04-03T07:45:20.932771",
+      "last_checked": "2026-04-07T07:43:07.973798",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"9a5f64664ba74bb038950073a9873b90\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/itemslimitreached.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/cannotenumerate.json": {
       "hash": "d835eea92c72490e69db65ad88ff741e1bf9f00f7f87d9cbaa0d141dc7183e4e",
-      "last_checked": "2026-04-03T07:45:21.079220",
+      "last_checked": "2026-04-07T07:43:08.130640",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"aed567c7d0c4763a8d273ba3f7ef391f\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/cannotenumerate.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/enumerationtimeout.json": {
       "hash": "bbc613cf0a031d86e4539180d20f24ab0a04766aa5d914694a1ee116010bd922",
-      "last_checked": "2026-04-03T07:45:21.200048",
+      "last_checked": "2026-04-07T07:43:08.254759",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"9c2bfe17c09a5de16c3fe5c46273d6d0\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/enumerationtimeout.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/pageexpired.json": {
       "hash": "3ff49b122c519214e01d8a45bedbede4b2128c8a1d4c72fc735a40445ffeae33",
-      "last_checked": "2026-04-03T07:45:21.345424",
+      "last_checked": "2026-04-07T07:43:08.428638",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"a33435eb6dcc661e45aceccf5a78df02\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/pageexpired.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/changeanchorexpired.json": {
       "hash": "de669935070a29d78c838789b4bf78d4967c6d848ed9eddce64e7b2ddddbd458",
-      "last_checked": "2026-04-03T07:45:21.481040",
+      "last_checked": "2026-04-07T07:43:08.542341",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"d8da4c2821d3da064652a950323eb8b1\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/changeanchorexpired.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/extensioninvalidated.json": {
       "hash": "d6f91ba651f0044bdc1cbec83059ca92048119cae9460d3193d572e210f72876",
-      "last_checked": "2026-04-03T07:45:21.617265",
+      "last_checked": "2026-04-07T07:43:08.874560",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"5c9fb44ec58dac3c21275942e0f4c1b3\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/extensioninvalidated.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/extensioninvalidatetimeout.json": {
       "hash": "1a081a85d454455a173b47aad6500dc299bcaeef51209230091e318972a44d43",
-      "last_checked": "2026-04-03T07:45:21.756572",
+      "last_checked": "2026-04-07T07:43:09.020275",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"e26d666eba150038c561b85ed8806d2b\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/extensioninvalidatetimeout.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactprovidererror/domainnotregistered.json": {
       "hash": "d7cc273de4213e526a510e836fad9d6cdf3a3ae051d0c5301eedc0c95f2e0174",
-      "last_checked": "2026-04-03T07:45:22.055192",
+      "last_checked": "2026-04-07T07:43:09.157604",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"f0241e3f58ff5be04b0b7fc1dbf45351\"",
       "file_path": "documentation/ContactProvider/contactprovidererror/domainnotregistered.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem/identifier/init(_:).json": {
       "hash": "d3142521fdc60a1f8ff3e3bb4df58d716f9e5df6df0ac5492f4f3ac48a275d72",
-      "last_checked": "2026-04-03T07:45:22.188325",
+      "last_checked": "2026-04-07T07:43:09.281887",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"e9cf165187d084507189f706b848c035\"",
       "file_path": "documentation/ContactProvider/contactitem/identifier/init.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem/identifier/value.json": {
       "hash": "f01044c39b2253d9e135c2d7787fe3339865d42138afa1fed4f0c34b17104121",
-      "last_checked": "2026-04-03T07:45:22.388738",
+      "last_checked": "2026-04-07T07:43:09.415251",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"521ba1f552cb9aec9ef586f347aa38ff\"",
       "file_path": "documentation/ContactProvider/contactitem/identifier/value.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitem/identifier/rootcontainer.json": {
       "hash": "1dbd808cea8af9e12249c4f5b4f134522b2cbec3c1f54099dbec15d9ffaa6510",
-      "last_checked": "2026-04-03T07:45:22.712552",
+      "last_checked": "2026-04-07T07:43:09.550291",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"bcd64c8c6f5047f310633065f409727e\"",
       "file_path": "documentation/ContactProvider/contactitem/identifier/rootcontainer.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitempage/init(generationmarker:offset:).json": {
       "hash": "935a57c4f226f5e4c3f473095721ae5c36cc0a8a10b9033d8f450f9f5d9eb35a",
-      "last_checked": "2026-04-03T07:45:23.031909",
+      "last_checked": "2026-04-07T07:43:09.668090",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"0fffb5984429f9fde34eed3bdc5ab087\"",
       "file_path": "documentation/ContactProvider/contactitempage/init-generationmarkeroffset.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitempage/generationmarker.json": {
       "hash": "a08de4447edbfd18073edc0b63ee65a30e6ec55cdb85cb341519a17d1671d073",
-      "last_checked": "2026-04-03T07:45:23.406850",
+      "last_checked": "2026-04-07T07:43:09.794126",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"ded9a421b8481af1e111f60970dd0e6b\"",
       "file_path": "documentation/ContactProvider/contactitempage/generationmarker.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitempage/offset.json": {
       "hash": "cf183584a33b479e7f81c6c659c385f2bbcc85051688f3a2decaff920d6b1b27",
-      "last_checked": "2026-04-03T07:45:23.698648",
+      "last_checked": "2026-04-07T07:43:09.913692",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"d5bb9af4c934f48bde68fcbe47684e15\"",
       "file_path": "documentation/ContactProvider/contactitempage/offset.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitempage/initialpage.json": {
       "hash": "ef1f76fac39ea562f5bf8500df5ad412cdb3ca2a8ab07709249c88ee4a71393a",
-      "last_checked": "2026-04-03T07:45:23.873301",
+      "last_checked": "2026-04-07T07:43:10.053666",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"50c91e25d819115479e5d5cfedcd55cf\"",
       "file_path": "documentation/ContactProvider/contactitempage/initialpage.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemsyncanchor/init(generationmarker:offset:).json": {
       "hash": "47275a0e2deb5d998c66dabff2863a2344e3b7d9b6389e913145a6e573109698",
-      "last_checked": "2026-04-03T07:45:24.184791",
+      "last_checked": "2026-04-07T07:43:10.232559",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"b011f424c72a3d0a1ecb5e54f5a214a3\"",
       "file_path": "documentation/ContactProvider/contactitemsyncanchor/init-generationmarkeroffset.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemsyncanchor/generationmarker.json": {
       "hash": "f6594072d585658dd63e6e07325e5a7106f5ef05564a7f279eebb353e65fc1a0",
-      "last_checked": "2026-04-03T07:45:24.518923",
+      "last_checked": "2026-04-07T07:43:10.350444",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"f1f5cdea5786ab4d4c0a7f24f0d66c35\"",
       "file_path": "documentation/ContactProvider/contactitemsyncanchor/generationmarker.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/contactitemsyncanchor/offset.json": {
       "hash": "0ae13f3715e98598599121f77e9b11eb809fa618399c5954eb28f7844fb926d3",
-      "last_checked": "2026-04-03T07:45:24.694954",
+      "last_checked": "2026-04-07T07:43:10.458180",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"36bb71b76ddda700fe291e82f910795f\"",
       "file_path": "documentation/ContactProvider/contactitemsyncanchor/offset.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactprovider/defaultcontactproviderdomain/identifier.json": {
       "hash": "348f9e89fe711203a50b3594d869d136925f349d3e59cfd362d0da178545f5cc",
-      "last_checked": "2026-04-03T07:45:17.637439",
+      "last_checked": "2026-04-07T07:43:04.445505",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:45:12.947234",
+      "session_id": "2026-04-07T07:42:58.315907",
       "etag": "W/\"942aa4bd2de2ef377e73d5004e835101\"",
       "file_path": "documentation/ContactProvider/defaultcontactproviderdomain/identifier.md"
     },

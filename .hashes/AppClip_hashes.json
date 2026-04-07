@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:46:22.656044",
+    "last_updated": "2026-04-07T07:43:58.291107",
     "total_pages": 70,
-    "session_id": "2026-04-03T07:46:14.664863"
+    "session_id": "2026-04-07T07:43:50.037793"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppClip.json": {
       "hash": "ae95d0cc4c983221b96faefd7091053675ef5183ac6591270bdf4896207843aa",
-      "last_checked": "2026-04-03T07:46:15.115030",
+      "last_checked": "2026-04-07T07:43:50.417645",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"3e4d1cceda24bbe1f88dcf8be131e748\"",
       "file_path": "documentation/AppClip/AppClip.md"
     },
     "https://developer.apple.com/documentation/AppClip": {
       "hash": "ae95d0cc4c983221b96faefd7091053675ef5183ac6591270bdf4896207843aa",
-      "last_checked": "2026-04-03T07:46:15.022883",
+      "last_checked": "2026-04-07T07:43:50.327689",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"3e4d1cceda24bbe1f88dcf8be131e748\"",
       "file_path": "documentation/AppClip/AppClip.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/choosing-the-right-functionality-for-your-app-clip.json": {
       "hash": "ba1b6decde908a3d6770978549aad4055ce418f016b6d870e6ac10efde073ea6",
-      "last_checked": "2026-04-03T07:46:15.514878",
+      "last_checked": "2026-04-07T07:43:50.857782",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"ab1199c9148ddf6f415278d5724da64c\"",
       "file_path": "documentation/AppClip/choosing-the-right-functionality-for-your-app-clip.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/configuring-the-launch-experience-of-your-app-clip.json": {
       "hash": "434a8bee4b8057e0fde60a48184db149ae6b547bcd197cdac31e79af70f8ff18",
-      "last_checked": "2026-04-03T07:46:15.847256",
+      "last_checked": "2026-04-07T07:43:51.161029",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"0bee2aabc3dd9fce073362def911a3a2\"",
       "file_path": "documentation/AppClip/configuring-the-launch-experience-of-your-app-clip.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-an-app-clip-with-xcode.json": {
       "hash": "bfadd4792c818a72ee504c3b65a612e80257e2454b2c8c2e1c4083af9ded2f13",
-      "last_checked": "2026-04-03T07:46:16.167225",
+      "last_checked": "2026-04-07T07:43:51.335054",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"8cc7c04224a25d6138f9c21573635ed9\"",
       "file_path": "documentation/AppClip/creating-an-app-clip-with-xcode.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/responding-to-invocations.json": {
       "hash": "74d904642b3084e39f2c5599d3184471b27e66c4992c53b46d2dd560bd056d52",
-      "last_checked": "2026-04-03T07:46:16.506379",
+      "last_checked": "2026-04-07T07:43:51.696875",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"039bbf4ee58e4d460b5ee06bc6559c7b\"",
       "file_path": "documentation/AppClip/responding-to-invocations.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/associating-your-app-clip-with-your-website.json": {
       "hash": "5630a1cd83083c6e1f4f024160057d9fa8affe59ffecd365f9c495ed6c929a15",
-      "last_checked": "2026-04-03T07:46:16.855942",
+      "last_checked": "2026-04-07T07:43:52.007787",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"c474a94feca26953765f49a899a80280\"",
       "file_path": "documentation/AppClip/associating-your-app-clip-with-your-website.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/supporting-invocations-from-your-website-and-the-messages-app.json": {
       "hash": "d9c208f342e625ef9bd2855b53ff4bb67245dd6c09e9f2d073afd6fc2be11d29",
-      "last_checked": "2026-04-03T07:46:17.043804",
+      "last_checked": "2026-04-07T07:43:52.350900",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"fbf11b3c80b0d45f0d23fcbab5c41f21\"",
       "file_path": "documentation/AppClip/supporting-invocations-from-your-website-and-the-messages-app.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/confirming-a-person-s-physical-location.json": {
       "hash": "b0580286c1e1f0c865d4c5886f5d68d815d644067200689d853201a8dd65857a",
-      "last_checked": "2026-04-03T07:46:17.236680",
+      "last_checked": "2026-04-07T07:43:52.672206",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"0a7a16bd268c87c8e82a1729b145501e\"",
       "file_path": "documentation/AppClip/confirming-a-person-s-physical-location.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/launching-another-app-s-app-clip-from-your-app.json": {
       "hash": "37d503df587acafe2eceaa6239e47c0b7ff2ba0df8eac7c7a3d2f1da1a1211a0",
-      "last_checked": "2026-04-03T07:46:17.567820",
+      "last_checked": "2026-04-07T07:43:52.970097",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"733d3938e336657026b78bc180e137d7\"",
       "file_path": "documentation/AppClip/launching-another-app-s-app-clip-from-your-app.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload.json": {
       "hash": "07ae4660c7e9396c4a7ef4e383e4d3321aa0dd3e3a7808ce72f3d45510b7cd87",
-      "last_checked": "2026-04-03T07:46:17.745992",
+      "last_checked": "2026-04-07T07:43:53.142239",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"6b56df1261a535a580cb089004b215c6\"",
       "file_path": "documentation/AppClip/apactivationpayload.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes.json": {
       "hash": "d29da33a5be2cbfcefc6af599aa6d4747913dcdfdb2264f8b34fe057c50ab560",
-      "last_checked": "2026-04-03T07:46:17.944646",
+      "last_checked": "2026-04-07T07:43:53.319594",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"80011e54758d689547175e8cae2e2afd\"",
       "file_path": "documentation/AppClip/creating-app-clip-codes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/encoding-a-url-in-an-app-clip-code.json": {
       "hash": "6d0a7d691a97738370f819aa2c352fcab0bc85a979614aef863e8aeaf5b7a26b",
-      "last_checked": "2026-04-03T07:46:18.263594",
+      "last_checked": "2026-04-07T07:43:53.620557",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"5e6254218bef385df6378090272091e2\"",
       "file_path": "documentation/AppClip/encoding-a-url-in-an-app-clip-code.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/preparing-multiple-app-clip-codes-for-production.json": {
       "hash": "14485126ee1d626ae5162558f5d9940ca0429994871b7813aa425e4163e4fb62",
-      "last_checked": "2026-04-03T07:46:18.610794",
+      "last_checked": "2026-04-07T07:43:53.944105",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"ef97869aea16f40d121d839ffd318f9a\"",
       "file_path": "documentation/AppClip/preparing-multiple-app-clip-codes-for-production.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/interacting-with-app-clip-codes-in-ar.json": {
       "hash": "7692dfd6602f98996d2426e1c8ebbcaa4e96d4cfa7f217ce5dac4c97396ff71c",
-      "last_checked": "2026-04-03T07:46:18.812302",
+      "last_checked": "2026-04-07T07:43:54.247337",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"1ee403ed65bfe0a4497fee55bfc9bb82\"",
       "file_path": "documentation/AppClip/interacting-with-app-clip-codes-in-ar.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/recommending-your-app-to-app-clip-users.json": {
       "hash": "b068c87f1643b522359c366d4ad73f0edb189136b358331c957d859e4dc081b9",
-      "last_checked": "2026-04-03T07:46:19.124641",
+      "last_checked": "2026-04-07T07:43:54.545519",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"19d33d26405347bf37bc683d8bfc8dc6\"",
       "file_path": "documentation/AppClip/recommending-your-app-to-app-clip-users.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/sharing-data-between-your-app-clip-and-your-full-app.json": {
       "hash": "e0320651c89e639ea44498fb6c4990a640857a5d2cccf405513af9259d206245",
-      "last_checked": "2026-04-03T07:46:19.260269",
+      "last_checked": "2026-04-07T07:43:54.754622",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"f210a51cfd219b8d2c59fb120980a7de\"",
       "file_path": "documentation/AppClip/sharing-data-between-your-app-clip-and-your-full-app.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/enabling-notifications-in-app-clips.json": {
       "hash": "a4265f8084ac7715d3062b874a41c97e2f58f1bc5f51a64d1cdc9173b10f4c26",
-      "last_checked": "2026-04-03T07:46:19.454881",
+      "last_checked": "2026-04-07T07:43:54.934382",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"0869e8d780eabebed58e4f7577f0f06e\"",
       "file_path": "documentation/AppClip/enabling-notifications-in-app-clips.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/offering-live-activities-with-your-app-clip.json": {
       "hash": "7e1748c8cf43a105cb4c3d390f941ca8d95de216412c70e8b2b4fa25a672e6dd",
-      "last_checked": "2026-04-03T07:46:19.643992",
+      "last_checked": "2026-04-07T07:43:55.109953",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"21a34f0e57d46d690574c21e2e77680a\"",
       "file_path": "documentation/AppClip/offering-live-activities-with-your-app-clip.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/testing-the-launch-experience-of-your-app-clip.json": {
       "hash": "f52eb05c9c37a3cf1e27d6ef25733934d89e61dcbeda9b4a8be2a43c70e0b2b2",
-      "last_checked": "2026-04-03T07:46:19.822300",
+      "last_checked": "2026-04-07T07:43:55.449053",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"468fe30a1db923f3e3411556c60694d4\"",
       "file_path": "documentation/AppClip/testing-the-launch-experience-of-your-app-clip.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/distributing-your-app-clip.json": {
       "hash": "fe8ab6dda3ecf62cb8b324bea4244a90cd53d4fdfa8980e11976229c020dd162",
-      "last_checked": "2026-04-03T07:46:20.010209",
+      "last_checked": "2026-04-07T07:43:55.642517",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"bcbdad4a31cea736b8079d5b11e2f78b\"",
       "file_path": "documentation/AppClip/distributing-your-app-clip.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload/url.json": {
       "hash": "cd2c6cafe81a2c05848d721c5868bd60c308e3980fb90b3715da20f8bd189784",
-      "last_checked": "2026-04-03T07:46:20.182796",
+      "last_checked": "2026-04-07T07:43:55.957602",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"dc279ade277b8943499ac35a3a8e76ae\"",
       "file_path": "documentation/AppClip/apactivationpayload/url.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayload/confirmacquired(in:completionhandler:).json": {
       "hash": "8ec3f91eaac1683e682018dc7926ba102c071b3d57fa6bfab08d22dc3da950d2",
-      "last_checked": "2026-04-03T07:46:20.379578",
+      "last_checked": "2026-04-07T07:43:56.126295",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"2f919d8169bd60fd577a9c7a6658a0f0\"",
       "file_path": "documentation/AppClip/apactivationpayload/confirmacquired-incompletionhandler.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderrordomain.json": {
       "hash": "ccc017be843a5c8a4ef4e5057bb7b69d586d03090f586d8650e19e8c9c0e9928",
-      "last_checked": "2026-04-03T07:46:20.518368",
+      "last_checked": "2026-04-07T07:43:56.302475",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"32a4038f9b2089b2e29e3b287ef80995\"",
       "file_path": "documentation/AppClip/apactivationpayloaderrordomain.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror.json": {
       "hash": "ffdf7f2d603bb815963ba1e6a9a42d9e902f37fdc1f8bae6167415d08205b98b",
-      "last_checked": "2026-04-03T07:46:20.685202",
+      "last_checked": "2026-04-07T07:43:56.464681",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"277e96299719c1f99466069f41e1ec69\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/code.json": {
       "hash": "e5223600beaf5906f1041311a191c44e7cfc96cd04db3f0c095c9b3065d70bb8",
-      "last_checked": "2026-04-03T07:46:20.869252",
+      "last_checked": "2026-04-07T07:43:56.628192",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"e57efd7fd4614c2b38e2cfc148fbef3c\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/code.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes-with-app-store-connect.json": {
       "hash": "3421b142cd0ddff79b230973372f162f712a18520925a92a9f4bd98021e8befb",
-      "last_checked": "2026-04-03T07:46:21.049705",
+      "last_checked": "2026-04-07T07:43:56.806055",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"1a2abfc983da037cfaee65c24c92d8a9\"",
       "file_path": "documentation/AppClip/creating-app-clip-codes-with-app-store-connect.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/creating-app-clip-codes-with-the-app-clip-code-generator.json": {
       "hash": "45a4f8a15401d95f1db887d87fb998f7cf6bb98e15cb385f3a216d1b10f2a143",
-      "last_checked": "2026-04-03T07:46:21.368453",
+      "last_checked": "2026-04-07T07:43:57.135702",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"80e613dc88c71d178354e6ce76a883df\"",
       "file_path": "documentation/AppClip/creating-app-clip-codes-with-the-app-clip-code-generator.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/errordomain.json": {
       "hash": "49523fca62b9669119372311a1850df709c95dcf296201e57ea6572e3cca44b4",
-      "last_checked": "2026-04-03T07:46:21.686326",
+      "last_checked": "2026-04-07T07:43:57.307984",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"58d6a07f48c8978ab5183f6c21723355\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/errordomain.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/doesnotmatch.json": {
       "hash": "1bb08f4802323d7cf3487182cbc4781661709ef0187200dd8872c52b34094bc6",
-      "last_checked": "2026-04-03T07:46:21.859718",
+      "last_checked": "2026-04-07T07:43:57.488856",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"25145df02ca04046b736507f662c8d3d\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/doesnotmatch.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/disallowed.json": {
       "hash": "b760d441b2f43f70a22373b17d35016a4100e69f6d82745fc47e3a09e9e00953",
-      "last_checked": "2026-04-03T07:46:22.199775",
+      "last_checked": "2026-04-07T07:43:57.789533",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"70e9f36fe37466d206d951cc0e9f43c3\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/disallowed.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/code/doesnotmatch.json": {
       "hash": "d9aa4623a7e2c6f1c92f0e6e782563761a9e5683473f7fae99c571a09d7a2b9f",
-      "last_checked": "2026-04-03T07:46:22.352974",
+      "last_checked": "2026-04-07T07:43:57.948050",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"cdcd3ec68d97b3cf683d15878a566ca7\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/code/doesnotmatch.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/code/disallowed.json": {
       "hash": "46825034f90284bc21b71b322ea31c03e98faf2163f07e8a570332e36cca5303",
-      "last_checked": "2026-04-03T07:46:22.495990",
+      "last_checked": "2026-04-07T07:43:58.123285",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"289fc876d47fdfd31c34570d8aca890b\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/code/disallowed.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/apactivationpayloaderror/code/init(rawvalue:).json": {
       "hash": "c4717b25d77781836d558be8c30ae47356b7c543ef205c20b702016ccbe7fbb9",
-      "last_checked": "2026-04-03T07:46:22.638448",
+      "last_checked": "2026-04-07T07:43:58.287094",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"3f4d2ab45512302baea65c998375a0e9\"",
       "file_path": "documentation/AppClip/apactivationpayloaderror/code/init-rawvalue.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appclip/fruta-building-a-feature-rich-app-with-swiftui.json": {
       "hash": "2950093224bd20a7464ee92e88f19f0e2295703069edde6a5ecdd09d6423a6ac",
-      "last_checked": "2026-04-03T07:46:16.360618",
+      "last_checked": "2026-04-07T07:43:51.504648",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:14.664863",
+      "session_id": "2026-04-07T07:43:50.037793",
       "etag": "W/\"c12c62b59a9e0fca4d0c9edbbd2af4aa\"",
       "file_path": "documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui.md"
     },

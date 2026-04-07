@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:44:22.745914",
+    "last_updated": "2026-04-07T07:42:11.444927",
     "total_pages": 472,
-    "session_id": "2026-04-03T07:43:38.889503"
+    "session_id": "2026-04-07T07:41:37.536467"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CoreWLAN.json": {
       "hash": "631eecc35ffe7fb8f08b47cc9f2066c2e8076e44b0f6095161a77e9e8d244cf8",
-      "last_checked": "2026-04-03T07:43:39.214597",
+      "last_checked": "2026-04-07T07:41:37.787185",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"04ef196369fbc968d4dc3b96d7ca91d4\"",
       "file_path": "documentation/CoreWLAN/CoreWLAN.md"
     },
     "https://developer.apple.com/documentation/CoreWLAN": {
       "hash": "631eecc35ffe7fb8f08b47cc9f2066c2e8076e44b0f6095161a77e9e8d244cf8",
-      "last_checked": "2026-04-03T07:43:39.100344",
+      "last_checked": "2026-04-07T07:41:37.668981",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"04ef196369fbc968d4dc3b96d7ca91d4\"",
       "file_path": "documentation/CoreWLAN/CoreWLAN.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannel.json": {
       "hash": "1b3c5e9fefc85ca8c541005d730498128d1abdf609ef9fb05498c9c11cc076fd",
-      "last_checked": "2026-04-03T07:43:39.422939",
+      "last_checked": "2026-04-07T07:41:38.051754",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"a41e4d0295af2c35e157ed3fb08c1d0b\"",
       "file_path": "documentation/CoreWLAN/cwchannel.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration.json": {
       "hash": "bcbe7cfefe50197ec384ed6fba7c64401cb38fe1e3b92e51cbf382d5d07c1246",
-      "last_checked": "2026-04-03T07:43:39.614640",
+      "last_checked": "2026-04-07T07:41:38.242089",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7acb74b49e8a9036f72cc98bf1e42641\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface.json": {
       "hash": "272c886eceacf9475cdcef3c7b795db3bd46827d2c82eb377ef561f9d3f0f711",
-      "last_checked": "2026-04-03T07:43:39.805118",
+      "last_checked": "2026-04-07T07:41:38.424456",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"11b0abac0fd4f569f9ed33672db74a0c\"",
       "file_path": "documentation/CoreWLAN/cwinterface.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration.json": {
       "hash": "b98e870fd093214078c50c93557ac0bb25e358260c24ab3201ac21067f5fc802",
-      "last_checked": "2026-04-03T07:43:39.979592",
+      "last_checked": "2026-04-07T07:41:38.565368",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"49d80b9bfc97bc48e071005d414bdb8c\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutablenetworkprofile.json": {
       "hash": "500ccd4f6ddc17f4b70f3fae96a46550423920aa81190c1022c815b81c95e365",
-      "last_checked": "2026-04-03T07:43:40.122789",
+      "last_checked": "2026-04-07T07:41:38.720473",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4c0a7a098101a76d4f061f17b8309f43\"",
       "file_path": "documentation/CoreWLAN/cwmutablenetworkprofile.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork.json": {
       "hash": "671b4eec116bc3a807079736e89edf1212c0ce156d0b3ad700b0aac7ab3b4e2b",
-      "last_checked": "2026-04-03T07:43:40.299672",
+      "last_checked": "2026-04-07T07:41:38.875715",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e95f0b6b12680d99340bc7a680d61610\"",
       "file_path": "documentation/CoreWLAN/cwnetwork.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile.json": {
       "hash": "c12c43bdf210e50e9e8ee956f6644e385ce434160ecc98df0ea020d26a6e09d2",
-      "last_checked": "2026-04-03T07:43:40.505148",
+      "last_checked": "2026-04-07T07:41:39.034730",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"afc53d9036e901803b305617b86f5e31\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient.json": {
       "hash": "a8ddc9c9beb3636ca39d35bffce2a922b47e0c2b11ff66ff51ad9ff654171196",
-      "last_checked": "2026-04-03T07:43:40.658796",
+      "last_checked": "2026-04-07T07:41:39.170497",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"56e75926f445eb7fac81760a5847d138\"",
       "file_path": "documentation/CoreWLAN/cwwificlient.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate.json": {
       "hash": "24bcd1eab68bd8aaca5098899d3beaf61d346eeba002e6488a966ddadd12241d",
-      "last_checked": "2026-04-03T07:43:40.845334",
+      "last_checked": "2026-04-07T07:41:39.359422",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b7823dccbff167fae7922dc8f75251df\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/corewlanconstants-h.json": {
       "hash": "e3d50aa3b1f0105cbcd7899f1dcdce7e70eaa616a61b1f517b2ddbca14259473",
-      "last_checked": "2026-04-03T07:43:40.987672",
+      "last_checked": "2026-04-07T07:41:39.517989",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"3e371a9ac4d68dd20b890a94bfa15a39\"",
       "file_path": "documentation/CoreWLAN/corewlanconstants-h.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/corewlantypes-h.json": {
       "hash": "7f8b09b0a85b0b50a000e3fc6e3a6353213e9456fbc3c196ddb75ab929af5d6e",
-      "last_checked": "2026-04-03T07:43:41.149124",
+      "last_checked": "2026-04-07T07:41:39.634091",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0394adf106b0f56dff00f67b6af8a389\"",
       "file_path": "documentation/CoreWLAN/corewlantypes-h.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/corewlanutil-h.json": {
       "hash": "478d9d6c1d502ce64750757d6fd765699cf208782d320d34d8663d25abfafd78",
-      "last_checked": "2026-04-03T07:43:41.285203",
+      "last_checked": "2026-04-07T07:41:39.797915",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1a8a60414c0d8a90fe11ac11b02c39d8\"",
       "file_path": "documentation/CoreWLAN/corewlanutil-h.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/corewlan-enumerations.json": {
       "hash": "52cc1716cb6a34c42489496d13a40fc9e0bca0a4f801786bc6335de14ca73c2c",
-      "last_checked": "2026-04-03T07:43:41.469967",
+      "last_checked": "2026-04-07T07:41:39.975056",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9bbe8d83d78406b94e840fa3f5612e3e\"",
       "file_path": "documentation/CoreWLAN/corewlan-enumerations.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/corewlan-functions.json": {
       "hash": "dfe3fc5973ef325573c380164b48376953947bd31b92fedeebe6a646755b1198",
-      "last_checked": "2026-04-03T07:43:41.593521",
+      "last_checked": "2026-04-07T07:41:40.136270",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"563135594a7470976158526c455212e4\"",
       "file_path": "documentation/CoreWLAN/corewlan-functions.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags.json": {
       "hash": "d8f766cd833da4ee4b82144dfc0da17e300f328fe6c6ca6174046f06c1fa0587",
-      "last_checked": "2026-04-03T07:43:41.766225",
+      "last_checked": "2026-04-07T07:41:40.291757",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"8844676dc9f9455bd0f15bf935a2c8d6\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannel/isequal(to:).json": {
       "hash": "50fab3ac0f2a2baed51f6c09708bf9f4ab1124990ff276b28134422941b4f31d",
-      "last_checked": "2026-04-03T07:43:41.953224",
+      "last_checked": "2026-04-07T07:41:40.458390",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"613dead6d31039066a06577acc3b63f0\"",
       "file_path": "documentation/CoreWLAN/cwchannel/isequal-to.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannel/channelband.json": {
       "hash": "2495eb9f0d43e55d4b0d817c165b20fdbd6fd4b229fcbb7bb46fde9e448847a4",
-      "last_checked": "2026-04-03T07:43:42.110282",
+      "last_checked": "2026-04-07T07:41:40.587211",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"510adffc71851b661ce877da11e55c19\"",
       "file_path": "documentation/CoreWLAN/cwchannel/channelband.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannel/channelnumber.json": {
       "hash": "dc3f45fad45286254d7dabee4075c6bcf22366fd0dc855ba22cba510bd207548",
-      "last_checked": "2026-04-03T07:43:42.280813",
+      "last_checked": "2026-04-07T07:41:40.732861",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"13b114e43be7a9ab577ab273c2aee9bd\"",
       "file_path": "documentation/CoreWLAN/cwchannel/channelnumber.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannel/channelwidth.json": {
       "hash": "05bdf06525acfe5205bab692d871a1e8d0884260cd78f6947911183136a8a6c4",
-      "last_checked": "2026-04-03T07:43:42.416483",
+      "last_checked": "2026-04-07T07:41:41.048139",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"58a6bf0282cb8371a55248d543e30c24\"",
       "file_path": "documentation/CoreWLAN/cwchannel/channelwidth.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/init().json": {
       "hash": "9739d3ec59b75b12911c0bda38d33cfa3e03dad367e3aae522b7eb7e7ea7b136",
-      "last_checked": "2026-04-03T07:43:42.587871",
+      "last_checked": "2026-04-07T07:41:41.345378",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9a80520b7df2386b19eb7c7fe291c485\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/init.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/init(configuration:).json": {
       "hash": "d21c0231d43abfd43d7ea1902b5c2f6e7b58e062e1aea459b0931e255df19f09",
-      "last_checked": "2026-04-03T07:43:42.731238",
+      "last_checked": "2026-04-07T07:41:41.479877",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2091759f79f88667a3b14f963dd64481\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/init-configuration.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/isequal(to:).json": {
       "hash": "614772010e1795f3af69d392a360755f4f07baf2712a4e778569071335c1dcea",
-      "last_checked": "2026-04-03T07:43:42.865729",
+      "last_checked": "2026-04-07T07:41:41.597684",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"030be2ad19b97832efa1989d3c9b049c\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/isequal-to.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/networkprofiles.json": {
       "hash": "0edc194bcdf78b0e30adec8c11e166d9913385dd49eddaa1cfbbb5eff698ca08",
-      "last_checked": "2026-04-03T07:43:42.997889",
+      "last_checked": "2026-04-07T07:41:41.727876",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f86b944d245d27df7c029c28b7a019cc\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/networkprofiles.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/rememberjoinednetworks.json": {
       "hash": "96921911f280c42aebd88b9558d85a8355c2db040646ff08ab73f7b6d3f2b2eb",
-      "last_checked": "2026-04-03T07:43:43.131775",
+      "last_checked": "2026-04-07T07:41:41.851134",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e2106592bbf38407eddeeedd0a2e2e73\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/rememberjoinednetworks.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/requireadministratorforassociation.json": {
       "hash": "bd79eaa894a1ec79046ca3f503a803e691b73c73759968cd24a0fe9bc1177037",
-      "last_checked": "2026-04-03T07:43:43.281456",
+      "last_checked": "2026-04-07T07:41:41.977942",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0a1613f72b9214eeb17798954419758d\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/requireadministratorforassociation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/requireadministratorforibssmode.json": {
       "hash": "24e0e3d7aea8a1f980a34a5c61140fad49812a719349d7f40dbee934747bf833",
-      "last_checked": "2026-04-03T07:43:43.416521",
+      "last_checked": "2026-04-07T07:41:42.106457",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e9a5c68d7abfa1a638d91ae0b6a10d8c\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/requireadministratorforibssmode.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwconfiguration/requireadministratorforpower.json": {
       "hash": "885504c02b2ee13fcc457690336bd7efbfcba99a6be8b4b3838352708dbfd339",
-      "last_checked": "2026-04-03T07:43:43.578212",
+      "last_checked": "2026-04-07T07:41:42.412988",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e023454ca0aaac673e62fa10fcb987e4\"",
       "file_path": "documentation/CoreWLAN/cwconfiguration/requireadministratorforpower.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/setpairwisemasterkey(_:).json": {
       "hash": "a4e93e424e41f5380ceab0f2670e0e58b6f0d86d7dba11c67d2aac576ff7f561",
-      "last_checked": "2026-04-03T07:43:43.763526",
+      "last_checked": "2026-04-07T07:41:42.577954",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ce2582dd2d23368784ff6bdd52c2d377\"",
       "file_path": "documentation/CoreWLAN/cwinterface/setpairwisemasterkey.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/setpower(_:).json": {
       "hash": "3480b4bb95c0c73ffa31a1e6b492fa136eb225442dfc8d9eb2c16d454a06a6f0",
-      "last_checked": "2026-04-03T07:43:43.883750",
+      "last_checked": "2026-04-07T07:41:42.882551",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f42079a20886f771f4ac6375ea5418f8\"",
       "file_path": "documentation/CoreWLAN/cwinterface/setpower.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/setwepkey(_:flags:index:).json": {
       "hash": "b518bd6a29b0b82c2c291007c95005fec812e8d6edae3994298a2ea505292389",
-      "last_checked": "2026-04-03T07:43:44.014736",
+      "last_checked": "2026-04-07T07:41:43.008034",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7acdb6e88c9e7a247b348c47830c7c4d\"",
       "file_path": "documentation/CoreWLAN/cwinterface/setwepkey-flagsindex.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/setwlanchannel(_:).json": {
       "hash": "813717f9e54dccb3c6d5cb1b0af1031334271535030666a407b112b2f933bbee",
-      "last_checked": "2026-04-03T07:43:44.141376",
+      "last_checked": "2026-04-07T07:41:43.140776",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e35b3012cdf4e396a5e550bb8392f35b\"",
       "file_path": "documentation/CoreWLAN/cwinterface/setwlanchannel.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/scanfornetworks(withname:).json": {
       "hash": "36ddddb656cf0cb5aa57f757a42d1a8bd1caf0cf0c38da6ccd5e4258eece638c",
-      "last_checked": "2026-04-03T07:43:44.283242",
+      "last_checked": "2026-04-07T07:41:43.267426",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ea01943e5d8344b0e3815cf909c2ae86\"",
       "file_path": "documentation/CoreWLAN/cwinterface/scanfornetworks-withname.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/scanfornetworks(withssid:).json": {
       "hash": "45dad7df021edd783d8ab432a6168dfc32b299f4bdaefabcc472ff601799c3bc",
-      "last_checked": "2026-04-03T07:43:44.420315",
+      "last_checked": "2026-04-07T07:41:43.398441",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f70e304d578d7832a7d0f35ad40b6a39\"",
       "file_path": "documentation/CoreWLAN/cwinterface/scanfornetworks-withssid.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/init(interfacename:).json": {
       "hash": "e230d1227bedd64cff79c753353f45d02560ba2e69a45443e6d7fc7b1b6a8096",
-      "last_checked": "2026-04-03T07:43:44.547727",
+      "last_checked": "2026-04-07T07:41:43.553979",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d7683a3173bf36cec6c6709ec8c1e0df\"",
       "file_path": "documentation/CoreWLAN/cwinterface/init-interfacename.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/init(name:).json": {
       "hash": "cbedab56dcab421867fe25ab39c1ce59bda889c1f0b88c0ffcfcbff70406bb05",
-      "last_checked": "2026-04-03T07:43:44.684767",
+      "last_checked": "2026-04-07T07:41:43.662681",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"93bf7dd88877f1954bab0e6a8e01835a\"",
       "file_path": "documentation/CoreWLAN/cwinterface/init-name.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/interfacenames().json": {
       "hash": "6efc55611035331e63174b2f9b07ad65dd2e037216027e255ff4b2490e87434d",
-      "last_checked": "2026-04-03T07:43:44.825549",
+      "last_checked": "2026-04-07T07:41:43.793159",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d5e6a582afe80ecc14a9bd232aa4d157\"",
       "file_path": "documentation/CoreWLAN/cwinterface/interfacenames.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/disassociate().json": {
       "hash": "1e43282817d8c19c82b1814d3d53a761a5a3673bea36eccbecafa92e126ee1fd",
-      "last_checked": "2026-04-03T07:43:44.967035",
+      "last_checked": "2026-04-07T07:41:43.960672",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"480daa108655f7cebfae6b4a503651e6\"",
       "file_path": "documentation/CoreWLAN/cwinterface/disassociate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/startibssmode(withssid:security:channel:password:).json": {
       "hash": "3c2c9dd5f66bae6b43d1dca6597d60c9455f0b3861ebbc75e7b6f3821ea0026b",
-      "last_checked": "2026-04-03T07:43:45.108292",
+      "last_checked": "2026-04-07T07:41:44.080980",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"8d93e8238e3c051c27b308a3364b693b\"",
       "file_path": "documentation/CoreWLAN/cwinterface/startibssmode-withssidsecuritychannelpassword.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/commitconfiguration(_:authorization:).json": {
       "hash": "4b9e7e4b86b2a79757b976b9e047ae5d86fa0f66c6446b10485db620148f44d0",
-      "last_checked": "2026-04-03T07:43:45.256675",
+      "last_checked": "2026-04-07T07:41:44.260799",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5db49bf64dfd5d0a73dc455be4cf0d33\"",
       "file_path": "documentation/CoreWLAN/cwinterface/commitconfiguration-authorization.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/associate(toenterprisenetwork:identity:username:password:).json": {
       "hash": "212cca088a18b3e0a56d273973a0a46cadb153794c769382814e582069e89604",
-      "last_checked": "2026-04-03T07:43:45.389343",
+      "last_checked": "2026-04-07T07:41:44.444628",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2ea34b12d7b8b81b0097456dcc455d51\"",
       "file_path": "documentation/CoreWLAN/cwinterface/associate-toenterprisenetworkidentityusernamepassword.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/associate(to:password:).json": {
       "hash": "e756dea7b5d32a03756dd4c0c073ca8f341c5b5bf3f78891e19ce7527d92e4de",
-      "last_checked": "2026-04-03T07:43:45.526651",
+      "last_checked": "2026-04-07T07:41:44.608543",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7e885592d8b8b5fa42c7b9d8a4cb5075\"",
       "file_path": "documentation/CoreWLAN/cwinterface/associate-topassword.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/interfacename.json": {
       "hash": "4ce3b47f971896c9d62cac12a82a3a5936c5b1f517fbd86fc9dbec8430fc125e",
-      "last_checked": "2026-04-03T07:43:45.707934",
+      "last_checked": "2026-04-07T07:41:44.782337",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7545221280e6ee85da13a1e20d619ce5\"",
       "file_path": "documentation/CoreWLAN/cwinterface/interfacename.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/activephymode().json": {
       "hash": "344e913af7c51f97a4e2263834fd064cb2d62a9b771cfe1acfe912806b8a2718",
-      "last_checked": "2026-04-03T07:43:45.852424",
+      "last_checked": "2026-04-07T07:41:44.895153",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f4940d492cf3064a3516897b8de46cc0\"",
       "file_path": "documentation/CoreWLAN/cwinterface/activephymode.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/bssid().json": {
       "hash": "cf88e5afa1d904777dcaf25c17b8bf94447c3a3c4918e836b3f8f12ee536762e",
-      "last_checked": "2026-04-03T07:43:46.027388",
+      "last_checked": "2026-04-07T07:41:45.075153",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"85a6cb3b624968d07fd8ad82e6663d80\"",
       "file_path": "documentation/CoreWLAN/cwinterface/bssid.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/cachedscanresults().json": {
       "hash": "bfa541604078b05945fbb94be166f9b1234812fec26306f951ca2c460d616c61",
-      "last_checked": "2026-04-03T07:43:46.179333",
+      "last_checked": "2026-04-07T07:41:45.204398",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"53515c8390a0f510fb8bd4151f48a579\"",
       "file_path": "documentation/CoreWLAN/cwinterface/cachedscanresults.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/configuration().json": {
       "hash": "2b9012115e737532cd9b8f3884113d0be152d99a6a6183b96cd59717baf24a28",
-      "last_checked": "2026-04-03T07:43:46.311831",
+      "last_checked": "2026-04-07T07:41:45.338283",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"65e5419624e65ab79176661e351eb33c\"",
       "file_path": "documentation/CoreWLAN/cwinterface/configuration.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/countrycode().json": {
       "hash": "0c6c9874406e2d13db81a90c23972fa45a2fab0be75123d4f3493a84590027bc",
-      "last_checked": "2026-04-03T07:43:46.461948",
+      "last_checked": "2026-04-07T07:41:45.520871",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"8cdb47727e8039f70c3548fb61858927\"",
       "file_path": "documentation/CoreWLAN/cwinterface/countrycode.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/hardwareaddress().json": {
       "hash": "0663ec215ca6efd0c919b08ec39e91fda07bcb722afb3d426765a0e616e0ce61",
-      "last_checked": "2026-04-03T07:43:46.607437",
+      "last_checked": "2026-04-07T07:41:45.690108",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c03d80f699d87c85c5c782d7537b6426\"",
       "file_path": "documentation/CoreWLAN/cwinterface/hardwareaddress.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/interfacemode().json": {
       "hash": "d20333ffa8e7817a9a6fed8f427663da067cb5ab5ff9f67b9b7179536c83d239",
-      "last_checked": "2026-04-03T07:43:46.754185",
+      "last_checked": "2026-04-07T07:41:45.815509",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"347451804d5ee5060c15a7f7e4dc5bb0\"",
       "file_path": "documentation/CoreWLAN/cwinterface/interfacemode.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/noisemeasurement().json": {
       "hash": "00d752f7d154fc6b794d111628b8afa7789c2e4cbc5239ee26fb606b3bf18e8b",
-      "last_checked": "2026-04-03T07:43:46.909721",
+      "last_checked": "2026-04-07T07:41:45.946826",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d4f8a97e2122ebe26d55c79e77c84938\"",
       "file_path": "documentation/CoreWLAN/cwinterface/noisemeasurement.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/poweron().json": {
       "hash": "6fee43a0b03503090248848096bd2ecb4bdb104a4f9cbed20c55c2f6137dfd2c",
-      "last_checked": "2026-04-03T07:43:47.036178",
+      "last_checked": "2026-04-07T07:41:46.073214",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"cd604d7741afc958ea880f7f3aa7aca4\"",
       "file_path": "documentation/CoreWLAN/cwinterface/poweron.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/rssivalue().json": {
       "hash": "05a797d8bfb98f6cdd4190d5d37e8e35696f85281d1cd360d27b91447d6ff76f",
-      "last_checked": "2026-04-03T07:43:47.167028",
+      "last_checked": "2026-04-07T07:41:46.200023",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9af1c649161beae66de202c6539d93c6\"",
       "file_path": "documentation/CoreWLAN/cwinterface/rssivalue.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/scanfornetworks(withname:includehidden:).json": {
       "hash": "b9e7b9408346819a053fd3309acb6c9986695262fa8a4503c17cb00e531beec4",
-      "last_checked": "2026-04-03T07:43:47.307069",
+      "last_checked": "2026-04-07T07:41:46.313013",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"01b598c98da0753d7a99e1e4fc594335\"",
       "file_path": "documentation/CoreWLAN/cwinterface/scanfornetworks-withnameincludehidden.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/scanfornetworks(withssid:includehidden:).json": {
       "hash": "b7b6fd7245faa9dbbc8c05de94f229d5eb388c5ea8e47d4bbbea78161e2d5da5",
-      "last_checked": "2026-04-03T07:43:47.436235",
+      "last_checked": "2026-04-07T07:41:46.437166",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"69b7f2e8a38a65c0f408d05372faaa12\"",
       "file_path": "documentation/CoreWLAN/cwinterface/scanfornetworks-withssidincludehidden.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/security().json": {
       "hash": "0789e2e9b7329a1fa2ed3d376dbbbb70bed241c4fb6d02a8ae56ad314b3fc71c",
-      "last_checked": "2026-04-03T07:43:47.569774",
+      "last_checked": "2026-04-07T07:41:46.618138",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c26a7ad01fdc14221728aedab3d03b61\"",
       "file_path": "documentation/CoreWLAN/cwinterface/security.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/serviceactive().json": {
       "hash": "09a9af625f58e1f9ca0190f1f5a87554b08a7a2922b60beec78111db95362742",
-      "last_checked": "2026-04-03T07:43:47.736695",
+      "last_checked": "2026-04-07T07:41:46.773313",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7f147886944adb0bb2e2efcdb1cebfc2\"",
       "file_path": "documentation/CoreWLAN/cwinterface/serviceactive.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/ssid().json": {
       "hash": "07fc4a49f913ed3ba7cd4d22b08905681189dcf5e64e702d2d330e9000fee84e",
-      "last_checked": "2026-04-03T07:43:47.867518",
+      "last_checked": "2026-04-07T07:41:46.917980",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4b752d59fcf4a0513d5aabb4b78629e5\"",
       "file_path": "documentation/CoreWLAN/cwinterface/ssid.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/ssiddata().json": {
       "hash": "43945f0aed66283845faf2881c33c45015579aa287f8a7f0b27367c2e46e6a37",
-      "last_checked": "2026-04-03T07:43:47.995407",
+      "last_checked": "2026-04-07T07:41:47.034039",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"3086f51a43ab5b2d2f92889c69397a9a\"",
       "file_path": "documentation/CoreWLAN/cwinterface/ssiddata.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/supportedwlanchannels().json": {
       "hash": "fef40fb90ed013fd7400a9f8eea3f79dd9941c28ae994e9e34940bb30ffae5db",
-      "last_checked": "2026-04-03T07:43:48.204541",
+      "last_checked": "2026-04-07T07:41:47.192966",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"17da5fec2fc9ca1b0b77db7ccd275536\"",
       "file_path": "documentation/CoreWLAN/cwinterface/supportedwlanchannels.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/transmitpower().json": {
       "hash": "b65364220edd6d78b5012975d818f52399fb851ecc656d889f49a86a453c21cb",
-      "last_checked": "2026-04-03T07:43:48.350226",
+      "last_checked": "2026-04-07T07:41:47.316620",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"27cadf0417ab07cc27d670837de61a9d\"",
       "file_path": "documentation/CoreWLAN/cwinterface/transmitpower.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/transmitrate().json": {
       "hash": "d2f5dece8db23d5445c65c66f5bfd8039f159bbf9aab96265f6484ec744f2550",
-      "last_checked": "2026-04-03T07:43:48.499273",
+      "last_checked": "2026-04-07T07:41:47.431006",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f429209e99e9be74e9b26694b5529522\"",
       "file_path": "documentation/CoreWLAN/cwinterface/transmitrate.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterface/wlanchannel().json": {
       "hash": "b37456bfd5603ec3b497ab8d28f2d87cb4887ecf81e9c4974daad03eb381afd5",
-      "last_checked": "2026-04-03T07:43:48.644912",
+      "last_checked": "2026-04-07T07:41:47.606688",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"04b1354bedc0b280d8671039ac7521ea\"",
       "file_path": "documentation/CoreWLAN/cwinterface/wlanchannel.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration/networkprofiles.json": {
       "hash": "ea6d3cf669f7789a7c7039005238d4073732894bce761e40c06e16b80ad4833f",
-      "last_checked": "2026-04-03T07:43:48.823050",
+      "last_checked": "2026-04-07T07:41:47.810649",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d895871d9ed3e7867a716d1fa37135b9\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration/networkprofiles.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration/rememberjoinednetworks.json": {
       "hash": "1549328b5a003d50e0286d0289232841a242fa439867d3049ac1bca84922c040",
-      "last_checked": "2026-04-03T07:43:48.955588",
+      "last_checked": "2026-04-07T07:41:47.963676",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"60c6ee90ab25a67a9b263728f348c7cb\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration/rememberjoinednetworks.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration/requireadministratorforassociation.json": {
       "hash": "15069fdc15cd1f9703626ae75333b09ba7c71f52f69e389bfd86ffb613b5f8ea",
-      "last_checked": "2026-04-03T07:43:49.104127",
+      "last_checked": "2026-04-07T07:41:48.099651",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b5d81cfd99fc244804e0c6e686e32092\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration/requireadministratorforassociation.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration/requireadministratorforpower.json": {
       "hash": "aaf21602d09c077c0a9dbcc92f722e839644df1b6b109eecf9459ba148c1b475",
-      "last_checked": "2026-04-03T07:43:49.249656",
+      "last_checked": "2026-04-07T07:41:48.235414",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"033a4f6fb709e4a521cf75cd1aa14962\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration/requireadministratorforpower.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutableconfiguration/requireadministratorforibssmode.json": {
       "hash": "509eeda382a28002a78e4527dff7c8ca5069900051694251e2249124726ceb1e",
-      "last_checked": "2026-04-03T07:43:49.385610",
+      "last_checked": "2026-04-07T07:41:48.360363",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d29d6b80af05f0950d815c3b9982ea9f\"",
       "file_path": "documentation/CoreWLAN/cwmutableconfiguration/requireadministratorforibssmode.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutablenetworkprofile/ssiddata.json": {
       "hash": "57cc72ed5ac75229f0ecdfc677aba9c64cdb567eec6ee1f0ca26d5a9b3b98616",
-      "last_checked": "2026-04-03T07:43:49.534081",
+      "last_checked": "2026-04-07T07:41:48.505923",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6a97b950fe1eee2f96b4bd727b7060ff\"",
       "file_path": "documentation/CoreWLAN/cwmutablenetworkprofile/ssiddata.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmutablenetworkprofile/security.json": {
       "hash": "7041c83eb12991aa674ed1c439de5e0583539b5112b67c9da96afc20da9d443d",
-      "last_checked": "2026-04-03T07:43:49.670446",
+      "last_checked": "2026-04-07T07:41:48.625046",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"23b1f838ef3a938f7a9ff1d8e8c2a660\"",
       "file_path": "documentation/CoreWLAN/cwmutablenetworkprofile/security.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/supportssecurity(_:).json": {
       "hash": "3a3f0197173ba85f000c3a713375e432f8857bb2dc476ebbd3c36b441eac73c6",
-      "last_checked": "2026-04-03T07:43:49.824348",
+      "last_checked": "2026-04-07T07:41:48.771770",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e25d59023b0a93ed6a422a8609224d62\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/supportssecurity.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/supportsphymode(_:).json": {
       "hash": "822b9167620186feb3bbf545501d6378da38afc4842cccc5510b8be38ca6d638",
-      "last_checked": "2026-04-03T07:43:49.961975",
+      "last_checked": "2026-04-07T07:41:48.881367",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2a80c1eec0cd0886194f30173bb2a6c7\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/supportsphymode.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/isequal(to:).json": {
       "hash": "a19e0cb9ac066be65671af55e53045d7ebf71b93d48370f0fe5c7a4d6d659c93",
-      "last_checked": "2026-04-03T07:43:50.096857",
+      "last_checked": "2026-04-07T07:41:49.007181",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"43214a4acefdf4ad442f00e012059aa5\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/isequal-to.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/beaconinterval.json": {
       "hash": "69883ee11cd7a699a857f3560433e189aff7b85dd9a7946573e8dfd14720935b",
-      "last_checked": "2026-04-03T07:43:50.246518",
+      "last_checked": "2026-04-07T07:41:49.153127",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"3fe616ebf6270a9cd6a2d14585b5ad6a\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/beaconinterval.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/bssid.json": {
       "hash": "f3642cba87e3f01fe493f010dd8362089eb87ae9c5bbf3e15d20ce4bef148e75",
-      "last_checked": "2026-04-03T07:43:50.391228",
+      "last_checked": "2026-04-07T07:41:49.288824",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7b782502f0a801e66b4013a927927833\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/bssid.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/countrycode.json": {
       "hash": "f6d9fc6fb8d5aba0439c39b8a82b881b1bd676952e9b468441b2d22a8e9d589c",
-      "last_checked": "2026-04-03T07:43:50.511577",
+      "last_checked": "2026-04-07T07:41:49.427535",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4ba995f7d8f009dea7c8993f30b1acda\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/countrycode.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/ibss.json": {
       "hash": "2a0b5d6633350a19ef49aa32cc090960681bbd599183aa9ddb0d6a594c0d7b07",
-      "last_checked": "2026-04-03T07:43:50.647600",
+      "last_checked": "2026-04-07T07:41:49.555352",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2d110a913c3b8a92bd2b94d5cdd92bb8\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/ibss.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/informationelementdata.json": {
       "hash": "db05690f0f7b8211a621898cf47731cc49800ea0c33395924bb11d46a8210bd4",
-      "last_checked": "2026-04-03T07:43:50.769683",
+      "last_checked": "2026-04-07T07:41:49.688285",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0a7e2610bf70027521604aec461ab1e0\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/informationelementdata.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/noisemeasurement.json": {
       "hash": "2ff5cf62b49d58957bcb89e4846577ba2dab6213eb8b0139c45eb1a75f2c22f4",
-      "last_checked": "2026-04-03T07:43:50.900508",
+      "last_checked": "2026-04-07T07:41:49.814328",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"3faf4c7a1b97ed22f3baa59a9bd2e4f7\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/noisemeasurement.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/rssivalue.json": {
       "hash": "82f509c5aa6242d11b5e6c501d1c518b2ebbcf8b3f641f136d5e1d357df7922a",
-      "last_checked": "2026-04-03T07:43:51.062540",
+      "last_checked": "2026-04-07T07:41:49.957731",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"84a10ad96959ab090432c7443a344e29\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/rssivalue.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/ssid.json": {
       "hash": "98c5a983d4d8d571d9a13a09135b985a2161c97f3f5165be4b8b341513a8a74d",
-      "last_checked": "2026-04-03T07:43:51.205522",
+      "last_checked": "2026-04-07T07:41:50.088679",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"19a5f6aaec6c54cc64b1a515c0f9804f\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/ssid.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/ssiddata.json": {
       "hash": "6d97befa3f58852780dc50f7e09dc68b44530a8085eaa0b2d07321f24c2990dc",
-      "last_checked": "2026-04-03T07:43:51.355070",
+      "last_checked": "2026-04-07T07:41:50.259962",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f03aea59dcc902b1d10ef745e5b8a7b0\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/ssiddata.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetwork/wlanchannel.json": {
       "hash": "7227b8c139a564a392f26f6431905d840848cb5e76be00d794bbde2ec2b54702",
-      "last_checked": "2026-04-03T07:43:51.485662",
+      "last_checked": "2026-04-07T07:41:50.418416",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"99080c520c2268ead2da7795a8fb1c54\"",
       "file_path": "documentation/CoreWLAN/cwnetwork/wlanchannel.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/init().json": {
       "hash": "9822f95320238bf9d2a73b6c0ede5f87ab2e1b3def73a9701e8a9535a4219d9f",
-      "last_checked": "2026-04-03T07:43:51.617112",
+      "last_checked": "2026-04-07T07:41:50.555094",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"cca9033abf6caeb70fe5ec67416f18df\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/init.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/init(networkprofile:).json": {
       "hash": "8cfcb4cfc7de8260d6154fde4670efbef3a62813a92c59ffe49b180b872e5600",
-      "last_checked": "2026-04-03T07:43:51.742234",
+      "last_checked": "2026-04-07T07:41:50.701944",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"db1b9cd326d31800ad9e8fb65e971f91\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/init-networkprofile.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/isequal(to:).json": {
       "hash": "8b236c738194e6989da46025d62a5cd59edeec8250a6415de990c0f2a612fd32",
-      "last_checked": "2026-04-03T07:43:51.887243",
+      "last_checked": "2026-04-07T07:41:50.832405",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2ccc87b5c636cf2fb29662e85cb43834\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/isequal-to.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/security.json": {
       "hash": "cff0f2c8c58edf8997e8bc12958c43a7b311aa7d6ebb0ea6c4319ff1229e8040",
-      "last_checked": "2026-04-03T07:43:52.016885",
+      "last_checked": "2026-04-07T07:41:50.966080",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7045959582d063a3aa7551f2383b4b15\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/security.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/ssid.json": {
       "hash": "52cad262706ca771b7b209866f08a6addffd693a8cbb136ae01071f0b76d17cc",
-      "last_checked": "2026-04-03T07:43:52.185874",
+      "last_checked": "2026-04-07T07:41:51.135009",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"584fc90092e21fd6ad1fe21cc8502c1a\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/ssid.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwnetworkprofile/ssiddata.json": {
       "hash": "03ec0d289df2d8fb12b275fb7835b70459ffa8a2d8dea40d6d974737ee1ab84d",
-      "last_checked": "2026-04-03T07:43:52.310776",
+      "last_checked": "2026-04-07T07:41:51.249217",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"32c54940e29f7c5463494d1cf1f493dc\"",
       "file_path": "documentation/CoreWLAN/cwnetworkprofile/ssiddata.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/shared().json": {
       "hash": "733d0ff3c9f8aae7144e61b274788f78f4d30aa90c477557ee4b16dc495d7aea",
-      "last_checked": "2026-04-03T07:43:52.461770",
+      "last_checked": "2026-04-07T07:41:51.368865",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"150abdb3e99a72ffacfadf484d3ce0e0\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/shared.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/init().json": {
       "hash": "7ad02659114fe46052fdf9d4c905f308ba6c053d9f25876d43002127ccc2d8d5",
-      "last_checked": "2026-04-03T07:43:52.598848",
+      "last_checked": "2026-04-07T07:41:51.502008",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d0c01b137a8d557e72cab258ac3eca8f\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/init.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/delegate.json": {
       "hash": "90caccebaea1d141f7285c71cd5f7c475c0f2117f32115cf844fbc05dfccaff7",
-      "last_checked": "2026-04-03T07:43:52.751876",
+      "last_checked": "2026-04-07T07:41:51.647379",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"33c5faacddb04f65dcb97206b0b16487\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/delegate.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/interface().json": {
       "hash": "18414d84d5519bf027500814b351cba864cdd476057ede43b3893cfd3552183e",
-      "last_checked": "2026-04-03T07:43:52.882971",
+      "last_checked": "2026-04-07T07:41:51.791919",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1111f0fb21bb31d671a0db94f53c60a0\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/interface.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/interface(withname:).json": {
       "hash": "e62cba389dc19301bbb60a30a4bd3abd1a56273e701ff70201cb65537d3972a8",
-      "last_checked": "2026-04-03T07:43:53.022683",
+      "last_checked": "2026-04-07T07:41:51.921842",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c609ec95296e763636f3babec9643302\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/interface-withname.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/interfaces().json": {
       "hash": "7042ff2a568d934e8489f857806f33253066846c35826e6ff8990130dab5b4ef",
-      "last_checked": "2026-04-03T07:43:53.174592",
+      "last_checked": "2026-04-07T07:41:52.050432",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"dac676d84fd589725632bcf182860689\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/interfaces.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/interfacenames()-swift.type.method.json": {
       "hash": "63460b1507470abf12728d212358b864185cd7c867a90d99a806238887efe628",
-      "last_checked": "2026-04-03T07:43:53.315970",
+      "last_checked": "2026-04-07T07:41:52.187094",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"121fe4edc512b9407ef586020d4b7014\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/interfacenames-swifttypemethod.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/startmonitoringevent(with:).json": {
       "hash": "27e51ae84f3d90d78929a705def1ec63437ac34aacfad74705fa2754fa60c7c5",
-      "last_checked": "2026-04-03T07:43:53.466125",
+      "last_checked": "2026-04-07T07:41:52.327393",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c85dfcfcdb8ed4e890767ee5b4a963ee\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/startmonitoringevent-with.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/stopmonitoringallevents().json": {
       "hash": "677c002707fbcd549d3ff06e076a7042d9b9ed3f794ef39fb471717307dc2111",
-      "last_checked": "2026-04-03T07:43:53.782332",
+      "last_checked": "2026-04-07T07:41:52.444683",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e850da4fe04048c5afa50580899661eb\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/stopmonitoringallevents.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/stopmonitoringevent(with:).json": {
       "hash": "3c71b993bb3fa19ff3a2834a34f13a7e2b30f292b9b79901ae6ad6f9587cb538",
-      "last_checked": "2026-04-03T07:43:53.924560",
+      "last_checked": "2026-04-07T07:41:52.579874",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"aaefdd5a13164dfb701954fca6e992d4\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/stopmonitoringevent-with.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwwificlient/interfacenames()-swift.method.json": {
       "hash": "cd44e8c985f0818c5f152a7beb7aaad7a2657380062008dc5a726aba59fbf142",
-      "last_checked": "2026-04-03T07:43:54.244437",
+      "last_checked": "2026-04-07T07:41:52.700866",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"933a44d1d5aa0ad234c36e4f08ef2da7\"",
       "file_path": "documentation/CoreWLAN/cwwificlient/interfacenames-swiftmethod.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/bssiddidchangeforwifiinterface(withname:).json": {
       "hash": "3a101891bdec6b7002481a3c64529145d6ccaa778d2d5104716a5a2e5a85e486",
-      "last_checked": "2026-04-03T07:43:54.568387",
+      "last_checked": "2026-04-07T07:41:52.829614",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1b2508ecee0302bed3ab9a91d793531f\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/bssiddidchangeforwifiinterface-withname.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/clientconnectioninterrupted().json": {
       "hash": "858190100c8cf47dacc4d18e36293551778fada062056b3d576399b0b3a192b4",
-      "last_checked": "2026-04-03T07:43:54.885549",
+      "last_checked": "2026-04-07T07:41:52.996794",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9f56735d140e8a3d4de75e7bed474aac\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/clientconnectioninterrupted.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/clientconnectioninvalidated().json": {
       "hash": "07600adf54c97584aceea63bf7a31a235a754d51c1d43216f4c8e3f1fdb66c81",
-      "last_checked": "2026-04-03T07:43:55.076962",
+      "last_checked": "2026-04-07T07:41:53.147298",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"58dfc020b24170ff64f2bb5bab79f70f\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/clientconnectioninvalidated.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/countrycodedidchangeforwifiinterface(withname:).json": {
       "hash": "da699da3d7d1b92b6625b6e5c7afdb2c222b049db88a95d77e70f188cbfc223a",
-      "last_checked": "2026-04-03T07:43:55.392863",
+      "last_checked": "2026-04-07T07:41:53.320855",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4dca33c9faa2ada76cc64a23dc89f0a0\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/countrycodedidchangeforwifiinterface-withname.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/linkdidchangeforwifiinterface(withname:).json": {
       "hash": "7b176f7db1a182dbdc0fd2932b3f5b158a6f971ed89e50ac25b0116adc92e43b",
-      "last_checked": "2026-04-03T07:43:55.718725",
+      "last_checked": "2026-04-07T07:41:53.490750",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4bee7180565aa670bdc622da95e89a3a\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/linkdidchangeforwifiinterface-withname.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/linkqualitydidchangeforwifiinterface(withname:rssi:transmitrate:).json": {
       "hash": "03f2d8c4e53516380e0867311a09360b0fdb400cb1d9b5f9c7cfcd586f9ace4c",
-      "last_checked": "2026-04-03T07:43:56.041498",
+      "last_checked": "2026-04-07T07:41:53.625375",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"15d4d6a85e203d556593e8dc64ed9b35\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/linkqualitydidchangeforwifiinterface-withnamerssitransmitrate.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/modedidchangeforwifiinterface(withname:).json": {
       "hash": "90ce466be22d463a06f8634bfc425f58f80656fd966a979b8189de99d95cb6e2",
-      "last_checked": "2026-04-03T07:43:56.365173",
+      "last_checked": "2026-04-07T07:41:53.740236",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f91dbe1bf23c514f1459f1c96ada4a70\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/modedidchangeforwifiinterface-withname.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/powerstatedidchangeforwifiinterface(withname:).json": {
       "hash": "b619e5576cb989bad70dfc0e11b64d26448f0d977170a2651480a8642beed705",
-      "last_checked": "2026-04-03T07:43:56.689295",
+      "last_checked": "2026-04-07T07:41:53.862766",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f8d9c5e6e1772f17b67e01bcd13aa7d0\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/powerstatedidchangeforwifiinterface-withname.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/scancacheupdatedforwifiinterface(withname:).json": {
       "hash": "01da31cf63cf46c07343dc1962f465728b3936d088e45efaf775470b3f554461",
-      "last_checked": "2026-04-03T07:43:56.868950",
+      "last_checked": "2026-04-07T07:41:53.990049",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"575f278b45dcbde182cc9848c060ceec\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/scancacheupdatedforwifiinterface-withname.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventdelegate/ssiddidchangeforwifiinterface(withname:).json": {
       "hash": "0d267fc92db78f37503cc0d429aa727aa94dacf0690d9eb7f9d68a8e8ba4bf43",
-      "last_checked": "2026-04-03T07:43:57.209547",
+      "last_checked": "2026-04-07T07:41:54.162091",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"02f07ca8a525394bc97461708766791c\"",
       "file_path": "documentation/CoreWLAN/cweventdelegate/ssiddidchangeforwifiinterface-withname.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/global-constants.json": {
       "hash": "9085d4217b2a2cebad2af098ef9679fd544d9a92eaa52935fd4920d5a1c561ae",
-      "last_checked": "2026-04-03T07:43:57.514969",
+      "last_checked": "2026-04-07T07:41:54.293884",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c3b8009f751baf11597234819140c951\"",
       "file_path": "documentation/CoreWLAN/global-constants.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband.json": {
       "hash": "9e484ae050ea0c9e4c3a1a43d85f8fc3e7354d92c14347ab12c19692c365eda5",
-      "last_checked": "2026-04-03T07:43:57.710877",
+      "last_checked": "2026-04-07T07:41:54.409920",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"99ab0052c96a99a115c7e13a7a056ea9\"",
       "file_path": "documentation/CoreWLAN/cwchannelband.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth.json": {
       "hash": "d33cd3e6a71a5b2e62dacfb1055c5e6dc8f5bf5ad65850febd377717c79464b1",
-      "last_checked": "2026-04-03T07:43:57.896697",
+      "last_checked": "2026-04-07T07:41:54.537998",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f09c5243dcd20ad6cb7b75fc779b6111\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr.json": {
       "hash": "53b3966f1368dcf20921a422e14c67be13b1b03bc46c9d2c2e103e27c06e4047",
-      "last_checked": "2026-04-03T07:43:58.213834",
+      "last_checked": "2026-04-07T07:41:54.671233",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d2f966276e13f9fe83f7ff14cb78b9c2\"",
       "file_path": "documentation/CoreWLAN/cwerr.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwibssmodesecurity.json": {
       "hash": "7aee5165eb04b6b67e7327a7e175b571d0b31ccb6cb50ad56ce6e5524e56cb7a",
-      "last_checked": "2026-04-03T07:43:58.387166",
+      "last_checked": "2026-04-07T07:41:54.789635",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e3ea206d1dd44b9a5259cbb29b3de10f\"",
       "file_path": "documentation/CoreWLAN/cwibssmodesecurity.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode.json": {
       "hash": "30ae53669da2e5d36e5198ab421ec680b40f71a70631f719056cd9e490e450f8",
-      "last_checked": "2026-04-03T07:43:58.709747",
+      "last_checked": "2026-04-07T07:41:54.935327",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"69bcc6ceb4b80b540524262ecd6c6b9e\"",
       "file_path": "documentation/CoreWLAN/cwphymode.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity.json": {
       "hash": "fe2f537b602151f19d28186ebcc6390b69bae0754aa5f727da4371ffe028a4c4",
-      "last_checked": "2026-04-03T07:43:58.898464",
+      "last_checked": "2026-04-07T07:41:55.068989",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1c3386a23e81dfc85eed4d0753bb30b5\"",
       "file_path": "documentation/CoreWLAN/cwsecurity.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaincopyeapidentitylist(_:).json": {
       "hash": "6520e0c74c89055aac50447aba37de3ea98ec69f3394e9a29f97af34f9d9a8d1",
-      "last_checked": "2026-04-03T07:43:59.082032",
+      "last_checked": "2026-04-07T07:41:55.207169",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7f05326ce0d5f519503ce292ec441450\"",
       "file_path": "documentation/CoreWLAN/cwkeychaincopyeapidentitylist.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwmergenetworks(_:).json": {
       "hash": "3dff47c7ad6effa77e35e5cd8d6dd67b982ffef06d15fde2d96509f24f24d87f",
-      "last_checked": "2026-04-03T07:43:59.252227",
+      "last_checked": "2026-04-07T07:41:55.340414",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ca4c4c3f1c30e0c03221af427a83d347\"",
       "file_path": "documentation/CoreWLAN/cwmergenetworks.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype.json": {
       "hash": "9d8273b428c8dc223fbbf9f58efb6c05513e4a28b885e1886f441668b252045e",
-      "last_checked": "2026-04-03T07:43:59.568951",
+      "last_checked": "2026-04-07T07:41:55.455620",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e9b7ca42225d3c4b5436eb68c1f4747f\"",
       "file_path": "documentation/CoreWLAN/cweventtype.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode.json": {
       "hash": "09c89a01142ae85a8a99397610f4903b922242627edc46870ce08f5225b326ff",
-      "last_checked": "2026-04-03T07:43:59.886849",
+      "last_checked": "2026-04-07T07:41:55.585992",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0d3cccfbd3b6f5488f0f9e20aed17871\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindomain.json": {
       "hash": "08dea7054cdb4efd61711fbfecf0b1b64c9c8265dfe4dbeb0af74c512020e29c",
-      "last_checked": "2026-04-03T07:44:00.072851",
+      "last_checked": "2026-04-07T07:41:55.720030",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"71cd42e83146b1e5a5feba32d785b90c\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindomain.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaincopywifieapidentity(_:_:_:).json": {
       "hash": "97b4e760b5d04a65132a7708d9054794adbef8998f607ebc0858e4f11a37d97b",
-      "last_checked": "2026-04-03T07:44:00.399646",
+      "last_checked": "2026-04-07T07:41:55.829858",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"654729fb5d694098adf6a83eab64fcce\"",
       "file_path": "documentation/CoreWLAN/cwkeychaincopywifieapidentity.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindeletewifieapusernameandpassword(_:_:).json": {
       "hash": "0352e89b74b827eef7706f687fac84d97f861f6b510b21b76462cf7170279719",
-      "last_checked": "2026-04-03T07:44:00.697415",
+      "last_checked": "2026-04-07T07:41:55.966344",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"68c1d14cae805383e855d64430172dd7\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindeletewifieapusernameandpassword.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindeletewifipassword(_:_:).json": {
       "hash": "71f7a998c004e45d33f76131b55d2e85708cff414a5486b6b9df2228177aa6ed",
-      "last_checked": "2026-04-03T07:44:01.025466",
+      "last_checked": "2026-04-07T07:41:56.095329",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4e6ab5edc2cb156d49d426a82c0c200b\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindeletewifipassword.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychainfindwifieapusernameandpassword(_:_:_:_:).json": {
       "hash": "dc3a465247cc3dd0c1b799580fc0889a1b5ed9b9c080d8a72d57c918c5a6d750",
-      "last_checked": "2026-04-03T07:44:01.203314",
+      "last_checked": "2026-04-07T07:41:56.245713",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0befb5b75252e689a6f40e5882580333\"",
       "file_path": "documentation/CoreWLAN/cwkeychainfindwifieapusernameandpassword.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychainfindwifipassword(_:_:_:).json": {
       "hash": "a9592714263067433bfd2b00cfe097e253f6d38d32583e0b589582735c050ba1",
-      "last_checked": "2026-04-03T07:44:01.396675",
+      "last_checked": "2026-04-07T07:41:56.391102",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"465e73f7d90736ae30f536a13c31437a\"",
       "file_path": "documentation/CoreWLAN/cwkeychainfindwifipassword.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychainsetwifieapidentity(_:_:_:).json": {
       "hash": "f91dbd161f29e88247691b6de36ca47cf72d0230e56326e9acd718bd01cd1cfb",
-      "last_checked": "2026-04-03T07:44:01.584778",
+      "last_checked": "2026-04-07T07:41:56.518971",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ca57a361a09cd6cdc4cbb8818d6d2b16\"",
       "file_path": "documentation/CoreWLAN/cwkeychainsetwifieapidentity.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychainsetwifieapusernameandpassword(_:_:_:_:).json": {
       "hash": "c88d13779afa51057e51f20d7a1c0168a766caf405e24c9bcd535f07c2ed13c0",
-      "last_checked": "2026-04-03T07:44:01.771604",
+      "last_checked": "2026-04-07T07:41:56.647115",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ee86ffdc9a2aab0e30bb263bc3610f7c\"",
       "file_path": "documentation/CoreWLAN/cwkeychainsetwifieapusernameandpassword.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychainsetwifipassword(_:_:_:).json": {
       "hash": "b24436c1f54046383c422b22e0492c07f0cb23ac4379b4fd010f718477082d7d",
-      "last_checked": "2026-04-03T07:44:01.951590",
+      "last_checked": "2026-04-07T07:41:56.781454",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"fc7c26657c225246c7d84624e722d766\"",
       "file_path": "documentation/CoreWLAN/cwkeychainsetwifipassword.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags/unicast.json": {
       "hash": "a904174c4fb49e0da4ff0daa2ecf88940065114aa9e64808a3b417a8ba8ad0f9",
-      "last_checked": "2026-04-03T07:44:02.123341",
+      "last_checked": "2026-04-07T07:41:56.910554",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2e971b4bd83bf0e529613c4361e49657\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags/unicast.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags/multicast.json": {
       "hash": "e3f9369d80bd5fbc248a86c15fdc7f899cef720e7e1c9a59f70c504ec237af82",
-      "last_checked": "2026-04-03T07:44:02.298612",
+      "last_checked": "2026-04-07T07:41:57.024397",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"06a7672310d9ebe6e150b7b71fa0bb3b\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags/multicast.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags/tx.json": {
       "hash": "7818d806739cdfa035130826960fcbd2a402973e8baccb8579fd0ab749a71f07",
-      "last_checked": "2026-04-03T07:44:02.480527",
+      "last_checked": "2026-04-07T07:41:57.144251",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b801fd637e14efca47e2c2a4738d1b76\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags/tx.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags/rx.json": {
       "hash": "e1d64e0cc262652fb32b527eb3cb561b3d8bedbf2a4ccd386b7a1fa2b39d7cbe",
-      "last_checked": "2026-04-03T07:44:02.664045",
+      "last_checked": "2026-04-07T07:41:57.297331",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f93d2bb8ed6931b1432559fa0497c537\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags/rx.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwcipherkeyflags/init(rawvalue:).json": {
       "hash": "d6e3f18bab98f2ae0d898704b8b6bed684f4a2c36e8f572571b4152e64a757be",
-      "last_checked": "2026-04-03T07:44:02.970245",
+      "last_checked": "2026-04-07T07:41:57.425198",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"8d322fe349215e34d8cb16d7f3b0a43d\"",
       "file_path": "documentation/CoreWLAN/cwcipherkeyflags/init-rawvalue.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerrordomain.json": {
       "hash": "4d873bc0f45d3c942220bd6bd0ec94e304f83d5fc88a18accb77901a5c604602",
-      "last_checked": "2026-04-03T07:44:03.155926",
+      "last_checked": "2026-04-07T07:41:57.544352",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f7ecb0cce081d73d89c2fe0732e4281a\"",
       "file_path": "documentation/CoreWLAN/cwerrordomain.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwlinkqualitynotificationrssikey.json": {
       "hash": "ed97e4d971a81964dc15e0957495f421631aa39c53ed374f26233b4d17cb4b7a",
-      "last_checked": "2026-04-03T07:44:03.353111",
+      "last_checked": "2026-04-07T07:41:57.674084",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1c9ee5043f324d1c13e38d5c85d46e13\"",
       "file_path": "documentation/CoreWLAN/cwlinkqualitynotificationrssikey.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwlinkqualitynotificationtransmitratekey.json": {
       "hash": "af2fc9fc82b465d4c0fd7293e11df2e61d547fc0cc8a6f51e65f1eb3b24980cd",
-      "last_checked": "2026-04-03T07:44:03.673470",
+      "last_checked": "2026-04-07T07:41:57.839884",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e0b71822450e72360381d630c2779b6b\"",
       "file_path": "documentation/CoreWLAN/cwlinkqualitynotificationtransmitratekey.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband/bandunknown.json": {
       "hash": "0ed929598d4f071e0d05be0aed640ba639d6578cce457833d5ff028fe589ca95",
-      "last_checked": "2026-04-03T07:44:03.968609",
+      "last_checked": "2026-04-07T07:41:57.967395",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"acd7bcd10d0103320ce62713598b8e3c\"",
       "file_path": "documentation/CoreWLAN/cwchannelband/bandunknown.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband/band2ghz.json": {
       "hash": "801c5597ff0ab60047bb8af7ba5c7085b93fd6f7ba1151f418178ee16182ea8b",
-      "last_checked": "2026-04-03T07:44:04.272490",
+      "last_checked": "2026-04-07T07:41:58.084699",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c4992b4e1df3cf01473e621091cfdc18\"",
       "file_path": "documentation/CoreWLAN/cwchannelband/band2ghz.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband/band5ghz.json": {
       "hash": "d5c5a3bf152e27831966c66c9ad3fa203d67ef1a3b07138d024a783e33070b02",
-      "last_checked": "2026-04-03T07:44:04.456958",
+      "last_checked": "2026-04-07T07:41:58.200530",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"74df599929dfe9eee11175585eb677c1\"",
       "file_path": "documentation/CoreWLAN/cwchannelband/band5ghz.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband/band6ghz.json": {
       "hash": "e0a601b8f1bc4585e6ea17479d547f5cfce8ae8c2c5d4eb4b86b5b3a5e89e941",
-      "last_checked": "2026-04-03T07:44:04.653613",
+      "last_checked": "2026-04-07T07:41:58.333230",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b9bf2e2736108db24c11034278a7e895\"",
       "file_path": "documentation/CoreWLAN/cwchannelband/band6ghz.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelband/init(rawvalue:).json": {
       "hash": "29786a5aa24b3fee2b46d392893da077687eff1e9d7633e7cd7e47871b97089b",
-      "last_checked": "2026-04-03T07:44:04.834973",
+      "last_checked": "2026-04-07T07:41:58.469440",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d5ddf098a68447be0afeef9308249108\"",
       "file_path": "documentation/CoreWLAN/cwchannelband/init-rawvalue.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/widthunknown.json": {
       "hash": "c6f2efa6423cec8f20b13600ece839bd35fb4dfb856da84e55a20ba2657d193e",
-      "last_checked": "2026-04-03T07:44:05.034812",
+      "last_checked": "2026-04-07T07:41:58.594797",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"01a9e211045a1913a5bc0260985ff682\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/widthunknown.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/width20mhz.json": {
       "hash": "7e57bbfd4e5568c173ba88b95eff9eae814c9f2e062f42ca939e4a1e80b48a2d",
-      "last_checked": "2026-04-03T07:44:05.354370",
+      "last_checked": "2026-04-07T07:41:58.737765",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"256fb3573125296970237c0e76623e84\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/width20mhz.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/width40mhz.json": {
       "hash": "c622e227eb1f69fd6ae48a5c60ff6adef72bd59168bf039f48cfc41320f2a83b",
-      "last_checked": "2026-04-03T07:44:05.668553",
+      "last_checked": "2026-04-07T07:41:58.874983",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"590852541fa956f5d5a2d88d08211675\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/width40mhz.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/width80mhz.json": {
       "hash": "2dfffa34eb2f42f9a817a84adb49803b2476f8a9add9c1ce0f91c4f5c1de4770",
-      "last_checked": "2026-04-03T07:44:05.847773",
+      "last_checked": "2026-04-07T07:41:59.005104",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"81aaba7307637d0fbde32e387adfa5cb\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/width80mhz.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/width160mhz.json": {
       "hash": "24c066976d0392f78163894373662ef4f82e9396000e2a9f1e04a66e4600c371",
-      "last_checked": "2026-04-03T07:44:06.161598",
+      "last_checked": "2026-04-07T07:41:59.159118",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ed97ee39259e033e3e7cef44c5220b5c\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/width160mhz.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwchannelwidth/init(rawvalue:).json": {
       "hash": "a86e688bfd5218279180896c761f2651740d6417bd831dc8e2a8d426b084b574",
-      "last_checked": "2026-04-03T07:44:06.343611",
+      "last_checked": "2026-04-07T07:41:59.306860",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"a73dc629b49f76e87f59efb9250fa7eb\"",
       "file_path": "documentation/CoreWLAN/cwchannelwidth/init-rawvalue.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwapfullerr.json": {
       "hash": "d35593d86e8cc675ed61411cc04ea88caed85faadc9033c813c893329d1b86d6",
-      "last_checked": "2026-04-03T07:44:06.520959",
+      "last_checked": "2026-04-07T07:41:59.425560",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d6570e274238291e8efc5d246b935b35\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwapfullerr.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwassociationdeniederr.json": {
       "hash": "2f8d5bae84e4cbe6785b5868dd1c0c6c7fd08b01cdb224aa62697a90f40372b1",
-      "last_checked": "2026-04-03T07:44:06.700736",
+      "last_checked": "2026-04-07T07:41:59.533052",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d95c4c443fc5aacd83d7fa78918119e2\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwassociationdeniederr.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwauthenticationalgorithmunsupportederr.json": {
       "hash": "ac8cdb2d5cead867a4441518d954c46bec838558611ce8cc78f1ae59448f71f6",
-      "last_checked": "2026-04-03T07:44:06.889794",
+      "last_checked": "2026-04-07T07:41:59.668278",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"72274db00ffdc0e012a3da9e5d102158\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwauthenticationalgorithmunsupportederr.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwchallengefailureerr.json": {
       "hash": "251400782b85b8af9eb31a08573c305c141f334e8855290b79b9e91c58933260",
-      "last_checked": "2026-04-03T07:44:07.068520",
+      "last_checked": "2026-04-07T07:41:59.801762",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"521fea7bdae8794dd9f436cce87cbe69\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwchallengefailureerr.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwciphersuiterejectederr.json": {
       "hash": "39a382f9f91fa519257f6e2748383a826b95d01f658b0a7fa512e473aa810d4d",
-      "last_checked": "2026-04-03T07:44:07.262356",
+      "last_checked": "2026-04-07T07:41:59.955108",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7812b5caf08849620c9d8a1ee7bbe70a\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwciphersuiterejectederr.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwdsssofdmunsupportederr.json": {
       "hash": "624b17a15a4710accc4a49f984e35a48af2cee826554d98b1088d64b137b39ed",
-      "last_checked": "2026-04-03T07:44:07.445263",
+      "last_checked": "2026-04-07T07:42:00.178669",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4aaf1f1e5ce92310e326d69efdc4cfb2\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwdsssofdmunsupportederr.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cweapolerr.json": {
       "hash": "5191f6278101b9a90f761b4b95c4558048e972371c51477237cc82dcef638ee1",
-      "last_checked": "2026-04-03T07:44:07.628060",
+      "last_checked": "2026-04-07T07:42:00.301989",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"cbdc078d24be9e230351d791356b77ce\"",
       "file_path": "documentation/CoreWLAN/cwerr/cweapolerr.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwerr.json": {
       "hash": "da0817dd49f0b8706a9457c203750b6bf6f01578571ca0f387f8a1c8c297a8c6",
-      "last_checked": "2026-04-03T07:44:07.810259",
+      "last_checked": "2026-04-07T07:42:00.445135",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"675321f155cac8fc2ebb274d4c54127b\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwerr.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwhtfeaturesnotsupportederr.json": {
       "hash": "e7fae81b6d44bfe779c830e22d9a578d21c546f94b2a6dfd7bd69ef6c84e48e4",
-      "last_checked": "2026-04-03T07:44:07.991481",
+      "last_checked": "2026-04-07T07:42:00.567675",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"8905192a7870c546ef423fdc7a5662d4\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwhtfeaturesnotsupportederr.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwipcfailureerr.json": {
       "hash": "23eb799c1067c7e317796a78178d717b4a9ff29e9dab7af822e9e186aaa84dd6",
-      "last_checked": "2026-04-03T07:44:08.181749",
+      "last_checked": "2026-04-07T07:42:00.695360",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0f6d19a3158f974411ff4e9064b15b96\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwipcfailureerr.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidakmperr.json": {
       "hash": "323f6faaf9ee0cc703e60acb7217a3c9bc98ef7a47b137fd6ac86aa44a978f62",
-      "last_checked": "2026-04-03T07:44:08.375235",
+      "last_checked": "2026-04-07T07:42:00.819947",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f12b101a48fd48f61e61d54214c034ec\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidakmperr.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidauthenticationsequencenumbererr.json": {
       "hash": "3dae9b747db5b27608380b5806cfbe39e029a4323220ef0fe852e9d9a4a75165",
-      "last_checked": "2026-04-03T07:44:08.558404",
+      "last_checked": "2026-04-07T07:42:00.959017",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5c04ea5756325ede89d814a660ad275a\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidauthenticationsequencenumbererr.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidformaterr.json": {
       "hash": "cdc082ee29e20552c5ff4edc6d7c1af9e7bf6db43aa044f45c2d63d21d683a99",
-      "last_checked": "2026-04-03T07:44:08.744078",
+      "last_checked": "2026-04-07T07:42:01.072702",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5f511d46899da4bc9b951a890d38abec\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidformaterr.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidgroupciphererr.json": {
       "hash": "307ed0d11c853da78e898734ae93ccdef975e4a4be9e992cb48b995421d78704",
-      "last_checked": "2026-04-03T07:44:08.939404",
+      "last_checked": "2026-04-07T07:42:01.210189",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7f6bfd3fc359208233af19e1191e52ba\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidgroupciphererr.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidinformationelementerr.json": {
       "hash": "46fa61594e2dcae7d01cf7cc74df74d81fc6070bad28caeba149a6f1db177b5d",
-      "last_checked": "2026-04-03T07:44:09.250923",
+      "last_checked": "2026-04-07T07:42:01.330206",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"fe6d4d77a69447228b77eeab4294fd3f\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidinformationelementerr.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidpmkerr.json": {
       "hash": "1f1e0e3478333b95da7a38839ee4ae9b05d86d9c358c18a346a4264893439b14",
-      "last_checked": "2026-04-03T07:44:09.570829",
+      "last_checked": "2026-04-07T07:42:01.456616",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"213a5a6f836e71114b8f7e2426eb1974\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidpmkerr.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidpairwiseciphererr.json": {
       "hash": "4af92d3476944671d2ab8d3e9fe6726b363a28e90cfba7ab3edb720800ec23d3",
-      "last_checked": "2026-04-03T07:44:09.746236",
+      "last_checked": "2026-04-07T07:42:01.589003",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"4464fbf432af91cb44c03561a14bd5f4\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidpairwiseciphererr.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidparametererr.json": {
       "hash": "9f67bbaa51333b015489e57c62682bdfe425ebd387e587931159c8b9c6ab9805",
-      "last_checked": "2026-04-03T07:44:09.931580",
+      "last_checked": "2026-04-07T07:42:01.720752",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9d9a4d07b05357f298d7cb77d2132a72\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidparametererr.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwinvalidrsncapabilitieserr.json": {
       "hash": "2c59dca7a149b99a57078074be72eed48f89714b0e083f58484f99595fb7a91a",
-      "last_checked": "2026-04-03T07:44:10.120427",
+      "last_checked": "2026-04-07T07:42:01.868391",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"39f809e4a17bf4015d15b5b2a706d4d1\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwinvalidrsncapabilitieserr.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwnoerr.json": {
       "hash": "f91103992fde2446f966abdd53154da29a351f930340a93427a4906670fd9315",
-      "last_checked": "2026-04-03T07:44:10.303641",
+      "last_checked": "2026-04-07T07:42:01.991169",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2c303226e9c0219ef125b95cd1c01633\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwnoerr.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwnomemoryerr.json": {
       "hash": "29286f6324ed9b8d8c902862e472bce7de42d72921e25d854c5731747b2bf01d",
-      "last_checked": "2026-04-03T07:44:10.495971",
+      "last_checked": "2026-04-07T07:42:02.130493",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"816e85b714530da4e0edd62fc04e3769\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwnomemoryerr.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwnotsupportederr.json": {
       "hash": "55169765a812b656b16b95f904db2b2e2510bebc6e0a40dc4d6293b64a381cb2",
-      "last_checked": "2026-04-03T07:44:10.715049",
+      "last_checked": "2026-04-07T07:42:02.245362",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"64f243812098e772666d46b647e3dc8a\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwnotsupportederr.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwoperationnotpermittederr.json": {
       "hash": "3ea6f63830210295bef0be875d07c7090ae59ae4e852009ff45ca04fd0451abd",
-      "last_checked": "2026-04-03T07:44:10.890365",
+      "last_checked": "2026-04-07T07:42:02.381234",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"af83934555d3867e77867fcd8619e4cc\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwoperationnotpermittederr.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwpcotransitiontimenotsupportederr.json": {
       "hash": "24e5ea6c3c05f693db80569bd9c24cc81a761ad3a260678230240fd20a8bd982",
-      "last_checked": "2026-04-03T07:44:11.071022",
+      "last_checked": "2026-04-07T07:42:02.503089",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6b81f6597893d2e49f31ec2c2854964c\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwpcotransitiontimenotsupportederr.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwreassociationdeniederr.json": {
       "hash": "e4636cbc2537ba05518f0c7d09721af40dc05de9829ac5001ffd793f23de9245",
-      "last_checked": "2026-04-03T07:44:11.265150",
+      "last_checked": "2026-04-07T07:42:02.643223",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6f59e8d100bcca2c571e071707edc11b\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwreassociationdeniederr.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwreferencenotbounderr.json": {
       "hash": "bda5a65a695f155f16768ec98caf0671a25b8d25d319ebf4eb71f29220b200f0",
-      "last_checked": "2026-04-03T07:44:11.446204",
+      "last_checked": "2026-04-07T07:42:03.391599",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"375a2910ba8f4bf4b8bbccb4539302b2\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwreferencenotbounderr.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwshortslotunsupportederr.json": {
       "hash": "3c0adcec37e7bd0f1a1851ce3fd10a8c98b5c2ba3aaef32dc2b6c119a5a6bdca",
-      "last_checked": "2026-04-03T07:44:11.632938",
+      "last_checked": "2026-04-07T07:42:03.530107",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"a698060c423f5775cf1d13b7160a8a35\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwshortslotunsupportederr.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwsupplicanttimeouterr.json": {
       "hash": "dfccc73fd54ae276be41e09d6eea7039545e6ee83124156b7ed283da21a32d38",
-      "last_checked": "2026-04-03T07:44:11.813602",
+      "last_checked": "2026-04-07T07:42:03.646672",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6459a0b5a81ee4a8fc048605a2dcc0e0\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwsupplicanttimeouterr.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwtimeouterr.json": {
       "hash": "d4cb6390dc4a47246985b571d3c63d46eb46489e35cf8334067656f646150714",
-      "last_checked": "2026-04-03T07:44:12.003359",
+      "last_checked": "2026-04-07T07:42:03.793071",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"ef6e2043498af0ad745703ecd46f34a7\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwtimeouterr.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwunknownerr.json": {
       "hash": "25f8a17bfbadb12c75bdf5801098676b4e850418818c1c5399490e37c3c8010a",
-      "last_checked": "2026-04-03T07:44:12.212100",
+      "last_checked": "2026-04-07T07:42:03.909013",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1d913dd4075d4c489209a6c813b3e057\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwunknownerr.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwunspecifiedfailureerr.json": {
       "hash": "44344d6549b9332009a0855023054978c6345564f6042f8f5b7880cc949cdb1c",
-      "last_checked": "2026-04-03T07:44:12.398562",
+      "last_checked": "2026-04-07T07:42:04.041718",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2aa0eefe8a52b9c44d2b922fc24af98f\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwunspecifiedfailureerr.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwunsupportedcapabilitieserr.json": {
       "hash": "153427f27868339e9ba60256068695a6f2691fd39f76cda285574b90dbd6a149",
-      "last_checked": "2026-04-03T07:44:12.583431",
+      "last_checked": "2026-04-07T07:42:04.170109",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5b78a6e4e823c4cb8be5f651a245cfbd\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwunsupportedcapabilitieserr.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwunsupportedrsnversionerr.json": {
       "hash": "a43e214f57fdf8d2f2b6a68666f880e1cc6f1c13edcd864abbdf223428b9b58d",
-      "last_checked": "2026-04-03T07:44:12.773751",
+      "last_checked": "2026-04-07T07:42:04.298073",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"02f25219e62c99d5d78a6c29af218a94\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwunsupportedrsnversionerr.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/cwunsupportedrateseterr.json": {
       "hash": "1c023c1b4310968af6f5c816ec5d47f611d5cdc0f5566d9cede716027666de6c",
-      "last_checked": "2026-04-03T07:44:12.970456",
+      "last_checked": "2026-04-07T07:42:04.423464",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"acd2dce51edbdbb1c16ddbe32b013e1f\"",
       "file_path": "documentation/CoreWLAN/cwerr/cwunsupportedrateseterr.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwerr/init(rawvalue:).json": {
       "hash": "eec8d9b2940e4b1d3eb103e58794adc01c486bcc0ea798d4bfd41a4598bcb2ca",
-      "last_checked": "2026-04-03T07:44:13.145279",
+      "last_checked": "2026-04-07T07:42:04.540422",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6ec1c03cd9f22ac768ed05088a420662\"",
       "file_path": "documentation/CoreWLAN/cwerr/init-rawvalue.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwibssmodesecurity/none.json": {
       "hash": "68ac9edab05a935e382aaa403570e4c3e237774b93395c5bb2a5a9e8f9512b79",
-      "last_checked": "2026-04-03T07:44:13.342639",
+      "last_checked": "2026-04-07T07:42:04.677062",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"13e02c2eeae115666bd2a009550db286\"",
       "file_path": "documentation/CoreWLAN/cwibssmodesecurity/none.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwibssmodesecurity/wep40.json": {
       "hash": "3147da7cb6229811f570b4c9478b3fe0c7e19f1a77e0ceaee21ad6ce941a1cd2",
-      "last_checked": "2026-04-03T07:44:13.519628",
+      "last_checked": "2026-04-07T07:42:04.802321",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"300c193552ae7cd91e104ad6b64edb8e\"",
       "file_path": "documentation/CoreWLAN/cwibssmodesecurity/wep40.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwibssmodesecurity/wep104.json": {
       "hash": "357a8c8282f8bdb6cd9a019d1e7a60d4bdbefbebaa1ada07d2975de88bd52723",
-      "last_checked": "2026-04-03T07:44:13.702602",
+      "last_checked": "2026-04-07T07:42:04.933415",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f8f1c91bc1cde0db455b538e0d083ca3\"",
       "file_path": "documentation/CoreWLAN/cwibssmodesecurity/wep104.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwibssmodesecurity/init(rawvalue:).json": {
       "hash": "b1b61b3b0a25e1bc401f0e28323b4b8a0cb03df2f236e9c3cc7de6bf54405125",
-      "last_checked": "2026-04-03T07:44:13.875380",
+      "last_checked": "2026-04-07T07:42:05.080007",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"6a3eb46d837aac9f5c4d5b8e3c0072a6\"",
       "file_path": "documentation/CoreWLAN/cwibssmodesecurity/init-rawvalue.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/modenone.json": {
       "hash": "f5ebfa74d74bf10321ca537e582f337932c5f7c922ba75446d2d04def9177840",
-      "last_checked": "2026-04-03T07:44:14.055901",
+      "last_checked": "2026-04-07T07:42:05.189907",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"e9451501c09597589813a742078ae6e9\"",
       "file_path": "documentation/CoreWLAN/cwphymode/modenone.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11a.json": {
       "hash": "5a6a6ff139769f1bfaf99547939649311a8cbd37c719bd5fa18b56f4f93d21d4",
-      "last_checked": "2026-04-03T07:44:14.226375",
+      "last_checked": "2026-04-07T07:42:05.317466",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"32b1d826e64aee1c008ea78216f01117\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11a.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11b.json": {
       "hash": "df5a49507b4d294cd71815b9cc11ab943ec11f162477985c3a7259b76da05b26",
-      "last_checked": "2026-04-03T07:44:14.408488",
+      "last_checked": "2026-04-07T07:42:05.480848",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5805601a63f70fe72216f4bdf2613135\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11b.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11g.json": {
       "hash": "31097ccf38edc0202e58aea2400eeb0c1bc3f69137fb35acc2f67bc1da6f7ab8",
-      "last_checked": "2026-04-03T07:44:14.580709",
+      "last_checked": "2026-04-07T07:42:05.613269",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"77edf401405607aea01bb5ec8a4224a7\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11g.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11n.json": {
       "hash": "0e9f94724adc324a53302f8bb5d5bac879aff7fee72128b7c053e083740c5e48",
-      "last_checked": "2026-04-03T07:44:14.801570",
+      "last_checked": "2026-04-07T07:42:05.728716",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f52ce6a8b7b1752a400f4051d93e303a\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11n.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11ac.json": {
       "hash": "000b6aef37296311db812bd8a8ca99c5b49ed115c45521e9087e66df10afbeff",
-      "last_checked": "2026-04-03T07:44:14.982194",
+      "last_checked": "2026-04-07T07:42:05.865161",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"3f41b4fc06d9657d543db85b4f0bb4b4\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11ac.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11ax.json": {
       "hash": "4afafd01b96403c8f6f85a2029b552cb3b5933ac5c814ea0446b9bf448d7f929",
-      "last_checked": "2026-04-03T07:44:15.177697",
+      "last_checked": "2026-04-07T07:42:06.001464",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f0df68125591f0e5a72fda7e1db8effd\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11ax.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/init(rawvalue:).json": {
       "hash": "e4c5c40a41cb0d7c6011e4060c1248014500597204a57cc583ff1864e403b318",
-      "last_checked": "2026-04-03T07:44:15.552398",
+      "last_checked": "2026-04-07T07:42:06.263527",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0a8c51c73b1b1233b4ae31284106bbc6\"",
       "file_path": "documentation/CoreWLAN/cwphymode/init-rawvalue.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/none.json": {
       "hash": "8be87ac6540e79faf4f1eaf4b6b6e05148a4ff9d43b9c2b244db5877ba94f1b1",
-      "last_checked": "2026-04-03T07:44:15.724045",
+      "last_checked": "2026-04-07T07:42:06.403155",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f6b94e7e44188aec5d652ab5807c68d5\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/none.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wep.json": {
       "hash": "5bd216654789d92ab472fcf9ab18bece51592ac24a804d32fe13a2efd51cf01d",
-      "last_checked": "2026-04-03T07:44:15.902051",
+      "last_checked": "2026-04-07T07:42:06.527229",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"83a02bbb02fcfdd7146f998d5c371d54\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wep.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpapersonal.json": {
       "hash": "c51df14697d2429bc4e9f553c662e7a446e9a25f7ce396471befd9784485c2ea",
-      "last_checked": "2026-04-03T07:44:16.074287",
+      "last_checked": "2026-04-07T07:42:06.666549",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"a856f68d83caaafb3569b401bbcc7e35\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpapersonal.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpapersonalmixed.json": {
       "hash": "50317a9751018cd592d478f3c6aa8030896f2fd2655d7772116e1e4c363920cc",
-      "last_checked": "2026-04-03T07:44:16.263222",
+      "last_checked": "2026-04-07T07:42:06.796694",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b0596779e081ff672d16d0b22c2dc379\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpapersonalmixed.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpa2personal.json": {
       "hash": "93f84cf3ea8295bf0708f38313d2cad7b8cfdd43f1c6f36e755f4e86459e2d2e",
-      "last_checked": "2026-04-03T07:44:16.450249",
+      "last_checked": "2026-04-07T07:42:06.921276",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"344e63dcdc64e5bc2ec9526406d1db53\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpa2personal.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/personal.json": {
       "hash": "05ee7087d3afb1db22dc7e8bd66e7b68ea3b99a2fb760c17d8988780635dde4e",
-      "last_checked": "2026-04-03T07:44:16.654288",
+      "last_checked": "2026-04-07T07:42:07.044710",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d70d8c0c0297fe4c02ef51f12eba07da\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/personal.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/dynamicwep.json": {
       "hash": "07808494b7bcd0ec8c42a14b67be2fa34d8036e3727b0844016956ebed5bce33",
-      "last_checked": "2026-04-03T07:44:16.841539",
+      "last_checked": "2026-04-07T07:42:07.166308",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2d2bf2feccab0db52317e74d213a8816\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/dynamicwep.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpaenterprise.json": {
       "hash": "ee7600cae9fae59d3c111d622fc323f5f36ecb75ff2cfcad9af954f9af434665",
-      "last_checked": "2026-04-03T07:44:17.030586",
+      "last_checked": "2026-04-07T07:42:07.296592",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"a8fd882332f257e5e925c7d84dcf68ed\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpaenterprise.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpaenterprisemixed.json": {
       "hash": "3e363c628aa5bcec316dcbdac130eb860125a3ec33695ac21be34c4d40fb0551",
-      "last_checked": "2026-04-03T07:44:17.223599",
+      "last_checked": "2026-04-07T07:42:07.447470",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2c849cc2db1d414f893010c9ffbf1290\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpaenterprisemixed.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpa2enterprise.json": {
       "hash": "f178b12098a32fb78ae40898a4b7572cd29839c1b6d40cf71abc7510f04c56dd",
-      "last_checked": "2026-04-03T07:44:17.410917",
+      "last_checked": "2026-04-07T07:42:07.585268",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"2d2a0389629045280b5d99fff4144b21\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpa2enterprise.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/enterprise.json": {
       "hash": "ce83f5fa690a74a80552bd2b4357db4b45d276f218112c27d00601c14605faba",
-      "last_checked": "2026-04-03T07:44:17.578604",
+      "last_checked": "2026-04-07T07:42:07.720989",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0d8d63bb5e575177ec30c06e0f3b470b\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/enterprise.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpa3personal.json": {
       "hash": "6f8c6bbbe3020a3324bc4291bd139df1ba69db1d3b2823eefe4e0ff4675a77cd",
-      "last_checked": "2026-04-03T07:44:17.780349",
+      "last_checked": "2026-04-07T07:42:07.844725",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"78e4fe231a3f48688bb8129d3f3ab6cc\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpa3personal.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpa3enterprise.json": {
       "hash": "afa61d06d68467f265a815ca9e8503c03f1c3d01d7251aec79b34af6b05cfeb0",
-      "last_checked": "2026-04-03T07:44:17.976547",
+      "last_checked": "2026-04-07T07:42:07.973821",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5a93281587194c48f96879540e82c4f1\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpa3enterprise.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/wpa3transition.json": {
       "hash": "559ae1dcff2d146be861f3b3b7381654571679f5b634f0fbd4148793b9465fb0",
-      "last_checked": "2026-04-03T07:44:18.154184",
+      "last_checked": "2026-04-07T07:42:08.101250",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"23cc9066b8d3a5b5b310fb97e44056f9\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/wpa3transition.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/unknown.json": {
       "hash": "c291df55a534766ca0e2cebc6d11c55798d9c344e777eaced48607e39826f682",
-      "last_checked": "2026-04-03T07:44:18.338086",
+      "last_checked": "2026-04-07T07:42:08.234234",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0a09f7e21dbba21bb1cfa57328a981c5\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/unknown.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/owe.json": {
       "hash": "ea42279d1f89d861ccac9ac32a09da25d57a5a2ce0112ae94abd7878a1ba318b",
-      "last_checked": "2026-04-03T07:44:18.511897",
+      "last_checked": "2026-04-07T07:42:08.384085",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"c4c79354d023252a32149278958ba6ec\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/owe.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/owetransition.json": {
       "hash": "e3c8fdd0b5947e126e810978694182c835d8e80adb55829ff2f5fc0b89f100ed",
-      "last_checked": "2026-04-03T07:44:18.679241",
+      "last_checked": "2026-04-07T07:42:08.506347",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5a1b0b932474a6a1267914c401ae3071\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/owetransition.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwsecurity/init(rawvalue:).json": {
       "hash": "09ee397a35ff5ac88569309365e2a42b5e7a09ecaaa2a4185a76e5ad9da7abd2",
-      "last_checked": "2026-04-03T07:44:18.855655",
+      "last_checked": "2026-04-07T07:42:08.645988",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b1a27cdc13aee4432d783258f0f13af3\"",
       "file_path": "documentation/CoreWLAN/cwsecurity/init-rawvalue.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/none.json": {
       "hash": "bf17393938e30c05e589a8790ad0ac7097bd668774c9e5c93edae6a2ea0ba1f0",
-      "last_checked": "2026-04-03T07:44:19.042609",
+      "last_checked": "2026-04-07T07:42:08.771749",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"0a454bff70945083e82b8f5a54e2c37d\"",
       "file_path": "documentation/CoreWLAN/cweventtype/none.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/powerdidchange.json": {
       "hash": "afb60c136d37c3be7e6089fa9f318127c0193bbb2c7334c35422529c51aeb0c3",
-      "last_checked": "2026-04-03T07:44:19.236253",
+      "last_checked": "2026-04-07T07:42:08.878009",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"be27d22b73f7a04f2d006c72092c86d7\"",
       "file_path": "documentation/CoreWLAN/cweventtype/powerdidchange.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/ssiddidchange.json": {
       "hash": "1d7bf990dbbe742cd111c628a2b5fe347a712bef97b923dd345d540964c8f6f5",
-      "last_checked": "2026-04-03T07:44:19.410387",
+      "last_checked": "2026-04-07T07:42:09.025154",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"61bbd329c8d76e4bc03b47b4922b9e2a\"",
       "file_path": "documentation/CoreWLAN/cweventtype/ssiddidchange.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/bssiddidchange.json": {
       "hash": "3c6b961f5045456286e7134f5ff9d3d51b6240b5563c341dd7c732c7fa39f279",
-      "last_checked": "2026-04-03T07:44:19.592936",
+      "last_checked": "2026-04-07T07:42:09.168832",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"54b7266c60a78cf3daa47c3126c4b1ef\"",
       "file_path": "documentation/CoreWLAN/cweventtype/bssiddidchange.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/countrycodedidchange.json": {
       "hash": "2437614aee0238de23b3a38661aabe0e59ed3f4e1f0e6028e0b05fe100b29a6b",
-      "last_checked": "2026-04-03T07:44:19.775717",
+      "last_checked": "2026-04-07T07:42:09.318695",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"f2d0ce865767c8fa93e39290dd3ae8ba\"",
       "file_path": "documentation/CoreWLAN/cweventtype/countrycodedidchange.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/linkdidchange.json": {
       "hash": "f3b74383243ba1634a62fdb237b2f50b1f88b8b59390e0da641194cc88da9366",
-      "last_checked": "2026-04-03T07:44:19.965902",
+      "last_checked": "2026-04-07T07:42:09.439710",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"85f729fd3e92c68ca709f5b6f4eab294\"",
       "file_path": "documentation/CoreWLAN/cweventtype/linkdidchange.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/linkqualitydidchange.json": {
       "hash": "97839f1d04c07311046d90a7b6aac360c1c2f3f77061a9583fbb66ab3a136788",
-      "last_checked": "2026-04-03T07:44:20.155818",
+      "last_checked": "2026-04-07T07:42:09.571465",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"b04fd8cbf14db1fcf941d436d1df1a21\"",
       "file_path": "documentation/CoreWLAN/cweventtype/linkqualitydidchange.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/modedidchange.json": {
       "hash": "b0820c3c3c8bf26bc1f7d0f1f06e1b5a0c44b7856d16afb5c3f8b925cc01c327",
-      "last_checked": "2026-04-03T07:44:20.325960",
+      "last_checked": "2026-04-07T07:42:09.725098",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"237c4f1a98fcf91ffa461320acc3c4a3\"",
       "file_path": "documentation/CoreWLAN/cweventtype/modedidchange.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/scancacheupdated.json": {
       "hash": "15881ded956036694286c5c4730c87fb6466b2ee10d590e2af297adb3c7ae2c0",
-      "last_checked": "2026-04-03T07:44:20.502185",
+      "last_checked": "2026-04-07T07:42:09.853684",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5a5cdee09080874a8c49c60705b27f63\"",
       "file_path": "documentation/CoreWLAN/cweventtype/scancacheupdated.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/unknown.json": {
       "hash": "054b2dfcefe018b6136b196cae477235132ff027d605211f664fc8c8c147acc0",
-      "last_checked": "2026-04-03T07:44:20.708597",
+      "last_checked": "2026-04-07T07:42:09.981150",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"69479db6a9c54b600ddac8b0f4f880c2\"",
       "file_path": "documentation/CoreWLAN/cweventtype/unknown.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/btcoexstats.json": {
       "hash": "68a984b94046a3675030f763471a16d8aa0235d66eb3695084f13b965684ab6d",
-      "last_checked": "2026-04-03T07:44:20.897509",
+      "last_checked": "2026-04-07T07:42:10.133927",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"5b24e0584d83f1a444fed1f8ddd6e395\"",
       "file_path": "documentation/CoreWLAN/cweventtype/btcoexstats.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cweventtype/init(rawvalue:).json": {
       "hash": "51f906200120ede85dfbf2e8a8bea9db36c00f369335a1121c47de7a09aeafb5",
-      "last_checked": "2026-04-03T07:44:21.081113",
+      "last_checked": "2026-04-07T07:42:10.246034",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"1071926c3cdcdc60b9981c5c1fcd19a2\"",
       "file_path": "documentation/CoreWLAN/cweventtype/init-rawvalue.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode/none.json": {
       "hash": "27e6c53a373e5eab45758743484e85a8f6ca5f2edd0aeb2ef047530df3297378",
-      "last_checked": "2026-04-03T07:44:21.250762",
+      "last_checked": "2026-04-07T07:42:10.361844",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"cd4872658910b77d3d5dc635dc97b384\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode/none.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode/station.json": {
       "hash": "ec0c06b7c62f0a0b82168e209523d8b75360a8dc5f906c15dcbe5432c42a33f1",
-      "last_checked": "2026-04-03T07:44:21.424835",
+      "last_checked": "2026-04-07T07:42:10.497607",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"346e2c27337018e1ab60d7963ad8f245\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode/station.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode/ibss.json": {
       "hash": "44205c25f627b9512c66f287ec980a67381f0d718a76eb2a59400300461ec49c",
-      "last_checked": "2026-04-03T07:44:21.630940",
+      "last_checked": "2026-04-07T07:42:10.645889",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"260dfbccc27c4046868085278cd193df\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode/ibss.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode/hostap.json": {
       "hash": "a4973b7f6b34648af6a097a750f047fbe5bfaee856d2fe2f376a192c5be52e21",
-      "last_checked": "2026-04-03T07:44:21.822984",
+      "last_checked": "2026-04-07T07:42:10.773228",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"9573f0985df4c19e4151ae08e5b2cd04\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode/hostap.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwinterfacemode/init(rawvalue:).json": {
       "hash": "99275564bdba5f2d7680b5db0f7afc31fd35a5e966fcd7965bb4574e471e29e7",
-      "last_checked": "2026-04-03T07:44:22.005042",
+      "last_checked": "2026-04-07T07:42:10.908082",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"d491b115c3a247400850054fa5b46bd9\"",
       "file_path": "documentation/CoreWLAN/cwinterfacemode/init-rawvalue.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindomain/none.json": {
       "hash": "151e536140f6fbee02b135e5941f794570a2d644d84b422ea00e1dceadfa5c3c",
-      "last_checked": "2026-04-03T07:44:22.191783",
+      "last_checked": "2026-04-07T07:42:11.036822",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"79c6c1e62a1aec48756c7906adb49445\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindomain/none.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindomain/user.json": {
       "hash": "6d5b7160c23a7ecac90596def39646076dc3a423fc405f30160d9178da5eb051",
-      "last_checked": "2026-04-03T07:44:22.378034",
+      "last_checked": "2026-04-07T07:42:11.174173",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7da99969b8d29d56c01ed3317c7792a2\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindomain/user.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindomain/system.json": {
       "hash": "27d227cc0055da2a7a2796f02fb79daab7465a6f921a26ef71d693437045eb36",
-      "last_checked": "2026-04-03T07:44:22.556608",
+      "last_checked": "2026-04-07T07:42:11.324678",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"cf27cfa2649c389d6e59db2359adcc69\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindomain/system.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwkeychaindomain/init(rawvalue:).json": {
       "hash": "0938db735dfd641d97e3fc4ad92a3b05304a5579ee5890a26b2dbfbde3dd3c41",
-      "last_checked": "2026-04-03T07:44:22.728422",
+      "last_checked": "2026-04-07T07:42:11.441768",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"30b6fba0668b10b2921243aec373d67f\"",
       "file_path": "documentation/CoreWLAN/cwkeychaindomain/init-rawvalue.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corewlan/cwphymode/mode11be.json": {
       "hash": "3fbb55f2d0ae3d423273f5351c79c4d3721c64f4ff9a98b8acddd1063cdc1242",
-      "last_checked": "2026-04-03T07:44:15.360540",
+      "last_checked": "2026-04-07T07:42:06.115244",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:43:38.889503",
+      "session_id": "2026-04-07T07:41:37.536467",
       "etag": "W/\"7b18d07bd6d5f7511380e3f0cb334dd5\"",
       "file_path": "documentation/CoreWLAN/cwphymode/mode11be.md"
     },

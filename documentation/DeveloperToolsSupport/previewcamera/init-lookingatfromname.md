@@ -24,6 +24,11 @@ Use one or more cameras with one of the preview macros that takes a `cameras` in
 - `from`: The position of the camera, specified in meters from the preview center.
 - `name`: An optional name that the canvas uses to label the camera.
 
+## See Also
+
+- [init(from: UnitPoint3D, zoom: Double, name: String?)](previewcamera/init(from:zoom:name:).md)
+  Creates a camera that looks toward the preview center from a specified unit point.
+
 
 ---
 

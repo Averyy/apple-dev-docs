@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:46:24.963499",
+    "last_updated": "2026-04-07T07:44:02.776833",
     "total_pages": 60,
-    "session_id": "2026-04-03T07:46:19.052145"
+    "session_id": "2026-04-07T07:43:55.475728"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/iAd.json": {
       "hash": "9b815c0f80cb502e973fe9fc5ca5659a0ac617bc7e4b64216230973905b83ad1",
-      "last_checked": "2026-04-03T07:46:19.502320",
+      "last_checked": "2026-04-07T07:43:55.838121",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"f1ed536179c433a1eb654ad32f0813bf\"",
       "file_path": "documentation/iAd/iAd.md"
     },
     "https://developer.apple.com/documentation/iAd": {
       "hash": "9b815c0f80cb502e973fe9fc5ca5659a0ac617bc7e4b64216230973905b83ad1",
-      "last_checked": "2026-04-03T07:46:19.393283",
+      "last_checked": "2026-04-07T07:43:55.750409",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"f1ed536179c433a1eb654ad32f0813bf\"",
       "file_path": "documentation/iAd/iAd.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/iad-changelog.json": {
       "hash": "8d6f586f930543d5d919af3f94ae70cb44da0dff5f79c711749bd25f827e2a0c",
-      "last_checked": "2026-04-03T07:46:19.765412",
+      "last_checked": "2026-04-07T07:43:56.261430",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"a1c264365960deb4af375f727eea405d\"",
       "file_path": "documentation/iAd/iad-changelog.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/setting-up-apple-search-ads-attribution.json": {
       "hash": "16460ba4a61768f9e4dde730d2f2d0ab7ac22c47f7c161f411fca91112376dad",
-      "last_checked": "2026-04-03T07:46:20.088850",
+      "last_checked": "2026-04-07T07:43:56.561407",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"ac9c28742712e68c01b94424ec71f230\"",
       "file_path": "documentation/iAd/setting-up-apple-search-ads-attribution.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient.json": {
       "hash": "2395c069d7ae30818018c38cca261249d592a9a4eafae0345a13de6fcc7f2ffa",
-      "last_checked": "2026-04-03T07:46:20.441178",
+      "last_checked": "2026-04-07T07:43:56.870542",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"faa89a30197103a26446f2f279e1a093\"",
       "file_path": "documentation/iAd/adclient.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterrordomain.json": {
       "hash": "eed0917a146da1d43e2671799a53575d664a9f9019628523c8e37ba919dbd44b",
-      "last_checked": "2026-04-03T07:46:20.622451",
+      "last_checked": "2026-04-07T07:43:57.030489",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"46215dbf097fa604167d29c586ffeea1\"",
       "file_path": "documentation/iAd/adclienterrordomain.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct.json": {
       "hash": "31b158aa6946c26c3e3724fcc93883625322f577d0e134894af85116c35f5f4b",
-      "last_checked": "2026-04-03T07:46:20.786165",
+      "last_checked": "2026-04-07T07:43:57.209699",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"48491664a734843af2709173abc91d6a\"",
       "file_path": "documentation/iAd/adclienterror-swiftstruct.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code.json": {
       "hash": "5a261a54ee55c85302d9e25fb4d6af57ca261fc17bf4430f95e1aa117e97efc6",
-      "last_checked": "2026-04-03T07:46:20.967764",
+      "last_checked": "2026-04-07T07:43:57.363879",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"f9dbe32d04928357fe11eaf23ea15ab1\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/deprecated-symbols.json": {
       "hash": "6d5a13a8d572899db8bfb6b5b5a1830c2f83e17a0254ed6d6491c2d8173f69cd",
-      "last_checked": "2026-04-03T07:46:21.170613",
+      "last_checked": "2026-04-07T07:43:57.663363",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"6616d234a01186be70af33d9570252d0\"",
       "file_path": "documentation/iAd/deprecated-symbols.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient/shared().json": {
       "hash": "a57cdda1af1e9947914ab3e84872b2ce22cc3d9e9563f0d3678f883fe24f3989",
-      "last_checked": "2026-04-03T07:46:21.372172",
+      "last_checked": "2026-04-07T07:43:58.033273",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"7b0065fbd4fb56ad9b8a16d0c07dc5b2\"",
       "file_path": "documentation/iAd/adclient/shared.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclient/requestattributiondetails(_:).json": {
       "hash": "305962a9f215b9ff741b71f5b7f087b1d5620dc061086775d413c5142197669c",
-      "last_checked": "2026-04-03T07:46:21.563399",
+      "last_checked": "2026-04-07T07:43:58.350990",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"966aa676c635559ee1ea44c9f0958762\"",
       "file_path": "documentation/iAd/adclient/requestattributiondetails.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/corruptresponse.json": {
       "hash": "29abc91473fc8b3774d28e5df9921c3354036a4e8348841fe4fe8a592e597ad6",
-      "last_checked": "2026-04-03T07:46:21.741594",
+      "last_checked": "2026-04-07T07:43:58.525000",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"60bc30b85056818e8a584b4e78e5338b\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/corruptresponse.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/requestclienterror.json": {
       "hash": "7860afe52c5c925be085d08b5fb58f67f759d15267f11eefae3b75ddb873d096",
-      "last_checked": "2026-04-03T07:46:21.936801",
+      "last_checked": "2026-04-07T07:43:58.694392",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"bdb647a5e517ea60934ac50b6fbf3f06\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/requestclienterror.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/requestnetworkerror.json": {
       "hash": "e79d48b90513063f2774017f706322775f5fba86ee2edf4403edce5e8617186f",
-      "last_checked": "2026-04-03T07:46:22.117923",
+      "last_checked": "2026-04-07T07:43:59.008494",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"59f2b3d50eecd4886c93a5d3eff8ebf0\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/requestnetworkerror.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/requestservererror.json": {
       "hash": "54a800b89766a4abe27ae31faedbf9beecf56d1efee334ac819a9bc3ea5a65f6",
-      "last_checked": "2026-04-03T07:46:22.291298",
+      "last_checked": "2026-04-07T07:43:59.178436",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"9b5c91c53ce093cdc07269f7a83ab984\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/requestservererror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/trackingrestrictedordenied.json": {
       "hash": "0ac5619b74fd47fbb3da3fd9bb52d8db3f883e227e9e6d724cb49bca2696918f",
-      "last_checked": "2026-04-03T07:46:22.469291",
+      "last_checked": "2026-04-07T07:43:59.344662",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"9578ee51871f89f042cef4930d0d1480\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/trackingrestrictedordenied.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/missingdata.json": {
       "hash": "8ea391ebc30b6ab47847ff3bb2705805e51e0e58d9206654b263fb0e81a37aae",
-      "last_checked": "2026-04-03T07:46:22.682803",
+      "last_checked": "2026-04-07T07:43:59.664563",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"8e6030eb205ca308402b1524f4b815fd\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/missingdata.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/unsupportedplatform.json": {
       "hash": "afaf25380e5e72fa921b782ed48c9a5f97436d467f511436d8f30b9b2d25a825",
-      "last_checked": "2026-04-03T07:46:22.867404",
+      "last_checked": "2026-04-07T07:43:59.971003",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"cdb2dd4caa13a4dc5f446d069adfb602\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/unsupportedplatform.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/limitadtracking.json": {
       "hash": "9debdbc4c6c4d1c351358ea7fd14a30f44a5f9df05633ab9d2b00ef6a4f3731d",
-      "last_checked": "2026-04-03T07:46:23.042959",
+      "last_checked": "2026-04-07T07:44:00.164784",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"a3321916b1c627b8ba2f4a521cbb50fe\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/limitadtracking.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/unknown.json": {
       "hash": "fa5d61dd51bc91bca274a3f236e71332b3a7dbc78ca7ecb0ebe23ec785cb9c3b",
-      "last_checked": "2026-04-03T07:46:23.174615",
+      "last_checked": "2026-04-07T07:44:00.363955",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"c643ab60e6d7d1220ce5cddaf06e50ee\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/unknown.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/errordomain.json": {
       "hash": "4c9d4b9700b418f1107c55689fe43680074ee5957436df5a67a0344a082c6a59",
-      "last_checked": "2026-04-03T07:46:23.365038",
+      "last_checked": "2026-04-07T07:44:00.680565",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"83af31aa3d6e061a15d9d88bcb2d9a8f\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/errordomain.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/corruptresponse.json": {
       "hash": "a2a3a82b8f2610be0703933f1bb4c8cdcedcc42258b5ed720232237824cf1039",
-      "last_checked": "2026-04-03T07:46:23.533600",
+      "last_checked": "2026-04-07T07:44:00.973188",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"9524d1e0472e2257152104d0852fdce3\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/corruptresponse.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/requestclienterror.json": {
       "hash": "181e0b3649d6caf6862760a71a5ffdcea02797a0ad5d79fbf70ab99c8d08bd83",
-      "last_checked": "2026-04-03T07:46:23.697755",
+      "last_checked": "2026-04-07T07:44:01.153039",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"b9d02a032c1cc95e18eda1e82233053e\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/requestclienterror.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/requestnetworkerror.json": {
       "hash": "7bb5f77478904e77bbb5bc461894c3c14a25cdfb9e0b967f16fdf9c8d21d204c",
-      "last_checked": "2026-04-03T07:46:23.868778",
+      "last_checked": "2026-04-07T07:44:01.459603",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"ef17a4a71e1f9536f2518058b6833170\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/requestnetworkerror.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/requestservererror.json": {
       "hash": "3f313caf74f445cf829bb2d23b4148a428f856cd5bf3c3d8e1a464327dd2dcf1",
-      "last_checked": "2026-04-03T07:46:24.053966",
+      "last_checked": "2026-04-07T07:44:01.756147",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"9e9dc0d91056300ca6c09379969ad88e\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/requestservererror.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/trackingrestrictedordenied.json": {
       "hash": "18eb806b6cb683ae3ac1e24c7fb8689330fc92e11cec627c421ec07faccbdbd0",
-      "last_checked": "2026-04-03T07:46:24.203596",
+      "last_checked": "2026-04-07T07:44:01.923927",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"02c38a600f8ee230399a0430a128d899\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/trackingrestrictedordenied.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/missingdata.json": {
       "hash": "35d925db4a12e6149670831666375f49b59eb5b6cc9ca90cd058051aa2ba884b",
-      "last_checked": "2026-04-03T07:46:24.359133",
+      "last_checked": "2026-04-07T07:44:02.080979",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"ddcb24ab2e70c68b36ef488bfc2f35ca\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/missingdata.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/unsupportedplatform.json": {
       "hash": "7d72bd86b5ad2ab96355b85fdc937664b1d2fa989acba9d2cd5cd9e9665da062",
-      "last_checked": "2026-04-03T07:46:24.493178",
+      "last_checked": "2026-04-07T07:44:02.254998",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"b126a494ff96904bb17b425b33f8c39d\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/unsupportedplatform.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/unknown.json": {
       "hash": "0da75522d7f31575dec783b57d708674abb9682b6823dc7624c601d382459be4",
-      "last_checked": "2026-04-03T07:46:24.675925",
+      "last_checked": "2026-04-07T07:44:02.435810",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"31c2cd6db132af958842357ffcd54141\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/unknown.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/limitadtracking.json": {
       "hash": "dba5cff142697bb92945c75ed67159b411e77f7a6a6859230616e54fbc6ac25a",
-      "last_checked": "2026-04-03T07:46:24.806931",
+      "last_checked": "2026-04-07T07:44:02.599210",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"b7da88d752f42789a81ee7b250c954a7\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/limitadtracking.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iad/adclienterror-swift.struct/code/init(rawvalue:).json": {
       "hash": "40a5ecc39b0850023b7df7aafac6706641d40edbcf59d0caa67474ada7abeffe",
-      "last_checked": "2026-04-03T07:46:24.944894",
+      "last_checked": "2026-04-07T07:44:02.772843",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:19.052145",
+      "session_id": "2026-04-07T07:43:55.475728",
       "etag": "W/\"4182f3a8675186efdebd09baf837ff47\"",
       "file_path": "documentation/iAd/adclienterror-swift.struct/code/init-rawvalue.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:46:14.663319",
+    "last_updated": "2026-04-07T07:43:49.134748",
     "total_pages": 102,
-    "session_id": "2026-04-03T07:46:04.775446"
+    "session_id": "2026-04-07T07:43:37.781408"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DarwinNotify.json": {
       "hash": "8db4264c20efcb397d7dcba49e5fd9b5169e908df3b3bdfd5d63003453705daa",
-      "last_checked": "2026-04-03T07:46:05.084617",
+      "last_checked": "2026-04-07T07:43:38.040484",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"3b01734fd24becefcb2b643b38face80\"",
       "file_path": "documentation/DarwinNotify/DarwinNotify.md"
     },
     "https://developer.apple.com/documentation/DarwinNotify": {
       "hash": "8db4264c20efcb397d7dcba49e5fd9b5169e908df3b3bdfd5d63003453705daa",
-      "last_checked": "2026-04-03T07:46:04.992263",
+      "last_checked": "2026-04-07T07:43:37.918411",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"3b01734fd24becefcb2b643b38face80\"",
       "file_path": "documentation/DarwinNotify/DarwinNotify.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwin-notification-api.json": {
       "hash": "a72d476f730fa42422371bc1e5f1fdb8c34b6561ff5b101e1c0af578417b30dc",
-      "last_checked": "2026-04-03T07:46:05.375169",
+      "last_checked": "2026-04-07T07:43:38.442242",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"5ae0aec1960b8cd9366631c998b709d8\"",
       "file_path": "documentation/DarwinNotify/darwin-notification-api.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-functions.json": {
       "hash": "79ab2c94c5bb5e92fa2b5b9aa40f0b751df2e3aedb517a62ef49bf723f155c12",
-      "last_checked": "2026-04-03T07:46:05.567974",
+      "last_checked": "2026-04-07T07:43:38.733868",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"fc0e4d1486c24c3354d0dde06b418c35\"",
       "file_path": "documentation/DarwinNotify/darwinnotify-functions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-data-types.json": {
       "hash": "31f192e65931b7770cb0ab883ae239bd0c9c9d14e0818a7727d79258f0681470",
-      "last_checked": "2026-04-03T07:46:05.732167",
+      "last_checked": "2026-04-07T07:43:38.898917",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"ed773902fa0a01c3283e84c7692404dc\"",
       "file_path": "documentation/DarwinNotify/darwinnotify-data-types.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/darwinnotify-macros.json": {
       "hash": "ad30cca3a5c80fb67a26c9b65105ede6ba9dc3fa3e1aeac8565c7a03b65dbbc5",
-      "last_checked": "2026-04-03T07:46:06.060438",
+      "last_checked": "2026-04-07T07:43:39.240619",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"1157a56a47071c3394d1cb2604b38da9\"",
       "file_path": "documentation/DarwinNotify/darwinnotify-macros.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_cancel.json": {
       "hash": "56a4466ee42e9dd899be54df73c096ac3fcedfb03c949721ccf4f82d235a31f5",
-      "last_checked": "2026-04-03T07:46:06.238515",
+      "last_checked": "2026-04-07T07:43:39.534037",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"715558e84e89c57d47bbde5115d10210\"",
       "file_path": "documentation/DarwinNotify/notify-cancel.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_check.json": {
       "hash": "cc887c981aca28daf39180b20bb9a83bb03da761093b5282724e1710be4948ad",
-      "last_checked": "2026-04-03T07:46:06.431054",
+      "last_checked": "2026-04-07T07:43:39.706089",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"be81c4a6e8f4292333c0ecd6bf645583\"",
       "file_path": "documentation/DarwinNotify/notify-check.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_get_state.json": {
       "hash": "9485137a8d7cd2da8413ea7cec885cfac10a223743e170d54a78ccb5cb02db07",
-      "last_checked": "2026-04-03T07:46:06.773991",
+      "last_checked": "2026-04-07T07:43:40.000006",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"72f4e74ead94d5e8512eb6a8bcbe2382\"",
       "file_path": "documentation/DarwinNotify/notify-get-state.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_post.json": {
       "hash": "ac4919a1456ed645bd9d50db0ee305da5dabb9f77aa26eaa5efce9d532a73470",
-      "last_checked": "2026-04-03T07:46:06.969308",
+      "last_checked": "2026-04-07T07:43:40.159976",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"831f1383f7a63ef5c4595c2d98b166fd\"",
       "file_path": "documentation/DarwinNotify/notify-post.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_check.json": {
       "hash": "6696dbbd343aa0545d3362feddcb88c3ea828ea63b65ba6f158bd64bcf98bf01",
-      "last_checked": "2026-04-03T07:46:07.149295",
+      "last_checked": "2026-04-07T07:43:40.315690",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"cfcb75d756176e4f08bed223116e4c4d\"",
       "file_path": "documentation/DarwinNotify/notify-register-check.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_dispatch.json": {
       "hash": "fde40410301f851959b782e2ec0c265876358d710ddc58f6bfd9e4f5207e104c",
-      "last_checked": "2026-04-03T07:46:07.481686",
+      "last_checked": "2026-04-07T07:43:40.516665",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"fcfa9b6b69a27aa440f3194290c9d414\"",
       "file_path": "documentation/DarwinNotify/notify-register-dispatch.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_mach_port.json": {
       "hash": "d39f533437d6c23eb195fd0f8b86d8dda7b5b564a807c14e293b076a57a15ed5",
-      "last_checked": "2026-04-03T07:46:07.662602",
+      "last_checked": "2026-04-07T07:43:40.691465",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"f3ac8936676bede5e57cc5c6c0f24e57\"",
       "file_path": "documentation/DarwinNotify/notify-register-mach-port.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_signal.json": {
       "hash": "a12ee5b763dcfd5a0d3068612adefe4df8f1fccd913d73565fc6eedcf009334a",
-      "last_checked": "2026-04-03T07:46:07.857017",
+      "last_checked": "2026-04-07T07:43:40.854454",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"810bdc711e94057e87734fb3b0a1b520\"",
       "file_path": "documentation/DarwinNotify/notify-register-signal.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_resume.json": {
       "hash": "fde2051ab7a841b9037ea8cce48c5ff0f7105fd4ecf6c416778651d97088db63",
-      "last_checked": "2026-04-03T07:46:08.025526",
+      "last_checked": "2026-04-07T07:43:41.147469",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"9e11c6b3d91fbb2be7dd38e0960dc1d3\"",
       "file_path": "documentation/DarwinNotify/notify-resume.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_set_state.json": {
       "hash": "e8b174812b67b52f58eafc39de58a4819579ac9ae7d93aa79cd9b088ed454381",
-      "last_checked": "2026-04-03T07:46:08.230708",
+      "last_checked": "2026-04-07T07:43:41.312308",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"072c57addaba47955ab1f0e2161d9a58\"",
       "file_path": "documentation/DarwinNotify/notify-set-state.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_suspend.json": {
       "hash": "5897686d5f7e3bc1063b9caa7b384598832ab34df7629f9b5da9650cc9015198",
-      "last_checked": "2026-04-03T07:46:08.535909",
+      "last_checked": "2026-04-07T07:43:41.616509",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"859784a8f43a3b8f417b829338a0e461\"",
       "file_path": "documentation/DarwinNotify/notify-suspend.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/status-codes.json": {
       "hash": "fa251a3e33d4a0437e259cee275422ddb05a8c6d964ef557826b5ae33776b959",
-      "last_checked": "2026-04-03T07:46:08.703201",
+      "last_checked": "2026-04-07T07:43:41.778145",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"844046021f57a91e234ef4e5a5038a66\"",
       "file_path": "documentation/DarwinNotify/status-codes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/miscellaneous-defines.json": {
       "hash": "887ce31028645e9137f8b0d7580064277e28881f7438f61434c84f7058b0a842",
-      "last_checked": "2026-04-03T07:46:08.838110",
+      "last_checked": "2026-04-07T07:43:41.963122",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"ce652bb24d85fc898b7df409e74cf961\"",
       "file_path": "documentation/DarwinNotify/miscellaneous-defines.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_is_valid_token.json": {
       "hash": "1c366150b563ca7a1b764c5dae2511da2e9561166a44e9de653ecd8f5914e1f4",
-      "last_checked": "2026-04-03T07:46:09.011147",
+      "last_checked": "2026-04-07T07:43:42.125954",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"dc32de23691740933547a4cd192e4bee\"",
       "file_path": "documentation/DarwinNotify/notify-is-valid-token.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_register_file_descriptor.json": {
       "hash": "65933a4eed4702def4f3345c0d242829d417662e3d602d9f8c30484736b541e9",
-      "last_checked": "2026-04-03T07:46:09.193709",
+      "last_checked": "2026-04-07T07:43:42.418984",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"fdd4d8452bb7ca149bcdf007a22fe458\"",
       "file_path": "documentation/DarwinNotify/notify-register-file-descriptor.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_handler_t.json": {
       "hash": "9ee98b5a8b74cfb6eec058d97ad1b73ef41866826274a5f771fef91fb3b12c30",
-      "last_checked": "2026-04-03T07:46:09.320096",
+      "last_checked": "2026-04-07T07:43:42.586026",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"82fa174dc475ec2a8bacad24fc9484e8\"",
       "file_path": "documentation/DarwinNotify/notify-handler-t.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_null_input.json": {
       "hash": "60383ea219bba22d40356b0c2a4c9e70eb1f7d55ecea0af33dc7a70932482949",
-      "last_checked": "2026-04-03T07:46:09.463811",
+      "last_checked": "2026-04-07T07:43:42.757231",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"cdca07f407c40a81d0c36d2a6326bac1\"",
       "file_path": "documentation/DarwinNotify/notify-status-null-input.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_opt_disable.json": {
       "hash": "2e990f1835938235a14475bb023ddfc2b90ef9b1c618423fdafe061db1654a8a",
-      "last_checked": "2026-04-03T07:46:09.642577",
+      "last_checked": "2026-04-07T07:43:43.058054",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"b0733db60eaa219dfddc9d25886bbc85\"",
       "file_path": "documentation/DarwinNotify/notify-status-opt-disable.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_server_not_found.json": {
       "hash": "24b89b41bee7433d9a3565231176effa9f19f106945978ebd240997c22bacb29",
-      "last_checked": "2026-04-03T07:46:09.825678",
+      "last_checked": "2026-04-07T07:43:43.378812",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"70d37016cf6d6a36ecc6b8373c8c9277\"",
       "file_path": "documentation/DarwinNotify/notify-status-server-not-found.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_token_invalid.json": {
       "hash": "a13d68bbff77db889848fd888c760a02ff5d7921866d62a40ffd601d0322d9de",
-      "last_checked": "2026-04-03T07:46:09.952332",
+      "last_checked": "2026-04-07T07:43:43.540047",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"f5a4df3990d9fe418b11b99305cfee20\"",
       "file_path": "documentation/DarwinNotify/notify-token-invalid.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyasldbupdate.json": {
       "hash": "215bd1ca49557d67d1a348242979819fc66a4ec7c0dfdc0497107ad48ba2d4e1",
-      "last_checked": "2026-04-03T07:46:10.104391",
+      "last_checked": "2026-04-07T07:43:43.760171",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"fa74324f6ed3e7160b21dd3427e77a43\"",
       "file_path": "documentation/DarwinNotify/knotifyasldbupdate.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyclockset.json": {
       "hash": "43afe1d43a482ec4243ad446893cca62efe566ae111b6f6bd61a2d51a14a390d",
-      "last_checked": "2026-04-03T07:46:10.226101",
+      "last_checked": "2026-04-07T07:43:43.914307",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"7a166c125a25590941c09c0fe2b3aa75\"",
       "file_path": "documentation/DarwinNotify/knotifyclockset.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidation.json": {
       "hash": "b2db1e14c0ce9a76596ef07a9d477ed4645a04d09f6e77feaaf653dd8b22f581",
-      "last_checked": "2026-04-03T07:46:10.364880",
+      "last_checked": "2026-04-07T07:43:44.082092",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"75b66e1b9f6ebc0e2a346e6f346b1782\"",
       "file_path": "documentation/DarwinNotify/knotifydscacheinvalidation.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationgroup.json": {
       "hash": "d0da9e9b7090a47e29772cbb413dc10ea1af1860060d6c361ce22d10e2ef445f",
-      "last_checked": "2026-04-03T07:46:10.518235",
+      "last_checked": "2026-04-07T07:43:44.247682",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"be61e75ce3b2893dd87de9c7f3685ec7\"",
       "file_path": "documentation/DarwinNotify/knotifydscacheinvalidationgroup.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationhost.json": {
       "hash": "6321a38ac5ac62fc38bdbb7889b9d82166c4f7e0bd15fe4705251d7d21758ef4",
-      "last_checked": "2026-04-03T07:46:10.707062",
+      "last_checked": "2026-04-07T07:43:44.403691",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"7265c579cf1420a66d63e339f5fe45eb\"",
       "file_path": "documentation/DarwinNotify/knotifydscacheinvalidationhost.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationservice.json": {
       "hash": "92db91395572d5667eee3d21ea3f85813af8c6b4d8443af61e6a503e11661009",
-      "last_checked": "2026-04-03T07:46:11.018755",
+      "last_checked": "2026-04-07T07:43:44.711866",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"da36fdce37cf8038a852736e3c0f446f\"",
       "file_path": "documentation/DarwinNotify/knotifydscacheinvalidationservice.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifydscacheinvalidationuser.json": {
       "hash": "4e070b0dd4457f6d2d95e75f6e2256ccbaf103007dd3e4f9dd49879915ec4500",
-      "last_checked": "2026-04-03T07:46:11.169268",
+      "last_checked": "2026-04-07T07:43:44.865172",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"52571676301d4aa1826cc97ff21662af\"",
       "file_path": "documentation/DarwinNotify/knotifydscacheinvalidationuser.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyschostnamechange.json": {
       "hash": "69061a89d61ed436223a77290f3f31514212b8d8cd8774d561fc8448aa0c3453",
-      "last_checked": "2026-04-03T07:46:11.315784",
+      "last_checked": "2026-04-07T07:43:45.215675",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"6b8bb22093e125f7dc42f121697fbd02\"",
       "file_path": "documentation/DarwinNotify/knotifyschostnamechange.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyscnetworkchange.json": {
       "hash": "faa0f075f988502fb28ceb515796059afd869a6048844540dcbbf8f0556b816a",
-      "last_checked": "2026-04-03T07:46:11.487834",
+      "last_checked": "2026-04-07T07:43:45.387509",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"c16b06f131655894cb0e3208253c29dc\"",
       "file_path": "documentation/DarwinNotify/knotifyscnetworkchange.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifytimezonechange.json": {
       "hash": "bf4664097a13757858177147b50a99e898c202ee7fac0350bc32f719ad4a273f",
-      "last_checked": "2026-04-03T07:46:11.617866",
+      "last_checked": "2026-04-07T07:43:45.567791",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"18cdc2e975325d49706ab98c146c8271\"",
       "file_path": "documentation/DarwinNotify/knotifytimezonechange.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspace.json": {
       "hash": "f1b24ea55a059a37b91959a51de6a601b296616afed07c9694b3d8bb455771d2",
-      "last_checked": "2026-04-03T07:46:11.800628",
+      "last_checked": "2026-04-07T07:43:45.725033",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"9042f03989566a92d0b40e085fe16856\"",
       "file_path": "documentation/DarwinNotify/knotifyvfslowdiskspace.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspaceotherfs.json": {
       "hash": "dba46c3a25b5c117504aa4c3abf06b51645305ef71b8288899a80ebdc9040e8d",
-      "last_checked": "2026-04-03T07:46:12.129180",
+      "last_checked": "2026-04-07T07:43:46.040243",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"d220a098ab619084cabcc3588e8bb7f7\"",
       "file_path": "documentation/DarwinNotify/knotifyvfslowdiskspaceotherfs.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfslowdiskspacerootfs.json": {
       "hash": "7a5f2e0b54ba6b2cef756de6d34175889a34a0ee723c2c1812a0a8f2f2cceb07",
-      "last_checked": "2026-04-03T07:46:12.252092",
+      "last_checked": "2026-04-07T07:43:46.202111",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"378a51263d0903f98be38e22b3cd7be7\"",
       "file_path": "documentation/DarwinNotify/knotifyvfslowdiskspacerootfs.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsmount.json": {
       "hash": "3bdcda39c1d170ea527f487acb9ead0cb4e95d487483ddaa2a4c0f15e3dea548",
-      "last_checked": "2026-04-03T07:46:12.433668",
+      "last_checked": "2026-04-07T07:43:46.525142",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"d843ad097bdb0c50d5c970a3e4a414aa\"",
       "file_path": "documentation/DarwinNotify/knotifyvfsmount.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsunmount.json": {
       "hash": "d91562fca31f49cc4a50877444d723e88a7d2f15ab663b8a0cdc27d99343082b",
-      "last_checked": "2026-04-03T07:46:12.753246",
+      "last_checked": "2026-04-07T07:43:46.827549",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"08eace32698775ada804f7cf86e33926\"",
       "file_path": "documentation/DarwinNotify/knotifyvfsunmount.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/knotifyvfsupdate.json": {
       "hash": "956f154ce5910ae802a93421769ebfe3b2869cc3626b1a94ceb6f96c2945ca07",
-      "last_checked": "2026-04-03T07:46:12.915749",
+      "last_checked": "2026-04-07T07:43:47.114494",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"ad43a7f6ca53feb653f9c075b5da1f22\"",
       "file_path": "documentation/DarwinNotify/knotifyvfsupdate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_failed.json": {
       "hash": "928e9cb526c8af33294f1f9242fc04dbb7fc48c456306b296a029579563c73d6",
-      "last_checked": "2026-04-03T07:46:13.048484",
+      "last_checked": "2026-04-07T07:43:47.276543",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"c41ceee012e2c8da87a47e22420ea285\"",
       "file_path": "documentation/DarwinNotify/notify-status-failed.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_file.json": {
       "hash": "f581db815a17b2b3f2a078bada563e152265273b95db3d92838d998d5527d7d7",
-      "last_checked": "2026-04-03T07:46:13.231354",
+      "last_checked": "2026-04-07T07:43:47.471989",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"3b944205e136bf192378c81414a1a8ad\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-file.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_name.json": {
       "hash": "c27c7ea792c8bac57712609be28cc7773bc69b327fde40fb8bac7d5aa0294872",
-      "last_checked": "2026-04-03T07:46:13.403683",
+      "last_checked": "2026-04-07T07:43:47.632006",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"6b202bc804782752c43c8e6901d817d4\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-name.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_port.json": {
       "hash": "a1ca8541f569611eb4eba5e28606befa4b86522cf6f44028939f7ef4f9604f8f",
-      "last_checked": "2026-04-03T07:46:13.564116",
+      "last_checked": "2026-04-07T07:43:47.806115",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"5e3ff6f17324d9194abd891cb1f2e997\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-port.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_request.json": {
       "hash": "bfe10fe2255a74b274b2e2daa82501209b289ec5e7102f9b9979fdf18fb98d00",
-      "last_checked": "2026-04-03T07:46:13.877800",
+      "last_checked": "2026-04-07T07:43:48.099990",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"b102a62fb629d2f8f53e658dd3974160\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-request.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_signal.json": {
       "hash": "9ec3339b0da036243e53c356c75f50c89edf3eeaf7297161e973f10a5a0bc37a",
-      "last_checked": "2026-04-03T07:46:14.072864",
+      "last_checked": "2026-04-07T07:43:48.254759",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"da05155ccb6bfd1b640e4c41c51eb613\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-signal.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_invalid_token.json": {
       "hash": "4aa329a9b255450564f848a14b5c2ea4b6230204bb107e93a5919473633137cc",
-      "last_checked": "2026-04-03T07:46:14.219678",
+      "last_checked": "2026-04-07T07:43:48.418666",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"b652d30201ef72fbd63be7019f079355\"",
       "file_path": "documentation/DarwinNotify/notify-status-invalid-token.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_not_authorized.json": {
       "hash": "5d13b01953a9545b076ea1d820ebda30e92f4b5fff3ae893414fa1c9fa21b374",
-      "last_checked": "2026-04-03T07:46:14.365731",
+      "last_checked": "2026-04-07T07:43:48.628399",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"c39f363ffb48dfa065e30f230b314acb\"",
       "file_path": "documentation/DarwinNotify/notify-status-not-authorized.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_status_ok.json": {
       "hash": "858be26ff5190ffff3900c1d8078a3360683bd9ac3b4c2c93559b776b39447f6",
-      "last_checked": "2026-04-03T07:46:14.509477",
+      "last_checked": "2026-04-07T07:43:48.835122",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"91ff9b720a2913b0e18521be52ed6cba\"",
       "file_path": "documentation/DarwinNotify/notify-status-ok.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/darwinnotify/notify_reuse.json": {
       "hash": "eac37e7c1c8385642a0457c03144d2eb28338138800c5b1c07d9b95d2f4ddc84",
-      "last_checked": "2026-04-03T07:46:14.644049",
+      "last_checked": "2026-04-07T07:43:49.131852",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:04.775446",
+      "session_id": "2026-04-07T07:43:37.781408",
       "etag": "W/\"a7bb4ccb8bd0767ad99a7b0c9fab5778\"",
       "file_path": "documentation/DarwinNotify/notify-reuse.md"
     },

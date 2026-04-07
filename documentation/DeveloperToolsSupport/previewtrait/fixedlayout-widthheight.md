@@ -25,6 +25,15 @@ static func fixedLayout(width: CGFloat, height: CGFloat) -> PreviewTrait<T>
 
 This is the same as [`PreviewLayout.fixed(width:height:)`](previewlayout/fixed(width:height:).md).
 
+## See Also
+
+- [static var defaultLayout: PreviewTrait<Preview.ViewTraits>](previewtrait/defaultlayout.md)
+  Center the preview in a container the size of the device on which the preview is running.
+- [static func fixedLayout(width: CGFloat, height: CGFloat, depth: CGFloat) -> PreviewTrait<T>](previewtrait/fixedlayout(width:height:depth:).md)
+  Centers the preview in a fixed-size, 3D container.
+- [static var sizeThatFitsLayout: PreviewTrait<Preview.ViewTraits>](previewtrait/sizethatfitslayout.md)
+  Fit the container to the size of the preview when offered the size of the device that the preview is running on.
+
 
 ---
 

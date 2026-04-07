@@ -37,7 +37,7 @@ struct CircleImage_Previews: PreviewProvider {
 
 ## Topics
 
-### Enumeration Cases
+### Getting a layout
 - [PreviewLayout.device](previewlayout/device.md)
   Center the preview in a container the size of the device on which the preview is running.
 - [case fixed(width: CGFloat, height: CGFloat)](previewlayout/fixed(width:height:).md)
@@ -55,12 +55,12 @@ struct CircleImage_Previews: PreviewProvider {
 
 ## See Also
 
-- [protocol PreviewRegistry](previewregistry.md)
-  A protocol that the system uses to locate previews at runtime.
 - [struct Preview](preview.md)
   A base type that preview macros use to create previews.
 - [struct PreviewTrait](previewtrait.md)
   Customizations that you can apply to a preview.
+- [protocol PreviewRegistry](previewregistry.md)
+  A protocol that the system uses to locate previews at runtime.
 
 
 ---

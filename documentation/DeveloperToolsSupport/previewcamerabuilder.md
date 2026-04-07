@@ -31,7 +31,7 @@ You implicitly use a preview camera builder when you define a list of [`PreviewC
 
 ## Topics
 
-### Type Methods
+### Building a preview camera
 - [static func buildArray([[PreviewCamera]]) -> [PreviewCamera]](previewcamerabuilder/buildarray(_:).md)
   Builds a partial result from an array of partial results.
 - [static func buildExpression(PreviewCamera) -> [PreviewCamera]](previewcamerabuilder/buildexpression(_:)-5okdh.md)

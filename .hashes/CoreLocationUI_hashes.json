@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-03T07:46:27.519203",
+    "last_updated": "2026-04-07T07:44:04.072313",
     "total_pages": 56,
-    "session_id": "2026-04-03T07:46:21.880258"
+    "session_id": "2026-04-07T07:43:57.635750"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CoreLocationUI.json": {
       "hash": "db317d638e3e2d60902c0c661b61525eecc5132d4f24c11577b0faa6485c8166",
-      "last_checked": "2026-04-03T07:46:22.317782",
+      "last_checked": "2026-04-07T07:43:57.890758",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"b2b458a294e08ff0a188f89edfa60119\"",
       "file_path": "documentation/CoreLocationUI/CoreLocationUI.md"
     },
     "https://developer.apple.com/documentation/CoreLocationUI": {
       "hash": "db317d638e3e2d60902c0c661b61525eecc5132d4f24c11577b0faa6485c8166",
-      "last_checked": "2026-04-03T07:46:22.244664",
+      "last_checked": "2026-04-07T07:43:57.791493",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"b2b458a294e08ff0a188f89edfa60119\"",
       "file_path": "documentation/CoreLocationUI/CoreLocationUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/sharing-your-location-to-find-a-park.json": {
       "hash": "929618954e5d0eb953641cee9d72d582cd7eaa67c144d21b77bfefa1f5c17d66",
-      "last_checked": "2026-04-03T07:46:22.562424",
+      "last_checked": "2026-04-07T07:43:58.203784",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"99365521c879a2b735ebd94e3e9ba999\"",
       "file_path": "documentation/CoreLocationUI/sharing-your-location-to-find-a-park.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton.json": {
       "hash": "30024fc2135a483e5022d05b8160d33d5265923e05c05abd385f3d7564eeeb00",
-      "last_checked": "2026-04-03T07:46:22.744257",
+      "last_checked": "2026-04-07T07:43:58.509461",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"ab0c1e3279d838cd342383c6308067a9\"",
       "file_path": "documentation/CoreLocationUI/locationbutton.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbutton.json": {
       "hash": "5ddbe4b4edc4af5f50f93334d335258c4e473c77a722a8b5eb9ee1bdd9225ff0",
-      "last_checked": "2026-04-03T07:46:23.071949",
+      "last_checked": "2026-04-07T07:43:58.819531",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"be69991d3fb48e7920b9c3e0eed0487a\"",
       "file_path": "documentation/CoreLocationUI/cllocationbutton.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon.json": {
       "hash": "fbb7e18e2cdcb8ab14385f43540dd82773b25434c83bd79c70ad3128561b131e",
-      "last_checked": "2026-04-03T07:46:23.227809",
+      "last_checked": "2026-04-07T07:43:58.993908",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"dd8832dd1e6dbec007773735d7abd7a8\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonicon.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel.json": {
       "hash": "6b0c0376090bc6e06bce91fe0ca8c8de77c0a77cc5090c0bfab7ee841d157001",
-      "last_checked": "2026-04-03T07:46:23.553594",
+      "last_checked": "2026-04-07T07:43:59.180189",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"95e4d696ae2f90b2356544aafe99728b\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/init(_:action:).json": {
       "hash": "d041818eba4ee35a0dd3a307871b87478961be38bd4b3f91117007bbb10f6864",
-      "last_checked": "2026-04-03T07:46:23.740641",
+      "last_checked": "2026-04-07T07:43:59.473745",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"8001ce75dbdf01acb9ef716653996955\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/init-action.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title.json": {
       "hash": "2dbe3fd41a2cdc2494a35a94976a4c312855813aa078e9e4df8a1611a882d1d5",
-      "last_checked": "2026-04-03T07:46:23.878109",
+      "last_checked": "2026-04-07T07:43:59.630253",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"aeff1ac35badc57055b468799328b97b\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbutton/icon.json": {
       "hash": "393d3da9998339dab9a93d7acb92776567a13deffa9782d34b40ec1d3471280f",
-      "last_checked": "2026-04-03T07:46:24.044279",
+      "last_checked": "2026-04-07T07:43:59.812861",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"86b056990854ca8e9a08cec4be8f6115\"",
       "file_path": "documentation/CoreLocationUI/cllocationbutton/icon.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbutton/label.json": {
       "hash": "e059a33bb14a0bc73c0710c8096d3b5b53296857c8c2d8ecfaecce8c6b3a49b1",
-      "last_checked": "2026-04-03T07:46:24.209886",
+      "last_checked": "2026-04-07T07:44:00.160923",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"9ca2286cfa0a275bb4069cf4414d1801\"",
       "file_path": "documentation/CoreLocationUI/cllocationbutton/label.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbutton/cornerradius.json": {
       "hash": "f15453315ddf103b4f90b5ad472226d2c86a2196e7c8c6ae1c95e767699d1fe4",
-      "last_checked": "2026-04-03T07:46:24.387900",
+      "last_checked": "2026-04-07T07:44:00.464257",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"faa1c70578ca51fee2ec51ee0b949524\"",
       "file_path": "documentation/CoreLocationUI/cllocationbutton/cornerradius.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbutton/fontsize.json": {
       "hash": "5e64ecd57e1ea95905291cb7bbc1885c1f2778ed02d059dc20a470575f3ba44b",
-      "last_checked": "2026-04-03T07:46:24.520103",
+      "last_checked": "2026-04-07T07:44:00.761353",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"5cc95add377fa13ee527cf05412dcce0\"",
       "file_path": "documentation/CoreLocationUI/cllocationbutton/fontsize.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/none.json": {
       "hash": "9e327205ba46491cce734c127314c934a62471c3454bc5574cbcb0e5f45f76c1",
-      "last_checked": "2026-04-03T07:46:24.702082",
+      "last_checked": "2026-04-07T07:44:00.922634",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"c62905628b6f322ef330f46928c1a291\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/none.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/arrowfilled.json": {
       "hash": "e295c77adfdbe30db8a7d3c76c0772e92016528762d187a8c8554761586f00db",
-      "last_checked": "2026-04-03T07:46:24.874788",
+      "last_checked": "2026-04-07T07:44:01.228310",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"010f8cb52440ddffe9ac4225a83134b0\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/arrowfilled.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/arrowoutline.json": {
       "hash": "1480c66c605da63673127b94ff0927ae2dfe10122c5d194b1e54ca0fd61dcad7",
-      "last_checked": "2026-04-03T07:46:25.115572",
+      "last_checked": "2026-04-07T07:44:01.392695",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"589e9cdc7aea2aff645c6d3d3ee590b3\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/arrowoutline.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonicon/init(rawvalue:).json": {
       "hash": "3a94434f9db8d9cfb46b9676ef9cbe6ae354bf2cb7ac74599b29c4095206afc2",
-      "last_checked": "2026-04-03T07:46:25.235660",
+      "last_checked": "2026-04-07T07:44:01.559279",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"f1a7dd3dc7356319e8c3ecd2cd15c430\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonicon/init-rawvalue.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/none.json": {
       "hash": "8e748ee714dd166e3b31ddee02cd528ca416ce620a49b103d63dfe2ca916e173",
-      "last_checked": "2026-04-03T07:46:25.434897",
+      "last_checked": "2026-04-07T07:44:01.720043",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"abc0e5d612944e7360a3a8887e43d156\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/none.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/currentlocation.json": {
       "hash": "4f7e7d7f572262be90d27bbc5714e23cb2b61854ec1b140dfce1ecb8478d61be",
-      "last_checked": "2026-04-03T07:46:25.765124",
+      "last_checked": "2026-04-07T07:44:02.028645",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"f9f63a3e2343a26bd9751d58c6807fd6\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/currentlocation.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/sendcurrentlocation.json": {
       "hash": "4cbaf3c9e88672cb61a02d4b8a1fedb55f96cdc42b13131b7762da76fa97c1a8",
-      "last_checked": "2026-04-03T07:46:25.910664",
+      "last_checked": "2026-04-07T07:44:02.189141",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"9071af9f4415ed36a55c90346d897672\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sendcurrentlocation.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/sendmycurrentlocation.json": {
       "hash": "46652d8ff190b237e29b6b1207b5f51d58a6ce57fc83d4806cc97130be122c72",
-      "last_checked": "2026-04-03T07:46:26.043573",
+      "last_checked": "2026-04-07T07:44:02.351115",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"3190b02dc4dc5ea1cdc52939ee6d57d9\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sendmycurrentlocation.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/sharecurrentlocation.json": {
       "hash": "2b9d3814772768dd6a2eadb87939b4ebc00ea0efa36167c2c1a296a177baba7a",
-      "last_checked": "2026-04-03T07:46:26.237066",
+      "last_checked": "2026-04-07T07:44:02.509406",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"436c22d9c5ed4366e68cf81c865ae218\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sharecurrentlocation.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/sharemycurrentlocation.json": {
       "hash": "fecc76c4cbbbbdcaca7f84cd92725c34a6c85418849b7dd0aaebb76a9bf2791b",
-      "last_checked": "2026-04-03T07:46:26.372795",
+      "last_checked": "2026-04-07T07:44:02.688827",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"eabbaf66bb4c773c5b6f3ecfe7423c08\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/sharemycurrentlocation.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/cllocationbuttonlabel/init(rawvalue:).json": {
       "hash": "c3fdc8106df52fd1ea3163ad471cb4d329a1eb758a3523b3274b35509ee94973",
-      "last_checked": "2026-04-03T07:46:26.680397",
+      "last_checked": "2026-04-07T07:44:02.864826",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"ebd4e8a4efd209f5eb80e4360c345ba2\"",
       "file_path": "documentation/CoreLocationUI/cllocationbuttonlabel/init-rawvalue.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title/currentlocation.json": {
       "hash": "61bb72b3be500cdf8877e0d19bd5feeb9bef5ad8033ed1cc016ebea62584433d",
-      "last_checked": "2026-04-03T07:46:26.831525",
+      "last_checked": "2026-04-07T07:44:03.063003",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"134f29b421595fe9ae2b6af173c5de1f\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title/currentlocation.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title/sendcurrentlocation.json": {
       "hash": "f48a3050b60b4496f8fcaf4848b611bb9cf395283b305822d5453cafbf00a132",
-      "last_checked": "2026-04-03T07:46:27.005986",
+      "last_checked": "2026-04-07T07:44:03.349184",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"7ebbafe25d79b7aeffdb3b83d029bf72\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title/sendcurrentlocation.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title/sendmycurrentlocation.json": {
       "hash": "0a9033f3bb8deb21744b30c691143ede0228cd4fce628601a2ffe23a253e1d68",
-      "last_checked": "2026-04-03T07:46:27.132684",
+      "last_checked": "2026-04-07T07:44:03.527179",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"3fc7f5a045f065ae855e97f9321bf15c\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title/sendmycurrentlocation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title/sharecurrentlocation.json": {
       "hash": "df351c38352c10ce8747b3f6c190c790839495c1804c86fe12be8122c4e962bd",
-      "last_checked": "2026-04-03T07:46:27.319774",
+      "last_checked": "2026-04-07T07:44:03.703042",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"cd6fe3f4ebedf68135a50b07357fcc21\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title/sharecurrentlocation.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corelocationui/locationbutton/title/sharemycurrentlocation.json": {
       "hash": "75f50d909be3a20df67da4d6cb2e057dfb2a96e74b40748d99bc0d66bf7dea0c",
-      "last_checked": "2026-04-03T07:46:27.501519",
+      "last_checked": "2026-04-07T07:44:04.069349",
       "status": "unchanged",
-      "session_id": "2026-04-03T07:46:21.880258",
+      "session_id": "2026-04-07T07:43:57.635750",
       "etag": "W/\"09b9a0f6eedd8bcd3cc6df6af77de1db\"",
       "file_path": "documentation/CoreLocationUI/locationbutton/title/sharemycurrentlocation.md"
     },

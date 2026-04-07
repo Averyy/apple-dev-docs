@@ -22,7 +22,7 @@ struct ImageResource
 
 ## Topics
 
-### Initializers
+### Creating an image resource
 - [init(name: String, bundle: Bundle)](imageresource/init(name:bundle:).md)
   Creates an image from a resource with the specified name in the given bundle.
 
