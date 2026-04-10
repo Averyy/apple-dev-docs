@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-04-07T08:51:05.739438",
+    "last_updated": "2026-04-10T08:48:08.056606",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -49,7 +49,7 @@
     "swiftlang/swift-org-website:documentation/api-design-guidelines/index.md": "71f3853c08ac1a8e9df4a071bd6e819aee70e4e8cc7f4ab5901d380154308389",
     "swiftlang/swift-org-website:documentation/cxx-interop/index.md": "f2ae3d849504438512ce718f35307448cf7707f7421e35f1f2b8f905e5069b34",
     "swiftlang/swift-org-website:documentation/cxx-interop/project-build-setup/index.md": "29827b8511437f85a8deaed828e858fd6f2c97e05b94bfd8c340751ddf8a141b",
-    "swiftlang/swift-org-website:documentation/cxx-interop/safe-interop/index.md": "7c1a76732d89b9001c911fb0742fb168f4fb91c9a4de1ff36b1d3937fb00b9b3",
+    "swiftlang/swift-org-website:documentation/cxx-interop/safe-interop/index.md": "b2407f31d91259e99d59b820a0b16b3bb21e7540d16c866cda3f121f2d250d0b",
     "swiftlang/swift-org-website:documentation/cxx-interop/status/index.md": "b1e5e65f931b9cf6dd8a17a21e535ebedce5ba08442cc3012cf98ca36286e9d7"
   }
 }

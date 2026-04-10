@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-07T07:41:59.273066",
+    "last_updated": "2026-04-10T07:40:36.844490",
     "total_pages": 487,
-    "session_id": "2026-04-07T07:41:25.096106"
+    "session_id": "2026-04-10T07:40:02.257434"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppStoreServerAPI.json": {
       "hash": "c71bec1973c274f61644917b9c3d9ccb544b54b8595a56ee4b267b8f2ef79b7b",
-      "last_checked": "2026-04-07T07:41:25.381256",
+      "last_checked": "2026-04-10T07:40:02.507127",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a86caa70a270f066ba67d1f8243567a1\"",
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md"
     },
     "https://developer.apple.com/documentation/AppStoreServerAPI": {
       "hash": "c71bec1973c274f61644917b9c3d9ccb544b54b8595a56ee4b267b8f2ef79b7b",
-      "last_checked": "2026-04-07T07:41:25.260242",
+      "last_checked": "2026-04-10T07:40:02.402830",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a86caa70a270f066ba67d1f8243567a1\"",
       "file_path": "documentation/AppStoreServerAPI/AppStoreServerAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/simplifying-your-implementation-by-using-the-app-store-server-library.json": {
       "hash": "927616973a6466e75a390be244ba0420aea6bef48dea7566c5d6d09d49e8a3f7",
-      "last_checked": "2026-04-07T07:41:25.638176",
+      "last_checked": "2026-04-10T07:40:02.795836",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"22daffd80b41b6ea64ecd45c99d050ae\"",
       "file_path": "documentation/AppStoreServerAPI/simplifying-your-implementation-by-using-the-app-store-server-library.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/creating-api-keys-to-authorize-api-requests.json": {
       "hash": "29f7a02206b5d7ac2baf8ef2b0ea66bc891256904b518a39d6bd7d3c0c90094e",
-      "last_checked": "2026-04-07T07:41:25.765757",
+      "last_checked": "2026-04-10T07:40:02.937271",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6f71bcb7a86803460616a4fabe3a0fce\"",
       "file_path": "documentation/AppStoreServerAPI/creating-api-keys-to-authorize-api-requests.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/generating-json-web-tokens-for-api-requests.json": {
       "hash": "407c93d2253c40d7e47e599bcfc6003a75db0dfceb1d129c6769866d81d3117b",
-      "last_checked": "2026-04-07T07:41:25.967183",
+      "last_checked": "2026-04-10T07:40:03.118468",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4090662ac800bf866aad65319c336d35\"",
       "file_path": "documentation/AppStoreServerAPI/generating-json-web-tokens-for-api-requests.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/identifying-rate-limits.json": {
       "hash": "d231190acb4d86ed3cd75f8d509e3d720d53be15d777fbd860bf4549440d13b6",
-      "last_checked": "2026-04-07T07:41:26.118785",
+      "last_checked": "2026-04-10T07:40:03.239618",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3f9066141570f737bf0009f202ce56cd\"",
       "file_path": "documentation/AppStoreServerAPI/identifying-rate-limits.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/app-store-server-api-changelog.json": {
       "hash": "dd34fb8545b24fd7cd0bbc9335d0ea7118a3b0f300711456bc1cd49451965b73",
-      "last_checked": "2026-04-07T07:41:26.338418",
+      "last_checked": "2026-04-10T07:40:03.442811",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"02a012067c6d31c8b9ab1217b8a82b45\"",
       "file_path": "documentation/AppStoreServerAPI/app-store-server-api-changelog.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-transaction-history.json": {
       "hash": "58a9d76a98fff497c479e3e12c47f7027c54d047e34fbf78b9db2fa632d6c4af",
-      "last_checked": "2026-04-07T07:41:26.495261",
+      "last_checked": "2026-04-10T07:40:03.563338",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"44193e0f78bba1230af19e7fe1a4a813\"",
       "file_path": "documentation/AppStoreServerAPI/get-transaction-history.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/historyresponse.json": {
       "hash": "1f1cfd7178dfd65497d6653ea57d5fab73e0f905c66e71cb67ea768d69553d00",
-      "last_checked": "2026-04-07T07:41:26.661357",
+      "last_checked": "2026-04-10T07:40:03.725251",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9e3a0004971b952c34a3065ddef4d603\"",
       "file_path": "documentation/AppStoreServerAPI/historyresponse.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-transaction-history-v1.json": {
       "hash": "a4172294e2646929d2d695005dd39b07ddc221fce3c3843230058b1230320433",
-      "last_checked": "2026-04-07T07:41:32.924529",
+      "last_checked": "2026-04-10T07:40:09.257048",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c568f48a42cef044097e28583576f5f4\"",
       "file_path": "documentation/AppStoreServerAPI/get-transaction-history-v1.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-transaction-info.json": {
       "hash": "167e013e6b5526abe3e3904ea4f4137d1a9a647f54e94bbd8eb291d02b2a005b",
-      "last_checked": "2026-04-07T07:41:26.821649",
+      "last_checked": "2026-04-10T07:40:03.829247",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3078d56ec4af7ee4797552d79b389cac\"",
       "file_path": "documentation/AppStoreServerAPI/get-transaction-info.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactioninforesponse.json": {
       "hash": "defd8176dfb1a30fccc7c9f1752077775b111f61ff28cbafa519704c7094888b",
-      "last_checked": "2026-04-07T07:41:26.986816",
+      "last_checked": "2026-04-10T07:40:03.965748",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3d86890bd2459101cc1eeac149fd2f1e\"",
       "file_path": "documentation/AppStoreServerAPI/transactioninforesponse.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-all-subscription-statuses.json": {
       "hash": "093859d4f48967968288c0e4ede85c50977296bd9d9034105246f2747a06dc2a",
-      "last_checked": "2026-04-07T07:41:27.427260",
+      "last_checked": "2026-04-10T07:40:04.392575",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"aab07f206b648da133a79d7806fcfa82\"",
       "file_path": "documentation/AppStoreServerAPI/get-all-subscription-statuses.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/statusresponse.json": {
       "hash": "a7b16ab2c6b6676993f63c34ef09a892c8494880afdde2da80183cbdaafb02a6",
-      "last_checked": "2026-04-07T07:41:27.559109",
+      "last_checked": "2026-04-10T07:40:04.498476",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6b4f66d11068e62374c9e38d5e96c047\"",
       "file_path": "documentation/AppStoreServerAPI/statusresponse.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/set-app-account-token.json": {
       "hash": "f11493e51c7a5a46c68a6b43eb5ee4b815a04b40576232f58a373506a6a37d02",
-      "last_checked": "2026-04-07T07:41:27.681722",
+      "last_checked": "2026-04-10T07:40:04.676754",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3d973b7ee8b9d472e89c2fa7793df5a8\"",
       "file_path": "documentation/AppStoreServerAPI/set-app-account-token.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/updateappaccounttokenrequest.json": {
       "hash": "01ad86499345e5b9d957d7792488bffc5c5d3ecede12ac98666df534e773ae14",
-      "last_checked": "2026-04-07T07:41:27.817504",
+      "last_checked": "2026-04-10T07:40:04.792304",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"51978e0f7ac1b8960cfeadd68cd7eda3\"",
       "file_path": "documentation/AppStoreServerAPI/updateappaccounttokenrequest.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/send-consumption-information.json": {
       "hash": "7de26f7a924bd72a1074516707dceb71389f423f06b8ce5b1099204fe7eec40f",
-      "last_checked": "2026-04-07T07:41:28.400109",
+      "last_checked": "2026-04-10T07:40:05.316315",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a7092207392c3dd3dd4f0acdcfad5707\"",
       "file_path": "documentation/AppStoreServerAPI/send-consumption-information.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequest.json": {
       "hash": "0e5b16d02e9b4e3cdee2f4ea0ef0ac8a590f213a10f5145b17ad1dcc85a5385f",
-      "last_checked": "2026-04-07T07:41:28.561623",
+      "last_checked": "2026-04-10T07:40:05.438388",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6aaf2b20967e9619696fbf0cb288e1f8\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionrequest.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/look-up-order-id.json": {
       "hash": "2056a828833f3ad7b6e085f2ac656e9b7899bcf85f0b81e6ff9a74553408ec47",
-      "last_checked": "2026-04-07T07:41:27.932652",
+      "last_checked": "2026-04-10T07:40:04.879217",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"1118d47abc55a469476f858ca7784bd2\"",
       "file_path": "documentation/AppStoreServerAPI/look-up-order-id.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/orderid.json": {
       "hash": "11bfe01eac9a8d1310d80ae3eefb767721ee0ae7d8011316a2f15f2a144a2e23",
-      "last_checked": "2026-04-07T07:41:28.118475",
+      "last_checked": "2026-04-10T07:40:05.077417",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bc9303e642d6ad6b6b03bdf9d87dc7f7\"",
       "file_path": "documentation/AppStoreServerAPI/orderid.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/orderlookupresponse.json": {
       "hash": "63e25d1250cdd399284b7fd9fb0f7507d3bf3d3e22d85f7d21bc60e70b005b34",
-      "last_checked": "2026-04-07T07:41:28.227763",
+      "last_checked": "2026-04-10T07:40:05.201752",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0904079af6b6562fad1b8c49dc649947\"",
       "file_path": "documentation/AppStoreServerAPI/orderlookupresponse.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-refund-history.json": {
       "hash": "9df7c1b8e4b2fdb606dd120f947125ba09d70db62366b155d25c34968e35f9fe",
-      "last_checked": "2026-04-07T07:41:28.734772",
+      "last_checked": "2026-04-10T07:40:05.556133",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e706243fbbe3a563398f3aa157b5d9da\"",
       "file_path": "documentation/AppStoreServerAPI/get-refund-history.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundhistoryresponse.json": {
       "hash": "c4157f7cc730d465649f1efe943702d846ee61dd874e6f756f55ce3c7c40d07a",
-      "last_checked": "2026-04-07T07:41:28.853609",
+      "last_checked": "2026-04-10T07:40:05.714590",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e68645f9b3f40693fb1b92a21b44b2be\"",
       "file_path": "documentation/AppStoreServerAPI/refundhistoryresponse.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-refund-history-v1.json": {
       "hash": "3880abacfdb41d5ac4fdbf63ca3c6bdb15af64abc80fa0dd2f9e2571556d20eb",
-      "last_checked": "2026-04-07T07:41:33.067686",
+      "last_checked": "2026-04-10T07:40:09.395491",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3cc85d9e2bd2d33067ee5b8ed85ced31\"",
       "file_path": "documentation/AppStoreServerAPI/get-refund-history-v1.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundlookupresponse.json": {
       "hash": "fbd38b178ed976db52cf9dd3a0ccc7a983c7bfb809d4d8ea27c6b2d3307a1d6d",
-      "last_checked": "2026-04-07T07:41:33.478779",
+      "last_checked": "2026-04-10T07:40:09.770535",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"601850bc1a0f506238e5c4f70cb9468f\"",
       "file_path": "documentation/AppStoreServerAPI/refundlookupresponse.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extending-the-renewal-date-for-auto-renewable-subscriptions.json": {
       "hash": "553227c98412050cd05f26ebf319a43bd24faf5ca5aef096607cc171d436047a",
-      "last_checked": "2026-04-07T07:41:29.016899",
+      "last_checked": "2026-04-10T07:40:05.846249",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c297989b534831d5cda3d30c64fbd0a7\"",
       "file_path": "documentation/AppStoreServerAPI/extending-the-renewal-date-for-auto-renewable-subscriptions.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extend-a-subscription-renewal-date.json": {
       "hash": "7e842e2d33a8fb7a97b353ed024414eea62740185120abf0dbbf61015b4f8670",
-      "last_checked": "2026-04-07T07:41:29.153694",
+      "last_checked": "2026-04-10T07:40:05.987166",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2ac447b0ad4265bc3c1217d71324d644\"",
       "file_path": "documentation/AppStoreServerAPI/extend-a-subscription-renewal-date.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extend-subscription-renewal-dates-for-all-active-subscribers.json": {
       "hash": "f048cb46361a528dd19d73af9cb4cd7c41d810b0d1ff42147bf27267eab790d8",
-      "last_checked": "2026-04-07T07:41:29.292041",
+      "last_checked": "2026-04-10T07:40:06.109914",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4a8f2ced68e495d0f210f39176a79075\"",
       "file_path": "documentation/AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-status-of-subscription-renewal-date-extensions.json": {
       "hash": "6a8a010110819713b72d5397c3f453a99e0783468a165b9b97d3e806be374b3d",
-      "last_checked": "2026-04-07T07:41:29.426038",
+      "last_checked": "2026-04-10T07:40:06.241187",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"12a2418a59a7786db7b75d08836cf4f8\"",
       "file_path": "documentation/AppStoreServerAPI/get-status-of-subscription-renewal-date-extensions.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extendrenewaldaterequest.json": {
       "hash": "44fc2d38b990000f664081e509b4ccaef1d43dfa6b9afa9b5980186f26857299",
-      "last_checked": "2026-04-07T07:41:29.554916",
+      "last_checked": "2026-04-10T07:40:06.371259",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"169fa52714d96e729b259e7257462554\"",
       "file_path": "documentation/AppStoreServerAPI/extendrenewaldaterequest.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extendrenewaldateresponse.json": {
       "hash": "065987ef44078992fc6c305dea94c45e09d11e0c836cbbb4e134353de1287766",
-      "last_checked": "2026-04-07T07:41:29.703642",
+      "last_checked": "2026-04-10T07:40:06.500751",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e8d9751e2deda2f5f4af9351edd997cb\"",
       "file_path": "documentation/AppStoreServerAPI/extendrenewaldateresponse.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/massextendrenewaldaterequest.json": {
       "hash": "dc4de1972d98749e61a45b80df2caba64cfb79c394a6ac17db113aea5bc48636",
-      "last_checked": "2026-04-07T07:41:29.831283",
+      "last_checked": "2026-04-10T07:40:06.632417",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"93bec01ded328e1e4cb5a30a8719a174\"",
       "file_path": "documentation/AppStoreServerAPI/massextendrenewaldaterequest.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/massextendrenewaldateresponse.json": {
       "hash": "f75880a33e28394f59276258943065287802e78230581859b5bc55f98c19dc13",
-      "last_checked": "2026-04-07T07:41:30.010375",
+      "last_checked": "2026-04-10T07:40:06.747135",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"820ac66b3956e089949bfd26342373d3\"",
       "file_path": "documentation/AppStoreServerAPI/massextendrenewaldateresponse.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/massextendrenewaldatestatusresponse.json": {
       "hash": "9fac2c3bf5c1c3cccbb3becf5325d24238c538e49197713e2397be01604cc3e7",
-      "last_checked": "2026-04-07T07:41:30.141837",
+      "last_checked": "2026-04-10T07:40:06.871938",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"17d26011bda8e37f6ee379eaadbe4829\"",
       "file_path": "documentation/AppStoreServerAPI/massextendrenewaldatestatusresponse.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-notification-history.json": {
       "hash": "2477f55127cb05127d58db5b2db525145312f6189634fc424e0b6a4239ac5b03",
-      "last_checked": "2026-04-07T07:41:30.263794",
+      "last_checked": "2026-04-10T07:40:06.991475",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7c1aea9ccfcc14af565734b5cda22eda\"",
       "file_path": "documentation/AppStoreServerAPI/get-notification-history.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryrequest.json": {
       "hash": "9cb71a4054a67f1f710975a83e5b3ec7b9dc9cb79d8f79003b315ac9c0677c1d",
-      "last_checked": "2026-04-07T07:41:30.415598",
+      "last_checked": "2026-04-10T07:40:07.131666",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"dda33ca8081fe409d3968d7c94c5579b\"",
       "file_path": "documentation/AppStoreServerAPI/notificationhistoryrequest.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryresponse.json": {
       "hash": "8e86ad7b1197a9efdc2678ed2ee4971baa1febc96f3d8b0262d27fc7604d9ae7",
-      "last_checked": "2026-04-07T07:41:30.524227",
+      "last_checked": "2026-04-10T07:40:07.263283",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4848f1ef014a32a427fa6c96eafd370c\"",
       "file_path": "documentation/AppStoreServerAPI/notificationhistoryresponse.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationhistoryresponseitem.json": {
       "hash": "0bf4ce46ffb1b06e57d02bbbd5ee2450ee1c24054160ed1d29a12ab728235d15",
-      "last_checked": "2026-04-07T07:41:30.679098",
+      "last_checked": "2026-04-10T07:40:07.383150",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"08b1005a2aaa6a2d0ab6e7d233c5cc0e\"",
       "file_path": "documentation/AppStoreServerAPI/notificationhistoryresponseitem.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/request-a-test-notification.json": {
       "hash": "922af5c38b393b4fd93d4abb47930cf1af0e690c92ba89f0881f3da6c6f7c6dc",
-      "last_checked": "2026-04-07T07:41:31.049174",
+      "last_checked": "2026-04-10T07:40:07.533250",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"05cb718a63b936f82fe229ba9e7819ac\"",
       "file_path": "documentation/AppStoreServerAPI/request-a-test-notification.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-test-notification-status.json": {
       "hash": "da29ae55cfc69f20a1dcf4b7e1643eb5a6866ffc1a502601d409968b137e9c4c",
-      "last_checked": "2026-04-07T07:41:31.167416",
+      "last_checked": "2026-04-10T07:40:07.650618",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"8ed8dd00bcca84b5da3fdaa77d8065a6\"",
       "file_path": "documentation/AppStoreServerAPI/get-test-notification-status.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendtestnotificationresponse.json": {
       "hash": "d536f034aec14d9f1a8444311cdfda19e375d009381a223e4f4c2333e06bc87a",
-      "last_checked": "2026-04-07T07:41:31.346180",
+      "last_checked": "2026-04-10T07:40:07.805867",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"81ccba25d5857e40aa63d43bc750f466\"",
       "file_path": "documentation/AppStoreServerAPI/sendtestnotificationresponse.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/checktestnotificationresponse.json": {
       "hash": "3dabbee5c90f4f122596e89a4bdd4d6ed7e5c0d421d713efa8bb8fcc1df4f592",
-      "last_checked": "2026-04-07T07:41:31.459811",
+      "last_checked": "2026-04-10T07:40:07.972216",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3f15559733ab1c9f4af6158e59e0a9b2\"",
       "file_path": "documentation/AppStoreServerAPI/checktestnotificationresponse.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwstransaction.json": {
       "hash": "8e66548f54efba075e39aded4cc891d4161c7d1bea14145018b01fbda3589db9",
-      "last_checked": "2026-04-07T07:41:32.089082",
+      "last_checked": "2026-04-10T07:40:08.482459",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"837fc3360b6e8dd1b395a3b1684506f4\"",
       "file_path": "documentation/AppStoreServerAPI/jwstransaction.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwsrenewalinfo.json": {
       "hash": "e86c1ab34fab4a393b6ea2e77a8f3eaba09742f9fb733f3780992e9c3e283e3d",
-      "last_checked": "2026-04-07T07:41:32.381068",
+      "last_checked": "2026-04-10T07:40:08.727400",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2f8ab910854eb242415e255725cc3e6f\"",
       "file_path": "documentation/AppStoreServerAPI/jwsrenewalinfo.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwsdecodedheader.json": {
       "hash": "386453974b53d4f098c19d95f75ca905c6acc19df592c714da1cba3d79b616ec",
-      "last_checked": "2026-04-07T07:41:31.630722",
+      "last_checked": "2026-04-10T07:40:08.095111",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"95fb6f01b9867347ea567abc91e1c0b9\"",
       "file_path": "documentation/AppStoreServerAPI/jwsdecodedheader.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwstransactiondecodedpayload.json": {
       "hash": "11b71130ad8ab16fac470183a8cec8df242b4062f2851f14b00fb875437b6575",
-      "last_checked": "2026-04-07T07:41:32.256093",
+      "last_checked": "2026-04-10T07:40:08.601997",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7e4bfb5127e60d1ecd3486add3362df8\"",
       "file_path": "documentation/AppStoreServerAPI/jwstransactiondecodedpayload.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwsrenewalinfodecodedpayload.json": {
       "hash": "4dc1e7ea096a0ff8c84da81fb19d3be9d4b17478f1b6ab4099744ac78b576f2a",
-      "last_checked": "2026-04-07T07:41:32.534616",
+      "last_checked": "2026-04-10T07:40:08.868533",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0b62f163861a7952a755d081b3bac975\"",
       "file_path": "documentation/AppStoreServerAPI/jwsrenewalinfodecodedpayload.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/data-types.json": {
       "hash": "883c854db8ffe326c01c310afa73122df48af08d99066ca5627fddc0298c884e",
-      "last_checked": "2026-04-07T07:41:32.670388",
+      "last_checked": "2026-04-10T07:40:08.987730",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"320042c3ab2af2d59b5a3db382af176e\"",
       "file_path": "documentation/AppStoreServerAPI/data-types.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/error-codes.json": {
       "hash": "969d246fc5f464dc53fb0422563d6bea1dc54e96ef20761d0d5d00f0155980ba",
-      "last_checked": "2026-04-07T07:41:32.800718",
+      "last_checked": "2026-04-10T07:40:09.138618",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7f00c1b3b3545b31030e6dd10532b010\"",
       "file_path": "documentation/AppStoreServerAPI/error-codes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appappleid.json": {
       "hash": "054255354d0de12030fa30500ff35046b89914fa0255c56a7c61761c5c377ebe",
-      "last_checked": "2026-04-07T07:41:33.611754",
+      "last_checked": "2026-04-10T07:40:09.898295",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9af66b1212d241d17558bf1812dfaa39\"",
       "file_path": "documentation/AppStoreServerAPI/appappleid.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/bundleid.json": {
       "hash": "a2b2280fca11cd1993d6b8b598594f7630274425b458d46e88dbda1d17123634",
-      "last_checked": "2026-04-07T07:41:33.769539",
+      "last_checked": "2026-04-10T07:40:10.017152",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"ebe2d197d67c5f306d78681b928434e3\"",
       "file_path": "documentation/AppStoreServerAPI/bundleid.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/environment.json": {
       "hash": "f675cfa99fedcf687c3a7f8dc66b405ccd3d47ca27372ce84ac7c0ee59036bec",
-      "last_checked": "2026-04-07T07:41:33.948881",
+      "last_checked": "2026-04-10T07:40:10.159553",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"009a6a8b659b65c51a2af83e716115b0\"",
       "file_path": "documentation/AppStoreServerAPI/environment.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/hasmore.json": {
       "hash": "fdb902c88d6564be4c27fb5d50432de788061711794347b27c0bde9826a57820",
-      "last_checked": "2026-04-07T07:41:34.071275",
+      "last_checked": "2026-04-10T07:40:10.293437",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9c21c3a32b15358169e1c420ec6d0f12\"",
       "file_path": "documentation/AppStoreServerAPI/hasmore.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/revision.json": {
       "hash": "dedf3010338fb12fe77f5be8ff91b3d300131169cc15d338085c330ec19d7f17",
-      "last_checked": "2026-04-07T07:41:34.195866",
+      "last_checked": "2026-04-10T07:40:10.396420",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"01490abc61c80bb100af06a815b0fa5c\"",
       "file_path": "documentation/AppStoreServerAPI/revision.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifieritem.json": {
       "hash": "cec9af4ff9d3570f64a5a712b5bfd9fc17ef8163fb4bae540becffbe44e4a311",
-      "last_checked": "2026-04-07T07:41:34.354393",
+      "last_checked": "2026-04-10T07:40:10.518527",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f5fe68694177bfa5fa5a49901dbfb6fc\"",
       "file_path": "documentation/AppStoreServerAPI/subscriptiongroupidentifieritem.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/accounttenure.json": {
       "hash": "380dd1a97b0d27766e21339deff69e08a7086855ee287ff42635bc35e623be3c",
-      "last_checked": "2026-04-07T07:41:53.300443",
+      "last_checked": "2026-04-10T07:40:30.617513",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d45aaeb1f53c32066279d5821d48aae5\"",
       "file_path": "documentation/AppStoreServerAPI/accounttenure.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appaccounttoken.json": {
       "hash": "f884e181c014831433af9a139dbb8113119af83b4b3a632676bca43096c7a7a0",
-      "last_checked": "2026-04-07T07:41:39.089030",
+      "last_checked": "2026-04-10T07:40:15.509749",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"248081cd5b85bde751938709b4a8a4a3\"",
       "file_path": "documentation/AppStoreServerAPI/appaccounttoken.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionstatus.json": {
       "hash": "21dd1246e1a25051c5fed317fe46cf079e64ae4409d878bc31f051580d0be8e4",
-      "last_checked": "2026-04-07T07:41:53.470516",
+      "last_checked": "2026-04-10T07:40:30.812657",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"36e30bbbe3728d3049743ca82e906119\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionstatus.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/customerconsented.json": {
       "hash": "264eda50b68dc87f2d854e79b2a14362e7d1540dca39f1dc330ba61ab6f7970b",
-      "last_checked": "2026-04-07T07:41:34.598034",
+      "last_checked": "2026-04-10T07:40:10.803227",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9fc5eb3796a4d0c95eafe3a50677c38d\"",
       "file_path": "documentation/AppStoreServerAPI/customerconsented.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/deliverystatus.json": {
       "hash": "674418324dc71a99ec6b9c0243ff81f139f2e26c759ecddd67fd9da4cbb5e485",
-      "last_checked": "2026-04-07T07:41:34.837884",
+      "last_checked": "2026-04-10T07:40:11.052309",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a0271c35422d7c5e7181e3922c9f4c27\"",
       "file_path": "documentation/AppStoreServerAPI/deliverystatus.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/lifetimedollarspurchased.json": {
       "hash": "4d9d0e3215f7342044566f099feb031033563f0903fd98b35b72dc78072f59cf",
-      "last_checked": "2026-04-07T07:41:53.757705",
+      "last_checked": "2026-04-10T07:40:31.055307",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f73b9360211154ed55ccb7fb667fe8da\"",
       "file_path": "documentation/AppStoreServerAPI/lifetimedollarspurchased.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/lifetimedollarsrefunded.json": {
       "hash": "39f4b69b546b88da6a277e502d3db33fe5a84efd25155e0f27207e4b2cc0ff96",
-      "last_checked": "2026-04-07T07:41:53.897796",
+      "last_checked": "2026-04-10T07:40:31.218772",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0746bf504f029e85d4a418ed124502a9\"",
       "file_path": "documentation/AppStoreServerAPI/lifetimedollarsrefunded.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/platform.json": {
       "hash": "d49a4f3ac5de8516483c5e7ea976ee259f12cc7fb62d2ea02e6b533d05e57ccf",
-      "last_checked": "2026-04-07T07:41:54.045770",
+      "last_checked": "2026-04-10T07:40:31.332183",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e5a8818f5acf1b2e55e7062b2a0b2c1f\"",
       "file_path": "documentation/AppStoreServerAPI/platform.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/playtime.json": {
       "hash": "0475ef708745afd8b25283659f1d10f6d9eeae787152567776862162f633d4c9",
-      "last_checked": "2026-04-07T07:41:54.167069",
+      "last_checked": "2026-04-10T07:40:31.449735",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a46391610e4c8930941910b75c3ad4e7\"",
       "file_path": "documentation/AppStoreServerAPI/playtime.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundpreference.json": {
       "hash": "7a90c58af8e5c9b7b04a715c3a8ed9322ce3520e244a58e01bdc1f973fbcfdbf",
-      "last_checked": "2026-04-07T07:41:34.950351",
+      "last_checked": "2026-04-10T07:40:11.194269",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"018423329cdcb7d750fbf4bf746d86a5\"",
       "file_path": "documentation/AppStoreServerAPI/refundpreference.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/samplecontentprovided.json": {
       "hash": "3fce431ab29a92d2bfc4558049f4face1dee21e2b1cd76d45a8f18d39c3672e1",
-      "last_checked": "2026-04-07T07:41:35.088505",
+      "last_checked": "2026-04-10T07:40:11.382841",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"393449abe8707029aa2ef7802d6b2443\"",
       "file_path": "documentation/AppStoreServerAPI/samplecontentprovided.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/userstatus.json": {
       "hash": "0db2de5a546c3efadeb7eb2a4d7c79bdff646e5063ee2b899a8eefeb25941c17",
-      "last_checked": "2026-04-07T07:41:54.418607",
+      "last_checked": "2026-04-10T07:40:31.743067",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"8a8be957bb4360052835aa8426eb0030\"",
       "file_path": "documentation/AppStoreServerAPI/userstatus.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/orderlookupstatus.json": {
       "hash": "7338a2b05dc461137ce1cc936699a3633071307c42ee89050c181ef28ffa7ee3",
-      "last_checked": "2026-04-07T07:41:34.474296",
+      "last_checked": "2026-04-10T07:40:10.677001",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"8a43e17701c22776a986edd9c2441768\"",
       "file_path": "documentation/AppStoreServerAPI/orderlookupstatus.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extendbydays.json": {
       "hash": "48ba03a19a523f5e5e24d9023258c718eb5b440b35a013ab86c607b7a8aeb652",
-      "last_checked": "2026-04-07T07:41:35.196497",
+      "last_checked": "2026-04-10T07:40:11.494419",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e78b98ddc17f54d11bbb957b67f9ff55\"",
       "file_path": "documentation/AppStoreServerAPI/extendbydays.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/extendreasoncode.json": {
       "hash": "716f7c217ca10058b58be7a503aaa766e5ca97771448b8400ff32dd450f207c1",
-      "last_checked": "2026-04-07T07:41:35.318795",
+      "last_checked": "2026-04-10T07:40:11.627678",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b0ade8e1b00d4523309fe2835644f4b8\"",
       "file_path": "documentation/AppStoreServerAPI/extendreasoncode.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/requestidentifier.json": {
       "hash": "8a4c45820d027622e8b7ff2daccbdba2eb05351b4eb13d2b53cefa649bd6838a",
-      "last_checked": "2026-04-07T07:41:35.437931",
+      "last_checked": "2026-04-10T07:40:11.756258",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"aa4a81f4cf7b707d23700cb669db5b85\"",
       "file_path": "documentation/AppStoreServerAPI/requestidentifier.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/effectivedate.json": {
       "hash": "67b1a8dade0555a4cb6d1c2d7a5f2f17ef7ac45a2648d6c2a64ae6e2fa18b1ca",
-      "last_checked": "2026-04-07T07:41:35.572015",
+      "last_checked": "2026-04-10T07:40:11.871294",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2497e779d8dabe4e4f7f8daff5e2ede6\"",
       "file_path": "documentation/AppStoreServerAPI/effectivedate.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originaltransactionid.json": {
       "hash": "76ac68496d8b50883fa7c1cbcf04e89638c04da32d44686bbb890bd5adc0d5ce",
-      "last_checked": "2026-04-07T07:41:35.727553",
+      "last_checked": "2026-04-10T07:40:11.997145",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"509efaab243eb64774dd7948a14a2343\"",
       "file_path": "documentation/AppStoreServerAPI/originaltransactionid.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/success.json": {
       "hash": "3db45651fe1be205cbb7b063d92e5356dcfecb6cf5dcb6582a3f96d08291740b",
-      "last_checked": "2026-04-07T07:41:35.843793",
+      "last_checked": "2026-04-10T07:40:12.155403",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a0cb5aed6a1f954e0e6e76d129fe3934\"",
       "file_path": "documentation/AppStoreServerAPI/success.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/weborderlineitemid.json": {
       "hash": "a6ca8772d7dec7df20f97ac7508f9a080c0e0f60976cab2927058c36c492d2b0",
-      "last_checked": "2026-04-07T07:41:35.966932",
+      "last_checked": "2026-04-10T07:40:12.286479",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"206d93c4ba0fc35059eaf7e0a5f91538\"",
       "file_path": "documentation/AppStoreServerAPI/weborderlineitemid.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/storefrontcountrycode.json": {
       "hash": "e6772cd5f37b7a33b4871529087ce933f3556b7e1aa84725cbf339aff9515171",
-      "last_checked": "2026-04-07T07:41:36.079800",
+      "last_checked": "2026-04-10T07:40:12.425797",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"951bd8254b5011ce269327de055844f4\"",
       "file_path": "documentation/AppStoreServerAPI/storefrontcountrycode.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/storefrontcountrycodes.json": {
       "hash": "64784b0ef616631ac20a52c680fbffbb95ff645b37a9325efe37e843e9117cf9",
-      "last_checked": "2026-04-07T07:41:36.239897",
+      "last_checked": "2026-04-10T07:40:12.556423",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"10cfe84292b79e0b918c2de9a9e572be\"",
       "file_path": "documentation/AppStoreServerAPI/storefrontcountrycodes.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/complete.json": {
       "hash": "cb4dd8de42bbba83b4ba1c3600f1476afabaa44a3227071e97d370c427038649",
-      "last_checked": "2026-04-07T07:41:36.369877",
+      "last_checked": "2026-04-10T07:40:12.678858",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3c8b6b7451d1ab9e07e3fcf07e8aa0c4\"",
       "file_path": "documentation/AppStoreServerAPI/complete.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/completedate.json": {
       "hash": "36fc4ac380edd36edd407e53e1cef8890ba76d1fa156ef23fc0c4651033d675c",
-      "last_checked": "2026-04-07T07:41:36.488683",
+      "last_checked": "2026-04-10T07:40:12.801275",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f82c35b4ebbc7c1c37c36a2cad74ba09\"",
       "file_path": "documentation/AppStoreServerAPI/completedate.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/failedcount.json": {
       "hash": "a3116ba0f3211a9786dd5e892c1225ce6fbc8c2b279eac636e68d59926708a0b",
-      "last_checked": "2026-04-07T07:41:36.635851",
+      "last_checked": "2026-04-10T07:40:12.941007",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bb00cf4024f0364f0f94e7e8f63fc255\"",
       "file_path": "documentation/AppStoreServerAPI/failedcount.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/succeededcount.json": {
       "hash": "41c5ea8e1b065bb2a41e22118adb71cbe48acf6b3a1ecdb3e07c38da5903a46e",
-      "last_checked": "2026-04-07T07:41:36.762781",
+      "last_checked": "2026-04-10T07:40:13.062731",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"df678aa3f77fbe97574b65b780333929\"",
       "file_path": "documentation/AppStoreServerAPI/succeededcount.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/startdate.json": {
       "hash": "4a7cf563529ad841279748195094b0c9e07febf1080356e6c4f96545b2bac587",
-      "last_checked": "2026-04-07T07:41:36.886703",
+      "last_checked": "2026-04-10T07:40:13.199851",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"49dbbb0be0adb807d95a4c2bfc1aa3b8\"",
       "file_path": "documentation/AppStoreServerAPI/startdate.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/enddate.json": {
       "hash": "df185b5fbfd81030bfd4e324f4b42b7ffbe338802a7749672e3def92d7d071b2",
-      "last_checked": "2026-04-07T07:41:37.008051",
+      "last_checked": "2026-04-10T07:40:13.307739",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c7a75f01f7ecc0966c09d81ab33d9c50\"",
       "file_path": "documentation/AppStoreServerAPI/enddate.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationtype.json": {
       "hash": "03e9d01d84da5d2f4b1e2046a6c301f7837072c750c84db8cb65175f647ec080",
-      "last_checked": "2026-04-07T07:41:37.122385",
+      "last_checked": "2026-04-10T07:40:13.448285",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c6b5cb2350cd4f8a66a58bad93f8781f\"",
       "file_path": "documentation/AppStoreServerAPI/notificationtype.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/notificationsubtype.json": {
       "hash": "7cc90f23ed2e48145c808a286496ab508b80e87f3c1501d117aa22ce2b152272",
-      "last_checked": "2026-04-07T07:41:37.256189",
+      "last_checked": "2026-04-10T07:40:13.581217",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bfd90c327234577371e2cc89fbd0deea\"",
       "file_path": "documentation/AppStoreServerAPI/notificationsubtype.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/onlyfailures.json": {
       "hash": "ce56ce8b02e8facc2b31af62bdc7ae43aaaeb0cf825db95e4d259e58512f85b2",
-      "last_checked": "2026-04-07T07:41:37.400338",
+      "last_checked": "2026-04-10T07:40:13.710922",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d2aa651fed05f80a84ae3e234b74ebf2\"",
       "file_path": "documentation/AppStoreServerAPI/onlyfailures.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/paginationtoken.json": {
       "hash": "7161c185da52fef1aaee12fa7b76cbb3b200db6d4ca869aa4b8fe10be158d26b",
-      "last_checked": "2026-04-07T07:41:37.517978",
+      "last_checked": "2026-04-10T07:40:13.828639",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"8696fb6293b26d892b71c586bee1ad1b\"",
       "file_path": "documentation/AppStoreServerAPI/paginationtoken.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendattemptresult.json": {
       "hash": "97894958d0c401bcb62af404ad977c48616d2d702f553842975fecb363ef43c4",
-      "last_checked": "2026-04-07T07:41:37.644828",
+      "last_checked": "2026-04-10T07:40:13.978032",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"945bcdf922b2f1ab0640456b51818625\"",
       "file_path": "documentation/AppStoreServerAPI/sendattemptresult.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/sendattemptitem.json": {
       "hash": "e743ba0851737f8a25b63fdbfc5c5361c3a0e125e17fdad00ecb164d43abaf76",
-      "last_checked": "2026-04-07T07:41:37.776816",
+      "last_checked": "2026-04-10T07:40:14.113859",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"42ac644ab32d5ab956e82a155d21b2ec\"",
       "file_path": "documentation/AppStoreServerAPI/sendattemptitem.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/signedpayload.json": {
       "hash": "6a6a9d7aba3e75827deccc7f3436d0947f73d75d24363f4edc4872ecdd9e9d3c",
-      "last_checked": "2026-04-07T07:41:37.904164",
+      "last_checked": "2026-04-10T07:40:14.241795",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c28f08c173e2c67bb17e79ca9950a517\"",
       "file_path": "documentation/AppStoreServerAPI/signedpayload.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/testnotificationtoken.json": {
       "hash": "2e79ffd26919325a2690846c9a5f1adaa01e23ee0298ae4c80fd64daab7b0ea7",
-      "last_checked": "2026-04-07T07:41:38.033906",
+      "last_checked": "2026-04-10T07:40:14.353172",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"1bf24bcd30d694a1a8103916bab8f6e2\"",
       "file_path": "documentation/AppStoreServerAPI/testnotificationtoken.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/alg.json": {
       "hash": "b09f32658e118e765103de495cd4a64497e4c8b8f673f32cfcc4a919d22d23f1",
-      "last_checked": "2026-04-07T07:41:38.168798",
+      "last_checked": "2026-04-10T07:40:14.513690",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"80371ce7865808222e346faeeae0c02f\"",
       "file_path": "documentation/AppStoreServerAPI/alg.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/x5c.json": {
       "hash": "3b49c124dfe99dfc9e365927b60d4ecae9043cf8735cec4644afc17a07778fc8",
-      "last_checked": "2026-04-07T07:41:38.282147",
+      "last_checked": "2026-04-10T07:40:14.626968",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b9b72a61a3d36d73529fb97bf77dc16a\"",
       "file_path": "documentation/AppStoreServerAPI/x5c.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactionid.json": {
       "hash": "20dad3f0582a91222607419a0add4da1c053bf001cfb6b4e209c278c1e66f117",
-      "last_checked": "2026-04-07T07:41:38.438972",
+      "last_checked": "2026-04-10T07:40:14.762906",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"aea76844505555b43976bfdc726c2355\"",
       "file_path": "documentation/AppStoreServerAPI/transactionid.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/apptransactionid.json": {
       "hash": "ba755c6d293f0b9b4d72f917ce1fa6e111ff2ce0189bfce81ef9aae86bede7b3",
-      "last_checked": "2026-04-07T07:41:38.548869",
+      "last_checked": "2026-04-10T07:40:14.992982",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d9a1660e3c9f1f229a3df8e31a4510d6\"",
       "file_path": "documentation/AppStoreServerAPI/apptransactionid.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/productid.json": {
       "hash": "1a2f110ea20537ce7af0044fe1b24182cc20f52a6eb65cbaecaae46bd6ea7aa7",
-      "last_checked": "2026-04-07T07:41:39.225251",
+      "last_checked": "2026-04-10T07:40:15.627572",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"507241a7b4153bcc661d930833c4a168\"",
       "file_path": "documentation/AppStoreServerAPI/productid.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/type.json": {
       "hash": "8a3393435bc814a71a8205eda684a0253eefc86d3ff59d5437e3cc7779484816",
-      "last_checked": "2026-04-07T07:41:39.341477",
+      "last_checked": "2026-04-10T07:40:15.749852",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b722786adcc1abb2c7299111ea16078f\"",
       "file_path": "documentation/AppStoreServerAPI/type.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifier.json": {
       "hash": "f35e83b3e67dbcbbcfdd905f168d38eb9ed6968e11a93f38e18d3593824f6bb4",
-      "last_checked": "2026-04-07T07:41:39.465501",
+      "last_checked": "2026-04-10T07:40:15.887494",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"642e3cefec7b5f1879304a3354cea9c2\"",
       "file_path": "documentation/AppStoreServerAPI/subscriptiongroupidentifier.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/quantity.json": {
       "hash": "3133bda75181f784d6dc89d15a688b1491a3232c4059d1512ee9b8667827720b",
-      "last_checked": "2026-04-07T07:41:39.596958",
+      "last_checked": "2026-04-10T07:40:16.030686",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"418d1ecf4f13a233e4e350f8467155f1\"",
       "file_path": "documentation/AppStoreServerAPI/quantity.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/price.json": {
       "hash": "dcd3428bb7710e397e49729a0038139e58b80677a1a724f587d32c2429d0452f",
-      "last_checked": "2026-04-07T07:41:39.725712",
+      "last_checked": "2026-04-10T07:40:16.220004",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"872e17a6dd3c1be286da2c4ff6ba3d1a\"",
       "file_path": "documentation/AppStoreServerAPI/price.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/currency.json": {
       "hash": "13c7489d2ad34e27b2f0f84b1e6ac12362221a44caf8aeedcdb91d4aac0a595f",
-      "last_checked": "2026-04-07T07:41:39.872207",
+      "last_checked": "2026-04-10T07:40:16.344239",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"ac5c668a698c97f2845b4fc399240e28\"",
       "file_path": "documentation/AppStoreServerAPI/currency.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/storefront.json": {
       "hash": "00c67c3ce76b6b3f4b7c50af3a0f18acf19e01bc2a9f85d68698a3d644f38994",
-      "last_checked": "2026-04-07T07:41:39.997923",
+      "last_checked": "2026-04-10T07:40:16.567105",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b9b1ef4e4be5d3ea5ab1bef1a9f55c91\"",
       "file_path": "documentation/AppStoreServerAPI/storefront.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/storefrontid.json": {
       "hash": "e91a525da307e7aaadb635658163355def7f4d3510b95bfdf4801230c9ca306d",
-      "last_checked": "2026-04-07T07:41:40.315864",
+      "last_checked": "2026-04-10T07:40:16.674912",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"1cddea5b4ba01c9415a08fb6b602bf5f\"",
       "file_path": "documentation/AppStoreServerAPI/storefrontid.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/eligiblewinbackofferids.json": {
       "hash": "bb7b035033bf2ffcd7dd15b9a0e478f1aeab415bfdb2a9b283a29e8b7327abe2",
-      "last_checked": "2026-04-07T07:41:40.439356",
+      "last_checked": "2026-04-10T07:40:16.796817",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d3c28ac0a9a81a3a1ddf963b333e0af7\"",
       "file_path": "documentation/AppStoreServerAPI/eligiblewinbackofferids.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/offeridentifier.json": {
       "hash": "857bc2b97ba1cc26de704c6ce3908a4eb19ee73771e784f2b0c7b79ea41666ae",
-      "last_checked": "2026-04-07T07:41:40.569194",
+      "last_checked": "2026-04-10T07:40:16.994258",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"66bd80e006a56a1e5b85d8c18ee4b541\"",
       "file_path": "documentation/AppStoreServerAPI/offeridentifier.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/offerperiod.json": {
       "hash": "1b96e53c4606a132f2ebd9901a2d097775307ceeea675adb52f39b87d6ca4341",
-      "last_checked": "2026-04-07T07:41:40.696190",
+      "last_checked": "2026-04-10T07:40:17.116359",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"114725636d777b738bf4117d0b178aab\"",
       "file_path": "documentation/AppStoreServerAPI/offerperiod.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/offertype.json": {
       "hash": "9c7a373bad280482aadc23683e5d34d2ee6f842f121f84edb5379c4e8143d9bb",
-      "last_checked": "2026-04-07T07:41:40.820287",
+      "last_checked": "2026-04-10T07:40:17.231772",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e8edba3205338dca799075a58ff6bee2\"",
       "file_path": "documentation/AppStoreServerAPI/offertype.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/offerdiscounttype.json": {
       "hash": "fcf2067c9c151b0f314cae75e1796fb3a330715c13100a9b62ddae137023992e",
-      "last_checked": "2026-04-07T07:41:40.930684",
+      "last_checked": "2026-04-10T07:40:17.346041",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f7f4eafa2925a2eb139a207ac62b0a73\"",
       "file_path": "documentation/AppStoreServerAPI/offerdiscounttype.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originalpurchasedate.json": {
       "hash": "8f0054802cc5e5e477822e99d23f07a82a2105ffce164705370f0c2a9a077c02",
-      "last_checked": "2026-04-07T07:41:41.056553",
+      "last_checked": "2026-04-10T07:40:17.474421",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a417423c01fa58d709ccabb396dd6623\"",
       "file_path": "documentation/AppStoreServerAPI/originalpurchasedate.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/purchasedate.json": {
       "hash": "d7e3c4189fe26cb95b44a7f77a4b14b5fdd1f84dc1e227fbebc36dc744b108e3",
-      "last_checked": "2026-04-07T07:41:41.173893",
+      "last_checked": "2026-04-10T07:40:17.609395",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6fd17c4dd551dbed0dc08b58e5d46076\"",
       "file_path": "documentation/AppStoreServerAPI/purchasedate.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/recentsubscriptionstartdate.json": {
       "hash": "8311865ac7c30adfb71d51076c7ca58e41eeda469839e9865bf81da2f4a2c933",
-      "last_checked": "2026-04-07T07:41:41.301744",
+      "last_checked": "2026-04-10T07:40:17.739119",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d33ab41eec2589a49f5b483935439114\"",
       "file_path": "documentation/AppStoreServerAPI/recentsubscriptionstartdate.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/isinbillingretryperiod.json": {
       "hash": "cbe322d8003f6f6baa90658bd223b9d74e11f1a48148bedb216a00690f2679a2",
-      "last_checked": "2026-04-07T07:41:41.440809",
+      "last_checked": "2026-04-10T07:40:17.864664",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f5846d09f47122339a4f48a8a4d84241\"",
       "file_path": "documentation/AppStoreServerAPI/isinbillingretryperiod.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/graceperiodexpiresdate.json": {
       "hash": "82a398d996c244e8f8cc0a9084c9ba66e895c248d2cc194949cece4821e7f43d",
-      "last_checked": "2026-04-07T07:41:41.558310",
+      "last_checked": "2026-04-10T07:40:17.985931",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d21cc31cd7e377f01e428bce367033fe\"",
       "file_path": "documentation/AppStoreServerAPI/graceperiodexpiresdate.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/autorenewstatus.json": {
       "hash": "92d7f1c70299ffc57a6257f6956127c12fdfa96c0be87e1c51623d66286dad25",
-      "last_checked": "2026-04-07T07:41:41.688932",
+      "last_checked": "2026-04-10T07:40:18.148125",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b05d6bbff7748e4a4bb149c1f8aa87f1\"",
       "file_path": "documentation/AppStoreServerAPI/autorenewstatus.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/autorenewproductid.json": {
       "hash": "234cbe1e70779516a6c7da28e994fea2c827dfbf2ee33a4a1a1b1743630011f5",
-      "last_checked": "2026-04-07T07:41:41.826699",
+      "last_checked": "2026-04-10T07:40:18.263111",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d2a8a6e13658dbe4a6c3e8b178c7be1b\"",
       "file_path": "documentation/AppStoreServerAPI/autorenewproductid.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/expirationintent.json": {
       "hash": "0b2bbf512a11e6ae71b735b5bf7a94e24040d9a56b7c22015977a34058dcffbf",
-      "last_checked": "2026-04-07T07:41:41.956623",
+      "last_checked": "2026-04-10T07:40:18.383252",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4b9c8107fa5186ac4c35f30a00a73267\"",
       "file_path": "documentation/AppStoreServerAPI/expirationintent.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/expiresdate.json": {
       "hash": "7e1b33f66fb11135135e57a7a696c921be975f26f971e3f4650676bd7ef02e7d",
-      "last_checked": "2026-04-07T07:41:42.064077",
+      "last_checked": "2026-04-10T07:40:18.504938",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6d0e93d74c2ee92b841ef5b2eaf41a47\"",
       "file_path": "documentation/AppStoreServerAPI/expiresdate.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/isupgraded.json": {
       "hash": "02cfb9a5df027f62dae631ac023187da85f35ad66395041c423454477967baa3",
-      "last_checked": "2026-04-07T07:41:42.367795",
+      "last_checked": "2026-04-10T07:40:18.623539",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c39781592b5eae58612301d5d4b916d1\"",
       "file_path": "documentation/AppStoreServerAPI/isupgraded.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/renewaldate.json": {
       "hash": "d3a36b0bd1a93c551f3370e9524e3a97729bb3542fb4a7b24a8ec24323b35189",
-      "last_checked": "2026-04-07T07:41:42.476739",
+      "last_checked": "2026-04-10T07:40:18.784138",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"257f227e3314c3c203296e699627d866\"",
       "file_path": "documentation/AppStoreServerAPI/renewaldate.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/renewalprice.json": {
       "hash": "13be4ee814586ee26ba96018f3d9e82d92dcc67d0d519a2ce433733f2bd15c5f",
-      "last_checked": "2026-04-07T07:41:42.609618",
+      "last_checked": "2026-04-10T07:40:18.898740",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0844c9b3f895635d8821caf269394854\"",
       "file_path": "documentation/AppStoreServerAPI/renewalprice.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/status.json": {
       "hash": "b397b677220ad43cdbf176b5ed11d9f2cbec24237be8bceeb15015b55e6dacb8",
-      "last_checked": "2026-04-07T07:41:42.733869",
+      "last_checked": "2026-04-10T07:40:19.052381",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e28614c6029b1e1f49d5cac3b6399872\"",
       "file_path": "documentation/AppStoreServerAPI/status.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/inappownershiptype.json": {
       "hash": "c948530166907a436b3c23183cf0b873f6abafcb433413b1e80d2ae328059083",
-      "last_checked": "2026-04-07T07:41:42.879987",
+      "last_checked": "2026-04-10T07:40:19.165241",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"42df29a961bf2b38bec52a13993a42ac\"",
       "file_path": "documentation/AppStoreServerAPI/inappownershiptype.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/priceincreasestatus.json": {
       "hash": "c54caf26b9e7502cbc74b60562c73c70cb44d1a91d8f9b094315bf5abccfca56",
-      "last_checked": "2026-04-07T07:41:42.997255",
+      "last_checked": "2026-04-10T07:40:19.293851",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"545417c9b9e35bdb71db342816c45ccc\"",
       "file_path": "documentation/AppStoreServerAPI/priceincreasestatus.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/revocationdate.json": {
       "hash": "031ec45dd7ab4cb4fcfc893732c375fe9f74990cbac48594cc12d3eed37592ed",
-      "last_checked": "2026-04-07T07:41:43.144049",
+      "last_checked": "2026-04-10T07:40:19.445175",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7dc316ea51a55662342b402e90e82491\"",
       "file_path": "documentation/AppStoreServerAPI/revocationdate.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/revocationreason.json": {
       "hash": "4d660753369937e5ca4ac7c14ec3d553a131b9232c7039b3f15b2767ed5fc507",
-      "last_checked": "2026-04-07T07:41:43.266699",
+      "last_checked": "2026-04-10T07:40:19.566121",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"34425f4ab22e4e6f5e9746256ee231b4\"",
       "file_path": "documentation/AppStoreServerAPI/revocationreason.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactionreason.json": {
       "hash": "186c32692648f934c539bf20edf46254a9dc4bb672b4e543c3f547700d71a0bc",
-      "last_checked": "2026-04-07T07:41:43.679357",
+      "last_checked": "2026-04-10T07:40:19.963363",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2e18f091a519cf7dac8b32c7038cb67a\"",
       "file_path": "documentation/AppStoreServerAPI/transactionreason.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/signeddate.json": {
       "hash": "6e85f7ecd912c68e3eb8710cdc3868d902b59df1c25caa473c9ffa3865996301",
-      "last_checked": "2026-04-07T07:41:43.828798",
+      "last_checked": "2026-04-10T07:40:20.087559",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"81cf2e3285fbc6c80ae1a4ba42155fe7\"",
       "file_path": "documentation/AppStoreServerAPI/signeddate.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerce-datatypes.json": {
       "hash": "dbf341686ad83366adae448905a440d4e678e468b30bbae6b68fd6d86bbd485f",
-      "last_checked": "2026-04-07T07:41:44.071878",
+      "last_checked": "2026-04-10T07:40:20.305491",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2d5544c807184f84eb08dd86c2dc95c6\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerce-datatypes.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/accountnotfounderror.json": {
       "hash": "80f9f7c8e2469c9c2f361e0fd5fe11c1b2fa7fe544111c764921f4b0dcf09bfe",
-      "last_checked": "2026-04-07T07:41:44.204767",
+      "last_checked": "2026-04-10T07:40:20.440051",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c3573f36d3675d9041cbd901fab2261d\"",
       "file_path": "documentation/AppStoreServerAPI/accountnotfounderror.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appnotfounderror.json": {
       "hash": "a25df85d9d80cf737f4c1340d91163ceb31adc0485fcc6e4282c96501d2b5640",
-      "last_checked": "2026-04-07T07:41:44.476133",
+      "last_checked": "2026-04-10T07:40:21.005525",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0fa79d03518ea96782fd62f27ef8eb47\"",
       "file_path": "documentation/AppStoreServerAPI/appnotfounderror.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/apptransactionidnotsupportederror.json": {
       "hash": "cf86649994a6e45840a73c4722900c5a52088285a802edda9f9b97e689787894",
-      "last_checked": "2026-04-07T07:41:44.737743",
+      "last_checked": "2026-04-10T07:40:21.316061",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"484895a8b23c8e603fbe28831debed76\"",
       "file_path": "documentation/AppStoreServerAPI/apptransactionidnotsupportederror.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/familysharedsubscriptionextensionineligibleerror.json": {
       "hash": "8733d74670308fe526ade6334ec7ed5ba8498c8fd2719f21d7bf285a29797c7f",
-      "last_checked": "2026-04-07T07:41:44.880190",
+      "last_checked": "2026-04-10T07:40:21.430687",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2760faa619e8684303353f7715bc723b\"",
       "file_path": "documentation/AppStoreServerAPI/familysharedsubscriptionextensionineligibleerror.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/familytransactionnotsupportederror.json": {
       "hash": "7ca65b935b256fec50624aeb39ba4df0b4afec5bd27c1763a1fc4149f0847a76",
-      "last_checked": "2026-04-07T07:41:45.044808",
+      "last_checked": "2026-04-10T07:40:21.539129",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"ff403115ebda617059082e2a4a26c78c\"",
       "file_path": "documentation/AppStoreServerAPI/familytransactionnotsupportederror.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/generalinternalerror.json": {
       "hash": "ff5a8f338874cfeebe8bfa1b8f03e7decdefad34fa360cda104e942f32f1a4dc",
-      "last_checked": "2026-04-07T07:41:45.181185",
+      "last_checked": "2026-04-10T07:40:21.844108",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d87990722262e990411b794a543864ae\"",
       "file_path": "documentation/AppStoreServerAPI/generalinternalerror.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/generalbadrequesterror.json": {
       "hash": "e3eb97349a8bb0be909cc840655b827dd4bdd37f031656ee99c0f9b62df31670",
-      "last_checked": "2026-04-07T07:41:45.314064",
+      "last_checked": "2026-04-10T07:40:22.084857",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"68c211418a216fb5bb3ff60b146265ee\"",
       "file_path": "documentation/AppStoreServerAPI/generalbadrequesterror.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidappaccounttokenuuiderror.json": {
       "hash": "926ec9b3f35ba63f767169cb68d3d7563e95f3ddb8b813d84bc16f1ac9b485fb",
-      "last_checked": "2026-04-07T07:41:45.442712",
+      "last_checked": "2026-04-10T07:40:22.201549",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4d43667002d5d17609e3195bf5b6ec2e\"",
       "file_path": "documentation/AppStoreServerAPI/invalidappaccounttokenuuiderror.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidappidentifiererror.json": {
       "hash": "7902c462676923cc42e29b62d1f71b5725456c0023063030fe0678b3143dd746",
-      "last_checked": "2026-04-07T07:41:45.574070",
+      "last_checked": "2026-04-10T07:40:22.308729",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0e582947578a5de7017825b64de1d9ac\"",
       "file_path": "documentation/AppStoreServerAPI/invalidappidentifiererror.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidemptystorefrontcountrycodelisterror.json": {
       "hash": "f986fc06b79b27a47b12a00f3dee0d1d2212b856c7ae39337896cf2fd2c98c41",
-      "last_checked": "2026-04-07T07:41:45.707520",
+      "last_checked": "2026-04-10T07:40:22.486913",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9768f7b74d21d251f75722c5346556ee\"",
       "file_path": "documentation/AppStoreServerAPI/invalidemptystorefrontcountrycodelisterror.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidextendbydayserror.json": {
       "hash": "77706bfb3768e3bc422a713d5ec04b653986f0d9e30b606598b89268cfeb3f3c",
-      "last_checked": "2026-04-07T07:41:45.846693",
+      "last_checked": "2026-04-10T07:40:22.590659",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"54f08804e4fcae3ce523864653f36562\"",
       "file_path": "documentation/AppStoreServerAPI/invalidextendbydayserror.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidextendreasoncodeerror.json": {
       "hash": "b72ad6610e2e78b761541a16022acd352b2efaa37d34d73bf0067242f13e449b",
-      "last_checked": "2026-04-07T07:41:45.972725",
+      "last_checked": "2026-04-10T07:40:22.728823",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f486dbf8b56ec5b8217f70422e05e388\"",
       "file_path": "documentation/AppStoreServerAPI/invalidextendreasoncodeerror.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidoriginaltransactioniderror.json": {
       "hash": "cd1957046232dbb69e3c9c2d8713eed6df49751e999d984a741473c7df783891",
-      "last_checked": "2026-04-07T07:41:46.288758",
+      "last_checked": "2026-04-10T07:40:22.851187",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"27ae0215f641cdb3d195f0a9c95e98e0\"",
       "file_path": "documentation/AppStoreServerAPI/invalidoriginaltransactioniderror.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidrefundpreferenceerror.json": {
       "hash": "1e6d0a8d7bdbce8d6c69806adf7fa4c9b66ce8145f2fe48a7e49c7389ee4fde7",
-      "last_checked": "2026-04-07T07:41:46.582769",
+      "last_checked": "2026-04-10T07:40:22.985199",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4f1d0230a04e20802b9a0f485ce8e76e\"",
       "file_path": "documentation/AppStoreServerAPI/invalidrefundpreferenceerror.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidrequestidentifiererror.json": {
       "hash": "5d9c940dc5d0ac337f90382cbb8e9611409b90e6cdba6196a58e35e1ad03f4ba",
-      "last_checked": "2026-04-07T07:41:46.704613",
+      "last_checked": "2026-04-10T07:40:23.102820",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4a45ff06ee7025685496541f7bc471a6\"",
       "file_path": "documentation/AppStoreServerAPI/invalidrequestidentifiererror.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidrequestrevisionerror.json": {
       "hash": "000c4e93f6957634cc51908557e1cb1629d1ed100405786440ffac90d5ee0169",
-      "last_checked": "2026-04-07T07:41:46.822198",
+      "last_checked": "2026-04-10T07:40:23.325914",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c1c1b2cd87888e0ce22bc23b01ece44b\"",
       "file_path": "documentation/AppStoreServerAPI/invalidrequestrevisionerror.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidrevokederror.json": {
       "hash": "602076f1a66d7af76c3539d4a5b6dcb36523f69477bcd3c6fc1b72fe086b331e",
-      "last_checked": "2026-04-07T07:41:46.952156",
+      "last_checked": "2026-04-10T07:40:23.482672",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bda1dedc6160dafbd88e16d9a0a4a5e4\"",
       "file_path": "documentation/AppStoreServerAPI/invalidrevokederror.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidstatuserror.json": {
       "hash": "d585736153fdb1a3ea04ec603f33616048ef33a598ede430ac38926cb58970c2",
-      "last_checked": "2026-04-07T07:41:47.076506",
+      "last_checked": "2026-04-10T07:40:23.614187",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"499d98f5be103e5d3dfe2e427642efec\"",
       "file_path": "documentation/AppStoreServerAPI/invalidstatuserror.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidstorefrontcountrycodeerror.json": {
       "hash": "cf49a35ce2ce29ccd0f89d9c8a7bc9d910c4c622ed2ca4577dac74683b6467a1",
-      "last_checked": "2026-04-07T07:41:47.227010",
+      "last_checked": "2026-04-10T07:40:23.797220",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9f71bbbddb449affb17fa8e2afcc0ea5\"",
       "file_path": "documentation/AppStoreServerAPI/invalidstorefrontcountrycodeerror.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidtransactioniderror.json": {
       "hash": "af6720f4a3ea893ad97e0b722a5efdc51feef327431bc9c97fd8753794685427",
-      "last_checked": "2026-04-07T07:41:47.369406",
+      "last_checked": "2026-04-10T07:40:24.094857",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"8a56e97a4cf14e7ecf72173848c8a10e\"",
       "file_path": "documentation/AppStoreServerAPI/invalidtransactioniderror.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originaltransactionidnotfounderror.json": {
       "hash": "56fb00d7912eaf4661c71f80e769b23901307c7081ed8b2a4e7194398b0378da",
-      "last_checked": "2026-04-07T07:41:47.494054",
+      "last_checked": "2026-04-10T07:40:24.269378",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"59f11227a882cf1135291cc0f3571f67\"",
       "file_path": "documentation/AppStoreServerAPI/originaltransactionidnotfounderror.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/ratelimitexceedederror.json": {
       "hash": "6c26710ab3bc1e17fb821b1fdb3d341defd51030aa0daf1ba2d0414a8ebfb0a7",
-      "last_checked": "2026-04-07T07:41:47.670271",
+      "last_checked": "2026-04-10T07:40:24.348166",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"411eb3aa6c50073c25b6d368f4796b2a\"",
       "file_path": "documentation/AppStoreServerAPI/ratelimitexceedederror.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/statusrequestnotfounderror.json": {
       "hash": "0190b197280b727f14a0572ec225214c6cc8e35e10d0711abfab41caa4bf7248",
-      "last_checked": "2026-04-07T07:41:47.802437",
+      "last_checked": "2026-04-10T07:40:24.513205",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6bb82021c766d1527665ff845dc7eb63\"",
       "file_path": "documentation/AppStoreServerAPI/statusrequestnotfounderror.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptionextensionineligibleerror.json": {
       "hash": "338686410c359b3490a858d34ed6258d2b173fffe1cee2a2cf1d3ed8bdae41a2",
-      "last_checked": "2026-04-07T07:41:47.915503",
+      "last_checked": "2026-04-10T07:40:24.639500",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b1342644a7cd054b8dc120235d142027\"",
       "file_path": "documentation/AppStoreServerAPI/subscriptionextensionineligibleerror.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptionmaxextensionerror.json": {
       "hash": "6a08a31b4d9bc6707eabd958ba4b9ea035367cb65351f1eed1fad62cd970e1b3",
-      "last_checked": "2026-04-07T07:41:48.034653",
+      "last_checked": "2026-04-10T07:40:24.748045",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6717702be046749ee2926a1be457ff6c\"",
       "file_path": "documentation/AppStoreServerAPI/subscriptionmaxextensionerror.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactionidisnotoriginaltransactioniderror.json": {
       "hash": "50a8bb3073a18704a6618494b4b970655e46cce0f93ca6c5e7a64f95830854dd",
-      "last_checked": "2026-04-07T07:41:48.145011",
+      "last_checked": "2026-04-10T07:40:24.908421",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"525fdf76257a2ef529baadeb72500bfe\"",
       "file_path": "documentation/AppStoreServerAPI/transactionidisnotoriginaltransactioniderror.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/transactionidnotfounderror.json": {
       "hash": "04af44bd5d080311455582488fd740d01394784adcca376d3f116fcbaa180320",
-      "last_checked": "2026-04-07T07:41:48.272514",
+      "last_checked": "2026-04-10T07:40:25.014624",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"33b12e31e131ad295aa6f9a0cddc9822\"",
       "file_path": "documentation/AppStoreServerAPI/transactionidnotfounderror.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/accountnotfoundretryableerror.json": {
       "hash": "6c46e464132405b4e8c310f5e7ecbb792cf55f19600c43c295c17536adc2e38b",
-      "last_checked": "2026-04-07T07:41:48.421309",
+      "last_checked": "2026-04-10T07:40:25.150338",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3e90948aa065788a2d58cc72c96426b2\"",
       "file_path": "documentation/AppStoreServerAPI/accountnotfoundretryableerror.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/appnotfoundretryableerror.json": {
       "hash": "a3b5e6c9626f36adb407b0b40d92333843aae188209a812044a753ac8afd22ba",
-      "last_checked": "2026-04-07T07:41:48.544276",
+      "last_checked": "2026-04-10T07:40:25.318384",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c7bef901565a1d6767f1b25683499992\"",
       "file_path": "documentation/AppStoreServerAPI/appnotfoundretryableerror.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/generalinternalretryableerror.json": {
       "hash": "f5bee527ba676d7c42272f93efb9371d18edc3d523df3ff9f33b4b660a0b99c9",
-      "last_checked": "2026-04-07T07:41:48.656850",
+      "last_checked": "2026-04-10T07:40:25.476972",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2feda0737cb8ef2204a17ef046d71bd7\"",
       "file_path": "documentation/AppStoreServerAPI/generalinternalretryableerror.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originaltransactionidnotfoundretryableerror.json": {
       "hash": "cf5ff8a70ff249d78312cc41bc4d000aa17ebf0a201495516db2db1cc91e35e2",
-      "last_checked": "2026-04-07T07:41:48.787709",
+      "last_checked": "2026-04-10T07:40:25.586142",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"237a4cd822950a32aa2c54a64bd34456\"",
       "file_path": "documentation/AppStoreServerAPI/originaltransactionidnotfoundretryableerror.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidaccounttenureerror.json": {
       "hash": "8496165cce397f245fce19e09dd4cc0fcadb130268d638170302b3e9a215d031",
-      "last_checked": "2026-04-07T07:41:49.159940",
+      "last_checked": "2026-04-10T07:40:25.988394",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"83cd89badede998cfd4f2f9438b4bcff\"",
       "file_path": "documentation/AppStoreServerAPI/invalidaccounttenureerror.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidappaccounttokenerror.json": {
       "hash": "56e7321178bf5bfb24fde1d2c6d9dffe61123f289fa560a8e457fb10f6fe784c",
-      "last_checked": "2026-04-07T07:41:49.288081",
+      "last_checked": "2026-04-10T07:40:26.165977",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"d43032ed80818ba6560ce30a81c09859\"",
       "file_path": "documentation/AppStoreServerAPI/invalidappaccounttokenerror.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidconsumptionstatuserror.json": {
       "hash": "77a311c0a8b7fd3b2fa736d42253ec5805f7b7f1c8c52e1c4a334a77fe5ce658",
-      "last_checked": "2026-04-07T07:41:49.411071",
+      "last_checked": "2026-04-10T07:40:26.329014",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e14d82bae48582e9dc7441860334328d\"",
       "file_path": "documentation/AppStoreServerAPI/invalidconsumptionstatuserror.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidcustomerconsentederror.json": {
       "hash": "fed042365f55e5545eddbddeb203f40c57c4250eb26abcc0453fa50142acb1b1",
-      "last_checked": "2026-04-07T07:41:49.543271",
+      "last_checked": "2026-04-10T07:40:26.434948",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2c635fe07a265f0ccb9f2cc978a584d4\"",
       "file_path": "documentation/AppStoreServerAPI/invalidcustomerconsentederror.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invaliddeliverystatuserror.json": {
       "hash": "06d663484ac6ee631443a04777aa267677821fee2d0e3f331cc31f50ab50466a",
-      "last_checked": "2026-04-07T07:41:49.672405",
+      "last_checked": "2026-04-10T07:40:26.566627",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2646acf87c4a9461fe02f96bcb84e632\"",
       "file_path": "documentation/AppStoreServerAPI/invaliddeliverystatuserror.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidlifetimedollarspurchasederror.json": {
       "hash": "db823af5d4e547da90b085c8d917fec565cf45c453d780d97ac51fa624781d0f",
-      "last_checked": "2026-04-07T07:41:49.795207",
+      "last_checked": "2026-04-10T07:40:26.690977",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bd0fa67787aa5622a3f98691616cb85d\"",
       "file_path": "documentation/AppStoreServerAPI/invalidlifetimedollarspurchasederror.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidlifetimedollarsrefundederror.json": {
       "hash": "3e2889febed8b63effb967babcf70a4c4f537c1daef11ea0439f497e0794d697",
-      "last_checked": "2026-04-07T07:41:49.931076",
+      "last_checked": "2026-04-10T07:40:26.803315",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0ce1fc69a8cf47d3be34ad1df5439a2a\"",
       "file_path": "documentation/AppStoreServerAPI/invalidlifetimedollarsrefundederror.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidplatformerror.json": {
       "hash": "dbbea00a6613c29c884aa658b4d5286494356ef9864849702bcf510bb05e3f79",
-      "last_checked": "2026-04-07T07:41:50.081995",
+      "last_checked": "2026-04-10T07:40:27.065681",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bf591df21da9a8f723fe7526830c20d3\"",
       "file_path": "documentation/AppStoreServerAPI/invalidplatformerror.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidplaytimeerror.json": {
       "hash": "c5830bc7af5ee594842e51d4ad8f34f7533b8b571d91460b4f5ad2c4abaefdc5",
-      "last_checked": "2026-04-07T07:41:50.243667",
+      "last_checked": "2026-04-10T07:40:27.246680",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"5eaefa966337ef489fc463e78bddd536\"",
       "file_path": "documentation/AppStoreServerAPI/invalidplaytimeerror.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidsamplecontentprovidederror.json": {
       "hash": "28f37c89aa0dc0a3cf8c51f2fda4ea3623e6b4c9ea30c0ca34e1af81b85a9196",
-      "last_checked": "2026-04-07T07:41:50.366436",
+      "last_checked": "2026-04-10T07:40:27.374087",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"59ea7979dbd0804390c0da62c334016e\"",
       "file_path": "documentation/AppStoreServerAPI/invalidsamplecontentprovidederror.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidtransactiontypenotsupportederror.json": {
       "hash": "af625647265fb622a1b3ad9e54517de99e7d86fd989ddcc7c7be884827d73e96",
-      "last_checked": "2026-04-07T07:41:50.482191",
+      "last_checked": "2026-04-10T07:40:27.491522",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3e1df00f22c3b2028fd98d297d7bf1e8\"",
       "file_path": "documentation/AppStoreServerAPI/invalidtransactiontypenotsupportederror.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invaliduserstatuserror.json": {
       "hash": "d9195da65a1a9bdba7bfc6d4b478b97f6e593529574cd0d9336608ea1c862a31",
-      "last_checked": "2026-04-07T07:41:50.603840",
+      "last_checked": "2026-04-10T07:40:27.672145",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2366aaa09cca3619bf07675ec4310047\"",
       "file_path": "documentation/AppStoreServerAPI/invaliduserstatuserror.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidtransactionnotconsumableerror.json": {
       "hash": "3562705055f5fbe0e9b8dd3f7a1a9a5193ec7d8c2fdda42c24e140dc13f45242",
-      "last_checked": "2026-04-07T07:41:50.756833",
+      "last_checked": "2026-04-10T07:40:27.788399",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b90737ba0e2f7d5c578cb5a51fa156c4\"",
       "file_path": "documentation/AppStoreServerAPI/invalidtransactionnotconsumableerror.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidenddateerror.json": {
       "hash": "3fe429b7d55395713c843f3b02fd3ecc7f2deef43ddb536c9bfd133b3e8b841e",
-      "last_checked": "2026-04-07T07:41:51.000679",
+      "last_checked": "2026-04-10T07:40:28.090297",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"5fd4243942cd2812699539dbeaa7538f\"",
       "file_path": "documentation/AppStoreServerAPI/invalidenddateerror.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidnotificationtypeerror.json": {
       "hash": "ba03f307345b1d73db7e1d82f4217c93d9bb08076eac21da0c8ed67c892c66e3",
-      "last_checked": "2026-04-07T07:41:51.120758",
+      "last_checked": "2026-04-10T07:40:28.251666",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f15957e374e3d562e13ee0ff6bf4072b\"",
       "file_path": "documentation/AppStoreServerAPI/invalidnotificationtypeerror.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidpaginationtokenerror.json": {
       "hash": "61f2841bfe44d3b677bd06000fadd78663a310e47464598dda89adfd79c0ea6b",
-      "last_checked": "2026-04-07T07:41:51.260243",
+      "last_checked": "2026-04-10T07:40:28.437595",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"1436c5b21db4bc8611544652f522d821\"",
       "file_path": "documentation/AppStoreServerAPI/invalidpaginationtokenerror.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidstartdateerror.json": {
       "hash": "8c6017d5139b58330373b3039daa8cb534a9b6eeaf0a7eb0c72b67c31a07bead",
-      "last_checked": "2026-04-07T07:41:51.391948",
+      "last_checked": "2026-04-10T07:40:28.569819",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7ccd578a2c84b6030d4f39416d247867\"",
       "file_path": "documentation/AppStoreServerAPI/invalidstartdateerror.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidtestnotificationtokenerror.json": {
       "hash": "ce931edb373b644b06475dff1966d7cc975149d509e41138e641f7ad7d22b327",
-      "last_checked": "2026-04-07T07:41:51.554304",
+      "last_checked": "2026-04-10T07:40:28.683171",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a7ef2a36aa4adfbfd89bac2c667b25a7\"",
       "file_path": "documentation/AppStoreServerAPI/invalidtestnotificationtokenerror.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidinappownershiptypeerror.json": {
       "hash": "6424739c12391ba84e33945b917a8f0d3e4f68d2af6db3db5a9ccf21e77a279e",
-      "last_checked": "2026-04-07T07:41:51.669019",
+      "last_checked": "2026-04-10T07:40:28.802683",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"155ef65aba40e7b8afae3fae3c8763b4\"",
       "file_path": "documentation/AppStoreServerAPI/invalidinappownershiptypeerror.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidproductiderror.json": {
       "hash": "3c620b319287e6f7afe048d13c330ef37bb0f647ba994a92f4b4aa696c745dae",
-      "last_checked": "2026-04-07T07:41:51.799943",
+      "last_checked": "2026-04-10T07:40:28.974382",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"340454fe3acef4f8df85d1770677c5c0\"",
       "file_path": "documentation/AppStoreServerAPI/invalidproductiderror.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidproducttypeerror.json": {
       "hash": "c3fd6d6107825b2b9f18ccc67a20cb38c874f1f7de960427fd8a184d5d775834",
-      "last_checked": "2026-04-07T07:41:51.961380",
+      "last_checked": "2026-04-10T07:40:29.142534",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0102b801e34d90c69898b558772bc070\"",
       "file_path": "documentation/AppStoreServerAPI/invalidproducttypeerror.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidsorterror.json": {
       "hash": "bd2983f0373e58b26128b973db6a536c946671cba7597fe9e9bcbc07e49599d6",
-      "last_checked": "2026-04-07T07:41:52.148287",
+      "last_checked": "2026-04-10T07:40:29.307924",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c67273669e77b470ae1c86ec40603dee\"",
       "file_path": "documentation/AppStoreServerAPI/invalidsorterror.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidsubscriptiongroupidentifiererror.json": {
       "hash": "1c270c88de969284a20be0fbbf4818dd201bec5508bc574e26c709552cfea8eb",
-      "last_checked": "2026-04-07T07:41:52.278776",
+      "last_checked": "2026-04-10T07:40:29.418931",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c1a95c1edd6cacfaedb56c3c9fe5a110\"",
       "file_path": "documentation/AppStoreServerAPI/invalidsubscriptiongroupidentifiererror.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/multiplefilterssuppliederror.json": {
       "hash": "4f9b6c7dda3a7f4815d67d36e78d56ce7e56bcc25bbacacf662e88d53b5e77d4",
-      "last_checked": "2026-04-07T07:41:52.406249",
+      "last_checked": "2026-04-10T07:40:29.592549",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7154db81fe0ff64d061833d6890fd013\"",
       "file_path": "documentation/AppStoreServerAPI/multiplefilterssuppliederror.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/paginationtokenexpirederror.json": {
       "hash": "6adc4c7eed32bce71b16027742a78ef48cf75e9214c13f769c3db2fd9c87abaa",
-      "last_checked": "2026-04-07T07:41:52.526302",
+      "last_checked": "2026-04-10T07:40:29.723403",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"58b8478d7df44e6618c248f2cd5b5ccc\"",
       "file_path": "documentation/AppStoreServerAPI/paginationtokenexpirederror.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/servernotificationurlnotfounderror.json": {
       "hash": "489ce47bf0a148c9182364b8d14df76c15adf59705703e4ad27326c6b3976564",
-      "last_checked": "2026-04-07T07:41:52.643313",
+      "last_checked": "2026-04-10T07:40:29.869173",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"25100dd4d8cd537943a45692538569a3\"",
       "file_path": "documentation/AppStoreServerAPI/servernotificationurlnotfounderror.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/startdateafterenddateerror.json": {
       "hash": "e5431a35ea4f82e21f150f279e471bd643ab4ebdeade1aee28aac04d6daf531f",
-      "last_checked": "2026-04-07T07:41:52.783611",
+      "last_checked": "2026-04-10T07:40:29.977237",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a1b4559df79b83cf63233db3d869791f\"",
       "file_path": "documentation/AppStoreServerAPI/startdateafterenddateerror.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/startdatetoofarinpasterror.json": {
       "hash": "d7b9eff23ed232d9c06dade7dcef48d3eb741728d0a33ab585dcad8438f358c2",
-      "last_checked": "2026-04-07T07:41:52.899024",
+      "last_checked": "2026-04-10T07:40:30.161079",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"937e1da1591b282b002cac7f797c6801\"",
       "file_path": "documentation/AppStoreServerAPI/startdatetoofarinpasterror.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/testnotificationnotfounderror.json": {
       "hash": "aa03d9b745f2c61ea3428bf428f65acf2c573b077db39bce050409fc151e2a47",
-      "last_checked": "2026-04-07T07:41:53.030437",
+      "last_checked": "2026-04-10T07:40:30.332404",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"edd45ce6a10f0e3f500331f98aa9323a\"",
       "file_path": "documentation/AppStoreServerAPI/testnotificationnotfounderror.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/invalidexcluderevokederror.json": {
       "hash": "50dff26e1572cd0f56adec56081d7c55c17f59e153fa1a017064f71c8d0d7ead",
-      "last_checked": "2026-04-07T07:41:53.179386",
+      "last_checked": "2026-04-10T07:40:30.506846",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"e28f14c97f9e2c3c635108751b8f2ac1\"",
       "file_path": "documentation/AppStoreServerAPI/invalidexcluderevokederror.md"
     },
@@ -3015,15 +3015,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/subscriptiongroupidentifieritem/subscriptiongroupidentifier.json": {
       "hash": "",
-      "last_checked": "2026-04-07T07:41:54.595988",
+      "last_checked": "2026-04-10T07:40:31.925226",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/lasttransactionsitem.json": {
       "hash": "db2f01cc93e7c9b476c2d42a3dd512961da73712dc49f249dcca28226a010355",
-      "last_checked": "2026-04-07T07:41:54.713668",
+      "last_checked": "2026-04-10T07:40:32.004844",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0a9d7e08bb7aeb37d32ea920234fc5ff\"",
       "file_path": "documentation/AppStoreServerAPI/lasttransactionsitem.md"
     },
@@ -3037,9 +3037,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/attemptdate.json": {
       "hash": "babd4fb724d1b5fb7a8082829569fbc68b3504faa2a4ea79deec873da314c726",
-      "last_checked": "2026-04-07T07:41:54.826854",
+      "last_checked": "2026-04-10T07:40:32.176394",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6dfe55b3ee1a8b52f84d1272c891e4fc\"",
       "file_path": "documentation/AppStoreServerAPI/attemptdate.md"
     },
@@ -3053,9 +3053,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceconsistencytoken.json": {
       "hash": "843dddb6010c94d68558be60dcca944fa19cf639fc133210ae393e09575927db",
-      "last_checked": "2026-04-07T07:41:54.944501",
+      "last_checked": "2026-04-10T07:40:32.296275",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"efccefe39a0ad95623653bc86104d815\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceconsistencytoken.md"
     },
@@ -3069,9 +3069,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedescription.json": {
       "hash": "604a727b6d68c0cfd61e5633677aa7dce33581d3589f7edd48e6aedd73b9750d",
-      "last_checked": "2026-04-07T07:41:55.077298",
+      "last_checked": "2026-04-10T07:40:32.433930",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"ddd5fcc4ab91923555c8480423baab20\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescription.md"
     },
@@ -3085,9 +3085,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedisplayname.json": {
       "hash": "5f4d087e14a6a3d8395d4afeeed393b3f676a7e4aee60fe52350b907d5c7a515",
-      "last_checked": "2026-04-07T07:41:55.205826",
+      "last_checked": "2026-04-10T07:40:32.609792",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0edd2ad93b26b85c2d7c66da3e59d586\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedisplayname.md"
     },
@@ -3101,9 +3101,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceestimatedtax.json": {
       "hash": "f49865224d07d87413234cb0debdeb14da633e1d75e0b6753e408b2d6419aa3b",
-      "last_checked": "2026-04-07T07:41:55.328873",
+      "last_checked": "2026-04-10T07:40:32.724359",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"5222300532607ebc573a607e7b801558\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceestimatedtax.md"
     },
@@ -3117,9 +3117,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceofferperiod.json": {
       "hash": "1911480c7523cf58364bbce00be5d39ec46142c0aabb21ee0d9b693ce3666bd1",
-      "last_checked": "2026-04-07T07:41:55.459309",
+      "last_checked": "2026-04-10T07:40:32.851237",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b8d1ccb1f609911bf87d0607765862c2\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferperiod.md"
     },
@@ -3133,9 +3133,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceofferprice.json": {
       "hash": "d1fc80007293f9bc2747a79c0b69f945cc1550c9737bf5e9add6953e02359878",
-      "last_checked": "2026-04-07T07:41:55.607383",
+      "last_checked": "2026-04-10T07:40:32.980121",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"61343abdc860d109d6d60aeb9bd9a35c\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceofferprice.md"
     },
@@ -3149,9 +3149,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceperiod.json": {
       "hash": "b53979f64dd767e26aecd1d8eaa790d426c2ec1afc64146e00f2d06e8d28f1e1",
-      "last_checked": "2026-04-07T07:41:55.741281",
+      "last_checked": "2026-04-10T07:40:33.153646",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"6e6f251518ab2f66c432282d2e3711dd\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiod.md"
     },
@@ -3165,9 +3165,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceperiodcount.json": {
       "hash": "2aba9e65fd2eab36f04f938b55326d925bb3eaf7a4630e764a29857e649118ed",
-      "last_checked": "2026-04-07T07:41:55.866901",
+      "last_checked": "2026-04-10T07:40:33.286549",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"eaafab9795af3c7491c59d9254072b8b\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceperiodcount.md"
     },
@@ -3181,9 +3181,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceprice.json": {
       "hash": "9cf340f391282c4fcda4e1ccd708f2e5d1159c547d387ec1971c97d608a39bac",
-      "last_checked": "2026-04-07T07:41:56.064286",
+      "last_checked": "2026-04-10T07:40:33.407925",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9ff27b2146b5b04a6e58e2531cbe8d7a\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceprice.md"
     },
@@ -3197,9 +3197,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercereason.json": {
       "hash": "a4fe6d22a470e56f012295a57013ea12980257008ff8a1d499f525b92304045a",
-      "last_checked": "2026-04-07T07:41:56.565469",
+      "last_checked": "2026-04-10T07:40:34.079023",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"372ca153d5496a7ff48f5eae6a487d4f\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercereason.md"
     },
@@ -3213,9 +3213,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundamount.json": {
       "hash": "625e5415abb0af78423cdd768f6e8d586680d818cfe6fc92d9724cc99cb91b99",
-      "last_checked": "2026-04-07T07:41:56.694345",
+      "last_checked": "2026-04-10T07:40:34.213772",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"554e59ba163f7a174b71dcbcb6bc2061\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundamount.md"
     },
@@ -3229,9 +3229,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefunddate.json": {
       "hash": "33551a2aabae17f93d2942d7a65227b48641fa14cd03037a51c37db19a080649",
-      "last_checked": "2026-04-07T07:41:56.823540",
+      "last_checked": "2026-04-10T07:40:34.350629",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"62f506a68dbcb3ce6840844f76a29da9\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunddate.md"
     },
@@ -3245,9 +3245,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundreason.json": {
       "hash": "e8319d5e8e3f9398debe7e7f36efc56c73d68511699aeb16d849f424756f9cb3",
-      "last_checked": "2026-04-07T07:41:56.944860",
+      "last_checked": "2026-04-10T07:40:34.511502",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"3ebf29f0108bb4c624fbf106b89671f2\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundreason.md"
     },
@@ -3261,9 +3261,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefundtype.json": {
       "hash": "6bc749b907a2945dc0fba4c8b7e84bbf0e5bbe613164ef67b4229ddf425390e3",
-      "last_checked": "2026-04-07T07:41:57.087940",
+      "last_checked": "2026-04-10T07:40:34.630605",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b20e02884e56fc3d3a7379403d520109\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefundtype.md"
     },
@@ -3277,9 +3277,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefunds.json": {
       "hash": "674ad0a05e80cd1504ca6607f0135c7f8d74809d731e9ed2d9aa53fa9f425811",
-      "last_checked": "2026-04-07T07:41:57.201395",
+      "last_checked": "2026-04-10T07:40:34.781259",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"a4670f8f7d63326c6f23b6fae6cb6541\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefunds.md"
     },
@@ -3293,9 +3293,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalitems.json": {
       "hash": "3da2f686b459c77e10735ccbc1b77c977fd801cd9af78b1a7e5d635fc00162d2",
-      "last_checked": "2026-04-07T07:41:57.376664",
+      "last_checked": "2026-04-10T07:40:34.888158",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7074f231a397becdf39e1d64e8ec98ff\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitems.md"
     },
@@ -3309,9 +3309,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerequestreferenceid.json": {
       "hash": "35ca29e6fd6663242026b0b36bd6031d59e479761c87e4afe6504799d4452b05",
-      "last_checked": "2026-04-07T07:41:57.494164",
+      "last_checked": "2026-04-10T07:40:35.049057",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"03d1756c0f9c73e73936a99cc95096ed\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerequestreferenceid.md"
     },
@@ -3325,9 +3325,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercesku.json": {
       "hash": "914612e08fc64604ac72d6466d4acd1b3e685ab0e8d828235716bfee2f8c51f0",
-      "last_checked": "2026-04-07T07:41:57.631328",
+      "last_checked": "2026-04-10T07:40:35.161492",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"28ae59c3c5fe85e9e98a615dffb98d76\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercesku.md"
     },
@@ -3341,9 +3341,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxcode.json": {
       "hash": "60219063c8b0907db5cd11687f68bff06b52ec6b07f0edd6bb3672af2e06e6ce",
-      "last_checked": "2026-04-07T07:41:57.745249",
+      "last_checked": "2026-04-10T07:40:35.301302",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c2c3942bb9b338225c10968a89b0de0e\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxcode.md"
     },
@@ -3357,9 +3357,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxexclusiveprice.json": {
       "hash": "acfb8eb9094764f6551e9ac77160361fe87154c9cd4b7826c488c7f2428daf0e",
-      "last_checked": "2026-04-07T07:41:57.931514",
+      "last_checked": "2026-04-10T07:40:35.431457",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"24baf073d1f80fae4ecd7f376c94e501\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxexclusiveprice.md"
     },
@@ -3373,9 +3373,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetaxrate.json": {
       "hash": "5ac49feb38fa364f9a459898a751c92e9cfa338ee1cbdba52514cdb7d4426fbd",
-      "last_checked": "2026-04-07T07:41:58.054145",
+      "last_checked": "2026-04-10T07:40:35.615912",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"53d318ba3a751cc0090de9efc5d51b3f\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetaxrate.md"
     },
@@ -3389,9 +3389,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionitems.json": {
       "hash": "3defcee2220698b347bfdffa48d561252ddb07eb5f81530fa5201f5ff11497f0",
-      "last_checked": "2026-04-07T07:41:58.165392",
+      "last_checked": "2026-04-10T07:40:35.722067",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b5f9edb1fe4c3677c956e34bcc6f0f33\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitems.md"
     },
@@ -3405,9 +3405,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercedescriptors.json": {
       "hash": "4fb3ebdb220c82bd59201cb56152c2efd59484e4fa408298336f9c2c95416683",
-      "last_checked": "2026-04-07T07:41:58.295175",
+      "last_checked": "2026-04-10T07:40:35.836537",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"2bbe858a32e7203855ab8aa5d878b271\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercedescriptors.md"
     },
@@ -3421,9 +3421,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommerceoffer.json": {
       "hash": "cc5ec6d85f78f3375d5f14eae27d07c5c824453ecd88e90fd148b266a9e69690",
-      "last_checked": "2026-04-07T07:41:58.433018",
+      "last_checked": "2026-04-10T07:40:35.965737",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4c97ab6e97356e6a8a4c007733158546\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommerceoffer.md"
     },
@@ -3437,9 +3437,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerefund.json": {
       "hash": "0ba4a07a7cd59893083fff9ca530a935668f9100f087c5c47fdd3d6a54bf1f34",
-      "last_checked": "2026-04-07T07:41:58.666047",
+      "last_checked": "2026-04-10T07:40:36.271641",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"707a9d6fa436e9ac9ad9c5e78cb1014d\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerefund.md"
     },
@@ -3453,9 +3453,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalinfo.json": {
       "hash": "bbfdd3fe93fb6e39fabdefc289b017b20be801b5e7780db7e956907a2c53ccf1",
-      "last_checked": "2026-04-07T07:41:58.804940",
+      "last_checked": "2026-04-10T07:40:36.408315",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"7eab0be02bf784f124818054352c165c\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalinfo.md"
     },
@@ -3469,9 +3469,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercerenewalitem.json": {
       "hash": "83b3dbf723559b78da5a8cb8a24f17d4d36cbfe8c5019a71c870bec8344ce0f5",
-      "last_checked": "2026-04-07T07:41:58.931532",
+      "last_checked": "2026-04-10T07:40:36.568720",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"05777ae13dcfc85fd7b74ace255f271e\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercerenewalitem.md"
     },
@@ -3485,9 +3485,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactioninfo.json": {
       "hash": "f5ecc49b8a1a2441b667aaf18f8eeb884232525df5f21292620c8ef894bf1a1f",
-      "last_checked": "2026-04-07T07:41:59.041059",
+      "last_checked": "2026-04-10T07:40:36.702351",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"80abd22ef9212872a48705947a7b5f56\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactioninfo.md"
     },
@@ -3501,9 +3501,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionitem.json": {
       "hash": "8ccc9aef3811b09a09e3f337eeb18080889ca00f8b643419cbba3fcac187ae1d",
-      "last_checked": "2026-04-07T07:41:59.270064",
+      "last_checked": "2026-04-10T07:40:36.822255",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bd200fa48eb8dabd5422bd5ad3f03e4d\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionitem.md"
     },
@@ -3517,9 +3517,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/get-app-transaction-info.json": {
       "hash": "41094f8cef5e462e580502b7625bf595052e35a781cca4783544fd38497b5c75",
-      "last_checked": "2026-04-07T07:41:27.103483",
+      "last_checked": "2026-04-10T07:40:04.082345",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f2a87c4c440ed006da9e19dd0606a89a\"",
       "file_path": "documentation/AppStoreServerAPI/get-app-transaction-info.md"
     },
@@ -3533,9 +3533,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/apptransactioninforesponse.json": {
       "hash": "5d52c754c375c3582ee327b883753ba0d5deb459ba33282575b3711fda333eac",
-      "last_checked": "2026-04-07T07:41:27.231885",
+      "last_checked": "2026-04-10T07:40:04.255960",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4e932623ac8616d296934e78f40cfd43\"",
       "file_path": "documentation/AppStoreServerAPI/apptransactioninforesponse.md"
     },
@@ -3549,9 +3549,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwsapptransaction.json": {
       "hash": "168ce6d73d1cadce2c8bb77983313c1e56dd80aab0d6059f467919a7f987fb1a",
-      "last_checked": "2026-04-07T07:41:31.746207",
+      "last_checked": "2026-04-10T07:40:08.236972",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9e7429feb99a6bc11d354c7303dbf78a\"",
       "file_path": "documentation/AppStoreServerAPI/jwsapptransaction.md"
     },
@@ -3565,9 +3565,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/jwsapptransactiondecodedpayload.json": {
       "hash": "52be300b266264805f37ce426345fd8fa41f319e3b24d838b0235d7ed5ffc0bd",
-      "last_checked": "2026-04-07T07:41:31.893058",
+      "last_checked": "2026-04-10T07:40:08.365787",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"ccedea481df739e4be5eb0e8af2f631d\"",
       "file_path": "documentation/AppStoreServerAPI/jwsapptransactiondecodedpayload.md"
     },
@@ -3581,9 +3581,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/send-consumption-information-v1.json": {
       "hash": "61ea76d4ea6746c6c947ceba5dd9e842893060f4f1e5aed78be284b6a5d1b933",
-      "last_checked": "2026-04-07T07:41:33.198688",
+      "last_checked": "2026-04-10T07:40:09.510707",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f9c1ee8b9eaee724094ee70b1b93472a\"",
       "file_path": "documentation/AppStoreServerAPI/send-consumption-information-v1.md"
     },
@@ -3597,9 +3597,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionrequestv1.json": {
       "hash": "750dbb61e8ec09c6d97a12c685ed2845f589077c47f7daafee050dfd020e757c",
-      "last_checked": "2026-04-07T07:41:33.334069",
+      "last_checked": "2026-04-10T07:40:09.640698",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"eafd91bfc5dfca28fd4d8ef1101384e5\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionrequestv1.md"
     },
@@ -3613,9 +3613,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionpercentage.json": {
       "hash": "964379f448f1fdc65712a74eef120236965738689661ce6565f74fb87b590206",
-      "last_checked": "2026-04-07T07:41:34.713067",
+      "last_checked": "2026-04-10T07:40:10.930920",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"0f4f44b38bd6c1c15479d516307ee509\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionpercentage.md"
     },
@@ -3629,9 +3629,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originalapplicationversion.json": {
       "hash": "76eb69755ad75c56a1ecd81b29a3f3705d889b9e1739903b5e027934ea69c1e7",
-      "last_checked": "2026-04-07T07:41:38.682398",
+      "last_checked": "2026-04-10T07:40:15.121451",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"9fd52d729e4681b617f9c0eff42c3dcb\"",
       "file_path": "documentation/AppStoreServerAPI/originalapplicationversion.md"
     },
@@ -3645,9 +3645,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/originalplatform.json": {
       "hash": "9afe87888aaf1318a8922a38b1dac7cf7dfc6aaacb94ae4009b08ff06822dc43",
-      "last_checked": "2026-04-07T07:41:38.846355",
+      "last_checked": "2026-04-10T07:40:15.248609",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"f8f6ac86f368e4dfbf1533ba6c1bab9d\"",
       "file_path": "documentation/AppStoreServerAPI/originalplatform.md"
     },
@@ -3661,9 +3661,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/preorderdate.json": {
       "hash": "eda26aa842d849a94ea272027208f287ff0e5f884d58c38585b02813f3e3f5b2",
-      "last_checked": "2026-04-07T07:41:38.963553",
+      "last_checked": "2026-04-10T07:40:15.361384",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"c7b16772c9af58c2893f4d0b319cebf6\"",
       "file_path": "documentation/AppStoreServerAPI/preorderdate.md"
     },
@@ -3677,9 +3677,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/revocationpercentage.json": {
       "hash": "2daa8aae737e5f8646861a3fb66dbd700d17f839e57615af780e3f0bc2d5bb33",
-      "last_checked": "2026-04-07T07:41:43.392268",
+      "last_checked": "2026-04-10T07:40:19.700188",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"39fc8f0472bd0df669effb69b75cfb19\"",
       "file_path": "documentation/AppStoreServerAPI/revocationpercentage.md"
     },
@@ -3693,9 +3693,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/revocationtype.json": {
       "hash": "5c059cbabaaeee624298e32ab47e99bbed29127cf8280b94e4a3797db30cb45f",
-      "last_checked": "2026-04-07T07:41:43.562435",
+      "last_checked": "2026-04-10T07:40:19.841685",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"5f76aae195fb1426b11db7c042c636ab\"",
       "file_path": "documentation/AppStoreServerAPI/revocationtype.md"
     },
@@ -3709,9 +3709,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/receiptcreationdate.json": {
       "hash": "8ad54929d98f030e28765724325b14cd94a85769c8e1e3fccf3ea1f820caebca",
-      "last_checked": "2026-04-07T07:41:43.931821",
+      "last_checked": "2026-04-10T07:40:20.195094",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"cb8767adf4b471452f6ddc2b76c63b85\"",
       "file_path": "documentation/AppStoreServerAPI/receiptcreationdate.md"
     },
@@ -3725,9 +3725,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercetransactionnotsupportederror.json": {
       "hash": "f51696de28de405094986063bd8df90fbee6c78381ed85f028c25655184e0696",
-      "last_checked": "2026-04-07T07:41:44.334077",
+      "last_checked": "2026-04-10T07:40:20.728689",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"81b55e779fa39e43ad0b20cef173fc33\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercetransactionnotsupportederror.md"
     },
@@ -3741,9 +3741,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/apptransactiondoesnotexisterror.json": {
       "hash": "16bd9618188455fd549f02c4c7d54265f0941ce37d0c4c3758529cbb03ec6313",
-      "last_checked": "2026-04-07T07:41:44.623520",
+      "last_checked": "2026-04-10T07:40:21.181315",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"65abb4eaaeb18ce608ce99cb022ef4c4\"",
       "file_path": "documentation/AppStoreServerAPI/apptransactiondoesnotexisterror.md"
     },
@@ -3757,9 +3757,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionpercentageautorenewablesubscriptionerror.json": {
       "hash": "c5cfcb38f9c7a43a2275193a0b39a9fa1b8b36d550a48324e6cdcd2cebc5d878",
-      "last_checked": "2026-04-07T07:41:48.911052",
+      "last_checked": "2026-04-10T07:40:25.703858",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"66fe39ad4cbcb870701885f27ed0edde\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionpercentageautorenewablesubscriptionerror.md"
     },
@@ -3773,9 +3773,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/consumptionpercentageoutofrangeerror.json": {
       "hash": "28ff3aa7d8ae89164340661691b8eaaaf94e7eead7c321b2b778fec09259d7e5",
-      "last_checked": "2026-04-07T07:41:49.038068",
+      "last_checked": "2026-04-10T07:40:25.865503",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4854843538122fde28c20467cc375148\"",
       "file_path": "documentation/AppStoreServerAPI/consumptionpercentageoutofrangeerror.md"
     },
@@ -3789,9 +3789,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/undeliveredconsumptionpercentagenonzeroerror.json": {
       "hash": "70818bffc35bc2058c48e76d090e03bd7ecf3ba98a7bce5cff929b5da5ab2a18",
-      "last_checked": "2026-04-07T07:41:50.889126",
+      "last_checked": "2026-04-10T07:40:27.911097",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"17239316ed63a7d3dc415b75191fb191\"",
       "file_path": "documentation/AppStoreServerAPI/undeliveredconsumptionpercentagenonzeroerror.md"
     },
@@ -3805,9 +3805,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/deliverystatusv1.json": {
       "hash": "84927735eb33e0ff8db242c29b3832ebc00dd521aa97ae6ff63d19a73ba13511",
-      "last_checked": "2026-04-07T07:41:53.621520",
+      "last_checked": "2026-04-10T07:40:30.918183",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"360b5e4c4e7af9f7efdf3fbe6ced828f\"",
       "file_path": "documentation/AppStoreServerAPI/deliverystatusv1.md"
     },
@@ -3821,9 +3821,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/refundpreferencev1.json": {
       "hash": "d332305c2101b8768ad167c6385a0522ba6c7d99360ec37a07695bceb901a52c",
-      "last_checked": "2026-04-07T07:41:54.304949",
+      "last_checked": "2026-04-10T07:40:31.575781",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"bc4536594a9682b14247f1bea5db0405\"",
       "file_path": "documentation/AppStoreServerAPI/refundpreferencev1.md"
     },
@@ -3837,9 +3837,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfodependentsku.json": {
       "hash": "afaf990282e6ec142adb001081189be8ea1f8ef3874a6ed7eb161d97f276b5db",
-      "last_checked": "2026-04-07T07:41:56.175977",
+      "last_checked": "2026-04-10T07:40:33.595354",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"cafba45432a3cc0c7eb59148331d99dd\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfodependentsku.md"
     },
@@ -3853,9 +3853,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfoprice.json": {
       "hash": "feb09f4d8685b34b9732a5c956bc42f533310e99e5eff3806fcaf997888804d2",
-      "last_checked": "2026-04-07T07:41:56.313459",
+      "last_checked": "2026-04-10T07:40:33.721403",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"b6bcdfdca1e81832d0e62e61671d4c59\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfoprice.md"
     },
@@ -3869,9 +3869,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfostatus.json": {
       "hash": "0d160dee26fb020db85e57116aeff019c9a387a27694263c9eca12e5cf086af7",
-      "last_checked": "2026-04-07T07:41:56.435060",
+      "last_checked": "2026-04-10T07:40:33.904257",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"81f53ba2ae953d370b6d24645d924d30\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfostatus.md"
     },
@@ -3885,9 +3885,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreserverapi/advancedcommercepriceincreaseinfo.json": {
       "hash": "3645e16fcee7c3fd138bd6d5c2f71ec4d647de12563975f185c322520d039117",
-      "last_checked": "2026-04-07T07:41:58.558356",
+      "last_checked": "2026-04-10T07:40:36.152792",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:41:25.096106",
+      "session_id": "2026-04-10T07:40:02.257434",
       "etag": "W/\"4f8202224afc75a16f1db7e752d19da7\"",
       "file_path": "documentation/AppStoreServerAPI/advancedcommercepriceincreaseinfo.md"
     },

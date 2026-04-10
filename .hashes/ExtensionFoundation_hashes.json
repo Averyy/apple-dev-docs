@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-07T07:43:21.633465",
+    "last_updated": "2026-04-10T07:42:04.605945",
     "total_pages": 194,
-    "session_id": "2026-04-07T07:43:08.136513"
+    "session_id": "2026-04-10T07:41:47.586868"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExtensionFoundation.json": {
       "hash": "96f075c6e872376514fbc65b0593680a02e46c9ca29c2df3eca7faf65ea9199b",
-      "last_checked": "2026-04-07T07:43:08.381341",
+      "last_checked": "2026-04-10T07:41:47.856885",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"cbcb2032b3a9380c0bbac38daa1d5bb6\"",
       "file_path": "documentation/ExtensionFoundation/ExtensionFoundation.md"
     },
     "https://developer.apple.com/documentation/ExtensionFoundation": {
       "hash": "96f075c6e872376514fbc65b0593680a02e46c9ca29c2df3eca7faf65ea9199b",
-      "last_checked": "2026-04-07T07:43:08.292584",
+      "last_checked": "2026-04-10T07:41:47.756014",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"cbcb2032b3a9380c0bbac38daa1d5bb6\"",
       "file_path": "documentation/ExtensionFoundation/ExtensionFoundation.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity.json": {
       "hash": "81ef9af105408c0c7dc85b390cd460d10d4bd416f6949035bc9d9033a7edee5f",
-      "last_checked": "2026-04-07T07:43:09.757833",
+      "last_checked": "2026-04-10T07:41:49.779780",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"ca6b17a1cabd7bc00add2308220ea689\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension.json": {
       "hash": "f1bf76bf86b3e4767897bc33e2c1283c24da12f5bbd0f8b8898883d856af0034",
-      "last_checked": "2026-04-07T07:43:09.019724",
+      "last_checked": "2026-04-10T07:41:48.592357",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1b0beeb62db26ff21a160332f537b266\"",
       "file_path": "documentation/ExtensionFoundation/appextension.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionconfiguration.json": {
       "hash": "0fa6d66b00cc33fc13ddd67733bf6ed0e4bd187801844929dc0d56965034d89b",
-      "last_checked": "2026-04-07T07:43:09.195682",
+      "last_checked": "2026-04-10T07:41:48.884707",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"10c51d009c885ae704322ed88a764ed4\"",
       "file_path": "documentation/ExtensionFoundation/appextensionconfiguration.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess.json": {
       "hash": "dc6f09d60498e760f4d6f46595732b91e6dd39e14435f8fa4732b61d910fc9ca",
-      "last_checked": "2026-04-07T07:43:09.585599",
+      "last_checked": "2026-04-10T07:41:49.447232",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"6b1ee1dc335df51cca8dd1ebbb3a75dc\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/extensionpointdefining.json": {
       "hash": "eb1c4e6b76212be23141c4a278b31ebbba5b48cfa40cc50aac2ec639fad7aef6",
-      "last_checked": "2026-04-07T07:43:10.042501",
+      "last_checked": "2026-04-10T07:41:50.120706",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"99c248c4462807af3f054cc7b8334693\"",
       "file_path": "documentation/ExtensionFoundation/extensionpointdefining.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint.json": {
       "hash": "942702dac0039619ba9da9a077f9566927021ae49ce3f2b4185bda41d3e0fca3",
-      "last_checked": "2026-04-07T07:43:09.870686",
+      "last_checked": "2026-04-10T07:41:49.962141",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"95a1b8b5495afe3a1ae96a56d0ced806\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/connectionhandler.json": {
       "hash": "c8bf3d905d6bc72fb5620597a8e4751d7d88de8206e8c9985261945339b5d627",
-      "last_checked": "2026-04-07T07:43:09.347104",
+      "last_checked": "2026-04-10T07:41:49.172122",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"241af7166f06c7a9f53659cfcf307e14\"",
       "file_path": "documentation/ExtensionFoundation/connectionhandler.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/bundleidentifier.json": {
       "hash": "9a7aedeeac3a033793814252fd715e984b864b8a9e542b795e67ce321168efae",
-      "last_checked": "2026-04-07T07:43:12.879297",
+      "last_checked": "2026-04-10T07:41:54.000759",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"00b1697bcb969eb2ec6b88d14bc50bd9\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/bundleidentifier.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/extensionpointidentifier.json": {
       "hash": "cb238d72a26b0211aefe37a9e91ae15847cb9fa092793c1a3f6d76af8e70a04c",
-      "last_checked": "2026-04-07T07:43:13.018419",
+      "last_checked": "2026-04-10T07:41:54.167148",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"6124acaf19a9a6404fcdcf407cfacd5c\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/extensionpointidentifier.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/localizedname.json": {
       "hash": "cb701e06a90460c0571106740bc8259e5fceedd7faa16393cde767aca202488f",
-      "last_checked": "2026-04-07T07:43:13.159712",
+      "last_checked": "2026-04-10T07:41:54.320834",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"06199fd1858f7217915f72f6639f5eb8\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/localizedname.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/identities.json": {
       "hash": "8bc93000cb7a1e9cee5ab10cc5cf5b48ca0cb767e4d5adfa87e5f94ff13b8bdd",
-      "last_checked": "2026-04-07T07:43:14.004737",
+      "last_checked": "2026-04-10T07:41:55.374034",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"9184d6bb7aecec0053c011df506e79c5\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/identities.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability.json": {
       "hash": "b9d680de84e268d2a18f57b3767b5ebbb455af46f26084d65da6fbe1fd91301a",
-      "last_checked": "2026-04-07T07:43:13.550410",
+      "last_checked": "2026-04-10T07:41:54.793508",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f63f0b655a877a551d0eab29db4f00ac\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availabilityupdates.json": {
       "hash": "31fa618969ef792b9740d02875d468da3d5f8e7be0de4a6c1b2fddab6aec91b7",
-      "last_checked": "2026-04-07T07:43:13.676851",
+      "last_checked": "2026-04-10T07:41:54.978274",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"0961b7b491273af63fade23f89ab9736\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availabilityupdates.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/hash(into:).json": {
       "hash": "153dcbfc8a180d2552fb20158fcef2e1b24712bb8b03c7d782ea608d85057bc7",
-      "last_checked": "2026-04-07T07:43:13.303134",
+      "last_checked": "2026-04-10T07:41:54.492549",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"5d35d162d16eca170115f17a16a4ee54\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/hash-into.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/==(_:_:).json": {
       "hash": "5ba8558e998a31982db1802f79b25d82d5dbf4ec78328580a67481790ca669b3",
-      "last_checked": "2026-04-07T07:43:13.434262",
+      "last_checked": "2026-04-10T07:41:54.654917",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"a4c5cd0215dfdef87354c207e0e99764\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/equal.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/matching(appextensionpointids:).json": {
       "hash": "d8d78c1dd7f979cf2a4fb3c9f6ff95406d5cb4714b56b8f6d2675800c3e9c366",
-      "last_checked": "2026-04-07T07:43:13.843031",
+      "last_checked": "2026-04-10T07:41:55.096269",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d2605cc99d4fea3857ebda7f2ade8723\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/matching-appextensionpointids.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/init().json": {
       "hash": "378002da30aa9316520e82c6de9efbbd8216c331b8a7eae9ac9d603e5f49ab82",
-      "last_checked": "2026-04-07T07:43:10.209719",
+      "last_checked": "2026-04-10T07:41:50.296762",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c05ed32e0452f2e7f060b5a68e882a7d\"",
       "file_path": "documentation/ExtensionFoundation/appextension/init.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/configuration-swift.property.json": {
       "hash": "d136fd831b613e9379fc0c0a694fc2a6efb14e2bc1ee2e60a8bbc9c2577cc13c",
-      "last_checked": "2026-04-07T07:43:10.326404",
+      "last_checked": "2026-04-10T07:41:50.421723",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"17b140027344484aa900c3c5f74509cd\"",
       "file_path": "documentation/ExtensionFoundation/appextension/configuration-swiftproperty.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/configuration-swift.associatedtype.json": {
       "hash": "65abc1b1aa13441b9569a2c4ea6197d26a3c5a7ada42fd86a31e10457274db22",
-      "last_checked": "2026-04-07T07:43:10.501092",
+      "last_checked": "2026-04-10T07:41:50.722845",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"550889ab87238370ed2ddbebab0c2b3c\"",
       "file_path": "documentation/ExtensionFoundation/appextension/configuration-swiftassociatedtype.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/main()-5zfjx.json": {
       "hash": "ac1214e7c0a0c8cf8543860b55f2841b5c9882e92a4c92161680468e8509e408",
-      "last_checked": "2026-04-07T07:43:10.618206",
+      "last_checked": "2026-04-10T07:41:51.005032",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"16138e73cf22ad9ace6285de6b9cfdc4\"",
       "file_path": "documentation/ExtensionFoundation/appextension/main-5zfjx.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/main()-w0u9.json": {
       "hash": "aeb9867f0354106184da7dff4d8e9f1ac237fcff73ff3be538007b32218ecf91",
-      "last_checked": "2026-04-07T07:43:10.726327",
+      "last_checked": "2026-04-10T07:41:51.289465",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"45335ff56e4eaee89d31eac066f2e6b9\"",
       "file_path": "documentation/ExtensionFoundation/appextension/main-w0u9.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/appextension-implementations.json": {
       "hash": "272bdc2bb7412235a21d04522f1d6a92224a1e652a290a9f12fe0ca7eb94182a",
-      "last_checked": "2026-04-07T07:43:11.510106",
+      "last_checked": "2026-04-10T07:41:52.466933",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"e5c80caa5ec0c6274153fbe923b28d75\"",
       "file_path": "documentation/ExtensionFoundation/appextension/appextension-implementations.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionconfiguration/accept(connection:).json": {
       "hash": "22de24c8fe282ca7dd0a56c1c412d37fecca45c56b66f6514adaa69658249b8e",
-      "last_checked": "2026-04-07T07:43:11.630342",
+      "last_checked": "2026-04-10T07:41:52.574582",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d2c48d82675ea802b1187c38e332538c\"",
       "file_path": "documentation/ExtensionFoundation/appextensionconfiguration/accept-connection.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/init(configuration:)-2g0cy.json": {
       "hash": "799074bb92d8da8c4515514feae3f3ae4d63e6ea310b586fdfe4c366d6071156",
-      "last_checked": "2026-04-07T07:43:12.019718",
+      "last_checked": "2026-04-10T07:41:53.115269",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d8a360dfba013ec531a34a65a2adf091\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/init-configuration-2g0cy.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/init(configuration:)-38zf.json": {
       "hash": "201faa8911ee6fd5052d118c710898dad0c834688eb95ee5a2ece3629ef63e07",
-      "last_checked": "2026-04-07T07:43:12.148591",
+      "last_checked": "2026-04-10T07:41:53.228011",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1b6a0f561b6c9faeca9de47213033f5e\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/init-configuration-38zf.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/configuration.json": {
       "hash": "a449a7822fecaecc5642365116d22c4f6e634c89d9a8926c940978dba1986a0a",
-      "last_checked": "2026-04-07T07:43:12.288155",
+      "last_checked": "2026-04-10T07:41:53.391101",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"9d605dd8bf5ee05ea889d35094b0e4b1\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/configuration.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/makexpcconnection().json": {
       "hash": "5766f094cb5e79e9dee9c278490d4a4ced377297b049a8f97efdb5ca64189740",
-      "last_checked": "2026-04-07T07:43:12.419106",
+      "last_checked": "2026-04-10T07:41:53.543628",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"3ced657f0dc9de5caed872f3433518fc\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/makexpcconnection.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/invalidate().json": {
       "hash": "bb3b93bf0414c9c1b61422a498295e5c82a122e73594a4441047babd206b7eca",
-      "last_checked": "2026-04-07T07:43:12.692199",
+      "last_checked": "2026-04-10T07:41:53.835051",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d70a092098a7236968bd017183a1ca7f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/invalidate.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/makexpcsession().json": {
       "hash": "2427623cbf470595693512dbe5dcc00586388438f95ae638596151784fcca363",
-      "last_checked": "2026-04-07T07:43:12.555217",
+      "last_checked": "2026-04-10T07:41:53.693581",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1569a14dc713159b94624198ad07133f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/makexpcsession.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor.json": {
       "hash": "de874242405623cc9913d9922754cfcb306d35aa3a28fe29b0a0359eab61e61f",
-      "last_checked": "2026-04-07T07:43:15.431076",
+      "last_checked": "2026-04-10T07:41:56.900764",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"15e032295ff94931999580956a333963\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/attribute.json": {
       "hash": "1fa520ade0a1b1cf57fe0e2188015a281bcc176ee7fb414b6b73308e3fb0da36",
-      "last_checked": "2026-04-07T07:43:14.929984",
+      "last_checked": "2026-04-10T07:41:56.476036",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c469971ef95baabaacaf87c66e47c503\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/attribute.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/bind.json": {
       "hash": "451796d3c84b923a193509a0c93a654c2e7211498287a91f03f29f61f5d7cbb3",
-      "last_checked": "2026-04-07T07:43:15.114072",
+      "last_checked": "2026-04-10T07:41:56.624222",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"e475757e4797d038058e46cbcacc874c\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/bind.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/definition.json": {
       "hash": "db857609984f5cebda74a7f290430d800f30bfdda87304b1f81fbea3e978b7b9",
-      "last_checked": "2026-04-07T07:43:14.296900",
+      "last_checked": "2026-04-10T07:41:55.710538",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"8a9b42b836d98c21b4647920041ba9c3\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/definition.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/enhancedsecurity.json": {
       "hash": "2e2c2088d2d6f5ce41a9bab574d99fa206192800d23ce2a0886d190336def44f",
-      "last_checked": "2026-04-07T07:43:14.684285",
+      "last_checked": "2026-04-10T07:41:56.140010",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f6a085fbc923d6b94d5468f05ccd3fed\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/enhancedsecurity.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/identifier.json": {
       "hash": "ed301a5122581115c8c693fa2a88bb0c9b9b7d419597befd65cab9f237c7e27d",
-      "last_checked": "2026-04-07T07:43:15.248815",
+      "last_checked": "2026-04-10T07:41:56.740580",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"95d2cf8f042992e3873f16c7535db494\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/identifier.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/name.json": {
       "hash": "d7ace31c442a36db7c95d31de021679e1d834130f32664686c138f81acb932c9",
-      "last_checked": "2026-04-07T07:43:14.427117",
+      "last_checked": "2026-04-10T07:41:55.812653",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f8f97481647550db33ac7e74fd9678d4\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/name.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/scope.json": {
       "hash": "1c6d89d1d8c9686d1aa098aeb9944d54ad88a169b8848530a2e75522aa36ea6c",
-      "last_checked": "2026-04-07T07:43:14.818961",
+      "last_checked": "2026-04-10T07:41:56.324206",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"aa25a4c412eddd2b6474442a746d2f1c\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/scope.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/userinterface.json": {
       "hash": "0e07a62b562e8dc98745363cda48838736642fe5aab8e6f3a34f632072003974",
-      "last_checked": "2026-04-07T07:43:14.543797",
+      "last_checked": "2026-04-10T07:41:55.981477",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"83a3851d95e6b9d8b4cf3a309df7f569\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/userinterface.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/init(identifier:).json": {
       "hash": "b5bc89b6c572669fedf03e83367042fbcf39359538ce60626c46c2df60dd8c88",
-      "last_checked": "2026-04-07T07:43:14.169660",
+      "last_checked": "2026-04-10T07:41:55.539663",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"55c7b1d5cb8bd3f4616208504ce691ff\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/init-identifier.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error.json": {
       "hash": "4a0292a7231f790fa669acd56b13861a583b95143ab44fcc5a7d60e3435e5d2a",
-      "last_checked": "2026-04-07T07:43:15.550730",
+      "last_checked": "2026-04-10T07:41:57.078786",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"b7c516c2f469251fafcfe7183a983133\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/connectionhandler/init(onconnection:).json": {
       "hash": "2de3332bc21995a8a31a33a53fbf7a015b661f2811f504857486be0eb573a1ec",
-      "last_checked": "2026-04-07T07:43:11.755417",
+      "last_checked": "2026-04-10T07:41:52.774352",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"a8a5c1647303d5112df258061e1fdc11\"",
       "file_path": "documentation/ExtensionFoundation/connectionhandler/init-onconnection.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/connectionhandler/init(onsessionrequest:).json": {
       "hash": "343e2a78e45dca05988e6fdadb43669a037041f0142bb815e0ad7da5abb99152",
-      "last_checked": "2026-04-07T07:43:11.900231",
+      "last_checked": "2026-04-10T07:41:52.942293",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"6517fa5b15e921648bbe2b78d62880a7\"",
       "file_path": "documentation/ExtensionFoundation/connectionhandler/init-onsessionrequest.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/identities/asynciterator/next().json": {
       "hash": "9780bdab647eed2ba2343159da81eb308f6085d3ae9c7625f11a1958c91c58ed",
-      "last_checked": "2026-04-07T07:43:17.137880",
+      "last_checked": "2026-04-10T07:41:59.222061",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"5cf019b26a3bd11d91079e13be42523f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/identities/asynciterator/next.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/identities/asynciterator.json": {
       "hash": "9336bb8a6fb962b5752638fd8d18c127ad1e6ec1edf64f7172112dcfd93abf91",
-      "last_checked": "2026-04-07T07:43:17.259478",
+      "last_checked": "2026-04-10T07:41:59.381988",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d715d1577a07a2c3ec9d6628977e425f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/identities/asynciterator.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/identities/element.json": {
       "hash": "3464ad0c29163d3aa27d493def6cfad60ce3d37478a1cf4e8af3cf1c8c551091",
-      "last_checked": "2026-04-07T07:43:17.387359",
+      "last_checked": "2026-04-10T07:41:59.486540",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"69ad98ef19cbfaf68b4236281c92385b\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/identities/element.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/identities/makeasynciterator().json": {
       "hash": "4060a569ad54e67df39c8da272021335a6d417c2a0285c8f6ab76985cda13cc9",
-      "last_checked": "2026-04-07T07:43:17.549970",
+      "last_checked": "2026-04-10T07:41:59.627051",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d07f05c22a9e886725fa2cb42dcebe1f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/identities/makeasynciterator.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/init().json": {
       "hash": "0f2262810fa0914429dd25b8142b35fb1a1d23f10dec46a5d0012fc4b8c749e2",
-      "last_checked": "2026-04-07T07:43:16.405403",
+      "last_checked": "2026-04-10T07:41:58.229174",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f84ce7610a33d436814110af4d03c258\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/init.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/description.json": {
       "hash": "19437b48d5c88b16f4881545f7ef924f4de440c9c0a274a11f6acd3d36ddcdd4",
-      "last_checked": "2026-04-07T07:43:16.525467",
+      "last_checked": "2026-04-10T07:41:58.390831",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"595fd3d299e9b2a44f2bfc3360febc2a\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/description.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/totalcount.json": {
       "hash": "762cadb0954e89112381d992fedbc0c4e6f21bbd423389ae75d7a535f4372df5",
-      "last_checked": "2026-04-07T07:43:16.650556",
+      "last_checked": "2026-04-10T07:41:58.593825",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"a1f6169a2a6a1b4306a51ecf296d746c\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/totalcount.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/disabledcount.json": {
       "hash": "3c8a293da33a25f5148515f33089239c7fb6516cc5b4359f47818be3718de3db",
-      "last_checked": "2026-04-07T07:43:16.784112",
+      "last_checked": "2026-04-10T07:41:58.722428",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c8e86100ceb977d9609675b8875b6b70\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/disabledcount.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/enabledcount.json": {
       "hash": "2ae75c32d4cdf2019ebbd561d2b1dc45614aa2dfe1b3baf335d6d68d52298144",
-      "last_checked": "2026-04-07T07:43:16.896241",
+      "last_checked": "2026-04-10T07:41:58.893935",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"634e3912108ee1f00831e6250ae969a0\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/enabledcount.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionidentity/availability/unapprovedcount.json": {
       "hash": "fe01850ee19c0c8cf5ee90996b39dc5cb7893cbf5143faf3dc0e4b7d23654ac3",
-      "last_checked": "2026-04-07T07:43:17.018914",
+      "last_checked": "2026-04-10T07:41:59.037032",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"0bba4a86620a825359ffc4ff732268d3\"",
       "file_path": "documentation/ExtensionFoundation/appextensionidentity/availability/unapprovedcount.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/configuration/oninterruption.json": {
       "hash": "ca729ad65fcd5780efaba5b9690187a4ff7dafaad6aa8c5a108627c17c6a62e9",
-      "last_checked": "2026-04-07T07:43:16.156120",
+      "last_checked": "2026-04-10T07:41:57.741089",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"85991451b809fbfa900a36cab816416b\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/configuration/oninterruption.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/configuration/init(appextensionidentity:oninterruption:).json": {
       "hash": "10dcd5616548aecabfcf2355487d4c9dd3ef37bb5f32fc1cac2817e7126ba9df",
-      "last_checked": "2026-04-07T07:43:15.989853",
+      "last_checked": "2026-04-10T07:41:57.567798",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1738a598e1453f7e2af605a58237f347\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/configuration/init-appextensionidentityoninterruption.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionprocess/configuration/appextensionidentity.json": {
       "hash": "c322db1f43383ebd3ad60b7a2e81d9b7bcd673e29d40385b0b69d9e5ef674208",
-      "last_checked": "2026-04-07T07:43:16.268149",
+      "last_checked": "2026-04-10T07:41:58.048246",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"fb666a172c08b69ea8d4e4d5fd8e9dcd\"",
       "file_path": "documentation/ExtensionFoundation/appextensionprocess/configuration/appextensionidentity.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/state-swift.struct.json": {
       "hash": "bad0a67ebcad7b094b524acec256d7201acee4717d63f5e47102d4c064558e17",
-      "last_checked": "2026-04-07T07:43:19.834666",
+      "last_checked": "2026-04-10T07:42:02.589345",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"76fc88b73e4c54fad24ba35ba8dc57b2\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/state-swiftstruct.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/init().json": {
       "hash": "d8cee857eb406c8f3cfd71d5acca49eaadd03728e685288fc8bf16ec4273413b",
-      "last_checked": "2026-04-07T07:43:19.057826",
+      "last_checked": "2026-04-10T07:42:01.571534",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"97891b6391dc03858ed7f638b4e09a5b\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/init.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/init(appextensionpoint:).json": {
       "hash": "ece57ff5019bbd3959302f3887a8a52882501df8c46056c111705b309cc60aad",
-      "last_checked": "2026-04-07T07:43:19.187955",
+      "last_checked": "2026-04-10T07:42:01.739058",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1b354d33a797682aaeafe6851d280f0a\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/init-appextensionpoint.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/identities.json": {
       "hash": "085ef28734d690b0252510d07926b11b3512bae7fc5a05da5621075e56eef433",
-      "last_checked": "2026-04-07T07:43:19.584200",
+      "last_checked": "2026-04-10T07:42:02.253676",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"5e30d8ba3c3db8d1938262822c032e32\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/identities.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/state-swift.property.json": {
       "hash": "95880a067bc9eae25774541e17c0675a3162120216991523a39621c1a0dc2a4c",
-      "last_checked": "2026-04-07T07:43:19.706022",
+      "last_checked": "2026-04-10T07:42:02.414981",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"409470827f3c803b1c5621fc5bc7914f\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/state-swiftproperty.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/addappextensionpoint(_:).json": {
       "hash": "1f80c2da90ee073ecb12889e2f6372c7d0c19b6402f420ad0c64fe512474bf84",
-      "last_checked": "2026-04-07T07:43:19.309943",
+      "last_checked": "2026-04-10T07:42:01.890509",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"597936c65aff3c3d762d876e21da34fb\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/addappextensionpoint.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/removeappextensionpoint(_:).json": {
       "hash": "37c1cc00cfb89aff3f07f454798a1f51e05cb2eea99e9d57582457fcb1dd64c0",
-      "last_checked": "2026-04-07T07:43:19.455050",
+      "last_checked": "2026-04-10T07:42:02.083246",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c4f2b203648e41eac9c2889f5b4fff51\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/removeappextensionpoint.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/bind/buildblock(_:).json": {
       "hash": "963143c9c703fc1622aa25bb4049d1fe879003966fe79a4b68871dcb4dabab58",
-      "last_checked": "2026-04-07T07:43:18.539239",
+      "last_checked": "2026-04-10T07:42:01.004126",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f5619db8871bb0a56fea8946736bcc2e\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/bind/buildblock.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/definition/buildblock(_:_:).json": {
       "hash": "89faf0965aab0c7d3f3070937c2d7d19432d7f75919239c816d0cbd294766fe5",
-      "last_checked": "2026-04-07T07:43:17.655068",
+      "last_checked": "2026-04-10T07:41:59.782837",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"51a25b06aec80b3da2459c6859f61c9b\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/definition/buildblock.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/enhancedsecurity/init(_:).json": {
       "hash": "d85dd521cb7248980427e7ae84b4fe2cb0388635ec0a42b323e633860ca63ce8",
-      "last_checked": "2026-04-07T07:43:18.169139",
+      "last_checked": "2026-04-10T07:42:00.541423",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"e5fd5f176c550dc32858ddb4fd2d321e\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/enhancedsecurity/init.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/identifier/init(_:).json": {
       "hash": "bb417d7fced5d9bf958fb2bc36f7bb540cc55678a660bff49642f24558eb144a",
-      "last_checked": "2026-04-07T07:43:18.808117",
+      "last_checked": "2026-04-10T07:42:01.266308",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"d940472fc12ee4c95a062cc323765b48\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/identifier/init.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/identifier/init(host:name:).json": {
       "hash": "d4ce537a924758ff1d5199f35f8b64b9b3883c8388c4b7c6675cc1cfd25ea4e3",
-      "last_checked": "2026-04-07T07:43:18.939395",
+      "last_checked": "2026-04-10T07:42:01.374640",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"3b93c984eb8a3ef68a0e86b56c2739a9\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/identifier/init-hostname.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/name/init(_:).json": {
       "hash": "2d1cdb086819b12d707df6bd4bc0b972f9dca54aef4026fcbaf83d6e642bf7d0",
-      "last_checked": "2026-04-07T07:43:17.792896",
+      "last_checked": "2026-04-10T07:41:59.952572",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"460fa9a33376ff91267ed1e31c55e16e\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/name/init.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/scope/init(restriction:).json": {
       "hash": "97f44b79491c593c7ea1a9f92d60a9cc7160b280b9db443d2ae93253e00aea21",
-      "last_checked": "2026-04-07T07:43:18.301202",
+      "last_checked": "2026-04-10T07:42:00.709265",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"3dc0f94c92d10fdef07132f3ff34d943\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/scope/init-restriction.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/scope/restriction.json": {
       "hash": "7c312c9128023bd39361b41e9a19d2105d149ada9699b03d6b20064b2930d12a",
-      "last_checked": "2026-04-07T07:43:18.423716",
+      "last_checked": "2026-04-10T07:42:00.836825",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"45864594adc88c42f5b1f0f7d56ff71a\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/scope/restriction.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/userinterface/init(_:).json": {
       "hash": "03bb5a994abbe8265173713885acc3defdf244738093e59a3831580c4663d14a",
-      "last_checked": "2026-04-07T07:43:17.908676",
+      "last_checked": "2026-04-10T07:42:00.172790",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"239355a29c6e6e1362a228c5ac909514\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/userinterface/init.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/userinterface/value.json": {
       "hash": "26206aec1113f16ff2af88a6e24a1e23a9c64a2a4614f7d3827ae44944d59d50",
-      "last_checked": "2026-04-07T07:43:18.044422",
+      "last_checked": "2026-04-10T07:42:00.349219",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"eb9fc1aa8223be0b7f0b6378a1e04dc3\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/userinterface/value.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error/hostmustbeapplicationorappextension.json": {
       "hash": "ef0a799c802181540066ff63af0cf19afe7c42703f941a3269c44bda0e4f599b",
-      "last_checked": "2026-04-07T07:43:19.970391",
+      "last_checked": "2026-04-10T07:42:02.760443",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c3318f26dfa26f5d460eb7d26a2af2db\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error/hostmustbeapplicationorappextension.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error/hostmustdefineappextensionpoint(_:).json": {
       "hash": "86ab125c4ef7b1332d977929389f0b5d31065e05eb5c6ce3c46163cba527b2e5",
-      "last_checked": "2026-04-07T07:43:20.105527",
+      "last_checked": "2026-04-10T07:42:02.925440",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"831bc3931fbaef28518e27700bd53c67\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error/hostmustdefineappextensionpoint.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error/hostmusthavebundleidentifier.json": {
       "hash": "c31e77b4122da96d8465780de0c222b1c8ab53afeb57144a7526ab476b6e4e06",
-      "last_checked": "2026-04-07T07:43:20.230157",
+      "last_checked": "2026-04-10T07:42:03.093099",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"8a8381f22a0d6417a7a933b216842923\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error/hostmusthavebundleidentifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error/invalidappextensionpoint.json": {
       "hash": "15304bf917e2ecffb432f95ca6e0c8093d1d4d68e27188f5af40092d9bff0fd2",
-      "last_checked": "2026-04-07T07:43:20.336936",
+      "last_checked": "2026-04-10T07:42:03.263844",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"2c75c25627fc5146c5f40d0e696e0b15\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error/invalidappextensionpoint.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/error/unspecifiedappextensionpointname.json": {
       "hash": "11eb7f86e739fc7751c72ef6b624b45ef1afb7d281c97020a95652a42c566bf1",
-      "last_checked": "2026-04-07T07:43:20.460812",
+      "last_checked": "2026-04-10T07:42:03.428805",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"37f3d8e6f0f56c10e4f26830b113dc89\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/error/unspecifiedappextensionpointname.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/state-swift.struct/disabledcount.json": {
       "hash": "9f13dd2ed76aa77760b66990d4ab5b823b9b4b1843acbc0eb2ec6020a19318d1",
-      "last_checked": "2026-04-07T07:43:21.344090",
+      "last_checked": "2026-04-10T07:42:04.335199",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"7fd34505fa70d0342d4dd46f66562d12\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/state-swift.struct/disabledcount.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/state-swift.struct/identities.json": {
       "hash": "7cda92d8a58afa61501690013a0ade48ba3d4beb98f6b9c388a6f5e7657316b6",
-      "last_checked": "2026-04-07T07:43:21.210150",
+      "last_checked": "2026-04-10T07:42:04.166712",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1806a70768f467db857b13df17037025\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/state-swift.struct/identities.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/monitor/state-swift.struct/unapprovedcount.json": {
       "hash": "7edb7bb233a7fa6aa305a0c8bd9aacb3a3314af60ef2c2e7e5ec15004315a6d5",
-      "last_checked": "2026-04-07T07:43:21.500119",
+      "last_checked": "2026-04-10T07:42:04.488039",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"3ab4ae8e68678a4f95abe9804f636636\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/monitor/state-swift.struct/unapprovedcount.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/scope/restriction/application.json": {
       "hash": "2752c4b3fd5df998c0035415f77be1df4ec5b0a36e9eb65c235baf3c16f382b2",
-      "last_checked": "2026-04-07T07:43:21.065688",
+      "last_checked": "2026-04-10T07:42:04.036161",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c93467d3b008825cd13d0b3eb7453c05\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/scope/restriction/application.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/scope/restriction/none.json": {
       "hash": "8c41f4b26b688d747e5be6f1fa4ace64e4548f9971a28d81ead78a78d539c6b0",
-      "last_checked": "2026-04-07T07:43:20.934869",
+      "last_checked": "2026-04-10T07:42:03.920962",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"935408b4a59b6347f9e5af218c0debb3\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/scope/restriction/none.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/adding-support-for-app-extensions-to-your-app.json": {
       "hash": "b8dbd50f7afa2475f4210e84540e573d36a38865936a0704cd05e59dc9765a09",
-      "last_checked": "2026-04-07T07:43:08.651705",
+      "last_checked": "2026-04-10T07:41:48.106504",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"f8a95409bd72430e75198b4b7e78c123\"",
       "file_path": "documentation/ExtensionFoundation/adding-support-for-app-extensions-to-your-app.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/building-an-app-extension-to-support-a-host-app.json": {
       "hash": "9dd56fcc6dace058edda1742136bd7719214fec8036157df085cfd5813e6c4d3",
-      "last_checked": "2026-04-07T07:43:08.818217",
+      "last_checked": "2026-04-10T07:41:48.295252",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"5d5bdbd650f65701d090df42cb306f17\"",
       "file_path": "documentation/ExtensionFoundation/building-an-app-extension-to-support-a-host-app.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/discovering-app-extensions-from-your-app.json": {
       "hash": "ecef29c7d5b41a07937144caea74cd58f8cd66c3dfa9641669563baf276e72b3",
-      "last_checked": "2026-04-07T07:43:09.473489",
+      "last_checked": "2026-04-10T07:41:49.275940",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"e7e1359aaf2dcb98b360548dbfac83e8\"",
       "file_path": "documentation/ExtensionFoundation/discovering-app-extensions-from-your-app.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/extensionpoint.json": {
       "hash": "05f13d78924c41fb0bb62dab7f063d1c34d2ce2c0c57196e1455358be2fdfd20",
-      "last_checked": "2026-04-07T07:43:10.864359",
+      "last_checked": "2026-04-10T07:41:51.461905",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"b1ebc9be9b25a0b4b43e20a839f8ed58\"",
       "file_path": "documentation/ExtensionFoundation/appextension/extensionpoint.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/bind.json": {
       "hash": "58900fe5509ece2e3ad1710be0813d9d93b036b6b62b81bb11c720e5dc9599a7",
-      "last_checked": "2026-04-07T07:43:11.048401",
+      "last_checked": "2026-04-10T07:41:51.737526",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"af302fe6b0c0fb2cbe17d960f4175555\"",
       "file_path": "documentation/ExtensionFoundation/appextension/bind.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/identifier.json": {
       "hash": "6e3a92972423ab03d500230e5574e1375ad4782d507eb8c7d9f2a84a3a8f7419",
-      "last_checked": "2026-04-07T07:43:11.201007",
+      "last_checked": "2026-04-10T07:41:52.029984",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"10273f538a8aecb0f9ce2b1dcdf48546\"",
       "file_path": "documentation/ExtensionFoundation/appextension/identifier.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextension/implementing.json": {
       "hash": "31c5a3f7d82940dfd6118789a62699be59b20fc5b20be12fb83da55ae5077ce6",
-      "last_checked": "2026-04-07T07:43:11.313542",
+      "last_checked": "2026-04-10T07:41:52.301661",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"1c8f13fbb663a97ca467f4da2d3f8198\"",
       "file_path": "documentation/ExtensionFoundation/appextension/implementing.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capability.json": {
       "hash": "42a996e1a8708806d8e4f7aad60ff3754aad0b960c8c274008c5728904e6d1af",
-      "last_checked": "2026-04-07T07:43:15.710187",
+      "last_checked": "2026-04-10T07:41:57.247499",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"70bd938ed0841ff05a2d67aab44d2663\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capability.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities.json": {
       "hash": "866f858a0cb89e8e983b60a3d9247a9e8208cd079884494e70889f30491d1a00",
-      "last_checked": "2026-04-07T07:43:15.881824",
+      "last_checked": "2026-04-10T07:41:57.413908",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"e4be0318e7cee4aa5bcf2faad55876e1\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder.json": {
       "hash": "f684147d6d01b84011313ddef2c5c625d746d11762380dd047216638f53176a2",
-      "last_checked": "2026-04-07T07:43:20.642798",
+      "last_checked": "2026-04-10T07:42:03.603965",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"c523d9eb5398d9f6c93795a14810d316\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/init(_:).json": {
       "hash": "280d99b0e191c01e58208aaac8979d840aa0323d610842f891c8392e17265c55",
-      "last_checked": "2026-04-07T07:43:20.791219",
+      "last_checked": "2026-04-10T07:42:03.772549",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"a46066dfe03c7392a11011a496fb364d\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/init.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/capabilities/builder/buildblock(_:).json": {
       "hash": "e129209896eec2373c292de2af335175fcbba069a7cbc9efce3f3f3fbb8f4168",
-      "last_checked": "2026-04-07T07:43:21.612650",
+      "last_checked": "2026-04-10T07:42:04.596608",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"640443e48601039f5cd9692191208edb\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/capabilities/builder/buildblock.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/extensionfoundation/appextensionpoint/bind/buildblock(_:_:).json": {
       "hash": "cc80c1fc322cd056db98320ed44310d487b0eb257e01137a955f1ff865c78c1c",
-      "last_checked": "2026-04-07T07:43:18.690196",
+      "last_checked": "2026-04-10T07:42:01.153198",
       "status": "unchanged",
-      "session_id": "2026-04-07T07:43:08.136513",
+      "session_id": "2026-04-10T07:41:47.586868",
       "etag": "W/\"7177b57599c0804b642ab2c0b5a6b3cd\"",
       "file_path": "documentation/ExtensionFoundation/appextensionpoint/bind/buildblock.md"
     },

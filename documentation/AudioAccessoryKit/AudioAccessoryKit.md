@@ -15,7 +15,7 @@ AudioAccessoryKit makes it possible for third-party audio accessory manufacturer
 
 Your companion app pairs the accessory using [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit), then uses AudioAccessoryKit to register the accessory’s capabilities, such as [`placement`](accessorycontroldevice/capabilities/placement.md).  In addition to placement information, your accessory communicates connected audio sources. To participate in automatic audio switching, keep the system up-to-date about your accessory’s state changes.
 
-> ❗ **Important**:  This framework supports iPhone and iPad only. You can develop and test an app that uses this framework on devices in any region. The framework currently builds only for development or Ad Hoc testing. The framework will support App Store submission, TestFlight, and alternative distribution at a later time. Customer installations of your app can use the framework only on devices located in the EU that are signed in with an Apple Account with an EU country or region.
+> ❗ **Important**:  This framework supports iPhone and iPad only. You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can use the framework only on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
 ## Topics
 

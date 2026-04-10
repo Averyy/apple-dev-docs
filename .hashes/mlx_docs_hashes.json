@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-04-07T08:53:37.639753",
+    "last_updated": "2026-04-10T08:49:53.574015",
     "total_files": 774,
     "source": "scrape_mlx_docs.py"
   },
@@ -748,7 +748,7 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "d9c20f27ca379c30fcaa104efd081eb110d261b36bf61f1a800a7149520ef779",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
-    "github:ml-explore/mlx-swift-lm:README.md": "301669d194f1cd3b4f4688e5c360843d2f7922d03a062fada66eaaf34268c48f",
+    "github:ml-explore/mlx-swift-lm:README.md": "93390431fcb23f007cdc67acee59e8f1802dcfd8c7ffedb1ebb6d7d9f77f31c9",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "fd4ce4a728a95b021287d3038e271f3d2529a5370ff478819e13f8788c730427",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "8aa7c71249a44d67a7db29c8169d22196b2c3166ba4df0388b1df69d1d0b761f",
     "github:ml-explore/mlx-swift-examples:README.md": "521f27e26bcf88e7b778f2e58a680a47edab9f86a9a6dd3dc282b1a9fe32ac86",
