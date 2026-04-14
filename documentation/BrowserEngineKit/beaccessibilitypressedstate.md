@@ -22,13 +22,13 @@ enum BEAccessibilityPressedState
 
 ### Element states
 - [BEAccessibilityPressedState.false](beaccessibilitypressedstate/false.md)
-  The element isn’t pressed.
+  A state that indicates the element isn’t pressed.
 - [BEAccessibilityPressedState.true](beaccessibilitypressedstate/true.md)
-  The element is pressed.
+  A state that indicates the element is pressed.
 - [BEAccessibilityPressedState.mixed](beaccessibilitypressedstate/mixed.md)
-  The element is in a mixed state.
+  A state that indicates the element is in a mixed state.
 - [BEAccessibilityPressedState.undefined](beaccessibilitypressedstate/undefined.md)
-  The element is in an undefined state.
+  An option that indicates an undefined pressed state.
 ### Initializers
 - [init?(rawValue: Int)](beaccessibilitypressedstate/init(rawvalue:).md)
 
@@ -47,21 +47,27 @@ enum BEAccessibilityPressedState
 - [protocol BEAccessibilityTextMarkerSupport](beaccessibilitytextmarkersupport.md)
   A set of methods that provide information about text offsets to support assistive features.
 - [static var valueChangedNotification: UIAccessibility.Notification](beaccessibility/valuechangednotification.md)
-  The notification you post when the value of an element changes.
+  A notification you post when the value of an element changes.
 - [static var selectionChangedNotification: UIAccessibility.Notification](beaccessibility/selectionchangednotification.md)
-  The notification you post when the selection inside an element changes.
+  A notification you post when the selection inside an element changes.
 - [struct BEAccessibilityContainerType](beaccessibilitycontainertype.md)
-  An enumeration that indicates the type of container in which an element is located.
+  Types of containers for an element.
 - [static var menuItem: UIAccessibilityTraits](beaccessibility/menuitem.md)
-  The accessibility element behaves like a menu item.
+  An accessibility element with a menu interface.
 - [static var popUpButton: UIAccessibilityTraits](beaccessibility/popupbutton.md)
-  The accessibility element behaves like a pop-up button.
+  An accessibility element with a pop-up button interface.
 - [static var radioButton: UIAccessibilityTraits](beaccessibility/radiobutton.md)
-  The accessibility element behaves like a radio button.
+  An accessibility element with a radio button interface.
 - [static var readOnly: UIAccessibilityTraits](beaccessibility/readonly.md)
-  The accessibility element is read-only.
+  An accessibility element with a read-only interface.
 - [static var visited: UIAccessibilityTraits](beaccessibility/visited.md)
-  The accessibility element behaves like a link that someone previously visited.
+  An accessibility element that resembles a visited link.
+- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
+  A class that shares the accessibility information of a peripheral process with the main process.
+- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
+  A class that connects the accessibility information of different processes.
+- [struct BEAccessibility](beaccessibility.md)
+  A category for accessibility features in the framework.
 
 
 ---

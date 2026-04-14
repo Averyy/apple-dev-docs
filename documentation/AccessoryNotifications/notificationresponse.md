@@ -6,8 +6,8 @@
 A person’s response to a notification.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -44,13 +44,6 @@ Create an instance of this structure when a person responds to a notification on
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
-
-## See Also
-
-- [protocol AccessoryNotificationManaging](accessorynotificationmanaging.md)
-  A protocol that enables the communication of notification responses to the system.
-- [class AccessoryNotificationManagerFactory](accessorynotificationmanagerfactory.md)
-  A factory class that provides access to the system notification manager.
 
 
 ---

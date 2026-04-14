@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Range representing the position of the markedText.
+A range that represents the position of the marked text.
 
 **Availability**:
 - iOS 17.4+
@@ -20,28 +20,20 @@ var markedTextRange: UITextRange? { get }
 
 #### Discussion
 
-If text can be selected, it can be marked. Marked text represents provisionally inserted text that has yet to be confirmed by the user.  It requires unique visual treatment in its display.  If there is any marked text, the selection, whether a caret or an extended range, always resides within.
+Return `nil` if no marked text exists.
 
-Setting marked text either replaces the existing marked text or, if none is present, inserts it from the current selection.
+Marked text represents provisionally inserted text that a person needs to confirm before you commit it to the document. You display marked text with a distinct visual look. The selection needs to reside in market text, if any exists.
 
-Return nil if no marked text
+When you commit marked text to the document, replace any existing marked text. If no marked text is present, insert the market text into the document at the location of the current selection.
 
 ## See Also
 
-- [var markedText: String?](betextinput/markedtext.md)
-  String for the text that has been marked as part of an active input session
-- [var attributedMarkedText: NSAttributedString?](betextinput/attributedmarkedtext.md)
-  Attributed string for the text that has been marked as part of an active input session
 - [var hasMarkedText: Bool](betextinput/hasmarkedtext.md)
-  Indicates whether there any text is currently marked as part of an active input session
-- [func setMarkedText(String?, selectedRange: NSRange)](betextinput/setmarkedtext(_:selectedrange:).md)
-  Inserts the provided text and marks it to indicate that it is part of an active input session.
-- [func setAttributedMarkedText(NSAttributedString?, selectedRange: NSRange)](betextinput/setattributedmarkedtext(_:selectedrange:).md)
-  Inserts the provided styled text and marks it to indicate that it is part of an active input session.
+  A Boolean value that indicates if marked text exists for an active input session.
 - [func unmarkText()](betextinput/unmarktext.md)
-  Unmarks the currently marked text
+  Unmarks the currently marked text.
 - [func isPointNearMarkedText(CGPoint) -> Bool](betextinput/ispointnearmarkedtext(_:).md)
-  Returns whether a point should be considered “near” the marked text. Used to determine whether text interaction gestures near marked text should begin.
+  Provides a Boolean value that indicates if a point is near marked text.
 
 
 ---

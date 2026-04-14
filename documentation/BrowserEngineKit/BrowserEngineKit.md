@@ -11,7 +11,7 @@ Create a browser that renders content using an alternative browser engine.
 
 #### Overview
 
-A web browser loads content and code from remote — and potentially untrusted — servers. Design your browser app to isolate access to operating system resources, the data of the person using the app, and untrusted data from the web. Code defensively to reduce the risk posed by vulnerabilities in your browser code.
+A web browser loads content and code from remote — and potentially untrusted — servers. Design your browser app to isolate access to system resources, the data of the person using the app, and untrusted data from the web. Code defensively to reduce the risk posed by vulnerabilities in your browser code.
 
 If you use [`WKWebView`](https://developer.apple.com/documentation/WebKit/WKWebView) to render web content in your browser app, WebKit automatically distributes its work to extensions that isolate their access to important resources and data.
 
@@ -47,20 +47,20 @@ Support for alternative browser engines varies by geographic region:
 
 ### Essentials
 - [Developing a browser app that uses an alternative browser engine](developing-a-browser-app-that-uses-an-alternative-browser-engine.md)
-  Create a web browser app and associated extensions.
+  Create a browser app and associated extensions.
 - [Designing your browser architecture](designing-your-browser-architecture.md)
-  Isolate privileged access to operating system resources and private data from untrusted code.
+  Isolate privileged access to system resources and private data from untrusted code.
 - [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md)
   Configure your browser app so users can set it as the default on their device instead of Safari.
 ### Browser extensions
 - [Creating browser extensions in Xcode](creating-browser-extensions-in-xcode.md)
   Configure your Xcode project to support your alternative browser engine.
-- [Extension lifecycle](extension-lifecycle.md)
+- [Extension life cycle](extension-lifecycle.md)
   Launch, communicate with, and invalidate browser extensions.
 - [Extension resources](extension-resources.md)
   Control access to files and memory in browser extensions.
 ### Web content
-- [View coordination](view-coordination.md)
+- [View and input coordination](view-coordination.md)
   Display content in the browser’s UI that an extension renders.
 - [Text interaction](text-interaction.md)
   Integrate your web browser engine asynchronously with the text system.
@@ -68,40 +68,46 @@ Support for alternative browser engines varies by geographic region:
   An object that represents a web app manifest.
 ### Scroll view interaction
 - [class BEScrollView](bescrollview.md)
-  A scroll view that works with its delegate to handle nesting, and customize scroll interactions.
+  A scroll view that works with its delegate to handle nesting and customize scroll interactions.
 - [class BEScrollViewScrollUpdate](bescrollviewscrollupdate.md)
-  An object that represents a change in a scroll view’s scroll state.
+  An object that describes a change in a scroll view’s scroll state.
 - [protocol BEScrollViewDelegate](bescrollviewdelegate.md)
-  The protocol that browser scroll view delegates conform to.
+  A protocol for scroll view delegates to handle scroll updates and DOM nesting.
 ### Drag interaction
 - [class BEDragInteraction](bedraginteraction.md)
-  A `UIDragInteraction` subclass with features specific to browsers to enable asynchronous preparations and behaviours.
+  An interaction that enables your app to asynchronously provide drag items.
 - [protocol BEDragInteractionDelegate](bedraginteractiondelegate.md)
-  A protocol to which the drag interaction delegates conform.
+  A protocol for a drag interaction delegate.
 ### Context menus
 - [class BEContextMenuConfiguration](becontextmenuconfiguration.md)
-  A specialized `UIContextMenuConfiguration` object to defer a context menu presentation when the when the context menu gestures are first recognized and a possible menu presentation is not immediately known.
+  An object that defers presentation of a contextual menu.
 ### Accessibility
 - [protocol BEAccessibilityTextMarkerSupport](beaccessibilitytextmarkersupport.md)
   A set of methods that provide information about text offsets to support assistive features.
 - [static var valueChangedNotification: UIAccessibility.Notification](beaccessibility/valuechangednotification.md)
-  The notification you post when the value of an element changes.
+  A notification you post when the value of an element changes.
 - [static var selectionChangedNotification: UIAccessibility.Notification](beaccessibility/selectionchangednotification.md)
-  The notification you post when the selection inside an element changes.
+  A notification you post when the selection inside an element changes.
 - [struct BEAccessibilityContainerType](beaccessibilitycontainertype.md)
-  An enumeration that indicates the type of container in which an element is located.
+  Types of containers for an element.
 - [enum BEAccessibilityPressedState](beaccessibilitypressedstate.md)
   An enumeration that indicates whether an element is pressed.
 - [static var menuItem: UIAccessibilityTraits](beaccessibility/menuitem.md)
-  The accessibility element behaves like a menu item.
+  An accessibility element with a menu interface.
 - [static var popUpButton: UIAccessibilityTraits](beaccessibility/popupbutton.md)
-  The accessibility element behaves like a pop-up button.
+  An accessibility element with a pop-up button interface.
 - [static var radioButton: UIAccessibilityTraits](beaccessibility/radiobutton.md)
-  The accessibility element behaves like a radio button.
+  An accessibility element with a radio button interface.
 - [static var readOnly: UIAccessibilityTraits](beaccessibility/readonly.md)
-  The accessibility element is read-only.
+  An accessibility element with a read-only interface.
 - [static var visited: UIAccessibilityTraits](beaccessibility/visited.md)
-  The accessibility element behaves like a link that someone previously visited.
+  An accessibility element that resembles a visited link.
+- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
+  A class that shares the accessibility information of a peripheral process with the main process.
+- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
+  A class that connects the accessibility information of different processes.
+- [struct BEAccessibility](beaccessibility.md)
+  A category for accessibility features in the framework.
 ### Just-in-time code compilation
 - [Protecting code compiled just in time](protecting-code-compiled-just-in-time.md)
   Toggle memory between being writable and executable.
@@ -114,19 +120,6 @@ Support for alternative browser engines varies by geographic region:
   Report download progress to the system to keep your networking extension active.
 - [class BEDownloadMonitor](bedownloadmonitor-9bwls.md)
   An object that reports the status of web downloads to the system.
-### Classes
-- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
-- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
-- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
-- [class BEProcessCapability](beprocesscapability-76ijx.md)
-- [class BEWebContentFilter](bewebcontentfilter.md)
-  An object that represents a web content filter
-### Protocols
-- [protocol BEExtensionProcess](beextensionprocess.md)
-### Structures
-- [struct BEAccessibility](beaccessibility.md)
-### Enumerations
-- [enum RenderingExtensionFeature](renderingextensionfeature.md)
 
 
 ---

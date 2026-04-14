@@ -19,6 +19,10 @@ A component that defines a spotlight source.
 struct SpotLightComponent
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 A spotlight illuminates a cone-shaped volume in the entity’s local forward direction along the z-axis’s negative direction, or `[0.0, 0.0, -1.0]`. Change the a spotlight’s direction with the `Entity/orientation` or [`look(at:from:upVector:relativeTo:)`](hastransform/look(at:from:upvector:relativeto:).md) method, of the [`Entity`](entity.md) with a spotlight component.

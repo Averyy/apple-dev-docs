@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: protocol
 
-The protocol that browser scroll view delegates conform to.
+A protocol for scroll view delegates to handle scroll updates and DOM nesting.
 
 **Availability**:
 - iOS 17.4+
@@ -22,10 +22,10 @@ protocol BEScrollViewDelegate : UIScrollViewDelegate
 
 ### Nesting sibling scroll views
 - [func parentScrollView(for: BEScrollView) -> BEScrollView?](bescrollviewdelegate/parentscrollview(for:).md)
-  Indicates that a sibling scroll view in the view hierarchy acts as the scroll view’s container in the Document Object Model (DOM).
+  Returns the scroll view that acts as the DOM container of the given scroll view.
 ### Handling scroll events
 - [func scrollView(BEScrollView, handle: BEScrollViewScrollUpdate, completion: (Bool) -> Void)](bescrollviewdelegate/scrollview(_:handle:completion:).md)
-  Handles a scroll update, optionally stopping the scroll view from reacting.
+  Handles a scroll update before the scroll view reacts to it.
 
 ## Relationships
 
@@ -36,9 +36,9 @@ protocol BEScrollViewDelegate : UIScrollViewDelegate
 ## See Also
 
 - [class BEScrollView](bescrollview.md)
-  A scroll view that works with its delegate to handle nesting, and customize scroll interactions.
+  A scroll view that works with its delegate to handle nesting and customize scroll interactions.
 - [class BEScrollViewScrollUpdate](bescrollviewscrollupdate.md)
-  An object that represents a change in a scroll view’s scroll state.
+  An object that describes a change in a scroll view’s scroll state.
 
 
 ---

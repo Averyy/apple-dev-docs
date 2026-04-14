@@ -22,13 +22,13 @@ case mediaPlaybackAndCapture(environment: MediaEnvironment)
 ## See Also
 
 - [ProcessCapability.background](processcapability/background.md)
-  The operating system permits the helper extension process to run in the background to finish work.
+  A process capability for work in the background.
 - [ProcessCapability.foreground](processcapability/foreground.md)
-  The operating system permits the helper extension process to run at foreground priority to work on behalf of the browser app.
+  A process capability for work in the foreground.
 - [ProcessCapability.suspended](processcapability/suspended.md)
-  The operating system permits the helper extension process to remain resident in a suspended state.
+  A process capability that grants residency in a suspended state.
 - [ProcessCapability.Grant](processcapability/grant.md)
-  An object that represents a granted capability.
+  An object that represents the provision of a capability.
 
 
 ---

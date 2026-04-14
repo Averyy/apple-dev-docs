@@ -15,6 +15,10 @@ The capability that allows the system to use scene-understanding data for shadow
 static let shadow: SpatialTrackingSession.Configuration.SceneUnderstandingCapability
 ```
 
+## Mentions
+
+- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+
 
 ---
 

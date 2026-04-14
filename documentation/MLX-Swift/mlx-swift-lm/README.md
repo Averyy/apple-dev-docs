@@ -26,9 +26,9 @@ For some example applications and tools that use MLX Swift LM, check out [MLX Sw
 This package integrates with a variety of tokenizer and downloader packages through protocol conformance. Users can pick from three ways to integrate with these packages, which offer different tradeoffs between freedom and convenience:
 
 - Maximum freedom
-  - Copy the protocol conformance code (~100 lines) from the [integration packages](#Tokenizer and Downloader Integrations)
+  - Copy the protocol conformance code (~100 lines) from the [integration packages](#Tokenizer-and-Downloader-Integrations)
 - Freedom and convenience
-  - Use the [integration packages](#Tokenizer and Downloader Integrations) for your preferred tokenizer and downloader packages
+  - Use the [integration packages](#Tokenizer-and-Downloader-Integrations) for your preferred tokenizer and downloader packages
 - Convenience
   - Use the macros for integration with Swift Transformers and Swift Hugging Face
 
@@ -154,7 +154,7 @@ Or use the underlying API to control every aspect of the evaluation.
 
 ## Migrating to Version 3
 
-Version 3 of MLX Swift LM decouples the tokenizer and downloader implementations. See the [integrations](#Tokenizer and Downloader Integrations) section for details.
+Version 3 of MLX Swift LM decouples the tokenizer and downloader implementations. See the [integrations](#Tokenizer-and-Downloader-Integrations) section for details.
 
 ### New dependencies
 

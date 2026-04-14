@@ -4,7 +4,7 @@
 **Kind**: init
 
 **Availability**:
-- macOS 26.0+
+- macOS 26.4+
 
 ## Declaration
 

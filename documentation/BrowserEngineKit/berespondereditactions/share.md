@@ -17,9 +17,9 @@ Presents UI for sharing the selected text.
 optional func share(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To present the standard operating system UI for sharing content, call [`share(text:from:)`](betextinteraction/share(text:from:).md) in your implementation of this method.
+To present the standard system UI for sharing content, call [`share(text:from:)`](betextinteraction/share(text:from:).md) in your implementation of this method.
 
 ## Parameters
 

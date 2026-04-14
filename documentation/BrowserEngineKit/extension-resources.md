@@ -22,7 +22,7 @@ Control access to files and memory in browser extensions.
 
 - [Creating browser extensions in Xcode](creating-browser-extensions-in-xcode.md)
   Configure your Xcode project to support your alternative browser engine.
-- [Extension lifecycle](extension-lifecycle.md)
+- [Extension life cycle](extension-lifecycle.md)
   Launch, communicate with, and invalidate browser extensions.
 
 

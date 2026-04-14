@@ -1,4 +1,4 @@
-# macOS Tahoe 26.5 Beta Release Notes
+# macOS Tahoe 26.5 Beta 2 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.5 SDK provides support to develop apps for Mac computers running Tahoe 26.5 beta. The SDK comes bundled with Xcode 26.5, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.5, see [`Xcode 26.5 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_5-release-notes).
+The macOS 26.5 SDK provides support to develop apps for Mac computers running Tahoe 26.5 beta 2. The SDK comes bundled with Xcode 26.5, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.5, see [`Xcode 26.5 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_5-release-notes).
 
 ##### Storekit
 
@@ -19,9 +19,9 @@ The macOS 26.5 SDK provides support to develop apps for Mac computers running Ta
 
 ##### Storekittest
 
-###### Known Issues
+###### Resolved Issues
 
-- `SKTestSession` cannot use the selected StoreKit configuration during unit tests, resulting in failed test actions.  (172583218) (FB22237318) **Workaround:** To use `SKTestSession` in 26.3 and 26.4, build and run the app on device using the same StoreKit configuration as the test. Then close the app and run the unit test using `SKTestSession` without changing any configuration settings in the test environment. This allows the configuration to be saved on device before the test begins and maintain your selected configuration settings through the test session.
+- Fixed: An issue preventing SKTestSession from using the selected StoreKit configuration during unit tests, resulting in failed test actions.  (172583218) (FB22237318)
 
 ## See Also
 

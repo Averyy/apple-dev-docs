@@ -16,10 +16,6 @@ No abstract
 static let physics: ARView.Environment.SceneUnderstanding.Options
 ```
 
-## Mentions
-
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
-
 
 ---
 

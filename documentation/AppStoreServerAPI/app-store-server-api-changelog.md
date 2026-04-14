@@ -8,6 +8,13 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### 120 20260413
+
+**New features**
+
+- Added the [`Finish Transaction`](finish-transaction.md) endpoint.
+- Defined a new type, [`anyTransactionId`](anytransactionid.md). The endpoints that previously used the [`transactionId`](transactionid.md) type now use [`anyTransactionId`](anytransactionid.md), but the functionality is unchanged.
+
 ##### 119 20251210
 
 **New features**

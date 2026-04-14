@@ -6,7 +6,7 @@ Build interprocess communication between your host app and extensions.
 
 #### Overview
 
-When `BrowserEngineKit` launches your extension processes, it provides the host app with a simple way to initiate an [`XPC`](https://developer.apple.com/documentation/XPC) connection with the extensions. Use this connection to communicate with the extensions, and to set up anonymous connections that the extensions use to communicate directly with each other.
+When the framework launches your extension processes, it provides the host app with a simple way to initiate an [`XPC`](https://developer.apple.com/documentation/XPC) connection with the extensions. Use this connection to communicate with the extensions, and to set up anonymous connections that the extensions use to communicate directly with each other.
 
 #### Create a Connection in the Browser App
 
@@ -46,7 +46,7 @@ The [`xpc_connection_t`](https://developer.apple.com/documentation/XPC/xpc_conne
 
 #### Handle Xpc Events in the Extension
 
-When your browser app calls an extension process’s `makeLibXPCConnection()` method, `BrowserEngineKit` sets up the XPC connection and calls your extension’s `handle(xpcConnection:)` method. In your implementation of this method, install an event handler to process messages sent over this connection, and activate the connection:
+When your browser app calls an extension process’s `makeLibXPCConnection()` method, the framework sets up the XPC connection and calls your extension’s `handle(xpcConnection:)` method. In your implementation of this method, install an event handler to process messages sent over this connection, and activate the connection:
 
 ```swift
 class MyNetworkExtension: NetworkingExtension {
@@ -125,13 +125,13 @@ let otherExtensionConnection = xpc_connection_create_from_endpoint(endpoint)
 
 #### Verify the Identity of the Remote Process
 
-To be confident that your browser app or extension is communicating with the correct component, set a lightweight code requirement on the XPC connection. The operating system tests that the executable for the process at the remote end of the connection satisfies the requirement each time the process sends a message.
+To be confident that your browser app or extension is communicating with the correct component, set a lightweight code requirement on the XPC connection. The system tests that the executable for the process at the remote end of the connection satisfies the requirement each time the process sends a message.
 
 > **Note**:  It’s possible for the process sending messages to your XPC connection to change at runtime, for example, if the listener creates an [`xpc_endpoint_t`](https://developer.apple.com/documentation/XPC/xpc_endpoint_t) and forwards it to a different process.
 
 In the sending process, if you send a message over an XPC connection and the receiving process doesn’t satisfy the lightweight code requirement you set, the message isn’t delivered. If you request a reply, XPC delivers the `XPC_ERROR_PEER_CODE_SIGNING_REQUIREMENT` error.
 
-In the receiving process, if a process that doesn’t satisfy the lightweight code requirement you set sends a message to your connection, the operating system drops the message and your event handler isn’t called.
+In the receiving process, if a process that doesn’t satisfy the lightweight code requirement you set sends a message to your connection, the system drops the message and your event handler isn’t called.
 
 The sending and receiving process can each set a single lightweight code requirement on an XPC connection. For information on creating complex requirements that test multiple properties of the communicating process’s executable, see [`Defining launch environment and library constraints`](https://developer.apple.com/documentation/Security/defining-launch-environment-and-library-constraints).
 
@@ -143,7 +143,7 @@ For each XPC connection on which you set a lightweight code requirement, call on
 - **[`xpc_connection_set_peer_platform_identity_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_platform_identity_requirement(_:_:))**: The executable needs to be signed by Apple, with the given signing identifier.
 - **[`xpc_connection_set_peer_code_signing_requirement(_:_:)`](https://developer.apple.com/documentation/XPC/xpc_connection_set_peer_code_signing_requirement(_:_:))**: The executable needs to satisfy the lightweight code requirement you supply as a dictionary in the `lwcr` parameter.
 
-It’s an error to call multiple functions that set lightweight code requirements on the same XPC connection, or the same function more than once. If you do, the operating system terminates your process.
+It’s an error to call multiple functions that set lightweight code requirements on the same XPC connection, or the same function more than once. If you do, the system ends your process.
 
 For example, to require that the executable’s code signature contains the browser rendering extension entitlement with a value of `com.example.browserapp`:
 
@@ -160,6 +160,8 @@ xpc_connection_set_peer_entitlement_matches_value_requirement(connection,
 
 - [Managing the browser extension life cycle](managing-the-browser-extension-lifecycle.md)
   Coordinate helper processes to efficiently support your browser app.
+- [protocol BEExtensionProcess](beextensionprocess.md)
+  A common protocol that creates XPC connections for an extension process.
 
 
 ---

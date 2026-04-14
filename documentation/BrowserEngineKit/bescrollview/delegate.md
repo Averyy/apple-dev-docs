@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-The delegate of the scroll view.
+A delegate that responds to the scroll view’s scroll updates.
 
 **Availability**:
 - iOS 17.4+
@@ -17,9 +17,9 @@ The delegate of the scroll view.
 weak var delegate: (any BEScrollViewDelegate)? { get set }
 ```
 
-#### Overview
+#### Discussion
 
-The `BEScrollView` class doesn’t retain the delegate, which must conform to the [`BEScrollViewDelegate`](bescrollviewdelegate.md) protocol.
+`BEScrollView` doesn’t retain the delegate, which must conform to the [`BEScrollViewDelegate`](bescrollviewdelegate.md) protocol.
 
 
 ---

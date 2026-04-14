@@ -1,14 +1,14 @@
-# Testing Age Assurance in Sandbox
+# Testing age assurance in sandbox
 
 **Framework**: StoreKit
 
-Check that your app responds correctly to Age Assurance scenarios and consent revocation using the Sandbox environment.
+Check that your app responds correctly to age assurance scenarios and consent revocation using the sandbox environment.
 
 #### Overview
 
-You can provide people the ability to make decisions about who can access your app, or parts of your app. [`Declared Age Range`](https://developer.apple.com/documentation/DeclaredAgeRange) API enables you to request people’s age and create custom experiences based on the information they share, and [`PermissionKit`](https://developer.apple.com/documentation/PermissionKit) gives you the ability to provide parents or guardians the opportunity to decide if their child can access your app. Make sure your app implements age restrictions and processes permission revocation as parents or guardians instruct.
+You can provide parents and guardians with the ability to make decisions about whether their child can continue to access your app or parts of your app. [`Declared Age Range`](https://developer.apple.com/documentation/DeclaredAgeRange) API enables you to request people’s age and create custom experiences based on the information they share, and [`PermissionKit`](https://developer.apple.com/documentation/PermissionKit) gives you the ability to provide parents or guardians the opportunity to decide if their child can continue using your app or parts of your app after a significant update. Make sure your app implements age restrictions and processes permission revocation as parents or guardians instruct.
 
-In the Sandbox environment you can test how your app responds to various age range scenarios, location-based restrictions, approval state changes, and consent revocation. Focus on testing age range variations across your target audience, and consider regulatory compliance in different regions.
+In the sandbox environment you can test how your app responds to various age range scenarios, location-based restrictions, approval state changes, and consent revocation. Focus on testing age range variations across your target audience, and consider regulatory compliance in different regions.
 
 ##### Navigate to Your Sandbox Apple Account Settings
 
@@ -20,7 +20,7 @@ In the Sandbox environment you can test how your app responds to various age ran
 
 ##### Test Age Assurance on Device
 
-1. Follow the steps from [`Navigate to your Sandbox Apple Account settings`](https://developer.apple.com#navigate-to-your-sandbox-apple-account-settings).
+1. Follow the steps from “Navigate to your Sandbox Apple Account.”
 2. In the Sandbox Apple Account modal, select Manage.
 3. Scroll down and select Age Assurance or Revoke App Consent.
 
@@ -33,8 +33,10 @@ When you select a scenario, the Declared Age Range API returns the corresponding
 | Under 13, approved | — | 12 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
 | Ages 13 - 15, approved | 13 | 15 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
 | Ages 16 - 17, declined | 16 | 17 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`decline`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/decline) |
-| 18+, self declared | 18 | — | [`selfDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/selfdeclared) | False | [`AskError.systemError(underlyingError:)`](https://developer.apple.com/documentation/PermissionKit/AskError/systemError(underlyingError:)) |
-| 18+, payment checked | 18 | — | [`paymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/paymentchecked) | False | [`AskError.systemError(underlyingError:)`](https://developer.apple.com/documentation/PermissionKit/AskError/systemError(underlyingError:)) |
+| 18+, self declared | 18 | — | [`selfDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/selfdeclared) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
+| 18+, payment checked | 18 | — | [`paymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/paymentchecked) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
+
+> **Note**: For 18+ test cases, PermissionKit throws `AskError.notAvailable` rather than returning a `PermissionChoice`. Calling `AskCenter.ask(_:)` for an adult user throws this error because they don’t meet the requirements for parental permission requests.
 
 Check the `AgeRangeDeclaration` field in your Declared Age Range API responses to determine status.
 
@@ -42,7 +44,7 @@ Check the `AgeRangeDeclaration` field in your Declared Age Range API responses t
 
 To test the notification when a parent or guardian revokes access to your app on behalf of their child, follow these steps:
 
-1. Follow the steps from [`Navigate to your Sandbox Apple Account settings`](https://developer.apple.com#navigate-to-your-sandbox-apple-account-settings).
+1. Follow the steps from “Navigate to your Sandbox Apple Account.”
 2. In the Sandbox Apple Account modal, select Manage.
 3. Scroll down and select Revoke App Consent.
 4. Enter your app’s Bundle ID (for example, com.example.bundle).
@@ -50,6 +52,20 @@ To test the notification when a parent or guardian revokes access to your app on
 6. Confirm that the system displays “Notification Triggered” with the message “A notification will be sent to the developer server soon.”
 
 If you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) enabled, your server receives a `RESCIND_CONSENT` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType). The notification payload includes an [`appData`](https://developer.apple.com/documentation/AppStoreServerNotifications/appData) object with app metadata, including the `bundleId` and `environment` fields that help you check the notification applies to the correct app and test environment.
+
+##### Create Region Specific Sandbox Test Accounts
+
+To test age assurance flows in different regions, create sandbox test accounts with specific App Store territories in App Store Connect.
+
+> ❗ **Important**: You need an active Apple Developer account and Admin or Account Holder role in App Store Connect to create sandbox testers.
+
+1. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
+2. Go to Users and Access.
+3. Select the Sandbox tab in the left sidebar.
+4. Click Test Accounts.
+5. Click the Add button (+) to add a new test account and fill in the required fields: First Name / Last Name, Email Address, Password, Date of Birth, and App Store Territory.
+6. In the App Store Territory pull-down menu, choose the storefront the sandbox account simulates. Choose from any available App Store regions.
+7. Click Create to finalize the sandbox tester account.
 
 
 ---

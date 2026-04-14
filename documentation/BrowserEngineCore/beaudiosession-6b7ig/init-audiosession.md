@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineCore  
 **Kind**: init
 
-Creates a BE audio session from an  AV audio session
+Initializes a browser engine audio session.
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +14,10 @@ Creates a BE audio session from an  AV audio session
 ```swift
 init(audioSession: AVAudioSession)
 ```
+
+#### Discussion
+
+[`BEAudioSession`](beaudiosession-6b7ig.md) wraps the specified [`AVFoundation`](https://developer.apple.com/documentation/AVFoundation) audio session.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: method
 
-Launches Settings to Safari Extensions Settings
+Presents the extensions pane from Safari Settings.
 
 **Availability**:
 - iOS 26.2+
@@ -18,16 +18,12 @@ class func openExtensionsSettings(forIdentifiers extensionIdentifiers: [String])
 
 #### Discussion
 
-Call this method when your app is in the foreground, otherwise it returns an error.
-
-Launches Settings to Safari Extensions Settings.
-
-Call this method when your app is in the foreground, otherwise it returns an error.
+The method returns an error unless you call it while your app is in the foreground.
 
 ## Parameters
 
-- `extensionIdentifiers`: An array of extension identifiers. If you specify one identifier, Settings opens to that extension’s detail view. If you specify multiple identifiers, Settings opens to the Safari Extensions pane and highlights those extensions.
-- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs. - **error**: An error object indicating the reason for the failure, or `nil` if the system successfully opens to Safari Extensions Settings.
+- `extensionIdentifiers`: An array of extension identifiers. If the value is a single identifier, Settings opens to that extension’s detail view. If you specify multiple identifiers, Settings opens to the Safari Extensions pane with the specified extensions selected.
+- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter. - **error**: `nil` if Safari Extensions Settings opens successfully; otherwise, an error that indicates the reason for the failure.
 
 
 ---

@@ -15,6 +15,10 @@ The capability that allows the system to use scene-understanding data for occlus
 static let occlusion: SpatialTrackingSession.Configuration.SceneUnderstandingCapability
 ```
 
+## Mentions
+
+- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+
 
 ---
 

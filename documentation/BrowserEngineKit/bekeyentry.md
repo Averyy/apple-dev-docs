@@ -21,16 +21,16 @@ class BEKeyEntry
 
 ### Identifying the key
 - [var key: UIKey](bekeyentry/key.md)
-  Data about the key that was pressed
+  The key that the person presses.
 ### Getting information about the keypress
 - [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
-  Type of the event, indicating whether it represents when the key is pressed or released.
+  A value that indicates if the key is pressed.
 - [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
-  An enumeration that represents the possible states of a key-press in a keyboard event.
+  Key-press states for a keyboard event.
 - [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
-  Represents whether the event is repeating.
+  A Boolean value that indicates whether the person holds a key down to repeat its key event.
 - [var timestamp: TimeInterval](bekeyentry/timestamp.md)
-  Time at which the key event occurred.
+  The time that the key event occurs.
 
 ## Relationships
 

@@ -6,9 +6,9 @@ Register the extensions that contribute to preparing your browser app’s UI.
 
 #### Overview
 
-The operating system contains security checks to ensure that only the apps with which the person is interacting may draw to the screen. In a browser with extension processes, you need to indicate whether extensions participate in preparing and rendering content for a given view. Otherwise, the operating system might restrict your extensions’ access to various system resources, which might result in your browser rendering incorrectly, experiencing poor performance, or crashing.
+The system contains security checks to ensure that only the apps with which the person is interacting may draw to the screen. In a browser with extension processes, you need to indicate whether extensions participate in preparing and rendering content for a given view. Otherwise, the system might restrict your extensions’ access to various system resources, which might result in your browser rendering incorrectly, experiencing poor performance, or crashing.
 
-If your browser’s extension renders content in a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) or hierarchy of layers, the operating system automatically propagates visibility information. Wrap the root `CALayer` in a [`LayerHierarchy`](layerhierarchy.md), and send a handle to the browser app to host in a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
+If your browser’s extension renders content in a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) or hierarchy of layers, the system automatically propagates visibility information. Wrap the root `CALayer` in a [`LayerHierarchy`](layerhierarchy.md), and send a handle to the browser app to host in a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
 
 #### Add a Visibility Propagation Interaction to the View
 

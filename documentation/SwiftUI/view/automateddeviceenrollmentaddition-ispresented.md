@@ -22,7 +22,7 @@ The modal view that the system presents to the user.
 
 #### Discussion
 
-Use this view modifier to present UI in your app for device administrators to add devices purchased outside of the official channel to their organization — Apple School Manager, Apple Business Manager, or Apple Business Essentials. The system requires sign in with a Managed Apple Account that includes device enrollment privileges.
+Use this view modifier to present UI in your app for device administrators to add devices purchased outside of the official channel to their organization — Apple School or Apple Business. The system requires sign in with a Managed Apple Account that includes device enrollment privileges.
 
 The following code example shows one way to present this view to your users:
 

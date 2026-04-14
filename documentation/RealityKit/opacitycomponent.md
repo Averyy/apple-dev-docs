@@ -19,6 +19,10 @@ A component that controls the opacity of an entity and its descendants.
 struct OpacityComponent
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 An opacity component multiplies its [`opacity`](opacitycomponent/opacity.md) property with all visual components the entity and its descendants own. Visual components include [`ModelComponent`](modelcomponent.md) and [`ParticleEmitterComponent`](particleemittercomponent.md). If a descendant also has its own opacity component, the system combines the two opacities by multiplying their values. The system repeats this pattern for the entity’s entire family tree.

@@ -16,21 +16,21 @@ Launches a rendering extension process asynchronously.
 init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) async throws
 ```
 
-#### Overview
+#### Discussion
 
-Your web browser app can run one instance of each of its rendering extensions. The first time you initialize this object, the operating system launches your rendering extension. If you subsequently initialize new instances of `RenderingProcess` using the same bundle identifier, they refer to the same process.
+Your browser app can run one instance of each of its rendering extensions. The first time you initialize this object, the system launches your rendering extension. If you subsequently initialize new instances of `RenderingProcess` using the same bundle identifier, they refer to the same process.
 
-The operating system guarantees that the process launched when this initializer returns.
+The system guarantees that the process launched when this initializer returns.
 
 ## Parameters
 
 - `bundleIdentifier`: The bundle identifier of the rendering extension to launch, or `nil` to use the default bundle identifier for this app’s rendering extension.
-- `onInterruption`: A block that the operating system calls if the rendering extension process exits abnormally.
+- `onInterruption`: A block that the system calls if the rendering extension process exits abnormally.
 
 ## See Also
 
 - [func invalidate()](renderingprocess/invalidate.md)
-  Stops the extension process.
+  Stops the rendering process.
 
 
 ---

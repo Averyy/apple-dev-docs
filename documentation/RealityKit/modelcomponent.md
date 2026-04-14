@@ -21,6 +21,7 @@ struct ModelComponent
 
 ## Mentions
 
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
 
 #### Overview

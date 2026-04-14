@@ -16,21 +16,21 @@ Launches a networking extension process asynchronously.
 init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) async throws
 ```
 
-#### Overview
+#### Discussion
 
-Your web browser app can run one instance of each of its networking extensions. The first time you initialize this object, the operating system launches your networking extension. If you subsequently initialize new instances of `NetworkingProcess` using the same bundle identifier, they refer to the same process.
+Your browser app can run one instance of each of its networking extensions. The first time you initialize this object, the system launches your networking extension. If you subsequently initialize new instances of `NetworkingProcess` using the same bundle identifier, they refer to the same process.
 
-The operating system guarantees that the process launched when this initializer returns.
+The system guarantees that the process launched when this initializer returns.
 
 ## Parameters
 
 - `bundleIdentifier`: The bundle identifier of the networking extension to launch, or `nil` to use the default bundle identifier for this app’s networking extension.
-- `onInterruption`: A block that the operating system calls if the networking extension process exits abnormally.
+- `onInterruption`: A block that the system calls if the networking extension process exits abnormally.
 
 ## See Also
 
 - [func invalidate()](networkingprocess/invalidate.md)
-  Stops the extension process.
+  Stops the networking process.
 
 
 ---

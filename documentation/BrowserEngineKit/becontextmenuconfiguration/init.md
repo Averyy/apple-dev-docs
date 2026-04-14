@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
-Creates a new configuration for the context menu interaction.
+Creates a context menu configuration.
 
 **Availability**:
 - iOS 17.4+
@@ -14,10 +14,6 @@ Creates a new configuration for the context menu interaction.
 ```swift
 init()
 ```
-
-#### Discussion
-
-Creates a context menu configuration.
 
 
 ---

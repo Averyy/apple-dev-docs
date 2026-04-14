@@ -41,6 +41,8 @@ You can use `RealityViewContent` to add and remove entities, subscribe to Realit
 
 ## See Also
 
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+  Choose a strategy for sizing frames and centering 3D content.
 - [struct RealityView](realityview.md)
   A view that contains RealityKit content.
 - [struct RealityViewCameraContent](realityviewcameracontent.md)

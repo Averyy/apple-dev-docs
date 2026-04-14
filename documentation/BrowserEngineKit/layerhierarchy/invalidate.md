@@ -19,9 +19,9 @@ func invalidate()
 
 - [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
 
-#### Overview
+#### Discussion
 
-When you call this method, the layer hierarchy can’t be hosted in a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). Communicate with the browser app to remove the hosting view from its superview.
+When you call this method, the layer hierarchy is no longer of use. Communicate with your browser app process to remove the related hosting view ([`LayerHierarchyHostingView`](layerhierarchyhostingview.md)) from its superview.
 
 ## See Also
 

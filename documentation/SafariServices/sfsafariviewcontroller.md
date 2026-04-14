@@ -120,10 +120,12 @@ For more information on the proposed PCM web standard, see [`Introducing Private
 
 ## See Also
 
-- [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
-  The completion handler for an authentication session when the user cancels or finishes the login.
 - [Importing data exported from Safari](importing-data-exported-from-safari.md)
   Transfer bookmarks, saved passwords, and other information between browsers.
+- [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
+  The completion handler for an authentication session when the user cancels or finishes the login.
+- [class SFSafariSettings](sfsafarisettings.md)
+  A class that provides your app access to several of Safari’s settings options.
 
 
 ---

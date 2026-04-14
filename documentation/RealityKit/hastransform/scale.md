@@ -20,6 +20,10 @@ The scale of the entity relative to its parent.
 @preconcurrency var scale: SIMD3<Float> { get set }
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Discussion
 
 This value is the entity’s scale relative to its parent. To get the actual scale of the entity in the scene, use [`scale(relativeTo:)`](hastransform/scale(relativeto:).md), passing `nil` as the reference entity.

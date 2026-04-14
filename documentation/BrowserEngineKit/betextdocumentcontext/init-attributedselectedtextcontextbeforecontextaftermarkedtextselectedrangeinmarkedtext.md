@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
-Initializes a new document context with attributed strings. The `selectedText`, `contextBefore`, and `contextAfter` represent the same ranges as they do in the `-initWithSelectedText:contextBefore:contextAfter:` initializer.
+Initializes a document with attributed strings that represent the selection and its surrounding context.
 
 **Availability**:
 - iOS 17.4+
@@ -17,9 +17,14 @@ Initializes a new document context with attributed strings. The `selectedText`, 
 init(attributedSelectedText selectedText: NSAttributedString?, contextBefore: NSAttributedString?, contextAfter: NSAttributedString?, markedText: NSAttributedString?, selectedRangeInMarkedText: NSRange)
 ```
 
+#### Discussion
+
+The `attributedSelectedText`, `contextBefore`, and `contextAfter` parameters represent the same ranges as their counterparts in [`init(selectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md), and carry the same requirements, with the addition of text formatting and style attributes.
+
 ## See Also
 
 - [init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)](betextdocumentcontext/init(selectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md)
+  Initializes a document with plain text strings that represent the selection and its surrounding context.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Indicates whether there any text is currently marked as part of an active input session
+A Boolean value that indicates if marked text exists for an active input session.
 
 **Availability**:
 - iOS 17.4+
@@ -20,20 +20,12 @@ var hasMarkedText: Bool { get }
 
 ## See Also
 
-- [var markedText: String?](betextinput/markedtext.md)
-  String for the text that has been marked as part of an active input session
-- [var attributedMarkedText: NSAttributedString?](betextinput/attributedmarkedtext.md)
-  Attributed string for the text that has been marked as part of an active input session
 - [var markedTextRange: UITextRange?](betextinput/markedtextrange.md)
-  Range representing the position of the markedText.
-- [func setMarkedText(String?, selectedRange: NSRange)](betextinput/setmarkedtext(_:selectedrange:).md)
-  Inserts the provided text and marks it to indicate that it is part of an active input session.
-- [func setAttributedMarkedText(NSAttributedString?, selectedRange: NSRange)](betextinput/setattributedmarkedtext(_:selectedrange:).md)
-  Inserts the provided styled text and marks it to indicate that it is part of an active input session.
+  A range that represents the position of the marked text.
 - [func unmarkText()](betextinput/unmarktext.md)
-  Unmarks the currently marked text
+  Unmarks the currently marked text.
 - [func isPointNearMarkedText(CGPoint) -> Bool](betextinput/ispointnearmarkedtext(_:).md)
-  Returns whether a point should be considered “near” the marked text. Used to determine whether text interaction gestures near marked text should begin.
+  Provides a Boolean value that indicates if a point is near marked text.
 
 
 ---

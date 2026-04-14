@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The operating system detected an event that caused it to stop tracking the scroll gesture.
+A scroll phase that indicates the system stops scroll view gesture tracking due to an event.
 
 **Availability**:
 - iOS 17.4+

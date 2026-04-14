@@ -22,11 +22,6 @@ var isReplaceAllowed: Bool { get }
 
 For example, replacement shouldn’t be allowed in password fields or when the selected text is only consists of whitespace.
 
-## See Also
-
-- [func replaceSelectedText(String, withText: String)](betextinput/replaceselectedtext(_:withtext:).md)
-  Replaces the specified `text` with `replacementText`
-
 
 ---
 

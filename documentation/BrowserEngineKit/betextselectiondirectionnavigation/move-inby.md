@@ -22,6 +22,11 @@ func move(in direction: UITextStorageDirection, by granularity: UITextGranularit
 
 Option + left/right = word Option + up/down = paragraph Command + left/right = line Command + up/down = document
 
+## See Also
+
+- [func move(in: UITextLayoutDirection)](betextselectiondirectionnavigation/move(in:).md)
+  Moves the cursor in the specified directions, such as in response to an arrow key press.
+
 
 ---
 

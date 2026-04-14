@@ -28,11 +28,6 @@ On devices that support Apple Intelligence, the result is guaranteed to be non-e
 
 - `name`: Name of the adapter.
 
-## See Also
-
-- [static func isCompatible(AssetPack) -> Bool](systemlanguagemodel/adapter/iscompatible(_:).md)
-  Returns a Boolean value that indicates whether an asset pack is an on-device foundation model adapter and is compatible with the system base model version on the runtime device.
-
 
 ---
 

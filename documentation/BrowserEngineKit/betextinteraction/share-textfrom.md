@@ -20,7 +20,7 @@ func share(text: String, from presentationRect: CGRect)
 ## Parameters
 
 - `text`: The text to share.
-- `presentationRect`: The area in the view containing the text, which the operating system uses to locate the sharing UI.
+- `presentationRect`: The area in the view containing the text, which the system uses to locate the sharing UI.
 
 ## See Also
 

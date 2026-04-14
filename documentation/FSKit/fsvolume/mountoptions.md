@@ -6,7 +6,7 @@
 Mount options to be requested from FSKit using the `requestedMountOptions` property.
 
 **Availability**:
-- macOS 26.0+
+- macOS 26.4+
 
 ## Declaration
 

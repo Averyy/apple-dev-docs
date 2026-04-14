@@ -15,9 +15,9 @@ Creates a transaction coordinator from an encoded representation.
 init?(coder: NSCoder)
 ```
 
-#### Overview
+#### Discussion
 
-This initializer can fail and return `nil` if it can’t decode the data it needs from the `coder`.
+This initializer can fail and return `nil` if the specified `coder` fails to decode.
 
 ## Parameters
 
@@ -25,10 +25,8 @@ This initializer can fail and return `nil` if it can’t decode the data it need
 
 ## See Also
 
-- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:).md)
-  Creates a transaction coordinator from an XPC object.
-- [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md)
-  Creates a representation of the transaction coordinator you send to another process.
+- [init() throws](layerhierarchyhostingtransactioncoordinator/init.md)
+  Creates a transaction coordinator.
 
 
 ---

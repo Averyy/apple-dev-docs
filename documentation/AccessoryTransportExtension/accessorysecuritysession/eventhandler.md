@@ -22,7 +22,7 @@ Implement this protocol to respond to key exchange events and session invalidati
 ## Topics
 
 ### Instance Methods
-- [func securityMessageReceived(SecurityMessage)](accessorysecuritysession/eventhandler/securitymessagereceived(_:).md)
+- [func messageReceived(SecurityMessage, completion: (AccessoryMessage.Result) -> Void)](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md)
   Security message received.
 - [func sessionInvalidated(error: AccessorySecuritySession.Error?)](accessorysecuritysession/eventhandler/sessioninvalidated(error:).md)
   Session has been invalidated.

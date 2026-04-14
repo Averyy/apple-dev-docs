@@ -43,9 +43,13 @@ ATS requires all of these things, and then provides extended security checks:
 - Data must be exchanged using either the AES-128 or the AES-256 symmetric cipher.
 - The link must support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange.
 
-> **Note**:  [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them—for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).
+> **Note**:  [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them — for example, to implement certificate pinning. For more information, see [`Performing manual server trust authentication`](https://developer.apple.com/documentation/Foundation/performing-manual-server-trust-authentication).
 
-##### Configure Exceptions Only When Needed Prefer Server Fixes
+##### Optional Niap Functional Package for Tls Requirements
+
+ATS provides support to further restrict default TLS client behavior to help meet requirements outlined by the National Information Assurance Partnership (NIAP) in the Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options for regulated environments. To opt-in to this mode, use the [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion) key, which can be set to enforce this mode globally, and the [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresNIAPTLSPackageVersion) key to configure exceptions to the global policy on a per-domain basis.
+
+##### Configure Exceptions Only When Needed and Prefer Server Fixes
 
 ATS disallows a connection if the server fails to meet one of the security checks discussed in the previous section. Your best response is to update the server. If you can’t do that for some reason, you can specify exceptions in your app to disable one or more aspects of ATS.
 
@@ -59,6 +63,7 @@ NSAppTransportSecurity : Dictionary {
     NSAllowsArbitraryLoadsForMedia : Boolean
     NSAllowsArbitraryLoadsInWebContent : Boolean
     NSAllowsLocalNetworking : Boolean
+    NSRequiresNIAPTLSPackageVersion : String
     NSExceptionDomains : Dictionary {
         <domain-name-string> : Dictionary {
             NSIncludesSubdomains : Boolean
@@ -66,12 +71,13 @@ NSAppTransportSecurity : Dictionary {
             NSExceptionMinimumTLSVersion : String
             NSExceptionRequiresForwardSecrecy : Boolean
             NSRequiresCertificateTransparency : Boolean
+            NSExceptionRequiresNIAPTLSPackageVersion : String
         }
     }
 }
 ```
 
-Keys at the first level of the [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity) dictionary apply to connections made to any domain not specifically called out in the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) sub-dictionary. For example, by setting [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) set to `YES`, you completely disable ATS for all network connections:
+Keys at the first level of the [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity) dictionary apply to connections made to any domain not specifically called out in the [`NSExceptionDomains`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSExceptionDomains) subdictionary. For example, by setting [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads) to `YES`, you completely disable ATS for all network connections when you add this to your app’s Info.plist:
 
 ![None](https://docs-assets.developer.apple.com/published/c980f5c9c7c8e8e985bd11f2066aa51b/media-3138689%402x.png)
 
@@ -96,6 +102,8 @@ Adding certain ATS exceptions to your app’s [`Information Property List`](http
 - Web content loads ([`NSAllowsArbitraryLoadsInWebContent`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoadsInWebContent))
 - Per-domain nonsecure connections ([`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionAllowsInsecureHTTPLoads))
 - Per-domain minimum TLS version ([`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionMinimumTLSVersion))
+
+[`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion) and [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresNIAPTLSPackageVersion) don’t require justification because they strengthen rather than weaken security requirements.
 
 Some examples of justifications eligible for consideration are:
 

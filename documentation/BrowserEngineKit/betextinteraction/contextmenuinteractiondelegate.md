@@ -16,7 +16,7 @@ The delegate for the context menu interaction associated with this text interact
 weak var contextMenuInteractionDelegate: (any UIContextMenuInteractionDelegate)? { get set }
 ```
 
-#### Overview
+#### Discussion
 
 Set this object to receive delegate callbacks from the [`contextMenuInteraction`](betextinteraction/contextmenuinteraction.md).
 

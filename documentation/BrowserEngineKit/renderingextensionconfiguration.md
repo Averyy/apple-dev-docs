@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: struct
 
+An opaque configuration structure for a rendering extension.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -15,6 +17,10 @@
 @preconcurrency struct RenderingExtensionConfiguration
 ```
 
+#### Overview
+
+For more information, see [`RenderingExtension`](renderingextension.md).
+
 ## Relationships
 
 ### Conforms To
@@ -25,13 +31,15 @@
 ## See Also
 
 - [protocol WebContentExtension](webcontentextension.md)
-  An interface for configuring a web content helper extension process that will carry web page decoding operations on behalf of the browser app.
+  A protocol for an app extension that manages web content for your browser app.
 - [struct WebContentExtensionConfiguration](webcontentextensionconfiguration.md)
+  An opaque configuration structure for a web content extension.
 - [protocol NetworkingExtension](networkingextension.md)
-  An interface for configuring a networking helper extension process that will carry out networking operations on behalf of the browser app.
+  A protocol for an app extension that manages network connections for your browser app.
 - [struct NetworkingExtensionConfiguration](networkingextensionconfiguration.md)
+  An opaque configuration structure for a networking extension.
 - [protocol RenderingExtension](renderingextension.md)
-  An interface for configuring a rendering helper extension process that will carry out operations requiring rendering access on behalf of the browser app.
+  A protocol for an app extension that manages graphics rendering for your browser app.
 
 
 ---

@@ -22,6 +22,8 @@ A view that contains RealityKit content.
 
 ## Mentions
 
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
 - [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
 
 #### Overview
@@ -99,6 +101,8 @@ RealityView { content in
 
 ## See Also
 
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+  Choose a strategy for sizing frames and centering 3D content.
 - [struct RealityViewContent](realityviewcontent.md)
   The content of a visionOS reality view.
 - [struct RealityViewCameraContent](realityviewcameracontent.md)

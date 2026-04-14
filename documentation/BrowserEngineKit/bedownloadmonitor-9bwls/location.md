@@ -16,7 +16,7 @@ A class that associates a URL with the bookmark you use to access that URL.
 (BEDownloadMonitorLocation) class Location
 ```
 
-#### Discussion
+#### Overview
 
 Pass the [`bookmarkData`](bedownloadmonitor-9bwls/location/bookmarkdata.md) to your browser app to resolve the URL in the app. For information on using XPC to share data between your networking extension and browser app, see [`Using XPC to communicate with browser extensions`](using-xpc-to-communicate-with-browser-extensions.md).
 

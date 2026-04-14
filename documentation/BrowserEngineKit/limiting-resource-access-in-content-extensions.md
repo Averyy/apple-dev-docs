@@ -6,13 +6,13 @@ Reduce the impact of vulnerabilities in web content extensions by limiting privi
 
 #### Overview
 
-Web content extensions parse resources and run code from unknown sources. An attacker might supply malformed resources to mount an attack on your browser app and gain access to privileged operating system resources, and the data of the person using your browser app.
+Web content extensions parse resources and run code from unknown sources. An attacker might supply malformed resources to mount an attack on your browser app and gain access to privileged system resources, and the data of the person using your browser app.
 
 Mitigate the impact of any successful attack by reducing your content extension’s privilege before processing resources from remote websites.
 
 #### Restrict the Sandbox for Your Web Content Extension
 
-When the operating system launches your web content extension, the extension has permissive access to a variety of services and resources that you use to initialize the extension. Once your extension is ready to begin loading web content, call the [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) method on your extension’s main object:
+When the system launches your web content extension, the extension has permissive access to a variety of services and resources that you use to initialize the extension. Once your extension is ready to begin loading web content, call the [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) method on your extension’s main object:
 
 ```swift
 class MyWebContentExtension: WebContentExtension {
@@ -62,7 +62,7 @@ Write or allocate:
 
 Design your web content extension so that it doesn’t need to do any of the above.
 
-> **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. Revision 1 of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
+> **Note**:  The rendering extension and networking extension both conform to [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) and you can apply a restricted sandbox to them. The first revision of the restricted sandbox doesn’t apply any additional restrictions to those extensions.
 
 #### Restrict Access to System Notifications
 

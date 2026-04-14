@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-The accessibility element is read-only.
+An accessibility element with a read-only interface.
 
 **Availability**:
 - iOS 18.0+
@@ -22,21 +22,27 @@ static var readOnly: UIAccessibilityTraits
 - [protocol BEAccessibilityTextMarkerSupport](beaccessibilitytextmarkersupport.md)
   A set of methods that provide information about text offsets to support assistive features.
 - [static var valueChangedNotification: UIAccessibility.Notification](beaccessibility/valuechangednotification.md)
-  The notification you post when the value of an element changes.
+  A notification you post when the value of an element changes.
 - [static var selectionChangedNotification: UIAccessibility.Notification](beaccessibility/selectionchangednotification.md)
-  The notification you post when the selection inside an element changes.
+  A notification you post when the selection inside an element changes.
 - [struct BEAccessibilityContainerType](beaccessibilitycontainertype.md)
-  An enumeration that indicates the type of container in which an element is located.
+  Types of containers for an element.
 - [enum BEAccessibilityPressedState](beaccessibilitypressedstate.md)
   An enumeration that indicates whether an element is pressed.
 - [static var menuItem: UIAccessibilityTraits](beaccessibility/menuitem.md)
-  The accessibility element behaves like a menu item.
+  An accessibility element with a menu interface.
 - [static var popUpButton: UIAccessibilityTraits](beaccessibility/popupbutton.md)
-  The accessibility element behaves like a pop-up button.
+  An accessibility element with a pop-up button interface.
 - [static var radioButton: UIAccessibilityTraits](beaccessibility/radiobutton.md)
-  The accessibility element behaves like a radio button.
+  An accessibility element with a radio button interface.
 - [static var visited: UIAccessibilityTraits](beaccessibility/visited.md)
-  The accessibility element behaves like a link that someone previously visited.
+  An accessibility element that resembles a visited link.
+- [class BEAccessibilityRemoteElement](beaccessibilityremoteelement.md)
+  A class that shares the accessibility information of a peripheral process with the main process.
+- [class BEAccessibilityRemoteHostElement](beaccessibilityremotehostelement.md)
+  A class that connects the accessibility information of different processes.
+- [struct BEAccessibility](beaccessibility.md)
+  A category for accessibility features in the framework.
 
 
 ---

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Replaces the specified `text` with `replacementText`
+Replaces text with new text, either within the current selection or near the cursor.
 
 **Availability**:
 - iOS 17.4+
@@ -24,29 +24,27 @@ func replaceSelectedText(_ text: String, withText replacementText: String)
 
 #### Discussion
 
-1. If there is a nonzero length current selection, then replace text with replacementText.
-2. If there is zero length current selection, then replace the matching word before the selection
-3. If the zero length selection is at the start of the element, then replace the matching word after the selection
+This method’s behavior depends on the current selection state:
 
-Replaces the specified text with another string.
-
-#### Overview
-
-Your implementation of this method needs to vary its behavior based on the current text selection.
-
-- If the selection has `0` length and is at the start of the document, replace the matching word after the selection.
-- If the selection has `0` length and is anywhere else in the document, replace the matching word before the selection.
-- Otherwise, replace the selected text.
+- If text is selected, this method replaces occurrences of `text` within the selection with `replacementText`.
+- If the cursor is positioned without a selection, this method searches for `text` immediately before the cursor and replaces it with `replacementText`.
+- If the cursor is at the start of an editable element, this method searches for `text` immediately after the cursor instead.
 
 ## Parameters
 
-- `text`: The text to replace.
-- `replacementText`: The new text to use as the replacement.
+- `text`: The text to find and replace.
+- `replacementText`: The text to insert in place of the found text.
 
 ## See Also
 
-- [var isReplaceAllowed: Bool](betextinput/isreplaceallowed.md)
-  Returns whether replacement should be allowed for an editable element.
+- [func insert(BETextSuggestion)](betextinput/insert(_:)-5iryn.md)
+  Inserts a text suggestion in response to a suggestion selection.
+- [func insert(BETextAlternatives)](betextinput/insert(_:)-6x7hd.md)
+  Inserts the given text or one of the available alternatives.
+- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
+  Replaces the specified text for the text of a dictation.
+- [func add(BETextAlternatives)](betextinput/add(_:).md)
+  Adds text alternatives to the text input object for the current selection.
 
 
 ---

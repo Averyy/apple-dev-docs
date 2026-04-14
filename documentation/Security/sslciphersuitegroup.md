@@ -28,6 +28,7 @@ enum SSLCiphersuiteGroup
 - [SSLCiphersuiteGroup.legacy](sslciphersuitegroup/legacy.md)
 - [SSLCiphersuiteGroup.ATS](sslciphersuitegroup/ats.md)
 - [SSLCiphersuiteGroup.atsCompatibility](sslciphersuitegroup/atscompatibility.md)
+- [SSLCiphersuiteGroup.atsfcp_v2_1](sslciphersuitegroup/atsfcp_v2_1.md)
 ### Initializers
 - [init?(rawValue: Int32)](sslciphersuitegroup/init(rawvalue:).md)
 

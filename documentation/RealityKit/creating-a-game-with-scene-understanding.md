@@ -17,7 +17,7 @@ Create AR games and experiences that interact with real-world objects on LiDAR-e
 ## See Also
 
 - [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
-  Detect objects in an AR scene or create a detailed 3D reconstruction of the real-world environment.
+  Detect real-world objects and surfaces to create precise AR interactions.
 - [Visualizing and interacting with a reconstructed scene](../ARKit/visualizing-and-interacting-with-a-reconstructed-scene.md)
   Estimate the shape of the physical environment using a polygonal mesh.
 - [var sceneReconstruction: ARConfiguration.SceneReconstruction](../ARKit/ARWorldTrackingConfiguration/sceneReconstruction.md)

@@ -303,7 +303,7 @@ Fetch metadata for apps from the catalog by using their identifiers.
 
 ## Endpoint
 
-`GET https://api.ent.apple.com/v1/catalog/{storefront}/apps#ids`
+`GET https://api.ent.apple.com/v1/catalog/{storefront}/apps`
 
 ## Parameters
 

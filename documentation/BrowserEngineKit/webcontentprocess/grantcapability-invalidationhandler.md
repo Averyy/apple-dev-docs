@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Grants the specified capability to the process, calling the handler when the capability becomes invalid.
+Grants the specified capability to the process and observes an invalidation closure.
 
 **Availability**:
 - iOS 17.6+
@@ -19,7 +19,7 @@ func grantCapability(_ capability: ProcessCapability, invalidationHandler: @esca
 
 A [`ProcessCapability.Grant`](processcapability/grant.md) object that represents the granted capability.
 
-#### Overview
+#### Discussion
 
 When the process no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the returned object.
 

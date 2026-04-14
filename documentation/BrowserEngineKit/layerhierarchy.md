@@ -23,9 +23,13 @@ class LayerHierarchy
 
 #### Overview
 
-In your browser’s rendering extension, create a `LayerHierarchy` and set its [`layer`](layerhierarchy/layer.md) to a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) that renders content to host in a view in the browser app. Get the layer hierarchy’s [`handle`](layerhierarchy/handle.md), and send it to the browser app, where you add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md).
+This class holds another process’s view to synchronize UI updates across multiple processes in your browser app.
 
-Use [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransactioncoordinator.md) to synchronize updates in the view and the layer. For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
+To use this class, create an instance in your browser app’s rendering extension and set its [`layer`](layerhierarchy/layer.md) to a [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) that renders content. You render the content in your rendering extension then access it in the browser app’s process for display.
+
+Access the layer hierarchy’s [`handle`](layerhierarchy/handle.md), send it to the browser app, and add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md). Then, use the [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransactioncoordinator.md) class to synchronize updates in the view and the layer.
+
+For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
 
 ## Topics
 
@@ -61,9 +65,9 @@ Use [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransac
 - [class LayerHierarchyHostingView](layerhierarchyhostingview.md)
   A view that hosts a layer hierarchy you manage in another process.
 - [class LayerHierarchyHostingTransactionCoordinator](layerhierarchyhostingtransactioncoordinator.md)
-  Synchronizes updates to views and layers in different processes.
+  A class that synchronizes updates to views and layers in different processes.
 - [class LayerHierarchyHandle](layerhierarchyhandle.md)
-  A reference to a layer hierarchy that you share between processes.
+  A reference to a layer hierarchy that your app shares between processes.
 
 
 ---

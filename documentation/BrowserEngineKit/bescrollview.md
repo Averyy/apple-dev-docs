@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-A scroll view that works with its delegate to handle nesting, and customize scroll interactions.
+A scroll view that works with its delegate to handle nesting and customize scroll interactions.
 
 **Availability**:
 - iOS 17.4+
@@ -20,18 +20,19 @@ class BEScrollView
 
 #### Overview
 
-Use `BEScrollView` instead of [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) in situations where you need to:
+Use `BEScrollView` instead of [`UIScrollView`](https://developer.apple.com/documentation/UIKit/UIScrollView) if you need to:
 
-- Handle scroll updates programmatically, potentially overriding the default scroll view behavior.
-- Have scroll views that are siblings in the view hierarchy but nested in the browser Document Object Model (DOM).
+- Handle scroll updates programmatically
+- Override default scroll view behavior
+- Support scroll views that are siblings in the view hierarchy, but nested in the browser Document Object Model (DOM)
 
-If either of these is true, replace your use of `UIScrollView` with `BEScrollView` and set the scroll view’s [`delegate`](bescrollview/delegate.md) to an object that implements the [`BEScrollViewDelegate`](bescrollviewdelegate.md) methods.
+In any of these scenarios, set the scroll view’s [`delegate`](bescrollview/delegate.md) to an object that implements [`BEScrollViewDelegate`](bescrollviewdelegate.md).
 
 ## Topics
 
 ### Responding to scroll updates
 - [var delegate: (any BEScrollViewDelegate)?](bescrollview/delegate.md)
-  The delegate of the scroll view.
+  A delegate that responds to the scroll view’s scroll updates.
 
 ## Relationships
 
@@ -69,9 +70,9 @@ If either of these is true, replace your use of `UIScrollView` with `BEScrollVie
 ## See Also
 
 - [class BEScrollViewScrollUpdate](bescrollviewscrollupdate.md)
-  An object that represents a change in a scroll view’s scroll state.
+  An object that describes a change in a scroll view’s scroll state.
 - [protocol BEScrollViewDelegate](bescrollviewdelegate.md)
-  The protocol that browser scroll view delegates conform to.
+  A protocol for scroll view delegates to handle scroll updates and DOM nesting.
 
 
 ---

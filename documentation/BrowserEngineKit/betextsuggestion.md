@@ -24,7 +24,7 @@ class BETextSuggestion
 
 #### Overview
 
-You typically don’t create instances of `BETextSuggestion`. The system supplies them to your browser text view’s [`insert(_:)`](betextinput/insert(_:)-5iryn.md) method to suggest text insertions, for example AutoFill suggestions.
+Don’t create instances of this class. The system provides instances to your app through a text view’s [`insert(_:)`](betextinput/insert(_:)-5iryn.md) method when it suggests text insertions, for example, an AutoFill suggestion.
 
 ## Topics
 
@@ -52,12 +52,17 @@ You typically don’t create instances of `BETextSuggestion`. The system supplie
 ## See Also
 
 - [class BEAutoFillTextSuggestion](beautofilltextsuggestion.md)
+  A suggestion object that provides AutoFill text content for web form fields based on a person’s usage patterns.
 - [class BETextAlternatives](betextalternatives.md)
+  An object that provides alternative text suggestions for a person’s text selection.
 - [class BETextDocumentContext](betextdocumentcontext.md)
   Information about the text surrounding a selection in a document.
 - [class BETextDocumentRequest](betextdocumentrequest.md)
+  A description of the contextual information that a text document request retrieves.
 - [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+  Options that describe the contextual information for a text document request.
 - [struct BETextReplacementOptions](betextreplacementoptions.md)
+  Options that determine the way your app processes text in webpages.
 
 
 ---

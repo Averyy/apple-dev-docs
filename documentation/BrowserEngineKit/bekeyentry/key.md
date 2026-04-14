@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Data about the key that was pressed
+The key that the person presses.
 
 **Availability**:
 - iOS 17.4+
@@ -16,10 +16,6 @@ Data about the key that was pressed
 ```swift
 var key: UIKey { get }
 ```
-
-#### Discussion
-
-The key that the person pressed.
 
 
 ---

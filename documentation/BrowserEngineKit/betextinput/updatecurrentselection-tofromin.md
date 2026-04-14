@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Indicates the `point` the text interaction gesture is tracking has changed
+Indicates the point where the text interaction gesture changes.
 
 **Availability**:
 - iOS 17.4+
@@ -24,28 +24,28 @@ func updateCurrentSelection(to point: CGPoint, from gestureType: BEGestureType, 
 
 #### Discussion
 
-Indicate to the system the change was handled by invoking: -[BETextInteraction selectionChangedWithGestureAtPoint:gesture:state:flags:]
-
-Indicates that the point at which the system is tracking an active gesture changed.
-
-#### Overview
-
-When you receive this method, call [`selectionChangedWithGesture(at:gesture:state:flags:)`](betextinteraction/selectionchangedwithgesture(at:gesture:state:flags:).md) to notify the system that your text view handled the update.
+In your implementation of this method, notify the system that your app handles the change by calling [`selectionChangedWithGesture(at:gesture:state:flags:)`](betextinteraction/selectionchangedwithgesture(at:gesture:state:flags:).md).
 
 ## Parameters
 
 - `point`: The new location of the gesture.
-- `gestureType`: The type of gesture the system is tracking.
+- `gestureType`: The type of gesture the system tracks.
 - `state`: The state of the gesture.
 
 ## See Also
 
-- [func setSelection(from: CGPoint, to: CGPoint, gesture: BEGestureType, state: UIGestureRecognizer.State)](betextinput/setselection(from:to:gesture:state:).md)
-  Notifies the text view that its selection needs to change to the text between the given points.
-- [func adjustSelectionBoundary(to: CGPoint, touchPhase: BESelectionTouchPhase, baseIsStart: Bool, flags: BESelectionFlags)](betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).md)
-  Adjusts the selection’s start or end boundary specified by `boundaryIsStart` to the `point`
-- [func textInteractionGesture(BEGestureType, shouldBeginAt: CGPoint) -> Bool](betextinput/textinteractiongesture(_:shouldbeginat:).md)
-  Returns whether a gesture with the given `gestureType` should begin for the given `point`
+- [var selectedText: String?](betextinput/selectedtext.md)
+  A string that represents the selected text.
+- [var selectedTextRange: UITextRange?](betextinput/selectedtextrange.md)
+  A range that represents the selected text.
+- [var isSelectionAtDocumentStart: Bool](betextinput/isselectionatdocumentstart.md)
+  A Boolean value that indicates if the current selection is at the beginning of the document.
+- [func selectPosition(at: CGPoint, completionHandler: () -> Void)](betextinput/selectposition(at:completionhandler:).md)
+  Sets the selection caret to the given point.
+- [func selectPosition(at: CGPoint, for: BETextDocumentRequest, completionHandler: (BETextDocumentContext) -> Void)](betextinput/selectposition(at:for:completionhandler:).md)
+  Sets the selection caret to the given point.
+- [func adjustSelection(by: BEDirectionalTextRange, completionHandler: () -> Void)](betextinput/adjustselection(by:completionhandler:).md)
+  Adjusts the selection using a range.
 
 
 ---

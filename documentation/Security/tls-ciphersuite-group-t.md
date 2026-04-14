@@ -28,6 +28,8 @@ enum tls_ciphersuite_group_t
 - [tls_ciphersuite_group_t.compatibility](tls_ciphersuite_group_t/compatibility.md)
 - [tls_ciphersuite_group_t.default](tls_ciphersuite_group_t/default.md)
 - [tls_ciphersuite_group_t.legacy](tls_ciphersuite_group_t/legacy.md)
+### Enumeration Cases
+- [tls_ciphersuite_group_t.ats_fcp_v2_1](tls_ciphersuite_group_t/ats_fcp_v2_1.md)
 ### Initializers
 - [init?(rawValue: UInt16)](tls_ciphersuite_group_t/init(rawvalue:).md)
 

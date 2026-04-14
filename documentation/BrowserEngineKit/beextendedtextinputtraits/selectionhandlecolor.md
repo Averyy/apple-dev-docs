@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Customizes the color of the selection handles
+A color that customizes the look of the handle.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,13 @@ Customizes the color of the selection handles
 ```swift
 optional var selectionHandleColor: UIColor? { get }
 ```
+
+## See Also
+
+- [var insertionPointColor: UIColor?](beextendedtextinputtraits/insertionpointcolor.md)
+  A color for the text cursor at the insertion point.
+- [var selectionHighlightColor: UIColor?](beextendedtextinputtraits/selectionhighlightcolor.md)
+  The highlight color of a rectangle.
 
 
 ---

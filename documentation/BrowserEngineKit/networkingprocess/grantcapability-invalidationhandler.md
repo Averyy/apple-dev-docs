@@ -19,7 +19,7 @@ func grantCapability(_ capability: ProcessCapability, invalidationHandler: @esca
 
 A [`ProcessCapability.Grant`](processcapability/grant.md) object that represents the granted capability.
 
-#### Overview
+#### Discussion
 
 When the process no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the returned object.
 

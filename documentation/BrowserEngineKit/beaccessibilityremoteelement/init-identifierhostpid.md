@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Initializes and registers a remote element.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,12 +18,12 @@ init(identifier: String, hostPid: pid_t)
 
 #### Discussion
 
-Initializes and registers a remote element. This element doesn’t need to be returned anywhere.
+Don’t return an instance of this class from an object in your view hierarchy.
 
 ## Parameters
 
-- `identifier`: Unique identifier to connect this remote element to the hosting remote element. This should be unique per pair of remote elements.
-- `hostPid`: The PID of the host’s remote element process.
+- `identifier`: A unique ID that creates an element reference pair by connecting an accessibility element to its representation that the local process hosts. Set this parameter to a unique value per pair of element references.
+- `hostPid`: The process ID of the host’s remote element process.
 
 
 ---

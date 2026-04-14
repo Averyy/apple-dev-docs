@@ -38,6 +38,8 @@ class AVContentKeyRequest
   Sends the specified content key response to the receiver for processing.
 - [func processContentKeyResponseError(any Error)](avcontentkeyrequest/processcontentkeyresponseerror(_:).md)
   Tells the receiver that the app was unable to obtain a content key response.
+- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest.md)
+  Tells the receiver that the app requires a persistable content key request object for processing.
 ### Getting content key request properties
 - [var identifier: (any Sendable)?](avcontentkeyrequest/identifier.md)
   The identifier for the content key.
@@ -65,9 +67,7 @@ class AVContentKeyRequest
 - [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
 ### Instance Methods
-- [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
-  Tells the receiver that the app requires a persistable content key request object for processing.
-- [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-7i2pw.md)
+- [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequestandreturnerror.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 
 ## Relationships

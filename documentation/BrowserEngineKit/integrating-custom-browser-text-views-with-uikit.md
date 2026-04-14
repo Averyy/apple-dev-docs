@@ -22,11 +22,11 @@ public class MyTextView: UIView, BETextInput, UITextInput {
 
 Implement the required [`UITextInput`](https://developer.apple.com/documentation/UIKit/UITextInput) methods in your view class. At runtime, the text system determines whether your text field implements `BETextInput` counterparts to the `UITextInput` methods; if it does, the text system calls the `BETextInput` methods instead of the `UITextInput` methods.
 
-Your custom view’s [`textInputView`](betextinput/textinputview.md) is the view that the system uses for all coordinate transforms when handling text-input gestures. When you create the text input view, add a [`BETextInteraction`](betextinteraction.md) to the view’s interactions. The operating system uses the `BETextInteraction` to track the state of text-input gestures.
+Your custom view’s [`textInputView`](betextinput/textinputview.md) is the view that the system uses for all coordinate transforms when handling text-input gestures. When you create the text input view, add a [`BETextInteraction`](betextinteraction.md) to the view’s interactions. The system uses the `BETextInteraction` to track the state of text-input gestures.
 
 ##### Accept a Delegate Object
 
-Create a property [`asyncInputDelegate`](betextinput/asyncinputdelegate.md) of type [`BETextInputDelegate`](betextinputdelegate.md) on your view. The operating system provides delegates when it needs notifications for text input changes; you don’t conform to `BETextInputDelegate` in your code or implement its methods.
+Create a property [`asyncInputDelegate`](betextinput/asyncinputdelegate.md) of type [`BETextInputDelegate`](betextinputdelegate.md) on your view. The system provides delegates when it needs notifications for text input changes; you don’t conform to [`BETextInputDelegate`](betextinputdelegate.md) in your code or implement its methods.
 
 ```swift
 public class MyTextView: UIView, BETextInput, UITextInput {
@@ -36,7 +36,7 @@ public class MyTextView: UIView, BETextInput, UITextInput {
 
 ##### Report Whether the Text View Performs Actions
 
-Implement [`canPerformAction(_:withSender:)`](betextinput/canperformaction(_:withsender:).md) in your view, returning `true` when your view can perform the action and `false` otherwise. If you return `false`, the operating system doesn’t call the action method even if your class implements it (so [`responds(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/responds(to:)) with the action method’s selector returns `true`). Return `false` when your view is in a state where it doesn’t handle the action.
+Implement [`canPerformAction(_:withSender:)`](betextinput/canperformaction(_:withsender:).md) in your view, returning `true` when your view can perform the action and `false` otherwise. If you return `false`, the system doesn’t call the action method even if your class implements it (so [`responds(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/responds(to:)) with the action method’s selector returns `true`). Return `false` when your view is in a state where it doesn’t handle the action.
 
 ##### Accept Text Input
 
@@ -52,7 +52,7 @@ The system calls `handleKeyEntry(_:completionHandler:)` multiple times for one k
 
 If you don’t handle the key event and return `false` from the completion handler, call the delegate’s [`shouldDeferEventHandlingToSystem(for:context:)`](betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).md) method to give the system an opportunity to handle the event.
 
-> ❗ **Important**:  Your text view needs to call the completion handler for each key event it receives, to indicate to the text system that it’s ready for the next event. The operating system processes key events on a serial queue, so if you don’t call the completion handler you block key input to your app.
+> ❗ **Important**:  Your text view needs to call the completion handler for each key event it receives, to indicate to the text system that it’s ready for the next event. The system processes key events on a serial queue, so if you don’t call the completion handler you block key input to your app.
 
 Additionally, implement [`shiftKeyStateChanged(fromState:toState:)`](betextinput/shiftkeystatechanged(fromstate:tostate:).md) to discover when someone presses and releases the shift key and when someone engages and disengages the caps lock.
 
@@ -64,7 +64,7 @@ In your implementation of [`offset(from:to:)`](betextinput/offset(from:to:).md),
 
 ##### Select Text and Respond to Selection Changes
 
-When the operating system detects that someone is starting a gesture in your text view, it sends your text view [`textInteractionGesture(_:shouldBeginAt:)`](betextinput/textinteractiongesture(_:shouldbeginat:).md), passing the type of gesture it detects and the location of the gesture in your view’s coordinate system.
+When the system detects that someone is starting a gesture in your text view, it sends your text view [`textInteractionGesture(_:shouldBeginAt:)`](betextinput/textinteractiongesture(_:shouldbeginat:).md), passing the type of gesture it detects and the location of the gesture in your view’s coordinate system.
 
 To permit the gesture to proceed, return `true` from this method; otherwise, return `false`.
 
@@ -74,7 +74,7 @@ If you permit the gesture, then as someone selects text in your text view, the t
 - **[`selectPosition(at:completionHandler:)`](betextinput/selectposition(at:completionhandler:).md)**: The gesture locates the text selection caret at the given point.
 - **[`selectText(in:at:completionHandler:)`](betextinput/selecttext(in:at:completionhandler:).md)**: The gesture updates the selection to the text contained at the given granularity and point.
 - **[`updateSelection(extent:boundary:completionHandler:)`](betextinput/updateselection(extent:boundary:completionhandler:).md)**: The gesture adjusts the selection to include the text at the given point.
-- **[`updateCurrentSelection(to:from:in:)`](betextinput/updatecurrentselection(to:from:in:).md)**: The operating system changed the point at which it’s tracking the gesture.
+- **[`updateCurrentSelection(to:from:in:)`](betextinput/updatecurrentselection(to:from:in:).md)**: The system changed the point at which it’s tracking the gesture.
 - **[`setSelection(from:to:gesture:state:)`](betextinput/setselection(from:to:gesture:state:).md)**: The gesture changes the selection to the text between the given points.
 - **[`adjustSelectionBoundary(to:touchPhase:baseIsStart:flags:)`](betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).md)**: The gesture adjusts the selection’s start or end boundary to the text at the given point.
 
@@ -118,7 +118,7 @@ On iPad, a person can dismiss the on-screen keyboard from a control on the keybo
 - [Supporting extended text interactions](support-extended-text-interactions.md)
   Share content, add replacement shortcuts, and perform other rich actions in browser text views.
 - [protocol BETextInput](betextinput.md)
-  A protocol to which text views conform to asynchronously integrate with the text system.
+  A protocol for asynchronous text views that integrate with the text system.
 - [protocol BETextInputDelegate](betextinputdelegate.md)
   A delegate protocol that a browser text view uses to notify the text system of changes.
 

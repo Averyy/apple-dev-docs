@@ -17,7 +17,7 @@ Notifies the system after the text view adjusts its selection.
 func selectionBoundaryAdjusted(to point: CGPoint, touchPhase touch: BESelectionTouchPhase, flags: BESelectionFlags)
 ```
 
-#### Overview
+#### Discussion
 
 Call this method when your browser text view receives [`adjustSelectionBoundary(to:touchPhase:baseIsStart:flags:)`](betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).md).
 

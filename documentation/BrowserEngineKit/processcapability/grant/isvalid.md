@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-A Boolean that indicates whether the operating system has granted the capability to the browser extension process.
+A Boolean value that indicates whether the system honors a granted capability for the browser extension process.
 
 **Availability**:
 - iOS 17.4+
@@ -16,9 +16,9 @@ A Boolean that indicates whether the operating system has granted the capability
 var isValid: Bool { get }
 ```
 
-#### Overview
+#### Discussion
 
-If the operating system has granted this capability to the browser extension process and you haven’t called [`invalidate()`](processcapability/grant/invalidate().md), then this property’s value is `true`; otherwise, it’s false.
+If the system grants this capability to the browser extension process and you haven’t called [`invalidate()`](processcapability/grant/invalidate().md), then this property is `true`; otherwise, it’s false.
 
 ## See Also
 

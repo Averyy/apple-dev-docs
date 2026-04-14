@@ -8,7 +8,7 @@ Coordinate view-hierarchy and layer-hierarchy changes between processes.
 
 When your browser app’s alternative browser engine is split between different extensions, you coordinate those extensions to prepare the browser’s UI. For example, your browser controls are rendered by the host app, and media is streamed in the rendering extension.
 
-Create layer hierarchies to manage [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects in the rendering extension. Host those layers in a hosting view that you add to your view hierarchy. Indicate to the operating system that the view contains hosted layers, and coordinate changes to the layer hierarchy between your host app and rendering extension.
+Create layer hierarchies to manage [`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer) objects in the rendering extension. Host those layers in a hosting view that you add to your view hierarchy. Indicate to the system that the view contains hosted layers, and coordinate changes to the layer hierarchy between your host app and rendering extension.
 
 > **Note**:  If you create images or render content to an [`IOSurfaceRef`](https://developer.apple.com/documentation/IOSurface/IOSurfaceRef) in your rendering extension, you can send that object to the host object over XPC and don’t need to render a hosted layer. If you render UI in a web content extension, use `IOSurfaceRef` in the rendering extension, or generate any UI in the rendering extension other than a `CALayer`, you need to create a visibility propagation interaction for the view in the host app. For more information, see [`Propagating view visibility information to extension processes`](propagating-view-visibility-information-to-browser-extensions.md).
 
@@ -61,7 +61,7 @@ In the extension, use the XPC representation of the coordinator to create a `Lay
 
 ```swift
 let xpcCoordinator: xpc_object_t = // Get the object from an XPC message.
-if let coordinator = try? LayerHostingHierarchyTransactionCoordinator(xpcRepresentation: xpcCoordinator) {
+if let coordinator = try? LayerHierarchyHostingTransactionCoordinator(xpcRepresentation: xpcCoordinator) {
   coordinator.add(self.storedHierarchy)
   // Make change to the layer or its sublayers.
   coordinator.commit()
@@ -70,11 +70,11 @@ if let coordinator = try? LayerHostingHierarchyTransactionCoordinator(xpcReprese
 
 > **Note**:  You need to add layers or views to the transaction coordinator before you manipulate those layers or views. Commit the transaction coordinator as the last action in the process of updating the views or layers, after you send the XPC representation of the transaction coordinator to the other process.
 
-To initiate the update in the extension, create a `LayerHostingHierarchyTransactionCoordinator` to track changes to the layer hierarchy, then send it to the host app to create the transaction coordinator you use to track changes to the view hierarchy.
+To initiate the update in the extension, create a [`LayerHierarchyHostingTransactionCoordinator`](layerhierarchyhostingtransactioncoordinator.md) to track changes to the layer hierarchy, then send it to the host app to create the transaction coordinator you use to track changes to the view hierarchy.
 
 `LayerHierarchyHostingTransactionCoordinator` doesn’t communicate any information about the updates you make to the views and layers you add to them. Use your XPC communication channel to send the context of any changes to views and layers between your browser app and extension processes, along with the transaction coordinator.
 
-Keep the lifetime of transaction coordinators — from initialization until you call [`commit()`](layerhierarchyhostingtransactioncoordinator/commit().md) — as short as possible to avoid making your UI unresponsive. The operating system expects you to call `commit()` within a short interval, and stops coordinating transactions if you exceed this duration. A person using your browser app experiences this as glitches in your app’s user interface and inconsistent animations.
+Keep the lifetime of transaction coordinators — from initialization until you call [`commit()`](layerhierarchyhostingtransactioncoordinator/commit().md) — as short as possible to avoid making your UI unresponsive. The system expects you to call `commit()` within a short interval, and stops coordinating transactions if you exceed this duration. A person using your browser app experiences this as glitches in your app’s user interface and inconsistent animations.
 
 ##### Dispose of Views with Hosted Layers
 
@@ -87,9 +87,9 @@ When the layer that’s rendered in a `LayerHierarchyHostingView` is no longer n
 - [class LayerHierarchyHostingView](layerhierarchyhostingview.md)
   A view that hosts a layer hierarchy you manage in another process.
 - [class LayerHierarchyHostingTransactionCoordinator](layerhierarchyhostingtransactioncoordinator.md)
-  Synchronizes updates to views and layers in different processes.
+  A class that synchronizes updates to views and layers in different processes.
 - [class LayerHierarchyHandle](layerhierarchyhandle.md)
-  A reference to a layer hierarchy that you share between processes.
+  A reference to a layer hierarchy that your app shares between processes.
 
 
 ---

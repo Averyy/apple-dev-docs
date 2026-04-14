@@ -6,9 +6,9 @@ Transfer bookmarks, saved passwords, and other information between browsers.
 
 #### Overview
 
-Starting in iOS 18.2, iPadOS 18.2, and visionOS 2.2, someone can export their browser data from Safari Settings in the Settings app. In macOS 15.2 and newer, they export their browser data by choosing File > Export in Safari.
+In iOS, iPadOS, and visionOS, people can export their browser data to a file from Safari’s settings in Settings. In macOS, the person exports Safari’s browser data by choosing File > Export from Safari. In either case, the system presents the Export Browsing Data sheet, which walks the person through the export process. Alternatively, you can present the export sheet from a browser app that you develop by calling the [`SFSafariSettings`](sfsafarisettings.md) class’s [`openExportBrowsingDataSettings(completionHandler:)`](sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).md) method.
 
-On all platforms, Safari exports the data in a ZIP archive that contains a bookmarks file, a passwords file, a payment cards file, and for each profile the person creates in Safari one browser history file and one Safari extensions file. The files have localized file names, in the `en_US` locale their names are:
+Safari exports the data in a ZIP archive that contains a bookmarks file, a passwords file, and a payment cards file. For each Safari profile, the ZIP archive also includes a browser history file and a Safari extensions file. The files have localized file names; in the `en_US` locale, their names are:
 
 - **Bookmark data**: `Bookmarks.html`
 - **Passwords**: `Passwords.csv`
@@ -131,6 +131,8 @@ For more information on bundle identifiers, see [`CFBundleIdentifier`](https://d
   An object that provides a visible standard interface for browsing the web.
 - [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
   The completion handler for an authentication session when the user cancels or finishes the login.
+- [class SFSafariSettings](sfsafarisettings.md)
+  A class that provides your app access to several of Safari’s settings options.
 
 
 ---

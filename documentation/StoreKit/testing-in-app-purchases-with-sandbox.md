@@ -156,8 +156,8 @@ Clearing the purchase history for Sandbox Apple Accounts with a high number of p
 - [Testing Family Sharing](testing-family-sharing.md)
   Verify that your app handles auto-renewable subscriptions and non-consumable in-app purchases that family members share with Family Sharing.
 ### Age Assurance
-- [Testing Age Assurance in Sandbox](testing-age-assurance-in-sandbox.md)
-  Check that your app responds correctly to Age Assurance scenarios and consent revocation using the Sandbox environment.
+- [Testing age assurance in sandbox](testing-age-assurance-in-sandbox.md)
+  Check that your app responds correctly to age assurance scenarios and consent revocation using the sandbox environment.
 ### Refunds
 - [Testing refund requests](testing-refund-requests.md)
   Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.

@@ -20,7 +20,7 @@ func grantCapability(_ capability: ProcessCapability) throws -> ProcessCapabilit
 
 A [`ProcessCapability.Grant`](processcapability/grant.md) object that represents the granted capability.
 
-#### Overview
+#### Discussion
 
 When the process no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md) on the returned object.
 
@@ -31,7 +31,7 @@ When the process no longer needs the capability, call [`invalidate()`](processca
 ## See Also
 
 - [func grantCapability(ProcessCapability, invalidationHandler: () -> Void) throws -> ProcessCapability.Grant](renderingprocess/grantcapability(_:invalidationhandler:).md)
-  Grants the specified capability to the process, calling the handler when the capability becomes invalid.
+  Grants the specified capability to the process and observes an invalidation closure.
 - [func createVisibilityPropagationInteraction() -> any UIInteraction](renderingprocess/createvisibilitypropagationinteraction.md)
   Returns an interaction that associates a view with the rendering process.
 

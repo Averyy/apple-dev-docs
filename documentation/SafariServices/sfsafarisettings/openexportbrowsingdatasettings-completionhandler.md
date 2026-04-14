@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: method
 
-Launches Settings and opens Safari’s export browsing data sheet
+Presents the Export Browsing Data sheet from Safari Settings.
 
 **Availability**:
 - iOS 26.0+
@@ -16,17 +16,21 @@ Launches Settings and opens Safari’s export browsing data sheet
 class func openExportBrowsingDataSettings() async throws
 ```
 
+## Mentions
+
+- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+
 #### Discussion
 
-Call this method when your app is in the foreground, otherwise it returns an error.
+This method presents the same data export sheet accessible in Safari’s settings, which enables someone to export their browsing data to a file. The data includes page visit history, reading list information, bookmarks, passwords, payment cards, and browser extensions.
 
-Launches Settings and opens Safari’s export browsing data sheet.
+The method returns an error unless you call it while your app is in the foreground.
 
-Call this method when your app is in the foreground, otherwise it returns an error.
+For information on the file format and steps to import the data, see [`Importing data exported from Safari`](importing-data-exported-from-safari.md).
 
 ## Parameters
 
-- `completionHandler`: The block the system calls after the operation completes, with an optional error parameter if an error occurs. - **error**: An error object indicating the reason for the failure, or `nil` if the system successfully opens the sheet.
+- `completionHandler`: A block the system calls after the operation completes, with an optional error parameter. - **error**: `nil` if the export sheet opens successfully; otherwise, an error that indicates the reason for the failure.
 
 
 ---

@@ -32,6 +32,9 @@ If your application isn’t registered as an authorized partner, registration fa
   Registration error codes.
 - [let RegistrationErrorDomain: String](registrationerrordomain.md)
   Error domain for account registration failures.
+### Variables
+- [let RegistrationErrorRetryAfterKey: String](registrationerrorretryafterkey.md)
+  `userInfo` key whose value is an `NSNumber` containing the server-provided retry interval in seconds. Present on [`rateLimited`](registrationerror/ratelimited.md) errors.
 
 
 ---

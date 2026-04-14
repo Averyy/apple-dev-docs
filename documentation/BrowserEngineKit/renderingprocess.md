@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: struct
 
-An object that represents a running browser rendering extension process.
+A process that manages rendering in an app extension.
 
 **Availability**:
 - iOS 17.4+
@@ -22,7 +22,7 @@ struct RenderingProcess
 
 #### Overview
 
-Your browser app may have one or more rendering extensions, which each need a separate bundle identifier. Your browser can launch one instance of each of its rendering extensions.
+A browser can have one or more rendering extensions, each of which need a separate bundle identifier. The app can launch only one instance of each rendering extension.
 
 ## Topics
 
@@ -30,7 +30,7 @@ Your browser app may have one or more rendering extensions, which each need a se
 - [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](renderingprocess/init(bundleidentifier:oninterruption:).md)
   Launches a rendering extension process asynchronously.
 - [func invalidate()](renderingprocess/invalidate.md)
-  Stops the extension process.
+  Stops the rendering process.
 ### Creating XPC connections
 - [func makeLibXPCConnection() throws -> xpc_connection_t](renderingprocess/makelibxpcconnection.md)
   Creates a new XPC connection to the extension process.
@@ -38,16 +38,16 @@ Your browser app may have one or more rendering extensions, which each need a se
 - [func grantCapability(ProcessCapability) throws -> ProcessCapability.Grant](renderingprocess/grantcapability(_:).md)
   Grants the specified capability to the process.
 - [func grantCapability(ProcessCapability, invalidationHandler: () -> Void) throws -> ProcessCapability.Grant](renderingprocess/grantcapability(_:invalidationhandler:).md)
-  Grants the specified capability to the process, calling the handler when the capability becomes invalid.
+  Grants the specified capability to the process and observes an invalidation closure.
 - [func createVisibilityPropagationInteraction() -> any UIInteraction](renderingprocess/createvisibilitypropagationinteraction.md)
   Returns an interaction that associates a view with the rendering process.
 
 ## See Also
 
 - [struct WebContentProcess](webcontentprocess.md)
-  An object that represents a running web content extension process.
+  A process that manages webpage content in an app extension.
 - [struct NetworkingProcess](networkingprocess.md)
-  An object that represents a running browser networking extension process.
+  A process that manages network connections in an app extension.
 
 
 ---

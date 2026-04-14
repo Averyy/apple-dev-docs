@@ -20,6 +20,10 @@ The position of the entity relative to its parent.
 @preconcurrency var position: SIMD3<Float> { get set }
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Discussion
 
 This value is the entity’s position relative to its parent. To get the world-space position of the entity in the scene, use [`position(relativeTo:)`](hastransform/position(relativeto:).md), passing `nil` as the reference entity.

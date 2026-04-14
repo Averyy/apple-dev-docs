@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Initializes a document with plain text strings that represent the selection and its surrounding context.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -15,22 +17,18 @@
 init(selectedText: String?, contextBefore: String?, contextAfter: String?, markedText: String?, selectedRangeInMarkedText: NSRange)
 ```
 
-#### Discussion
-
-Initializes a new document context with plain text.
-
 ## Parameters
 
-- `selectedText`: The currently selected text, or nil in the case of a caret selection. This string may be empty but non-nil if non-textual content is selected, in which case a single call to -deleteBackward will not delete from contextBeforeSelection. May be empty if its outside of the context’s area, even if it exists elsewhere in the document.
-- `contextBefore`: A suffix of the text preceding the selection, or nil if the selection is at the beginning of the document. This text must correspond to a range that does not include any non-text content. In particular, if a context comprises k backward-deletion clusters, then k calls to -deleteBackward must delete the corresponding text from the document. The beginning of this string must lie on a word boundary (or not be inside a word at all).
-- `contextAfter`: A prefix of the text following the selection, or nil if the selection is at the end of the document. This text must correspond to a range that does not include any non-text content. The end of this string must lie on a word boundary (or not be inside a word at all).
-- `markedText`: May be empty if it’s outside of the context’s area, even if it exists elsewhere in the document.
-- `selectedRangeInMarkedText`: The range of the current text selection, relative to the marked text range. Specify (NSNotFound, 0) if there is no marked text.
+- `selectedText`: The currently selected text, or `nil` for a caret selection. Pass an empty string, not `nil`, when the selection consists of nontext — in that case, a single call to delete backward doesn’t remove content from the `contextBefore` parameter. This value can be empty if the selection falls outside the context’s area, even if selected text exists elsewhere in the document.
+- `contextBefore`: A suffix of the text that precedes the selection, or `nil` if the selection is at the beginning of the document. This string needs to correspond to a range that contains no nontext content. If the string contains a number of backward-deletion repetitions, that same number of delete-backward calls needs to remove the corresponding text from the document. The string needs to begin on a word boundary, or outside of a word entirely.
+- `contextAfter`: A prefix of the text that follows the selection, or `nil` if the selection is at the end of the document. This string needs to correspond to a range that contains no nontext content. The string needs to end on a word boundary, or outside of a word entirely.
+- `markedText`: The current marked text, or `nil` if no marked text exists. This value can be empty if the marked text falls outside the context’s area, even if marked text exists elsewhere in the document.
+- `selectedRangeInMarkedText`: The range of the current selection relative to the marked text range. Pass `(NSNotFound, 0)` to indicate no marked text.
 
 ## See Also
 
 - [init(attributedSelectedText: NSAttributedString?, contextBefore: NSAttributedString?, contextAfter: NSAttributedString?, markedText: NSAttributedString?, selectedRangeInMarkedText: NSRange)](betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md)
-  Initializes a new document context with attributed strings. The `selectedText`, `contextBefore`, and `contextAfter` represent the same ranges as they do in the `-initWithSelectedText:contextBefore:contextAfter:` initializer.
+  Initializes a document with attributed strings that represent the selection and its surrounding context.
 
 
 ---

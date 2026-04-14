@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Mapping of UITextContentType to String for AutoFill insertion values
+A dictionary of content types that map to corresponding string text suggestions for AutoFill functionality.
 
 **Availability**:
 - iOS 17.4+

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Inserts a `textSuggestion` in response to a user suggestion selection
+Inserts a text suggestion in response to a suggestion selection.
 
 **Availability**:
 - iOS 17.4+
@@ -24,15 +24,22 @@ func insert(_ textSuggestion: BETextSuggestion)
 
 #### Discussion
 
-Inserts suggested text.
-
-#### Overview
-
-The system calls this method to suggest insertions into the text view, for example AutoFill credentials.
+The system calls this method to suggest text-view insertions, for example, for AutoFill credentials.
 
 ## Parameters
 
 - `textSuggestion`: The suggestion to insert.
+
+## See Also
+
+- [func insert(BETextAlternatives)](betextinput/insert(_:)-6x7hd.md)
+  Inserts the given text or one of the available alternatives.
+- [func replaceSelectedText(String, withText: String)](betextinput/replaceselectedtext(_:withtext:).md)
+  Replaces text with new text, either within the current selection or near the cursor.
+- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
+  Replaces the specified text for the text of a dictation.
+- [func add(BETextAlternatives)](betextinput/add(_:).md)
+  Adds text alternatives to the text input object for the current selection.
 
 
 ---

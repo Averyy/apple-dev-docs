@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: enum
 
-An enumeration that represents the possible states of a key-press in a keyboard event.
+Key-press states for a keyboard event.
 
 **Availability**:
 - iOS 17.4+
@@ -21,9 +21,9 @@ enum KeyPressState
 
 ### Key states
 - [BEKeyEntry.KeyPressState.down](bekeyentry/keypressstate/down.md)
-  The key is down.
+  An entry that indicates the key is down.
 - [BEKeyEntry.KeyPressState.up](bekeyentry/keypressstate/up.md)
-  The key is up.
+  An entry that indicates the key is up.
 ### Creating a key-press state
 - [init?(rawValue: Int)](bekeyentry/keypressstate/init(rawvalue:).md)
 
@@ -40,11 +40,11 @@ enum KeyPressState
 ## See Also
 
 - [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
-  Type of the event, indicating whether it represents when the key is pressed or released.
+  A value that indicates if the key is pressed.
 - [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
-  Represents whether the event is repeating.
+  A Boolean value that indicates whether the person holds a key down to repeat its key event.
 - [var timestamp: TimeInterval](bekeyentry/timestamp.md)
-  Time at which the key event occurred.
+  The time that the key event occurs.
 
 
 ---

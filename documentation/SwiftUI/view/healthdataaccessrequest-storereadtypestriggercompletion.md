@@ -24,27 +24,27 @@ nonisolated func healthDataAccessRequest(store: HKHealthStore, readTypes: Set<HK
 
 HealthKit performs this request asynchronously when you modify the trigger’s value. If you call this method with a new data type (a type of data that the user hasn’t previously granted or denied permission for in this app), the system automatically displays the authorization sheet when you modify the trigger’s value. The authorization sheet lists all the requested permissions. After the user finishes responding, HealthKit calls the completion block on a background queue. If the user has already chosen to grant or prohibit access to all of the types specified, HealthKit calls the completion when you modify the trigger without prompting the user.
 
-**Authenticating on launch**:
+**Requesting access on launch**:
 
 ```swift
 @State private var trigger = false
 
 var body: some Scene {
     WindowGroup {
-        ContentView(enabled: $authenticated)
+        ContentView(enabled: $accessRequested)
             .healthDataAccessRequest(store: store,
                                      readTypes: healthDataTypes,
                                      trigger: trigger) { result in
                 switch result {
 
                 case .success(_):
-                    authenticated = true
+                    accessRequested = true
                 case .failure(let error):
                     // Handle the error here.
                     fatalError("*** An error occurred while requesting authentication: \(error) ***")
                 }
 
-                logger.debug("Authentication Complete.")
+                logger.debug("Authorization request complete.")
             }
             .onAppear() {
                 trigger.toggle()
@@ -76,27 +76,27 @@ private let logger = Logger(subsystem: "example.com.MyWorkoutApp",
 @main
 struct MyApp: App {
 
-    @State private var authenticated = false
+    @State private var accessRequested = false
     @State private var trigger = false
 
     let store = HKHealthStore()
 
     var body: some Scene {
         WindowGroup {
-            ContentView(enabled: $authenticated)
+            ContentView(enabled: $accessRequested)
                 .healthDataAccessRequest(store: store,
                                          readTypes: healthDataTypes,
                                          trigger: trigger) { result in
                     switch result {
 
                     case .success(_):
-                        authenticated = true
+                        accessRequested = true
                     case .failure(let error):
                         // Handle the error here.
                         fatalError("*** An error occurred while requesting authentication: \(error) ***")
                     }
 
-                    logger.debug("Authentication Complete.")
+                    logger.debug("Authorization request complete.")
                 }
                 .onAppear() {
                     trigger.toggle()

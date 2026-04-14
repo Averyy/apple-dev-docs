@@ -19,13 +19,6 @@ init?(coder: NSCoder)
 
 - `coder`: An object that contains data that describes the handle to create.
 
-## See Also
-
-- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhandle/init(xpcrepresentation:).md)
-  Creates a handle from a representation received in an XPC message.
-- [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhandle/createxpcrepresentation.md)
-  Creates an object representing this handle that you send to another process in an XPC message.
-
 
 ---
 

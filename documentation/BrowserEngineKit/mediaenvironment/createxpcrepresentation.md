@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Creates an encoded representation of the media environment, suitable for sending over an XPC connection.
+Creates an encoded representation of the media environment for transmission through an XPC connection.
 
 **Availability**:
 - iOS 17.4+

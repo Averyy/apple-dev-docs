@@ -27,7 +27,7 @@ Use this method to check on the state of one of the Safari app or web extensions
 ## See Also
 
 - [class func getStateOfExtension(withIdentifier: String, completionHandler: (SFSafariExtensionState?, (any Error)?) -> Void)](sfsafariextensionmanager/getstateofextension(withidentifier:completionhandler:).md)
-  Returns information about the state of a Safari web extension contained within your app.
+  Returns the current state of a Safari web extension.
 
 
 ---

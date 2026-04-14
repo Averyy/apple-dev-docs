@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Time at which the key event occurred.
+The time that the key event occurs.
 
 **Availability**:
 - iOS 17.4+
@@ -17,18 +17,14 @@ Time at which the key event occurred.
 var timestamp: TimeInterval { get }
 ```
 
-#### Discussion
-
-The time at which the key event occurs.
-
 ## See Also
 
 - [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
-  Type of the event, indicating whether it represents when the key is pressed or released.
+  A value that indicates if the key is pressed.
 - [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
-  An enumeration that represents the possible states of a key-press in a keyboard event.
+  Key-press states for a keyboard event.
 - [var isKeyRepeating: Bool](bekeyentry/iskeyrepeating.md)
-  Represents whether the event is repeating.
+  A Boolean value that indicates whether the person holds a key down to repeat its key event.
 
 
 ---

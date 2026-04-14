@@ -33,6 +33,8 @@ The system now requires this behavior in all cases, making the key irrelevant.
   The minimum Transport Layer Security (TLS) version for network connections.
 - [NSExceptionRequiresForwardSecrecy](information-property-list/nsexceptionrequiresforwardsecrecy.md)
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
+- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 
 ---

@@ -15,6 +15,7 @@ object Apps.Attributes.VersionHistory
 
 ## Properties
 
+- `externalVersionId` (number)
 - `releaseDate` (string)
 - `releaseNotes` (string)
 - `releaseTimestamp` (string)

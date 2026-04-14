@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineCore  
 **Kind**: property
 
-Get the preferred output port.  Will be nil if no preference has been set.
+The output port the person sets as their preference.
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +14,17 @@ Get the preferred output port.  Will be nil if no preference has been set.
 ```swift
 var preferredOutput: AVAudioSessionPortDescription? { get }
 ```
+
+#### Discussion
+
+The value is `nil` if a person hasn’t set a preference.
+
+## See Also
+
+- [var availableOutputs: [AVAudioSessionPortDescription]?](beaudiosession-6b7ig/availableoutputs.md)
+  An array of output ports available for audio routing in the current session.
+- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-6b7ig/setpreferredoutput(_:).md)
+  Sets the preferred audio output port for the session.
 
 
 ---

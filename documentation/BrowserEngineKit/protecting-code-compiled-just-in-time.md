@@ -8,7 +8,7 @@ Toggle memory between being writable and executable.
 
 A just-in-time (JIT) compiler poses unique security challenges. To prepare the compiled code, the web content extension must be able to write to a region of memory. Then, to run the code, the extension must be able to execute the content of that memory. But, an attacker can use memory that is both writable and executable to run arbitrary code in your process.
 
-The operating system uses hardware memory management to enforce that a page of memory allocated by your process is either writable, or executable, but not simultaneously both (W^X).
+The system uses hardware memory management to enforce that a page of memory allocated by your process is either writable, or executable, but not simultaneously both (W^X).
 
 To toggle the writable or executable status of a memory page, your web content extension calls [`be_memory_inline_jit_restrict_rwx_to_rx_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rx_with_witness), and [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness). You must call these functions only in certain restricted ways that are outlined below, to protect your process from possible malicious misuse.
 
@@ -23,7 +23,7 @@ Add the following entitlements to your web content extension’s target, setting
 
 #### Adopt Pointer Authentication
 
-When your app targets the `arm64e` instruction set, the [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness) function inserts a cryptographically signed pointer authentication code (PAC) into the pointer to your JIT memory. The operating system authenticates the PAC when your extension process jumps to the JIT-compiled code after you call `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, and only runs the code if the PAC is still valid. Otherwise, it stops your extension process.
+When your app targets the `arm64e` instruction set, the [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](https://developer.apple.com/documentation/BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness) function inserts a cryptographically signed pointer authentication code (PAC) into the pointer to your JIT memory. The system authenticates the PAC when your extension process jumps to the JIT-compiled code after you call `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, and only runs the code if the PAC is still valid. Otherwise, it stops your extension process.
 
 Pointer authentication is only available with the `arm64e` instruction set. You can compile your browser app as a universal binary that includes both `arm64` and `arm64e`, but on devices that only support `arm64`, the W^X toggle functions don’t use PAC. For more information on building for `arm64e`, see “Build for pointer authentication” in [`Managing the browser extension life cycle`](managing-the-browser-extension-lifecycle.md).
 

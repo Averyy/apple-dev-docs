@@ -16,10 +16,6 @@ The `.collision` option means that the reconstructed geometry can be used for co
 static let collision: ARView.Environment.SceneUnderstanding.Options
 ```
 
-## Mentions
-
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
-
 
 ---
 

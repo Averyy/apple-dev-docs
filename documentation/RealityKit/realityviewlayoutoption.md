@@ -19,6 +19,10 @@ Options that specify the frame sizing and content alignment option for `RealityV
 struct RealityViewLayoutOption
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 #### Overview
 
 Pass in a `RealityViewLayoutOption` when using the `RealityView/realityViewLayoutBehavior(_:)->View` modifier:
@@ -55,6 +59,8 @@ struct ModelWrapperView: View {
 
 ## See Also
 
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+  Choose a strategy for sizing frames and centering 3D content.
 - [struct RealityView](realityview.md)
   A view that contains RealityKit content.
 - [struct RealityViewContent](realityviewcontent.md)

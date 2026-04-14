@@ -22,7 +22,7 @@ For more information about the entitlements web browser extensions use, see [`De
 
 #### Create a Task Identity Token
 
-Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [`XPC`](https://developer.apple.com/documentation/XPC). The task identity token is an unforgeable value that the operating system uses to identify the process to which it attributes memory in the GPU extension.
+Your content extension creates a task identity token that you pass to the GPU extension using your IPC protocol, for example, with [`XPC`](https://developer.apple.com/documentation/XPC). The task identity token is an unforgeable value that the system uses to identify the process to which it attributes memory in the GPU extension.
 
 To create a task identity token:
 

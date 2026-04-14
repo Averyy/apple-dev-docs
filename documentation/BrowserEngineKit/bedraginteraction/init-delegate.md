@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
-Creates an drag interaction with the specified delegate.
+Creates a drag interaction and assigns its delegate.
 
 **Availability**:
 - iOS 17.4+
@@ -14,10 +14,6 @@ Creates an drag interaction with the specified delegate.
 ```swift
 init(delegate: any BEDragInteractionDelegate)
 ```
-
-#### Discussion
-
-Create a drag interaction and assign its delegate.
 
 
 ---

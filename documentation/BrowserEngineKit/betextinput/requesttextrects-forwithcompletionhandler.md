@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Invoked by the system to gather context for the presentation of various text related UI’s. Completion handler should be invoked with the `UITextSelectionRect`s for the substring nearest to the caret that matches the given `input`
+Gathers context for the presentation of a text-related user interface.
 
 **Availability**:
 - iOS 17.4+
@@ -18,22 +18,16 @@ Invoked by the system to gather context for the presentation of various text rel
 func requestTextRects(for input: String) async -> [UITextSelectionRect]
 ```
 
+#### Discussion
+
+The system invokes your implementation of this method. The completion handler receives [`UITextSelectionRect`](https://developer.apple.com/documentation/UIKit/UITextSelectionRect) instances for the substring nearest to the caret that matches the given `input`.
+
 ## See Also
 
-- [func transposeCharactersAroundSelection()](betextinput/transposecharactersaroundselection.md)
-  Transposes the characters on either side of the caret in response to the key command, ctrl + T
-- [func replaceText(String, withText: String, options: BETextReplacementOptions, completionHandler: ([UITextSelectionRect]) -> Void)](betextinput/replacetext(_:withtext:options:completionhandler:).md)
-  Replace the specified text preceding the current selection.
+- [func requestDocumentContext(BETextDocumentRequest, completionHandler: (BETextDocumentContext) -> Void)](betextinput/requestdocumentcontext(_:completionhandler:).md)
+  Gathers context for the system about the current document.
 - [func requestTextContextForAutocorrection(completionHandler: (BETextDocumentContext) -> Void)](betextinput/requesttextcontextforautocorrection(completionhandler:).md)
-  Invoked by the system to gather context around the current selection.  Clients should generally include the setence that contains the current selection and include the previous sentence if the current selection is at a boundary.
-- [var automaticallyPresentEditMenu: Bool](betextinput/automaticallypresenteditmenu.md)
-  Controls whether the edit menu is allowed to be presented or should be suppressed.
-- [func requestPreferredArrowDirectionForEditMenu(completionHandler: (UIEditMenuArrowDirection) -> Void)](betextinput/requestpreferredarrowdirectionforeditmenu(completionhandler:).md)
-  Invoked by the system to gather context, including the client’s preference for how the edit menu should be positioned relative to the selected text.
-- [func systemWillPresentEditMenu(withAnimator: any UIEditMenuInteractionAnimating)](betextinput/systemwillpresenteditmenu(withanimator:).md)
-  Invoked by the system when it is about to present an edit menu with an animator.
-- [func systemWillDismissEditMenu(withAnimator: any UIEditMenuInteractionAnimating)](betextinput/systemwilldismisseditmenu(withanimator:).md)
-  Invoked by the system when it is about to dismiss an edit menu with an animator.
+  A method the text system calls to get extra information for autocorrection suggestions.
 
 
 ---

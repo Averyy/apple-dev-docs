@@ -21,7 +21,7 @@ func showDictionary(forTextInContext textWithContext: String, definingTextInRang
 
 - `textWithContext`: The text to supply a definition for, embedded in the sentence in which it appears in the text view’s document.
 - `range`: The range of the word to define in the context text.
-- `presentationRect`: The location of the text in the view, which the operating system uses to position the definition UI.
+- `presentationRect`: The location of the text in the view, which the system uses to position the definition UI.
 
 ## See Also
 

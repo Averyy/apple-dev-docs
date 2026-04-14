@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: enum
 
-An enumeration that identifies capabilities that a browser app can grant to its extension processes.
+Capabilities of a helper extension process.
 
 **Availability**:
 - iOS 17.4+
@@ -28,26 +28,36 @@ To grant a capability to an extension, call the `grantCapability(_:)` method for
 - **Networking extension**: [`grantCapability(_:)`](networkingprocess/grantcapability(_:).md)
 - **Rendering extension**: [`grantCapability(_:)`](renderingprocess/grantcapability(_:).md)
 
-These methods return a [`ProcessCapability.Grant`](processcapability/grant.md) object. When your extension no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md).
+These methods return a [`ProcessCapability.Grant`](processcapability/grant.md) object.
+
+When your extension no longer needs the capability, call [`invalidate()`](processcapability/grant/invalidate().md).
 
 ## Topics
 
-### Granting capabilities to browser extension processes
+### Granting capabilities
 - [ProcessCapability.background](processcapability/background.md)
-  The operating system permits the helper extension process to run in the background to finish work.
+  A process capability for work in the background.
 - [ProcessCapability.foreground](processcapability/foreground.md)
-  The operating system permits the helper extension process to run at foreground priority to work on behalf of the browser app.
+  A process capability for work in the foreground.
 - [ProcessCapability.suspended](processcapability/suspended.md)
-  The operating system permits the helper extension process to remain resident in a suspended state.
+  A process capability that grants residency in a suspended state.
 - [case mediaPlaybackAndCapture(environment: MediaEnvironment)](processcapability/mediaplaybackandcapture(environment:).md)
   The helper extension process may access media hardware required for media capture and playback.
 - [ProcessCapability.Grant](processcapability/grant.md)
-  An object that represents a granted capability.
+  An object that represents the provision of a capability.
 
 ## See Also
 
+- [class BEProcessCapability](beprocesscapability-76ijx.md)
+  Capabilities of a helper extension process.
 - [struct MediaEnvironment](mediaenvironment.md)
   An object that identifies a media playback or streaming environment.
+- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
+  An object that identifies a media playback or streaming environment.
+- [class BEWebContentFilter](bewebcontentfilter.md)
+  An object that represents a web content filter.
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+  Features of a rendering extension.
 
 
 ---

@@ -23,6 +23,7 @@ An element of a RealityKit scene to which you attach components that provide app
 ## Mentions
 
 - [Improving the Accessibility of RealityKit Apps](improving-the-accessibility-of-realitykit-apps.md)
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
 
 #### Overview
 

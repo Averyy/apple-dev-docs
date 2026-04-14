@@ -19,7 +19,12 @@ func invalidate()
 
 #### Discussion
 
-When you call this method, you tell the system your app no longer needs this extension process. If this is the last connection from the host process to the extension process, the system terminates the extension process.
+Call this method to signal to the system your app no longer needs the extension process. If this is the last connection from the system to the extension, the system ends the extension process.
+
+## See Also
+
+- [func makeLibXPCConnectionError() throws -> xpc_connection_t](beextensionprocess/makelibxpcconnectionerror.md)
+  Creates a new libXPC connection to the extension process.
 
 
 ---

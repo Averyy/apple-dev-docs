@@ -6,8 +6,8 @@
 Possible decisions in response to the notification forwarding permission prompt.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

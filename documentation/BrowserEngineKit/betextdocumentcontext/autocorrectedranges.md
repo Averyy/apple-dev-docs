@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Array of `NSRange` values, relative to the full context string made by combining the `contextBefore`, `markedText` (or `selectedText` if the marked text is empty), and the `contextAfter`.
+An array of ranges that identify text the system autocorrects, relative to the context string.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,10 @@ Array of `NSRange` values, relative to the full context string made by combining
 ```swift
 var autocorrectedRanges: [NSValue] { get set }
 ```
+
+#### Discussion
+
+The context string is the concatenation of the initializer parameters `contextBefore`, `markedText` (or `selectedText` when marked text is empty), and `contextAfter`. For more information, see [`init(attributedSelectedText:contextBefore:contextAfter:markedText:selectedRangeInMarkedText:)`](betextdocumentcontext/init(attributedselectedtext:contextbefore:contextafter:markedtext:selectedrangeinmarkedtext:).md).
 
 
 ---

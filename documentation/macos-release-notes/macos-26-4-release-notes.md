@@ -70,9 +70,9 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ##### Login
 
-###### Known Issues
+###### Resolved Issues
 
-- Touch ID might not be available to unlock the screen of a standard user account after updating to this release. This occurs when FileVault is enabled and a standard user account is logged in prior to any administrator logging in following the update.  (169743642) **Workaround:** An administrator user should sign in to the Mac before any standard users.
+- Fixed: Touch ID might not be available to unlock the screen of a standard user account after updating to this release. This occurs when FileVault is enabled and a standard user account is logged in prior to any administrator logging in following the update.  (169743642)
 
 ##### Macos Recovery
 
@@ -133,7 +133,7 @@ The macOS 26.4 SDK provides support to develop apps for Mac computers running Ta
 
 ## See Also
 
-- [macOS Tahoe 26.5 Beta Release Notes](macos-26_5-release-notes.md)
+- [macOS Tahoe 26.5 Beta 2 Release Notes](macos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [macOS Tahoe 26.3 Release Notes](macos-26_3-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-The time at which the scroll update occurred.
+The time at which a scroll update occurs.
 
 **Availability**:
 - iOS 17.4+
@@ -20,9 +20,9 @@ var timestamp: TimeInterval { get }
 ## See Also
 
 - [var phase: BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.property.md)
-  The point in the scrolling lifecycle represented by the scroll update.
+  A value that indicates the scroll update’s position in the scrolling life cycle.
 - [BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.enum.md)
-  The phase of a scroll update in a scroll gesture’s lifecycle.
+  Phases in the scroll gesture life cycle.
 
 
 ---

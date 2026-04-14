@@ -15,7 +15,7 @@ Creates a transaction coordinator from an XPC object.
 init(xpcRepresentation: xpc_object_t?) throws
 ```
 
-#### Overview
+#### Discussion
 
 This initializer can fail and throw an error if the `xpcRepresentation` doesn’t represent a transaction coordinator.
 
@@ -25,10 +25,8 @@ This initializer can fail and throw an error if the `xpcRepresentation` doesn’
 
 ## See Also
 
-- [init?(coder: NSCoder)](layerhierarchyhostingtransactioncoordinator/init(coder:).md)
-  Creates a transaction coordinator from an encoded representation.
 - [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md)
-  Creates a representation of the transaction coordinator you send to another process.
+  Creates a representation of the transaction coordinator that you send to another process.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Represents whether the event is repeating.
+A Boolean value that indicates whether the person holds a key down to repeat its key event.
 
 **Availability**:
 - iOS 17.4+
@@ -21,20 +21,14 @@ var isKeyRepeating: Bool { get }
 
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
-
-For example, a continued press and hold on a key may result in its repeated insertion.
-
-A Boolean value that indicates whether the person is holding the key down to repeat the key event.
-
 ## See Also
 
 - [var state: BEKeyEntry.KeyPressState](bekeyentry/state.md)
-  Type of the event, indicating whether it represents when the key is pressed or released.
+  A value that indicates if the key is pressed.
 - [BEKeyEntry.KeyPressState](bekeyentry/keypressstate.md)
-  An enumeration that represents the possible states of a key-press in a keyboard event.
+  Key-press states for a keyboard event.
 - [var timestamp: TimeInterval](bekeyentry/timestamp.md)
-  Time at which the key event occurred.
+  The time that the key event occurs.
 
 
 ---

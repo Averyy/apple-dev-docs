@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Indicates that a sibling scroll view in the view hierarchy acts as the scroll view’s container in the Document Object Model (DOM).
+Returns the scroll view that acts as the DOM container of the given scroll view.
 
 **Availability**:
 - iOS 17.4+
@@ -19,15 +19,15 @@ optional func parentScrollView(for scrollView: BEScrollView) -> BEScrollView?
 
 #### Return Value
 
-The scroll view that is logically the container of the provided scroll view. Return `nil` to get the default behavior of recursively searching the scroll view’s [`superview`](https://developer.apple.com/documentation/UIKit/UIView/superview) hierarchy for a containing scroll view.
+The scroll view that is the logical DOM container of the provided scroll view. Return `nil` to get the default behavior, where the system recursively searches the scroll view’s [`superview`](https://developer.apple.com/documentation/UIKit/UIView/superview) hierarchy for a containing scroll view.
 
-#### Overview
+#### Discussion
 
-To correctly render some websites, you might need to create [`BEScrollView`](bescrollview.md) objects that are siblings in the view hierarchy, but nested in the DOM. In these situations, implement `parentScrollView(for:)` in the delegate for the scroll view that is logically the contained scroll view in the DOM, and return the logically containing scroll view. The containing scroll view needs to be visually beneath the contained scroll view.
+To correctly render some websites, you may need to create [`BEScrollView`](bescrollview.md) objects that are siblings in the view hierarchy but nested in the DOM. In these situations, implement this method in the delegate of the logically contained scroll view, and return the logically containing scroll view. The containing scroll view must appear visually beneath the contained scroll view.
 
 ## Parameters
 
-- `scrollView`: The scroll view to return the logically containing scroll view for.
+- `scrollView`: The scroll view for which to return the logically containing scroll view.
 
 
 ---

@@ -31,7 +31,7 @@ let store = HKHealthStore()
 
 var body: some Scene {
     WindowGroup {
-        ContentView(enabled: $authenticated)
+        ContentView(enabled: $accessRequested)
             .healthDataAccessRequest(store: store,
                                      objectType: .visionPrescriptionType(),
                                      predicate: nil,
@@ -39,13 +39,13 @@ var body: some Scene {
 
                 switch result {
                 case .success(_):
-                    authenticated = true
+                    accessRequested = true
                 case .failure(let error):
                     // Handle the error here.
                     fatalError("*** An error occurred while requesting authentication: \(error) ***")
                 }
 
-                logger.debug("Authentication Complete.")
+                logger.debug("Authorization request complete.")
             }
     }
 }

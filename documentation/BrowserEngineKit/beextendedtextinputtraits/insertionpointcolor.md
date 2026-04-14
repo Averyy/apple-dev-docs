@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Customizes the color of the text cursor at the insertion point
+A color for the text cursor at the insertion point.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,13 @@ Customizes the color of the text cursor at the insertion point
 ```swift
 optional var insertionPointColor: UIColor? { get }
 ```
+
+## See Also
+
+- [var selectionHandleColor: UIColor?](beextendedtextinputtraits/selectionhandlecolor.md)
+  A color that customizes the look of the handle.
+- [var selectionHighlightColor: UIColor?](beextendedtextinputtraits/selectionhighlightcolor.md)
+  The highlight color of a rectangle.
 
 
 ---

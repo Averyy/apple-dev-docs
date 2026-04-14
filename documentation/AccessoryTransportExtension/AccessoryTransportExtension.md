@@ -61,11 +61,12 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
 - [class AccessorySecuritySession](accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
 ### Structures
+- [struct SecurityMessage](securitymessage.md)
+  A message carrying key material used to negotiate a secure channel between a host and an accessory.
 - [struct TransportMessage](transportmessage.md)
 ### Enumerations
 - [enum AccessoryTransport](accessorytransport.md)
   Supported transport types.
-- [enum SecurityMessage](securitymessage.md)
 
 
 ---

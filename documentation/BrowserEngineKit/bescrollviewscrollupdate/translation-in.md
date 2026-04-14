@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Returns the amount of scrolling in the scroll update in the given view’s coordinates.
+Returns the scroll displacement in the coordinate system of the view that the update represents.
 
 **Availability**:
 - iOS 17.4+
@@ -19,20 +19,20 @@ func translation(in view: UIView?) -> CGPoint
 
 #### Return Value
 
-The amount of scrolling in the scroll update in the specified view.
+The scroll displacement of the update in the specified view’s coordinate system.
 
-#### Overview
+#### Discussion
 
-If either the `x` or `y` value of the returned point is non-zero, then the scroll update represents a change large enough to be visible along that axis.
+A nonzero `x` or `y` value in the returned point indicates a displacement large enough to produce a visible change along that axis.
 
 ## Parameters
 
-- `view`: The view in which to find the scroll amount. Pass `nil` to get the amount in the window’s coordinate system.
+- `view`: The view that contains the coordinate system to express the displacement. Pass `nil` to get the displacement in the window’s coordinate system.
 
 ## See Also
 
 - [func location(in: UIView?) -> CGPoint](bescrollviewscrollupdate/location(in:).md)
-  Returns the coordinates of the scroll update in the given view’s bounds.
+  Returns the location of the scroll update in the coordinate system of the given view.
 
 
 ---

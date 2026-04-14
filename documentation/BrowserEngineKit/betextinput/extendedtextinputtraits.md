@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Object from which the BEExtendedTextInputTraits will be gathered.
+An object that customizes text-input appearance and behavior beyond the standard system traits.
 
 **Availability**:
 - iOS 17.4+
@@ -20,8 +20,8 @@ var extendedTextInputTraits: (any BEExtendedTextInputTraits)? { get }
 
 ## See Also
 
-- [func textStyling(at: UITextPosition, in: UITextStorageDirection) -> [NSAttributedString.Key : Any]?](betextinput/textstyling(at:in:).md)
-  Returns a dictionary containing NSAttributedString keys represeting appearance customizations.
+- [var isEditable: Bool](betextinput/iseditable.md)
+  A Boolean value that determines the ability to modify text.
 
 
 ---

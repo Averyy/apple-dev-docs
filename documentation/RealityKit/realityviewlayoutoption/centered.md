@@ -19,6 +19,10 @@ The option that centers the visual content within a flexible frame.
 static let centered: RealityViewLayoutOption
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 
 ---
 

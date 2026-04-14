@@ -31,6 +31,8 @@ This key is optional. The value is a string, with a default value of `TLSv1.2`.
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
 - [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
+- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 
 ---

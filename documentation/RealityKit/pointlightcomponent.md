@@ -19,6 +19,10 @@ A component that defines a point light source.
 struct PointLightComponent
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 The strength of a point light depends on a combination of its [`intensity`](pointlightcomponent/intensity.md) and [`attenuationRadius`](pointlightcomponent/attenuationradius.md). The default values for these properties make this light comparable to high-power streetlights, or outdoor floodlights.

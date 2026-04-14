@@ -12,6 +12,7 @@ The following table lists the rate limits for each endpoint in the production en
 
 | Endpoint | Rate limit (per second) |
 | --- | --- |
+| [`Finish Transaction`](finish-transaction.md) | 50 |
 | [`Get App Transaction Info`](get-app-transaction-info.md) | 50 |
 | [`Get Transaction Info`](get-transaction-info.md) | 50 |
 | [`Get Transaction History`](get-transaction-history.md) | 50 |

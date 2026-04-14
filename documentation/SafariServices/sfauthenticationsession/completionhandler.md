@@ -22,10 +22,12 @@ The custom callback URL should only be a custom URL scheme, and not a standard s
 
 ## See Also
 
-- [class SFSafariViewController](sfsafariviewcontroller.md)
-  An object that provides a visible standard interface for browsing the web.
 - [Importing data exported from Safari](importing-data-exported-from-safari.md)
   Transfer bookmarks, saved passwords, and other information between browsers.
+- [class SFSafariViewController](sfsafariviewcontroller.md)
+  An object that provides a visible standard interface for browsing the web.
+- [class SFSafariSettings](sfsafarisettings.md)
+  A class that provides your app access to several of Safari’s settings options.
 
 
 ---

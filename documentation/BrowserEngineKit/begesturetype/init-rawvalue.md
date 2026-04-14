@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Creates a gesture option of the specified underlying value.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

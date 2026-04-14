@@ -21,11 +21,6 @@ struct TransportMessage
 ### Instance Properties
 - [let data: Data](transportmessage/data.md)
 - [let sessionID: UUID](transportmessage/sessionid.md)
-### Type Aliases
-- [TransportMessage.Completion](transportmessage/completion.md)
-### Enumerations
-- [TransportMessage.Result](transportmessage/result.md)
-  Result of message transmission.
 
 ## Relationships
 

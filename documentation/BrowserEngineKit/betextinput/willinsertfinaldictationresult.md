@@ -18,13 +18,6 @@ Indicates the system is about to insert the final dictation result.
 func willInsertFinalDictationResult()
 ```
 
-## See Also
-
-- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
-  Inserts/replaces text for a dictation.
-- [func didInsertFinalDictationResult()](betextinput/didinsertfinaldictationresult.md)
-  Indicates system has inserted the final dictation result
-
 
 ---
 

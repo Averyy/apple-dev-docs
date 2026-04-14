@@ -90,10 +90,14 @@ To access values in an information property list programmatically, you use an in
   The minimum Transport Layer Security (TLS) version for network connections.
 - [NSExceptionRequiresForwardSecrecy](information-property-list/nsexceptionrequiresforwardsecrecy.md)
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
+- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 - [NSIncludesSubdomains](information-property-list/nsincludessubdomains.md)
   A Boolean value that indicates whether to extend the configuration to subdomains of the given domain.
 - [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
+- [NSRequiresNIAPTLSPackageVersion](information-property-list/nsrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS.
 - [OSAScriptingDefinition](information-property-list/osascriptingdefinition.md)
 - [ProvidesOneTimeCodes](information-property-list/providesonetimecodes.md)
   Allows this credential provider to show up in one-time-code text fields, to allowing filling time-based verification codes.

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Deletes text by the specified direction and granularity.  Current supported combinations include:
+Deletes the specified amount of text.
 
 **Availability**:
 - iOS 17.4+
@@ -24,31 +24,21 @@ func delete(in direction: UITextStorageDirection, to granularity: UITextGranular
 
 #### Discussion
 
-Character backward  = delete character forward = delete-forward word backward = option + delete word forward = option + delete-forward line end = cmd + delete line start = cmd + delete-forward paragraph  end = ctrl + K paragraph start = ctrl + fn + K
+The editing behavior-to-key combinations include:
 
-(On Apple keyboards, the delete-forward key is a combination of fn + delete)
-
-Deletes the specified amount of text.
+- **Character backward**: Delete
+- **Character forward**: Delete forward (Function + Delete)
+- **Word backward**: Option + Delete
+- **Word forward**: Option + Delete forward (Function + Delete)
+- **Line end**: Command + Delete
+- **Line start**: Command + Delete forward (Function + Delete)
+- **Paragraph end**: Control + K
+- **Paragraph start**: Control + Function + K
 
 ## Parameters
 
 - `direction`: The direction in which to delete text, relative to the base writing direction.
 - `granularity`: The amount of text to delete.
-
-## See Also
-
-- [var isEditable: Bool](betextinput/iseditable.md)
-  Reflects the ability to modify text
-- [func handleKeyEntry(BEKeyEntry, completionHandler: (BEKeyEntry, Bool) -> Void)](betextinput/handlekeyentry(_:completionhandler:).md)
-  Accepts key-entry events from the text system for the text view to process.
-- [func shiftKeyStateChanged(fromState: BEKeyModifierFlags, toState: BEKeyModifierFlags)](betextinput/shiftkeystatechanged(fromstate:tostate:).md)
-  Indicates a transition in shift state
-- [func text(in: UITextRange) -> String?](betextinput/text(in:).md)
-  Returns the text in the specified range.
-- [func offset(from: UITextPosition, to: UITextPosition) -> Int](betextinput/offset(from:to:).md)
-  Returns the number of UTF-16 characters between one text position and another text position.
-- [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](betextinput/setbasewritingdirection(_:for:).md)
-  Sets the base writing direction for a specified range of text in a document.
 
 
 ---

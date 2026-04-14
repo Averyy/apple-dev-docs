@@ -18,6 +18,11 @@ Moves the cursor in the specified directions, such as in response to an arrow ke
 func move(in direction: UITextLayoutDirection)
 ```
 
+## See Also
+
+- [func move(in: UITextStorageDirection, by: UITextGranularity)](betextselectiondirectionnavigation/move(in:by:).md)
+  Moves the cursor in the specified directions by granularity, in response to different key combinations:
+
 
 ---
 

@@ -27,6 +27,7 @@ A view that enables you to display an AR experience with RealityKit.
 - [Designing scene hierarchies for efficient physics simulation](designing-scene-hierarchies-for-efficient-physics-simulation.md)
 - [Implementing systems for entities in a scene](implementing-systems-for-entities-in-a-scene.md)
 - [Loading remote assets in multiplayer apps](loading-remote-assets.md)
+- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
 - [Using Metal performance shaders to create custom postprocess effects](using-metal-performance-shaders-to-create-custom-postprocess-effects.md)
 
 #### Overview

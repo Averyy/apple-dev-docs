@@ -17,7 +17,7 @@ Displays inline text replacements for the current selection.
 func showReplacements(forText text: String)
 ```
 
-#### Overview
+#### Discussion
 
 Call this method to present system UI for suggesting text replacements, for example, when your browser text view receives [`promptForReplace(_:)`](berespondereditactions/promptforreplace(_:).md).
 

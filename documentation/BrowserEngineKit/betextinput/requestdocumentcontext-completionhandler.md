@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Gathers context about the current document for the system
+Gathers context for the system about the current document.
 
 **Availability**:
 - iOS 17.4+
@@ -17,6 +17,13 @@ Gathers context about the current document for the system
 ```swift
 func requestDocumentContext(_ request: BETextDocumentRequest) async -> BETextDocumentContext
 ```
+
+## See Also
+
+- [func requestTextContextForAutocorrection(completionHandler: (BETextDocumentContext) -> Void)](betextinput/requesttextcontextforautocorrection(completionhandler:).md)
+  A method the text system calls to get extra information for autocorrection suggestions.
+- [func requestTextRects(for: String, withCompletionHandler: ([UITextSelectionRect]) -> Void)](betextinput/requesttextrects(for:withcompletionhandler:).md)
+  Gathers context for the presentation of a text-related user interface.
 
 
 ---

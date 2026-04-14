@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The scroll gesture changed the scroll location.
+A scroll phase that indicates the gesture changes scroll location.
 
 **Availability**:
 - iOS 17.4+

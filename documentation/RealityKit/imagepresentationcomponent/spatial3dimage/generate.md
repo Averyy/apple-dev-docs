@@ -11,7 +11,7 @@ Creates a 3D representation of the image if one does not already exist.
 ## Declaration
 
 ```swift
-@abi(func generateNonisolatedNonsending() async throws) nonisolated(nonsending) func generate() async throws
+@abi(final func generateNonisolatedNonsendingFinal() async throws) nonisolated(nonsending) final func generate() async throws
 ```
 
 #### Discussion

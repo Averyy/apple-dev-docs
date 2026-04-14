@@ -23,13 +23,15 @@ class LayerHierarchyHostingView
 
 #### Overview
 
-Set the view’s [`handle`](layerhierarchyhostingview/handle.md) to a [`LayerHierarchyHandle`](layerhierarchyhandle.md) you get from the other process. When you invalidate the associated layer hierarchy, you need to stop displaying the view.
+To connect a view hierarchy in another process, create an instance of this class and set its [`handle`](layerhierarchyhostingview/handle.md) to a [`LayerHierarchyHandle`](layerhierarchyhandle.md) from the other process.
+
+> ❗ **Important**: If you invalidate the associated layer hierarchy, stop displaying the view.
 
 ## Topics
 
 ### Identifying remote layer hierarchy
 - [var handle: LayerHierarchyHandle?](layerhierarchyhostingview/handle.md)
-  A handle that refers to a layer hierarchy in another process.
+  A reference to a layer hierarchy in another process.
 
 ## Relationships
 
@@ -68,9 +70,9 @@ Set the view’s [`handle`](layerhierarchyhostingview/handle.md) to a [`LayerHie
 - [class LayerHierarchy](layerhierarchy.md)
   An object that holds a reference to layers rendered in another process’s view.
 - [class LayerHierarchyHostingTransactionCoordinator](layerhierarchyhostingtransactioncoordinator.md)
-  Synchronizes updates to views and layers in different processes.
+  A class that synchronizes updates to views and layers in different processes.
 - [class LayerHierarchyHandle](layerhierarchyhandle.md)
-  A reference to a layer hierarchy that you share between processes.
+  A reference to a layer hierarchy that your app shares between processes.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Creates a range for a text selection that also specifies a direction.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -14,6 +16,15 @@
 ```swift
 init(offset: Int, length: Int)
 ```
+
+#### Discussion
+
+The sign of the `length` argument determines the selection’s direction from the `offset` argument.
+
+## See Also
+
+- [init()](bedirectionaltextrange/init.md)
+  Creates an empty directional text range.
 
 
 ---

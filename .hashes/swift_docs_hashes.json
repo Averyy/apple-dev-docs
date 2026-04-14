@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-04-10T08:48:08.056606",
+    "last_updated": "2026-04-14T08:42:26.873565",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -26,13 +26,13 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/MemorySafety.md": "993dcdbd22b2edf38488d19e57f33659692c2471874e56f0e338465c95003853",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Methods.md": "59fc2060e01f69999848b5df6e99a79c334de7d3f4607210769ff55dfd5db66f",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/NestedTypes.md": "7e59bfa999615c8938f047888c831312ec8ecd5ac880c55c40493990fada9b88",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/OpaqueTypes.md": "c139890c22385d59d8ba1e663ccd707c8e285e9cbe4d2bdfe25fcd59420a1f3b",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/OpaqueTypes.md": "752815b326d39b714bd83d517f2bd062f09c9d3ba8ebc3dd1d74ce1c6e718493",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/OptionalChaining.md": "d67c0a49b54100c2bd2fd9356ed9f8d6af6ff5997da6e7cd7df7916a40006711",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Properties.md": "875c5268895f3abe65b67d73ac9950b603ca68edb25e6e890ad613df08f6c7e0",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Protocols.md": "9b4b61d89e965d2a2733729b935bd69f214be52dbd62c0a135554e45f16d19a4",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/StringsAndCharacters.md": "2bd491271377eedabedfddebb2cece8f292009759ba9836bc43d43ee44634385",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Subscripts.md": "54844cf530c3325708028e1cf88d94f885c3658ec6316f869421d5cbba9b939a",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "040d4e572b03d1470bf5a0fe199cae13e2c1c679bc1ab577b35056d5b6ae3a96",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/TheBasics.md": "66c05a7fb4cf28b1c03c73c78297907f4804de30b955d7e8320521f284b034f4",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/TypeCasting.md": "2271c6b1584720d2d44161201c8bee190ba7224b709d3059e50fb00c4a312e55",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/AboutTheLanguageReference.md": "a8f697ca399b79642cb724de1512fe439ff3878054515abe36e5f77a8d0f7a8c",
     "swiftlang/swift-book:TSPL.docc/ReferenceManual/Attributes.md": "edcb3e9ba335a6050c631b2ffe9757625c986a126c9ae76cdbb65052ffcb0655",

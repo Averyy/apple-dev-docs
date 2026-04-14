@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The scroll gesture came to an end.
+A scroll phase that indicates the scroll gesture has ended.
 
 **Availability**:
 - iOS 17.4+

@@ -22,7 +22,11 @@ protocol RestrictedSandboxAppliable
 
 #### Overview
 
-Call [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) to enter the restricted sandbox, indicating which revision of the sandbox restrictions to apply. In revision 1, corresponding to [`RestrictedSandboxRevision.revision1`](restrictedsandboxrevision/revision1.md), additional restrictions affect the web content extension only. For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
+Call [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) to enter the restricted sandbox, indicating which revision of the sandbox restrictions to apply.
+
+In the first revision ([`RestrictedSandboxRevision.revision1`](restrictedsandboxrevision/revision1.md)), additional restrictions affect the web content extension only.
+
+For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
 
 ## Topics
 

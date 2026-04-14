@@ -20,6 +20,10 @@ The rotation of the entity relative to its parent.
 @preconcurrency var orientation: simd_quatf { get set }
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Discussion
 
 This value is the entity’s rotation relative to its parent. To get the world-space orientation of the entity, use [`orientation(relativeTo:)`](hastransform/orientation(relativeto:).md), passing `nil` as the reference entity.

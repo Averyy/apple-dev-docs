@@ -19,6 +19,10 @@ The option that applies the default layout behavior of `RealityView`, where the 
 static let flexible: RealityViewLayoutOption
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 
 ---
 

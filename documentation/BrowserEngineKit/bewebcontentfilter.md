@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-An object that represents a web content filter
+An object that represents a web content filter.
 
 **Availability**:
 - iOS 26.2+
@@ -17,11 +17,14 @@ class BEWebContentFilter
 
 ## Topics
 
-### Instance Methods
+### Managing URL blocking
 - [func allow(URL, completionHandler: (Bool, (any Error)?) -> Void)](bewebcontentfilter/allow(_:completionhandler:).md)
+  Adds a previously blocked URL to the web content filter’s allow list.
+### Evaluating URLs
 - [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](bewebcontentfilter/evaluateurl(_:completionhandler:).md)
-### Type Properties
+  Determines whether to block a URL.
 - [class var shouldEvaluateURLs: Bool](bewebcontentfilter/shouldevaluateurls.md)
+  Determines whether the built-in web content filter is active.
 
 ## Relationships
 
@@ -34,6 +37,19 @@ class BEWebContentFilter
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [enum ProcessCapability](processcapability.md)
+  Capabilities of a helper extension process.
+- [class BEProcessCapability](beprocesscapability-76ijx.md)
+  Capabilities of a helper extension process.
+- [struct MediaEnvironment](mediaenvironment.md)
+  An object that identifies a media playback or streaming environment.
+- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
+  An object that identifies a media playback or streaming environment.
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+  Features of a rendering extension.
 
 
 ---

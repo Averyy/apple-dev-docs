@@ -35,8 +35,10 @@ To alert for a notification, present it on screen, play a sound, or trigger a ha
 ### Structures
 - [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
 ### Initializers
-- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:sound:).md)
+- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, isIncomingCall: Bool, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:isincomingcall:sound:).md)
 ### Instance Properties
+- [var isIncomingCall: Bool](alertingcontext/isincomingcall.md)
+  A flag to indicate whether the notification represents an incoming call.
 - [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
   Indicates that this alert may play a sound. `nil` means there is no sound.
 

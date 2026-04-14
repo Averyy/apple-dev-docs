@@ -29,15 +29,6 @@ func setSelection(from: CGPoint, to: CGPoint, gesture: BEGestureType, state: UIG
 - `gesture`: The gesture that changes the selection.
 - `state`: The state of the gesture.
 
-## See Also
-
-- [func updateCurrentSelection(to: CGPoint, from: BEGestureType, in: UIGestureRecognizer.State)](betextinput/updatecurrentselection(to:from:in:).md)
-  Indicates the `point` the text interaction gesture is tracking has changed
-- [func adjustSelectionBoundary(to: CGPoint, touchPhase: BESelectionTouchPhase, baseIsStart: Bool, flags: BESelectionFlags)](betextinput/adjustselectionboundary(to:touchphase:baseisstart:flags:).md)
-  Adjusts the selection’s start or end boundary specified by `boundaryIsStart` to the `point`
-- [func textInteractionGesture(BEGestureType, shouldBeginAt: CGPoint) -> Bool](betextinput/textinteractiongesture(_:shouldbeginat:).md)
-  Returns whether a gesture with the given `gestureType` should begin for the given `point`
-
 
 ---
 

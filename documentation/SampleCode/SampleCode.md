@@ -1281,7 +1281,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Creating Safari Web Inspector extensions](../SafariServices/creating-safari-web-inspector-extensions.md)
   Learn how to make custom Safari Web Inspector extensions.
 - [Developing a browser app that uses an alternative browser engine](../BrowserEngineKit/developing-a-browser-app-that-uses-an-alternative-browser-engine.md)
-  Create a web browser app and associated extensions.
+  Create a browser app and associated extensions.
 - [Developing a Safari Web Extension](../SafariServices/developing-a-safari-web-extension.md)
   Customize and enhance web pages by building a Safari web extension.
 - [Messaging a Web Extension’s Native App](../SafariServices/messaging-a-web-extension-s-native-app.md)

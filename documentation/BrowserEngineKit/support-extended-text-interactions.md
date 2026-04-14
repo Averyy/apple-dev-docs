@@ -8,7 +8,7 @@ Share content, add replacement shortcuts, and perform other rich actions in brow
 
 When your browser’s text view conforms to the [`BETextInput`](betextinput.md) protocol, it automatically also conforms to [`BEResponderEditActions`](berespondereditactions.md). This protocol adds a collection of optional action methods your text view can implement to support extended text interactions.
 
-To get the operating system’s standard behavior for an interaction, add a [`BETextInteraction`](betextinteraction.md) to your custom view’s [`textInputView`](betextinput/textinputview.md), and call the interaction’s methods in response to `BEResponderEditActions`.
+To get the system’s standard behavior for an interaction, add a [`BETextInteraction`](betextinteraction.md) to your custom view’s [`textInputView`](betextinput/textinputview.md), and call the interaction’s methods in response to `BEResponderEditActions`.
 
 Additionally, implement [`canPerformAction(_:withSender:)`](betextinput/canperformaction(_:withsender:).md), to return `true` in situations where the interaction is available, but `false` otherwise.
 
@@ -33,7 +33,7 @@ class MyBrowserTextView: UIView, BETextInput, BEResponderEditActions {
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
   Process keyboard interactions asynchronously in your iOS browser app’s text view.
 - [protocol BETextInput](betextinput.md)
-  A protocol to which text views conform to asynchronously integrate with the text system.
+  A protocol for asynchronous text views that integrate with the text system.
 - [protocol BETextInputDelegate](betextinputdelegate.md)
   A delegate protocol that a browser text view uses to notify the text system of changes.
 

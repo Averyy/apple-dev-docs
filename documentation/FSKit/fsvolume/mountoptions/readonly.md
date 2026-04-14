@@ -6,7 +6,7 @@
 An option to request a read-only mount.
 
 **Availability**:
-- macOS 26.0+
+- macOS 26.4+
 
 ## Declaration
 

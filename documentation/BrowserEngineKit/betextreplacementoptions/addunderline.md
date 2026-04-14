@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
+An option that processes text by adding an underline to its visual style.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

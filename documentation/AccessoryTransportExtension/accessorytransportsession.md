@@ -27,6 +27,8 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
 ### Handling session events
 - [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
   A protocol that defines methods for handling transport session events.
+- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+  An enumeration of data events that the transport extension receives.
 ### Managing the session life cycle
 - [func cancel(error: AccessoryTransportSession.Error?)](accessorytransportsession/cancel(error:).md)
   Cancels the session.

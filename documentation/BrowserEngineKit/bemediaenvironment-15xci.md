@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
+An object that identifies a media playback or streaming environment.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -13,6 +15,10 @@
 @objc
 (BEMediaEnvironment) class BEMediaEnvironment
 ```
+
+#### Overview
+
+See [`BEMediaEnvironment`](bemediaenvironment-n91a.md).
 
 ## Relationships
 
@@ -25,6 +31,19 @@
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [enum ProcessCapability](processcapability.md)
+  Capabilities of a helper extension process.
+- [class BEProcessCapability](beprocesscapability-76ijx.md)
+  Capabilities of a helper extension process.
+- [struct MediaEnvironment](mediaenvironment.md)
+  An object that identifies a media playback or streaming environment.
+- [class BEWebContentFilter](bewebcontentfilter.md)
+  An object that represents a web content filter.
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+  Features of a rendering extension.
 
 
 ---

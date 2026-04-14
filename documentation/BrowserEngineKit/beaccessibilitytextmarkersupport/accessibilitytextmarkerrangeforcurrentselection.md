@@ -19,7 +19,7 @@ The text marker range of the current selection.
 func accessibilityTextMarkerRangeForCurrentSelection() -> BEAccessibilityTextMarker.Range?
 ```
 
-#### Overview
+#### Discussion
 
 If there’s no text selected in the element, return `nil`.
 

@@ -23,7 +23,7 @@ func invalidate()
 ## See Also
 
 - [var isValid: Bool](processcapability/grant/isvalid.md)
-  A Boolean that indicates whether the operating system has granted the capability to the browser extension process.
+  A Boolean value that indicates whether the system honors a granted capability for the browser extension process.
 
 
 ---

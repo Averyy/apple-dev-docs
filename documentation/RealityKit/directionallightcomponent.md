@@ -19,6 +19,10 @@ A component that defines a directional light source.
 struct DirectionalLightComponent
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 A directional light shines in the entity’s forward direction `[0, 0, -1]`.

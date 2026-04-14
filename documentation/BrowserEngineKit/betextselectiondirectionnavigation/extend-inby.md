@@ -22,6 +22,11 @@ func extend(in direction: UITextStorageDirection, by granularity: UITextGranular
 
 Word = shift + option + left/right paragraph = shift + option + up/down line = shift + command + left/right document = shift + command + up/down
 
+## See Also
+
+- [func extend(in: UITextLayoutDirection)](betextselectiondirectionnavigation/extend(in:).md)
+  Extends text selection in the specified directions, such as in response to an arrow key press while shift is held.
+
 
 ---
 

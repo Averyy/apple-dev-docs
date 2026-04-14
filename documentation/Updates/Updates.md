@@ -53,8 +53,6 @@ View major documentation updates and highlights from WWDC, browse ongoing update
   Learn about important changes in Background Tasks.
 - [Bundle Resources updates](bundleresources.md)
   Learn about important changes to Bundle Resources.
-- [BrowserEngineKit updates](browserenginekit.md)
-  Learn about important changes in BrowserEngineKit.
 - [CallKit updates](callkit.md)
   Learn about important changes to CallKit.
 - [ContactsUI updates](contactsui.md)

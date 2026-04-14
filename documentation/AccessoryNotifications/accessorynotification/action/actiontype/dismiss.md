@@ -6,8 +6,8 @@
 An action type that dismisses a notification.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

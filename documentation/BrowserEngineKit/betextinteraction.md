@@ -25,7 +25,7 @@ class BETextInteraction
 
 #### Overview
 
-Add a `BETextInteraction` object to your browser text view’s [`textInputView`](betextinput/textinputview.md). When your browser text view receives text-interaction actions, call the methods on this object to invoke the standard operating system behavior.
+Add a `BETextInteraction` object to your browser text view’s [`textInputView`](betextinput/textinputview.md). When your browser text view receives text-interaction actions, call the methods on this object to invoke the standard system behavior.
 
 ## Topics
 
@@ -63,7 +63,7 @@ Add a `BETextInteraction` object to your browser text view’s [`textInputView`]
 - [func translate(text: String, from: CGRect)](betextinteraction/translate(text:from:).md)
   Presents a translation of the text.
 - [func transliterateChinese(forText: String)](betextinteraction/transliteratechinese(fortext:).md)
-  Converts the text between traditional and simplified Chinese.
+  Converts text between traditional and simplified Chinese.
 ### UI updates
 - [func editabilityChanged()](betextinteraction/editabilitychanged.md)
   Tells the system that the document’s editability status has changed.
@@ -91,6 +91,7 @@ Add a `BETextInteraction` object to your browser text view’s [`textInputView`]
 - [protocol BEResponderEditActions](berespondereditactions.md)
   A set of methods that defines extended interactions in browser text views.
 - [enum BEGestureType](begesturetype.md)
+  The types of touch gestures that operate on input text.
 - [protocol BEResponderEditActions](berespondereditactions.md)
   A set of methods that defines extended interactions in browser text views.
 

@@ -20,6 +20,10 @@ A component that defines the scale, rotation, and translation of an entity.
 struct Transform
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 An entity acquires a [`Transform`](transform.md) component, as well as a set of methods for manipulating the transform, by adopting the [`HasTransform`](hastransform.md) protocol. This is true for all entities, because the [`Entity`](entity.md) base class adopts the protocol.

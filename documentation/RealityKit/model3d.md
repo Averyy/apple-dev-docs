@@ -14,6 +14,10 @@ A view that asynchronously loads and displays a 3D model.
 struct Model3D<Content> where Content : View
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 #### Overview
 
 Use `Model3D` to embed a 3D model from a USD file or Reality file in your SwiftUI app.

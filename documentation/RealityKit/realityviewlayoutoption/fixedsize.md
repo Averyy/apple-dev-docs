@@ -19,6 +19,10 @@ The option that fixes the size of the frame to equal the size of the visual cont
 static let fixedSize: RealityViewLayoutOption
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 
 ---
 

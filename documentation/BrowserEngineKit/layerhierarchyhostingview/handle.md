@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-A handle that refers to a layer hierarchy in another process.
+A reference to a layer hierarchy in another process.
 
 **Availability**:
 - iOS 17.4+

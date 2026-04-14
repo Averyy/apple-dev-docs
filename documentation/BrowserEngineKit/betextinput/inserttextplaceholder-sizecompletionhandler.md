@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Inserts a placeholder object to reserve visual space during text input. If `size.height` is less than or equal to zero, then the placeholder is inline and line height. If `size.height` is greather than zero, then the placeholder is treated as a paragraph of height `size.height`.
+Inserts a placeholder object to reserve visual space during text input.
 
 **Availability**:
 - iOS 17.4+
@@ -18,10 +18,9 @@ Inserts a placeholder object to reserve visual space during text input. If `size
 func insertTextPlaceholder(size: CGSize) async -> UITextPlaceholder
 ```
 
-## See Also
+#### Discussion
 
-- [func remove(UITextPlaceholder, willInsertText: Bool, completionHandler: () -> Void)](betextinput/remove(_:willinserttext:completionhandler:).md)
-  Removes a placeholder object from the text input view.
+If `size.height` is less than or equal to zero, then the placeholder is inline and line height. If `size.height` is greater than zero, then the placeholder is a paragraph of height `size.height`.
 
 
 ---

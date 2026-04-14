@@ -39,6 +39,8 @@ enum GroupChatEvent
   Participants have been removed from a group chat.
 - [RCSService.GroupChatParticipantsRemovedEvent](rcsservice/groupchatparticipantsremovedevent.md)
   Event triggered when participants are removed from a group.
+### Enumeration Cases
+- [case subjectInvalidated(RCSService.GroupChatSubjectInvalidatedEvent)](rcsservice/groupchatevent/subjectinvalidated(_:).md)
 
 ## Relationships
 

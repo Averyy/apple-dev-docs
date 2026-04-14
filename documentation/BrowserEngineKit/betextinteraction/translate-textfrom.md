@@ -20,12 +20,12 @@ func translate(text: String, from presentationRect: CGRect)
 ## Parameters
 
 - `text`: The text to translate.
-- `presentationRect`: The area in the text input view in which the text appears, which the operating system uses to locate the translation UI.
+- `presentationRect`: The area in the text input view in which the text appears, which the system uses to locate the translation UI.
 
 ## See Also
 
 - [func transliterateChinese(forText: String)](betextinteraction/transliteratechinese(fortext:).md)
-  Converts the text between traditional and simplified Chinese.
+  Converts text between traditional and simplified Chinese.
 
 
 ---

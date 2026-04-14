@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Customizes the color of the selection highlight rect
+The highlight color of a rectangle.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,13 @@ Customizes the color of the selection highlight rect
 ```swift
 optional var selectionHighlightColor: UIColor? { get }
 ```
+
+## See Also
+
+- [var insertionPointColor: UIColor?](beextendedtextinputtraits/insertionpointcolor.md)
+  A color for the text cursor at the insertion point.
+- [var selectionHandleColor: UIColor?](beextendedtextinputtraits/selectionhandlecolor.md)
+  A color that customizes the look of the handle.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: struct
 
-An object that represents a running browser networking extension process.
+A process that manages network connections in an app extension.
 
 **Availability**:
 - iOS 17.4+
@@ -22,7 +22,7 @@ struct NetworkingProcess
 
 #### Overview
 
-Your browser app may have one or more networking extensions, which each need a separate bundle identifier. Your browser can launch one instance of each of its networking extensions.
+A browser app can have one or more networking extensions, each of which need a separate bundle identifier. The app can launch only one instance of each networking extension.
 
 ## Topics
 
@@ -30,7 +30,7 @@ Your browser app may have one or more networking extensions, which each need a s
 - [init(bundleIdentifier: String?, onInterruption: () -> Void) async throws](networkingprocess/init(bundleidentifier:oninterruption:).md)
   Launches a networking extension process asynchronously.
 - [func invalidate()](networkingprocess/invalidate.md)
-  Stops the extension process.
+  Stops the networking process.
 ### Creating XPC connections
 - [func makeLibXPCConnection() throws -> xpc_connection_t](networkingprocess/makelibxpcconnection.md)
   Creates a new XPC connection to the extension process.
@@ -43,9 +43,9 @@ Your browser app may have one or more networking extensions, which each need a s
 ## See Also
 
 - [struct WebContentProcess](webcontentprocess.md)
-  An object that represents a running web content extension process.
+  A process that manages webpage content in an app extension.
 - [struct RenderingProcess](renderingprocess.md)
-  An object that represents a running browser rendering extension process.
+  A process that manages rendering in an app extension.
 
 
 ---

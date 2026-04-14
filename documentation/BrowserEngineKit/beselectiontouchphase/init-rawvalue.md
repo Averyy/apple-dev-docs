@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Creates a text selection phase with the specified underlying value.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

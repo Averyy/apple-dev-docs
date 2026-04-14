@@ -17,7 +17,7 @@ case invalidNotificationResponse
 
 #### Discussion
 
-The [`AccessoryNotificationManaging`](accessorynotificationmanaging.md) protocol’s [`sendResponse(_:for:)`](accessorynotificationmanaging/sendresponse(_:for:).md) method can throw an error of this type.
+The `AccessoryNotificationManaging` protocol’s `AccessoryNotificationManaging/sendResponse(_:for:)` method can throw an error of this type.
 
 ## See Also
 

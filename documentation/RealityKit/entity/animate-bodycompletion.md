@@ -18,6 +18,10 @@
 @preconcurrency static func animate(_ animation: Animation, body: () -> Void, completion: (() -> Void)? = nil)
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 
 ---
 

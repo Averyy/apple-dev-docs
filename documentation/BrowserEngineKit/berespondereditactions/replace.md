@@ -17,9 +17,9 @@ Removes the selected text and inputs the chosen replacement text.
 optional func replace(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To invoke the standard operating system behavior for replacing text, call [`textInput(_:deferReplaceTextActionToSystem:)`](betextinputdelegate/textinput(_:deferreplacetextactiontosystem:).md) in your implementation of this method.
+To invoke the standard system behavior for replacing text, call [`textInput(_:deferReplaceTextActionToSystem:)`](betextinputdelegate/textinput(_:deferreplacetextactiontosystem:).md) in your implementation of this method.
 
 ## Parameters
 

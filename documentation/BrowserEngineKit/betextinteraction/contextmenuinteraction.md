@@ -16,7 +16,7 @@ An interaction you use to work with the text view’s context menu.
 var contextMenuInteraction: UIContextMenuInteraction { get }
 ```
 
-#### Overview
+#### Discussion
 
 Set the context menu interaction’s [`delegate`](https://developer.apple.com/documentation/UIKit/UIContextMenuInteraction/delegate) by supplying a value for [`contextMenuInteractionDelegate`](betextinteraction/contextmenuinteractiondelegate.md).
 

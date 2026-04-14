@@ -24,7 +24,7 @@ protocol BETextInputDelegate
 
 #### Overview
 
-You don’t conform to `BETextInputDelegate` in your classes, or implement its methods. The operating system creates objects that conform to this protocol and sets them as the [`asyncInputDelegate`](betextinput/asyncinputdelegate.md) on your browser’s custom text views.
+You don’t conform to `BETextInputDelegate` in your classes, or implement its methods. The system creates objects that conform to this protocol and sets them as the [`asyncInputDelegate`](betextinput/asyncinputdelegate.md) on your browser’s custom text views.
 
 ## Topics
 
@@ -35,7 +35,7 @@ You don’t conform to `BETextInputDelegate` in your classes, or implement its m
   Tells the system when the selection has changed in the document.
 ### Deferring actions to the text system
 - [func shouldDeferEventHandlingToSystem(for: any BETextInput, context: BEKeyEntryContext) -> Bool](betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).md)
-  Defers the key event to the system and returns whether the key event was handled.
+  Notify the text system that your web browser’s custom text view isn’t handling key events.
 - [func textInput(any BETextInput, deferReplaceTextActionToSystem: Any)](betextinputdelegate/textinput(_:deferreplacetextactiontosystem:).md)
   Defers a replace text action to the ssytem.
 ### Providing completion suggestions
@@ -52,7 +52,7 @@ You don’t conform to `BETextInputDelegate` in your classes, or implement its m
 - [Supporting extended text interactions](support-extended-text-interactions.md)
   Share content, add replacement shortcuts, and perform other rich actions in browser text views.
 - [protocol BETextInput](betextinput.md)
-  A protocol to which text views conform to asynchronously integrate with the text system.
+  A protocol for asynchronous text views that integrate with the text system.
 
 
 ---

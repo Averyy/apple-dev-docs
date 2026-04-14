@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-If different than the text input view, one can return a container view here for selection views that draw *below* text. Includes the selection highlight view. If this is unimplemented or nil is returned, views are to be installed onto the text input view.
+An optional view you supply to draw text selection below the text.
 
 **Availability**:
 - iOS 26.0+
@@ -16,6 +16,17 @@ If different than the text input view, one can return a container view here for 
 ```swift
 optional var selectionContainerViewBelowText: UIView? { get }
 ```
+
+#### Discussion
+
+The default value is `nil`. If you supply a view to this property, the framework layers the supplied view below [`textInputView`](betextinput/textinputview.md) to render text selection below the text, and includes text-selection handles in the rendering.
+
+If you implement text selection using a [`textInputView`](betextinput/textinputview.md) subview instead, leave the value `nil`.
+
+## See Also
+
+- [var selectionContainerViewAboveText: UIView?](betextinput/selectioncontainerviewabovetext.md)
+  An optional view you supply to draw text selection above the text.
 
 
 ---

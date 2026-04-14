@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The caps lock is engaged.
+A flag that indicates that the Caps Lock key is engaged.
 
 **Availability**:
 - iOS 17.4+
@@ -20,9 +20,9 @@ case capsLock
 ## See Also
 
 - [BEKeyModifierFlags.shift](bekeymodifierflags/shift.md)
-  The shift key is pressed down.
+  A flag that indicates that the Shift key is depressed.
 - [BEKeyModifierFlags.none](bekeymodifierflags/none.md)
-  There aren’t any active key modifiers.
+  A flag that indicates no active key modifiers.
 
 
 ---

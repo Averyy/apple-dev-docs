@@ -295,7 +295,7 @@ func handleKeyExchange(keyMaterial: AccessorySecurity.Crypto.KeyMaterial) {
 
 #### Implement an Extension to Relay Encrypted Notifications
 
-To send the encrypted data to your accessory, use an [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension). Implement the doc://com.apple.documentation/documentation/accessorytransportextension/accessorytransportsession/eventhandler/dataeventhandler(event:) method in your event processing code, and the system calls your handler to transmit encrypted data for each message payload:
+To send the encrypted data to your accessory, use an [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension). Implement the [`dataEventHandler(event:)`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSession/EventHandler/dataEventHandler(event:)) method in your event processing code, and the system calls your handler to transmit encrypted data for each message payload:
 
 ```swift
 class TransportEventHandler: AccessoryTransportSession.EventHandler {
@@ -402,7 +402,7 @@ To confirm that the accessory has received and alerted for a notification, the a
 The accessory starts by transmitting the information over Bluetooth to your transport extension, and your app’s extensions use doc://com.apple.documentation/documentation/accessorytransportextension/accessorytransportsession/senddata(_:featureid:) along with the following API, depending on the type of status:
 
 - Confirmation of alerting success (see `AlertCoordinating`). Your extension calls `AlertCoordinating/complete(didAlert:)` or `AlertCoordinating/fail(_:)`, depending on the outcome.
-- A person’s interaction with a notification (see [`AccessoryNotificationManaging`](accessorynotificationmanaging.md) and [`AccessoryNotification`](accessorynotification.md)). For example, the accessory reports whether the person invokes the notification’s default action by tapping the notification ([`AccessoryNotification.Action`](accessorynotification/action.md)), or whether the person provides text back to the app ([`userText`](notificationresponse/usertext.md)), for text-based notifications.
+- A person’s interaction with a notification (see `AccessoryNotificationManaging` and [`AccessoryNotification`](accessorynotification.md)). For example, the accessory reports whether the person invokes the notification’s default action by tapping the notification ([`AccessoryNotification.Action`](accessorynotification/action.md)), or whether the person provides text back to the app ([`userText`](notificationresponse/usertext.md)), for text-based notifications.
 
 #### Handle Notification Updates and Removals
 

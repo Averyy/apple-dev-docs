@@ -25,7 +25,7 @@ If your widget isn’t a good fit for StandBy or CarPlay, consider marking the a
 
 In CarPlay, the way your widget links to your app depends on the specific context of using your app in a vehicle:
 
-- If the vehicle  supports touch input and your app supports CarPlay integration, tapping the widget or one of its buttons opens the app’s CarPlay template.
+- If the vehicle supports touch input and your app supports CarPlay integration, tapping the widget opens the app’s CarPlay template, and tapping a button or toggle performs its action.
 - If the vehicle supports touch input but your app doesn’t integrate with CarPlay, people can’t open your app from the widget and the system dims it to indicate that a tap doesn’t have an effect.
 - If the vehicle doesn’t support touch input, people can’t open your app from the widget.
 

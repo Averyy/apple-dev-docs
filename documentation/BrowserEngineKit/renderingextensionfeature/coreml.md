@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
+A rendering extension feature that enables the CoreML framework.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+

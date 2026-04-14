@@ -6,8 +6,8 @@
 A textual representation of the decision.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

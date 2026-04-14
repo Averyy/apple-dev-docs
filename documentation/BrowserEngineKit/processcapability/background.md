@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The operating system permits the helper extension process to run in the background to finish work.
+A process capability for work in the background.
 
 **Availability**:
 - iOS 17.4+
@@ -16,16 +16,20 @@ The operating system permits the helper extension process to run in the backgrou
 case background
 ```
 
+#### Discussion
+
+This capability grants the helper extension process the ability to run in the background to finish work.
+
 ## See Also
 
 - [ProcessCapability.foreground](processcapability/foreground.md)
-  The operating system permits the helper extension process to run at foreground priority to work on behalf of the browser app.
+  A process capability for work in the foreground.
 - [ProcessCapability.suspended](processcapability/suspended.md)
-  The operating system permits the helper extension process to remain resident in a suspended state.
+  A process capability that grants residency in a suspended state.
 - [case mediaPlaybackAndCapture(environment: MediaEnvironment)](processcapability/mediaplaybackandcapture(environment:).md)
   The helper extension process may access media hardware required for media capture and playback.
 - [ProcessCapability.Grant](processcapability/grant.md)
-  An object that represents a granted capability.
+  An object that represents the provision of a capability.
 
 
 ---

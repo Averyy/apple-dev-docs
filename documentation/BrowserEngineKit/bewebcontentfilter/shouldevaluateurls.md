@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
+Determines whether the built-in web content filter is active.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
@@ -15,11 +17,12 @@ class var shouldEvaluateURLs: Bool { get }
 
 #### Return Value
 
-YES if the built-in web content filter is active, and NO if it isn’t.
+`true` if the built-in web content filter is active; `false`, otherwise.
 
-#### Discussion
+## See Also
 
-Determines whether the built-in web content filter is active.
+- [func evaluateURL(URL, completionHandler: (Bool, Data?) -> Void)](bewebcontentfilter/evaluateurl(_:completionhandler:).md)
+  Determines whether to block a URL.
 
 
 ---

@@ -17,9 +17,9 @@ Adds a text-replacement shortcut to the edit dictionary.
 optional func addShortcut(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To present the standard operating system UI for adding text-replacement shortcuts, call [`addShortcut(forText:from:)`](betextinteraction/addshortcut(fortext:from:).md) in your implementation of this method.
+To present the standard system UI for adding text-replacement shortcuts, call [`addShortcut(forText:from:)`](betextinteraction/addshortcut(fortext:from:).md) in your implementation of this method.
 
 ## Parameters
 

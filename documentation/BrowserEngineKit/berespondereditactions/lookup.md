@@ -17,9 +17,9 @@ Presents a dictionary definition for the selected content.
 optional func lookup(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To present the standard operating system UI for showing a dictionary definition, call [`showDictionary(forTextInContext:definingTextInRange:from:)`](betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:).md) in your implementation of this method.
+To present the standard system UI for showing a dictionary definition, call [`showDictionary(forTextInContext:definingTextInRange:from:)`](betextinteraction/showdictionary(fortextincontext:definingtextinrange:from:).md) in your implementation of this method.
 
 ## Parameters
 

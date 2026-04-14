@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: enum
 
-The phase of a scroll update in a scroll gesture’s lifecycle.
+Phases in the scroll gesture life cycle.
 
 **Availability**:
 - iOS 17.4+
@@ -21,13 +21,13 @@ enum Phase
 
 ### Enumeration Cases
 - [BEScrollViewScrollUpdate.Phase.began](bescrollviewscrollupdate/phase-swift.enum/began.md)
-  The scroll gesture began.
+  The scroll phase that indicates the gesture has begun.
 - [BEScrollViewScrollUpdate.Phase.cancelled](bescrollviewscrollupdate/phase-swift.enum/cancelled.md)
-  The operating system detected an event that caused it to stop tracking the scroll gesture.
+  A scroll phase that indicates the system stops scroll view gesture tracking due to an event.
 - [BEScrollViewScrollUpdate.Phase.changed](bescrollviewscrollupdate/phase-swift.enum/changed.md)
-  The scroll gesture changed the scroll location.
+  A scroll phase that indicates the gesture changes scroll location.
 - [BEScrollViewScrollUpdate.Phase.ended](bescrollviewscrollupdate/phase-swift.enum/ended.md)
-  The scroll gesture came to an end.
+  A scroll phase that indicates the scroll gesture has ended.
 ### Initializers
 - [init?(rawValue: Int)](bescrollviewscrollupdate/phase-swift.enum/init(rawvalue:).md)
 
@@ -44,9 +44,9 @@ enum Phase
 ## See Also
 
 - [var timestamp: TimeInterval](bescrollviewscrollupdate/timestamp.md)
-  The time at which the scroll update occurred.
+  The time at which a scroll update occurs.
 - [var phase: BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.property.md)
-  The point in the scrolling lifecycle represented by the scroll update.
+  A value that indicates the scroll update’s position in the scrolling life cycle.
 
 
 ---

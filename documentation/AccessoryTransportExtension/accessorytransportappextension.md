@@ -62,7 +62,7 @@ After accepting a session, your extension connects directly to the accessory usi
 
 For notification forwarding, set up your extension the same way as for Wi-Fi network sharing. The system invokes your extension to relay encrypted notification data from your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension to your accessory.
 
-Implement `AccessoryTransportSession/EventHandler/dataEventHandler(event:)` in your event handler to receive and transmit data:
+Implement [`dataEventHandler(event:)`](accessorytransportsession/eventhandler/dataeventhandler(event:).md) in your event handler to receive and transmit data:
 
 ```swift
 class MyTransportEventHandler: AccessoryTransportSession.EventHandler {
@@ -97,6 +97,8 @@ The system encrypts data using keys through your app’s [`AccessoryTransportSec
 ### Handling session events
 - [AccessoryTransportSession.EventHandler](accessorytransportsession/eventhandler.md)
   A protocol that defines methods for handling transport session events.
+- [AccessoryTransportSession.DataEvent](accessorytransportsession/dataevent.md)
+  An enumeration of data events that the transport extension receives.
 ### Managing sessions
 - [class AccessoryTransportSession](accessorytransportsession.md)
   A class that manages a transport session between the extension and the system.

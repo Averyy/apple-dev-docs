@@ -6,7 +6,7 @@
 A property that allows the file system to request for specific mount options from FSKit.
 
 **Availability**:
-- macOS 26.0+
+- macOS 26.4+
 
 ## Declaration
 

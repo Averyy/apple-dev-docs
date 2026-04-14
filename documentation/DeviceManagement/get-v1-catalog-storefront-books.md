@@ -193,7 +193,7 @@ Fetch metadata for books from the catalog by using their identifiers.
 
 ## Endpoint
 
-`GET https://api.ent.apple.com/v1/catalog/{storefront}/books#ids`
+`GET https://api.ent.apple.com/v1/catalog/{storefront}/books`
 
 ## Parameters
 

@@ -24,6 +24,7 @@ struct RegistrationError
   Registration failed.
 - [static var notEligible: RegistrationError.Code](registrationerror/noteligible.md)
   The application is not registered as an authorized partner.
+- [static var rateLimited: RegistrationError.Code](registrationerror/ratelimited.md)
 ### Enumerations
 - [RegistrationError.Code](registrationerror/code.md)
   Registration error codes.

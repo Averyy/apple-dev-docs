@@ -197,6 +197,9 @@ class NSObject
 ### Supporting Cocoa Scripting
 - [NSScriptingComparisonMethods](nsscriptingcomparisonmethods.md)
   A collection of methods useful for comparing script objects.
+### Customizing accessibility
+- [var accessibilityElements: [Any]?](nsobject-swift.class/accessibilityelements.md)
+  An array of features of an object that assistive technologies can access.
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Review symbols that are no longer supported and find the replacements to use instead.
@@ -219,7 +222,6 @@ class NSObject
 - [var accessibilityCustomRotorsBlock: AXCustomRotorsReturnBlock?](nsobject-swift.class/accessibilitycustomrotorsblock.md)
 - [var accessibilityDecrementBlock: AXVoidReturnBlock?](nsobject-swift.class/accessibilitydecrementblock.md)
 - [var accessibilityDirectTouchOptions: UIAccessibility.DirectTouchOptions](nsobject-swift.class/accessibilitydirecttouchoptions.md)
-- [var accessibilityElements: [Any]?](nsobject-swift.class/accessibilityelements.md)
 - [var accessibilityElementsBlock: AXArrayReturnBlock?](nsobject-swift.class/accessibilityelementsblock.md)
 - [var accessibilityElementsHidden: Bool](nsobject-swift.class/accessibilityelementshidden.md)
 - [var accessibilityElementsHiddenBlock: AXBoolReturnBlock?](nsobject-swift.class/accessibilityelementshiddenblock.md)

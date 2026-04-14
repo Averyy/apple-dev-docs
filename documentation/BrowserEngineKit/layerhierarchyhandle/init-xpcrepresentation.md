@@ -21,8 +21,6 @@ init(xpcRepresentation: xpc_object_t?) throws
 
 ## See Also
 
-- [init?(coder: NSCoder)](layerhierarchyhandle/init(coder:).md)
-  Creates a handle from an encoded representation.
 - [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhandle/createxpcrepresentation.md)
   Creates an object representing this handle that you send to another process in an XPC message.
 

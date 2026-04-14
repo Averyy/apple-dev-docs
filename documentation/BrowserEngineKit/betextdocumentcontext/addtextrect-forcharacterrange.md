@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Adds a text `rect` for the given character `range` The CGRects representing each character range are specified in -textInputView coordinates.
+Adds a rectangle that corresponds to the specified character range in the document.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,10 @@ Adds a text `rect` for the given character `range` The CGRects representing each
 ```swift
 func addTextRect(_ rect: CGRect, forCharacterRange range: NSRange)
 ```
+
+#### Discussion
+
+Specify the rectangle in the view coordinates of [`textInputView`](betextinput/textinputview.md).
 
 
 ---

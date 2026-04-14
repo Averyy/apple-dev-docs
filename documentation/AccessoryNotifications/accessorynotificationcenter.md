@@ -6,8 +6,8 @@
 A class that enables an app to request permission for notification forwarding.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 
@@ -29,8 +29,7 @@ Use this class from your accessory’s companion app to begin the notification f
   Requests permission to forward notifications to the specified accessory.
 ### Instance Methods
 - [func forwardingStatus(for: ASAccessory) async throws -> ForwardingDecision](accessorynotificationcenter/forwardingstatus(for:).md)
-- [func presentSettings(for: ASAccessory, scenePersistentIdentifier: String?) async throws](accessorynotificationcenter/presentsettings(for:scenepersistentidentifier:)-392mo.md)
-- [func presentSettings(for: ASAccessory, scenePersistentIdentifier: String?) async throws -> ForwardingDecision](accessorynotificationcenter/presentsettings(for:scenepersistentidentifier:)-3wace.md)
+- [func presentSettings(for: ASAccessory, scenePersistentIdentifier: String?) async throws -> ForwardingDecision](accessorynotificationcenter/presentsettings(for:scenepersistentidentifier:).md)
 
 ## See Also
 

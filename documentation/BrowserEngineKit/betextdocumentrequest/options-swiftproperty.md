@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Represents the information that the system is requesting
+A set of options that describes the contextual information the system requests from the document.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,11 @@ Represents the information that the system is requesting
 ```swift
 var options: BETextDocumentRequest.Options { get set }
 ```
+
+## See Also
+
+- [BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct.md)
+  Options that describe the contextual information for a text document request.
 
 
 ---

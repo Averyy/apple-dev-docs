@@ -6,8 +6,8 @@
 An action type that captures text provided by a person in response to a notification.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-Synchronizes updates to views and layers in different processes.
+A class that synchronizes updates to views and layers in different processes.
 
 **Availability**:
 - iOS 17.4+
@@ -19,31 +19,41 @@ class LayerHierarchyHostingTransactionCoordinator
 
 - [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
 
+#### Overview
+
+Updates to your app’s UI occur through Core Animation’s underlying transaction mechanism. This class works with Core Animation to synchronize transactions that occur across processes in your browser app. To do that:
+
+- Add views and layer hierarchies to an instance of this class.
+- Share the instance between processes using [`createXPCRepresentation()`](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation().md) and [`init(xpcRepresentation:)`](layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:).md), or [`encode(_:)`](layerhierarchyhostingtransactioncoordinator/encode(_:).md) and [`init(port:data:)`](layerhierarchyhostingtransactioncoordinator/init(port:data:).md).
+- Perform the necessary Core Animation transactions.
+- Call [`commit()`](layerhierarchyhostingtransactioncoordinator/commit().md) on the instance, and discard it.
+
+For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
+
 ## Topics
 
 ### Creating a transaction coordinator
 - [init() throws](layerhierarchyhostingtransactioncoordinator/init.md)
-  may fail if a connection to the render server cannot be established
-### Interprocess communication
+  Creates a transaction coordinator.
 - [init?(coder: NSCoder)](layerhierarchyhostingtransactioncoordinator/init(coder:).md)
   Creates a transaction coordinator from an encoded representation.
+### Sharing a transaction coordinator using XPC
+- [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md)
+  Creates a representation of the transaction coordinator that you send to another process.
 - [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhostingtransactioncoordinator/init(xpcrepresentation:).md)
   Creates a transaction coordinator from an XPC object.
-- [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhostingtransactioncoordinator/createxpcrepresentation.md)
-  Creates a representation of the transaction coordinator you send to another process.
-### Synchronize transactions
+### Sharing a transaction coordinator using Mach
+- [func encode((mach_port_t, Data) -> Void)](layerhierarchyhostingtransactioncoordinator/encode(_:).md)
+  Serializes the transaction coordinator into a Mach port reference and accompanying data.
+- [init(port: mach_port_t, data: Data) throws](layerhierarchyhostingtransactioncoordinator/init(port:data:).md)
+  Creates a transaction coordinator using a Mach port reference and serialized data.
+### Synchronizing transactions
 - [func add(LayerHierarchyHostingView)](layerhierarchyhostingtransactioncoordinator/add(_:)-7day0.md)
   Notifies the transaction coordinator to start coordinating transactions for the given view.
 - [func add(LayerHierarchy)](layerhierarchyhostingtransactioncoordinator/add(_:)-i66q.md)
-  a signal to coordinate transactions involving `layerHierarchy` from now until `commit` is called
+  Notifies the transaction coordinator to start coordinating transactions for the given layer hierarchy.
 - [func commit()](layerhierarchyhostingtransactioncoordinator/commit.md)
-  `commit` must be called on *every* instance and it must be the last call to each instance. note that it does not commit `CATransaction`s but rather commits the coordination of transactions in the render server. note that coordinators should have as constrained a lifespan as possible and will timeout if held open too long.
-### Initializers
-- [init(port: mach_port_t, data: Data) throws](layerhierarchyhostingtransactioncoordinator/init(port:data:).md)
-  Decodes a coordinator form a `mach_port_t` send right and its accompanying metadata.
-### Instance Methods
-- [func encode((mach_port_t, Data) -> Void)](layerhierarchyhostingtransactioncoordinator/encode(_:).md)
-  Encodes the coordinator into a `mach_port_t` send right and its accompanying metadata.
+  Notifies the render server to coordinate transactions for the added views and layer hierarchies.
 
 ## Relationships
 
@@ -70,7 +80,7 @@ class LayerHierarchyHostingTransactionCoordinator
 - [class LayerHierarchyHostingView](layerhierarchyhostingview.md)
   A view that hosts a layer hierarchy you manage in another process.
 - [class LayerHierarchyHandle](layerhierarchyhandle.md)
-  A reference to a layer hierarchy that you share between processes.
+  A reference to a layer hierarchy that your app shares between processes.
 
 
 ---

@@ -17,9 +17,9 @@ Presents a translation of the selected text.
 optional func translate(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To present the standard operating system UI for translating text, call [`translate(text:from:)`](betextinteraction/translate(text:from:).md) in your implementation of this method.
+To present the standard system UI for translating text, call [`translate(text:from:)`](betextinteraction/translate(text:from:).md) in your implementation of this method.
 
 ## Parameters
 

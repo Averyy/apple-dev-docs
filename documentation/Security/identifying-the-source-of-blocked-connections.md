@@ -19,7 +19,7 @@ The `nscurl` command accepts the `--ats-diagnostics` flag that asks it to check 
 $ /usr/bin/nscurl --ats-diagnostics --verbose https://example.com
 ```
 
-In addition to running with no exceptions at all, the tool tests the global exception key [`NSAllowsArbitraryLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity/NSAllowsArbitraryLoads), as well as a variety of combinations of the exception domain keys [`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionMinimumTLSVersion), [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresForwardSecrecy), and [`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionAllowsInsecureHTTPLoads). `nscurl` outputs the results of all these tests to the terminal:
+In addition to running with no exceptions at all, the tool tests the global exception keys in [`NSAppTransportSecurity`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSAppTransportSecurity#Global-Exceptions), as well as a variety of combinations of the exception domain keys [`NSExceptionMinimumTLSVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionMinimumTLSVersion), [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresForwardSecrecy), [`NSExceptionAllowsInsecureHTTPLoads`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionAllowsInsecureHTTPLoads), and [`NSExceptionRequiresNIAPTLSPackageVersion`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresNIAPTLSPackageVersion). `nscurl` outputs the results of all these tests to the terminal:
 
 ```console
 Starting ATS Diagnostics
@@ -90,7 +90,7 @@ If the ATS default test fails but the arbitrary loads test passes, you might nee
 }
 ```
 
-If simply disabling forward secrecy results in a passing test, you need to reconfigure your server to support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange. If you can’t do that, you might need to add the [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresForwardSecrecy) exception to your app instead, as described in [`Configure Exceptions Only When Needed; Prefer Server Fixes`](preventing-insecure-network-connections#Configure-Exceptions-Only-When-Needed-Prefer-Server-Fixes.md).
+If simply disabling forward secrecy results in a passing test, you need to reconfigure your server to support perfect forward secrecy (PFS) through Elliptic Curve Diffie-Hellman Ephemeral (ECDHE) key exchange. If you can’t do that, you might need to add the [`NSExceptionRequiresForwardSecrecy`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSExceptionRequiresForwardSecrecy) exception to your app instead, as described in doc:preventing-insecure-network-connections#Configure-Exceptions-Only-When-Needed;-Prefer-Server-Fixes.
 
 
 ---

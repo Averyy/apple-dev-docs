@@ -6,8 +6,8 @@
 An identifier for the notification.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

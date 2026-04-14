@@ -37,7 +37,7 @@ Open your Xcode project, and follow these steps for each of the three extension 
 
 ##### Build for Pointer Authentication
 
-Browser apps that include alternative browser engines must use the `arm64e` instruction set for all executables, including the extensions, in order to use the operating system’s pointer-authentication protection on devices that support it. Build your browser app as a universal binary that also supports the `arm64` instruction set to target iPad models that support alternative browser engines and don’t support `arm64e` instructions.
+Browser apps that include alternative browser engines must use the `arm64e` instruction set for all executables, including the extensions, in order to use the system’s pointer-authentication protection on devices that support it. Build your browser app as a universal binary that also supports the `arm64` instruction set to target iPad models that support alternative browser engines and don’t support `arm64e` instructions.
 
 > ❗ **Important**:  You can develop and test your alternative browser engine using the `arm64` instruction set. To distribute your browser that includes an alternative browser engine, you need to support the `arm64e` instruction set.
 
@@ -111,7 +111,7 @@ Development of a web browser that uses an alternative browser engine can occur a
 
 ## See Also
 
-- [Extension lifecycle](extension-lifecycle.md)
+- [Extension life cycle](extension-lifecycle.md)
   Launch, communicate with, and invalidate browser extensions.
 - [Extension resources](extension-resources.md)
   Control access to files and memory in browser extensions.

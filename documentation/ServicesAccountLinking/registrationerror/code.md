@@ -23,6 +23,8 @@ enum Code
   Registration failed.
 - [RegistrationError.Code.notEligible](registrationerror/code/noteligible.md)
   The application is not registered as an authorized partner.
+- [RegistrationError.Code.rateLimited](registrationerror/code/ratelimited.md)
+  The server rate-limited the request.
 ### Initializers
 - [init?(rawValue: Int)](registrationerror/code/init(rawvalue:).md)
 

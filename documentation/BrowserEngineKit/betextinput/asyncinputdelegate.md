@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A system-provided input delegate is assigned when the system is interested in input changes.
+A delegate object that your text view notifies of events and changes in the text’s state.
 
 **Availability**:
 - iOS 17.4+
@@ -21,15 +21,6 @@ weak var asyncInputDelegate: (any BETextInputDelegate)? { get set }
 ## Mentions
 
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
-
-#### Discussion
-
-A delegate object that your text view notifies of events and changes in the text’s state.
-
-## See Also
-
-- [func canPerformAction(Selector, withSender: Any?) -> Bool](betextinput/canperformaction(_:withsender:).md)
-  Returns whether text related actions, such those included in UIResponderStandardEditActions, can be handled
 
 
 ---

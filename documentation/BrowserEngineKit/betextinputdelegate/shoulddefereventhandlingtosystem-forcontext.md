@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Defers the key event to the system and returns whether the key event was handled.
+Notify the text system that your web browser’s custom text view isn’t handling key events.
 
 **Availability**:
 - iOS 17.4+
@@ -28,12 +28,6 @@ func shouldDeferEventHandlingToSystem(for textInput: any BETextInput, context ke
 `true` if the system handles the key event; `false` otherwise.
 
 #### Discussion
-
-For example, the system will handle key events for character insertions, deletions, key commands, and more.
-
-Notify the text system that your web browser’s custom text view isn’t handling key events.
-
-#### Overview
 
 Call this method on your [`asyncInputDelegate`](betextinput/asyncinputdelegate.md) when your [`BETextInput`](betextinput.md) view doesn’t handle a key event, and you pass `false` to the `completionHandler` for [`handleKeyEntry(_:completionHandler:)`](betextinput/handlekeyentry(_:completionhandler:).md).
 

@@ -18,11 +18,6 @@ Removes a placeholder object from the text input view.
 func remove(_ placeholder: UITextPlaceholder, willInsertText: Bool) async
 ```
 
-## See Also
-
-- [func insertTextPlaceholder(size: CGSize, completionHandler: (UITextPlaceholder) -> Void)](betextinput/inserttextplaceholder(size:completionhandler:).md)
-  Inserts a placeholder object to reserve visual space during text input. If `size.height` is less than or equal to zero, then the placeholder is inline and line height. If `size.height` is greather than zero, then the placeholder is treated as a paragraph of height `size.height`.
-
 
 ---
 

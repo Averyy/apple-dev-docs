@@ -20,6 +20,10 @@ An animation for the properties of scenes or entities.
 @preconcurrency class AnimationResource
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 You find animation resources in an entity’s [`availableAnimations`](entity/availableanimations.md) array. Animation resources come bundled with an entity when you load the entity from a file. They describe an animation that’s specific to the entity to which they are attached.
@@ -64,6 +68,8 @@ If you want to loop an animation, call the resource’s [`repeat(count:)`](anima
 
 ## See Also
 
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+  Invoke implicit animations by setting the entity’s desired end state.
 - [struct AnimationLibraryComponent](animationlibrarycomponent.md)
   A component that represents a collection of animations that an entity can play.
 - [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)

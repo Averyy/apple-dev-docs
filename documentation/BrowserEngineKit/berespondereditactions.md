@@ -23,7 +23,7 @@ protocol BEResponderEditActions : UIResponderStandardEditActions
 
 #### Overview
 
-Implement the methods in this protocol to support text interactions in your browser text view that conforms to [`BETextInput`](betextinput.md). To get the operating system’s standard behavior for an interaction, call [`BETextInteraction`](betextinteraction.md) methods in your implementation. For more information, see [`Supporting extended text interactions`](support-extended-text-interactions.md).
+Implement the methods in this protocol to support text interactions in your browser text view that conforms to [`BETextInput`](betextinput.md). To get the system’s standard behavior for an interaction, call [`BETextInteraction`](betextinteraction.md) methods in your implementation. For more information, see [`Supporting extended text interactions`](support-extended-text-interactions.md).
 
 ## Topics
 
@@ -62,6 +62,7 @@ Implement the methods in this protocol to support text interactions in your brow
 - [protocol BETextInteractionDelegate](betextinteractiondelegate.md)
   A set of methods that informs you about selection changes in text views.
 - [enum BEGestureType](begesturetype.md)
+  The types of touch gestures that operate on input text.
 
 
 ---

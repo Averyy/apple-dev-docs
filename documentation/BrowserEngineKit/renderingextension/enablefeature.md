@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
+Enables the specified feature.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+

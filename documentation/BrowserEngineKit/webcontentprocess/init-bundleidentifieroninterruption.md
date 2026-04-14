@@ -16,19 +16,19 @@ Launches a web content process asynchronously.
 init(bundleIdentifier: String? = nil, onInterruption: @escaping () -> Void) async throws
 ```
 
-#### Overview
+#### Discussion
 
-Initializing a `WebContentProcess` object launches a new instance of the web content extension. The operating system guarantees that the process launched when this initializer returns.
+Initializing a [`WebContentProcess`](webcontentprocess.md) object launches a new instance of a web content extension. Control returns from this method only after the process for the new web content extension launches.
 
 ## Parameters
 
-- `bundleIdentifier`: The bundle identifier of the content extension to launch, or `nil` to use the default bundle identifier for this app’s web content extension.
-- `onInterruption`: A block that the operating system calls if the web content extension process exits abnormally.
+- `bundleIdentifier`: A unique bundle identifier for the content extension, or `nil` to use the default web content extension bundle identifier.
+- `onInterruption`: A block that the system calls if the web content extension process ends abruptly.
 
 ## See Also
 
 - [func invalidate()](webcontentprocess/invalidate.md)
-  Stops the extension process.
+  Stops the web content process.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Array of available aternative strings
+An array of strings that represent alternatives to the currently selected text.
 
 **Availability**:
 - iOS 17.4+

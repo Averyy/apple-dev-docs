@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-An object that represents a change in a scroll view’s scroll state.
+An object that describes a change in a scroll view’s scroll state.
 
 **Availability**:
 - iOS 17.4+
@@ -20,26 +20,24 @@ class BEScrollViewScrollUpdate
 
 #### Overview
 
-When a person scrolls a [`BEScrollView`](bescrollview.md), the view’s delegate receives the [`scrollView(_:handle:completion:)`](bescrollviewdelegate/scrollview(_:handle:completion:).md) method. The `handle` parameter is an instance of `BEScrollViewScrollUpdate` that describes the scroll activity.
+When a person scrolls a [`BEScrollView`](bescrollview.md), the system calls the view’s delegate’s [`scrollView(_:handle:completion:)`](bescrollviewdelegate/scrollview(_:handle:completion:).md) method with an instance of this class as the `handle` parameter. Your app can continue to receive `BEScrollViewScrollUpdate` objects after the person completes their scroll gesture, as the scroll decelerates.
 
-Your app can continue to receive `BEScrollViewScrollUpdate` objects after the person completes their scroll gesture, as the scrolling decelerates.
-
-> ❗ **Important**:  `BEScrollViewScrollUpdate` isn’t thread-safe, and the system uses the same object for multiple scroll updates. When you receive a scroll update, immediately get the information you need on the main queue before any other processing.
+> ❗ **Important**:  `BEScrollViewScrollUpdate` isn’t thread-safe, and the system reuses the same object for multiple scroll updates. Retrieve all information you need from a scroll update immediately on the main queue before any further processing.
 
 ## Topics
 
 ### Retrieving scroll state information
 - [var timestamp: TimeInterval](bescrollviewscrollupdate/timestamp.md)
-  The time at which the scroll update occurred.
+  The time at which a scroll update occurs.
 - [var phase: BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.property.md)
-  The point in the scrolling lifecycle represented by the scroll update.
+  A value that indicates the scroll update’s position in the scrolling life cycle.
 - [BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.enum.md)
-  The phase of a scroll update in a scroll gesture’s lifecycle.
+  Phases in the scroll gesture life cycle.
 ### Transforming coordinates
 - [func location(in: UIView?) -> CGPoint](bescrollviewscrollupdate/location(in:).md)
-  Returns the coordinates of the scroll update in the given view’s bounds.
+  Returns the location of the scroll update in the coordinate system of the given view.
 - [func translation(in: UIView?) -> CGPoint](bescrollviewscrollupdate/translation(in:).md)
-  Returns the amount of scrolling in the scroll update in the given view’s coordinates.
+  Returns the scroll displacement in the coordinate system of the view that the update represents.
 
 ## Relationships
 
@@ -57,9 +55,9 @@ Your app can continue to receive `BEScrollViewScrollUpdate` objects after the pe
 ## See Also
 
 - [class BEScrollView](bescrollview.md)
-  A scroll view that works with its delegate to handle nesting, and customize scroll interactions.
+  A scroll view that works with its delegate to handle nesting and customize scroll interactions.
 - [protocol BEScrollViewDelegate](bescrollviewdelegate.md)
-  The protocol that browser scroll view delegates conform to.
+  A protocol for scroll view delegates to handle scroll updates and DOM nesting.
 
 
 ---

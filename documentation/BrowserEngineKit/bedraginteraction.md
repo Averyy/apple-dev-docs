@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-A `UIDragInteraction` subclass with features specific to browsers to enable asynchronous preparations and behaviours.
+An interaction that enables your app to asynchronously provide drag items.
 
 **Availability**:
 - iOS 17.4+
@@ -18,24 +18,22 @@ class BEDragInteraction
 
 #### Overview
 
-An interaction that enables your app to asynchronously provide drag items.
+This class is a subclass of [`UIDragInteraction`](https://developer.apple.com/documentation/UIKit/UIDragInteraction) that adds asynchronous support for drag interaction. If you don’t need to interact with drag operations asynchronously, use [`UIDragInteraction`](https://developer.apple.com/documentation/UIKit/UIDragInteraction) instead.
 
-#### Overview
+To support UI element drag interaction in your browser app asynchronously, create an instance of this class and attach it to the source view.
 
-`BEDragInteraction` is a subclass of [`UIDragInteraction`](https://developer.apple.com/documentation/UIKit/UIDragInteraction) that additionally supports asynchronous interaction.
-
-When a person drags a UI element in your browser app, create a `BEDragInteraction` and attach it to the source view. When you create the object, set its [`delegate`](bedraginteraction/delegate.md) to an object that conforms to [`BEDragInteractionDelegate`](bedraginteractiondelegate.md). Use the delegate to prepare the [`UIDragSession`](https://developer.apple.com/documentation/UIKit/UIDragSession) before the system requests drag items, which it does by calling the delegate’s [`dragInteraction(_:itemsForBeginning:)`](https://developer.apple.com/documentation/UIKit/UIDragInteractionDelegate/dragInteraction(_:itemsForBeginning:)) method.
+Set the isntance’s [`delegate`](bedraginteraction/delegate.md) to an object that conforms to [`BEDragInteractionDelegate`](bedraginteractiondelegate.md), and implement prepartions in the delegate for the [`UIDragSession`](https://developer.apple.com/documentation/UIKit/UIDragSession). The system requests drag items from your delegate by calling the delegate’s [`dragInteraction(_:itemsForBeginning:)`](https://developer.apple.com/documentation/UIKit/UIDragInteractionDelegate/dragInteraction(_:itemsForBeginning:)) method.
 
 ## Topics
 
 ### Creating a drag interaction
 - [init(delegate: any BEDragInteractionDelegate)](bedraginteraction/init(delegate:).md)
-  Creates an drag interaction with the specified delegate.
+  Creates a drag interaction and assigns its delegate.
 ### Handling drag gestures
 - [var delegate: (any BEDragInteractionDelegate)?](bedraginteraction/delegate.md)
-  The object that manages the drag interaction lifecycle.
+  A delegate for a drag interaction.
 - [protocol BEDragInteractionDelegate](bedraginteractiondelegate.md)
-  A protocol to which the drag interaction delegates conform.
+  A protocol for a drag interaction delegate.
 
 ## Relationships
 
@@ -53,7 +51,7 @@ When a person drags a UI element in your browser app, create a `BEDragInteractio
 ## See Also
 
 - [protocol BEDragInteractionDelegate](bedraginteractiondelegate.md)
-  A protocol to which the drag interaction delegates conform.
+  A protocol for a drag interaction delegate.
 
 
 ---

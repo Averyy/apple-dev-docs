@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Inserts the given `text` or one of it’s alternative texts available on `alternatives`
+Inserts the given text or one of the available alternatives.
 
 **Availability**:
 - iOS 17.4+
@@ -24,10 +24,14 @@ func insert(_ alternatives: BETextAlternatives)
 
 ## See Also
 
-- [func alternativesForSelectedText() -> [BETextAlternatives]?](betextinput/alternativesforselectedtext.md)
-  Returns the text alternatives that are available to the text input object.
+- [func insert(BETextSuggestion)](betextinput/insert(_:)-5iryn.md)
+  Inserts a text suggestion in response to a suggestion selection.
+- [func replaceSelectedText(String, withText: String)](betextinput/replaceselectedtext(_:withtext:).md)
+  Replaces text with new text, either within the current selection or near the cursor.
+- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
+  Replaces the specified text for the text of a dictation.
 - [func add(BETextAlternatives)](betextinput/add(_:).md)
-  Adds text alternatives to the text input object for the current selection
+  Adds text alternatives to the text input object for the current selection.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: protocol
 
+An object that customizes text-input appearance and behavior beyond the standard system traits.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -15,19 +17,24 @@
 protocol BEExtendedTextInputTraits : UITextInputTraits
 ```
 
+#### Overview
+
+This class extends the standard text input traits to control cursor and selection colors, as well as single-line mode and typing adaptation in web content.
+
 ## Topics
 
-### Instance Properties
+### Customizing text input visuals
 - [var insertionPointColor: UIColor?](beextendedtextinputtraits/insertionpointcolor.md)
-  Customizes the color of the text cursor at the insertion point
-- [var isSingleLineDocument: Bool](beextendedtextinputtraits/issinglelinedocument.md)
-  Represents whether the active web input field is a single line document
-- [var isTypingAdaptationEnabled: Bool](beextendedtextinputtraits/istypingadaptationenabled.md)
-  Disables the learning of new words and corrections and prevents their addition into the keyboard lexicon
+  A color for the text cursor at the insertion point.
 - [var selectionHandleColor: UIColor?](beextendedtextinputtraits/selectionhandlecolor.md)
-  Customizes the color of the selection handles
+  A color that customizes the look of the handle.
 - [var selectionHighlightColor: UIColor?](beextendedtextinputtraits/selectionhighlightcolor.md)
-  Customizes the color of the selection highlight rect
+  The highlight color of a rectangle.
+### Customizing text input behavior
+- [var isSingleLineDocument: Bool](beextendedtextinputtraits/issinglelinedocument.md)
+  A Boolean value that represents whether the active web input field is a single line document.
+- [var isTypingAdaptationEnabled: Bool](beextendedtextinputtraits/istypingadaptationenabled.md)
+  A Boolean value that controls whether the system learns new words and corrections.
 
 ## Relationships
 
@@ -38,6 +45,7 @@ protocol BEExtendedTextInputTraits : UITextInputTraits
 ## See Also
 
 - [struct BEDirectionalTextRange](bedirectionaltextrange.md)
+  Modifications to text length based on its offset.
 
 
 ---

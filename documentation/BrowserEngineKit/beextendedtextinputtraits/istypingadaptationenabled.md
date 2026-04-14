@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Disables the learning of new words and corrections and prevents their addition into the keyboard lexicon
+A Boolean value that controls whether the system learns new words and corrections.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,15 @@ Disables the learning of new words and corrections and prevents their addition i
 ```swift
 optional var isTypingAdaptationEnabled: Bool { get }
 ```
+
+#### Discussion
+
+Setting this property to `false` prevents the system from learning of words or corrections by omitting their addition to the keyboard lexicon.
+
+## See Also
+
+- [var isSingleLineDocument: Bool](beextendedtextinputtraits/issinglelinedocument.md)
+  A Boolean value that represents whether the active web input field is a single line document.
 
 
 ---

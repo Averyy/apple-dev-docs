@@ -26,14 +26,14 @@ HealthKit performs these requests asynchronously when you modify the trigger’s
 
 Each data type has two separate permissions, one to read it and one to share it. You can make a single request, and include all the data types your app needs.
 
-**Authenticating on launch**:
+**Requesting access on launch**:
 
 ```swift
 @State private var trigger = false
 
 var body: some Scene {
     WindowGroup {
-        ContentView(enabled: $authenticated)
+        ContentView(enabled: $accessRequested)
             .healthDataAccessRequest(store: store,
                                      shareTypes: healthDataTypes,
                                      readTypes: healthDataTypes,
@@ -41,13 +41,13 @@ var body: some Scene {
                 switch result {
 
                 case .success(_):
-                    authenticated = true
+                    accessRequested = true
                 case .failure(let error):
                     // Handle the error here.
                     fatalError("*** An error occurred while requesting authentication: \(error) ***")
                 }
 
-                logger.debug("Authentication Complete.")
+                logger.debug("Authorization request complete.")
             }
             .onAppear() {
                 trigger.toggle()
@@ -79,14 +79,14 @@ private let logger = Logger(subsystem: "example.com.MyWorkoutApp",
 @main
 struct MyApp: App {
 
-    @State private var authenticated = false
+    @State private var accessRequested = false
     @State private var trigger = false
 
     let store = HKHealthStore()
 
     var body: some Scene {
         WindowGroup {
-            ContentView(enabled: $authenticated)
+            ContentView(enabled: $accessRequested)
                 .healthDataAccessRequest(store: store,
                                          shareTypes: healthDataTypes,
                                          readTypes: healthDataTypes,
@@ -94,13 +94,13 @@ struct MyApp: App {
                     switch result {
 
                     case .success(_):
-                        authenticated = true
+                        accessRequested = true
                     case .failure(let error):
                         // Handle the error here.
                         fatalError("*** An error occurred while requesting authentication: \(error) ***")
                     }
 
-                    logger.debug("Authentication Complete.")
+                    logger.debug("Authorization request complete.")
                 }
                 .onAppear() {
                     trigger.toggle()

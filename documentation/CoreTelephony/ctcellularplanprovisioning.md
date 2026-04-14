@@ -18,7 +18,7 @@ class CTCellularPlanProvisioning
 
 #### Overview
 
-This class is only available to carrier apps with the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.CommCenter.fine-grained) entitlement.
+This class is only available to carrier apps with the [`com.apple.CommCenter.fine-grained`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.CommCenter.fine-grained) entitlement, where the entitlement’s array of values includes `public-cellular-plan`.
 
 ## Topics
 

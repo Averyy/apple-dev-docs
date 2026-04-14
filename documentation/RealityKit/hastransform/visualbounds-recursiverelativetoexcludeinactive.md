@@ -20,6 +20,10 @@ Computes a bounding box for the entity in the specified space, optionally includ
 @preconcurrency func visualBounds(recursive: Bool = true, relativeTo referenceEntity: Entity?, excludeInactive: Bool = false) -> BoundingBox
 ```
 
+## Mentions
+
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+
 #### Return Value
 
 The bounding box.

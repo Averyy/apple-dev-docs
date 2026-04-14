@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Represents whether the active web input field is a single line document
+A Boolean value that represents whether the active web input field is a single line document.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,11 @@ Represents whether the active web input field is a single line document
 ```swift
 optional var isSingleLineDocument: Bool { get }
 ```
+
+## See Also
+
+- [var isTypingAdaptationEnabled: Bool](beextendedtextinputtraits/istypingadaptationenabled.md)
+  A Boolean value that controls whether the system learns new words and corrections.
 
 
 ---

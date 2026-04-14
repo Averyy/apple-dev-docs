@@ -31,6 +31,8 @@ This key is optional. The default value is YES, which limits the accepted cipher
   The minimum Transport Layer Security (TLS) version for network connections.
 - [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
+- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 
 ---

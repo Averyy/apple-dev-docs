@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Handles a scroll update, optionally stopping the scroll view from reacting.
+Handles a scroll update before the scroll view reacts to it.
 
 **Availability**:
 - iOS 17.4+
@@ -17,19 +17,17 @@ Handles a scroll update, optionally stopping the scroll view from reacting.
 optional func scrollView(_ scrollView: BEScrollView, handle scrollUpdate: BEScrollViewScrollUpdate) async -> Bool
 ```
 
-#### Overview
+#### Discussion
 
-When you implement this method, your `BEScrollViewDelegate` receives scroll updates before its delegating scroll view handles them.
+Your `BEScrollViewDelegate` receives scroll updates before its delegating scroll view handles them. The system calls this method on the main queue — retrieve information from `scrollUpdate` on the main queue, then process the update asynchronously. Call the `completion` block asynchronously on the main queue when you finish processing.
 
-The system calls this delegate method on the main queue. Retrieve information from the `scrollUpdate` on the main queue, then process the update asynchronously. Finally, call the `completion` block asynchronously on the main queue, passing `true` as the parameter to stop the scroll view from handling the scroll event; `false` otherwise.
-
-> ❗ **Important**:  Schedule completion blocks on the main queue in the same order in which you receive scroll updates.
+> ❗ **Important**:  Call completion blocks on the main queue in the same order in which you receive scroll updates.
 
 ## Parameters
 
-- `scrollView`: The [`BEScrollView`](bescrollview.md) object that receives the scroll update.
-- `scrollUpdate`: Information about the scroll update. You need to retrieve the information from this object immediately on the main thread when the system calls your delegate method, otherwise the values may change.
-- `completion`: A block that you call when you finish processing the scroll update. Pass `true` as the parameter if you handled the scroll event and the scroll view doesn’t need to react to it; `false` otherwise.
+- `scrollView`: The [`BEScrollView`](bescrollview.md) that receives the scroll update.
+- `scrollUpdate`: An object that describes the scroll update. Retrieve all information from this object immediately on the main queue when the system calls your delegate method, as the values may change.
+- `completion`: A block to call when you finish processing the scroll update. Pass `true` if you handled the scroll event and the scroll view doesn’t need to react to it; pass `false` otherwise.
 
 
 ---

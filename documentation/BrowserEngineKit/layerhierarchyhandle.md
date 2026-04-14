@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: class
 
-A reference to a layer hierarchy that you share between processes.
+A reference to a layer hierarchy that your app shares between processes.
 
 **Availability**:
 - iOS 17.4+
@@ -19,21 +19,29 @@ class LayerHierarchyHandle
 
 - [Hosting browser view layers in the rendering extension](hosting-browser-view-layers-in-the-rendering-extension.md)
 
+#### Overview
+
+By sharing a reference, or *handle*, to your app’s layer hierarchy between processes, you can coordinate layer updates across multiple processes. Get a handle from a [`LayerHierarchy`](layerhierarchy.md) object, then share it with another process using one of the serialization methods.
+
+Use [`createXPCRepresentation()`](layerhierarchyhandle/createxpcrepresentation().md) and [`init(xpcRepresentation:)`](layerhierarchyhandle/init(xpcrepresentation:).md) to share layer handles across your app’s processes. Apps with existing Mach-based interprocess communication implementations can use [`encode(_:)`](layerhierarchyhandle/encode(_:).md) and [`init(port:data:)`](layerhierarchyhandle/init(port:data:).md) methods to share layer handles.
+
+For more information, see [`Hosting browser view layers in the rendering extension`](hosting-browser-view-layers-in-the-rendering-extension.md).
+
 ## Topics
 
-### Interprocess communication
-- [init?(coder: NSCoder)](layerhierarchyhandle/init(coder:).md)
-  Creates a handle from an encoded representation.
-- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhandle/init(xpcrepresentation:).md)
-  Creates a handle from a representation received in an XPC message.
+### Sharing a layer hierarchy handle using XPC
 - [func createXPCRepresentation() -> xpc_object_t](layerhierarchyhandle/createxpcrepresentation.md)
   Creates an object representing this handle that you send to another process in an XPC message.
-### Initializers
-- [init(port: mach_port_t, data: Data) throws](layerhierarchyhandle/init(port:data:).md)
-  Decodes a handle form a `mach_port_t` send right and its accompanying metadata.
-### Instance Methods
+- [init(xpcRepresentation: xpc_object_t?) throws](layerhierarchyhandle/init(xpcrepresentation:).md)
+  Creates a handle from a representation received in an XPC message.
+### Sharing a layer hierarchy handle using Mach
 - [func encode((mach_port_t, Data) -> Void)](layerhierarchyhandle/encode(_:).md)
-  Encodes the handle into a `mach_port_t` send right and its accompanying metadata.
+  Serializes the hierarchy handle into a Mach port reference and accompanying data.
+- [init(port: mach_port_t, data: Data) throws](layerhierarchyhandle/init(port:data:).md)
+  Creates a layer hierarchy handle using a Mach port reference and serialized data.
+### Creating a layer hierarchy handle
+- [init?(coder: NSCoder)](layerhierarchyhandle/init(coder:).md)
+  Creates a handle from an encoded representation.
 
 ## Relationships
 
@@ -60,7 +68,7 @@ class LayerHierarchyHandle
 - [class LayerHierarchyHostingView](layerhierarchyhostingview.md)
   A view that hosts a layer hierarchy you manage in another process.
 - [class LayerHierarchyHostingTransactionCoordinator](layerhierarchyhostingtransactioncoordinator.md)
-  Synchronizes updates to views and layers in different processes.
+  A class that synchronizes updates to views and layers in different processes.
 
 
 ---

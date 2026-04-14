@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Returns a dictionary containing NSAttributedString keys represeting appearance customizations.
+Provides a dictionary that customizes the appearance of strings.
 
 **Availability**:
 - iOS 17.4+
@@ -20,12 +20,7 @@ func textStyling(at position: UITextPosition, in direction: UITextStorageDirecti
 
 #### Discussion
 
-For example, text styling information influence the appearance of a correction rect.
-
-## See Also
-
-- [var extendedTextInputTraits: (any BEExtendedTextInputTraits)?](betextinput/extendedtextinputtraits.md)
-  Object from which the BEExtendedTextInputTraits will be gathered.
+The returned strings might pertain to text styling information for a correction rectangle, for example.
 
 
 ---

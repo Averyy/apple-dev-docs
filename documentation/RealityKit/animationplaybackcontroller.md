@@ -86,6 +86,8 @@ While an animation plays, you can receive notification of particular playback st
 
 ## See Also
 
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+  Invoke implicit animations by setting the entity’s desired end state.
 - [class AnimationResource](animationresource.md)
   An animation for the properties of scenes or entities.
 - [struct AnimationLibraryComponent](animationlibrarycomponent.md)

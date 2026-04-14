@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
-Converts the text between traditional and simplified Chinese.
+Converts text between traditional and simplified Chinese.
 
 **Availability**:
 - iOS 17.4+
@@ -17,9 +17,9 @@ Converts the text between traditional and simplified Chinese.
 func transliterateChinese(forText text: String)
 ```
 
-#### Overview
+#### Discussion
 
-Call this method to get the operating system’s standard transliteration, for example, when your browser text view receives [`transliterateChinese(_:)`](berespondereditactions/transliteratechinese(_:).md).
+Call this method to invoke the system’s standard transliteration behavior, for example, when your browser text view receives [`transliterateChinese(_:)`](berespondereditactions/transliteratechinese(_:).md).
 
 ## Parameters
 

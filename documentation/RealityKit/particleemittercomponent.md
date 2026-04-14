@@ -19,6 +19,10 @@ A component that emits particles.
 struct ParticleEmitterComponent
 ```
 
+## Mentions
+
+- [Automatically animating RealityKit entities](automatically-animating-realitykit-entities.md)
+
 #### Overview
 
 To learn how to use `ParticleEmitterComponent` in your app, see [`Simulating particles in your visionOS app`](simulating-particles-in-your-visionos-app.md).

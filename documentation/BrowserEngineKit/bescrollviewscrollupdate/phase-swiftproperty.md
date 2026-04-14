@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-The point in the scrolling lifecycle represented by the scroll update.
+A value that indicates the scroll update’s position in the scrolling life cycle.
 
 **Availability**:
 - iOS 17.4+
@@ -17,20 +17,20 @@ The point in the scrolling lifecycle represented by the scroll update.
 var phase: BEScrollViewScrollUpdate.Phase { get }
 ```
 
-#### Overview
+#### Discussion
 
-The phases of a scroll update represent a state machine:
+The phases of a scroll update follow a state machine:
 
-1. A scroll gesture is initially in the [`BEScrollViewScrollUpdate.Phase.began`](bescrollviewscrollupdate/phase-swift.enum/began.md) phase, when the person puts their finger down in the scroll view.
-2. As the person interacts with the scroll view, the system generates zero or more [`BEScrollViewScrollUpdate.Phase.changed`](bescrollviewscrollupdate/phase-swift.enum/changed.md) updates for the scroll gesture.
-3. Finally, the scroll gesture either enters the [`BEScrollViewScrollUpdate.Phase.ended`](bescrollviewscrollupdate/phase-swift.enum/ended.md) phase when the person stops interacting with the scroll view; or it becomes [`BEScrollViewScrollUpdate.Phase.cancelled`](bescrollviewscrollupdate/phase-swift.enum/cancelled.md) when the operating system receives another event that means it stops tracking the scroll gesture.
+1. A scroll gesture begins in the [`BEScrollViewScrollUpdate.Phase.began`](bescrollviewscrollupdate/phase-swift.enum/began.md) phase when the person places their finger in the scroll view.
+2. As the person interacts with the scroll view, the system generates zero or more [`BEScrollViewScrollUpdate.Phase.changed`](bescrollviewscrollupdate/phase-swift.enum/changed.md) updates.
+3. The gesture enters the [`BEScrollViewScrollUpdate.Phase.ended`](bescrollviewscrollupdate/phase-swift.enum/ended.md) phase when the person lifts their finger, or the [`BEScrollViewScrollUpdate.Phase.cancelled`](bescrollviewscrollupdate/phase-swift.enum/cancelled.md) phase when another event causes the system to stop tracking the gesture.
 
 ## See Also
 
 - [var timestamp: TimeInterval](bescrollviewscrollupdate/timestamp.md)
-  The time at which the scroll update occurred.
+  The time at which a scroll update occurs.
 - [BEScrollViewScrollUpdate.Phase](bescrollviewscrollupdate/phase-swift.enum.md)
-  The phase of a scroll update in a scroll gesture’s lifecycle.
+  Phases in the scroll gesture life cycle.
 
 
 ---

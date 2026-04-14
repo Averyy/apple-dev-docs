@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Sets the selection caret to the given point
+Sets the selection caret to the given point.
 
 **Availability**:
 - iOS 17.4+
@@ -22,43 +22,25 @@ func selectPosition(at point: CGPoint) async
 
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
 
-#### Discussion
-
-Locate the text-selection caret at the given position in the text view.
-
 ## Parameters
 
-- `point`: The location in the text view at which to locate the caret.
-- `completionHandler`: A block you call when your text view has handled the gesture.
+- `point`: The caret’s new location in the text view.
+- `completionHandler`: A closure that you call when the text view handles the gesture.
 
 ## See Also
 
 - [var selectedText: String?](betextinput/selectedtext.md)
-  String representing the selected text.
+  A string that represents the selected text.
 - [var selectedTextRange: UITextRange?](betextinput/selectedtextrange.md)
-  Range representing the selected text.
+  A range that represents the selected text.
 - [var isSelectionAtDocumentStart: Bool](betextinput/isselectionatdocumentstart.md)
-  Represents whether the current selection is at the beginning of the document
-- [func caretRect(for: UITextPosition) -> CGRect](betextinput/caretrect(for:).md)
-  Returns a rectangle to draw the caret at a specified insertion point.
-- [func selectionRects(for: UITextRange) -> [UITextSelectionRect]](betextinput/selectionrects(for:).md)
-  Returns an array of selection rects corresponding to the range of text.
-- [func selectWordForReplacement()](betextinput/selectwordforreplacement.md)
-  Selects a word with autocorrect replacement suggestions when it is tapped
-- [func updateSelection(extent: CGPoint, boundary: UITextGranularity, completionHandler: (Bool) -> Void)](betextinput/updateselection(extent:boundary:completionhandler:).md)
-  Includes the text up to the given point in the current text selection.
-- [func selectText(in: UITextGranularity, at: CGPoint, completionHandler: () -> Void)](betextinput/selecttext(in:at:completionhandler:).md)
-  Selects the text within the given granularity at the given point in the text view.
+  A Boolean value that indicates if the current selection is at the beginning of the document.
 - [func selectPosition(at: CGPoint, for: BETextDocumentRequest, completionHandler: (BETextDocumentContext) -> Void)](betextinput/selectposition(at:for:completionhandler:).md)
-  Sets the selection caret to the given point.  Also includes a convenience document context request.
+  Sets the selection caret to the given point.
 - [func adjustSelection(by: BEDirectionalTextRange, completionHandler: () -> Void)](betextinput/adjustselection(by:completionhandler:).md)
-  Adjusts the selection by the moving the selected range by the given `range`, in character granularity units.
-- [func move(byOffset: Int)](betextinput/move(byoffset:).md)
-  Adjusts the current selection by `offset` in character granularity units
-- [func moveSelection(atBoundary: UITextGranularity, in: UITextStorageDirection, completionHandler: () -> Void)](betextinput/moveselection(atboundary:in:completionhandler:).md)
-  Moves the caret to relative to the current position in the `direction` to the given `granularity`. The `direction` is “forward” or “backward” in accordance with the directionality of the language.
-- [func selectTextForEditMenuWithLocation(inView: CGPoint, completionHandler: (Bool, String?, NSRange) -> Void)](betextinput/selecttextforeditmenuwithlocation(inview:completionhandler:).md)
-  Indicates the edit menu is being shown at the given location in the text input view’s coordinate space.
+  Adjusts the selection using a range.
+- [func updateCurrentSelection(to: CGPoint, from: BEGestureType, in: UIGestureRecognizer.State)](betextinput/updatecurrentselection(to:from:in:).md)
+  Indicates the point where the text interaction gesture changes.
 
 
 ---

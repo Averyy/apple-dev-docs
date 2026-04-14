@@ -50,16 +50,15 @@ You can:
   A proxy for a Safari webpage.
 - [class SFSafariTab](sfsafaritab.md)
   A proxy for a tab in a Safari window.
-### Safari Settings
-- [class SFSafariSettings](sfsafarisettings.md)
-  A class you use to open Safari Settings from your app.
 ### Safari content in your app
+- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+  Transfer bookmarks, saved passwords, and other information between browsers.
 - [class SFSafariViewController](sfsafariviewcontroller.md)
   An object that provides a visible standard interface for browsing the web.
 - [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
   The completion handler for an authentication session when the user cancels or finishes the login.
-- [Importing data exported from Safari](importing-data-exported-from-safari.md)
-  Transfer bookmarks, saved passwords, and other information between browsers.
+- [class SFSafariSettings](sfsafarisettings.md)
+  A class that provides your app access to several of Safari’s settings options.
 ### Associated domains
 - [Supporting associated domains](../Xcode/supporting-associated-domains.md)
   Connect your app and a website to provide both a native app and a browser experience.

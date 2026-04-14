@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The scroll gesture began.
+The scroll phase that indicates the gesture has begun.
 
 **Availability**:
 - iOS 17.4+

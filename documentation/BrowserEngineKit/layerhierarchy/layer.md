@@ -15,7 +15,7 @@ The layer represented by this layer hierarchy.
 var layer: CALayer? { get set }
 ```
 
-#### Overview
+#### Discussion
 
 Set this property to the root layer of the hierarchy that you host in a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md) in the browser app.
 

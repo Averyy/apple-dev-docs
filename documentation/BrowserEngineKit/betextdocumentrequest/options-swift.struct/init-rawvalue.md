@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Initializes an options instance for a text document request with the specified raw value.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

@@ -3,7 +3,7 @@
 **Framework**: Safari Services  
 **Kind**: class
 
-A class you use to open Safari Settings from your app.
+A class that provides your app access to several of Safari’s settings options.
 
 **Availability**:
 - iOS 26.0+
@@ -16,14 +16,22 @@ A class you use to open Safari Settings from your app.
 class SFSafariSettings
 ```
 
+## Mentions
+
+- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+
+#### Overview
+
+This class allows your app to present Safari’s extension settings pane or the Export Browsing Data sheet, which enables a person to export their Safari browsing data to a file.
+
 ## Topics
 
-### Opening Settings for Safari extensions
+### Accessing Safari extensions
 - [class func openExtensionsSettings(forIdentifiers: [String], completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openextensionssettings(foridentifiers:completionhandler:).md)
-  Launches Settings to Safari Extensions Settings
-### Opening Settings to export browsing data
+  Presents the extensions pane from Safari Settings.
+### Exporting browsing data to a file
 - [class func openExportBrowsingDataSettings(completionHandler: (((any Error)?) -> Void)?)](sfsafarisettings/openexportbrowsingdatasettings(completionhandler:).md)
-  Launches Settings and opens Safari’s export browsing data sheet
+  Presents the Export Browsing Data sheet from Safari Settings.
 
 ## Relationships
 
@@ -38,6 +46,15 @@ class SFSafariSettings
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Importing data exported from Safari](importing-data-exported-from-safari.md)
+  Transfer bookmarks, saved passwords, and other information between browsers.
+- [class SFSafariViewController](sfsafariviewcontroller.md)
+  An object that provides a visible standard interface for browsing the web.
+- [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
+  The completion handler for an authentication session when the user cancels or finishes the login.
 
 
 ---

@@ -11,7 +11,7 @@ Fetch one or more storefronts by using their identifiers.
 
 ## Endpoint
 
-`GET https://api.ent.apple.com/v1/storefronts#ids`
+`GET https://api.ent.apple.com/v1/storefronts`
 
 ## Parameters
 

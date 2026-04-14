@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
+Determines whether to block a URL.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
@@ -15,14 +17,19 @@ func evaluateURL(_ url: URL) async -> (Bool, Data?)
 
 #### Discussion
 
-Evaluates whether a URL should be blocked and if so, provides a UTF-8 encoded HTML representation of a blocking page.
+If this method blocks a URL, it returns a UTF-8 encoded HTML representation of a blocking page.
 
-This method performs a lazy initialization of some objects, so the first call could take longer than subsequent calls.
+This method performs a lazy initialization of some objects, so the first call can take longer than subsequent calls.
 
 ## Parameters
 
-- `url`: The URL to be evaluated.
-- `completionHandler`: The completion block to be invoked with result when evaluation is complete. Result is YES if the url should be blocked, and NO if it isn’t.
+- `url`: The URL to evaluate.
+- `completionHandler`: A closure that the system invokes when URL evaluation finishes. The closure returns `true` if the URL is blocked; `false`, otherwise.
+
+## See Also
+
+- [class var shouldEvaluateURLs: Bool](bewebcontentfilter/shouldevaluateurls.md)
+  Determines whether the built-in web content filter is active.
 
 
 ---

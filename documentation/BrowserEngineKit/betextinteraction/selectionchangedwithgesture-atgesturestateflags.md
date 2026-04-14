@@ -17,7 +17,7 @@ Notifies the system that the text view changed its selection.
 func selectionChangedWithGesture(at point: CGPoint, gesture gestureType: BEGestureType, state gestureState: UIGestureRecognizer.State, flags: BESelectionFlags)
 ```
 
-#### Overview
+#### Discussion
 
 Call this method when your browser text view receives [`updateCurrentSelection(to:from:in:)`](betextinput/updatecurrentselection(to:from:in:).md).
 

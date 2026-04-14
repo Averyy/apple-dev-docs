@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Indicates system has inserted the final dictation result
+A Boolean value that indicates when the system inserts a dictation result.
 
 **Availability**:
 - iOS 17.4+
@@ -17,13 +17,6 @@ Indicates system has inserted the final dictation result
 ```swift
 func didInsertFinalDictationResult()
 ```
-
-## See Also
-
-- [func willInsertFinalDictationResult()](betextinput/willinsertfinaldictationresult.md)
-  Indicates the system is about to insert the final dictation result.
-- [func replaceDictatedText(String, withText: String)](betextinput/replacedictatedtext(_:withtext:).md)
-  Inserts/replaces text for a dictation.
 
 
 ---

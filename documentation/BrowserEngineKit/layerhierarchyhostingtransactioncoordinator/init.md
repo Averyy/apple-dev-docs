@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
-may fail if a connection to the render server cannot be established
+Creates a transaction coordinator.
 
 **Availability**:
 - iOS 17.4+
@@ -17,11 +17,14 @@ init() throws
 
 #### Discussion
 
-Creates a transaction coordinator.
+This initializer can fail and throw an error if the process fails to retrieve a connection to the system’s Core Animation rendering server.
 
-#### Overview
+This method takes ownership of the port send right.
 
-This initializer can fail and throw an error if the process can’t get a connection to the operating system’s Core Animation rendering server.
+## See Also
+
+- [init?(coder: NSCoder)](layerhierarchyhostingtransactioncoordinator/init(coder:).md)
+  Creates a transaction coordinator from an encoded representation.
 
 
 ---

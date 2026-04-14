@@ -17,9 +17,13 @@ struct MediaEnvironment
 
 #### Overview
 
-To stream media in your browser app, create an instance of `MediaEnvironment` in the app. In the app, call [`activate()`](mediaenvironment/activate().md) before you begin any media playback or capture, including using the [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) that you get by calling [`makeCaptureSession()`](mediaenvironment/makecapturesession().md). When you are done with the media environment, call [`suspend()`](mediaenvironment/suspend().md).
+To stream media in your browser app, create an instance of `MediaEnvironment` and call [`activate()`](mediaenvironment/activate().md) before beginning media playback or capture, for example, by calling the [`AVCaptureSession`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSession) class’s [`makeCaptureSession()`](mediaenvironment/makecapturesession().md) method.
 
-If you capture media input or prepare streaming content in your browser’s rendering extension, call [`activate()`](mediaenvironment/activate().md) before calling [`grantCapability(_:)`](renderingprocess/grantcapability(_:).md) to grant a media playback and capture capability, which you create with [`ProcessCapability.mediaPlaybackAndCapture(environment:)`](processcapability/mediaplaybackandcapture(environment:).md). Call [`createXPCRepresentation()`](mediaenvironment/createxpcrepresentation().md) and use [`XPC`](https://developer.apple.com/documentation/XPC) to send the media environment to the rendering extension. Additionally, grant the same capability to the web content extension for the page that’s playing or capturing media, by calling [`grantCapability(_:)`](webcontentprocess/grantcapability(_:).md).
+To finish media playback or capture, call [`suspend()`](mediaenvironment/suspend().md).
+
+If your app captures media input or prepares streaming content in a rendering extension, call [`activate()`](mediaenvironment/activate().md) before [`grantCapability(_:)`](renderingprocess/grantcapability(_:).md) to grant the media playback and capture capability, which you create with [`ProcessCapability.mediaPlaybackAndCapture(environment:)`](processcapability/mediaplaybackandcapture(environment:).md).
+
+Call [`createXPCRepresentation()`](mediaenvironment/createxpcrepresentation().md) and use [`XPC`](https://developer.apple.com/documentation/XPC) to send the media environment to a rendering extension. Additionally, grant the same capability to the web content extension for a page that plays or captures media by calling [`grantCapability(_:)`](webcontentprocess/grantcapability(_:).md).
 
 ## Topics
 
@@ -30,7 +34,7 @@ If you capture media input or prepare streaming content in your browser’s rend
   Creates a media environment from an XPC representation.
 ### Sending media environments over XPC connections
 - [func createXPCRepresentation() -> xpc_object_t](mediaenvironment/createxpcrepresentation.md)
-  Creates an encoded representation of the media environment, suitable for sending over an XPC connection.
+  Creates an encoded representation of the media environment for transmission through an XPC connection.
 ### Capturing media streams
 - [func activate() throws](mediaenvironment/activate.md)
   Activates the media environment.
@@ -42,7 +46,15 @@ If you capture media input or prepare streaming content in your browser’s rend
 ## See Also
 
 - [enum ProcessCapability](processcapability.md)
-  An enumeration that identifies capabilities that a browser app can grant to its extension processes.
+  Capabilities of a helper extension process.
+- [class BEProcessCapability](beprocesscapability-76ijx.md)
+  Capabilities of a helper extension process.
+- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
+  An object that identifies a media playback or streaming environment.
+- [class BEWebContentFilter](bewebcontentfilter.md)
+  An object that represents a web content filter.
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+  Features of a rendering extension.
 
 
 ---

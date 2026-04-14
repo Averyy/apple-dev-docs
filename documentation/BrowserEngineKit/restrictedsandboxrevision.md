@@ -20,13 +20,15 @@ enum RestrictedSandboxRevision
 
 Design your browser to support the latest revision to the restricted sandbox in all extensions, and opt in to new revisions as they become available.
 
+The [`applyRestrictedSandbox(revision:)`](restrictedsandboxappliable/applyrestrictedsandbox(revision:).md) method of the [`RestrictedSandboxAppliable`](restrictedsandboxappliable.md) protocol takes an argument of this type.
+
 ## Topics
 
 ### Sandbox restriction revisions
 - [RestrictedSandboxRevision.revision1](restrictedsandboxrevision/revision1.md)
-  Revision 1 of the restricted sandbox rules.
-### Enumeration Cases
+  First revision of the restricted sandbox rules.
 - [RestrictedSandboxRevision.revision2](restrictedsandboxrevision/revision2.md)
+  Second revision of the restricted sandbox rules.
 
 ## Relationships
 

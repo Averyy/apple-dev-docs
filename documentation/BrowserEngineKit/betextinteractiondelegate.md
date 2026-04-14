@@ -33,6 +33,7 @@ protocol BETextInteractionDelegate
 - [protocol BEResponderEditActions](berespondereditactions.md)
   A set of methods that defines extended interactions in browser text views.
 - [enum BEGestureType](begesturetype.md)
+  The types of touch gestures that operate on input text.
 - [protocol BEResponderEditActions](berespondereditactions.md)
   A set of methods that defines extended interactions in browser text views.
 

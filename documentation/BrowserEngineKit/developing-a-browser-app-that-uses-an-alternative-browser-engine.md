@@ -2,7 +2,7 @@
 
 **Framework**: BrowserEngineKit
 
-Create a web browser app and associated extensions.
+Create a browser app and associated extensions.
 
 **Availability**:
 - iOS 17.4+
@@ -12,7 +12,7 @@ Create a web browser app and associated extensions.
 
 #### Overview
 
-This sample code project demonstrates how a web browser app uses [`BrowserEngineKit`](BrowserEngineKit.md) and [`XPC`](https://developer.apple.com/documentation/XPC) to communicate with its alternative browser engine over XPC, and implement a browser UI. The workspace contains four targets that define components of the browser app:
+This sample code project demonstrates how a browser app uses [`BrowserEngineKit`](BrowserEngineKit.md) and [`XPC`](https://developer.apple.com/documentation/XPC) to communicate with its alternative browser engine over XPC, and implement a browser UI. The workspace contains four targets that define components of the browser app:
 
 - `BrowserExample` contains the main app that presents the UI.
 - `RenderingExtension` contains the rendering extension that the app uses to play media and render complex views.
@@ -176,7 +176,7 @@ Finally, the web-content process replies to the browser app, telling the `WebCon
 ## See Also
 
 - [Designing your browser architecture](designing-your-browser-architecture.md)
-  Isolate privileged access to operating system resources and private data from untrusted code.
+  Isolate privileged access to system resources and private data from untrusted code.
 - [Preparing your app to be the default web browser](../Xcode/preparing-your-app-to-be-the-default-browser.md)
   Configure your browser app so users can set it as the default on their device instead of Safari.
 

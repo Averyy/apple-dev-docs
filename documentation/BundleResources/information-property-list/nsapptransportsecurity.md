@@ -57,6 +57,11 @@ This behavior enables you to manage differences between OS versions. You provide
 ### Certificate Pinning
 - [NSPinnedDomains](information-property-list/nsapptransportsecurity/nspinneddomains.md)
   A collection of certificates that App Transport Security expects when connecting to named domains.
+### TLS Functionality Package Compliance
+- [NSRequiresNIAPTLSPackageVersion](information-property-list/nsrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS.
+- [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
+  A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
 
 ## See Also
 

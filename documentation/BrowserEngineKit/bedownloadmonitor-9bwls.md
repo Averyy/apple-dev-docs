@@ -43,7 +43,9 @@ When someone downloads a file in your web browser, create an instance of this cl
   Informs the system that it needs to resume monitoring the download.
 ### Getting information about a download
 - [let sourceURL: URL](bedownloadmonitor-9bwls/sourceurl.md)
+  A URL to a remote file to download.
 - [let destinationURL: URL](bedownloadmonitor-9bwls/destinationurl.md)
+  A local file path to the downloaded file.
 
 ## Relationships
 

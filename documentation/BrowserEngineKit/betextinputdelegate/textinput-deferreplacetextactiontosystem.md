@@ -28,7 +28,7 @@ For example, a replacement could be deferred after it is selected from the autoc
 ## See Also
 
 - [func shouldDeferEventHandlingToSystem(for: any BETextInput, context: BEKeyEntryContext) -> Bool](betextinputdelegate/shoulddefereventhandlingtosystem(for:context:).md)
-  Defers the key event to the system and returns whether the key event was handled.
+  Notify the text system that your web browser’s custom text view isn’t handling key events.
 
 
 ---

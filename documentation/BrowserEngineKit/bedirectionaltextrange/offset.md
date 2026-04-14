@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
+The starting position of the directional text range within the text.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -14,6 +16,11 @@
 ```swift
 var offset: Int
 ```
+
+## See Also
+
+- [var length: Int](bedirectionaltextrange/length.md)
+  The number of characters included in the directional text range.
 
 
 ---

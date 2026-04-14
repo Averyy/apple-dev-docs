@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: method
 
+Adds a previously blocked URL to the web content filter’s allow list.
+
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
@@ -13,14 +15,10 @@
 func allow(_ url: URL) async throws -> Bool
 ```
 
-#### Discussion
-
-Adds blocked URL to built-in web content filter’s allowlist.
-
 ## Parameters
 
-- `url`: The URL to be added.
-- `completionHandler`: The completion block to be called when the add operation is complete, with result of the operation. Result is YES if the url is added successfully, and NO if it isn’t.
+- `url`: The URL to unblock.
+- `completionHandler`: A closure that the system invokes when the add operation finishes. The closure returns `true` on success; `false`, otherwise.
 
 
 ---

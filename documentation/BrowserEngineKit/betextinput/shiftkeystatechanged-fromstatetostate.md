@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Indicates a transition in shift state
+Indicates a transition in the state of the Shift key.
 
 **Availability**:
 - iOS 17.4+
@@ -24,27 +24,12 @@ func shiftKeyStateChanged(fromState oldState: BEKeyModifierFlags, toState newSta
 
 #### Discussion
 
-Indicates that a person has pressed or released a Shift key, or toggled the caps lock state.
+The system invokes this method when a person presses or releases the Shift key, or toggles the Caps Lock key.
 
 ## Parameters
 
-- `oldState`: The previous shift-key state.
-- `newState`: The new shift-key state.
-
-## See Also
-
-- [var isEditable: Bool](betextinput/iseditable.md)
-  Reflects the ability to modify text
-- [func handleKeyEntry(BEKeyEntry, completionHandler: (BEKeyEntry, Bool) -> Void)](betextinput/handlekeyentry(_:completionhandler:).md)
-  Accepts key-entry events from the text system for the text view to process.
-- [func text(in: UITextRange) -> String?](betextinput/text(in:).md)
-  Returns the text in the specified range.
-- [func offset(from: UITextPosition, to: UITextPosition) -> Int](betextinput/offset(from:to:).md)
-  Returns the number of UTF-16 characters between one text position and another text position.
-- [func setBaseWritingDirection(NSWritingDirection, for: UITextRange)](betextinput/setbasewritingdirection(_:for:).md)
-  Sets the base writing direction for a specified range of text in a document.
-- [func delete(in: UITextStorageDirection, to: UITextGranularity)](betextinput/delete(in:to:).md)
-  Deletes text by the specified direction and granularity.  Current supported combinations include:
+- `oldState`: The previous state of the Shift key.
+- `newState`: The new state of the Shift key.
 
 
 ---

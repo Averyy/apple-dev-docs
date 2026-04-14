@@ -50,6 +50,8 @@ Do not interface with this protocol directly. Instead, use [`RealityViewContent`
 
 ## See Also
 
+- [Controlling the layout behavior of a reality view](controlling-the-layout-behavior-of-a-realityview.md)
+  Choose a strategy for sizing frames and centering 3D content.
 - [struct RealityView](realityview.md)
   A view that contains RealityKit content.
 - [struct RealityViewContent](realityviewcontent.md)

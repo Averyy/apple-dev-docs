@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Original text for which alternative strings are provided
+The original text that the alternatives derive from.
 
 **Availability**:
 - iOS 17.4+

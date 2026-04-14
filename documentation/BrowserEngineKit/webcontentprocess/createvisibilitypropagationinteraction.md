@@ -16,9 +16,9 @@ Returns an interaction that associates a view with the web content process.
 func createVisibilityPropagationInteraction() -> any UIInteraction
 ```
 
-#### Overview
+#### Discussion
 
-When you add a visibility propagation interaction to a view, the operating system treats the extension process as “visible” whenever the view is visible, and schedules the process as if it has visible UI. When the view is not visible, the operating system schedules the process as a background helper.
+When you add a visibility propagation interaction to a view, the system considers the extension process visible whenever the view is visible, and schedules the process as if it has visible UI. When the view is not visible, the system schedules the process as a background helper.
 
 If your web content extension prepares content for multiple views, create a separate visibility propagation for each view.
 

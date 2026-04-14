@@ -16,6 +16,10 @@ An object that incorporates spatial tracking capabilities into your RealityKit a
 final class SpatialTrackingSession
 ```
 
+## Mentions
+
+- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
+
 #### Overview
 
 `SpatialTrackingSession` helps you manage spatial tracking capabilities, such as world and hand tracking, in your RealityKit app. You can decide which AR data you need and how you want to use them by running a corresponding [`SpatialTrackingSession.Configuration`](spatialtrackingsession/configuration.md).

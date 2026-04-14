@@ -1,4 +1,4 @@
-# Extension lifecycle
+# Extension life cycle
 
 **Framework**: BrowserEngineKit
 
@@ -11,28 +11,41 @@ Launch, communicate with, and invalidate browser extensions.
   Coordinate helper processes to efficiently support your browser app.
 - [Using XPC to communicate with browser extensions](using-xpc-to-communicate-with-browser-extensions.md)
   Build interprocess communication between your host app and extensions.
+- [protocol BEExtensionProcess](beextensionprocess.md)
+  A common protocol that creates XPC connections for an extension process.
 ### Browser extensions
 - [protocol WebContentExtension](webcontentextension.md)
-  An interface for configuring a web content helper extension process that will carry web page decoding operations on behalf of the browser app.
+  A protocol for an app extension that manages web content for your browser app.
 - [struct WebContentExtensionConfiguration](webcontentextensionconfiguration.md)
+  An opaque configuration structure for a web content extension.
 - [protocol NetworkingExtension](networkingextension.md)
-  An interface for configuring a networking helper extension process that will carry out networking operations on behalf of the browser app.
+  A protocol for an app extension that manages network connections for your browser app.
 - [struct NetworkingExtensionConfiguration](networkingextensionconfiguration.md)
+  An opaque configuration structure for a networking extension.
 - [protocol RenderingExtension](renderingextension.md)
-  An interface for configuring a rendering helper extension process that will carry out operations requiring rendering access on behalf of the browser app.
+  A protocol for an app extension that manages graphics rendering for your browser app.
 - [struct RenderingExtensionConfiguration](renderingextensionconfiguration.md)
+  An opaque configuration structure for a rendering extension.
 ### Host app representations
 - [struct WebContentProcess](webcontentprocess.md)
-  An object that represents a running web content extension process.
+  A process that manages webpage content in an app extension.
 - [struct NetworkingProcess](networkingprocess.md)
-  An object that represents a running browser networking extension process.
+  A process that manages network connections in an app extension.
 - [struct RenderingProcess](renderingprocess.md)
-  An object that represents a running browser rendering extension process.
+  A process that manages rendering in an app extension.
 ### Extension capabilities
 - [enum ProcessCapability](processcapability.md)
-  An enumeration that identifies capabilities that a browser app can grant to its extension processes.
+  Capabilities of a helper extension process.
+- [class BEProcessCapability](beprocesscapability-76ijx.md)
+  Capabilities of a helper extension process.
 - [struct MediaEnvironment](mediaenvironment.md)
   An object that identifies a media playback or streaming environment.
+- [class BEMediaEnvironment](bemediaenvironment-15xci.md)
+  An object that identifies a media playback or streaming environment.
+- [class BEWebContentFilter](bewebcontentfilter.md)
+  An object that represents a web content filter.
+- [enum RenderingExtensionFeature](renderingextensionfeature.md)
+  Features of a rendering extension.
 
 ## See Also
 

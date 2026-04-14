@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineCore  
 **Kind**: class
 
-An object that represents an audio session.
+An object that wraps an AV audio session to scope the browser app’s audio session control.
 
 **Availability**:
 - iOS 26.0+
@@ -16,18 +16,22 @@ An object that represents an audio session.
 (BEAudioSession) class BEAudioSession
 ```
 
+#### Overview
+
+This class provides a scoped interface that limits a browser-app extension’s access to the audio session. For example, an extension process can query available outputs and communicate a preferred output to the system, while the browser app’s main process retains full control over audio session configuration.
+
 ## Topics
 
-### Initializers
+### Initializing an audio session
 - [init(audioSession: AVAudioSession)](beaudiosession-7bb2q/init(audiosession:).md)
-  Creates a BE audio session from an  AV audio session
-### Instance Properties
+  Initializes a browser engine audio session.
+### Managing audio output
 - [var availableOutputs: Array<AVAudioSessionPortDescription>](beaudiosession-7bb2q/availableoutputs.md)
-  Gets the set of output ports that are available for routing.
+  An array of output ports available for audio routing in the current session.
 - [var preferredOutput: AVAudioSessionPortDescription?](beaudiosession-7bb2q/preferredoutput.md)
-  Get the preferred output port.  Will be nil if no preference has been set.
-### Instance Methods
+  The output port the person sets as their preference.
 - [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-7bb2q/setpreferredoutput(_:).md)
+  Sets the preferred audio output port for the session.
 
 ## Relationships
 
@@ -40,6 +44,11 @@ An object that represents an audio session.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [class BEAudioSession](beaudiosession-6b7ig.md)
+  An object that wraps an AV audio session to scope the browser app’s audio session control.
 
 
 ---

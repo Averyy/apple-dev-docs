@@ -15,7 +15,7 @@ For information about Xcode Cloud releases, see [`Xcode Cloud release notes`](ht
 ## Topics
 
 ### Xcode 26
-- [Xcode 26.5 Beta Release Notes](xcode-26_5-release-notes.md)
+- [Xcode 26.5 Beta 2 Release Notes](xcode-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.4 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

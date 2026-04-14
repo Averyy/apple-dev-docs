@@ -54,10 +54,6 @@ Your accessory receives the encrypted notification data and implements [`HPKE (R
 - [struct AlertingContext](alertingcontext.md)
   A structure that provides guidance for how to alert for a notification.
 ### Interactive support
-- [protocol AccessoryNotificationManaging](accessorynotificationmanaging.md)
-  A protocol that enables the communication of notification responses to the system.
-- [class AccessoryNotificationManagerFactory](accessorynotificationmanagerfactory.md)
-  A factory class that provides access to the system notification manager.
 - [struct NotificationResponse](notificationresponse.md)
   A person’s response to a notification.
 ### Errors

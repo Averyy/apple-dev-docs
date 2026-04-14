@@ -20,6 +20,7 @@ enum AccessoryTransport
 ### Enumeration Cases
 - [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
 - [AccessoryTransport.internet](accessorytransport/internet.md)
+- [AccessoryTransport.localNetwork](accessorytransport/localnetwork.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
-Represents the scope of the request as a count of granularity units specified in `surroundingGranularity`
+A count of granularity units that defines the scope of the document request.
 
 **Availability**:
 - iOS 17.4+
@@ -16,6 +16,15 @@ Represents the scope of the request as a count of granularity units specified in
 ```swift
 var granularityCount: Int { get set }
 ```
+
+#### Discussion
+
+Use this value with [`surroundingGranularity`](betextdocumentrequest/surroundinggranularity.md) to determine the extent of the text context that the system requests.
+
+## See Also
+
+- [var surroundingGranularity: UITextGranularity](betextdocumentrequest/surroundinggranularity.md)
+  The unit of measurement for the document request’s scope.
 
 
 ---

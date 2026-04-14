@@ -53,8 +53,6 @@ For more on custom adapters, see [`Get started with Foundation Models adapter tr
 ### Checking compatibility
 - [static func compatibleAdapterIdentifiers(name: String) -> [String]](systemlanguagemodel/adapter/compatibleadapteridentifiers(name:).md)
   Get all compatible adapter identifiers compatible with current system models.
-- [static func isCompatible(AssetPack) -> Bool](systemlanguagemodel/adapter/iscompatible(_:).md)
-  Returns a Boolean value that indicates whether an asset pack is an on-device foundation model adapter and is compatible with the system base model version on the runtime device.
 ### Getting the asset error
 - [SystemLanguageModel.Adapter.AssetError](systemlanguagemodel/adapter/asseterror.md)
 

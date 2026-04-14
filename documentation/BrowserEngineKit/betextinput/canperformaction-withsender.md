@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Returns whether text related actions, such those included in UIResponderStandardEditActions, can be handled
+Indicates whether the text view can process a given action.
 
 **Availability**:
 - iOS 17.4+
@@ -29,21 +29,17 @@ A Boolean value that indicates whether the text view can handle the action messa
 
 #### Discussion
 
-Indicates whether the text view can process a given action.
-
-#### Overview
-
 This method is similar to [`responds(to:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/responds(to:)), except that even if your text view implements the action message, it can decline to handle it by returning `false` from this method.
 
 ## Parameters
 
-- `action`: The method selector for the action method.
+- `action`: A selector for the action.
 - `sender`: The object that’s sending the message.
 
 ## See Also
 
-- [var asyncInputDelegate: (any BETextInputDelegate)?](betextinput/asyncinputdelegate.md)
-  A system-provided input delegate is assigned when the system is interested in input changes.
+- [func selectTextForEditMenuWithLocation(inView: CGPoint, completionHandler: (Bool, String?, NSRange) -> Void)](betextinput/selecttextforeditmenuwithlocation(inview:completionhandler:).md)
+  Indicates the edit menu displays at the given location in the text input view’s coordinate space.
 
 
 ---

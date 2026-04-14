@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
+An option that requests the ranges of text the system autocorrects within the document.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+

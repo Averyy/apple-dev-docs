@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-Revision 1 of the restricted sandbox rules.
+First revision of the restricted sandbox rules.
 
 **Availability**:
 - iOS 17.4+
@@ -16,9 +16,16 @@ Revision 1 of the restricted sandbox rules.
 case revision1
 ```
 
-#### Overview
+#### Discussion
 
-This revision applies restrictions to the web content extension, but not to the networking or rendering extensions. For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
+You can apply this revision to any of your app’s extensions but the system only enforces its restrictions for the web content extension.
+
+For more information, see [`Limiting resource access in web content extensions`](limiting-resource-access-in-content-extensions.md).
+
+## See Also
+
+- [RestrictedSandboxRevision.revision2](restrictedsandboxrevision/revision2.md)
+  Second revision of the restricted sandbox rules.
 
 
 ---

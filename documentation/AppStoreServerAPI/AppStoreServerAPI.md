@@ -54,7 +54,7 @@ https://api.storekit-sandbox.itunes.apple.com/
 For example, to call [`Get Transaction History`](get-transaction-history.md) in the sandbox environment, send a request using the sandbox URL:
 
 ```other
-https://api.storekit-sandbox.itunes.apple.com/inApps/v2/history/{transactionId}
+https://api.storekit-sandbox.itunes.apple.com/inApps/v2/history/{anyTransactionId}
 ```
 
 Note that `/inApps` in the path is case-sensitive.
@@ -112,6 +112,9 @@ If you don’t have environment information, follow these steps:
   The customer’s order ID from an App Store receipt for in-app purchases.
 - [object OrderLookupResponse](orderlookupresponse.md)
   A response that includes the order lookup status and an array of signed transactions for the in-app purchases in the order.
+### Finishing transactions
+- [Finish Transaction](finish-transaction.md)
+  Notifies the App Store server that your system has finished processing the customer’s transaction.
 ### Consumption information
 - [Send Consumption Information](send-consumption-information.md)
   Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.

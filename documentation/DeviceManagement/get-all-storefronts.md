@@ -11,7 +11,7 @@ Fetch all the storefronts in alphabetical order.
 
 ## Endpoint
 
-`GET https://api.ent.apple.com/v1/storefronts#all`
+`GET https://api.ent.apple.com/v1/storefronts`
 
 ## Parameters
 

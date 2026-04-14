@@ -22,13 +22,6 @@ func alternativesForSelectedText() -> [BETextAlternatives]?
 
 - [Integrating custom browser text views with UIKit](integrating-custom-browser-text-views-with-uikit.md)
 
-## See Also
-
-- [func add(BETextAlternatives)](betextinput/add(_:).md)
-  Adds text alternatives to the text input object for the current selection
-- [func insert(BETextAlternatives)](betextinput/insert(_:)-6x7hd.md)
-  Inserts the given `text` or one of it’s alternative texts available on `alternatives`
-
 
 ---
 

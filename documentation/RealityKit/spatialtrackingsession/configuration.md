@@ -16,10 +16,6 @@ A type for configuring the spatial tracking session.
 struct Configuration
 ```
 
-## Mentions
-
-- [Implementing scene understanding and reconstruction in your RealityKit app](realitykit-scene-understanding.md)
-
 ## Topics
 
 ### Structures

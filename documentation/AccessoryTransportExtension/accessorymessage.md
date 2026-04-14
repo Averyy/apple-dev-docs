@@ -31,6 +31,9 @@ Create accessory messages in your app’s [`AccessoryDataProvider`](accessorydat
   An array of payload objects that comprise the message.
 - [AccessoryMessage.Payload](accessorymessage/payload.md)
   A structure that represents a single data payload within an accessory message.
+### Enumerations
+- [AccessoryMessage.Error](accessorymessage/error.md)
+- [AccessoryMessage.Result](accessorymessage/result.md)
 
 ## Relationships
 

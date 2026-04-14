@@ -571,7 +571,7 @@ Monitor for consent withdrawal by implementing [`App Store Server Notifications 
 
 Verify your implementation in the sandbox environment before deploying to production. The sandbox allows you to test various age range scenarios, including children under 13, ages 13-15, ages 16-17, and 18 and older, with different approval states and age declaration types. You can also simulate consent revocation by entering your app’s bundle ID to trigger a `RESCIND_CONSENT` notification to your server.
 
-Access sandbox testing through Developer Mode settings on your device, or configure test scenarios in App Store Connect. For detailed setup instructions and a complete list of test cases with their corresponding API return values, see [`Testing Age Assurance in Sandbox`](https://developer.apple.com/documentation/StoreKit/testing-age-assurance-in-sandbox).
+Access sandbox testing through Developer Mode settings on your device, or configure test scenarios in App Store Connect. For detailed setup instructions and a complete list of test cases with their corresponding API return values, see [`Testing age assurance in sandbox`](https://developer.apple.com/documentation/StoreKit/testing-age-assurance-in-sandbox).
 
 ## See Also
 

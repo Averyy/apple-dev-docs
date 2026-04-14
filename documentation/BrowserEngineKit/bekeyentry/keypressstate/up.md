@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineKit  
 **Kind**: case
 
-The key is up.
+An entry that indicates the key is up.
 
 **Availability**:
 - iOS 17.4+
@@ -24,7 +24,7 @@ case up
 ## See Also
 
 - [BEKeyEntry.KeyPressState.down](bekeyentry/keypressstate/down.md)
-  The key is down.
+  An entry that indicates the key is down.
 
 
 ---

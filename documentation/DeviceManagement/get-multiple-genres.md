@@ -36,7 +36,7 @@ Fetch metadata for genres from the catalog by using their identifiers.
 
 ## Endpoint
 
-`GET https://api.ent.apple.com/v1/catalog/{storefront}/genres#ids`
+`GET https://api.ent.apple.com/v1/catalog/{storefront}/genres`
 
 ## Parameters
 

@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: init
 
+Initializes a remote element in the hosting process.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -14,14 +16,10 @@
 init(identifier: String, remotePid: pid_t)
 ```
 
-#### Discussion
-
-Initializes a remote element in the hosting process.
-
 ## Parameters
 
-- `identifier`: Unique identifier to connect this remote element to the remote element it hosts. This should be unique per pair of remote elements.
-- `remotePid`: The PID of the hosted remote element’s process.
+- `identifier`: A unique ID that connects a remote element to its hosted version in the local process. Set this parameter to a unique value per pair of element references.
+- `remotePid`: The process ID for the hosted remote element’s process.
 
 
 ---

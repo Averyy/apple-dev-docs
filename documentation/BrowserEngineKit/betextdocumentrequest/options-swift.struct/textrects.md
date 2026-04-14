@@ -3,6 +3,8 @@
 **Framework**: BrowserEngineKit  
 **Kind**: property
 
+An option that requests the rectangular bounds of text within a document’s layout.
+
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
@@ -14,6 +16,11 @@
 ```swift
 static var textRects: BETextDocumentRequest.Options { get }
 ```
+
+## See Also
+
+- [static var markedTextRects: BETextDocumentRequest.Options](betextdocumentrequest/options-swift.struct/markedtextrects.md)
+  An option that requests the rectangular bounds of marked text regions.
 
 
 ---

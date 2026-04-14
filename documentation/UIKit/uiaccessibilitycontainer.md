@@ -11,6 +11,7 @@ Provide a set of methods that view subclasses use to make subcomponents accessib
 - [func accessibilityElement(at: Int) -> Any?](../ObjectiveC/NSObject-swift.class/accessibilityElement(at:).md)
 - [func index(ofAccessibilityElement: Any) -> Int](../ObjectiveC/NSObject-swift.class/index(ofAccessibilityElement:).md)
 - [var accessibilityElements: [Any]?](../ObjectiveC/NSObject-swift.class/accessibilityElements.md)
+  An array of features of an object that assistive technologies can access.
 - [var automationElements: [Any]?](../ObjectiveC/NSObject-swift.class/automationElements.md)
 - [var accessibilityContainerType: UIAccessibilityContainerType](../ObjectiveC/NSObject-swift.class/accessibilityContainerType.md)
 - [enum UIAccessibilityContainerType](uiaccessibilitycontainertype.md)

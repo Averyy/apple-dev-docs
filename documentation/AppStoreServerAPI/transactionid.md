@@ -28,6 +28,8 @@ In a purchase transaction, the `transactionId` matches the original transaction 
   The original transaction identifier of a purchase.
 - [type webOrderLineItemId](weborderlineitemid.md)
   The unique identifier of subscription-purchase events across devices, including renewals.
+- [type anyTransactionId](anytransactionid.md)
+  A type that represents an original transaction ID, transaction ID, or app transaction ID.
 
 
 ---

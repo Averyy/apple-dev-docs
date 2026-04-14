@@ -52,7 +52,7 @@ To add a web app or bookmark to someone’s Home Screen:
 
 ## See Also
 
-- [View coordination](view-coordination.md)
+- [View and input coordination](view-coordination.md)
   Display content in the browser’s UI that an extension renders.
 - [Text interaction](text-interaction.md)
   Integrate your web browser engine asynchronously with the text system.

@@ -212,6 +212,9 @@ Task {
   Event triggered when group chat is started.
 - [RCSService.GroupChatSubjectUpdatedEvent](rcsservice/groupchatsubjectupdatedevent.md)
   Event triggered when a group’s subject is updated.
+### Structures
+- [RCSService.GroupChatSubjectInvalidatedEvent](rcsservice/groupchatsubjectinvalidatedevent.md)
+  Event triggered when a group’s encryption state changes, which causes the group subject to be cleared on the server.
 
 ## Relationships
 

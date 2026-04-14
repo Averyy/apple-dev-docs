@@ -3,7 +3,7 @@
 **Framework**: BrowserEngineCore  
 **Kind**: property
 
-Gets the set of output ports that are available for routing.
+An array of output ports available for audio routing in the current session.
 
 **Availability**:
 - iOS 26.0+
@@ -14,6 +14,13 @@ Gets the set of output ports that are available for routing.
 ```swift
 var availableOutputs: [AVAudioSessionPortDescription]? { get }
 ```
+
+## See Also
+
+- [var preferredOutput: AVAudioSessionPortDescription?](beaudiosession-6b7ig/preferredoutput.md)
+  The output port the person sets as their preference.
+- [func setPreferredOutput(AVAudioSessionPortDescription?) throws](beaudiosession-6b7ig/setpreferredoutput(_:).md)
+  Sets the preferred audio output port for the session.
 
 
 ---

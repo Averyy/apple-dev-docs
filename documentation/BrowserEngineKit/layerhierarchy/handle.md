@@ -15,7 +15,7 @@ A reference to the layer hierarchy that you add to the hosting view.
 var handle: LayerHierarchyHandle { get }
 ```
 
-#### Overview
+#### Discussion
 
 Get the handle in your extension process, then use XPC to send it to the browser app. In the browser app, add the handle to a [`LayerHierarchyHostingView`](layerhierarchyhostingview.md).
 

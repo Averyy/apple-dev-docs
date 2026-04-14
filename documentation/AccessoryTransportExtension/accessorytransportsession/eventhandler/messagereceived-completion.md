@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Message received from the Data Provider. Completion should be called with the result of sending the message to the accessory. If not called, it’s assumed the message was successfully delivered, and will not be re-delivered.
+Message received from the Data Provider. Completion should be called with the result of sending the message to the accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -13,7 +13,7 @@ Message received from the Data Provider. Completion should be called with the re
 ## Declaration
 
 ```swift
-func messageReceived(_ message: TransportMessage, completion: @escaping TransportMessage.Completion)
+func messageReceived(_ message: TransportMessage, completion: @escaping @Sendable (AccessoryMessage.Result) -> Void)
 ```
 
 

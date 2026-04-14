@@ -35,7 +35,7 @@ NSString* summary = (NSString*)CFBridgingRelease(  // ARC takes ownership
 NSLog(@"Cert summary: %@", summary);
 ```
 
-In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](seccertificatecopypublickey(_:_:).md) function:
+In macOS, there are a few additional functions that return data about a certificate. For example, to pull the public key from a certificate, you use the [`SecCertificateCopyPublicKey(_:)`](seccertificatecopypublickey(_:).md) function:
 
 **Swift**:
 

@@ -6,8 +6,8 @@
 A uniform type identifier for the file.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
+- iOS 26.5+ (Beta)
+- iPadOS 26.5+ (Beta)
 
 ## Declaration
 

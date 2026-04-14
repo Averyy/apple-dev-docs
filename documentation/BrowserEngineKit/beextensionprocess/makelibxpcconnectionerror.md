@@ -19,11 +19,16 @@ func makeLibXPCConnectionError() throws -> xpc_connection_t
 
 #### Return Value
 
-The connection object representing the created libXPC connection or nil.
+The connection object representing the created libXPC connection or `nil`.
 
 #### Discussion
 
-This method creates a connection to the extension process and returns it. If it is not possible to make an XPC connection, this method will return nil and populate the `error` out param.
+This method creates a connection to the extension process and returns it. If it isn’t possible to make an XPC connection, this method returns `nil` and populates the `error` parameter.
+
+## See Also
+
+- [func invalidate()](beextensionprocess/invalidate.md)
+  Stops the extension process.
 
 
 ---

@@ -17,9 +17,9 @@ Shows potential replacements for the selected content.
 optional func promptForReplace(_ sender: Any?)
 ```
 
-#### Overview
+#### Discussion
 
-To present the standard operating system UI for this action, call [`showReplacements(forText:)`](betextinteraction/showreplacements(fortext:).md) in your implementation of this method.
+To present the standard system UI for this action, call [`showReplacements(forText:)`](betextinteraction/showreplacements(fortext:).md) in your implementation of this method.
 
 ## Parameters
 
