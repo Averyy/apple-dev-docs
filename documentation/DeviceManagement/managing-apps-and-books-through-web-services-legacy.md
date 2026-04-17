@@ -12,7 +12,7 @@ Volume Purchase Program (VPP) allows an organization to manage and assign apps t
 
 All endpoints (except for [`Service Configuration`](service-configuration.md)) require an `sToken` parameter to authenticate.
 
-Content managers can download a location-based `sToken` from the settings page in [`Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)`](upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm.md), and upload it into their MDM. This grants the MDM access to the licenses available at that location.
+Content managers can download a location-based `sToken` from the settings page in [`Upgrading to Apple School Manager and Apple Business`](upgrading-to-apple-school-manager-and-apple-business.md), and upload it into their MDM. This grants the MDM access to the licenses available at that location.
 
 ![Download a location-based token from the settings page and upload it to your MDM](https://docs-assets.developer.apple.com/published/64f7ab887e7d38afa4d27e12423d914d/media-3230503%402x.png)
 
@@ -132,7 +132,7 @@ In the latter example, the delay is 2 minutes.
 
 ## See Also
 
-- [Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)](upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization user base with a single destination.
 - [Interpreting Error Codes](interpreting-error-codes.md)
   Investigate service request errors and troubleshoot solutions.

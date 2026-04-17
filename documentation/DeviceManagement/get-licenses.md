@@ -12,7 +12,7 @@ Get the set of licenses managed by your organization.
 ## Mentions
 
 - [Retrieving a Large Record Set](retrieving-a-large-record-set.md)
-- [Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)](upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
 
 #### Discussion
 

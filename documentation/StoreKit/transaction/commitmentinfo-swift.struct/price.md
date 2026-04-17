@@ -17,6 +17,12 @@
 let price: Decimal
 ```
 
+## See Also
+
+- [let billingPeriodNumber: UInt64](transaction/commitmentinfo-swift.struct/billingperiodnumber.md)
+- [let expirationDate: Date](transaction/commitmentinfo-swift.struct/expirationdate.md)
+- [let totalBillingPeriods: UInt64](transaction/commitmentinfo-swift.struct/totalbillingperiods.md)
+
 
 ---
 

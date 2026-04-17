@@ -44,7 +44,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#TokenUpdateRequest`
 
 ## Request Body
 

@@ -88,7 +88,7 @@ This command isn’t supported on a Mac with Apple silicon.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#SetFirmwarePasswordCommand`
 
 ## Request Body
 

@@ -19,7 +19,7 @@ object SoftwareUpdateSettingsBeta_ProgramObject
 ## Properties
 
 - `Description` (string) *(required)*: A human readable description of the beta program.
-- `Token` (string) *(required)*: The Apple Business Manager or Apple School Manager seeding service token for the organization the MDM server is part of. The system uses this token to enroll the device in the corresponding beta program.
+- `Token` (string) *(required)*: The Apple School Manager or Apple Business seeding service token for the organization the MDM server is part of. The system uses this token to enroll the device in the corresponding beta program.
 
 ## See Also
 

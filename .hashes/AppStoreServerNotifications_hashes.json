@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:29:37.163625",
+    "last_updated": "2026-04-17T07:52:03.451393",
     "total_pages": 242,
-    "session_id": "2026-04-14T07:29:24.573134"
+    "session_id": "2026-04-17T07:51:41.488333"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppStoreServerNotifications.json": {
       "hash": "fd9b8d0acbf27698e884a6aba1bd87ca5a3754ac8c13055ff73c06781c1ea7c8",
-      "last_checked": "2026-04-14T07:29:24.965414",
+      "last_checked": "2026-04-17T07:51:41.903096",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"97362c97a3a6f85a30d9c030eb459978\"",
       "file_path": "documentation/AppStoreServerNotifications/AppStoreServerNotifications.md"
     },
     "https://developer.apple.com/documentation/AppStoreServerNotifications": {
       "hash": "fd9b8d0acbf27698e884a6aba1bd87ca5a3754ac8c13055ff73c06781c1ea7c8",
-      "last_checked": "2026-04-14T07:29:24.867238",
+      "last_checked": "2026-04-17T07:51:41.784465",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"97362c97a3a6f85a30d9c030eb459978\"",
       "file_path": "documentation/AppStoreServerNotifications/AppStoreServerNotifications.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/enabling-app-store-server-notifications.json": {
       "hash": "1fe6d03bb171238857ebe784b102bfe64b950874f6c60bbbcbb281bb7b9578be",
-      "last_checked": "2026-04-14T07:29:25.240994",
+      "last_checked": "2026-04-17T07:51:42.150492",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"64ffe5e85b9937ec8f2ad33b4e8b6f55\"",
       "file_path": "documentation/AppStoreServerNotifications/enabling-app-store-server-notifications.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/receiving-app-store-server-notifications.json": {
       "hash": "1cd41befd66f685e2f894590a8fae83d8731b60b2734e9f6dd3d15fd85215a2e",
-      "last_checked": "2026-04-14T07:29:25.382330",
+      "last_checked": "2026-04-17T07:51:42.452128",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"96880a679b1718536fdb7cf23530e47c\"",
       "file_path": "documentation/AppStoreServerNotifications/receiving-app-store-server-notifications.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responding-to-app-store-server-notifications.json": {
       "hash": "a53b548a98a085995d25b415640638e0c86f35aba0c526533dd592b4b3c1185f",
-      "last_checked": "2026-04-14T07:29:25.448657",
+      "last_checked": "2026-04-17T07:51:42.746557",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"312e4347ab23d9873cef655e7d2b34a7\"",
       "file_path": "documentation/AppStoreServerNotifications/responding-to-app-store-server-notifications.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-changelog.json": {
       "hash": "35da81a0608e285ead6b03708930a0198a3d3bc42e707db3b35f4e3367de600a",
-      "last_checked": "2026-04-14T07:29:25.568434",
+      "last_checked": "2026-04-17T07:51:42.902773",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"698192c317c6abf738eb885d8a5e672f\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-changelog.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-v2.json": {
       "hash": "22fb2f990616b5bf7b60d27c0596bdbe0a91f2ea94d7774af67a6fb9504f405c",
-      "last_checked": "2026-04-14T07:29:25.603433",
+      "last_checked": "2026-04-17T07:51:43.191268",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"74ec7c956b80d6714fce5f76cd46476e\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v2.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2.json": {
       "hash": "da3173c6ac7ae35da26cd3cbb415e194d3d1ddc29109f9f0a7c294101b8b2115",
-      "last_checked": "2026-04-14T07:29:25.790386",
+      "last_checked": "2026-04-17T07:51:43.358659",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"a668f172981f9af48639cb79bae24a03\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv2decodedpayload.json": {
       "hash": "2130e45cecaa86383c6741cc0b553503552fdb39311d14e1f7b1ca25542f3c74",
-      "last_checked": "2026-04-14T07:29:25.882546",
+      "last_checked": "2026-04-17T07:51:43.566134",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"814311a612ac1cf55caea7c9fdbd51b4\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv2decodedpayload.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationtype.json": {
       "hash": "286b9c167191372116781e3e57e42f3b549152420641d45c0345eb1077a2ceda",
-      "last_checked": "2026-04-14T07:29:26.048155",
+      "last_checked": "2026-04-17T07:51:43.734345",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"53b9c0ea682aa162e0e3d17af368c47f\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationtype.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/subtype.json": {
       "hash": "33c04d21f79376ce9df51ce21c735ca32bc6f48b918e85b642615f1dfc0bbe5e",
-      "last_checked": "2026-04-14T07:29:26.138353",
+      "last_checked": "2026-04-17T07:51:44.012058",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"2d6707a8418da875484e78dbca7d8098\"",
       "file_path": "documentation/AppStoreServerNotifications/subtype.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-version-1.json": {
       "hash": "2cee1ad2086746a122a94d787da692d6f5af0db668e249529c3005a8e4d772c6",
-      "last_checked": "2026-04-14T07:29:26.224087",
+      "last_checked": "2026-04-17T07:51:44.285211",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"693c21b6d8931b7c5d912cd2757a5ffb\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-version-1.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/signedpayload.json": {
       "hash": "78fae4835a6bc0b82851e3d30edbc5c1c4f25955c482b4ea86d5e6831e6657ec",
-      "last_checked": "2026-04-14T07:29:26.362433",
+      "last_checked": "2026-04-17T07:51:44.565102",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"be88721a2b4b9e3dd518043ca9f5196b\"",
       "file_path": "documentation/AppStoreServerNotifications/signedpayload.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/summary.json": {
       "hash": "1e0f1d89a1fb9b903878e93679ad7f9c9cda43948b8625a0bd3076cab5b246c4",
-      "last_checked": "2026-04-14T07:29:26.514601",
+      "last_checked": "2026-04-17T07:51:44.842617",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"e02f852f4386f4bb7eaa84d3f7d602ac\"",
       "file_path": "documentation/AppStoreServerNotifications/summary.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/data.json": {
       "hash": "dbea5ba399bc69ab694667c1a3804f8e57138886118fd7464bddf628ec767902",
-      "last_checked": "2026-04-14T07:29:26.657930",
+      "last_checked": "2026-04-17T07:51:45.016090",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"4190a533cac592e4fc6310a1b3c378f0\"",
       "file_path": "documentation/AppStoreServerNotifications/data.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/externalpurchasetoken.json": {
       "hash": "d8bace77716ff34dcf6dc43b76db5318006083e3c6e651cf60d52defc9c433bf",
-      "last_checked": "2026-04-14T07:29:26.882256",
+      "last_checked": "2026-04-17T07:51:45.450116",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ab3e2917f382a14f297cacc04ab8cf92\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchasetoken.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/version.json": {
       "hash": "da34b0db58499061bf82d57a6f3582c0c2899276e1d366576534e84017a4a51c",
-      "last_checked": "2026-04-14T07:29:26.986668",
+      "last_checked": "2026-04-17T07:51:45.613144",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"3cf97b5f213117548d0ded4ba17dc9fb\"",
       "file_path": "documentation/AppStoreServerNotifications/version.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/signeddate.json": {
       "hash": "fd7109cff76da85a1c7021e35da623db4b2a10492d9c1bf5cb6839d752e0eef2",
-      "last_checked": "2026-04-14T07:29:27.073337",
+      "last_checked": "2026-04-17T07:51:46.036270",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5c9d350ef3cf4f1e2dc5ccd3430f56b8\"",
       "file_path": "documentation/AppStoreServerNotifications/signeddate.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notificationuuid.json": {
       "hash": "0019958d479ec40a9ec5602ee54d8e2a9c9888924ac66186183532601188fdd7",
-      "last_checked": "2026-04-14T07:29:27.212961",
+      "last_checked": "2026-04-17T07:51:46.195615",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5898df62077694feaf403df8dec56bce\"",
       "file_path": "documentation/AppStoreServerNotifications/notificationuuid.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransactiondecodedpayload.json": {
       "hash": "c4ad7f101b441fb84462c353cf23b6bad2768b6e804eb436b71e27051431670c",
-      "last_checked": "2026-04-14T07:29:27.309172",
+      "last_checked": "2026-04-17T07:51:46.399011",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"948c8129215c5416b985cb4289f0ad97\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransactiondecodedpayload.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsrenewalinfodecodedpayload.json": {
       "hash": "0a49b360a0619a58ba4569fa11adab35ed64712021801105be1863d8d521dfea",
-      "last_checked": "2026-04-14T07:29:27.424454",
+      "last_checked": "2026-04-17T07:51:46.686788",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"efe49c08ff06eae066b0b4c62fc2a18f\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfodecodedpayload.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsdecodedheader.json": {
       "hash": "9b13d64f176563d233599ca9993cfe874817f4fd24339ba5bbdd41576bf63df5",
-      "last_checked": "2026-04-14T07:29:27.545526",
+      "last_checked": "2026-04-17T07:51:46.841319",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"fab1f5ebbe7393666cf25dc217616ad4\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsdecodedheader.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transaction-data-types.json": {
       "hash": "2ad5c07e39a2df23c69160876cbfa619bc07d1956cd4d11de14251b99d5c81e9",
-      "last_checked": "2026-04-14T07:29:27.639838",
+      "last_checked": "2026-04-17T07:51:47.002613",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"77e597e68f9fa89e03f0c75d4504cce5\"",
       "file_path": "documentation/AppStoreServerNotifications/transaction-data-types.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/app-store-server-notifications-v1.json": {
       "hash": "4c0f968d62c6d0381b244e3287c03957d62e28a9a5de58366fbe1e875b804913",
-      "last_checked": "2026-04-14T07:29:27.677522",
+      "last_checked": "2026-04-17T07:51:47.172870",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"fe817de6b1df5890f0f5558f43ad8d52\"",
       "file_path": "documentation/AppStoreServerNotifications/app-store-server-notifications-v1.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/responsebodyv1.json": {
       "hash": "ffe32882bf1c1934875da2578cfd57d3c5986514d60520084a6294c0a186d37e",
-      "last_checked": "2026-04-14T07:29:27.883156",
+      "last_checked": "2026-04-17T07:51:47.329085",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"d72ef041d7fc089fc114f6298ee3f4cb\"",
       "file_path": "documentation/AppStoreServerNotifications/responsebodyv1.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/notification_type.json": {
       "hash": "320f27b748f92999596b231ae9043f8ec8af5128a244f9e8172ebdf07f4c6535",
-      "last_checked": "2026-04-14T07:29:28.002448",
+      "last_checked": "2026-04-17T07:51:47.388558",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"d628658e2fbaf74943108a64eefcf001\"",
       "file_path": "documentation/AppStoreServerNotifications/notification-type.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/requestidentifier.json": {
       "hash": "9cbd1d3538839fa59e10752f312a6ff4f042ba80d810f157243f3e38b7e34ca1",
-      "last_checked": "2026-04-14T07:29:28.145059",
+      "last_checked": "2026-04-17T07:51:47.599722",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"a90c1e0795141da62e5b264bc9c54035\"",
       "file_path": "documentation/AppStoreServerNotifications/requestidentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/environment.json": {
       "hash": "2d48b55b2cff5a6e3a409f825c8e7443e8a0fffb72f5ce80907145904a843432",
-      "last_checked": "2026-04-14T07:29:28.244187",
+      "last_checked": "2026-04-17T07:51:47.777808",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"6caf34cf5117bebc00a1df5b0f0b56cb\"",
       "file_path": "documentation/AppStoreServerNotifications/environment.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appappleid.json": {
       "hash": "05bbaf2308831d48fb914e1c6fc94200d0b1680cc908a50a8bc6c1d18534d89a",
-      "last_checked": "2026-04-14T07:29:28.336228",
+      "last_checked": "2026-04-17T07:51:47.948274",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"e311a1b64a768bc097b1fb5bc7d83623\"",
       "file_path": "documentation/AppStoreServerNotifications/appappleid.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/bundleid.json": {
       "hash": "9b11485137f2972a87f95eff1c470ada0a5823cc513ebaf5f4bd45ad01e661c1",
-      "last_checked": "2026-04-14T07:29:28.437187",
+      "last_checked": "2026-04-17T07:51:48.103835",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"990088583406266eb538546c217d9b58\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleid.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/productid.json": {
       "hash": "54780e381fdb76dc76135e178c3c7beaec3ceb1d359df0807957343a41ac3c2f",
-      "last_checked": "2026-04-14T07:29:28.578378",
+      "last_checked": "2026-04-17T07:51:48.378980",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"57878ffffc284aff8da22040d18e4bde\"",
       "file_path": "documentation/AppStoreServerNotifications/productid.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontcountrycodes.json": {
       "hash": "567911646f228efb77118062aa9df271e195c3f08828003e721189d1e2a6d887",
-      "last_checked": "2026-04-14T07:29:28.665267",
+      "last_checked": "2026-04-17T07:51:48.543360",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"a2c8c8853a50a52eb32d23d3d79ea76d\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycodes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontcountrycode.json": {
       "hash": "0c059522293f9ff539d77027e4936baa4a0c533a39f0ae8dbb8c0ed5645e578f",
-      "last_checked": "2026-04-14T07:29:28.753037",
+      "last_checked": "2026-04-17T07:51:48.707137",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"04c3fd862d83b2541807f1275d379cbc\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontcountrycode.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/failedcount.json": {
       "hash": "b313860c0dbfb0c95969d25b5f2f82f27f3aef37210576c90068979ddf474aa4",
-      "last_checked": "2026-04-14T07:29:28.847957",
+      "last_checked": "2026-04-17T07:51:49.002093",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5aaea347dd906800bf642c1d906ea22d\"",
       "file_path": "documentation/AppStoreServerNotifications/failedcount.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/succeededcount.json": {
       "hash": "08e8274604e60cd30113a973fd57c13900fc7bece03bcddd945dd85ef1a5c2f5",
-      "last_checked": "2026-04-14T07:29:28.938375",
+      "last_checked": "2026-04-17T07:51:49.182216",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"cbcd6af76c10c27bd2b19c10619d3a69\"",
       "file_path": "documentation/AppStoreServerNotifications/succeededcount.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/bundleversion.json": {
       "hash": "c2554e92d165fa886c8ee308699d85afef8a91432013c8e4b4d061b11d9ac93f",
-      "last_checked": "2026-04-14T07:29:29.033738",
+      "last_checked": "2026-04-17T07:51:49.343087",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"28ebf33004d161d49ba9a444a2b539b0\"",
       "file_path": "documentation/AppStoreServerNotifications/bundleversion.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/status.json": {
       "hash": "7d08d412ad4876f831692025c0a7ea90ca881b34a6ad68774f46909d36843d44",
-      "last_checked": "2026-04-14T07:29:29.119476",
+      "last_checked": "2026-04-17T07:51:49.498956",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"43e3e5b929f05bc054f79f7b4304f7c1\"",
       "file_path": "documentation/AppStoreServerNotifications/status.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsrenewalinfo.json": {
       "hash": "999bd5f1c5505b5324e3881249c61c7ce116e78a1161ab757e86ff358fb6cb5c",
-      "last_checked": "2026-04-14T07:29:29.207020",
+      "last_checked": "2026-04-17T07:51:49.667264",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"69cd10f9bb079ac0f903e02c657459c5\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsrenewalinfo.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwstransaction.json": {
       "hash": "a23e6343cb4f613cc347cf0f3581797103be2429e24c21fbfba8e6f05c4eb04a",
-      "last_checked": "2026-04-14T07:29:29.296932",
+      "last_checked": "2026-04-17T07:51:49.834728",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"fb6e6b19c0c1006e11448d9cd99b119f\"",
       "file_path": "documentation/AppStoreServerNotifications/jwstransaction.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/consumptionrequestreason.json": {
       "hash": "e90e860799804203d86b0da6ab9233e719a3b425315a55969a7bf0bfd5790d8f",
-      "last_checked": "2026-04-14T07:29:29.386460",
+      "last_checked": "2026-04-17T07:51:49.999545",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"4d2d5afc39d70d6dd97c8af788c4d049\"",
       "file_path": "documentation/AppStoreServerNotifications/consumptionrequestreason.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/externalpurchaseid.json": {
       "hash": "93378b443e7a9e63175db268d38fb2f74af5ad9981c4636b44ba185a33b7eecc",
-      "last_checked": "2026-04-14T07:29:29.571533",
+      "last_checked": "2026-04-17T07:51:50.387398",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"c62f746a62dc0f079ec531d8e961d335\"",
       "file_path": "documentation/AppStoreServerNotifications/externalpurchaseid.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokencreationdate.json": {
       "hash": "df221c4993e0d992d53145f2699892045306e02cefb7df3771c86d7e8e794c45",
-      "last_checked": "2026-04-14T07:29:29.658358",
+      "last_checked": "2026-04-17T07:51:50.548319",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"48391beb582714dd2627e84dc931ecce\"",
       "file_path": "documentation/AppStoreServerNotifications/tokencreationdate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/alg.json": {
       "hash": "49e02ab352f9d9aa810cd9e6098f8ad466fcb302b2a809b96fa317e088065688",
-      "last_checked": "2026-04-14T07:29:30.002635",
+      "last_checked": "2026-04-17T07:51:51.008249",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"003ebd97f647be37b4e8f6baa4d73aea\"",
       "file_path": "documentation/AppStoreServerNotifications/alg.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/x5c.json": {
       "hash": "462d48360ead4752b6698900e700cc8ee7b5ded8e6b0b6e96cab462f95e5e331",
-      "last_checked": "2026-04-14T07:29:30.121869",
+      "last_checked": "2026-04-17T07:51:51.177486",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5b1878b9266394c1e033b698e2b052fd\"",
       "file_path": "documentation/AppStoreServerNotifications/x5c.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/originaltransactionid.json": {
       "hash": "8cb96500bf2be2e78bf05d7a78b2a2234488049ba717db173ccf571241763bac",
-      "last_checked": "2026-04-14T07:29:30.210233",
+      "last_checked": "2026-04-17T07:51:51.335007",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"33b74437f4ca47519459b6dcd77f37f3\"",
       "file_path": "documentation/AppStoreServerNotifications/originaltransactionid.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactionid.json": {
       "hash": "64b2b144bc110fe978e0d936b015169617febd808466978a4781b4623a8ed38a",
-      "last_checked": "2026-04-14T07:29:30.307137",
+      "last_checked": "2026-04-17T07:51:51.494652",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"339db2839e58d11c746f8cd2899337b3\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionid.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/weborderlineitemid.json": {
       "hash": "05896d44255bc9f0a56414ddc7360efb72d49817ed791d8963a95898b41dd366",
-      "last_checked": "2026-04-14T07:29:30.393308",
+      "last_checked": "2026-04-17T07:51:51.663881",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"2a1bcabda7c6523068e38a09979bcdfc\"",
       "file_path": "documentation/AppStoreServerNotifications/weborderlineitemid.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/previousoriginaltransactionid.json": {
       "hash": "726d98720231357d768ca8626faea3e30193e33542727585772dd8e617481697",
-      "last_checked": "2026-04-14T07:29:30.494597",
+      "last_checked": "2026-04-17T07:51:51.830966",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"7d8f5d60f27212c478bd029e06067825\"",
       "file_path": "documentation/AppStoreServerNotifications/previousoriginaltransactionid.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/apptransactionid.json": {
       "hash": "ca00cfd5791ee683a506cdd76afa9ecf7a1955253eeb61367a05eb9ae1f078ac",
-      "last_checked": "2026-04-14T07:29:30.591061",
+      "last_checked": "2026-04-17T07:51:51.994003",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"7c9e6286d053a13b873c0c6f4181a301\"",
       "file_path": "documentation/AppStoreServerNotifications/apptransactionid.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appaccounttoken.json": {
       "hash": "374eb4e4174ecfe5f0ec94dacb298945e1bd5a6002881f78f760904844f8f9b1",
-      "last_checked": "2026-04-14T07:29:30.701646",
+      "last_checked": "2026-04-17T07:51:52.148209",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"03fec8d9a5cd02f2cebb1ab15cda1b12\"",
       "file_path": "documentation/AppStoreServerNotifications/appaccounttoken.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/type.json": {
       "hash": "e990535dfdf75b6c8a99fa794944ae5855378eedc5d2394505a821d936951eec",
-      "last_checked": "2026-04-14T07:29:30.794497",
+      "last_checked": "2026-04-17T07:51:52.318825",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"15c675ae3da61d3ff079112893c80909\"",
       "file_path": "documentation/AppStoreServerNotifications/type.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/subscriptiongroupidentifier.json": {
       "hash": "89e2a75ad036262c770ddd8af4759c90bb9bc8284ab10d914ff955edb04cf3f5",
-      "last_checked": "2026-04-14T07:29:30.882749",
+      "last_checked": "2026-04-17T07:51:52.476908",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"40d2e749babdb615138ad299321e7615\"",
       "file_path": "documentation/AppStoreServerNotifications/subscriptiongroupidentifier.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/quantity.json": {
       "hash": "fab61eedf4b9d9556eb835b4d276cc026a1f6fa3e372103f1db1392680381715",
-      "last_checked": "2026-04-14T07:29:30.973109",
+      "last_checked": "2026-04-17T07:51:52.656867",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"a3cbc973d3bcc770f3a08bfd3cfed55b\"",
       "file_path": "documentation/AppStoreServerNotifications/quantity.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/price.json": {
       "hash": "2fb7f431474ed9f94549132ab2356ceebf567c551ff56a81f8551674e95271b2",
-      "last_checked": "2026-04-14T07:29:31.060105",
+      "last_checked": "2026-04-17T07:51:52.812563",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"9f692d48fcb2f3be928a5942b4171fef\"",
       "file_path": "documentation/AppStoreServerNotifications/price.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/currency.json": {
       "hash": "59d5800b383496385f195de335fe70f9ebeb1490c203879f0c197040195923fa",
-      "last_checked": "2026-04-14T07:29:31.188570",
+      "last_checked": "2026-04-17T07:51:52.969363",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"9a1f727bc4f8f9e80355de6c6dd27c42\"",
       "file_path": "documentation/AppStoreServerNotifications/currency.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefront.json": {
       "hash": "b16e70c7245efaa62b1da7730740568109870bb3dd833f9ee7218f1837bfd9f9",
-      "last_checked": "2026-04-14T07:29:31.294247",
+      "last_checked": "2026-04-17T07:51:53.130079",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"cc22d9e065fc9e9830210a885053900b\"",
       "file_path": "documentation/AppStoreServerNotifications/storefront.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/storefrontid.json": {
       "hash": "512ac960ef83ab09c5b5293319fa9de8630d79abb9aebd949a3148a2aaa50e5e",
-      "last_checked": "2026-04-14T07:29:31.388050",
+      "last_checked": "2026-04-17T07:51:53.292654",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"0b8faa9abe5bbde075071b6f58d4690a\"",
       "file_path": "documentation/AppStoreServerNotifications/storefrontid.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/eligiblewinbackofferids.json": {
       "hash": "c9ac83a5cc58b2df23a9d6ec0759f2f538b0fbc355f905d33d49872e19a2d3dc",
-      "last_checked": "2026-04-14T07:29:31.488994",
+      "last_checked": "2026-04-17T07:51:53.457862",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"58b636fcea784a5c8f7dcad6ad7d113b\"",
       "file_path": "documentation/AppStoreServerNotifications/eligiblewinbackofferids.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offeridentifier.json": {
       "hash": "b76256bf7ec3de3cab13695f4a2b8e41dfc10254909ee98147c4139520f88166",
-      "last_checked": "2026-04-14T07:29:31.580711",
+      "last_checked": "2026-04-17T07:51:53.625360",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"b3cd17617dd33f0eebeb04650e6da356\"",
       "file_path": "documentation/AppStoreServerNotifications/offeridentifier.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offerperiod.json": {
       "hash": "cb723204c7ee681122f73e628e16248fa3126aa9f0cb0403755fb252bc92c9cb",
-      "last_checked": "2026-04-14T07:29:31.666671",
+      "last_checked": "2026-04-17T07:51:53.773385",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ae50f359206600e0cadc0d4908c5e6fc\"",
       "file_path": "documentation/AppStoreServerNotifications/offerperiod.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offertype.json": {
       "hash": "f7c3e6a2588bb21292273f3b07ac2efa6855060b7551913012357fda04104a4c",
-      "last_checked": "2026-04-14T07:29:31.754924",
+      "last_checked": "2026-04-17T07:51:53.942726",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"37983c9168b8b09ab1627c92ef2127c2\"",
       "file_path": "documentation/AppStoreServerNotifications/offertype.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/offerdiscounttype.json": {
       "hash": "c2bf0a9063e00117deedd0df6fd4ac5849cdde3e53b1fc7fc9886c2303d38943",
-      "last_checked": "2026-04-14T07:29:31.845381",
+      "last_checked": "2026-04-17T07:51:54.119436",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"bab98c4feafbef68525b1b69eeb815aa\"",
       "file_path": "documentation/AppStoreServerNotifications/offerdiscounttype.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/originalpurchasedate.json": {
       "hash": "1814dfeb1df4baed9aa620dc1372817ed41c26929505d69f96f5a0f7b989a822",
-      "last_checked": "2026-04-14T07:29:31.929359",
+      "last_checked": "2026-04-17T07:51:54.290773",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"628f01b4031fa65332cf6f83b9a158b4\"",
       "file_path": "documentation/AppStoreServerNotifications/originalpurchasedate.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/purchasedate.json": {
       "hash": "b037d02a410b71a9f1d29c650e255a6b7151d31bb83b43700ea93cf78ac344ba",
-      "last_checked": "2026-04-14T07:29:32.018768",
+      "last_checked": "2026-04-17T07:51:54.449412",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"f9ca75972b7cf67f1ea0f328540c983f\"",
       "file_path": "documentation/AppStoreServerNotifications/purchasedate.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/recentsubscriptionstartdate.json": {
       "hash": "fda131129961f34e4d252cb89b076ed7fd008b7fe5c74f85ac70010ab434891e",
-      "last_checked": "2026-04-14T07:29:32.104991",
+      "last_checked": "2026-04-17T07:51:54.602741",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"839660cab7c79aa420761cde30bee658\"",
       "file_path": "documentation/AppStoreServerNotifications/recentsubscriptionstartdate.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/isinbillingretryperiod.json": {
       "hash": "5d7ff1fafb9d3a23c34296986d8072b41170d08656dddd79d8da142153e1aaa0",
-      "last_checked": "2026-04-14T07:29:32.194071",
+      "last_checked": "2026-04-17T07:51:54.772501",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"0313db71ab3e713b24bd62ae02e470be\"",
       "file_path": "documentation/AppStoreServerNotifications/isinbillingretryperiod.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/graceperiodexpiresdate.json": {
       "hash": "0b7094536bbf10c8356935c9ee23727ddfa0b577a200156beab1ae83d0e42051",
-      "last_checked": "2026-04-14T07:29:32.280832",
+      "last_checked": "2026-04-17T07:51:54.945642",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"51c69255d26b3559f061a3d9c47cc216\"",
       "file_path": "documentation/AppStoreServerNotifications/graceperiodexpiresdate.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/autorenewstatus.json": {
       "hash": "74ad34e88ff505cb8b2c35e369b69d8efff8a16b7af8c8f8550b0050a481d0d6",
-      "last_checked": "2026-04-14T07:29:32.368205",
+      "last_checked": "2026-04-17T07:51:55.127401",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"394768f668a2cf18af746159b1624ece\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewstatus.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/autorenewproductid.json": {
       "hash": "6abbd63ccbb5f8c17961d101f6f29202a3139c1aaf3f191d62a5472f11cbb906",
-      "last_checked": "2026-04-14T07:29:32.452913",
+      "last_checked": "2026-04-17T07:51:55.284092",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"aa0582e2b1c8da4854bca965f7c913bd\"",
       "file_path": "documentation/AppStoreServerNotifications/autorenewproductid.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/expirationintent.json": {
       "hash": "45e8b224e1ba73260fa3b4481973226130a5ae7fa0a70f90ec913775ff7863e3",
-      "last_checked": "2026-04-14T07:29:32.536578",
+      "last_checked": "2026-04-17T07:51:55.439352",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"8ab845321d824accc77d1a46c7cd3c03\"",
       "file_path": "documentation/AppStoreServerNotifications/expirationintent.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/expiresdate.json": {
       "hash": "cf758f529e7477a4962fb31c6bcaff48b35a79e0be5f7b05b48d141b16f87822",
-      "last_checked": "2026-04-14T07:29:32.624448",
+      "last_checked": "2026-04-17T07:51:55.590996",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"570cb353c785408990e7b45a965560ef\"",
       "file_path": "documentation/AppStoreServerNotifications/expiresdate.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/isupgraded.json": {
       "hash": "ec70a99209afb5d0027664f7e1bf66369213f94d5800b0a872c5e5b619e5a265",
-      "last_checked": "2026-04-14T07:29:32.713757",
+      "last_checked": "2026-04-17T07:51:55.768292",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"4eb796c28acc1d5912d6eb7a22c5d7bf\"",
       "file_path": "documentation/AppStoreServerNotifications/isupgraded.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewaldate.json": {
       "hash": "f1c86ee87eb7b6b05c6936337073278010093f39f34b75c4077b77e33850ac44",
-      "last_checked": "2026-04-14T07:29:32.810486",
+      "last_checked": "2026-04-17T07:51:55.919449",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5ab79e70737f7fafedac61c6103c0cd7\"",
       "file_path": "documentation/AppStoreServerNotifications/renewaldate.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/renewalprice.json": {
       "hash": "5c56a67c3924c11434233fe8f0377eb0edcfaa23cbcc932bc47b863fff7861c1",
-      "last_checked": "2026-04-14T07:29:32.928032",
+      "last_checked": "2026-04-17T07:51:56.081467",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"dded010e1ad4c7363e34ea2cfac03750\"",
       "file_path": "documentation/AppStoreServerNotifications/renewalprice.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/inappownershiptype.json": {
       "hash": "5badadcb210db2d6ac82b7f7a2bc1d66c744aed5635acdc05da1d138ba271cb3",
-      "last_checked": "2026-04-14T07:29:33.021953",
+      "last_checked": "2026-04-17T07:51:56.230081",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"63df1929fd31f6bf1ddc9bdeee767565\"",
       "file_path": "documentation/AppStoreServerNotifications/inappownershiptype.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/priceincreasestatus.json": {
       "hash": "0ec21b8c863f7fa08b4267e7834f64f30deba13ef626d497ede4e3944bcc9b20",
-      "last_checked": "2026-04-14T07:29:33.114325",
+      "last_checked": "2026-04-17T07:51:56.407818",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"10e72d6f834e8b5d397c9b6d58dd193f\"",
       "file_path": "documentation/AppStoreServerNotifications/priceincreasestatus.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationdate.json": {
       "hash": "ba29e2833cb8af8c8afb975e516fcbd2ebfc94ac42dba4e670f2d9a970e6fa3e",
-      "last_checked": "2026-04-14T07:29:33.202758",
+      "last_checked": "2026-04-17T07:51:56.567340",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"eda3d1dd0ddec645dab86f45b74deaf9\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationdate.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationreason.json": {
       "hash": "2b286e51ad1ff824dcad6ec374a6be72e30649a99adc4a969f448f0ffcf8cc30",
-      "last_checked": "2026-04-14T07:29:33.386216",
+      "last_checked": "2026-04-17T07:51:56.878146",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"87eb56a7f586eb519b4d0569a63412d4\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationreason.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/transactionreason.json": {
       "hash": "e1d72beb9f2bc70faf6e2784de7e4595fc2addad6a8a63ac2ba88743dd491bf4",
-      "last_checked": "2026-04-14T07:29:33.567867",
+      "last_checked": "2026-04-17T07:51:57.193162",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"48cfd223a84fcc2011d0f0b0c6c20d62\"",
       "file_path": "documentation/AppStoreServerNotifications/transactionreason.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerce-datatypes.json": {
       "hash": "242af1cd43080f8358404a2929d1781f40c3347d835f48ee8bce612ab33ebd68",
-      "last_checked": "2026-04-14T07:29:33.672845",
+      "last_checked": "2026-04-17T07:51:57.365776",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"0ad9102c33fed9af25634bfafd1660da\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerce-datatypes.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt.json": {
       "hash": "90108a06cc51e20592799f3cf6471b34d127aead7d1e56efd73e7db239778c82",
-      "last_checked": "2026-04-14T07:29:33.769819",
+      "last_checked": "2026-04-17T07:51:57.523775",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"d18bd2ca4a62df36bfc0b0f69f917ba0\"",
       "file_path": "documentation/AppStoreServerNotifications/unified-receipt.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceconsistencytoken.json": {
       "hash": "a6e64c72b0691667c5ac3aff51fff61002bd4d556f739276e48ba06a4096786f",
-      "last_checked": "2026-04-14T07:29:33.860674",
+      "last_checked": "2026-04-17T07:51:57.687405",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"9ad031287cc86414ed27eebf9993571d\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceconsistencytoken.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedescription.json": {
       "hash": "a7fbfa5a2d9f8cb1221d2d6ac1dc078fcbf7c07f4ce685b998d6239921689ecc",
-      "last_checked": "2026-04-14T07:29:33.945854",
+      "last_checked": "2026-04-17T07:51:57.862686",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"0c7f4afb975b55ac0207b9e567148a4e\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescription.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedisplayname.json": {
       "hash": "e13f16537c6cc331ace3be3cca6e0344cb1d48307e24bab69c6fa2975be8b501",
-      "last_checked": "2026-04-14T07:29:34.078919",
+      "last_checked": "2026-04-17T07:51:58.018405",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"2ac12956b5db5d9f1ca9ebed21bf19a5\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedisplayname.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceestimatedtax.json": {
       "hash": "a60db1efda9527572b6e67e40fea8b78ea037e262681f5e9bb8260537175b2e3",
-      "last_checked": "2026-04-14T07:29:34.166532",
+      "last_checked": "2026-04-17T07:51:58.176558",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"3b69b907b52067b065610a7ee9d66921\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceestimatedtax.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceofferperiod.json": {
       "hash": "dc0ad0397a8fa6bce6e1be6e95cffb38d015b00b0c4eeacb1834efca5f9b5311",
-      "last_checked": "2026-04-14T07:29:34.256722",
+      "last_checked": "2026-04-17T07:51:58.331685",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"7068565be7fa859adaf9a96755e8e8cf\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferperiod.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceofferprice.json": {
       "hash": "0ed837955d60d7abac6ddd72c944f5ea40b6942e90cfa9f7788c54a4edb2e733",
-      "last_checked": "2026-04-14T07:29:34.349654",
+      "last_checked": "2026-04-17T07:51:58.490890",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"c2eb4a749f72c6a275848c2f099f438c\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceofferprice.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceperiod.json": {
       "hash": "363b3667489d2bc85e8765a48ff609d122cbb90ac48873e3e6621644618a285b",
-      "last_checked": "2026-04-14T07:29:34.449939",
+      "last_checked": "2026-04-17T07:51:58.655694",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"46960376dc20078e3270fc574fcd7ba7\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiod.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceperiodcount.json": {
       "hash": "7a5aa046644e65347c45b7226f8a89bc22ad2a77bb63687e719059f4bf774687",
-      "last_checked": "2026-04-14T07:29:34.539462",
+      "last_checked": "2026-04-17T07:51:58.809447",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"7622ab219754967a83f5de9e8bc55495\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceperiodcount.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceprice.json": {
       "hash": "8324b04031544eb45b82116846b38937dea845604decbf7c489f3b02910c01ae",
-      "last_checked": "2026-04-14T07:29:34.625222",
+      "last_checked": "2026-04-17T07:51:59.002059",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"9439860748f7bf6f7a52e637f5d898c4\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceprice.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercereason.json": {
       "hash": "7bf1ce54477328705b8970e1ae7f7d5db33562ef342219eb59c4172bcce701df",
-      "last_checked": "2026-04-14T07:29:34.990522",
+      "last_checked": "2026-04-17T07:51:59.651142",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"e421d9f42ac2bb52881473d12e08fd72\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercereason.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundamount.json": {
       "hash": "096e2e1587ef3ed8348e19d4cb42607cfb415c00d742064279680126b0591302",
-      "last_checked": "2026-04-14T07:29:35.084645",
+      "last_checked": "2026-04-17T07:51:59.818209",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"85bfaebd4a95de2e208327fafe4a99da\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundamount.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefunddate.json": {
       "hash": "a688a48f9c12798c8f397d721a1f27b6445d13899b7e1115770389ab77ebed7d",
-      "last_checked": "2026-04-14T07:29:35.179749",
+      "last_checked": "2026-04-17T07:51:59.964698",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"f3c698cfd90f21c1e35f5213500508df\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunddate.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundreason.json": {
       "hash": "6ed23ab0ad07ea30a65aabc14eb38f80febc124a51333e99a2348c481bb14690",
-      "last_checked": "2026-04-14T07:29:35.272531",
+      "last_checked": "2026-04-17T07:52:00.179449",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"75b3b7cb04fe9dbdd95f93dd27148797\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundreason.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefundtype.json": {
       "hash": "3c93cf2977a9b6903624a61133f40e7f20c7d973d249e6e2fade8d78c0df5ca5",
-      "last_checked": "2026-04-14T07:29:35.359438",
+      "last_checked": "2026-04-17T07:52:00.350197",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"91e910e286fc1c985261bf1c8a7587e6\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefundtype.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefunds.json": {
       "hash": "bb7f7b2cc349a3aeca361e7df5ab5a17af73869ac3dad48fa73d55de1ca80dd1",
-      "last_checked": "2026-04-14T07:29:35.507042",
+      "last_checked": "2026-04-17T07:52:00.505374",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5be5b80d0f7ec9b5961927acd4187f1e\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefunds.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalitems.json": {
       "hash": "5ffa4896cc1f6d0bdc3df266c17d8b6d48b76da651feaed51d291ad76a7442a1",
-      "last_checked": "2026-04-14T07:29:35.594578",
+      "last_checked": "2026-04-17T07:52:00.669893",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"0c17cb67473bf3bb04a8d5a9a60c4555\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitems.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerequestreferenceid.json": {
       "hash": "19b5b42ac34609e6a4dd9d88f28c047f70aa34b84524bfb57cdc456a108b0ad8",
-      "last_checked": "2026-04-14T07:29:35.680613",
+      "last_checked": "2026-04-17T07:52:00.844300",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"5dc83de4c64bc8967eb4dae45fd9c6cd\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerequestreferenceid.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercesku.json": {
       "hash": "8a1f6296d601e6bdf4a84bff7d2e7bba8f36149eca663c454774be8d8a2de7c1",
-      "last_checked": "2026-04-14T07:29:35.772377",
+      "last_checked": "2026-04-17T07:52:01.010823",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ecf59da584ca030fda8dea0f8034989d\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercesku.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxcode.json": {
       "hash": "20897aa62d5b6fa5b5ca9561408e4cebc42467a00c84893d4b87dbf4ebdbf5ef",
-      "last_checked": "2026-04-14T07:29:35.870648",
+      "last_checked": "2026-04-17T07:52:01.169638",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"175d53cfa87bd870fc3311a210a78809\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxcode.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxexclusiveprice.json": {
       "hash": "d0a1178b9971e2f2e1a99c6d28c6aec47808ec86809983d0db201383678d8035",
-      "last_checked": "2026-04-14T07:29:35.968094",
+      "last_checked": "2026-04-17T07:52:01.332490",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"492f402f99e31f956344e00cbd429431\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxexclusiveprice.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetaxrate.json": {
       "hash": "02e73371906642a4f851530bd1864104b28185cef333fec5425c2c1c26e5a0e1",
-      "last_checked": "2026-04-14T07:29:36.054061",
+      "last_checked": "2026-04-17T07:52:01.501982",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"963adc9d6d58296470675cc048509207\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetaxrate.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactionitems.json": {
       "hash": "b79a19d15bb892ae67600f7b923d0d1cbbb68c75dae4a772e03992c63f99201a",
-      "last_checked": "2026-04-14T07:29:36.156484",
+      "last_checked": "2026-04-17T07:52:01.675930",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"3617fbaaa141e928fc6c8f21a71bc7b3\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitems.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercedescriptors.json": {
       "hash": "aea93fbfbd06777f06ef43099e871329e9f655764d0a01ed1465ef799c6e953c",
-      "last_checked": "2026-04-14T07:29:36.276175",
+      "last_checked": "2026-04-17T07:52:01.831725",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ac66f62b380764c8abc24c6a80393aed\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercedescriptors.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommerceoffer.json": {
       "hash": "be8e684352aa77726c1086664f1be4344669edd1876b54d964c223cb477f1ad4",
-      "last_checked": "2026-04-14T07:29:36.367042",
+      "last_checked": "2026-04-17T07:52:02.001411",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"3ce072bcbba8ce3104129e7df8e1c6f4\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommerceoffer.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerefund.json": {
       "hash": "96278d96990e583e330538497962ec652f40716c8b85f2ef8f1529cd516d9484",
-      "last_checked": "2026-04-14T07:29:36.545004",
+      "last_checked": "2026-04-17T07:52:02.440123",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"3ead45139492f1d947bc8e5d826604f0\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerefund.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalinfo.json": {
       "hash": "002d5e8b1d3001c2c249977d0d0a5b25e8b03bfe93a0e5a55e15a93c8e1b9299",
-      "last_checked": "2026-04-14T07:29:36.637419",
+      "last_checked": "2026-04-17T07:52:02.606205",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"00ff2f51b3545a72b47f047bebf816da\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalinfo.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercerenewalitem.json": {
       "hash": "337e7c32c8d098f1cbf6b43fbc077a616be27c14ab6cbf081888692c980ffc37",
-      "last_checked": "2026-04-14T07:29:36.733815",
+      "last_checked": "2026-04-17T07:52:02.767980",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"2cb56ad4b7ee108193c85ad1021a18ca\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercerenewalitem.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactioninfo.json": {
       "hash": "4230ccf8f4b1afc758465f9e949b3454e779bd71b22d0581d5e3965382799ab3",
-      "last_checked": "2026-04-14T07:29:36.827468",
+      "last_checked": "2026-04-17T07:52:02.915763",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"288771fe458f792e92ed80062db598d8\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactioninfo.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercetransactionitem.json": {
       "hash": "f81736c7813856144fbe82db2119e99c6e8d91864f6772531a260fb21489da10",
-      "last_checked": "2026-04-14T07:29:36.945011",
+      "last_checked": "2026-04-17T07:52:03.088184",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"97d3fc4f67bf66b0c4103dac7e33fce5\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercetransactionitem.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/latest_receipt_info-data.dictionary.json": {
       "hash": "7cd00a2b6860b4eddbbdbde3b02bbf4b7a9fe33d0d5710ebea3f514040ec2fcc",
-      "last_checked": "2026-04-14T07:29:37.065984",
+      "last_checked": "2026-04-17T07:52:03.261953",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"1aedf1e07d84d7ca3c6023dc9a5249ec\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/latest-receipt-info-datadictionary.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/unified_receipt/pending_renewal_info-data.dictionary.json": {
       "hash": "755d76f55fbc1a4733dbe214f6002a9c0a17b4256f04893414cfc9dc23ad7584",
-      "last_checked": "2026-04-14T07:29:37.162341",
+      "last_checked": "2026-04-17T07:52:03.444020",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ba25809e44c2f8bb13379d849eeddacd\"",
       "file_path": "documentation/AppStoreServerNotifications/unified_receipt/pending-renewal-info-datadictionary.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/appdata.json": {
       "hash": "d2b7714c22de01c7e323d7f0a25e2039b058c117e9ac60deef5a59b6ef734baa",
-      "last_checked": "2026-04-14T07:29:26.793088",
+      "last_checked": "2026-04-17T07:51:45.298017",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"799115b2287f7b9e29917b1369b16424\"",
       "file_path": "documentation/AppStoreServerNotifications/appdata.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/jwsapptransaction.json": {
       "hash": "4e99a821c5dadb3e58239e7939f991d4d724b51e58da2774905860e97d50f27b",
-      "last_checked": "2026-04-14T07:29:29.469763",
+      "last_checked": "2026-04-17T07:51:50.170746",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"e5a45b9bb867dcb8f1b64bff76c2ba79\"",
       "file_path": "documentation/AppStoreServerNotifications/jwsapptransaction.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokenexpirationdate.json": {
       "hash": "effcab199120dd6abef8cfafedb0814ad11876fc83b157cf392a90d9f9b338c9",
-      "last_checked": "2026-04-14T07:29:29.777155",
+      "last_checked": "2026-04-17T07:51:50.702885",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"ca3d4152a417acc104f43e954d10f3b4\"",
       "file_path": "documentation/AppStoreServerNotifications/tokenexpirationdate.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/tokentype.json": {
       "hash": "5cd12755185385a26438397b0d4ed692298f5a3386c3032f93c57ad48fee7d2b",
-      "last_checked": "2026-04-14T07:29:29.866408",
+      "last_checked": "2026-04-17T07:51:50.848885",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"2b2218fdc09ebd511db0e164f7fd4d17\"",
       "file_path": "documentation/AppStoreServerNotifications/tokentype.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationpercentage.json": {
       "hash": "7571ae6b2b9c85d3afcbb88b5f4bf3767d5a009e854bf49cbcc3fec13c30a8a7",
-      "last_checked": "2026-04-14T07:29:33.289159",
+      "last_checked": "2026-04-17T07:51:56.727092",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"fa7f4f73b9e16e0c471c1f421d32fc4e\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationpercentage.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/revocationtype.json": {
       "hash": "50d9f8e4355c26f6e008c9075dc75026842b2b8f8e36a2d77f6be5b59f50b7cc",
-      "last_checked": "2026-04-14T07:29:33.474889",
+      "last_checked": "2026-04-17T07:51:57.026437",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"1dda0d467581577b557d97d9747610f9\"",
       "file_path": "documentation/AppStoreServerNotifications/revocationtype.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfodependentsku.json": {
       "hash": "6f4e86d31fe85f6c5ac22033b1ecb4eaf7b4fdb49c81eaab19cda09118691c3c",
-      "last_checked": "2026-04-14T07:29:34.713273",
+      "last_checked": "2026-04-17T07:51:59.176866",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"cc0a0985c4e9b80ff9628c76bcf930d7\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfodependentsku.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfoprice.json": {
       "hash": "e808131b61ff3f61f235f9d50b724fb077c16a1a5c3c4c98a79848190cfa68d5",
-      "last_checked": "2026-04-14T07:29:34.806169",
+      "last_checked": "2026-04-17T07:51:59.333395",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"c20631f129787236d338cdd9acd47524\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfoprice.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfostatus.json": {
       "hash": "645d799e57a5e21ab7d1d84a73e970be4ab6884a359a64b9b73fb12d8d030a29",
-      "last_checked": "2026-04-14T07:29:34.902958",
+      "last_checked": "2026-04-17T07:51:59.498921",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"fa5891f84b93e9c6c1ba30378c0e8a53\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfostatus.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstoreservernotifications/advancedcommercepriceincreaseinfo.json": {
       "hash": "2750b81ae4709d6a579681e10ab0b8bc691364cb2e5684d568d3109ba3c11f3e",
-      "last_checked": "2026-04-14T07:29:36.456052",
+      "last_checked": "2026-04-17T07:52:02.285077",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:24.573134",
+      "session_id": "2026-04-17T07:51:41.488333",
       "etag": "W/\"a6d4feabed46cd4cac4076c3b0da0661\"",
       "file_path": "documentation/AppStoreServerNotifications/advancedcommercepriceincreaseinfo.md"
     },

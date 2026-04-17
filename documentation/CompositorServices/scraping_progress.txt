@@ -1,4 +1,4 @@
 Completed scraping Compositor Services!
-Total pages scraped: 196
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 197
 Pages failed: 0

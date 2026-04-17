@@ -26,7 +26,7 @@ object AccountDetail
 - `org_name` (string): The organization name.
 - `org_phone` (string): The organization phone.
 - `org_type` (string): The type of organization. Possible values are `edu` or `org`. This key is available only in protocol version 3 and later.
-- `org_version` (string): Possible values: `v1` or `v2`. `v1` is for Apple Deployment Programs (like Device Enrollment Program or Volume Purchase Program) organizations and `v2` is for Apple School Manager (ASM) organizations. Currently `v2` is applicable only to educational organizations. This key is available only in protocol version 3 and later.
+- `org_version` (string): Possible values: `v1` or `v2`. `v1` is for Apple Deployment Programs (like Device Enrollment Program or Volume Purchase Program) organizations and `v2` is for Apple School Manager organizations. Currently `v2` is applicable only to educational organizations. This key is available only in protocol version 3 and later.
 - `server_name` (string): The name of the MDM server.
 - `server_uuid` (string): The system-generated server identifier.
 - `urls` ([Url]): The list of URLs available in the MDM service. This key is valid in X-Server-Protocol-Version 3 and later.

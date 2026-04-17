@@ -20,7 +20,7 @@ The [`AppManaged`](appmanaged.md) configuration specifies how the device install
 
 The device manages apps it installs from three sources:
 
-- App Store: These apps may require a license assigned by Apple Business Manager or Apple School Manager.
+- App Store: These apps may require a license assigned by Apple School Manager or Apple Business.
 - Enterprise apps: Use the [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise/) to develop and deploy enterprise apps from a URL specified in a manifest document.
 - Existing apps (macOS only): This category includes apps installed by declarative package management, or any apps a user manually installs. If the app isn’t present when the device applies a configuration, the device manages it upon installation.
 

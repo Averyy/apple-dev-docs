@@ -6,13 +6,6 @@
 Get a list of the declarations available on the server.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 
@@ -24,7 +17,7 @@ Get a list of the declarations available on the server.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#declaration-items`
 
 ## See Also
 

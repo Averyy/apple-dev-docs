@@ -84,7 +84,7 @@ The server uses this command to turn on the declarative management engine on the
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#DeclarativeManagementCommand`
 
 ## Request Body
 

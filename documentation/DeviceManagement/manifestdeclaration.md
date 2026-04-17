@@ -6,13 +6,6 @@
 A dictionary that describes a declaration.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 

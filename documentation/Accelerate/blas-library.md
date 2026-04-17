@@ -50,10 +50,14 @@ Note that documentation describing the leading dimension as the first dimension 
   A BLAS error handler callback type.
 ### Constants
 - [struct CBLAS_ORDER](cblas_order.md)
+  Indicates whether a matrix is in row-major or column-major order.
 - [struct CBLAS_TRANSPOSE](cblas_transpose.md)
+  Indicates transpose operation to perform on a matrix.
 - [struct CBLAS_UPLO](cblas_uplo.md)
 - [struct CBLAS_DIAG](cblas_diag.md)
+  Indicates whether a triangular matrix is unit-diagonal (diagonal elements are all equal to 1).
 - [struct CBLAS_SIDE](cblas_side.md)
+  Indicates the order of a matrix multiplication.
 ### Variables
 - [var CblasColMajor: CBLAS_ORDER](cblascolmajor.md)
 - [var CblasConjTrans: CBLAS_TRANSPOSE](cblasconjtrans.md)

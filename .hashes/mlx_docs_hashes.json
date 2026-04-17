@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T08:44:39.889440",
-    "total_files": 774,
+    "last_updated": "2026-04-17T09:21:28.052940",
+    "total_files": 777,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -748,9 +748,9 @@
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/reduction.md": "d9c20f27ca379c30fcaa104efd081eb110d261b36bf61f1a800a7149520ef779",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/shapes.md": "515fb4d69c99680a71cb49cf671d54e445fec53bc4c7bbf38e20dc4c81d0c4ef",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Organization/sorting.md": "dec008918b534c747a7e7e3eaf1cc5bb31160b51a0f6a53eb5a6b909f7879ac7",
-    "github:ml-explore/mlx-swift-lm:README.md": "25dee218ae985b2c6577053fda246762d1cee2d03b198a7387174a3d0793c07a",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "fd4ce4a728a95b021287d3038e271f3d2529a5370ff478819e13f8788c730427",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "8aa7c71249a44d67a7db29c8169d22196b2c3166ba4df0388b1df69d1d0b761f",
+    "github:ml-explore/mlx-swift-lm:README.md": "b10b3afc7e9b729d776e78d2437ad1c47a15a743e21ff41207fb7ca31afc0a44",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "2d6f6164b3a0b5b9844271b616edd580d8aadc7e1bb13a6739657adca2758394",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "638dd5b9a3696cd9da49e1a2b61d0953d23d1dbd6c2990336394b3f391ed0659",
     "github:ml-explore/mlx-swift-examples:README.md": "521f27e26bcf88e7b778f2e58a680a47edab9f86a9a6dd3dc282b1a9fe32ac86",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
@@ -778,6 +778,9 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/": "9f10ffe70b06ace719a434b1d4ca1e1f575417d397a5e7cab9eee44c18f5062b",
     "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
     "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36",
-    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.fsdp_apply_gradients.html": "4e7ce7402a94b4e32408d8d0314abff3b95c1f0fc9ce61cc17efb9629f9493bb"
+    "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.fsdp_apply_gradients.html": "4e7ce7402a94b4e32408d8d0314abff3b95c1f0fc9ce61cc17efb9629f9493bb",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/developing.md": "0c23f858032d9f8f8cded26a69d8b86121db62c169becd9b99d63e48d6cf0fe5",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "e0a994b7639c772c4a8ff577913663416ecc2f7cd3fb677d6d2bdb747d13611e",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/using.md": "68aae4248afcb65bc4f033e59722fddc9a5c833fe2af9c6b7dfcdd4f7a320cd5"
   }
 }

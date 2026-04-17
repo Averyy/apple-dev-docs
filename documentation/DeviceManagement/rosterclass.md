@@ -23,7 +23,7 @@ object RosterClass
 - `course` (BaseRosterCourse): The base course for this course.
 - `instructor_unique_identifiers` ([string]): Unique identification for instructors. Each string in the array has a maximum length of 256 UTF-8 characters. Value can be null.
 - `location` (BaseRosterLocation): The base location for this course.
-- `name` (string): The class name as displayed in Apple School Manager (ASM). Maximum length is 1024 UTF-8 characters.
+- `name` (string): The class name as displayed in Apple School Manager. Maximum length is 1024 UTF-8 characters.
 - `op_date` (string): The most recent update timestamp for this class. Available in X-Protocol Version 3 and later.
 - `room` (string): The room where class is held. Maximum length is 512 UTF-8 characters.
 - `source` (string): The data source where class was created. Maximum length is 64 UTF-8 characters.

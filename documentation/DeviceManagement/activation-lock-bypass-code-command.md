@@ -86,7 +86,7 @@ A device creates a new bypass code when:
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#ActivationLockBypassCodeCommand`
 
 ## Request Body
 

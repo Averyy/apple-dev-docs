@@ -158,7 +158,7 @@ This command installs a book from the Book Store.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#InstallMediaCommand`
 
 ## Request Body
 

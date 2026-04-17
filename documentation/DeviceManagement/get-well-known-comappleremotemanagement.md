@@ -6,9 +6,6 @@
 Get a list of available authentication servers.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 

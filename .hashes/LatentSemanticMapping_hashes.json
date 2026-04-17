@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:29:55.636292",
+    "last_updated": "2026-04-17T07:52:35.470976",
     "total_pages": 144,
-    "session_id": "2026-04-14T07:29:47.763989"
+    "session_id": "2026-04-17T07:52:21.817373"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/LatentSemanticMapping.json": {
       "hash": "4a58fb48beb35d32a36729f9bb3428e5e8a420e9d97e3b385feca308b46fdb4b",
-      "last_checked": "2026-04-14T07:29:48.129768",
+      "last_checked": "2026-04-17T07:52:22.168592",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"609aabd9863636d5620d29c4c95487ab\"",
       "file_path": "documentation/LatentSemanticMapping/LatentSemanticMapping.md"
     },
     "https://developer.apple.com/documentation/LatentSemanticMapping": {
       "hash": "4a58fb48beb35d32a36729f9bb3428e5e8a420e9d97e3b385feca308b46fdb4b",
-      "last_checked": "2026-04-14T07:29:48.050550",
+      "last_checked": "2026-04-17T07:52:22.083766",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"609aabd9863636d5620d29c4c95487ab\"",
       "file_path": "documentation/LatentSemanticMapping/LatentSemanticMapping.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmap.json": {
       "hash": "f10fdde0b9d3aa58c043decf18f180d1e3e5b4516448abb17d6bd33538cbe302",
-      "last_checked": "2026-04-14T07:29:48.374276",
+      "last_checked": "2026-04-17T07:52:22.547623",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e88815e57306a6c76def6ceb219f6ad3\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmap.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtext.json": {
       "hash": "9e880b24d20c3c5e6595b0b3ef6eb156056c94059893206d6cd2ac484dcd286f",
-      "last_checked": "2026-04-14T07:29:48.483386",
+      "last_checked": "2026-04-17T07:52:22.721309",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"573b5aa11d7f60ae4a871ac5887aecb9\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtext.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresult.json": {
       "hash": "72f2a5d19b70f4d914e1501ee49a3ba70e4d9e0e38f6c127ebc9d5943437e048",
-      "last_checked": "2026-04-14T07:29:48.582060",
+      "last_checked": "2026-04-17T07:52:22.889755",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"f0c3f1a3bc59367476060ebc7d8f8354\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresult.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/error-codes.json": {
       "hash": "77a492ef3b0de8da5041b37a5785fdce8fbd5d854ba7aa5564a46477b199ca14",
-      "last_checked": "2026-04-14T07:29:48.674942",
+      "last_checked": "2026-04-17T07:52:23.062946",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"41621f221df7e6368df535c72367b47e\"",
       "file_path": "documentation/LatentSemanticMapping/error-codes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreate(_:_:).json": {
       "hash": "6551fb92a1fa63ea7e212d035ac0ea49d023fbe858ee78376b031ccdcec47d9a",
-      "last_checked": "2026-04-14T07:29:48.768985",
+      "last_checked": "2026-04-17T07:52:23.225171",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"a3e7a5583786f3bc9fcd65a5fde5ee34\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapcreate.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/map-flags.json": {
       "hash": "0412c89274fe180a71373cb80191a7e3d36a01fe6ddc93e60f39950d1871764f",
-      "last_checked": "2026-04-14T07:29:48.875514",
+      "last_checked": "2026-04-17T07:52:23.506727",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"2bf3453bb952389f6e84d4937a070e8b\"",
       "file_path": "documentation/LatentSemanticMapping/map-flags.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapsetproperties(_:_:).json": {
       "hash": "1f32b31940b642b46c838eeb8110d8d7631fe09485fb403521e138d467eb07be",
-      "last_checked": "2026-04-14T07:29:48.976655",
+      "last_checked": "2026-04-17T07:52:23.679729",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"dfbe443b46569da2dc9c92665b6b625e\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapsetproperties.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgetproperties(_:).json": {
       "hash": "c1c7714773c49daffea511e41eb024cdcdcef9255e085c7c737337e128f3cccd",
-      "last_checked": "2026-04-14T07:29:49.071598",
+      "last_checked": "2026-04-17T07:52:23.844264",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"acf6d535beb3e17ed743ed36b0bba81f\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapgetproperties.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/map-properties.json": {
       "hash": "9991ff246ce2d48572f11c942487c18945afd468531e767189b2d1fc2a01b9cf",
-      "last_checked": "2026-04-14T07:29:49.166031",
+      "last_checked": "2026-04-17T07:52:24.016472",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"605f420e421d18f6193e50f9806888f0\"",
       "file_path": "documentation/LatentSemanticMapping/map-properties.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapstarttraining(_:).json": {
       "hash": "a7065fc3af73a42e250dbf698af519674e7be04777aa08675845e107b148e8da",
-      "last_checked": "2026-04-14T07:29:49.307796",
+      "last_checked": "2026-04-17T07:52:24.190019",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"1984c4f3ba285202ae13eb0da9387f2c\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapstarttraining.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddcategory(_:).json": {
       "hash": "21b697af617b3e8bfb8cac61fb7818d573f0e2335072486b2c41253d61ddabca",
-      "last_checked": "2026-04-14T07:29:49.402540",
+      "last_checked": "2026-04-17T07:52:24.481972",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"c819f77f7cbf78c983a2fe2374616a86\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapaddcategory.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgetcategorycount(_:).json": {
       "hash": "52f1c39bbbcf4e2eab6dfbd455c0185d99e4f7623bf750efaf0449fa9587ef67",
-      "last_checked": "2026-04-14T07:29:49.525113",
+      "last_checked": "2026-04-17T07:52:24.637334",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"76258f1bb3721debb3fe9706c6ad11fe\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapgetcategorycount.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapsetstopwords(_:_:).json": {
       "hash": "ed93003bcc983a39569835613e82b54e12e85e55c584770c80dde64207e99753",
-      "last_checked": "2026-04-14T07:29:49.620737",
+      "last_checked": "2026-04-17T07:52:24.944153",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"0123cbb59383ead38756e4f123dee8ee\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapsetstopwords.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddtext(_:_:_:).json": {
       "hash": "f84aa5c2031e01764e25b3641dba7a7cd9f8be1b44a884de96e5e53e9cda4703",
-      "last_checked": "2026-04-14T07:29:49.717958",
+      "last_checked": "2026-04-17T07:52:25.115542",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"469f45029b0292dfaae913aaa565b026\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapaddtext.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapaddtextwithweight(_:_:_:_:).json": {
       "hash": "24cbaac41338e4ac94a86bfdacd94bf1097045a187b0da016c191471e57d9b2b",
-      "last_checked": "2026-04-14T07:29:49.818446",
+      "last_checked": "2026-04-17T07:52:25.281859",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e4c78a54bb7cbb46d608746fd2e4e8f1\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapaddtextwithweight.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmcategory.json": {
       "hash": "680c0a7b5ec4917b2cf0c8dd536a420f57d36a0d959e33cf6cc9a3ec243ca835",
-      "last_checked": "2026-04-14T07:29:49.911527",
+      "last_checked": "2026-04-17T07:52:25.444366",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"55024e58b7f0782e9dcff5d52bc8099f\"",
       "file_path": "documentation/LatentSemanticMapping/lsmcategory.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcompile(_:).json": {
       "hash": "373447afb73141c9e33abc647fd0f75e6546b1d22f926a0c4740c89c2573ec10",
-      "last_checked": "2026-04-14T07:29:50.007834",
+      "last_checked": "2026-04-17T07:52:25.732474",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"27f7ec11151b1a8b402a6cb58a86ca54\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapcompile.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreateclusters(_:_:_:_:_:).json": {
       "hash": "1824bb1589dcd81112948b7912f6aad71688f9b567b7d8292c8fcfe3076f62b5",
-      "last_checked": "2026-04-14T07:29:50.104745",
+      "last_checked": "2026-04-17T07:52:25.937154",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"ab24d25e449f7d1362a47a1067211f7c\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapcreateclusters.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/clustering-flags.json": {
       "hash": "97c865ca739c965ce1d8f6f8e79f7c561698a9e549e368d30f24de8425c6054c",
-      "last_checked": "2026-04-14T07:29:50.194077",
+      "last_checked": "2026-04-17T07:52:26.232386",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"0fb4108ee4015fbbba90b99355a36cee\"",
       "file_path": "documentation/LatentSemanticMapping/clustering-flags.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapapplyclusters(_:_:).json": {
       "hash": "12f2d98e5f79264808bebc88c0ba6ca6dd2df49640376f2afef5b823b0f16ae4",
-      "last_checked": "2026-04-14T07:29:50.300953",
+      "last_checked": "2026-04-17T07:52:26.514688",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"06a1d02b83e1e3abb34adbbf658c6621\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapapplyclusters.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapcreatefromurl(_:_:_:).json": {
       "hash": "4e26d3e834f1a234c5e3f55383ad366f09fc1297f9888186b8de12df32a295be",
-      "last_checked": "2026-04-14T07:29:50.411867",
+      "last_checked": "2026-04-17T07:52:26.678906",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"2776438b476e42275726dec181b3857c\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapcreatefromurl.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapwritetourl(_:_:_:).json": {
       "hash": "6a25b1b04d939179ce46913696c911cffad07b22824ee10668b63cdc00a4cb0e",
-      "last_checked": "2026-04-14T07:29:50.517349",
+      "last_checked": "2026-04-17T07:52:26.854535",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"135a8fae4477a6694aa5af0f0796a1d0\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapwritetourl.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapwritetostream(_:_:_:_:).json": {
       "hash": "9fde9bcc69c96459f4acb40125b0c3a61704b59e018aa0ac49d9ed81de02bd11",
-      "last_checked": "2026-04-14T07:29:50.608468",
+      "last_checked": "2026-04-17T07:52:27.012005",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"9e1b9513ca511c51b9ac9872f6828c0a\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapwritetostream.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/storage-flags.json": {
       "hash": "43944986b2ebe3d66b8dbbc408ebe2ba983dd97cb9bd72235004146badbdc9ce",
-      "last_checked": "2026-04-14T07:29:50.711152",
+      "last_checked": "2026-04-17T07:52:27.166205",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"46eaa8a9a0b0c174b5d78056010b7b81\"",
       "file_path": "documentation/LatentSemanticMapping/storage-flags.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmmapgettypeid().json": {
       "hash": "6c791d0b17a628877dc4b680060861fb0d55757b1c055046a6051f8a31735d6f",
-      "last_checked": "2026-04-14T07:29:50.810411",
+      "last_checked": "2026-04-17T07:52:27.346735",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"9376f50d566b7f9bad2c0e4a2a8c2db8\"",
       "file_path": "documentation/LatentSemanticMapping/lsmmapgettypeid.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextcreate(_:_:).json": {
       "hash": "5537afa6940a15fb16d2c29f19041ba3e964fffb7aedb3387603a30a254b61b1",
-      "last_checked": "2026-04-14T07:29:50.907135",
+      "last_checked": "2026-04-17T07:52:27.640972",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"d5cfc427f0efc5a56fb7ed190522091b\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtextcreate.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddtoken(_:_:).json": {
       "hash": "c788976a6c2ecb1efc5506896be8d56015bf5134d31e3c14cf86984c85e83e23",
-      "last_checked": "2026-04-14T07:29:50.996469",
+      "last_checked": "2026-04-17T07:52:27.822605",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"4f3abd72df07063b602f5b8cac82b429\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtextaddtoken.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddword(_:_:).json": {
       "hash": "768467aedaba1acfb06e70ffc9827df97f076a15827a76f15fded090f2a956e9",
-      "last_checked": "2026-04-14T07:29:51.089365",
+      "last_checked": "2026-04-17T07:52:27.995386",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"4fae88e12525a45b5809056b21fd8db1\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtextaddword.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextaddwords(_:_:_:_:).json": {
       "hash": "d4866222f8641e048461f75cb0a154a266d010d741744bfc55c8e5041ba7362e",
-      "last_checked": "2026-04-14T07:29:51.179436",
+      "last_checked": "2026-04-17T07:52:28.169727",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"3975e9a646964c2b7c0b22e24a218f2f\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtextaddwords.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/parsing-flags.json": {
       "hash": "7dd62affd0d7d6c391e6adefe5d283920e48059d2592248af68b3f2f28ce0ff5",
-      "last_checked": "2026-04-14T07:29:51.273552",
+      "last_checked": "2026-04-17T07:52:28.332784",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"02126919fd1c6d2f20b8fb4a25086a42\"",
       "file_path": "documentation/LatentSemanticMapping/parsing-flags.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmtextgettypeid().json": {
       "hash": "a0c749c390488294ffedec9ddfa749442994b9031d7726990729e0c2c2fab28a",
-      "last_checked": "2026-04-14T07:29:51.366672",
+      "last_checked": "2026-04-17T07:52:28.612308",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"b9ec397b53efe7af1c851cf6721333b5\"",
       "file_path": "documentation/LatentSemanticMapping/lsmtextgettypeid.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcreate(_:_:_:_:_:).json": {
       "hash": "05eddaf2baf67cf0ca757b9aca9ea553de981d973bc58aef0a45ad4da9b5beb1",
-      "last_checked": "2026-04-14T07:29:51.507008",
+      "last_checked": "2026-04-17T07:52:28.776484",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"0c228fb1aebc192cc92575d230482a41\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultcreate.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/result-flags.json": {
       "hash": "865702def09292b2b8d0271eda30349921194215f75bbeecd4e78a66b503ae72",
-      "last_checked": "2026-04-14T07:29:51.654251",
+      "last_checked": "2026-04-17T07:52:28.939609",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"eba27c3e3298773ed73f222dde7bc3c7\"",
       "file_path": "documentation/LatentSemanticMapping/result-flags.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetcount(_:).json": {
       "hash": "347e911b968ba01f78ca030efcbacfa105175dc6d5f22f10725e7bc310d79e3e",
-      "last_checked": "2026-04-14T07:29:51.753984",
+      "last_checked": "2026-04-17T07:52:29.088327",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"cce3a6c273a88c212a33262317b6d27e\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultgetcount.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetcategory(_:_:).json": {
       "hash": "90ded300b0cb4c9422e84b2218284d02df5073f249d6450ea8129393999b0434",
-      "last_checked": "2026-04-14T07:29:51.853822",
+      "last_checked": "2026-04-17T07:52:29.393602",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"8646093b51ce7d604d4f1719c0f28b6d\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultgetcategory.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgetscore(_:_:).json": {
       "hash": "63b4cada41b316d4914126a938bafdda686119a988f8e74be64959ac64bb5762",
-      "last_checked": "2026-04-14T07:29:51.976576",
+      "last_checked": "2026-04-17T07:52:29.549985",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e40e7008e6b22c1dd3a4d94bf1c50496\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultgetscore.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopytoken(_:_:).json": {
       "hash": "ee09e87c5728501f7d287178c2afb280fca780cfc85d1c961c03996eec33f68f",
-      "last_checked": "2026-04-14T07:29:52.089388",
+      "last_checked": "2026-04-17T07:52:29.707071",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"812ba468f1f9794be3c70939abbe180b\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultcopytoken.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopytokencluster(_:_:).json": {
       "hash": "fec03b24d165ea0f6f1642595acd4f009b6779acece81545b0c71d9b13800f72",
-      "last_checked": "2026-04-14T07:29:52.186884",
+      "last_checked": "2026-04-17T07:52:29.865053",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e52c56f5cce54ac99899f295beab1a28\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultcopytokencluster.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopyword(_:_:).json": {
       "hash": "87349139e28f4b0054affe389d428dd87a60eeba1fecc8f35eac6d2914b35f9b",
-      "last_checked": "2026-04-14T07:29:52.277501",
+      "last_checked": "2026-04-17T07:52:30.034720",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"d864e93b0356edae9a9ce90f97915551\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultcopyword.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultcopywordcluster(_:_:).json": {
       "hash": "af4a85ed5815b71fea3ee4daf851ed95a861fb3884ec38d64b769476edc1ace7",
-      "last_checked": "2026-04-14T07:29:52.421521",
+      "last_checked": "2026-04-17T07:52:30.195833",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"243bcefaa110053392687c15da21e89c\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultcopywordcluster.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/lsmresultgettypeid().json": {
       "hash": "101b62081731fef7d46846de3c369751866b92e679e4cdd4daf66b857427b22e",
-      "last_checked": "2026-04-14T07:29:52.536371",
+      "last_checked": "2026-04-17T07:52:30.361451",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"321a5fc2cb445b5bd337022ce46b16e9\"",
       "file_path": "documentation/LatentSemanticMapping/lsmresultgettypeid.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapoutofstate.json": {
       "hash": "cf015b5e512de28daafd8056efe433c39e5158492c3f3f2545bdad60462a6c70",
-      "last_checked": "2026-04-14T07:29:52.669795",
+      "last_checked": "2026-04-17T07:52:30.546935",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"a57b05525bc63542ff5e88544c9124e8\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapoutofstate.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapnosuchcategory.json": {
       "hash": "73ad369439bf6a3b7658b8ba77f6849f14ca311fc0991002c18bca92afb2adca",
-      "last_checked": "2026-04-14T07:29:52.765204",
+      "last_checked": "2026-04-17T07:52:30.729749",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"b4e025c470f71480ce8bd58da3b8a63a\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapnosuchcategory.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapwriteerror.json": {
       "hash": "d1213d6037561dd7698f5fa8b34556d8c1450000c2a8c2f9a225130aea64a7b6",
-      "last_checked": "2026-04-14T07:29:52.871804",
+      "last_checked": "2026-04-17T07:52:31.016439",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"49d74403ba0aef4bcdaca594587950af\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapwriteerror.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapbadpath.json": {
       "hash": "2f59d4e34afa32cb3c321de61fa8874b18840787ffe2a73c4a1fc050c81058c4",
-      "last_checked": "2026-04-14T07:29:52.967191",
+      "last_checked": "2026-04-17T07:52:31.196989",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"beb2e48391f0e31aa2fc90e61f7d34f9\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapbadpath.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapbadcluster.json": {
       "hash": "2816997210021de09a29be9c56d8478026bc2605430a28c97f76a8a6c345ebdf",
-      "last_checked": "2026-04-14T07:29:53.115459",
+      "last_checked": "2026-04-17T07:52:31.377120",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"3c9189efe456138e3fa230cddd21ea98\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapbadcluster.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapoverflow.json": {
       "hash": "bf113c917756f2ab406f8f166773b9c100331195211bd3bf101e30c8725c37bc",
-      "last_checked": "2026-04-14T07:29:53.205512",
+      "last_checked": "2026-04-17T07:52:31.557904",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"ab5ca626b55986b0065d7f57f076743d\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapoverflow.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmappairs.json": {
       "hash": "4eca19cfa7fda74c880247ca4e4028a92bab741e32178516355487d8c6ef7cf8",
-      "last_checked": "2026-04-14T07:29:53.316404",
+      "last_checked": "2026-04-17T07:52:31.714965",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"a553f82e42e695aa7253ac450bb2537b\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmappairs.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmaptriplets.json": {
       "hash": "c3c9b4c9d369ec99b2d4b51b688f176e4edd50958b0208b0a3b5e3ef58064987",
-      "last_checked": "2026-04-14T07:29:53.409318",
+      "last_checked": "2026-04-17T07:52:31.888420",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"f3d3baef5923e19b137e1ce920b4a09a\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmaptriplets.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmaphashtext.json": {
       "hash": "ad18549b670569f7cabf4d1b4ffed3bb04b81b65b37adb5f0f22dd24768a0161",
-      "last_checked": "2026-04-14T07:29:53.502921",
+      "last_checked": "2026-04-17T07:52:32.052712",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"2573305fb1e5a0dfa5f70f37b16b75b4\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmaphashtext.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmalgorithmkey.json": {
       "hash": "8309456d073cff579bb729985d4de01eb056e9bd66fb2a72bec63bc721bc4408",
-      "last_checked": "2026-04-14T07:29:53.597584",
+      "last_checked": "2026-04-17T07:52:32.213628",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"7e5917553e6c56d8f55b772d478e9f71\"",
       "file_path": "documentation/LatentSemanticMapping/klsmalgorithmkey.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmalgorithmdense.json": {
       "hash": "3136509ef17d9aec115909469afa148a9357574eb5d9dcbb84684043b5bbaed8",
-      "last_checked": "2026-04-14T07:29:53.704372",
+      "last_checked": "2026-04-17T07:52:32.365494",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"bd69c57e9036995742b90ec1c6e9b0dc\"",
       "file_path": "documentation/LatentSemanticMapping/klsmalgorithmdense.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmalgorithmsparse.json": {
       "hash": "a6aad39e269ec55693eb9a2b6a89e3b8e0a788e236c5c91e5bacac9465a2861b",
-      "last_checked": "2026-04-14T07:29:53.806407",
+      "last_checked": "2026-04-17T07:52:32.532022",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"000aa8da65f586d7f3db6858c489c221\"",
       "file_path": "documentation/LatentSemanticMapping/klsmalgorithmsparse.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmprecisionkey.json": {
       "hash": "4066ca442c87eba5dab540ce36a8ed6b73b48c02ffff70b60529d93573aaf505",
-      "last_checked": "2026-04-14T07:29:53.900733",
+      "last_checked": "2026-04-17T07:52:32.695676",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"c2f06bd1f0c60b0a1f216a33cf75b83e\"",
       "file_path": "documentation/LatentSemanticMapping/klsmprecisionkey.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmprecisionfloat.json": {
       "hash": "f84ee6874b0595403e81c03e1060bbd59afb252e68b1291c86dcd82a1dab70bd",
-      "last_checked": "2026-04-14T07:29:53.999143",
+      "last_checked": "2026-04-17T07:52:32.882317",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"96dcfb226e653b788d1afb0294996ec3\"",
       "file_path": "documentation/LatentSemanticMapping/klsmprecisionfloat.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmprecisiondouble.json": {
       "hash": "bc1510ab4b88ce27add077f180414edd1fd221806d3e3b8508231301034a300e",
-      "last_checked": "2026-04-14T07:29:54.092759",
+      "last_checked": "2026-04-17T07:52:33.046544",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"2451ade8e07a1ee625fab5b8882843b3\"",
       "file_path": "documentation/LatentSemanticMapping/klsmprecisiondouble.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmdimensionkey.json": {
       "hash": "b8144d4f9104c138c7a5cb9b764502872175f9d426da5566302e0a04cd2c1f87",
-      "last_checked": "2026-04-14T07:29:54.190553",
+      "last_checked": "2026-04-17T07:52:33.225680",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"5811e2954d8e101542267b3b9786067f\"",
       "file_path": "documentation/LatentSemanticMapping/klsmdimensionkey.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmiterationskey.json": {
       "hash": "d51bd14c105e1f2f8e9f665ad1417fbbae6ba5eab5e3d69ef455b748ee656a12",
-      "last_checked": "2026-04-14T07:29:54.281218",
+      "last_checked": "2026-04-17T07:52:33.380844",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"b1ddf25ca0ee900cbbf23ac3c2dc74ab\"",
       "file_path": "documentation/LatentSemanticMapping/klsmiterationskey.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmsweepagekey.json": {
       "hash": "8990f1e581ebdeec02b6f2b893ec398baaa2050f1291efe0d75ffd8f4edbce0d",
-      "last_checked": "2026-04-14T07:29:54.377446",
+      "last_checked": "2026-04-17T07:52:33.531725",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"1dc3ea2d05873d64efefd7926f61cbbc\"",
       "file_path": "documentation/LatentSemanticMapping/klsmsweepagekey.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmsweepcutoffkey.json": {
       "hash": "05448c28de79e64cd7102dfcef46714d721bbd476e916dc32c2cece0a19b3a52",
-      "last_checked": "2026-04-14T07:29:54.474402",
+      "last_checked": "2026-04-17T07:52:33.693814",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"691ab5340e120f7432c680e24dfea4bf\"",
       "file_path": "documentation/LatentSemanticMapping/klsmsweepcutoffkey.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmclustercategories.json": {
       "hash": "8d01923dbfa06cdd3a967a47d59a69ae1ae7073e05471f04c4c5c5f171fb80d4",
-      "last_checked": "2026-04-14T07:29:54.567570",
+      "last_checked": "2026-04-17T07:52:33.850640",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e432dcd03025ec321c9bd98900b3a577\"",
       "file_path": "documentation/LatentSemanticMapping/klsmclustercategories.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmclusterwords.json": {
       "hash": "ef28c00cc53232113cb2ccfee5190a9034b3ec210631173f5f49a84cc727ca90",
-      "last_checked": "2026-04-14T07:29:54.676350",
+      "last_checked": "2026-04-17T07:52:34.004558",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"1a93185897c8201303e246aefd4d57d8\"",
       "file_path": "documentation/LatentSemanticMapping/klsmclusterwords.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmclustertokens.json": {
       "hash": "e8ede76ca27c8032255306d02252c658879c3924a54f418011446812bfbbb27f",
-      "last_checked": "2026-04-14T07:29:54.798410",
+      "last_checked": "2026-04-17T07:52:34.150582",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"40248827e458f2c8d6eeb4b495209d5e\"",
       "file_path": "documentation/LatentSemanticMapping/klsmclustertokens.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmclusterkmeans.json": {
       "hash": "8fdebc6fbfc42a66c9bffe705634a4ad66d0a0fa6584d039a96d92e092faa0db",
-      "last_checked": "2026-04-14T07:29:54.895373",
+      "last_checked": "2026-04-17T07:52:34.300470",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"bb3415f3c243f947529a8debf31e036b\"",
       "file_path": "documentation/LatentSemanticMapping/klsmclusterkmeans.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmclusteragglomerative.json": {
       "hash": "d0679784354e41fd34c4c83c32d68f5d8dca58cd919569ab15d9d303bc341164",
-      "last_checked": "2026-04-14T07:29:54.995252",
+      "last_checked": "2026-04-17T07:52:34.471896",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"9689fad02cc9e622866c03e0f2125f82\"",
       "file_path": "documentation/LatentSemanticMapping/klsmclusteragglomerative.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmapdiscardcounts.json": {
       "hash": "87b5e85c25e082b34ce55c728a2ae7941e19ff3145f332994278cefee607c42c",
-      "last_checked": "2026-04-14T07:29:55.090431",
+      "last_checked": "2026-04-17T07:52:34.642054",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"e4ffab1b2eea3c1ee0d4188b79927206\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmapdiscardcounts.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmmaploadmutable.json": {
       "hash": "acac8f01ec0c7ebfecc015c2dd77934dfdbbc04dd7ce5dce10a68b4f85da0c26",
-      "last_checked": "2026-04-14T07:29:55.199999",
+      "last_checked": "2026-04-17T07:52:34.797266",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"ad0f43b0fff5642d7648770a39d1a91f\"",
       "file_path": "documentation/LatentSemanticMapping/klsmmaploadmutable.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmtextapplyspamheuristics.json": {
       "hash": "aa78a5de9b416d42ed4b5a7668a663749013ea05d3977922f008c2efc21dcd00",
-      "last_checked": "2026-04-14T07:29:55.287123",
+      "last_checked": "2026-04-17T07:52:34.982376",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"2b902082469dfa25442bd311d256c260\"",
       "file_path": "documentation/LatentSemanticMapping/klsmtextapplyspamheuristics.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmtextpreserveacronyms.json": {
       "hash": "bf5bc170dd5bf3f11911626e7a0c388ed79fd1e15bd69257fcdf0ad5aa12bc7a",
-      "last_checked": "2026-04-14T07:29:55.385516",
+      "last_checked": "2026-04-17T07:52:35.133831",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"cc8ada5e10ea07a3e4578ff81af6ab07\"",
       "file_path": "documentation/LatentSemanticMapping/klsmtextpreserveacronyms.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmtextpreservecase.json": {
       "hash": "39f0dc142397b67c4d90beed8f7307b1b259b79a144db2c2d6fb3442f1a2f922",
-      "last_checked": "2026-04-14T07:29:55.484818",
+      "last_checked": "2026-04-17T07:52:35.300565",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"63adffd00d05641876e34c1bc078937a\"",
       "file_path": "documentation/LatentSemanticMapping/klsmtextpreservecase.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/latentsemanticmapping/klsmresultbestwords.json": {
       "hash": "34c4c96397a4aa5a3bbb5e2419bb38a88e60d5c3b22ce4158eae038c92d6a171",
-      "last_checked": "2026-04-14T07:29:55.635263",
+      "last_checked": "2026-04-17T07:52:35.465690",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:47.763989",
+      "session_id": "2026-04-17T07:52:21.817373",
       "etag": "W/\"1d8a7f99a1b0dd37a110a0427e6b1d7d\"",
       "file_path": "documentation/LatentSemanticMapping/klsmresultbestwords.md"
     },

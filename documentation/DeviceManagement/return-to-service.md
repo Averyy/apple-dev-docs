@@ -37,7 +37,7 @@ The device sends the `ReturnToService` message when the user triggers a return t
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#ReturnToServiceRequest`
 
 ## Request Body
 

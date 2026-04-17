@@ -19,7 +19,7 @@ struct CommitmentInfo
 
 ## Topics
 
-### Instance Properties
+### Instance Properties - generated
 - [let displayPrice: String](product/subscriptioninfo/commitmentinfo/displayprice.md)
 - [let period: SubscriptionPeriod](product/subscriptioninfo/commitmentinfo/period.md)
 - [let price: Decimal](product/subscriptioninfo/commitmentinfo/price.md)

@@ -233,7 +233,7 @@ This command lists all apps. The example response shows a subset of the full res
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#InstalledApplicationListCommand`
 
 ## Request Body
 

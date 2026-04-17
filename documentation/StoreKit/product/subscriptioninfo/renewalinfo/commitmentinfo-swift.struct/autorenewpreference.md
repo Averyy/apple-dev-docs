@@ -17,6 +17,13 @@
 let autoRenewPreference: String
 ```
 
+## See Also
+
+- [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype.md)
+- [let renewalDate: Date](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewaldate.md)
+- [let renewalPrice: Decimal](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalprice.md)
+- [let willAutoRenew: Bool](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/willautorenew.md)
+
 
 ---
 

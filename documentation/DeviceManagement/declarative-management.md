@@ -48,7 +48,7 @@ A successful response to this request is a `200 OK` HTTP status, with a response
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#DeclarativeManagementRequest`
 
 ## Request Body
 

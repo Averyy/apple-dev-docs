@@ -40,7 +40,7 @@ Requires a device enrolled using Automated Device Enrollment.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#SetBootstrapTokenRequest`
 
 ## Request Body
 

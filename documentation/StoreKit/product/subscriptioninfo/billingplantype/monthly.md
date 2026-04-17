@@ -17,6 +17,10 @@
 static let monthly: Product.SubscriptionInfo.BillingPlanType
 ```
 
+## See Also
+
+- [static let upFront: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/upfront.md)
+
 
 ---
 

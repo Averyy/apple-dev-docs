@@ -172,7 +172,7 @@ For a four node cluster, connect four Mac computers with six Thunderbolt cables 
 │         ├───────┤ │ │     ├───────┤         │
 │         │  en4  ◄─┼─┼─┐ ┌─►  en4  │         │
 └─────────┴───────┘ │ │ │ │ └───────┴─────────┘
-                    │ │ │ │                    
+                    │ │ │ │
 ┌─────────┬───────┐ │ │ │ │ ┌───────┬─────────┐
 │         │  en2  ◄─┘ │ └─┼─►  en2  │         │
 │         ├───────┤   │   │ ├───────┤         │
@@ -198,7 +198,7 @@ To connect five nodes, use a ring topology as follows:
 │         ├───────┤         ├───────┤         │
 │         │  en4  ◄┐       ┌►  en4  │         │
 └─────────┴───────┘│       │└───────┴─────────┘
-                   │       │                   
+                   │       │
 ┌─────────┬───────┐│       │┌───────┬─────────┐
 │         │  en2  ◄┘       └►  en2  │         │
 │         ├───────┤         ├───────┤         │
@@ -206,17 +206,35 @@ To connect five nodes, use a ring topology as follows:
 │         ├───────┤         ├───────┤         │
 │         │  en4  ◄┐       ┌►  en4  │         │
 └─────────┴───────┘│       │└───────┴─────────┘
-                   │       │                   
-                 ┌─▼─┬───┬─▼─┐                 
-                 │en2│en3│en4│                 
-                 ├───┴───┴───┤                 
-                 │   Mac 5   │                 
+                   │       │
+                 ┌─▼─┬───┬─▼─┐
+                 │en2│en3│en4│
+                 ├───┴───┴───┤
+                 │   Mac 5   │
                  └───────────┘
 ```
 
 RDMA over Thunderbolt can’t route data and thus the application is responsible for forwarding data as a particular topology requires. For example, in the five node ring topology, a user can’t connect Mac 4 with Mac 1 without the application forwarding data via Mac 2.
 
 For some workloads, such as collective communication operations, applications might allow intermediate nodes to perform portions of the computation rather than merely forwarding bytes. Consider an “All Sum” operation where each node adds its buffer to every other node’s buffer. Rather than forward all buffers to one node which performs the addition, intermediate nodes might receive from one neighbor, add their buffer to the running sum, then forward the result to the next neighbor.
+
+#### Configuring Systems for Cluster Use
+
+Mac clusters work best with a few macOS settings tuned for cluster use.
+
+##### Disable Idle Sleep
+
+To ensure uninterrupted network access, disable sleep by following the [` instructions to stop automatic sleeping when the display is off`](https://developer.apple.comhttps://support.apple.com/guide/mac-help/set-sleep-and-wake-settings-mchle41a6ccd/mac).
+
+Without this, you may not be able to reach connected Macs over Thunderbolt using IP or RDMA because Thunderbolt does not support Wake-on-LAN.
+
+##### Enable Automatic Login
+
+To make remote access easier, set a macOS device to automatically log in as a particular user by following the instructions under [`How to log in automatically to a Mac user account`](https://developer.apple.comhttps://support.apple.com/en-us/102316).
+
+##### Start Up After Power Failure
+
+To ensure you can remotely access your Mac cluster after a power outage, open System Settings, navigate to Energy, and toggle “Start up automatically after a power failure”.
 
 #### Usage with Mlx
 
@@ -537,6 +555,7 @@ for (int i = 0; i < completions_polled; ++i) {
 
 #### Revision History
 
+- **2026-04-13** Added a section about configuring Macs for cluster use.
 - **2026-03-19** First published.
 
 ## See Also

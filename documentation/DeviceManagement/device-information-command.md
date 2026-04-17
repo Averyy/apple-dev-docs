@@ -318,7 +318,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#DeviceInformationCommand`
 
 ## Request Body
 

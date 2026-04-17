@@ -1,4 +1,4 @@
 Completed scraping App Store Server API!
-Total pages scraped: 245
-Pages skipped (unchanged): 2
+Total pages scraped: 0
+Pages skipped (unchanged): 247
 Pages failed: 0

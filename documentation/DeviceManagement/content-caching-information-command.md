@@ -30,7 +30,7 @@ Get the status of the content caches on a device.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#ContentCachingInformationCommand`
 
 ## Request Body
 

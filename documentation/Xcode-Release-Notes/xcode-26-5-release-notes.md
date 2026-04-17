@@ -34,9 +34,9 @@ Xcode 26.5 beta 2 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26
 
 ##### Testing
 
-###### Known Issues
+###### Resolved Issues
 
-- Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
+- Fixed: Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
 
 #### Updates in Xcode 265 Beta
 
@@ -55,6 +55,8 @@ Xcode 26.5 beta 2 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26
 
 ## See Also
 
+- [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.4 Release Notes](xcode-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.3 Release Notes](xcode-26_3-release-notes.md)

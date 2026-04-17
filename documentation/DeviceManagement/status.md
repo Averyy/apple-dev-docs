@@ -6,19 +6,12 @@
 The request for getting the status of a device.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
 - Device Assignment Services ?+
 - VPP License Management ?+
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#status`
 
 ## Request Body
 

@@ -6,18 +6,18 @@ Migrate managed devices from one device management service to another.
 
 #### Overview
 
-Apple School Manager and Apple Business Manager support device management migration to transfer management of a device from one service, the original, to another, the destination, using a simple and reliable process.
+Apple School Manager and Apple Business support device management migration to transfer management of a device from one service, the original, to another, the destination, using a simple and reliable process.
 
 Some reasons for migrating include: replacing one service product with a different one, creating a separate pool of managed devices for testing a new version of a service, or incorporating devices from another organization, for example, as the result of an acquisition.
 
 Migration typically involves either erasing a device and enrolling it with the destination service, or manually unenrolling and then reenrolling with the destination service. These operations require significant organization support to guide users through the process, and are disruptive, taking significant time to complete.
 
-The Apple School Manager and Apple Business Manager migration process simplifies and improves the experience for admins, support personnel, and users. An overview of the order of operations for this process is as follows:
+The Apple School Manager and Apple Business migration process simplifies and improves the experience for admins, support personnel, and users. An overview of the order of operations for this process is as follows:
 
-1. An admin reassigns a managed device from the original device management service to the destination service in Apple School Manager or Apple Business Manager.
+1. An admin reassigns a managed device from the original device management service to the destination service in Apple School Manager or Apple Business.
 2. The admin sets a deadline for enforcing the migration on the device.
 3. The destination service detects a new device in its device assignment list and assigns an Automated Device Enrollment [`Profile`](profile.md) to the device.
-4. Apple School Manager or Apple Business Manager updates the [`Profile`](profile.md) assigned to the device to include the migration deadline, and sends a push notification to the device to have it fetch the new profile.
+4. Apple School Manager or Apple Business updates the [`Profile`](profile.md) assigned to the device to include the migration deadline, and sends a push notification to the device to have it fetch the new profile.
 5. When it receives the new [`Profile`](profile.md), the device detects the need for migration and prompts the user with a notification that shows the required deadline, and gives them an option to start migration immediately or postpone it.
 6. If the user postpones migration, the device repeats the notification daily or more frequently close to the deadline. If the user keeps postponing the migration, the device forces migration when it reaches the deadline.
 7. When the user triggers migration, or when the device reaches the deadline, it starts the migration flow, and displays progress as it unenrolls from the original service and reenrolls with the destination service.
@@ -25,10 +25,10 @@ The Apple School Manager and Apple Business Manager migration process simplifies
 
 #### Requirements
 
-The requirements for Apple School Manager and Apple Business Manager migration are:
+The requirements for Apple School Manager and Apple Business migration are:
 
 - The device needs to run iOS 26 or later, or macOS 26 or later.
-- The device needs to be actively registered in Apple School Manager or Apple Business Manager and not be released.
+- The device needs to be actively registered in Apple School Manager or Apple Business and not be released.
 - If the device was added using Apple Configurator, it needs to be past the 30-days provisional enrollment period.
 - The device isn’t configured for Shared iPad or Return to Service (`is_multi_user` and `is_return_to_service` are not set to `true` in the [`Profile`](profile.md)).
 - The device needs to use Automated Device Enrollment.
@@ -37,17 +37,17 @@ The requirements for Apple School Manager and Apple Business Manager migration a
 
 #### Handle Migration in the Original Device Management Service
 
-The original device management service doesn’t need to take any special actions when migration occurs. Apple School Manager or Apple Business Manager removes the device from the original service’s [`Device Assignment`](device-assignment.md), which the original service detects when it next synchronizes that list. When migration starts, the original service receives a [`Check Out`](check-out.md) request from the device, indicating unenrollment of the device.
+The original device management service doesn’t need to take any special actions when migration occurs. Apple School Manager or Apple Business removes the device from the original service’s [`Device Assignment`](device-assignment.md), which the original service detects when it next synchronizes that list. When migration starts, the original service receives a [`Check Out`](check-out.md) request from the device, indicating unenrollment of the device.
 
 > **Note**:  The device sends the [`Check Out`](check-out.md) request on a best-effort basis, and the device management service may not always receive it. The service needs to handle previously enrolled devices that no longer respond to requests.
 
 #### Handle Migration in the Destination Device Management Service
 
-Apple School Manager or Apple Business Manager adds the migrating device to the [`Device Assignment`](device-assignment.md) for the destination device management service. It includes a `mdm_migration_deadline` field in the device record, indicating the timestamp of the migration deadline, and this tells the destination service that the next enrollment from the device is due to a migration.
+Apple School Manager or Apple Business adds the migrating device to the [`Device Assignment`](device-assignment.md) for the destination device management service. It includes a `mdm_migration_deadline` field in the device record, indicating the timestamp of the migration deadline, and this tells the destination service that the next enrollment from the device is due to a migration.
 
-> ❗ **Important**:  The device management service needs to set the `X-Server-Protocol-Version` header to version 8 or later in the Apple School Manager or Apple Business Manager HTTP request, to ensure device records include the `mdm_migration_deadline` field.
+> ❗ **Important**:  The device management service needs to set the `X-Server-Protocol-Version` header to version 8 or later in the Apple School Manager or Apple Business HTTP request, to ensure device records include the `mdm_migration_deadline` field.
 
-When the destination device management service detects a migrating device, it assigns a [`Profile`](profile.md) to the device using the [`Assign a Profile`](assign-profile.md) request. Apple School Manager or Apple Business Manager then updates the corresponding device with the new [`Profile`](profile.md), starting the migration flow.
+When the destination device management service detects a migrating device, it assigns a [`Profile`](profile.md) to the device using the [`Assign a Profile`](assign-profile.md) request. Apple School Manager or Apple Business then updates the corresponding device with the new [`Profile`](profile.md), starting the migration flow.
 
 The destination device management service also needs to set the `await_device_configured` key to `true` in the device’s [`Profile`](profile.md). This allows the destination service to preserve Activation Lock and managed apps before the device is available again to the user.
 
@@ -55,15 +55,15 @@ The destination device management service also needs to set the `await_device_co
 
 ##### Preserve Activation Lock
 
-Activation Lock is a feature of iCloud and Automated Device Enrollment that makes it harder for anyone to use or resell a lost or stolen device. Device management services can set Activation Lock by using the Apple School Manager or Apple Business Manager [`Activation Lock a Device`](activation-lock-devices.md) request. Users can also set their own Activation Lock via iCloud if allowed by the service.
+Activation Lock is a feature of iCloud and Automated Device Enrollment that makes it harder for anyone to use or resell a lost or stolen device. Device management services can set Activation Lock by using the Apple School Manager or Apple Business [`Activation Lock a Device`](activation-lock-devices.md) request. Users can also set their own Activation Lock via iCloud if allowed by the service.
 
 For device migration, the following rules apply for Activation Lock:
 
 - If the original service has a lock on the device before migration, the migration process always removes that lock and invalidates any bypass codes.
 - The destination service can opt to lock the device during migration, or leave it unlocked.
-- If migration fails, Apple School Manager or Apple Business Manager removes any prior lock and invalidates any bypass codes, and then applies a lock on the device that only the admin can unlock.
+- If migration fails, Apple School Manager or Apple Business removes any prior lock and invalidates any bypass codes, and then applies a lock on the device that only the admin can unlock.
 
-If the destination device management service wants to apply Activation Lock during migration, before migration starts, it assigns an [`Profile`](profile.md) with the `await_device_configured` key with a value of `true` to the device, to ensure the device enters the await configuration state during migration. Then, after the device enrolls and enters the await configuration state, it sends a [`Activation Lock a Device`](activation-lock-devices.md) request to Apple School Manager or Apple Business Manager to lock the device, before it sends the [`Device Configured`](device-configured-command.md) command to allow the device to proceed.
+If the destination device management service wants to apply Activation Lock during migration, before migration starts, it assigns an [`Profile`](profile.md) with the `await_device_configured` key with a value of `true` to the device, to ensure the device enters the await configuration state during migration. Then, after the device enrolls and enters the await configuration state, it sends a [`Activation Lock a Device`](activation-lock-devices.md) request to Apple School Manager or Apple Business to lock the device, before it sends the [`Device Configured`](device-configured-command.md) command to allow the device to proceed.
 
 ##### Preserve Managed Apps
 
@@ -76,7 +76,7 @@ The app preservation behavior works for apps installed using MDM commands such a
 3. After the device enrolls and enters the await configuration state,  before sending the [`Device Configured`](device-configured-command.md) command, the destination service installs MDM or declarative management apps it wants preserved. The device won’t download these apps again. It also installs any other apps, profiles, or declarations needed for setup. The device downloads any new apps, but the download and install operations happen in the background, allowing the migration to continue.
 4. When migration completes, the device compares the new set of managed apps with the preserved list from the original service, and removes any apps in the preserved list that weren’t reinstalled by the destination service.
 
-> **Note**:  The destination device management service needs to ensure each preserved App Store app has a valid App Store license assigned to it in Apple School Manager or Apple Business Manager.
+> **Note**:  The destination device management service needs to ensure each preserved App Store app has a valid App Store license assigned to it in Apple School Manager or Apple Business.
 
 #### Handle Multiple Users When Migrating Macos Devices
 

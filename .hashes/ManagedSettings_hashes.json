@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:28:51.725271",
+    "last_updated": "2026-04-17T07:50:42.725668",
     "total_pages": 459,
-    "session_id": "2026-04-14T07:28:37.412672"
+    "session_id": "2026-04-17T07:50:13.680323"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ManagedSettings.json": {
       "hash": "d15e65a431c03e24dcde20edabe641adc1439a8276fdfb005ffb5f4818b6089c",
-      "last_checked": "2026-04-14T07:28:37.713874",
+      "last_checked": "2026-04-17T07:50:13.940765",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1bc6911431efb6049b692c40e474f908\"",
       "file_path": "documentation/ManagedSettings/ManagedSettings.md"
     },
     "https://developer.apple.com/documentation/ManagedSettings": {
       "hash": "d15e65a431c03e24dcde20edabe641adc1439a8276fdfb005ffb5f4818b6089c",
-      "last_checked": "2026-04-14T07:28:37.630144",
+      "last_checked": "2026-04-17T07:50:13.836299",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1bc6911431efb6049b692c40e474f908\"",
       "file_path": "documentation/ManagedSettings/ManagedSettings.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/connectionwithframeworks.json": {
       "hash": "e4d6182fd528e70c2718e90a5f5533191734e458249e7a471cf8dc89d9fe3834",
-      "last_checked": "2026-04-14T07:28:37.997747",
+      "last_checked": "2026-04-17T07:50:14.185766",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d07c4fd92689e86990ee476d8568d4e0\"",
       "file_path": "documentation/ManagedSettings/connectionwithframeworks.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/readingmedia.json": {
       "hash": "f2fe65f64a63d83f3a934802c73bafd10fd4a794187161acf4969131d11cffb8",
-      "last_checked": "2026-04-14T07:28:38.072476",
+      "last_checked": "2026-04-17T07:50:14.466341",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"7e7d6eded74aa2d455c3f688925c1084\"",
       "file_path": "documentation/ManagedSettings/readingmedia.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore.json": {
       "hash": "65b988c339f51015fa1cb5c1403e118743752c8a04daa44089925295a8866f1c",
-      "last_checked": "2026-04-14T07:28:38.250916",
+      "last_checked": "2026-04-17T07:50:14.636176",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"497ffced57b21f94054f02aee1278073\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate.json": {
       "hash": "0f9ec25ce3ccb365d384536f6accc5c45a0d8ce268bf6046bfeed30edc9f850e",
-      "last_checked": "2026-04-14T07:28:38.460081",
+      "last_checked": "2026-04-17T07:50:15.075307",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"145e97a3eb2c9805ac86ad03cceb2d86\"",
       "file_path": "documentation/ManagedSettings/shieldactiondelegate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/token.json": {
       "hash": "0c507a9a6679ccf543c27ea83d9cde95618bfdbbca44a40dcc628257aa4bdd0e",
-      "last_checked": "2026-04-14T07:28:38.586988",
+      "last_checked": "2026-04-17T07:50:15.336341",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ce14511b37d43522d31143c307f65beb\"",
       "file_path": "documentation/ManagedSettings/token.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application.json": {
       "hash": "93cf4a5248b2c631c42d8894065d31094c15fd8fbd0070027a863d8528f17226",
-      "last_checked": "2026-04-14T07:28:38.663624",
+      "last_checked": "2026-04-17T07:50:15.483380",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e3613ca4b34e3ee49f4693555d8a0de2\"",
       "file_path": "documentation/ManagedSettings/application.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationtoken.json": {
       "hash": "9a696cc9560c5dd530d6a26c349313922cbef5ebb689fb8fe878f339c4027ea4",
-      "last_checked": "2026-04-14T07:28:38.740709",
+      "last_checked": "2026-04-17T07:50:15.637693",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ae0295be429fe81fe56dcbfb236276ab\"",
       "file_path": "documentation/ManagedSettings/applicationtoken.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory.json": {
       "hash": "a8fd56d3541824cd8923bfe59ff75bd1cce9f943467c233c536eef97f3978b48",
-      "last_checked": "2026-04-14T07:28:38.864378",
+      "last_checked": "2026-04-17T07:50:15.812670",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ef59c927103ffa70eb5beabc0a4d5638\"",
       "file_path": "documentation/ManagedSettings/activitycategory.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategorytoken.json": {
       "hash": "c59661d602a5505c23bbdd87dd224a747c1bbfd4e3f65deaf4a488e3264211a8",
-      "last_checked": "2026-04-14T07:28:38.957320",
+      "last_checked": "2026-04-17T07:50:16.083005",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"91e9345a60c628eed0d7b8e18f06fb21\"",
       "file_path": "documentation/ManagedSettings/activitycategorytoken.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain.json": {
       "hash": "23abca0f11f9c3798dce03e4be36dd90ed176ec52554f1ed9f90ecaf71654e28",
-      "last_checked": "2026-04-14T07:28:39.090177",
+      "last_checked": "2026-04-17T07:50:16.398107",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"7404abaa600397218d1aa43d98f3ccc4\"",
       "file_path": "documentation/ManagedSettings/webdomain.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomaintoken.json": {
       "hash": "3777f821e5b54a94aca960234cbd6f26111f45960924ce0de7372ae7948a9421",
-      "last_checked": "2026-04-14T07:28:39.169643",
+      "last_checked": "2026-04-17T07:50:16.565195",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"9f1a1eef1947001b415833883ce030f2\"",
       "file_path": "documentation/ManagedSettings/webdomaintoken.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/init().json": {
       "hash": "a457c71f5ba1a9d9491e4ba4322dc1dd7ddcf36817461231f2b5567d910c9539",
-      "last_checked": "2026-04-14T07:28:39.296762",
+      "last_checked": "2026-04-17T07:50:16.713125",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"fff401ecfd81b4d01308e83b45c787be\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/init.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsgroup.json": {
       "hash": "d6971e4922a47ecb0f498df2760337c0aed7ed922275b9a3e6564b823ab8c134",
-      "last_checked": "2026-04-14T07:28:39.370358",
+      "last_checked": "2026-04-17T07:50:16.872577",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"65ab5a8b53f927c11191113fe54cca3d\"",
       "file_path": "documentation/ManagedSettings/managedsettingsgroup.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/account.json": {
       "hash": "e120ee06366381beafdf128e279af0e3f663a7fe679eeb942fab5c91c2abbb3a",
-      "last_checked": "2026-04-14T07:28:39.445540",
+      "last_checked": "2026-04-17T07:50:17.038252",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1e6db1adaaf18ef16b9f976847a3adee\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/account.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/accountsettings.json": {
       "hash": "1ecd77f7122c9522e520c497a2d2fe81a9f9effb4f166a03973da0a61ef34905",
-      "last_checked": "2026-04-14T07:28:39.516624",
+      "last_checked": "2026-04-17T07:50:17.342330",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ede85e91189684f67fe35a386ec12417\"",
       "file_path": "documentation/ManagedSettings/accountsettings.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/cellular.json": {
       "hash": "074c6659373456765ba1a1b00db9e28d5970a037af805531ee1682deee44e588",
-      "last_checked": "2026-04-14T07:28:39.648993",
+      "last_checked": "2026-04-17T07:50:17.527045",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"02565ef426f9f56a00dfdbacc3d0c6c8\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/cellular.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings.json": {
       "hash": "061024b82924d4a83210357985a4b28937d8bf1075ef6901fb848a29b25b07b0",
-      "last_checked": "2026-04-14T07:28:39.725083",
+      "last_checked": "2026-04-17T07:50:17.668276",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d5fb21487cf2b1d94aab9066f2e7271b\"",
       "file_path": "documentation/ManagedSettings/cellularsettings.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/dateandtime.json": {
       "hash": "6a04e23ca6528d023d016d078eeea77d504c3853cf60494c905bf189b09c679c",
-      "last_checked": "2026-04-14T07:28:39.812200",
+      "last_checked": "2026-04-17T07:50:17.838648",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"3da39314ad5af4b9005cb17c9bbbf75a\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/dateandtime.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/dateandtimesettings.json": {
       "hash": "9ff943a8b27f523a33e64113427177627f08c3a65d46e9aab79d266289515678",
-      "last_checked": "2026-04-14T07:28:39.898137",
+      "last_checked": "2026-04-17T07:50:18.121613",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"5b73b0a539d81fba398ac7f78e1397d9\"",
       "file_path": "documentation/ManagedSettings/dateandtimesettings.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/passcode.json": {
       "hash": "f75da8e2cc3f6b7c257cc530f08549a23142021a2971643c3ceacc83cb2d025d",
-      "last_checked": "2026-04-14T07:28:39.971901",
+      "last_checked": "2026-04-17T07:50:18.287251",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ba2eb7599c69b92439e49d5e5b70c37d\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/passcode.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings.json": {
       "hash": "fe2adbad4cd94644fd991a5697f77a103146c9fec85945de0586ffac27f0e444",
-      "last_checked": "2026-04-14T07:28:40.055508",
+      "last_checked": "2026-04-17T07:50:18.451901",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b0b09d0ec11a0fcf2c0a12c1bc190837\"",
       "file_path": "documentation/ManagedSettings/passcodesettings.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/shield.json": {
       "hash": "425b89c76865a974576690d7154da370a04a164a6656f731c368058f6c8a4440",
-      "last_checked": "2026-04-14T07:28:40.133636",
+      "last_checked": "2026-04-17T07:50:18.769650",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"194c15e20108db7c6b3d615f6d6c0e05\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/shield.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings.json": {
       "hash": "00144f59bcbfc0521fec8cad3d602d7c83124fbaf8183c7b5d29df77a3daed3d",
-      "last_checked": "2026-04-14T07:28:40.210611",
+      "last_checked": "2026-04-17T07:50:19.081929",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"4fdf3baa8f5527ff1858e0e19a9a020d\"",
       "file_path": "documentation/ManagedSettings/shieldsettings.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/siri.json": {
       "hash": "76e410dc42e10a7d3b7d032a26ef347913f69e0026bed8e931ca6778d73b8d9d",
-      "last_checked": "2026-04-14T07:28:40.285413",
+      "last_checked": "2026-04-17T07:50:19.240985",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e858f4bba294a2041b99f93ad46df3c8\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/siri.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings.json": {
       "hash": "f18ecd9349227778ce90fa761e7f7806249c0371ed1bc4a44b649359c924adb3",
-      "last_checked": "2026-04-14T07:28:40.375470",
+      "last_checked": "2026-04-17T07:50:19.558510",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ea010b028cce962c02cd401601545153\"",
       "file_path": "documentation/ManagedSettings/sirisettings.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/appstore.json": {
       "hash": "86f91bc3bb1fb827e8d39e60af268202b78cac8502abd439e3a27bf5db768f6e",
-      "last_checked": "2026-04-14T07:28:40.510328",
+      "last_checked": "2026-04-17T07:50:19.721180",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"33a5f28920370d1217aec9ec49488646\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/appstore.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings.json": {
       "hash": "4aed33d006e6887532889da7cb11ec6e7f7597a44524500c294e5424c21c9ee0",
-      "last_checked": "2026-04-14T07:28:40.584350",
+      "last_checked": "2026-04-17T07:50:20.024523",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d750d19ac82dcc417fdfb823c0d0bfae\"",
       "file_path": "documentation/ManagedSettings/appstoresettings.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/application.json": {
       "hash": "14b6d5f58d1c05cad45ecbc12aff43e4ee30b2807a1d097986aad33865f84da8",
-      "last_checked": "2026-04-14T07:28:40.719335",
+      "last_checked": "2026-04-17T07:50:20.303014",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"606373b4e2a790c6bd3a9d287f57fb91\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/application.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings.json": {
       "hash": "01aa207b1387c3855ac8f0bec66600ac2c6492eb5e899df17356239af37a8fc4",
-      "last_checked": "2026-04-14T07:28:40.801342",
+      "last_checked": "2026-04-17T07:50:20.455530",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"7442c1b0c6bb64d56d5c022ad1c83db0\"",
       "file_path": "documentation/ManagedSettings/applicationsettings.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/effectivemaximummovierating.json": {
       "hash": "d4f7fcfc233073ffe8de2457015944dd554895fc0c0dc79cb40459fbb396d951",
-      "last_checked": "2026-04-14T07:28:40.893337",
+      "last_checked": "2026-04-17T07:50:20.617657",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a969e9b694b45ba973ada33db6067e9a\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximummovierating.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/effectivemaximumtvshowrating.json": {
       "hash": "b5f65d48de3b492c58cf1c937925bade4f7cdb7ad5aa69737bd52b7cae91b3a1",
-      "last_checked": "2026-04-14T07:28:40.967524",
+      "last_checked": "2026-04-17T07:50:20.779054",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"81d77a4dbad29262e0d5283796ddcacc\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximumtvshowrating.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/gamecenter.json": {
       "hash": "1bc2ffc2ecebcb31d6fe4323f4e1f914e5034f273f7a34f62e2f2f4c12a867fe",
-      "last_checked": "2026-04-14T07:28:41.043092",
+      "last_checked": "2026-04-17T07:50:21.071487",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"84ac60b78d6ba5cebddd2cff57eff093\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/gamecenter.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings.json": {
       "hash": "8e4a280bda6d7c2e55ae7dd83007c0457ffe58c50664c2945c47ffa839990669",
-      "last_checked": "2026-04-14T07:28:41.269961",
+      "last_checked": "2026-04-17T07:50:21.339972",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"01e0756358a3b0b5b2cd58c698f122b1\"",
       "file_path": "documentation/ManagedSettings/gamecentersettings.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/media.json": {
       "hash": "770bc71e9d69d65703df4f3e900a84e0aca03a9b972c0ec9029bcca6e5e8d2aa",
-      "last_checked": "2026-04-14T07:28:41.347851",
+      "last_checked": "2026-04-17T07:50:21.509913",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"f6fc11bb65b3d6dc6294f8e111b88a19\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/media.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings.json": {
       "hash": "9e100461c31f0f5035eb75ecb1b0423fa120073e70c8821b2e5d32e393cc6f98",
-      "last_checked": "2026-04-14T07:28:41.426975",
+      "last_checked": "2026-04-17T07:50:21.664495",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d8cec4c240f1dc826757f77f89681b3c\"",
       "file_path": "documentation/ManagedSettings/mediasettings.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/safari.json": {
       "hash": "95fa033fe2fd815e8a3c03ba1460c3d6378a0d3791bffe09a76b1a88f6fb7181",
-      "last_checked": "2026-04-14T07:28:41.504113",
+      "last_checked": "2026-04-17T07:50:21.828769",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"59e0439fd6a0e90994e8ef9af6130a40\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/safari.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings.json": {
       "hash": "972ea99252dc734dc510c29e8f0ab78bf750877b6be512954613ea0c438f9a2e",
-      "last_checked": "2026-04-14T07:28:41.579647",
+      "last_checked": "2026-04-17T07:50:21.981146",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e2321daf3f942285d7ce75c6dd0be414\"",
       "file_path": "documentation/ManagedSettings/safarisettings.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/webcontent.json": {
       "hash": "7beaed59ee2ec74d6f32c6dc22c012bcc6c95e436f1687b930eec651c2214123",
-      "last_checked": "2026-04-14T07:28:41.658284",
+      "last_checked": "2026-04-17T07:50:22.146180",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"786ef08438224434401f2f5d93a708d8\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/webcontent.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings.json": {
       "hash": "7cc13e96971863bc5d6810674ece3d08145da1e880df1a616ff456b003d27a15",
-      "last_checked": "2026-04-14T07:28:41.739551",
+      "last_checked": "2026-04-17T07:50:22.296728",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"8da25c94aab18a5b099b88f87054da3e\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/boundedsettingmetadata.json": {
       "hash": "4cd28863c47b6de5fa8be0c8430d76bad4dd9067908aff0a148df0a93dea9554",
-      "last_checked": "2026-04-14T07:28:41.816095",
+      "last_checked": "2026-04-17T07:50:22.497533",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"fd7bc55daec0fd946b63bc3fcd9af096\"",
       "file_path": "documentation/ManagedSettings/boundedsettingmetadata.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/settingmetadata.json": {
       "hash": "7a71455a8c976764bd892270163582245ccb788e589059f63df6f34ae3b1ed77",
-      "last_checked": "2026-04-14T07:28:41.891849",
+      "last_checked": "2026-04-17T07:50:22.672496",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"bd0fa0c7bab2f667c9e363f38b854ad1\"",
       "file_path": "documentation/ManagedSettings/settingmetadata.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivemaximummovierating.json": {
       "hash": "b27fd1a05716b86fd3a98cc026f5fac9689033601bcd12d4f1db0402e36099c2",
-      "last_checked": "2026-04-14T07:28:42.414283",
+      "last_checked": "2026-04-17T07:50:23.863882",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"48e8c17bd36271ea383ff5352b0760e4\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximummovierating.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivemaximumtvshowrating.json": {
       "hash": "baef47b74e5731f4ad7dccc7a9bd94815bb1045f91743037ea76031de46cd406",
-      "last_checked": "2026-04-14T07:28:41.972062",
+      "last_checked": "2026-04-17T07:50:22.832029",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"3362db6dc7ee7cf3d64eaa4c508ea955\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivemaximumtvshowrating.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name.json": {
       "hash": "9c1cc4d9b9e123358815786b3b1b1ac9df776d63066bb3662014cd705411745f",
-      "last_checked": "2026-04-14T07:28:42.044510",
+      "last_checked": "2026-04-17T07:50:23.127065",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"4cff9f99721ac633f8074c49d02ebc93\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/name.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/init(named:).json": {
       "hash": "dee03c869e52858f141333a15bb470f1ffddf0b2435b4160255dff71e0e3c4b1",
-      "last_checked": "2026-04-14T07:28:42.219563",
+      "last_checked": "2026-04-17T07:50:23.425145",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"99fa9cd76fa09cefa9fd5c73748dab71\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/init-named.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/$effectivedenyexplicitcontent.json": {
       "hash": "aa5dfcf8fa8236cbd982cc5a2f84c77b8c06dc5272096d748fb1b55b50a50b11",
-      "last_checked": "2026-04-14T07:28:42.295186",
+      "last_checked": "2026-04-17T07:50:23.690417",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b8b1fdbc7803ddb3854935735ad540c0\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivedenyexplicitcontent.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/effectivedenyexplicitcontent.json": {
       "hash": "b1809fb73e71731373314b8abac818acc596633aed8ed4718de07a71e80fc0c1",
-      "last_checked": "2026-04-14T07:28:42.490027",
+      "last_checked": "2026-04-17T07:50:24.008765",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"4b473aadab6eafb8e3cc363b74558bb1\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/effectivedenyexplicitcontent.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/clearallsettings().json": {
       "hash": "78e38f189103da53e083ac7386bb42a0a9599b0c45ab866bf11a120e295113a4",
-      "last_checked": "2026-04-14T07:28:42.650746",
+      "last_checked": "2026-04-17T07:50:24.345557",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"65724093d24186e65e906937091ff38e\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/clearallsettings.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction.json": {
       "hash": "16ec621cc9f8aac8f0f094f1ed6f2949ee36956114dae728fe481c84e1aa128f",
-      "last_checked": "2026-04-14T07:28:38.373186",
+      "last_checked": "2026-04-17T07:50:14.794515",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b2b2a8cb28045c33f24cd1d566e38de9\"",
       "file_path": "documentation/ManagedSettings/shieldaction.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse.json": {
       "hash": "f8e3f48a963d1e741e3c1011a0019dacc4b45b6feb1354e47e7968a0e463e308",
-      "last_checked": "2026-04-14T07:28:43.824768",
+      "last_checked": "2026-04-17T07:50:26.663299",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"3dded8cd6822daf7fa090cfba7a30079\"",
       "file_path": "documentation/ManagedSettings/shieldactionresponse.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/init().json": {
       "hash": "005c4f1012ad3cb825716084f49104d45d571818cd8ddd86eed5c657ec9ccbc2",
-      "last_checked": "2026-04-14T07:28:44.168767",
+      "last_checked": "2026-04-17T07:50:27.344691",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"89d5c689c58cd5ec7075b7342a25c4a9\"",
       "file_path": "documentation/ManagedSettings/shieldactiondelegate/init.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4jgek.json": {
       "hash": "67fd62755efeb5b22ba12e3cfec21ca7cf6ff31cb65403956086e5fd77f8928d",
-      "last_checked": "2026-04-14T07:28:43.898104",
+      "last_checked": "2026-04-17T07:50:26.841452",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e4028efa3465859c6e013e92a4096cc2\"",
       "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4jgek.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-4tqna.json": {
       "hash": "83c7bc19cd52db4566e22cac3dd1f029e5d0241f169bb91e0a6638b730f89a5b",
-      "last_checked": "2026-04-14T07:28:44.055373",
+      "last_checked": "2026-04-17T07:50:27.180287",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"27939176a0de490203b5e0d6641cd552\"",
       "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-4tqna.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactiondelegate/handle(action:for:completionhandler:)-9hcqc.json": {
       "hash": "7f00aca7ca95e4f376eb0ff9732b705edd8f955b20da589ea9db5c56ca19fc35",
-      "last_checked": "2026-04-14T07:28:43.973700",
+      "last_checked": "2026-04-17T07:50:27.012816",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"6763c33f01a87490cd833b9c9cfa6e7b\"",
       "file_path": "documentation/ManagedSettings/shieldactiondelegate/handle-actionforcompletionhandler-9hcqc.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/init(bundleidentifier:).json": {
       "hash": "296ce0d40b22d1550223f31ba00956bb4178dc4cb99138b8807c3426d94ad670",
-      "last_checked": "2026-04-14T07:28:44.240319",
+      "last_checked": "2026-04-17T07:50:27.497494",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"9f445630ed71f610e9314d9fa8edaba7\"",
       "file_path": "documentation/ManagedSettings/application/init-bundleidentifier.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/init(token:).json": {
       "hash": "42dc93e9c2ec4f8653f9fabcddc00aa92e657362da1b9ed2444e41a5f037daff",
-      "last_checked": "2026-04-14T07:28:44.332509",
+      "last_checked": "2026-04-17T07:50:27.665279",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"788f8228da57fce073167ba34857d0d0\"",
       "file_path": "documentation/ManagedSettings/application/init-token.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/bundleidentifier.json": {
       "hash": "74e3d25182e7fbe28ac801599418ab827d14041cf2012b8f447b41a078eced5b",
-      "last_checked": "2026-04-14T07:28:44.403676",
+      "last_checked": "2026-04-17T07:50:27.828458",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b3abec452ec5ef5a1d3c8274ccd30ba4\"",
       "file_path": "documentation/ManagedSettings/application/bundleidentifier.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/token.json": {
       "hash": "884a72cc15ceb948b3f4c5a5dee1240cdbdcf892fa310f327d3260b5ec49c483",
-      "last_checked": "2026-04-14T07:28:44.481422",
+      "last_checked": "2026-04-17T07:50:27.996456",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"49bcf802d8a376563408d2c4704ec6a8\"",
       "file_path": "documentation/ManagedSettings/application/token.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/application/localizeddisplayname.json": {
       "hash": "c3d4c90d2de074430fa55fb504cb2c08b089f70d7c4a75a3580772f32b7c928a",
-      "last_checked": "2026-04-14T07:28:44.579893",
+      "last_checked": "2026-04-17T07:50:28.165669",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e8f49c9a1c4a242121d1b8609005db4d\"",
       "file_path": "documentation/ManagedSettings/application/localizeddisplayname.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory/init(token:).json": {
       "hash": "dc94514e9d83fd1dd508be636f92a8dd16da5faa560fdb23dd769b53fe4661be",
-      "last_checked": "2026-04-14T07:28:44.649037",
+      "last_checked": "2026-04-17T07:50:28.337946",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"560956e3e9599c0625c0c25a71471ebf\"",
       "file_path": "documentation/ManagedSettings/activitycategory/init-token.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory/localizeddisplayname.json": {
       "hash": "31be69cca672776ddbffec801f1ea76f80d854c9e12323222f55c2623d6cf0b1",
-      "last_checked": "2026-04-14T07:28:44.729108",
+      "last_checked": "2026-04-17T07:50:28.516618",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0a1114f0e1585d1744166aafa09ddc42\"",
       "file_path": "documentation/ManagedSettings/activitycategory/localizeddisplayname.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/activitycategory/token.json": {
       "hash": "a27870bcaf376bdb6ca7af58accc5ccb4f068da2a0ad23581a38a7f545eac762",
-      "last_checked": "2026-04-14T07:28:44.802519",
+      "last_checked": "2026-04-17T07:50:28.661714",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"f7d1b99ac159a4e18f4c9b03965c3d91\"",
       "file_path": "documentation/ManagedSettings/activitycategory/token.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/init(domain:).json": {
       "hash": "725633274fb6b8db65387c1bbb2a03661294b81e1083bcca122bec432fd35765",
-      "last_checked": "2026-04-14T07:28:44.876129",
+      "last_checked": "2026-04-17T07:50:28.806386",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"4c209fa735dbbece288555e5e2adc002\"",
       "file_path": "documentation/ManagedSettings/webdomain/init-domain.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/init(token:).json": {
       "hash": "38be549543849c2ef67bb0d81d9449c4d529d8663564617d89b896260480c04e",
-      "last_checked": "2026-04-14T07:28:44.948360",
+      "last_checked": "2026-04-17T07:50:28.976544",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a2a85048e47f7044972e20e92aa5c166\"",
       "file_path": "documentation/ManagedSettings/webdomain/init-token.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/domain.json": {
       "hash": "a8df964e594e23c13a62719cd7d23814e2a30eb4ce0b5dc7642ddda2f35a3568",
-      "last_checked": "2026-04-14T07:28:45.025469",
+      "last_checked": "2026-04-17T07:50:29.137484",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"39a856e088807bc3be7a05d842421bb8\"",
       "file_path": "documentation/ManagedSettings/webdomain/domain.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webdomain/token.json": {
       "hash": "6ce0e211dd43c8f56471dbbc911f0fc065a1cc9fe4e4b2a85a6de1cc9b18c86a",
-      "last_checked": "2026-04-14T07:28:45.113869",
+      "last_checked": "2026-04-17T07:50:29.287694",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"86e948880ec17de3de2a7ba41f114ca7\"",
       "file_path": "documentation/ManagedSettings/webdomain/token.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/accountsettings/lockaccounts-swift.property.json": {
       "hash": "817b03a9fe82af570e11e78c3efff5603553b4327eba99fa089e177ec5acb52f",
-      "last_checked": "2026-04-14T07:28:45.185318",
+      "last_checked": "2026-04-17T07:50:29.452128",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e2f096ee8c506663506288ca75536956\"",
       "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swiftproperty.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/accountsettings/lockaccounts-swift.type.property.json": {
       "hash": "54a5e57183e7cc3598ea0f508e0ebdbb42b0496b035dbe446fef26e0f52a9f0e",
-      "last_checked": "2026-04-14T07:28:45.260590",
+      "last_checked": "2026-04-17T07:50:29.605652",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"20d2c9b53c0befe639e742ea37f5fcbf\"",
       "file_path": "documentation/ManagedSettings/accountsettings/lockaccounts-swifttypeproperty.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.property.json": {
       "hash": "2e764922cfaef785514242158ee2e5d4ef896cb39a6b1d43e0f3bff3018edd8a",
-      "last_checked": "2026-04-14T07:28:45.334959",
+      "last_checked": "2026-04-17T07:50:29.772768",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"809851dc9f7adb0956eb85a12b8bdd6a\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swiftproperty.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockappcellulardata-swift.type.property.json": {
       "hash": "54da0627588170d38465d7e1ec782dc251092a8acde6116041d333e985e7fb69",
-      "last_checked": "2026-04-14T07:28:45.409325",
+      "last_checked": "2026-04-17T07:50:29.920783",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"420dc1230f4bf6b1a70ad08b1ca33f40\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockappcellulardata-swifttypeproperty.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockcellularplan-swift.property.json": {
       "hash": "2b6ccc790e3c10c90b4fde09727f4e19cedf80de949de104ae445e5e6d112d54",
-      "last_checked": "2026-04-14T07:28:45.488483",
+      "last_checked": "2026-04-17T07:50:30.126166",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e9ebcbf44d3e75b4c75a953ab25855ba\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swiftproperty.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockcellularplan-swift.type.property.json": {
       "hash": "8ea00b687900a0128424b3471046464252c624a81d24cf78fad53ee7ce98ae5a",
-      "last_checked": "2026-04-14T07:28:45.566313",
+      "last_checked": "2026-04-17T07:50:30.282298",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"49a82a6ebfaf0c2da938343627650cad\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockcellularplan-swifttypeproperty.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockesim-swift.property.json": {
       "hash": "856e061a7d2fce91655f72baf28410360269da60a3a6a01350682cff7757ba95",
-      "last_checked": "2026-04-14T07:28:45.647201",
+      "last_checked": "2026-04-17T07:50:30.446739",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"074fbfff252ae2b5f4718baf78ce900e\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swiftproperty.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/cellularsettings/lockesim-swift.type.property.json": {
       "hash": "e896bdfd2b58762674e27738866c1fb672c5d1c904bb4ad966f301b47a79d3ba",
-      "last_checked": "2026-04-14T07:28:45.723404",
+      "last_checked": "2026-04-17T07:50:30.596241",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"017c156ec912fcc9a91813a66ffb72a2\"",
       "file_path": "documentation/ManagedSettings/cellularsettings/lockesim-swifttypeproperty.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.property.json": {
       "hash": "424c12cdd3b4badbe86ff20684e89b88cee70cca8d61e87207874f3189a0ab37",
-      "last_checked": "2026-04-14T07:28:45.794777",
+      "last_checked": "2026-04-17T07:50:30.758370",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"84829ac82053f5b9c916659d370baeee\"",
       "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swiftproperty.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/dateandtimesettings/requireautomaticdateandtime-swift.type.property.json": {
       "hash": "d73011cf215c82ce291fd1e0ff6dff1f8287debb330a526122268235885c6e25",
-      "last_checked": "2026-04-14T07:28:45.868564",
+      "last_checked": "2026-04-17T07:50:30.920106",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"58e0fdbdb8e6b2e5ec22e3a1334e3b33\"",
       "file_path": "documentation/ManagedSettings/dateandtimesettings/requireautomaticdateandtime-swifttypeproperty.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings/lockpasscode-swift.property.json": {
       "hash": "c272d2544c1682e8d0915e3a17b7dae6c9945164575c22e1f0b94a48c928849c",
-      "last_checked": "2026-04-14T07:28:45.944671",
+      "last_checked": "2026-04-17T07:50:31.094991",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"06d3668648e50363f77da3e92eaa66e2\"",
       "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swiftproperty.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/passcodesettings/lockpasscode-swift.type.property.json": {
       "hash": "2454a292d0e092f3e0b7b8b07cfdef82ff348c248bd2368873db3d787723f5ee",
-      "last_checked": "2026-04-14T07:28:46.020366",
+      "last_checked": "2026-04-17T07:50:31.257411",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0af39da498ef7a477bbf418e43e78888\"",
       "file_path": "documentation/ManagedSettings/passcodesettings/lockpasscode-swifttypeproperty.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applications-swift.property.json": {
       "hash": "348e0976c0b1189f4fd58146567c36f1627648dbc65fa979fa6381e10da29bb8",
-      "last_checked": "2026-04-14T07:28:46.128279",
+      "last_checked": "2026-04-17T07:50:31.425862",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"36c590fa7d7b56fb049b1c7dd525f69d\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/applications-swiftproperty.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applications-swift.type.property.json": {
       "hash": "f222feb65819c2ef3e34590bfd35cd1d77c65c82c8984e44b945f430b8c74ad4",
-      "last_checked": "2026-04-14T07:28:46.202176",
+      "last_checked": "2026-04-17T07:50:31.628761",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"08a0b8544b8c19dbae9d2552226b00ab\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/applications-swifttypeproperty.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomains-swift.property.json": {
       "hash": "d6c2e3ba482ad1c50ada0d7c1c53d4e5b9d0a36235c7dee1b57cce4fbbbebf3e",
-      "last_checked": "2026-04-14T07:28:46.288867",
+      "last_checked": "2026-04-17T07:50:31.784452",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"21b7874bd90e007db9d9db32ef8e7045\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swiftproperty.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomains-swift.type.property.json": {
       "hash": "c70cfedc8c33e4a58c052699fbfc339d083e9d875c779b7e45b83db443da265b",
-      "last_checked": "2026-04-14T07:28:46.368169",
+      "last_checked": "2026-04-17T07:50:31.960347",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a507b88acd5f46e194379cbbdd3fbdd1\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/webdomains-swifttypeproperty.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy.json": {
       "hash": "32a1fdd7257ebce0e5d552a4f8ae5cc9a56ba33ca4544abe148dc36e38228ebb",
-      "last_checked": "2026-04-14T07:28:46.445286",
+      "last_checked": "2026-04-17T07:50:32.139926",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"76c052d496ff783517c369ae3d3b1d84\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applicationcategories-swift.property.json": {
       "hash": "6709e485554bfa506960cb4e05b1e866e75ae8f36f38e3114b939ecc73623379",
-      "last_checked": "2026-04-14T07:28:46.569030",
+      "last_checked": "2026-04-17T07:50:32.291939",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"47723db43cae9bb06862d792662504e5\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swiftproperty.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/applicationcategories-swift.type.property.json": {
       "hash": "20c151e70e95505067e8b76be358d83279aac797d19245bd2eb1b16eefb75fe8",
-      "last_checked": "2026-04-14T07:28:46.653036",
+      "last_checked": "2026-04-17T07:50:32.460831",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"5cd401c6837ed8227cb2f2eba90f23e3\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/applicationcategories-swifttypeproperty.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomaincategories-swift.property.json": {
       "hash": "b3bba66766a661101ae5fbfee09c058657508c24ca4f3722944e5884eb74f84f",
-      "last_checked": "2026-04-14T07:28:46.732951",
+      "last_checked": "2026-04-17T07:50:32.640149",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"98b145a48060c605ce0e0e38f30222a7\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swiftproperty.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/webdomaincategories-swift.type.property.json": {
       "hash": "7042ff84c329eab27bce7fbb76b880c16d67cde58fe6fb77a94b035cc8ec0600",
-      "last_checked": "2026-04-14T07:28:46.813800",
+      "last_checked": "2026-04-17T07:50:32.805935",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"41054ab1cb1c3f689ddbed76c15619a2\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/webdomaincategories-swifttypeproperty.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings/denysiri-swift.property.json": {
       "hash": "7e6810be56b2ca128942fab26c97148221cafe3369dc65e751c02ae8edd77f46",
-      "last_checked": "2026-04-14T07:28:46.883781",
+      "last_checked": "2026-04-17T07:50:32.957131",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"6236f1755d17be79161756936ae65a15\"",
       "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swiftproperty.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/sirisettings/denysiri-swift.type.property.json": {
       "hash": "027451dcb90b70df267b0addd49e02b50898c3e562b3cb5c3b107a67e3e07a97",
-      "last_checked": "2026-04-14T07:28:46.969801",
+      "last_checked": "2026-04-17T07:50:33.109031",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"5681e2cfa18cf880b8e08638a40f6f7b\"",
       "file_path": "documentation/ManagedSettings/sirisettings/denysiri-swifttypeproperty.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.property.json": {
       "hash": "83644a3e9a88af01e3688de4d64fe7ed500ade04bdde75564174cb23180a7657",
-      "last_checked": "2026-04-14T07:28:47.047215",
+      "last_checked": "2026-04-17T07:50:33.288184",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"8db6245d42564017453aeb9384d5fefa\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swiftproperty.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/denyinapppurchases-swift.type.property.json": {
       "hash": "8ad239def0aeb29d5d840b38e60847583b69c986f0dbda537ecb4663c48c7eb4",
-      "last_checked": "2026-04-14T07:28:47.125857",
+      "last_checked": "2026-04-17T07:50:33.444963",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b1212efbc7db80d55557edead218f688\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/denyinapppurchases-swifttypeproperty.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/maximumrating-swift.property.json": {
       "hash": "3f0f3cd10d1f675ffc08eb739483822134f8f5d56e84680ffad9eacc00b4cb97",
-      "last_checked": "2026-04-14T07:28:47.201973",
+      "last_checked": "2026-04-17T07:50:33.607193",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a66cd667b9568ee3e723eb26c5a8958b\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swiftproperty.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/maximumrating-swift.type.property.json": {
       "hash": "d850ea764a796924f0d7e6bfd86ebf3efbc870ec08fdc29e8de9557420824d65",
-      "last_checked": "2026-04-14T07:28:47.296804",
+      "last_checked": "2026-04-17T07:50:33.763398",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"8919abae1acca02e706c5d02b65b565d\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/maximumrating-swifttypeproperty.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.property.json": {
       "hash": "0ff0b354073ca6ff310e6a8319cdb7194e226c8af8d4395fdc9d250b5b46b7a2",
-      "last_checked": "2026-04-14T07:28:47.408877",
+      "last_checked": "2026-04-17T07:50:33.914439",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"833d7eceb9e6c31dc4fcd1e5a53b285f\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swiftproperty.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/appstoresettings/requirepasswordforpurchases-swift.type.property.json": {
       "hash": "d5de029d11cbfc04e39e4537b4e4f09eed24b2f65bb7a61167bb916fbaf60613",
-      "last_checked": "2026-04-14T07:28:47.479323",
+      "last_checked": "2026-04-17T07:50:34.087418",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"2190218d0a5f0726b1ba91dfd8333433\"",
       "file_path": "documentation/ManagedSettings/appstoresettings/requirepasswordforpurchases-swifttypeproperty.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/blockedapplications-swift.property.json": {
       "hash": "0566f061d3309e74fc379586cd2ce766420b7a703b7286ab28cf013b84f0d85f",
-      "last_checked": "2026-04-14T07:28:47.562407",
+      "last_checked": "2026-04-17T07:50:34.257212",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d8a8c508692e28349206e3dd9a33e766\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swiftproperty.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/blockedapplications-swift.type.property.json": {
       "hash": "d73973482ab6718a1e468ec2caf7f03de9b35ddb993b868bb00414327f4ff2f1",
-      "last_checked": "2026-04-14T07:28:47.638809",
+      "last_checked": "2026-04-17T07:50:34.405508",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"50fb14038952a9049223a6657067925d\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/blockedapplications-swifttypeproperty.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappinstallation-swift.property.json": {
       "hash": "529e90c6c923e4b318740f63121fc0cbc71713798c9ee3b5ffaff9f2d3c8fc93",
-      "last_checked": "2026-04-14T07:28:47.715215",
+      "last_checked": "2026-04-17T07:50:34.568459",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ee02ecba3c29066432a3318e7539a897\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swiftproperty.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappinstallation-swift.type.property.json": {
       "hash": "012d82d9c42c6452bb24ae48e695ea9c8730ce05ac8e1c59e84368fe4a4ae01e",
-      "last_checked": "2026-04-14T07:28:47.787613",
+      "last_checked": "2026-04-17T07:50:34.719477",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"73bc3896f33e945563f3cbb720799f31\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/denyappinstallation-swifttypeproperty.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappremoval-swift.property.json": {
       "hash": "b36458d6c8e5b6b90739d8ff5b73f90798cb28b6327599159d8adb1c2911ae42",
-      "last_checked": "2026-04-14T07:28:47.860087",
+      "last_checked": "2026-04-17T07:50:34.877074",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"adc3e35b20d9701c71966c58af6ca6d9\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swiftproperty.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/applicationsettings/denyappremoval-swift.type.property.json": {
       "hash": "0aa1ffd42ce04fbd446be489b63f3cd2746d981e2b99a3c587bb1a32cb510683",
-      "last_checked": "2026-04-14T07:28:47.934891",
+      "last_checked": "2026-04-17T07:50:35.037851",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ae0d63601965d8f177e245c2578dc69e\"",
       "file_path": "documentation/ManagedSettings/applicationsettings/denyappremoval-swifttypeproperty.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.property.json": {
       "hash": "cc779c30da57546bdcc7dbf9729c6a8bd0fa45b4de699b643b21f5017c8ee3d2",
-      "last_checked": "2026-04-14T07:28:48.014721",
+      "last_checked": "2026-04-17T07:50:35.188792",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"67e0b224951133d5b1ced345e295dd85\"",
       "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swiftproperty.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denymultiplayergaming-swift.type.property.json": {
       "hash": "dc2bcec6f5ea3949694afa737037b6087808e1463995893d248e9d83a56ff680",
-      "last_checked": "2026-04-14T07:28:48.092324",
+      "last_checked": "2026-04-17T07:50:35.354415",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"48925574b64d6b69546b4040f4336213\"",
       "file_path": "documentation/ManagedSettings/gamecentersettings/denymultiplayergaming-swifttypeproperty.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.property.json": {
       "hash": "8c4131438a2765379844925d65c0bf615a214068412ca72e528156aa35106f98",
-      "last_checked": "2026-04-14T07:28:48.164740",
+      "last_checked": "2026-04-17T07:50:35.518533",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"ac1ce7a8c83f3b702f4069ef5d867c08\"",
       "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swiftproperty.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/gamecentersettings/denyaddingfriends-swift.type.property.json": {
       "hash": "c7f4e46e031f55bf26a9654caca2d382b0c3056174fd00c76b50b3248087f81e",
-      "last_checked": "2026-04-14T07:28:48.238495",
+      "last_checked": "2026-04-17T07:50:35.676304",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"80f74ed83778e12f50c6775176335f24\"",
       "file_path": "documentation/ManagedSettings/gamecentersettings/denyaddingfriends-swifttypeproperty.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximummovierating-swift.property.json": {
       "hash": "4ffc51344be45e173bb62d49863fa2ead30cf96e9363d4566132f89eef5da1b1",
-      "last_checked": "2026-04-14T07:28:48.311320",
+      "last_checked": "2026-04-17T07:50:35.853738",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"431e6d95d26d9f2bb184b8033d8fd3e8\"",
       "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swiftproperty.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.property.json": {
       "hash": "61c261b48b51b6f5e0bf0660819cff34f5e80bea399f083390d750dabea26052",
-      "last_checked": "2026-04-14T07:28:48.386587",
+      "last_checked": "2026-04-17T07:50:36.022657",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"cc8f44a21b74ad2c8abd20bca25c48c5\"",
       "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swiftproperty.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximummovierating-swift.type.property.json": {
       "hash": "d6adf638f233280092db46cbff4ebb10698b37faecf40b356b18815cb5033b20",
-      "last_checked": "2026-04-14T07:28:48.466333",
+      "last_checked": "2026-04-17T07:50:36.173983",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"70ceb164b540cca6e6eab5fffa373864\"",
       "file_path": "documentation/ManagedSettings/mediasettings/maximummovierating-swifttypeproperty.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/maximumtvshowrating-swift.type.property.json": {
       "hash": "cc0ad54e9285eec99e48c853229b125bd390ba29fd14f4e4627f3546026e71a5",
-      "last_checked": "2026-04-14T07:28:48.559042",
+      "last_checked": "2026-04-17T07:50:36.338020",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"4671b0d89f1de0c394a8033335031b0e\"",
       "file_path": "documentation/ManagedSettings/mediasettings/maximumtvshowrating-swifttypeproperty.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.property.json": {
       "hash": "0488868b425eb2ae43f090ddcdb2b08e77896109c304eaedf16a1b4d96ed67ec",
-      "last_checked": "2026-04-14T07:28:48.631046",
+      "last_checked": "2026-04-17T07:50:36.497432",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0ea6dabe718536dd83c6aaf2e125aa28\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swiftproperty.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denyexplicitcontent-swift.type.property.json": {
       "hash": "019958499c0142be5c28d9088ac1335cdb249d34eb2c22861464842ef231ea9a",
-      "last_checked": "2026-04-14T07:28:48.711555",
+      "last_checked": "2026-04-17T07:50:36.651752",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"28da0a6b40df283d3e3ae1bf83e7cb85\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denyexplicitcontent-swifttypeproperty.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denymusicservice-swift.property.json": {
       "hash": "39b05accf3cdb56d9d0c6c8496182db359b93f66f011193f43d163d9ada80feb",
-      "last_checked": "2026-04-14T07:28:48.796038",
+      "last_checked": "2026-04-17T07:50:36.834294",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"90ddbfb026139a74f66aeaaafcc58f7a\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swiftproperty.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denymusicservice-swift.type.property.json": {
       "hash": "b8776f3e1eb2bd3a344bc2917e1ca6bd822d78fb1f2a97bf1fb3e684e5fcbdf0",
-      "last_checked": "2026-04-14T07:28:48.870469",
+      "last_checked": "2026-04-17T07:50:37.001849",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1cab49333133d1ccd17c9502af92f075\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denymusicservice-swifttypeproperty.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.property.json": {
       "hash": "c82347d56f03d3823c605ecb5797197a0a4d52a0b17602842fdc5adc9bc13cba",
-      "last_checked": "2026-04-14T07:28:48.956043",
+      "last_checked": "2026-04-17T07:50:37.194094",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"707158f43a47569197a1bd0122915339\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swiftproperty.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/mediasettings/denybookstoreerotica-swift.type.property.json": {
       "hash": "7a833aced87cb0a677626620d26ae4c2474c02dbb39e587e63025e5696652167",
-      "last_checked": "2026-04-14T07:28:49.046496",
+      "last_checked": "2026-04-17T07:50:37.348076",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"d9bc346b0b048de04e4eebba3c053e53\"",
       "file_path": "documentation/ManagedSettings/mediasettings/denybookstoreerotica-swifttypeproperty.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.property.json": {
       "hash": "a41622c1569432e702cdb861cc5a3daf03d6fd465e32344129b54afabafbd934",
-      "last_checked": "2026-04-14T07:28:49.117628",
+      "last_checked": "2026-04-17T07:50:37.520246",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a6f3f93ef6706aed9d0c9b456da83042\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftproperty.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.type.property.json": {
       "hash": "8c9dc108cacda90c587a2f36cdba0a5d51d8847d89a6faf639530530ec4a4ac3",
-      "last_checked": "2026-04-14T07:28:49.195527",
+      "last_checked": "2026-04-17T07:50:37.681962",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0affa2a95d9c04f5e2df287f2e266d3a\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swifttypeproperty.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum.json": {
       "hash": "b29243f8d6d73a1b06420384745c352b6b22377b759ae0a47327f10ef696de2a",
-      "last_checked": "2026-04-14T07:28:49.271488",
+      "last_checked": "2026-04-17T07:50:37.843664",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"91ddc9f91991eb32b041d4a3edd3540e\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swiftenum.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/denyautofill-swift.property.json": {
       "hash": "88fce02c8a31d1734462271cf4f804585ce01dc04476d1da37c8a0330ddefd53",
-      "last_checked": "2026-04-14T07:28:49.350734",
+      "last_checked": "2026-04-17T07:50:38.016764",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"25f1e9d83d71730ca37ac50268615aa0\"",
       "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swiftproperty.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/denyautofill-swift.type.property.json": {
       "hash": "7f9b6c47c21c4ce84e3bdb9bdf50a504f74fc2d95d1eb57967395166c962191e",
-      "last_checked": "2026-04-14T07:28:49.423337",
+      "last_checked": "2026-04-17T07:50:38.169254",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"52878dbf584f44e32f1c1c19c69f697c\"",
       "file_path": "documentation/ManagedSettings/safarisettings/denyautofill-swifttypeproperty.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.property.json": {
       "hash": "4cc7b0915c3bcf2a15c03a318a1527a5380912cf4eb5efa6240b4a70ded9fae1",
-      "last_checked": "2026-04-14T07:28:49.501772",
+      "last_checked": "2026-04-17T07:50:38.317651",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"192c20312347148eff2b5066ebf76f00\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swiftproperty.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/blockedbyfilter-swift.type.property.json": {
       "hash": "c5ecd94d99592ab2baff7f3b10e64866244279215b3bd4cc495be1feaf0ec051",
-      "last_checked": "2026-04-14T07:28:49.578193",
+      "last_checked": "2026-04-17T07:50:38.473433",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"dbf097a9ef04b48a127ae55b17bcf9a3\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/blockedbyfilter-swifttypeproperty.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy.json": {
       "hash": "42c62e0bf5d919e43d733efe8f4957595299a90755889d9749b727bf5141a947",
-      "last_checked": "2026-04-14T07:28:49.655134",
+      "last_checked": "2026-04-17T07:50:38.628989",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"9eb0c94b37005d9baa4c691c76e69a06\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/boundedsettingmetadata/bounds.json": {
       "hash": "8c8cb037dd0aee01f51c78b36b4c7e8734ce613988f16ef26309762bf66055c6",
-      "last_checked": "2026-04-14T07:28:49.742312",
+      "last_checked": "2026-04-17T07:50:38.807567",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"41d9b055a340620a7b3353a7753c1e60\"",
       "file_path": "documentation/ManagedSettings/boundedsettingmetadata/bounds.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/boundedsettingmetadata/defaultvalue.json": {
       "hash": "509f410c82e238aea6a30d40933730f8d7ea64cce87698169dc41b38486bd346",
-      "last_checked": "2026-04-14T07:28:49.822624",
+      "last_checked": "2026-04-17T07:50:38.976930",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"f19cd034da66b740c51dabeffe236dfe\"",
       "file_path": "documentation/ManagedSettings/boundedsettingmetadata/defaultvalue.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/settingmetadata/defaultvalue.json": {
       "hash": "74e3dba9a7770faa8426e785a24b855629591a9a73b2fb39fa4212ab84e89a98",
-      "last_checked": "2026-04-14T07:28:49.899075",
+      "last_checked": "2026-04-17T07:50:39.173126",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a77d20dfa087e08539172f4af7855791\"",
       "file_path": "documentation/ManagedSettings/settingmetadata/defaultvalue.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/init(_:).json": {
       "hash": "0a01a2a100bb2b1327ffd9009dfbc311d57966c6f7fd29ee66e166c51286e441",
-      "last_checked": "2026-04-14T07:28:49.979925",
+      "last_checked": "2026-04-17T07:50:39.331465",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"929af8a36eabb5ec455c9c96ee8a32a2\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/init(rawvalue:).json": {
       "hash": "c326cc166169a1206cc1def7c3c3c395d72dec426dc73a2ba9aac455128c4a74",
-      "last_checked": "2026-04-14T07:28:50.069665",
+      "last_checked": "2026-04-17T07:50:39.495930",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"b58f72adc65d52cd932b0b563691e4df\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/name/init-rawvalue.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/default.json": {
       "hash": "588bad02a9b3f3b59be3916d322a1af0ecf5b141b05edc84e52a13b12ca86d17",
-      "last_checked": "2026-04-14T07:28:50.228802",
+      "last_checked": "2026-04-17T07:50:39.833531",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"af2c56dcea1484a3d8fbd7d52197bf9d\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/name/default.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction/primarybuttonpressed.json": {
       "hash": "5ddfea0f400f91350017612e915633b04bba4efa87ceb8c526d2d6bbec89ff9a",
-      "last_checked": "2026-04-14T07:28:43.257575",
+      "last_checked": "2026-04-17T07:50:25.681064",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"8e8d05ad65235b74c254685ecdfef6d0\"",
       "file_path": "documentation/ManagedSettings/shieldaction/primarybuttonpressed.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction/secondarybuttonpressed.json": {
       "hash": "b81ff433caac6d8bf2cf07c9dbf009b5bfcef39b3fb37ee9a5d154956afef00f",
-      "last_checked": "2026-04-14T07:28:43.493211",
+      "last_checked": "2026-04-17T07:50:25.853291",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"adf44df18c3dfb0caa5289d5e0680738\"",
       "file_path": "documentation/ManagedSettings/shieldaction/secondarybuttonpressed.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse/close.json": {
       "hash": "b4254415bcca498f642cd464730aad7c379f0bbac57ed5da886d46f0f1165589",
-      "last_checked": "2026-04-14T07:28:50.308075",
+      "last_checked": "2026-04-17T07:50:40.001898",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1bbd932a890c16423e510fad9d9f2a0c\"",
       "file_path": "documentation/ManagedSettings/shieldactionresponse/close.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse/defer.json": {
       "hash": "1014167b930ac39994d80d18c2d3e75038b63785bb871cd1cb53f5a9b8d76d14",
-      "last_checked": "2026-04-14T07:28:50.383467",
+      "last_checked": "2026-04-17T07:50:40.158172",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"19243c3f80d6f016144d320e0e27e4c6\"",
       "file_path": "documentation/ManagedSettings/shieldactionresponse/defer.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse/none.json": {
       "hash": "921d223c63ea225cbd9afcdef378aeacc793ebc4465bd9e30ecdde961a9f1b53",
-      "last_checked": "2026-04-14T07:28:50.453065",
+      "last_checked": "2026-04-17T07:50:40.327553",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"07e195665fc6352b84f8f54dbd198570\"",
       "file_path": "documentation/ManagedSettings/shieldactionresponse/none.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/none.json": {
       "hash": "833d70671914b21d73f93c96c37673f2bcf76839b8ec772a9e8904222da019b5",
-      "last_checked": "2026-04-14T07:28:50.642048",
+      "last_checked": "2026-04-17T07:50:40.623909",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"5ace7ffdf891ad53dff1b41184b4b8ef\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/none.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/all(except:).json": {
       "hash": "a86b15eb3d8d74baee01eedfc2e8083cd90d9a10af619dc8f4163e83fd2d1147",
-      "last_checked": "2026-04-14T07:28:50.718504",
+      "last_checked": "2026-04-17T07:50:40.790627",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"615c5bcfeff19b74da0c2c283974b611\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/all-except.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/specific(_:except:).json": {
       "hash": "9cb935501976587ca1fce19edde7482a2ca11d4b16bf3d06962441030a8d1788",
-      "last_checked": "2026-04-14T07:28:50.793568",
+      "last_checked": "2026-04-17T07:50:40.941935",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"509fca12333914e8d579256299058a79\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/specific-except.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldsettings/activitycategorypolicy/==(_:_:).json": {
       "hash": "0c9c6eb8bbef192fa7c6d8d02f5a1cb5047065a4228bbee274e0dd65ddcbbd5d",
-      "last_checked": "2026-04-14T07:28:50.866895",
+      "last_checked": "2026-04-17T07:50:41.104561",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"f97390cf274d4127f5f90ffe267c27be\"",
       "file_path": "documentation/ManagedSettings/shieldsettings/activitycategorypolicy/equal.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/always.json": {
       "hash": "92c8e2f99a494f3a40a55ce82eaa3d2e180e12a16c1646fba2a77adb5b0b68a9",
-      "last_checked": "2026-04-14T07:28:51.023950",
+      "last_checked": "2026-04-17T07:50:41.259170",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"268b899d222866683e2b8b501be221aa\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/always.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/currentwebsite.json": {
       "hash": "884b83468e7e46d0e1dc3c18f099581574984e77473927d41651d91c9f503d7c",
-      "last_checked": "2026-04-14T07:28:51.109072",
+      "last_checked": "2026-04-17T07:50:41.430456",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0467e6c4804bd587b5ea0a839a51dfef\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/currentwebsite.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/never.json": {
       "hash": "c499ef017afac811f3c3b8df76cd248d3cb0475998d28d6023fada41d23f40ab",
-      "last_checked": "2026-04-14T07:28:51.182763",
+      "last_checked": "2026-04-17T07:50:41.580061",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"6ce8298dc1f3ed9ba229891a20424e0f\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/never.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/visitedwebsites.json": {
       "hash": "1d6aed95665765d56f287757e32608b55886ffbc2b2cde6c591c8ee5eff61522",
-      "last_checked": "2026-04-14T07:28:51.258389",
+      "last_checked": "2026-04-17T07:50:41.759386",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"bc5bd8f62d63a94ef4aa59ad32a1caea\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/visitedwebsites.md"
     },
@@ -3113,9 +3113,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/safarisettings/cookiepolicy-swift.enum/_(_:_:).json": {
       "hash": "a882be4e843b2e52545966ed86eb33adbf6301bed0162dead05da181d1678267",
-      "last_checked": "2026-04-14T07:28:51.332408",
+      "last_checked": "2026-04-17T07:50:41.917629",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"52ce06ec12322e04c7a4dd0ccec1ef5b\"",
       "file_path": "documentation/ManagedSettings/safarisettings/cookiepolicy-swift.enum/unknown.md"
     },
@@ -3241,9 +3241,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/all(except:).json": {
       "hash": "866f54220746a0771f4ff57ddbf15c92b67fcec16c35bf31fac5a19bfeab70b1",
-      "last_checked": "2026-04-14T07:28:51.413216",
+      "last_checked": "2026-04-17T07:50:42.067627",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a946c2797af3c365a7faa37a89550564\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/all-except.md"
     },
@@ -3257,9 +3257,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/auto(_:except:).json": {
       "hash": "1bacae9c2d3150c3fb72a5986b4df2a38b39279c67da4b85feb7395b18c298fc",
-      "last_checked": "2026-04-14T07:28:51.489927",
+      "last_checked": "2026-04-17T07:50:42.221501",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"f32f40daab3a1686db8d35b528ecba46\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/auto-except.md"
     },
@@ -3273,9 +3273,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/none.json": {
       "hash": "c84066d4f5061211e1c74553e3f2712a4c22bdda4b93bcfdb2cf26f69aa7c616",
-      "last_checked": "2026-04-14T07:28:51.574381",
+      "last_checked": "2026-04-17T07:50:42.389815",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"0fba7c748bf237b2dc70390a277f332f\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/none.md"
     },
@@ -3289,9 +3289,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/specific(_:).json": {
       "hash": "dced8b221b98328e7aa32d67a4c8a5decc71e97d884da66ac3c2f32f55d371f3",
-      "last_checked": "2026-04-14T07:28:51.651676",
+      "last_checked": "2026-04-17T07:50:42.553172",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"26f2999be085bb3c8229b1c7406caa06\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/specific.md"
     },
@@ -3305,9 +3305,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/webcontentsettings/filterpolicy/==(_:_:).json": {
       "hash": "acd8b3d098e4fde5cc02f8bd8fb31fecc1713924ef9b522bd76c3df561f14432",
-      "last_checked": "2026-04-14T07:28:51.723920",
+      "last_checked": "2026-04-17T07:50:42.722110",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"cf8656c010ecd17bc9ed5b05a531067f\"",
       "file_path": "documentation/ManagedSettings/webcontentsettings/filterpolicy/equal.md"
     },
@@ -3461,9 +3461,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/name/rawvalue.json": {
       "hash": "855063581d198cd3cd2aaa8c2edae16fd5c6ab53949e79c14f0d559c11495f09",
-      "last_checked": "2026-04-14T07:28:50.153983",
+      "last_checked": "2026-04-17T07:50:39.664839",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"1f66b2b81773c5c4c945851a0045db3e\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/name/rawvalue.md"
     },
@@ -3477,9 +3477,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction/firstsecondarysubmenuitempressed.json": {
       "hash": "9e1bc7b45d53c82eb7b8017f8586507494c452f22150f9bab7a5828c293249ce",
-      "last_checked": "2026-04-14T07:28:43.592735",
+      "last_checked": "2026-04-17T07:50:26.016842",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"67a75c6700545c10b29d212fef836bf5\"",
       "file_path": "documentation/ManagedSettings/shieldaction/firstsecondarysubmenuitempressed.md"
     },
@@ -3493,9 +3493,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction/secondsecondarysubmenuitempressed.json": {
       "hash": "89b37395af8a0edbc86172b50ea58df467aaa1d9361dd6a32a54a974c0dbff41",
-      "last_checked": "2026-04-14T07:28:43.670563",
+      "last_checked": "2026-04-17T07:50:26.192696",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"effe9925f1bc18738cdab9f4d753abe6\"",
       "file_path": "documentation/ManagedSettings/shieldaction/secondsecondarysubmenuitempressed.md"
     },
@@ -3509,9 +3509,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldaction/thirdsecondarysubmenuitempressed.json": {
       "hash": "1301fdaa4b2865f92c347ef7c42a80319cc6c9296d372ed2e8d61d1c964d5b49",
-      "last_checked": "2026-04-14T07:28:43.749131",
+      "last_checked": "2026-04-17T07:50:26.356686",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a6646b93dd4f3b152c3a1b2e2c74443a\"",
       "file_path": "documentation/ManagedSettings/shieldaction/thirdsecondarysubmenuitempressed.md"
     },
@@ -3525,9 +3525,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/tokenexpirymessage.json": {
       "hash": "cb8cb61f728cc0c9585215c75d64ffd10e5108ca8ce01506f0b3c367cf33632b",
-      "last_checked": "2026-04-14T07:28:42.123597",
+      "last_checked": "2026-04-17T07:50:23.276275",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"a002d5b67f93bcaea12cb0ddf295834d\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/tokenexpirymessage.md"
     },
@@ -3541,9 +3541,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/isactive.json": {
       "hash": "89659950a2d2e62ca50eae1c0247e1a291600703b9f9e02c483269268ef04a6b",
-      "last_checked": "2026-04-14T07:28:42.563815",
+      "last_checked": "2026-04-17T07:50:24.192428",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"7591760c11eeac1e414a9492179fdff7\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/isactive.md"
     },
@@ -3557,9 +3557,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/deletestore().json": {
       "hash": "48e5c2671e9d97fe8c053a41b2124d8ea1ecd51860fa8fed21d29f29cc596944",
-      "last_checked": "2026-04-14T07:28:42.734982",
+      "last_checked": "2026-04-17T07:50:24.522179",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"c7dca3e548eac93b299178ee12500c5c\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestore.md"
     },
@@ -3573,9 +3573,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/stores.json": {
       "hash": "9031780dada04e09c9c879061df8075ef6f7a22775526452f0b8849bcaee3d0a",
-      "last_checked": "2026-04-14T07:28:42.816029",
+      "last_checked": "2026-04-17T07:50:24.684785",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"5b689b83abe41ce60e6527c060c235b0\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/stores.md"
     },
@@ -3589,9 +3589,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/deletestores(_:).json": {
       "hash": "93a9ed50f14304d101a705edb59bcb2d51feeedd31ec64fb034fe1076bbb5db0",
-      "last_checked": "2026-04-14T07:28:42.915510",
+      "last_checked": "2026-04-17T07:50:24.855724",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"820e720d6cd384eb284a6c6c73c32265\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/deletestores.md"
     },
@@ -3605,9 +3605,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-4v4xe.json": {
       "hash": "cce15332919feb66713e9b48218b25d018c7df9d666e1734cb556cc43c77fa94",
-      "last_checked": "2026-04-14T07:28:43.001215",
+      "last_checked": "2026-04-17T07:50:25.164231",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"07ee88a7eb9255e47f16c9874a74803c\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-4v4xe.md"
     },
@@ -3621,9 +3621,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-65mti.json": {
       "hash": "3d5a24ea2b4244afd68432b58c065a7989652d3daf3a711c85447436c6ee3c37",
-      "last_checked": "2026-04-14T07:28:43.094759",
+      "last_checked": "2026-04-17T07:50:25.346677",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"de85e4dff4a61c3011161ebc4b1980b0\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-65mti.md"
     },
@@ -3637,9 +3637,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/managedsettingsstore/refresh(_:)-s5s3.json": {
       "hash": "413d73d71b79fec7786022ff7fd0a1166c13bb83306bfcb283c0381ca2fdddc9",
-      "last_checked": "2026-04-14T07:28:43.175241",
+      "last_checked": "2026-04-17T07:50:25.512208",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"c78c5fdd4ff0403b881194334cbc32ac\"",
       "file_path": "documentation/ManagedSettings/managedsettingsstore/refresh-s5s3.md"
     },
@@ -3653,9 +3653,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettings/shieldactionresponse/openparentalcontrolsapp.json": {
       "hash": "d07920f65609b4e4651fc5433e683e52b741a7315d2de164d63b1b0aab094847",
-      "last_checked": "2026-04-14T07:28:50.538209",
+      "last_checked": "2026-04-17T07:50:40.471640",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:28:37.412672",
+      "session_id": "2026-04-17T07:50:13.680323",
       "etag": "W/\"e84e7e2480c9a339f373ff838fccb831\"",
       "file_path": "documentation/ManagedSettings/shieldactionresponse/openparentalcontrolsapp.md"
     },

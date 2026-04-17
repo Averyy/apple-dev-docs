@@ -38,7 +38,7 @@ On success, the server needs to respond with a `200 OK` status. Don’t assume t
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#AuthenticateRequest`
 
 ## Request Body
 

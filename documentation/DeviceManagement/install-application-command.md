@@ -158,7 +158,7 @@ This command installs an App Store app.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#InstallApplicationCommand`
 
 ## Request Body
 

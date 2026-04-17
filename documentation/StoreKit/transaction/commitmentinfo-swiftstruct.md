@@ -19,7 +19,7 @@ struct CommitmentInfo
 
 ## Topics
 
-### Instance Properties
+### Instance Properties - generated
 - [let billingPeriodNumber: UInt64](transaction/commitmentinfo-swift.struct/billingperiodnumber.md)
 - [let expirationDate: Date](transaction/commitmentinfo-swift.struct/expirationdate.md)
 - [let price: Decimal](transaction/commitmentinfo-swift.struct/price.md)

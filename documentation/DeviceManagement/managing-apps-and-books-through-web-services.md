@@ -6,15 +6,15 @@ Associate app and book purchases with users or devices.
 
 #### Overview
 
-Organizations use Apple School Manager and Apple Business Manager to purchase their apps and books, then assign them to users and devices through the use of an MDM client. If a user no longer needs an app, you can reclaim it and assign it to a different user. Similarly, you can assign an app to a device’s serial number so an Apple Account isn’t necessary to download an app. Books aren’t device-assignable so you can’t reassign them among users.
+Organizations use Apple School Manager and Apple Business to purchase their apps and books, then assign them to users and devices through the use of an MDM client. If a user no longer needs an app, you can reclaim it and assign it to a different user. Similarly, you can assign an app to a device’s serial number so an Apple Account isn’t necessary to download an app. Books aren’t device-assignable so you can’t reassign them among users.
 
 ##### Authenticate
 
 All server endpoints except [`Service Config`](service-config.md) require a content token (`cToken`) header to authenticate an organization. A valid `cToken` allows an MDM client to manage assets for the specified location of an organization. Only one MDM client should manage a single location at any time. Multiple MDM clients managing the same location result in unpredictable asset allocation.
 
-Content managers can download a location-based `cToken` from the Apps and Books section under the Settings tab in Apple School Manager or Apple Business Manager, and upload it into their MDM client.
+Content managers can download a location-based `cToken` from the Apps and Books section under the Settings tab in Apple School Manager or Apple Business, and upload it into their MDM client.
 
-![The Apps and Books settings section in Apple School Manager and Apple Business Manager for downloading content tokens.](https://docs-assets.developer.apple.com/published/041893ffc57ed18a43ef0cac764049d1/media-3737907.png)
+![The Apps and Books settings section in Apple School Manager and Apple Business for downloading content tokens.](https://docs-assets.developer.apple.com/published/041893ffc57ed18a43ef0cac764049d1/media-3737907.png)
 
 The MDM client stores the location-based content token along with its other private, protected properties, and passes this token in the `Authorization` header of API requests.
 

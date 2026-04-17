@@ -125,7 +125,7 @@ Receiving a `9603` `Internal Error` response typically indicates the VPP server 
 
 - [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services-legacy.md)
   Associate volume purchases with users or devices using endpoints for Mobile Device Management (MDM), provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager (ASM) and Apple Business Manager (ABM)](upgrading-to-apple-school-manager-asm-and-apple-business-manager-abm.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization user base with a single destination.
 
 

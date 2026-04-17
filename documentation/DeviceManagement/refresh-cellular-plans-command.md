@@ -78,7 +78,7 @@ An error response uses one of the following error codes:
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#RefreshCellularPlansCommand`
 
 ## Request Body
 

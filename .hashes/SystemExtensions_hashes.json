@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:29:51.706972",
+    "last_updated": "2026-04-17T07:52:27.173995",
     "total_pages": 164,
-    "session_id": "2026-04-14T07:29:42.577601"
+    "session_id": "2026-04-17T07:52:12.141371"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SystemExtensions.json": {
       "hash": "089af192cf1a27c1e0ed8e38c7ce7b04066dc0b56ba3074104d97f0eb966bbba",
-      "last_checked": "2026-04-14T07:29:42.921827",
+      "last_checked": "2026-04-17T07:52:12.520074",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"9bf4bc9701993995186895740a7a3b3a\"",
       "file_path": "documentation/SystemExtensions/SystemExtensions.md"
     },
     "https://developer.apple.com/documentation/SystemExtensions": {
       "hash": "089af192cf1a27c1e0ed8e38c7ce7b04066dc0b56ba3074104d97f0eb966bbba",
-      "last_checked": "2026-04-14T07:29:42.826364",
+      "last_checked": "2026-04-17T07:52:12.405453",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"9bf4bc9701993995186895740a7a3b3a\"",
       "file_path": "documentation/SystemExtensions/SystemExtensions.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/implementing-drivers-system-extensions-and-kexts.json": {
       "hash": "45c784664b088e2456c1e40a294a470ceef89435bd387096b2ea81b44a66613f",
-      "last_checked": "2026-04-14T07:29:43.164742",
+      "last_checked": "2026-04-17T07:52:12.793137",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"0b212c9bad7cda7a4625c9b199a25d34\"",
       "file_path": "documentation/SystemExtensions/implementing-drivers-system-extensions-and-kexts.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/nssystemextensionusagedescriptionkey.json": {
       "hash": "4426d08b8e73b21a4b7a57bbaed132da55b9b7cef3280e0bc7215dcbdb3e6e74",
-      "last_checked": "2026-04-14T07:29:43.309657",
+      "last_checked": "2026-04-17T07:52:13.077868",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"552e04c50adbfe89d046bf78e6bac81f\"",
       "file_path": "documentation/SystemExtensions/nssystemextensionusagedescriptionkey.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/osbundleusagedescriptionkey.json": {
       "hash": "5ff1d1e910078a4b71bf7ed79cd83cede025931138ac71b644dbf2a42c20efba",
-      "last_checked": "2026-04-14T07:29:43.414912",
+      "last_checked": "2026-04-17T07:52:13.251169",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"78b68332d9cf643f69f4b6db692c6957\"",
       "file_path": "documentation/SystemExtensions/osbundleusagedescriptionkey.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/installing-system-extensions-and-drivers.json": {
       "hash": "4a8860de44b0d65cc5863f4b509f69a749a1425b71def08dbad88f477dbfdbcc",
-      "last_checked": "2026-04-14T07:29:43.514890",
+      "last_checked": "2026-04-17T07:52:13.439834",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"8db961ed845fdafc18bb5a377ef2a907\"",
       "file_path": "documentation/SystemExtensions/installing-system-extensions-and-drivers.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionmanager.json": {
       "hash": "48a72a485260a918ba3ace2e63e42ba8232fd52b9f6297ee849dd001ed9ca39f",
-      "last_checked": "2026-04-14T07:29:43.622605",
+      "last_checked": "2026-04-17T07:52:13.751597",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"aabd93cc55b0e73f3a0fc37d059a8d24\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionmanager.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest.json": {
       "hash": "7f7836b5053894eb5d2a099d4692c853e273d40dc27e54d4e44cb0f59382793b",
-      "last_checked": "2026-04-14T07:29:43.762602",
+      "last_checked": "2026-04-17T07:52:14.042731",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"8d04c1b47e3b20e6b997b78f7c2ee5a4\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror.json": {
       "hash": "13fecfd516d994266330477230d37e1ee6a6954ad641b9e8896c423845aa0e5c",
-      "last_checked": "2026-04-14T07:29:43.860634",
+      "last_checked": "2026-04-17T07:52:14.271533",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ac8f5dda8a596d7e2c5d38be9627d0d8\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code.json": {
       "hash": "610ddf1ac7bae43d25504c054c37419344f58b0701ad789a94ab64df8b231390",
-      "last_checked": "2026-04-14T07:29:43.959309",
+      "last_checked": "2026-04-17T07:52:14.439071",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"f53506cc6bc5311ca8545948c6fbb9d2\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerrordomain.json": {
       "hash": "69ee00c105acd8e820573ced444922460e269580b5a72d1cbf1d4dbf5e831fe4",
-      "last_checked": "2026-04-14T07:29:44.100078",
+      "last_checked": "2026-04-17T07:52:14.726643",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"7cbe6f365900750bb46dfcde9ced7a4e\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerrordomain.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/systemextensions-constants.json": {
       "hash": "1107fc5cc59dfb692c7403771d1d8fca3564302ab25648082d1857b9380bedf4",
-      "last_checked": "2026-04-14T07:29:44.190336",
+      "last_checked": "2026-04-17T07:52:14.894475",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"25da69186c36a07834efb7bb57553762\"",
       "file_path": "documentation/SystemExtensions/systemextensions-constants.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensioninfo.json": {
       "hash": "8fdc347910e05dca45d2bd4cab4d04093cf947c7c583e44e97149f17785b8888",
-      "last_checked": "2026-04-14T07:29:44.285761",
+      "last_checked": "2026-04-17T07:52:15.092283",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"f08ea8ee1753b9f9b4b8d57459364342\"",
       "file_path": "documentation/SystemExtensions/ossystemextensioninfo.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace.json": {
       "hash": "66b95958f86af0be52daa7e4d0e33769fa18491393d1ec63dd8bd6b934854f35",
-      "last_checked": "2026-04-14T07:29:44.395290",
+      "last_checked": "2026-04-17T07:52:15.259302",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"da822e92c654b7284ebf754815195b09\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver.json": {
       "hash": "69a1b5c633ea45d76508ecafd8321759c8266fe594268c453eec176dfb9f63c0",
-      "last_checked": "2026-04-14T07:29:44.491122",
+      "last_checked": "2026-04-17T07:52:15.423736",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"7f5463bddee052a726039fdd8079cf65\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionmanager/shared.json": {
       "hash": "08d4cf7cd11f92547a1b591dc26f5ade540d8a22e03df9a37b468f90075c9438",
-      "last_checked": "2026-04-14T07:29:44.615465",
+      "last_checked": "2026-04-17T07:52:15.581721",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"a8c54c5fe43f01a4c0a33017be105cf6\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionmanager/shared.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionmanager/submitrequest(_:).json": {
       "hash": "e6b4c1dca336ecb950ab3355d5ebd3f27ff81db4fedf38d39a126b75ee3450f6",
-      "last_checked": "2026-04-14T07:29:44.759482",
+      "last_checked": "2026-04-17T07:52:15.743968",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"18d5c9a5192350ce6f23dbeae866c493\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionmanager/submitrequest.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/activationrequest(forextensionwithidentifier:queue:).json": {
       "hash": "9caea2e755cd7096eebf0d4911bc236ad31744ab928e16d3d313e84ff10ded09",
-      "last_checked": "2026-04-14T07:29:44.856138",
+      "last_checked": "2026-04-17T07:52:16.017867",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"e771cd86102cafb73217be5b78507bf6\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/activationrequest-forextensionwithidentifierqueue.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/deactivationrequest(forextensionwithidentifier:queue:).json": {
       "hash": "1093368aa636bb7ab4bbfbbeceb4fd5989e0ea15eb066d807ae0f3310aa62133",
-      "last_checked": "2026-04-14T07:29:44.997441",
+      "last_checked": "2026-04-17T07:52:16.173355",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"5240fbe8ef42bcc0174d84d95de5c98c\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/deactivationrequest-forextensionwithidentifierqueue.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/delegate.json": {
       "hash": "178cd6539e89e98f6071c3ebccbdb114b3991bb4369b082e394b5cb37720f3a3",
-      "last_checked": "2026-04-14T07:29:45.131848",
+      "last_checked": "2026-04-17T07:52:16.454428",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"7fefe2902541693645824eb8dcc299aa\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/delegate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate.json": {
       "hash": "2db2ac96250806b0c7fa0a8f962bc1383186bb18aa01478d28fef6fad9b98b29",
-      "last_checked": "2026-04-14T07:29:45.226260",
+      "last_checked": "2026-04-17T07:52:16.736636",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"1d74ae8c9a844ca28a1189c4641574c2\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/identifier.json": {
       "hash": "d441a1b47154794b824a36adb5df926b786d582319abd4acc2ff723fbaa2932b",
-      "last_checked": "2026-04-14T07:29:45.313334",
+      "last_checked": "2026-04-17T07:52:16.897415",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"8c57095f6e1f3ff428f72357e3f3e2a5\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/identifier.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/propertiesrequest(forextensionwithidentifier:queue:).json": {
       "hash": "9eb030d027d793cf4b52774dcb0c9f2ab500a285ea40b99e008b883ff29ee09f",
-      "last_checked": "2026-04-14T07:29:45.457806",
+      "last_checked": "2026-04-17T07:52:17.195481",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"57c4beea63c34dbede432f9184d0b113\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/propertiesrequest-forextensionwithidentifierqueue.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/errordomain.json": {
       "hash": "c94f83f5c694e60ec34617afb3c9d22f698c4ad0711068bb994752ed699c09df",
-      "last_checked": "2026-04-14T07:29:45.600957",
+      "last_checked": "2026-04-17T07:52:17.358034",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"1803f9fef4021f1015673ab23cbf49bd\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/errordomain.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/unknown.json": {
       "hash": "8de7b84db1efdf2faa72f6e438cd3597fa440a739679bd1714fe2d419c3fe0f3",
-      "last_checked": "2026-04-14T07:29:45.719055",
+      "last_checked": "2026-04-17T07:52:17.526355",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"9320d4939ac844f2c518c5f47242fb5a\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/unknown.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/missingentitlement.json": {
       "hash": "c9bbf85a4813f0e1dfc15056c0629af26f06e0af286bbd6677127889ae4e9e05",
-      "last_checked": "2026-04-14T07:29:45.820329",
+      "last_checked": "2026-04-17T07:52:17.690054",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"102f77b4802353587c300c0fdad512d2\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/missingentitlement.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/unsupportedparentbundlelocation.json": {
       "hash": "c9198529908fd0f90a757576d87a67fe23502f24c09127d3918337ac835a04ad",
-      "last_checked": "2026-04-14T07:29:45.914397",
+      "last_checked": "2026-04-17T07:52:17.877333",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"048b99d1bdf9fd3075aaf906eb0dc5e7\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/unsupportedparentbundlelocation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/extensionnotfound.json": {
       "hash": "73f0cd3f585310ca58b1fdadc0fd92803eeb2bb1a7cef5e4a22c25f02ef3ac0a",
-      "last_checked": "2026-04-14T07:29:46.058061",
+      "last_checked": "2026-04-17T07:52:18.037940",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"d988b97243fd228f7cd1362162ecdc53\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/extensionnotfound.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/extensionmissingidentifier.json": {
       "hash": "b8b78b705f9436be0978bf05572b4b821dba6af3cd2b639ed35137522680805d",
-      "last_checked": "2026-04-14T07:29:46.153011",
+      "last_checked": "2026-04-17T07:52:18.199868",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"0488d70bca41ecf2abda88f14742a23b\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/extensionmissingidentifier.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/duplicateextensionidentifer.json": {
       "hash": "946d737788947a98a440e0df15c4cac774f83c2a4e1ea433c375c7e21b51a8a2",
-      "last_checked": "2026-04-14T07:29:46.255550",
+      "last_checked": "2026-04-17T07:52:18.366278",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"03ff0a59f696916782cbec00670a78eb\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/duplicateextensionidentifer.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/unknownextensioncategory.json": {
       "hash": "ee8e3d67915c053f26aaa19456a82102973f638b1c558ebf1bb62bd145b3b290",
-      "last_checked": "2026-04-14T07:29:46.347733",
+      "last_checked": "2026-04-17T07:52:18.513142",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"990e224442af3d0b58ccfcc5d3a5311d\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/unknownextensioncategory.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/codesignatureinvalid.json": {
       "hash": "70351ff563808263ff0674b93a6273c14fb901cb62bb50398c04d4fc12c3f80e",
-      "last_checked": "2026-04-14T07:29:46.446251",
+      "last_checked": "2026-04-17T07:52:18.677086",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"a746bb6daab18f9c7c5d436a552ad370\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/codesignatureinvalid.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/validationfailed.json": {
       "hash": "c8f210e909e526b8192cc8be57398cf7d4f04227cb37d052063fc0feb7a3ac3f",
-      "last_checked": "2026-04-14T07:29:46.565711",
+      "last_checked": "2026-04-17T07:52:18.844394",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"e162c0b5ffd5a3b9a30355b4f2749108\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/validationfailed.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/forbiddenbysystempolicy.json": {
       "hash": "4912a3f5dcd73c39b2a028328c8619bcc001fb887868e9d9d56fef86423ebde6",
-      "last_checked": "2026-04-14T07:29:46.698997",
+      "last_checked": "2026-04-17T07:52:19.003542",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"df662501f86ffdbd22da51e029e578e7\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/forbiddenbysystempolicy.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/requestcanceled.json": {
       "hash": "f19b4e3d46b3328ec9deac2929d09a9149c126d7c2a2911e3b31052f0a3d5151",
-      "last_checked": "2026-04-14T07:29:46.843278",
+      "last_checked": "2026-04-17T07:52:19.162044",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"22b6593e60ee54fa214628d1c7a487d7\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/requestcanceled.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/requestsuperseded.json": {
       "hash": "d3c809baa78d22c14c9a4501ccd8aadd7fcd3b0bf13796875cde9ad1fa63cbe4",
-      "last_checked": "2026-04-14T07:29:46.942818",
+      "last_checked": "2026-04-17T07:52:19.324198",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"45d8a2b5104a40acacbac306f28e7db4\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/requestsuperseded.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/authorizationrequired.json": {
       "hash": "39b372aa4681192f8d3037bd6eb876122493216f308c03b4738aedd09900d719",
-      "last_checked": "2026-04-14T07:29:47.036829",
+      "last_checked": "2026-04-17T07:52:19.497732",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"dcf7b642a17875e089790a211147eb04\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/authorizationrequired.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/unknown.json": {
       "hash": "ad8e47e480f5f0424eaeb44b0d9643e9fba04c95710b8923df7f57010ccd593d",
-      "last_checked": "2026-04-14T07:29:47.140777",
+      "last_checked": "2026-04-17T07:52:19.664291",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"f2df9a0b043655f680602b39f3a82ea6\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/unknown.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/missingentitlement.json": {
       "hash": "36f00d84de0a1b1e192c218c382fa29265a6d7b2efd31dd8847511819a4c8297",
-      "last_checked": "2026-04-14T07:29:47.247935",
+      "last_checked": "2026-04-17T07:52:19.826387",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"5eada60b4929a1df1f07c0590c24fa9f\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/missingentitlement.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/unsupportedparentbundlelocation.json": {
       "hash": "a4cf745b96cf75253a64f89347d382e6d6d0488b8d1d8c1944c02a7596695bd9",
-      "last_checked": "2026-04-14T07:29:47.343815",
+      "last_checked": "2026-04-17T07:52:20.017483",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"e7dec4de7e5a4be7b9568db4fcf28a31\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/unsupportedparentbundlelocation.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/extensionnotfound.json": {
       "hash": "a6e1167acde1126872c4e2eff93f1eccb3df4587ad09c664e11f23fa9c54e3e8",
-      "last_checked": "2026-04-14T07:29:47.438806",
+      "last_checked": "2026-04-17T07:52:20.188944",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"6c34d413d47a8d68dd43413b00c1ce67\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/extensionnotfound.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/extensionmissingidentifier.json": {
       "hash": "a2da51631be9814d330e3fd9039c52ce1b022a622c33e2f73a9bfe969a298c17",
-      "last_checked": "2026-04-14T07:29:47.530129",
+      "last_checked": "2026-04-17T07:52:20.363125",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ff83610b06dac54d3482a2a06fdc22da\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/extensionmissingidentifier.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/duplicateextensionidentifer.json": {
       "hash": "d328be78ae2dc27108b15ef2ef794e0738cab31139fb188f579455e3735c7692",
-      "last_checked": "2026-04-14T07:29:47.629355",
+      "last_checked": "2026-04-17T07:52:20.522923",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ce0e9f45d2afa6a5614d61cd3c01508c\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/duplicateextensionidentifer.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/unknownextensioncategory.json": {
       "hash": "81a05b6f76c906df2a14ec121f9f1a11101195f93437fc1ad0d1cd61aad9ce47",
-      "last_checked": "2026-04-14T07:29:47.728053",
+      "last_checked": "2026-04-17T07:52:20.704885",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"71f73dca875bde16514a3b69ad8fc3b2\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/unknownextensioncategory.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/codesignatureinvalid.json": {
       "hash": "6626ab8415cd0161b6a69cb4c661f92eab1c6ae7637b251e8d8503332ac0c13a",
-      "last_checked": "2026-04-14T07:29:47.828607",
+      "last_checked": "2026-04-17T07:52:20.893569",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"aab13f884b21a66f8747cc9a301b3132\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/codesignatureinvalid.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/validationfailed.json": {
       "hash": "09f6232b4cb61b332562c862922c7fb9927c8a20e579d1e3fa9a7d20eaa2c76f",
-      "last_checked": "2026-04-14T07:29:47.924960",
+      "last_checked": "2026-04-17T07:52:21.177186",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"bbe3a36d4a259f3b3933897e538849be\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/validationfailed.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/forbiddenbysystempolicy.json": {
       "hash": "2479584a4ee7b5e68f0894f1a8d2c38e38b145e98f28649ad96f6cbcf4a14bb2",
-      "last_checked": "2026-04-14T07:29:48.029117",
+      "last_checked": "2026-04-17T07:52:21.326836",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"9a8d74a536d8b89eb23a1c1567fce77c\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/forbiddenbysystempolicy.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/requestcanceled.json": {
       "hash": "9db4bad212ed91dbca2277ea478ad1cc88c8d5973ecb8cf8b4e478ad268172c2",
-      "last_checked": "2026-04-14T07:29:48.126491",
+      "last_checked": "2026-04-17T07:52:21.483955",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"be56ecaf018458b36dec9dfca4cee8e2\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/requestcanceled.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/requestsuperseded.json": {
       "hash": "bd897efc74a08d54f6a86a850b64b076081991f90194826462bd87542b6e9a55",
-      "last_checked": "2026-04-14T07:29:48.239011",
+      "last_checked": "2026-04-17T07:52:21.640980",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"84998beb0b9d3ced6e80fc0c8f91b878\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/requestsuperseded.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/authorizationrequired.json": {
       "hash": "0c0f546ab3d013f946129e9bbc9120fd625fa39ef9919f3c776968f3af23488c",
-      "last_checked": "2026-04-14T07:29:48.335546",
+      "last_checked": "2026-04-17T07:52:21.800337",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"7b1be9b2316e9e9ff18751028289863f\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/authorizationrequired.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionerror/code/init(rawvalue:).json": {
       "hash": "61b08a2e06526b7e5928ce8ca2c20303e7e250fbbd606f7b7f7aaff95f308f70",
-      "last_checked": "2026-04-14T07:29:48.456398",
+      "last_checked": "2026-04-17T07:52:21.953984",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ccbf4cf10e6637e7eedd92f4cc695d84\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionerror/code/init-rawvalue.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/osrelatedkernelextensionkey.json": {
       "hash": "98e918c2bcde0ef101956e34402167fd9c90073924a5210bd69f23c19522c609",
-      "last_checked": "2026-04-14T07:29:48.554617",
+      "last_checked": "2026-04-17T07:52:22.120720",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"51861d316ca2f34ba7a3deb283b52b21\"",
       "file_path": "documentation/SystemExtensions/osrelatedkernelextensionkey.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensioninfo/bundleidentifier.json": {
       "hash": "552ced6cad11363c5e11c06abe640e8394bdb3880867e6e6ef30f12bfb30202b",
-      "last_checked": "2026-04-14T07:29:48.646118",
+      "last_checked": "2026-04-17T07:52:22.269322",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"bd101c5184508653d393077b5393e8a4\"",
       "file_path": "documentation/SystemExtensions/ossystemextensioninfo/bundleidentifier.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensioninfo/bundleshortversion.json": {
       "hash": "5567fc5ebfae3d6e32b6bbd413ae1c7f291b21592f25f31aa8900fd3cb3cbebc",
-      "last_checked": "2026-04-14T07:29:48.737604",
+      "last_checked": "2026-04-17T07:52:22.443251",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"f4faf3910b869a3a3af46c5868262027\"",
       "file_path": "documentation/SystemExtensions/ossystemextensioninfo/bundleshortversion.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensioninfo/bundleversion.json": {
       "hash": "4ceac40acc312e0339144edb146d74605e7e64146e8fbbd0f16089992622e709",
-      "last_checked": "2026-04-14T07:29:48.830890",
+      "last_checked": "2026-04-17T07:52:22.601521",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"5735276e78bdc3530a09cdd38d42fb5f\"",
       "file_path": "documentation/SystemExtensions/ossystemextensioninfo/bundleversion.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/addobserver(_:).json": {
       "hash": "a5dea6c78d0cf6b3b3089f305aba7096039c50683b730efacd20e52c8e9c8e8d",
-      "last_checked": "2026-04-14T07:29:48.936753",
+      "last_checked": "2026-04-17T07:52:22.764612",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"2a57c43aaff95ac52222507cee268438\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/addobserver.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/removeobserver(_:).json": {
       "hash": "436566976b20c7abbf356ffc95fd4140f679cbc3ac6e49ed853c50656816784a",
-      "last_checked": "2026-04-14T07:29:49.035428",
+      "last_checked": "2026-04-17T07:52:22.910117",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"477b4b3a1d6d2977f195c23b0140ab90\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/removeobserver.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/systemextensions(forapplicationwithbundleid:).json": {
       "hash": "06e8692b4b350c5fc38ecf00cde2377de803bf30c4f965bdf3a335baaa9a43f6",
-      "last_checked": "2026-04-14T07:29:49.153606",
+      "last_checked": "2026-04-17T07:52:23.059232",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"3ac85f509d2925ed296f9c9f7b6dbf4b\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/systemextensions-forapplicationwithbundleid.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspace/shared.json": {
       "hash": "aad2dcf0a81c6ac1f52e5be40cc785ba17a2e01fe2c08da660bb19082f61622f",
-      "last_checked": "2026-04-14T07:29:49.253063",
+      "last_checked": "2026-04-17T07:52:23.224355",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"d7fbc6cbd032a14deef056c4f951de10\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspace/shared.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled(_:).json": {
       "hash": "4dd92693fe0227a56cb0a7ea40f28875fd232820dc524c18dbd592e72ad7902c",
-      "last_checked": "2026-04-14T07:29:49.349832",
+      "last_checked": "2026-04-17T07:52:23.394635",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"1d1ab9b245ee9b2a37f26528f6153af1\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomedisabled.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled(_:).json": {
       "hash": "e551bece37d28a7a03e5204d9c040ed4b2fc6d67d730c5686adfe16e7cb95738",
-      "last_checked": "2026-04-14T07:29:49.480486",
+      "last_checked": "2026-04-17T07:52:23.543498",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"cb3323c0fea7f3d7aa1541aaae76a4d5\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeenabled.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive(_:).json": {
       "hash": "309ccd05051e6148d0f8b9c9c89d385907a01e1ac599d683e84b98c64710b414",
-      "last_checked": "2026-04-14T07:29:49.578654",
+      "last_checked": "2026-04-17T07:52:23.691206",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ab913c4a83e829e2f6962a517f5c05cc\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionsworkspaceobserver/systemextensionwillbecomeinactive.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfinishwithresult:).json": {
       "hash": "2c96936e5fa3207d822e8b1c3635fba3d1012b5937f44b0f1c13b2b5c338b8e4",
-      "last_checked": "2026-04-14T07:29:49.685357",
+      "last_checked": "2026-04-17T07:52:23.857301",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"e2821f1d5b37c4dfd066a5272e65f362\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfinishwithresult.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result.json": {
       "hash": "9339095947b1c7a84491d30137af39a9204aeec5d93e99a70a6339ae34f83a6c",
-      "last_checked": "2026-04-14T07:29:49.782025",
+      "last_checked": "2026-04-17T07:52:24.011124",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"e25a25e8116e463d465345b02681fa22\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:didfailwitherror:).json": {
       "hash": "8e847e1144541d195db6c07ddb93eac33cff796ecf812f1750c064f85336ff02",
-      "last_checked": "2026-04-14T07:29:49.880764",
+      "last_checked": "2026-04-17T07:52:24.168929",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"8c0d40bb35155bbcaab4e44848ba5fd0\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-didfailwitherror.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/requestneedsuserapproval(_:).json": {
       "hash": "b8b87aff28f0505524cd67f088d8902f14496169f233024c9e686c6bed7886fa",
-      "last_checked": "2026-04-14T07:29:49.974136",
+      "last_checked": "2026-04-17T07:52:24.347209",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"76614b9b8bf7edc8301510ad50befc05\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/requestneedsuserapproval.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:actionforreplacingextension:withextension:).json": {
       "hash": "c647733095b9f7d290902d9af550bd9d2b53158e04555490d638a2e4400bb1e1",
-      "last_checked": "2026-04-14T07:29:50.070660",
+      "last_checked": "2026-04-17T07:52:24.493495",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"6ff19e643e5b2a98a933ea32bf015131\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-actionforreplacingextensionwithextension.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties.json": {
       "hash": "78fad4f432216fc2032d0057d249ac532bc3f9101c31df0ae8390712b589a89e",
-      "last_checked": "2026-04-14T07:29:50.182545",
+      "last_checked": "2026-04-17T07:52:24.649158",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"58a6b20c4c88bef5e0ca084e262033a8\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction.json": {
       "hash": "b117317a0a789c9b8c3b0dfd091f23278ae058e003b874f60a70633d65d519ea",
-      "last_checked": "2026-04-14T07:29:50.279277",
+      "last_checked": "2026-04-17T07:52:24.823434",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"a345658785a39c7b370c72790dbba924\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequestdelegate/request(_:foundproperties:).json": {
       "hash": "4a81f50f8b3143ff0a20de17564c98eb8eba07cd8da2e4111a7ef22185c78954",
-      "last_checked": "2026-04-14T07:29:50.375766",
+      "last_checked": "2026-04-17T07:52:24.975092",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"f02e2d065bf163623b2151442441bd8d\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequestdelegate/request-foundproperties.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result/completed.json": {
       "hash": "ec45e1547eaeee532e17904fc04ae898cba233d5908b68357ddacaec4c57156f",
-      "last_checked": "2026-04-14T07:29:50.479065",
+      "last_checked": "2026-04-17T07:52:25.199765",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"94481f91226594a8f12b03a821ab2060\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/completed.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result/willcompleteafterreboot.json": {
       "hash": "faea66eb6231d7daf1f04f38d04d151bc8131c575d7ff5ef4cb51df629d77edf",
-      "last_checked": "2026-04-14T07:29:50.581957",
+      "last_checked": "2026-04-17T07:52:25.350451",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"acee40dccfec73d5c2c21bfb266cdca1\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/willcompleteafterreboot.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/result/init(rawvalue:).json": {
       "hash": "f032ef0542012908b156c1b0da899ecd5d2c2c651e51a68a6be0f33da9ae14e5",
-      "last_checked": "2026-04-14T07:29:50.675440",
+      "last_checked": "2026-04-17T07:52:25.516163",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"eb2f486cf4d62b3dab6c66f71d7bb032\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/result/init-rawvalue.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/bundleidentifier.json": {
       "hash": "bc76b69ada3ca20e3016a0b37cb57ea6775ffdb50e6870e09d8f0bc6ce083950",
-      "last_checked": "2026-04-14T07:29:50.770704",
+      "last_checked": "2026-04-17T07:52:25.688778",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"29f3c4f6cd5d35c886ca8a8fa3bf63d3\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/bundleidentifier.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/bundleversion.json": {
       "hash": "0170e440bf4a36eea31b71f9f23429e08d648f18dfdd7be7b7a1eaa87ba027f7",
-      "last_checked": "2026-04-14T07:29:50.870424",
+      "last_checked": "2026-04-17T07:52:25.861269",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"a54bba64ed5f0b2ba9c97163fd652620\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/bundleversion.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/bundleshortversion.json": {
       "hash": "bb8a451fe6ef74227df85e89a08c1d127aa73747c835f285816487bca59ccae5",
-      "last_checked": "2026-04-14T07:29:50.962481",
+      "last_checked": "2026-04-17T07:52:26.022849",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"9dea07c3dfe7f2c57055856e67a6c3f9\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/bundleshortversion.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/url.json": {
       "hash": "b51f35f3626f0e8bca93e3710ffc3347e498206cb753ba247eb38b93bb334dec",
-      "last_checked": "2026-04-14T07:29:51.061200",
+      "last_checked": "2026-04-17T07:52:26.171788",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"df38225bcfe5f240bac3bdd5e22f8241\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/url.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/isawaitinguserapproval.json": {
       "hash": "3cdae88c7307371fe701950ee6a14cddf89bdab516cd73878d210412117db502",
-      "last_checked": "2026-04-14T07:29:51.147605",
+      "last_checked": "2026-04-17T07:52:26.352013",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"dcb0e1e6e56cf6bda17740928fa9e7b0\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/isawaitinguserapproval.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/isenabled.json": {
       "hash": "aab86b0d6bb0dd7f92cb3a6e3bb9ffd858fd6201c8ec333c608e922019ec6af9",
-      "last_checked": "2026-04-14T07:29:51.242145",
+      "last_checked": "2026-04-17T07:52:26.520606",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"0bd17509f76adc1f721431db143ba958\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/isenabled.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionproperties/isuninstalling.json": {
       "hash": "23a55b7e3f51be6eb7a78760010a192dff9f6ed40a09924b961a8fd45732d9c8",
-      "last_checked": "2026-04-14T07:29:51.382233",
+      "last_checked": "2026-04-17T07:52:26.681628",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"648b96cb5d86523a1fdc2d03f6715c52\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionproperties/isuninstalling.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction/cancel.json": {
       "hash": "3f10831ab49fc2555d8ef4424cad6c27c39dcc0aeeac0779439ad219474d615d",
-      "last_checked": "2026-04-14T07:29:51.487982",
+      "last_checked": "2026-04-17T07:52:26.845662",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"ea47aa8f0255eca21631c57fe5c49f73\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/cancel.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction/replace.json": {
       "hash": "f395dcd31f41661f4df4f3d42da8e0f39285956e76319e8fc9c12344d35474d6",
-      "last_checked": "2026-04-14T07:29:51.608948",
+      "last_checked": "2026-04-17T07:52:27.000151",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"aa81dbee62fd227ac07bbd7d9ba14be0\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/replace.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/systemextensions/ossystemextensionrequest/replacementaction/init(rawvalue:).json": {
       "hash": "af5b09a4ab190a0771e0aa3d974ab92b07e771f1d6c8481d8c81c517ac330edc",
-      "last_checked": "2026-04-14T07:29:51.705825",
+      "last_checked": "2026-04-17T07:52:27.171464",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:29:42.577601",
+      "session_id": "2026-04-17T07:52:12.141371",
       "etag": "W/\"07d8a8d7968d72756e0f880130826a61\"",
       "file_path": "documentation/SystemExtensions/ossystemextensionrequest/replacementaction/init-rawvalue.md"
     },

@@ -96,7 +96,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#LOMDeviceRequestCommand`
 
 ## Request Body
 

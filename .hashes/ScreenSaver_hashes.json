@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:30:14.562423",
+    "last_updated": "2026-04-17T07:53:05.988114",
     "total_pages": 40,
-    "session_id": "2026-04-14T07:30:12.253597"
+    "session_id": "2026-04-17T07:53:01.957661"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ScreenSaver.json": {
       "hash": "c3c0335dfbd3c9083a269177eca8b1e8d59688c48ded8cac37c8641e216373d2",
-      "last_checked": "2026-04-14T07:30:12.552661",
+      "last_checked": "2026-04-17T07:53:02.201284",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"3016441923905c9e10c27fe7ef42fba0\"",
       "file_path": "documentation/ScreenSaver/ScreenSaver.md"
     },
     "https://developer.apple.com/documentation/ScreenSaver": {
       "hash": "c3c0335dfbd3c9083a269177eca8b1e8d59688c48ded8cac37c8641e216373d2",
-      "last_checked": "2026-04-14T07:30:12.452212",
+      "last_checked": "2026-04-17T07:53:02.093359",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"3016441923905c9e10c27fe7ef42fba0\"",
       "file_path": "documentation/ScreenSaver/ScreenSaver.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview.json": {
       "hash": "8fa9b2bb5736aec8b168fc74f0df868aa8727418eef9ef998cc50e0464c0f7ee",
-      "last_checked": "2026-04-14T07:30:12.824565",
+      "last_checked": "2026-04-17T07:53:02.616672",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"f42bf16b7140b8f4a51878081f83d205\"",
       "file_path": "documentation/ScreenSaver/screensaverview.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverdefaults.json": {
       "hash": "027721edaec93db7726c37c9da51397667d8cd6b6e4297a090f1486e7cc5fc75",
-      "last_checked": "2026-04-14T07:30:12.992210",
+      "last_checked": "2026-04-17T07:53:02.906557",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"5a56f1ef1372aab43b066a305e6fa65c\"",
       "file_path": "documentation/ScreenSaver/screensaverdefaults.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/ssrandomintbetween(_:_:).json": {
       "hash": "089df65d9d5261333643e3c992e56de57a20838111c35915a3a094bee06a8129",
-      "last_checked": "2026-04-14T07:30:13.096821",
+      "last_checked": "2026-04-17T07:53:03.183386",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"dcb1fab0b363174efc4f0823a6f08855\"",
       "file_path": "documentation/ScreenSaver/ssrandomintbetween.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/ssrandomfloatbetween(_:_:).json": {
       "hash": "5eec980cde5a447661fa2be80c8487fda9f988ba2678b2ef6f3caffedff8f460",
-      "last_checked": "2026-04-14T07:30:13.169630",
+      "last_checked": "2026-04-17T07:53:03.351555",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"156f51610b35ea8dafaf67f628545019\"",
       "file_path": "documentation/ScreenSaver/ssrandomfloatbetween.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/ssrandompointforsizewithinrect(_:_:).json": {
       "hash": "2c3b234ff2405a35b23488bbe5772f24bf17896669d163be60d8a92d76fe9da7",
-      "last_checked": "2026-04-14T07:30:13.243493",
+      "last_checked": "2026-04-17T07:53:03.504073",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"499f240a836c5b7c7b0aa483d69b817d\"",
       "file_path": "documentation/ScreenSaver/ssrandompointforsizewithinrect.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/sscenteredrectinrect(_:_:).json": {
       "hash": "071692766568711c6ebb803570a3d51c15f31dc9ad972c0f1b77e1edc91f0d80",
-      "last_checked": "2026-04-14T07:30:13.321053",
+      "last_checked": "2026-04-17T07:53:03.665412",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"1f33ee284f961b94d5a004db8cf4512f\"",
       "file_path": "documentation/ScreenSaver/sscenteredrectinrect.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/init(frame:ispreview:).json": {
       "hash": "cdb9e002977300726b2aada23337054145271881b1f1058a323a399cb8657e1e",
-      "last_checked": "2026-04-14T07:30:13.393496",
+      "last_checked": "2026-04-17T07:53:03.834170",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"0d2cc90f205e4b51d44aab588b2c7205\"",
       "file_path": "documentation/ScreenSaver/screensaverview/init-frameispreview.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/backingstoretype().json": {
       "hash": "80293f639f54184fe3a7288feb0f27c541cfcd9003922f3e1d6c6e8ece91f5eb",
-      "last_checked": "2026-04-14T07:30:13.471537",
+      "last_checked": "2026-04-17T07:53:04.005588",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"50b143ca8e3a2a5fd553377592523c96\"",
       "file_path": "documentation/ScreenSaver/screensaverview/backingstoretype.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/performgammafade().json": {
       "hash": "2b470f21aace3a7b48302d029cf278b2e8309ebeae1d46cc9b223429341952de",
-      "last_checked": "2026-04-14T07:30:13.550153",
+      "last_checked": "2026-04-17T07:53:04.166315",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"944382cc728c753969f434715245d7f3\"",
       "file_path": "documentation/ScreenSaver/screensaverview/performgammafade.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/animationtimeinterval.json": {
       "hash": "244a91375886c6de5e0dcd44e8f96e486abd493e3d77d82b8ef981e71fc992b0",
-      "last_checked": "2026-04-14T07:30:13.632367",
+      "last_checked": "2026-04-17T07:53:04.322771",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"74c2c11271adc6d35ee3209989ac64f5\"",
       "file_path": "documentation/ScreenSaver/screensaverview/animationtimeinterval.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/startanimation().json": {
       "hash": "78fe0a77b111f8a65c0c80e6d050a723240ad42e2ef192e3870213ed4d513754",
-      "last_checked": "2026-04-14T07:30:13.754351",
+      "last_checked": "2026-04-17T07:53:04.486655",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"155ef74f3986866a71b8513efd3e2a77\"",
       "file_path": "documentation/ScreenSaver/screensaverview/startanimation.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/animateoneframe().json": {
       "hash": "06244251be694e4dd679bf68eda316dcad20af083be49b34556f9ce508ba107f",
-      "last_checked": "2026-04-14T07:30:13.837820",
+      "last_checked": "2026-04-17T07:53:04.667659",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"0328000ad875667e994d760cf2a5f844\"",
       "file_path": "documentation/ScreenSaver/screensaverview/animateoneframe.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/stopanimation().json": {
       "hash": "cb22d8503ab2368170e1ac8461e53134f2cffe66f45b9ab6f7fff1c3313d50e1",
-      "last_checked": "2026-04-14T07:30:13.909924",
+      "last_checked": "2026-04-17T07:53:04.806998",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"1384136d8ce325347a30034fc1025a27\"",
       "file_path": "documentation/ScreenSaver/screensaverview/stopanimation.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/isanimating.json": {
       "hash": "69fb29539a9602599745dbd59832cd6f4b82e30098d56efb7538f1298a494017",
-      "last_checked": "2026-04-14T07:30:14.091913",
+      "last_checked": "2026-04-17T07:53:04.912159",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"629e01a8d9a65defe18438001608ecbb\"",
       "file_path": "documentation/ScreenSaver/screensaverview/isanimating.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/draw(_:).json": {
       "hash": "d91b71703afd0c1148c69ac30170046bc004d8118fa13801c626119c44ea8030",
-      "last_checked": "2026-04-14T07:30:14.178092",
+      "last_checked": "2026-04-17T07:53:05.087274",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"8126c29c49fbf40215aa51119e080851\"",
       "file_path": "documentation/ScreenSaver/screensaverview/draw.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/ispreview.json": {
       "hash": "c06134be45f53e734e48154cdc5d32aedc4509e2aa09191c8020c858a1c6768d",
-      "last_checked": "2026-04-14T07:30:14.260039",
+      "last_checked": "2026-04-17T07:53:05.222339",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"6bc7a69c0e9d6f8088b243fcd8c3ed4b\"",
       "file_path": "documentation/ScreenSaver/screensaverview/ispreview.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/hasconfiguresheet.json": {
       "hash": "97e2ea2e30e66e40f68c683d6addfbc28ccda818ada66c1cd2826226cf50f039",
-      "last_checked": "2026-04-14T07:30:14.345728",
+      "last_checked": "2026-04-17T07:53:05.507463",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"cb0afb402ec7c2248b3aea84dad557a7\"",
       "file_path": "documentation/ScreenSaver/screensaverview/hasconfiguresheet.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverview/configuresheet.json": {
       "hash": "b6a58de78c969a935b136a0410f6ffe57e7194e639c5eda1bbb399fa4e19c2dd",
-      "last_checked": "2026-04-14T07:30:14.440479",
+      "last_checked": "2026-04-17T07:53:05.804992",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"d94981d41da0dc2763f0424ae749841b\"",
       "file_path": "documentation/ScreenSaver/screensaverview/configuresheet.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/screensaver/screensaverdefaults/init(formodulewithname:).json": {
       "hash": "885da1bb527583413d80b168257ce76f90b108326b683bb4be5d1794d3df6608",
-      "last_checked": "2026-04-14T07:30:14.561482",
+      "last_checked": "2026-04-17T07:53:05.982764",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:12.253597",
+      "session_id": "2026-04-17T07:53:01.957661",
       "etag": "W/\"7f9419dd34900a0f0afe24768ef18bfe\"",
       "file_path": "documentation/ScreenSaver/screensaverdefaults/init-formodulewithname.md"
     },

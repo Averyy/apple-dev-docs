@@ -6,7 +6,7 @@ Released March 27, 2023 — Version 16.4 (18615.1.26)
 
 #### Overview
 
-Safari 16.4 beta is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.4 beta, and iOS 16.4 beta.
+Safari 16.4 is available for macOS Big Sur, macOS Monterey, macOS Ventura, iPadOS 16.4, and iOS 16.4.
 
 ##### Browser Changes
 
@@ -26,6 +26,7 @@ Safari 16.4 beta is available for macOS Big Sur, macOS Monterey, macOS Ventura, 
 - Added support for CSS relative color syntax.
 - Added support for new named colors to match CSS Color Level 4.
 - Added support for the `:dir()` pseudo-class.
+- Added support for the `force-end` value of the `hanging-punctuation` property.
 - Added support for the `:modal` pseudo-class to match fullscreen elements.
 - Added support for the `lh` and `rlh` units.
 - Added support for the range syntax and boolean logic from Media Queries level 4.

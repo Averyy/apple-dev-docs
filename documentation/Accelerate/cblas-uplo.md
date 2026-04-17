@@ -38,9 +38,13 @@ struct CBLAS_UPLO
 ## See Also
 
 - [struct CBLAS_ORDER](cblas_order.md)
+  Indicates whether a matrix is in row-major or column-major order.
 - [struct CBLAS_TRANSPOSE](cblas_transpose.md)
+  Indicates transpose operation to perform on a matrix.
 - [struct CBLAS_DIAG](cblas_diag.md)
+  Indicates whether a triangular matrix is unit-diagonal (diagonal elements are all equal to 1).
 - [struct CBLAS_SIDE](cblas_side.md)
+  Indicates the order of a matrix multiplication.
 
 
 ---

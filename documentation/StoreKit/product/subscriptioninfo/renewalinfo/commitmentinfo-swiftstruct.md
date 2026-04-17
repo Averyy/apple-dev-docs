@@ -19,7 +19,7 @@ struct CommitmentInfo
 
 ## Topics
 
-### Instance Properties
+### Instance Properties - generated
 - [let autoRenewPreference: String](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/autorenewpreference.md)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewalbillingplantype.md)
 - [let renewalDate: Date](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct/renewaldate.md)

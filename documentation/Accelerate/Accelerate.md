@@ -219,7 +219,7 @@ Although not part of the Accelerate framework, the following libraries are close
 - [BLAS](blas-library.md)
   Perform common linear algebra operations with Apple’s implementation of the Basic Linear Algebra Subprograms (BLAS).
 ### Definite Integration
-- [Quadrature](quadrature.md)
+- [Quadrature](quadrature-collection.md)
   Approximate the definite integral of a function over a finite or infinite interval.
 ### Macros
 - [Macros](macros.md)

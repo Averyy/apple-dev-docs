@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-14T07:30:05.138745",
+    "last_updated": "2026-04-17T07:52:49.695000",
     "total_pages": 102,
-    "session_id": "2026-04-14T07:30:00.039826"
+    "session_id": "2026-04-17T07:52:39.481730"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/EventKitUI.json": {
       "hash": "835b15fbe7f9c57a336337f71546106e61bfff3ad6779c309329459a9ecaf6f5",
-      "last_checked": "2026-04-14T07:30:00.358000",
+      "last_checked": "2026-04-17T07:52:39.865287",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"aa4194d6ca46f34749f8369cecb91b2a\"",
       "file_path": "documentation/EventKitUI/EventKitUI.md"
     },
     "https://developer.apple.com/documentation/EventKitUI": {
       "hash": "835b15fbe7f9c57a336337f71546106e61bfff3ad6779c309329459a9ecaf6f5",
-      "last_checked": "2026-04-14T07:30:00.270266",
+      "last_checked": "2026-04-17T07:52:39.751395",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"aa4194d6ca46f34749f8369cecb91b2a\"",
       "file_path": "documentation/EventKitUI/EventKitUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewcontroller.json": {
       "hash": "603c386e71e5b2a545d8003242922da141666d5e3fed682f6793ae6241fda3fa",
-      "last_checked": "2026-04-14T07:30:00.662761",
+      "last_checked": "2026-04-17T07:52:40.252619",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"7b851ae286d0f0b4f0f811a106480c91\"",
       "file_path": "documentation/EventKitUI/ekeventviewcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller.json": {
       "hash": "2722fc67a7d616c0a24239849a9cfd9fdc97f15a00a52e99dd83f297421cdb4e",
-      "last_checked": "2026-04-14T07:30:00.834044",
+      "last_checked": "2026-04-17T07:52:40.547434",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"2d96eba0f5a30a4ddb26f53d0eb25f7b\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser.json": {
       "hash": "7a8c33234661eba040ed5d93a1a9fdd1a46102713baf4e75bcb80cb35d267d10",
-      "last_checked": "2026-04-14T07:30:00.973536",
+      "last_checked": "2026-04-17T07:52:40.721591",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"a365ef55ba2c22ddcd6265b2dac13bde\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/eventkituibundle().json": {
       "hash": "01be0d98558b4c33c8376c88bb09dad0db69c5ed71306fe2afe8b50f180eda14",
-      "last_checked": "2026-04-14T07:30:01.097646",
+      "last_checked": "2026-04-17T07:52:40.996470",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"684bb10b55bd6bbeb9c5546da4b14f81\"",
       "file_path": "documentation/EventKitUI/eventkituibundle.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/eventkitui-constants.json": {
       "hash": "5d4cd51b90adf73501fa5943748775242d218bf573016c1396332f4fb3233bdf",
-      "last_checked": "2026-04-14T07:30:01.175257",
+      "last_checked": "2026-04-17T07:52:41.169679",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"c527ac476add58645e2eecdbb00f1be8\"",
       "file_path": "documentation/EventKitUI/eventkitui-constants.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewcontroller/delegate.json": {
       "hash": "f678a59b6b461616343e1eb0fccd1d341f171bc95ce0482f661edb91d7c079fc",
-      "last_checked": "2026-04-14T07:30:01.255563",
+      "last_checked": "2026-04-17T07:52:41.346741",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"bef4d0f01f9d57b7c9bc96fc737f1f35\"",
       "file_path": "documentation/EventKitUI/ekeventviewcontroller/delegate.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewdelegate.json": {
       "hash": "a61eebb363c85de656120a18bf1f122d08b4a9090b72e60bdffb0a17b827abfd",
-      "last_checked": "2026-04-14T07:30:01.373762",
+      "last_checked": "2026-04-17T07:52:41.524618",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"b5d8549d981633fac9e809bb8eea2b43\"",
       "file_path": "documentation/EventKitUI/ekeventviewdelegate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewcontroller/event.json": {
       "hash": "88c6309b6a0ed5f773a8bbe9e72b96b507d49d88737543457f84b2fa400879bd",
-      "last_checked": "2026-04-14T07:30:01.514025",
+      "last_checked": "2026-04-17T07:52:41.812709",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"90e8986e01c97da468c55767e90d8b08\"",
       "file_path": "documentation/EventKitUI/ekeventviewcontroller/event.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewcontroller/allowscalendarpreview.json": {
       "hash": "a5f3af4f9f5327c48c8326b268f1b122e357e4be4710d1a4c773cc15b92d0fb7",
-      "last_checked": "2026-04-14T07:30:01.600587",
+      "last_checked": "2026-04-17T07:52:42.133593",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"8511c1f9b2b63237c3f1f52fe9d691e7\"",
       "file_path": "documentation/EventKitUI/ekeventviewcontroller/allowscalendarpreview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewcontroller/allowsediting.json": {
       "hash": "63e232e82c3e0187fe4b41c851067e0b5e7f7a706dfa727d56f0579bf2c85442",
-      "last_checked": "2026-04-14T07:30:01.673490",
+      "last_checked": "2026-04-17T07:52:42.295559",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"ee27697dcbaaabdc1a3e0601d14cbb07\"",
       "file_path": "documentation/EventKitUI/ekeventviewcontroller/allowsediting.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller/editviewdelegate.json": {
       "hash": "5263e4af4d445e10c49ed1f800c00b4fe871aa7bd812937c047edb2676560b8f",
-      "last_checked": "2026-04-14T07:30:01.749792",
+      "last_checked": "2026-04-17T07:52:42.563950",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"4c16b52ad0aea52a29ba3cdc02f503d7\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller/editviewdelegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewdelegate.json": {
       "hash": "28b3fd7fc1eb4b7be9fae1af80f1eeec3f0ac5d19f962413af44bcf539a300b5",
-      "last_checked": "2026-04-14T07:30:01.851178",
+      "last_checked": "2026-04-17T07:52:42.730882",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"549b3cd4cca51678ee6722aea2934a50\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewdelegate.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller/event.json": {
       "hash": "d5cfa4be65b15eeb1750c58143511adaec8048cc9ea194358d3bb1c168d09bab",
-      "last_checked": "2026-04-14T07:30:01.951983",
+      "last_checked": "2026-04-17T07:52:42.908145",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"3d305746e943a9d74beeb1260f498c95\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller/event.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller/eventstore.json": {
       "hash": "89e5cbeaa17a327fb6d1216d8a43451f7f64a0a49a860820de7b1e3c1a02b7f3",
-      "last_checked": "2026-04-14T07:30:02.026675",
+      "last_checked": "2026-04-17T07:52:43.071983",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"d706e416a4411945f1968c06c6cf575c\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller/eventstore.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewcontroller/cancelediting().json": {
       "hash": "9c9bfb7520958bce0b98910af2b82ed6665c9daa9af8e6b9e49e9199d5f58123",
-      "last_checked": "2026-04-14T07:30:02.107479",
+      "last_checked": "2026-04-17T07:52:43.227701",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"552a74f52d94adf11055c4db2cd0895a\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewcontroller/cancelediting.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/init(selectionstyle:displaystyle:eventstore:).json": {
       "hash": "409cf6182fc0ce8b15e4b57a1cce4af79017eac8d242577118e7e34dac124c3a",
-      "last_checked": "2026-04-14T07:30:02.193271",
+      "last_checked": "2026-04-17T07:52:43.398695",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"852730c627171771c68c45f6d64ed9fa\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/init-selectionstyledisplaystyleeventstore.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/init(selectionstyle:displaystyle:entitytype:eventstore:).json": {
       "hash": "5ae0b01725cc5419fbd8aef5f08553f54eacc1b15f3dbf3ca8de328c2650a805",
-      "last_checked": "2026-04-14T07:30:02.291421",
+      "last_checked": "2026-04-17T07:52:43.679224",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"779476f3e2fc2d7fb9337baf4750e754\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/init-selectionstyledisplaystyleentitytypeeventstore.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/delegate.json": {
       "hash": "668456f105dd8196517660bbd4a8856c979220f27c01eeb770277fc36649cad1",
-      "last_checked": "2026-04-14T07:30:02.369053",
+      "last_checked": "2026-04-17T07:52:43.975142",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"d2c5a3c292590510c8ed4519368a75aa\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/delegate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdelegate.json": {
       "hash": "7d7aa846510e6a1806b9a4c74546f5c232cf9bee69052da5997565c74985386e",
-      "last_checked": "2026-04-14T07:30:02.448623",
+      "last_checked": "2026-04-17T07:52:44.148345",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"06ca6f37b273bd95d9652db9c3221ac5\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdelegate.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/selectedcalendars.json": {
       "hash": "a7426b7f267413d998ccec2ff6bb2908b56193e0eca6af70cba02113ac39279d",
-      "last_checked": "2026-04-14T07:30:02.568595",
+      "last_checked": "2026-04-17T07:52:44.302506",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"96b6044e0129df5c8dfe6b9ef27071b0\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/selectedcalendars.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/selectionstyle.json": {
       "hash": "82694bb5b2e4a417bea9024473d9892b9bfca532cbdb416bfd747c1b3e473b10",
-      "last_checked": "2026-04-14T07:30:02.647421",
+      "last_checked": "2026-04-17T07:52:44.483736",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"25e59584d8e70a283d5ab8671504f850\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/selectionstyle.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserselectionstyle.json": {
       "hash": "b2c12ddacccfe0d48da0c997bf708dd67db0d3815315cfccf4e9e82f3e4f6f11",
-      "last_checked": "2026-04-14T07:30:02.728275",
+      "last_checked": "2026-04-17T07:52:44.636653",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"e8c96ceb7b841861ea98fba13336fbb5\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserselectionstyle.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdisplaystyle.json": {
       "hash": "430cd0c0464a78b0bbcf974014017b04f242bf33f0ebdaa26000de8caad344e3",
-      "last_checked": "2026-04-14T07:30:02.804487",
+      "last_checked": "2026-04-17T07:52:44.855063",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"6f2945a9005f8a7a35b90cc76f406e8b\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdisplaystyle.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/showscancelbutton.json": {
       "hash": "2d27f0fd64e489e266889b64ac7636ad1e9fd81930a403e7a9e14b51b9c16579",
-      "last_checked": "2026-04-14T07:30:02.932612",
+      "last_checked": "2026-04-17T07:52:45.019508",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"aacf33b2299f28c2fafa124458b09aa9\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/showscancelbutton.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooser/showsdonebutton.json": {
       "hash": "2756f7d6521fbe0034f166f31334220e6c685845419f941130661536b61389a3",
-      "last_checked": "2026-04-14T07:30:03.024227",
+      "last_checked": "2026-04-17T07:52:45.203431",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"28415a986ad803f96fdf2669abdbf128\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooser/showsdonebutton.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekui_is_ios.json": {
       "hash": "adb9e1fd84f60bf2f708afdc433022176d3c99cffb21aba60d5c9d6ce921a842",
-      "last_checked": "2026-04-14T07:30:03.097120",
+      "last_checked": "2026-04-17T07:52:45.390431",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"f6c8bc23e4e5804c5a73bef5737aa0fa\"",
       "file_path": "documentation/EventKitUI/ekui-is-ios.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekui_is_simulator.json": {
       "hash": "fa88b1a3c9b16b986d17c7ffcbbf1165399801fd7a981f4770b1a0fe3ae699d1",
-      "last_checked": "2026-04-14T07:30:03.273102",
+      "last_checked": "2026-04-17T07:52:45.565497",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"a626bf168f870aa860c9dcf8a984fe05\"",
       "file_path": "documentation/EventKitUI/ekui-is-simulator.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewaction.json": {
       "hash": "95f49cdd89be5f18f0c098d85db289402ad9ac89e8f18a3cb04c62a874b0321b",
-      "last_checked": "2026-04-14T07:30:03.374996",
+      "last_checked": "2026-04-17T07:52:45.747763",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"da2e4e57b81704967954ee82c9c4a527\"",
       "file_path": "documentation/EventKitUI/ekeventviewaction.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewdelegate/eventviewcontroller(_:didcompletewith:).json": {
       "hash": "63cd6addd4463c0df867d8988eb6c58a69087410269839419c95bf3c1b8f8ed4",
-      "last_checked": "2026-04-14T07:30:03.449933",
+      "last_checked": "2026-04-17T07:52:45.912012",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"1f0aa3170b72aeeec42df9aafbcdf907\"",
       "file_path": "documentation/EventKitUI/ekeventviewdelegate/eventviewcontroller-didcompletewith.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewdelegate/eventeditviewcontrollerdefaultcalendar(fornewevents:).json": {
       "hash": "64571240287babe8a2b2520cd3c78573df2906dcd72b26a780f9e160b15a7e53",
-      "last_checked": "2026-04-14T07:30:03.522774",
+      "last_checked": "2026-04-17T07:52:46.082393",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"beb6ef0662dc21b36b5b7dd1dbcac4d6\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewdelegate/eventeditviewcontrollerdefaultcalendar-fornewevents.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewdelegate/eventeditviewcontroller(_:didcompletewith:).json": {
       "hash": "ecafb67ea153a585222e3b0d3d95986f3b505b3709d4edc076b749cf86b8b9c3",
-      "last_checked": "2026-04-14T07:30:03.593081",
+      "last_checked": "2026-04-17T07:52:46.406188",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"a698d6344484180fbfa857533c21b3cf\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewdelegate/eventeditviewcontroller-didcompletewith.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction.json": {
       "hash": "b908ff08bff63a67b2e354a7b61cf8b44c82b391dd6caa844f4e69e3cf7d337e",
-      "last_checked": "2026-04-14T07:30:03.662390",
+      "last_checked": "2026-04-17T07:52:46.572174",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"34d8168225f5e011da100734951d1e88\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdelegate/calendarchooserdidfinish(_:).json": {
       "hash": "1cbd947af24411cfa8d1cc3c2bfb17bd2a809c7b472aa816ec616c76c7457245",
-      "last_checked": "2026-04-14T07:30:03.755248",
+      "last_checked": "2026-04-17T07:52:46.740898",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"059540753fe61ea24a5dc51484ce33e3\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdelegate/calendarchooserdidfinish.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdelegate/calendarchooserselectiondidchange(_:).json": {
       "hash": "c322409e34c7dfde1bd5f4e718827fcc21e14e8ea095c04e704a792bb0b0ae9e",
-      "last_checked": "2026-04-14T07:30:03.831873",
+      "last_checked": "2026-04-17T07:52:47.021136",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"d9f78f8115f1e14f072dfacd9485788b\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdelegate/calendarchooserselectiondidchange.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdelegate/calendarchooserdidcancel(_:).json": {
       "hash": "7647236edc7994ccb0dacd9baa8e13f07cc729b94ca794fdf19c2c248de56af3",
-      "last_checked": "2026-04-14T07:30:03.957045",
+      "last_checked": "2026-04-17T07:52:47.191448",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"2546ce1afd94a0f35f97646778b54a0c\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdelegate/calendarchooserdidcancel.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserselectionstyle/single.json": {
       "hash": "37d62ac96a3e987003e8a9a937dc7cc78760ce497249c2915d539e7f5871f3af",
-      "last_checked": "2026-04-14T07:30:04.039138",
+      "last_checked": "2026-04-17T07:52:47.353395",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"9147ced00e964b3d1eb11a779b987dff\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserselectionstyle/single.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserselectionstyle/multiple.json": {
       "hash": "395175b60a475ae8adeda6248ccd4be6088aa66788df717eafe906676a5a71ad",
-      "last_checked": "2026-04-14T07:30:04.107935",
+      "last_checked": "2026-04-17T07:52:47.524996",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"d6923ea199476e59fe876d8c740c6cb7\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserselectionstyle/multiple.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserselectionstyle/init(rawvalue:).json": {
       "hash": "e9db6ac644832a7abc50f8f177c13644188f55db4f2f1b24ba4882382d798599",
-      "last_checked": "2026-04-14T07:30:04.188086",
+      "last_checked": "2026-04-17T07:52:47.674481",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"73712e6ba98b82c4b6507c45aff711ff\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserselectionstyle/init-rawvalue.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdisplaystyle/allcalendars.json": {
       "hash": "9a7de6cfb70d7e5f53ebf61a76bdf0d0b2a01ab7cc15232d975955167124e2d7",
-      "last_checked": "2026-04-14T07:30:04.265971",
+      "last_checked": "2026-04-17T07:52:47.850945",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"8cfb5ad0dea62e8f9930cdb036796954\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdisplaystyle/allcalendars.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdisplaystyle/writablecalendarsonly.json": {
       "hash": "6177f0c64645bc31288ee61a0d0c4c47f90bd991bd6becec0bcc3d2f33f56a92",
-      "last_checked": "2026-04-14T07:30:04.341292",
+      "last_checked": "2026-04-17T07:52:48.018640",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"b6eca6adb6982d89f8e10cf597a5ac4e\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdisplaystyle/writablecalendarsonly.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekcalendarchooserdisplaystyle/init(rawvalue:).json": {
       "hash": "eb57134540a5bb1623bf207b63c10c9f192d58bdf4f0d8484bff0511e4f5e671",
-      "last_checked": "2026-04-14T07:30:04.415347",
+      "last_checked": "2026-04-17T07:52:48.167679",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"16338eb04dd0831e0eb27c768027c440\"",
       "file_path": "documentation/EventKitUI/ekcalendarchooserdisplaystyle/init-rawvalue.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewaction/done.json": {
       "hash": "9ae2e604a817e88fb3df295c3c0d56a2349861cb9c4020088f6506b363f0cb1e",
-      "last_checked": "2026-04-14T07:30:04.490508",
+      "last_checked": "2026-04-17T07:52:48.339195",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"6b34b24a38663a05115ca0a4636d7731\"",
       "file_path": "documentation/EventKitUI/ekeventviewaction/done.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewaction/responded.json": {
       "hash": "9efae0b220ebc7c562ee6b32449f167d6024c854709a8e0c39321e4d9f110678",
-      "last_checked": "2026-04-14T07:30:04.562329",
+      "last_checked": "2026-04-17T07:52:48.503334",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"f9e471bc6c6e76acae8af2e9295ab081\"",
       "file_path": "documentation/EventKitUI/ekeventviewaction/responded.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewaction/deleted.json": {
       "hash": "978f022bf28c1f35b1a1d97f76dc3395ded5ebc14ab7ef73ca61b7db5a52c09e",
-      "last_checked": "2026-04-14T07:30:04.667015",
+      "last_checked": "2026-04-17T07:52:48.670325",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"8ab75e7ce37a188e7f1dc4d60089caf9\"",
       "file_path": "documentation/EventKitUI/ekeventviewaction/deleted.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventviewaction/init(rawvalue:).json": {
       "hash": "9e00cd17454397d3a627a942c8354b7237d1e7ef8fbc26ddfa422d4adadfa382",
-      "last_checked": "2026-04-14T07:30:04.752650",
+      "last_checked": "2026-04-17T07:52:48.843715",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"9da9864676f3823b6b8ed2870a7db950\"",
       "file_path": "documentation/EventKitUI/ekeventviewaction/init-rawvalue.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction/canceled.json": {
       "hash": "9cf32cfd9ea998f3d72309a585830f4eb88fee8409e96dbcc6ef85a485fac55e",
-      "last_checked": "2026-04-14T07:30:04.830569",
+      "last_checked": "2026-04-17T07:52:49.005187",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"4cef393da7f3884153d07ba6320862d4\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction/canceled.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction/saved.json": {
       "hash": "6a648195dd2080103e572ce90f99cb51f6fe24cc961cc30211e2f8222bba37a7",
-      "last_checked": "2026-04-14T07:30:04.907213",
+      "last_checked": "2026-04-17T07:52:49.196689",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"65bc526ada211e0f5f5940f5e397e3a7\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction/saved.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction/deleted.json": {
       "hash": "c931fde53eb101a969f8185ac8931a3e6d4cd3aa5b3c349ff230a37abe80abad",
-      "last_checked": "2026-04-14T07:30:04.974155",
+      "last_checked": "2026-04-17T07:52:49.368050",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"379dfcc211889b533a40e951a997cb46\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction/deleted.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction/cancelled.json": {
       "hash": "38ad305a501bcc838f47a29d16c8fba7dad7c5b090813d471b201663f98e7452",
-      "last_checked": "2026-04-14T07:30:05.054898",
+      "last_checked": "2026-04-17T07:52:49.543063",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"e49f7085a16710880f8839c533f1ed49\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction/cancelled.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/eventkitui/ekeventeditviewaction/init(rawvalue:).json": {
       "hash": "ac142b34da807818159b3f2a0234723a857e6ffb3bc5eff119c42b5f0eb226ed",
-      "last_checked": "2026-04-14T07:30:05.137231",
+      "last_checked": "2026-04-17T07:52:49.692264",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:00.039826",
+      "session_id": "2026-04-17T07:52:39.481730",
       "etag": "W/\"dbb08e736170b3a260eae54e459a85af\"",
       "file_path": "documentation/EventKitUI/ekeventeditviewaction/init-rawvalue.md"
     },

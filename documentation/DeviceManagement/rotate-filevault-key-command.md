@@ -185,7 +185,7 @@ This command changes the File Vault institutional recovery key.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#RotateFileVaultKeyCommand`
 
 ## Request Body
 

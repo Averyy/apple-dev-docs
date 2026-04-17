@@ -26,8 +26,6 @@ object SkipKeys
 
 - `Accessibility` (string): The key to skip the Accessibility pane, when creating additional users. > **Note**:  This key doesn’t skip the Accessibility pane in Setup Assistant during initial device set up. It does skip the Accessibility pane when Setup Assistant runs due to a new user log in. Available in macOS 11 and later.
 - `ActionButton` (string): The key to skip the Action Button configuration pane. Available in iOS 17 and later.
-- `AgeAssurance` (string): The key to skip the Age Assurance pane. Available in iOS 26.2 and later.
-- `AgeBasedSafetySettings` (string): The key to skip the Age Based Safety Settings pane. Available in iOS 26.1 and later.
 - `Android` (string): If the Restore pane isn’t skipped, this is the key to remove the Move from Android option in the Restore pane. Available in iOS 9 and later.
 - `Appearance` (string): The key to skip the Choose Your Look screen. Available in iOS 13 and later, and macOS 10.14 and later.
 - `AppleID` (string): The key to skip Apple Account setup. Available in iOS 7 and later, macOS 10.9 and later, tvOS 10.2 and later, and visionOS 26 and later.

@@ -19,7 +19,7 @@ struct BillingPlanType
 
 ## Topics
 
-### Type Properties
+### Type Properties - generated
 - [static let monthly: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/monthly.md)
 - [static let upFront: Product.SubscriptionInfo.BillingPlanType](product/subscriptioninfo/billingplantype/upfront.md)
 

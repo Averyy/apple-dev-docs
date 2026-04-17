@@ -71,7 +71,7 @@ This command is only available on a Mac with Apple silicon.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm`
+`PUT https://yourmdmhost.example.com/mdm#VerifyRecoveryLockCommand`
 
 ## Request Body
 

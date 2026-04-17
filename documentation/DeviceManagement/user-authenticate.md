@@ -35,7 +35,7 @@ The next time the user logs in, the client sends a new request and the server ca
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin`
+`PUT https://yourmdmhost.example.com/checkin#UserAuthenticateRequest`
 
 ## Request Body
 
