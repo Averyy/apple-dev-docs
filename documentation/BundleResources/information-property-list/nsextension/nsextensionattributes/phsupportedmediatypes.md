@@ -8,6 +8,7 @@ The types of assets a Photo Editing extension can edit.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 
 
 

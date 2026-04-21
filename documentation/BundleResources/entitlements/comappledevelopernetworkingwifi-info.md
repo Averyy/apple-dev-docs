@@ -8,6 +8,7 @@ A Boolean value indicating whether your app can access information about the con
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - visionOS 1.0+
 
 

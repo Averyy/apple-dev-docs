@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: property
 
-A flag to indicate that this sound should ignore a local silent mode. This typically indicates a higher level of urgency, such as for emergency alerts.
+A Boolean value that indicates whether the sound ignores local silent mode.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -14,6 +14,10 @@ A flag to indicate that this sound should ignore a local silent mode. This typic
 ```swift
 var shouldIgnoreSilentMode: Bool
 ```
+
+#### Discussion
+
+A `true` value typically indicates higher urgency, such as for emergency alerts.
 
 
 ---

@@ -8,6 +8,7 @@ A message that tells people why your app receives voice-over-IP (VoIP) calls in 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - tvOS 10.0+
 - watchOS 3.0+
 

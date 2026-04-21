@@ -8,6 +8,7 @@ The level of data protection for sensitive user data when an app accesses it on 
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

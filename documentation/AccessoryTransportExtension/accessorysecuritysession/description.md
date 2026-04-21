@@ -3,11 +3,12 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: property
 
-A textual representation of the session.
+String representation.
 
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 

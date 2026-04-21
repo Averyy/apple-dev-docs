@@ -3,6 +3,8 @@
 **Framework**: Accessory Notifications  
 **Kind**: struct
 
+A structure that describes sound characteristics for a notification.
+
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
@@ -15,9 +17,9 @@ struct Sound
 
 ## Topics
 
-### Instance Properties
+### Sound behavior
 - [var shouldIgnoreSilentMode: Bool](alertingcontext/sound-swift.struct/shouldignoresilentmode.md)
-  A flag to indicate that this sound should ignore a local silent mode. This typically indicates a higher level of urgency, such as for emergency alerts.
+  A Boolean value that indicates whether the sound ignores local silent mode.
 
 ## Relationships
 
@@ -25,6 +27,11 @@ struct Sound
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+
+## See Also
+
+- [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
+  An optional sound configuration for the notification.
 
 
 ---

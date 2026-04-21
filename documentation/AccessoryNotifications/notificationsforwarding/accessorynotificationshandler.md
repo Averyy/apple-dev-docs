@@ -15,10 +15,6 @@ A protocol that defines methods for handling notification lifecycle events in yo
 protocol AccessoryNotificationsHandler : Sendable
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Overview
 
 Implement this protocol in your app’s [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension to receive, update, and remove notifications forwarded to your accessory.
@@ -28,18 +24,20 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 ### Managing the session lifecycle
 - [func activate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/activate(for:).md)
   Establishes a notification session for communication between the extension and the system.
+### Receiving notifications
+- [func addNotification(AccessoryNotification, alertingContext: AlertingContext) async throws -> Bool](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md)
+  Provides a new notification for display on your accessory.
+### Updating notifications
+- [func updateNotification(AccessoryNotification)](notificationsforwarding/accessorynotificationshandler/updatenotification(_:).md)
+  Updates a notification with new content.
 ### Removing notifications
+- [func removeNotification(identifier: AccessoryNotification.Identifier)](notificationsforwarding/accessorynotificationshandler/removenotification(identifier:).md)
+  Removes a previously-posted notification from your accessory.
 - [func removeAllNotifications()](notificationsforwarding/accessorynotificationshandler/removeallnotifications.md)
   Removes all notifications from the user interface.
-### Instance Methods
-- [func addNotification(AccessoryNotification, alertingContext: AlertingContext) async throws -> Bool](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md)
-  Called when a notification has been added.
+### Receiving accessory messages
 - [func messageHandler(TransportMessage)](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md)
-  Called when a message from the paired accessory has been received and decrypted.
-- [func removeNotification(identifier: AccessoryNotification.Identifier)](notificationsforwarding/accessorynotificationshandler/removenotification(identifier:).md)
-  Called to indicate that a notification that has been posted should be removed.
-- [func updateNotification(AccessoryNotification)](notificationsforwarding/accessorynotificationshandler/updatenotification(_:).md)
-  Called when a notification has been updated. Accessories should not alert for a updated notification.
+  Handles decrypted messages received from the paired accessory.
 
 ## Relationships
 
@@ -52,7 +50,7 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between your extension and the system.
+  A session object that enables communication between the system and your extension.
 
 
 ---

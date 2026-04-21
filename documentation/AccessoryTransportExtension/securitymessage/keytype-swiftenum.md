@@ -8,6 +8,7 @@ Identifies the type of key carried by a [`SecurityMessage`](securitymessage.md).
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -33,6 +34,13 @@ enum KeyType
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let key: Data](securitymessage/key.md)
+  The key data carried by this message.
+- [let keyType: SecurityMessage.KeyType](securitymessage/keytype-swift.property.md)
+  The type of key carried by this message.
 
 
 ---

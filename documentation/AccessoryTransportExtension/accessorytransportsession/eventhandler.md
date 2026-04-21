@@ -8,6 +8,7 @@ A protocol that defines methods for handling transport session events.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -24,14 +25,14 @@ Implement this protocol to respond to data events and session invalidation in yo
 ### Handling data events
 - [func dataEventHandler(event: AccessoryTransportSession.DataEvent)](accessorytransportsession/eventhandler/dataeventhandler(event:).md)
   Handles events that address incoming data destined for the accessory.
+- [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](accessorytransportsession/eventhandler/messagereceived(_:completion:).md)
+  Handles incoming messages for transmission to the accessory.
 ### Handling the session life cycle
 - [func invalidationHandler(error: AccessoryTransportSession.Error?)](accessorytransportsession/eventhandler/invalidationhandler(error:).md)
   Handles session invalidation.
 ### Instance Methods
-- [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](accessorytransportsession/eventhandler/messagereceived(_:completion:).md)
-  Message received from the Data Provider. Completion should be called with the result of sending the message to the accessory.
 - [func sessionInvalidated(error: AccessoryTransportSession.Error?)](accessorytransportsession/eventhandler/sessioninvalidated(error:).md)
-  Session has been invalidated.
+  Handles session invalidation.
 
 ## See Also
 

@@ -8,6 +8,7 @@ The interface orientations supported by your app.
 **Availability**:
 - iOS 3.2+
 - iPadOS 3.2+
+- Mac Catalyst 3.2+
 
 
 

@@ -9,6 +9,7 @@ A string identifier for the feature.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 

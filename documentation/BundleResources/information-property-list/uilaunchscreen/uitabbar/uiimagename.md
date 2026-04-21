@@ -8,6 +8,7 @@ A custom image that replaces the tab bar during launch.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 
 

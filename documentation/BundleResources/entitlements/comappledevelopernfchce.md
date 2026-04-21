@@ -8,6 +8,7 @@ A Boolean value indicating whether your app can use the card session API.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 
 

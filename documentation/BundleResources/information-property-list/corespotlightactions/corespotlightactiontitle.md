@@ -8,6 +8,7 @@ The user-visible string that Spotlight displays as the title of the action.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - visionOS 1.0+
 
 

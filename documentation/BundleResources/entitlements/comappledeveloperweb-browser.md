@@ -8,6 +8,7 @@ An entitlement that indicates whether the app can act as the user’s default we
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 
 

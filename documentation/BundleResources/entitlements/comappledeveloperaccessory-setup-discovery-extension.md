@@ -8,6 +8,7 @@ An entitlement that lets an app extension discover and set up accessories.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 
 

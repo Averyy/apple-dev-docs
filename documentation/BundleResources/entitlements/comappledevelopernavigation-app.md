@@ -8,6 +8,7 @@ A Boolean value that indicates whether an app can be the default navigation app 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 
 

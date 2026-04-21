@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when a notification has been added.
+Provides a new notification for display on your accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,12 +18,16 @@ func addNotification(_ notification: AccessoryNotification, alertingContext: Ale
 
 #### Return Value
 
-`true` if the accessory alerted for the notification, `false` otherwise. If this method throws an error, the system assumes the accessory did not alert for the notification.
+`true` if the accessory alerted for the notification, `false` otherwise. If this method throws an error, the system assumes the accessory did not alert.
+
+#### Discussion
+
+Parse the notification details, select the information to display on your accessory, and convert it to data for transmission. Return `true` if your accessory successfully alerts for the notification.
 
 ## Parameters
 
-- `notification`: The notification that was added.
-- `alertingContext`: The context to use to evaluate whether a notification should alert or be delivered quietly.
+- `notification`: The notification to add.
+- `alertingContext`: Context for evaluating whether the notification can alert or be delivered quietly.
 
 
 ---

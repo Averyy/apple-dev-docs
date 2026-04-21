@@ -8,6 +8,7 @@ A protocol for an extension that transmits data to an accessory you develop.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -15,9 +16,15 @@ A protocol for an extension that transmits data to an accessory you develop.
 protocol AccessoryTransportAppExtension : AppExtension
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-transport-extension` to relay data to your accessory. The extension supports sharing Wi-Fi networks and forwarding iOS system notifications.
+
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-transport-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-transport-extension) entitlement to use this protocol.
 
 #### Wi Fi Network Sharing
 
@@ -85,7 +92,7 @@ class MyTransportEventHandler: AccessoryTransportSession.EventHandler {
 
 The system encrypts data using keys through your app’s [`AccessoryTransportSecurity`](accessorytransportsecurity.md) (ATS) extension and then delivers the encrypted data as `ciphertext` to your handler. Your extension transmits the encrypted data to the accessory, which decrypts the data using shared encryption keys.
 
-> **Note**: Call [`cancel(error:)`](accessorytransportsession/cancel(error:).md) on the session if your extension encounters an error that requires terminating the session.
+> **Note**:  Call [`cancel(error:)`](accessorytransportsession/cancel(error:).md) on the session if your extension encounters an error that requires terminating the session.
 
 ## Topics
 

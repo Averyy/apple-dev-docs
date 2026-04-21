@@ -8,6 +8,7 @@ The entitlement required for an executable to opt in to enhanced security protec
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
 

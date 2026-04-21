@@ -3,17 +3,22 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: property
 
-An identifier used to derive HPKE keys.
+An optional Bluetooth identifier that the system uses to derive HPKE keys.
 
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
 let identifier: String?
 ```
+
+#### Discussion
+
+The system provides this identifier when delivering [`SecurityMessage.KeyType.encapsulatedKey`](securitymessage/keytype-swift.enum/encapsulatedkey.md) to your extension. Forward it to your accessory for key derivation.
 
 
 ---

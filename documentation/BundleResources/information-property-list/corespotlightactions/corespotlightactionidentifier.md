@@ -8,6 +8,7 @@ A string an app defines to identify the action.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - visionOS 1.0+
 
 

@@ -15,10 +15,6 @@ Secondary text for the notification.
 let subtitle: String?
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Discussion
 
 This property contains text that supplements [`title`](accessorynotification/title.md).

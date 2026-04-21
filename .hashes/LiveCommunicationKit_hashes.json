@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-17T07:48:28.322240",
+    "last_updated": "2026-04-21T07:40:59.474708",
     "total_pages": 652,
-    "session_id": "2026-04-17T07:47:50.387552"
+    "session_id": "2026-04-21T07:40:29.588255"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/LiveCommunicationKit.json": {
       "hash": "9ad0b17cb26d8dffa77b9384c547b4be480a8e5b745fb221f90ebc73eb9164ff",
-      "last_checked": "2026-04-17T07:47:50.607259",
+      "last_checked": "2026-04-21T07:40:29.996102",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b62bd598c3089ce103650bd405a6d9e7\"",
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md"
     },
     "https://developer.apple.com/documentation/LiveCommunicationKit": {
       "hash": "9ad0b17cb26d8dffa77b9384c547b4be480a8e5b745fb221f90ebc73eb9164ff",
-      "last_checked": "2026-04-17T07:47:50.510087",
+      "last_checked": "2026-04-21T07:40:29.901775",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b62bd598c3089ce103650bd405a6d9e7\"",
       "file_path": "documentation/LiveCommunicationKit/LiveCommunicationKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/initiating-voip-conversations-with-livecommunicationkit.json": {
       "hash": "c54a495fd3964ee6a31463b54b19d42440f82b700c6f01abac43112a74d70050",
-      "last_checked": "2026-04-17T07:47:50.995746",
+      "last_checked": "2026-04-21T07:40:30.251944",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"9e97edf981836c65c8a5201e6bab3f7c\"",
       "file_path": "documentation/LiveCommunicationKit/initiating-voip-conversations-with-livecommunicationkit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/preparing-your-app-to-be-the-default-dialer-app.json": {
       "hash": "95a10400bba38717cf0e1c3b88949f1ae455837c88644863775a6e61a606479e",
-      "last_checked": "2026-04-17T07:47:51.111831",
+      "last_checked": "2026-04-21T07:40:30.431500",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7565671f2db89c459466be1c142a7fbe\"",
       "file_path": "documentation/LiveCommunicationKit/preparing-your-app-to-be-the-default-dialer-app.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager.json": {
       "hash": "3b48770407eff57f2508beb9b756b9d15b8c66b9677fc385994dabbe54cfeb16",
-      "last_checked": "2026-04-17T07:47:52.010194",
+      "last_checked": "2026-04-21T07:40:31.328128",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b29ead67615e4290e662663812a25db5\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate.json": {
       "hash": "34419091a7475b82384043f7e93806c32ce8ae0affb54a42e160637e82f176f2",
-      "last_checked": "2026-04-17T07:47:52.122355",
+      "last_checked": "2026-04-21T07:40:31.658682",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"712363d6c8fcac7f4660df55b0e8087f\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation.json": {
       "hash": "93a21cba1f3e554bd224104858649a4c5147c38f3e5cf9171f6ebcea4d7cb1dd",
-      "last_checked": "2026-04-17T07:47:52.588059",
+      "last_checked": "2026-04-21T07:40:31.978601",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b20272cf8670ee06d57673b3f1fcd5bc\"",
       "file_path": "documentation/LiveCommunicationKit/conversation.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction.json": {
       "hash": "37578846fa4e892a591652ee9954bafe508b3e56b7354d4173e8d9e543f41a58",
-      "last_checked": "2026-04-17T07:47:52.725989",
+      "last_checked": "2026-04-21T07:40:32.134844",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"4bbae4e4037e7578a0fd71419688941a\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/endconversationaction.json": {
       "hash": "fbd0c859b1e75a2b131849a5df46ceff69d2f554b26c42e2f1a56e5da5ddb437",
-      "last_checked": "2026-04-17T07:47:52.849208",
+      "last_checked": "2026-04-21T07:40:32.271640",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7defa68ab95d53eab9576a187ba22eab\"",
       "file_path": "documentation/LiveCommunicationKit/endconversationaction.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/joinconversationaction.json": {
       "hash": "b1e0e8180a245a12ae6ce494a3eeb1b02b546233ea79b240a58c708e60fc071c",
-      "last_checked": "2026-04-17T07:47:52.983403",
+      "last_checked": "2026-04-21T07:40:32.394936",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"afc5f2fae9cb9ca6de24c3db9d04d57d\"",
       "file_path": "documentation/LiveCommunicationKit/joinconversationaction.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/mergeconversationaction.json": {
       "hash": "3f8fb21dd5f6806b881b2b31983a5237e73f9790309048020fad6aa0400eea0b",
-      "last_checked": "2026-04-17T07:47:53.159260",
+      "last_checked": "2026-04-21T07:40:32.694371",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cdac6faf96aca21758398c02f4a9416d\"",
       "file_path": "documentation/LiveCommunicationKit/mergeconversationaction.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/muteconversationaction.json": {
       "hash": "1bb838445648f34516f98d8f9b0d8a3c1a53926d54abe210e567ce202d2c8d7f",
-      "last_checked": "2026-04-17T07:47:53.265966",
+      "last_checked": "2026-04-21T07:40:32.823196",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a09724fca216c21bca00c9c6fd242ca7\"",
       "file_path": "documentation/LiveCommunicationKit/muteconversationaction.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/pauseconversationaction.json": {
       "hash": "05c86145c9e1cc766744ae2b5152730d20aa1d662edbb85544eae6cfe8d32465",
-      "last_checked": "2026-04-17T07:47:53.411521",
+      "last_checked": "2026-04-21T07:40:32.988347",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6584ed8114342ec70e3904f65b5331f7\"",
       "file_path": "documentation/LiveCommunicationKit/pauseconversationaction.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction.json": {
       "hash": "d26efa811d1a510445c04b94580ee8f649092ac7d61dfef80db02df5ebf4635a",
-      "last_checked": "2026-04-17T07:47:53.528076",
+      "last_checked": "2026-04-21T07:40:33.150581",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"47e4093630e149d538c5433adbf1d5da\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction.json": {
       "hash": "b571d50dbd9a984edcb677111f523383fdbf891999bf1c53b0262d296b1364e2",
-      "last_checked": "2026-04-17T07:47:53.810285",
+      "last_checked": "2026-04-21T07:40:33.323247",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"544c4cbe36fd1c485785581faf3c4bbf\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startconversationaction.json": {
       "hash": "4f3e8d240823e78b74b2a95889fd68305bc26805494e89d3628ca04dacea2046",
-      "last_checked": "2026-04-17T07:47:53.919925",
+      "last_checked": "2026-04-21T07:40:33.533033",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2e1bfa4b1bcc10fc6f5ff7ef3115d9d6\"",
       "file_path": "documentation/LiveCommunicationKit/startconversationaction.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/unmergeconversationaction.json": {
       "hash": "53729fd2151b22a9feaa989c5a41219107b24219d6870c65fb0f32bc2413d46e",
-      "last_checked": "2026-04-17T07:47:54.099368",
+      "last_checked": "2026-04-21T07:40:33.667241",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"da8c5379718fc188615b2a0f5a749b4d\"",
       "file_path": "documentation/LiveCommunicationKit/unmergeconversationaction.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle.json": {
       "hash": "48e7eae566e2db7e2727f0cfbca524544f83dcf26e4e3e15e12d46232c2b1803",
-      "last_checked": "2026-04-17T07:47:51.851264",
+      "last_checked": "2026-04-21T07:40:31.158884",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"92814e757dee060a3c017b8c0d0787c1\"",
       "file_path": "documentation/LiveCommunicationKit/handle.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager.json": {
       "hash": "3488d45c70f65ea53cde826d603fa7fc6dcb1b46404de18dc61af9640db74737",
-      "last_checked": "2026-04-17T07:47:52.296812",
+      "last_checked": "2026-04-21T07:40:31.858076",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b8124d036c39811c1f810219981c09a8\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/init(configuration:).json": {
       "hash": "4f225e17922926ff79cfa20c7d19ff387ac4cf0605616ac04bedba1ff22d933c",
-      "last_checked": "2026-04-17T07:47:56.375534",
+      "last_checked": "2026-04-21T07:40:36.062716",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"3640066459d773506fe0d8a4f0f4a6b0\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/init-configuration.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.property.json": {
       "hash": "4004518a381be9d55a1fa25fc2f037196a6cf3d08c0d2ef003b43ca6e76b3292",
-      "last_checked": "2026-04-17T07:47:56.485814",
+      "last_checked": "2026-04-21T07:40:36.243989",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"4c49fa65ba923c49d8d98e4d2620540d\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swiftproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct.json": {
       "hash": "ab535efa711120705c37d073d7e515a49130a57090a0e005c1be7c2672c32081",
-      "last_checked": "2026-04-17T07:47:56.643548",
+      "last_checked": "2026-04-21T07:40:36.367439",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8bfc752d99565adcf7257783cf4444aa\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swiftstruct.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/conversations.json": {
       "hash": "4ae64ec09b66a972e5a568c88677e7c8631168e265265425ca6dc3c456f99c37",
-      "last_checked": "2026-04-17T07:47:56.808168",
+      "last_checked": "2026-04-21T07:40:36.547573",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"101f5a338f100a6de1aef7ad86b8b984\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/conversations.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/pendingactions.json": {
       "hash": "d19ea05d7ef14ad34415ebf38fe3fa5f37bf567d008b17f2612e21c07b593454",
-      "last_checked": "2026-04-17T07:47:56.956866",
+      "last_checked": "2026-04-21T07:40:36.770200",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"00f3b61df0bea4df4c54d0412e623712\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/pendingactions.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/delegate.json": {
       "hash": "5e42773718441909af16990f86fa950ec513326ad57d5e88ffeb20a795ed1fe5",
-      "last_checked": "2026-04-17T07:47:57.078696",
+      "last_checked": "2026-04-21T07:40:36.937157",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0b851674bd84e675b3ff779426c48986\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/delegate.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/perform(_:).json": {
       "hash": "12427630a92e9d3356bfb6d0cf49936f112fbe866749e678eb5af241ca9aa9ac",
-      "last_checked": "2026-04-17T07:47:57.268981",
+      "last_checked": "2026-04-21T07:40:37.047086",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"1eca5388c3997611dd9146e4bbe64373\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/perform.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/invalidate().json": {
       "hash": "29ac4606be0b6bf17daeb49dc54d0cb02b5dbc478457e1ea4561cc12c8081c1b",
-      "last_checked": "2026-04-17T07:47:57.393529",
+      "last_checked": "2026-04-21T07:40:37.201186",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7384b81206fac8cdb8220627853e42dd\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/invalidate.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/pendingconversationactions(of:for:).json": {
       "hash": "9323e3deba204e1146465f3ea697158c1a87d480f8271309d5e340719a02c525",
-      "last_checked": "2026-04-17T07:47:57.537854",
+      "last_checked": "2026-04-21T07:40:37.384599",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"fc4662fc226db462775ab331cf44d16d\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/pendingconversationactions-offor.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/reportconversationevent(_:for:).json": {
       "hash": "c7250c7b7f5f37027b608d1ac4dea85f8576c3a89243ff22b0ee534db975aa85",
-      "last_checked": "2026-04-17T07:47:57.667838",
+      "last_checked": "2026-04-21T07:40:37.520881",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"dc7893a9bbc040143c3b43e8321fc9bc\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/reportconversationevent-for.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/reportnewincomingconversation(uuid:update:).json": {
       "hash": "68e974c28d0b3aa069fc687d8b5be146ea4fee9fe8528502858ada34ccb66f4f",
-      "last_checked": "2026-04-17T07:47:57.772151",
+      "last_checked": "2026-04-21T07:40:37.834501",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2da72519d00b64b3f983a805d061aa23\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/reportnewincomingconversation-uuidupdate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/reportnewincomingvoippushpayload(_:).json": {
       "hash": "c71eccd19965a185fa356ee8b5c959e625bd39bce5fc093c2edfa287b6137584",
-      "last_checked": "2026-04-17T07:47:57.941467",
+      "last_checked": "2026-04-21T07:40:38.006879",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"595a3b1fa034f458dcf272fd3dafe0f0\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/reportnewincomingvoippushpayload.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanagerdidbegin(_:).json": {
       "hash": "12f0ea6beee2c382737b83ed7a1fafa0e30af588af9ede2872a286040f04837e",
-      "last_checked": "2026-04-17T07:47:58.086982",
+      "last_checked": "2026-04-21T07:40:38.181466",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"94bfe8e90d904901f1341c4d2c0896ef\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanagerdidbegin.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanagerdidreset(_:).json": {
       "hash": "59f240364a3a2a3b217467ef1cba3f00e69f80aa53556662aae7ba71180b8092",
-      "last_checked": "2026-04-17T07:47:58.243029",
+      "last_checked": "2026-04-21T07:40:38.339648",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"acb5909c55522ab908b42281e06e15d8\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanagerdidreset.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanager(_:conversationchanged:).json": {
       "hash": "7bd1bd4b648a957b8281cd7ba32ed7c48aec99ebdbcf098be525324d4e8bd6eb",
-      "last_checked": "2026-04-17T07:47:58.347075",
+      "last_checked": "2026-04-21T07:40:38.508791",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b40cb672bc5b00b0f86f938f009ed1f7\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanager-conversationchanged.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanager(_:didactivate:).json": {
       "hash": "adcefb8cb1060faf45cc841ac8c06eb9fde330f4e561744520830225d6935341",
-      "last_checked": "2026-04-17T07:47:58.463814",
+      "last_checked": "2026-04-21T07:40:38.641070",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"db4cb0f5b801b27a81503e141f9b7be3\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanager-didactivate.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanager(_:diddeactivate:).json": {
       "hash": "2756c11e73b238fe79e89b822034d02c354df011f11304095f362ca9c9bf11fc",
-      "last_checked": "2026-04-17T07:47:58.656490",
+      "last_checked": "2026-04-21T07:40:38.831873",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cc7603a595324e12d8d0f0efada7116a\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanager-diddeactivate.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanager(_:perform:).json": {
       "hash": "fb00264fe0d8c9ff5ca5365bbbe15fb168c2f01a043d2712a4b9029673d3ff47",
-      "last_checked": "2026-04-17T07:47:58.748790",
+      "last_checked": "2026-04-21T07:40:38.951370",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"317328ae1fb44ddd27671c1da4927527\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanager-perform.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanagerdelegate/conversationmanager(_:timedoutperforming:).json": {
       "hash": "7aeb8f67cbe0d833e610e8949ab7e6f8c2f43c51d03e535d65d271df6ab255de",
-      "last_checked": "2026-04-17T07:47:58.881726",
+      "last_checked": "2026-04-21T07:40:39.106054",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7dc5f0babb82ba6e7033711770fe9248\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanagerdelegate/conversationmanager-timedoutperforming.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/localmember.json": {
       "hash": "d011319fa956d6e70fbe0430ea4388af3741bc65304f7f50bb3f6710201148d8",
-      "last_checked": "2026-04-17T07:47:59.956525",
+      "last_checked": "2026-04-21T07:40:40.134937",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2598eda91025df70a093ee502e5e3cbf\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/localmember.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.property.json": {
       "hash": "5f60360617e969ffca4dcaabb3cba4b5335d92158f0f8907cdbeb53acb0a7c8c",
-      "last_checked": "2026-04-17T07:48:00.167132",
+      "last_checked": "2026-04-21T07:40:40.264699",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a11c2076f9e1bf122255846482373cd3\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swiftproperty.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum.json": {
       "hash": "57d25917b91b4ab4ee0ee9ab20b26bfebdcc43d2512fad76effbeb441770501c",
-      "last_checked": "2026-04-17T07:48:00.329322",
+      "last_checked": "2026-04-21T07:40:40.571839",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"51bfd13814ca56a01ab51eddf602ece6\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swiftenum.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/uuid.json": {
       "hash": "a3a14a284487ab1eaf5d85d042c03ee66ee8a8372d001c67ac5dd54037eab428",
-      "last_checked": "2026-04-17T07:48:00.455379",
+      "last_checked": "2026-04-21T07:40:40.782478",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"da0b3bd9957419051d19674ed27f91f5\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/uuid.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/event.json": {
       "hash": "c1fa11cd3055c746e6caa8a954afaa54ec995929bc23ce5bc444f395066e555d",
-      "last_checked": "2026-04-17T07:48:00.571279",
+      "last_checked": "2026-04-21T07:40:41.084066",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"51349fa998a5c3d7f7bd54a178294965\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/event.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason.json": {
       "hash": "6211d64b33083af9667658195a3c47e3d13abcdf59dc9fbf9471ed052a023790",
-      "last_checked": "2026-04-17T07:48:00.658974",
+      "last_checked": "2026-04-21T07:40:41.373895",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"813fa8b7f3411f89b54e2e0ffc8a7898\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update.json": {
       "hash": "8938d889487fd8034c36ebeab128bf11c27b99e6fda28c752545bd4c8361613e",
-      "last_checked": "2026-04-17T07:48:00.818850",
+      "last_checked": "2026-04-21T07:40:41.536904",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"133ab9b79f717e25dfb53382a0f3f88f\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities.json": {
       "hash": "dec23075faf15cffe64eaca4ef71d5d18a525fdb624a56b3529df6d69368bc73",
-      "last_checked": "2026-04-17T07:48:00.947219",
+      "last_checked": "2026-04-21T07:40:41.718700",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"887e3af42a4f69a54147e1bad7011583\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/init(conversationuuid:timeoutdate:).json": {
       "hash": "fee33af8894d42588eb4850af45b053c6b6477c1b995c719b82cd6ffe4f31cd5",
-      "last_checked": "2026-04-17T07:48:11.075866",
+      "last_checked": "2026-04-21T07:40:41.910009",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0b8fdfa1d21b1082655c31fef25e6a41\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/init-conversationuuidtimeoutdate.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/fulfill().json": {
       "hash": "ada766bb426a3d6c2d9fbf49324429ebb977d9b465eb934ca924e16409d141ec",
-      "last_checked": "2026-04-17T07:48:11.397169",
+      "last_checked": "2026-04-21T07:40:42.087022",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a1d5cb06751ee4f507d4916676fd8060\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/fulfill.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/fail().json": {
       "hash": "83b482bda5d7a447aea3bb3b0302f068a1f225a882e35988b738ec4c3adf11c2",
-      "last_checked": "2026-04-17T07:48:11.692458",
+      "last_checked": "2026-04-21T07:40:42.377918",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"e4200b661580e1360a0901939c347c17\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/fail.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/conversationuuid.json": {
       "hash": "0a6599600a06447f1ed4fd5d054192fb1bbdcaf56b763b2418a95e69cb437a2d",
-      "last_checked": "2026-04-17T07:48:11.827481",
+      "last_checked": "2026-04-21T07:40:42.555946",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"16171211c272c19ff2bb19afbed65622\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/conversationuuid.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/uuid.json": {
       "hash": "218eefffeafb24495fbd7894c2d31e2477b88d5b457b3637a56e093c6c50813d",
-      "last_checked": "2026-04-17T07:48:11.940544",
+      "last_checked": "2026-04-21T07:40:42.736125",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"bb73dea926e80b33e7ae669cc0d58560\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/uuid.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/timeoutdate.json": {
       "hash": "ec4739d8f34af210beb706342783722c4b4297202c4f9ee42fdc443b9812152f",
-      "last_checked": "2026-04-17T07:48:12.143152",
+      "last_checked": "2026-04-21T07:40:42.899898",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b99a3ed59613a41a11b206b4d6888f6e\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/timeoutdate.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.property.json": {
       "hash": "471cf692218f4bb2b6cfc9de2b2a875d9789cdb020522b56bb5bab20cbb7af4b",
-      "last_checked": "2026-04-17T07:48:12.304360",
+      "last_checked": "2026-04-21T07:40:43.076442",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"95826292b0482b885c580f20ba7c4d30\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swiftproperty.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.enum.json": {
       "hash": "7aa0ad56580d81d6238e375f3df46a54479c23fd7cb1782b542e64a8c026dbd6",
-      "last_checked": "2026-04-17T07:48:12.417062",
+      "last_checked": "2026-04-21T07:40:43.263221",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"25cce4e85432a62b6bd89ea234fc5e6b\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swiftenum.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/endconversationaction/init(conversationuuid:).json": {
       "hash": "8a80be02fbfac1c35fd99c99bdf3fba27a7fea59e2a42e82fab25c3bf85cc3a2",
-      "last_checked": "2026-04-17T07:48:12.702785",
+      "last_checked": "2026-04-21T07:40:43.563046",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"3e74829fcb37dd96227bb6bc95b2cde8\"",
       "file_path": "documentation/LiveCommunicationKit/endconversationaction/init-conversationuuid.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/endconversationaction/fulfill(dateended:).json": {
       "hash": "427614fd341807cb81e49cd933035bed775c59bd0182c9e5e8fbe4bbad38e8ef",
-      "last_checked": "2026-04-17T07:48:12.985126",
+      "last_checked": "2026-04-21T07:40:43.694257",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d266e9bed34a10d59e6a8f05cc68e36c\"",
       "file_path": "documentation/LiveCommunicationKit/endconversationaction/fulfill-dateended.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/joinconversationaction/init(conversationuuid:).json": {
       "hash": "8ecba2a8f60cf5a0b4306f4ef4bd76148a36c255d3c63c157f5ea47bfe4d3a8e",
-      "last_checked": "2026-04-17T07:48:13.157113",
+      "last_checked": "2026-04-21T07:40:43.863122",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"4cb62d8f069d926bcf16c45f74b7e6c1\"",
       "file_path": "documentation/LiveCommunicationKit/joinconversationaction/init-conversationuuid.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/joinconversationaction/fulfill(dateconnected:).json": {
       "hash": "310a7100af4f97ae0994a148f1dd85c538da7ec01258ef159165ee6a649f9021",
-      "last_checked": "2026-04-17T07:48:13.326524",
+      "last_checked": "2026-04-21T07:40:44.034711",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"1bc8940927abd061f09015373eb33f79\"",
       "file_path": "documentation/LiveCommunicationKit/joinconversationaction/fulfill-dateconnected.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/mergeconversationaction/init(conversationuuid:conversationuuidtomergewith:).json": {
       "hash": "2c18218ba2f655ce9f2deed9d78b7dd92bc0d8f78d5837b3c6a403a9efe80628",
-      "last_checked": "2026-04-17T07:48:13.615176",
+      "last_checked": "2026-04-21T07:40:44.385869",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"909f51358004a5458296d83ecf57ba34\"",
       "file_path": "documentation/LiveCommunicationKit/mergeconversationaction/init-conversationuuidconversationuuidtomergewith.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/mergeconversationaction/conversationuuidtomergewith.json": {
       "hash": "dc40632a2ed264402ab3fff48557890b2919ba49e5932bc5c957b484b26de826",
-      "last_checked": "2026-04-17T07:48:13.725106",
+      "last_checked": "2026-04-21T07:40:44.545300",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b8089502c751627bfc090cbfcdca3f8d\"",
       "file_path": "documentation/LiveCommunicationKit/mergeconversationaction/conversationuuidtomergewith.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/muteconversationaction/init(conversationuuid:ismuted:).json": {
       "hash": "f99fe3e08308f23df34899d0702f62168eed2155f66eb07af5fe6d1becc3b67b",
-      "last_checked": "2026-04-17T07:48:14.036931",
+      "last_checked": "2026-04-21T07:40:44.752412",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b312af28047ecb2b8aae52ffeff8fbf7\"",
       "file_path": "documentation/LiveCommunicationKit/muteconversationaction/init-conversationuuidismuted.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/muteconversationaction/ismuted.json": {
       "hash": "0297cebb13e58616e3a59e45fe16fc3668f007da8cd74dce299314c633e44039",
-      "last_checked": "2026-04-17T07:48:14.188690",
+      "last_checked": "2026-04-21T07:40:44.916731",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"403cc6b49f49d4a8295d7dc923db3670\"",
       "file_path": "documentation/LiveCommunicationKit/muteconversationaction/ismuted.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/pauseconversationaction/init(conversationuuid:ispaused:).json": {
       "hash": "7e6be0b19d499fe0f15f2f51143550bf993739fe0a9efac438a944696224bb7a",
-      "last_checked": "2026-04-17T07:48:14.365474",
+      "last_checked": "2026-04-21T07:40:45.112852",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b8bc05c5ddd0569075c12d5cc7eda6a8\"",
       "file_path": "documentation/LiveCommunicationKit/pauseconversationaction/init-conversationuuidispaused.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/pauseconversationaction/ispaused.json": {
       "hash": "8ad72d5ba700ae2b5ba7c0ea62735075c1923a3286b9c1c0210043b4a4cadbad",
-      "last_checked": "2026-04-17T07:48:14.671745",
+      "last_checked": "2026-04-21T07:40:45.308560",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2c1ef3f6c5a74f0cc7dd10e8ef9a0ee3\"",
       "file_path": "documentation/LiveCommunicationKit/pauseconversationaction/ispaused.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/init(conversationuuid:digits:tone:).json": {
       "hash": "e5ae2ef7cf94e598a5193c893543974ad203c4c2858e8ae9882dbedb96af1ae2",
-      "last_checked": "2026-04-17T07:48:14.851003",
+      "last_checked": "2026-04-21T07:40:45.480565",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"9bd6571fec5caf9c9cb36679273903bc\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/init-conversationuuiddigitstone.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/digits.json": {
       "hash": "2c27819f8a29d89079b1db1186c2dc4412952245274010e5e1bef9617f65fa17",
-      "last_checked": "2026-04-17T07:48:14.953452",
+      "last_checked": "2026-04-21T07:40:45.667139",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"bf0492bff71473f85d1e25f00f7de4e4\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/digits.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/tone-swift.property.json": {
       "hash": "96cbc4146453b8b284a3927f089afd7fd32ced6ee546af4ed24bbb2da373412b",
-      "last_checked": "2026-04-17T07:48:15.158259",
+      "last_checked": "2026-04-21T07:40:45.835099",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7a34b0ea3993536055dc96f497d39d4d\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/tone-swiftproperty.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/tone-swift.enum.json": {
       "hash": "170109a5266aaa01fc251fe2d57e6dd46c2d02f120b557540a981090bd80e0d5",
-      "last_checked": "2026-04-17T07:48:15.311427",
+      "last_checked": "2026-04-21T07:40:46.023208",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"23156bf8faa6e27257c1042aa7b3b9ed\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/tone-swiftenum.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/init(conversationid:istranslating:locallanguage:remotelanguage:).json": {
       "hash": "99d60d01368942ddb00a830bea5b9f57edaa3bd2496009fd979ce870573fb863",
-      "last_checked": "2026-04-17T07:48:15.477171",
+      "last_checked": "2026-04-21T07:40:46.191458",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0fda0aa6fc3e0938888abaf1eff3c35b\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/init-conversationidistranslatinglocallanguageremotelanguage.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/istranslating.json": {
       "hash": "a6e9997c10a248aeaf98e95fd45f67e7e98a38d5b5f83c9a1cf027e44891e59f",
-      "last_checked": "2026-04-17T07:48:15.606080",
+      "last_checked": "2026-04-21T07:40:46.393592",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cdcea9714c0b8c8b33f8b91509bc180a\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/istranslating.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/locallanguage.json": {
       "hash": "986cbd2eb3ad4f63f99000296c54401a875824f914e9222ff06c53b092bcdfc2",
-      "last_checked": "2026-04-17T07:48:15.771351",
+      "last_checked": "2026-04-21T07:40:46.576192",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2aba5eda6a1e381565a38bc12a13edf3\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/locallanguage.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/remotelanguage.json": {
       "hash": "ffe4df23ac4f456aff427fdd18b41f2adf1c3ec34a4f93f6e89219f6d2ac47be",
-      "last_checked": "2026-04-17T07:48:16.038407",
+      "last_checked": "2026-04-21T07:40:46.754350",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0eb61535bf06a22a75f299ef3e097e4c\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/remotelanguage.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/fulfill(using:).json": {
       "hash": "e816d04d87357be4371f0eb19600555ff29f8b0c1d7d8aab99fb446414d5abd0",
-      "last_checked": "2026-04-17T07:48:16.148992",
+      "last_checked": "2026-04-21T07:40:46.928370",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cf7900c8c1c3eb902dcc17473388f408\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/fulfill-using.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/translationengine.json": {
       "hash": "6534e70a3687597d3099031dc20a9888993d0e4bd7dd565743580dccfe79f75b",
-      "last_checked": "2026-04-17T07:48:16.341228",
+      "last_checked": "2026-04-21T07:40:47.093272",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"1ca38863de448a27805e8146605f79a7\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/translationengine.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startconversationaction/init(conversationuuid:handles:isvideo:).json": {
       "hash": "6d2e3668247b9c801be77bb875d41336d4f0bafd4bf4d2900fd4b87a5d729ae2",
-      "last_checked": "2026-04-17T07:48:16.548321",
+      "last_checked": "2026-04-21T07:40:47.264880",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"abbbed98b7d44b8ff005643a2bbfb61c\"",
       "file_path": "documentation/LiveCommunicationKit/startconversationaction/init-conversationuuidhandlesisvideo.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startconversationaction/handles.json": {
       "hash": "f229807c2940c89a1f6531aa7749d598d1faad7e99a70bf0dea6e98faaf42164",
-      "last_checked": "2026-04-17T07:48:16.704336",
+      "last_checked": "2026-04-21T07:40:47.436802",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2b0c027bd40bbea10b20c09a4347c526\"",
       "file_path": "documentation/LiveCommunicationKit/startconversationaction/handles.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startconversationaction/isvideo.json": {
       "hash": "75ae50a7d00d2e3eeb78d06a68a4bea50e6d7968165f393207478c927f18ffa0",
-      "last_checked": "2026-04-17T07:48:16.872044",
+      "last_checked": "2026-04-21T07:40:47.613639",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7a7cfa473a1ab49adc7462b91a5fe77e\"",
       "file_path": "documentation/LiveCommunicationKit/startconversationaction/isvideo.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startconversationaction/fulfill(datestarted:).json": {
       "hash": "5384124ced459dc2b311e386e5f1f65db51c37e86d4aa0d849b04d5952a26565",
-      "last_checked": "2026-04-17T07:48:17.031865",
+      "last_checked": "2026-04-21T07:40:47.784931",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"311f54cb126d8f22ff7ab19c493d06af\"",
       "file_path": "documentation/LiveCommunicationKit/startconversationaction/fulfill-datestarted.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/unmergeconversationaction/init(conversationuuid:).json": {
       "hash": "9199f59d02311f8ff9143c4e60873d3f022414d95c6248fedfe4c065ee129461",
-      "last_checked": "2026-04-17T07:48:17.150777",
+      "last_checked": "2026-04-21T07:40:48.131368",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"9eec5dc5189f73d727775087f13c353a\"",
       "file_path": "documentation/LiveCommunicationKit/unmergeconversationaction/init-conversationuuid.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/init(type:value:displayname:).json": {
       "hash": "5c57676fd5fabee452bd634777f84c27d8cab1a25b3d4220269ba635bf5b6e26",
-      "last_checked": "2026-04-17T07:47:55.486077",
+      "last_checked": "2026-04-21T07:40:35.316460",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"75a8d3a9f8864c33f0247fda1dc8c0fb\"",
       "file_path": "documentation/LiveCommunicationKit/handle/init-typevaluedisplayname.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/type.json": {
       "hash": "8b452173e16e06d7dae2a9a2072bedc262f7b87cffaa199590fb3e0897b12e17",
-      "last_checked": "2026-04-17T07:47:55.661491",
+      "last_checked": "2026-04-21T07:40:35.490272",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"485a7943d43584550274839ecfd34b19\"",
       "file_path": "documentation/LiveCommunicationKit/handle/type.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/kind.json": {
       "hash": "7f970c874a78a6ecc56116f253c7c9b07587b28b9562d4d674e84279e2edc1df",
-      "last_checked": "2026-04-17T07:47:55.835765",
+      "last_checked": "2026-04-21T07:40:35.663635",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a746c56e2d4916da8e2aa8902b1e0fb7\"",
       "file_path": "documentation/LiveCommunicationKit/handle/kind.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/displayname.json": {
       "hash": "e81d2d4b293a28abe162837a1e5e09d71b097b7bf17a2e869f02f0ae4b722c3c",
-      "last_checked": "2026-04-17T07:47:55.947177",
+      "last_checked": "2026-04-21T07:40:35.792898",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"236d883c6417bfb078e7e0af1c29bea0\"",
       "file_path": "documentation/LiveCommunicationKit/handle/displayname.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/value.json": {
       "hash": "c755b0518da75d34d998bc7b98f98753af40902c3eee9e87774a59e59559d2c3",
-      "last_checked": "2026-04-17T07:47:56.108623",
+      "last_checked": "2026-04-21T07:40:35.946387",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"19b95ce055671fb6d4b85236fa3c7f7b\"",
       "file_path": "documentation/LiveCommunicationKit/handle/value.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation.json": {
       "hash": "4af77c1dff91e33a51741695db3c1abc57502bee4e91b5c4a17188263e809ba8",
-      "last_checked": "2026-04-17T07:47:59.639371",
+      "last_checked": "2026-04-21T07:40:39.845408",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"543c104aac4235f06a055620e0bc3b8e\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/init(ringtonename:icontemplateimagedata:maximumconversationgroups:maximumconversationsperconversationgroup:includesconversationinrecents:supportsvideo:supportedhandletypes:).json": {
       "hash": "7bae72f65366b73b3ff4a056774280de190ce6f44d025f10e33d73ea5d624121",
-      "last_checked": "2026-04-17T07:48:17.789297",
+      "last_checked": "2026-04-21T07:40:48.924975",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"4953cf172cd602b7461a956edba2b78c\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/init-ringtonenameicontemplateimagedatamaximumconversationgroupsmaximumconversationsperconversationgroupincludesconversationinrecentssupportsvideosupportedhandletypes.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/init(ringtonename:icontemplateimagedata:maximumconversationgroups:maximumconversationsperconversationgroup:includesconversationinrecents:supportsvideo:supportedhandletypes:supportsaudiotranslation:).json": {
       "hash": "4cba466b983996a15cd3b10be0490e0e82ec060fa38c3f346cef1562be1ba848",
-      "last_checked": "2026-04-17T07:48:17.942025",
+      "last_checked": "2026-04-21T07:40:49.039253",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"dc15935e144f3848a11f5e04a93a106e\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/init-ringtonenameicontemplateimagedatamaximumconversationgroupsmaximumconversationsperconversationgroupincludesconversationinrecentssupportsvideosupportedhandletypessupportsaudiotranslation.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/icontemplateimagedata.json": {
       "hash": "a25a3630fa00415a4fdd9ebb91f642bfb31f38bc0b5540ce14bb793f8ff5959f",
-      "last_checked": "2026-04-17T07:48:18.053604",
+      "last_checked": "2026-04-21T07:40:49.221648",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2d00cdffd641c7428cd665bfad200df8\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/icontemplateimagedata.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/includesconversationinrecents.json": {
       "hash": "9fbd70012d04b27dcf7cd009ff31c37ba76da56ff40cb5a0ebf50eab0a3b436a",
-      "last_checked": "2026-04-17T07:48:18.237334",
+      "last_checked": "2026-04-21T07:40:49.351809",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"ab9a521e2db90f43f388828868edf151\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/includesconversationinrecents.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/maximumconversationgroups.json": {
       "hash": "791e6041ddfa0dde15d503421cc3ab96c67e2fd8f2bb803998a1ed5a09f4035b",
-      "last_checked": "2026-04-17T07:48:18.384420",
+      "last_checked": "2026-04-21T07:40:49.512276",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7e57ad875f0e169c3d076f1aa02981d2\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/maximumconversationgroups.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/maximumconversationsperconversationgroup.json": {
       "hash": "88e068dbc427f6f15f1eeb1324bbd59d74bf21f906a506b86f93187488e5c7a1",
-      "last_checked": "2026-04-17T07:48:18.485201",
+      "last_checked": "2026-04-21T07:40:49.683686",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"650ce58720803b3872c42c8031763aa3\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/maximumconversationsperconversationgroup.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/ringtonename.json": {
       "hash": "a05158f5692432fd7793cfbd2e162da0ee7588aeb73bae3738a2371a70e9a92c",
-      "last_checked": "2026-04-17T07:48:18.673617",
+      "last_checked": "2026-04-21T07:40:49.858694",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"df629e4d49bcf49144fe4fcd75c9549a\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/ringtonename.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/supportedhandletypes.json": {
       "hash": "e2438b552bd9b0be48b29add626d197cbc086928ada04bdb7305502fea9c07d9",
-      "last_checked": "2026-04-17T07:48:18.777897",
+      "last_checked": "2026-04-21T07:40:50.025143",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a2bf8cd09de36bb1c01aeefd6af13446\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/supportedhandletypes.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/supportsaudiotranslation.json": {
       "hash": "b63b57fe6375e12d39036ea0bfa49aadc453b985738657feb72e600c05863283",
-      "last_checked": "2026-04-17T07:48:18.953849",
+      "last_checked": "2026-04-21T07:40:50.200790",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"5519b8b6237acdf7e73eff04fae263ca\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/supportsaudiotranslation.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationmanager/configuration-swift.struct/supportsvideo.json": {
       "hash": "cf26450d67ca1fc488d57bc5867cdcd6936ed290033d2200a6373fecd16316dc",
-      "last_checked": "2026-04-17T07:48:19.108987",
+      "last_checked": "2026-04-21T07:40:50.367218",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"03c9561e57072bf4ce6848a08bfffacf\"",
       "file_path": "documentation/LiveCommunicationKit/conversationmanager/configuration-swift.struct/supportsvideo.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/idle.json": {
       "hash": "cb6e1d709fa31c4dd01bb38766ed6fce79699d9e7fea7212a3e2163176ae37fd",
-      "last_checked": "2026-04-17T07:48:21.861467",
+      "last_checked": "2026-04-21T07:40:52.495855",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a16a56b8896d63766edc98f41a1ceb9c\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/idle.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/joined.json": {
       "hash": "8f1f5fad22e5459828bcf41459261207608afaf54025118fb7f1e2f210a2abfe",
-      "last_checked": "2026-04-17T07:48:22.143207",
+      "last_checked": "2026-04-21T07:40:52.668007",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"95f7986db95d455b344bb1ac70f451da\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/joined.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/joining.json": {
       "hash": "4f0b139c573e6797997cf8154feeaa6d128689df6f9d511016d82b568fbe2377",
-      "last_checked": "2026-04-17T07:48:22.295687",
+      "last_checked": "2026-04-21T07:40:52.831071",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b1f533b1bbb792560e72a16ae97b7e71\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/joining.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/leaving.json": {
       "hash": "fb0caba277875a6d6ea1db64ad5f8c8ac9a20a91f2d0aa95e82e0dcf88a06757",
-      "last_checked": "2026-04-17T07:48:22.459290",
+      "last_checked": "2026-04-21T07:40:52.960241",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8746d17d9edcb57143ce3aa65ca68c06\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/leaving.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/left.json": {
       "hash": "387fd690fccff921ee41cea84207c3fc18665a50130a0992846415ffce040e21",
-      "last_checked": "2026-04-17T07:48:22.629107",
+      "last_checked": "2026-04-21T07:40:53.082594",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"43dbc3a8e8cc0b2c17e075e00caeb407\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/left.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/state-swift.enum/paused.json": {
       "hash": "a47b54ebc0462041fcc00a759d7fb158944e23e097cabc42c0bf52be795d336d",
-      "last_checked": "2026-04-17T07:48:22.791495",
+      "last_checked": "2026-04-21T07:40:53.293503",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d122d6b55aed91fbc6e3489402f76552\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/state-swift.enum/paused.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/event/conversationconnected(_:).json": {
       "hash": "ff652b9619d7e0b879af1af66e87678986d04730da357bd0aab546265f717a94",
-      "last_checked": "2026-04-17T07:48:22.969410",
+      "last_checked": "2026-04-21T07:40:53.478153",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"c273d13f1d6769eaa2988c339e4af9c2\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/event/conversationconnected.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/event/conversationended(_:_:).json": {
       "hash": "0ff41a3e95321a8aac42c5733646dae8d1a928ab27c18febb6151323d7b3443f",
-      "last_checked": "2026-04-17T07:48:23.140126",
+      "last_checked": "2026-04-21T07:40:53.650900",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d157f3924ef4f689996f38ef8facafab\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/event/conversationended.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/event/conversationstartedconnecting(_:).json": {
       "hash": "5c686e919a328f0885048083df16b2403317f0e2844bb4427e6fc5bf7a82ab35",
-      "last_checked": "2026-04-17T07:48:23.302972",
+      "last_checked": "2026-04-21T07:40:53.819439",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0900294d2e631e408789314c7ef0bb1a\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/event/conversationstartedconnecting.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/event/conversationupdated(_:).json": {
       "hash": "3870631c0deaf274042bdac64bee15e2f736c3d21644d0b39cba948415b34d9b",
-      "last_checked": "2026-04-17T07:48:23.474270",
+      "last_checked": "2026-04-21T07:40:54.008254",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6c63c68bc645e24698cc41078d2203de\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/event/conversationupdated.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason/declinedelsewhere.json": {
       "hash": "9161e4cbeabc85b425dde0dbe1af2ea9db0f9cc9d77baecb84b817f9dda56f8a",
-      "last_checked": "2026-04-17T07:48:23.557444",
+      "last_checked": "2026-04-21T07:40:54.125722",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"92f2e39c94bb831ef720bc6e7c007cb5\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason/declinedelsewhere.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason/failed.json": {
       "hash": "72eb47cb7228f810fa910a80037913e15740bb6f220696645083a63e19f56b67",
-      "last_checked": "2026-04-17T07:48:23.707906",
+      "last_checked": "2026-04-21T07:40:54.316898",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"5e442c552024ca0df9881e6449eb155f\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason/failed.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason/joinedelsewhere.json": {
       "hash": "ab7e6776809926128436069310cb6a4d885b7235e4a1500e7f1e28ec7931d525",
-      "last_checked": "2026-04-17T07:48:23.824541",
+      "last_checked": "2026-04-21T07:40:54.509399",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"428668069b0b0c73d0d2abbe69339a7e\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason/joinedelsewhere.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason/remoteended.json": {
       "hash": "e426baa85a69fd66951bd836a36016ba69e412fe74e9432e381ef1a272c1a7a2",
-      "last_checked": "2026-04-17T07:48:24.000520",
+      "last_checked": "2026-04-21T07:40:54.680029",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d84ab1db6131eb0ccf49b2c8506ff19a\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason/remoteended.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/endedreason/unanswered.json": {
       "hash": "d8e5c1d530f6ee815360674cae621ade401b1fd36514404c4c2d402d0004e71d",
-      "last_checked": "2026-04-17T07:48:24.163341",
+      "last_checked": "2026-04-21T07:40:54.855272",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"9fb8438921697f2566496814b65cd78f\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/endedreason/unanswered.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update/init(localmember:members:activeremotemembers:capabilities:).json": {
       "hash": "e40d1cf5f4e5abafdf13fac532e7cd177dc4f30b4ca25cd60d0ed827acb2806e",
-      "last_checked": "2026-04-17T07:48:24.279565",
+      "last_checked": "2026-04-21T07:40:55.042311",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2709a2e1d7e0af1b3165af2bc5c779a9\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update/init-localmembermembersactiveremotememberscapabilities.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update/activeremotemembers.json": {
       "hash": "12832293de7a7c049609d550d76e3168fcdabfaf541ab8c2a85a6d2d985fc4f6",
-      "last_checked": "2026-04-17T07:48:24.439078",
+      "last_checked": "2026-04-21T07:40:55.162994",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"283584515ac1e45006b1b0d77434b5c1\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update/activeremotemembers.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update/capabilities.json": {
       "hash": "1b0e5b2d82ef2aa9bd19417f00dedbcc93fcbd57148abd58586cca6fc201eecb",
-      "last_checked": "2026-04-17T07:48:24.595028",
+      "last_checked": "2026-04-21T07:40:55.337293",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"24dee170abf2744f42a8cf4a3c513575\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update/capabilities.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update/localmember.json": {
       "hash": "8a55972be6d45b997235d93027c376abbb3d6d68ca245279a9d6bc2a5721c5a9",
-      "last_checked": "2026-04-17T07:48:24.751226",
+      "last_checked": "2026-04-21T07:40:55.512063",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6de2ac162cb4471ff9646e0ab6c559b4\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update/localmember.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/update/members.json": {
       "hash": "bbabcd9c584cbf6e1f6c07c62ebddd9e242db5b7df6db4f28678f2429cd15f08",
-      "last_checked": "2026-04-17T07:48:24.857075",
+      "last_checked": "2026-04-21T07:40:55.678305",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"67a80d12e884b0b9431f6f665f740e9d\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/update/members.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities/merging.json": {
       "hash": "67dd8f7cc5d1897a963829bcf957abdf63b979ff46634e0419e1136907d61630",
-      "last_checked": "2026-04-17T07:48:25.023115",
+      "last_checked": "2026-04-21T07:40:55.854526",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a4f8fb49e588f2792b71890d93ab28de\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities/merging.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities/pausing.json": {
       "hash": "0850589a511488ca291230d0dac6250e47a411081ef89c40502e90b269780393",
-      "last_checked": "2026-04-17T07:48:25.177785",
+      "last_checked": "2026-04-21T07:40:56.028507",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"2607c331fa72707800d13979c4496ed8\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities/pausing.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities/playingtones.json": {
       "hash": "33d6a9252b7d2fe4a4c2b93f04ca547f012d7283238e8665d3b721dbed384b25",
-      "last_checked": "2026-04-17T07:48:25.361112",
+      "last_checked": "2026-04-21T07:40:56.207122",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"93ae4368dbe1a73446bc37458e5c3cbf\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities/playingtones.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities/unmerging.json": {
       "hash": "49005dac7f01492f92d684b4f48d58b2e25d70a6c48cd26fcd59e93300b9103c",
-      "last_checked": "2026-04-17T07:48:25.623377",
+      "last_checked": "2026-04-21T07:40:56.431161",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8fe1a7502dbc315c0a99c07ea42f3cbe\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities/unmerging.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversation/capabilities/video.json": {
       "hash": "71d170e9aff2b1fbcf0b34bcefe2f1a415a77db9ef80332d16bd52f161a41cd0",
-      "last_checked": "2026-04-17T07:48:25.705766",
+      "last_checked": "2026-04-21T07:40:56.559068",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a6305915098c96503679a950583a5a6b\"",
       "file_path": "documentation/LiveCommunicationKit/conversation/capabilities/video.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.enum/complete.json": {
       "hash": "51f1f7cb02accdab7e12ed94c5ae91639f5cfe6265ccce8e6aa207f07e3d1d33",
-      "last_checked": "2026-04-17T07:48:25.935219",
+      "last_checked": "2026-04-21T07:40:56.735347",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"aab35ebd5c9c4d575fa95f7769b0761e\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swift.enum/complete.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.enum/failed(reason:).json": {
       "hash": "531c2add2edf5ffcd1f280ac34f5cb679f3b1fd16fcd5954e0a30fb695de8da4",
-      "last_checked": "2026-04-17T07:48:26.105000",
+      "last_checked": "2026-04-21T07:40:56.925995",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"df34447913a630f1c4c2d81f6cfe4a35\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swift.enum/failed-reason.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.enum/idle.json": {
       "hash": "aada96db5aade27dabbea030e373839a57c96f8381e6a8b2738e0a79b31422b1",
-      "last_checked": "2026-04-17T07:48:26.268032",
+      "last_checked": "2026-04-21T07:40:57.105367",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d3d7e7c5f656e4fad0c1b11a45d1efcd\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swift.enum/idle.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationaction/state-swift.enum/running.json": {
       "hash": "1161c83b2db371c0f48c0b19e3f54f8c398a3c479348737b2542cb8db41f1662",
-      "last_checked": "2026-04-17T07:48:26.427684",
+      "last_checked": "2026-04-21T07:40:57.283026",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"b94e20fe01195a5d945534dc3717bea7\"",
       "file_path": "documentation/LiveCommunicationKit/conversationaction/state-swift.enum/running.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/tone-swift.enum/hardpause.json": {
       "hash": "be84ae11cd04a32b4fba9c2bda6c4fcb107db981eaca34b466d765a248e4d972",
-      "last_checked": "2026-04-17T07:48:26.573493",
+      "last_checked": "2026-04-21T07:40:57.454533",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6ced79b7512c13e985692c112c9f58ca\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/tone-swift.enum/hardpause.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/tone-swift.enum/single.json": {
       "hash": "1429bd558acd6a4a3ea2549472241e06ea816e3087fd6e3281c93cb66b7c1c65",
-      "last_checked": "2026-04-17T07:48:26.738524",
+      "last_checked": "2026-04-21T07:40:57.614612",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"60ff562e196faa6a3f316caf68a95f07\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/tone-swift.enum/single.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/playtoneaction/tone-swift.enum/softpause.json": {
       "hash": "13f8de23a451a055c738dcb49753901e31e8cac07bf4f2c9c65501e949235526",
-      "last_checked": "2026-04-17T07:48:26.900339",
+      "last_checked": "2026-04-21T07:40:57.794493",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"84c4b50c842414a56a78b090688f49e8\"",
       "file_path": "documentation/LiveCommunicationKit/playtoneaction/tone-swift.enum/softpause.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/translationengine/default.json": {
       "hash": "fbb01f5fbb7abc6e216371af3514d224156f4264d3b1cf4eefdb87bd23f3d313",
-      "last_checked": "2026-04-17T07:48:27.065057",
+      "last_checked": "2026-04-21T07:40:57.996706",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8bfe4a4bcc4509572f3a3bcf9ede6ad4\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/translationengine/default.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/kind/emailaddress.json": {
       "hash": "6c3c4d1f1dfdce033beaea66236296de11b40c008886b6b037378cd304cf4e2a",
-      "last_checked": "2026-04-17T07:48:17.308845",
+      "last_checked": "2026-04-21T07:40:48.304089",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"21bb3a35d5f7cb067d97c5856df1b7c1\"",
       "file_path": "documentation/LiveCommunicationKit/handle/kind/emailaddress.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/kind/phonenumber.json": {
       "hash": "13d99d54ae00faa914b8dab2e50475f505a2c9f235d19da90ea01791066e6adf",
-      "last_checked": "2026-04-17T07:48:17.457224",
+      "last_checked": "2026-04-21T07:40:48.571934",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"56a9adf2a3e18bda7b5dafd26a89aa69\"",
       "file_path": "documentation/LiveCommunicationKit/handle/kind/phonenumber.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/handle/kind/generic.json": {
       "hash": "3d11f1e9f86be1b486551c10bd62e9c454fe45252f80022c8b1295dc2d90471b",
-      "last_checked": "2026-04-17T07:48:17.615003",
+      "last_checked": "2026-04-21T07:40:48.755220",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d09d79ea9a8734ebf62eea1c3020937c\"",
       "file_path": "documentation/LiveCommunicationKit/handle/kind/generic.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/date.json": {
       "hash": "74adc2f2ac766abd769c79e61042bf5601a34af7c856b84c0710ba2add88e8f8",
-      "last_checked": "2026-04-17T07:48:19.268932",
+      "last_checked": "2026-04-21T07:40:50.551432",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"0eba150107ec6e2236abf772ea4bddd6\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/date.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/direction-swift.property.json": {
       "hash": "724d43e92357cefa6da257a27133e3caad562ed11decec4ea8f951c56c3ee7bc",
-      "last_checked": "2026-04-17T07:48:19.428602",
+      "last_checked": "2026-04-21T07:40:50.732064",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"095693c5a427a85104a3fd2dfe3036ed\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/direction-swiftproperty.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/duration.json": {
       "hash": "9a4f5e65bead254e0c79355bb01456bbf21c8e3ab0e24ebd8420e75c20367552",
-      "last_checked": "2026-04-17T07:48:19.735426",
+      "last_checked": "2026-04-21T07:40:51.205608",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"d6e635806527190becef122304b48821\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/duration.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/handles.json": {
       "hash": "fc90b78ee8736504d4ffee8ca04497a6dbb0968fe365aa1d350c3dcc29380632",
-      "last_checked": "2026-04-17T07:48:19.849692",
+      "last_checked": "2026-04-21T07:40:51.387108",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"3f809aa9e90b6d50f77cfe61354d10d7\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/handles.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/isread.json": {
       "hash": "1008a9d1a3ae74cd65f0693cc4629e42deb84553e3e7ac35c31a62daa7058c81",
-      "last_checked": "2026-04-17T07:48:20.035502",
+      "last_checked": "2026-04-21T07:40:51.558159",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"18ff7fac03d6608b8bfb2b929041bbd6\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/isread.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/direction-swift.enum.json": {
       "hash": "b29f717073c36094fbe55fec5b25b034d53eff73def1ba95c2f193c4a36ba4e5",
-      "last_checked": "2026-04-17T07:48:19.590091",
+      "last_checked": "2026-04-21T07:40:50.905080",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"87f242b918cbc6c1ed5cd46addcd0151\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/direction-swiftenum.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/direction-swift.enum/incoming.json": {
       "hash": "c24d126a3da7bcdec1d754657ec5757133dfc7ddc418ce4936fb9ffa0cfddf04",
-      "last_checked": "2026-04-17T07:48:27.407019",
+      "last_checked": "2026-04-21T07:40:58.367501",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6379c06a2c74a70504048e02051f9380\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/direction-swift.enum/incoming.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/direction-swift.enum/outgoing.json": {
       "hash": "1c9fbcba46c9dc2b209f59f76603a3de55ab03a4d7c7c4adc61e266d1c680431",
-      "last_checked": "2026-04-17T07:48:27.586104",
+      "last_checked": "2026-04-21T07:40:58.585369",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"e0c8b1d21b8787b5f4df5f75e905b37f\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/direction-swift.enum/outgoing.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/telephonyconversationmanager.json": {
       "hash": "d5ccb66e15b1fca49af078e266491b14d69de8932f3422b6f70a36d89c98f60e",
-      "last_checked": "2026-04-17T07:47:51.300814",
+      "last_checked": "2026-04-21T07:40:30.725711",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"ae8669c4e2fc72a4b80e68b9f9874ee2\"",
       "file_path": "documentation/LiveCommunicationKit/telephonyconversationmanager.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/cellularservice.json": {
       "hash": "2cb6c1545faf5c3b3489a9fcea5a8f67770615de93514157013703c07a7c9a80",
-      "last_checked": "2026-04-17T07:47:51.563363",
+      "last_checked": "2026-04-21T07:40:30.995832",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cca933291dcc2f37673f2b49809d3f3b\"",
       "file_path": "documentation/LiveCommunicationKit/cellularservice.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startcellularconversationaction.json": {
       "hash": "55f9e2556fde805fc91f5351b0296d0fcdd42c56cd7835524a5df81652c2bda7",
-      "last_checked": "2026-04-17T07:47:51.437913",
+      "last_checked": "2026-04-21T07:40:30.859912",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6a2e5facef8a97fd129bace0c736316b\"",
       "file_path": "documentation/LiveCommunicationKit/startcellularconversationaction.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/telephonyconversationmanager/cellularservices.json": {
       "hash": "bfe81e65426f2db72ec6f79f4516593b20c4d9c15eb72a4b608a81d60b3231d4",
-      "last_checked": "2026-04-17T07:47:54.631944",
+      "last_checked": "2026-04-21T07:40:34.318270",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"3f605388fbaf562a7591b12a25b4b2d3\"",
       "file_path": "documentation/LiveCommunicationKit/telephonyconversationmanager/cellularservices.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/telephonyconversationmanager/startcellularconversation(_:).json": {
       "hash": "0c456dbe66f6d1b53593011d13d4b2a2f2dfd7843d198ddc860c22b3cf7f7b48",
-      "last_checked": "2026-04-17T07:47:54.200811",
+      "last_checked": "2026-04-21T07:40:33.968492",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"cb36e1cc742a5cd1abc221d1390818f9\"",
       "file_path": "documentation/LiveCommunicationKit/telephonyconversationmanager/startcellularconversation.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/cellularservice/label.json": {
       "hash": "4f6ed45923f839e62b10eb38c8c2ac194ac5409caafe9a7abccba34c90762980",
-      "last_checked": "2026-04-17T07:47:55.175995",
+      "last_checked": "2026-04-21T07:40:34.952009",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"a3c98defd007dfc563e927d7d3fcc47e\"",
       "file_path": "documentation/LiveCommunicationKit/cellularservice/label.md"
     },
@@ -4919,9 +4919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/telephonyconversationmanager/sharedinstance.json": {
       "hash": "005c8efff60573f95f75e1e7570fa0c383bf206f11165fa30e113ebde368d4be",
-      "last_checked": "2026-04-17T07:47:54.351873",
+      "last_checked": "2026-04-21T07:40:34.142769",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"84ec1da8921bc67232f53a495f588727\"",
       "file_path": "documentation/LiveCommunicationKit/telephonyconversationmanager/sharedinstance.md"
     },
@@ -4935,9 +4935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startcellularconversationaction/init(_:cellularservice:).json": {
       "hash": "508caf3eae3f8168deaa6261cecb56c51f82e8c367d42509921b9dea397a9c02",
-      "last_checked": "2026-04-17T07:47:54.778200",
+      "last_checked": "2026-04-21T07:40:34.614524",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"e9a1a57fb9a69b9c3c14de1ecab74ebf\"",
       "file_path": "documentation/LiveCommunicationKit/startcellularconversationaction/init-cellularservice.md"
     },
@@ -4951,9 +4951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/startcellularconversationaction/init(_:).json": {
       "hash": "7d951dc2847293c6734a0e50fd7d11e8a53646d1c0b4d8750caf07dfa022b436",
-      "last_checked": "2026-04-17T07:47:55.075077",
+      "last_checked": "2026-04-21T07:40:34.775909",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"9f0d10134a91c7e7b835b4717cc920c3\"",
       "file_path": "documentation/LiveCommunicationKit/startcellularconversationaction/init.md"
     },
@@ -4967,9 +4967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/cellularservice/id.json": {
       "hash": "a59fee52ecd7e04bd6f200ca781d7bf70bd49271baef305a86a42d83a0d403a2",
-      "last_checked": "2026-04-17T07:47:55.297990",
+      "last_checked": "2026-04-21T07:40:35.142536",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8e6d970abaa2eefe3ba33bdc8489aa50\"",
       "file_path": "documentation/LiveCommunicationKit/cellularservice/id.md"
     },
@@ -4983,9 +4983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/sharedinstance.json": {
       "hash": "09f824162bda9f4e56de2da80610d7081077a5e7b1b6f6ba55174a5574231a1b",
-      "last_checked": "2026-04-17T07:47:59.045952",
+      "last_checked": "2026-04-21T07:40:39.294404",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"7fea0f252bf7f7ad87533321700a7009\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/sharedinstance.md"
     },
@@ -4999,9 +4999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversations(matching:).json": {
       "hash": "705b1ceee2bcf836e8469b4f047a5fde8161a9901cda13f50de81a1f47efdfe1",
-      "last_checked": "2026-04-17T07:47:59.199188",
+      "last_checked": "2026-04-21T07:40:39.466395",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"fcb695fbd57103a7bb92ad45ac7f22a2\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversations-matching.md"
     },
@@ -5015,9 +5015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/markconversationasread(_:).json": {
       "hash": "a771c1ea2304f49be529b52583c507082c2b8085360aebbaee52070180b6ac8e",
-      "last_checked": "2026-04-17T07:47:59.368245",
+      "last_checked": "2026-04-21T07:40:39.584528",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"8546fe5e4906a5c9955b58a6bdea220f\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/markconversationasread.md"
     },
@@ -5031,9 +5031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/markconversationsasread(_:).json": {
       "hash": "f4cd031a0665b6d7f282c219b7ee470066e79d9ff32a1cc656f3b9489b8ef29c",
-      "last_checked": "2026-04-17T07:47:59.529851",
+      "last_checked": "2026-04-21T07:40:39.703085",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"71c99601ee96845ab7b66ad72688bb9b\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/markconversationsasread.md"
     },
@@ -5047,9 +5047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/conversationhistorydidupdate.json": {
       "hash": "b7da8a49601be057f4373dafbd6f26b8149a472ad9f98ab9c6fb5e694e8892d8",
-      "last_checked": "2026-04-17T07:47:59.787835",
+      "last_checked": "2026-04-21T07:40:40.011769",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"34a58547cf85a116667cb3f66c420818\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/conversationhistorydidupdate.md"
     },
@@ -5063,9 +5063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.property.json": {
       "hash": "9546fc4b0c1b6bc2dc633cbd18344f3d0eb28e79b6209e64c1798f753f64096b",
-      "last_checked": "2026-04-17T07:48:20.195310",
+      "last_checked": "2026-04-21T07:40:51.778232",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"ac04f793620228f90210bd900cd21f50\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swiftproperty.md"
     },
@@ -5079,9 +5079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum.json": {
       "hash": "db88f876a18fd933828ffa12ff95d87264eee1a4117971ff27e4336ac6b2e6f8",
-      "last_checked": "2026-04-17T07:48:21.365691",
+      "last_checked": "2026-04-21T07:40:51.962649",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"eb2793fb3cd9adcc19e5deb7c98d9821\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swiftenum.md"
     },
@@ -5095,9 +5095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/id.json": {
       "hash": "f36985d776affd79f7bb01c978439c38c36973ee1e816698f5bc5414d527ca37",
-      "last_checked": "2026-04-17T07:48:21.528612",
+      "last_checked": "2026-04-21T07:40:52.125897",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"6ba1e167eff5be15bb27a53412955d5f\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/id.md"
     },
@@ -5111,9 +5111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/conversationhistorydidupdate/init().json": {
       "hash": "68f02b3bc45578ad8d9af06fdc63e4a930aeb6fe0debf17dfc39914a35106348",
-      "last_checked": "2026-04-17T07:48:21.697014",
+      "last_checked": "2026-04-21T07:40:52.324580",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"4f49b51f90eac84293f35a4be6de3d8d\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/conversationhistorydidupdate/init.md"
     },
@@ -5127,9 +5127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/settranslatingaction/translationengine/custom.json": {
       "hash": "561dd4a36e9747a57e9beb8e137ee8ac45f85e7f1ad33748c8da4f05d48bd543",
-      "last_checked": "2026-04-17T07:48:27.246321",
+      "last_checked": "2026-04-21T07:40:58.162113",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"091f8f1e46b4e3313df36fb5cf336ca2\"",
       "file_path": "documentation/LiveCommunicationKit/settranslatingaction/translationengine/custom.md"
     },
@@ -5143,9 +5143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum/answeredelsewhere.json": {
       "hash": "b9b23c929e347fa8240782007f7c952edb8c60adb968c5a475131e00c6fab23d",
-      "last_checked": "2026-04-17T07:48:27.752002",
+      "last_checked": "2026-04-21T07:40:58.748850",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"f57cee8fc25119c09f2b185133d7ab5b\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swift.enum/answeredelsewhere.md"
     },
@@ -5159,9 +5159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum/cancelled.json": {
       "hash": "73ada1bb2b8307dd20ac29262f523f839cf24e13b85dc27c20c5c43b3fe063f4",
-      "last_checked": "2026-04-17T07:48:27.852926",
+      "last_checked": "2026-04-21T07:40:58.930265",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"ede8696d3667493b07babb683ea39b5b\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swift.enum/cancelled.md"
     },
@@ -5175,9 +5175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum/connected.json": {
       "hash": "64d78c6cbef06cfaad90e8a5f41414bf4d38d3022f3587a584506ded59a7af19",
-      "last_checked": "2026-04-17T07:48:28.024922",
+      "last_checked": "2026-04-21T07:40:59.108634",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"f06bc0273cdf33430d98afba19cba6f8\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swift.enum/connected.md"
     },
@@ -5191,9 +5191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum/missed.json": {
       "hash": "45ca93e9feba821ff1445b974bdd8b6fb97b2efc04a926cce75f31635dcd43aa",
-      "last_checked": "2026-04-17T07:48:28.144184",
+      "last_checked": "2026-04-21T07:40:59.279121",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"788557c1a9c1c90ab843b6597f5774dc\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swift.enum/missed.md"
     },
@@ -5207,9 +5207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livecommunicationkit/conversationhistorymanager/recentconversation/status-swift.enum/unknown.json": {
       "hash": "5df6ce17d978729d893c622a7dba3f6e97a29594244945710373d6f67b4246a3",
-      "last_checked": "2026-04-17T07:48:28.318779",
+      "last_checked": "2026-04-21T07:40:59.456860",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:47:50.387552",
+      "session_id": "2026-04-21T07:40:29.588255",
       "etag": "W/\"12211beafdd4be35db243d3dc9bc2117\"",
       "file_path": "documentation/LiveCommunicationKit/conversationhistorymanager/recentconversation/status-swift.enum/unknown.md"
     },

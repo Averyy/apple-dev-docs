@@ -3,11 +3,12 @@
 **Framework**: Bundle Resources  
 **Kind**: typealias
 
-A Boolean value that indicates whether your app can exchange sensitive information with a connected accessory.
+An entitlement that enables your app extension to send sensitive data to an accessory.
 
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 
 
@@ -15,9 +16,18 @@ A Boolean value that indicates whether your app can exchange sensitive informati
 
 #### Discussion
 
-Set the value of this entitlement to `true` to enable your app to use the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework. This framework allows you to send sensitive information to accessories you’ve discovered and set up with [`AccessorySetupKit`](https://developer.apple.com/documentation/AccessorySetupKit).
+If your app implements [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension), the framework requires the extension to have this entitlement with a value of `true` in its signature.
 
-For more information about adding entitlements to your app, refer to [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory).
+
+For information on adding entitlements to your app, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+
+## See Also
+
+- [com.apple.developer.accessory-transport-security](entitlements/com.apple.developer.accessory-transport-security.md)
+  An entitlement that enables your app extension to exchange cryptographic keys with an accessory.
+- [com.apple.developer.accessory-data-provider](entitlements/com.apple.developer.accessory-data-provider.md)
+  An entitlement that enables your app extension to receive data for an accessory.
 
 
 ---

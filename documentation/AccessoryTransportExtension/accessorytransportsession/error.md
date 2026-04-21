@@ -8,6 +8,7 @@ Errors that can occur with an accessory transport session.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -26,7 +27,7 @@ enum Error
   An error that indicates a failure with an unknown cause.
 ### Describing an error
 - [var description: String](accessorytransportsession/error/description.md)
-  A textual representation of a transport session error.
+  String representation.
 
 ## Relationships
 

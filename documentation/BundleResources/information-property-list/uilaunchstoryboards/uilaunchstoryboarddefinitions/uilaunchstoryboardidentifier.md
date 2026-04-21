@@ -8,6 +8,7 @@ A user-specified identifier for a launch storyboard.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
+- Mac Catalyst 9.0+
 
 
 

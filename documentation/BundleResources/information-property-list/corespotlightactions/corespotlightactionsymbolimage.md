@@ -8,6 +8,7 @@ The name of a SF Symbol to display next to the action’s title.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - visionOS 1.0+
 
 

@@ -3,6 +3,8 @@
 **Framework**: Accessory Notifications  
 **Kind**: method
 
+Presents notification forwarding settings for an accessory.
+
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
@@ -15,7 +17,8 @@ func presentSettings(for accessory: ASAccessory, scenePersistentIdentifier: Stri
 
 ## Parameters
 
-- `scenePersistentIdentifier`: The `persistentIdentifier` of the specific `UISceneSession` from the target app associated with the presentation, if available
+- `accessory`: The accessory for which to present settings.
+- `scenePersistentIdentifier`: The persistent identifier of the specific `UISceneSession` from the target app associated with the presentation, if available.
 
 
 ---

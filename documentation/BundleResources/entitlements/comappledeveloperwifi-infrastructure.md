@@ -8,6 +8,7 @@ The entitlement the system requires for an app to use the Wi-Fi Infrastructure f
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 
 

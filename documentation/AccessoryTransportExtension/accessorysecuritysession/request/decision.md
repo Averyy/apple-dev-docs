@@ -8,6 +8,7 @@ A structure that represents the decision to accept or reject a session request.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 

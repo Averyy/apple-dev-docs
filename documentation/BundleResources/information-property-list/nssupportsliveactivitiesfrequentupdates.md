@@ -8,6 +8,7 @@ A Boolean value that indicates whether an app can update its Live Activities fre
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 
 

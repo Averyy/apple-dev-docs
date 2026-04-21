@@ -8,6 +8,7 @@ A list of apps and the universal links they handle for a domain.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
+- Mac Catalyst 9.0+
 - macOS 10.15+
 - tvOS 10.0+
 - visionOS 1.0+

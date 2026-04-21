@@ -17,6 +17,8 @@ case unableToGetUserResponse
 
 ## See Also
 
+- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
+  An error that indicates alert coordination timed out.
 - [AccessoryError.invalidNotificationResponse](accessoryerror/invalidnotificationresponse.md)
   An error that indicates the system failed to handle a notification response.
 

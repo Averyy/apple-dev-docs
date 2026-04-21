@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when a notification has been updated. Accessories should not alert for a updated notification.
+Updates a notification with new content.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,7 +18,11 @@ func updateNotification(_ notification: AccessoryNotification)
 
 #### Discussion
 
-- notification: The notification that was updated.
+Accessories don’t need to alert the person for notification updates; update the displayed notification content without triggering additional alerts.
+
+## Parameters
+
+- `notification`: The notification with updated details.
 
 
 ---

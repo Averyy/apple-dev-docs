@@ -8,6 +8,7 @@ A Boolean value indicating whether user interactions in a custom notification ar
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 
 
 

@@ -8,6 +8,7 @@ The permitted list of domains the extension can use when scheduling the initial 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 18.4+
 - visionOS 2.4+

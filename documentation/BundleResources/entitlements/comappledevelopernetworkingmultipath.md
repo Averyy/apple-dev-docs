@@ -8,6 +8,7 @@ A Boolean value indicating whether your app may use Multipath protocols to seaml
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 
 

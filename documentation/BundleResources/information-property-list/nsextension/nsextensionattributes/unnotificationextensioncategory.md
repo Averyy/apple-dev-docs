@@ -8,6 +8,7 @@ The identifier of a category declared by the app extension.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 
 
 

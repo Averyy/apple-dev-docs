@@ -8,6 +8,7 @@ A Boolean value that indicates whether an app may add a device to Automated Devi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 
 

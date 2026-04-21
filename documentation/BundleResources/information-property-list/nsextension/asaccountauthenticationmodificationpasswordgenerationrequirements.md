@@ -8,6 +8,7 @@ The rules the system satisfies when generating a strong password for your extens
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 

@@ -8,6 +8,7 @@ A Boolean value that indicates whether to prevent receiving tagged memory from o
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 
 

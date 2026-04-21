@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when a message from the paired accessory has been received and decrypted.
+Handles decrypted messages received from the paired accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,7 +18,11 @@ func messageHandler(_ message: TransportMessage)
 
 #### Discussion
 
-- message: The decrypted message payload.
+The system calls this method when your accessory sends data through the transport extension. The message arrives decrypted and ready for processing. Parse the message to determine the response type (notification action, user text input, or alert confirmation) and handle accordingly using the session’s response methods.
+
+## Parameters
+
+- `message`: The decrypted message payload from the accessory.
 
 
 ---

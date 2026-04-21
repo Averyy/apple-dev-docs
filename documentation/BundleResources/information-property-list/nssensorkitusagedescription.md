@@ -8,6 +8,7 @@ A short description of the purpose of your app’s research study.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 
 

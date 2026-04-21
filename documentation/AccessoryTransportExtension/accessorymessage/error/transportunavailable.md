@@ -3,17 +3,27 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: case
 
-Transport is unavailable. Retry will occur on different transport if applicable.
+An error indicating the transport is unavailable.
 
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
 case transportUnavailable
 ```
+
+#### Discussion
+
+The system attempts delivery on a different transport if available when you return this error.
+
+## See Also
+
+- [AccessoryMessage.Error.transportFailed](accessorymessage/error/transportfailed.md)
+  An error indicating the transport failed but may recover.
 
 
 ---

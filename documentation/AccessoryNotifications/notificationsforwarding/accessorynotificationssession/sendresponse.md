@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Send a notification response from an accessory.
+Sends a notification response from the accessory to the system.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,11 +18,11 @@ func sendResponse(_ response: NotificationResponse) async throws
 
 #### Discussion
 
-> **Note**: An error if the response could not be accepted by the system.
+After receiving a message through [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md), parse the accessory’s response and create a [`NotificationResponse`](notificationresponse.md) instance. Call this method to deliver the response to the system for handling.
 
 ## Parameters
 
-- `response`: The notification response.
+- `response`: The notification response from the accessory.
 
 
 ---

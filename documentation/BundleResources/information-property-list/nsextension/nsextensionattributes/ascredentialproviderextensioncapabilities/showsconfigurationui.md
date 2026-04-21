@@ -8,6 +8,7 @@ A Boolean value that indicates whether your extension presents a user interface 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 
 

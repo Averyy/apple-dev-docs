@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: class
 
-A session object that enables communication between your extension and the system.
+A session object that enables communication between the system and your extension.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -14,10 +14,6 @@ A session object that enables communication between your extension and the syste
 ```swift
 final class Session
 ```
-
-#### Overview
-
-This type conforms to the [`Accessory Transport Extension`](https://developer.apple.com/documentation/AccessoryTransportExtension) framework’s doc://com.apple.documentation/documentation/AccessoryTransportExtension/AccessoryFeatureSession protocol.
 
 ## Relationships
 

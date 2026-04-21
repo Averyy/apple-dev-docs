@@ -8,6 +8,7 @@ A message that informs the user why an app is requesting permission to use data 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS 1.0+
 

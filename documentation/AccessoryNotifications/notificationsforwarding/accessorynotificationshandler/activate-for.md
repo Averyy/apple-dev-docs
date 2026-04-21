@@ -16,10 +16,6 @@ Establishes a notification session for communication between the extension and t
 func activate(for session: NotificationsForwarding.Session)
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Discussion
 
 Store the session reference to use across multiple notification life cycle events.

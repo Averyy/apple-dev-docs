@@ -8,6 +8,7 @@ A Boolean value that indicates whether to allow local resources to load.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS 10.12+
 - visionOS 1.0+
 

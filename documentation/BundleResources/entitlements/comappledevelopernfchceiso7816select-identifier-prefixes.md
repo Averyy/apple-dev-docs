@@ -8,6 +8,7 @@ An array of identifier strings the app handles with the card session API.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 
 

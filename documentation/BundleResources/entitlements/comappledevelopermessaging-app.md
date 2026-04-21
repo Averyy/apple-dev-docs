@@ -8,6 +8,7 @@ A Boolean value that indicates whether an app can be the default messaging app o
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 
 

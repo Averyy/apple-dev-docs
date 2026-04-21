@@ -15,10 +15,6 @@ A possible user interaction with a notification.
 struct Action
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 ## Topics
 
 ### Creating an action

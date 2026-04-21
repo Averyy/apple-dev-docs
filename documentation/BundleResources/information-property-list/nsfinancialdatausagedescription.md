@@ -8,6 +8,7 @@ A message that tells people why the app is requesting access to financial data s
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 
 

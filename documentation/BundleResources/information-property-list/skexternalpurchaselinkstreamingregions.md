@@ -8,6 +8,7 @@ A list of country codes that indicate the regions where your music-streaming app
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 
 

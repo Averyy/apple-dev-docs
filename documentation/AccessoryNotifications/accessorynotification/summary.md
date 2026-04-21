@@ -15,10 +15,6 @@ An Apple Intelligence summary for the notification.
 let summary: NSAttributedString?
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 ## See Also
 
 - [let title: String?](accessorynotification/title.md)

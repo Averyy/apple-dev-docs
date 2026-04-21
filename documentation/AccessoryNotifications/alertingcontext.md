@@ -15,16 +15,14 @@ A structure that provides guidance for how to alert for a notification.
 struct AlertingContext
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Overview
 
 To alert for a notification, present it on screen, play a sound, or trigger a haptic effect that uses touch to give users feedback.
 
 ## Topics
 
+### Creating an alerting context
+- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, isIncomingCall: Bool, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:isincomingcall:sound:).md)
 ### Determining alerting behavior
 - [var shouldAlert: Bool](alertingcontext/shouldalert.md)
   A Boolean value that indicates the recommended alerting behavior.
@@ -32,15 +30,14 @@ To alert for a notification, present it on screen, play a sound, or trigger a ha
   A Boolean value that indicates whether the accessory can alert the person for the notification.
 - [var isSuppressedByFocus: Bool](alertingcontext/issuppressedbyfocus.md)
   A Boolean value that indicates whether the device’s Focus state suppresses notification alerts.
-### Structures
-- [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
-### Initializers
-- [init(notificationCanAlert: Bool, suppressedByFocus: Bool, isIncomingCall: Bool, sound: AlertingContext.Sound?)](alertingcontext/init(notificationcanalert:suppressedbyfocus:isincomingcall:sound:).md)
-### Instance Properties
+### Handling special notification types
 - [var isIncomingCall: Bool](alertingcontext/isincomingcall.md)
-  A flag to indicate whether the notification represents an incoming call.
+  A Boolean value that indicates whether the notification represents an incoming call.
+### Configuring notification sound
 - [var sound: AlertingContext.Sound?](alertingcontext/sound-swift.property.md)
-  Indicates that this alert may play a sound. `nil` means there is no sound.
+  An optional sound configuration for the notification.
+- [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
+  A structure that describes sound characteristics for a notification.
 
 ## Relationships
 

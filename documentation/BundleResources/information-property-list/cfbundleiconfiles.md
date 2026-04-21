@@ -8,6 +8,7 @@ The names of the bundle’s icon image files.
 **Availability**:
 - iOS 3.2+
 - iPadOS 3.2+
+- Mac Catalyst 3.2+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

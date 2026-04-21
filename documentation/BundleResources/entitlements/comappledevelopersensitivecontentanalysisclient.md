@@ -8,6 +8,7 @@ A code-signing entitlement that enables an app to detect nudity in images and vi
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 
 

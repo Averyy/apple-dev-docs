@@ -8,6 +8,7 @@ The bundle icon resource to associate with this type.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.7+
 - visionOS 1.0+
 

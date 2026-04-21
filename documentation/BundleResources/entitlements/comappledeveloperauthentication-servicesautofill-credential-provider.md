@@ -8,6 +8,7 @@ A Boolean value that indicates whether the app may, with user permission, provid
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 - macOS 11.0+
 - visionOS 1.0+
 

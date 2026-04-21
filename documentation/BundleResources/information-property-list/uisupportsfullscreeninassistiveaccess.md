@@ -8,6 +8,7 @@ A Boolean value that indicates if an iOS or iPadOS app appears as full screen in
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 
 

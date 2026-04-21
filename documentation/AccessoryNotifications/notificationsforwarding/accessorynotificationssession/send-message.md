@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Send a message to the paired accessory.
+Sends a message to the paired accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,7 +18,7 @@ func send(message: AccessoryMessage) async throws
 
 #### Discussion
 
-> **Note**: An error if the message could not be sent.
+Create an [`AccessoryMessage`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryMessage) containing your notification data and send it to your accessory. The system encrypts the message before delivering it to the transport extension for transmission.
 
 ## Parameters
 

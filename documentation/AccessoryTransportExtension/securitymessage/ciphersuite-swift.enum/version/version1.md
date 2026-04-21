@@ -8,12 +8,17 @@ Version 1 of the cipher suite protocol.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
 case version1
 ```
+
+#### Discussion
+
+Use this value when creating [`SecurityMessage`](securitymessage.md) instances. When deriving HPKE keys on your accessory, format the protocol information as: `{cipherSuite}-version1-{identifier}`.
 
 
 ---

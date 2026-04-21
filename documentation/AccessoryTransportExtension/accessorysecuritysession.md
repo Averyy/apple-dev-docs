@@ -8,12 +8,17 @@ A class that manages a security session between the extension and the system.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
 class AccessorySecuritySession
 ```
+
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
 
 #### Overview
 
@@ -27,17 +32,15 @@ The security session handles a key exchange process (see `AccessorySecurity/Even
 ### Handling session events
 - [AccessorySecuritySession.EventHandler](accessorysecuritysession/eventhandler.md)
   A protocol that defines methods for handling security session events.
+- [AccessorySecuritySession.Error](accessorysecuritysession/error.md)
 ### Accessing session properties
 - [var description: String](accessorysecuritysession/description.md)
-  A textual representation of the session.
+  String representation.
 ### Managing the session life cycle
+- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
+  Sends a security message to the system.
 - [func cancel(error: AccessorySecuritySession.Error?)](accessorysecuritysession/cancel(error:).md)
   Cancels the security session.
-### Instance Methods
-- [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
-  Send security message to the host process.
-### Enumerations
-- [AccessorySecuritySession.Error](accessorysecuritysession/error.md)
 
 ## Relationships
 
@@ -50,6 +53,12 @@ The security session handles a key exchange process (see `AccessorySecurity/Even
   A protocol that defines a capability for an accessory data provider extension.
 - [struct AccessoryMessage](accessorymessage.md)
   A structure that represents a message to send to an accessory.
+- [struct TransportMessage](transportmessage.md)
+  A structure that represents a message for transmission between the system and an accessory.
+- [struct SecurityMessage](securitymessage.md)
+  A structure that carries key material for negotiating a secure channel between the system and an accessory.
+- [enum AccessoryTransport](accessorytransport.md)
+  Supported transport types.
 
 
 ---

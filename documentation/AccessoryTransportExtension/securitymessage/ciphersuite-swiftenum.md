@@ -8,6 +8,7 @@ A cryptographic cipher suite used during key exchange.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -19,9 +20,9 @@ enum CipherSuite
 
 ### Enumeration Cases
 - [SecurityMessage.CipherSuite.p256](securitymessage/ciphersuite-swift.enum/p256.md)
-  NIST P-256 elliptic curve.
+  A cipher suite using NIST P-256 elliptic curve cryptography.
 - [SecurityMessage.CipherSuite.xWing](securitymessage/ciphersuite-swift.enum/xwing.md)
-  XWing hybrid post-quantum key encapsulation.
+  A cipher suite providing XWing hybrid post-quantum key encapsulation.
 ### Enumerations
 - [SecurityMessage.CipherSuite.Version](securitymessage/ciphersuite-swift.enum/version.md)
   Version of cipher suite used.
@@ -34,6 +35,13 @@ enum CipherSuite
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let cipherSuite: SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.property.md)
+  The cipher suite used for key exchange.
+- [let version: SecurityMessage.CipherSuite.Version](securitymessage/version.md)
+  The cipher suite version.
 
 
 ---

@@ -8,6 +8,7 @@ The uniform type identifiers owned and exported by the app.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.7+
 - visionOS 1.0+
 

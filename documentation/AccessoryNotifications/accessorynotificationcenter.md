@@ -26,10 +26,13 @@ Use this class from your accessory’s companion app to begin the notification f
   Initializes an accessory notifications center object.
 ### Requesting notification forwarding
 - [func requestForwarding(for: ASAccessory) async throws -> ForwardingDecision](accessorynotificationcenter/requestforwarding(for:).md)
-  Requests permission to forward notifications to the specified accessory.
-### Instance Methods
+  Requests permission to forward notifications and Live Activities to the specified accessory.
+### Checking forwarding status
 - [func forwardingStatus(for: ASAccessory) async throws -> ForwardingDecision](accessorynotificationcenter/forwardingstatus(for:).md)
+  Retrieves the current notification forwarding status for an accessory.
+### Managing notification settings
 - [func presentSettings(for: ASAccessory, scenePersistentIdentifier: String?) async throws -> ForwardingDecision](accessorynotificationcenter/presentsettings(for:scenepersistentidentifier:).md)
+  Presents notification forwarding settings for an accessory.
 
 ## See Also
 

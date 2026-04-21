@@ -8,6 +8,7 @@ An array of strings that represent the hexadecimal values of Bluetooth SIG-defin
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 
 

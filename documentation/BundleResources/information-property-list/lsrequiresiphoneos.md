@@ -8,6 +8,7 @@ A Boolean value indicating whether the app must run in iOS.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 
 
 

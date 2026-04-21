@@ -8,6 +8,7 @@ The names of the icon files in the app’s asset catalog or bundle.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

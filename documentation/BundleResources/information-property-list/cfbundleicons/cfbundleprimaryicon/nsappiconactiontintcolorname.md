@@ -8,6 +8,7 @@ The tint color to apply to text and symbols in the App Shortcuts platter.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 

@@ -8,6 +8,7 @@ A protocol that configures and manages communication between your security exten
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -28,14 +29,14 @@ The [`AccessoryTransportSecurity`](accessorytransportsecurity.md) protocol uses 
 
 ## See Also
 
-- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
-  Create custom app extensions that manage notifications for your accessory.
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
-  A protocol for an extension that handles the cryptography of messages to your accessory.
+  A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
   Receive forwarded iOS system notifications on an accessory that you develop.
 

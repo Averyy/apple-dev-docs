@@ -3,17 +3,23 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: case
 
-Message was successfully transmitted to the accessory.
+A result indicating successful message transmission to the accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
 ```swift
 case success
 ```
+
+## See Also
+
+- [case failure(AccessoryMessage.Error)](accessorymessage/result/failure(_:).md)
+  A result indicating message transmission failed.
 
 
 ---

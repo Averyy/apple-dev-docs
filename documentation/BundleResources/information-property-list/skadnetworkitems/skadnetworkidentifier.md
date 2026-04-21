@@ -8,6 +8,7 @@ A string that contains an ad network ID.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 
 
 

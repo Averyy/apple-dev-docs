@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Remove notifications.
+Removes the identified notifications.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,11 +18,16 @@ func removeNotifications(identifiers: [AccessoryNotification.Identifier]) async 
 
 #### Discussion
 
-- identifiers: An array of notification identifiers to clear.
+This method has equivalent behavior to clearing notifications from Notification Center on the phone. The system doesn’t send actions to apps for removed notifications. This method only throws for errors receiving the removal request, not if some identifiers were already removed.
 
-> **Note**: An error if the system could not receive the request to remove notifications.
+## Parameters
 
-This method has equivalent behavior to clearing the same notifications from Notification Center on the phone. Actions are not sent to the app for removed notifications. This method only throws for errors receiving the request to remove notifications. It does not throw if some of the identifiers could not be cleared because they have already been removed.
+- `identifiers`: An array of notification identifiers to clear.
+
+## See Also
+
+- [func removeNotifications(withIdentifiers: [String], sourceIdentifier: String) async throws](notificationsforwarding/accessorynotificationssession/removenotifications(withidentifiers:sourceidentifier:).md)
+  Removes notifications using primitive identifier components.
 
 
 ---

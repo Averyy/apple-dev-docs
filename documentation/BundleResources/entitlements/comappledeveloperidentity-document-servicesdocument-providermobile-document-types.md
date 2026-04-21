@@ -8,6 +8,7 @@ An array of strings that represent the types of mobile documents (mdoc) that an 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 
 

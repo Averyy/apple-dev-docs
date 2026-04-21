@@ -8,6 +8,7 @@ An entitlement that permits an app to receive fall-detection notifications from 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - watchOS 6.0+
 
 

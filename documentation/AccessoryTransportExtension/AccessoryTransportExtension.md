@@ -28,9 +28,6 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
 
 ## Topics
 
-### Essentials
-- [com.apple.developer.accessory-transport-extension](../BundleResources/Entitlements/com.apple.developer.accessory-transport-extension.md)
-  A Boolean value that indicates whether your app can exchange sensitive information with a connected accessory.
 ### Wi-Fi network sharing
 - [protocol AccessoryTransportAppExtension](accessorytransportappextension.md)
   A protocol for an extension that transmits data to an accessory you develop.
@@ -41,14 +38,14 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
 - [Wi-Fi Infrastructure](../WiFiInfrastructure/WiFiInfrastructure.md)
   Share Wi-Fi network credentials securely between devices and connected accessories.
 ### Notification forwarding
-- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
-  Create custom app extensions that manage notifications for your accessory.
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [protocol AccessoryDataProvider](accessorydataprovider.md)
   A protocol for an extension that receives iOS system notifications and curates their data for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
-  A protocol for an extension that handles the cryptography of messages to your accessory.
+  A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
 - [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)
@@ -60,11 +57,10 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
   A structure that represents a message to send to an accessory.
 - [class AccessorySecuritySession](accessorysecuritysession.md)
   A class that manages a security session between the extension and the system.
-### Structures
-- [struct SecurityMessage](securitymessage.md)
-  A message carrying key material used to negotiate a secure channel between a host and an accessory.
 - [struct TransportMessage](transportmessage.md)
-### Enumerations
+  A structure that represents a message for transmission between the system and an accessory.
+- [struct SecurityMessage](securitymessage.md)
+  A structure that carries key material for negotiating a secure channel between the system and an accessory.
 - [enum AccessoryTransport](accessorytransport.md)
   Supported transport types.
 

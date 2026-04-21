@@ -8,6 +8,7 @@ The Uniform Type Identifier to assign to this type.
 **Availability**:
 - iOS 3.2+
 - iPadOS 3.2+
+- Mac Catalyst 3.2+
 - macOS 10.5+
 - visionOS 1.0+
 

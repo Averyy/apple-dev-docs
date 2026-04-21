@@ -8,6 +8,7 @@ A Boolean value that indicates whether the system runs the app using a compatibi
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 

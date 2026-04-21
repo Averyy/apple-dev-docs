@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: method
 
-Requests permission to forward notifications to the specified accessory.
+Requests permission to forward notifications and Live Activities to the specified accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -17,7 +17,7 @@ func requestForwarding(for accessory: ASAccessory) async throws -> ForwardingDec
 
 #### Discussion
 
-This method prompts the person to select which apps on their device can forward notifications to your accessory. The person can choose all apps, some apps, no apps, or dismiss the prompt. This method throws [`AccessoryError.unsupportedPlatform`](accessoryerror/unsupportedplatform.md) if called on an unsupported device; notification forwarding supports iPhone only.
+This method prompts the person to select which apps on their device can forward notifications and Live Activities to your accessory. The person can choose all apps, some apps, no apps, or dismiss the prompt. This method throws [`AccessoryError.unsupportedPlatform`](accessoryerror/unsupportedplatform.md) if called on an unsupported device; call this method on iPhone only.
 
 ## Parameters
 

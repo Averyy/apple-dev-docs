@@ -8,6 +8,7 @@ A Boolean value that indicates whether your app can enable Downlink Time-Differe
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 
 
 

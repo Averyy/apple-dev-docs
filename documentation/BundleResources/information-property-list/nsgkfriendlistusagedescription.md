@@ -8,6 +8,7 @@ A message that tells people why the app needs access to their Game Center friend
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
+- Mac Catalyst 14.5+
 
 
 

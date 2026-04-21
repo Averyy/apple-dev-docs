@@ -15,10 +15,6 @@ A string that contains the notification’s main content.
 let body: NSAttributedString?
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Discussion
 
 This property can embed genmoji ([`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph)).

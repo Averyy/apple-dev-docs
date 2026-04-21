@@ -8,6 +8,7 @@ The contexts that an iMessage app or sticker pack supports.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 
 
 

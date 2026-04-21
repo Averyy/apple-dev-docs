@@ -15,10 +15,6 @@ A text string that a person provides in response to the notification.
 var userText: String?
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Discussion
 
 This property contains text for notifications that support the [`AccessoryNotification.Action.ActionType.textInput(placeholder:)`](accessorynotification/action/actiontype/textinput(placeholder:).md) action type.

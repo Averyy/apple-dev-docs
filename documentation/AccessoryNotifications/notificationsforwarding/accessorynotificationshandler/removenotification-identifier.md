@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called to indicate that a notification that has been posted should be removed.
+Removes a previously-posted notification from your accessory.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -18,7 +18,16 @@ func removeNotification(identifier: AccessoryNotification.Identifier)
 
 #### Discussion
 
-- identifier: The identifier of the notification that was removed.
+The system calls this method when a notification needs to be removed, such as when a person dismisses it on another device or when the person deletes the app that sent the notification.
+
+## Parameters
+
+- `identifier`: The identifier of the notification to remove.
+
+## See Also
+
+- [func removeAllNotifications()](notificationsforwarding/accessorynotificationshandler/removeallnotifications.md)
+  Removes all notifications from the user interface.
 
 
 ---

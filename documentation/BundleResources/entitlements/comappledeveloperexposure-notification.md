@@ -8,6 +8,7 @@ A Boolean value that indicates whether the app may use exposure notification.
 **Availability**:
 - iOS 13.5+
 - iPadOS 13.5+
+- Mac Catalyst 13.5+
 
 
 

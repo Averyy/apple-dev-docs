@@ -8,6 +8,7 @@ A Boolean value that indicates whether the app may access the notes in contact e
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS 13.0+
 - visionOS 1.0+
 

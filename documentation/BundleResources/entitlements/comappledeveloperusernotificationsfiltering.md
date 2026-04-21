@@ -8,6 +8,7 @@ Enable receiving notifications without displaying the notification to the user.
 **Availability**:
 - iOS 13.3+
 - iPadOS 13.3+
+- Mac Catalyst 13.3+
 - macOS 11.0+
 
 

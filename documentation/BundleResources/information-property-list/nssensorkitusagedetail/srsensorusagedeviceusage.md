@@ -8,6 +8,7 @@ A collection of properties that explain your app’s need to observe how frequen
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 
 

@@ -8,6 +8,7 @@ A Boolean value indicating whether a custom keyboard uses a shared container and
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 
 
 

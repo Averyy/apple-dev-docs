@@ -8,6 +8,7 @@ A string that specifies the region that the app supports.
 **Availability**:
 - iOS 13.7+
 - iPadOS 13.7+
+- Mac Catalyst 13.7+
 
 
 

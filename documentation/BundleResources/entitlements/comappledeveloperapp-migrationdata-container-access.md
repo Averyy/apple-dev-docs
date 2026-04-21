@@ -8,6 +8,7 @@ An entitlement required for app extensions to perform a one-time transfer of on-
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 
 
 

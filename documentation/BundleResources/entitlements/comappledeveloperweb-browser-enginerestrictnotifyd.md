@@ -8,6 +8,7 @@ An entitlement that restricts access to system notifications to enhance the secu
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 
 

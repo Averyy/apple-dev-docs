@@ -8,6 +8,7 @@ An entitlement that enables a qualifying app to offer external purchases within 
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 - macOS 26.2+
 - tvOS 26.2+
 - visionOS 26.2+

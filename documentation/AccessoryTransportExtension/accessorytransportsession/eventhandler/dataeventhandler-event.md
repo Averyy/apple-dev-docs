@@ -9,6 +9,7 @@ Handles events that address incoming data destined for the accessory.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 
@@ -23,6 +24,11 @@ Implement this method to relay data to your accessory over Bluetooth or another 
 ## Parameters
 
 - `event`: A data event that contains either plaintext or encrypted data.
+
+## See Also
+
+- [func messageReceived(TransportMessage, completion: (AccessoryMessage.Result) -> Void)](accessorytransportsession/eventhandler/messagereceived(_:completion:).md)
+  Handles incoming messages for transmission to the accessory.
 
 
 ---

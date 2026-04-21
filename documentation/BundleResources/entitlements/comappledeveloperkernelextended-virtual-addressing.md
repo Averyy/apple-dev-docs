@@ -8,6 +8,7 @@ A Boolean value that indicates whether the app may access an extended address sp
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 
 

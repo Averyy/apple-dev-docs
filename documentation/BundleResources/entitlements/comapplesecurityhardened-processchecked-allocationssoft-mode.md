@@ -8,6 +8,7 @@ A Boolean value that indicates whether to log memory-tagging faults as a simulat
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 
 

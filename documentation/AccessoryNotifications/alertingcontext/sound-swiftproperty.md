@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: property
 
-Indicates that this alert may play a sound. `nil` means there is no sound.
+An optional sound configuration for the notification.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -14,6 +14,15 @@ Indicates that this alert may play a sound. `nil` means there is no sound.
 ```swift
 var sound: AlertingContext.Sound? { get }
 ```
+
+#### Discussion
+
+A value of `nil` indicates the notification has no sound. Use the [`AlertingContext.Sound`](alertingcontext/sound-swift.struct.md) properties to determine sound characteristics.
+
+## See Also
+
+- [AlertingContext.Sound](alertingcontext/sound-swift.struct.md)
+  A structure that describes sound characteristics for a notification.
 
 
 ---

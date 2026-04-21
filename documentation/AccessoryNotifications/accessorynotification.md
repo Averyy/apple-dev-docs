@@ -15,10 +15,6 @@ A structure that contains the details of a notification that iOS provides to you
 struct AccessoryNotification
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Overview
 
 The notification includes display elements, metadata, interactive components, and rich content such as icons, attachments, and Apple Intelligence summaries.

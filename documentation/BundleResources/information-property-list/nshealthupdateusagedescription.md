@@ -8,6 +8,7 @@ A message to the user that explains why the app requested permission to save sam
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 

@@ -15,10 +15,6 @@ A secondary icon that provides additional contextual information about the notif
 let contextIcon: AccessoryNotification.File?
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 #### Discussion
 
 For communication notifications, this image might be a message sender’s avatar or group chat icon.

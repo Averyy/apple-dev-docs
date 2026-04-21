@@ -8,6 +8,7 @@ Services provided by an app that require it to run in the background.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.0+
 - watchOS 4.0+
 

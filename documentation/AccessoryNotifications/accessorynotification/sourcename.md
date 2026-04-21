@@ -15,10 +15,6 @@ A display name for the bundle that sent the notification.
 let sourceName: String
 ```
 
-## Mentions
-
-- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
-
 ## See Also
 
 - [let identifier: AccessoryNotification.Identifier](accessorynotification/identifier-swift.property.md)

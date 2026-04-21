@@ -8,6 +8,7 @@ A Boolean value that indicates whether an iPadOS driver accepts calls from third
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 
 

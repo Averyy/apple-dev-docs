@@ -8,6 +8,7 @@ The name of the app-specific class you want UIKit to instantiate and use as the 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 
 
 

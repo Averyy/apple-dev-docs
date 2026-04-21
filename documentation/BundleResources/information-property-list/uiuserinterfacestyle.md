@@ -8,6 +8,7 @@ The user interface style for the app.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - tvOS 10.0+
 
 

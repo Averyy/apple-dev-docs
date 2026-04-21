@@ -8,6 +8,7 @@ A message that tells people why the app is requesting to send user data to Apple
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS 10.15+
 - visionOS 1.0+
 

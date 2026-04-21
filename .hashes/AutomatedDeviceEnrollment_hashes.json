@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "last_updated": "2026-04-17T07:53:08.871990",
+    "last_updated": "2026-04-21T07:44:16.095807",
     "total_pages": 2,
-    "session_id": "2026-04-17T07:53:08.550309"
+    "session_id": "2026-04-21T07:44:15.732092"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AutomatedDeviceEnrollment.json": {
       "hash": "192116f542a17d4115a5f12ad258f527dbfe0790a354149fc05a02186863f6fd",
-      "last_checked": "2026-04-17T07:53:08.774371",
+      "last_checked": "2026-04-21T07:44:16.021218",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:53:08.550309",
+      "session_id": "2026-04-21T07:44:15.732092",
       "etag": "W/\"568af6c118c453f2ec280d33b379fe1e\"",
       "file_path": "documentation/AutomatedDeviceEnrollment/AutomatedDeviceEnrollment.md"
     },
     "https://developer.apple.com/documentation/AutomatedDeviceEnrollment": {
       "hash": "192116f542a17d4115a5f12ad258f527dbfe0790a354149fc05a02186863f6fd",
-      "last_checked": "2026-04-17T07:53:08.697718",
+      "last_checked": "2026-04-21T07:44:15.911642",
       "status": "unchanged",
-      "session_id": "2026-04-17T07:53:08.550309",
+      "session_id": "2026-04-21T07:44:15.732092",
       "etag": "W/\"568af6c118c453f2ec280d33b379fe1e\"",
       "file_path": "documentation/AutomatedDeviceEnrollment/AutomatedDeviceEnrollment.md"
     }

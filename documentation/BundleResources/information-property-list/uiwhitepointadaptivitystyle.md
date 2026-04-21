@@ -8,6 +8,7 @@ The app’s white-point adaptivity style, enabled on devices with True Tone disp
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
+- Mac Catalyst 9.3+
 
 
 

@@ -8,6 +8,7 @@ An array of strings that indicates the wireless technologies AccessorySetupKit u
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 
 

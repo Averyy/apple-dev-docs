@@ -8,6 +8,7 @@ A Boolean value that indicates whether the system initially hides the status bar
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 
 
 

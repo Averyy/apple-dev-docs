@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -37,6 +38,11 @@ enum Error
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AccessorySecuritySession.EventHandler](accessorysecuritysession/eventhandler.md)
+  A protocol that defines methods for handling security session events.
 
 
 ---

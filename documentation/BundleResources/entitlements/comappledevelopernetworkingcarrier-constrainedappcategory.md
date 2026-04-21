@@ -8,6 +8,7 @@ The key that defines an app’s category for accessing a carrier-provided satell
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 
 

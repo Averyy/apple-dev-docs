@@ -8,6 +8,7 @@ An entitlement that permits an app to participate in navigating Wi-Fi network ho
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 
 
 

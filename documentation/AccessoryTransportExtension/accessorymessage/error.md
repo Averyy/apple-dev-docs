@@ -3,9 +3,12 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
+An enumeration of errors that can occur during message transmission.
+
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -15,11 +18,11 @@ enum Error
 
 ## Topics
 
-### Enumeration Cases
+### Identifying error types
 - [AccessoryMessage.Error.transportFailed](accessorymessage/error/transportfailed.md)
-  Transport failed but may recover. Message will be sent again for retry.
+  An error indicating the transport failed but may recover.
 - [AccessoryMessage.Error.transportUnavailable](accessorymessage/error/transportunavailable.md)
-  Transport is unavailable. Retry will occur on different transport if applicable.
+  An error indicating the transport is unavailable.
 
 ## Relationships
 
@@ -29,6 +32,11 @@ enum Error
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AccessoryMessage.Result](accessorymessage/result.md)
+  An enumeration of results for message transmission.
 
 
 ---

@@ -8,6 +8,7 @@ Configurations for scenes that you use to display navigation content on a CarPla
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
+- Mac Catalyst 13.4+
 
 
 

@@ -15,12 +15,10 @@ An error that indicates the system failed to handle a notification response.
 case invalidNotificationResponse
 ```
 
-#### Discussion
-
-The `AccessoryNotificationManaging` protocol’s `AccessoryNotificationManaging/sendResponse(_:for:)` method can throw an error of this type.
-
 ## See Also
 
+- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
+  An error that indicates alert coordination timed out.
 - [AccessoryError.unableToGetUserResponse](accessoryerror/unabletogetuserresponse.md)
   An error that indicates the system is unable to handle a notification response.
 

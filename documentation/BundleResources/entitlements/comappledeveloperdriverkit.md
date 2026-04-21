@@ -8,6 +8,7 @@ A Boolean value that indicates whether your extension has permission to run as a
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 10.15+
 
 

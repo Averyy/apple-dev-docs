@@ -8,6 +8,7 @@ The entitlement the system requires for an app to use the EnergyKit framework.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 
 

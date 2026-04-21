@@ -8,6 +8,7 @@ A Boolean that indicates whether the app can act as a user’s default email cli
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 

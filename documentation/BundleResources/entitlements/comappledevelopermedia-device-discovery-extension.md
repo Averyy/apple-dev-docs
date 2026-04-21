@@ -8,6 +8,7 @@ An entitlement for an app extension that adds a specific third-party media recei
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 

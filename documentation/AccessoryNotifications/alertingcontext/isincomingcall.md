@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: property
 
-A flag to indicate whether the notification represents an incoming call.
+A Boolean value that indicates whether the notification represents an incoming call.
 
 **Availability**:
 - iOS 26.5+ (Beta)
@@ -14,6 +14,10 @@ A flag to indicate whether the notification represents an incoming call.
 ```swift
 var isIncomingCall: Bool
 ```
+
+#### Discussion
+
+Use this property to apply special handling for incoming call notifications on your accessory.
 
 
 ---

@@ -8,6 +8,7 @@ The name of the scene class you want UIKit to instantiate.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 
 
 

@@ -42,7 +42,11 @@ You typically let Xcode manage the entitlements file for you. For information on
   An entitlement that lets an app extension discover and set up accessories.
 ### Accessory Transport Extension
 - [com.apple.developer.accessory-transport-extension](entitlements/com.apple.developer.accessory-transport-extension.md)
-  A Boolean value that indicates whether your app can exchange sensitive information with a connected accessory.
+  An entitlement that enables your app extension to send sensitive data to an accessory.
+- [com.apple.developer.accessory-transport-security](entitlements/com.apple.developer.accessory-transport-security.md)
+  An entitlement that enables your app extension to exchange cryptographic keys with an accessory.
+- [com.apple.developer.accessory-data-provider](entitlements/com.apple.developer.accessory-data-provider.md)
+  An entitlement that enables your app extension to receive data for an accessory.
 ### Alternative browser engines
 - [Embedded Browser Engine Entitlement](entitlements/com.apple.developer.embedded-web-browser-engine.md)
   An entitlement that enables an app to embed an alternative browser engine.

@@ -8,6 +8,7 @@ An entitlement that verifies age or identity.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 
 

@@ -8,6 +8,7 @@ A Boolean value that indicates whether a File Provider extension enumerates its 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 

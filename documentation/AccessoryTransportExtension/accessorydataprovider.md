@@ -8,6 +8,7 @@ A protocol for an extension that receives iOS system notifications and curates t
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 ## Declaration
 
@@ -15,11 +16,15 @@ A protocol for an extension that receives iOS system notifications and curates t
 protocol AccessoryDataProvider : AppExtension, Sendable where Self.Configuration : AccessoryDataProviderConfiguration
 ```
 
+## Mentions
+
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+
 #### Overview
 
 Implement this protocol in an extension with an `EXExtensionPointIdentifier` value of `com.apple.accessory-data-provider` to receive notification data for eventual forwarding to an accessory that you develop. The extension runs in a sandboxed environment and communicates with the system through the extension’s configuration object ([`AccessoryDataProviderConfiguration`](accessorydataproviderconfiguration.md)).
 
-> ❗ **Important**: This protocol currently builds only for development or Ad Hoc testing. The API will support App Store submission, TestFlight, and alternative distribution at a later time.
+> ❗ **Important**: The system requires your app extension to have the [`com.apple.developer.accessory-data-provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-data-provider) entitlement to use this protocol.
 
 #### Add the Necessary Target Configuration
 
@@ -62,7 +67,7 @@ class MyNotificationsHandler: AccessoryNotificationsHandler {
 }
 ```
 
-For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryNotifications/receiving-ios-notifications-on-an-accessory).
+For more information, see [`Receiving iOS notifications on an accessory`](receiving-ios-notifications-on-an-accessory.md).
 
 ## Relationships
 
@@ -73,12 +78,12 @@ For more information, see [`Receiving iOS notifications on an accessory`](https:
 
 ## See Also
 
-- [Receiving iOS notifications on an accessory](../AccessoryNotifications/receiving-ios-notifications-on-an-accessory.md)
-  Create custom app extensions that manage notifications for your accessory.
+- [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
+  Create custom app extensions that manage iOS system notifications for your accessory.
 - [protocol AccessoryDataProviderConfiguration](accessorydataproviderconfiguration.md)
   A protocol that configures and manages communication between the extension and the system.
 - [protocol AccessoryTransportSecurity](accessorytransportsecurity.md)
-  A protocol for an extension that handles the cryptography of messages to your accessory.
+  A protocol for an extension that handles cryptographic key exchange with your accessory.
 - [protocol AccessoryTransportSecurityConfiguration](accessorytransportsecurityconfiguration.md)
   A protocol that configures and manages communication between your security extension and the system.
 - [Accessory Notifications](../AccessoryNotifications/AccessoryNotifications.md)

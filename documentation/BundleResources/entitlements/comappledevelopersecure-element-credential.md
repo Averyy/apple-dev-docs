@@ -8,6 +8,7 @@ A Boolean value that indicates whether your app can use the SecureElementCredent
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 
 
