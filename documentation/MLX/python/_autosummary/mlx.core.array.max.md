@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.max
 
-**array.max(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, ***, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.max(*self*, *axis: int | Sequence[int] | None = None*, *keepdims: bool = False*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [max()](mlx.core.max.html#mlx.core.max).
 
 ** Contents

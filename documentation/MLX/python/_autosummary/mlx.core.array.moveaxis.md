@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.moveaxis
 
-**array.moveaxis(*self*, *source: int*, *destination: int*, ***, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.moveaxis(*self*, *source: int*, *destination: int*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [moveaxis()](mlx.core.moveaxis.html#mlx.core.moveaxis).
 
 ** Contents

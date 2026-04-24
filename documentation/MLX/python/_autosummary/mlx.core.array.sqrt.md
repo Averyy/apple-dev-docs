@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.sqrt
 
-**array.sqrt(*self*, ***, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.sqrt(*self*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [sqrt()](mlx.core.sqrt.html#mlx.core.sqrt).
 
 ** Contents

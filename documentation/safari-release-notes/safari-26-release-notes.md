@@ -441,6 +441,7 @@ Safari 26.0 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Seq
 ###### New Features
 
 - Added support for an in-place interpreter for Wasm. (113768719)
+- Added support for `WebAssembly.JSTag` to enable modern wasm exception handling. (136036182)
 
 ##### Webgpu
 

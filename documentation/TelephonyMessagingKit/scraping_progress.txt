@@ -1,4 +1,4 @@
 Completed scraping TelephonyMessagingKit!
-Total pages scraped: 1
-Pages skipped (unchanged): 586
+Total pages scraped: 0
+Pages skipped (unchanged): 587
 Pages failed: 0

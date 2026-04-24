@@ -46,6 +46,8 @@ Report column position might change over time. Rely on column names instead of c
   Analyze how users interact with your app on the App Store.
 - [App Store Web Preview](app-store-web-preview.md)
   Analyze how people engage with your app’s product pages and in-app events on web browsers.
+- [App Store Retention Messaging](app-store-retention-messaging.md)
+  Analyze how users interact with your app on the App Store.
 ### App Store Commerce
 - [App Store Downloads](app-download.md)
   Analyze how many times people download your app on the App Store.

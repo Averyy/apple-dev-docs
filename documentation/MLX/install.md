@@ -40,7 +40,7 @@ pip install mlx
 
 To install from PyPI your system must meet the following requirements:
 
-- Using an M series chip (Apple silicon)
+- Using [Apple silicon](https://support.apple.com/en-us/116943)
 - Using a native Python >= 3.10
 - macOS >= 14.0
 

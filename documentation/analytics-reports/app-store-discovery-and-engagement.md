@@ -77,6 +77,8 @@ The Analytics Reports framework delivers new portions of report content as insta
 
 - [App Store Web Preview](app-store-web-preview.md)
   Analyze how people engage with your app’s product pages and in-app events on web browsers.
+- [App Store Retention Messaging](app-store-retention-messaging.md)
+  Analyze how users interact with your app on the App Store.
 
 
 ---

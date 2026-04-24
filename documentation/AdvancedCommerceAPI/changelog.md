@@ -8,6 +8,10 @@ Learn about new features and updates in the Advanced Commerce API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Advanced Commerce API.
 
+#### Server Update April 22 2026
+
+- For subscribers in South Korea, if the price increase meets the criteria that requires communication with the customer, the App Store notifies subscribers via email, price increase sheet, and push notification. Previously, developers needed to implement the price-increase communications for South Korea. For more information, see [`Handling subscription price changes`](handling-subscription-price-changes.md).
+
 #### Server Update March 26 2026
 
 - Added the following error code: [`MigrationNotAllowedWhenPriceIncreaseCommunicatedError`](migrationnotallowedwhenpriceincreasecommunicatederror.md).

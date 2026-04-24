@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.squeeze
 
-**array.squeeze(*self*, *axis: int | Sequence[int] | None = None*, ***, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.squeeze(*self*, *axis: int | Sequence[int] | None = None*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [squeeze()](mlx.core.squeeze.html#mlx.core.squeeze).
 
 ** Contents

@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.astype
 
-**array.astype(*self*, *dtype: Dtype*, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.astype(*self*, *dtype: Dtype*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Cast the array to a specified type.
 
 Parameters:

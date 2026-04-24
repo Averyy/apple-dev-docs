@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.st
 
 # mlx.core.stream
 
-**stream(*s: Stream | Device*) → mlx.core.StreamContext**
+**stream(*s: Stream | mlx.core.ThreadLocalStream | Device*) → mlx.core.StreamContext**
 : Create a context manager to set the default device and stream.
 
 Parameters:

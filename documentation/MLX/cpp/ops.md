@@ -198,6 +198,30 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 **array slice_update(const array &src, const array &update, const array &start, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> axes, StreamOrDevice s = {})**
 : Update a slice from the source array with dynamic starting indices.
 
+**array slice_update_add(const array &src, const array &update, Shape start, Shape stop, Shape strides, StreamOrDevice s = {})**
+: Slice update and add updates to given slice.
+
+**array slice_update_add(const array &src, const array &update, Shape start, Shape stop, StreamOrDevice s = {})**
+: Slice update and add updates to given slice with stride 1 in each dimension.
+
+**array slice_update_prod(const array &src, const array &update, Shape start, Shape stop, Shape strides, StreamOrDevice s = {})**
+: Slice update and prod updates to given slice.
+
+**array slice_update_prod(const array &src, const array &update, Shape start, Shape stop, StreamOrDevice s = {})**
+: Slice update and prod updates to given slice with stride 1 in each dimension.
+
+**array slice_update_max(const array &src, const array &update, Shape start, Shape stop, Shape strides, StreamOrDevice s = {})**
+: Slice update and max updates to given slice.
+
+**array slice_update_max(const array &src, const array &update, Shape start, Shape stop, StreamOrDevice s = {})**
+: Slice update and max updates to given slice with stride 1 in each dimension.
+
+**array slice_update_min(const array &src, const array &update, Shape start, Shape stop, Shape strides, StreamOrDevice s = {})**
+: Slice update and min updates to given slice.
+
+**array slice_update_min(const array &src, const array &update, Shape start, Shape stop, StreamOrDevice s = {})**
+: Slice update and min updates to given slice with stride 1 in each dimension.
+
 **[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> split(const array &a, int num_splits, int axis, StreamOrDevice s = {})**
 : Split an array into sub-arrays along a given axis.
 
@@ -542,16 +566,20 @@ An output value is true if any of the corresponding inputs are true.
 : Returns the indices of the maximum values along a given axis.
 
 **array sort(const array &a, StreamOrDevice s = {})**
-: Returns a sorted copy of the flattened array.
+: Returns a sorted copy of the flattened array. 
+The sort is stable and NaN values are placed at the end.
 
 **array sort(const array &a, int axis, StreamOrDevice s = {})**
-: Returns a sorted copy of the array along a given axis.
+: Returns a sorted copy of the array along a given axis. 
+The sort is stable and NaN values are placed at the end.
 
 **array argsort(const array &a, StreamOrDevice s = {})**
-: Returns indices that sort the flattened array.
+: Returns indices that sort the flattened array. 
+The sort is stable and NaN values are placed at the end.
 
 **array argsort(const array &a, int axis, StreamOrDevice s = {})**
-: Returns indices that sort the array along a given axis.
+: Returns indices that sort the array along a given axis. 
+The sort is stable and NaN values are placed at the end.
 
 **array partition(const array &a, int kth, StreamOrDevice s = {})**
 : Returns a partitioned copy of the flattened array such that the smaller kth elements are first.

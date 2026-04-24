@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.eigvalsh
 
-**eigvalsh(*a: array*, *UPLO: str = 'L'*, ***, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**eigvalsh(*a: array*, *UPLO: str = 'L'*, ***, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Compute the eigenvalues of a complex Hermitian or real symmetric matrix.
 This function supports arrays with at least 2 dimensions. When the
 input has more than two dimensions, the eigenvalues are computed for

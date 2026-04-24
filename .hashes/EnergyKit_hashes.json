@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-21T07:41:33.390922",
+    "last_updated": "2026-04-24T07:39:13.871006",
     "total_pages": 534,
-    "session_id": "2026-04-21T07:41:11.747947"
+    "session_id": "2026-04-24T07:38:51.738284"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/EnergyKit.json": {
       "hash": "6399ab88ea6a0bf2d73394f07eb68957531b68cddbd96ca1df7a0a531d200b6f",
-      "last_checked": "2026-04-21T07:41:12.025131",
+      "last_checked": "2026-04-24T07:38:52.038664",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"873d4687b6de099f12df499a5513c28a\"",
       "file_path": "documentation/EnergyKit/EnergyKit.md"
     },
     "https://developer.apple.com/documentation/EnergyKit": {
       "hash": "6399ab88ea6a0bf2d73394f07eb68957531b68cddbd96ca1df7a0a531d200b6f",
-      "last_checked": "2026-04-21T07:41:11.932753",
+      "last_checked": "2026-04-24T07:38:51.923197",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"873d4687b6de099f12df499a5513c28a\"",
       "file_path": "documentation/EnergyKit/EnergyKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/optimizing-home-electricity-usage.json": {
       "hash": "80bbda797381f2411247f7a1c493bf873d49721a9c8b27b1ecc83fb5bec9784d",
-      "last_checked": "2026-04-21T07:41:12.399535",
+      "last_checked": "2026-04-24T07:38:52.340845",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"a31851a292db0189fd3b53be21b2d380\"",
       "file_path": "documentation/EnergyKit/optimizing-home-electricity-usage.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent.json": {
       "hash": "ecff49088ed3d5e2c6d1d2f7743965698b1dfa33738411ea37e21c2983f956cd",
-      "last_checked": "2026-04-21T07:41:12.577589",
+      "last_checked": "2026-04-24T07:38:52.542916",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"e2ff6e26b39f01211c30e393c931280e\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent.json": {
       "hash": "6b4ec47b662a9b0eba0aad6392f8329bbce020bbb8d58a17140b31d9627f0857",
-      "last_checked": "2026-04-21T07:41:12.733491",
+      "last_checked": "2026-04-24T07:38:52.677031",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"291e9ea58636f8916766e8c820951dcd\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue.json": {
       "hash": "a028b635e057ec3234a0169dfd601c2cb352e51d431dbc6ccd9de89b8ab20325",
-      "last_checked": "2026-04-21T07:41:12.878133",
+      "last_checked": "2026-04-24T07:38:52.816817",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"98eebc8397740ea1f210ca9e7d46068d\"",
       "file_path": "documentation/EnergyKit/energyvenue.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityflowdirection.json": {
       "hash": "16e19b37512dc025ad7ab0d8d292ac76375fa183bdf03ee313b4708eafc64c95",
-      "last_checked": "2026-04-21T07:41:13.196344",
+      "last_checked": "2026-04-24T07:38:52.953605",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"c399d2a700a88b82a2fbcd2b861e9bfc\"",
       "file_path": "documentation/EnergyKit/electricityflowdirection.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricalloadeventprotocol.json": {
       "hash": "d11dbc0a7f1aeb58d61613cdd2c180be25dc0363240aedb940a82d2e6b6b7377",
-      "last_checked": "2026-04-21T07:41:13.494346",
+      "last_checked": "2026-04-24T07:38:53.103146",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"5acb18889b838fdcba87eff696da2d3f\"",
       "file_path": "documentation/EnergyKit/electricalloadeventprotocol.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance.json": {
       "hash": "0946472d7f584314234dd0a1040b762a8e514b2a3997ee8a05f6b30cd683a3c0",
-      "last_checked": "2026-04-21T07:41:13.630394",
+      "last_checked": "2026-04-24T07:38:53.308348",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"53d1357675862351f9402b681b54cc0c\"",
       "file_path": "documentation/EnergyKit/electricityguidance.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord.json": {
       "hash": "bea843d887c7773baedc159e7d97c4c7ed651299a81a93f8eb6920ceeb8dce3f",
-      "last_checked": "2026-04-21T07:41:13.924535",
+      "last_checked": "2026-04-24T07:38:53.492284",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"36b4deca41ca2c62984dec41b84e5392\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightservice.json": {
       "hash": "e1399a997957d29427c67ca2bd95694fc6304a8338ac5fe028d0d93cb551f772",
-      "last_checked": "2026-04-21T07:41:14.081772",
+      "last_checked": "2026-04-24T07:38:53.694253",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"82ebfd4eaa59d657f41c273ca02a4a6f\"",
       "file_path": "documentation/EnergyKit/electricityinsightservice.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery.json": {
       "hash": "75abf463cdfb94f89a0ca87977e0dff2aab3e54531f1ed9cd7f03f901f98e1c1",
-      "last_checked": "2026-04-21T07:41:14.390465",
+      "last_checked": "2026-04-24T07:38:53.884980",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"591d60ec92f5ae17b447951a7f8e38f6\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightmeasure.json": {
       "hash": "53df4502980483b0d672f17817a7d8f523143124186a6d40b3814ebd55d8ec12",
-      "last_checked": "2026-04-21T07:41:14.572920",
+      "last_checked": "2026-04-24T07:38:54.038357",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"cfcc811fa0dbfdbced768b936fa6f2f6\"",
       "file_path": "documentation/EnergyKit/electricityinsightmeasure.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror.json": {
       "hash": "e6c6b88b6b56917bea5f1b99d12bc59df6f51321d8c4c904f23e0fdd113d6b3d",
-      "last_checked": "2026-04-21T07:41:14.733290",
+      "last_checked": "2026-04-24T07:38:54.169692",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"32b0a190f715f43aade82970e1c59758\"",
       "file_path": "documentation/EnergyKit/energykiterror.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/init(timestamp:measurement:session:deviceid:).json": {
       "hash": "c3b3d8355ddc5df66ec380cd91c71c8ad8269c8a4da22aef992c71101307e372",
-      "last_checked": "2026-04-21T07:41:14.854942",
+      "last_checked": "2026-04-24T07:38:54.370516",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f31fb7cac3b42fc16536f4f0704f7b23\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/init-timestampmeasurementsessiondeviceid.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct.json": {
       "hash": "803934bdf11b8c6cfb56e1ec5c78cabb42a2037e495858c190f1fea606048da2",
-      "last_checked": "2026-04-21T07:41:14.985845",
+      "last_checked": "2026-04-24T07:38:54.622226",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"5b7de034096e6eb27402f286a90c0b20\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swiftstruct.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/electricalmeasurement.json": {
       "hash": "d6ab2c6906bf4a8366a7a6ed786fe7e079ed14b2cceef1e736a7c899f40ae49c",
-      "last_checked": "2026-04-21T07:41:15.114898",
+      "last_checked": "2026-04-24T07:38:54.749492",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"2abd7b4595c5f3cee6bd085d429d24ba\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/electricalmeasurement.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.property.json": {
       "hash": "a6e0839bb169455f37dbb8b6a3f56c8fc29d8f703d851fd6ca597ffa8ccfd820",
-      "last_checked": "2026-04-21T07:41:15.439465",
+      "last_checked": "2026-04-24T07:38:55.065246",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"da0877081515ea570c07984422f6a783\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swiftproperty.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/timestamp.json": {
       "hash": "2434f734cd8d32ce4dfba4d584ae2bb4671ee54bd4e7c77b04ac916172e5c7be",
-      "last_checked": "2026-04-21T07:41:15.620460",
+      "last_checked": "2026-04-24T07:38:55.264277",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"737ba759444ba40f7bf0c9cf93870cec\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/timestamp.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/deviceid.json": {
       "hash": "25ee16854ea775b4aa6b8125e994cc4395ea4da3987197dd7b33d6ea4fdc700d",
-      "last_checked": "2026-04-21T07:41:15.811551",
+      "last_checked": "2026-04-24T07:38:55.418813",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"94ac74dd3dcf8ba1adc33d650c477317\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/deviceid.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/measurement.json": {
       "hash": "788960ab037493c86b57029cf37a63b23e5934d80aac9ebd2e152c01aab8b7c3",
-      "last_checked": "2026-04-21T07:41:15.923131",
+      "last_checked": "2026-04-24T07:38:55.559426",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"dee5cc2eb6e9ad4a30faa2c1b8b08fdf\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/measurement.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/init(timestamp:measurement:session:deviceid:).json": {
       "hash": "79342a7de21dc957299f8cf4fa2b731ef0109d26e5d47947b616076ffd0c1322",
-      "last_checked": "2026-04-21T07:41:16.088225",
+      "last_checked": "2026-04-24T07:38:55.755718",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"d3d05f78c5f069fcdb52b00130ccab4f\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/init-timestampmeasurementsessiondeviceid.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct.json": {
       "hash": "69614ef337dad186b48a655b63972397127d44e70851cefe35865b3f4beddad6",
-      "last_checked": "2026-04-21T07:41:16.210995",
+      "last_checked": "2026-04-24T07:38:55.901076",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"3b47b0067049bfa93173c82440689b8c\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swiftstruct.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement.json": {
       "hash": "ecc00de7735ae6b37b41f77fcf9a608e43cc9753f867d21b83005b2239087bf8",
-      "last_checked": "2026-04-21T07:41:16.391849",
+      "last_checked": "2026-04-24T07:38:56.054141",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"4a866826231822d6859260bbe057d6a8\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.property.json": {
       "hash": "ef3a389300044cd7b401c78431c66134269f759f9897db1168484f6909f2883a",
-      "last_checked": "2026-04-21T07:41:16.730361",
+      "last_checked": "2026-04-24T07:38:56.312600",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"eb8d924a1cf18da6bae9330e53dcdce9\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swiftproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/timestamp.json": {
       "hash": "25a35eb375d24270832b64c4f8e954145dadcf45df9eed53a30f587b10f272fe",
-      "last_checked": "2026-04-21T07:41:16.944521",
+      "last_checked": "2026-04-24T07:38:56.457657",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"68d5c3c2e90a21d5ed1dcef9748781cc\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/timestamp.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/deviceid.json": {
       "hash": "22cf5982cd546ae9b3cf56f4d5e4d448f72c5672526025ae96e98ac7295cf96e",
-      "last_checked": "2026-04-21T07:41:17.132598",
+      "last_checked": "2026-04-24T07:38:56.584401",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"afaf6cd40e1e7df7ef64ec5c9d6d42f2\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/deviceid.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/measurement.json": {
       "hash": "1d996faf0a6c9f07843fe1326c702eaa03113c8e4e6da426e0fec7f207f367ac",
-      "last_checked": "2026-04-21T07:41:17.265193",
+      "last_checked": "2026-04-24T07:38:56.729903",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8746abc52224b6acda545d32b576b6cf\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/measurement.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/venue(for:).json": {
       "hash": "699008cf28aeeb12f5cb2647c0acdc6afd2eaa3cee12979e589cb1b576acbb9e",
-      "last_checked": "2026-04-21T07:41:17.483046",
+      "last_checked": "2026-04-24T07:38:56.882446",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"4f533578e9686886756e232f1e43ea73\"",
       "file_path": "documentation/EnergyKit/energyvenue/venue-for.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/venue(matchinghomeuniqueidentifier:).json": {
       "hash": "3b329b18264c7ad68b62fcc8ae147b60f6c69e87698d99d399851476f44f12c7",
-      "last_checked": "2026-04-21T07:41:17.625224",
+      "last_checked": "2026-04-24T07:38:57.032200",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"78363957c4c7cacf38e2bd815d9d7dd7\"",
       "file_path": "documentation/EnergyKit/energyvenue/venue-matchinghomeuniqueidentifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/submitevents(_:).json": {
       "hash": "42c7ba5a1d830571b1c6f4cc9a7e0ab5ff84f924fcc422a2fbe546947f4221ab",
-      "last_checked": "2026-04-21T07:41:17.814401",
+      "last_checked": "2026-04-24T07:38:57.184719",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"ee7d185b28e8105dd9f091c6a415947a\"",
       "file_path": "documentation/EnergyKit/energyvenue/submitevents.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/name.json": {
       "hash": "607ee387e4560a9cf9adad5c9a6445621f510b073824d36a9c22a1cdba241442",
-      "last_checked": "2026-04-21T07:41:18.104606",
+      "last_checked": "2026-04-24T07:38:57.463361",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"202ab0f2aaa0e1b767e72caf365e5ffb\"",
       "file_path": "documentation/EnergyKit/energyvenue/name.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityflowdirection/exported.json": {
       "hash": "9e80aa95dfbf8e81e2698c234cf76c594957e093e7e8e916c76e21a89d95fd18",
-      "last_checked": "2026-04-21T07:41:18.393346",
+      "last_checked": "2026-04-24T07:38:57.778019",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"60d7417ef98005b57f080d0447f3831c\"",
       "file_path": "documentation/EnergyKit/electricityflowdirection/exported.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityflowdirection/imported.json": {
       "hash": "f71c14efa4cb8988184d1d83637d70b7b985d69449754d2269811f52f1200fd0",
-      "last_checked": "2026-04-21T07:41:18.523807",
+      "last_checked": "2026-04-24T07:38:57.908379",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"d0bfd3a30690f3af7a2630c99e314681\"",
       "file_path": "documentation/EnergyKit/electricityflowdirection/imported.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/service.json": {
       "hash": "5260503bd9e154ba03731534ec9b047bc3e7d214be1e355a1a8574ecc93cca13",
-      "last_checked": "2026-04-21T07:41:18.641600",
+      "last_checked": "2026-04-24T07:38:58.043482",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"5f1625719bcd2e0c7f53fe2b2e5cde7d\"",
       "file_path": "documentation/EnergyKit/electricityguidance/service.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/sharedservice.json": {
       "hash": "d310f88ce8c5f9790e6e1ca39811313f11aa0c582e077510ee770bdfeadebbf0",
-      "last_checked": "2026-04-21T07:41:18.847290",
+      "last_checked": "2026-04-24T07:38:58.176347",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"07f74750b509aba77a6933ce51114844\"",
       "file_path": "documentation/EnergyKit/electricityguidance/sharedservice.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/value.json": {
       "hash": "fbc44c4ebc04e7031562136a6a5c3cc08aae6982b37c4a82fca44df9064b49ec",
-      "last_checked": "2026-04-21T07:41:19.000693",
+      "last_checked": "2026-04-24T07:38:58.337385",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7b0174d08eccde2c2dff342829183a1e\"",
       "file_path": "documentation/EnergyKit/electricityguidance/value.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/values.json": {
       "hash": "c163e381bb753dac8009001e5c361da7251943a32346e9e8cb16ce651d4b00a3",
-      "last_checked": "2026-04-21T07:41:19.126331",
+      "last_checked": "2026-04-24T07:38:58.475051",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7990ccb8ab9295bb38eec6562dc2cbf8\"",
       "file_path": "documentation/EnergyKit/electricityguidance/values.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/options-swift.enum.json": {
       "hash": "4f6d8f68ba876b1112a3d69d123564bc3cba176954708f1c2bf882ab39420882",
-      "last_checked": "2026-04-21T07:41:19.241953",
+      "last_checked": "2026-04-24T07:38:58.605381",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"3f8aa061a96a6112533deb5fa3f0bf8f\"",
       "file_path": "documentation/EnergyKit/electricityguidance/options-swiftenum.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/options-swift.property.json": {
       "hash": "99e8a28c1d4c96378ebe604e38f26e7541aca7c7b4a45be2e6a6f9bd2f2c9271",
-      "last_checked": "2026-04-21T07:41:19.378653",
+      "last_checked": "2026-04-24T07:38:58.748010",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"11285fa1fc5aa2c41c9bed0414ecf734\"",
       "file_path": "documentation/EnergyKit/electricityguidance/options-swiftproperty.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/interval.json": {
       "hash": "fc9a4250248dbffed6a2353dfa8cc94c139314072adcfa1ef814b77f9e07c98d",
-      "last_checked": "2026-04-21T07:41:19.501420",
+      "last_checked": "2026-04-24T07:38:58.895757",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"6f9cf09c1bf45af386b96a998c7a1ec7\"",
       "file_path": "documentation/EnergyKit/electricityguidance/interval.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/energyvenueid.json": {
       "hash": "683a1993c0916e15399878ad2da288af7e3e77d65948c08ee923f129aee8537b",
-      "last_checked": "2026-04-21T07:41:19.622096",
+      "last_checked": "2026-04-24T07:38:59.040339",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"6ca0fae4ce356456eb454d46edeb264a\"",
       "file_path": "documentation/EnergyKit/electricityguidance/energyvenueid.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/guidancetoken.json": {
       "hash": "d5d70a076c8b97eabd446d6ed00f4b02b416f26c624e50df7fa8f3f99959e576",
-      "last_checked": "2026-04-21T07:41:19.786017",
+      "last_checked": "2026-04-24T07:38:59.176309",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"4ab9d87d794213c6fa4c5da8533389dc\"",
       "file_path": "documentation/EnergyKit/electricityguidance/guidancetoken.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/query.json": {
       "hash": "0b00120e0832be000297d6ed53e692112ff0ce9e6065990f296551c10251cd94",
-      "last_checked": "2026-04-21T07:41:19.955086",
+      "last_checked": "2026-04-24T07:38:59.310959",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"37227e1ca6ff98c518141a40fe415724\"",
       "file_path": "documentation/EnergyKit/electricityguidance/query.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/suggestedaction-swift.property.json": {
       "hash": "92737e1680bc733fad13228337073dad167a5228139f129342b42846c6531bfa",
-      "last_checked": "2026-04-21T07:41:20.139152",
+      "last_checked": "2026-04-24T07:38:59.442098",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"41451e649e8a52348117de60da362076\"",
       "file_path": "documentation/EnergyKit/electricityguidance/suggestedaction-swiftproperty.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/suggestedaction-swift.enum.json": {
       "hash": "ca6ba32766d5fd88034353618865cfaf1c673db8acd7fa38499e5f29be5dc6b5",
-      "last_checked": "2026-04-21T07:41:20.323189",
+      "last_checked": "2026-04-24T07:38:59.597775",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8b7f4abb56926f174aeea73e7969f467\"",
       "file_path": "documentation/EnergyKit/electricityguidance/suggestedaction-swiftenum.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness.json": {
       "hash": "db60d633fd04fef1da1bb868f06051188444e747c36a171659fa94a4f3d1d474",
-      "last_checked": "2026-04-21T07:41:20.483717",
+      "last_checked": "2026-04-24T07:38:59.749226",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"83412a51135bbb29597938fc7d9270e5\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/databygridcleanliness.json": {
       "hash": "c9e7b2fc6335c749a1c017f3465d989cfbded5138abbca87b0bd7d9c0c85626a",
-      "last_checked": "2026-04-21T07:41:20.684360",
+      "last_checked": "2026-04-24T07:38:59.893305",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"ccdfce507e2b8f481e1db261183a7c5b\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/databygridcleanliness.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak.json": {
       "hash": "f26a2bc61e706c7560537087bb3a555faaa53e41ca79403e1b8db5233c5336b2",
-      "last_checked": "2026-04-21T07:41:20.842971",
+      "last_checked": "2026-04-24T07:39:00.038598",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"be0a15d97805775cdd5ecc1d7bae7ef8\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/databytariffpeak.json": {
       "hash": "6ef91803806f0c292bb89a917a24605a74c54ef71926b4039ba7ba9f1a5ac9f5",
-      "last_checked": "2026-04-21T07:41:20.976253",
+      "last_checked": "2026-04-24T07:39:00.184825",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"dbf36450bfa37f13c30007d267f48d14\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/databytariffpeak.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/totalruntime.json": {
       "hash": "b4b213e5a6a149589b43ae1a3ea9279a6c2bbe583c5afce570c8e3e17734f0e7",
-      "last_checked": "2026-04-21T07:41:21.092248",
+      "last_checked": "2026-04-24T07:39:00.334941",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"464fe7aca52cde3b5ba4ae6d87c3ba6b\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/totalruntime.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/range.json": {
       "hash": "d7837e9add7994401ab89e1cbc5cec9a0ca81c522a7609f8d082e54f3c6d4f15",
-      "last_checked": "2026-04-21T07:41:21.259646",
+      "last_checked": "2026-04-24T07:39:00.506386",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"3daf615a5c6534218998097f771ba76e\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/range.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/totalenergy.json": {
       "hash": "4244245799699c08f4567ea943636b9577b57ae6077a433311eb806163445900",
-      "last_checked": "2026-04-21T07:41:21.428205",
+      "last_checked": "2026-04-24T07:39:00.640781",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"057e8437edcf4d4e45b3b67159acd0a3\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/totalenergy.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightservice/shared.json": {
       "hash": "7d97f8e94de6624c9d0fc33f805669152db8c966ea71942c0e91ff58db276b74",
-      "last_checked": "2026-04-21T07:41:21.564940",
+      "last_checked": "2026-04-24T07:39:00.823919",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"dbe671b04b6d03c0f9cd2a16b0ef0920\"",
       "file_path": "documentation/EnergyKit/electricityinsightservice/shared.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightservice/energyinsights(fordeviceid:using:atvenue:).json": {
       "hash": "5f7316bd8945d763f73856a49f0173f96d899fe41416f94bcc862ae6827cdcd8",
-      "last_checked": "2026-04-21T07:41:21.745048",
+      "last_checked": "2026-04-24T07:39:00.965890",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"baca64d7b2214a4a53eb7a93243a6c85\"",
       "file_path": "documentation/EnergyKit/electricityinsightservice/energyinsights-fordeviceidusingatvenue.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightservice/runtimeinsights(fordeviceid:using:atvenue:).json": {
       "hash": "bbc9ad37da60c3578113e71cf637ac8ad6a9a51ce551f668ba3e23792f2f1514",
-      "last_checked": "2026-04-21T07:41:21.895815",
+      "last_checked": "2026-04-24T07:39:01.092543",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8e162e3b52dea1cc750c2d0399ee1ee0\"",
       "file_path": "documentation/EnergyKit/electricityinsightservice/runtimeinsights-fordeviceidusingatvenue.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/init(options:range:granularity:flowdirection:).json": {
       "hash": "33121bf3aeedd0c039eb017e62d659e7d19b6f03a0d2c0ef8b58d96676b1d3da",
-      "last_checked": "2026-04-21T07:41:22.008472",
+      "last_checked": "2026-04-24T07:39:01.240125",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0eda75edce5c8aad15affa903b7fa9e1\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/init-optionsrangegranularityflowdirection.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.struct.json": {
       "hash": "76019c88d2dbd403e2ecec6dc6c7ff343f2e8acd9fb9c8ab1f4bc7fdf464f078",
-      "last_checked": "2026-04-21T07:41:22.185844",
+      "last_checked": "2026-04-24T07:39:01.408511",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"e1c80ed1e6be8a791398a51dc7aaa1e3\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swiftstruct.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.property.json": {
       "hash": "12b0925bd683794e48e09132e41c76bc0b6b32292b980e9efb634ceacf2246cb",
-      "last_checked": "2026-04-21T07:41:22.317471",
+      "last_checked": "2026-04-24T07:39:01.539187",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"e29ac8db4e790be316e885c717ecfa0b\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swiftproperty.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum.json": {
       "hash": "5925ec507570d7290d7d7d9ee481368f20768b72a09166ab2a5120347dcf8056",
-      "last_checked": "2026-04-21T07:41:22.444908",
+      "last_checked": "2026-04-24T07:39:01.670393",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"825a9ef5497396de843eb53ba50b7743\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swiftenum.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.property.json": {
       "hash": "7ffaec4f15d99e85715ef624796f850cdd7c0f68876611752346cc712b6aba79",
-      "last_checked": "2026-04-21T07:41:22.634645",
+      "last_checked": "2026-04-24T07:39:01.810847",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8a7fd93c36099b59923be794fba8b1ad\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swiftproperty.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/flowdirection.json": {
       "hash": "dc7ae976581e94d6471164528195c4ee982a72f486b239f8afb30df0b289de56",
-      "last_checked": "2026-04-21T07:41:22.767060",
+      "last_checked": "2026-04-24T07:39:01.957029",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"74b645d0f65a03ca8a89ca7e573ecaec\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/flowdirection.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/range.json": {
       "hash": "ee3aa851fe27d4d372471bf79d8991f96cb8e963d857824d3ffb197925ff37d5",
-      "last_checked": "2026-04-21T07:41:22.892695",
+      "last_checked": "2026-04-24T07:39:02.242657",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f6bb733913bb7655a73c962e84385189\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/range.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/guidanceunavailable.json": {
       "hash": "e561317732f6a238536e7a06c4eb003f91e998c6922a09c3952fabda55792e75",
-      "last_checked": "2026-04-21T07:41:23.005452",
+      "last_checked": "2026-04-24T07:39:02.437281",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"cffd767595eabbaa6748ef45d86c207d\"",
       "file_path": "documentation/EnergyKit/energykiterror/guidanceunavailable.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/inprogress.json": {
       "hash": "aceea431a761df06b9d57f17a9d6e4fdae365d69d7927f38b726c14c5e80c46d",
-      "last_checked": "2026-04-21T07:41:23.152486",
+      "last_checked": "2026-04-24T07:39:02.572474",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"9b0370b0db5eba87ca4f9f0749f6b126\"",
       "file_path": "documentation/EnergyKit/energykiterror/inprogress.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/invalidloadevent.json": {
       "hash": "a973ebd61f592c3331685ab1d798a1dbf7320688f30147b027a8dd232db33982",
-      "last_checked": "2026-04-21T07:41:23.262320",
+      "last_checked": "2026-04-24T07:39:02.765424",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"86db4e6a8ae0a1d28b68ad4c8c19cf3d\"",
       "file_path": "documentation/EnergyKit/energykiterror/invalidloadevent.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/permissiondenied.json": {
       "hash": "4b148e5a54c030abda3b767fa7a3d919f3d8de41f59392ef413fbd25dbdc27da",
-      "last_checked": "2026-04-21T07:41:23.409421",
+      "last_checked": "2026-04-24T07:39:02.906525",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7621c6282b506d50d40a18030134fd6b\"",
       "file_path": "documentation/EnergyKit/energykiterror/permissiondenied.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/serviceunavailable.json": {
       "hash": "c7a4b4499496c21543009064dc79598cf60a3e6d5706513f4aab24a8b843f4cd",
-      "last_checked": "2026-04-21T07:41:23.576357",
+      "last_checked": "2026-04-24T07:39:03.074249",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"88ef03ef05e9cc6cc0a772b4e8f86875\"",
       "file_path": "documentation/EnergyKit/energykiterror/serviceunavailable.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/venueunavailable.json": {
       "hash": "f886cf8409186295c600c1dec95d33f305bc98b4d009aa16566220a289e1eccf",
-      "last_checked": "2026-04-21T07:41:23.691025",
+      "last_checked": "2026-04-24T07:39:03.275811",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"80d2ac15f43f94b00659e3cbd6411993\"",
       "file_path": "documentation/EnergyKit/energykiterror/venueunavailable.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/errordescription.json": {
       "hash": "a864a80ea73158ecc6b7b3583a836344635d2c48dff4a176176e670400d0dc8f",
-      "last_checked": "2026-04-21T07:41:24.304441",
+      "last_checked": "2026-04-24T07:39:04.059330",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"db37e3c4a210585d7fb6ec6b97faf4f5\"",
       "file_path": "documentation/EnergyKit/energykiterror/errordescription.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/failurereason.json": {
       "hash": "7d79d6649ce14f59a66ea082e015ac3cbea52af96538b16e4842d4a5a7a3a362",
-      "last_checked": "2026-04-21T07:41:24.419889",
+      "last_checked": "2026-04-24T07:39:04.254590",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"551b1b3a03789ded2644002c659b1f75\"",
       "file_path": "documentation/EnergyKit/energykiterror/failurereason.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/helpanchor.json": {
       "hash": "b2b97b65160f8f8f24e0d915217cfe759a7d22004c7df2ed0d4e084912022b96",
-      "last_checked": "2026-04-21T07:41:24.563549",
+      "last_checked": "2026-04-24T07:39:04.396764",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"82599a04077014135ee4b079f05e079a\"",
       "file_path": "documentation/EnergyKit/energykiterror/helpanchor.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/recoverysuggestion.json": {
       "hash": "680712ab22387284a47c7794e4f859602d9059c71513f7c18ccd35167860b4d4",
-      "last_checked": "2026-04-21T07:41:24.727054",
+      "last_checked": "2026-04-24T07:39:04.532261",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7e9de3d9cfcf076bc4588bdc6451c510\"",
       "file_path": "documentation/EnergyKit/energykiterror/recoverysuggestion.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/init(id:state:guidancestate:).json": {
       "hash": "2ef0929e7c2b4c74260047893cb313d9ada8c8aecfbd2ada35a1cbcf7e45162b",
-      "last_checked": "2026-04-21T07:41:24.848078",
+      "last_checked": "2026-04-24T07:39:04.713256",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"2c5a02ca60f43321539337b4e1cfc232\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/init-idstateguidancestate.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/id.json": {
       "hash": "04546e6e45f661f8ad1229bb211db7b5001449bedcaa7249b04dde88314407e9",
-      "last_checked": "2026-04-21T07:41:24.988723",
+      "last_checked": "2026-04-24T07:39:04.848341",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8864e81c09a28633bdf2e494fa4f2d00\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/id.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/state-swift.property.json": {
       "hash": "5c019563c9143ae3adc926ac2abda8151346e342aaff5d7cb7c7110ebf228dc4",
-      "last_checked": "2026-04-21T07:41:25.159399",
+      "last_checked": "2026-04-24T07:39:04.997704",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"d85ef4825328dd83291969d623f4c5ff\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/state-swiftproperty.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/state-swift.enum.json": {
       "hash": "03470b4256b9a73434523b0e6ec869c450feacd68624dd614d693208a51c4fa2",
-      "last_checked": "2026-04-21T07:41:25.283863",
+      "last_checked": "2026-04-24T07:39:05.177835",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"d9d2f0405e05f08ab046cfb85325f931\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/state-swiftenum.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct.json": {
       "hash": "39eddbfc56cb8044353637ed6b0c3c2aa906530927a950a3f9c3732ec6ae1270",
-      "last_checked": "2026-04-21T07:41:25.405862",
+      "last_checked": "2026-04-24T07:39:05.373886",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"1d5d0a27632eda62f1c33c4cdbb0d234\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/guidancestate-swiftstruct.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/guidancestate-swift.property.json": {
       "hash": "a102d2dc5e090e79ccef9bb94dca30a75957c51f47a2c22ad26136b69894a43b",
-      "last_checked": "2026-04-21T07:41:25.528100",
+      "last_checked": "2026-04-24T07:39:05.545236",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f7eadd1681173f9a1ecc09ff31c733eb\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/guidancestate-swiftproperty.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/electricalmeasurement/init(stage:).json": {
       "hash": "d61b9a2e883f04d32392fa2390ee064f69a64fc5f4113aeea51cef994ed951b0",
-      "last_checked": "2026-04-21T07:41:25.640698",
+      "last_checked": "2026-04-24T07:39:05.676703",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"e9ea2d1e2aed123126655c6107de646d\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/electricalmeasurement/init-stage.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/electricalmeasurement/stage.json": {
       "hash": "d2818a526c0cf70e5f7f1cfb649c9bed2a6661c5b2931087992e997019825bb6",
-      "last_checked": "2026-04-21T07:41:25.766449",
+      "last_checked": "2026-04-24T07:39:05.818266",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"c71a5af9b785cb82f2221ae65fd0310d\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/electricalmeasurement/stage.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/init(id:state:guidancestate:).json": {
       "hash": "c385e00bd37f1719a1b39172707cf29a80f24c66d6b66ac49dcb91b877f8b0e9",
-      "last_checked": "2026-04-21T07:41:25.886532",
+      "last_checked": "2026-04-24T07:39:05.976264",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0482e7536cbe76575e9e61a68c856800\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/init-idstateguidancestate.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.property.json": {
       "hash": "d48f264f8535dec78a93a8a6a11dca5353d82fcaa775e8c1fba3472e5c292d05",
-      "last_checked": "2026-04-21T07:41:26.015270",
+      "last_checked": "2026-04-24T07:39:06.177309",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f1174e97035026d2f9ff0c54863ec02d\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/guidancestate-swiftproperty.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/id.json": {
       "hash": "c6555eabad3f592d00f3fb2b5148d5d490db5146bcb9a4f044b12e4e7f8cded8",
-      "last_checked": "2026-04-21T07:41:26.141219",
+      "last_checked": "2026-04-24T07:39:06.329282",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7087d2616520a1003c7806934a405baf\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/id.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/state-swift.property.json": {
       "hash": "9a1cbf80f72388f1ac040be5fb03ebc4ed967aef602d6b750830d8fb463aec2c",
-      "last_checked": "2026-04-21T07:41:26.299462",
+      "last_checked": "2026-04-24T07:39:06.483031",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"bb4934c95257285c91271d7153bb1327\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/state-swiftproperty.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct.json": {
       "hash": "e07d49c9b75d3612a3042e69add716538d4474df511f7e233369475786d46d96",
-      "last_checked": "2026-04-21T07:41:26.424107",
+      "last_checked": "2026-04-24T07:39:06.680597",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"ba1e3e08dbceb5bd8f47fc0c226d5b25\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/guidancestate-swiftstruct.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/state-swift.enum.json": {
       "hash": "c6f5f3fe20a2a34e79d652db36ff190ae86a0437aa30d26c5abbd0f156fe020b",
-      "last_checked": "2026-04-21T07:41:26.557423",
+      "last_checked": "2026-04-24T07:39:06.828532",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"6a8f70b62ea85d0718ee63ccd4c08eef\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/state-swiftenum.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement/init(stateofcharge:direction:power:energy:).json": {
       "hash": "a3f30d7f8037cc9a29d12938b7d5f16aa206235fdd1b0cb8d1ed40fd3a433804",
-      "last_checked": "2026-04-21T07:41:26.700387",
+      "last_checked": "2026-04-24T07:39:07.017243",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"39de76918592663ceabc128e36f6402a\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement/init-stateofchargedirectionpowerenergy.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement/direction.json": {
       "hash": "763130a00f906a2a35c1cc7f0599a0f51497123268fc37e72b6b4f1753c24e6e",
-      "last_checked": "2026-04-21T07:41:26.872878",
+      "last_checked": "2026-04-24T07:39:07.157380",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"bb842800faf39bfa8136fbac51b52c3e\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement/direction.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement/energy.json": {
       "hash": "be60fa6adac8e393310cf9ec8a6b2ec2d8ebe1d9fc3695207bc75aea8714bb76",
-      "last_checked": "2026-04-21T07:41:26.989332",
+      "last_checked": "2026-04-24T07:39:07.315187",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"43516d586b62f42129df542dcaaf16b9\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement/energy.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement/stateofcharge.json": {
       "hash": "11c83a4345f76f63dc20d417007bf31c6f5e9fcfa9e00d804c9aec7306d769f7",
-      "last_checked": "2026-04-21T07:41:27.183868",
+      "last_checked": "2026-04-24T07:39:07.450540",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"6d811a47fcca781270f03b79980e13c7\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement/stateofcharge.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/electricalmeasurement/power.json": {
       "hash": "db2aa143af416bbf53d4fb964b6dac065310e2f2112b3d733796c749f8ef2d59",
-      "last_checked": "2026-04-21T07:41:27.300852",
+      "last_checked": "2026-04-24T07:39:07.588109",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"da5036b4ba5a37c01b40326fd916a13b\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/electricalmeasurement/power.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/service/guidance(using:at:).json": {
       "hash": "816d5c8629c4e23c65d10e33131d7a620dfc302117b8c0028d51d4681900c326",
-      "last_checked": "2026-04-21T07:41:27.478689",
+      "last_checked": "2026-04-24T07:39:07.747136",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8a9a9c88e96c48b15ec9e9aa7e234996\"",
       "file_path": "documentation/EnergyKit/electricityguidance/service/guidance-usingat.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/value/init(interval:rating:).json": {
       "hash": "877b1783a2fe377c3c71b121ed928072d3442b897dd26d289dea9d74670a872c",
-      "last_checked": "2026-04-21T07:41:27.611194",
+      "last_checked": "2026-04-24T07:39:07.930611",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"904c8699cb426781c4c48a1688498122\"",
       "file_path": "documentation/EnergyKit/electricityguidance/value/init-intervalrating.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/value/interval.json": {
       "hash": "555dc9d981c215ca59d74a444de63a2f18892392c2de44c6603f760d894cb98d",
-      "last_checked": "2026-04-21T07:41:27.730979",
+      "last_checked": "2026-04-24T07:39:08.073144",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"4d186823c2729764c62b45c1e8f1304a\"",
       "file_path": "documentation/EnergyKit/electricityguidance/value/interval.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/value/rating.json": {
       "hash": "395cbccc40839cb8851922da9f2b80132931784dfddcd7982c4af44a672798e4",
-      "last_checked": "2026-04-21T07:41:27.910393",
+      "last_checked": "2026-04-24T07:39:08.229301",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"58042b292200ab3dd131e129279b7dff\"",
       "file_path": "documentation/EnergyKit/electricityguidance/value/rating.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/options-swift.enum/locationhasrateplan.json": {
       "hash": "96532ed37ce97915468f2e5f06fffac22e6e6e20924b4b99f0bfdacf22f3041f",
-      "last_checked": "2026-04-21T07:41:28.025462",
+      "last_checked": "2026-04-24T07:39:08.375459",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0e21dcc7fc73bc2ab348ec1f647bea05\"",
       "file_path": "documentation/EnergyKit/electricityguidance/options-swift.enum/locationhasrateplan.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/options-swift.enum/guidanceincorporatesrateplan.json": {
       "hash": "4681f9598c73642db97cbd80a3f58173d905a3fa5921c8575c21e06583bf4213",
-      "last_checked": "2026-04-21T07:41:28.174131",
+      "last_checked": "2026-04-24T07:39:08.551691",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"92d26cf4c35d8261bc1c8040ff0fb351\"",
       "file_path": "documentation/EnergyKit/electricityguidance/options-swift.enum/guidanceincorporatesrateplan.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/query/init(suggestedaction:).json": {
       "hash": "7dfbe74a3671f8cb184c22d7c7468a61b3a5caf742feb06e1e46a894dd53a272",
-      "last_checked": "2026-04-21T07:41:28.287855",
+      "last_checked": "2026-04-24T07:39:08.700605",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"fdbef7e95f6e246a464c0154ef3b602b\"",
       "file_path": "documentation/EnergyKit/electricityguidance/query/init-suggestedaction.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/suggestedaction-swift.enum/reduce.json": {
       "hash": "8197e9c6e62727bb5376aadd6cb0f00e2668d79525d85e7e8b4cd276d22b3a1f",
-      "last_checked": "2026-04-21T07:41:28.420517",
+      "last_checked": "2026-04-24T07:39:08.851967",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"fcf853028af1ff85574929c6e8b82550\"",
       "file_path": "documentation/EnergyKit/electricityguidance/suggestedaction-swift.enum/reduce.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityguidance/suggestedaction-swift.enum/shift.json": {
       "hash": "93f370b99377e5531415590a86decd08666db4d167e5bf2eb079d3ec8b128b6e",
-      "last_checked": "2026-04-21T07:41:28.540203",
+      "last_checked": "2026-04-24T07:39:08.978384",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"a1c1a3beb7f24a3647a98ea2f6d385bb\"",
       "file_path": "documentation/EnergyKit/electricityguidance/suggestedaction-swift.enum/shift.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness/avoid.json": {
       "hash": "0441b0893ffb3336f64768b01431c90359fbd6cedda4d74e46e98f9c0c0e175b",
-      "last_checked": "2026-04-21T07:41:29.045091",
+      "last_checked": "2026-04-24T07:39:09.553887",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"3990a57bef0757c8072ff8127b40de59\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness/avoid.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness/unknown.json": {
       "hash": "67070f5afe56318f88fc8262dbba143014286128ecf12f97b86181d8e3924f5e",
-      "last_checked": "2026-04-21T07:41:29.205621",
+      "last_checked": "2026-04-24T07:39:09.708672",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"db28466ad31b4aa31d25a718a0ea8f13\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness/unknown.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/init(superoffpeak:offpeak:partialpeak:onpeak:criticalpeak:unknown:).json": {
       "hash": "d2b43db707bb82ede84f9683c7b24fd94eb844c96a6dedeaa4dc65f7be7d8ad8",
-      "last_checked": "2026-04-21T07:41:29.319261",
+      "last_checked": "2026-04-24T07:39:09.856094",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"751b1616b32fd54e5ff794923d7e2f34\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/init-superoffpeakoffpeakpartialpeakonpeakcriticalpeakunknown.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/criticalpeak.json": {
       "hash": "c1814f9b6ace7fefc4621de643372318c819c118f77f3816429df62d8e9f177c",
-      "last_checked": "2026-04-21T07:41:29.435718",
+      "last_checked": "2026-04-24T07:39:09.991142",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"29c9f55d1dcedbbaeb3e67cbab91bd68\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/criticalpeak.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/offpeak.json": {
       "hash": "7a0219c24994bac33e602861f3f0f0af0376c7180c65041ed01b977f40c1c636",
-      "last_checked": "2026-04-21T07:41:29.553540",
+      "last_checked": "2026-04-24T07:39:10.130299",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"979c3434d418cbe698fcbc96d87667af\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/offpeak.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/onpeak.json": {
       "hash": "25e413012ef72de0497a77a7c7c3be241667554db58ecc3e61f57b19767f5c8c",
-      "last_checked": "2026-04-21T07:41:29.689492",
+      "last_checked": "2026-04-24T07:39:10.269856",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0045459581b0d2c0b27601f3c364eb9d\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/onpeak.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/partialpeak.json": {
       "hash": "a543d260bffa37b29c9cf2aea4df7628a88ff25bc45b2a6410730ca8e059b447",
-      "last_checked": "2026-04-21T07:41:29.842350",
+      "last_checked": "2026-04-24T07:39:10.399701",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"54bba1017048d0bac85dfda35de5e5a1\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/partialpeak.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/superoffpeak.json": {
       "hash": "9345e2ce84536d32cfce1eb28a1f6c26c61b3f6548b1edbdb444425c86602a79",
-      "last_checked": "2026-04-21T07:41:30.022033",
+      "last_checked": "2026-04-24T07:39:10.598438",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"914a1398c2a8a789e906c7d69bb1493d\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/superoffpeak.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/tariffpeak/unknown.json": {
       "hash": "bfa32a78b9139f732df0eb94df6c2cea8a94e98820afdca1e176b2494bd59fb6",
-      "last_checked": "2026-04-21T07:41:30.181446",
+      "last_checked": "2026-04-24T07:39:10.750223",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"3e039c2ed98f1286b02d13ef8e2b5307\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/tariffpeak/unknown.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.struct/init(rawvalue:).json": {
       "hash": "b33153e655324f2d2f917f6fec2ffdfd228125df1bab44bf7f5cd858f646a1d2",
-      "last_checked": "2026-04-21T07:41:30.344339",
+      "last_checked": "2026-04-24T07:39:10.894042",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"1569717bad959a9d2c5f33afc4a428d6\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swift.struct/init-rawvalue.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.struct/cleanliness.json": {
       "hash": "440e2c77227239c6f38261c52f721a802c1e40e790021b6ccd5294626370ea82",
-      "last_checked": "2026-04-21T07:41:30.606775",
+      "last_checked": "2026-04-24T07:39:11.216897",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"02029d0c1f47e0386910eb47458d44f5\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swift.struct/cleanliness.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.struct/tariff.json": {
       "hash": "f364b3f914039a4cfe7f55dd8e4f0a39c13dd7ea61fbde61bcaf1f5598249d1f",
-      "last_checked": "2026-04-21T07:41:30.766723",
+      "last_checked": "2026-04-24T07:39:11.356077",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0b1424b07c655ddeb40f28afae734d64\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swift.struct/tariff.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum/daily.json": {
       "hash": "57a9bb97bc5d008cd0ff4716923ea6e767b3da08bc49f5746d437adf9ab41f00",
-      "last_checked": "2026-04-21T07:41:30.935090",
+      "last_checked": "2026-04-24T07:39:11.495409",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8861983b2c81b63ec62a452ff86b00a9\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swift.enum/daily.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum/hourly.json": {
       "hash": "8db71088febe2e2d278adaf9933be3e89b514f410059f6b5f6c8b28ddf91ef33",
-      "last_checked": "2026-04-21T07:41:31.096071",
+      "last_checked": "2026-04-24T07:39:11.629503",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"137085aeea9b9212abb6545087a0213f\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swift.enum/hourly.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum/monthly.json": {
       "hash": "9ce812d3488ee7e864fc7667e54a77a415a1a0a225fe40a7f06e184e98aa6637",
-      "last_checked": "2026-04-21T07:41:31.219601",
+      "last_checked": "2026-04-24T07:39:11.753701",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"b336fc5ee3aba4fe603e92b2e34573e4\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swift.enum/monthly.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum/weekly.json": {
       "hash": "dd4dbc82d51fbaaa1599b8a9cb81d309e0bfb1922ee811aa3bafbece7c8f6bf4",
-      "last_checked": "2026-04-21T07:41:31.341994",
+      "last_checked": "2026-04-24T07:39:11.903724",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"a681fbdee11c0b75e78e23a0c56604f6\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swift.enum/weekly.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/granularity-swift.enum/yearly.json": {
       "hash": "3ada3f49da96933df9532ec8a6034fd1343d9c4d10a4635d812c307cf72ac711",
-      "last_checked": "2026-04-21T07:41:31.485018",
+      "last_checked": "2026-04-24T07:39:12.043565",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0eb4994f015b08be17c099d81a73e225\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/granularity-swift.enum/yearly.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/state-swift.enum/active.json": {
       "hash": "f2e51cc7716ade46270ebb6b1823b7dde723f862d392ac006081d523a0c046b4",
-      "last_checked": "2026-04-21T07:41:31.650854",
+      "last_checked": "2026-04-24T07:39:12.177179",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f6fca35400f839c8ee75d0ab98e40598\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/state-swift.enum/active.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/state-swift.enum/begin.json": {
       "hash": "1bbb98c7276e60a390596503e772ec68963f67382ccfe0245a9820e814996baa",
-      "last_checked": "2026-04-21T07:41:31.825206",
+      "last_checked": "2026-04-24T07:39:12.314778",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"fb42f3a873ba7f5718b5cb4fe6bd0709\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/state-swift.enum/begin.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/state-swift.enum/end.json": {
       "hash": "20ba8dd84d38b4df808b6222234d4aa4537660cb6ddc355a3600dfa7a4a6585e",
-      "last_checked": "2026-04-21T07:41:31.937513",
+      "last_checked": "2026-04-24T07:39:12.459907",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"4181fd65ea09a9982b86eec0649b854e\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/state-swift.enum/end.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/init(wasfollowingguidance:guidancetoken:).json": {
       "hash": "d52278ad2ec8a54ae348624c74cd5fef4355159ba33c66021893e56c48aae663",
-      "last_checked": "2026-04-21T07:41:32.049300",
+      "last_checked": "2026-04-24T07:39:12.659438",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"510daf3cf41d9bb12720be7caf1128c8\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/init-wasfollowingguidanceguidancetoken.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/guidancetoken.json": {
       "hash": "764e1757ec5f5cfdaa6febd2c6e0613bcd3834876dcd2384fe07057aae30bb71",
-      "last_checked": "2026-04-21T07:41:32.279956",
+      "last_checked": "2026-04-24T07:39:12.801302",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"89871146f4863dcbc20dff2a4abf53c0\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/guidancetoken.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/wasfollowingguidance.json": {
       "hash": "367fec09e52f4c3ce3f4ce50d26917051422024e1ea68c84e2e048a2cf54423b",
-      "last_checked": "2026-04-21T07:41:32.467431",
+      "last_checked": "2026-04-24T07:39:12.930055",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"0c7f3a9f40402e50bf4582befa4038eb\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/session-swift.struct/guidancestate-swift.struct/wasfollowingguidance.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/init(wasfollowingguidance:guidancetoken:).json": {
       "hash": "5b8b1a797bec0780c74362f3e2f88c0a3954f24ede73c6e7f380fede02bd0921",
-      "last_checked": "2026-04-21T07:41:32.593704",
+      "last_checked": "2026-04-24T07:39:13.100148",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"202d2aed5b66b167051b80314948cfb9\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/init-wasfollowingguidanceguidancetoken.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/guidancetoken.json": {
       "hash": "cc3c1e869ce783ccd9b31dbaa249938e53b8ce73693e7e5590ff537291022969",
-      "last_checked": "2026-04-21T07:41:32.753864",
+      "last_checked": "2026-04-24T07:39:13.244568",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"68d639a77e4d5f7f38897958c37322dc\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/guidancetoken.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/wasfollowingguidance.json": {
       "hash": "39f1d5c49c6f943529b7abe337a36dc71a59a28891444032ee8ef68bf1bff1b0",
-      "last_checked": "2026-04-21T07:41:32.950774",
+      "last_checked": "2026-04-24T07:39:13.429960",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"ffe2bbcd4f0df5c351328c58971093b3\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/guidancestate-swift.struct/wasfollowingguidance.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/state-swift.enum/active.json": {
       "hash": "cb0334a7edcada24ee4eba1f749795078a2fadd4966f9b67849916d43b805cf2",
-      "last_checked": "2026-04-21T07:41:33.073787",
+      "last_checked": "2026-04-24T07:39:13.563076",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"e4e7c47ddfaecf229a85d1520521575c\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/state-swift.enum/active.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/state-swift.enum/begin.json": {
       "hash": "56f0c449cf419642627e2b73f86cdf327ba022100244d505373c6ad4504e4102",
-      "last_checked": "2026-04-21T07:41:33.240078",
+      "last_checked": "2026-04-24T07:39:13.700987",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"7db6f321e402dc521143f275eb7819e9\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/state-swift.enum/begin.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/session-swift.struct/state-swift.enum/end.json": {
       "hash": "e3ba203e500bdd3ff2f74f922877fbd91e387ced3590f53213f22f48806a162c",
-      "last_checked": "2026-04-21T07:41:33.359227",
+      "last_checked": "2026-04-24T07:39:13.851257",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"f14667d875052ddaccf4f8f12fcac14c\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/session-swift.struct/state-swift.enum/end.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electrichvacloadevent/id.json": {
       "hash": "8be45877ab21bfe5410160820decdaaa85240bf1041a91b347382eee85ae3848",
-      "last_checked": "2026-04-21T07:41:15.295290",
+      "last_checked": "2026-04-24T07:38:54.894801",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"75941849da3424cb7b9c4a6107dd851f\"",
       "file_path": "documentation/EnergyKit/electrichvacloadevent/id.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricvehicleloadevent/id.json": {
       "hash": "67631d865b2d00d55e5efc34512833b2c2d4c92dd8fa54192b4fcc76ecba38a2",
-      "last_checked": "2026-04-21T07:41:16.580892",
+      "last_checked": "2026-04-24T07:38:56.179400",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"1d276205b9841ba1d68bcc3f2b8a953b\"",
       "file_path": "documentation/EnergyKit/electricvehicleloadevent/id.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/id.json": {
       "hash": "9cd6eaf677b2e42ec7705c307bad637ff6162f686a424626a0819f3b7f23a8eb",
-      "last_checked": "2026-04-21T07:41:17.947670",
+      "last_checked": "2026-04-24T07:38:57.328394",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"56c1f87f9b0e6c2f4761970b1d863bf4\"",
       "file_path": "documentation/EnergyKit/energyvenue/id.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energyvenue/venues().json": {
       "hash": "f74dac9a34cb89d2de95d586e556503d7e8d6291287a473d262b66265919e620",
-      "last_checked": "2026-04-21T07:41:18.216201",
+      "last_checked": "2026-04-24T07:38:57.647891",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"8453b4a66acdf96a2e1716fb0e0d9f85\"",
       "file_path": "documentation/EnergyKit/energyvenue/venues.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/locationservicesdenied.json": {
       "hash": "c6bf55c754615c2d20fa3a999e7cf75d2300ea3524364f9c84cf88cd91e93fa2",
-      "last_checked": "2026-04-21T07:41:23.837314",
+      "last_checked": "2026-04-24T07:39:03.425200",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"919b5f72baae1b557c49b765667347af\"",
       "file_path": "documentation/EnergyKit/energykiterror/locationservicesdenied.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/ratelimitexceeded.json": {
       "hash": "70f91f79ca69a3c7fe7cafa95c21ba78e2df11ef5fa267c0109471e83f6ecae3",
-      "last_checked": "2026-04-21T07:41:24.000955",
+      "last_checked": "2026-04-24T07:39:03.556755",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"99e5c6e065bcdebade6a495edc496fe0\"",
       "file_path": "documentation/EnergyKit/energykiterror/ratelimitexceeded.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/energykiterror/unsupportedregion.json": {
       "hash": "d9aeb3d5ff747c803b8d89f549d064235738d4ef615f4fc0e585c2b9a19a7469",
-      "last_checked": "2026-04-21T07:41:24.137822",
+      "last_checked": "2026-04-24T07:39:03.802501",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"131eaf6c0e628d22a145cb069cc36669\"",
       "file_path": "documentation/EnergyKit/energykiterror/unsupportedregion.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness/init(cleaner:lessclean:avoid:unknown:).json": {
       "hash": "adfcf8090528eba70edbd5aef1d2dbc396e0b90c1ba52df91a8ce65eb3f1651e",
-      "last_checked": "2026-04-21T07:41:28.655397",
+      "last_checked": "2026-04-24T07:39:09.131207",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"34775835092f9bce4d755c149c82e737\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness/init-cleanerlesscleanavoidunknown.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness/cleaner.json": {
       "hash": "cd6003a54214ba150ad6b3f349919df0795423677d42b6e13e206550c252cee1",
-      "last_checked": "2026-04-21T07:41:28.779497",
+      "last_checked": "2026-04-24T07:39:09.282127",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"088b4cf83a7fa981d1c9c5619261cc01\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness/cleaner.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightrecord/gridcleanliness/lessclean.json": {
       "hash": "2113a999cdc578a946c3ac5e4d962cf0aebe12c63908215840000f163982bd9d",
-      "last_checked": "2026-04-21T07:41:28.909822",
+      "last_checked": "2026-04-24T07:39:09.406102",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"257a1ea003050d2975d02a047389540f\"",
       "file_path": "documentation/EnergyKit/electricityinsightrecord/gridcleanliness/lessclean.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/energykit/electricityinsightquery/options-swift.struct/rawvalue.json": {
       "hash": "4ed0c64cf31e45cf1b6e736b4a44ef45e6139ca848de747ae71497fc95de8286",
-      "last_checked": "2026-04-21T07:41:30.461636",
+      "last_checked": "2026-04-24T07:39:11.067130",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:11.747947",
+      "session_id": "2026-04-24T07:38:51.738284",
       "etag": "W/\"fbc585a32cde9ee1748994f13d7f151c\"",
       "file_path": "documentation/EnergyKit/electricityinsightquery/options-swift.struct/rawvalue.md"
     },

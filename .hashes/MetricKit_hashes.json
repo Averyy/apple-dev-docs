@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-21T07:42:19.168345",
+    "last_updated": "2026-04-24T07:40:01.399223",
     "total_pages": 456,
-    "session_id": "2026-04-21T07:41:45.475707"
+    "session_id": "2026-04-24T07:39:27.005225"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MetricKit.json": {
       "hash": "47412c4d9f995659f1f595c243f963b04f812d046cf21befc798bf7ce646e434",
-      "last_checked": "2026-04-21T07:41:45.761587",
+      "last_checked": "2026-04-24T07:39:27.345626",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3769c8ffd2bafc450c8a1e35f62571f9\"",
       "file_path": "documentation/MetricKit/MetricKit.md"
     },
     "https://developer.apple.com/documentation/MetricKit": {
       "hash": "47412c4d9f995659f1f595c243f963b04f812d046cf21befc798bf7ce646e434",
-      "last_checked": "2026-04-21T07:41:45.653307",
+      "last_checked": "2026-04-24T07:39:27.235828",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3769c8ffd2bafc450c8a1e35f62571f9\"",
       "file_path": "documentation/MetricKit/MetricKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager.json": {
       "hash": "532ba3bb1b506b19411a7f23caae4ad9b0ffe571beaf7ba4d35892eee9f78e21",
-      "last_checked": "2026-04-21T07:41:46.042492",
+      "last_checked": "2026-04-24T07:39:27.626731",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c9a6c2c0812ee30c6dcc0fd8b3ed0aa6\"",
       "file_path": "documentation/MetricKit/mxmetricmanager.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload.json": {
       "hash": "e08762a550dd00834fccf84c45b70519f7e728df343422c2fa7395e5433c5fca",
-      "last_checked": "2026-04-21T07:41:46.207789",
+      "last_checked": "2026-04-24T07:39:27.850972",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"16752fd237a0366280e58f0e1f508531\"",
       "file_path": "documentation/MetricKit/mxmetricpayload.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload.json": {
       "hash": "eb1f8bb5a6921d7a4e75943b7b3b71d7e1ba73c4c6b83ce207410df35b56cee3",
-      "last_checked": "2026-04-21T07:41:46.349409",
+      "last_checked": "2026-04-24T07:39:28.034288",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5662eef093dd68a5e7d3de7819643cc6\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanagersubscriber.json": {
       "hash": "8cf337a3eeec87a02f39d29fd19ee549935ea43049c308c5fbdec8e26cf6090d",
-      "last_checked": "2026-04-21T07:41:46.474973",
+      "last_checked": "2026-04-24T07:39:28.185209",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a6011c854e7f93853e2c69c9a00bdd65\"",
       "file_path": "documentation/MetricKit/mxmetricmanagersubscriber.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcellularconditionmetric.json": {
       "hash": "93cc80086cc4f07af70fdea26f8e8bf38271e932700acedaea641fffcd225b77",
-      "last_checked": "2026-04-21T07:41:46.630290",
+      "last_checked": "2026-04-24T07:39:28.380751",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5259c35d55dcc3cf7ac658087024eb59\"",
       "file_path": "documentation/MetricKit/mxcellularconditionmetric.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpumetric.json": {
       "hash": "e7316ce28e4cfa6834ee5a5e3c28ab72e2c7c756ab3fb97a0904a53b661e10f2",
-      "last_checked": "2026-04-21T07:41:46.761606",
+      "last_checked": "2026-04-24T07:39:28.576538",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"85a22786ae44da6a62fcb45934af1ec4\"",
       "file_path": "documentation/MetricKit/mxcpumetric.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdisplaymetric.json": {
       "hash": "a837e075d98900ca88cd108281032208eb65edafc605f37ada687fc91870a600",
-      "last_checked": "2026-04-21T07:41:46.919152",
+      "last_checked": "2026-04-24T07:39:28.767082",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"edefbe31f491937643f7c488e56bff89\"",
       "file_path": "documentation/MetricKit/mxdisplaymetric.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxgpumetric.json": {
       "hash": "545467309883078255ca78e19a9e8964ba81ee18602399f864593bb924c5f34c",
-      "last_checked": "2026-04-21T07:41:47.045927",
+      "last_checked": "2026-04-24T07:39:28.911573",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7296b1f063d1c4153364861cba7a2cd8\"",
       "file_path": "documentation/MetricKit/mxgpumetric.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric.json": {
       "hash": "3aa435359e982c40bdc6a676c9c7903ebade5069976f9b090cda9b4491cf65a0",
-      "last_checked": "2026-04-21T07:41:47.339646",
+      "last_checked": "2026-04-24T07:39:29.058580",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c2d12377f62ca6ad9b070aec25a0d4ca\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxnetworktransfermetric.json": {
       "hash": "f0e29db94b3c6a0ac6850b969c797533c6037ed64abe8264e84041046a7e3dfe",
-      "last_checked": "2026-04-21T07:41:47.493306",
+      "last_checked": "2026-04-24T07:39:29.241011",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"0e1b3c161249c66303dce0185632266d\"",
       "file_path": "documentation/MetricKit/mxnetworktransfermetric.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpuexceptiondiagnostic.json": {
       "hash": "d3ca77af6ff8ea4606afa6dfd72e0f2f57464992f45cab5483238396ba8616ca",
-      "last_checked": "2026-04-21T07:41:47.626325",
+      "last_checked": "2026-04-24T07:39:29.394030",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f76f1df6969ea7a6fdad803a36656e86\"",
       "file_path": "documentation/MetricKit/mxcpuexceptiondiagnostic.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchdiagnostic.json": {
       "hash": "f1ac2b5d3e70d73107a71ebad8ad00c7e7459670c013816454ef9209c7b9b392",
-      "last_checked": "2026-04-21T07:41:47.745469",
+      "last_checked": "2026-04-24T07:39:29.548442",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6ad382f8865e8aa93f074b63fc09f706\"",
       "file_path": "documentation/MetricKit/mxapplaunchdiagnostic.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappexitmetric.json": {
       "hash": "acebb7903ffc4a55db74716e516b0056bfa934b263d390e0df7a4c8ab06078e9",
-      "last_checked": "2026-04-21T07:41:47.927915",
+      "last_checked": "2026-04-24T07:39:29.704552",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"95e6a14f18d8185e1db8b70092f9b17a\"",
       "file_path": "documentation/MetricKit/mxappexitmetric.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappruntimemetric.json": {
       "hash": "b8e62d0089b27a3d17b0491ac670afa0b298d8ca78d86a76ce927a2c9ece7004",
-      "last_checked": "2026-04-21T07:41:48.041267",
+      "last_checked": "2026-04-24T07:39:29.842695",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e732e9d86621ee2ccdead8fb3123c57e\"",
       "file_path": "documentation/MetricKit/mxappruntimemetric.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmemorymetric.json": {
       "hash": "93ac53a1a6a9ed97ef11ef02f2b936c24d0afd2168b1d6a6d3f6fe0c253e79bc",
-      "last_checked": "2026-04-21T07:41:48.190678",
+      "last_checked": "2026-04-24T07:39:29.983567",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"33caa072dfbe39217adeba940aa09b14\"",
       "file_path": "documentation/MetricKit/mxmemorymetric.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic.json": {
       "hash": "e9eab3efd57edd8ba99103c31e9e30c8b103df7d2c6d6668ae97a9dbb9fdb3e6",
-      "last_checked": "2026-04-21T07:41:48.486542",
+      "last_checked": "2026-04-24T07:39:30.138840",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5994852a5cb0ae9d9147c34d76b47d71\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxanimationmetric.json": {
       "hash": "efe58fdcc29ffe8592eb6ea0cc21f2a973191ea3a528d2f56a8841c445f3d844",
-      "last_checked": "2026-04-21T07:41:48.624209",
+      "last_checked": "2026-04-24T07:39:30.299889",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4ccc7cb289abfbb0d686fbb8f4e422b7\"",
       "file_path": "documentation/MetricKit/mxanimationmetric.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchmetric.json": {
       "hash": "832d87103a572b5403cc035805d9cb3ba88d9826fff1e307fd90a1fc982736d7",
-      "last_checked": "2026-04-21T07:41:48.787941",
+      "last_checked": "2026-04-24T07:39:30.502934",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3bae8054a62d17a3a04eae1cd7697747\"",
       "file_path": "documentation/MetricKit/mxapplaunchmetric.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappresponsivenessmetric.json": {
       "hash": "f4a95e086b15b4fbd56a324bb6a34c74adb51bb2966be4b922a8f07db119e035",
-      "last_checked": "2026-04-21T07:41:48.903835",
+      "last_checked": "2026-04-24T07:39:30.657982",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9fde7be9cf4d36d224054ac92487e9fd\"",
       "file_path": "documentation/MetricKit/mxappresponsivenessmetric.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhangdiagnostic.json": {
       "hash": "b308c7645fee64da39df33959a6cf7b6af7c84c3d213ab2121110331540fef72",
-      "last_checked": "2026-04-21T07:41:49.066704",
+      "last_checked": "2026-04-24T07:39:30.798679",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a9cec60523a61c77900059dcd8f00dba\"",
       "file_path": "documentation/MetricKit/mxhangdiagnostic.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskiometric.json": {
       "hash": "5dbff01b6adf6601368d0ab2ef0bca97f777d50d3837940b32feec9ae404c8a2",
-      "last_checked": "2026-04-21T07:41:49.226242",
+      "last_checked": "2026-04-24T07:39:30.936536",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f3bb90450a6dca99d0dadbdf2de9f5fd\"",
       "file_path": "documentation/MetricKit/mxdiskiometric.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric.json": {
       "hash": "ab37cdd4c797322f0ea4d8dc064b6c07713bf06c62927605240df73aec5f0f28",
-      "last_checked": "2026-04-21T07:41:49.359805",
+      "last_checked": "2026-04-24T07:39:31.085529",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"ed3d49944eeae46370af17234a8d2667\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskwriteexceptiondiagnostic.json": {
       "hash": "6dcc43842bee5f2e04768fb9bd682a8f1ced8249f57515b8f686569a3df13f2d",
-      "last_checked": "2026-04-21T07:41:49.485252",
+      "last_checked": "2026-04-24T07:39:31.247028",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e4fc2d9cda61663f9283deee310d2273\"",
       "file_path": "documentation/MetricKit/mxdiskwriteexceptiondiagnostic.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric.json": {
       "hash": "6166374441f1b1a24eb37b986a0c0566200b48d42e66dddc5f53ff3455f2f26c",
-      "last_checked": "2026-04-21T07:41:49.631862",
+      "last_checked": "2026-04-24T07:39:31.390009",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7143d4709bf654f2922387ef66243bf5\"",
       "file_path": "documentation/MetricKit/mxsignpostmetric.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcallstacktree.json": {
       "hash": "bdde02e76129e412f8f5daef40ecf3ec2817113c61422546fa8527271f5eb32c",
-      "last_checked": "2026-04-21T07:41:49.818993",
+      "last_checked": "2026-04-24T07:39:31.536956",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"23c3516047e7ec4da24267b367ef286d\"",
       "file_path": "documentation/MetricKit/mxcallstacktree.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata.json": {
       "hash": "008a673771742304c815dc3a63a3cad6b975ef04d58b0d25e08a932dc1506d5b",
-      "last_checked": "2026-04-21T07:41:50.000388",
+      "last_checked": "2026-04-24T07:39:31.689033",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"288c093d6fc03bcd7b996bab5ec707cf\"",
       "file_path": "documentation/MetricKit/mxmetadata.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxaverage.json": {
       "hash": "7daaf1f8218e0fb69179bc73e6f3da7c4e7600366abda69f4279d9dd1f9dbc85",
-      "last_checked": "2026-04-21T07:41:50.134364",
+      "last_checked": "2026-04-24T07:39:31.835450",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b59b061525a43af1a63d4c4320962b16\"",
       "file_path": "documentation/MetricKit/mxaverage.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogram.json": {
       "hash": "dc3969259a820ef41b32b507288314b21a3af7327a98de23609dfa7709bed074",
-      "last_checked": "2026-04-21T07:41:50.256439",
+      "last_checked": "2026-04-24T07:39:31.978661",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a7e0df9a79d77e3ef7c8d8b7c0b6bf15\"",
       "file_path": "documentation/MetricKit/mxhistogram.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic.json": {
       "hash": "038b23755f0bb760238a7ff180da40987dced78ecedb2f20a196569d12c3f40a",
-      "last_checked": "2026-04-21T07:41:50.393160",
+      "last_checked": "2026-04-24T07:39:32.132463",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"09b0b31af7514d036908e1e77b2be011\"",
       "file_path": "documentation/MetricKit/mxdiagnostic.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetric.json": {
       "hash": "5cf436c728e68077db1c0c6c5299269b9d4ae8ef0fbb616fa7958495b1a364e1",
-      "last_checked": "2026-04-21T07:41:50.532139",
+      "last_checked": "2026-04-24T07:39:32.289636",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"552c54154cc4a9e08eea0923d7902635\"",
       "file_path": "documentation/MetricKit/mxmetric.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code.json": {
       "hash": "73fc5f453d07b61407635cdd0afc3709620a94a28cd6307a85cd920b32a900b8",
-      "last_checked": "2026-04-21T07:41:50.672539",
+      "last_checked": "2026-04-24T07:39:32.437196",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"0c799cfd9a21c716088dd234074c6fa7\"",
       "file_path": "documentation/MetricKit/mxerror/code.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerrordomain.json": {
       "hash": "982965c8ab50abe5d848648071f2b182a0192fa72334f2c11a09ee1df1afddac",
-      "last_checked": "2026-04-21T07:41:50.833894",
+      "last_checked": "2026-04-24T07:39:32.607356",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"0b1ab118fa3bbb60903e27c6270640e5\"",
       "file_path": "documentation/MetricKit/mxerrordomain.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror.json": {
       "hash": "727013f07f645c0f8c889ace2f66bbb54ad623941317891e1ab41678da0fefe6",
-      "last_checked": "2026-04-21T07:41:50.953061",
+      "last_checked": "2026-04-24T07:39:32.762563",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"0cbdf519144ba3855008464c3b4932ef\"",
       "file_path": "documentation/MetricKit/mxerror.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason.json": {
       "hash": "c50b2bdcbacc3718e42a8144341e653d4a991c0c5dde682dcaac1c78b825f7d2",
-      "last_checked": "2026-04-21T07:41:51.087459",
+      "last_checked": "2026-04-24T07:39:32.933716",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"924163e151e9fd3a2caa5b7bb5a42b10\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord.json": {
       "hash": "262b64edff4c987826ff7bbd1df5bb1e42e689ce0ee488e8caa536c2def66acc",
-      "last_checked": "2026-04-21T07:41:51.259943",
+      "last_checked": "2026-04-24T07:39:33.072478",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"29db59a61520266d8d32d4b4775f7cf9\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/shared.json": {
       "hash": "d1d37d47c5e8766e84101cb58f3729441aca0a5a54655339c2f2bde9c05a1e76",
-      "last_checked": "2026-04-21T07:41:51.430058",
+      "last_checked": "2026-04-24T07:39:33.264077",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4e6a4b7a0740b2ab949a517bf100964f\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/shared.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/add(_:).json": {
       "hash": "7d5740a2acfd796c0cbe86a6e0590e2cf934b4c682a2972c62e3a2a6fc2648ab",
-      "last_checked": "2026-04-21T07:41:51.601113",
+      "last_checked": "2026-04-24T07:39:33.416134",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"1be72fbe46efc17c43bdbfbc55282515\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/add.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/remove(_:).json": {
       "hash": "ef1d77b2d009b815df94b4380535f0b6e25f0279704e7116e392603f4c157f43",
-      "last_checked": "2026-04-21T07:41:51.792686",
+      "last_checked": "2026-04-24T07:39:33.565135",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6924dac8c704d2c28162a72a559cc41e\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/remove.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/pastpayloads.json": {
       "hash": "b70972dc1331260da29eba5ccfba6eb5a6fc9ab375982b58c393f2a5d189b3af",
-      "last_checked": "2026-04-21T07:41:51.917399",
+      "last_checked": "2026-04-24T07:39:33.737095",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"97d16d443198c9e2e941b6f5b202656d\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/pastpayloads.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/pastdiagnosticpayloads.json": {
       "hash": "292807ed28a1173cdca6d26bbecc849b79db0409c0f9f00fcb28f17da190ab0e",
-      "last_checked": "2026-04-21T07:41:52.057465",
+      "last_checked": "2026-04-24T07:39:33.890918",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7bd48ad41b5d6a1194421e91636e9b5b\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/pastdiagnosticpayloads.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/makeloghandle(category:).json": {
       "hash": "313990e0347982e382e52623c0c762ef2d3096c1500d58d9e2ccb5db277ed6a2",
-      "last_checked": "2026-04-21T07:41:52.176616",
+      "last_checked": "2026-04-24T07:39:34.026797",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"230c1d1c7dc53bba5a1a12cd668f3467\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/makeloghandle-category.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/extendlaunchmeasurement(fortaskid:).json": {
       "hash": "2a64194fb7a9d0fcc309fe6a532ec8b6b15aa07da134a2831599aec36d514215",
-      "last_checked": "2026-04-21T07:41:52.303402",
+      "last_checked": "2026-04-24T07:39:34.155939",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4a596de391fb0b027d88c1098bde4bd8\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/extendlaunchmeasurement-fortaskid.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanager/finishextendedlaunchmeasurement(fortaskid:).json": {
       "hash": "6b97d6977c924ae51b6c2d01a55a60d9f7b295c385811074bd4068cec987735d",
-      "last_checked": "2026-04-21T07:41:52.437679",
+      "last_checked": "2026-04-24T07:39:34.306108",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3e38c6c044c83556e70099bf46ef3ebe\"",
       "file_path": "documentation/MetricKit/mxmetricmanager/finishextendedlaunchmeasurement-fortaskid.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlaunchtaskid.json": {
       "hash": "41876890dd502e8fcbe80fe25d326819bcaec16b387b489d8e0721f157e642c6",
-      "last_checked": "2026-04-21T07:41:52.554400",
+      "last_checked": "2026-04-24T07:39:34.453359",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c083ecf6d8f8a9b7b53eda4cb78edba0\"",
       "file_path": "documentation/MetricKit/mxlaunchtaskid.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/cellularconditionmetrics.json": {
       "hash": "db692a791bdd2df1ff065ff60b2a348c2bf34b91afdb8ab2053b7f20783cbc12",
-      "last_checked": "2026-04-21T07:41:52.699210",
+      "last_checked": "2026-04-24T07:39:34.597224",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"45e57fff0ee57dfa4330c012b4922e64\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/cellularconditionmetrics.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/cpumetrics.json": {
       "hash": "32bc5d55468758b2dc99df4da6cc4efc0c95899999130450decbe57b762edfc5",
-      "last_checked": "2026-04-21T07:41:52.833530",
+      "last_checked": "2026-04-24T07:39:34.742941",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f623184395c202f9329a10f0f9665be7\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/cpumetrics.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/displaymetrics.json": {
       "hash": "a4e17f621230ea7968f83e132144a45274fec364a13a1c2a6bd40da41937a4e6",
-      "last_checked": "2026-04-21T07:41:53.009387",
+      "last_checked": "2026-04-24T07:39:34.878661",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5ec259bfa2f5e578d247b3b79f54791b\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/displaymetrics.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/gpumetrics.json": {
       "hash": "ce5947d355b0b36e5e46ff7dae3cf528f5fe28c6d0dc37c4660437a37501d3a8",
-      "last_checked": "2026-04-21T07:41:53.136927",
+      "last_checked": "2026-04-24T07:39:35.024121",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d05f2506722a874bb7828c898241412a\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/gpumetrics.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/locationactivitymetrics.json": {
       "hash": "23a58ac571600966cd6052682aa3f5e17dd69591b0857c923fea72830a490858",
-      "last_checked": "2026-04-21T07:41:53.256416",
+      "last_checked": "2026-04-24T07:39:35.158489",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"63beb6b1c16ad4f460a8d194cdde6a08\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/locationactivitymetrics.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/networktransfermetrics.json": {
       "hash": "cdf2d9b29252ade012667a080ac37b5730e601da56539f3b98d3148d32928035",
-      "last_checked": "2026-04-21T07:41:53.396876",
+      "last_checked": "2026-04-24T07:39:35.307253",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b7603733c1d95278b9539dc45335006e\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/networktransfermetrics.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/applicationexitmetrics.json": {
       "hash": "fc327fef51b3774ee38123fdd2f604a6cf52c13ceaad8db6ab8810b4b340710a",
-      "last_checked": "2026-04-21T07:41:53.521551",
+      "last_checked": "2026-04-24T07:39:35.458216",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"442b7087fb1fa48399ffed63f909061b\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/applicationexitmetrics.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/applicationtimemetrics.json": {
       "hash": "92bdd8c2fc04da68b43314f54a5b6eef6ec5a490e3fef06ff92bc1492158b637",
-      "last_checked": "2026-04-21T07:41:53.717136",
+      "last_checked": "2026-04-24T07:39:35.589817",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"36797340efcea9db05c26d4c238c6958\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/applicationtimemetrics.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/memorymetrics.json": {
       "hash": "d9df51665cd6d85409b2a878d5a616581281fa187740951c002d924bc9c107a9",
-      "last_checked": "2026-04-21T07:41:53.838135",
+      "last_checked": "2026-04-24T07:39:35.717296",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7fefc0dc929117656d9935206a173d2c\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/memorymetrics.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/applicationlaunchmetrics.json": {
       "hash": "7131a9d10b5aba5e58b868f4916ed681ac8b42e7a5e4ed95d4efbe1bc17d49f9",
-      "last_checked": "2026-04-21T07:41:53.964212",
+      "last_checked": "2026-04-24T07:39:35.868813",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"83a1146e6f127c88b146f497fcc87762\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/applicationlaunchmetrics.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/animationmetrics.json": {
       "hash": "ac739d3307bf901bdf0a825abe5f670e587074a643fba60c581fa3fd0c65dc2d",
-      "last_checked": "2026-04-21T07:41:54.126208",
+      "last_checked": "2026-04-24T07:39:35.999123",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7ef8c956909b9575c608bb087d169293\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/animationmetrics.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/applicationresponsivenessmetrics.json": {
       "hash": "b1792e646165f4580660b7a44eac8817bb288338d850deacd5f45bd02a93fa96",
-      "last_checked": "2026-04-21T07:41:54.253311",
+      "last_checked": "2026-04-24T07:39:36.135656",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7621cea5c0b174595cc340a4d4a80f25\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/applicationresponsivenessmetrics.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/diskiometrics.json": {
       "hash": "a7f792cf5c74a2de6fce17b48231ed9656c72b5171fe4b1de5601ada12ab4930",
-      "last_checked": "2026-04-21T07:41:54.388391",
+      "last_checked": "2026-04-24T07:39:36.279881",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"539ebff9c26bf4e3f6010875cb30dbfd\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/diskiometrics.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/signpostmetrics.json": {
       "hash": "08ff08cc1004b773d1d4007a225b2ecfc010939d067ef1a4c4eadf9ff97c9db1",
-      "last_checked": "2026-04-21T07:41:54.541411",
+      "last_checked": "2026-04-24T07:39:36.418409",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"766937fd20ae8c68da31c75bd46233a4\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/signpostmetrics.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/jsonrepresentation().json": {
       "hash": "0de444e44cdd0225af76216d63ed9f6409efd1688bde0e1117726dfa32118b5d",
-      "last_checked": "2026-04-21T07:41:54.725482",
+      "last_checked": "2026-04-24T07:39:36.572127",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"520963144cd41726cee1c8ff6e63e9dd\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/jsonrepresentation.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/dictionaryrepresentation().json": {
       "hash": "43901ebe2ff0460d9ddfb7c4983ab7ba7f768f40460e7b97d9c29bc36517980f",
-      "last_checked": "2026-04-21T07:41:54.844136",
+      "last_checked": "2026-04-24T07:39:36.718730",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e0df2d095c31431001d7dfb238826b09\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/dictionaryrepresentation.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/timestampbegin.json": {
       "hash": "55533bde11c5cc6b9f3e49a7e3df60075fa1cd8629c6b135067d4e3e7c03958f",
-      "last_checked": "2026-04-21T07:41:54.976242",
+      "last_checked": "2026-04-24T07:39:36.862885",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4bbf725dd85b6638ce00565db6684ae7\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/timestampbegin.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/timestampend.json": {
       "hash": "07eae83a160c12761b4c8b2a36d12de08cfe917bdd785a15302827c1f36cc6ef",
-      "last_checked": "2026-04-21T07:41:55.103901",
+      "last_checked": "2026-04-24T07:39:37.002605",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9ad3536b07cec7388fb9c825175de094\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/timestampend.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/includesmultipleapplicationversions.json": {
       "hash": "7044c7feb98a3ef7928cc4115252f8048be770d30d03a700d62f2ad9f76778eb",
-      "last_checked": "2026-04-21T07:41:55.232236",
+      "last_checked": "2026-04-24T07:39:37.142499",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"ef88c83534c1119bad35d8ec91b119ac\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/includesmultipleapplicationversions.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/latestapplicationversion.json": {
       "hash": "b25566a7dbd1a89250638468a9afe76cf07d674afec7f02128a187969c1a1bdf",
-      "last_checked": "2026-04-21T07:41:55.417129",
+      "last_checked": "2026-04-24T07:39:37.304271",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e8f56ea3a6ed528597b41e2dc95eb8b2\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/latestapplicationversion.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/metadata.json": {
       "hash": "2d986eb424258dc776626b8ce39887924802a6e777ca20534da22b1d61eac60f",
-      "last_checked": "2026-04-21T07:41:55.530155",
+      "last_checked": "2026-04-24T07:39:37.464685",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"55c16a0894bb589eb88abe550f5768d7\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/metadata.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricpayload/diskspaceusagemetrics.json": {
       "hash": "ab0979b60cbdffcec5cf225d25ee1f52bce26761404e580dd5814d1dfa99add6",
-      "last_checked": "2026-04-21T07:41:55.655601",
+      "last_checked": "2026-04-24T07:39:37.615081",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9246310b38695c538f4603f9584bad66\"",
       "file_path": "documentation/MetricKit/mxmetricpayload/diskspaceusagemetrics.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/crashdiagnostics.json": {
       "hash": "180430b3c8f99c45578e70114a4943591b61ed6d2544fcce2251631ae00ed132",
-      "last_checked": "2026-04-21T07:41:55.784832",
+      "last_checked": "2026-04-24T07:39:37.758312",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"cd5417fb0915af9ba9b6b28491baa19a\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/crashdiagnostics.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/cpuexceptiondiagnostics.json": {
       "hash": "6b6d58a150748e42a44d4a3bf77937c293c87870eea194b5a8a4cb9c8c2f8968",
-      "last_checked": "2026-04-21T07:41:55.906089",
+      "last_checked": "2026-04-24T07:39:37.903452",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"03a4a50fc622483809b85866f67d9b25\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/cpuexceptiondiagnostics.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/applaunchdiagnostics.json": {
       "hash": "54eecf2cb3f5ffc962f999c535ac47fe89e9f9a8c01c35461d9bd26fa4dc4750",
-      "last_checked": "2026-04-21T07:41:56.038664",
+      "last_checked": "2026-04-24T07:39:38.035086",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"bdfa61de438831cde2f8d618d7b53113\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/applaunchdiagnostics.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/hangdiagnostics.json": {
       "hash": "c733e52ff4d6ee19e6054195a261681d051d3f2d8b9bfca33d69f1e6a333ea54",
-      "last_checked": "2026-04-21T07:41:56.166004",
+      "last_checked": "2026-04-24T07:39:38.166311",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a509a109a397fb78ee3c39a60cc17a18\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/hangdiagnostics.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/diskwriteexceptiondiagnostics.json": {
       "hash": "184b0182fa60b1d14d2abd696478cf0ae56a11b93ca46e4784ebdc45ecbb7da6",
-      "last_checked": "2026-04-21T07:41:56.287840",
+      "last_checked": "2026-04-24T07:39:38.315976",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"407762a5fc8a59570b14872fcfd47908\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/diskwriteexceptiondiagnostics.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/jsonrepresentation().json": {
       "hash": "5b29cf3d208149576e6bc911bdaabd5535b43d791dbc1bcc1aac9ffc21a8d12f",
-      "last_checked": "2026-04-21T07:41:56.409781",
+      "last_checked": "2026-04-24T07:39:38.459537",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f64f3ba8974f099582e500b4719f77fb\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/jsonrepresentation.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/dictionaryrepresentation().json": {
       "hash": "d0030fbf80ed1454ae5755b19792db263ddd9e2820b07d3b6aafdbfbb5c7ec52",
-      "last_checked": "2026-04-21T07:41:56.543039",
+      "last_checked": "2026-04-24T07:39:38.610231",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d8050333871bed6d1bf2457bb82bfac9\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/dictionaryrepresentation.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/timestampbegin.json": {
       "hash": "a825505abfd06be26bf7de7c1b7f10419eac20012c319653dc9a5a5b53b71951",
-      "last_checked": "2026-04-21T07:41:56.675270",
+      "last_checked": "2026-04-24T07:39:38.755689",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"2d371bc0209b7c0d726c5b66a3e57cfc\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/timestampbegin.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnosticpayload/timestampend.json": {
       "hash": "ab9e9aef85581ad12038a91c632fbb84940b599ecbc0019e30d2351b31b31f1a",
-      "last_checked": "2026-04-21T07:41:56.851129",
+      "last_checked": "2026-04-24T07:39:38.884129",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"66c808854e5980e666895bc9c69f3429\"",
       "file_path": "documentation/MetricKit/mxdiagnosticpayload/timestampend.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanagersubscriber/didreceive(_:)-3zq5g.json": {
       "hash": "78426a3203e00366fa410f39b6e9edb798fb81a40be6785e913d5fcb04aa4a4e",
-      "last_checked": "2026-04-21T07:41:56.988217",
+      "last_checked": "2026-04-24T07:39:39.023419",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"30dd1173411f029ddef73c85c88180e7\"",
       "file_path": "documentation/MetricKit/mxmetricmanagersubscriber/didreceive-3zq5g.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetricmanagersubscriber/didreceive(_:)-9yd4u.json": {
       "hash": "f7c8ab5a3dfbfbacd3a340ea8b03deaa948bf629655a2b070244d02537370911",
-      "last_checked": "2026-04-21T07:41:57.112521",
+      "last_checked": "2026-04-24T07:39:39.175436",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7592cde645344578741fd21c314a939e\"",
       "file_path": "documentation/MetricKit/mxmetricmanagersubscriber/didreceive-9yd4u.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcellularconditionmetric/histogrammedcellularconditiontime.json": {
       "hash": "586b523a9ae8cc58ed57182b4e62e060e2f8d71096193af08d4dd67bf0818bf6",
-      "last_checked": "2026-04-21T07:41:57.224023",
+      "last_checked": "2026-04-24T07:39:39.333293",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7bad27ae521861b5420ebc1f2d5f0532\"",
       "file_path": "documentation/MetricKit/mxcellularconditionmetric/histogrammedcellularconditiontime.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxunitsignalbars.json": {
       "hash": "846b5a32ade4c360541e41f2a052c2536bf1c6e21f5c5850f0dc10cbb4ad519c",
-      "last_checked": "2026-04-21T07:41:57.362880",
+      "last_checked": "2026-04-24T07:39:39.515478",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"dd76e28703778750675ea21b1509820a\"",
       "file_path": "documentation/MetricKit/mxunitsignalbars.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpumetric/cumulativecputime.json": {
       "hash": "addbe224840f9285bf20d689cbd29bd63b2036632e73ebea77a7f642395f5b0a",
-      "last_checked": "2026-04-21T07:41:57.547249",
+      "last_checked": "2026-04-24T07:39:39.645950",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"71293cd44245b6c726753df791df9ec0\"",
       "file_path": "documentation/MetricKit/mxcpumetric/cumulativecputime.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpumetric/cumulativecpuinstructions.json": {
       "hash": "054a6d3afb59b10cd6c52111adfabd8614e113fb7f1a59483f8551a0de485bd5",
-      "last_checked": "2026-04-21T07:41:57.662182",
+      "last_checked": "2026-04-24T07:39:39.795596",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"dc19437369c598ae9fac0450b12f84a0\"",
       "file_path": "documentation/MetricKit/mxcpumetric/cumulativecpuinstructions.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdisplaymetric/averagepixelluminance.json": {
       "hash": "db5a2fd959d3d133711db472f6fc0563e41e38709c2b9fdfc3727ada8b884714",
-      "last_checked": "2026-04-21T07:41:57.786611",
+      "last_checked": "2026-04-24T07:39:39.924575",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6ff46514812c1730f8cf97951a50f4bd\"",
       "file_path": "documentation/MetricKit/mxdisplaymetric/averagepixelluminance.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxunitaveragepixelluminance.json": {
       "hash": "af1c014e6b1a977b5afd1a5dad374afbad279d2ada5e62836672877e06566c63",
-      "last_checked": "2026-04-21T07:41:57.914689",
+      "last_checked": "2026-04-24T07:39:40.057511",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9d4d3fe76608d4e87ac4c09851905f66\"",
       "file_path": "documentation/MetricKit/mxunitaveragepixelluminance.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxgpumetric/cumulativegputime.json": {
       "hash": "995cfaca0ac9e81d3fe05185990896f376c4e44dc2929350b040732d26587a08",
-      "last_checked": "2026-04-21T07:41:58.053063",
+      "last_checked": "2026-04-24T07:39:40.198363",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"14d9a25fcac429bc168cee2454aa27e6\"",
       "file_path": "documentation/MetricKit/mxgpumetric/cumulativegputime.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativebestaccuracyfornavigationtime.json": {
       "hash": "db4dfbdc703cd3e30b5d70f2571767e364c3bdb688886c5c694fd6f157948ef3",
-      "last_checked": "2026-04-21T07:41:58.178617",
+      "last_checked": "2026-04-24T07:39:40.373901",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c77e4024dd86dd3700dac0b0344e1617\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativebestaccuracyfornavigationtime.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativebestaccuracytime.json": {
       "hash": "79e78019212ec1b0099f07d699064522b59aa38e2d62ae1eaa3302beb9b88fa4",
-      "last_checked": "2026-04-21T07:41:58.293440",
+      "last_checked": "2026-04-24T07:39:40.501944",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"852873cb85d42ed212ef3c9583934d9d\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativebestaccuracytime.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativenearesttenmetersaccuracytime.json": {
       "hash": "439ecfa1fd19018d854e709ce874553d2c2aa63cf3061e2e2184f3200dbec65f",
-      "last_checked": "2026-04-21T07:41:58.418935",
+      "last_checked": "2026-04-24T07:39:40.632148",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"2a42a34a1c89a12b3bfebbb0de568ddc\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativenearesttenmetersaccuracytime.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativehundredmetersaccuracytime.json": {
       "hash": "9439016fada9b5fce984f7289204da089d74af56acc80dc7ce013564e55503d1",
-      "last_checked": "2026-04-21T07:41:58.548048",
+      "last_checked": "2026-04-24T07:39:40.778199",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4a1f95ca907ad6d9d7fe7b73f5d38693\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativehundredmetersaccuracytime.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativekilometeraccuracytime.json": {
       "hash": "95da872943abc9463cff4c16b6e1b9a07205e1d08975408a769979b67a0317a6",
-      "last_checked": "2026-04-21T07:41:58.781995",
+      "last_checked": "2026-04-24T07:39:40.934127",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f4271703b4703140a2d5d258e84ebfc4\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativekilometeraccuracytime.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlocationactivitymetric/cumulativethreekilometersaccuracytime.json": {
       "hash": "8da5583e5107bb10eaad59bb45534984aef45c85facc5e2e18e5ed5f3007072c",
-      "last_checked": "2026-04-21T07:41:58.920528",
+      "last_checked": "2026-04-24T07:39:41.080507",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"8e94d521cc16eb3ba9a33a83ccf8c501\"",
       "file_path": "documentation/MetricKit/mxlocationactivitymetric/cumulativethreekilometersaccuracytime.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxnetworktransfermetric/cumulativecellulardownload.json": {
       "hash": "4da33878ca459e3184cac3ba3fd058e78d93b79b624fe8f1d901cdaa46185e35",
-      "last_checked": "2026-04-21T07:41:59.040561",
+      "last_checked": "2026-04-24T07:39:41.238520",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b374fbd4939296ea043a6d7420a47837\"",
       "file_path": "documentation/MetricKit/mxnetworktransfermetric/cumulativecellulardownload.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxnetworktransfermetric/cumulativecellularupload.json": {
       "hash": "7f09502954423a034188a37daf7b9c0a5402097214334c4165fa9c29e3b4f228",
-      "last_checked": "2026-04-21T07:41:59.169186",
+      "last_checked": "2026-04-24T07:39:41.377342",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9858140a20528103f0d5c2105211258d\"",
       "file_path": "documentation/MetricKit/mxnetworktransfermetric/cumulativecellularupload.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxnetworktransfermetric/cumulativewifidownload.json": {
       "hash": "d341ce40f8930c8797f23fde911d86cca2632b607ecb1f03bdffde5b057e3a31",
-      "last_checked": "2026-04-21T07:41:59.299117",
+      "last_checked": "2026-04-24T07:39:41.504494",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"8289cc10c995f90948e55978e8af6afd\"",
       "file_path": "documentation/MetricKit/mxnetworktransfermetric/cumulativewifidownload.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxnetworktransfermetric/cumulativewifiupload.json": {
       "hash": "d1f4cb1ab59f2c982cb628e17a9c4894055b6e514197eeaf8dd84ea6f3def895",
-      "last_checked": "2026-04-21T07:41:59.446818",
+      "last_checked": "2026-04-24T07:39:41.661928",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"32b70ad2580cb69f044e0f1084d489ef\"",
       "file_path": "documentation/MetricKit/mxnetworktransfermetric/cumulativewifiupload.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpuexceptiondiagnostic/callstacktree.json": {
       "hash": "7031ffe0e74067aa88efc312ebaf91baac5e4074f4c7bc4f90f91379292b5bcd",
-      "last_checked": "2026-04-21T07:41:59.558583",
+      "last_checked": "2026-04-24T07:39:41.805421",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"75f2c0b1c889385f7fa8667481fb8908\"",
       "file_path": "documentation/MetricKit/mxcpuexceptiondiagnostic/callstacktree.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpuexceptiondiagnostic/totalcputime.json": {
       "hash": "b9ebf9deac86a9caa63c2ef968fe7bbd62d1b78bb3aecc8ef39d49151cc276c3",
-      "last_checked": "2026-04-21T07:41:59.740287",
+      "last_checked": "2026-04-24T07:39:41.948957",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f3bd0268976a31ddd056620a6db02d66\"",
       "file_path": "documentation/MetricKit/mxcpuexceptiondiagnostic/totalcputime.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcpuexceptiondiagnostic/totalsampledtime.json": {
       "hash": "bfb3b749b92a1e6a721f887c94fff47ce155cee7c2f6c8cba4fe7683ab978921",
-      "last_checked": "2026-04-21T07:41:59.858523",
+      "last_checked": "2026-04-24T07:39:42.085319",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"bd328af7602b2b2a10e0dee77823b3b3\"",
       "file_path": "documentation/MetricKit/mxcpuexceptiondiagnostic/totalsampledtime.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchdiagnostic/callstacktree.json": {
       "hash": "766669fe613bb336265f059f66065444c561df8076da41622f0596ace36e29b5",
-      "last_checked": "2026-04-21T07:41:59.985952",
+      "last_checked": "2026-04-24T07:39:42.234242",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3b22c1aa6d32cd0f1f7dc8d466e31869\"",
       "file_path": "documentation/MetricKit/mxapplaunchdiagnostic/callstacktree.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchdiagnostic/launchduration.json": {
       "hash": "0ba3374635b6a2177eaa4daec738ca96df49738e4df5b4e12fe0d4ec704fe0de",
-      "last_checked": "2026-04-21T07:42:00.228558",
+      "last_checked": "2026-04-24T07:39:42.365924",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"803b852fe0e3f5a99231985117a7b75a\"",
       "file_path": "documentation/MetricKit/mxapplaunchdiagnostic/launchduration.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappexitmetric/foregroundexitdata.json": {
       "hash": "a1d066baad4c803b9a7f8984139268c00316e192581f5a1eea29f942a32b83e1",
-      "last_checked": "2026-04-21T07:42:00.355375",
+      "last_checked": "2026-04-24T07:39:42.506620",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"89ecc764aac47eec08d2a09297363258\"",
       "file_path": "documentation/MetricKit/mxappexitmetric/foregroundexitdata.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata.json": {
       "hash": "945c222efdbba14582e03b74b0c86088aa2259a8430da6e4ba2a056c7640772d",
-      "last_checked": "2026-04-21T07:42:00.664606",
+      "last_checked": "2026-04-24T07:39:42.646684",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"95b5ae0b8c6d33fc60e6e495fedadfbd\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappexitmetric/backgroundexitdata.json": {
       "hash": "5a86e611b92ef8a137b521cde0fc9e6cee90e4c68f4a009430b14c6baf3e19b3",
-      "last_checked": "2026-04-21T07:42:00.794371",
+      "last_checked": "2026-04-24T07:39:42.786579",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"611e99f1da12952ffb450e1d4b507863\"",
       "file_path": "documentation/MetricKit/mxappexitmetric/backgroundexitdata.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata.json": {
       "hash": "2d5b1928c353c5758a34b7127725581b385cd6b931f2eaa276e7919f86aa0814",
-      "last_checked": "2026-04-21T07:42:00.934071",
+      "last_checked": "2026-04-24T07:39:42.961279",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9f9d425ba9bc115297decd791870af4c\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappruntimemetric/cumulativeforegroundtime.json": {
       "hash": "e217e1e51e291f2985a790f1df6369eacb5e48dc4ae9d10258e1e40bb898c3bf",
-      "last_checked": "2026-04-21T07:42:01.065985",
+      "last_checked": "2026-04-24T07:39:43.103237",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f116ec91c2d230bfcee85178059036d1\"",
       "file_path": "documentation/MetricKit/mxappruntimemetric/cumulativeforegroundtime.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappruntimemetric/cumulativebackgroundtime.json": {
       "hash": "4f4457c1e07760329b517d90bf2708b57205f03e7f3aa40f8cbc282ab9368100",
-      "last_checked": "2026-04-21T07:42:01.197227",
+      "last_checked": "2026-04-24T07:39:43.256658",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"bbe912ae0f8d706d5d04f10db66e902d\"",
       "file_path": "documentation/MetricKit/mxappruntimemetric/cumulativebackgroundtime.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappruntimemetric/cumulativebackgroundaudiotime.json": {
       "hash": "59e3c8ccd6ed1dad94671032a4cdeb52043dae9a385d67e72259efdab8d3c6c3",
-      "last_checked": "2026-04-21T07:42:01.329968",
+      "last_checked": "2026-04-24T07:39:43.486513",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"dc859bdbd43cc4871f21dda0fa6e27a5\"",
       "file_path": "documentation/MetricKit/mxappruntimemetric/cumulativebackgroundaudiotime.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappruntimemetric/cumulativebackgroundlocationtime.json": {
       "hash": "fa750512a04ef413c1ed085c82cd4f99d970e71452b66bc2e928dfc0bd0191b3",
-      "last_checked": "2026-04-21T07:42:01.469551",
+      "last_checked": "2026-04-24T07:39:43.628337",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d6981a3af5143eea42aba749b3f30a54\"",
       "file_path": "documentation/MetricKit/mxappruntimemetric/cumulativebackgroundlocationtime.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmemorymetric/averagesuspendedmemory.json": {
       "hash": "d8479dc946810689860734d87637a47d722962097865fa9c885c6dca3966fc46",
-      "last_checked": "2026-04-21T07:42:01.599143",
+      "last_checked": "2026-04-24T07:39:43.756811",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5d605f9b3507f818742daf42ca1e04f1\"",
       "file_path": "documentation/MetricKit/mxmemorymetric/averagesuspendedmemory.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmemorymetric/peakmemoryusage.json": {
       "hash": "770bcf187044d15d3df4ceb242bacd9a6451b941086465266a8bc6947f5f236d",
-      "last_checked": "2026-04-21T07:42:01.748684",
+      "last_checked": "2026-04-24T07:39:43.891587",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3c88af3bd64cbb760b39389e43f02d37\"",
       "file_path": "documentation/MetricKit/mxmemorymetric/peakmemoryusage.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/exceptiontype.json": {
       "hash": "2366cb2bc708c94c31a6846de1dedf7decbf7755d40fb57be566131add05900b",
-      "last_checked": "2026-04-21T07:42:01.879326",
+      "last_checked": "2026-04-24T07:39:44.036639",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"fd704b41756bb0b2d209ff8230f0e996\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/exceptiontype.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/exceptioncode.json": {
       "hash": "29b877f6c9bc39752519144f6167852617f88afe4d9ced7b045e550bf2d1adad",
-      "last_checked": "2026-04-21T07:42:02.015401",
+      "last_checked": "2026-04-24T07:39:44.188626",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6f3078ffe9647e95525bce9b3ac246d6\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/exceptioncode.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/signal.json": {
       "hash": "f9a67ec62dde9896c9f79f7b994b01b2f2f3bf61253baf6ec7ab25b4af0394fa",
-      "last_checked": "2026-04-21T07:42:02.145143",
+      "last_checked": "2026-04-24T07:39:44.333963",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7450bb63a0f97fca490761afdf1d3e27\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/signal.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/exceptionreason.json": {
       "hash": "f31a46dbaa1efb247090b0e1834eef2d399cd8d210fab6a11e493ae8d0a9acc1",
-      "last_checked": "2026-04-21T07:42:02.282669",
+      "last_checked": "2026-04-24T07:39:44.482277",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5d00231ae643cba1ee2a4df1233f70c4\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/exceptionreason.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/terminationreason.json": {
       "hash": "289fe34a7422505674cec4507a422a75883706fe255345ebcfbf2d5ceae212be",
-      "last_checked": "2026-04-21T07:42:02.436083",
+      "last_checked": "2026-04-24T07:39:44.617334",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9feba278c1ff2c40306ce0cc0bab4e09\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/terminationreason.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/virtualmemoryregioninfo.json": {
       "hash": "0ba0f2b2108bd08207b90664793e06a31d7d70f6a57eef809e415776c3ae1fd9",
-      "last_checked": "2026-04-21T07:42:02.558727",
+      "last_checked": "2026-04-24T07:39:44.747970",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e439ebbea2ede108a8715db15f6e24fb\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/virtualmemoryregioninfo.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnostic/callstacktree.json": {
       "hash": "ed58e4b6999d3938710fdf4c9db583fe2a47a0bc54cfee3a41dfdd4032e14fde",
-      "last_checked": "2026-04-21T07:42:02.696226",
+      "last_checked": "2026-04-24T07:39:44.892714",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"182969f9ace01d737e5206939502990b\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnostic/callstacktree.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxanimationmetric/scrollhitchtimeratio.json": {
       "hash": "c0cdcdf25953f88f651001df3227ffb933e10064c7d3bc1a44604d818b9fb917",
-      "last_checked": "2026-04-21T07:42:02.830665",
+      "last_checked": "2026-04-24T07:39:45.025631",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"382de745a72092db3f0b0bbe08192e87\"",
       "file_path": "documentation/MetricKit/mxanimationmetric/scrollhitchtimeratio.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxanimationmetric/hitchtimeratio.json": {
       "hash": "c9e71630d6bac29ded2f1eba01626400afff7adef684a5df16c8b16d146dfdb1",
-      "last_checked": "2026-04-21T07:42:02.979888",
+      "last_checked": "2026-04-24T07:39:45.173980",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5d895d9a80654b3c181c36a140954b31\"",
       "file_path": "documentation/MetricKit/mxanimationmetric/hitchtimeratio.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchmetric/histogrammedoptimizedtimetofirstdraw.json": {
       "hash": "6a6c6f90eecdd35163e15c661b20c9be56092ea61e6e89700c526f4bed57a02b",
-      "last_checked": "2026-04-21T07:42:03.094438",
+      "last_checked": "2026-04-24T07:39:45.321022",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c032ac5604cff8824a92c422fe75566b\"",
       "file_path": "documentation/MetricKit/mxapplaunchmetric/histogrammedoptimizedtimetofirstdraw.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchmetric/histogrammedtimetofirstdraw.json": {
       "hash": "05c4c11cab43429217653dd23dcedc096676d48cdf2e49f753aa18024759b6f8",
-      "last_checked": "2026-04-21T07:42:03.239296",
+      "last_checked": "2026-04-24T07:39:45.471138",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e8fb236ae760e5eb4e5075ca4c9ab1ab\"",
       "file_path": "documentation/MetricKit/mxapplaunchmetric/histogrammedtimetofirstdraw.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchmetric/histogrammedapplicationresumetime.json": {
       "hash": "693daf07e8f203eae6818dc7fb02af00511180ee3076014e5ab703bcde1d299f",
-      "last_checked": "2026-04-21T07:42:03.357333",
+      "last_checked": "2026-04-24T07:39:45.631075",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"fddde156ca21a903955cd171a42c46c7\"",
       "file_path": "documentation/MetricKit/mxapplaunchmetric/histogrammedapplicationresumetime.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxapplaunchmetric/histogrammedextendedlaunch.json": {
       "hash": "e67c505d5d9eb5974c5fd09f110b01ba15f7346de52301166278d03f39c9cbff",
-      "last_checked": "2026-04-21T07:42:03.477259",
+      "last_checked": "2026-04-24T07:39:45.772491",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"fd42de038850057b2d4f6e23f438f45b\"",
       "file_path": "documentation/MetricKit/mxapplaunchmetric/histogrammedextendedlaunch.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxappresponsivenessmetric/histogrammedapplicationhangtime.json": {
       "hash": "f958db2baadb26dbfeafb63d55ea8933992e47150fd4f24352be33c4d95c0471",
-      "last_checked": "2026-04-21T07:42:03.621502",
+      "last_checked": "2026-04-24T07:39:45.920254",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d29c2778c88f23ddeb852ab0086fb6c8\"",
       "file_path": "documentation/MetricKit/mxappresponsivenessmetric/histogrammedapplicationhangtime.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhangdiagnostic/hangduration.json": {
       "hash": "48a974a5661b5fe3ad6722df159b055598141ad16101a891a89829c8698e51e8",
-      "last_checked": "2026-04-21T07:42:03.774361",
+      "last_checked": "2026-04-24T07:39:46.060470",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a7da9dcb7cefe50c8d3df68fbe6e3e78\"",
       "file_path": "documentation/MetricKit/mxhangdiagnostic/hangduration.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhangdiagnostic/callstacktree.json": {
       "hash": "1c099435231ca0db7a7db617f3283d553331783da0f1a99fa8cba92afffd8bdb",
-      "last_checked": "2026-04-21T07:42:03.900026",
+      "last_checked": "2026-04-24T07:39:46.197056",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"41ceab945237ea1217ae31177477ac0d\"",
       "file_path": "documentation/MetricKit/mxhangdiagnostic/callstacktree.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskiometric/cumulativelogicalwrites.json": {
       "hash": "16cd4c09922f97694034cea3f22337e6cf1a1f0eb712b5d8a52c6c825b00dc33",
-      "last_checked": "2026-04-21T07:42:04.017284",
+      "last_checked": "2026-04-24T07:39:46.331971",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"20eeebff31ed4d214e4381d16916a79d\"",
       "file_path": "documentation/MetricKit/mxdiskiometric/cumulativelogicalwrites.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totalbinaryfilecount.json": {
       "hash": "5233cb98784d589f253527e6fb5bec3185bc481e6874eeb0cd1068b419cb7625",
-      "last_checked": "2026-04-21T07:42:04.137252",
+      "last_checked": "2026-04-24T07:39:46.488343",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"299f52afcd148b009d18058a1ab94e47\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totalbinaryfilecount.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totaldatafilecount.json": {
       "hash": "9c7d0b41e2b41c22723c65cd6829664d53c58caee3b961d63d725b1baf90b607",
-      "last_checked": "2026-04-21T07:42:04.272018",
+      "last_checked": "2026-04-24T07:39:46.634345",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"db69421003efceae5bfc9aba8b01463d\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totaldatafilecount.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totalbinaryfilesize.json": {
       "hash": "7e67472dbee6f6b8f1a22c93dfa5c5e96554ba25b067498878e35f689b8f9dfa",
-      "last_checked": "2026-04-21T07:42:04.403579",
+      "last_checked": "2026-04-24T07:39:46.784390",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"835110a0469b65f6c72b150c264cbda7\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totalbinaryfilesize.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totalcachefoldersize.json": {
       "hash": "4ac59cb943750562e707b60d35e8190489d436e760d61a4edcabc850af3f90c4",
-      "last_checked": "2026-04-21T07:42:04.627195",
+      "last_checked": "2026-04-24T07:39:46.941965",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c7e69150e481406545b86fc27e8284be\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totalcachefoldersize.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totalclonesize.json": {
       "hash": "b77af84bc8ca1fcb1162e1a2a06350823fca6aedff461e61e128b5d6020849d3",
-      "last_checked": "2026-04-21T07:42:04.814190",
+      "last_checked": "2026-04-24T07:39:47.087043",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d3ce26c2a191c448a5ee0b5543982d0b\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totalclonesize.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totaldatafilesize.json": {
       "hash": "18c846d3cc67231580b9031a47ced4763db817c8cd14a814e178203e5374e480",
-      "last_checked": "2026-04-21T07:42:04.929844",
+      "last_checked": "2026-04-24T07:39:47.224588",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"22ea5bcea8a95342eced2c0065a766a5\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totaldatafilesize.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totaldiskspacecapacity.json": {
       "hash": "f651550b5a97e9152a1cf260a9ee19e6eac34f95b36bfb9d2b46c3ac48e64001",
-      "last_checked": "2026-04-21T07:42:05.038776",
+      "last_checked": "2026-04-24T07:39:47.374938",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"30556a72c9829c52a542e4f9dfe26ffa\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totaldiskspacecapacity.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskspaceusagemetric/totaldiskspaceusedsize.json": {
       "hash": "58634572e6873c95db9fe8620a93a738638911bb244fd98153f51e866b1ffb6f",
-      "last_checked": "2026-04-21T07:42:05.171549",
+      "last_checked": "2026-04-24T07:39:47.511483",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c4bda6ab73b3b642276b80fd9dd12174\"",
       "file_path": "documentation/MetricKit/mxdiskspaceusagemetric/totaldiskspaceusedsize.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskwriteexceptiondiagnostic/totalwritescaused.json": {
       "hash": "8c0692340fa410fdba68470868be25d28d8982f05885915113532cf5b2d3cf3e",
-      "last_checked": "2026-04-21T07:42:05.335608",
+      "last_checked": "2026-04-24T07:39:47.655019",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"625fa0ee43e28109a3a0dde078ec41bf\"",
       "file_path": "documentation/MetricKit/mxdiskwriteexceptiondiagnostic/totalwritescaused.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiskwriteexceptiondiagnostic/callstacktree.json": {
       "hash": "12a18e1d7f7729e84eb743935ef28bead86f702d6c14e264a7131b54986d3b98",
-      "last_checked": "2026-04-21T07:42:05.463940",
+      "last_checked": "2026-04-24T07:39:47.797260",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e351a796bae5a463665040da3d73a05f\"",
       "file_path": "documentation/MetricKit/mxdiskwriteexceptiondiagnostic/callstacktree.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpost(_:dso:log:name:signpostid:_:_:).json": {
       "hash": "2b658e1062bdf25c1a51ec8910931fa9e66216f45e9b0011147dcff95c407964",
-      "last_checked": "2026-04-21T07:42:05.602050",
+      "last_checked": "2026-04-24T07:39:47.949263",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3319a0343b8d5b89c333b653783e84ed\"",
       "file_path": "documentation/MetricKit/mxsignpost-dsolognamesignpostid.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).json": {
       "hash": "b69e9632779b9a5f7490610f3eccfa40dcc7646167f7b05696ab64070df2c0f6",
-      "last_checked": "2026-04-21T07:42:05.722231",
+      "last_checked": "2026-04-24T07:39:48.109426",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9b0496c12513c9b9340467a5f700113b\"",
       "file_path": "documentation/MetricKit/mxsignpostanimationintervalbegin-dsolognamesignpostid.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric/signpostintervaldata.json": {
       "hash": "4a6cdd3dbbb38ff9b76a63dfecbff3f877d154d9a805ab77e7a6c8822546ab06",
-      "last_checked": "2026-04-21T07:42:05.885754",
+      "last_checked": "2026-04-24T07:39:48.250123",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"ac2e650a8669c1fc09a64bf94263dabf\"",
       "file_path": "documentation/MetricKit/mxsignpostmetric/signpostintervaldata.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata.json": {
       "hash": "240b9b255de76476d89209d897f9a9b622da6c61dc68300e3d88c7ea412ea016",
-      "last_checked": "2026-04-21T07:42:06.067417",
+      "last_checked": "2026-04-24T07:39:48.387615",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5345b135d8d2a85402fa5210f1929889\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric/signpostname.json": {
       "hash": "a441bba5b8d65b2ba6a3c17c9c5c6cf6a26137c3eaffc5da5de6dddbc3d77f2f",
-      "last_checked": "2026-04-21T07:42:06.238042",
+      "last_checked": "2026-04-24T07:39:48.541823",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"07cef38e19f962b6413a6ad192dc5f52\"",
       "file_path": "documentation/MetricKit/mxsignpostmetric/signpostname.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric/signpostcategory.json": {
       "hash": "f2f06f42db5219b1aa9c0872dfe85e5f8c9769d4e25e8d9700b8c2376e534cde",
-      "last_checked": "2026-04-21T07:42:06.408538",
+      "last_checked": "2026-04-24T07:39:48.718146",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a7a3ac5254b98fcc076f7b1225b25a3b\"",
       "file_path": "documentation/MetricKit/mxsignpostmetric/signpostcategory.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostmetric/totalcount.json": {
       "hash": "0e644d8746e18c4258cd893b99cd927a9a6f3e7d9f48dae1b2021af020d84d87",
-      "last_checked": "2026-04-21T07:42:06.541550",
+      "last_checked": "2026-04-24T07:39:48.866551",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"494f7833fa2e8f953f8ed0709e80127d\"",
       "file_path": "documentation/MetricKit/mxsignpostmetric/totalcount.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcallstacktree/jsonrepresentation().json": {
       "hash": "f86f8fec7731fdc608f49e8b9afd2895873d933b9ec50372309af10c831eeb46",
-      "last_checked": "2026-04-21T07:42:06.666917",
+      "last_checked": "2026-04-24T07:39:49.013243",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b497d3166bc2ecec56e25f8918e14948\"",
       "file_path": "documentation/MetricKit/mxcallstacktree/jsonrepresentation.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/applicationbuildversion.json": {
       "hash": "99190050db5494c339e32d19bc66fb62290e70b0c3403c86020f4ada2c8c5f48",
-      "last_checked": "2026-04-21T07:42:06.788321",
+      "last_checked": "2026-04-24T07:39:49.171129",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"1ec8a34c6a85a9436bf764d000116127\"",
       "file_path": "documentation/MetricKit/mxmetadata/applicationbuildversion.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/devicetype.json": {
       "hash": "793b6656e605cf29a339e2d7fd44997211eda8ddc810bea4f7d39d71105137d9",
-      "last_checked": "2026-04-21T07:42:06.909923",
+      "last_checked": "2026-04-24T07:39:49.308257",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3450ca6ea194d012aa790273eabd62a8\"",
       "file_path": "documentation/MetricKit/mxmetadata/devicetype.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/istestflightapp.json": {
       "hash": "b6d5dc496c4f5400b97a14195820cb21085a9ce8b8c751a42627db2ece0abf21",
-      "last_checked": "2026-04-21T07:42:07.063605",
+      "last_checked": "2026-04-24T07:39:49.456829",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"422868d45d8164c84b36eaa423034d47\"",
       "file_path": "documentation/MetricKit/mxmetadata/istestflightapp.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/lowpowermodeenabled.json": {
       "hash": "2cae49478d78c01804105cfeb5447e80ae7e3136d9027a1392a1e09e5801af7a",
-      "last_checked": "2026-04-21T07:42:07.232634",
+      "last_checked": "2026-04-24T07:39:49.606477",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"224391b1d7b4be661ec57826c0f9e823\"",
       "file_path": "documentation/MetricKit/mxmetadata/lowpowermodeenabled.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/osversion.json": {
       "hash": "30862dd457401b054a401328d97336d413f9a12d5db755557aa50888209ad7eb",
-      "last_checked": "2026-04-21T07:42:07.349152",
+      "last_checked": "2026-04-24T07:39:49.759063",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"40e3368a3ca401730995fb49ce9fd8f4\"",
       "file_path": "documentation/MetricKit/mxmetadata/osversion.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/platformarchitecture.json": {
       "hash": "cb0af58a744ec6ea123e9b0c0193826917a7f84d377fa8411326f0cd100a8ae2",
-      "last_checked": "2026-04-21T07:42:07.504097",
+      "last_checked": "2026-04-24T07:39:49.918431",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a57ae012334bea874fe42b5d3d61e373\"",
       "file_path": "documentation/MetricKit/mxmetadata/platformarchitecture.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/regionformat.json": {
       "hash": "15eff566a9d216872f3ab6a1c4d84dab00c7212eaa03cc560945d94d15afa7f2",
-      "last_checked": "2026-04-21T07:42:07.621468",
+      "last_checked": "2026-04-24T07:39:50.134915",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f0524d1816761ef224b9bd1c425bbd3c\"",
       "file_path": "documentation/MetricKit/mxmetadata/regionformat.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/pid.json": {
       "hash": "5bbf481d34261758ce60f94c3e2d6123091b2ff7cde6a0c5b290d5255e3c62f3",
-      "last_checked": "2026-04-21T07:42:07.780389",
+      "last_checked": "2026-04-24T07:39:50.278969",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"60996f418f4797129fb0d75a37b0bc6f\"",
       "file_path": "documentation/MetricKit/mxmetadata/pid.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/dictionaryrepresentation().json": {
       "hash": "a596f12e507ac41b5779edf6e6138ce9a53281d1f58554b999fc1e9ada193c1f",
-      "last_checked": "2026-04-21T07:42:07.901078",
+      "last_checked": "2026-04-24T07:39:50.454332",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"1d09ddbefe1e7de30266881ac7f75a71\"",
       "file_path": "documentation/MetricKit/mxmetadata/dictionaryrepresentation.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/jsonrepresentation().json": {
       "hash": "6a5d78e60f269349832e070c86ba2994afa63d1a107df1838813f07b17f10bb7",
-      "last_checked": "2026-04-21T07:42:08.037017",
+      "last_checked": "2026-04-24T07:39:50.615830",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"eeca24521b3de1f2259cb6a6fd0d20fd\"",
       "file_path": "documentation/MetricKit/mxmetadata/jsonrepresentation.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetadata/bundleidentifier.json": {
       "hash": "f4cf05316d913cd35cc00e638823837f301895ca9225b4c01f7b50ba3b7b7403",
-      "last_checked": "2026-04-21T07:42:08.181688",
+      "last_checked": "2026-04-24T07:39:50.758004",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5237f75a2b44aa3be2296d6468f6169c\"",
       "file_path": "documentation/MetricKit/mxmetadata/bundleidentifier.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxaverage/averagemeasurement.json": {
       "hash": "15503a413ebc08648553b8f61ed9b5dc3363795c498b184f2013c1d308399a5f",
-      "last_checked": "2026-04-21T07:42:08.303873",
+      "last_checked": "2026-04-24T07:39:50.889804",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e6052b6496c39241bc0dbe07d34e78d5\"",
       "file_path": "documentation/MetricKit/mxaverage/averagemeasurement.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxaverage/samplecount.json": {
       "hash": "8e3aaddcb32cd1e742267bf67667d8ecbf432936b9ce0f49cb300ce12d33bc63",
-      "last_checked": "2026-04-21T07:42:08.433256",
+      "last_checked": "2026-04-24T07:39:51.059472",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"cb2c3016e2a0bc3d2f6662308dffef7a\"",
       "file_path": "documentation/MetricKit/mxaverage/samplecount.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxaverage/standarddeviation.json": {
       "hash": "8849a7af54c85314b5732a536ddf0dafc028cb1895bfe304d8ab70d4159d2363",
-      "last_checked": "2026-04-21T07:42:08.586045",
+      "last_checked": "2026-04-24T07:39:51.215691",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"59eb23bfde569384e948c761437a574c\"",
       "file_path": "documentation/MetricKit/mxaverage/standarddeviation.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogram/bucketenumerator.json": {
       "hash": "894c5f113632b17350345a490116219375f93f3134a97a0aeece29741a1685dc",
-      "last_checked": "2026-04-21T07:42:08.720591",
+      "last_checked": "2026-04-24T07:39:51.359317",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b7a4b029718d8e86110ef71675e6ca09\"",
       "file_path": "documentation/MetricKit/mxhistogram/bucketenumerator.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogram/totalbucketcount.json": {
       "hash": "5feb5f3a236aba49635562bc110bb3f67c3d28e64aebb6f20947e54a967cfd04",
-      "last_checked": "2026-04-21T07:42:08.870237",
+      "last_checked": "2026-04-24T07:39:51.518153",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c883adebd8fb0708034b65a484e1b71b\"",
       "file_path": "documentation/MetricKit/mxhistogram/totalbucketcount.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogrambucket.json": {
       "hash": "8fbae5447f9279a161e415f10be4202aaf971c2fd4468f32b860928838189711",
-      "last_checked": "2026-04-21T07:42:09.008204",
+      "last_checked": "2026-04-24T07:39:51.691119",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7a93b52b9ff77f8ad09dae54bb7c630f\"",
       "file_path": "documentation/MetricKit/mxhistogrambucket.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic/applicationversion.json": {
       "hash": "68789e2b2e23ae3ffdcb882c30936b98c1ac58dc21e028ec3499eec4604af4ca",
-      "last_checked": "2026-04-21T07:42:09.124007",
+      "last_checked": "2026-04-24T07:39:51.832270",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"2876fe8d0319f0d39ece820281cc1036\"",
       "file_path": "documentation/MetricKit/mxdiagnostic/applicationversion.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic/metadata.json": {
       "hash": "b8b62197c56e1c817dc179746526432a3518f6dafc9bc19ade5bdda148a3b237",
-      "last_checked": "2026-04-21T07:42:09.278043",
+      "last_checked": "2026-04-24T07:39:51.975899",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"04e4b878c4854b3b9ae195c5b241d69a\"",
       "file_path": "documentation/MetricKit/mxdiagnostic/metadata.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic/signpostdata.json": {
       "hash": "9b85b46525e0be1482dd5a8feafa06103904301833b1d97fc77f51a5b04023dc",
-      "last_checked": "2026-04-21T07:42:09.407047",
+      "last_checked": "2026-04-24T07:39:52.132443",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d8960d61c0bdc04f159e722aeca1053b\"",
       "file_path": "documentation/MetricKit/mxdiagnostic/signpostdata.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic/jsonrepresentation().json": {
       "hash": "94b076631f2e5440aa289c33712f7d1b4b75afbc186b7636d78700d96fa96824",
-      "last_checked": "2026-04-21T07:42:09.549466",
+      "last_checked": "2026-04-24T07:39:52.292984",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c1c288ecddd381d32463de8a628dc58f\"",
       "file_path": "documentation/MetricKit/mxdiagnostic/jsonrepresentation.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxdiagnostic/dictionaryrepresentation().json": {
       "hash": "5fc5f7296fa313037c28daa9ef2d139a02579a8d7a50568b69216c8e95518de2",
-      "last_checked": "2026-04-21T07:42:09.670915",
+      "last_checked": "2026-04-24T07:39:52.476008",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3db075855d0017a145d27238983eb773\"",
       "file_path": "documentation/MetricKit/mxdiagnostic/dictionaryrepresentation.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetric/dictionaryrepresentation().json": {
       "hash": "ed28104b8dc037de202af1189fd116b2d5790e9163d3365657d926c28a77d82e",
-      "last_checked": "2026-04-21T07:42:09.973554",
+      "last_checked": "2026-04-24T07:39:52.626149",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"1fdfc4dd48e7354dc10516368e8930ee\"",
       "file_path": "documentation/MetricKit/mxmetric/dictionaryrepresentation.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxmetric/jsonrepresentation().json": {
       "hash": "033bf70dcdab85967c98608dfec59cdc486de9b1c406930dbb71d6e6b0f198e8",
-      "last_checked": "2026-04-21T07:42:10.144811",
+      "last_checked": "2026-04-24T07:39:52.761405",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"43ccacb81a9de082b4500d51e5e786fe\"",
       "file_path": "documentation/MetricKit/mxmetric/jsonrepresentation.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskduplicated.json": {
       "hash": "040b16a4af668da414beecc86c6ee1f400299223f3b1c92794b6dc9b8ad7345a",
-      "last_checked": "2026-04-21T07:42:10.261941",
+      "last_checked": "2026-04-24T07:39:52.895802",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"85b58ec321b744d5df3ac117d338798c\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskduplicated.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskinternalfailure.json": {
       "hash": "221bef1440b6ae32bd48ccbd6cf0bd9f674bc2d7893f66836a31750358cf7ebe",
-      "last_checked": "2026-04-21T07:42:10.413043",
+      "last_checked": "2026-04-24T07:39:53.041299",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"8bdde33c32d563a96992251b9a3c8f8b\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskinternalfailure.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskinvalidid.json": {
       "hash": "f5d324c64bfc5fbf8f412f32fffdfe7b2f4b850b6e163823dcc441e6940a8d5e",
-      "last_checked": "2026-04-21T07:42:10.602493",
+      "last_checked": "2026-04-24T07:39:53.189040",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f6e782302b2d0616ee0d89b5737760f9\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskinvalidid.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskmaxcount.json": {
       "hash": "14d6710907d9380eac67b593687af46adc8fe0b62413b4d18acd0d845d525db9",
-      "last_checked": "2026-04-21T07:42:10.751079",
+      "last_checked": "2026-04-24T07:39:53.346017",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"72d10987e0e3618eb7021a488fc4b336\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskmaxcount.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskpastdeadline.json": {
       "hash": "ee098af65f8956dc51d0bc6e2737eb80e1a9f39962e36ffc4648b03ffbe57695",
-      "last_checked": "2026-04-21T07:42:10.881013",
+      "last_checked": "2026-04-24T07:39:53.489331",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"42f21a7ae33d47589c31ce4a301777ac\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskpastdeadline.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/launchtaskunknown.json": {
       "hash": "41cb48ecf8d686fa26cb280d91e35fd6e33850ec9b97afc05fa0728ffbc4289e",
-      "last_checked": "2026-04-21T07:42:11.000683",
+      "last_checked": "2026-04-24T07:39:53.615318",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"99fac56bcf4d7f96c16d31376d59bac1\"",
       "file_path": "documentation/MetricKit/mxerror/code/launchtaskunknown.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/code/init(rawvalue:).json": {
       "hash": "cc4be6b8dd967ba03c683ed5ab1756d32bb840065472fd3584dd13383f8352c8",
-      "last_checked": "2026-04-21T07:42:11.295529",
+      "last_checked": "2026-04-24T07:39:53.772079",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"fd269852b1bf0b5db78bd8b45d56e074\"",
       "file_path": "documentation/MetricKit/mxerror/code/init-rawvalue.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskduplicated.json": {
       "hash": "ced920ef7c935fbf223497acf16d1f806c6328328843b45c4386629fc50a3d2d",
-      "last_checked": "2026-04-21T07:42:11.437675",
+      "last_checked": "2026-04-24T07:39:53.910197",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"1af4b692ff85fd06cc2c0d830a4d0815\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskduplicated.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskinternalfailure.json": {
       "hash": "001cfa0751d0e5ee70a7285da8cf9ea533cc868af40db4e963364875e08a0c41",
-      "last_checked": "2026-04-21T07:42:11.611307",
+      "last_checked": "2026-04-24T07:39:54.050604",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"11726d8183a5a60510938fad3a1b4903\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskinternalfailure.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskinvalidid.json": {
       "hash": "0b93d40a88826bacb76ca76302a9e744eacac0e0ee7c747b2049438238bb38e5",
-      "last_checked": "2026-04-21T07:42:11.734092",
+      "last_checked": "2026-04-24T07:39:54.201273",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"06fadffc1880bba93f4a6331793d3e78\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskinvalidid.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskmaxcount.json": {
       "hash": "bb35a2681abc041da98ebf3aa856e99a121fd0079bac8c339fe790e584e0af02",
-      "last_checked": "2026-04-21T07:42:11.914226",
+      "last_checked": "2026-04-24T07:39:54.336400",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"19e2a081f358ab692b25d9266066fc15\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskmaxcount.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskpastdeadline.json": {
       "hash": "117cba91ed8419d3ef29739ea85e55c62a184ed54021cdc42ef1b6550e805b61",
-      "last_checked": "2026-04-21T07:42:12.088757",
+      "last_checked": "2026-04-24T07:39:54.482393",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"dbcd037b147720c10ac10b6b8043d1e5\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskpastdeadline.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/launchtaskunknown.json": {
       "hash": "dddde69ffb2463c445a906f22cd0492b7f3473cbe702c0e3d060eb3b60daaadd",
-      "last_checked": "2026-04-21T07:42:12.270445",
+      "last_checked": "2026-04-24T07:39:54.625333",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b0f44adbbe9feab0d5019d0823c92214\"",
       "file_path": "documentation/MetricKit/mxerror/launchtaskunknown.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxerror/errordomain.json": {
       "hash": "dd15b70425f5eddea3853863c980cda3cfcfc876c2f012525ab301de18320b84",
-      "last_checked": "2026-04-21T07:42:12.389193",
+      "last_checked": "2026-04-24T07:39:54.758638",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"3a55df46e966ff3f860b66b39bb27672\"",
       "file_path": "documentation/MetricKit/mxerror/errordomain.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/dictionaryrepresentation().json": {
       "hash": "26c45a2c2f34d6c70129ab9fb8ae1837efe79b6e0abbf553d7b9e98d18ff486c",
-      "last_checked": "2026-04-21T07:42:12.510468",
+      "last_checked": "2026-04-24T07:39:54.915188",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"998c5dccb46ab58e6c475555a14c2e30\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/dictionaryrepresentation.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/jsonrepresentation().json": {
       "hash": "b84e3bbce37565921b3d9af8fdbccd9642c70d32a9a61daef08e674d85a62932",
-      "last_checked": "2026-04-21T07:42:12.641283",
+      "last_checked": "2026-04-24T07:39:55.053110",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"f7655b40935616134e76b9e3b47c960d\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/jsonrepresentation.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/arguments.json": {
       "hash": "5fbce0da82a2dd4a89c24973f498e4a7225b73ce15960d3987b57943f7d683e0",
-      "last_checked": "2026-04-21T07:42:12.832303",
+      "last_checked": "2026-04-24T07:39:55.184969",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"0c37df2f9170014eca7aa9bbe244280e\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/arguments.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/classname.json": {
       "hash": "e2c9b2365cddee72fdded5baf5362927a9a9cbdd15c94206d15480e1c67c7587",
-      "last_checked": "2026-04-21T07:42:12.997469",
+      "last_checked": "2026-04-24T07:39:55.330616",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5061819e9ed6aa3b4bda4d0aefc0b3d0\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/classname.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/composedmessage.json": {
       "hash": "1de7fab09041d639f2707123369605dfcb0878d07e776d60484e2043bc7cf5b1",
-      "last_checked": "2026-04-21T07:42:13.116932",
+      "last_checked": "2026-04-24T07:39:55.470896",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a8cb52b45c2c6fa0722a31e2ee4eda58\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/composedmessage.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/exceptionname.json": {
       "hash": "282c84654c470ed1a079e56b1ae11941c271118e9fc665e8b53836af9f934509",
-      "last_checked": "2026-04-21T07:42:13.255924",
+      "last_checked": "2026-04-24T07:39:55.599776",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a40f7fbe21ea84be5fa4e71d1970d68a\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/exceptionname.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/exceptiontype.json": {
       "hash": "607767d5e8abd668857079875bb5bfc89413c3c1f6273fd266546da847f62dac",
-      "last_checked": "2026-04-21T07:42:13.377589",
+      "last_checked": "2026-04-24T07:39:55.740140",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a3a378d118d72ec52da06f9c41b9ede9\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/exceptiontype.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxcrashdiagnosticobjectivecexceptionreason/formatstring.json": {
       "hash": "c613d0a9386f7e487e429de299dce679d93fe5ebc05b1f58c5df34c57f38d19e",
-      "last_checked": "2026-04-21T07:42:13.567588",
+      "last_checked": "2026-04-24T07:39:55.893464",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9bae54dee80fb1fab5aee3360513451c\"",
       "file_path": "documentation/MetricKit/mxcrashdiagnosticobjectivecexceptionreason/formatstring.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/dictionaryrepresentation().json": {
       "hash": "cf01da5ac460312116e3e64612542ca32059bff8749b0fee67574921f405b7e7",
-      "last_checked": "2026-04-21T07:42:13.729845",
+      "last_checked": "2026-04-24T07:39:56.030608",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"57975a50d15e13f91b93eb52c4362b9e\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/dictionaryrepresentation.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/jsonrepresentation().json": {
       "hash": "dcc8155a95e0c2fa60d064c2828b9b445a4fedc370ad1a09ddb35cd6fd087142",
-      "last_checked": "2026-04-21T07:42:13.850713",
+      "last_checked": "2026-04-24T07:39:56.177614",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6d2e46e90955be6300c35ce74e6bbb85\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/jsonrepresentation.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/begintimestamp.json": {
       "hash": "5075f7de0692dc20a6798df8bc2a8a1439423fcb1162f8f8b652b0d7bd98a678",
-      "last_checked": "2026-04-21T07:42:13.991619",
+      "last_checked": "2026-04-24T07:39:56.310163",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"56d70efd929cb3202f714636db35c773\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/begintimestamp.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/category.json": {
       "hash": "a1a673001214bca455c93b542dac23dc6d03e86607fe7b31c83c1d13d54a75e6",
-      "last_checked": "2026-04-21T07:42:14.155159",
+      "last_checked": "2026-04-24T07:39:56.466834",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"ceb60aa5cae78127f459dd0a21659865\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/category.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/duration.json": {
       "hash": "23894d49b2e0dd791a268f80b3d713fb2a942c409aec67e40bfe5b34821173d0",
-      "last_checked": "2026-04-21T07:42:14.273056",
+      "last_checked": "2026-04-24T07:39:56.598154",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b15718478464a6f24d3779c2e4fd9573\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/duration.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/endtimestamp.json": {
       "hash": "44fdd43a4520472ca8e60bc27682bf879f04f9665dfab4830e3b02dba0160ea1",
-      "last_checked": "2026-04-21T07:42:14.405539",
+      "last_checked": "2026-04-24T07:39:56.744052",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"330bf33cca900396d7bfec6a1c252f2d\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/endtimestamp.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/isinterval.json": {
       "hash": "92d1c90cde6dd02ae8ab72ff5e9b0de9329d4cc4915134435c46d7fd111ace4f",
-      "last_checked": "2026-04-21T07:42:14.587759",
+      "last_checked": "2026-04-24T07:39:56.878664",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"05d4fe0d3086e5a7b0c4986f60e3354b\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/isinterval.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/name.json": {
       "hash": "cbf97bd754530e2d11ed302cc077d1eab51193a16d8d51e7fdee158401acf175",
-      "last_checked": "2026-04-21T07:42:14.757443",
+      "last_checked": "2026-04-24T07:39:57.014312",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"df1c2bf5a196a69f72e8a00367e5dad6\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/name.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostrecord/subsystem.json": {
       "hash": "367edd7cf739a89973ca466e45c95e65c233cdf232533e0fcf312ea93a57d82b",
-      "last_checked": "2026-04-21T07:42:14.870989",
+      "last_checked": "2026-04-24T07:39:57.166731",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d1971635e8bc0981a7ffc288b30b497e\"",
       "file_path": "documentation/MetricKit/mxsignpostrecord/subsystem.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlaunchtaskid/init(_:).json": {
       "hash": "94fc48a7ce5bb18301a626c1142208ce821d9c168d559838517ae458b9ca399f",
-      "last_checked": "2026-04-21T07:42:14.994191",
+      "last_checked": "2026-04-24T07:39:57.313466",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d16bca1461bba6b423e47f146b25ec59\"",
       "file_path": "documentation/MetricKit/mxlaunchtaskid/init.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxlaunchtaskid/init(rawvalue:).json": {
       "hash": "34b241d873e48ccd7a320f0a9fc1831366556c4498a570d267d805115f170abf",
-      "last_checked": "2026-04-21T07:42:15.165087",
+      "last_checked": "2026-04-24T07:39:57.460850",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"7a8e2445efa3491cfba68788a1d32241\"",
       "file_path": "documentation/MetricKit/mxlaunchtaskid/init-rawvalue.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxunitsignalbars/bars.json": {
       "hash": "7ea0757c8803c6409b44b38a6b8016325fe7d9cc92921c149121dc0a8608ce40",
-      "last_checked": "2026-04-21T07:42:15.344956",
+      "last_checked": "2026-04-24T07:39:57.625209",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"8961f0df27b6b9575bca1102bea2b045\"",
       "file_path": "documentation/MetricKit/mxunitsignalbars/bars.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxunitaveragepixelluminance/apl.json": {
       "hash": "5fb562cb378a13dfad28dca4d926f87e6979b4ec3aa977e7847406e69d1d988c",
-      "last_checked": "2026-04-21T07:42:15.456006",
+      "last_checked": "2026-04-24T07:39:57.757305",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"56418771a51d153a2c78a8e4ff8bbb89\"",
       "file_path": "documentation/MetricKit/mxunitaveragepixelluminance/apl.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativenormalappexitcount.json": {
       "hash": "f7dd36ba818f7f470f8632f2fbf09bcce94a3077890a4bf9c0ea6e2c1b86562d",
-      "last_checked": "2026-04-21T07:42:15.582510",
+      "last_checked": "2026-04-24T07:39:57.903094",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"a4b88687f02e83ea94d9721604e5ac7c\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativenormalappexitcount.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativeabnormalexitcount.json": {
       "hash": "0a1b6033374d3213e8c19dafa08b1d7b03c57f5a8d3554ec5ac9848dbdf1782b",
-      "last_checked": "2026-04-21T07:42:15.764674",
+      "last_checked": "2026-04-24T07:39:58.093882",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"be8ca4b681d1aa90da3674a7eaf2943f\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativeabnormalexitcount.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativeappwatchdogexitcount.json": {
       "hash": "0cc3dd8f635d05a42c10f8acfd64841bc742d9d56a1f23d6a355f67a06658ee2",
-      "last_checked": "2026-04-21T07:42:15.900537",
+      "last_checked": "2026-04-24T07:39:58.233575",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"b87324541c444f5210276ff08b88d616\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativeappwatchdogexitcount.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativememoryresourcelimitexitcount.json": {
       "hash": "7bc891a400582ee62e292c5ad29493b12f81748e0ac6d9c68409712d2a918ca9",
-      "last_checked": "2026-04-21T07:42:16.015355",
+      "last_checked": "2026-04-24T07:39:58.370641",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"c253e3fd65f8db2197baff607c454c7b\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativememoryresourcelimitexitcount.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativebadaccessexitcount.json": {
       "hash": "5a8a749af24002f315238532449826f68feea3a3baa9f7ab28e2ba8d0e266420",
-      "last_checked": "2026-04-21T07:42:16.189777",
+      "last_checked": "2026-04-24T07:39:58.512895",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"642274eeb2de1c48785e10bc1d0b8c58\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativebadaccessexitcount.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxforegroundexitdata/cumulativeillegalinstructionexitcount.json": {
       "hash": "f28e803e6e3a35c590513fe16c834aea2be5f5a98bde381e84e517bfa230c9b1",
-      "last_checked": "2026-04-21T07:42:16.330309",
+      "last_checked": "2026-04-24T07:39:58.659273",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"4f495a77e2ec14eb5e3aa429692c59e6\"",
       "file_path": "documentation/MetricKit/mxforegroundexitdata/cumulativeillegalinstructionexitcount.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativenormalappexitcount.json": {
       "hash": "bfa533195aaf85c478cfc07d5029b91efcb4f7f2e67fd28c1cfcac4712d41497",
-      "last_checked": "2026-04-21T07:42:16.551144",
+      "last_checked": "2026-04-24T07:39:58.805537",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"9e59c8848d61cf12b384e8d7b46476e6\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativenormalappexitcount.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativeabnormalexitcount.json": {
       "hash": "1c8601698d68d15bfcac98b937c7dd08443e05e3a6082c9153175bee8370844e",
-      "last_checked": "2026-04-21T07:42:16.672310",
+      "last_checked": "2026-04-24T07:39:58.941794",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"24a4c119c041488e8a02a11a09e2befc\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativeabnormalexitcount.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativeappwatchdogexitcount.json": {
       "hash": "2e93f752dff65320d3a6d3ce2ea919509e1d113319168e8876a639fce64f9215",
-      "last_checked": "2026-04-21T07:42:16.856766",
+      "last_checked": "2026-04-24T07:39:59.087066",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"799e0209f7ba425f3e9cf249c89f7031\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativeappwatchdogexitcount.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativecpuresourcelimitexitcount.json": {
       "hash": "1262e57e840d1c5e86677e5260ddad14cea19b7136874c5b5d22d917ea609ee4",
-      "last_checked": "2026-04-21T07:42:16.971400",
+      "last_checked": "2026-04-24T07:39:59.248787",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d4a2483d8e2a07f46219169a7dbf1457\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativecpuresourcelimitexitcount.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativememoryresourcelimitexitcount.json": {
       "hash": "a625d06433f7e0c17615a4205cfed92692ae3874413bf3b1dbd38b60b6ffc1b2",
-      "last_checked": "2026-04-21T07:42:17.115201",
+      "last_checked": "2026-04-24T07:39:59.389812",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"25c44a4c3611af1b7c7f97123a56a0b0\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativememoryresourcelimitexitcount.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativememorypressureexitcount.json": {
       "hash": "73ed347d4808739c475195277b88567cb3cd1b809845dc06fad2e10bae26a50f",
-      "last_checked": "2026-04-21T07:42:17.293316",
+      "last_checked": "2026-04-24T07:39:59.535782",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"55f0ac2e65ea5f8317eeb98c9d41da0f\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativememorypressureexitcount.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativesuspendedwithlockedfileexitcount.json": {
       "hash": "7837597425294ca6f43a4c639347ac32c25e63a1d13c0f26eb676f28cee34c8e",
-      "last_checked": "2026-04-21T07:42:17.461488",
+      "last_checked": "2026-04-24T07:39:59.669464",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"062c469512796171f969c4a0f492b746\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativesuspendedwithlockedfileexitcount.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativebadaccessexitcount.json": {
       "hash": "f7db8d4b3bfc308401d5fa45faff18901cf4886b5f2c6cac7ffaad5a575b2a03",
-      "last_checked": "2026-04-21T07:42:17.592167",
+      "last_checked": "2026-04-24T07:39:59.811526",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"74f4fa7c776a34566b09583f2faef7d8\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativebadaccessexitcount.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativeillegalinstructionexitcount.json": {
       "hash": "6651b62fcabf2da89bcc523d0ac3c7cb3461b8c2bced7cafed4f24477fa29a75",
-      "last_checked": "2026-04-21T07:42:17.826245",
+      "last_checked": "2026-04-24T07:39:59.964166",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"08100ffc8c478ad6aaba3d9b709473ce\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativeillegalinstructionexitcount.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxbackgroundexitdata/cumulativebackgroundtaskassertiontimeoutexitcount.json": {
       "hash": "988b17856fa75cc1011cc60129934bc965350aaea64a0e846363c850df424d18",
-      "last_checked": "2026-04-21T07:42:17.953758",
+      "last_checked": "2026-04-24T07:40:00.251845",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"2e3181a491da24bb191a00d82e0ec349\"",
       "file_path": "documentation/MetricKit/mxbackgroundexitdata/cumulativebackgroundtaskassertiontimeoutexitcount.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata/histogrammedsignpostduration.json": {
       "hash": "9369b0122778955fd0d17b61e077d4226596ce231d115870f523a0153c3b4604",
-      "last_checked": "2026-04-21T07:42:18.100411",
+      "last_checked": "2026-04-24T07:40:00.395337",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"bc3e743213ba024861b9063f1c49a167\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/histogrammedsignpostduration.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata/averagememory.json": {
       "hash": "1b0bb09b6fafa9e0b6b542bbe9738c2b9b1f02b10cbc5ace046810e17da8ed9f",
-      "last_checked": "2026-04-21T07:42:18.265781",
+      "last_checked": "2026-04-24T07:40:00.549092",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"206564c0c030f764c26c87bd89f68c14\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/averagememory.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata/cumulativecputime.json": {
       "hash": "1b078cea6bc81c4dee3776f819402defb9fcbfa39a7a297c96210b2abfa5a88b",
-      "last_checked": "2026-04-21T07:42:18.437619",
+      "last_checked": "2026-04-24T07:40:00.681915",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"d1920c08ab9631de6e7ba7ec2b5b5325\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/cumulativecputime.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata/cumulativelogicalwrites.json": {
       "hash": "0b007b1801164b904d8c9c4706068327f42bd203075ab79dcab88c50c8121cf2",
-      "last_checked": "2026-04-21T07:42:18.561997",
+      "last_checked": "2026-04-24T07:40:00.810586",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"03d7d959160e739ed7c90ae9ff9bcca2\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/cumulativelogicalwrites.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxsignpostintervaldata/cumulativehitchtimeratio.json": {
       "hash": "ad459261c137a47f7e99ae95994604fe79e2078c06ae31635fdf914762a5e436",
-      "last_checked": "2026-04-21T07:42:18.684112",
+      "last_checked": "2026-04-24T07:40:00.953163",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"6c253e65e806bd4fbaf559f2311479af\"",
       "file_path": "documentation/MetricKit/mxsignpostintervaldata/cumulativehitchtimeratio.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogrambucket/bucketstart.json": {
       "hash": "f3d4d0ec7b39577604ba59651a575d635dbd3970c394033839fefe8dd75385ec",
-      "last_checked": "2026-04-21T07:42:18.864194",
+      "last_checked": "2026-04-24T07:40:01.102674",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"5072cb21efe894e8cfeabfbafa3fd1ca\"",
       "file_path": "documentation/MetricKit/mxhistogrambucket/bucketstart.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogrambucket/bucketend.json": {
       "hash": "942c1928cc8b9f69d81f96d6366f0307b13dbf6778b21b9c6a214de25adfcc61",
-      "last_checked": "2026-04-21T07:42:18.981351",
+      "last_checked": "2026-04-24T07:40:01.251674",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"e96b5bd4acbf3298807c94e08325a958\"",
       "file_path": "documentation/MetricKit/mxhistogrambucket/bucketend.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metrickit/mxhistogrambucket/bucketcount.json": {
       "hash": "69f62d21a72a1fc4a72698b7bdebb2b8a32ccfaf606ce680efe043b288c2fdd4",
-      "last_checked": "2026-04-21T07:42:19.118106",
+      "last_checked": "2026-04-24T07:40:01.379790",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:41:45.475707",
+      "session_id": "2026-04-24T07:39:27.005225",
       "etag": "W/\"90c9c66367a4ba3fc96678c02d50e84e\"",
       "file_path": "documentation/MetricKit/mxhistogrambucket/bucketcount.md"
     },

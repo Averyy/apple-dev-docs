@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-21T07:42:58.502673",
+    "last_updated": "2026-04-24T07:40:41.701555",
     "total_pages": 266,
-    "session_id": "2026-04-21T07:42:39.490796"
+    "session_id": "2026-04-24T07:40:20.144281"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SecurityInterface.json": {
       "hash": "2d66dc148e783251304198d9ae6c86945129e9652631a3b9564105955e63dfd9",
-      "last_checked": "2026-04-21T07:42:39.747768",
+      "last_checked": "2026-04-24T07:40:20.489689",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"33fdaffa80463c41665492bdb8d89afb\"",
       "file_path": "documentation/SecurityInterface/SecurityInterface.md"
     },
     "https://developer.apple.com/documentation/SecurityInterface": {
       "hash": "2d66dc148e783251304198d9ae6c86945129e9652631a3b9564105955e63dfd9",
-      "last_checked": "2026-04-21T07:42:39.666658",
+      "last_checked": "2026-04-24T07:40:20.373982",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"33fdaffa80463c41665492bdb8d89afb\"",
       "file_path": "documentation/SecurityInterface/SecurityInterface.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview.json": {
       "hash": "88fb4df56cf6d164856f5123df5d48938aa8e86f667cde48435a5b509c0b4c2b",
-      "last_checked": "2026-04-21T07:42:39.986697",
+      "last_checked": "2026-04-24T07:40:20.759061",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"b9e9407be3074faec4fb719fdb842738\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview.json": {
       "hash": "af3eb40c3c4200766f63f731eb8e88c7a93804d3037928b4ffdaa1b57c099048",
-      "last_checked": "2026-04-21T07:42:40.185289",
+      "last_checked": "2026-04-24T07:40:20.984555",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e01353813d1b52470efd8156d2420616\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel.json": {
       "hash": "086fbbb734907e9079edf4dca43bd8b2241525cc86ac52ebc4973516fe48f967",
-      "last_checked": "2026-04-21T07:42:40.317871",
+      "last_checked": "2026-04-24T07:40:21.197701",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2f5071a019f2669c722d2662efb42d95\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel.json": {
       "hash": "d83c0cf1aa3ee58ac0434e52345103ce093b0bb0fc0ac3c65bcb7240d7532d6f",
-      "last_checked": "2026-04-21T07:42:40.490087",
+      "last_checked": "2026-04-24T07:40:21.405541",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"72af167ba979b05043eaa7d4fe610026\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview.json": {
       "hash": "69b235d2a25e44e2d17418b7a8186599dc798cc2be6bef2440eb06933f54a3b4",
-      "last_checked": "2026-04-21T07:42:40.624985",
+      "last_checked": "2026-04-24T07:40:21.587486",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"fb1265d3aa5a412e880d12a555102e07\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel.json": {
       "hash": "44acfdc67a8e4971e0e4e7b1727bdf2d919b350d53cb374d16e20e60c679fde8",
-      "last_checked": "2026-04-21T07:42:40.918413",
+      "last_checked": "2026-04-24T07:40:21.745786",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"42f9feb4acee0cf5c159ec89b84510ed\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitytablecellview.json": {
       "hash": "16731cfe7308c1298d4694e94186ccfbd85b9de8f5807ba4ad6ca014572b78f8",
-      "last_checked": "2026-04-21T07:42:41.055329",
+      "last_checked": "2026-04-24T07:40:21.923350",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7697f8e2b10226a0c7d2e3f82f34f69a\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel.json": {
       "hash": "e9e93717b06fc770fd10d9bf7e61c0a305038bcad67320f8d4d73c5ad45c9e7a",
-      "last_checked": "2026-04-21T07:42:41.394205",
+      "last_checked": "2026-04-24T07:40:22.074312",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"11a03b96a7f25fac1f2e1943c0085d7f\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsettingspanel.json": {
       "hash": "653b8eeac4064dae8f5e249c9b254168b05ceaec9a52db65226c974cd5edd501",
-      "last_checked": "2026-04-21T07:42:41.518594",
+      "last_checked": "2026-04-24T07:40:22.266011",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"1a75d31e48eb4e00c0e5e78375b63a95\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsettingspanel.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewstate.json": {
       "hash": "9fcad2ac52e1f84221670c6add8945aa55a3f5151effa211b12343d5cb49beba",
-      "last_checked": "2026-04-21T07:42:41.671525",
+      "last_checked": "2026-04-24T07:40:22.453346",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"214face08fe3845223ec1fa80a486e54\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewstate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontype.json": {
       "hash": "8b5aeb3bec99455d3a1be61994ba975c76020d138f304115dbeef31e031277bc",
-      "last_checked": "2026-04-21T07:42:41.814558",
+      "last_checked": "2026-04-24T07:40:22.664454",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"4593d8ddb53766fca030bd8e454a977b\"",
       "file_path": "documentation/SecurityInterface/sfbuttontype.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtype.json": {
       "hash": "caf2c0e97d4c82dcb4f4a082b779a7a2cf77be9a5d02dc15938afd80539600c1",
-      "last_checked": "2026-04-21T07:42:41.970386",
+      "last_checked": "2026-04-24T07:40:22.812482",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2d60c1cba7769cd47d291f7c2e5001c8\"",
       "file_path": "documentation/SecurityInterface/sfviewtype.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/securityinterface-constants.json": {
       "hash": "9509f1e15d1d4a6d2d35fff980ed5ad1c6006a2d45c77a2d5681defa80190a15",
-      "last_checked": "2026-04-21T07:42:42.126450",
+      "last_checked": "2026-04-24T07:40:22.939554",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a7d62ab86ae33f67577c5bd5a6fe8e0f\"",
       "file_path": "documentation/SecurityInterface/securityinterface-constants.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/securityinterface-data-types.json": {
       "hash": "924c02d7a54424c34766916bf232011dee8c2f3ea425b1823df28e7c974fe6ff",
-      "last_checked": "2026-04-21T07:42:42.247317",
+      "last_checked": "2026-04-24T07:40:23.142499",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"4f20c4664056046d598de73cd64fa9b1\"",
       "file_path": "documentation/SecurityInterface/securityinterface-data-types.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/securityinterface-enumerations.json": {
       "hash": "c811c28e3bc340a862b35c560599a1222990d2a37413aed9d7f46fbfd2d8e466",
-      "last_checked": "2026-04-21T07:42:42.386987",
+      "last_checked": "2026-04-24T07:40:23.308714",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"874d6b1ae52a8ab56cecca8cc932fbb9\"",
       "file_path": "documentation/SecurityInterface/securityinterface-enumerations.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/init(callbacks:andengineref:).json": {
       "hash": "165a453b95ecb0d9215f8a387f8e87577f9b749194897f8007740d3c88f4bcbc",
-      "last_checked": "2026-04-21T07:42:42.511504",
+      "last_checked": "2026-04-24T07:40:23.440079",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"bdff4d711e22c84a89d12e6a7d641958\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/init-callbacksandengineref.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/callbacks().json": {
       "hash": "39b382be7c15f637a4438ae634b6af00ec8a4bab5769bb31930454f5ae341c82",
-      "last_checked": "2026-04-21T07:42:42.633255",
+      "last_checked": "2026-04-24T07:40:23.673265",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"6ebcca559b0ecc3ac32d42a2cb86c2fb\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/callbacks.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/engineref().json": {
       "hash": "cd566271fbcfe60d216ffc99cc861dd212765236419285bec02f470cf3c27f5e",
-      "last_checked": "2026-04-21T07:42:42.768848",
+      "last_checked": "2026-04-24T07:40:23.868750",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"ce31590598b2ac6e3a6d1d820fc94ff1\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/engineref.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/lasterror().json": {
       "hash": "83767d9ec7ae5fcdc876d9cf0ef0f1f7dffad9da7f25262d9292b658ef29b079",
-      "last_checked": "2026-04-21T07:42:42.913326",
+      "last_checked": "2026-04-24T07:40:24.010443",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"c88e10c459a0e73505d7dcb6eb1a74eb\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/lasterror.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/buttonpressed(_:).json": {
       "hash": "012c4bd857c9166df9de50188f5538132d4301b255c1e98dac84e2b283ab0806",
-      "last_checked": "2026-04-21T07:42:43.036064",
+      "last_checked": "2026-04-24T07:40:24.138796",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"5c25c705902fdce9c7beccf23bde74a4\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/buttonpressed.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/view(for:).json": {
       "hash": "921e3f7632234df251be4b318273d2951b6a8d6f94cfc31d68b57fadb2542dcd",
-      "last_checked": "2026-04-21T07:42:43.154114",
+      "last_checked": "2026-04-24T07:40:24.282692",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7220058617884736bec6e3074fd5fb1c\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/view-for.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/didactivate().json": {
       "hash": "5bea629d21f4281ed20c1a7a5d7b15cc84a591f882944515138e020551671042",
-      "last_checked": "2026-04-21T07:42:43.277091",
+      "last_checked": "2026-04-24T07:40:24.437191",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"49c7c5fe072893183644ad59c2befece\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/didactivate.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/diddeactivate().json": {
       "hash": "c9661a184d3d93bf96dee3cdf059f7010cfe15d023294fa0a0a33374cc63dfe7",
-      "last_checked": "2026-04-21T07:42:43.423603",
+      "last_checked": "2026-04-24T07:40:24.566950",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e5f957be5aa441d41421179b3bf28521\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/diddeactivate.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/willactivate(withuser:).json": {
       "hash": "ee5bb54be2fe70183766715576c569757bb51ee50625ddddecc794ae4c7f11d0",
-      "last_checked": "2026-04-21T07:42:43.545685",
+      "last_checked": "2026-04-24T07:40:25.090478",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"9033a7999e0b1626b234d6edf85b2d6b\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/willactivate-withuser.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/firstkeyview().json": {
       "hash": "f72f05d3b14668e3d27db73b8043f2fc6d2bb220948b119aef44b5e4020f8666",
-      "last_checked": "2026-04-21T07:42:43.668236",
+      "last_checked": "2026-04-24T07:40:25.234033",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e77807c257b05750b3a1bfef583de5e7\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/firstkeyview.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/firstresponder().json": {
       "hash": "7d504e42b582c094e9fb28c25bd630dc144efb6ac538a3921abace19b9afa166",
-      "last_checked": "2026-04-21T07:42:43.809587",
+      "last_checked": "2026-04-24T07:40:25.430345",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"c13c662d2d1dd80d762c180b2b0cf599\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/firstresponder.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/lastkeyview().json": {
       "hash": "0ea6b3273ed4998abd24bfd66c1dae1753bc50760129b5e1caeec5f3c9140948",
-      "last_checked": "2026-04-21T07:42:43.950866",
+      "last_checked": "2026-04-24T07:40:25.564258",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"4ce8a004f2784bd1cebd1fcda4feed1d\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/lastkeyview.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/setenabled(_:).json": {
       "hash": "b3a04244140bcffbca8b9be6bfd16e9c0dc2798d3398b9c2cd3102f5a1ef39ae",
-      "last_checked": "2026-04-21T07:42:44.065247",
+      "last_checked": "2026-04-24T07:40:25.722306",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"eefa80778901943bbaa09c4b732a8a33\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/setenabled.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/display().json": {
       "hash": "b13c224109808323da6863899002696facb15786d0067e4d59e5691b0ac0e6f4",
-      "last_checked": "2026-04-21T07:42:44.186890",
+      "last_checked": "2026-04-24T07:40:25.855304",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"57c2e7f4fc23454c56ba8bed766f1345\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/display.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/setbutton(_:enabled:).json": {
       "hash": "470d41a6695f4b79e6282964dac865933efe166d3c59bd4a6d8f20dbff57d934",
-      "last_checked": "2026-04-21T07:42:44.361767",
+      "last_checked": "2026-04-24T07:40:26.054028",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"ec1759a568795ea122b39c1beca8f5d1\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/setbutton-enabled.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginview/update().json": {
       "hash": "eb4b0e732cf5f1f32764d98f52e93712a080d305dd37dc7f4ea9aeff0239f358",
-      "last_checked": "2026-04-21T07:42:44.475197",
+      "last_checked": "2026-04-24T07:40:26.244627",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"fe74aaf4dcd2d992d094fb99c0405996\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginview/update.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/exceptions.json": {
       "hash": "323d32d84c19bf445b31e21d10b991ac587ac362c9ebe7c33f9f994dce3cc143",
-      "last_checked": "2026-04-21T07:42:44.583777",
+      "last_checked": "2026-04-24T07:40:26.402163",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7b2e157a1bdce78b8f83a753952fb05c\"",
       "file_path": "documentation/SecurityInterface/exceptions.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setstring(_:).json": {
       "hash": "f50c8271f36b6752929bfdb6b6b776415933efdf3d2d7c2944e1781497eeb936",
-      "last_checked": "2026-04-21T07:42:44.719409",
+      "last_checked": "2026-04-24T07:40:26.545652",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"458de69de2f77502a2338e42f7781587\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setstring.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setauthorizationrights(_:).json": {
       "hash": "e602df23a0181c2e902c6ff0d51b26d7804b2d624a296d93b0afb2f2cad17456",
-      "last_checked": "2026-04-21T07:42:44.846719",
+      "last_checked": "2026-04-24T07:40:26.693203",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a77ae247a5a4a450062e982919475efe\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setauthorizationrights.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setautoupdate(_:).json": {
       "hash": "a1398507d58b399cf08926a7ffc78ef93bc5aab6399efa2321f441980ca76fcc",
-      "last_checked": "2026-04-21T07:42:44.965995",
+      "last_checked": "2026-04-24T07:40:26.847851",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a80367ae443d3050827c8408b51de200\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setautoupdate.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setautoupdate(_:interval:).json": {
       "hash": "22b94fbfac91590e5402a567f6fae4db1b0a6da4af33c48bd7f3c2ed0aa0d82b",
-      "last_checked": "2026-04-21T07:42:45.092395",
+      "last_checked": "2026-04-24T07:40:27.004056",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"3fa849f5b42d4d18ef0a28e526511166\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setautoupdate-interval.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setflags(_:).json": {
       "hash": "72e33b733b6f37a621c026bbb969e788364e3b32bba53c8a91081451225fa294",
-      "last_checked": "2026-04-21T07:42:45.240421",
+      "last_checked": "2026-04-24T07:40:27.152935",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"29336fe781a04caf4cfa13fabbd0bda6\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setflags.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setenabled(_:).json": {
       "hash": "a3e9e5d9eeed7f316b9d3fff24f245465b38cb0c6694a1d1de43d49c21399378",
-      "last_checked": "2026-04-21T07:42:45.367277",
+      "last_checked": "2026-04-24T07:40:27.308624",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"29976be634cbf679e4c0f0370efac10b\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setenabled.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/setdelegate(_:).json": {
       "hash": "99af8fbdf7df77e82035d5a351cf5655de8e74918802286d5c473dc3be13e3bf",
-      "last_checked": "2026-04-21T07:42:45.499599",
+      "last_checked": "2026-04-24T07:40:27.436348",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"6fcb63b2e040ea4ba66e3415675e4d66\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/setdelegate.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/delegate().json": {
       "hash": "ac3933820b1863d00865b539a097be470aa762d0ecc9627063941e43636ab176",
-      "last_checked": "2026-04-21T07:42:45.637377",
+      "last_checked": "2026-04-24T07:40:27.572402",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"8ea22099b3f7696624ac457e18e59b7f\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/delegate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/updatestatus(_:).json": {
       "hash": "8aaf4da58414783aec964caf6559af75b68936276b3550a7fb2b375a6c8f42b9",
-      "last_checked": "2026-04-21T07:42:45.751954",
+      "last_checked": "2026-04-24T07:40:27.722096",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"cf70306ff6508ca4f0cb28a8385bcd5f\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/updatestatus.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/authorization().json": {
       "hash": "0a11f5c267d0957504e4a3f847a4267b57f0e1bbaeaa11373b7d829ee54b7da5",
-      "last_checked": "2026-04-21T07:42:45.893765",
+      "last_checked": "2026-04-24T07:40:27.864414",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"023c9bf4316a16ac7451832216fb1719\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/authorization.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/authorizationrights().json": {
       "hash": "f8ebe5a0973027de22a54492ab9c91c71be242c15c080ed3ab0da0b15c049e69",
-      "last_checked": "2026-04-21T07:42:46.061811",
+      "last_checked": "2026-04-24T07:40:28.009165",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"fea8318188684bd7cd8d9e07877f1531\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/authorizationrights.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/authorizationstate().json": {
       "hash": "5b73800ceedd93d6c185ace8bcfc3f81579be9ae686c9b11571a6029c555a482",
-      "last_checked": "2026-04-21T07:42:46.200432",
+      "last_checked": "2026-04-24T07:40:28.154293",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"c879596e5f7f7a905a5acf9f1d0b6892\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/authorizationstate.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/isenabled().json": {
       "hash": "22a2881d220ffe6e381712966f2a95a54b8f0c5054ab92de9beabce428da06d6",
-      "last_checked": "2026-04-21T07:42:46.316559",
+      "last_checked": "2026-04-24T07:40:28.305693",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"ce93924f168e549e73016a9755700131\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/isenabled.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/authorize(_:).json": {
       "hash": "4938e65ccabc1a6849e82ece3fb37e39534307ded2d5cc1e105898b06d0bcc85",
-      "last_checked": "2026-04-21T07:42:46.433262",
+      "last_checked": "2026-04-24T07:40:28.463641",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2152cf78b5da26f3e17ab91a2ad233d7\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/authorize.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationview/deauthorize(_:).json": {
       "hash": "c1003c098cf0ee20d7091d3f046a95cc4f1eff0ef87c26ca63388924fb5f985f",
-      "last_checked": "2026-04-21T07:42:46.573125",
+      "last_checked": "2026-04-24T07:40:28.591090",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"5377fd7fb67fb5d1e69dcc7c079cea80\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationview/deauthorize.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/shared().json": {
       "hash": "c796c29652b24aacb7fb9483f7f4c493bebf3924790134aaa02181a537829454",
-      "last_checked": "2026-04-21T07:42:46.744340",
+      "last_checked": "2026-04-24T07:40:28.728935",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2cf6440dfe06d4498f5d91f08fcce8fd\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/shared.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/sethelpanchor(_:).json": {
       "hash": "f192e4d4af6b745a4c2d01d476280fe5ef890ed75d23f1d014b7aa390360f7da",
-      "last_checked": "2026-04-21T07:42:46.857770",
+      "last_checked": "2026-04-24T07:40:28.878103",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"bc1866ecb8189a881b84f4d615997c2d\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/sethelpanchor.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/setshowshelp(_:).json": {
       "hash": "0904a12a47c4e5f07fe7c80777e8d4ad6144dd0d6cbfc891a6b456a664a6f0ca",
-      "last_checked": "2026-04-21T07:42:47.000201",
+      "last_checked": "2026-04-24T07:40:29.011791",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a702563984a37488f1d2d9c9539cef1f\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/setshowshelp.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/helpanchor().json": {
       "hash": "81d9c23aeb6cb3bcdf42230ea3fc96f3a62fc59742ff0461406ca23d5821f4cb",
-      "last_checked": "2026-04-21T07:42:47.125090",
+      "last_checked": "2026-04-24T07:40:29.156077",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f4adb5c871a50203aa57b581b3c2f087\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/helpanchor.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/showshelp().json": {
       "hash": "d97840d0a6e5c8d507bc9cb16ae614154e6e670262282529c5d7d62ab6c58b18",
-      "last_checked": "2026-04-21T07:42:47.293612",
+      "last_checked": "2026-04-24T07:40:29.295410",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"41b1ab9d42eefaa8628b6a89cebb0ed7\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/showshelp.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/setalternatebuttontitle(_:).json": {
       "hash": "ad4e877623a81d38adc2f29760d6cd3ca39f167e0c0b1968073a556b083ef8cd",
-      "last_checked": "2026-04-21T07:42:47.431559",
+      "last_checked": "2026-04-24T07:40:29.448047",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7589e8f1425c8ace11a78b4786e466ec\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/setalternatebuttontitle.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/setdefaultbuttontitle(_:).json": {
       "hash": "d2f64a2326e370f6411056b593b4327e54d207181cdb5182927095146c5fa355",
-      "last_checked": "2026-04-21T07:42:47.550379",
+      "last_checked": "2026-04-24T07:40:29.606783",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e747187d775913aee14c8c5023f9efd4\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/setdefaultbuttontitle.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/setpolicies(_:).json": {
       "hash": "eb4f0a0b4aee798749e29c78d896a1c1a56b6686ca5e3ab434f19cceea6af1bb",
-      "last_checked": "2026-04-21T07:42:47.681329",
+      "last_checked": "2026-04-24T07:40:29.844715",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e8e197fe0dd8edb04c5808429e16b708\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/setpolicies.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/policies().json": {
       "hash": "ce88c198de9b69fed3560fa3d1a5a526e328bbff339009c7c8c6f68e28db5433",
-      "last_checked": "2026-04-21T07:42:47.822167",
+      "last_checked": "2026-04-24T07:40:29.984226",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a851072d690b654daa5e24b8fbf947df\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/policies.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/beginsheet(for:modaldelegate:didend:contextinfo:certificates:showgroup:).json": {
       "hash": "cfc7ee70064be88b500ccd61fe7303c018bbfda163a47f5033fddcf09a9f9821",
-      "last_checked": "2026-04-21T07:42:47.988721",
+      "last_checked": "2026-04-24T07:40:30.160087",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7823524ac447e982e77786a83f4889a0\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/beginsheet-formodaldelegatedidendcontextinfocertificatesshowgroup.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/beginsheet(for:modaldelegate:didend:contextinfo:trust:showgroup:).json": {
       "hash": "c5a014f4da44d9a58900b4eb1318c54e66df3ecd8a71ab22fcf86d7f04aaee7c",
-      "last_checked": "2026-04-21T07:42:48.136265",
+      "last_checked": "2026-04-24T07:40:30.307433",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"1a63320595cd24e6d2e71f5fb1f302e9\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/beginsheet-formodaldelegatedidendcontextinfotrustshowgroup.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/certificateview().json": {
       "hash": "535ff09a920d667638b8e1479380e4bde10a302f1e3af14b30783bb2458289e4",
-      "last_checked": "2026-04-21T07:42:48.258990",
+      "last_checked": "2026-04-24T07:40:30.436107",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"30d460f2f857a59286e0671ebacf3d3f\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/certificateview.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/runmodal(for:showgroup:).json": {
       "hash": "72a70f4e44950a4387ed9c2380fbff1f3ce8db88f6bbedfb329f9885e110e9e2",
-      "last_checked": "2026-04-21T07:42:48.396354",
+      "last_checked": "2026-04-24T07:40:30.577321",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"0825e6e473193db78286a93ba13542fc\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/runmodal-forshowgroup.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatepanel/runmodal(forcertificates:showgroup:).json": {
       "hash": "ae9549dccf832b926c46942260825f70fdd8050dbde98ef2beff3579d615f7f3",
-      "last_checked": "2026-04-21T07:42:48.524004",
+      "last_checked": "2026-04-24T07:40:30.714009",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a11d46fc8a11696e693bdbfe091f6029\"",
       "file_path": "documentation/SecurityInterface/sfcertificatepanel/runmodal-forcertificatesshowgroup.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel/shared().json": {
       "hash": "de2e673dc83c18c4b87b97ec5c143575aad1fb609769945e6416a458215761c6",
-      "last_checked": "2026-04-21T07:42:48.650686",
+      "last_checked": "2026-04-24T07:40:30.865193",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e8bcfea2f982f23327664f34ba4a5bd0\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel/shared.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel/beginsheet(for:modaldelegate:didend:contextinfo:trust:message:).json": {
       "hash": "01c3ac57416787c2493545283efde45cb829c234d8580985516e85dae1a08d1d",
-      "last_checked": "2026-04-21T07:42:48.827497",
+      "last_checked": "2026-04-24T07:40:31.032368",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"eae827bca59af9680e2252f19490e796\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel/beginsheet-formodaldelegatedidendcontextinfotrustmessage.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel/runmodal(for:message:).json": {
       "hash": "39503fa38d872138323b18fd0da658e37674a2052ee88b4780625ff2d8eab90d",
-      "last_checked": "2026-04-21T07:42:48.961530",
+      "last_checked": "2026-04-24T07:40:31.172472",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f92ce82739a1d1cbcee6fa88e34b2ff1\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel/runmodal-formessage.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel/informativetext().json": {
       "hash": "7f2ac747fe979a961a1d773378d546d1494af5ce2eae25666b68845a7588b72f",
-      "last_checked": "2026-04-21T07:42:49.085642",
+      "last_checked": "2026-04-24T07:40:31.300118",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7866ec266015840a9c919ca9b487af47\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel/informativetext.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificatetrustpanel/setinformativetext(_:).json": {
       "hash": "faf5a4c8c20bf98ec8519d82a04f135e4dea48210e11ed96047818e67cdd419a",
-      "last_checked": "2026-04-21T07:42:49.221958",
+      "last_checked": "2026-04-24T07:40:31.527510",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a878ded0aed92ea56fbb55bf5970be88\"",
       "file_path": "documentation/SecurityInterface/sfcertificatetrustpanel/setinformativetext.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setcertificate(_:).json": {
       "hash": "82b7ff84019933f934ee6750c74cc0d0628e25108ad04af9d7830892e95d32b1",
-      "last_checked": "2026-04-21T07:42:49.349649",
+      "last_checked": "2026-04-24T07:40:31.678135",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"fe08bf3223f91f463ebc3254d08844f3\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setcertificate.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setdetailsdisclosed(_:).json": {
       "hash": "8cc21c1fcd4c6465b4f91f6667b8db7403bf0cafc4ad1f207e02433d66ced54b",
-      "last_checked": "2026-04-21T07:42:49.467772",
+      "last_checked": "2026-04-24T07:40:31.865012",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"782a91926061bacaedc6d67a6238874b\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setdetailsdisclosed.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setdisplaydetails(_:).json": {
       "hash": "78240e834ff5d0b5efd7308d63419460c1a6125166f02ed91fa64038068b6e11",
-      "last_checked": "2026-04-21T07:42:49.597412",
+      "last_checked": "2026-04-24T07:40:32.006726",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"24786eb86f5cad9e6cf44d03af8dd315\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setdisplaydetails.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setdisplaytrust(_:).json": {
       "hash": "13a10865632132992215dffc3b2b3cb9165f9a781cb0ab26a08a77d93ea54ffb",
-      "last_checked": "2026-04-21T07:42:49.726220",
+      "last_checked": "2026-04-24T07:40:32.159398",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"913f7645fb9f559b77ab516370452920\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setdisplaytrust.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/seteditabletrust(_:).json": {
       "hash": "fde65d6d816d6be252707df832f9924eb64d7f81fc3a32345a7731b48064bf9d",
-      "last_checked": "2026-04-21T07:42:49.862720",
+      "last_checked": "2026-04-24T07:40:32.381243",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e05ebc325b4020f7d5cbd9210a723cff\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/seteditabletrust.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setpolicies(_:).json": {
       "hash": "67329f0dff8c10358ffb716e937f6ec9fbb46daa9a7444171687a7a653706cfe",
-      "last_checked": "2026-04-21T07:42:49.996143",
+      "last_checked": "2026-04-24T07:40:32.511989",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"194a6fbf858db48c1169c44140d73b07\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setpolicies.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/setpoliciesdisclosed(_:).json": {
       "hash": "eb8f24327215f4c05a3926ee1630c1cd914d4314645ba8cdb78bc336df6ea303",
-      "last_checked": "2026-04-21T07:42:50.216101",
+      "last_checked": "2026-04-24T07:40:32.685138",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"99ae208f11f6d4a2c4adbce11beadc51\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/setpoliciesdisclosed.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/certificate().json": {
       "hash": "f98efbd88ed2115dd343265b16e915ba77b590a7d50832d4fe82349a3267cb54",
-      "last_checked": "2026-04-21T07:42:50.344903",
+      "last_checked": "2026-04-24T07:40:32.808151",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"74af97a5e60230685bdd7a022674b3c4\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/certificate.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/detailsdisplayed().json": {
       "hash": "4023ec4ad1535f69b2bd54f1a2c72723acb0bac685fb908270faa56fe63ff2df",
-      "last_checked": "2026-04-21T07:42:50.483649",
+      "last_checked": "2026-04-24T07:40:32.940638",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"3ec6bdb52054bb0651f7753247777d49\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/detailsdisplayed.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/detailsdisclosed().json": {
       "hash": "597e4b1aab9cbe1d9b2b875b6a8f214e9026d2356e129f9a736882a97f8b8509",
-      "last_checked": "2026-04-21T07:42:50.673186",
+      "last_checked": "2026-04-24T07:40:33.262250",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"0d779365cee11f0d5b891a9bc46d2342\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/detailsdisclosed.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/istrustdisplayed().json": {
       "hash": "fa072accdf8d3822ab8a259e2e96a922f24e05d74d7c72cba0115b2b497a4d70",
-      "last_checked": "2026-04-21T07:42:50.853164",
+      "last_checked": "2026-04-24T07:40:33.420673",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"75e17a1c8f4ae94494292d1601b78431\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/istrustdisplayed.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/iseditable().json": {
       "hash": "68a603278ce1dd62e572aee5c2347de3ed5ff5748bbd4230166b3ec5597bae91",
-      "last_checked": "2026-04-21T07:42:50.991937",
+      "last_checked": "2026-04-24T07:40:33.561809",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"c3d8340e5b87b22cadabfe44a3e50e69\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/iseditable.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/policies().json": {
       "hash": "23442f00ab5d255363a37c84d902052a6ac2629ef2cff4ff27cf472d7e391ec0",
-      "last_checked": "2026-04-21T07:42:51.181351",
+      "last_checked": "2026-04-24T07:40:33.753865",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"918e714783130a043dcbf3b3c34c8281\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/policies.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/policiesdisclosed().json": {
       "hash": "3cc08e8a261a60aacffcba3900d50c6318d6bf140f202fa69afe0ccff02a49d0",
-      "last_checked": "2026-04-21T07:42:51.365437",
+      "last_checked": "2026-04-24T07:40:33.892396",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"096d3cd0532dd0650fc16e87e9568c25\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/policiesdisclosed.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateview/savetrustsettings().json": {
       "hash": "5541ade79a86a370461c94a405430865f9dee2ce23b980aa515a07f114c055db",
-      "last_checked": "2026-04-21T07:42:51.517491",
+      "last_checked": "2026-04-24T07:40:34.025531",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"064642c0f19bba359a4c8c3f8accf494\"",
       "file_path": "documentation/SecurityInterface/sfcertificateview/savetrustsettings.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/notifications.json": {
       "hash": "1e240aac8904601cc991e8b4b834594c02e763ce20f30f2b679ce1f15019955c",
-      "last_checked": "2026-04-21T07:42:51.635883",
+      "last_checked": "2026-04-24T07:40:34.217901",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"9d94c31bb615aff455225295f90d4a95\"",
       "file_path": "documentation/SecurityInterface/notifications.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/shared().json": {
       "hash": "8c7c0b728546db2eef08980ae87723049344ce8448efa492d1fd69f4fda01350",
-      "last_checked": "2026-04-21T07:42:51.768578",
+      "last_checked": "2026-04-24T07:40:34.363208",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"52157cf36ffc08afafc1c9e91f220606\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/shared.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/sethelpanchor(_:).json": {
       "hash": "d6cb5335f70806bcc5e7921d709dd358065ac53c67181c8596960fb9ffdf5844",
-      "last_checked": "2026-04-21T07:42:51.919309",
+      "last_checked": "2026-04-24T07:40:34.547931",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2c4bdb8d09cd49cb433ffd7b19571a5e\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/sethelpanchor.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setshowshelp(_:).json": {
       "hash": "3fc0715c75994a53365bbc387594f0f3037653ae6a8c57faa5023d2dae88ba09",
-      "last_checked": "2026-04-21T07:42:52.051448",
+      "last_checked": "2026-04-24T07:40:34.697179",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"819d8ce1d460bddfb8a0a5923aeb1d2b\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setshowshelp.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/helpanchor().json": {
       "hash": "53b647f97972f37fd8d5a398e311b39cbf264abe01231b3b237e2f2272fcde83",
-      "last_checked": "2026-04-21T07:42:52.182383",
+      "last_checked": "2026-04-24T07:40:34.847435",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"6afbcacae8f1fc4827d64e9bf5a372ef\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/helpanchor.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/showshelp().json": {
       "hash": "7139233d1254a2737f75027c1f3d89d6b0bbc10b353ad6e1c2bde57a7c70c9c1",
-      "last_checked": "2026-04-21T07:42:52.333074",
+      "last_checked": "2026-04-24T07:40:34.995418",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a8d79b38b2865bbf3f998e3c5b41d4e1\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/showshelp.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setalternatebuttontitle(_:).json": {
       "hash": "dcc5010943a360f29ab2a595d65545fd7142af0c144ae731fa8785ba4340dddd",
-      "last_checked": "2026-04-21T07:42:52.460351",
+      "last_checked": "2026-04-24T07:40:35.147320",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"112c8841b2f1f4c4c5ffccd492b4f6e2\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setalternatebuttontitle.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setdefaultbuttontitle(_:).json": {
       "hash": "921b009bdafa6e02ed8f17fc6f93c71baf0f3624ad670d533a15a94db0301472",
-      "last_checked": "2026-04-21T07:42:52.594269",
+      "last_checked": "2026-04-24T07:40:35.348198",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"19f809d7bebb08607cab604917e60117\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setdefaultbuttontitle.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setpolicies(_:).json": {
       "hash": "a5ebcb18387499e99ce9e6e369e63d3a0036ecdebc25d36284e84c17ffa1e073",
-      "last_checked": "2026-04-21T07:42:52.730859",
+      "last_checked": "2026-04-24T07:40:35.496839",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"7515b11426fdc65f9f2d5007b3321b2d\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setpolicies.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/policies().json": {
       "hash": "f2af7d2dd21cb537bd6c63bf0cdfbbba4f057bd5e7c513b418c818572012d2b9",
-      "last_checked": "2026-04-21T07:42:52.864571",
+      "last_checked": "2026-04-24T07:40:35.647515",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"ee43ba7d14fb9a2e5b947c6cc5fba67a\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/policies.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/informativetext().json": {
       "hash": "f44fecb1a169b7bf21e3625f100ae68c4aecdbf9d080e19cd2e9ede806637b86",
-      "last_checked": "2026-04-21T07:42:52.989177",
+      "last_checked": "2026-04-24T07:40:35.796734",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"19a8e68e8ce72e308ffeeff6c9018b70\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/informativetext.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setinformativetext(_:).json": {
       "hash": "e2819e8ff1d469e099daefd69513f82d1cdac2f6fd3bdfc940698fb13e4b63e1",
-      "last_checked": "2026-04-21T07:42:53.108555",
+      "last_checked": "2026-04-24T07:40:35.964764",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"2a6ea2d7124e5b216c7f70906baccbee\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setinformativetext.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/beginsheet(for:modaldelegate:didend:contextinfo:identities:message:).json": {
       "hash": "1d0f0729c95e4c14292bc161baef648816217707ea64721e5b76844aee7b59e6",
-      "last_checked": "2026-04-21T07:42:53.257196",
+      "last_checked": "2026-04-24T07:40:36.129003",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"cdc92f9ff4f3aa76add72f32b264f454\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/beginsheet-formodaldelegatedidendcontextinfoidentitiesmessage.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/runmodal(foridentities:message:).json": {
       "hash": "df56ed97d7760ffdcda9e69ed9687933278a70c755af815c923aac7a23213819",
-      "last_checked": "2026-04-21T07:42:53.402639",
+      "last_checked": "2026-04-24T07:40:36.264142",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"46136940fc87b480040ca5a213458574\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/runmodal-foridentitiesmessage.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/identity().json": {
       "hash": "1bac97b96a2d36728eb5545f1a3855034b919765abd1e210fdb6c06de4268e24",
-      "last_checked": "2026-04-21T07:42:53.526892",
+      "last_checked": "2026-04-24T07:40:36.421318",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"15e6c1cf73e9f02996c99c9bc1cc7659\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/identity.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/domain().json": {
       "hash": "cca2c781c0a98b8eb919c9173919a45098eb4ba7c02ffdce51d0e1a041ba31aa",
-      "last_checked": "2026-04-21T07:42:53.658029",
+      "last_checked": "2026-04-24T07:40:36.559682",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"8958fe133f1727d147ae52bda1e6a89b\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/domain.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitypanel/setdomain(_:).json": {
       "hash": "2126220007e4779640aa0b78c973a0005e5c70081512843af2810c8af1c50bbe",
-      "last_checked": "2026-04-21T07:42:53.798488",
+      "last_checked": "2026-04-24T07:40:36.690786",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"dfc1dfb95ee89aaf22eff07d6cbd027c\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitypanel/setdomain.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfchooseidentitytablecellview/issuertextfield-swift.property.json": {
       "hash": "4f7a1a11d1be5374f502d5f8b1473d7295cca75b6e225936ff9481e60f004883",
-      "last_checked": "2026-04-21T07:42:53.923519",
+      "last_checked": "2026-04-24T07:40:36.840242",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"1755462bf67f7caeb96a75b87b38b917\"",
       "file_path": "documentation/SecurityInterface/sfchooseidentitytablecellview/issuertextfield-swiftproperty.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/shared().json": {
       "hash": "7cd6684a18f15defc1aeb06efe3082db25443c09b8c7eff9f0eca7648f2a23d1",
-      "last_checked": "2026-04-21T07:42:54.049219",
+      "last_checked": "2026-04-24T07:40:37.024074",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"134f2083a1343cccd8291e658eaedb33\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/shared.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/setpassword(_:).json": {
       "hash": "eb8f09f6202c28a0cf76384b9fdf317ce8556eeb37056fdd169734889983945c",
-      "last_checked": "2026-04-21T07:42:54.223922",
+      "last_checked": "2026-04-24T07:40:37.165015",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"8458f254bec4d6265492972a824b1b61\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/setpassword.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/beginsheet(fordirectory:file:modalfor:modaldelegate:didend:contextinfo:).json": {
       "hash": "67e4609787974f73494160ceadbdda2d5b7d59c276dcbe42ad1d85b7f8983e6c",
-      "last_checked": "2026-04-21T07:42:54.351892",
+      "last_checked": "2026-04-24T07:40:37.365240",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"187fcc9cecd74dd6fcd5dbcab905e927\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/beginsheet-fordirectoryfilemodalformodaldelegatedidendcontextinfo.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/runmodal(fordirectory:file:).json": {
       "hash": "a551ab9d9c3ccddede2e659de89d92c661e450946f6c5944bdf359ddb20ca478",
-      "last_checked": "2026-04-21T07:42:54.487126",
+      "last_checked": "2026-04-24T07:40:37.506999",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"602c760d19c2971a18caae887d62745e\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/runmodal-fordirectoryfile.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/error().json": {
       "hash": "f72af3c7d6fa963e82e6e183392343afabf5f19109014622de1d2ffa44f1196a",
-      "last_checked": "2026-04-21T07:42:54.618869",
+      "last_checked": "2026-04-24T07:40:37.647019",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"e324689ddb456309edcbfea5ab0a98c4\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/error.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsavepanel/keychain().json": {
       "hash": "730597ada1b6c2915c172993f880f1c672e43909ab68921bd960d74c9ed145e0",
-      "last_checked": "2026-04-21T07:42:54.753033",
+      "last_checked": "2026-04-24T07:40:37.793962",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"da555c6b4f8f3543d3c257c3d8d71ab8\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsavepanel/keychain.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsettingspanel/shared().json": {
       "hash": "1b186438dfaa52ec2f030da137b1d80b2cfecb0cafbf6d3fbd6ed3cdfc4f912e",
-      "last_checked": "2026-04-21T07:42:54.880633",
+      "last_checked": "2026-04-24T07:40:37.922028",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"a5da562ee568f8e31c353777c4ed6672\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsettingspanel/shared.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsettingspanel/beginsheet(for:modaldelegate:didend:contextinfo:settings:keychain:).json": {
       "hash": "cb05567409b90636ff373ed47f211a16336d0548c6828863be92e29a33f91264",
-      "last_checked": "2026-04-21T07:42:55.021099",
+      "last_checked": "2026-04-24T07:40:38.075135",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"5908a4873e0b91d79e715e7c0da8297a\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsettingspanel/beginsheet-formodaldelegatedidendcontextinfosettingskeychain.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfkeychainsettingspanel/runmodal(for:keychain:).json": {
       "hash": "e124dfd37273edf1632f70605bc4821b16ad393a8c747eea949c0e4e8966533e",
-      "last_checked": "2026-04-21T07:42:55.148904",
+      "last_checked": "2026-04-24T07:40:38.213566",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"8aeb5babe62c3a0f15f03f8f096d98fa\"",
       "file_path": "documentation/SecurityInterface/sfkeychainsettingspanel/runmodal-forkeychain.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewstate/init(_:).json": {
       "hash": "85674d7a68b243c7685b98dfe83f24838b949fd93bbcf1765ecbb3412b96b2c8",
-      "last_checked": "2026-04-21T07:42:55.278667",
+      "last_checked": "2026-04-24T07:40:38.366321",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f1552367cb90fb38148dea27179f0e86\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewstate/init.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewstate/init(rawvalue:).json": {
       "hash": "ef60bfa193d4b8366ba2dfcbbe9badd918367607ca61885d579abb24b50d2b7e",
-      "last_checked": "2026-04-21T07:42:55.436973",
+      "last_checked": "2026-04-24T07:40:38.512368",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"14446b269100976d2c016d9ede408443\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewstate/init-rawvalue.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewstate/rawvalue.json": {
       "hash": "21f1472ff81e3b6fc7bb265b2da446b2fc47460cda6ae15cb5fb493490c04ad9",
-      "last_checked": "2026-04-21T07:42:55.554550",
+      "last_checked": "2026-04-24T07:40:38.659213",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"442596546d8e8e3c3ffb3b6a6c8b7b33\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewstate/rawvalue.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationstartupstate.json": {
       "hash": "c557cb8ab2e3f31151b4a6ca2c06f2f05cbb3aee1215167189f1fac88f1aa968",
-      "last_checked": "2026-04-21T07:42:55.696884",
+      "last_checked": "2026-04-24T07:40:38.864127",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f0f32b106cc33f0357eaf50fff57f7c7\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationstartupstate.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewinprogressstate.json": {
       "hash": "a163edbd2002f80fa8d6fbcfe3bf61eedd4dd8c1675b37656ddf00f6c3f8ff94",
-      "last_checked": "2026-04-21T07:42:55.825167",
+      "last_checked": "2026-04-24T07:40:39.016262",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"60221765ba5b55c350f9a3ea50e9a6c6\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewinprogressstate.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewlockedstate.json": {
       "hash": "0b534df2a5d44c5e4217cc34f5b68627e9c7c22aa57c6f654a0c5f8ce040cf78",
-      "last_checked": "2026-04-21T07:42:55.940531",
+      "last_checked": "2026-04-24T07:40:39.163779",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"dfb57f19041bf6522d131ad14a7204b5\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewlockedstate.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationviewunlockedstate.json": {
       "hash": "0e5bcf2e0767adab160ad45fb0be1b1ea1832f9c4d104735673244534eb7d146",
-      "last_checked": "2026-04-21T07:42:56.090289",
+      "last_checked": "2026-04-24T07:40:39.296808",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"9b2dc3e8a4a9d0f8f98a95da95bd14a1\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationviewunlockedstate.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontype/init(_:).json": {
       "hash": "f0cc1109c11820ba23569bc0272c92699a4880b4c1d380810e6a9306365ef2cb",
-      "last_checked": "2026-04-21T07:42:56.256982",
+      "last_checked": "2026-04-24T07:40:39.433526",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"0fafb8b1ab0121f074e068f57afa1927\"",
       "file_path": "documentation/SecurityInterface/sfbuttontype/init.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontype/init(rawvalue:).json": {
       "hash": "4622744116e0d62b966ede0a27062a6801950d9652ce2aa05d6a5ed576e6e542",
-      "last_checked": "2026-04-21T07:42:56.390681",
+      "last_checked": "2026-04-24T07:40:39.569999",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"5eef37b17038cdceedf0a691a325de18\"",
       "file_path": "documentation/SecurityInterface/sfbuttontype/init-rawvalue.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontype/rawvalue.json": {
       "hash": "f9512faba6b6b9df6c46d8117304f86127069ea96f63bd1c209abd346a6b07c8",
-      "last_checked": "2026-04-21T07:42:56.514206",
+      "last_checked": "2026-04-24T07:40:39.706010",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"984dfc6b0d8f50c9006219d70dacac8a\"",
       "file_path": "documentation/SecurityInterface/sfbuttontype/rawvalue.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontypecancel.json": {
       "hash": "d9d3d3da4bc5812aa32d9938a21b7412f2b78644fae9b42ab9bf44e79b9fce5e",
-      "last_checked": "2026-04-21T07:42:56.650152",
+      "last_checked": "2026-04-24T07:40:39.839228",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"90189f353d7bcfedaa7676e36095a96e\"",
       "file_path": "documentation/SecurityInterface/sfbuttontypecancel.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontypeok.json": {
       "hash": "0e54ed07ff55236bcd2c547fb38adb132db069169121f7cc201a2485daa5f228",
-      "last_checked": "2026-04-21T07:42:56.765328",
+      "last_checked": "2026-04-24T07:40:39.997355",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"bc1848eca91bbbb0dfa93bd3bb22d582\"",
       "file_path": "documentation/SecurityInterface/sfbuttontypeok.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontypeback.json": {
       "hash": "fc81da45f9598a93b9de949ed97fc4b616a9839364db0f64443e5841e94d266f",
-      "last_checked": "2026-04-21T07:42:56.905793",
+      "last_checked": "2026-04-24T07:40:40.143694",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"aae46a02b3d1089089c73e3c664ab814\"",
       "file_path": "documentation/SecurityInterface/sfbuttontypeback.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfbuttontypelogin.json": {
       "hash": "eef44ca313e613916e069788926d462d9e316caeae0fe5dea855db2343eb2994",
-      "last_checked": "2026-04-21T07:42:57.039542",
+      "last_checked": "2026-04-24T07:40:40.275418",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"787c263ab84c0e2d5914487a348bcae8\"",
       "file_path": "documentation/SecurityInterface/sfbuttontypelogin.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtype/init(_:).json": {
       "hash": "0b50f8821b8506ce33fe4885b78ee5b490b13973f4b260e5725976baae5bfa28",
-      "last_checked": "2026-04-21T07:42:57.165457",
+      "last_checked": "2026-04-24T07:40:40.405073",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f449e5336bdec8de6d9f3d60be914209\"",
       "file_path": "documentation/SecurityInterface/sfviewtype/init.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtype/init(rawvalue:).json": {
       "hash": "d9c6f3b2e1258470d10fd66df967fcd2ade326deb80868847f348196f4814b14",
-      "last_checked": "2026-04-21T07:42:57.304710",
+      "last_checked": "2026-04-24T07:40:40.548638",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"f151e8b623a6b90ee8447f12fe0ef1eb\"",
       "file_path": "documentation/SecurityInterface/sfviewtype/init-rawvalue.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtype/rawvalue.json": {
       "hash": "6a4c70ac0bc6d3314ad7e9e525f158eec8df91defa444e4f3a751e38f3324cab",
-      "last_checked": "2026-04-21T07:42:57.435779",
+      "last_checked": "2026-04-24T07:40:40.696551",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"240a43f35e333fbc2d096e3e67307343\"",
       "file_path": "documentation/SecurityInterface/sfviewtype/rawvalue.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtypeidentityandcredentials.json": {
       "hash": "6bc9be506a943c62caa2c7987f244da4a3608ff04e8de63b1fd4dc6a1744ea52",
-      "last_checked": "2026-04-21T07:42:57.557788",
+      "last_checked": "2026-04-24T07:40:40.824171",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"c372c4a8beaeb0611425ecab0d959bfb\"",
       "file_path": "documentation/SecurityInterface/sfviewtypeidentityandcredentials.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfviewtypecredentials.json": {
       "hash": "aaaeba9f0af5ebe1270d061adb9db28f2ca38928a3b5e130791065757f911b8c",
-      "last_checked": "2026-04-21T07:42:57.696044",
+      "last_checked": "2026-04-24T07:40:40.966410",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"68abe843a5d7acf801b19a047699d837\"",
       "file_path": "documentation/SecurityInterface/sfviewtypecredentials.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/plug-in-view-keys.json": {
       "hash": "2feef65d199247fbc2bb5627cd26684e8c0e121a830d462a91ff92fa9a3c294b",
-      "last_checked": "2026-04-21T07:42:57.818439",
+      "last_checked": "2026-04-24T07:40:41.104878",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"121f52ac117f2eb9332369900bbeb0fd\"",
       "file_path": "documentation/SecurityInterface/plug-in-view-keys.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfcertificateviewdisclosurestatedidchange.json": {
       "hash": "18224978cab42a9aa71900a489f948cd0909e183cb9f78f45738e074d62f62cc",
-      "last_checked": "2026-04-21T07:42:57.978724",
+      "last_checked": "2026-04-24T07:40:41.240636",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"88d2560c8a7fdb89476839b96b64f05a\"",
       "file_path": "documentation/SecurityInterface/sfcertificateviewdisclosurestatedidchange.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfdisplayviewexception.json": {
       "hash": "c19de751c47beca2bac7ea3b265bd57db05980b353371c80891088651c551029",
-      "last_checked": "2026-04-21T07:42:58.110395",
+      "last_checked": "2026-04-24T07:40:41.371015",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"dabef05642c3cfd79614b92311c5ece4\"",
       "file_path": "documentation/SecurityInterface/sfdisplayviewexception.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginviewusernamekey.json": {
       "hash": "d03ffba93dd738428fcf0e7124456c496c1d555a16badeded331e65a79e39c5f",
-      "last_checked": "2026-04-21T07:42:58.308460",
+      "last_checked": "2026-04-24T07:40:41.518054",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"db070f5cc492fc72deed4b0a59262654\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginviewusernamekey.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/securityinterface/sfauthorizationpluginviewusershortnamekey.json": {
       "hash": "b4b9e5f462caed2b8a86e0febee02f0b889642903b78fc129603044e4c021011",
-      "last_checked": "2026-04-21T07:42:58.484657",
+      "last_checked": "2026-04-24T07:40:41.682172",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:42:39.490796",
+      "session_id": "2026-04-24T07:40:20.144281",
       "etag": "W/\"300d46a2a95fc5efef7509259ace09f6\"",
       "file_path": "documentation/SecurityInterface/sfauthorizationpluginviewusershortnamekey.md"
     },

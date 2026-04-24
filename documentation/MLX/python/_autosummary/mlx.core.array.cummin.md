@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.cummin
 
-**array.cummin(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.cummin(*self*, *axis: int | None = None*, ***, *reverse: bool = False*, *inclusive: bool = True*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [cummin()](mlx.core.cummin.html#mlx.core.cummin).
 
 ** Contents

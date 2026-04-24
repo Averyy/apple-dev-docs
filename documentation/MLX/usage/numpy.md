@@ -113,11 +113,8 @@ import torch
 
 a = mx.arange(3)
 b = torch.tensor(memoryview(a))
-c = mx.array(b.numpy())
+c = mx.array(b)
 ```
-
-Conversion from PyTorch tensors back to arrays must be done via intermediate
-NumPy arrays with `numpy()`.
 
 ## JAX
 

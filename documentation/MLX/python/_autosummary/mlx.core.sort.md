@@ -31,6 +31,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.so
 
 **sort(*a: array*, */*, *axis: None | int = -1*, ***, *stream: None | Stream | Device = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : Returns a sorted copy of the array.
+The sort is stable, meaning equal elements preserve their relative
+order. `NaN` values are placed at the end.
 
 Parameters:
 

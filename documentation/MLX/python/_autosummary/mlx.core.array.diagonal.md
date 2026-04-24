@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.diagonal
 
-**array.diagonal(*self*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**array.diagonal(*self*, *offset: int = 0*, *axis1: int = 0*, *axis2: int = 1*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : See [diagonal()](mlx.core.diagonal.html#mlx.core.diagonal).
 
 ** Contents

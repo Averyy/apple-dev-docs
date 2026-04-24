@@ -29,11 +29,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.sy
 
 # mlx.core.synchronize
 
-**synchronize(*stream: Stream | None = None*) → [None](https://docs.python.org/3/library/constants.html#None)**
+**synchronize(*stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [None](https://docs.python.org/3/library/constants.html#None)**
 : Synchronize with the given stream.
 
 Parameters:
-**stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – The stream to synchronize with. If `None`
+**stream** ([Stream](stream_class.html#mlx.core.Stream)*, **optional*) – Stream to synchronize. If device is
+provided the default stream for that device is used. If `None`
 then the default stream of the default device is used.
 Default: `None`.
 

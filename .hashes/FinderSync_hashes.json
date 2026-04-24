@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-21T07:44:08.833541",
+    "last_updated": "2026-04-24T07:41:42.716084",
     "total_pages": 66,
-    "session_id": "2026-04-21T07:44:02.472132"
+    "session_id": "2026-04-24T07:41:37.001220"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FinderSync.json": {
       "hash": "441760550099c5468f465b13918ba2aa3f96d16c6f72e5a3fd653ca0e5ab0bba",
-      "last_checked": "2026-04-21T07:44:02.927836",
+      "last_checked": "2026-04-24T07:41:37.337262",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"36c001dd37f30a4c333d84a545925c9c\"",
       "file_path": "documentation/FinderSync/FinderSync.md"
     },
     "https://developer.apple.com/documentation/FinderSync": {
       "hash": "441760550099c5468f465b13918ba2aa3f96d16c6f72e5a3fd653ca0e5ab0bba",
-      "last_checked": "2026-04-21T07:44:02.820601",
+      "last_checked": "2026-04-24T07:41:37.255459",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"36c001dd37f30a4c333d84a545925c9c\"",
       "file_path": "documentation/FinderSync/FinderSync.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersync-swift.class.json": {
       "hash": "376312c8ee99c387bab5f94a2ee6daaeac997c8eea9bbbfdfbfcff66d2e92cdf",
-      "last_checked": "2026-04-21T07:44:03.158083",
+      "last_checked": "2026-04-24T07:41:37.576001",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"f24a794dca01ad95f170d107b3e03253\"",
       "file_path": "documentation/FinderSync/fifindersync-swiftclass.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller.json": {
       "hash": "3b83b6d066077bd84ed99d9b1b5846d722a2cd3faccef830c45b36cc0a1043f3",
-      "last_checked": "2026-04-21T07:44:03.332027",
+      "last_checked": "2026-04-24T07:41:37.731297",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"ee4339354e48ed28369bbc1d167e5558\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol.json": {
       "hash": "4269de1d557aab6838f9ec4a9e5e864131ac66f48acad9cefb74edec44d23d5d",
-      "last_checked": "2026-04-21T07:44:03.501446",
+      "last_checked": "2026-04-24T07:41:37.882588",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"5a6b7e6029bd63dc316ef94867cc2503\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/findersyncenumerations.json": {
       "hash": "6e4943d86256f508b9c35ec192d553cdf56b697f47086799529ad3bc634930b3",
-      "last_checked": "2026-04-21T07:44:03.666148",
+      "last_checked": "2026-04-24T07:41:38.069402",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"1d5d09f8caa4ad153d6d2ac687087fd8\"",
       "file_path": "documentation/FinderSync/findersyncenumerations.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/default().json": {
       "hash": "3454be439ba5a102cfa7eb8d9252c3359069e95d5195c4198242d43cad9c86b5",
-      "last_checked": "2026-04-21T07:44:03.818233",
+      "last_checked": "2026-04-24T07:41:38.274110",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"46cf24feef6eb9d0e4257d9c007601a8\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/default.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/directoryurls.json": {
       "hash": "c56563f31d121e2a0fe17aec91bc415c2be9049e1cdee79398a39bd5ba3ec74f",
-      "last_checked": "2026-04-21T07:44:03.996393",
+      "last_checked": "2026-04-24T07:41:38.422556",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"7296fef942c28c3c9a3cc5d3ac41aa53\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/directoryurls.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/selecteditemurls().json": {
       "hash": "24ea5d630dadb0b25a9bebad76375af712afe85a1fd9140bfdd48edd8ae49932",
-      "last_checked": "2026-04-21T07:44:04.143353",
+      "last_checked": "2026-04-24T07:41:38.596388",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"ab89e3a429c615236bb468cedf9e5da7\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/selecteditemurls.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/setbadgeidentifier(_:for:).json": {
       "hash": "3ffae860051b1914925eec53f303566fd3b732b6ceed9fe247a466482ecb3298",
-      "last_checked": "2026-04-21T07:44:04.443991",
+      "last_checked": "2026-04-24T07:41:38.783279",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"60e3a21d20b281a6d091f7a0d23da5b4\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/setbadgeidentifier-for.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/setbadgeimage(_:label:forbadgeidentifier:).json": {
       "hash": "f0e07c0b4bfbe6eb25d6a1c94f09756873e9d5993b98018cafd5f3c95fe517c3",
-      "last_checked": "2026-04-21T07:44:04.561056",
+      "last_checked": "2026-04-24T07:41:38.984086",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"a850ad12dc003cbdb32359b4f94188e9\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/setbadgeimage-labelforbadgeidentifier.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/targetedurl().json": {
       "hash": "59ee89bfc07c7db5215cf825a91e2ffea16b69c0a17cb56cdb1ea683e15e8f1f",
-      "last_checked": "2026-04-21T07:44:04.735101",
+      "last_checked": "2026-04-24T07:41:39.121320",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"4fc360fa363dc45e00541fa66e53a68b\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/targetedurl.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/lastuseddateforitem(with:).json": {
       "hash": "a556cd174c6c3e51f0321483b2b6df1de9122cb0050704da95089c4bf9712247",
-      "last_checked": "2026-04-21T07:44:04.865801",
+      "last_checked": "2026-04-24T07:41:39.255097",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"fc9a2c071ebdcc6b0fa43705b922f944\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/lastuseddateforitem-with.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/setlastuseddate(_:foritemwith:completion:).json": {
       "hash": "0a79b88aabc1d815ef02f603743c779d15d717f94040f2c76dcbc09ecec2f004",
-      "last_checked": "2026-04-21T07:44:05.004403",
+      "last_checked": "2026-04-24T07:41:39.482399",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"a00fbfa55c034e516490c17c1777fdd2\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/setlastuseddate-foritemwithcompletion.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/settagdata(_:foritemwith:completion:).json": {
       "hash": "6f5d960e591b202938e58dfb1b9ff50abef6566f73bd857aaa4ff0c5bc0b6e8c",
-      "last_checked": "2026-04-21T07:44:05.147527",
+      "last_checked": "2026-04-24T07:41:39.673425",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"e9d214be21a60d361b06a7bc60134ec7\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/settagdata-foritemwithcompletion.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/tagdataforitem(with:).json": {
       "hash": "0972dcc3cf7f1071ac2d556ed31804beff05a226439b1e9b3160cf2726e3cbeb",
-      "last_checked": "2026-04-21T07:44:05.276112",
+      "last_checked": "2026-04-24T07:41:39.865190",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"392cef821dff540d534f271e3bfa95eb\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/tagdataforitem-with.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/isextensionenabled.json": {
       "hash": "2ffc821a383182d424f9955b9c2fa60db8ea518963f870dd89dacf192bc41032",
-      "last_checked": "2026-04-21T07:44:05.431287",
+      "last_checked": "2026-04-24T07:41:40.017289",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"46c12be14d330d68d73a0b852b98f205\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/isextensionenabled.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersynccontroller/showextensionmanagementinterface().json": {
       "hash": "5c041ef81c8a3a3132c80cf1cef0198cbfa078fde9b3cb233738e28e254b8be8",
-      "last_checked": "2026-04-21T07:44:05.729384",
+      "last_checked": "2026-04-24T07:41:40.172352",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"fe8804e073b474137fa19f5360d97725\"",
       "file_path": "documentation/FinderSync/fifindersynccontroller/showextensionmanagementinterface.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/beginobservingdirectory(at:).json": {
       "hash": "cc79ad2e3fc4aede694b94b91e124130ae4a4dfeb2d39f73078af430f6f6775e",
-      "last_checked": "2026-04-21T07:44:05.919824",
+      "last_checked": "2026-04-24T07:41:40.313600",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"524732fd022d61bc171cba2f65b8c249\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/beginobservingdirectory-at.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/endobservingdirectory(at:).json": {
       "hash": "1380f0f89fe66e85d3470e8b362d84387622d3edae5b8e6dac89a475eed65233",
-      "last_checked": "2026-04-21T07:44:06.244061",
+      "last_checked": "2026-04-24T07:41:40.453978",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"83c4902144b660782920dd4a65e3f286\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/endobservingdirectory-at.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/menu(for:).json": {
       "hash": "fbfd2da5dbd06ff71c91ea922f26f54ab424ded669c1bed8c5f40b40bc46b593",
-      "last_checked": "2026-04-21T07:44:06.429353",
+      "last_checked": "2026-04-24T07:41:40.606578",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"f1a6fea1aa10412085540f81917ae7f0\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/menu-for.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/requestbadgeidentifier(for:).json": {
       "hash": "047e086b8fad117fe25cd626a9b9ab7ee97bbfeb4c90b0cb9682de80051b107f",
-      "last_checked": "2026-04-21T07:44:06.714552",
+      "last_checked": "2026-04-24T07:41:40.734849",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"59490122cae954decabc6adf13b3cb2a\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/requestbadgeidentifier-for.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/toolbaritemimage.json": {
       "hash": "451f46d6d60767fcbaf1afab1d653cbc3536c7df6688218b59daf3b9a24943b2",
-      "last_checked": "2026-04-21T07:44:06.904548",
+      "last_checked": "2026-04-24T07:41:40.940837",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"474171dfc99e1d777411b7002aab4e2e\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/toolbaritemimage.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/toolbaritemname.json": {
       "hash": "7375ba4c7b0379b98c289064e3049a6218e38f62a31b3a5b96b593c133a00126",
-      "last_checked": "2026-04-21T07:44:07.041185",
+      "last_checked": "2026-04-24T07:41:41.089972",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"9b288beefdc871b8125b3936fa620e66\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/toolbaritemname.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/toolbaritemtooltip.json": {
       "hash": "7d5f2e0fa3069e8768824f6b3adcabade6749eea1d9e9cccb446f96b91e59b1f",
-      "last_checked": "2026-04-21T07:44:07.211474",
+      "last_checked": "2026-04-24T07:41:41.247350",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"219c6e6b5015d59caa6d499aec86f171\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/toolbaritemtooltip.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind.json": {
       "hash": "b043ff5b4d2afd4c7b2bb436f46fe20dda3be9d5894b848c817d420bc436448a",
-      "last_checked": "2026-04-21T07:44:07.401327",
+      "last_checked": "2026-04-24T07:41:41.393896",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"55354c7c7173911dab588ca555859f86\"",
       "file_path": "documentation/FinderSync/fimenukind.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/makelistenerendpoint(forservicename:itemurl:).json": {
       "hash": "c9bc81ac699188014e1c9bfd8df948a8817c36b13aa90e83df3dcb0c355bb351",
-      "last_checked": "2026-04-21T07:44:07.580179",
+      "last_checked": "2026-04-24T07:41:41.586486",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"8cfe77cef1fe62168c6401164ed7f2c9\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/makelistenerendpoint-forservicenameitemurl.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/supportedservicenamesforitem(with:).json": {
       "hash": "d4f021808683885fe81ea553eb1368b92ef8015077dc47f2e1c029db43038ea1",
-      "last_checked": "2026-04-21T07:44:07.747856",
+      "last_checked": "2026-04-24T07:41:41.716023",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"f895d940e79000fe37445e1fab7ae429\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/supportedservicenamesforitem-with.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fifindersyncprotocol/values(forattributes:foritemwith:completion:).json": {
       "hash": "4a6f90cb1aa6e7ce3a71e35d9e1ceb83cb538c010d41a7d0fe53c07bfe9dc06e",
-      "last_checked": "2026-04-21T07:44:07.916057",
+      "last_checked": "2026-04-24T07:41:41.890990",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"43b4fb1b3900e2069e0eb0f8305bdc0a\"",
       "file_path": "documentation/FinderSync/fifindersyncprotocol/values-forattributesforitemwithcompletion.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind/contextualmenuforitems.json": {
       "hash": "60898ed8afa6e20d9ba0045b5a3656b95b9f0834be102af9fdea963cf9b4d961",
-      "last_checked": "2026-04-21T07:44:08.042838",
+      "last_checked": "2026-04-24T07:41:42.030778",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"4a3a9895b185f5bfae463e0f77cf2b79\"",
       "file_path": "documentation/FinderSync/fimenukind/contextualmenuforitems.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind/contextualmenuforcontainer.json": {
       "hash": "b76fbe9675822afae8d42fec4bf98ff40a3985fc69a0d6283404c4752d35fc00",
-      "last_checked": "2026-04-21T07:44:08.198843",
+      "last_checked": "2026-04-24T07:41:42.204573",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"b04a1de756ac119d488454c44beb1568\"",
       "file_path": "documentation/FinderSync/fimenukind/contextualmenuforcontainer.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind/contextualmenuforsidebar.json": {
       "hash": "31b1634894240ca75b8e3104633ce9419647611064c6186f776de53c4a089deb",
-      "last_checked": "2026-04-21T07:44:08.331779",
+      "last_checked": "2026-04-24T07:41:42.341499",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"07a3a6ea3289b39c299db9b62522bba2\"",
       "file_path": "documentation/FinderSync/fimenukind/contextualmenuforsidebar.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind/toolbaritemmenu.json": {
       "hash": "18553c673ee031ff54b66e88cb60a866aa013c8e68f296a63099a3ae24d9eafc",
-      "last_checked": "2026-04-21T07:44:08.500311",
+      "last_checked": "2026-04-24T07:41:42.493516",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"6f00410d1cf2bbcd7b5f49db2f15e2a8\"",
       "file_path": "documentation/FinderSync/fimenukind/toolbaritemmenu.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/findersync/fimenukind/init(rawvalue:).json": {
       "hash": "d128e91ae305977d11e9f1a36fab4165b021355b520e5b23b7c644285ef7d240",
-      "last_checked": "2026-04-21T07:44:08.811700",
+      "last_checked": "2026-04-24T07:41:42.652613",
       "status": "unchanged",
-      "session_id": "2026-04-21T07:44:02.472132",
+      "session_id": "2026-04-24T07:41:37.001220",
       "etag": "W/\"8945fdd87f807e3ded9e0248b06338ea\"",
       "file_path": "documentation/FinderSync/fimenukind/init-rawvalue.md"
     },

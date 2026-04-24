@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ff
 
 # mlx.core.fft.irfft2
 
-**irfft2(*a: array*, *s: tuple[int, ...] | None = None*, *axes: Sequence[int] | None = [-2, -1]*, *stream: Stream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
+**irfft2(*a: array*, *s: tuple[int, ...] | None = None*, *axes: Sequence[int] | None = [-2, -1]*, *norm: str = 'backward'*, *stream: Stream | mlx.core.ThreadLocalStream | Device | None = None*) → [array](mlx.core.array.html#mlx.core.array)**
 : The inverse of [rfft2()](mlx.core.fft.rfft2.html#mlx.core.fft.rfft2).
 Note the input is generally complex. The dimensions of the input
 specified in `axes` are padded or truncated to match the sizes
@@ -46,6 +46,8 @@ which has size `s[-1] // 2 + 1`. The default value is the
 sizes of `a` along `axes`.
 **axes** ([list](https://docs.python.org/3/library/stdtypes.html#list)*(*[int](https://docs.python.org/3/library/functions.html#int)*)**, **optional*) – Axes along which to perform the FFT.
 The default is `[-2, -1]`.
+**norm** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – One of `"backward"`, `"ortho"`, or
+`"forward"`. Default is `"backward"`.
 
 Returns:
 The real array containing the inverse of [rfft2()](mlx.core.fft.rfft2.html#mlx.core.fft.rfft2).
