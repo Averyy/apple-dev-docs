@@ -160,6 +160,8 @@ UILayoutGuide *margins = self.view.layoutMarginsGuide;
   A layout guide that represents the space the keyboard occupies in your app’s layout.
 - [class UITrackingLayoutGuide](uitrackinglayoutguide.md)
   A layout guide that automatically activates and deactivates layout constraints depending on its proximity to edges.
+### Initializers
+- [init?(coder: NSCoder)](uilayoutguide/init(coder:).md)
 
 ## Relationships
 

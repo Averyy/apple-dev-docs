@@ -51,6 +51,8 @@ For more information about preparing your app to play audio, see [`Configuring y
   The current playback position, in seconds.
 - [var duration: TimeInterval](avmidiplayer/duration.md)
   The duration, in seconds, of the currently loaded file.
+### Initializers
+- [init(contentsOfURL: URL, soundBankURL: URL?) throws](avmidiplayer/init(contentsofurl:soundbankurl:).md)
 
 ## Relationships
 

@@ -51,6 +51,8 @@ This is a voice that an [`AVSpeechSynthesisProviderAudioUnit`](avspeechsynthesis
 ### Updating a voice
 - [class func updateSpeechVoices()](avspeechsynthesisprovidervoice/updatespeechvoices.md)
   Updates the voices your app provides to the system.
+### Initializers
+- [init?(coder: NSCoder)](avspeechsynthesisprovidervoice/init(coder:).md)
 
 ## Relationships
 

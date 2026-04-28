@@ -9,6 +9,7 @@ Develop device drivers that run in user space.
 - DriverKit 19.0+
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 10.15+
 
 ## Mentions

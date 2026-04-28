@@ -47,6 +47,8 @@ Create a passkey assertion credential to provide a response to a passkey authent
   An output from WebAuthn extensions.
 - [struct ASPasskeyAssertionCredentialExtensionOutput](aspasskeyassertioncredentialextensionoutput-swift.struct.md)
   A type that encapsulates output for various WebAuthn extensions during passkey assertion.
+### Initializers
+- [init?(coder: NSCoder)](aspasskeyassertioncredential/init(coder:).md)
 
 ## Relationships
 

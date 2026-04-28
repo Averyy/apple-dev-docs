@@ -8,8 +8,11 @@ A dictionary that describes an error chain item.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.1+
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

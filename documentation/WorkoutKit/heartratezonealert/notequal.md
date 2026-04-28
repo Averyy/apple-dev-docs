@@ -8,6 +8,7 @@ Returns a Boolean value that indicates whether two heart rate zone alerts arenâ€
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

@@ -8,6 +8,7 @@ A dictionary that relates participant identifiers to participant names.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

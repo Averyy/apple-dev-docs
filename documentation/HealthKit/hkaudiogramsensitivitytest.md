@@ -20,6 +20,7 @@ class HKAudiogramSensitivityTest
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](hkaudiogramsensitivitytest/init(coder:).md)
 - [init(sensitivity: HKQuantity, type: HKAudiogramConductionType, masked: Bool, side: HKAudiogramSensitivityTestSide, clampingRange: HKAudiogramSensitivityPointClampingRange?) throws](hkaudiogramsensitivitytest/init(sensitivity:type:masked:side:clampingrange:).md)
 ### Instance Properties
 - [var clampingRange: HKAudiogramSensitivityPointClampingRange?](hkaudiogramsensitivitytest/clampingrange.md)

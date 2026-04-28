@@ -32,6 +32,8 @@ class ASAuthorizationSingleSignOnCredential
 ### Parsing the Response
 - [var authenticatedResponse: HTTPURLResponse?](asauthorizationsinglesignoncredential/authenticatedresponse.md)
   The complete response authentication, including technology-specific values.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationsinglesignoncredential/init(coder:).md)
 
 ## Relationships
 

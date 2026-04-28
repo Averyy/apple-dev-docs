@@ -40,6 +40,9 @@ Use this gauge provider to visually show the amount of time that has elapsed wit
   The position of the leading edge of the time bar within the specified time interval.
 - [var endFillFraction: Float](clktimeintervalgaugeprovider/endfillfraction.md)
   The position of the trailing edge of the time bar within the specified time interval.
+### Initializers
+- [convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeColorLocations: [NSNumber]?, startDate: Date, endDate: Date)](clktimeintervalgaugeprovider/init(style:gaugecolors:gaugecolorlocations:startdate:enddate:).md)
+- [convenience init(style: CLKGaugeProviderStyle, gaugeColors: [UIColor]?, gaugeColorLocations: [NSNumber]?, startDate: Date, startFillFraction: Float, endDate: Date, endFillFraction: Float)](clktimeintervalgaugeprovider/init(style:gaugecolors:gaugecolorlocations:startdate:startfillfraction:enddate:endfillfraction:).md)
 
 ## Relationships
 

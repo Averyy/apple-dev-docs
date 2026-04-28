@@ -55,7 +55,7 @@ For more information, see [`Saving and loading world data`](saving-and-loading-w
 With two devices tracking the same world map, you can build a networked experience in which both users can see and interact with the same virtual content. To send an [`ARWorldMap`](arworldmap.md) to another device:
 
 1. On one device, use [`NSKeyedArchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedArchiver) to convert the world map to a data object. You don’t need to write the data to a file to send it over the network.
-2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) session, call [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession/send(_:toPeers:with:)) to send data, and implement [`MCSessionDelegate`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSessionDelegate) methods on the other device to receive data.
+2. Use the networking technology of your choice to send the resulting data to another device. For example, in a [`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) session, call [`send(_:toPeers:with:)`](https://developer.apple.com/documentation/MultipeerConnectivity/MCSession/send(_:toPeers:with:)) to send data, and implement doc://com.apple.documentation/documentation/multipeerconnectivity/mcsessiondelegate methods on the other device to receive data.
 3. On the receiving device, use [`NSKeyedUnarchiver`](https://developer.apple.com/documentation/Foundation/NSKeyedUnarchiver) to instantiate an [`ARWorldMap`](arworldmap.md) from the data.
 
 For more information, see [`Creating a multiuser AR experience`](creating-a-multiuser-ar-experience.md).
@@ -76,6 +76,8 @@ To begin a new session from an existing [`ARWorldMap`](arworldmap.md), set a wor
 ### Debugging a World Map
 - [var rawFeaturePoints: ARPointCloud](arworldmap/rawfeaturepoints.md)
   A coarse representation of the space-mapping data recorded in the world map.
+### Initializers
+- [init?(coder: NSCoder)](arworldmap/init(coder:).md)
 
 ## Relationships
 

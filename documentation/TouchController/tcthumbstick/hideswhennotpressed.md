@@ -8,6 +8,7 @@ A Boolean value that indicates whether to hide the thumbstick when it is not bei
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

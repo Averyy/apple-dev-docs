@@ -25,10 +25,12 @@ The IOBluetoothSDPUUID class can represent a UUID of any valid size (16, 32 or 1
   Creates a new IOBluetoothSDPUUID object with the given bytes of the given length.
 - [convenience init!(data: Data!)](iobluetoothsdpuuid/init(data:).md)
   Creates a new IOBluetoothSDPUUID object from the given NSData.
-- [init!(uuid16: BluetoothSDPUUID16)](iobluetoothsdpuuid/init(uuid16:).md)
+- [init!(uuid16: BluetoothSDPUUID16)](iobluetoothsdpuuid/init(uuid16:)-7j3zk.md)
   Initializes a new 16-bit IOBluetoothSDPUUID with the given UUID16
-- [init!(uuid32: BluetoothSDPUUID32)](iobluetoothsdpuuid/init(uuid32:).md)
+- [init!(uuid32: BluetoothSDPUUID32)](iobluetoothsdpuuid/init(uuid32:)-7qjwq.md)
   Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32
+- [init!(UUID16: BluetoothSDPUUID16)](iobluetoothsdpuuid/init(uuid16:)-5dw92.md)
+- [init!(UUID32: BluetoothSDPUUID32)](iobluetoothsdpuuid/init(uuid32:)-2ulu6.md)
 ### Instance Methods
 - [func classForArchiver() -> AnyClass!](iobluetoothsdpuuid/classforarchiver.md)
 - [func classForCoder() -> AnyClass!](iobluetoothsdpuuid/classforcoder.md)

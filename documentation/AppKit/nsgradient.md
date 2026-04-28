@@ -61,6 +61,8 @@ For more information about gradients and their appearance, see [`Gradients`](htt
 ### Constants
 - [NSGradient.DrawingOptions](nsgradient/drawingoptions.md)
   Constants that specify gradient drawing options.
+### Initializers
+- [convenience init?(startingColor: NSColor, endingColor: NSColor)](nsgradient/init(startingcolor:endingcolor:).md)
 
 ## Relationships
 

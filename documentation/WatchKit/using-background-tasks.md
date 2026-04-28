@@ -183,12 +183,12 @@ For more complex interactions, the system may call other session delegate method
 
 ##### Communicate Using Watch Connectivity
 
-The system can wake your app in the background to handle communication using [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity). It calls your background task handler and then calls the relevant methods on your [`WCSessionDelegate`](https://developer.apple.com/documentation/WatchConnectivity/WCSessionDelegate).
+The system can wake your app in the background to handle communication using [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity). It calls your background task handler and then calls the relevant methods on your doc://com.apple.documentation/documentation/watchconnectivity/wcsessiondelegate.
 
 When using a [`WKWatchConnectivityRefreshBackgroundTask`](wkwatchconnectivityrefreshbackgroundtask.md) task, you need to defer calling [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) until after you finish handling the call to the session delegate. For example, to handle a basic download task, use the following steps:
 
 1. The system calls your delegate’s [`handle(_:)`](wkextensiondelegate/handle(_:)-92ulv.md) method, passing a [`WKWatchConnectivityRefreshBackgroundTask`](wkwatchconnectivityrefreshbackgroundtask.md) task. In this method, your app needs to save the task so you can access it later.
-2. Then the system calls methods on your [`WCSessionDelegate`](https://developer.apple.com/documentation/WatchConnectivity/WCSessionDelegate), based on the type of data that the paired iPhone sends. Your app processes the incoming data in these delegate methods.
+2. Then the system calls methods on your doc://com.apple.documentation/documentation/watchconnectivity/wcsessiondelegate, based on the type of data that the paired iPhone sends. Your app processes the incoming data in these delegate methods.
 3. Your app can use the current session’s [`hasContentPending`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/hasContentPending) method to determine whether you still have any pending data.
 4. After you’ve processed all the incoming data, call the [`setTaskCompletedWithSnapshot(_:)`](wkrefreshbackgroundtask/settaskcompletedwithsnapshot(_:).md) method on the background task you saved in step 1.
 

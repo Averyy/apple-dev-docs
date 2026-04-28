@@ -8,6 +8,7 @@ A view that displays the Apple Pay Later visual merchandising widget.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -67,12 +68,12 @@ Use this view to display a widget that allows people to learn more about the App
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIDynamicItem](../UIKit/UIDynamicItem.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
 - [UIFocusItem](../UIKit/UIFocusItem.md)
 - [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.passkit/objc(pl)UIAppearanceContainer)
 - [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)

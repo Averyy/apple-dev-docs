@@ -135,6 +135,8 @@ A [`AVCapturePhotoSettings`](avcapturephotosettings.md) instance can include any
   A dictionary of metadata keys and values to embed in photo file output.
 ### Instance properties
 - [var rawFileFormat: [String : Any]?](avcapturephotosettings/rawfileformat.md)
+### Initializers
+- [convenience init(fromPhotoSettings: AVCapturePhotoSettings)](avcapturephotosettings/init(fromphotosettings:).md)
 
 ## Relationships
 

@@ -66,6 +66,8 @@ scalingLayer.add(scaleAnimation,
   Scale value transform functions construct a 4x4 matrix that represents the corresponding scale matrix.
 - [Translate Functions](translate-functions.md)
   Translate value transform functions construct a 4x4 matrix that represents the corresponding translate matrix.
+### Initializers
+- [init?(coder: NSCoder)](cavaluefunction/init(coder:).md)
 
 ## Relationships
 

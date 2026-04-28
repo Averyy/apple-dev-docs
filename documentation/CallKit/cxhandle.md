@@ -39,6 +39,8 @@ When the telephony provider receives an incoming call or the user starts an outg
 ### Constants
 - [CXHandle.HandleType](cxhandle/handletype.md)
   The possible types of handles.
+### Initializers
+- [init?(coder: NSCoder)](cxhandle/init(coder:).md)
 
 ## Relationships
 

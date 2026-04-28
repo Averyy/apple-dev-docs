@@ -70,6 +70,8 @@ At this point, the user sees the predicate that was saved.  If the user then ma
   Returns the comparison predicate options.
 - [var rightExpressionAttributeType: NSAttributeType](nspredicateeditorrowtemplate/rightexpressionattributetype.md)
   Returns the attribute type of the receiver’s right expression.
+### Initializers
+- [init?(coder: NSCoder)](nspredicateeditorrowtemplate/init(coder:).md)
 
 ## Relationships
 

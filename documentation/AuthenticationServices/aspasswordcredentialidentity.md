@@ -36,6 +36,8 @@ class ASPasswordCredentialIdentity
   A string used to correlate this identity to a record in your app’s own database.
 - [var serviceIdentifier: ASCredentialServiceIdentifier](aspasswordcredentialidentity/serviceidentifier.md)
   An identifier that helps the system know with which apps or websites to associate this credential.
+### Initializers
+- [init?(coder: NSCoder)](aspasswordcredentialidentity/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A general characterization of what kind of real-world surface the plane anchor r
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 
 ## Declaration
 

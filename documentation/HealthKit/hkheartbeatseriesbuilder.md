@@ -34,6 +34,8 @@ class HKHeartbeatSeriesBuilder
 ### Ending the Collection
 - [func finishSeries(completion: (HKHeartbeatSeriesSample?, (any Error)?) -> Void)](hkheartbeatseriesbuilder/finishseries(completion:).md)
   Finalizes the series and returns the resulting heartbeat series sample.
+### Initializers
+- [init(healthStore: HKHealthStore, device: HKDevice?, startDate: Date)](hkheartbeatseriesbuilder/init(healthstore:device:startdate:).md)
 
 ## Relationships
 

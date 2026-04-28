@@ -19,9 +19,9 @@ convenience init(kind: XMLNode.Kind, options: XMLNode.Options = [])
   Returns an `NSXMLElement` object initialized with the specified name.
 - [convenience init(name: String, stringValue: String?)](xmlelement/init(name:stringvalue:).md)
   Returns an `NSXMLElement` object initialized with a specified name and a single text-node child containing a specified value.
-- [init(name: String, uri: String?)](xmlelement/init(name:uri:).md)
+- [init(name: String, uri: String?)](xmlelement/init(name:uri:)-1r286.md)
   Returns an `NSXMLElement` object initialized with the specified name and URI.
-- [init(xmlString: String) throws](xmlelement/init(xmlstring:).md)
+- [init(xmlString: String) throws](xmlelement/init(xmlstring:)-7vkg7.md)
   Returns an `NSXMLElement` object created from a specified string containing XML markup.
 
 

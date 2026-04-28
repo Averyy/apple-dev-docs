@@ -8,6 +8,7 @@ An implementation-defined identifier used to correlate this subscriber with info
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
+- Mac Catalyst 12.1+
 
 ## Declaration
 

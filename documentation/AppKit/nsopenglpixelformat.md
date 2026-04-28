@@ -23,7 +23,7 @@ Every [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object wraps a low-level, 
 ## Topics
 
 ### Creating an OpenGL Pixel Format
-- [init?(cglPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:).md)
+- [init?(cglPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:)-2zqw4.md)
   Returns an OpenGL pixel format object initialized with using an existing CGL pixel format object.
 - [convenience init?(attributes: UnsafePointer<NSOpenGLPixelFormatAttribute>)](nsopenglpixelformat/init(attributes:).md)
   Returns an OpenGL pixel format object initialized with specified pixel format attributes.
@@ -41,6 +41,9 @@ Every [`NSOpenGLPixelFormat`](nsopenglpixelformat.md) object wraps a low-level, 
   Pixel format attributes for OpenGL.
 - [OpenGL Profiles](opengl-profiles.md)
   Constants that specify the functionality provided by the renderer.
+### Initializers
+- [init?(CGLPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:)-6et9a.md)
+- [init?(coder: NSCoder)](nsopenglpixelformat/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A type that enumerates events produced by a card session.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

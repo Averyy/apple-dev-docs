@@ -8,6 +8,7 @@ An object that signals your app’s intention to make exclusive use of the devic
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

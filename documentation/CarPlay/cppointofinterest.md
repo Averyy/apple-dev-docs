@@ -58,6 +58,7 @@ You provide an array of `CPPointOfInterest` objects when initializing [`CPPointO
   An opaque value for the point of interest.
 ### Initializers
 - [init(location: MKMapItem, title: String, subtitle: String?, summary: String?, detailTitle: String?, detailSubtitle: String?, detailSummary: String?, pinImage: UIImage?, selectedPinImage: UIImage?)](cppointofinterest/init(location:title:subtitle:summary:detailtitle:detailsubtitle:detailsummary:pinimage:selectedpinimage:).md)
+- [init?(coder: NSCoder)](cppointofinterest/init(coder:).md)
 ### Instance Properties
 - [var selectedPinImage: UIImage?](cppointofinterest/selectedpinimage.md)
 ### Type Properties

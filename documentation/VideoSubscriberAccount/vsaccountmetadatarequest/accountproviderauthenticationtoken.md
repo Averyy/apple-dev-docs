@@ -8,6 +8,7 @@ An authentication session token that your app sends to the account provider.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 - macOS ?+
 - tvOS 13.0+
 - visionOS 1.0+

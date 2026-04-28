@@ -28,6 +28,8 @@ The `CMLogItem` class defines a read-only [`timestamp`](cmlogitem/timestamp.md) 
 ### Getting the Time of the Event
 - [var timestamp: TimeInterval](cmlogitem/timestamp.md)
   The time when the logged item is valid.
+### Initializers
+- [init?(coder: NSCoder)](cmlogitem/init(coder:).md)
 
 ## Relationships
 

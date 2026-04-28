@@ -418,10 +418,10 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [NSString.DrawingOptions](nsstring/drawingoptions.md)
 ### Initializers
 - [convenience init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: UInt, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](nsstring/init(bytesnocopy:length:encoding:deallocator:).md)
-- [convenience init?(cString: UnsafePointer<CChar>)](nsstring/init(cstring:).md)
-- [convenience init?(cString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:).md)
-- [convenience init?(cString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:).md)
-- [convenience init?(cStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:).md)
+- [convenience init?(cString: UnsafePointer<CChar>)](nsstring/init(cstring:)-5mpk8.md)
+- [convenience init?(cString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-20f9h.md)
+- [convenience init?(cString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:)-4bbpi.md)
+- [convenience init?(cStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:)-7ssxw.md)
 - [convenience init(charactersNoCopy: UnsafeMutablePointer<unichar>, length: Int, deallocator: ((UnsafeMutablePointer<unichar>, Int) -> Void)?)](nsstring/init(charactersnocopy:length:deallocator:).md)
 - [init?(coder: NSCoder)](nsstring/init(coder:).md)
 - [convenience init?(contentsOf: URL)](nsstring/init(contentsof:).md)
@@ -431,7 +431,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(format: NSString, locale: Locale?, any CVarArg...)](nsstring/init(format:locale:_:).md)
 - [convenience init(string: NSString)](nsstring/init(string:)-7xgq7.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
-- [convenience init?(utf8String: UnsafePointer<CChar>)](nsstring/init(utf8string:).md)
+- [convenience init?(utf8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-vg2b.md)
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsstring/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.

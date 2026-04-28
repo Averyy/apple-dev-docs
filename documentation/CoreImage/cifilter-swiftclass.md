@@ -209,7 +209,8 @@ Don’t use auto-synthesized instance variables, because their names are automat
 - [class func maximumScaleTransform() -> any CIFilter & CIMaximumScaleTransform](cifilter-swift.class/maximumscaletransform.md)
 - [class func toneMapHeadroom() -> any CIFilter & CIToneMapHeadroom](cifilter-swift.class/tonemapheadroom.md)
 ### Initializers
-- [init!(cvPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:).md)
+- [init?(coder: NSCoder)](cifilter-swift.class/init(coder:).md)
+- [init!(cvPixelBuffer: CVPixelBuffer!, properties: [AnyHashable : Any]!, options: [CIRAWFilterOption : Any]!)](cifilter-swift.class/init(cvpixelbuffer:properties:options:)-69695.md)
   Returns a CIFilter that will in turn return a properly processed CIImage as “outputImage”.
 - [init?(name: String, parameters: [String : Any]?)](cifilter-swift.class/init(name:parameters:).md)
   Creates a new filter of type ‘name’. The filter’s input parameters are set from the dictionary of key-value pairs. On OSX, any of the filter input parameters not specified in the dictionary will be undefined. On iOS, any of the filter input parameters not specified in the dictionary will be set to default values.

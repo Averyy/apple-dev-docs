@@ -8,6 +8,7 @@ Tracking is available, but the quality of results is questionable.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 ## Declaration
 

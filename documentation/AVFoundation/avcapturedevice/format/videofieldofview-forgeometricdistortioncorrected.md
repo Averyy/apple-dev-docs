@@ -8,6 +8,7 @@ Indicates the horizontal field of view for an aspect ratio, either uncorrected o
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

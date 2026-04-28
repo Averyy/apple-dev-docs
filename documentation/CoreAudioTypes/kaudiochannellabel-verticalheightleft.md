@@ -8,6 +8,7 @@ Vertical height left channel; or for WAVE (.wav) files, top front left.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 13.0+
 - macOS 10.2+
 - tvOS 9.0+
 - visionOS 1.0+

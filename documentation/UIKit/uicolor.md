@@ -83,6 +83,11 @@ Use color to customize your app’s appearance, communicate status, and help peo
 - [var standardDynamicRange: UIColor](uicolor/standarddynamicrange.md)
   In some cases it is useful to recover the color that was base SDR color that was exposed to generate the given HDR color. If a color’s `linearExposure` is >1, then this will return the base SDR color.
 ### Initializers
+- [init(CGColor: CGColor)](uicolor/init(cgcolor:)-58l83.md)
+- [init(CGColor: CGColor)](uicolor/init(cgcolor:)-9d9vs.md)
+- [init(CIColor: CIColor)](uicolor/init(cicolor:)-2b5ik.md)
+- [init(CIColor: CIColor)](uicolor/init(cicolor:)-5fqhu.md)
+- [init?(coder: NSCoder)](uicolor/init(coder:).md)
 - [init?(named: String, in: Bundle?, compatibleWith: UITraitCollection?)](uicolor/init(named:in:compatiblewith:).md)
 ### Default Implementations
 - [UIColor Implementations](uicolor/uicolor-implementations.md)

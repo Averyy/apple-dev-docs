@@ -8,6 +8,7 @@ A human-readable explanation of the error.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

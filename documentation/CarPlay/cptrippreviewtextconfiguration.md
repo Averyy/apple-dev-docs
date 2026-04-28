@@ -28,6 +28,8 @@ class CPTripPreviewTextConfiguration
   The title displayed on the routes button.
 - [var overviewButtonTitle: String?](cptrippreviewtextconfiguration/overviewbuttontitle.md)
   The title displayed on the overview button.
+### Initializers
+- [init?(coder: NSCoder)](cptrippreviewtextconfiguration/init(coder:).md)
 
 ## Relationships
 

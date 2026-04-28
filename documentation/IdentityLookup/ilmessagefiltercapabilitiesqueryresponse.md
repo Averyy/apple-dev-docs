@@ -22,6 +22,8 @@ class ILMessageFilterCapabilitiesQueryResponse
 ### Setting the Subactions
 - [var promotionalSubActions: [ILMessageFilterSubAction]](ilmessagefiltercapabilitiesqueryresponse/promotionalsubactions-98kzj.md)
 - [var transactionalSubActions: [ILMessageFilterSubAction]](ilmessagefiltercapabilitiesqueryresponse/transactionalsubactions-4bfqz.md)
+### Initializers
+- [init?(coder: NSCoder)](ilmessagefiltercapabilitiesqueryresponse/init(coder:).md)
 
 ## Relationships
 

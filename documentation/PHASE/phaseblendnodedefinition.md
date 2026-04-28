@@ -97,6 +97,9 @@ footstepEvent?.start() { reason in
   Adds a child node that blends below a given value.
 - [func addRangeForInputValuesBetween(lowValue: Double, highValue: Double, fullGainAtLowValue: Double, fullGainAtHighValue: Double, lowFadeCurveType: PHASECurveType, highFadeCurveType: PHASECurveType, subtree: PHASESoundEventNodeDefinition)](phaseblendnodedefinition/addrangeforinputvaluesbetween(lowvalue:highvalue:fullgainatlowvalue:fullgainathighvalue:lowfadecurvetype:highfadecurvetype:subtree:).md)
   Adds a child node that blends between a given high and low value.
+### Initializers
+- [init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition)](phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:).md)
+- [convenience init(distanceBlendWithSpatialMixerDefinition: PHASESpatialMixerDefinition, identifier: String)](phaseblendnodedefinition/init(distanceblendwithspatialmixerdefinition:identifier:).md)
 
 ## Relationships
 

@@ -25,6 +25,7 @@ An IOBluetoothDevice object may exist independent of the existence of a baseband
   Returns the IOBluetoothDevice object for the given BluetoothDeviceAddress
 - [convenience init!(addressString: String!)](iobluetoothdevice/init(addressstring:).md)
   Returns the IOBluetoothDevice object for the given BluetoothDeviceAddress
+- [init?(coder: NSCoder)](iobluetoothdevice/init(coder:).md)
 ### Instance Properties
 - [var addressString: String!](iobluetoothdevice/addressstring.md)
   Get a string representation of the Bluetooth device address for the target device. The format of the string is the same as returned by IOBluetoothNSStringFromDeviceAddress().

@@ -40,7 +40,7 @@ struct SNClassifierIdentifier
 
 ## See Also
 
-- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:).md)
+- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-6rmee.md)
   Creates a request that uses a custom sound classification model.
 - [init(classifierIdentifier: SNClassifierIdentifier) throws](snclassifysoundrequest/init(classifieridentifier:).md)
   Creates a request that uses the framework’s built-in sound classification model.

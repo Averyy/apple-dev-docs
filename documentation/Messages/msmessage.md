@@ -46,6 +46,8 @@ Use the [`MSMessage`](msmessage.md) class to create custom message objects. To c
   A succinct description of the message.
 - [var url: URL?](msmessage/url.md)
   A URL that encodes data to be transmitted with the message.
+### Initializers
+- [init?(coder: NSCoder)](msmessage/init(coder:).md)
 
 ## Relationships
 

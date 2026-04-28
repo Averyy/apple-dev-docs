@@ -8,7 +8,10 @@ Enrollment SSO streamlines the MDM enrollment process, reduces sign-ins, and imp
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 2.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

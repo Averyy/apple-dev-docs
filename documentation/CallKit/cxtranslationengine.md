@@ -8,6 +8,7 @@ Values that describe the translation engine that provided a translation.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 
 ## Declaration
 

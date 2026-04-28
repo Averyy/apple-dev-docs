@@ -36,6 +36,8 @@ Concrete trigger classes include the following:
 ### Configuring the Trigger’s Behavior
 - [var repeats: Bool](unnotificationtrigger/repeats.md)
   A Boolean value indicating whether the system reschedules the notification after it’s delivered.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationtrigger/init(coder:).md)
 
 ## Relationships
 

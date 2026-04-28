@@ -93,7 +93,7 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
   Initializes and returns an image object using the provided image data.
 - [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:).md)
+- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
   Creates a new image using the contents of the provided image.
 - [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
   Initializes and returns an image object with data from the specified pasteboard.
@@ -218,6 +218,10 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ### Enumerations
 - [NSImage.DynamicRange](nsimage/dynamicrange.md)
   Describes how High Dynamic Range (HDR) image content displays.
+### Initializers
+- [convenience init(CGImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-15zeh.md)
+- [convenience init(byReferencingURL: URL)](nsimage/init(byreferencingurl:).md)
+- [convenience init?(contentsOfURL: URL)](nsimage/init(contentsofurl:).md)
 ### Default Implementations
 - [NSPasteboardReading Implementations](nsimage/nspasteboardreading-implementations.md)
 
@@ -226,7 +230,6 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -244,6 +247,7 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [Testing.AttachableAsImage](doc://com.apple.appkit/7Testing17AttachableAsImageP)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

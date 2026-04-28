@@ -8,6 +8,7 @@ Presents the refund request sheet for the specified transaction in a view contro
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 
 ## Declaration

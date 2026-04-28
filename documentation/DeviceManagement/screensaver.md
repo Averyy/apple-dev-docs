@@ -7,6 +7,8 @@ The payload that configures the screen saver.
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

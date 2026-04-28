@@ -145,6 +145,8 @@ If you store records in a local database, use the [`encodeSystemFields(with:)`](
   Creates and sets a reference object for a parent from the parent’s record ID.
 - [CKRecord.SystemFieldKey](ckrecord/systemfieldkey.md)
   Possible values for types of system field keys on records.
+### Initializers
+- [init?(coder: NSCoder)](ckrecord/init(coder:).md)
 ### Default Implementations
 - [Sequence Implementations](ckrecord/sequence-implementations.md)
 

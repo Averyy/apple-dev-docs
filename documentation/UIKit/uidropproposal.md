@@ -38,6 +38,8 @@ If a view’s drop interaction delegate accepts dropped drag items, it must retu
   A Boolean value that proposes that the drop interaction define the drop location precisely, such as at a specific point within existing text.
 - [var prefersFullSizePreview: Bool](uidropproposal/prefersfullsizepreview.md)
   A Boolean value that indicates that the drag item preview should be shown at its full, original size.
+### Initializers
+- [init(dropOperation: UIDropOperation)](uidropproposal/init(dropoperation:).md)
 
 ## Relationships
 

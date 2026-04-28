@@ -25,6 +25,7 @@ For the read-only [`fileSystemTypeName`](fsstatfsresult/filesystemtypename.md), 
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](fsstatfsresult/init(coder:).md)
 - [init(fileSystemTypeName: String)](fsstatfsresult/init(filesystemtypename:).md)
   Creates an statistics result instance, using the given file system type name.
 ### Instance Properties

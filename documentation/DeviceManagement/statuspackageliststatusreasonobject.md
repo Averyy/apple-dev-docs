@@ -7,6 +7,8 @@ Information about a status error.
 
 **Availability**:
 - macOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

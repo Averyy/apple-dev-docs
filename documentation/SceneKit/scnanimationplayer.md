@@ -22,6 +22,7 @@ class SCNAnimationPlayer
 
 ### Initializers
 - [init(animation: SCNAnimation)](scnanimationplayer/init(animation:).md)
+- [init?(coder: NSCoder)](scnanimationplayer/init(coder:).md)
 ### Instance Properties
 - [var animation: SCNAnimation](scnanimationplayer/animation.md)
 - [var blendFactor: CGFloat](scnanimationplayer/blendfactor.md)

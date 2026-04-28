@@ -43,6 +43,8 @@ You must provide an implementation of [`run(withInput:)`](amaction/run(withinput
   The action’s view object.
 - [var parameters: NSMutableDictionary?](ambundleaction/parameters.md)
   The action’s parameters.
+### Initializers
+- [init?(coder: NSCoder)](ambundleaction/init(coder:).md)
 
 ## Relationships
 

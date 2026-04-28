@@ -8,6 +8,7 @@ An encapsulation of the act of translating a call.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -34,6 +35,7 @@ class CXSetTranslatingCallAction
   Values that describe the translation engine that provided a translation.
 ### Initializers
 - [init(call: UUID, isTranslating: Bool, localLanguage: String, remoteLanguage: String)](cxsettranslatingcallaction/init(call:istranslating:locallanguage:remotelanguage:).md)
+- [init(callUUID: UUID, isTranslating: Bool, localLanguage: String, remoteLanguage: String)](cxsettranslatingcallaction/init(calluuid:istranslating:locallanguage:remotelanguage:).md)
 ### Instance Properties
 - [var localLanguage: String](cxsettranslatingcallaction/locallanguage.md)
 - [var remoteLanguage: String](cxsettranslatingcallaction/remotelanguage.md)

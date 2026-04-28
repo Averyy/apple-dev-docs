@@ -35,7 +35,7 @@ Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as
   Returns the color object’s RGB component and opacity values in the respective arguments.
 - [init(calibratedHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(calibratedhue:saturation:brightness:alpha:).md)
   Creates a color object using the given opacity and HSB color space components.
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:).md)
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md)
   Creates a color object from the specified components in the sRGB colorspace.
 - [init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(displayp3red:green:blue:alpha:).md)
   Creates a color object from the specified components in the Display P3 color space.

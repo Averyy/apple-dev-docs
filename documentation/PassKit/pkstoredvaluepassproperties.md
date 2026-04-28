@@ -33,6 +33,8 @@ class PKStoredValuePassProperties
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
 - [var isBlacklisted: Bool](pkstoredvaluepassproperties/isblacklisted.md)
   A Boolean value that indicates the pass issuer disabled a stored-value pass.
+### Initializers
+- [convenience init?(forPass: PKPass)](pkstoredvaluepassproperties/init(forpass:).md)
 
 ## Relationships
 

@@ -21,7 +21,7 @@ var vertexDescriptor: MDLVertexDescriptor? { get }
 
 #### Discussion
 
-If you specify a vertex descriptor when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer, Model I/O  automatically translates mesh vertex data loaded from the asset into the format described by that [`MDLVertexDescriptor`](mdlvertexdescriptor.md) object. If you do not specify a vertex descriptor, or import an asset through other means, this property’s value is `nil`, and Model I/O  loads vertex data in whatever format is stored in the asset file.
+If you specify a vertex descriptor when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md) initializer, Model I/O  automatically translates mesh vertex data loaded from the asset into the format described by that [`MDLVertexDescriptor`](mdlvertexdescriptor.md) object. If you do not specify a vertex descriptor, or import an asset through other means, this property’s value is `nil`, and Model I/O  loads vertex data in whatever format is stored in the asset file.
 
 ## See Also
 

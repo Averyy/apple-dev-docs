@@ -39,6 +39,8 @@ In typical usage, you do not initialize `PDFDestination` objects but rather get 
   Returns a comparison result that indicates the location of the destination in the document, relative to the current position.
 ### Instance Properties
 - [var zoom: CGFloat](pdfdestination/zoom.md)
+### Initializers
+- [init(page: PDFPage, atPoint: CGPoint)](pdfdestination/init(page:atpoint:).md)
 
 ## Relationships
 

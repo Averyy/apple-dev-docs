@@ -32,6 +32,8 @@ class SWHighlightMembershipEvent
   The type of membership event for the highlight.
 - [enum SWHighlightMembershipEventTrigger](swhighlightmembershipeventtrigger.md)
   The type of membership event for the highlight.
+### Initializers
+- [init?(coder: NSCoder)](swhighlightmembershipevent/init(coder:).md)
 
 ## Relationships
 

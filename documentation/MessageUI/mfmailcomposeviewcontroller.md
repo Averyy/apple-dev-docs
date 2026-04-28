@@ -123,7 +123,7 @@ For more information on how to present and dismiss view controllers, see [`View 
 ## Topics
 
 ### Responding to the view controller dismissal
-- [var mailComposeDelegate: (any MFMailComposeViewControllerDelegate)?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
+- [var mailComposeDelegate: MFMailComposeViewControllerDelegate?](mfmailcomposeviewcontroller/mailcomposedelegate.md)
   The mail composition view controller’s delegate.
 - [protocol MFMailComposeViewControllerDelegate](mfmailcomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a mail compose view controller.
@@ -170,9 +170,9 @@ For more information on how to present and dismiss view controllers, see [`View 
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.messageui/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UIStateRestoring](../UIKit/UIStateRestoring.md)

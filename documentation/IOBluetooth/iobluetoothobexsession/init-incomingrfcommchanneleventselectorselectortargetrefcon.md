@@ -25,7 +25,7 @@ init!(incomingRFCOMMChannel inChannel: IOBluetoothRFCOMMChannel!, eventSelector 
 
 - [init!(device: IOBluetoothDevice!, channelID: BluetoothRFCOMMChannelID)](iobluetoothobexsession/init(device:channelid:).md)
   Initializes a Bluetooth-based OBEX Session using a Bluetooth device.
-- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:).md)
+- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:)-h1xg.md)
   Initializes a Bluetooth-based OBEX Session using an SDP service record.
 
 

@@ -27,6 +27,8 @@ class MXHistogramBucket<UnitType> where UnitType : Unit
   The value of the ending measurement for the bucket.
 - [var bucketCount: Int](mxhistogrambucket/bucketcount.md)
   An integer representing the number of samples in the bucket.
+### Initializers
+- [init?(coder: NSCoder)](mxhistogrambucket/init(coder:).md)
 
 ## Relationships
 

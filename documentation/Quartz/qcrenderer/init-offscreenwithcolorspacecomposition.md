@@ -34,7 +34,7 @@ This method creates an internal OpenGL context and pixel buffer. Because offscre
   Creates a  renderer object  with a composition object and a color space.
 - [init!(openGLContext: NSOpenGLContext!, pixelFormat: NSOpenGLPixelFormat!, file: String!)](qcrenderer/init(openglcontext:pixelformat:file:).md)
   Creates a  renderer object with an `NSOpenGLContext` object and a composition file.
-- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:).md)
+- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:)-7at42.md)
   Creates a  renderer object  with a `CGLContextObj` object, a pixel format, a color space, and a composition object.
 
 

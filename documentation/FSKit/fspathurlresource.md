@@ -21,13 +21,15 @@ The URL passed to `FSPathURLResource` may be a security-scoped URL. If the URL i
 ## Topics
 
 ### Creating a path URL resource
-- [init(url: URL, writable: Bool)](fspathurlresource/init(url:writable:).md)
+- [init(url: URL, writable: Bool)](fspathurlresource/init(url:writable:)-2l10q.md)
   Creates a path URL resource.
 ### Accessing resource properties
 - [var url: URL](fspathurlresource/url.md)
   The URL represented by the resource.
 - [var isWritable: Bool](fspathurlresource/iswritable.md)
   A Boolean value that indicates whether the file system supports writing to the contents of the path URL.
+### Initializers
+- [init(URL: URL, writable: Bool)](fspathurlresource/init(url:writable:)-52fco.md)
 
 ## Relationships
 

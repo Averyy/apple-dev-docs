@@ -51,6 +51,8 @@ A transcription segment includes the following information:
 ### Deprecated
 - [var voiceAnalytics: SFVoiceAnalytics?](sftranscriptionsegment/voiceanalytics.md)
   An analysis of the transcription segment’s vocal properties.
+### Initializers
+- [init?(coder: NSCoder)](sftranscriptionsegment/init(coder:).md)
 
 ## Relationships
 

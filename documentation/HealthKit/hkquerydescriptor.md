@@ -33,6 +33,8 @@ Use descriptors to create queries that return multiple data types. You can use d
   The predicate that filters samples matching this descriptor.
 - [var sampleType: HKSampleType](hkquerydescriptor/sampletype.md)
   The data type of samples that match this descriptor.
+### Initializers
+- [init?(coder: NSCoder)](hkquerydescriptor/init(coder:).md)
 
 ## Relationships
 

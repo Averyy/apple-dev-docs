@@ -20,7 +20,7 @@ The autoreleased [`CGImage`](https://developer.apple.com/documentation/CoreGraph
 
 ## See Also
 
-- [init(cgImage: CGImage)](nsbitmapimagerep/init(cgimage:).md)
+- [init(cgImage: CGImage)](nsbitmapimagerep/init(cgimage:)-7o5tz.md)
   Returns a bitmap image representation from a Core Graphics image object.
 
 

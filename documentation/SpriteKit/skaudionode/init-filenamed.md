@@ -34,9 +34,9 @@ The named file containing the audio asset must reside within the main bundle.
 
 ## See Also
 
-- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:).md)
+- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:)-969st.md)
   Initializes an audio node from an AVFoundation audio node.
-- [convenience init(url: URL)](skaudionode/init(url:).md)
+- [convenience init(url: URL)](skaudionode/init(url:)-8v3q0.md)
   Initializes an audio node from an audio asset with the specified URL.
 - [init?(coder: NSCoder)](skaudionode/init(coder:).md)
   Tells you when to initialize an audio node that has been unarchived.

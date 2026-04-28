@@ -60,6 +60,10 @@ For more information, see [`init(type:quantity:start:end:metadata:)`](hkquantity
   The key path for accessing the sample’s quantity.
 - [let HKPredicateKeyPathCount: String](hkpredicatekeypathcount.md)
   A key path for the sample’s count.
+### Initializers
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date)](hkquantitysample/init(type:quantity:startdate:enddate:).md)
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](hkquantitysample/init(type:quantity:startdate:enddate:device:metadata:).md)
+- [convenience init(type: HKQuantityType, quantity: HKQuantity, startDate: Date, endDate: Date, metadata: [String : Any]?)](hkquantitysample/init(type:quantity:startdate:enddate:metadata:).md)
 
 ## Relationships
 

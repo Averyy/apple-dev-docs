@@ -29,7 +29,7 @@ Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as
 
 ## See Also
 
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:).md)
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md)
   Creates a color object from the specified components in the sRGB colorspace.
 - [init(deviceHue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)](nscolor/init(devicehue:saturation:brightness:alpha:).md)
   Creates a color object using the given opacity value and HSB color space components.

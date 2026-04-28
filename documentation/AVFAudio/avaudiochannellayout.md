@@ -42,6 +42,8 @@ The `AVAudioChannelLayout` class is a thin wrapper for Core Audio’s [`AudioCha
   The audio channel’s underlying layout tag.
 - [func isEqual(Any) -> Bool](avaudiochannellayout/isequal(_:).md)
   Indicates whether another audio channel layout is exactly equal to the current layout.
+### Initializers
+- [init?(coder: NSCoder)](avaudiochannellayout/init(coder:).md)
 
 ## Relationships
 

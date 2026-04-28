@@ -8,6 +8,7 @@ Creates a macOS stroke with the line properties, path, transform, mask, and rand
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 
 ## Declaration

@@ -17,6 +17,7 @@ class ActivityButton
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](sfsafariviewcontroller/activitybutton/init(coder:).md)
 - [init(templateImage: UIImage, extensionIdentifier: String)](sfsafariviewcontroller/activitybutton/init(templateimage:extensionidentifier:).md)
 ### Instance Properties
 - [var extensionIdentifier: String?](sfsafariviewcontroller/activitybutton/extensionidentifier.md)

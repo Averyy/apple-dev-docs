@@ -22,6 +22,7 @@ class NSSliderAccessory
 - [NSSliderAccessory.Width](nsslideraccessory/width.md)
 ### Initializers
 - [init(image: UIImage)](nsslideraccessory/init(image:).md)
+- [init?(coder: NSCoder)](nsslideraccessory/init(coder:).md)
 ### Instance Properties
 - [var behavior: NSSliderAccessoryBehavior](nsslideraccessory/behavior.md)
   The effect on interaction with the accessory.

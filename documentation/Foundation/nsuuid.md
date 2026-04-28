@@ -37,15 +37,19 @@ The `NSUUID` class is *not* toll-free bridged with CoreFoundation’s [`CFUUID`]
 ### Creating UUIDs
 - [init()](nsuuid/init.md)
   Initializes a new UUID with RFC 4122 version 4 random bytes.
-- [convenience init?(uuidString: String)](nsuuid/init(uuidstring:).md)
+- [convenience init?(uuidString: String)](nsuuid/init(uuidstring:)-8t9n3.md)
   Initializes a new UUID with the formatted string.
-- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:).md)
+- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:)-2p4d5.md)
   Initializes a new UUID with the given bytes.
 ### Get UUID Values
 - [func getBytes(UnsafeMutablePointer<UInt8>)](nsuuid/getbytes(_:).md)
   Returns the UUID as bytes.
 - [var uuidString: String](nsuuid/uuidstring.md)
   The UUID as a string.
+### Initializers
+- [convenience init(UUIDBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:)-4fntq.md)
+- [convenience init?(UUIDString: String)](nsuuid/init(uuidstring:)-8kcx.md)
+- [init?(coder: NSCoder)](nsuuid/init(coder:).md)
 ### Instance Methods
 - [func compare(UUID) -> ComparisonResult](nsuuid/compare(_:).md)
 

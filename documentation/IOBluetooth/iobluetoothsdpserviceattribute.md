@@ -21,10 +21,13 @@ A service attribute contains two components: an attribute ID and a data element.
 ## Topics
 
 ### Initializers
-- [init!(id: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!)](iobluetoothsdpserviceattribute/init(id:attributeelement:).md)
+- [init!(id: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!)](iobluetoothsdpserviceattribute/init(id:attributeelement:)-7oebi.md)
   Initializes a new service attribute with the given ID and data element.
-- [init!(id: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject!)](iobluetoothsdpserviceattribute/init(id:attributeelementvalue:).md)
+- [init!(id: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject!)](iobluetoothsdpserviceattribute/init(id:attributeelementvalue:)-84b3r.md)
   Initializes a new service attribute with the given ID and element value.
+- [init!(ID: BluetoothSDPServiceAttributeID, attributeElement: IOBluetoothSDPDataElement!)](iobluetoothsdpserviceattribute/init(id:attributeelement:)-3g9jw.md)
+- [init!(ID: BluetoothSDPServiceAttributeID, attributeElementValue: NSObject!)](iobluetoothsdpserviceattribute/init(id:attributeelementvalue:)-1o9lv.md)
+- [init?(coder: NSCoder)](iobluetoothsdpserviceattribute/init(coder:).md)
 ### Instance Methods
 - [func getDataElement() -> IOBluetoothSDPDataElement!](iobluetoothsdpserviceattribute/getdataelement.md)
   Returns the data element for the target service attribute.

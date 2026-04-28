@@ -8,6 +8,7 @@ An item that represents the kind of data the message contains.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

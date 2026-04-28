@@ -36,7 +36,7 @@ This method is typically used by frameworks and plug-ins to locate their own bun
 
 - [init(for: AnyClass)](bundle/init(for:).md)
   Returns the `NSBundle` object with which the specified class is associated.
-- [convenience init?(url: URL)](bundle/init(url:).md)
+- [convenience init?(url: URL)](bundle/init(url:)-3n9rf.md)
   Returns an `NSBundle` object initialized to correspond to the specified file URL.
 - [init?(path: String)](bundle/init(path:).md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.

@@ -8,6 +8,7 @@ The content that markup happens on top of.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

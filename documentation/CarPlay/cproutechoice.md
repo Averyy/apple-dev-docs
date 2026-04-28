@@ -31,6 +31,8 @@ class CPRouteChoice
 ### Providing Additional Information
 - [var userInfo: Any?](cproutechoice/userinfo.md)
   An object containing custom information associated with the route choice.
+### Initializers
+- [init?(coder: NSCoder)](cproutechoice/init(coder:).md)
 
 ## Relationships
 

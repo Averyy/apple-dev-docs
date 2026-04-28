@@ -32,6 +32,8 @@ class CXSetGroupCallAction
 ### Accessing Action Attributes
 - [var callUUIDToGroupWith: UUID?](cxsetgroupcallaction/calluuidtogroupwith.md)
   The unique identifier of the call to be grouped with the call associated with the receiver.
+### Initializers
+- [init(callUUID: UUID, callUUIDToGroupWith: UUID?)](cxsetgroupcallaction/init(calluuid:calluuidtogroupwith:).md)
 
 ## Relationships
 

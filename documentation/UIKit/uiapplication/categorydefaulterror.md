@@ -8,6 +8,7 @@ Errors that can happen when the system checks if your app is the default app in 
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

@@ -28,6 +28,8 @@ To create a `MTLSharedEventHandle` instance, call the [`makeSharedEventHandle()`
 ### Identifying the shareable event handle
 - [var label: String?](mtlsharedeventhandle/label.md)
   A string that identifies the shareable event.
+### Initializers
+- [init?(coder: NSCoder)](mtlsharedeventhandle/init(coder:).md)
 
 ## Relationships
 

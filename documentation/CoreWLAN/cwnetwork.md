@@ -46,6 +46,8 @@ class CWNetwork
   The service set identifier (SSID) for the network, returned as data.
 - [var wlanChannel: CWChannel?](cwnetwork/wlanchannel.md)
   The channel for the network.
+### Initializers
+- [init?(coder: NSCoder)](cwnetwork/init(coder:).md)
 
 ## Relationships
 

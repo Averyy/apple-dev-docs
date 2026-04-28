@@ -21,7 +21,7 @@ var displayLocation: String? { get }
 
 Many printers can be configured with a location string to reflect the printer’s physical location in an office. This property contains that location string or `nil` if no such string is available.
 
-For printers you create yourself using the [`init(url:)`](uiprinter/init(url:).md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
+For printers you create yourself using the [`init(url:)`](uiprinter/init(url:)-1mibn.md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
 
 ## See Also
 

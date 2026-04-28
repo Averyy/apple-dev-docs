@@ -21,7 +21,7 @@ An initialized `SBApplication` that you can use to communicate with the target a
 
 #### Discussion
 
-You should avoid using this method unless you know nothing about an external application but its PID. In most cases, it is better to use [`init(bundleIdentifier:)`](sbapplication/init(bundleidentifier:).md), which will dynamically locate the external application’s path at runtime, or [`init(url:)`](sbapplication/init(url:).md), which is not dependent on the external application being open at the time the method is called.
+You should avoid using this method unless you know nothing about an external application but its PID. In most cases, it is better to use [`init(bundleIdentifier:)`](sbapplication/init(bundleidentifier:).md), which will dynamically locate the external application’s path at runtime, or [`init(url:)`](sbapplication/init(url:)-6xbe5.md), which is not dependent on the external application being open at the time the method is called.
 
 ## Parameters
 
@@ -31,7 +31,7 @@ You should avoid using this method unless you know nothing about an external app
 
 - [init?(bundleIdentifier: String)](sbapplication/init(bundleidentifier:).md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given bundle identifier.
-- [init?(url: URL)](sbapplication/init(url:).md)
+- [init?(url: URL)](sbapplication/init(url:)-6xbe5.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given URL.
 
 

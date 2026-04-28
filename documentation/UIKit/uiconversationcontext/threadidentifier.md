@@ -8,6 +8,7 @@ A string that uniquely identifies a conversation. This identifier is persistent 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

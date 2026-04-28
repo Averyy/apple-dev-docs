@@ -57,6 +57,7 @@ Using this technique, a single shader can be shared across many nodes and each n
   Creates and initializes a new attribute value object that holds a vector of three floating point numbers.
 - [convenience init(vectorFloat4: vector_float4)](skattributevalue/init(vectorfloat4:).md)
   Creates and initializes a new attribute value object that holds a vector of four floating point numbers.
+- [init?(coder: NSCoder)](skattributevalue/init(coder:).md)
 ### Instance Properties
 - [var floatValue: Float](skattributevalue/floatvalue.md)
   The receiver’s floating point value.

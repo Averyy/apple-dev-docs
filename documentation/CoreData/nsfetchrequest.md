@@ -140,6 +140,8 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
 ### Executing a Fetch Request Directly
 - [func execute() throws -> [ResultType]](nsfetchrequest/execute.md)
   Executes the fetch request against the managed object context that is associated with the current queue.
+### Initializers
+- [init?(coder: NSCoder)](nsfetchrequest/init(coder:).md)
 
 ## Relationships
 

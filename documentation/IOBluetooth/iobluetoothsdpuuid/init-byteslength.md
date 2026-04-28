@@ -31,9 +31,9 @@ If the length is invalid for a UUID, nil is returned.
 
 - [convenience init!(data: Data!)](iobluetoothsdpuuid/init(data:).md)
   Creates a new IOBluetoothSDPUUID object from the given NSData.
-- [init!(uuid16: BluetoothSDPUUID16)](iobluetoothsdpuuid/init(uuid16:).md)
+- [init!(uuid16: BluetoothSDPUUID16)](iobluetoothsdpuuid/init(uuid16:)-7j3zk.md)
   Initializes a new 16-bit IOBluetoothSDPUUID with the given UUID16
-- [init!(uuid32: BluetoothSDPUUID32)](iobluetoothsdpuuid/init(uuid32:).md)
+- [init!(uuid32: BluetoothSDPUUID32)](iobluetoothsdpuuid/init(uuid32:)-7qjwq.md)
   Creates a new 32-bit IOBluetoothSDPUUID with the given UUID32
 
 

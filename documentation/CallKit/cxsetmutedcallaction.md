@@ -32,6 +32,8 @@ class CXSetMutedCallAction
 ### Accessing Action Attributes
 - [var isMuted: Bool](cxsetmutedcallaction/ismuted.md)
   A Boolean value that indicates whether the call is muted.
+### Initializers
+- [convenience init(callUUID: UUID, muted: Bool)](cxsetmutedcallaction/init(calluuid:muted:).md)
 
 ## Relationships
 

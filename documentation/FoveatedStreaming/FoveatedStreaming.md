@@ -36,7 +36,8 @@ The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstrea
   Creates an immersive space to display foveated streaming content.
 - [init<V>(foveatedStreaming: FoveatedStreamingSession, content: () -> V)](../SwiftUI/ImmersiveSpace/init(foveatedStreaming:content:).md)
   Creates an immersive space to display foveated streaming content alongside `RealityKit` content.
-- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](../SwiftUI/View/foveatedStreamingPauseSheet(session:).md)
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View
+](../SwiftUI/View/foveatedStreamingPauseSheet(session:).md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 

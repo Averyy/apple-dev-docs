@@ -37,7 +37,7 @@ You can also monitor the events your app receives and modify or cancel some even
   Creates and returns a new event object that describes a custom event.
 - [init?(eventRef: UnsafeRawPointer)](nsevent/init(eventref:).md)
   Creates and returns a new event object for a Carbon event.
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:).md)
+- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
 ### Getting the event type
 - [var type: NSEvent.EventType](nsevent/type.md)
@@ -236,6 +236,9 @@ You can also monitor the events your app receives and modify or cancel some even
 ### Deprecated
 - [var context: NSGraphicsContext?](nsevent/context.md)
   The display graphics context for this event.
+### Initializers
+- [init?(CGEvent: CGEvent)](nsevent/init(cgevent:)-8acvx.md)
+- [init?(coder: NSCoder)](nsevent/init(coder:).md)
 
 ## Relationships
 

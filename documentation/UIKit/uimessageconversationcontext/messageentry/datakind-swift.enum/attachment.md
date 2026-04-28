@@ -8,6 +8,7 @@ The message contains an attachment, such as an image or file.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

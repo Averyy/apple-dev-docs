@@ -38,6 +38,8 @@ If you create a `CSPerson` object to represent a specific contact, you can use t
   A key that identifies the type of contact property represented by the person object’s handle.
 - [var handles: [String]](csperson/handles.md)
   An array of contact handles related to the person.
+### Initializers
+- [init?(coder: NSCoder)](csperson/init(coder:).md)
 
 ## Relationships
 

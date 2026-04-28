@@ -39,6 +39,8 @@ Register an instance of this class with an [`NSItemProvider`](https://developer.
   An object that controls participant access options.
 - [struct CKSharingParticipantPermissionOption](cksharingparticipantpermissionoption.md)
   An object that controls participant permission options.
+### Initializers
+- [init?(coder: NSCoder)](ckallowedsharingoptions/init(coder:).md)
 ### Instance Properties
 - [var allowsAccessRequests: Bool](ckallowedsharingoptions/allowsaccessrequests.md)
   Default value is NO. If set, the system sharing UI allows the user to configure whether participants can request access to the share.

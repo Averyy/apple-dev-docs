@@ -35,7 +35,7 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 ## Topics
 
 ### Creating a player item
-- [convenience init(url: URL)](avplayeritem/init(url:).md)
+- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
   Creates a player item with a specified URL.
 - [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
   Creates a player item for a specified asset.
@@ -287,6 +287,9 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 ### Deprecated
 - [Deprecated symbols](avplayeritem-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Initializers
+- [convenience init(URL: URL)](avplayeritem/init(url:)-5rssp.md)
+- [convenience init(URL: URL)](avplayeritem/init(url:)-91z05.md)
 ### Instance Properties
 - [var interstitialEventIdentifier: String?](avplayeritem/interstitialeventidentifier.md)
   The identifier of the AVPlayerInterstitialEvent that created this item, or nil if the item was not created from an interstitial event.

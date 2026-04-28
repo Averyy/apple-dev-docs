@@ -8,7 +8,10 @@ The declaration to configure keyboard settings.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 - macOS 26.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

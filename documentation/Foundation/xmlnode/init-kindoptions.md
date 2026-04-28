@@ -21,7 +21,7 @@ An `NSXMLNode` object initialized with the given kind and options, or `nil` if t
 
 #### Discussion
 
-Do not use this initializer for creating instances of [`XMLDTDNode`](xmldtdnode.md) for attribute-list declarations. Instead, use the [`dtdNode(withXMLString:)`](xmlnode/dtdnode(withxmlstring:).md) class method of this class or the [`init(xmlString:)`](xmldtdnode/init(xmlstring:).md) method of the `NSXMLDTDNode` class.
+Do not use this initializer for creating instances of [`XMLDTDNode`](xmldtdnode.md) for attribute-list declarations. Instead, use the [`dtdNode(withXMLString:)`](xmlnode/dtdnode(withxmlstring:).md) class method of this class or the [`init(xmlString:)`](xmldtdnode/init(xmlstring:)-1dyhd.md) method of the `NSXMLDTDNode` class.
 
 ## Parameters
 

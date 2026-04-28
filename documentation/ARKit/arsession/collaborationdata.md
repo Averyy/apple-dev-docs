@@ -27,6 +27,8 @@ To create a multiuser AR experience, you enable collaboration on a world trackin
   A property that gives you a hint about how to send a given data instance over the network.
 - [ARSession.CollaborationData.Priority](arsession/collaborationdata/priority-swift.enum.md)
   Options that help you choose the appropriate network protocol or settings for a given data instance.
+### Initializers
+- [init?(coder: NSCoder)](arsession/collaborationdata/init(coder:).md)
 
 ## Relationships
 

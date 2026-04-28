@@ -18,6 +18,12 @@
 typealias AVBeatRange = _AVBeatRange
 ```
 
+## Topics
+
+### Instance Properties
+- [var length: AVMusicTimeStamp](avbeatrange-swift.typealias/length.md)
+- [var start: AVMusicTimeStamp](avbeatrange-swift.typealias/start.md)
+
 ## Relationships
 
 ### Conforms To

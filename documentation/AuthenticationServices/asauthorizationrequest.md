@@ -33,6 +33,8 @@ You typically generate one of these using the corresponding provider, which is a
   The provider servicing the request.
 - [protocol ASAuthorizationProvider](asauthorizationprovider.md)
   An interface that authorization providers must implement.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationrequest/init(coder:).md)
 
 ## Relationships
 

@@ -15,13 +15,6 @@ An error that indicates an internal inconsistency.
 case internalInconsistency
 ```
 
-## See Also
-
-- [AccessoryError.nilXPCSession](accessoryerror/nilxpcsession.md)
-  An error that indicates a failure in cross-process communication.
-- [AccessoryError.invalidRequest](accessoryerror/invalidrequest.md)
-  An error that indicates an invalid request.
-
 
 ---
 

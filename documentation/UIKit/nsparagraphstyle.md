@@ -92,6 +92,8 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   The base writing direction for the paragraph.
 - [enum NSWritingDirection](nswritingdirection.md)
   Constants that specify the writing direction.
+### Initializers
+- [init?(coder: NSCoder)](nsparagraphstyle/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A base class that represents a message in a conversation.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

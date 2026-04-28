@@ -8,6 +8,7 @@ A visibility value that makes a promoted in-app purchase visible on the App Stor
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

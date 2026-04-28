@@ -117,7 +117,7 @@ func addObservers() {
 }
 ```
 
-The notification object’s user information dictionary contains the reason for an interruption. Determining the reason lets you configure your user interface as your camera access changes. Use [`AVCaptureSessionInterruptionReasonKey`](https://developer.apple.com/documentation/AVFoundation/AVCaptureSessionInterruptionReasonKey) to look up the value, as the example below shows:
+The notification object’s user information dictionary contains the reason for an interruption. Determining the reason lets you configure your user interface as your camera access changes. Use doc://com.apple.documentation/documentation/avfoundation/avcapturesessioninterruptionreasonkey to look up the value, as the example below shows:
 
 ```swift
 @objc func handleInterruptionStarted(notification: Notification) {

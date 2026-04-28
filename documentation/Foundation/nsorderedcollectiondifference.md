@@ -64,6 +64,9 @@ NSOrderedCollectionDifference *diff = [original differenceFromArray:modified];
 ### Updating Changes from a Difference Object
 - [func transformingChanges((NSOrderedCollectionChange) -> NSOrderedCollectionChange) -> CollectionDifference<Any>](nsorderedcollectiondifference/transformingchanges(_:).md)
   Create a new ordered collection difference by mapping over this difference’s members, processing the change objects with the block provided.
+### Initializers
+- [convenience init(insertIndexes: IndexSet, insertedObjects: [Any]?, removeIndexes: IndexSet, removedObjects: [Any]?)](nsorderedcollectiondifference/init(insertindexes:insertedobjects:removeindexes:removedobjects:).md)
+- [init(insertIndexes: IndexSet, insertedObjects: [Any]?, removeIndexes: IndexSet, removedObjects: [Any]?, additionalChanges: [NSOrderedCollectionChange])](nsorderedcollectiondifference/init(insertindexes:insertedobjects:removeindexes:removedobjects:additionalchanges:).md)
 
 ## Relationships
 

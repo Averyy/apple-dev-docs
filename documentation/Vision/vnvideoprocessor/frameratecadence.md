@@ -27,6 +27,8 @@ class FrameRateCadence
 ### Inspecting the Frame Rate
 - [var frameRate: Int](vnvideoprocessor/frameratecadence/framerate.md)
   The frame rate at which to process video.
+### Initializers
+- [init(frameRate: Int)](vnvideoprocessor/frameratecadence/init(framerate:).md)
 
 ## Relationships
 

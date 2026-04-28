@@ -8,6 +8,9 @@ A response from the device after it processes the command to inform the device t
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

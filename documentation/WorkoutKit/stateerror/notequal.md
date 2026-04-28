@@ -8,6 +8,7 @@ Returns a Boolean value that indicates whether errors aren’t equal.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

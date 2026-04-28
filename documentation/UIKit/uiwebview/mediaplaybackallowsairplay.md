@@ -8,6 +8,7 @@ A Boolean value that determines whether Air Play is allowed from this view.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 
 ## Declaration
 

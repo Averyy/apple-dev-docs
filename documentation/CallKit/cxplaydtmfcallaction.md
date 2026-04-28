@@ -41,6 +41,8 @@ CallKit automatically plays the corresponding DTMF frequencies for any digits tr
 ### Constants
 - [CXPlayDTMFCallAction.ActionType](cxplaydtmfcallaction/actiontype.md)
   The types of events that generate dial tones.
+### Initializers
+- [init(callUUID: UUID, digits: String, type: CXPlayDTMFCallAction.ActionType)](cxplaydtmfcallaction/init(calluuid:digits:type:).md)
 
 ## Relationships
 

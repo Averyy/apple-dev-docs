@@ -8,8 +8,11 @@ An error response that indicates a well-known service discovery request failed.
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
+- Mac Catalyst 17.5+
 - macOS 14.5+
 - visionOS 1.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

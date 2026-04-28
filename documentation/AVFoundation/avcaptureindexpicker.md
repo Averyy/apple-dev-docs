@@ -53,6 +53,10 @@ Index pickers are appropriate for controls that provide an indexed container of 
   A localized title that describes the control’s action.
 - [var localizedIndexTitles: [String]](avcaptureindexpicker/localizedindextitles.md)
   The titles to present for each index.
+### Initializers
+- [init(localizedTitle: String, symbolName: String, localizedIndexTitles: [String])](avcaptureindexpicker/init(localizedtitle:symbolname:localizedindextitles:).md)
+- [init(localizedTitle: String, symbolName: String, numberOfIndexes: Int)](avcaptureindexpicker/init(localizedtitle:symbolname:numberofindexes:).md)
+- [init(localizedTitle: String, symbolName: String, numberOfIndexes: Int, localizedTitleTransform: (Int) -> String)](avcaptureindexpicker/init(localizedtitle:symbolname:numberofindexes:localizedtitletransform:).md)
 
 ## Relationships
 

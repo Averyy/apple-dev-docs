@@ -64,6 +64,8 @@ class Attributes
   The item’s last-backup time.
 - [var addedTime: timespec](fsitem/attributes/addedtime.md)
   The item’s added time.
+### Initializers
+- [init?(coder: NSCoder)](fsitem/attributes/init(coder:).md)
 
 ## Relationships
 

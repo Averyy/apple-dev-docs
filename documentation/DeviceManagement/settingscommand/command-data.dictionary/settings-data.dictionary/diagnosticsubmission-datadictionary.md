@@ -8,6 +8,9 @@ A dictionary that contains diagnostic submission settings.
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
+- Mac Catalyst 9.3+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

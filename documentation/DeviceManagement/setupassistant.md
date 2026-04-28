@@ -8,7 +8,10 @@ The payload that configures Setup Assistant settings.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - macOS 10.12+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
 Completed scraping Core Bluetooth!
-Total pages scraped: 0
-Pages skipped (unchanged): 362
+Total pages scraped: 363
+Pages skipped (unchanged): 1
 Pages failed: 0

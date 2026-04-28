@@ -32,9 +32,9 @@ The string representation of this object is `<``name``>``string``</``name``>`.
 
 - [convenience init(name: String)](xmlelement/init(name:).md)
   Returns an `NSXMLElement` object initialized with the specified name.
-- [init(name: String, uri: String?)](xmlelement/init(name:uri:).md)
+- [init(name: String, uri: String?)](xmlelement/init(name:uri:)-1r286.md)
   Returns an `NSXMLElement` object initialized with the specified name and URI.
-- [init(xmlString: String) throws](xmlelement/init(xmlstring:).md)
+- [init(xmlString: String) throws](xmlelement/init(xmlstring:)-7vkg7.md)
   Returns an `NSXMLElement` object created from a specified string containing XML markup.
 - [convenience init(kind: XMLNode.Kind, options: XMLNode.Options)](xmlelement/init(kind:options:).md)
 

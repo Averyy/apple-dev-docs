@@ -8,6 +8,7 @@ Marks an item as recently used and sets its relative order in the Recents list.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,6 +8,9 @@ A response from the device after it processes the command to take the device out
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
+- Mac Catalyst 9.3+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

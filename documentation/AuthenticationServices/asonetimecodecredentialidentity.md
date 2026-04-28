@@ -23,6 +23,7 @@ An ASOneTimeCodeCredentialIdentity is used to describe an identity that can use 
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](asonetimecodecredentialidentity/init(coder:).md)
 - [init(serviceIdentifier: ASCredentialServiceIdentifier, label: String, recordIdentifier: String?)](asonetimecodecredentialidentity/init(serviceidentifier:label:recordidentifier:).md)
 ### Instance Properties
 - [var label: String](asonetimecodecredentialidentity/label.md)

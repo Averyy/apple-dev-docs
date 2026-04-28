@@ -26,9 +26,9 @@ A new UUID object.
 
 ## See Also
 
-- [convenience init?(uuidString: String)](nsuuid/init(uuidstring:).md)
+- [convenience init?(uuidString: String)](nsuuid/init(uuidstring:)-8t9n3.md)
   Initializes a new UUID with the formatted string.
-- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:).md)
+- [convenience init(uuidBytes: UnsafePointer<UInt8>?)](nsuuid/init(uuidbytes:)-2p4d5.md)
   Initializes a new UUID with the given bytes.
 
 

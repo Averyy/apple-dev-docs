@@ -23,7 +23,7 @@ If you need to execute scripts and get the input and output information use the 
 ## Topics
 
 ### Specifying the Script
-- [init(url: URL) throws](nsuserscripttask/init(url:).md)
+- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
   Return a user script task instance given a URL for a script file.
 - [var scriptURL: URL](nsuserscripttask/scripturl.md)
   The URL of the script file.
@@ -33,6 +33,8 @@ If you need to execute scripts and get the input and output information use the 
 ### Constants
 - [NSUserScriptTask.CompletionHandler](nsuserscripttask/completionhandler.md)
   Implement this block to retrieve the error of the script executed by [`execute(completionHandler:)`](nsuserscripttask/execute(completionhandler:).md).
+### Initializers
+- [init(URL: URL) throws](nsuserscripttask/init(url:)-3l6en.md)
 
 ## Relationships
 

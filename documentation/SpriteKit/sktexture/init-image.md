@@ -34,7 +34,7 @@ The image data is copied before control is returned to your game.
 
 ## See Also
 
-- [convenience init(cgImage: CGImage)](sktexture/init(cgimage:).md)
+- [convenience init(cgImage: CGImage)](sktexture/init(cgimage:)-27ovb.md)
   Create a new texture object from a Quartz 2D image.
 
 

@@ -42,13 +42,13 @@ struct UIImageReader
   Initializes and returns the image object with the specified data.
 - [init?(data: Data, scale: CGFloat)](uiimage/init(data:scale:).md)
   Initializes and returns the image object with the specified data and scale factor.
-- [init(cgImage: CGImage)](uiimage/init(cgimage:).md)
+- [init(cgImage: CGImage)](uiimage/init(cgimage:)-14qlb.md)
   Initializes and returns the image object with the specified Quartz image reference.
-- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](uiimage/init(cgimage:scale:orientation:).md)
+- [init(cgImage: CGImage, scale: CGFloat, orientation: UIImage.Orientation)](uiimage/init(cgimage:scale:orientation:)-2ouhh.md)
   Initializes and returns an image object with the specified scale and orientation factors.
-- [init(ciImage: CIImage)](uiimage/init(ciimage:).md)
+- [init(ciImage: CIImage)](uiimage/init(ciimage:)-93vu1.md)
   Initializes and returns an image object with the specified Core Image object.
-- [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](uiimage/init(ciimage:scale:orientation:).md)
+- [init(ciImage: CIImage, scale: CGFloat, orientation: UIImage.Orientation)](uiimage/init(ciimage:scale:orientation:)-9gpyn.md)
   Initializes and returns an image object with the specified Core Image object and properties.
 
 

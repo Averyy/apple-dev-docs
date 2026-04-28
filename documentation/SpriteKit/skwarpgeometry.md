@@ -24,6 +24,11 @@ class SKWarpGeometry
 
 - [Warping SpriteKit Content By Using an Effect Node](warping-spritekit-content-by-using-an-effect-node.md)
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](skwarpgeometry/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

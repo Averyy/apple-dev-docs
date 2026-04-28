@@ -27,6 +27,8 @@ Use the [`ARFrame`](arframe.md) [`rawFeaturePoints`](arframe/rawfeaturepoints.md
   The list of detected points.
 - [var identifiers: [UInt64]](arpointcloud/identifiers-508tf.md)
   A list of unique identifiers corresponding to detected feature points.
+### Initializers
+- [init?(coder: NSCoder)](arpointcloud/init(coder:).md)
 
 ## Relationships
 

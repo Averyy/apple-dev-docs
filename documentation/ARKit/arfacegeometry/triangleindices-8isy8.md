@@ -8,6 +8,7 @@ An array of indices describing the triangle mesh formed by the face geometry’s
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 ## Declaration
 

@@ -42,6 +42,8 @@ These results are part of the [`SFTranscriptionSegment`](sftranscriptionsegment.
   The variation in pitch in each frame of a transcription segment, expressed as a percentage of the frame’s fundamental frequency.
 - [var shimmer: SFAcousticFeature](sfvoiceanalytics/shimmer.md)
   The variation in vocal volume stability (amplitude) in each frame of a transcription segment, expressed in decibels.
+### Initializers
+- [init?(coder: NSCoder)](sfvoiceanalytics/init(coder:).md)
 
 ## Relationships
 

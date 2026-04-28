@@ -57,6 +57,8 @@ class CNPostalAddress
   The country or region name of the address.
 - [let CNPostalAddressISOCountryCodeKey: String](cnpostaladdressisocountrycodekey.md)
   The ISO country code of the address.
+### Initializers
+- [init?(coder: NSCoder)](cnpostaladdress/init(coder:).md)
 
 ## Relationships
 

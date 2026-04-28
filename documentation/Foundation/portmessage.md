@@ -44,6 +44,8 @@ An [`PortMessage`](portmessage.md) object also maintains a message identifier, w
 ### Accessing the Message ID
 - [var msgid: UInt32](portmessage/msgid.md)
   Returns the identifier for the receiver.
+### Initializers
+- [init(sendPort: Port?, receivePort: Port?, components: [Any]?)](portmessage/init(sendport:receiveport:components:).md)
 
 ## Relationships
 

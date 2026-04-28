@@ -8,6 +8,7 @@ A type that specifies the placement of a subscription control in a subscription 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -53,9 +54,11 @@ Not all subscription store control styles support all placements. For example, t
 
 ## See Also
 
-- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
+- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
+](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
   Sets the control style for subscription store views within a view.
-- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
+- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
+](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
   Sets the control style and control placement for subscription store views within a view.
 - [protocol SubscriptionStoreControlStyle](subscriptionstorecontrolstyle.md)
   A type that specifies the appearance and interaction of controls in the subscription store view instances within the view hierarchy.

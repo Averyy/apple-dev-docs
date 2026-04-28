@@ -19,7 +19,7 @@ var displayName: String { get }
 
 #### Discussion
 
-This property contains a printer name that is suitable for display in your app’s user interface. For printers you create yourself using the [`init(url:)`](uiprinter/init(url:).md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
+This property contains a printer name that is suitable for display in your app’s user interface. For printers you create yourself using the [`init(url:)`](uiprinter/init(url:)-1mibn.md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
 
 ## See Also
 

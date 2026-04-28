@@ -50,6 +50,8 @@ class NSPrinter
 ### Deprecated
 - [NSPrinter.TableStatus](nsprinter/tablestatus.md)
   Constants that describe the state of a printer information table stored by a printer object.
+### Initializers
+- [init?(coder: NSCoder)](nsprinter/init(coder:).md)
 
 ## Relationships
 

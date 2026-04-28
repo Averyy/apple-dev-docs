@@ -33,6 +33,8 @@ Use this class to verify a successful platform authorization request in [`author
 - [var attachment: ASAuthorizationPublicKeyCredentialAttachment](asauthorizationplatformpublickeycredentialregistration/attachment.md)
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/largeblob-5nvj9.md)
   The request’s binary large object value.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationplatformpublickeycredentialregistration/init(coder:).md)
 ### Instance Properties
 - [var prf: ASAuthorizationPublicKeyCredentialPRFRegistrationOutput?](asauthorizationplatformpublickeycredentialregistration/prf-3xcqu.md)
 

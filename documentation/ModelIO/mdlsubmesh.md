@@ -32,7 +32,7 @@ Submeshes are contained in [`MDLMesh`](mdlmesh.md) objects, which provide vertex
   Initializes a named submesh with an index buffer and the specified properties.
 - [init(name: String, indexBuffer: any MDLMeshBuffer, indexCount: Int, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType, material: MDLMaterial?, topology: MDLSubmeshTopology?)](mdlsubmesh/init(name:indexbuffer:indexcount:indextype:geometrytype:material:topology:).md)
   Initializes a named submesh with a specific topology.
-- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:).md)
+- [init?(mdlSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-4czyc.md)
   Initializes a submesh by copying or converting another submesh.
 ### Working with a Submesh’s Index Buffer
 - [var indexBuffer: any MDLMeshBuffer](mdlsubmesh/indexbuffer.md)
@@ -57,6 +57,8 @@ Submeshes are contained in [`MDLMesh`](mdlmesh.md) objects, which provide vertex
   Options for the size of integer data in a submesh’s index buffer, used by the [`indexType`](mdlsubmesh/indextype.md) property.
 - [enum MDLGeometryType](mdlgeometrytype.md)
   Types of geometric primitives for rendering a submesh, used by the [`geometryType`](mdlsubmesh/geometrytype.md) property.
+### Initializers
+- [init?(MDLSubmesh: MDLSubmesh, indexType: MDLIndexBitDepth, geometryType: MDLGeometryType)](mdlsubmesh/init(mdlsubmesh:indextype:geometrytype:)-6b9cm.md)
 
 ## Relationships
 

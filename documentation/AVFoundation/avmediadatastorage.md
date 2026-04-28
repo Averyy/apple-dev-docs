@@ -22,11 +22,13 @@ class AVMediaDataStorage
 ## Topics
 
 ### Creating media data storage
-- [init(url: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:).md)
+- [init(url: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:)-5cv8s.md)
   Creates a media data storage object associated with a file URL.
 ### Accessing the URL
 - [func url() -> URL?](avmediadatastorage/url.md)
   Returns the URL used to initialize the receiver.
+### Initializers
+- [init(URL: URL, options: [String : Any]?)](avmediadatastorage/init(url:options:)-3xxug.md)
 
 ## Relationships
 

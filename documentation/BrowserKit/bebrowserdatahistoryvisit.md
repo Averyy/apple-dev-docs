@@ -22,7 +22,7 @@ This class captures comprehensive information about a page visit, including meta
 ## Topics
 
 ### Gathering data that creates the history of a visit
-- [init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:).md)
+- [init(url: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-j2oc.md)
   Creates a record of a page visit that includes metadata and redirect information.
 ### Accessing visit properties
 - [var dateOfLastVisit: Date](bebrowserdatahistoryvisit/dateoflastvisit.md)
@@ -46,6 +46,8 @@ This class captures comprehensive information about a page visit, including meta
   The date of the redirect source visit.
 - [var redirectSourceURL: URL?](bebrowserdatahistoryvisit/redirectsourceurl.md)
   A URL that redirects to the visited page.
+### Initializers
+- [init(URL: URL, dateOfLastVisit: Date, title: String?, loadedSuccessfully: Bool, httpGet: Bool, redirectSourceURL: URL?, redirectSourceDateOfVisit: Date?, redirectDestinationURL: URL?, redirectDestinationDateOfVisit: Date?, visitCount: Int)](bebrowserdatahistoryvisit/init(url:dateoflastvisit:title:loadedsuccessfully:httpget:redirectsourceurl:redirectsourcedateofvisit:redirectdestinationurl:redirectdestinationdateofvisit:visitcount:)-hvhk.md)
 
 ## Relationships
 

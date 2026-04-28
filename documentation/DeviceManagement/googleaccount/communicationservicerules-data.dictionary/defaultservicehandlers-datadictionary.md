@@ -8,7 +8,10 @@ A dictionary of default service handlers.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

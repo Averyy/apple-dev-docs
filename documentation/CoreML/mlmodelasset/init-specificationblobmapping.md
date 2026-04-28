@@ -33,7 +33,7 @@ The format of in-memory blobs must be the same as the external files. The dictio
 
 - [convenience init(specification: Data) throws](mlmodelasset/init(specification:).md)
   Creates a model asset from an in-memory model specification.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:).md)
+- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 
 

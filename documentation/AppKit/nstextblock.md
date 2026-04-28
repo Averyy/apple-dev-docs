@@ -73,6 +73,8 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 ### Drawing colors and decorations
 - [func drawBackground(withFrame: NSRect, in: NSView, characterRange: NSRange, layoutManager: NSLayoutManager)](nstextblock/drawbackground(withframe:in:characterrange:layoutmanager:).md)
   Called by the layout manager to draw any colors and other decorations before the text is drawn.
+### Initializers
+- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
 
 ## Relationships
 

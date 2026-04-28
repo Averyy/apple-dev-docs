@@ -40,6 +40,8 @@ In an AR session, you can use this model as the basis for overlaying content tha
 ### Creating a Mesh from Blend Shapes
 - [init?(blendShapes: [ARFaceAnchor.BlendShapeLocation : NSNumber])](arfacegeometry/init(blendshapes:).md)
   Creates a face geometry matching the facial expression described in the specified dictionary.
+### Initializers
+- [init?(coder: NSCoder)](arfacegeometry/init(coder:).md)
 
 ## Relationships
 

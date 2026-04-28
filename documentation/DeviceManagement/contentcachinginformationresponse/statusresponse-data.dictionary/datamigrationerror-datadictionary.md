@@ -7,6 +7,8 @@ A dictionary that describes a data migration error.
 
 **Availability**:
 - macOS 10.15.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

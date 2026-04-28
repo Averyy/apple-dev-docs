@@ -46,6 +46,8 @@ The following equation is always true: [`percentUnknown`](cmtremorresult/percent
   The percentage of time when a tremor was likely, and the displacement amplitude was moderate.
 - [var percentStrong: Float](cmtremorresult/percentstrong.md)
   The percentage of time when a tremor was likely, and the displacement amplitude was strong.
+### Initializers
+- [init?(coder: NSCoder)](cmtremorresult/init(coder:).md)
 
 ## Relationships
 

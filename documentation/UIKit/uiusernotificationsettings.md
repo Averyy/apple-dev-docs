@@ -38,6 +38,8 @@ In addition to registering your app’s alert types, you can also use this class
 ### Constants
 - [struct UIUserNotificationType](uiusernotificationtype.md)
   Constants indicating how the app alerts the user when a local or push notification arrives.
+### Initializers
+- [convenience init(forTypes: UIUserNotificationType, categories: Set<UIUserNotificationCategory>?)](uiusernotificationsettings/init(fortypes:categories:).md)
 
 ## Relationships
 

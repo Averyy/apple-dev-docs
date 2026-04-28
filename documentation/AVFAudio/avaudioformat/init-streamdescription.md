@@ -46,7 +46,7 @@ If the [`AudioStreamBasicDescription`](https://developer.apple.com/documentation
   Creates an audio format instance using the specified settings dictionary.
 - [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
   Creates an audio format instance from a stream description and channel layout.
-- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:).md)
+- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
 
 

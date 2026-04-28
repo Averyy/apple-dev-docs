@@ -8,8 +8,11 @@ An array of search settings dictionaries.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

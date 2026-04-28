@@ -34,7 +34,7 @@ Using this initializer is typically not necessary. Instead, call the [`audioPlay
 
 ## See Also
 
-- [init(avAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:).md)
+- [init(avAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:)-4u514.md)
   Initializes an audio player for playing the specified AVFoundation audio node.
 
 

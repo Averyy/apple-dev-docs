@@ -110,7 +110,7 @@ guard taggedBuffers.count == 2 else {
 }
 ```
 
-The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer/Buffer-swift.enum/pixelBuffer(_:)) from the returned sample buffers into an image for display using [`init(cvPixelBuffer:)`](https://developer.apple.com/documentation/CoreImage/CIImage/init(cvPixelBuffer:)). The app creates an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/stereoView(_:)) for the left or right eye.
+The app parses each [`CMTaggedBuffer.Buffer.pixelBuffer(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTaggedBuffer/Buffer-swift.enum/pixelBuffer(_:)) from the returned sample buffers into an image for display using doc://com.apple.documentation/documentation/coreimage/ciimage/init(cvpixelbuffer:). The app creates an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) and sets it to the view content as either `leftEye` or `rightEye` depending on whether the view contains a [`stereoView(_:)`](https://developer.apple.com/documentation/CoreMedia/CMTag-swift.class/stereoView(_:)) for the left or right eye.
 
 ```swift
 taggedBuffers.forEach { taggedBuffer in

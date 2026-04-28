@@ -36,6 +36,8 @@ class MXForegroundExitData
   The number of times the system terminated the app from the foreground for attempting an invalid memory access.
 - [var cumulativeIllegalInstructionExitCount: Int](mxforegroundexitdata/cumulativeillegalinstructionexitcount.md)
   The number of times the system terminated the app from the foreground for attempting to execute an illegal or undefined instruction.
+### Initializers
+- [init?(coder: NSCoder)](mxforegroundexitdata/init(coder:).md)
 
 ## Relationships
 

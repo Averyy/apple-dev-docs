@@ -59,11 +59,13 @@ func recognizeFile(url: URL) {
 ## Topics
 
 ### Creating a speech recognition request
-- [init(url: URL)](sfspeechurlrecognitionrequest/init(url:).md)
+- [init(url: URL)](sfspeechurlrecognitionrequest/init(url:)-3ymmz.md)
   Creates a speech recognition request, initialized with the specified URL.
 ### Accessing the audio file URL
 - [var url: URL](sfspeechurlrecognitionrequest/url.md)
   The URL of the audio file.
+### Initializers
+- [init(URL: URL)](sfspeechurlrecognitionrequest/init(url:)-xca9.md)
 
 ## Relationships
 

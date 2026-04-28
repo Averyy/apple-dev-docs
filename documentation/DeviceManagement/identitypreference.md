@@ -7,6 +7,8 @@ The payload that configures the user’s identity on the device.
 
 **Availability**:
 - macOS 10.12+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

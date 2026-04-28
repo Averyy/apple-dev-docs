@@ -30,6 +30,8 @@ This value must be in bounds of the duration of the current player item.
 ### Inspecting an Ad Time Range
 - [var timeRange: CMTimeRange](mpadtimerange/timerange.md)
   A Media Player time range that indicates where an ad break exists in the current player.
+### Initializers
+- [init(timeRange: CMTimeRange)](mpadtimerange/init(timerange:).md)
 
 ## Relationships
 

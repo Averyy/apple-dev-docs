@@ -8,6 +8,7 @@ Hashes the essential components of the interval step by feeding them into the gi
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

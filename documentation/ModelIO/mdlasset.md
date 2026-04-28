@@ -30,13 +30,13 @@ An asset may contain timed information, such as a series of mesh morphs. In such
 ### Creating an Asset
 - [class func canImportFileExtension(String) -> Bool](mdlasset/canimportfileextension(_:).md)
   Returns a Boolean value that indicates whether the [`MDLAsset`](mdlasset.md) class can read asset data from files with the specified extension.
-- [init(url: URL)](mdlasset/init(url:).md)
+- [init(url: URL)](mdlasset/init(url:)-1f4ym.md)
   Initializes an asset from the file at the specified URL.
 - [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(bufferallocator:).md)
   Initializes an empty asset, using the specified buffer allocator.
-- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:).md)
+- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md)
   Initializes an asset from the file at the specified URL, using the specified vertex descriptor and buffer allocator.
-- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md)
+- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-510xi.md)
   Initializes an asset from the file at the specified URL, using the specified options for allocating and transforming data during import.
 ### Exporting an Asset
 - [class func canExportFileExtension(String) -> Bool](mdlasset/canexportfileextension(_:).md)
@@ -83,6 +83,10 @@ An asset may contain timed information, such as a series of mesh morphs. In such
 ### Constants
 - [Asset File Types](asset-file-types.md)
   Uniform Type Identifiers for file formats supported by the Model I/O framework.
+### Initializers
+- [init(URL: URL)](mdlasset/init(url:)-21tmw.md)
+- [init(URL: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:)-4rokm.md)
+- [init(URL: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-7bivy.md)
 ### Instance Properties
 - [var animations: any MDLObjectContainerComponent](mdlasset/animations.md)
 - [var originals: any MDLObjectContainerComponent](mdlasset/originals.md)

@@ -59,6 +59,8 @@ The primary factors that distinguish a voice in speech synthesis are language, l
   Returns the language and locale code for the user’s current locale.
 - [var language: String](avspeechsynthesisvoice/language.md)
   A BCP 47 code that contains the voice’s language and locale.
+### Initializers
+- [init?(coder: NSCoder)](avspeechsynthesisvoice/init(coder:).md)
 
 ## Relationships
 

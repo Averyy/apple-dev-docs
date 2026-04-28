@@ -51,6 +51,8 @@ You can set the color of the activity indicator by using the [`color`](uiactivit
 ### Constants
 - [UIActivityIndicatorView.Style](uiactivityindicatorview/style-swift.enum.md)
   The visual style of the progress indicator.
+### Initializers
+- [init(activityIndicatorStyle: UIActivityIndicatorView.Style)](uiactivityindicatorview/init(activityindicatorstyle:).md)
 
 ## Relationships
 

@@ -50,6 +50,8 @@ class AUParameter
   Gets the string representation of a parameter value.
 - [func value(from: String) -> AUValue](auparameter/value(from:).md)
   Converts a string into a parameter value.
+### Initializers
+- [init?(coder: NSCoder)](auparameter/init(coder:).md)
 
 ## Relationships
 

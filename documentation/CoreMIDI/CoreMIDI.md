@@ -47,8 +47,6 @@ The Core MIDI framework provides APIs to communicate with MIDI (Musical Instrume
 ### Articles
 - [Deprecated Symbols](midi_system_setup-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-- [kMIDIObjectType_ExternalMask](kmidiobjecttype_externalmask.md)
-  A bit mask indicating that a device is external.
 ### Classes
 - [class MIDI2DeviceInfo](midi2deviceinfo.md)
 - [class MIDICIDevice](midicidevice.md)

@@ -35,7 +35,7 @@ When reading a directory, children are added and removed as necessary to match t
 
 - [var fileWrappers: [String : FileWrapper]?](filewrapper/filewrappers.md)
   The file wrappers contained by a directory file wrapper.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:).md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
 - [var filename: String?](filewrapper/filename.md)
   The filename of the file wrapper object

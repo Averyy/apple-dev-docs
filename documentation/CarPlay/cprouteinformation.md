@@ -21,6 +21,7 @@ class CPRouteInformation
 ### Initializers
 - [init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, trip: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates)](cprouteinformation/init(maneuvers:laneguidances:currentmaneuvers:currentlaneguidance:trip:maneuvertravelestimates:).md)
   Initializes a new route information object with maneuvers, lane guidances, the current maneuvers, the current lane guidance, and trip and current maneuver travel estimates.
+- [init(maneuvers: [CPManeuver], laneGuidances: [CPLaneGuidance], currentManeuvers: [CPManeuver], currentLaneGuidance: CPLaneGuidance, tripTravelEstimates: CPTravelEstimates, maneuverTravelEstimates: CPTravelEstimates)](cprouteinformation/init(maneuvers:laneguidances:currentmaneuvers:currentlaneguidance:triptravelestimates:maneuvertravelestimates:).md)
 ### Properties
 - [var currentLaneGuidance: CPLaneGuidance](cprouteinformation/currentlaneguidance.md)
   A lane guidance object that describes the current lane guidance.

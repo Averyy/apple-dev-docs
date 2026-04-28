@@ -35,9 +35,9 @@ In addition to providing methods for creating [`CBUUID`](cbuuid.md) objects, thi
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
 - [init(data: Data)](cbuuid/init(data:).md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:).md)
+- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:).md)
+- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 ### Inspecting CBUUID Properties
 - [var data: Data](cbuuid/data.md)
@@ -47,6 +47,9 @@ In addition to providing methods for creating [`CBUUID`](cbuuid.md) objects, thi
 ### UUID Constants
 - [Characteristic Descriptors](characteristic-descriptors.md)
   Values that represent the UUIDs of the characteristic descriptors.
+### Initializers
+- [init(CFUUID: CFUUID)](cbuuid/init(cfuuid:)-9ehvy.md)
+- [init(NSUUID: UUID)](cbuuid/init(nsuuid:)-hoyn.md)
 
 ## Relationships
 

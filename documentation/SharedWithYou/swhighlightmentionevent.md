@@ -32,6 +32,8 @@ class SWHighlightMentionEvent
 ### Accessing the event person
 - [var mentionedPersonHandle: String](swhighlightmentionevent/mentionedpersonhandle.md)
   The handle of the person the sender mentions.
+### Initializers
+- [init?(coder: NSCoder)](swhighlightmentionevent/init(coder:).md)
 
 ## Relationships
 

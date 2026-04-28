@@ -31,7 +31,7 @@ In Objective-C, use instances of this class to create [`OSLogEnumerator`](osloge
 ## Topics
 
 ### Creating Log Stores
-- [convenience init(url: URL) throws](oslogstore/init(url:).md)
+- [convenience init(url: URL) throws](oslogstore/init(url:)-5v3w7.md)
   Creates a log store based on a log archive.
 - [class func local() throws -> Self](oslogstore/local.md)
   Creates a log store representing the Mac’s local store.
@@ -48,6 +48,7 @@ In Objective-C, use instances of this class to create [`OSLogEnumerator`](osloge
 ### Initializers
 - [init()](oslogstore/init.md)
 - [convenience init(scope: OSLogStore.Scope) throws](oslogstore/init(scope:).md)
+- [convenience init(URL: URL) throws](oslogstore/init(url:)-5nhb2.md)
 ### Enumerations
 - [OSLogStore.Scope](oslogstore/scope.md)
 

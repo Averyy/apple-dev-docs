@@ -8,6 +8,9 @@ A dictionary that describes an error chain item.
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
+- Mac Catalyst 9.3+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -7,6 +7,8 @@ The payload that configures privacy preferences.
 
 **Availability**:
 - macOS 10.14+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

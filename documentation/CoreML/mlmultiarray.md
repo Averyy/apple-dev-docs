@@ -89,6 +89,7 @@ The [`shape`](mlmultiarray/shape.md) property is an integer array that has an el
 - [var dataPointer: UnsafeMutableRawPointer](mlmultiarray/datapointer.md)
   A pointer to the multiarray’s underlying memory.
 ### Initializers
+- [init?(coder: NSCoder)](mlmultiarray/init(coder:).md)
 - [convenience init(concatenating: [MLMultiArray], axis: Int, dataType: MLMultiArrayDataType)](mlmultiarray/init(concatenating:axis:datatype:).md)
   Concatenate MLMultiArrays to form a new MLMultiArray.
 ### Default Implementations

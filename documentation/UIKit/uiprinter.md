@@ -27,7 +27,7 @@ Most of the time, you use a [`UIPrinterPickerController`](uiprinterpickercontrol
 ## Topics
 
 ### Creating a printer object
-- [init(url: URL)](uiprinter/init(url:).md)
+- [init(url: URL)](uiprinter/init(url:)-1mibn.md)
   Creates and returns a printer with the specified location.
 ### Getting the printer’s address
 - [var url: URL](uiprinter/url.md)
@@ -53,6 +53,8 @@ Most of the time, you use a [`UIPrinterPickerController`](uiprinterpickercontrol
 ### Constants
 - [UIPrinter.CutterBehavior](uiprinter/cutterbehavior.md)
   Constants that specify the cutter behavior of a roll-fed printer.
+### Initializers
+- [init(URL: URL)](uiprinter/init(url:)-80zxj.md)
 
 ## Relationships
 

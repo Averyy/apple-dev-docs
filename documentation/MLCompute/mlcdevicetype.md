@@ -48,7 +48,7 @@ enum MLCDeviceType
   Creates a device of the type you specify.
 - [convenience init?(type: MLCDeviceType, selectsMultipleComputeDevices: Bool)](mlcdevice/init(type:selectsmultiplecomputedevices:).md)
   Creates a device that you can configure to use multiple compute devices.
-- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:).md)
+- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:)-4mj85.md)
   Creates a device using the GPUs you specify.
 - [class func cpu() -> Self](mlcdevice/cpu.md)
   Creates a device that uses the CPU.

@@ -180,6 +180,8 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Migrate your code away from using these symbols.
+### Initializers
+- [init?(coder: NSCoder)](nsattributedstring/init(coder:).md)
 
 ## Relationships
 

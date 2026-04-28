@@ -31,6 +31,8 @@ class SFSafariWindow
 ### Instance Methods
 - [func close()](sfsafariwindow/close.md)
 - [func getAllTabs(completionHandler: ([SFSafariTab]) -> Void)](sfsafariwindow/getalltabs(completionhandler:).md)
+### Initializers
+- [init?(coder: NSCoder)](sfsafariwindow/init(coder:).md)
 
 ## Relationships
 

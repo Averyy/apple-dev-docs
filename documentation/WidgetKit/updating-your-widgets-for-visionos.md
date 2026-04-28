@@ -114,11 +114,13 @@ struct TotalCaffeineView: View {
 
 ## See Also
 
-- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
+- [func widgetTexture(WidgetTexture) -> some WidgetConfiguration
+](../SwiftUI/WidgetConfiguration/widgetTexture(_:).md)
   Specifies the widget texture for this widget.
 - [struct WidgetTexture](widgettexture.md)
   Values that define the texture of the widget’s coating layer.
-- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
+- [func supportedMountingStyles([WidgetMountingStyle]) -> some WidgetConfiguration
+](../SwiftUI/WidgetConfiguration/supportedMountingStyles(_:).md)
   Specifies the mounting style for this widget.
 - [struct WidgetMountingStyle](widgetmountingstyle.md)
   Values that define the widget’s supported mounting style.

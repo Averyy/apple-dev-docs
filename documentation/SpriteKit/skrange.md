@@ -44,6 +44,8 @@ You typically use a [`SKRange`](skrange.md) to clamp a value so that it is withi
   The minimum possible value.
 - [var upperLimit: CGFloat](skrange/upperlimit.md)
   The maximum possible value.
+### Initializers
+- [init?(coder: NSCoder)](skrange/init(coder:).md)
 
 ## Relationships
 

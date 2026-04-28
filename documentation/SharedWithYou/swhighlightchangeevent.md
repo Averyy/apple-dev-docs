@@ -34,6 +34,8 @@ class SWHighlightChangeEvent
   The type of change event for the highlight.
 - [enum SWHighlightChangeEventTrigger](swhighlightchangeeventtrigger.md)
   The type of change event for the highlight
+### Initializers
+- [init?(coder: NSCoder)](swhighlightchangeevent/init(coder:).md)
 
 ## Relationships
 

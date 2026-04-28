@@ -93,6 +93,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
   The policy for display of HDR display metadata on the rendered frame.
 - [AVVideoComposition.PerFrameHDRDisplayMetadataPolicy](avvideocomposition/perframehdrdisplaymetadatapolicy-swift.struct.md)
   A type that defines the policy for handling of per frame HDR metadata.
+### Initializers
+- [init(propertiesOfAsset: AVAsset)](avvideocomposition/init(propertiesofasset:).md)
 
 ## Relationships
 

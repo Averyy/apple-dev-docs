@@ -44,6 +44,8 @@ When this error occurs, the error instance can be interrogated to determine whic
   The object whose database row is using constraint values.
 - [var databaseSnapshot: [String : Any]?](nsconstraintconflict/databasesnapshot.md)
   The values currently stored in the database.
+### Initializers
+- [init(constraint: [String], databaseObject: NSManagedObject?, databaseSnapshot: [AnyHashable : Any]?, conflictingObjects: [NSManagedObject], conflictingSnapshots: [Any])](nsconstraintconflict/init(constraint:databaseobject:databasesnapshot:conflictingobjects:conflictingsnapshots:).md)
 
 ## Relationships
 

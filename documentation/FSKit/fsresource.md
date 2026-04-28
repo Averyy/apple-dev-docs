@@ -34,6 +34,8 @@ Some resources, like [`FSBlockDeviceResource`](fsblockdeviceresource.md), come i
   Revokes the resource.
 - [var isRevoked: Bool](fsresource/isrevoked.md)
   A Boolean value that indicates whether the resource is revoked.
+### Initializers
+- [init?(coder: NSCoder)](fsresource/init(coder:).md)
 
 ## Relationships
 

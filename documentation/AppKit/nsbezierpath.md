@@ -33,7 +33,7 @@ The current graphics context is automatically saved and restored for all drawing
   Creates and returns a new Bézier path object initialized with a rectangular path.
 - [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:).md)
+- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
 - [var flattened: NSBezierPath](nsbezierpath/flattened.md)
   A flattened version of the path object.
 - [var reversed: NSBezierPath](nsbezierpath/reversed.md)
@@ -168,6 +168,10 @@ The current graphics context is automatically saved and restored for all drawing
   Constants that specify the shape of endpoints for an open path when it is stroked.
 - [NSBezierPath.WindingRule](nsbezierpath/windingrule-swift.enum.md)
   Constants that specify the winding rule a Bézier path uses.
+### Initializers
+- [init(CGPath: CGPath)](nsbezierpath/init(cgpath:)-4nao7.md)
+- [init?(coder: NSCoder)](nsbezierpath/init(coder:).md)
+- [init(ovalInRect: NSRect)](nsbezierpath/init(ovalinrect:).md)
 
 ## Relationships
 

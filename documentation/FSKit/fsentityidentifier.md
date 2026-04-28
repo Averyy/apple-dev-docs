@@ -25,17 +25,22 @@ An [`FSEntityIdentifier`](fsentityidentifier.md) is a UUID to identify a contain
 ### Creating an entity identifier
 - [init()](fsentityidentifier/init.md)
   Creates an entity identifier with a random UUID.
-- [init(uuid: UUID)](fsentityidentifier/init(uuid:).md)
+- [init(uuid: UUID)](fsentityidentifier/init(uuid:)-9e20k.md)
   Creates an entity identifier with the given UUID.
-- [init(uuid: UUID, data: Data)](fsentityidentifier/init(uuid:data:).md)
+- [init(uuid: UUID, data: Data)](fsentityidentifier/init(uuid:data:)-8dixs.md)
   Creates an entity identifier with the given UUID and qualifier data.
-- [init(uuid: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:).md)
+- [init(uuid: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:)-9ty70.md)
   Creates an entity identifier with the given UUID and qualifier data as a 64-bit unsigned integer.
 ### Inspecting identifier properties
 - [var uuid: UUID](fsentityidentifier/uuid.md)
   A UUID to uniquely identify this entity.
 - [var qualifier: Data?](fsentityidentifier/qualifier.md)
   An optional piece of data to distinguish entities that otherwise share the same UUID.
+### Initializers
+- [init(UUID: UUID)](fsentityidentifier/init(uuid:)-1cibs.md)
+- [init(UUID: UUID, data: Data)](fsentityidentifier/init(uuid:data:)-1cpve.md)
+- [init(UUID: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:)-x26c.md)
+- [init?(coder: NSCoder)](fsentityidentifier/init(coder:).md)
 
 ## Relationships
 

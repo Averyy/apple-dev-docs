@@ -7,6 +7,8 @@ The payload that configures the system policy for assessments.
 
 **Availability**:
 - macOS 10.8+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

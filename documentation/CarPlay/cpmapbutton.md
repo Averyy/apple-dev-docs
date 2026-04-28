@@ -32,6 +32,8 @@ class CPMapButton
   A Boolean value that enables and disables the map button.
 - [var isHidden: Bool](cpmapbutton/ishidden.md)
   A Boolean value that hides and shows the map button.
+### Initializers
+- [init?(coder: NSCoder)](cpmapbutton/init(coder:).md)
 
 ## Relationships
 

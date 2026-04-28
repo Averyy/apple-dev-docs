@@ -41,7 +41,7 @@ This method creates a closed subpath by starting at the origin of `rect` and add
   Creates and returns a new Bézier path object with a rectangular path rounded at the specified corners.
 - [convenience init(arcCenter: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool)](uibezierpath/init(arccenter:radius:startangle:endangle:clockwise:).md)
   Creates and returns a new Bézier path object with an arc of a circle.
-- [convenience init(cgPath: CGPath)](uibezierpath/init(cgpath:).md)
+- [convenience init(cgPath: CGPath)](uibezierpath/init(cgpath:)-833n8.md)
   Creates and returns a new Bézier path object with the contents of a Core Graphics path.
 - [func reversing() -> UIBezierPath](uibezierpath/reversing.md)
   Creates and returns a new Bézier path object with the reversed contents of the current path.

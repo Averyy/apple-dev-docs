@@ -30,7 +30,7 @@ When performing media insertions, a movie interleaves media data from tracks in 
 ## Topics
 
 ### Creating a movie
-- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:).md)
+- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-8rnnj.md)
   Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?, error: ()) throws](avmutablemovie/init(data:options:error:).md)
   Creates a mutable movie object from a movie stored in a data object.
@@ -152,6 +152,11 @@ When performing media insertions, a movie interleaves media data from tracks in 
   A Boolean value that indicates whether at least one movie fragment extends the asset.
 - [var overallDurationHint: CMTime](avmutablemovie/overalldurationhint.md)
   The total duration of fragments that currently exist, or may exist in the future.
+### Initializers
+- [convenience init(URL: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-1scrb.md)
+- [init(URL: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-9is91.md)
+- [convenience init(settingsFromMovie: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrommovie:options:)-1soot.md)
+- [init(settingsFromMovie: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrommovie:options:)-6p8zv.md)
 
 ## Relationships
 

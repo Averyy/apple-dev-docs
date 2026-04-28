@@ -60,7 +60,7 @@ A new transition.
   Creates a transition where the new scene moves in, pushing the old scene out of the view.
 - [class func reveal(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](sktransition/reveal(with:duration:).md)
   Creates a transition where the old scene moves out of the view, revealing the new scene underneath it.
-- [init(ciFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:).md)
+- [init(ciFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:)-451za.md)
   Creates a transition that uses a Core Image filter to perform the transition.
 
 

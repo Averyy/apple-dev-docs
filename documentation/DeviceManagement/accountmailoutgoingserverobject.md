@@ -8,8 +8,11 @@ The settings for configuring an outgoing mail server.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

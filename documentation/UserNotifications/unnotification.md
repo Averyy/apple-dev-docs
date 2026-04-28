@@ -33,6 +33,8 @@ Don’t create notification objects directly. When handling notifications, the s
   The notification request containing the payload and trigger condition for the notification.
 - [var date: Date](unnotification/date.md)
   The delivery date of the notification.
+### Initializers
+- [init?(coder: NSCoder)](unnotification/init(coder:).md)
 
 ## Relationships
 

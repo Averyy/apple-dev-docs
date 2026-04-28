@@ -133,6 +133,7 @@ In a subclass, you must override all these methods. You must also override the p
   Sorts the receiver in ascending order, as determined by the comparison method specified by a given selector.
 ### Initializers
 - [init?(coder: NSCoder)](nsmutablearray/init(coder:).md)
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsmutablearray/init(objects:count:).md)
 ### Default Implementations
 - [NSMutableArray Implementations](nsmutablearray/nsmutablearray-implementations.md)
 

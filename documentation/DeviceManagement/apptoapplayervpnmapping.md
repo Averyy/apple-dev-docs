@@ -7,6 +7,8 @@ The payload that configures per-app VPN settings.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

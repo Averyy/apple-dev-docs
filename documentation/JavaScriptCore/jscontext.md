@@ -69,7 +69,7 @@ You create and use JavaScript contexts to evaluate JavaScript scripts from Objec
 - [init!(JSGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-9m51.md)
   Creates a JavaScript context object from the equivalent C representation.
 ### Initializers
-- [init!(jsGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:).md)
+- [init!(jsGlobalContextRef: JSGlobalContextRef!)](jscontext/init(jsglobalcontextref:)-1hstm.md)
 ### Default Implementations
 - [JSContext Implementations](jscontext/jscontext-implementations.md)
 

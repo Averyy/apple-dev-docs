@@ -62,7 +62,7 @@ When WidgetKit initially requests the timeline, the provider creates one with fo
 
 In addition to the `atEnd` and `never` refresh policies, a provider can specify a different date altogether if the timeline might change before or after reaching the end of the entries. For example, if a dragon will appear in 2 hours to challenge the character to a battle, the provider sets the reload policy to [`after(_:)`](timelinereloadpolicy/after(_:).md), passing a date 2 hours in the future. The following diagram shows how WidgetKit, after rendering the widget at the 2-hour mark, requests a new one.
 
-![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and WidgetKit requesting a new timeline after 2 hours](https://docs-assets.developer.apple.com/published/ea132444def661d2e9d65dd29ac18787/WidgetKit-Timeline-After-Date%402x.png)
+![A diagram showing WidgetKit requesting a timeline, the provider generating the timeline, and WidgetKit requesting a new timeline after 2 hours](https://docs-assets.developer.apple.com/published/9005db8df021afb5c939c9b2651997c0/WidgetKit-Timeline-After-Date%402x.png)
 
 Due to the battle with the dragon, the character’s healing will take 2 additional hours to reach 100 percent. The new timeline consists of two entries, one for the current time, and a second entry 2 hours in the future. The timeline specifies `atEnd` for the refresh policy, indicating there are no more known events that might alter the timeline.
 

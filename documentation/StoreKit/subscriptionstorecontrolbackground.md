@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration
@@ -23,13 +24,17 @@ struct SubscriptionStoreControlBackground
 
 ## See Also
 
-- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View](../SwiftUI/View/containerBackground(_:for:).md)
+- [func containerBackground<S>(S, for: ContainerBackgroundPlacement) -> some View
+](../SwiftUI/View/containerBackground(_:for:).md)
   Sets the container background of the enclosing container using a view.
-- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View](../SwiftUI/View/containerBackground(for:alignment:content:).md)
+- [func containerBackground<V>(for: ContainerBackgroundPlacement, alignment: Alignment, content: () -> V) -> some View
+](../SwiftUI/View/containerBackground(for:alignment:content:).md)
   Sets the container background of the enclosing container using a view.
-- [func subscriptionStoreControlBackground(some ShapeStyle) -> some View](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7jxa9.md)
+- [func subscriptionStoreControlBackground(some ShapeStyle) -> some View
+](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7jxa9.md)
   Set a shape style to use for the background of subscription store view controls within the view.
-- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7ev89.md)
+- [func subscriptionStoreControlBackground(SubscriptionStoreControlBackground) -> some View
+](../SwiftUI/View/subscriptionStoreControlBackground(_:)-7ev89.md)
   Set a standard effect to use for the background of subscription store view controls within the view.
 - [static var subscriptionStore: ContainerBackgroundPlacement](../SwiftUI/ContainerBackgroundPlacement/subscriptionStore.md)
   An automatic placement within a subscription store view, based on the view’s context.

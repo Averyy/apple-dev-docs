@@ -38,6 +38,9 @@ class Request
   A Boolean value indicating whether the generated thumbnail request should include icon decorations.
 - [QLThumbnailGenerator.Request.RepresentationTypes](qlthumbnailgenerator/request/representationtypes-swift.struct.md)
   The various types of thumbnails that you can request.
+### Initializers
+- [init?(coder: NSCoder)](qlthumbnailgenerator/request/init(coder:).md)
+- [init(fileAtURL: URL, size: CGSize, scale: CGFloat, representationTypes: QLThumbnailGenerator.Request.RepresentationTypes)](qlthumbnailgenerator/request/init(fileaturl:size:scale:representationtypes:).md)
 
 ## Relationships
 

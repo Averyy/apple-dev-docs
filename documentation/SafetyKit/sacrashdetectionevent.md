@@ -10,7 +10,7 @@ Describes the information about a vehicular crash.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - macOS 13.0+
-- watchOS 9.0+
+- watchOS 10.1+
 
 ## Declaration
 
@@ -33,6 +33,8 @@ When a vehicular crash occurs, SafetyKit calls your delegate’s [`crashDetectio
   The longitude and latitude where the crash detection occurred.
 - [var response: SACrashDetectionEvent.Response](sacrashdetectionevent/response-swift.property.md)
   An indication of whether the system attempted to call an Emergency SOS provider.
+### Initializers
+- [init?(coder: NSCoder)](sacrashdetectionevent/init(coder:).md)
 
 ## Relationships
 

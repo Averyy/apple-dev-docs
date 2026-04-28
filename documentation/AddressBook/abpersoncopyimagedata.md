@@ -45,7 +45,7 @@ The returned data is in a QuickTime-compatible format. To create an image from i
   Returns a search element object that specifies a query for records of this type.
 - [func ABPersonCreateWithVCardRepresentation(CFData!) -> Unmanaged<ABPersonRef>!](abpersoncreatewithvcardrepresentation(_:).md)
   Returns a new ABPerson object initialized with the given data in vCard format.
-- [func ABPersonSetImageData(ABRecord!, CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abpersonsetimagedata(_:_:_:).md)
+- [func ABPersonSetImageData(ABRecord!, CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abpersonsetimagedata(_:_:).md)
   Sets the image for this person to the given data.
 - [func ABSetMe(ABAddressBookRef!, ABPersonRef!)](absetme(_:_:).md)
   Sets the record that represents the logged-in user.

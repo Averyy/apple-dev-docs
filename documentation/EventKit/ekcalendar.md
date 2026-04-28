@@ -65,6 +65,8 @@ Use the properties in this class to get attributes about a calendar, such as its
   A deprecated function.
 - [func DATE_COMPONENTS_DO_NOT_USE()](date_components_do_not_use().md)
   A deprecated function.
+### Initializers
+- [init(forEntityType: EKEntityType, eventStore: EKEventStore)](ekcalendar/init(forentitytype:eventstore:).md)
 
 ## Relationships
 

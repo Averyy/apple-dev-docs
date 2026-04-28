@@ -8,6 +8,7 @@ A type that specifies the appearance and interaction of controls in the subscrip
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
@@ -143,9 +144,11 @@ SubscriptionStoreView(groupID: "SAMPLE")
 
 ## See Also
 
-- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
+- [func subscriptionStoreControlStyle(some SubscriptionStoreControlStyle) -> some View
+](../SwiftUI/View/subscriptionStoreControlStyle(_:).md)
   Sets the control style for subscription store views within a view.
-- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
+- [func subscriptionStoreControlStyle<S>(S, placement: S.Placement) -> some View
+](../SwiftUI/View/subscriptionStoreControlStyle(_:placement:).md)
   Sets the control style and control placement for subscription store views within a view.
 - [struct SubscriptionStoreControlStyleConfiguration](subscriptionstorecontrolstyleconfiguration.md)
   The properties of a subscription store control that includes the list of auto-renewable subscriptions to merchandise.

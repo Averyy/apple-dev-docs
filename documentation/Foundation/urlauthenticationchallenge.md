@@ -49,6 +49,8 @@ At the core of that authentication challenge is a *protection space* that define
 ### Legacy
 - [var sender: (any URLAuthenticationChallengeSender)?](urlauthenticationchallenge/sender.md)
   The sender of the challenge.
+### Initializers
+- [init?(coder: NSCoder)](urlauthenticationchallenge/init(coder:).md)
 
 ## Relationships
 

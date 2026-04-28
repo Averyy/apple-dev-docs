@@ -59,6 +59,8 @@ Categories can have associated actions, which define custom buttons the system d
   Options for how to handle notifications of this type.
 - [struct UNNotificationCategoryOptions](unnotificationcategoryoptions.md)
   Constants indicating how to handle notifications associated with this category.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationcategory/init(coder:).md)
 
 ## Relationships
 

@@ -28,6 +28,7 @@ This model is closely related to the [`FHIR Coding model`](https://developer.app
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](hkclinicalcoding/init(coder:).md)
 - [init(system: String, version: String?, code: String)](hkclinicalcoding/init(system:version:code:).md)
   Creates a clinical coding with the specified system, version, and code.
 ### Instance Properties

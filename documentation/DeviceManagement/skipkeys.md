@@ -8,9 +8,12 @@ The list of skip keys for setup panes.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - macOS 10.9+
 - tvOS 10.2+
 - visionOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

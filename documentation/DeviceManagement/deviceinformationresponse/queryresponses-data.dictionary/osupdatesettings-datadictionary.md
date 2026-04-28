@@ -7,6 +7,8 @@ The response dictionary that contains operating system update settings.
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

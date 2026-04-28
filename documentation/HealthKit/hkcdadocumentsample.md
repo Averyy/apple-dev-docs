@@ -48,6 +48,8 @@ The [`HKCDADocumentSample`](hkcdadocumentsample.md) class is a concrete subclass
   The key path for accessing the patient’s name inside a predicate format string.
 - [let HKPredicateKeyPathCDATitle: String](hkpredicatekeypathcdatitle.md)
   The key path for accessing the document’s title inside a predicate format string.
+### Initializers
+- [convenience init(data: Data, startDate: Date, endDate: Date, metadata: [String : Any]?) throws](hkcdadocumentsample/init(data:startdate:enddate:metadata:).md)
 
 ## Relationships
 

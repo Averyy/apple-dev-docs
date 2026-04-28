@@ -66,6 +66,8 @@ Property descriptions are editable until they are used by an object graph manage
   A Boolean value that indicates whether Core Data adds the property’s value to the Core Spotlight index.
 - [var isStoredInExternalRecord: Bool](nspropertydescription/isstoredinexternalrecord.md)
   A Boolean value that indicates whether to write the property’s data in an external record file that corresponds to the managed object.
+### Initializers
+- [init?(coder: NSCoder)](nspropertydescription/init(coder:).md)
 
 ## Relationships
 

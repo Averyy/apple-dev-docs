@@ -52,6 +52,8 @@ Typically, you create a [`UIPrintInfo`](uiprintinfo.md) object and assign it to 
   Constants that describe the output type, which is an indication of the type of content the app is drawing or providing.
 - [var printerID: String?](uiprintinfo/printerid.md)
   An identifier of the printer to use for the print job.
+### Initializers
+- [init()](uiprintinfo/init.md)
 
 ## Relationships
 

@@ -7,6 +7,8 @@ The command to verify the device’s Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

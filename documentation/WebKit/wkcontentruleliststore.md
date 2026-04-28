@@ -30,7 +30,7 @@ Fetch the default [`WKContentRuleListStore`](wkcontentruleliststore.md) object o
 ### Creating a Content Rule List Store
 - [class func `default`() -> Self!](wkcontentruleliststore/default.md)
   Returns the default content rule list store.
-- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:).md)
+- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:)-dile.md)
   Creates a new content rule list store in the specified directory.
 ### Creating and Deleting Content Rule Lists
 - [func compileContentRuleList(forIdentifier: String!, encodedContentRuleList: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](wkcontentruleliststore/compilecontentrulelist(foridentifier:encodedcontentrulelist:completionhandler:).md)
@@ -42,6 +42,8 @@ Fetch the default [`WKContentRuleListStore`](wkcontentruleliststore.md) object o
   Fetches the identifiers for all rule lists in the store asynchronously.
 - [func lookUpContentRuleList(forIdentifier: String!, completionHandler: ((WKContentRuleList?, (any Error)?) -> Void)!)](wkcontentruleliststore/lookupcontentrulelist(foridentifier:completionhandler:).md)
   Searches asynchronously for a specific rule list in the data store.
+### Initializers
+- [convenience init!(URL: URL!)](wkcontentruleliststore/init(url:)-7emmv.md)
 
 ## Relationships
 

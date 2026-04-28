@@ -31,6 +31,8 @@ class MXDiagnostic
   Returns the contents of the diagnostic in JSON format.
 - [func dictionaryRepresentation() -> [AnyHashable : Any]](mxdiagnostic/dictionaryrepresentation.md)
   Returns the contents of a diagnostic as a dictionary.
+### Initializers
+- [init?(coder: NSCoder)](mxdiagnostic/init(coder:).md)
 
 ## Relationships
 

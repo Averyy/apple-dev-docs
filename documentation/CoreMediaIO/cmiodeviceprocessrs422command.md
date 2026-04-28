@@ -4,6 +4,7 @@
 **Kind**: func
 
 **Availability**:
+- Mac Catalyst 13.0+
 - macOS 10.7+
 
 ## Declaration

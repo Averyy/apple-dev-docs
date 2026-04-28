@@ -29,6 +29,8 @@ class ZoneOptions
   The token that identifies the starting point for retrieving changes.
 - [var resultsLimit: Int](ckfetchrecordzonechangesoperation/zoneoptions/resultslimit.md)
   The maximum number of records to fetch from the record zone.
+### Initializers
+- [init?(coder: NSCoder)](ckfetchrecordzonechangesoperation/zoneoptions/init(coder:).md)
 
 ## Relationships
 

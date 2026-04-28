@@ -8,8 +8,11 @@ A response from the device after it processes the command to remove the passcode
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.1+
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

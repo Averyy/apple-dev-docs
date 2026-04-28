@@ -38,6 +38,8 @@ This class defines the portion of the map that the overlay covers. To draw the r
   The radius of the circular area, in meters.
 - [var boundingMapRect: MKMapRect](mkcircle/boundingmaprect.md)
   The bounding rectangle of the circular area.
+### Initializers
+- [convenience init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](mkcircle/init(centercoordinate:radius:).md)
 
 ## Relationships
 

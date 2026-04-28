@@ -39,6 +39,8 @@ Your app uses `CSSuggestion` objects to populate a contextual menu of suggestion
 - [func compare(CSSuggestion) -> ComparisonResult](cssuggestion/compare(_:).md)
   Compares the suggestion with a second specified suggestion.
 - [func compare(byRank: CSSuggestion) -> ComparisonResult](cssuggestion/compare(byrank:).md)
+### Initializers
+- [init?(coder: NSCoder)](cssuggestion/init(coder:).md)
 
 ## Relationships
 

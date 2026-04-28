@@ -40,6 +40,8 @@ Create and configure a fetch request, then call [`enumeratorForChangeHistoryFetc
   A Boolean value that indicates whether the fetch should return contact changes as unified contacts.
 - [var startingToken: Data?](cnchangehistoryfetchrequest/startingtoken.md)
   An opaque token that indicates a point in history in the user’s Contacts database.
+### Initializers
+- [init?(coder: NSCoder)](cnchangehistoryfetchrequest/init(coder:).md)
 
 ## Relationships
 

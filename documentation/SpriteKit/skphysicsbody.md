@@ -152,6 +152,15 @@ For a volume-based body, you can dynamically control how the body is affected by
   Pin a node so it’s free to rotate about a certain point on its parent node.
 - [var pinned: Bool](skphysicsbody/pinned.md)
   A Boolean value that indicates whether the physics body’s node is pinned to its parent node.
+### Initializers
+- [init?(coder: NSCoder)](skphysicsbody/init(coder:).md)
+- [init(edgeChainFromPath: CGPath)](skphysicsbody/init(edgechainfrompath:).md)
+- [init(edgeFromPoint: CGPoint, toPoint: CGPoint)](skphysicsbody/init(edgefrompoint:topoint:).md)
+- [init(edgeLoopFromPath: CGPath)](skphysicsbody/init(edgeloopfrompath:).md)
+- [init(edgeLoopFromRect: CGRect)](skphysicsbody/init(edgeloopfromrect:).md)
+- [init(polygonFromPath: CGPath)](skphysicsbody/init(polygonfrompath:).md)
+- [init(rectangleOfSize: CGSize)](skphysicsbody/init(rectangleofsize:).md)
+- [init(rectangleOfSize: CGSize, center: CGPoint)](skphysicsbody/init(rectangleofsize:center:).md)
 
 ## Relationships
 

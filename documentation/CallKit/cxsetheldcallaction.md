@@ -36,6 +36,8 @@ When the user or the system places a call on hold, the provider sends [`provider
 ### Accessing Action Information
 - [var isOnHold: Bool](cxsetheldcallaction/isonhold.md)
   A Boolean value that indicates whether the call is placed on hold.
+### Initializers
+- [init(callUUID: UUID, onHold: Bool)](cxsetheldcallaction/init(calluuid:onhold:).md)
 
 ## Relationships
 

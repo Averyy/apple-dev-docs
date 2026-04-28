@@ -33,7 +33,7 @@ Your handler’s [`addNotification(_:alertingContext:)`](notificationsforwarding
 
 Your accessory receives the encrypted notification data and implements [`HPKE (RFC9180)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/rfc9180/) decryption to parse the notification details. Use [`AlertingContext`](alertingcontext.md) to determine whether to send an alert for the notification. The [`shouldAlert`](alertingcontext/shouldalert.md) property provides the recommended behavior that matches the system’s alerting logic.
 
-For incoming call notifications, check [`isIncomingCall`](alertingcontext/isincomingcall.md) to apply special handling. Use [`sound`](alertingcontext/sound-swift.property.md) to determine sound characteristics, including whether the notification ignores silent mode.
+For incoming call notifications, check `AlertingContext/isIncomingCall` to apply special handling. Use [`sound`](alertingcontext/sound-swift.property.md) to determine sound characteristics, including whether the notification ignores silent mode.
 
 ## Topics
 

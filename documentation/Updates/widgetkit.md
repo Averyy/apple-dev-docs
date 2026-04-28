@@ -12,7 +12,7 @@ Browse notable changes in [`WidgetKit`](https://developer.apple.com/documentatio
 
 ##### General
 
-- Support Liquid Glass by using the [`WidgetAccentedRenderingMode`](https://developer.apple.com/documentation/WidgetKit/WidgetAccentedRenderingMode).
+- Support Liquid Glass by using the doc://com.apple.documentation/documentation/widgetkit/widgetaccentedrenderingmode.
 - Use WidgetKit push notifications to request timeline reloads from the system by registering a [`WidgetPushHandler`](https://developer.apple.com/documentation/WidgetKit/WidgetPushHandler).
 - Update your [`WidgetFamily.systemSmall`](https://developer.apple.com/documentation/WidgetKit/WidgetFamily/systemSmall) widget to make sure it appears correctly in CarPlay.
 - Create controls that use [`ControlWidgetButton`](https://developer.apple.com/documentation/WidgetKit/ControlWidgetButton) to execute an action and [`ControlWidgetToggle`](https://developer.apple.com/documentation/WidgetKit/ControlWidgetToggle) to toggle some state in your app in watchOS and macOS.

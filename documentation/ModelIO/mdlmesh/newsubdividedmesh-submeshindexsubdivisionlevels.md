@@ -29,7 +29,7 @@ Surface subdivision creates a smooth mesh from a coarse mesh by splitting each p
 
 > **Note**:  The computational cost of subdivision increases exponentially with subdivision level. Depending on the arrangement of the original mesh and the device on which a mesh is to be rendered, using a subdivision level greater than 4 may result in more detail than would be visible when rendering.
 
-Meshes intended for use with surface subdivision contain topology information to ensure that the results of subdivision match the artist’s intent. To make use of this information, use the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md) initializer when creating an [`MDLAsset`](mdlasset.md) object to load meshes from.
+Meshes intended for use with surface subdivision contain topology information to ensure that the results of subdivision match the artist’s intent. To make use of this information, use the [`init(url:vertexDescriptor:bufferAllocator:preserveTopology:error:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-510xi.md) initializer when creating an [`MDLAsset`](mdlasset.md) object to load meshes from.
 
 ## Parameters
 

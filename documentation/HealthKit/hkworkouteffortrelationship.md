@@ -19,6 +19,8 @@ class HKWorkoutEffortRelationship
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](hkworkouteffortrelationship/init(coder:).md)
 ### Instance Properties
 - [var activity: HKWorkoutActivity?](hkworkouteffortrelationship/activity.md)
 - [var samples: [HKSample]?](hkworkouteffortrelationship/samples.md)

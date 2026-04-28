@@ -8,6 +8,7 @@ A key that specifies the codec defined by the AES3-2003 standard, and uses no fl
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 13.0+
 - macOS 10.16+
 - tvOS 9.0+
 - visionOS 1.0+

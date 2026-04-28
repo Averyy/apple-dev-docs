@@ -21,10 +21,12 @@ class ASAuthorizationProviderExtensionAuthorizationResult
 ## Topics
 
 ### Initializers
-- [init(httpAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:).md)
+- [init(httpAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:)-ywja.md)
   Initializes an authorization with tokens stored in HTTP headers.
-- [init(httpResponse: HTTPURLResponse, httpBody: Data?)](asauthorizationproviderextensionauthorizationresult/init(httpresponse:httpbody:).md)
+- [init(httpResponse: HTTPURLResponse, httpBody: Data?)](asauthorizationproviderextensionauthorizationresult/init(httpresponse:httpbody:)-2j92m.md)
   Initializes an authorization with a HTTP response and body.
+- [init(HTTPAuthorizationHeaders: [String : String])](asauthorizationproviderextensionauthorizationresult/init(httpauthorizationheaders:)-932pm.md)
+- [init(HTTPResponse: HTTPURLResponse, httpBody: Data?)](asauthorizationproviderextensionauthorizationresult/init(httpresponse:httpbody:)-48yla.md)
 ### Instance Properties
 - [var httpAuthorizationHeaders: [String : String]?](asauthorizationproviderextensionauthorizationresult/httpauthorizationheaders.md)
   A dictionary of authorization HTTP headers.

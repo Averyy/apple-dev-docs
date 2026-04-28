@@ -7,6 +7,7 @@ The request body you use to invalidate a merchant token.
 
 **Availability**:
 - App Store Connect API 1.0+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Declaration
 

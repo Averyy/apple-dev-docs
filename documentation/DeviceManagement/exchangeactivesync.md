@@ -8,7 +8,10 @@ The payload that configures Exchange ActiveSync accounts.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

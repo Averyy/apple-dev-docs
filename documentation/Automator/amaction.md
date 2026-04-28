@@ -76,6 +76,8 @@ Subclassing [`AMAction`](amaction.md) is not recommended. For most situations re
 ### Performing Cleanup Operations
 - [func closed()](amaction/closed.md)
   Invoked by Automator when the receiving action is removed from a workflow, allowing it to perform cleanup operations.
+### Initializers
+- [init(contentsOfURL: URL) throws](amaction/init(contentsofurl:).md)
 
 ## Relationships
 

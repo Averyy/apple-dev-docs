@@ -21,13 +21,15 @@ This exposes a directory from the host file system to the guest.
 ## Topics
 
 ### Creating a Shared Directory
-- [init(url: URL, readOnly: Bool)](vzshareddirectory/init(url:readonly:).md)
+- [init(url: URL, readOnly: Bool)](vzshareddirectory/init(url:readonly:)-8j5z.md)
   Initialize with a host directory.
 ### Accessing Directory Properties
 - [var url: URL](vzshareddirectory/url.md)
   A file URL to a directory on the host system to expose to the guest.
 - [var isReadOnly: Bool](vzshareddirectory/isreadonly.md)
   A Boolean value that indicates whether the directory is read-only to the guest.
+### Initializers
+- [init(URL: URL, readOnly: Bool)](vzshareddirectory/init(url:readonly:)-7xt6q.md)
 
 ## Relationships
 

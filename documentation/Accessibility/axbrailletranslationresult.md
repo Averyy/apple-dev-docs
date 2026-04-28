@@ -22,6 +22,8 @@ class AXBrailleTranslationResult
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](axbrailletranslationresult/init(coder:).md)
 ### Instance Properties
 - [var resultString: String](axbrailletranslationresult/resultstring.md)
   The resulting string after translation or back-translation.

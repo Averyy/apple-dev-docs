@@ -27,6 +27,8 @@ class MXAverage<UnitType> where UnitType : Unit
   The number of samples used to calculate the average.
 - [var standardDeviation: Double](mxaverage/standarddeviation.md)
   The standard deviation of the distribution of values used to calculate the average.
+### Initializers
+- [init?(coder: NSCoder)](mxaverage/init(coder:).md)
 
 ## Relationships
 

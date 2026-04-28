@@ -8,6 +8,7 @@ Sets the order and visibility of all the promoted products and saves your change
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

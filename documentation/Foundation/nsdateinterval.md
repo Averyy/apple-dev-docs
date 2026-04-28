@@ -63,6 +63,9 @@ You can use the [`DateIntervalFormatter`](dateintervalformatter.md) class to cre
 ### Determining Whether a Date Occurs Within a Date Interval
 - [func contains(Date) -> Bool](nsdateinterval/contains(_:).md)
   Indicates whether the receiver contains the specified date.
+### Initializers
+- [init(startDate: Date, duration: TimeInterval)](nsdateinterval/init(startdate:duration:).md)
+- [convenience init(startDate: Date, endDate: Date)](nsdateinterval/init(startdate:enddate:).md)
 
 ## Relationships
 

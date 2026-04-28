@@ -76,6 +76,8 @@ In addition to managing local files, the system also uses this class to manage c
   Options for adding a new file version.
 - [NSFileVersion.ReplacingOptions](nsfileversion/replacingoptions.md)
   Options for replacing a file version.
+### Initializers
+- [init?(ofItemAtURL: URL, forPersistentIdentifier: Any)](nsfileversion/init(ofitematurl:forpersistentidentifier:).md)
 ### Instance Properties
 - [var hasLocalContents: Bool](nsfileversion/haslocalcontents.md)
 - [var hasThumbnail: Bool](nsfileversion/hasthumbnail.md)

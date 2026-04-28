@@ -8,6 +8,7 @@ Resets any pre-rendered views the system has from the timeline.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - watchOS 8.0+
 
 ## Declaration

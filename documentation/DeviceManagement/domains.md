@@ -8,8 +8,11 @@ The payload that configures the domains under an organization’s management.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - visionOS 2.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

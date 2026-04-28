@@ -8,6 +8,7 @@ The type of policy, such as the terms of service or privacy policies.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
@@ -39,13 +40,17 @@ To set the destination of a policy button in a [`SubscriptionStoreView`](subscri
 
 ## See Also
 
-- [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View](../SwiftUI/View/subscriptionStorePolicyDestination(for:destination:).md)
+- [func subscriptionStorePolicyDestination(for: SubscriptionStorePolicyKind, destination: () -> some View) -> some View
+](../SwiftUI/View/subscriptionStorePolicyDestination(for:destination:).md)
   Configures a view as the destination for a policy button action in subscription store views.
-- [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View](../SwiftUI/View/subscriptionStorePolicyDestination(url:for:).md)
+- [func subscriptionStorePolicyDestination(url: URL, for: SubscriptionStorePolicyKind) -> some View
+](../SwiftUI/View/subscriptionStorePolicyDestination(url:for:).md)
   Configures a URL as the destination for a policy button action in subscription store views.
-- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:).md)
+- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle) -> some View
+](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:).md)
   Sets the style for the terms of service and privacy policy buttons within a subscription store view.
-- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:_:).md)
+- [func subscriptionStorePolicyForegroundStyle(some ShapeStyle, some ShapeStyle) -> some View
+](../SwiftUI/View/subscriptionStorePolicyForegroundStyle(_:_:).md)
   Sets the primary and secondary style for the terms of service and privacy policy buttons within a subscription store view.
 
 

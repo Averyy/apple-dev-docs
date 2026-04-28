@@ -445,6 +445,8 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 ### Deprecated
 - [init(itemContentType: String)](cssearchableitemattributeset/init(itemcontenttype:).md)
   Creates an attribute set for the specified content type.
+### Initializers
+- [init?(coder: NSCoder)](cssearchableitemattributeset/init(coder:).md)
 
 ## Relationships
 

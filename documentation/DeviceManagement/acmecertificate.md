@@ -8,10 +8,13 @@ The payload that configures Automated Certificate Management Environment (ACME) 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.1+
 - tvOS 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -17,6 +17,8 @@ class CPNowPlayingMode
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](cpnowplayingmode/init(coder:).md)
 ### Type Properties
 - [class var `default`: CPNowPlayingMode](cpnowplayingmode/default.md)
   The default now playing mode. While this mode is active, your app will display now playing metadata as donated to the shared system now playing info center.

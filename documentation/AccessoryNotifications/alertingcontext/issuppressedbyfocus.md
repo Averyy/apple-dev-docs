@@ -12,7 +12,7 @@ A Boolean value that indicates whether the device’s Focus state suppresses not
 ## Declaration
 
 ```swift
-var isSuppressedByFocus: Bool
+var isSuppressedByFocus: Bool { get }
 ```
 
 #### Discussion

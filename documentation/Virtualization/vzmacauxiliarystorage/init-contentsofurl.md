@@ -24,7 +24,7 @@ Use this initializer to load the data from an auxiliary storage object stored on
 
 ## See Also
 
-- [init(url: URL)](vzmacauxiliarystorage/init(url:).md)
+- [init(url: URL)](vzmacauxiliarystorage/init(url:)-68cz.md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
 - [init(creatingStorageAt: URL, hardwareModel: VZMacHardwareModel, options: VZMacAuxiliaryStorage.InitializationOptions) throws](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md)
   Creates an initialized Mac auxiliary storage instance that describes a specific hardware model at a URL you specify.

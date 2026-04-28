@@ -10,6 +10,12 @@ App Store Server Notifications has two versions of notifications. Version 1 noti
 
 To set up your server to receive notifications, see [`Enabling App Store Server Notifications`](enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
+##### April 27 2026
+
+**New features**
+
+- Added the following fields to support monthly subscriptions with a 12-month commitment: [`TransactionCommitmentInfo`](transactioncommitmentinfo.md) and [`billingPlanType`](billingplantype.md) in [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md); [`RenewalCommitmentInfo`](renewalcommitmentinfo.md) and [`renewalBillingPlanType`](renewalbillingplantype.md) in [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
+
 ##### December 10 2025
 
 **New features**

@@ -8,6 +8,7 @@ Returns the cellular network subscribers.
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
+- Mac Catalyst 12.1+
 
 ## Declaration
 

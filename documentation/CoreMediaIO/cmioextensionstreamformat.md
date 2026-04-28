@@ -30,6 +30,8 @@ class CMIOExtensionStreamFormat
 ### Accessing the Format Description
 - [var formatDescription: CMFormatDescription](cmioextensionstreamformat/formatdescription.md)
   A description of the format of the stream’s media samples.
+### Initializers
+- [init?(coder: NSCoder)](cmioextensionstreamformat/init(coder:).md)
 
 ## Relationships
 

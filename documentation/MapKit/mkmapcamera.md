@@ -46,6 +46,11 @@ After creating an instance of this class, configure it with the desired attribut
   The viewing angle of the camera, in degrees.
 - [var altitude: CLLocationDistance](mkmapcamera/altitude.md)
   The altitude above the ground, in meters.
+### Initializers
+- [init?(coder: NSCoder)](mkmapcamera/init(coder:).md)
+- [convenience init(lookingAtCenterCoordinate: CLLocationCoordinate2D, fromDistance: CLLocationDistance, pitch: CGFloat, heading: CLLocationDirection)](mkmapcamera/init(lookingatcentercoordinate:fromdistance:pitch:heading:).md)
+- [convenience init(lookingAtCenterCoordinate: CLLocationCoordinate2D, fromEyeCoordinate: CLLocationCoordinate2D, eyeAltitude: CLLocationDistance)](mkmapcamera/init(lookingatcentercoordinate:fromeyecoordinate:eyealtitude:).md)
+- [convenience init(lookingAtMapItem: MKMapItem, forViewSize: CGSize, allowPitch: Bool)](mkmapcamera/init(lookingatmapitem:forviewsize:allowpitch:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ No NFC reader RF field is present.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

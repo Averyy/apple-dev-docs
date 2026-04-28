@@ -8,6 +8,7 @@ Activate the current credential in Wired mode to enter Card Emulation mode.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -20,6 +20,7 @@ class CPImageOverlay
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpimageoverlay/init(coder:).md)
 - [init(image: UIImage, alignment: CPImageOverlay.Alignment)](cpimageoverlay/init(image:alignment:).md)
   Initialize an overlay with a UIImage.
 - [init(text: String, textColor: UIColor, backgroundColor: UIColor, alignment: CPImageOverlay.Alignment)](cpimageoverlay/init(text:textcolor:backgroundcolor:alignment:).md)

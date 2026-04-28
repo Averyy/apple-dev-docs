@@ -7,6 +7,8 @@ The client’s declarative packages.
 
 **Availability**:
 - macOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

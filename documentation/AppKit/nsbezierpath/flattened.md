@@ -27,7 +27,7 @@ Flattening a path converts all curved line segments into straight line approxima
   Creates and returns a new Bézier path object initialized with a rectangular path.
 - [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:).md)
+- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
 - [var reversed: NSBezierPath](nsbezierpath/reversed.md)
   A path containing the reversed contents of the current path object.
 

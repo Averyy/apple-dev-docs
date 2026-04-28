@@ -38,6 +38,8 @@ You use query items with the [`queryItems`](nsurlcomponents/queryitems.md) prope
   The name of the query item.
 - [var value: String?](nsurlqueryitem/value.md)
   The value for the query item.
+### Initializers
+- [init?(coder: NSCoder)](nsurlqueryitem/init(coder:).md)
 
 ## Relationships
 

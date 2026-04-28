@@ -26,6 +26,8 @@ An `MPSGraphExecutable` is a compiled graph for specific feeds for specific targ
 ## Topics
 
 ### Initializers
+- [init(MPSGraphPackageAtURL: URL, compilationDescriptor: MPSGraphCompilationDescriptor?)](mpsgraphexecutable/init(mpsgraphpackageaturl:compilationdescriptor:).md)
+- [init(coreMLPackageAtURL: URL, compilationDescriptor: MPSGraphCompilationDescriptor?)](mpsgraphexecutable/init(coremlpackageaturl:compilationdescriptor:).md)
 - [init(coreMLPackageAtURL: URL, descriptor: MPSGraphCompilationDescriptor?)](mpsgraphexecutable/init(coremlpackageaturl:descriptor:).md)
   Initialize the executable with the Core ML model package at the provided URL.
 - [init(package: URL, descriptor: MPSGraphCompilationDescriptor?)](mpsgraphexecutable/init(package:descriptor:).md)

@@ -27,7 +27,7 @@ The `forcedReadOnly` parameter affects how framework exposes the NBD client to t
 
 ## See Also
 
-- [convenience init(url: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:).md)
+- [convenience init(url: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:)-6q4m7.md)
   Creates a new network block device (NBD) storage attachment from an NDB Uniform Resource Indicator (URI) represented as a URL that you provide.
 
 

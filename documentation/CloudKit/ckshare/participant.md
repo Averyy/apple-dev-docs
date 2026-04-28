@@ -60,6 +60,8 @@ Participants with write permissions can modify or delete any record that you inc
 ### Deprecated
 - [Deprecated Symbols](participant-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Initializers
+- [init?(coder: NSCoder)](ckshare/participant/init(coder:).md)
 ### Instance Properties
 - [var dateAddedToShare: Date?](ckshare/participant/dateaddedtoshare.md)
   The date and time when an originator or administrator added this participant to the share.

@@ -20,6 +20,7 @@ class ARQuickLookPreviewItem
 ### Initializers
 - [init(fileAt: URL)](arquicklookpreviewitem/init(fileat:).md)
   Creates an object representing the 3D content that will be previewed in AR Quick Look.
+- [init(fileAtURL: URL)](arquicklookpreviewitem/init(fileaturl:).md)
 ### Instance Properties
 - [var allowsContentScaling: Bool](arquicklookpreviewitem/allowscontentscaling.md)
   Whether or not AR Quick Look allows content scaling in AR mode. Defaults to `YES` which allows scaling content in AR mode.

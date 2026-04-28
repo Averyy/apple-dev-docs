@@ -31,6 +31,7 @@ object JWSRenewalInfoDecodedPayload
 - `autoRenewProductId` (autoRenewProductId): The product identifier of the product that renews at the next billing period.
 - `autoRenewStatus` (autoRenewStatus): The renewal status of the auto-renewable subscription.
 - `currency` (currency): The currency code for the `renewalPrice` of the subscription.
+- `commitmentInfo` (RenewalCommitmentInfo)
 - `eligibleWinBackOfferIds` (eligibleWinBackOfferIds): The list of win-back offer IDs that the customer is eligible for.
 - `environment` (environment): The server environment, either sandbox or production.
 - `expirationIntent` (expirationIntent): The reason the subscription expired.
@@ -44,6 +45,7 @@ object JWSRenewalInfoDecodedPayload
 - `priceIncreaseStatus` (priceIncreaseStatus): The status that indicates whether the auto-renewable subscription is subject to a price increase.
 - `productId` (productId): The product identifier of the In-App Purchase.
 - `recentSubscriptionStartDate` (recentSubscriptionStartDate): The earliest start date of the auto-renewable subscription in a series of subscription purchases that ignores all lapses of paid service that are 60 days or fewer.
+- `renewalBillingPlanType` (renewalBillingPlanType)
 - `renewalDate` (renewalDate): The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
 - `renewalPrice` (renewalPrice): The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.

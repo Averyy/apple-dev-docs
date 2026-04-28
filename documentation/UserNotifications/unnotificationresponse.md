@@ -40,6 +40,8 @@ For more information about responding to actions, see [`Handling notifications a
   An action that indicates the user opened the app from the notification interface.
 - [let UNNotificationDismissActionIdentifier: String](unnotificationdismissactionidentifier.md)
   The action that indicates the user explicitly dismissed the notification interface.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationresponse/init(coder:).md)
 
 ## Relationships
 

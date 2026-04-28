@@ -8,6 +8,7 @@ A content blocker or Safari app extension error.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - visionOS 1.0+
 
 ## Declaration

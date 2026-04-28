@@ -25,6 +25,8 @@ class MEMessageSigner
   A string that the message’s headers use to display the message signer.
 - [var context: Data](memessagesigner/context.md)
   Data related to the message signature, such as the signing certificate.
+### Initializers
+- [init?(coder: NSCoder)](memessagesigner/init(coder:).md)
 
 ## Relationships
 

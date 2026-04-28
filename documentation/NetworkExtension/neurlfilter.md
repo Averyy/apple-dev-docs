@@ -10,6 +10,9 @@ A class used to voluntarily validate URLs for apps that don’t use WebKit or th
 - iPadOS 19.0+
 - Mac Catalyst 19.0+
 - macOS 16.0+
+- tvOS ?+
+- visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

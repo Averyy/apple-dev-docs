@@ -21,7 +21,7 @@ A string constant that identifies the social networking site, Twitter.
 
 ## See Also
 
-- [init!(forServiceType: String!, requestMethod: SLRequestMethod, url: URL!, parameters: [AnyHashable : Any]!)](slrequest/init(forservicetype:requestmethod:url:parameters:).md)
+- [init!(forServiceType: String!, requestMethod: SLRequestMethod, url: URL!, parameters: [AnyHashable : Any]!)](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md)
   Initializes a newly created request object with the specified properties.
 - [let SLServiceTypeFacebook: String](slservicetypefacebook.md)
 - [let SLServiceTypeSinaWeibo: String](slservicetypesinaweibo.md)

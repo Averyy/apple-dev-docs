@@ -41,6 +41,8 @@ For more information on Entity-Component architecture, read [`Entities and Compo
 ### Instance Methods
 - [func component<ComponentType>(ofType: ComponentType.Type) -> ComponentType?](gkentity/component(oftype:).md)
 - [func removeComponent<ComponentType>(ofType: ComponentType.Type)](gkentity/removecomponent(oftype:).md)
+### Initializers
+- [init?(coder: NSCoder)](gkentity/init(coder:).md)
 
 ## Relationships
 

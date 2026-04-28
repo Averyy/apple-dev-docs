@@ -51,6 +51,8 @@ If `type` is:
   An array of image sizes a model’s image feature accepts as input or produces as output.
 - [class MLImageSize](mlimagesize.md)
   The width and height of an image feature size.
+### Initializers
+- [init?(coder: NSCoder)](mlimagesizeconstraint/init(coder:).md)
 
 ## Relationships
 

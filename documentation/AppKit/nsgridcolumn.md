@@ -28,6 +28,8 @@ class NSGridColumn
 ### Instance Methods
 - [func cell(at: Int) -> NSGridCell](nsgridcolumn/cell(at:).md)
 - [func mergeCells(in: NSRange)](nsgridcolumn/mergecells(in:).md)
+### Initializers
+- [init?(coder: NSCoder)](nsgridcolumn/init(coder:).md)
 
 ## Relationships
 

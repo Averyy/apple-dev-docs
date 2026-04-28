@@ -23,7 +23,7 @@ Create an [`SNClassifySoundRequest`](snclassifysoundrequest.md) with a custom so
 
 1. Add a sound classifier’s [`Core ML`](https://developer.apple.com/documentation/CoreML) model file to your project (see [`Integrating a Core ML Model into Your App`](https://developer.apple.com/documentation/CoreML/integrating-a-core-ml-model-into-your-app)).
 2. Create an instance of the model’s wrapper class. Xcode automatically generates a class with the same name (minus the `mlmodel` extension).
-3. Pass the instance’s `model` property to the [`init(mlModel:)`](snclassifysoundrequest/init(mlmodel:).md) initializer.
+3. Pass the instance’s `model` property to the [`init(mlModel:)`](snclassifysoundrequest/init(mlmodel:)-6rmee.md) initializer.
 
 ```swift
 // Use a default model configuration.
@@ -87,7 +87,7 @@ The observer in this example prints the prediction’s result — a timestamp, 
 
 ##### Create an Audio File Analyzer
 
-Analyze an audio file by creating an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](snaudiofileanalyzer/init(url:).md) initializer.
+Analyze an audio file by creating an [`SNAudioFileAnalyzer`](snaudiofileanalyzer.md) and passing a URL to an audio file to the [`init(url:)`](snaudiofileanalyzer/init(url:)-336no.md) initializer.
 
 ```swift
 /// Creates an analyzer for an audio file.

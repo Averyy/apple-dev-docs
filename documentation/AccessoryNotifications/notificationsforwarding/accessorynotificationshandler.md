@@ -21,9 +21,6 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 
 ## Topics
 
-### Managing the session lifecycle
-- [func activate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/activate(for:).md)
-  Establishes a notification session for communication between the extension and the system.
 ### Receiving notifications
 - [func addNotification(AccessoryNotification, alertingContext: AlertingContext) async throws -> Bool](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md)
   Provides a new notification for display on your accessory.
@@ -38,6 +35,11 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 ### Receiving accessory messages
 - [func messageHandler(TransportMessage)](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md)
   Handles decrypted messages received from the paired accessory.
+### Instance Methods
+- [func didActivate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md)
+  Called when a notification session has been established.
+- [func didInvalidate()](notificationsforwarding/accessorynotificationshandler/didinvalidate.md)
+  Called when the notification session has ended.
 
 ## Relationships
 

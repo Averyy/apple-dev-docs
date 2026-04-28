@@ -30,6 +30,8 @@ class CPInformationItem
   The text that the template displays as the item’s title.
 - [var detail: String?](cpinformationitem/detail.md)
   The text that the template displays below or beside the item’s title.
+### Initializers
+- [init?(coder: NSCoder)](cpinformationitem/init(coder:).md)
 
 ## Relationships
 

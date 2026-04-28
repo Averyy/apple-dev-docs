@@ -7,6 +7,8 @@ The Migration Assistant migration status.
 
 **Availability**:
 - macOS 26.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

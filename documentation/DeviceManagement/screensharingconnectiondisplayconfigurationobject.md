@@ -7,6 +7,8 @@ The display configuration for this connection.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

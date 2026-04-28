@@ -24,6 +24,8 @@ class ILCommunication
   The email address or phone number of the sender.
 - [var dateReceived: Date](ilcommunication/datereceived.md)
   The date and time when the system received the message.
+### Initializers
+- [init?(coder: NSCoder)](ilcommunication/init(coder:).md)
 
 ## Relationships
 

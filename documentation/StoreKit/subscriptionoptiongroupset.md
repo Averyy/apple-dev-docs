@@ -8,6 +8,7 @@ A set of groups of subscription options that include optional views for labels a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -26,7 +27,8 @@ A set of groups of subscription options that include optional views for labels a
 - [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label)](subscriptionoptiongroupset/init(idtype:groupedby:label:).md)
 - [init(idType: GroupID.Type, groupedBy: (Product) -> GroupID, label: (GroupID) -> Label, marketingContent: (GroupID) -> MarketingContent)](subscriptionoptiongroupset/init(idtype:groupedby:label:marketingcontent:).md)
 ### Creating the group style
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 
 ## Relationships

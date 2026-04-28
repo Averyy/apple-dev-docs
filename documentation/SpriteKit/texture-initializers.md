@@ -34,7 +34,7 @@ In addition to the [`Texture Initializers`](texture-initializers.md) in `SKTextu
 ### Texture from Image
 - [convenience init(image: UIImage)](sktexture/init(image:).md)
   Create a new texture object from an image object.
-- [convenience init(cgImage: CGImage)](sktexture/init(cgimage:).md)
+- [convenience init(cgImage: CGImage)](sktexture/init(cgimage:)-27ovb.md)
   Create a new texture object from a Quartz 2D image.
 ### Texture with Effects
 - [func applying(CIFilter) -> Self](sktexture/applying(_:).md)

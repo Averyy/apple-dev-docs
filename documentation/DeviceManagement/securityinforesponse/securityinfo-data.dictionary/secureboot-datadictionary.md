@@ -7,6 +7,8 @@ The response object for the secure boot settings.
 
 **Availability**:
 - macOS 10.15+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

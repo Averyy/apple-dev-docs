@@ -94,6 +94,7 @@ SceneKit provides several ways to introduce geometry objects to your app:
 - [var tessellator: SCNGeometryTessellator?](scngeometry/tessellator.md)
 - [class SCNGeometryTessellator](scngeometrytessellator.md)
 ### Initializers
+- [init?(coder: NSCoder)](scngeometry/init(coder:).md)
 - [convenience init(sources: [SCNGeometrySource], elements: [SCNGeometryElement]?, sourceChannels: [NSNumber]?)](scngeometry/init(sources:elements:sourcechannels:).md)
 ### Instance Properties
 - [var geometrySourceChannels: [NSNumber]?](scngeometry/geometrysourcechannels.md)

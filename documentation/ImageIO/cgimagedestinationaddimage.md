@@ -28,7 +28,7 @@ The function logs an error if you add more images than what you specified when y
 
 - `idst`: The image destination to modify.
 - `image`: The image to add.
-- `properties`: An optional dictionary that specifies the properties of the added image. Specify `NULL` to omit any additional properties. For a list of possible values, see [`Image Properties`](image-properties.md) and [`Configuring the Image Behaviors`](cgimagedestination#Configuring-the-Image-Behaviors.md).
+- `properties`: An optional dictionary that specifies the properties of the added image. Specify `NULL` to omit any additional properties. For a list of possible values, see [`Image Properties`](image-properties.md) and doc:CGImageDestination/Configuring-the-Image-Behaviors.
 
 ## See Also
 

@@ -7,6 +7,8 @@ The declaration to install a package.
 
 **Availability**:
 - macOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

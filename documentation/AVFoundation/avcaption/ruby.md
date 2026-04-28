@@ -39,6 +39,8 @@ Ruby characters are small annotations, typically used in Japanese content, that 
   The ruby text alignment.
 - [AVCaption.Ruby.Alignment](avcaption/ruby/alignment-swift.enum.md)
   Constants that indicate ruby text alignments.
+### Initializers
+- [init?(coder: NSCoder)](avcaption/ruby/init(coder:).md)
 
 ## Relationships
 

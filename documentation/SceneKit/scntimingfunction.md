@@ -21,7 +21,9 @@ class SCNTimingFunction
 ## Topics
 
 ### Initializers
-- [init(caMediaTimingFunction: CAMediaTimingFunction)](scntimingfunction/init(camediatimingfunction:).md)
+- [init(CAMediaTimingFunction: CAMediaTimingFunction)](scntimingfunction/init(camediatimingfunction:)-3iins.md)
+- [init(caMediaTimingFunction: CAMediaTimingFunction)](scntimingfunction/init(camediatimingfunction:)-2r7lx.md)
+- [init?(coder: NSCoder)](scntimingfunction/init(coder:).md)
 - [init(timingMode: SCNActionTimingMode)](scntimingfunction/init(timingmode:).md)
 
 ## Relationships

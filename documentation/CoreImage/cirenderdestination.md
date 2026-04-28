@@ -32,13 +32,13 @@ Renders issued to a `CIRenderDestination` return to the caller as soon as the CP
 ### Creating a Render Destination
 - [init(pixelBuffer: CVPixelBuffer)](cirenderdestination/init(pixelbuffer:).md)
   Creates a render destination based on a Core Video pixel buffer.
-- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:).md)
+- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:)-1hfcq.md)
   Creates a render destination based on an `IOSurface` object.
-- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:).md)
+- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:)-2iu5i.md)
   Creates a render destination based on a Metal texture.
 - [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](cirenderdestination/init(width:height:pixelformat:commandbuffer:mtltextureprovider:).md)
   Creates a render destination based on a Metal texture with specified pixel format.
-- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:).md)
+- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:)-9ci8e.md)
   Creates a render destination based on an OpenGL texture.
 - [init(bitmapData: UnsafeMutableRawPointer, width: Int, height: Int, bytesPerRow: Int, format: CIFormat)](cirenderdestination/init(bitmapdata:width:height:bytesperrow:format:).md)
   Creates a render destination based on a client-managed buffer.
@@ -63,6 +63,10 @@ Renders issued to a `CIRenderDestination` return to the caller as soon as the CP
   Indicator of whether or not the destination dithers.
 - [var isFlipped: Bool](cirenderdestination/isflipped.md)
   Indicator of whether the destination is flipped.
+### Initializers
+- [init(GLTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:)-6dbtl.md)
+- [init(IOSurface: IOSurface)](cirenderdestination/init(iosurface:)-5t5jd.md)
+- [init(MTLTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:)-5iasd.md)
 ### Instance Properties
 - [var captureTraceURL: URL?](cirenderdestination/capturetraceurl.md)
   Tell the next render using this destination to capture a Metal trace.

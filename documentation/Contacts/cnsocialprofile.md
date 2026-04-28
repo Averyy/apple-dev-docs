@@ -71,6 +71,8 @@ Some social profile services, such as Facebook and Twitter, are predefined in th
   The Twitter social profile service.
 - [let CNSocialProfileServiceYelp: String](cnsocialprofileserviceyelp.md)
   The Yelp social profile service.
+### Initializers
+- [init?(coder: NSCoder)](cnsocialprofile/init(coder:).md)
 
 ## Relationships
 

@@ -152,6 +152,7 @@ Although Core Data supports evaluation of the predefined functions, it doesn’t
   The block that executes to evaluate the expression.
 ### Initializers
 - [convenience init?<Input, Output>(Expression<Input, Output>)](nsexpression/init(_:).md)
+- [init(forBlock: (Any?, [NSExpression], NSMutableDictionary?) -> Any, arguments: [NSExpression]?)](nsexpression/init(forblock:arguments:).md)
 
 ## Relationships
 

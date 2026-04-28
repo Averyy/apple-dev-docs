@@ -40,9 +40,9 @@ To record audio in iOS or tvOS, configure your audio session to use the [`record
 ## Topics
 
 ### Creating an audio recorder
-- [init(url: URL, settings: [String : Any]) throws](avaudiorecorder/init(url:settings:).md)
+- [init(url: URL, settings: [String : Any]) throws](avaudiorecorder/init(url:settings:)-5whyq.md)
   Creates an audio recorder with settings.
-- [init(url: URL, format: AVAudioFormat) throws](avaudiorecorder/init(url:format:).md)
+- [init(url: URL, format: AVAudioFormat) throws](avaudiorecorder/init(url:format:)-7herw.md)
   Creates an audio recorder with an audio format.
 ### Controlling recording
 - [func prepareToRecord() -> Bool](avaudiorecorder/preparetorecord.md)
@@ -92,6 +92,9 @@ To record audio in iOS or tvOS, configure your audio session to use the [`record
   The format of the recorded audio.
 - [var settings: [String : Any]](avaudiorecorder/settings.md)
   The settings that describe the format of the recorded audio.
+### Initializers
+- [init(URL: URL, format: AVAudioFormat) throws](avaudiorecorder/init(url:format:)-hpsc.md)
+- [init(URL: URL, settings: [String : Any]) throws](avaudiorecorder/init(url:settings:)-9zay9.md)
 
 ## Relationships
 

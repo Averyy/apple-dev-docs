@@ -115,6 +115,9 @@ For more information about preparing your app to play audio, see [`Configuring y
   The unique identifier of the current audio player.
 - [var deviceCurrentTime: TimeInterval](avaudioplayer/devicecurrenttime.md)
   The time value, in seconds, of the audio output device’s clock.
+### Initializers
+- [init(contentsOfURL: URL) throws](avaudioplayer/init(contentsofurl:).md)
+- [init(contentsOfURL: URL, fileTypeHint: String?) throws](avaudioplayer/init(contentsofurl:filetypehint:).md)
 
 ## Relationships
 

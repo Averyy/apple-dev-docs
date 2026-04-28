@@ -7,6 +7,8 @@ The privacy policy control services dictionary that controls access on a per app
 
 **Availability**:
 - macOS 10.14+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

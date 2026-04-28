@@ -24,6 +24,8 @@ class ILMessageFilterQueryResponse
   The action the Message Filter app extension recommends that the system perform on the queried message.
 - [var subAction: ILMessageFilterSubAction](ilmessagefilterqueryresponse/subaction.md)
   The subaction the Message Filter app extension recommends that the system perform on the queried message.
+### Initializers
+- [init?(coder: NSCoder)](ilmessagefilterqueryresponse/init(coder:).md)
 
 ## Relationships
 

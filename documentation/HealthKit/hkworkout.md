@@ -125,6 +125,14 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 ### Specifying metadata keys
 - [Workout Metadata Keys](workout-metadata-keys.md)
   Constants that can be used to add metadata to workouts.
+### Initializers
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date)](hkworkout/init(activitytype:startdate:enddate:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:duration:totalenergyburned:totaldistance:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:duration:totalenergyburned:totaldistance:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalFlightsClimbed: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalflightsclimbed:device:metadata:).md)
+- [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalSwimmingStrokeCount: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalswimmingstrokecount:device:metadata:).md)
 ### Instance Properties
 - [var workoutPlan: WorkoutPlan?](hkworkout/workoutplan.md)
 

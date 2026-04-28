@@ -8,6 +8,9 @@ The payload that configures a macOS Server account.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
+- Mac Catalyst 9.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

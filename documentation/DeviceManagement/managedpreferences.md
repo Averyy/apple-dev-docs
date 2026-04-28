@@ -7,6 +7,8 @@ The payload that configures managed preferences.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

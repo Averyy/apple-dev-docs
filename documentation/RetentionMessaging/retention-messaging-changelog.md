@@ -8,6 +8,12 @@ Learn about new features and updates in the Retention Messaging API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Retention Messaging API.
 
+##### 15 20260427
+
+**New features**
+
+- Added the new property [`billingPlanType`](billingplantype.md) to [`alternateProduct`](alternateproduct.md) to support monthly subscriptions with 12-month commitments.
+
 ##### 14 20260331
 
 **New features**

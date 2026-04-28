@@ -37,6 +37,8 @@ You don’t use this class directly, or create your own subclasses. Instead, you
   A system object that provides a title and image for common tab content, such as contacts or favorites.
 - [var showsTabBadge: Bool](cptemplate/showstabbadge.md)
   An indicator you use to call attention to the tab.
+### Initializers
+- [init?(coder: NSCoder)](cptemplate/init(coder:).md)
 
 ## Relationships
 

@@ -32,6 +32,8 @@ class SWHighlightPersistenceEvent
   The persistence event trigger for the highlight.
 - [enum SWHighlightPersistenceEventTrigger](swhighlightpersistenceeventtrigger.md)
   Signifies the type of persistence event trigger.
+### Initializers
+- [init?(coder: NSCoder)](swhighlightpersistenceevent/init(coder:).md)
 
 ## Relationships
 

@@ -77,6 +77,8 @@ Distributed notifications are delivered via a task’s run loop. A task must be 
   This constant specifies the notification center type.
 - [DistributedNotificationCenter.SuspensionBehavior](distributednotificationcenter/suspensionbehavior.md)
   These constants specify the types of notification delivery suspension behaviors.
+### Initializers
+- [init(forType: DistributedNotificationCenter.CenterType)](distributednotificationcenter/init(fortype:).md)
 
 ## Relationships
 

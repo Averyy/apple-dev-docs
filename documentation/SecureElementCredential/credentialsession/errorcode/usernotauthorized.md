@@ -8,6 +8,7 @@ The person using the app isn’t authorized to perform the operation.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

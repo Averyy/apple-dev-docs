@@ -8,6 +8,7 @@ A type that indicates the measurement derives from an initiating anchor’s firs
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

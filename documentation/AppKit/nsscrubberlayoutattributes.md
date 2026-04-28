@@ -32,6 +32,8 @@ If you require model attributes in addition to those provided by this class, cre
   The frame of the scrubber item.
 - [var itemIndex: Int](nsscrubberlayoutattributes/itemindex.md)
   The index of the scrubber item that is represented by the item’s layout attributes.
+### Initializers
+- [convenience init(forItemAtIndex: Int)](nsscrubberlayoutattributes/init(foritematindex:).md)
 
 ## Relationships
 

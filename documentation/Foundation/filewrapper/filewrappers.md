@@ -24,7 +24,7 @@ var fileWrappers: [String : FileWrapper]? { get }
 
 The dictionary contains entries whose values are the file wrappers and whose keys are the unique filenames that have been assigned to each one. See [`Accessing File Wrapper Identities`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileWrappers/FileWrappers.html#//apple_ref/doc/uid/TP40010672-CH13-SW1) in [`File System Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010672) for more information about the file-wrapper list structure.
 
-This property may contain `nil` if the user modifies the directory after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:).md) but before [`FileWrapper`](filewrapper.md) has read the contents of the directory.  Use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of that problem.
+This property may contain `nil` if the user modifies the directory after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:)-70161.md) but before [`FileWrapper`](filewrapper.md) has read the contents of the directory.  Use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of that problem.
 
 ##### Special Considerations
 

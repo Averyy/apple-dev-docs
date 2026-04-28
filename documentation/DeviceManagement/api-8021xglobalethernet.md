@@ -8,8 +8,11 @@ The payload that configures the default fallback global Ethernet interface.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 10.13+
 - tvOS 17.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

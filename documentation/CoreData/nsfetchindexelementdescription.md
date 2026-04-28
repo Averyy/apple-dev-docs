@@ -35,6 +35,8 @@ class NSFetchIndexElementDescription
   A property description.
 - [var propertyName: String?](nsfetchindexelementdescription/propertyname.md)
   The specified name in the property description.
+### Initializers
+- [init?(coder: NSCoder)](nsfetchindexelementdescription/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ Stops monitoring for Apple Push Notification service (APNs) location pushes.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

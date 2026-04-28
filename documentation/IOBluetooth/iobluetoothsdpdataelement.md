@@ -43,6 +43,7 @@ In the case where the element is a data element sequence, the value may be an ar
   Initializes a new IOBluetoothSDPDataElement with the given value.
 - [init!(type: BluetoothSDPDataElementTypeDescriptor, sizeDescriptor: BluetoothSDPDataElementSizeDescriptor, size: UInt32, value: NSObject!)](iobluetoothsdpdataelement/init(type:sizedescriptor:size:value:).md)
   Initializes a new IOBluetoothSDPDataElement with the given attributes.
+- [init?(coder: NSCoder)](iobluetoothsdpdataelement/init(coder:).md)
 ### Instance Methods
 - [func contains(IOBluetoothSDPDataElement!) -> Bool](iobluetoothsdpdataelement/contains(_:).md)
   Checks to see if the target data element is the same as the dataElement parameter or if it contains the dataElement parameter (if its a sequence type).

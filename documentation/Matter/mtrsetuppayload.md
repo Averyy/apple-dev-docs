@@ -28,6 +28,7 @@ class MTRSetupPayload
 - [init(onboardingPayload: String) throws](mtrsetuppayload/init(onboardingpayload:).md)
 - [init?(payload: String)](mtrsetuppayload/init(payload:).md)
 - [init(setupPasscode: NSNumber, discriminator: NSNumber)](mtrsetuppayload/init(setuppasscode:discriminator:).md)
+- [init?(coder: NSCoder)](mtrsetuppayload/init(coder:).md)
 ### Instance Properties
 - [var commissioningFlow: MTRCommissioningFlow](mtrsetuppayload/commissioningflow.md)
 - [var discoveryCapabilities: MTRDiscoveryCapabilities](mtrsetuppayload/discoverycapabilities.md)

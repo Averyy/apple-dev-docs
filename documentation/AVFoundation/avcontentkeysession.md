@@ -74,6 +74,8 @@ class AVContentKeySession
   Returns the expired session reports for content key sessions created with the specified app identifier.
 - [class func removePendingExpiredSessionReports([Data], withAppIdentifier: Data, storageDirectoryAt: URL)](avcontentkeysession/removependingexpiredsessionreports(_:withappidentifier:storagedirectoryat:).md)
   Removes expired session reports from storage.
+### Initializers
+- [convenience init(keySystem: AVContentKeySystem, storageDirectoryAtURL: URL)](avcontentkeysession/init(keysystem:storagedirectoryaturl:).md)
 
 ## Relationships
 

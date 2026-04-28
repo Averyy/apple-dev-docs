@@ -38,9 +38,9 @@ For more information, see [`Core Bluetooth Programming Guide`](https://developer
 
 - [init(data: Data)](cbuuid/init(data:).md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID data container.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:).md)
+- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:).md)
+- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
 

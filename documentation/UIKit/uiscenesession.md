@@ -47,6 +47,8 @@ You don’t create session objects directly. UIKit creates sessions in response 
   An activity object you can use to restore the previous contents of your scene’s interface.
 - [var userInfo: [String : Any]?](uiscenesession/userinfo.md)
   Custom attributes that you can associate with the scene.
+### Initializers
+- [init?(coder: NSCoder)](uiscenesession/init(coder:).md)
 
 ## Relationships
 

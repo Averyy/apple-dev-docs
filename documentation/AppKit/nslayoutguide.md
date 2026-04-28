@@ -142,6 +142,8 @@ NSLayoutGuide *container = [[NSLayoutGuide alloc] init];
 - [var hasAmbiguousLayout: Bool](nslayoutguide/hasambiguouslayout.md)
 ### Instance Methods
 - [func constraintsAffectingLayout(for: NSLayoutConstraint.Orientation) -> [NSLayoutConstraint]](nslayoutguide/constraintsaffectinglayout(for:).md)
+### Initializers
+- [init?(coder: NSCoder)](nslayoutguide/init(coder:).md)
 
 ## Relationships
 

@@ -26,6 +26,11 @@ An instance of [`NSXPCListenerEndpoint`](nsxpclistenerendpoint.md) may be retrie
 
 This pattern is useful if you have a service which multiplexes work to other services. The service can act as an intermediate helper. The requesting application does not need to know specifically which service it is connecting to, just that it implements a known [`NSXPCInterface`](nsxpcinterface.md).
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](nsxpclistenerendpoint/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

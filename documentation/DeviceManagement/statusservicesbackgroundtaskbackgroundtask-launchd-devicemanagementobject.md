@@ -7,6 +7,8 @@ A dictionary that indicates a [`ServicesBackgroundTasks`](servicesbackgroundtask
 
 **Availability**:
 - macOS 15.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

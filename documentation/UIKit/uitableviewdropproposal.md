@@ -38,6 +38,8 @@ Create instances of this class in the [`tableView(_:dropSessionDidUpdate:withDes
   Constants indicating how you intend to handle a drop.
 - [enum UIDropOperation](uidropoperation.md)
   Operation types that determine how a drag and drop activity resolves when the user drops a drag item.
+### Initializers
+- [init(dropOperation: UIDropOperation, intent: UITableViewDropProposal.Intent)](uitableviewdropproposal/init(dropoperation:intent:).md)
 
 ## Relationships
 

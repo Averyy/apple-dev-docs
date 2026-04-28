@@ -30,6 +30,8 @@ Use `NIDiscoveryToken` to determine the peer device’s nearby interaction capab
 ### Understanding device capabilities
 - [var deviceCapabilities: any NIDeviceCapability](nidiscoverytoken/devicecapabilities.md)
   A protocol object that describes the nearby interaction capabilities of a person’s device.
+### Initializers
+- [init?(coder: NSCoder)](nidiscoverytoken/init(coder:).md)
 
 ## Relationships
 

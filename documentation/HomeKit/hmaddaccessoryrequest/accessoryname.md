@@ -8,6 +8,7 @@ The name of the accessory to add.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

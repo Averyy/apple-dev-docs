@@ -8,6 +8,7 @@ An object that provides configuration information for a transaction that the cli
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

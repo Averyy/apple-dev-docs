@@ -58,6 +58,8 @@ class CNContactRelation
   The label for the contact’s assistant.
 - [let CNLabelContactRelationManager: String](cnlabelcontactrelationmanager.md)
   The label for the contact’s manager.
+### Initializers
+- [init?(coder: NSCoder)](cncontactrelation/init(coder:).md)
 
 ## Relationships
 

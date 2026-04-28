@@ -95,6 +95,8 @@ The `GLKTextureLoader` and `GLKTextureInfo` classes do not manage the OpenGL tex
 - [func texture(withName: String, scaleFactor: CGFloat, bundle: Bundle?, options: [String : NSNumber]?, queue: dispatch_queue_t?, completionHandler: (GLKTextureInfo?, (any Error)?) -> Void)](glktextureloader/texture(withname:scalefactor:bundle:options:queue:completionhandler:).md)
 ### Type Methods
 - [class func texture(withName: String, scaleFactor: CGFloat, bundle: Bundle?, options: [String : NSNumber]?) throws -> GLKTextureInfo](glktextureloader/texture(withname:scalefactor:bundle:options:).md)
+### Initializers
+- [init(shareContext: NSOpenGLContext)](glktextureloader/init(sharecontext:).md)
 
 ## Relationships
 

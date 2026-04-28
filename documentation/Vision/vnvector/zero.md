@@ -31,7 +31,7 @@ class var zero: VNVector { get }
   Creates a new vector in polar coordinate space.
 - [convenience init(vectorHead: VNPoint, tail: VNPoint)](vnvector/init(vectorhead:tail:).md)
   Creates a new vector in Cartesian coordinate space.
-- [init(xComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:).md)
+- [init(xComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:)-3p5k3.md)
   Creates a new vector in Cartesian coordinate space, based on its x-axis and y-axis projections.
 
 

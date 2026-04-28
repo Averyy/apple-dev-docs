@@ -56,6 +56,8 @@ Use a [`WKPreferences`](wkpreferences.md) object to specify the preferences for 
   A Boolean value that indicates whether JavaScript is enabled.
 - [var plugInsEnabled: Bool](wkpreferences/pluginsenabled.md)
   A Boolean value that indicates whether plug-ins are enabled.
+### Initializers
+- [init?(coder: NSCoder)](wkpreferences/init(coder:).md)
 ### Instance Properties
 - [var isLookToScrollEnabled: Bool](wkpreferences/islooktoscrollenabled.md)
 

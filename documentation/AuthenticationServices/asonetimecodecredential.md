@@ -26,6 +26,8 @@ class ASOneTimeCodeCredential
 ### Accessing the OTP
 - [var code: String](asonetimecodecredential/code.md)
   The one-time passcode.
+### Initializers
+- [init?(coder: NSCoder)](asonetimecodecredential/init(coder:).md)
 
 ## Relationships
 

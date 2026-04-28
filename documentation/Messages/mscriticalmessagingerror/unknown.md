@@ -8,6 +8,7 @@ The error code the framework returns after an unknown error occurs.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ The iCloud account or passcode of the person using the app don’t satisfy the c
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

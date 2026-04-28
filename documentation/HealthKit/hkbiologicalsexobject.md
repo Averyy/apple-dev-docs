@@ -24,6 +24,8 @@ class HKBiologicalSexObject
 ### Getting Biological Sex Data
 - [var biologicalSex: HKBiologicalSex](hkbiologicalsexobject/biologicalsex.md)
   The biological sex.
+### Initializers
+- [init?(coder: NSCoder)](hkbiologicalsexobject/init(coder:).md)
 
 ## Relationships
 

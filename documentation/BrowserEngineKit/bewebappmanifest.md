@@ -32,7 +32,7 @@ To add a web app or bookmark to someone’s Home Screen:
 
 ### Creating a web app manifest
 - [init?(JSONData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:)-4zjpz.md)
-- [init?(jsonData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:).md)
+- [init?(jsonData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:)-3azfg.md)
   Returns nil if manifestURL is invalid or jsonData cannot be parsed.
 ### Getting manifest information
 - [var jsonData: Data](bewebappmanifest/jsondata.md)

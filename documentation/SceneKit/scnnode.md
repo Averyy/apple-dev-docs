@@ -275,6 +275,8 @@ To improve performance, SceneKit can share attachments between multiple nodes. F
   Converts a direction vector to the node’s local coordinate space from that of another node.
 - [func convertVector(SCNVector3, to: SCNNode?) -> SCNVector3](scnnode/convertvector(_:to:).md)
   Converts a direction vector from the node’s local coordinate space to that of another node.
+### Initializers
+- [init?(coder: NSCoder)](scnnode/init(coder:).md)
 
 ## Relationships
 

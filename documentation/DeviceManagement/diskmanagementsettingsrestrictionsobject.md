@@ -7,6 +7,8 @@ The restrictions for the disk.
 
 **Availability**:
 - macOS 15.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

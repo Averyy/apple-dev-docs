@@ -7,6 +7,8 @@ A dictionary that contains hostname settings.
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

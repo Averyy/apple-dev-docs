@@ -31,6 +31,8 @@ class MLMultiArrayConstraint
   The constraint on the shape of the multiarray.
 - [class MLMultiArrayShapeConstraint](mlmultiarrayshapeconstraint.md)
   The lists of shapes or ranges of shapes that constrain a multiarray feature.
+### Initializers
+- [init?(coder: NSCoder)](mlmultiarrayconstraint/init(coder:).md)
 
 ## Relationships
 

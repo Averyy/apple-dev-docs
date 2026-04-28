@@ -66,6 +66,8 @@ A minimum of two relationships must be specified per axis. If you specify constr
 ### Constants
 - [enum CAConstraintAttribute](caconstraintattribute.md)
   The constraint attribute type.
+### Initializers
+- [init?(coder: NSCoder)](caconstraint/init(coder:).md)
 
 ## Relationships
 

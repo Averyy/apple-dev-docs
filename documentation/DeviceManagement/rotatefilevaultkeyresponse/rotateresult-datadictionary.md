@@ -7,6 +7,8 @@ The result of rotating the personal recovery key.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

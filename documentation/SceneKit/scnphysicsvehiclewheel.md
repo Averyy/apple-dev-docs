@@ -70,6 +70,8 @@ The properties of a wheel define the geometry of its connection to the vehicle a
 ### Inspecting the Wheel Node
 - [var node: SCNNode](scnphysicsvehiclewheel/node.md)
   The node providing the wheel’s visual representation.
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsvehiclewheel/init(coder:).md)
 
 ## Relationships
 

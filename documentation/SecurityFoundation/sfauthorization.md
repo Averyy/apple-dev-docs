@@ -42,6 +42,8 @@ The [`SFAuthorization`](sfauthorization.md) class is an interface for some of th
 ### Preventing credentials from being shared
 - [func invalidateCredentials()](sfauthorization/invalidatecredentials.md)
   Prevents any rights that were obtained by this object from being preserved.
+### Initializers
+- [init?(coder: NSCoder)](sfauthorization/init(coder:).md)
 
 ## Relationships
 

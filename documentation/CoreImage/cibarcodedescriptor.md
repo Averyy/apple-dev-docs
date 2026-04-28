@@ -23,6 +23,11 @@ class CIBarcodeDescriptor
 
 Subclasses encapsulate the formal specification and fields specific to a code type. Each subclass is sufficient to recreate the unique symbol exactly as seen or used with a custom parser.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](cibarcodedescriptor/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

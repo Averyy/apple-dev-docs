@@ -19,7 +19,7 @@ var supportsDuplex: Bool { get }
 
 #### Discussion
 
-The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the printer supports double-sided printing or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not. For printers you create yourself using the [`init(url:)`](uiprinter/init(url:).md) method, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
+The value of this property is [`true`](https://developer.apple.com/documentation/Swift/true) if the printer supports double-sided printing or [`false`](https://developer.apple.com/documentation/Swift/false) if it does not. For printers you create yourself using the [`init(url:)`](uiprinter/init(url:)-1mibn.md) method, the value of this property is [`false`](https://developer.apple.com/documentation/Swift/false) until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
 
 ## See Also
 

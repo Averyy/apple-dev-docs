@@ -7,6 +7,8 @@ Reports which security features the user disables in `recoveryOS`. This property
 
 **Availability**:
 - macOS 11.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

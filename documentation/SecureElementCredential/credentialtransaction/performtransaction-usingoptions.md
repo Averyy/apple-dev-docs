@@ -8,6 +8,7 @@ Prompts the user for authorization and then activates a credential for card emul
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

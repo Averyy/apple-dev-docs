@@ -197,6 +197,7 @@ In addition to its primary textual content, a PDF file can contain annotations t
 ### Instance Properties
 - [var isActivatableTextField: Bool](pdfannotation/isactivatabletextfield.md)
 ### Initializers
+- [init?(coder: NSCoder)](pdfannotation/init(coder:).md)
 - [convenience init(dictionary: [AnyHashable : Any], for: PDFPage?)](pdfannotation/init(dictionary:for:).md)
 ### Default Implementations
 - [PDFAnnotation Implementations](pdfannotation/pdfannotation-implementations.md)

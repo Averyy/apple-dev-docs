@@ -46,6 +46,9 @@ Typically, you create reference images in your Xcode project’s asset catalog:
 ### Validating Reference Images
 - [func validate(completionHandler: ((any Error)?) -> Void)](arreferenceimage/validate(completionhandler:).md)
   Determines whether the reference image is valid.
+### Initializers
+- [init(CGImage: CGImage, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(cgimage:orientation:physicalwidth:).md)
+- [init(pixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, physicalWidth: CGFloat)](arreferenceimage/init(pixelbuffer:orientation:physicalwidth:).md)
 
 ## Relationships
 

@@ -36,6 +36,8 @@ class PDFBorder
 ### Drawing Borders
 - [func draw(in: CGRect)](pdfborder/draw(in:).md)
   Draws the border.
+### Initializers
+- [init?(coder: NSCoder)](pdfborder/init(coder:).md)
 
 ## Relationships
 

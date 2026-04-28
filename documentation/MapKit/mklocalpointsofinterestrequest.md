@@ -49,6 +49,8 @@ You may optionally specifying an [`MKPointOfInterestFilter`](mkpointofinterestfi
 ### Getting the maximum radius
 - [class let maxRadius: CLLocationDistance](mklocalpointsofinterestrequest/maxradius.md)
   The maximum distance respected for fetching points of interest from the center of the region.
+### Initializers
+- [init(centerCoordinate: CLLocationCoordinate2D, radius: CLLocationDistance)](mklocalpointsofinterestrequest/init(centercoordinate:radius:).md)
 
 ## Relationships
 

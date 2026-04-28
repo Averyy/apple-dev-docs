@@ -98,6 +98,9 @@ Do not subclass [`Timer`](timer.md).
   Returns a publisher that repeatedly emits the current date on the given interval.
 - [Timer.TimerPublisher](timer/timerpublisher.md)
   A publisher that repeatedly emits the current date on a given interval.
+### Initializers
+- [convenience init(fireDate: Date, interval: TimeInterval, repeats: Bool, block: (Timer) -> Void)](timer/init(firedate:interval:repeats:block:).md)
+- [init(fireDate: Date, interval: TimeInterval, target: Any, selector: Selector, userInfo: Any?, repeats: Bool)](timer/init(firedate:interval:target:selector:userinfo:repeats:).md)
 
 ## Relationships
 

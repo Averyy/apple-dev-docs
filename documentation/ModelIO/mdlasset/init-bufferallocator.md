@@ -35,11 +35,11 @@ Use this initializer when you want to programmatically populate an asset with co
 
 - [class func canImportFileExtension(String) -> Bool](mdlasset/canimportfileextension(_:).md)
   Returns a Boolean value that indicates whether the [`MDLAsset`](mdlasset.md) class can read asset data from files with the specified extension.
-- [init(url: URL)](mdlasset/init(url:).md)
+- [init(url: URL)](mdlasset/init(url:)-1f4ym.md)
   Initializes an asset from the file at the specified URL.
-- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:).md)
+- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md)
   Initializes an asset from the file at the specified URL, using the specified vertex descriptor and buffer allocator.
-- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md)
+- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-510xi.md)
   Initializes an asset from the file at the specified URL, using the specified options for allocating and transforming data during import.
 
 

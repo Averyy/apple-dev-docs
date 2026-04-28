@@ -29,6 +29,8 @@ class HKVerifiableClinicalRecordSubject
   The subject’s full name.
 - [var dateOfBirthComponents: DateComponents?](hkverifiableclinicalrecordsubject/dateofbirthcomponents.md)
   The subject’s birthdate.
+### Initializers
+- [init?(coder: NSCoder)](hkverifiableclinicalrecordsubject/init(coder:).md)
 
 ## Relationships
 

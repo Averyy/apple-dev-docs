@@ -27,6 +27,8 @@ class AVCompositionTrackFormatDescriptionReplacement
   The format description to replace.
 - [var replacementFormatDescription: CMFormatDescription](avcompositiontrackformatdescriptionreplacement/replacementformatdescription.md)
   The replacement format description.
+### Initializers
+- [init?(coder: NSCoder)](avcompositiontrackformatdescriptionreplacement/init(coder:).md)
 
 ## Relationships
 

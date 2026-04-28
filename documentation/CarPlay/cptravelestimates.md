@@ -55,6 +55,8 @@ class CPTravelEstimates
   The distance remaining that the framework displays to a person, in the default units of measurement.
 - [var timeRemaining: TimeInterval](cptravelestimates/timeremaining.md)
   The remaining time for the travel estimate.
+### Initializers
+- [init?(coder: NSCoder)](cptravelestimates/init(coder:).md)
 
 ## Relationships
 

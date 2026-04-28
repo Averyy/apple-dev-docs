@@ -42,13 +42,15 @@ extern "C" {
 #endif
 #include <sanitizer/asan_interface.h>
 
-const char *__asan_default_options() {
+__attribute__((used, visibility("default"))) const char *__asan_default_options() {
     return "detect_container_overflow=0";
 }
 #ifdef __cplusplus
 }
 #endif
 ```
+
+If you set the [`Exported Symbols File`](build-settings-reference#Exported-Symbols-File.md) build setting, then also add `___asan_default_options` to the file to ensure that the system exports the symbol.
 
 If you set the `detect_container_overflow` option in both the `__asan_default_options` function, and the `ASAN_OPTIONS` environment variable, the system uses the value in the environment variable.
 

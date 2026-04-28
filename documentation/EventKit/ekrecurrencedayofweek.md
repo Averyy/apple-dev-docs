@@ -45,6 +45,8 @@ A day of the week can optionally have a week number, indicating a specific day i
   The day of the week.
 - [var weekNumber: Int](ekrecurrencedayofweek/weeknumber.md)
   The week number of the day of the week.
+### Initializers
+- [init?(coder: NSCoder)](ekrecurrencedayofweek/init(coder:).md)
 
 ## Relationships
 

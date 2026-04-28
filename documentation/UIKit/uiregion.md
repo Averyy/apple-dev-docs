@@ -46,6 +46,8 @@ When creating a new region, you specify only the size of the corresponding recta
 ### Interacting with a region
 - [func contains(CGPoint) -> Bool](uiregion/contains(_:).md)
   Returns a Boolean indicating whether the specified point is inside of the current region.
+### Initializers
+- [init?(coder: NSCoder)](uiregion/init(coder:).md)
 
 ## Relationships
 

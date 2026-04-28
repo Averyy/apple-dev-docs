@@ -7,6 +7,7 @@ Information about errors that the API returns in the response body whenever an A
 
 **Availability**:
 - App Store Connect API 1.0.10+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Declaration
 

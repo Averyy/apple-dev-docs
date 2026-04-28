@@ -8,6 +8,7 @@ A Safari Reading List error.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,6 +8,7 @@ Text formatting view controller configuration object.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -21,6 +22,7 @@ class Configuration
 ### Initializers
 - [init()](uitextformattingviewcontroller/configuration-swift.class/init.md)
   Creates a default configuration with most common text formatting options.
+- [init?(coder: NSCoder)](uitextformattingviewcontroller/configuration-swift.class/init(coder:).md)
 - [convenience init(groups: [UITextFormattingViewController.ComponentGroup])](uitextformattingviewcontroller/configuration-swift.class/init(groups:).md)
   Creates a configuration object with provided component groups.
 ### Instance Properties

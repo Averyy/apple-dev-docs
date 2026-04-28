@@ -52,6 +52,9 @@ class NSCoreDataCoreSpotlightDelegate
   Reindexes all searchable items and clears any local state.
 - [func searchableIndex(CSSearchableIndex, reindexSearchableItemsWithIdentifiers: [String], acknowledgementHandler: () -> Void)](nscoredatacorespotlightdelegate/searchableindex(_:reindexsearchableitemswithidentifiers:acknowledgementhandler:).md)
   Reindexes the searchable items for the specified identifiers.
+### Initializers
+- [init(forStoreWithDescription: NSPersistentStoreDescription, coordinator: NSPersistentStoreCoordinator)](nscoredatacorespotlightdelegate/init(forstorewithdescription:coordinator:).md)
+- [convenience init(forStoreWithDescription: NSPersistentStoreDescription, model: NSManagedObjectModel)](nscoredatacorespotlightdelegate/init(forstorewithdescription:model:).md)
 
 ## Relationships
 

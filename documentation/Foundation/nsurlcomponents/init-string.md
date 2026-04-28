@@ -34,7 +34,7 @@ Returns the initialized URL components object, or `nil` if the URL string could 
   Creates a URL components object with all components left undefined.
 - [init?(string: String, encodingInvalidCharacters: Bool)](nsurlcomponents/init(string:encodinginvalidcharacters:).md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:).md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 
 

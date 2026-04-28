@@ -47,6 +47,8 @@ Typically, you don’t create instances of this class yourself, nor do you subcl
 ### Getting the event timestamp
 - [var timestamp: Date](clheading/timestamp.md)
   The time at which this heading was determined.
+### Initializers
+- [init?(coder: NSCoder)](clheading/init(coder:).md)
 
 ## Relationships
 

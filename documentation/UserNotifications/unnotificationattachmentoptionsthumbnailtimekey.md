@@ -25,7 +25,7 @@ For animated images, the value of this key is an [`NSNumber`](https://developer.
 
 ## See Also
 
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:).md)
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-83grx.md)
   Creates an attachment object from the specified file and options.
 - [let UNNotificationAttachmentOptionsTypeHintKey: String](unnotificationattachmentoptionstypehintkey.md)
   A hint about an attachment’s file type.

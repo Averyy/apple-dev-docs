@@ -56,6 +56,8 @@ Conflicts are represented by instances of [`NSMergeConflict`](nsmergeconflict.md
   A merge policy that discards unsaved changes.
 - [Merge Policies](merge-policies.md)
   Define standard ways to handle conflicts during a save operation.
+### Initializers
+- [init(mergeType: NSMergePolicyType)](nsmergepolicy/init(mergetype:).md)
 
 ## Relationships
 

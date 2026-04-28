@@ -37,6 +37,8 @@ For more information, see [`Responding to invocations`](responding-to-invocation
   An error that an App Clip activation payload returns.
 - [APActivationPayloadError.Code](apactivationpayloaderror/code.md)
   Error codes that an App Clip activation payload returns.
+### Initializers
+- [init?(coder: NSCoder)](apactivationpayload/init(coder:).md)
 
 ## Relationships
 

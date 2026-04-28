@@ -26,6 +26,8 @@ class CWChannel
   The channel number.
 - [var channelWidth: CWChannelWidth](cwchannel/channelwidth.md)
   The channel width.
+### Initializers
+- [init?(coder: NSCoder)](cwchannel/init(coder:).md)
 
 ## Relationships
 

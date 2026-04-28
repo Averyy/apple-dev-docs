@@ -8,6 +8,7 @@ Retrieve the localized description for this error.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS 9.0+
 - watchOS 2.0+
@@ -21,7 +22,7 @@ var localizedDescription: String { get }
 ## See Also
 
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
-  The domain for errors related to mail composition.
+  The domain of the error.
 
 
 ---

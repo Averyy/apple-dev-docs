@@ -39,7 +39,7 @@ Set and use the [`AVSpeechSynthesizerDelegate`](avspeechsynthesizerdelegate.md) 
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
 - [let AVSpeechSynthesisIPANotationAttribute: String](avspeechsynthesisipanotationattribute.md)
   A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
-- [init?(ssmlRepresentation: String)](avspeechutterance/init(ssmlrepresentation:).md)
+- [init?(ssmlRepresentation: String)](avspeechutterance/init(ssmlrepresentation:)-8zam9.md)
   Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
 ### Configuring an utterance
 - [var voice: AVSpeechSynthesisVoice?](avspeechutterance/voice.md)
@@ -68,6 +68,10 @@ Set and use the [`AVSpeechSynthesizerDelegate`](avspeechsynthesizerdelegate.md) 
   A string that contains the text for speech synthesis.
 - [var attributedSpeechString: NSAttributedString](avspeechutterance/attributedspeechstring.md)
   An attributed string that contains the text for speech synthesis.
+### Initializers
+- [convenience init?(SSMLRepresentation: String)](avspeechutterance/init(ssmlrepresentation:)-2aunp.md)
+- [init?(SSMLRepresentation: String)](avspeechutterance/init(ssmlrepresentation:)-7rl77.md)
+- [init?(coder: NSCoder)](avspeechutterance/init(coder:).md)
 
 ## Relationships
 

@@ -21,12 +21,8 @@ This error indicates that the argument specified in the [`requestForwarding(for:
 
 ## See Also
 
-- [AccessoryError.accessoryNotificationsUnsupported](accessoryerror/accessorynotificationsunsupported.md)
-  An error that indicates accessory notifications are not supported in the current configuration.
 - [AccessoryError.unsupportedPlatform](accessoryerror/unsupportedplatform.md)
   An error that indicates the current platform doesn’t support notification forwarding.
-- [AccessoryError.unableToPresentSettings](accessoryerror/unabletopresentsettings.md)
-  An error that indicates the system cannot present settings UI.
 
 
 ---

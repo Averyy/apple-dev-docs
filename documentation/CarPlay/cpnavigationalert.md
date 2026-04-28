@@ -55,6 +55,8 @@ The system displays the primary and secondary actions as buttons on the alert. A
 ### Enumerations
 - [CPNavigationAlert.DismissalContext](cpnavigationalert/dismissalcontext.md)
   A set of reasons for dismissing a navigation alert.
+### Initializers
+- [init?(coder: NSCoder)](cpnavigationalert/init(coder:).md)
 
 ## Relationships
 

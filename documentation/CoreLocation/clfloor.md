@@ -31,6 +31,8 @@ You do not create instances of this class directly, nor should you subclass it.
 ### Getting the floor level
 - [var level: Int](clfloor/level.md)
   The logical floor of the building.
+### Initializers
+- [init?(coder: NSCoder)](clfloor/init(coder:).md)
 
 ## Relationships
 

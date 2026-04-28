@@ -169,6 +169,8 @@ A single item provider may use custom blocks to provide its data in many differe
   Specifications that control which categories of processes can see an item.
 - [NSItemProvider.ErrorCode](nsitemprovider/errorcode.md)
   The error codes that describe problems with consuming data from an item provider.
+### Initializers
+- [convenience init?(contentsOfURL: URL!)](nsitemprovider/init(contentsofurl:).md)
 
 ## Relationships
 

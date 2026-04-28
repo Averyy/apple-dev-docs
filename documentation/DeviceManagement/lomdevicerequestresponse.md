@@ -7,6 +7,8 @@ A response from the device after it processes the command to send requests to a 
 
 **Availability**:
 - macOS 11.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

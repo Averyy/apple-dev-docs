@@ -18,7 +18,7 @@ class NSGraphicsContext
 
 You can think of a graphics context as a destination to which drawing and graphics state operations are sent for execution. Each graphics context contains its own graphics environment and state.
 
-The [`NSGraphicsContext`](nsgraphicscontext.md) class is an abstract superclass for destination-specific graphics contexts. You obtain instances of concrete subclasses with the class methods [`current`](nsgraphicscontext/current.md), [`init(attributes:)`](nsgraphicscontext/init(attributes:).md), [`init(bitmapImageRep:)`](nsgraphicscontext/init(bitmapimagerep:).md), [`init(cgContext:flipped:)`](nsgraphicscontext/init(cgcontext:flipped:).md), and [`init(window:)`](nsgraphicscontext/init(window:).md).
+The [`NSGraphicsContext`](nsgraphicscontext.md) class is an abstract superclass for destination-specific graphics contexts. You obtain instances of concrete subclasses with the class methods [`current`](nsgraphicscontext/current.md), [`init(attributes:)`](nsgraphicscontext/init(attributes:).md), [`init(bitmapImageRep:)`](nsgraphicscontext/init(bitmapimagerep:).md), [`init(cgContext:flipped:)`](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md), and [`init(window:)`](nsgraphicscontext/init(window:).md).
 
 At any time there is the notion of the current context. The current context for the current thread may be set using [`current`](nsgraphicscontext/current.md).
 
@@ -31,7 +31,7 @@ Graphics contexts are maintained on a stack. You push a graphics context onto th
   Creates a graphics context using the specified attributes.
 - [init?(bitmapImageRep: NSBitmapImageRep)](nsgraphicscontext/init(bitmapimagerep:).md)
   Creates a new graphics context using the specified bitmap image representation object as the context destination.
-- [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:).md)
+- [init(cgContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-9cbad.md)
   Creates a new graphics context from the specified Core Graphics context and the initial flipped state.
 - [init(window: NSWindow)](nsgraphicscontext/init(window:).md)
   Creates a new graphics context for drawing into a window.
@@ -93,6 +93,8 @@ Graphics contexts are maintained on a stack. You push a graphics context onto th
   The color rendering intent in the graphics context’s graphics state.
 - [enum NSColorRenderingIntent](nscolorrenderingintent.md)
   Constants that specify how Cocoa should handle colors that are not located within the destination color space of a graphics context.
+### Initializers
+- [init(CGContext: CGContext, flipped: Bool)](nsgraphicscontext/init(cgcontext:flipped:)-4txqw.md)
 
 ## Relationships
 

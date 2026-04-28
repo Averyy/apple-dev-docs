@@ -20,6 +20,7 @@ class ASGeneratedPassword
 ### Structures
 - [ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.struct.md)
 ### Initializers
+- [init?(coder: NSCoder)](asgeneratedpassword/init(coder:).md)
 - [init(kind: ASGeneratedPassword.Kind, value: String)](asgeneratedpassword/init(kind:value:).md)
 ### Instance Properties
 - [var kind: ASGeneratedPassword.Kind](asgeneratedpassword/kind-swift.property.md)

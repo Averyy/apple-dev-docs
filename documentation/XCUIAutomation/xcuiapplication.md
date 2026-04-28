@@ -37,7 +37,7 @@ Use this class to launch, monitor, and terminate your app in a UI test. Use [`wa
   Creates a proxy for the application that’s configured as the Target Application in Xcode’s target settings.
 - [init(bundleIdentifier: String)](xcuiapplication/init(bundleidentifier:).md)
   Creates a proxy for an application for the specified bundle identifier.
-- [init(url: URL)](xcuiapplication/init(url:).md)
+- [init(url: URL)](xcuiapplication/init(url:)-90e7z.md)
   Creates a proxy for the application at the specified file system URL.
 ### Launching the application
 - [func launch()](xcuiapplication/launch.md)
@@ -71,6 +71,8 @@ Use this class to launch, monitor, and terminate your app in a UI test. Use [`wa
 - [func performAccessibilityAudit(for: XCUIAccessibilityAuditType, ((XCUIAccessibilityAuditIssue) throws -> Bool)?) throws](xcuiapplication/performaccessibilityaudit(for:_:).md)
 - [struct XCUIAccessibilityAuditType](xcuiaccessibilityaudittype.md)
 - [class XCUIAccessibilityAuditIssue](xcuiaccessibilityauditissue.md)
+### Initializers
+- [init(URL: URL)](xcuiapplication/init(url:)-6ga10.md)
 
 ## Relationships
 

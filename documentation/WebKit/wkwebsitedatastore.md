@@ -68,6 +68,8 @@ To implement profile browsing, create a persistent data store using the [`init(f
 ### Removing a data store
 - [class func remove(forIdentifier: UUID, completionHandler: ((any Error)?) -> Void)](wkwebsitedatastore/remove(foridentifier:completionhandler:).md)
   Removes the data store that matches the identifier you provide.
+### Initializers
+- [init?(coder: NSCoder)](wkwebsitedatastore/init(coder:).md)
 ### Instance Properties
 - [var proxyConfigurations: [ProxyConfiguration]](wkwebsitedatastore/proxyconfigurations-cdc1.md)
 ### Instance Methods

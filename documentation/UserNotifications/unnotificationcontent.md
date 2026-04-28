@@ -74,6 +74,8 @@ Don’t create instances of this class directly. For remote notifications, the s
 ### Updating the notification’s content
 - [func updating(from: any UNNotificationContentProviding) throws -> UNNotificationContent](unnotificationcontent/updating(from:).md)
   Returns a copy of the notification that includes content from the specified provider.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationcontent/init(coder:).md)
 
 ## Relationships
 

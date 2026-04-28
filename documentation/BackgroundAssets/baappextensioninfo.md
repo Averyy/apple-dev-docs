@@ -22,6 +22,8 @@ class BAAppExtensionInfo
 ### Getting the size of the remaining downloads
 - [var restrictedEssentialDownloadSizeRemaining: Int?](baappextensioninfo/restrictedessentialdownloadsizeremaining-5r8v0.md)
 - [var restrictedDownloadSizeRemaining: Int?](baappextensioninfo/restricteddownloadsizeremaining-4hea4.md)
+### Initializers
+- [init?(coder: NSCoder)](baappextensioninfo/init(coder:).md)
 
 ## Relationships
 

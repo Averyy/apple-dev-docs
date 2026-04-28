@@ -46,6 +46,8 @@ class ASWebAuthenticationSessionRequest
 ### Deprecated symbols
 - [var callbackURLScheme: String?](aswebauthenticationsessionrequest/callbackurlscheme.md)
   The scheme for the browser to use when returning the result of the authentication attempt to the app requesting it.
+### Initializers
+- [init?(coder: NSCoder)](aswebauthenticationsessionrequest/init(coder:).md)
 
 ## Relationships
 

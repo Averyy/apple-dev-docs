@@ -25,10 +25,12 @@ class MTRDeviceControllerStartupParams
 ## Topics
 
 ### Initializers
-- [init(ipk: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](mtrdevicecontrollerstartupparams/init(ipk:fabricid:nocsigner:).md)
-- [init(ipk: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:).md)
+- [init(ipk: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](mtrdevicecontrollerstartupparams/init(ipk:fabricid:nocsigner:)-810ix.md)
+- [init(ipk: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:)-3l4qp.md)
 - [init(operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data, ipk: Data)](mtrdevicecontrollerstartupparams/init(operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:ipk:).md)
 - [init(signingKeypair: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signingkeypair:fabricid:ipk:).md)
+- [init(IPK: Data, fabricID: NSNumber, nocSigner: any MTRKeypair)](mtrdevicecontrollerstartupparams/init(ipk:fabricid:nocsigner:)-6tfo5.md)
+- [init(IPK: Data, operationalKeypair: any MTRKeypair, operationalCertificate: Data, intermediateCertificate: Data?, rootCertificate: Data)](mtrdevicecontrollerstartupparams/init(ipk:operationalkeypair:operationalcertificate:intermediatecertificate:rootcertificate:)-3k8x7.md)
 - [init(signing: any MTRKeypair, fabricId: UInt64, ipk: Data)](mtrdevicecontrollerstartupparams/init(signing:fabricid:ipk:).md)
 ### Instance Properties
 - [var caseAuthenticatedTags: Set<NSNumber>?](mtrdevicecontrollerstartupparams/caseauthenticatedtags.md)

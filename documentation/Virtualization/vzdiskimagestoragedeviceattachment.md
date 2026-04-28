@@ -138,9 +138,9 @@ VZVirtioBlockDeviceConfiguration *disk = [[VZVirtioBlockDeviceConfiguration allo
 ## Topics
 
 ### Creating the attachment point
-- [init(url: URL, readOnly: Bool) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:).md)
+- [init(url: URL, readOnly: Bool) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:)-9qeco.md)
   Creates the attachment object from the specified disk image.
-- [init(url: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizationMode: VZDiskImageSynchronizationMode) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:cachingmode:synchronizationmode:).md)
+- [init(url: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizationMode: VZDiskImageSynchronizationMode) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:cachingmode:synchronizationmode:)-36gc5.md)
   Initialize the attachment from a local file URL.
 ### Getting the disk image details
 - [var url: URL](vzdiskimagestoragedeviceattachment/url.md)
@@ -151,6 +151,9 @@ VZVirtioBlockDeviceConfiguration *disk = [[VZVirtioBlockDeviceConfiguration allo
   The current cacheing mode for the virtual disk image.
 - [var synchronizationMode: VZDiskImageSynchronizationMode](vzdiskimagestoragedeviceattachment/synchronizationmode.md)
   The mode in which the disk image synchronizes data with the underlying storage device.
+### Initializers
+- [init(URL: URL, readOnly: Bool) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:)-498l.md)
+- [init(URL: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizationMode: VZDiskImageSynchronizationMode) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:cachingmode:synchronizationmode:)-3wk02.md)
 
 ## Relationships
 

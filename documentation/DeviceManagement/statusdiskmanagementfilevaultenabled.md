@@ -7,6 +7,8 @@ The enabled status of the File Vault.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

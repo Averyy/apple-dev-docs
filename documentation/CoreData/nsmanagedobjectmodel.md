@@ -126,6 +126,11 @@ for (NSEntityDescription *entity in aModel) {
   The description of the index.
 - [class NSFetchIndexElementDescription](nsfetchindexelementdescription.md)
   Description of an Index Element
+### Initializers
+- [init?(byMergingModels: [NSManagedObjectModel]?)](nsmanagedobjectmodel/init(bymergingmodels:).md)
+- [init?(byMergingModels: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymergingmodels:forstoremetadata:).md)
+- [init?(coder: NSCoder)](nsmanagedobjectmodel/init(coder:).md)
+- [convenience init?(contentsOfURL: URL)](nsmanagedobjectmodel/init(contentsofurl:).md)
 ### Instance Methods
 - [func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-swift.method.md)
 ### Type Methods

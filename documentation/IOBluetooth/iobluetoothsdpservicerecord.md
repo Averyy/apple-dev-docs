@@ -23,6 +23,7 @@ As a service record, an instance of this class has an NSDictionary of service at
 ### Initializers
 - [init!(serviceDictionary: [AnyHashable : Any]!, device: IOBluetoothDevice!)](iobluetoothsdpservicerecord/init(servicedictionary:device:).md)
   Returns an initialized IOBluetoothSDPServiceRecord * with the attributes specified in the provided service dictionary. Provide a pointer to an IOBlueotothDevice if you wish to associate the record to a specific IOBluetoothDevice.
+- [init?(coder: NSCoder)](iobluetoothsdpservicerecord/init(coder:).md)
 ### Instance Properties
 - [var attributes: [AnyHashable : Any]!](iobluetoothsdpservicerecord/attributes.md)
   Returns an NSDictionary containing the attributes for the service.

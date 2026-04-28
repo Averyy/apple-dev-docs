@@ -56,6 +56,8 @@ To get the measurements, use the [`speed`](cmodometerdata/speed.md) and [`slope`
   The device that measures the data.
 - [enum CMOdometerOriginDevice](cmodometerorigindevice.md)
   The device that the odometer sample originates from.
+### Initializers
+- [init?(coder: NSCoder)](cmodometerdata/init(coder:).md)
 
 ## Relationships
 

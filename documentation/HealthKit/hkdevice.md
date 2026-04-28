@@ -30,7 +30,7 @@ Devices include Apple Watch, iPhone, and any other health or fitness peripherals
 ## Topics
 
 ### Creating Device Objects
-- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:).md)
+- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:)-3663q.md)
   Initializes a new device object.
 - [class func local() -> HKDevice](hkdevice/local.md)
   returns a device object that represents the current device.
@@ -51,6 +51,9 @@ Devices include Apple Watch, iPhone, and any other health or fitness peripherals
   The user-facing name for the device.
 - [var softwareVersion: String?](hkdevice/softwareversion.md)
   An arbitrary string representing the version of the software running on the device.
+### Initializers
+- [init?(coder: NSCoder)](hkdevice/init(coder:).md)
+- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, UDIDeviceIdentifier: String?)](hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:)-6cari.md)
 
 ## Relationships
 

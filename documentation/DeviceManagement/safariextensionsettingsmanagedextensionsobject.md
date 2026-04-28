@@ -8,8 +8,11 @@ The dictionary that defines the managed extension.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

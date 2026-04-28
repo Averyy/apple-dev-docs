@@ -19,7 +19,8 @@ class MIDIUMPMutableFunctionBlock
 ## Topics
 
 ### Initializers
-- [init?(name: String, direction: MIDIUMPFunctionBlockDirection, firstGroup: MIDIUMPGroupNumber, totalGroupsSpanned: MIDIUInteger7, maxSysEx8Streams: MIDIUInteger7, midi1Info: MIDIUMPFunctionBlockMIDI1Info, uiHint: MIDIUMPFunctionBlockUIHint, isEnabled: Bool)](midiumpmutablefunctionblock/init(name:direction:firstgroup:totalgroupsspanned:maxsysex8streams:midi1info:uihint:isenabled:).md)
+- [init?(name: String, direction: MIDIUMPFunctionBlockDirection, firstGroup: MIDIUMPGroupNumber, totalGroupsSpanned: MIDIUInteger7, maxSysEx8Streams: MIDIUInteger7, MIDI1Info: MIDIUMPFunctionBlockMIDI1Info, UIHint: MIDIUMPFunctionBlockUIHint, isEnabled: Bool)](midiumpmutablefunctionblock/init(name:direction:firstgroup:totalgroupsspanned:maxsysex8streams:midi1info:uihint:isenabled:)-2i27v.md)
+- [init?(name: String, direction: MIDIUMPFunctionBlockDirection, firstGroup: MIDIUMPGroupNumber, totalGroupsSpanned: MIDIUInteger7, maxSysEx8Streams: MIDIUInteger7, midi1Info: MIDIUMPFunctionBlockMIDI1Info, uiHint: MIDIUMPFunctionBlockUIHint, isEnabled: Bool)](midiumpmutablefunctionblock/init(name:direction:firstgroup:totalgroupsspanned:maxsysex8streams:midi1info:uihint:isenabled:)-2izkf.md)
 ### Instance Properties
 - [var umpEndpoint: MIDIUMPMutableEndpoint?](midiumpmutablefunctionblock/umpendpoint.md)
 ### Instance Methods

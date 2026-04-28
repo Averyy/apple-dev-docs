@@ -36,6 +36,9 @@ class NSManagedObjectModelReference
   The resolved object model.
 - [var versionChecksum: String](nsmanagedobjectmodelreference/versionchecksum.md)
   The version checksum of the resolved model.
+### Initializers
+- [init(entityVersionHashes: [AnyHashable : Any], inBundle: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(entityversionhashes:inbundle:versionchecksum:).md)
+- [init(name: String, inBundle: Bundle?, versionChecksum: String)](nsmanagedobjectmodelreference/init(name:inbundle:versionchecksum:).md)
 
 ## Relationships
 

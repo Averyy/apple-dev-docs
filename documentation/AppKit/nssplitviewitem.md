@@ -88,6 +88,8 @@ To add one or more accessory views to the top or bottom of a split view item, su
 ### Getting the View Controller
 - [var viewController: NSViewController](nssplitviewitem/viewcontroller.md)
   The view controller that the split view item represents.
+### Initializers
+- [init?(coder: NSCoder)](nssplitviewitem/init(coder:).md)
 
 ## Relationships
 

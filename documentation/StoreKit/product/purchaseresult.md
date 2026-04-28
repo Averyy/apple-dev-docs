@@ -8,6 +8,7 @@ The result of a purchase.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -18,6 +19,10 @@ The result of a purchase.
 ```swift
 enum PurchaseResult
 ```
+
+## Mentions
+
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Overview
 

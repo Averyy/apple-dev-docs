@@ -20,6 +20,7 @@ class CPSportsOverlay
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpsportsoverlay/init(coder:).md)
 - [init(leftTeam: CPNowPlayingSportsTeam, rightTeam: CPNowPlayingSportsTeam, eventStatus: CPNowPlayingSportsEventStatus?)](cpsportsoverlay/init(leftteam:rightteam:eventstatus:).md)
   Initialize a sports overlay with left and right team objects.
 ### Instance Properties

@@ -22,11 +22,13 @@ class PDFActionURL
 ## Topics
 
 ### Initializing a URL Action
-- [init(url: URL)](pdfactionurl/init(url:).md)
+- [init(url: URL)](pdfactionurl/init(url:)-5wtb3.md)
   Initializes a URL action with the specified URL.
 ### Accessing and Changing the URL
 - [var url: URL?](pdfactionurl/url.md)
   Returns the URL associated with the URL action.
+### Initializers
+- [init(URL: URL)](pdfactionurl/init(url:)-1e0qw.md)
 
 ## Relationships
 

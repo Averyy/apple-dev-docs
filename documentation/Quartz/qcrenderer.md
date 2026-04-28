@@ -53,7 +53,7 @@ for(double t = 0.0; t <= 10.0; t += 1.0/25.0)
   Creates a  renderer object  with a composition object and a color space.
 - [init!(openGLContext: NSOpenGLContext!, pixelFormat: NSOpenGLPixelFormat!, file: String!)](qcrenderer/init(openglcontext:pixelformat:file:).md)
   Creates a  renderer object with an `NSOpenGLContext` object and a composition file.
-- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:).md)
+- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:)-7at42.md)
   Creates a  renderer object  with a `CGLContextObj` object, a pixel format, a color space, and a composition object.
 - [init!(offScreenWith: NSSize, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(offscreenwith:colorspace:composition:).md)
   Creates an offscreen renderer of a given size with the provided color space and composition object.
@@ -71,6 +71,9 @@ for(double t = 0.0; t <= 10.0; t += 1.0/25.0)
 ### Constants
 - [Rendering Arguments](rendering-arguments.md)
   Arguments that you can pass to the [`render(atTime:arguments:)`](qcrenderer/render(attime:arguments:).md) method.
+### Initializers
+- [init!(CGLContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:)-8rq7j.md)
+- [init!(offScreenWithSize: NSSize, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(offscreenwithsize:colorspace:composition:).md)
 ### Instance Methods
 - [func renderingTime(forTime: TimeInterval, arguments: [AnyHashable : Any]!) -> TimeInterval](qcrenderer/renderingtime(fortime:arguments:).md)
 

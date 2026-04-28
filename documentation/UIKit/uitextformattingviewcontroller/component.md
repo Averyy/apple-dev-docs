@@ -8,6 +8,7 @@ Defines text formatting view component.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -19,6 +20,7 @@ class Component
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](uitextformattingviewcontroller/component/init(coder:).md)
 - [init(componentKey: UITextFormattingViewController.ComponentKey, preferredSize: UITextFormattingViewController.ComponentSize)](uitextformattingviewcontroller/component/init(componentkey:preferredsize:).md)
   Creates a text formatting view component configuration with component key and preferred size.
 ### Instance Properties

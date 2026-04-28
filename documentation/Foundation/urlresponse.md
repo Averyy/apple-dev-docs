@@ -34,7 +34,7 @@ The related [`HTTPURLResponse`](httpurlresponse.md) class is a commonly used sub
 ## Topics
 
 ### Creating a response
-- [init(url: URL, mimeType: String?, expectedContentLength: Int, textEncodingName: String?)](urlresponse/init(url:mimetype:expectedcontentlength:textencodingname:).md)
+- [init(url: URL, mimeType: String?, expectedContentLength: Int, textEncodingName: String?)](urlresponse/init(url:mimetype:expectedcontentlength:textencodingname:)-4s2s1.md)
   Creates an initialized [`URLResponse`](urlresponse.md) object with the URL, MIME type, length, and text encoding set to given values.
 ### Getting the response properties
 - [var expectedContentLength: Int64](urlresponse/expectedcontentlength.md)
@@ -47,6 +47,9 @@ The related [`HTTPURLResponse`](httpurlresponse.md) class is a commonly used sub
   The name of the text encoding provided by the response’s originating source.
 - [var url: URL?](urlresponse/url.md)
   The URL for the response.
+### Initializers
+- [init(URL: URL, MIMEType: String?, expectedContentLength: Int, textEncodingName: String?)](urlresponse/init(url:mimetype:expectedcontentlength:textencodingname:)-3n1n4.md)
+- [init?(coder: NSCoder)](urlresponse/init(coder:).md)
 
 ## Relationships
 

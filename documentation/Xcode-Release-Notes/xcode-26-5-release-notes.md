@@ -1,4 +1,4 @@
-# Xcode 26.5 Beta 2 Release Notes
+# Xcode 26.5 Beta 3 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.5 beta 2 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 beta 2 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 beta 2 requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.5 beta 3 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 beta 3 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 beta 3 requires a Mac running macOS Tahoe 26.2 or later.
 
 ##### General
 
@@ -20,21 +20,40 @@ Xcode 26.5 beta 2 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26
 
 - The system may incorrectly determine an app’s eligibility for development overrides in simulator environments.  (173742496) **Workaround:** Test your app on a physical device.
 
-##### Security
+##### Coding Intelligence
+
+###### New Features
+
+- Messages can now be queued in the coding assistant.  (174563016)
+- Agents can now ask clarifying questions to provide more accurate results.  (175182375)
 
 ###### Resolved Issues
+
+- Fixed:  Users interacting with Claude Code might receive an error message about their OAuth token being expired.  (175464325)
+
+##### Localization
+
+###### Resolved Issues
+
+- Fixed: Generated code for String Catalog symbol generation will no longer produce a compiler error for Packages that default to MainActor isolation.  (173302714) (FB22329375)
+
+#### Updates in Xcode 265 Beta 2
+
+##### Security
+
+###### Resolved Issues in Xcode 265 Beta 2
 
 - Fixed: Mac (Designed for iPad) apps with pointer authentication are now compatible with macOS Tahoe 26.5 and newer. Add `LSMinimumSystemVersion` with value `26.5` to your app’s Info.plist to ensure the app only runs on Tahoe 26.5 and newer.  (171174887)
 
 ##### Simulator
 
-###### Resolved Issues
+###### Resolved Issues in Xcode 265 Beta 2
 
 - Fixed: Pasteboard Synchronization within Simulator.app is currently not functioning.  (173403967) (FB22340739)
 
 ##### Testing
 
-###### Resolved Issues
+###### Resolved Issues in Xcode 265 Beta 2
 
 - Fixed: Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
 

@@ -16,11 +16,11 @@ init()
 
 ## See Also
 
-- [init(uuid: UUID)](fsentityidentifier/init(uuid:).md)
+- [init(uuid: UUID)](fsentityidentifier/init(uuid:)-9e20k.md)
   Creates an entity identifier with the given UUID.
-- [init(uuid: UUID, data: Data)](fsentityidentifier/init(uuid:data:).md)
+- [init(uuid: UUID, data: Data)](fsentityidentifier/init(uuid:data:)-8dixs.md)
   Creates an entity identifier with the given UUID and qualifier data.
-- [init(uuid: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:).md)
+- [init(uuid: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:)-9ty70.md)
   Creates an entity identifier with the given UUID and qualifier data as a 64-bit unsigned integer.
 
 

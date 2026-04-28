@@ -35,6 +35,8 @@ Visit objects contain as much information about the visit as possible but may no
   The approximate time at which the user arrived at the specified location.
 - [var departureDate: Date](clvisit/departuredate.md)
   The approximate time at which the user left the specified location.
+### Initializers
+- [init?(coder: NSCoder)](clvisit/init(coder:).md)
 
 ## Relationships
 

@@ -36,7 +36,7 @@ For more details, see [`Authenticating a User Through a Web Service`](authentica
 ## Topics
 
 ### Creating a session
-- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:).md)
+- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:)-6nut7.md)
   Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
 - [ASWebAuthenticationSession.Callback](aswebauthenticationsession/callback.md)
   An object for evaluating navigation events in an authentication session.
@@ -68,8 +68,11 @@ For more details, see [`Authenticating a User Through a Web Service`](authentica
 - [var additionalHeaderFields: [String : String]?](aswebauthenticationsession/additionalheaderfields.md)
   Any additional header fields to set when loading the initial URL.
 ### Deprecated symbols
-- [init(url: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:).md)
+- [init(url: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7fpox.md)
   Creates a web authentication session instance.
+### Initializers
+- [init(URL: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:)-6y7n6.md)
+- [init(URL: URL, callbackURLScheme: String?, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7evyf.md)
 
 ## Relationships
 

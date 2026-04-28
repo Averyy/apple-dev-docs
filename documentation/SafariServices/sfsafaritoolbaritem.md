@@ -32,6 +32,8 @@ Your app extension only uses this object when it wants to explicitly set the too
 - [func setLabel(String?)](sfsafaritoolbaritem/setlabel(_:).md)
 ### Instance Methods
 - [func showPopover()](sfsafaritoolbaritem/showpopover.md)
+### Initializers
+- [init?(coder: NSCoder)](sfsafaritoolbaritem/init(coder:).md)
 
 ## Relationships
 

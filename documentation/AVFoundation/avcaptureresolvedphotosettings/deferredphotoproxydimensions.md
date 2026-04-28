@@ -8,6 +8,7 @@ The resolved dimensions of the photo proxy when using deferred photo delivery.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

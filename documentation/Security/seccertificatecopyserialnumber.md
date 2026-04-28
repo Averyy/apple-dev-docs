@@ -8,6 +8,7 @@ Returns a copy of a certificate’s serial number.
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
+- Mac Catalyst 10.3+
 - macOS 10.7+
 - tvOS 10.2+
 - visionOS 1.0+
@@ -31,4 +32,4 @@ A data instance containing a DER-encoded integer for the certificate’s serial 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:_:))*

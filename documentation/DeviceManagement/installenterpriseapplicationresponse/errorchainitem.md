@@ -7,6 +7,8 @@ A dictionary that describes an error chain item.
 
 **Availability**:
 - macOS 10.13.6+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Creates a stroke with the line properties, path, transform, and mask that you sp
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 
 ## Declaration

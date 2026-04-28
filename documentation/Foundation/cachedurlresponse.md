@@ -51,6 +51,8 @@ The [`URLCache`](urlcache.md) class stores and retrieves instances of [`CachedUR
 ### Setting cache storage policies
 - [URLCache.StoragePolicy](urlcache/storagepolicy.md)
   These constants specify the caching strategy used by an [`CachedURLResponse`](cachedurlresponse.md) object.
+### Initializers
+- [init?(coder: NSCoder)](cachedurlresponse/init(coder:).md)
 
 ## Relationships
 

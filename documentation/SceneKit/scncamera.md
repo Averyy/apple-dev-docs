@@ -143,6 +143,8 @@ An [`SCNCamera`](scncamera.md) object itself defines the shape and, in part, the
   The maximum amount of blurring, in pixels, applied to areas outside the camera’s depth of field. Animatable.
 - [var aperture: CGFloat](scncamera/aperture.md)
   A factor that determines the transition between in-focus and out-of-focus areas. Animatable.
+### Initializers
+- [init?(coder: NSCoder)](scncamera/init(coder:).md)
 ### Instance Properties
 - [var bloomIterationCount: Int](scncamera/bloomiterationcount.md)
 - [var bloomIterationSpread: CGFloat](scncamera/bloomiterationspread.md)

@@ -33,7 +33,7 @@ The default implementation of this method uses the template string you provide a
 
 ## See Also
 
-- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:).md)
+- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:)-9s8h7.md)
   Creates and returns a tile overlay object using the specified tile-access template.
 - [var urlTemplate: String?](mktileoverlay/urltemplate.md)
   The template for generating tile image URLs.

@@ -22,7 +22,7 @@ A local socket port initialized with the provided arguments.
 
 The receiver must be added to a run loop before it can accept connections or receive messages. Incoming messages are passed to the receiver’s delegate method handlePortMessage:.
 
-To create a standard TCP/IP socket, use [`init(tcpPort:)`](socketport/init(tcpport:).md).
+To create a standard TCP/IP socket, use [`init(tcpPort:)`](socketport/init(tcpport:)-6hgbo.md).
 
 ## Parameters
 
@@ -35,7 +35,7 @@ To create a standard TCP/IP socket, use [`init(tcpPort:)`](socketport/init(tcppo
 
 - [convenience init()](socketport/init.md)
   Initializes the receiver as a local TCP/IP socket of type `SOCK_STREAM`.
-- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:).md)
+- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:)-6hgbo.md)
   Initializes the receiver as a local TCP/IP socket of type `SOCK_STREAM`, listening on a specified port number.
 - [init?(protocolFamily: Int32, socketType: Int32, protocol: Int32, socket: SocketNativeHandle)](socketport/init(protocolfamily:sockettype:protocol:socket:).md)
   Initializes the receiver with a previously created local socket.

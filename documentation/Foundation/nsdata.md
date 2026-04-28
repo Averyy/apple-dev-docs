@@ -142,6 +142,7 @@ For more information, see [`Securing File Operations`](https://developer.apple.c
 ### Initializers
 - [init?(base64Encoded: String, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-3ksry.md)
 - [init?(base64Encoded: Data, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-4t5yq.md)
+- [init?(coder: NSCoder)](nsdata/init(coder:).md)
 - [init?(contentsOf: URL)](nsdata/init(contentsof:).md)
 - [init(contentsOf: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsof:options:).md)
 ### Default Implementations

@@ -17,6 +17,11 @@ A request to query a Message Filter extension about sharing its sub-category cap
 class ILMessageFilterCapabilitiesQueryRequest
 ```
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](ilmessagefiltercapabilitiesqueryrequest/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

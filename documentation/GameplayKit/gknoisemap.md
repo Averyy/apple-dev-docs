@@ -67,6 +67,9 @@ A noise map is finite and two-dimensional, but the the noise you sample to creat
   The width and height of integer grid for which the noise map contains sampled noise values.
 - [var isSeamless: Bool](gknoisemap/isseamless.md)
   A Boolean value indicating whether the noise map’s output can repeat seamlessly in all directions.
+### Initializers
+- [convenience init(noise: GKNoise)](gknoisemap/init(noise:).md)
+- [init(noise: GKNoise, size: vector_double2, origin: vector_double2, sampleCount: vector_int2, seamless: Bool)](gknoisemap/init(noise:size:origin:samplecount:seamless:).md)
 
 ## Relationships
 

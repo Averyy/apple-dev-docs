@@ -56,6 +56,8 @@ Configure your model parameters by setting values for each relevant [`MLParamete
 ### Getting optimization hints
 - [var optimizationHints: MLOptimizationHints](mlmodelconfiguration/optimizationhints-1oq0g.md)
   A group of hints for CoreML to optimize
+### Initializers
+- [init?(coder: NSCoder)](mlmodelconfiguration/init(coder:).md)
 
 ## Relationships
 

@@ -15,9 +15,10 @@ class QuartzFilter
 ## Topics
 
 ### Initializers
+- [init!(URL: URL!)](quartzfilter/init(url:)-8bbzw.md)
 - [init!(outputIntents: [Any]!)](quartzfilter/init(outputintents:).md)
 - [init!(properties: [AnyHashable : Any]!)](quartzfilter/init(properties:).md)
-- [init!(url: URL!)](quartzfilter/init(url:).md)
+- [init!(url: URL!)](quartzfilter/init(url:)-5vjm.md)
 ### Instance Methods
 - [func apply(to: CGContext!) -> Bool](quartzfilter/apply(to:).md)
 - [func localizedName() -> String!](quartzfilter/localizedname.md)

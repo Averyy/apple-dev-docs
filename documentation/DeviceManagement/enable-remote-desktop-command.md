@@ -7,6 +7,8 @@ Enable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

@@ -324,6 +324,8 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
 ### Deprecated
 - [Deprecated symbols](nsmanagedobjectcontext-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Initializers
+- [init?(coder: NSCoder)](nsmanagedobjectcontext/init(coder:).md)
 
 ## Relationships
 

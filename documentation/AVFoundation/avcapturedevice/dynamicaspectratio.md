@@ -8,6 +8,7 @@ A key-value observable property indicating the current aspect ratio for a device
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

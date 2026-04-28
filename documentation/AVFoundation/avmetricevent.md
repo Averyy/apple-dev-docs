@@ -26,6 +26,8 @@ class AVMetricEvent
 - [var date: Date](avmetricevent/date.md)
 - [var mediaTime: CMTime](avmetricevent/mediatime.md)
 - [var sessionID: String?](avmetricevent/sessionid.md)
+### Initializers
+- [init?(coder: NSCoder)](avmetricevent/init(coder:).md)
 
 ## Relationships
 

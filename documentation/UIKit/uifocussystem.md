@@ -53,6 +53,8 @@ Use a [`UIFocusSystem`](uifocussystem.md) object to obtain the focus-related sta
 ### Structures
 - [UIFocusSystem.DidUpdateMessage](uifocussystem/didupdatemessage.md)
 - [UIFocusSystem.MovementDidFailMessage](uifocussystem/movementdidfailmessage.md)
+### Initializers
+- [init?(forEnvironment: any UIFocusEnvironment)](uifocussystem/init(forenvironment:).md)
 
 ## Relationships
 

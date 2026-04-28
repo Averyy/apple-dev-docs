@@ -25,6 +25,8 @@ class CLSObject
   The date on which the object was created.
 - [var dateLastModified: Date](clsobject/datelastmodified.md)
   The date on which the object was last modified.
+### Initializers
+- [init?(coder: NSCoder)](clsobject/init(coder:).md)
 
 ## Relationships
 

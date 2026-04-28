@@ -7,6 +7,8 @@ A dictionary that describes the alerts for the peer filter ranges. The key name 
 
 **Availability**:
 - macOS 10.15.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Creates captured room data by deserializing the decoder of a prior scan.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

@@ -47,7 +47,7 @@ This method is invoked before a document is parsed. The substituted class must b
   Initializes and returns an `NSXMLDocument` object created from an [`NSData`](nsdata.md) object.
 - [init(rootElement: XMLElement?)](xmldocument/init(rootelement:).md)
   Returns an `NSXMLDocument` object initialized with a single child, the root element.
-- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:).md)
+- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:)-65m2r.md)
   Initializes and returns an `NSXMLDocument` object created from a string containing XML markup text.
 
 

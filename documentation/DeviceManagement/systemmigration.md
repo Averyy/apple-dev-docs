@@ -7,6 +7,8 @@ The payload that configures system migration.
 
 **Availability**:
 - macOS 10.12.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -7,6 +7,8 @@ A status item that contains an unresolved connection group.
 
 **Availability**:
 - macOS 14.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

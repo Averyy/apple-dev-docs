@@ -26,7 +26,7 @@ If the script completed normally, the completion handler’s `error` parameter w
 
 ## See Also
 
-- [init(url: URL) throws](nsuserscripttask/init(url:).md)
+- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
   Return a user script task instance given a URL for a script file.
 
 

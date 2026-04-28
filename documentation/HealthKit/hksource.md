@@ -33,6 +33,8 @@ Sources include apps and devices that save data to the HealthKit store. Currentl
   The source’s bundle identifier.
 - [var name: String](hksource/name.md)
   The source’s name.
+### Initializers
+- [init?(coder: NSCoder)](hksource/init(coder:).md)
 
 ## Relationships
 

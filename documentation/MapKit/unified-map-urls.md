@@ -15,7 +15,7 @@ Use the `/frame` path component and `query` parameters to control aspects of the
 | Parameter | Description |
 | --- | --- |
 | `center` | Frames the map on a specific center described by comma-separated coordinate pair, such as `40.773957,-73.970974`. |
-| `span` | Specifies the size of the area around the center point of the search in degrees of longitude and latitude, for example `0.05,0.05`, which is approximately one km for these examples. For more information on what these distances mean at different latitudes, see [`init(latitudeDelta:longitudeDelta:)`](MKCoordinateSpan/init(latitudeDelta:longitudeDelta:).md). |
+| `span` | Specifies the size of the area around the center point of the search in degrees of longitude and latitude, for example `0.05,0.05`, which is approximately one km for these examples. For more information on what these distances mean at different latitudes, see doc://com.apple.documentation/documentation/mapkit/mkcoordinatespan/init(latitudedelta:longitudedelta:). |
 | `mode` | Sets the map’s mode to optionally allow location tracking: values can be `follow` or `follow-with-heading`, or `none`. |
 | `heading` | Sets the direction toward which the map orients. |
 | `pitch` | Sets the the vertical angle the map is oriented to. |
@@ -42,7 +42,7 @@ You can use the `/search` path component to search for specific kinds of locatio
 | --- | --- |
 | `center` | Searches the map starting at a specific center point described by a comma-separated coordinate pair, such as `40.773957,-73.970974`. |
 | `query` | A search string. This parameter can be a general point of interest (POI) such as `pizza`, or a specific location such as an address string, such as `1000 Fifth Avenue, NY, NY`, or a city name such as `San Francisco`. For a list of POIs, see [`MKPointOfInterestCategory`](MKPointOfInterestCategory.md). |
-| `span` | A span that specifies the size of the area around the center point of the search in degrees of longitude and latitude, for example `0.05,0.05` which is approximately 1 km for these examples. For more information on what these distances mean at different latitudes, see [`init(latitudeDelta:longitudeDelta:)`](MKCoordinateSpan/init(latitudeDelta:longitudeDelta:).md). |
+| `span` | A span that specifies the size of the area around the center point of the search in degrees of longitude and latitude, for example `0.05,0.05` which is approximately 1 km for these examples. For more information on what these distances mean at different latitudes, see doc://com.apple.documentation/documentation/mapkit/mkcoordinatespan/init(latitudedelta:longitudedelta:). |
 
 The following  `/search`  path component examples demonstrate how to use the `search` path component to find `pizza`, one of Maps’ POI identifiers, using different kinds of location and distance descriptions.
 

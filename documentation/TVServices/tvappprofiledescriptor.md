@@ -28,6 +28,8 @@ For more information about mapping your app profiles to Apple TV accounts, see [
 ### Getting the Profile Name
 - [var name: String](tvappprofiledescriptor/name.md)
   The user-visible label associated with the app profile.
+### Initializers
+- [init?(coder: NSCoder)](tvappprofiledescriptor/init(coder:).md)
 
 ## Relationships
 

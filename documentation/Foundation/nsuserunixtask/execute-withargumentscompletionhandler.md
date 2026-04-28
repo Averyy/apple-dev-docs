@@ -31,7 +31,7 @@ If the script completed normally, the completion handler’s `error` parameter w
   The standard output stream.
 - [var standardError: FileHandle?](nsuserunixtask/standarderror.md)
   The standard error stream.
-- [init(url: URL) throws](nsuserscripttask/init(url:).md)
+- [init(url: URL) throws](nsuserscripttask/init(url:)-2qgls.md)
   Return a user script task instance given a URL for a script file.
 - [var standardInput: FileHandle?](nsuserunixtask/standardinput.md)
   The standard input stream.

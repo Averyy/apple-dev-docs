@@ -48,6 +48,8 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
   The number of possible y-coordinates in the grid.
 ### Instance Methods
 - [func classForGenericArgument(at: Int) -> AnyClass](gkgridgraph/classforgenericargument(at:).md)
+### Initializers
+- [convenience init(nodes: [GKGraphNode])](gkgridgraph/init(nodes:).md)
 
 ## Relationships
 

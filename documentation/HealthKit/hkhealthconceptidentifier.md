@@ -25,6 +25,8 @@ Each identifier points to one concept inside a domain. For example, within the m
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](hkhealthconceptidentifier/init(coder:).md)
 ### Instance Properties
 - [var domain: HKHealthConceptDomain](hkhealthconceptidentifier/domain.md)
   The domain this identifier belongs to.

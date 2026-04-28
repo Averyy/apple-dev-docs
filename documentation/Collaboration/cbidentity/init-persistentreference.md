@@ -30,7 +30,7 @@ A persistent reference is an opaque data object suitable for persistent storage.
 
 - [init?(name: String, authority: CBIdentityAuthority)](cbidentity/init(name:authority:).md)
   Returns the identity object with the given name from the specified identity authority.
-- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:).md)
+- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
 
 

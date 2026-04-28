@@ -8,6 +8,7 @@ Returns a new power zone alert.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

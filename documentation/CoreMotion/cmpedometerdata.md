@@ -45,6 +45,8 @@ You do not create instances of this class yourself. Instead, you use a [`CMPedom
   The approximate number of floors ascended by walking.
 - [var floorsDescended: NSNumber?](cmpedometerdata/floorsdescended.md)
   The approximate number of floors descended by walking.
+### Initializers
+- [init?(coder: NSCoder)](cmpedometerdata/init(coder:).md)
 
 ## Relationships
 

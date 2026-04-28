@@ -8,6 +8,7 @@ Creates a new touchpad control with the provided descriptor, and adds it to the 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

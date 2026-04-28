@@ -20,6 +20,7 @@ class CPNowPlayingSportsTeamLogo
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpnowplayingsportsteamlogo/init(coder:).md)
 - [init(teamInitials: String)](cpnowplayingsportsteamlogo/init(teaminitials:).md)
   If no team logo image is available, initialize a team logo with an abbreviation or initialism for this team.
 - [init(teamLogo: UIImage)](cpnowplayingsportsteamlogo/init(teamlogo:).md)

@@ -22,7 +22,7 @@ var symbolicLinkDestinationURL: URL? { get }
 
 #### Discussion
 
-This property may contain `nil` if the user modifies the symbolic link after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:).md) but before [`FileWrapper`](filewrapper.md) has read the contents of the link.  Use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of that problem.
+This property may contain `nil` if the user modifies the symbolic link after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:)-70161.md) but before [`FileWrapper`](filewrapper.md) has read the contents of the link.  Use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of that problem.
 
 ##### Special Considerations
 

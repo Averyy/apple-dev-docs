@@ -58,6 +58,8 @@ After creating a `CKRecordZone` object and saving it to the database, you don’
 ### Sharing Records
 - [var share: CKRecord.Reference?](ckrecordzone/share.md)
   A reference to the record zone’s share record.
+### Initializers
+- [init?(coder: NSCoder)](ckrecordzone/init(coder:).md)
 ### Instance Properties
 - [var encryptionScope: CKRecordZone.EncryptionScope](ckrecordzone/encryptionscope-swift.property.md)
   The encryption scope determines the granularity at which CloudKit stores encryption keys within the zone.

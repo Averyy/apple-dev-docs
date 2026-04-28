@@ -31,30 +31,30 @@ The intended use cases of this type of initializer include compressed images and
 
 ## See Also
 
-- [init(cgImage: CGImage, options: [VNImageOption : Any])](vnimagerequesthandler/init(cgimage:options:).md)
+- [init(cgImage: CGImage, options: [VNImageOption : Any])](vnimagerequesthandler/init(cgimage:options:)-4qda6.md)
   Creates a handler to be used for performing requests on Core Graphics images.
-- [init(cgImage: CGImage, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cgimage:orientation:options:).md)
+- [init(cgImage: CGImage, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cgimage:orientation:options:)-63ojm.md)
   Creates a handler to be used for performing requests on a Core Graphics image with known orientation.
-- [init(ciImage: CIImage, options: [VNImageOption : Any])](vnimagerequesthandler/init(ciimage:options:).md)
+- [init(ciImage: CIImage, options: [VNImageOption : Any])](vnimagerequesthandler/init(ciimage:options:)-4wf33.md)
   Creates a handler to use for performing requests on Core Image image data.
-- [init(ciImage: CIImage, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(ciimage:orientation:options:).md)
+- [init(ciImage: CIImage, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(ciimage:orientation:options:)-3svy6.md)
   Creates a handler to be used for performing requests on Core Image image data of a known orientation.
-- [init(cvPixelBuffer: CVPixelBuffer, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:options:).md)
+- [init(cvPixelBuffer: CVPixelBuffer, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:options:)-bkd7.md)
   Creates a handler for performing requests on a Core Video pixel buffer.
-- [init(cvPixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:orientation:options:).md)
+- [init(cvPixelBuffer: CVPixelBuffer, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:orientation:options:)-9fxug.md)
   Creates a handler for performing requests on a Core Video pixel buffer of a known orientation.
-- [init(cvPixelBuffer: CVPixelBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:depthdata:orientation:options:).md)
-- [init(cmSampleBuffer: CMSampleBuffer, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:options:).md)
+- [init(cvPixelBuffer: CVPixelBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cvpixelbuffer:depthdata:orientation:options:)-3mj2d.md)
+- [init(cmSampleBuffer: CMSampleBuffer, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:options:)-2yodn.md)
   Creates a request handler that performs requests on an image contained within a sample buffer.
-- [init(cmSampleBuffer: CMSampleBuffer, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:orientation:options:).md)
+- [init(cmSampleBuffer: CMSampleBuffer, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:orientation:options:)-335k4.md)
   Creates a request handler that performs requests on an image of a specified orientation contained within a sample buffer.
-- [init(cmSampleBuffer: CMSampleBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:depthdata:orientation:options:).md)
+- [init(cmSampleBuffer: CMSampleBuffer, depthData: AVDepthData, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(cmsamplebuffer:depthdata:orientation:options:)-8bjyh.md)
   Creates a request handler that performs requests on an image in a sample buffer that contains depth data.
 - [init(data: Data, options: [VNImageOption : Any])](vnimagerequesthandler/init(data:options:).md)
   Creates a handler to use for performing requests on an image in a data object.
-- [init(url: URL, options: [VNImageOption : Any])](vnimagerequesthandler/init(url:options:).md)
+- [init(url: URL, options: [VNImageOption : Any])](vnimagerequesthandler/init(url:options:)-4k623.md)
   Creates a handler to be used for performing requests on an image at the specified URL.
-- [init(url: URL, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(url:orientation:options:).md)
+- [init(url: URL, orientation: CGImagePropertyOrientation, options: [VNImageOption : Any])](vnimagerequesthandler/init(url:orientation:options:)-70nta.md)
   Creates a handler to be used for performing requests on an image with known orientation, at the specified URL.
 
 

@@ -30,6 +30,8 @@ A parameter group is KVC-compliant for its children. For example, calling the pa
   Returns a flat array of all parameters in the group, including those in child groups.
 - [var children: [AUParameterNode]](auparametergroup/children.md)
   The group’s child nodes.
+### Initializers
+- [init?(coder: NSCoder)](auparametergroup/init(coder:).md)
 
 ## Relationships
 

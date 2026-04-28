@@ -40,6 +40,8 @@ class ASPasskeyCredentialRequest
   An input for WebAuthn extensions.
 - [enum ASPasskeyCredentialExtensionInput](aspasskeycredentialextensioninput.md)
   A type for WebAuthn extension inputs.
+### Initializers
+- [init?(coder: NSCoder)](aspasskeycredentialrequest/init(coder:).md)
 ### Instance Properties
 - [var excludedCredentials: [ASAuthorizationPlatformPublicKeyCredentialDescriptor]?](aspasskeycredentialrequest/excludedcredentials.md)
   A list of IDs that represent existing passkeys for the account, to prevent creation of duplicate passkeys.

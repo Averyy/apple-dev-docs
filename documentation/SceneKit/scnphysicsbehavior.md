@@ -37,6 +37,11 @@ To use a physics behavior, you follow these steps:
 2. Create and configure a behavior object using one of the subclasses listed in Table 1.
 3. Add the behavior to the physics simulation by calling the [`addBehavior(_:)`](scnphysicsworld/addbehavior(_:).md) method on your scene’s [`SCNPhysicsWorld`](scnphysicsworld.md) object.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsbehavior/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

@@ -45,6 +45,8 @@ class MXBackgroundExitData
 ### Reading the Timeout Count
 - [var cumulativeBackgroundTaskAssertionTimeoutExitCount: Int](mxbackgroundexitdata/cumulativebackgroundtaskassertiontimeoutexitcount.md)
   The number of times the system terminated the app from the background for exceeding the allocated time for a background task.
+### Initializers
+- [init?(coder: NSCoder)](mxbackgroundexitdata/init(coder:).md)
 
 ## Relationships
 

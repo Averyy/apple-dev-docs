@@ -46,7 +46,7 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 ## Topics
 
 ### Initializing Color Objects
-- [init(cgColor: CGColor)](cicolor/init(cgcolor:).md)
+- [init(cgColor: CGColor)](cicolor/init(cgcolor:)-1hzk4.md)
   Create a Core Image color object with a Core Graphics color object.
 - [convenience init(color: UIColor)](cicolor/init(color:).md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/init(red:green:blue:alpha:).md)
@@ -98,6 +98,10 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,1` and alpha value `1`.
 - [class var yellow: CIColor](cicolor/yellow.md)
   Returns a singleton Core Image color instance in the sRGB color space with RGB values `1,1,0` and alpha value `1`.
+### Initializers
+- [convenience init(CGColor: CGColor)](cicolor/init(cgcolor:)-2n26w.md)
+- [init(CGColor: CGColor)](cicolor/init(cgcolor:)-2nx98.md)
+- [init?(coder: NSCoder)](cicolor/init(coder:).md)
 
 ## Relationships
 

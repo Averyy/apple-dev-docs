@@ -41,7 +41,7 @@ If the specified pasteboard contains the value `NSFilenamesPboardType`, each fil
   Initializes and returns an image object using the provided image data.
 - [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:).md)
+- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
   Creates a new image using the contents of the provided image.
 - [init(coder: NSCoder)](nsimage/init(coder:).md)
   Initializes and returns an image object from data in an unarchiver.

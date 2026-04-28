@@ -8,6 +8,7 @@ The translation was provided by the system’s default translation engine.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 
 ## Declaration
 

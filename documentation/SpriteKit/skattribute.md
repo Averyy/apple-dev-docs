@@ -54,6 +54,7 @@ sprite.setValue(SKAttributeValue(vectorFloat2: spriteSize),
 ### Initializers
 - [init(name: String, type: SKAttributeType)](skattribute/init(name:type:).md)
   Creates and initializes a new attribute object of a specified type with a name that can be referenced within the shader.
+- [init?(coder: NSCoder)](skattribute/init(coder:).md)
 ### Instance Properties
 - [var name: String](skattribute/name.md)
   The receiver’s name

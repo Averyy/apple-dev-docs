@@ -56,6 +56,8 @@ A morpher and its target geometries may be loaded from a scene file or created p
 ### Constants
 - [enum SCNMorpherCalculationMode](scnmorphercalculationmode.md)
   The interpolation formulas for blending between target geometries.
+### Initializers
+- [init?(coder: NSCoder)](scnmorpher/init(coder:).md)
 ### Instance Properties
 - [var unifiesNormals: Bool](scnmorpher/unifiesnormals.md)
 - [var weights: [NSNumber]](scnmorpher/weights.md)

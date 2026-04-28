@@ -38,6 +38,8 @@ The information in this class holds the geometry data for a single anchor of the
   A container for index data, such as vertex indices of a face.
 - [var normals: ARGeometrySource](armeshgeometry/normals.md)
   Rays that define which direction is outside for each face.
+### Initializers
+- [init?(coder: NSCoder)](armeshgeometry/init(coder:).md)
 
 ## Relationships
 

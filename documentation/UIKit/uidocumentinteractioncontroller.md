@@ -29,7 +29,7 @@ You can also use the delegate to participate in interactions occurring within th
 ## Topics
 
 ### Creating the document interaction controller
-- [init(url: URL)](uidocumentinteractioncontroller/init(url:).md)
+- [init(url: URL)](uidocumentinteractioncontroller/init(url:)-8wb4p.md)
   Creates a document interaction controller with the specified URL.
 ### Handling document-related interactions
 - [var delegate: (any UIDocumentInteractionControllerDelegate)?](uidocumentinteractioncontroller/delegate.md)
@@ -66,6 +66,8 @@ You can also use the delegate to participate in interactions occurring within th
 ### Accessing the controller attributes
 - [var gestureRecognizers: [UIGestureRecognizer]](uidocumentinteractioncontroller/gesturerecognizers.md)
   The system-supplied gesture recognizers for presenting a document interaction controller.
+### Initializers
+- [init(URL: URL)](uidocumentinteractioncontroller/init(url:)-39lrq.md)
 
 ## Relationships
 

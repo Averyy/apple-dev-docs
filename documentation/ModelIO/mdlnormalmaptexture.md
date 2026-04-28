@@ -32,6 +32,8 @@ Like other procedural [`MDLTexture`](mdltexture.md) subclasses, the [`MDLNormalM
 ### Creating a Normal Map Texture
 - [init(byGeneratingNormalMapWith: MDLTexture, name: String?, smoothness: Float, contrast: Float)](mdlnormalmaptexture/init(bygeneratingnormalmapwith:name:smoothness:contrast:).md)
   Initializes a normal map to be generated from the specified texture.
+### Initializers
+- [init(byGeneratingNormalMapWithTexture: MDLTexture, name: String?, smoothness: Float, contrast: Float)](mdlnormalmaptexture/init(bygeneratingnormalmapwithtexture:name:smoothness:contrast:).md)
 
 ## Relationships
 

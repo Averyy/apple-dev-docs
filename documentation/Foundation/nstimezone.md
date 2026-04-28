@@ -103,6 +103,8 @@ You typically work with system time zones rather than creating time zones by ide
 ### Recognizing Notifications
 - [static let NSSystemTimeZoneDidChange: NSNotification.Name](nsnotification/name-swift.struct/nssystemtimezonedidchange.md)
   A notification posted when the time zone changes.
+### Initializers
+- [init?(coder: NSCoder)](nstimezone/init(coder:).md)
 
 ## Relationships
 

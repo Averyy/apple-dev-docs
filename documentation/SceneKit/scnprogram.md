@@ -217,6 +217,8 @@ Custom uniform variables. To provide values for your own custom uniform variable
   The name of the fragment shader function to load from a Metal shader library.
 - [var library: (any MTLLibrary)?](scnprogram/library.md)
   The Metal shader library containing shader functions to be used by this program.
+### Initializers
+- [init?(coder: NSCoder)](scnprogram/init(coder:).md)
 
 ## Relationships
 

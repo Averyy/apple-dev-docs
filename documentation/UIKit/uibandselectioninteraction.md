@@ -76,6 +76,8 @@ view.addInteraction(bandSelectionInteraction)
 ### Starting the interaction
 - [var shouldBeginHandler: ((UIBandSelectionInteraction, CGPoint) -> Bool)?](uibandselectioninteraction/shouldbeginhandler.md)
   The handler that determines whether to start a band selection interaction.
+### Initializers
+- [init(selectionHandler: (UIBandSelectionInteraction) -> Void)](uibandselectioninteraction/init(selectionhandler:).md)
 
 ## Relationships
 

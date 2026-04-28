@@ -110,6 +110,11 @@ class SKShapeNode
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](skshapenode/customplaygroundquicklook.md)
   A custom playground quick look for this instance.
+### Initializers
+- [convenience init(ellipseInRect: CGRect)](skshapenode/init(ellipseinrect:).md)
+- [convenience init(ellipseOfSize: CGSize)](skshapenode/init(ellipseofsize:).md)
+- [convenience init(rectOfSize: CGSize)](skshapenode/init(rectofsize:).md)
+- [convenience init(rectOfSize: CGSize, cornerRadius: CGFloat)](skshapenode/init(rectofsize:cornerradius:).md)
 
 ## Relationships
 

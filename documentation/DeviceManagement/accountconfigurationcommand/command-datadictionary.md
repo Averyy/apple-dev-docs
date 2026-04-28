@@ -7,6 +7,8 @@ The command to create and configure a local administrator account on a device.
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

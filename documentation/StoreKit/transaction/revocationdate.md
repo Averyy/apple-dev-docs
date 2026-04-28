@@ -8,6 +8,7 @@ The date that the App Store refunded the transaction or revoked it from Family S
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -21,7 +22,9 @@ let revocationDate: Date?
 
 ## Mentions
 
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
 - [Testing refund requests](testing-refund-requests.md)
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 - [Testing Family Sharing](testing-family-sharing.md)
 
 ## See Also

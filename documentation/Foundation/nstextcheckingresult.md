@@ -111,6 +111,8 @@ On both iOS and macOS, instances of [`NSTextCheckingResult`](nstextcheckingresul
   Defines the types of checking that are available. These values can be combined using the C-bitwise OR operator. The system supports its own internal types, and the user can extend those types by subclassing `NSTextCheckingResult` and adding their own custom types.
 - [struct NSTextCheckingKey](nstextcheckingkey.md)
 - [Anonymous](1476845-anonymous.md)
+### Initializers
+- [init?(coder: NSCoder)](nstextcheckingresult/init(coder:).md)
 ### Instance Properties
 - [var alternativeStrings: [String]?](nstextcheckingresult/alternativestrings.md)
 ### Instance Methods

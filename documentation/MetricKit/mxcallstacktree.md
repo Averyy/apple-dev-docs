@@ -23,6 +23,8 @@ class MXCallStackTree
 ### Generating a report
 - [func jsonRepresentation() -> Data](mxcallstacktree/jsonrepresentation.md)
   Returns the contents of the stack tree in JSON format.
+### Initializers
+- [init?(coder: NSCoder)](mxcallstacktree/init(coder:).md)
 
 ## Relationships
 

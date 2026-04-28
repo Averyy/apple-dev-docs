@@ -86,7 +86,7 @@ VStackLayout(spacing: 20).depthAlignment(.front) {
 
 #### Present Swiftui Views From a Volume
 
-After selecting a landmark, three named trailhead markers appear for the Grand Canyon. The trailhead names appear above the marker at the top of the trail. Each trailhead has a sub-entity that has a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent). The `ViewAttachmentComponent` attaches SwiftUI views to entities.
+After selecting a landmark, three named trailhead markers appear for the Grand Canyon. The trailhead names appear above the marker at the top of the trail. Each trailhead has a sub-entity that has a doc://com.apple.documentation/documentation/realitykit/viewattachmentcomponent. The `ViewAttachmentComponent` attaches SwiftUI views to entities.
 
 It often makes sense to present views directly from an entity. However, sometimes it may be better to offset the presentation of views from the presenting entity. Canyon Crosser uses a descendant entity to present the view from the desired location:
 

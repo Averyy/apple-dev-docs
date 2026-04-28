@@ -24,7 +24,7 @@ For more information on ARKit in visionOS, including hands-tracking, see [`Meet 
 
 #### Hide the Wearers Hands
 
-By default, the system displays the wearer’s hands in an immersive space. The sample hides the wearer’s hands using [`upperLimbVisibility(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/upperLimbVisibility(_:)).
+By default, the system displays the wearer’s hands in an immersive space. The sample hides the wearer’s hands using doc://com.apple.documentation/documentation/swiftui/scene/upperlimbvisibility(_:).
 
 ```swift
 ImmersiveSpace(id: appModel.immersiveSpaceID) {

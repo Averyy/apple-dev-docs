@@ -52,6 +52,10 @@ You’re now ready to test this sample in the sandbox environment. Sign in to th
 
 ## See Also
 
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+  Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+  Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 - [struct Product](product.md)
   Information about a product that you configure in App Store Connect.
 - [Product.SubscriptionInfo](product/subscriptioninfo.md)

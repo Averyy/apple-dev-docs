@@ -7,6 +7,8 @@ Information about connection groups with member connection references that the s
 
 **Availability**:
 - macOS 14.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

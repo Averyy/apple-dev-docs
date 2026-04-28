@@ -46,7 +46,7 @@ The system limits the amount of storage space allocated for attachments for each
 ## Topics
 
 ### Creating an Attachment
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:).md)
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-83grx.md)
   Creates an attachment object from the specified file and options.
 - [let UNNotificationAttachmentOptionsTypeHintKey: String](unnotificationattachmentoptionstypehintkey.md)
   A hint about an attachment’s file type.
@@ -63,6 +63,9 @@ The system limits the amount of storage space allocated for attachments for each
   The URL of the file for this attachment.
 - [var type: String](unnotificationattachment/type.md)
   The UTI type of the attachment.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationattachment/init(coder:).md)
+- [convenience init(identifier: String, URL: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-7oony.md)
 
 ## Relationships
 

@@ -16,6 +16,7 @@ object alternateProduct
 
 ## Mentions
 
+- [Retention Messaging API changelog](retention-messaging-changelog.md)
 - [Setting up retention messages](setting-up-retention-messages.md)
 
 #### Discussion
@@ -28,8 +29,9 @@ The message identifier needs to refer to a message that doesn’t include an ima
 
 ## Properties
 
-- `messageIdentifier` (messageIdentifier): The message identifier of the text to display in the switch-plan retention message.
-- `productId` (productId): The product identifier of the subscription the retention message suggests for your customer to switch to.
+- `messageIdentifier` (messageIdentifier) *(required)*: The message identifier of the text to display in the switch-plan retention message.
+- `productId` (productId) *(required)*: The product identifier of the subscription the retention message suggests for your customer to switch to.
+- `billingPlanType` (billingPlanType)
 
 ## See Also
 

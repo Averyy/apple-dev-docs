@@ -72,6 +72,9 @@ WeatherKit provides timely weather information including current conditions, min
 ### Errors
 - [enum WeatherError](weathererror.md)
   An error WeatherKit returns.
+### Deprecations
+- [Deprecated symbols](deprecations.md)
+  Review unsupported symbols and their replacements.
 ### Structures
 - [struct CloudCoverByAltitude](cloudcoverbyaltitude.md)
   Contains the percentage of sky covered by low, medium and high altitude cloud.

@@ -7,6 +7,8 @@ A status report of a background task.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

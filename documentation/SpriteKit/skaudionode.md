@@ -48,11 +48,11 @@ To learn more about audio actions, see Controlling the Audio of a Node in [`Acti
 - [Using Audio Nodes with the Scene’s Listener](using-audio-nodes-with-the-scene-s-listener.md)
   Add audio to your scene, and optionally give it 2D-positional mixing characteristics.
 ### Initializing Audio Nodes
-- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:).md)
+- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:)-969st.md)
   Initializes an audio node from an AVFoundation audio node.
 - [convenience init(fileNamed: String)](skaudionode/init(filenamed:).md)
   Initializes an audio node from an audio asset with the specified filename.
-- [convenience init(url: URL)](skaudionode/init(url:).md)
+- [convenience init(url: URL)](skaudionode/init(url:)-8v3q0.md)
   Initializes an audio node from an audio asset with the specified URL.
 - [init?(coder: NSCoder)](skaudionode/init(coder:).md)
   Tells you when to initialize an audio node that has been unarchived.
@@ -63,6 +63,9 @@ To learn more about audio actions, see Controlling the Audio of a Node in [`Acti
   A Boolean property that indicates whether the node’s audio is altered based on the position of the node.
 - [var autoplayLooped: Bool](skaudionode/autoplaylooped.md)
   A Boolean value that indicates whether the audio should play in a loop when the node is added to the scene.
+### Initializers
+- [init(AVAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:)-7qmyl.md)
+- [convenience init(URL: URL)](skaudionode/init(url:)-5bmrl.md)
 
 ## Relationships
 

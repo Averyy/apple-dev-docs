@@ -42,7 +42,8 @@ Use values of this type in conjunction with the `SwiftUI/View/groupActivityAssoc
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
-- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](../SwiftUI/View/groupActivityAssociation(_:).md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
+](../SwiftUI/View/groupActivityAssociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

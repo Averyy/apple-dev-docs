@@ -219,6 +219,8 @@ In a calendar, day, week, weekday, month, and year numbers are generally 1-based
 ### Recognizing Notifications
 - [static let NSCalendarDayChanged: NSNotification.Name](nsnotification/name-swift.struct/nscalendardaychanged.md)
   A notification that is posted whenever the calendar day of the system changes, as determined by the system calendar, locale, and time zone.
+### Initializers
+- [init?(coder: NSCoder)](nscalendar/init(coder:).md)
 
 ## Relationships
 

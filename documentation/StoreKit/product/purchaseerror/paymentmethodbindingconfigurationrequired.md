@@ -8,6 +8,7 @@ The customer needs to add a payment method to their Apple Account before making 
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 - macOS 26.5+ (Beta)
 - tvOS 26.5+ (Beta)
 - visionOS 26.5+ (Beta)

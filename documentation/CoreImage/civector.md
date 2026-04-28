@@ -32,19 +32,19 @@ You use `CIVector` objects in conjunction with other Core Image classes, such as
   Initialize a Core Image vector object with the specified the values.
 - [convenience init(x: CGFloat)](civector/init(x:).md)
   Initialize a Core Image vector object with one value.
-- [convenience init(x: CGFloat, y: CGFloat)](civector/init(x:y:).md)
+- [convenience init(x: CGFloat, y: CGFloat)](civector/init(x:y:)-4grr.md)
   Initialize a Core Image vector object with two values.
-- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat)](civector/init(x:y:z:).md)
+- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat)](civector/init(x:y:z:)-zais.md)
   Initialize a Core Image vector object with three values.
-- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat)](civector/init(x:y:z:w:).md)
+- [convenience init(x: CGFloat, y: CGFloat, z: CGFloat, w: CGFloat)](civector/init(x:y:z:w:)-75emo.md)
   Initialize a Core Image vector object with four values.
 - [convenience init(string: String)](civector/init(string:).md)
   Initialize a Core Image vector object with values provided in a string representation.
-- [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:).md)
+- [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:)-6o8gl.md)
   Initialize a Core Image vector object with six values provided by a `CGAffineTransform` structure.
-- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:).md)
+- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:)-8cf9j.md)
   Initialize a Core Image vector object with two values provided by a `CGPoint` structure.
-- [convenience init(cgRect: CGRect)](civector/init(cgrect:).md)
+- [convenience init(cgRect: CGRect)](civector/init(cgrect:)-6bolw.md)
   Initialize a Core Image vector object with four values provided by a `CGRect` structure.
 ### Getting Values From a Vector
 - [func value(at: Int) -> CGFloat](civector/value(at:).md)
@@ -67,6 +67,20 @@ You use `CIVector` objects in conjunction with other Core Image classes, such as
   Returns the values in the vector as a `CGPoint` structure.
 - [var cgRectValue: CGRect](civector/cgrectvalue.md)
   Returns the values in the vector as a `CGRect` structure.
+### Initializers
+- [convenience init(CGAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:)-61k8d.md)
+- [convenience init(CGAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:)-gf61.md)
+- [convenience init(CGPoint: CGPoint)](civector/init(cgpoint:)-2q3w0.md)
+- [convenience init(CGPoint: CGPoint)](civector/init(cgpoint:)-339fj.md)
+- [convenience init(CGRect: CGRect)](civector/init(cgrect:)-60mr0.md)
+- [convenience init(CGRect: CGRect)](civector/init(cgrect:)-9l6dq.md)
+- [init?(coder: NSCoder)](civector/init(coder:).md)
+- [convenience init(x: CGFloat, Y: CGFloat)](civector/init(x:y:)-2ia98.md)
+- [convenience init(x: CGFloat, Y: CGFloat)](civector/init(x:y:)-8ln4z.md)
+- [convenience init(x: CGFloat, Y: CGFloat, Z: CGFloat)](civector/init(x:y:z:)-6pett.md)
+- [convenience init(x: CGFloat, Y: CGFloat, Z: CGFloat)](civector/init(x:y:z:)-94o0c.md)
+- [convenience init(x: CGFloat, Y: CGFloat, Z: CGFloat, W: CGFloat)](civector/init(x:y:z:w:)-3lp39.md)
+- [convenience init(x: CGFloat, Y: CGFloat, Z: CGFloat, W: CGFloat)](civector/init(x:y:z:w:)-9obnr.md)
 
 ## Relationships
 

@@ -7,6 +7,8 @@ A dictionary that describes the administrator account to create with Setup Assis
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

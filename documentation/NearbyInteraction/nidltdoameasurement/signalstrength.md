@@ -8,6 +8,7 @@ A value that represents the signal strength, in dBm, to the anchor that provides
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

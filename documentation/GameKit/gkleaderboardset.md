@@ -46,6 +46,8 @@ To organize leaderboards into sets, see [`Configure leaderboard sets`](https://d
   Loads the leaderboards in the leaderboard set.
 - [func loadLeaderboards(completionHandler: (([GKLeaderboard]?, (any Error)?) -> Void)?)](gkleaderboardset/loadleaderboards(completionhandler:).md)
   Loads all of the leaderboards for the current leaderboard set.
+### Initializers
+- [init?(coder: NSCoder)](gkleaderboardset/init(coder:).md)
 
 ## Relationships
 

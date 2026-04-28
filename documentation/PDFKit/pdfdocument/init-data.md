@@ -29,7 +29,7 @@ The data must be PDF data encapsulated in an `NSData` object; otherwise this met
 
 ## See Also
 
-- [init?(url: URL)](pdfdocument/init(url:).md)
+- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
 - [init()](pdfdocument/init.md)
   Initializes a `PDFDocument` object.

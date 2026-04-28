@@ -8,6 +8,7 @@ A key that specifies the MPEG-4 Enhanced Low Delay AAC codec, and uses no flags.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 13.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

@@ -8,6 +8,7 @@ Determines whether to allow people to select or otherwise interact with text.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

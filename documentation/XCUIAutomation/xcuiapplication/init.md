@@ -25,7 +25,7 @@ init()
 
 - [init(bundleIdentifier: String)](xcuiapplication/init(bundleidentifier:).md)
   Creates a proxy for an application for the specified bundle identifier.
-- [init(url: URL)](xcuiapplication/init(url:).md)
+- [init(url: URL)](xcuiapplication/init(url:)-90e7z.md)
   Creates a proxy for the application at the specified file system URL.
 
 

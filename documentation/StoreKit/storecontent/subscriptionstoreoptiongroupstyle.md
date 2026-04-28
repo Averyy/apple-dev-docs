@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -20,7 +21,8 @@
 
 ## See Also
 
-- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
+- [func subscriptionStoreOptionGroupStyle(some SubscriptionOptionGroupStyle) -> some View
+](../SwiftUI/View/subscriptionStoreOptionGroupStyle(_:).md)
   Sets the style subscription store views within this view use to display groups of subscription options.
 - [protocol SubscriptionOptionGroupStyle](subscriptionoptiongroupstyle.md)
 

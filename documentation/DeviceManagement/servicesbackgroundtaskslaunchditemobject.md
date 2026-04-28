@@ -7,6 +7,8 @@ A dictionary of launchd configurations.
 
 **Availability**:
 - macOS 15.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

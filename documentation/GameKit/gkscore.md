@@ -81,6 +81,8 @@ To report a score to Game Center, your game allocates and initializes a new obje
   The player identifier for the player that earned the score.
 - [func report(completionHandler: (((any Error)?) -> Void)?)](gkscore/report(completionhandler:).md)
   Reports a score to Game Center.
+### Initializers
+- [init?(coder: NSCoder)](gkscore/init(coder:).md)
 
 ## Relationships
 

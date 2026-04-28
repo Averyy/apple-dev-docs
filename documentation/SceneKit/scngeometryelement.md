@@ -62,6 +62,7 @@ When SceneKit renders a geometry, each geometry element corresponds to a drawing
 ### Initializers
 - [convenience init(buffer: any MTLBuffer, primitiveType: SCNGeometryPrimitiveType, primitiveCount: Int, bytesPerIndex: Int)](scngeometryelement/init(buffer:primitivetype:primitivecount:bytesperindex:).md)
 - [convenience init(buffer: any MTLBuffer, primitiveType: SCNGeometryPrimitiveType, primitiveCount: Int, indicesChannelCount: Int, interleavedIndicesChannels: Bool, bytesPerIndex: Int)](scngeometryelement/init(buffer:primitivetype:primitivecount:indiceschannelcount:interleavedindiceschannels:bytesperindex:).md)
+- [init?(coder: NSCoder)](scngeometryelement/init(coder:).md)
 - [convenience init(data: Data?, primitiveType: SCNGeometryPrimitiveType, primitiveCount: Int, indicesChannelCount: Int, interleavedIndicesChannels: Bool, bytesPerIndex: Int)](scngeometryelement/init(data:primitivetype:primitivecount:indiceschannelcount:interleavedindiceschannels:bytesperindex:).md)
 ### Instance Properties
 - [var hasInterleavedIndicesChannels: Bool](scngeometryelement/hasinterleavedindiceschannels.md)

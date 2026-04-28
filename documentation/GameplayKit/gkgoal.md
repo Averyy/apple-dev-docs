@@ -57,6 +57,14 @@ To learn more about using goals and agents, see [`Agents, Goals, and Behaviors`]
   Creates a goal whose effect is to maintain an agent’s position within the specified path.
 - [convenience init(toFollow: GKPath, maxPredictionTime: TimeInterval, forward: Bool)](gkgoal/init(tofollow:maxpredictiontime:forward:).md)
   Creates a goal whose effect is to both maintain position on and traverse the specified path.
+### Initializers
+- [convenience init(toAlignWithAgents: [GKAgent], maxDistance: Float, maxAngle: Float)](gkgoal/init(toalignwithagents:maxdistance:maxangle:).md)
+- [convenience init(toAvoidAgents: [GKAgent], maxPredictionTime: TimeInterval)](gkgoal/init(toavoidagents:maxpredictiontime:).md)
+- [convenience init(toAvoidObstacles: [GKObstacle], maxPredictionTime: TimeInterval)](gkgoal/init(toavoidobstacles:maxpredictiontime:).md)
+- [convenience init(toCohereWithAgents: [GKAgent], maxDistance: Float, maxAngle: Float)](gkgoal/init(tocoherewithagents:maxdistance:maxangle:).md)
+- [convenience init(toFollowPath: GKPath, maxPredictionTime: TimeInterval, forward: Bool)](gkgoal/init(tofollowpath:maxpredictiontime:forward:).md)
+- [convenience init(toSeparateFromAgents: [GKAgent], maxDistance: Float, maxAngle: Float)](gkgoal/init(toseparatefromagents:maxdistance:maxangle:).md)
+- [convenience init(toStayOnPath: GKPath, maxPredictionTime: TimeInterval)](gkgoal/init(tostayonpath:maxpredictiontime:).md)
 
 ## Relationships
 

@@ -26,6 +26,7 @@ Contains properties used to configure a [`WKWebExtensionController`](wkwebextens
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](wkwebextensioncontroller/configuration-swift.class/init(coder:).md)
 - [convenience init(identifier: UUID)](wkwebextensioncontroller/configuration-swift.class/init(identifier:).md)
   Returns a new configuration that is persistent and unique for the specified identifier.
 ### Instance Properties

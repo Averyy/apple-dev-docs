@@ -29,6 +29,8 @@ class NFCNDEFMessage
 ### Getting the Message Length
 - [var length: Int](nfcndefmessage/length.md)
   The length, in bytes, of the NDEF message when stored on an NFC tag.
+### Initializers
+- [init(NDEFRecords: [NFCNDEFPayload])](nfcndefmessage/init(ndefrecords:).md)
 
 ## Relationships
 

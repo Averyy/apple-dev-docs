@@ -18,6 +18,7 @@ class CPThumbnailImage
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpthumbnailimage/init(coder:).md)
 - [init(image: UIImage)](cpthumbnailimage/init(image:).md)
   Initialize a thumbnail with an image.
 - [init(image: UIImage, imageOverlay: CPImageOverlay?, sportsOverlay: CPSportsOverlay?)](cpthumbnailimage/init(image:imageoverlay:sportsoverlay:).md)

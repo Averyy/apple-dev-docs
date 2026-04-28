@@ -19,7 +19,7 @@ class Configuration
 
 #### Overview
 
-Use a configuration object with the [`init(url:configuration:)`](sfsafariviewcontroller/init(url:configuration:).md) method to initialize your view controller.
+Use a configuration object with the [`init(url:configuration:)`](sfsafariviewcontroller/init(url:configuration:)-305vl.md) method to initialize your view controller.
 
 ## Topics
 
@@ -47,11 +47,11 @@ Use a configuration object with the [`init(url:configuration:)`](sfsafariviewcon
 
 ## See Also
 
-- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:).md)
+- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:)-305vl.md)
   Initializes and configures a Safari view controller that loads the specified URL.
-- [convenience init(url: URL)](sfsafariviewcontroller/init(url:).md)
+- [convenience init(url: URL)](sfsafariviewcontroller/init(url:)-5kpkn.md)
   Initializes a Safari view controller that loads the specified URL.
-- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:).md)
+- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:)-3aatz.md)
   Initializes a Safari view controller that will load the specified URL, entering Reader mode if Reader mode is requested and available.
 
 

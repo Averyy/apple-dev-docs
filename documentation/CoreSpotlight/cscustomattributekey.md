@@ -42,6 +42,8 @@ Although the Core Spotlight framework provides several predefined attributes, su
   A Boolean value that indicates if the custom attribute should be searchable by default.
 - [var isUnique: Bool](cscustomattributekey/isunique.md)
   A Boolean value that indicates if duplicate custom attribute values should be treated as the same value to save storage space.
+### Initializers
+- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
 
 ## Relationships
 

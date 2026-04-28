@@ -7,6 +7,8 @@ A dictionary of details for apps.
 
 **Availability**:
 - macOS 10.12+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -25,6 +25,11 @@ class NIConfiguration
 
 The [`NIConfiguration`](niconfiguration.md) class serves as the common identity for configuration objects. Don’t instantiate this class directly. Instead, instantiate one if its concrete subclasses: [`NINearbyPeerConfiguration`](ninearbypeerconfiguration.md) or [`NINearbyAccessoryConfiguration`](ninearbyaccessoryconfiguration.md). Use your configuration object to specify the features you want to enable in a Nearby Interaction session, and pass the object to the session’s [`run(_:)`](nisession/run(_:).md) method.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](niconfiguration/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

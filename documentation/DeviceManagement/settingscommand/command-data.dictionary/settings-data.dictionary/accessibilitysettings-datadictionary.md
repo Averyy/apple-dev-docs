@@ -8,7 +8,10 @@ A dictionary that contains settings for accessibility.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

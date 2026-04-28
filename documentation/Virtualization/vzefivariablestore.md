@@ -19,13 +19,16 @@ class VZEFIVariableStore
 ### Creating the variable store
 - [init(creatingVariableStoreAt: URL, options: VZEFIVariableStore.InitializationOptions) throws](vzefivariablestore/init(creatingvariablestoreat:options:).md)
   Creates a new EFI variable store at specified the URL on the filesystem, initialization options, and error-return variable.
-- [init(url: URL)](vzefivariablestore/init(url:).md)
+- [init(url: URL)](vzefivariablestore/init(url:)-83pcn.md)
   Initialize the variable store from the URL of an existing file.
 - [VZEFIVariableStore.InitializationOptions](vzefivariablestore/initializationoptions.md)
   Constants that describe the options available when creating a new Extensible Firmware Interface (EFI) variable store.
 ### Instance properties
 - [var url: URL](vzefivariablestore/url.md)
   The URL of the variable store on the local file system.
+### Initializers
+- [init(URL: URL)](vzefivariablestore/init(url:)-8ewtl.md)
+- [init(creatingVariableStoreAtURL: URL, options: VZEFIVariableStore.InitializationOptions) throws](vzefivariablestore/init(creatingvariablestoreaturl:options:).md)
 
 ## Relationships
 

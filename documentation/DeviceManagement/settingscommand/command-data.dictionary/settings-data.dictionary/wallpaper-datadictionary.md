@@ -8,6 +8,9 @@ A dictionary that contains wallpaper settings.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

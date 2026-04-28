@@ -30,6 +30,8 @@ class MIDICIProfile
   A string that describes the profile.
 - [var profileID: Data](midiciprofile/profileid.md)
   The unique five-byte profile identifier that represents the profile.
+### Initializers
+- [init?(coder: NSCoder)](midiciprofile/init(coder:).md)
 
 ## Relationships
 

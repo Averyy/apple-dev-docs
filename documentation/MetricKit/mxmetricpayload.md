@@ -69,6 +69,8 @@ class MXMetricPayload
   The version of the app on the device at the end of the reporting period.
 - [var metaData: MXMetaData?](mxmetricpayload/metadata.md)
   A set of system-level information for the device.
+### Initializers
+- [init?(coder: NSCoder)](mxmetricpayload/init(coder:).md)
 ### Instance Properties
 - [var diskSpaceUsageMetrics: MXDiskSpaceUsageMetric?](mxmetricpayload/diskspaceusagemetrics.md)
 

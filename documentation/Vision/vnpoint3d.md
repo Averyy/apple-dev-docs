@@ -27,6 +27,8 @@ class VNPoint3D
 ### Getting the Position
 - [var position: simd_float4x4](vnpoint3d/position.md)
   The three-dimensional position.
+### Initializers
+- [init?(coder: NSCoder)](vnpoint3d/init(coder:).md)
 
 ## Relationships
 

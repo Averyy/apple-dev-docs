@@ -27,6 +27,8 @@ Methods that retrieve attributes use this type and inspect the [`wantedAttribute
   A method that indicates whether the request wants given attribute.
 - [FSItem.Attribute](fsitem/attribute.md)
   A value that indicates a set of item attributes to get or set.
+### Initializers
+- [init?(coder: NSCoder)](fsitem/getattributesrequest/init(coder:).md)
 
 ## Relationships
 

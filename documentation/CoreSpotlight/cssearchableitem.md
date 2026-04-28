@@ -71,6 +71,8 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
 ### Deprecated
 - [func associateAppEntity(some IndexedEntity, priority: Int)](cssearchableitem/associateappentity(_:priority:).md)
   Associates an app entity with this searchable item.
+### Initializers
+- [init?(coder: NSCoder)](cssearchableitem/init(coder:).md)
 
 ## Relationships
 

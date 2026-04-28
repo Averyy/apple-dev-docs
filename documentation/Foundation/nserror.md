@@ -97,6 +97,8 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
   Describes an error in the POSIX error domain.
 - [NSError Codes](1448136-nserror-codes.md)
   Error codes in the Cocoa error domain.
+### Initializers
+- [init?(coder: NSCoder)](nserror/init(coder:).md)
 ### Instance Properties
 - [var underlyingErrors: [any Error]](nserror/underlyingerrors.md)
 ### Type Methods

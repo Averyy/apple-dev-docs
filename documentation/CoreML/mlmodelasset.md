@@ -33,7 +33,7 @@ To use an in-memory model, create an [`MLModelAsset`](mlmodelasset.md) with an i
   Creates a model asset from an in-memory model specification.
 - [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:).md)
+- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 ### Getting function names
 - [func functionNames(completionHandler: ([String]?, (any Error)?) -> Void)](mlmodelasset/functionnames(completionhandler:).md)
@@ -43,6 +43,8 @@ To use an in-memory model, create an [`MLModelAsset`](mlmodelasset.md) with an i
   The default model descripton.
 - [func modelDescription(ofFunctionNamed: String, completionHandler: (MLModelDescription?, (any Error)?) -> Void)](mlmodelasset/modeldescription(offunctionnamed:completionhandler:).md)
   The model descripton for a specified function.
+### Initializers
+- [convenience init(URL: URL) throws](mlmodelasset/init(url:)-5540m.md)
 
 ## Relationships
 

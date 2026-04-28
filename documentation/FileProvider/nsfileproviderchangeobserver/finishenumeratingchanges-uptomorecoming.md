@@ -9,6 +9,7 @@ Tells the observer that all of the changes have been enumerated up to the specif
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

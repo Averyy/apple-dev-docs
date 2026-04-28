@@ -62,7 +62,7 @@ Because of the architecture and data model of NSXML, when it parses and processe
   Initializes and returns an `NSXMLDocument` object created from an [`NSData`](nsdata.md) object.
 - [init(rootElement: XMLElement?)](xmldocument/init(rootelement:).md)
   Returns an `NSXMLDocument` object initialized with a single child, the root element.
-- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:).md)
+- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:)-65m2r.md)
   Initializes and returns an `NSXMLDocument` object created from a string containing XML markup text.
 - [class func replacementClass(for: AnyClass) -> AnyClass](xmldocument/replacementclass(for:).md)
   Overridden by subclasses to substitute a custom class for an NSXML class that the parser uses to create node instances.
@@ -124,6 +124,8 @@ Because of the architecture and data model of NSXML, when it parses and processe
   Define document types.
 ### Initializers
 - [init()](xmldocument/init.md)
+- [convenience init(XMLString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:)-87dms.md)
+- [convenience init(contentsOfURL: URL, options: XMLNode.Options) throws](xmldocument/init(contentsofurl:options:).md)
 
 ## Relationships
 

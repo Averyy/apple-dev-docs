@@ -72,6 +72,8 @@ You can’t change a constraint after you create it. However, you can selectivel
 ### Enabling and Disabling a Constraint
 - [var enabled: Bool](skconstraint/enabled.md)
   A Boolean value that specifies whether the constraint is applied.
+### Initializers
+- [init?(coder: NSCoder)](skconstraint/init(coder:).md)
 
 ## Relationships
 

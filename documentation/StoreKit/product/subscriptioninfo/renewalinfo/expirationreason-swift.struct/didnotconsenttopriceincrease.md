@@ -8,6 +8,7 @@ The subscription expired because the customer didn’t consent to a price increa
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

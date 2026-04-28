@@ -31,6 +31,8 @@ class GCColor
   The normalized value of the green component ranging from 0 to 1.
 - [var blue: Float](gccolor/blue.md)
   The normalized value of the blue component ranging from 0 to 1.
+### Initializers
+- [init?(coder: NSCoder)](gccolor/init(coder:).md)
 
 ## Relationships
 

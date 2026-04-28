@@ -125,6 +125,8 @@ For more details, see [`Calendars, Date Components, and Calendar Units`](https:/
   Sets a value for a given calendar unit.
 - [NSCalendar.Unit](nscalendar/unit.md)
   Calendrical units such as year, month, day and hour.
+### Initializers
+- [init?(coder: NSCoder)](nsdatecomponents/init(coder:).md)
 ### Instance Properties
 - [var dayOfYear: Int](nsdatecomponents/dayofyear.md)
 - [var isRepeatedDay: Bool](nsdatecomponents/isrepeatedday.md)

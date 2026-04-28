@@ -26,7 +26,7 @@ An initialized `NSImage` object or `nil` if the method cannot create an image re
 
 - [convenience init?(data: Data)](nsimage/init(data:).md)
   Initializes and returns an image object using the provided image data.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:).md)
+- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
   Creates a new image using the contents of the provided image.
 - [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
   Initializes and returns an image object with data from the specified pasteboard.

@@ -7,6 +7,8 @@ The payload that configures an AIM account on the device.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

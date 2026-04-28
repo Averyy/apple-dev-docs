@@ -7,6 +7,7 @@ Receive and handle merchant token life-cycle updates from Apple Pay.
 
 **Availability**:
 - App Store Connect API 1.0.10+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Mentions
 

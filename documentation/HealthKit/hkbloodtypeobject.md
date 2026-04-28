@@ -24,6 +24,8 @@ class HKBloodTypeObject
 ### Getting Blood Type Data
 - [var bloodType: HKBloodType](hkbloodtypeobject/bloodtype.md)
   The blood type.
+### Initializers
+- [init?(coder: NSCoder)](hkbloodtypeobject/init(coder:).md)
 
 ## Relationships
 

@@ -35,6 +35,9 @@ The message’s body contains a JSON string with both the classification action 
   JSON data included in a response sent over the network.
 - [var userString: String?](ilclassificationresponse/userstring.md)
   Text included in a response sent over SMS.
+### Initializers
+- [init(classificationAction: ILClassificationAction)](ilclassificationresponse/init(classificationaction:).md)
+- [init?(coder: NSCoder)](ilclassificationresponse/init(coder:).md)
 
 ## Relationships
 

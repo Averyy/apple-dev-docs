@@ -25,6 +25,8 @@ The details are relevant to the medication tracking experience.
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](hkuserannotatedmedication/init(coder:).md)
 ### Instance Properties
 - [var hasSchedule: Bool](hkuserannotatedmedication/hasschedule.md)
   A Boolean value that indicates whether a medication has a schedule set up.

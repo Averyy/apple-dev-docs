@@ -58,6 +58,8 @@ Since UDP does not include a handshake with the remote endpoint as part of its p
   The destination endpoint with which this session was created.
 - [var currentPath: NWPath?](nwudpsession/currentpath.md)
   The current evaluated path for the session’s [`resolvedEndpoint`](nwudpsession/resolvedendpoint.md) property.
+### Initializers
+- [init(upgradeForSession: NWUDPSession)](nwudpsession/init(upgradeforsession:).md)
 
 ## Relationships
 

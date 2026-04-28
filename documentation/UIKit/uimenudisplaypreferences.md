@@ -24,6 +24,8 @@ class UIMenuDisplayPreferences
 ### Configuring the maximum line count
 - [var maximumNumberOfTitleLines: Int](uimenudisplaypreferences/maximumnumberoftitlelines.md)
   The number of lines the menu displays for an item’s title or subtitle before it truncates the text.
+### Initializers
+- [init?(coder: NSCoder)](uimenudisplaypreferences/init(coder:).md)
 
 ## Relationships
 

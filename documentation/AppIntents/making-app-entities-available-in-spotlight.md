@@ -12,7 +12,7 @@ During the indexing process, you provide Spotlight with information about your a
 
 ##### Add Support for Indexing Your Entity Types
 
-To index your app’s entities, each [`AppEntity`](appentity.md) type you define needs to conform to the [`IndexedEntity`](indexedentity.md) protocol. The following example shows the `LandmarkEntity` type from [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md), which includes this protocol in its declaration:
+To index your app’s entities, each [`AppEntity`](appentity.md) type you define needs to conform to the [`IndexedEntity`](indexedentity.md) protocol. The following example shows the `LandmarkEntity` type from doc:#adopting-app-intents-to-support-system-experiences, which includes this protocol in its declaration:
 
 ```swift
 struct LandmarkEntity: IndexedEntity {
@@ -121,7 +121,7 @@ After running the preceding code, create a named [`CSSearchableIndex`](https://d
 
 ##### Provide an Intent to Open Your App From Search Results
 
-For each [`AppEntity`](appentity.md) type that you define and donate to Spotlight, create an [`OpenIntent`](openintent.md) type that opens that entity in your app. When Spotlight returns one of your app’s entities in a search result, you want people to be able to tap that result and navigate to the associated content in your app. When an open intent is present, Spotlight can use it to provide that behavior. The following example from [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) shows the open intent for the app’s `LandmarkEntity` type. When someone taps a landmark in search results, Spotlight uses the intent to open the app and display the chosen landmark.
+For each [`AppEntity`](appentity.md) type that you define and donate to Spotlight, create an [`OpenIntent`](openintent.md) type that opens that entity in your app. When Spotlight returns one of your app’s entities in a search result, you want people to be able to tap that result and navigate to the associated content in your app. When an open intent is present, Spotlight can use it to provide that behavior. The following example from doc:#adopting-app-intents-to-support-system-experiences shows the open intent for the app’s `LandmarkEntity` type. When someone taps a landmark in search results, Spotlight uses the intent to open the app and display the chosen landmark.
 
 ```swift
 struct OpenLandmarkIntent: OpenIntent {

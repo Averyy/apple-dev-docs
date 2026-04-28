@@ -33,6 +33,8 @@ When a managed object context is pinned to a specific generation of the app data
 ### Identifying Generations of App Data
 - [class var current: NSQueryGenerationToken](nsquerygenerationtoken/current.md)
   A token that informs a context to use the current generation.
+### Initializers
+- [init?(coder: NSCoder)](nsquerygenerationtoken/init(coder:).md)
 
 ## Relationships
 

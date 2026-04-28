@@ -61,6 +61,8 @@ The format of the relative time value is dependent on the date style you choose 
 ### Constants
 - [enum CLKRelativeDateStyle](clkrelativedatestyle.md)
   Constants indicating the formatting style for the relative date values.
+### Initializers
+- [convenience init(date: Date, relativeToDate: Date?, style: CLKRelativeDateStyle, units: NSCalendar.Unit)](clkrelativedatetextprovider/init(date:relativetodate:style:units:).md)
 
 ## Relationships
 

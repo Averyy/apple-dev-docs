@@ -35,6 +35,8 @@ The system doesn’t expose the identities of the contacts to the app. It tracks
   The unique identifier for the highlight.
 - [var url: URL](swhighlight/url.md)
   The surfaced content URL for the highlight.
+### Initializers
+- [init?(coder: NSCoder)](swhighlight/init(coder:).md)
 
 ## Relationships
 

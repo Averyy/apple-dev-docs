@@ -45,6 +45,8 @@ Image features that support additional image sizes provide a range of sizes, or 
   Additional sizes this image feature supports.
 - [class MLImageSizeConstraint](mlimagesizeconstraint.md)
   A list or range of sizes that augment an image constraint’s default size.
+### Initializers
+- [init?(coder: NSCoder)](mlimageconstraint/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ Gets the customized order of the promotion info objects the represent promoted p
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

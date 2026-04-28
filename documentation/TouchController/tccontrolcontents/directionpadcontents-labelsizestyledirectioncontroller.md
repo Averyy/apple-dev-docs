@@ -8,6 +8,7 @@ The direction pad contents for the specified label, size, style, and direction.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

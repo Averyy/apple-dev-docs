@@ -25,6 +25,8 @@ class Range
   The marker at the beginning of a range in an element’s accessibility text.
 - [var endMarker: BEAccessibilityTextMarker](beaccessibilitytextmarker/range/endmarker.md)
   The marker at the end of a range in an element’s accessibility text.
+### Initializers
+- [init?(coder: NSCoder)](beaccessibilitytextmarker/range/init(coder:).md)
 
 ## Relationships
 

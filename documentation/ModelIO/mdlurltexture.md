@@ -26,11 +26,13 @@ Unlike the superclass [`MDLTexture`](mdltexture.md), the [`MDLURLTexture`](mdlur
 ## Topics
 
 ### Creating a URL Texture
-- [init(url: URL, name: String?)](mdlurltexture/init(url:name:).md)
+- [init(url: URL, name: String?)](mdlurltexture/init(url:name:)-1y03u.md)
   Initializes a texture that loads its texel data from a file at the specified URL.
 ### Inspecting the Texture URL
 - [var url: URL](mdlurltexture/url.md)
   The URL from which to load texture data.
+### Initializers
+- [init(URL: URL, name: String?)](mdlurltexture/init(url:name:)-5dfk1.md)
 
 ## Relationships
 

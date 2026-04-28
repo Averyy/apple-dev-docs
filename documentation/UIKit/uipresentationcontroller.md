@@ -161,6 +161,8 @@ Subclasses may override other methods of this class as needed to provide custom 
 ### Deprecated
 - [var overrideTraitCollection: UITraitCollection?](uipresentationcontroller/overridetraitcollection.md)
   Interface traits for the presented view controller, to use in place of traits from the iOS environment.
+### Initializers
+- [init(presentedViewController: UIViewController, presentingViewController: UIViewController?)](uipresentationcontroller/init(presentedviewcontroller:presentingviewcontroller:).md)
 ### Instance Properties
 - [var backgroundEffect: UIVisualEffect?](uipresentationcontroller/backgroundeffect.md)
 

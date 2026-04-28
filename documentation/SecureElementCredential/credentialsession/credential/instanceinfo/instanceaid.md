@@ -8,6 +8,7 @@ The unique identifier for the applet instance.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Hashes the essential components of the scheduled plan by feeding them into the g
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

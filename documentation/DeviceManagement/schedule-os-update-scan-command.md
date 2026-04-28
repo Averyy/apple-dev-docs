@@ -7,6 +7,8 @@ Schedule a background scan for operating-system updates on a device.
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

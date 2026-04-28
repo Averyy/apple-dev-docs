@@ -28,6 +28,8 @@ class SFSafariTab
 - [func close()](sfsafaritab/close.md)
 - [func getContainingWindow(completionHandler: (SFSafariWindow?) -> Void)](sfsafaritab/getcontainingwindow(completionhandler:).md)
 - [func navigate(to: URL)](sfsafaritab/navigate(to:).md)
+### Initializers
+- [init?(coder: NSCoder)](sfsafaritab/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A snapshot of the credential’s installation state.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -24,8 +24,11 @@ class SCNAnimation
 - [typealias SCNAnimationDidStartBlock](scnanimationdidstartblock.md)
 - [typealias SCNAnimationDidStopBlock](scnanimationdidstopblock.md)
 ### Initializers
-- [init(caAnimation: CAAnimation)](scnanimation-swift.class/init(caanimation:).md)
+- [init(CAAnimation: CAAnimation)](scnanimation-swift.class/init(caanimation:)-3sfjw.md)
+- [init(caAnimation: CAAnimation)](scnanimation-swift.class/init(caanimation:)-4t0rw.md)
+- [init?(coder: NSCoder)](scnanimation-swift.class/init(coder:).md)
 - [init(contentsOf: URL)](scnanimation-swift.class/init(contentsof:).md)
+- [init(contentsOfURL: URL)](scnanimation-swift.class/init(contentsofurl:).md)
 - [init(named: String)](scnanimation-swift.class/init(named:).md)
 ### Instance Properties
 - [var animationDidStart: SCNAnimationDidStartBlock?](scnanimation-swift.class/animationdidstart.md)

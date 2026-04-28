@@ -36,6 +36,9 @@ class UIAccessibilityLocationDescriptor
   Returns the geometric point of interest for the accessibility location descriptor within its associated view and in the coordinate space of the view.
 - [var view: UIView?](uiaccessibilitylocationdescriptor/view.md)
   Returns the view associated with the accessibility location descriptor.
+### Initializers
+- [init(attributedName: NSAttributedString, point: CGPoint, inView: UIView)](uiaccessibilitylocationdescriptor/init(attributedname:point:inview:).md)
+- [convenience init(name: String, point: CGPoint, inView: UIView)](uiaccessibilitylocationdescriptor/init(name:point:inview:).md)
 
 ## Relationships
 

@@ -294,32 +294,16 @@ struct Name
   Posted when the app’s occlusion state changes.
 - [class let didChangeScreenParametersNotification: NSNotification.Name](../AppKit/NSApplication/didChangeScreenParametersNotification.md)
   Posted when the configuration of the displays attached to the computer is changed.
-- [class let didFinishLaunchingNotification: NSNotification.Name](../AppKit/NSApplication/didFinishLaunchingNotification.md)
-  Posted at the end of the [`finishLaunching()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/finishLaunching()) method to indicate that the app has completed launching and is ready to run.
 - [class let didFinishRestoringWindowsNotification: NSNotification.Name](../AppKit/NSApplication/didFinishRestoringWindowsNotification.md)
   Posted when the app has finished restoring windows.
-- [class let didHideNotification: NSNotification.Name](../AppKit/NSApplication/didHideNotification.md)
-  Posted at the end of the [`hide(_:)`](doc://com.apple.appkit/documentation/AppKit/NSApplication/hide(_:)) method to indicate that the app is now hidden.
 - [class let didResignActiveNotification: NSNotification.Name](../AppKit/NSApplication/didResignActiveNotification.md)
   Posted immediately after the app gives up its active status to another app.
-- [class let didUnhideNotification: NSNotification.Name](../AppKit/NSApplication/didUnhideNotification.md)
-  Posted at the end of the [`unhideWithoutActivation()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/unhideWithoutActivation()) method to indicate that the app is now visible.
-- [class let didUpdateNotification: NSNotification.Name](../AppKit/NSApplication/didUpdateNotification.md)
-  Posted at the end of the [`updateWindows()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/updateWindows()) method to indicate that the app has finished updating its windows.
 - [class let willBecomeActiveNotification: NSNotification.Name](../AppKit/NSApplication/willBecomeActiveNotification.md)
   Posted immediately before the app becomes active.
-- [class let willFinishLaunchingNotification: NSNotification.Name](../AppKit/NSApplication/willFinishLaunchingNotification.md)
-  Posted at the start of the [`finishLaunching()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/finishLaunching()) method to indicate that the app has completed its initialization process and is about to finish launching.
-- [class let willHideNotification: NSNotification.Name](../AppKit/NSApplication/willHideNotification.md)
-  Posted at the start of the [`hide(_:)`](doc://com.apple.appkit/documentation/AppKit/NSApplication/hide(_:)) method to indicate that the app is about to be hidden.
 - [class let willResignActiveNotification: NSNotification.Name](../AppKit/NSApplication/willResignActiveNotification.md)
   Posted immediately before the app gives up its active status to another app.
 - [class let willTerminateNotification: NSNotification.Name](../AppKit/NSApplication/willTerminateNotification.md)
   Sends a notification to terminate the app.
-- [class let willUnhideNotification: NSNotification.Name](../AppKit/NSApplication/willUnhideNotification.md)
-  Posted at the start of the [`unhideWithoutActivation()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/unhideWithoutActivation()) method to indicate that the app is about to become visible.
-- [class let willUpdateNotification: NSNotification.Name](../AppKit/NSApplication/willUpdateNotification.md)
-  Posted at the start of the [`updateWindows()`](doc://com.apple.appkit/documentation/AppKit/NSApplication/updateWindows()) method to indicate that the app is about to update its windows.
 - [class let columnConfigurationDidChangeNotification: NSNotification.Name](../AppKit/NSBrowser/columnConfigurationDidChangeNotification.md)
   Notifies the delegate when the width of a browser column has changed.
 - [static let NSClassDescriptionNeededForClass: NSNotification.Name](nsnotification/name-swift.struct/nsclassdescriptionneededforclass.md)
@@ -328,70 +312,6 @@ struct Name
 - [static let NSApplicationProtectedDataWillBecomeUnavailable: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationprotecteddatawillbecomeunavailable.md)
 - [static let announcementRequested: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/announcementRequested.md)
   This notification posts when an app needs to make an announcement to the user. If VoiceOver is enabled, it’s presented via speech and/or braille. Otherwise, it does nothing.
-- [static let applicationActivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationActivated.md)
-  This notification is posted after the app has been activated. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let applicationDeactivated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationDeactivated.md)
-  This notification is posted after the app has been deactivated.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let applicationHidden: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationHidden.md)
-  This notification is posted after the app is hidden. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let applicationShown: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/applicationShown.md)
-  This notification is posted after the app is shown. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let created: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/created.md)
-  This notification is posted after an accessibility element is created. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let drawerCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/drawerCreated.md)
-  This notification is posted after a drawer appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let focusedUIElementChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/focusedUIElementChanged.md)
-  This notification is posted after an accessibility element gains focus. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let focusedWindowChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/focusedWindowChanged.md)
-  This notification is posted after the key window changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let helpTagCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/helpTagCreated.md)
-  This notification is posted after a help tag appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let layoutChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/layoutChanged.md)
-  This notification is posted after the UI changes in a way that requires the attention of an accessibility client. This notification should be accompanied by a `userInfo` dictionary with the key [`uiElements`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/NotificationUserInfoKey/uiElements) and an array containing the UI elements that have been added or changed. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let mainWindowChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/mainWindowChanged.md)
-  This notification is posted after the main window changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let moved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/moved.md)
-  This notification is posted after an accessibility element moves. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let resized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/resized.md)
-  This notification is posted after an accessibility element’s size changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let rowCollapsed: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowCollapsed.md)
-  This notification is posted after a row collapses. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let rowCountChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowCountChanged.md)
-  This notification is posted after a row is added or deleted. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let rowExpanded: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/rowExpanded.md)
-  This notification is posted after a row expands. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedCellsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedCellsChanged.md)
-  This notification is posted after one or more cells in a cell-based table are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedChildrenChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedChildrenChanged.md)
-  This notification is posted after one or more child elements are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedChildrenMoved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedChildrenMoved.md)
-  This notification is posted after the selected items in a layout area move. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedColumnsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedColumnsChanged.md)
-  This notification is posted after one or more columns are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedRowsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedRowsChanged.md)
-  This notification is posted after one or more rows are selected or deselected. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let selectedTextChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/selectedTextChanged.md)
-  This notification is posted after text is selected or deselected.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let sheetCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/sheetCreated.md)
-  This notification is posted after a sheet appears.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let titleChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/titleChanged.md)
-  This notification is posted after an accessibility element’s title changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let uiElementDestroyed: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/uiElementDestroyed.md)
-  This notification is posted after an accessibility element is destroyed. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let unitsChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/unitsChanged.md)
-  This notification is posted after the units in a layout area change. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let valueChanged: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/valueChanged.md)
-  This notification is posted after an accessibility element’s value changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let windowCreated: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowCreated.md)
-  This notification is posted after a new window appears. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let windowDeminiaturized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowDeminiaturized.md)
-  This notification is posted after a window is restored to full size from the Dock.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let windowMiniaturized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowMiniaturized.md)
-  This notification is posted after a window is put in the Dock. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let windowMoved: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowMoved.md)
-  This notification is posted after a window moves.  Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
-- [static let windowResized: NSAccessibility.Notification](../AppKit/NSAccessibility-swift.struct/Notification/windowResized.md)
-  This notification is posted after a window’s size changes. Post this notification using the [`post(element:notification:)`](doc://com.apple.appkit/documentation/AppKit/NSAccessibility-swift.struct/post(element:notification:)) function instead of an `NSNotificationCenter` instance.
 - [class let progressMarkNotification: NSNotification.Name](../AppKit/NSAnimation/progressMarkNotification.md)
   Posted when the current progress of a running animation reaches one of its progress marks.
 - [class let antialiasThresholdChangedNotification: NSNotification.Name](../AppKit/NSFont/antialiasThresholdChangedNotification.md)

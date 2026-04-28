@@ -71,6 +71,9 @@ A caption contains a cue, which is a single sentence or paragraph of text for a 
   Returns the text combine at the index position.
 - [AVCaption.TextCombine](avcaption/textcombine.md)
   The caption’s supported rendering policy options.
+### Initializers
+- [init?(coder: NSCoder)](avcaption/init(coder:).md)
+- [init(text: String, timeRange: CMTimeRange)](avcaption/init(text:timerange:).md)
 
 ## Relationships
 

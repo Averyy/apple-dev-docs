@@ -7,6 +7,8 @@ A dictionary that specifies the package that the device uses to install an app w
 
 **Availability**:
 - macOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -25,7 +25,7 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
 ### Creating Instances
 - [convenience init()](socketport/init.md)
   Initializes the receiver as a local TCP/IP socket of type `SOCK_STREAM`.
-- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:).md)
+- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:)-6hgbo.md)
   Initializes the receiver as a local TCP/IP socket of type `SOCK_STREAM`, listening on a specified port number.
 - [init?(protocolFamily: Int32, socketType: Int32, protocol: Int32, address: Data)](socketport/init(protocolfamily:sockettype:protocol:address:).md)
   Initializes the receiver as a local socket with the provided arguments.
@@ -46,6 +46,8 @@ A [`SocketPort`](socketport.md) object can be used as an endpoint for distribute
   The receiver’s native socket identifier on the platform.
 - [var socketType: Int32](socketport/sockettype.md)
   The receiver’s socket type.
+### Initializers
+- [convenience init?(TCPPort: UInt16)](socketport/init(tcpport:)-17uiq.md)
 
 ## Relationships
 

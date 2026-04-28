@@ -145,6 +145,8 @@ do {
   An object that contains information about the eye alignment correction.
 - [var vertexDistance: HKQuantity?](hkglasseslensspecification/vertexdistance.md)
   The distance between the back of the lens and the eye, measured in mm.
+### Initializers
+- [init?(coder: NSCoder)](hkglasseslensspecification/init(coder:).md)
 
 ## Relationships
 

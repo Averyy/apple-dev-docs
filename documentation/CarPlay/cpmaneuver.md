@@ -78,6 +78,8 @@ In addition to the route guidance panel, you can show maneuvers on the CarPlay d
   A custom object associated with the maneuver.
 ### Instance properties
 - [var cardBackgroundColor: UIColor?](cpmaneuver/cardbackgroundcolor.md)
+### Initializers
+- [init?(coder: NSCoder)](cpmaneuver/init(coder:).md)
 ### Instance Properties
 - [var instructionVariants: [String]](cpmaneuver/instructionvariants.md)
   An array of instruction variants for the maneuver.

@@ -7,6 +7,8 @@ The declaration to configure screen-sharing host settings and restrictions.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

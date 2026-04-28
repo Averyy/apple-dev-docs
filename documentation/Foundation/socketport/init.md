@@ -25,7 +25,7 @@ The port number is selected by the system.
 ## See Also
 
 - [Distributed Objects Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DistrObjects/DistrObjects.html#//apple_ref/doc/uid/10000102i)
-- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:).md)
+- [convenience init?(tcpPort: UInt16)](socketport/init(tcpport:)-6hgbo.md)
   Initializes the receiver as a local TCP/IP socket of type `SOCK_STREAM`, listening on a specified port number.
 - [init?(protocolFamily: Int32, socketType: Int32, protocol: Int32, address: Data)](socketport/init(protocolfamily:sockettype:protocol:address:).md)
   Initializes the receiver as a local socket with the provided arguments.

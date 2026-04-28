@@ -7,6 +7,8 @@ The payload that configures parental control dictionary restrictions.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

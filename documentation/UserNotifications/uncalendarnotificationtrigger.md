@@ -57,6 +57,8 @@ UNCalendarNotificationTrigger* trigger = [UNCalendarNotificationTrigger
   The next date at which the trigger conditions are met.
 - [var dateComponents: DateComponents](uncalendarnotificationtrigger/datecomponents.md)
   The date components to construct this object.
+### Initializers
+- [convenience init(dateMatchingComponents: DateComponents, repeats: Bool)](uncalendarnotificationtrigger/init(datematchingcomponents:repeats:).md)
 
 ## Relationships
 

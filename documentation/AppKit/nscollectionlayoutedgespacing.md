@@ -39,6 +39,8 @@ The following diagram shows the difference between adding 2 points of trailing e
   The trailing edge spacing value.
 - [var bottom: NSCollectionLayoutSpacing?](nscollectionlayoutedgespacing/bottom.md)
   The bottom edge spacing value.
+### Initializers
+- [convenience init(forLeading: NSCollectionLayoutSpacing?, top: NSCollectionLayoutSpacing?, trailing: NSCollectionLayoutSpacing?, bottom: NSCollectionLayoutSpacing?)](nscollectionlayoutedgespacing/init(forleading:top:trailing:bottom:).md)
 
 ## Relationships
 

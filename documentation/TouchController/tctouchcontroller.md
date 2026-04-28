@@ -8,6 +8,7 @@ An object that allows you to create and customize on-screen touch controls for a
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

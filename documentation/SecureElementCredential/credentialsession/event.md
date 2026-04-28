@@ -8,6 +8,7 @@ Events produced by a credential session, such as connectivity events and errors.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -16,7 +16,7 @@ class WKInterfaceSCNScene
 
 #### Overview
 
-To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interface object, assign a [`SCNScene`](https://developer.apple.com/documentation/SceneKit/SCNScene) object to the interface’s [`scene`](wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](https://developer.apple.com/documentation/SceneKit/SCNSceneRenderer) protocol, which defines functionality common across all platforms.
+To provide content for a [`WKInterfaceSCNScene`](wkinterfacescnscene.md) interface object, assign a [`SCNScene`](https://developer.apple.com/documentation/SceneKit/SCNScene) object to the interface’s [`scene`](wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the doc://com.apple.documentation/documentation/scenekit/scnscenerenderer protocol, which defines functionality common across all platforms.
 
 Do not subclass or create instances of this class yourself. Instead, drag a SceneKit Scene object from your Object Library and add it to your storyboard. Then define an outlet in your interface controller class and connect it to the SceneKit Scene object. For example, to refer to a scene in your interface, define a property with the following syntax in your interface controller class:
 
@@ -85,7 +85,7 @@ To enable full screen mode, place a SpriteKit or SceneKit scene as the interface
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
+- [SCNSceneRenderer](doc://com.apple.watchkit/objc(pl)SCNSceneRenderer)
 
 ## See Also
 

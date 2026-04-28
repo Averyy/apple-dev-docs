@@ -100,6 +100,8 @@ The number and type of lights in a scene is a key factor in SceneKit’s renderi
 ### Managing Photometric Lights
 - [var iesProfileURL: URL?](scnlight/iesprofileurl.md)
   The URL for a file that contains photometry data describing the intended appearance of the light.
+### Initializers
+- [init?(coder: NSCoder)](scnlight/init(coder:).md)
 ### Instance Properties
 - [var areaExtents: simd_float3](scnlight/areaextents.md)
 - [var areaPolygonVertices: [NSValue]?](scnlight/areapolygonvertices.md)

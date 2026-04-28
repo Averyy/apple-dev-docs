@@ -8,7 +8,10 @@ The payload that configures cellular settings.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - watchOS 3.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

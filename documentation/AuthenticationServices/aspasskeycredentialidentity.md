@@ -41,6 +41,8 @@ class ASPasskeyCredentialIdentity
   The credential identifier for this passkey credential identity.
 - [var recordIdentifier: String?](aspasskeycredentialidentity/recordidentifier.md)
   A string used to correlate this identity to a record in your app’s own database.
+### Initializers
+- [init?(coder: NSCoder)](aspasskeycredentialidentity/init(coder:).md)
 
 ## Relationships
 

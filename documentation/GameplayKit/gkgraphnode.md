@@ -51,6 +51,8 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
   Computes and returns a sequence of nodes that represents the lowest-cost graph traversal from this node to the specified node.
 - [func findPath(from: GKGraphNode) -> [GKGraphNode]](gkgraphnode/findpath(from:).md)
   Computes and returns a sequence of nodes that represents the lowest-cost graph traversal from the specified node to this node.
+### Initializers
+- [init?(coder: NSCoder)](gkgraphnode/init(coder:).md)
 
 ## Relationships
 

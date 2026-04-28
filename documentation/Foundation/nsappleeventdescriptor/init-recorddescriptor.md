@@ -45,7 +45,7 @@ An Apple event record is a descriptor whose data is a set of descriptors keyed b
   Creates and initializes a descriptor for an Apple event record whose data has yet to be set.
 - [convenience init(listDescriptor: ())](nsappleeventdescriptor/init(listdescriptor:).md)
   Initializes a newly allocated instance as an empty list descriptor.
-- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:).md)
+- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-5cioa.md)
   Initializes a newly allocated instance as a descriptor for the specified Carbon `AEDesc` structure.
 - [convenience init?(descriptorType: DescType, bytes: UnsafeRawPointer?, length: Int)](nsappleeventdescriptor/init(descriptortype:bytes:length:).md)
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an arbitrary sequence of bytes and a length count).

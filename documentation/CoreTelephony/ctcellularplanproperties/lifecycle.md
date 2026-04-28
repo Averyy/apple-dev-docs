@@ -25,6 +25,8 @@ This type contains lifecycle details for a time-limited cellular plan, including
 ### Specifying the expiration date
 - [var expirationDate: DateComponents](ctcellularplanproperties/lifecycle/expirationdate.md)
   The date when the time-limited cellular plan expires, specified with day-level granularity.
+### Initializers
+- [init?(coder: NSCoder)](ctcellularplanproperties/lifecycle/init(coder:).md)
 
 ## Relationships
 

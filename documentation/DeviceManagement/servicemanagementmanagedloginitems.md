@@ -7,6 +7,8 @@ This payload that configures managed login items, which auto-enables and auto-al
 
 **Availability**:
 - macOS 13.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

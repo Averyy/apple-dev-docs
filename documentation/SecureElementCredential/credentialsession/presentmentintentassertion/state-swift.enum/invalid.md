@@ -8,6 +8,7 @@ The presentment intent assertion is invalid, and doesn’t provide exclusive use
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

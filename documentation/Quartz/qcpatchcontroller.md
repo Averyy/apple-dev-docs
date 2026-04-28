@@ -15,7 +15,7 @@ class QCPatchController
 ## Relationships
 
 ### Inherits From
-- [NSController](../AppKit/NSController.md)
+- [NSController](doc://com.apple.quartz/objc(cs)NSController)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

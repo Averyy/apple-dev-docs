@@ -25,6 +25,7 @@ class MTRAccessGrant
 - [init?(forCASEAuthenticatedTag: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forcaseauthenticatedtag:privilege:).md)
 - [init?(forGroupID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forgroupid:privilege:).md)
 - [init?(forNodeID: NSNumber, privilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(fornodeid:privilege:).md)
+- [init(forAllNodesWithPrivilege: MTRAccessControlEntryPrivilege)](mtraccessgrant/init(forallnodeswithprivilege:).md)
 ### Instance Properties
 - [var authenticationMode: MTRAccessControlEntryAuthMode](mtraccessgrant/authenticationmode.md)
 - [var grantedPrivilege: MTRAccessControlEntryPrivilege](mtraccessgrant/grantedprivilege.md)

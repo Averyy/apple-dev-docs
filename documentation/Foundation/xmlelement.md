@@ -29,7 +29,7 @@ You can subclass `NSXMLElement` if you want element nodes with more specialized 
 
 ###### Methods to Override
 
-To subclass `NSXMLElement` you need to override the primary initializer, [`init(name:uri:)`](xmlelement/init(name:uri:).md), and the methods listed below. In most cases, you need only invoke the superclass implementation, adding any subclass-specific code before or after the invocation, as necessary.
+To subclass `NSXMLElement` you need to override the primary initializer, [`init(name:uri:)`](xmlelement/init(name:uri:)-1r286.md), and the methods listed below. In most cases, you need only invoke the superclass implementation, adding any subclass-specific code before or after the invocation, as necessary.
 
 | [`addAttribute(_:)`](xmlelement/addattribute(_:).md) | [`removeNamespace(forPrefix:)`](xmlelement/removenamespace(forprefix:).md) |
 | --- | --- |
@@ -54,9 +54,9 @@ Note that you can safely set the root element of the XML document (using the `NS
   Returns an `NSXMLElement` object initialized with the specified name.
 - [convenience init(name: String, stringValue: String?)](xmlelement/init(name:stringvalue:).md)
   Returns an `NSXMLElement` object initialized with a specified name and a single text-node child containing a specified value.
-- [init(name: String, uri: String?)](xmlelement/init(name:uri:).md)
+- [init(name: String, uri: String?)](xmlelement/init(name:uri:)-1r286.md)
   Returns an `NSXMLElement` object initialized with the specified name and URI.
-- [init(xmlString: String) throws](xmlelement/init(xmlstring:).md)
+- [init(xmlString: String) throws](xmlelement/init(xmlstring:)-7vkg7.md)
   Returns an `NSXMLElement` object created from a specified string containing XML markup.
 - [convenience init(kind: XMLNode.Kind, options: XMLNode.Options)](xmlelement/init(kind:options:).md)
 ### Obtaining Child Elements
@@ -110,6 +110,9 @@ Note that you can safely set the root element of the XML document (using the `NS
   Returns the namespace node with the prefix matching the given qualified name.
 - [func resolvePrefix(forNamespaceURI: String) -> String?](xmlelement/resolveprefix(fornamespaceuri:).md)
   Returns the prefix associated with the specified URI.
+### Initializers
+- [init(XMLString: String) throws](xmlelement/init(xmlstring:)-1wgno.md)
+- [init(name: String, URI: String?)](xmlelement/init(name:uri:)-67uti.md)
 
 ## Relationships
 

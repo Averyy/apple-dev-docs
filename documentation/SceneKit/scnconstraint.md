@@ -31,6 +31,8 @@ When SceneKit prepares to render a scene, it examines the list of constraints at
 ### Tuning a Constraint’s Effect on Nodes
 - [var influenceFactor: CGFloat](scnconstraint/influencefactor.md)
   The influence of the constraint on the node’s transformation.
+### Initializers
+- [init?(coder: NSCoder)](scnconstraint/init(coder:).md)
 ### Instance Properties
 - [var isEnabled: Bool](scnconstraint/isenabled.md)
 - [var isIncremental: Bool](scnconstraint/isincremental.md)

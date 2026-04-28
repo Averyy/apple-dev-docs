@@ -23,8 +23,6 @@ The system sets a timeout for alert coordination. If your accessory doesn’t co
 
 - [AccessoryError.invalidNotificationResponse](accessoryerror/invalidnotificationresponse.md)
   An error that indicates the system failed to handle a notification response.
-- [AccessoryError.unableToGetUserResponse](accessoryerror/unabletogetuserresponse.md)
-  An error that indicates the system is unable to handle a notification response.
 
 
 ---

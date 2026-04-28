@@ -33,6 +33,8 @@ class WebArchive
 ### Constants
 - [let WebArchivePboardType: String](webarchivepboardtype.md)
   The pasteboard type constant used when adding or accessing a WebArchive on the pasteboard.
+### Initializers
+- [init?(coder: NSCoder)](webarchive/init(coder:).md)
 
 ## Relationships
 

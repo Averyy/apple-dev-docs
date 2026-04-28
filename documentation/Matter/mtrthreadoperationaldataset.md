@@ -23,8 +23,9 @@ class MTRThreadOperationalDataset
 ### Initializers
 - [init?(data: Data)](mtrthreadoperationaldataset/init(data:).md)
 - [init?(networkName: String, extendedPANID: Data, masterKey: Data, PSKc: Data, channel: UInt16, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channel:panid:)-4hjuw.md)
-- [init?(networkName: String, extendedPANID: Data, masterKey: Data, psKc: Data, channelNumber: NSNumber, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channelnumber:panid:).md)
-- [init?(networkName: String, extendedPANID: Data, masterKey: Data, psKc: Data, channel: UInt16, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channel:panid:).md)
+- [init?(networkName: String, extendedPANID: Data, masterKey: Data, psKc: Data, channelNumber: NSNumber, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channelnumber:panid:)-6yo4j.md)
+- [init?(networkName: String, extendedPANID: Data, masterKey: Data, PSKc: Data, channelNumber: NSNumber, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channelnumber:panid:)-7gvm7.md)
+- [init?(networkName: String, extendedPANID: Data, masterKey: Data, psKc: Data, channel: UInt16, panID: Data)](mtrthreadoperationaldataset/init(networkname:extendedpanid:masterkey:pskc:channel:panid:)-9aloc.md)
 ### Instance Properties
 - [var channel: UInt16](mtrthreadoperationaldataset/channel.md)
 - [var channelNumber: NSNumber](mtrthreadoperationaldataset/channelnumber.md)

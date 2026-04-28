@@ -103,6 +103,8 @@ The font size for a web view is different than its logical font size. The minimu
 ### Notifications
 - [static let WebPreferencesChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/WebPreferencesChanged.md)
   Posted when the web preference settings are changed.
+### Initializers
+- [init?(coder: NSCoder)](webpreferences/init(coder:).md)
 ### Instance Properties
 - [var allowsAirPlayForMediaPlayback: Bool](webpreferences/allowsairplayformediaplayback.md)
 - [var userStyleSheetLocation: URL!](webpreferences/userstylesheetlocation.md)

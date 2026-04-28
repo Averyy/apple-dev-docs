@@ -8,6 +8,7 @@ Information about an auto-renewable subscription.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+
@@ -19,10 +20,18 @@ Information about an auto-renewable subscription.
 typealias SubscriptionInfo = Product.SubscriptionInfo
 ```
 
+## Mentions
+
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+
 ## See Also
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+  Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+  Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 - [struct Product](product.md)
   Information about a product that you configure in App Store Connect.
 - [Product.SubscriptionInfo](product/subscriptioninfo.md)

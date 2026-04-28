@@ -8,6 +8,7 @@ A subframe offset to the HH:MM:SS:FF time. You can use this field to position a 
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 13.0+
 - macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+

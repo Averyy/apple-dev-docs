@@ -110,6 +110,9 @@ tcoordSource = [SCNGeometrySource geometrySourceWithData:data
   Creates a geometry source whose vertex data resides in the specified Metal buffer, allowing modification through a Metal compute shader.
 ### Geometry Source Semantics
 - [SCNGeometrySource.Semantic](scngeometrysource/semantic-swift.struct.md)
+### Initializers
+- [init?(coder: NSCoder)](scngeometrysource/init(coder:).md)
+- [convenience init(data: Data, semantic: SCNGeometrySource.Semantic, vectorCount: Int, floatComponents: Bool, componentsPerVector: Int, bytesPerComponent: Int, dataOffset: Int, dataStride: Int)](scngeometrysource/init(data:semantic:vectorcount:floatcomponents:componentspervector:bytespercomponent:dataoffset:datastride:).md)
 
 ## Relationships
 

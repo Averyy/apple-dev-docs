@@ -42,6 +42,8 @@ class MEMessage
   The state of the mail message.
 ### Instance Properties
 - [var encryptionState: MEMessageEncryptionState](memessage/encryptionstate.md)
+### Initializers
+- [init?(coder: NSCoder)](memessage/init(coder:).md)
 
 ## Relationships
 

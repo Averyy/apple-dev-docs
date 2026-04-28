@@ -8,6 +8,7 @@ Hashes the essential components of the error by feeding them into the given hash
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

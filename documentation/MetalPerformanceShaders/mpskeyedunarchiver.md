@@ -24,7 +24,9 @@ class MPSKeyedUnarchiver
 ### Initializers
 - [init?(device: any MTLDevice)](mpskeyedunarchiver/init(device:).md)
 - [init(forReadingFrom: Data, device: any MTLDevice, error: NSErrorPointer)](mpskeyedunarchiver/init(forreadingfrom:device:error:).md)
+- [init(forReadingFromData: Data, device: any MTLDevice, error: NSErrorPointer)](mpskeyedunarchiver/init(forreadingfromdata:device:error:).md)
 - [init(forReadingWith: Data, device: any MTLDevice)](mpskeyedunarchiver/init(forreadingwith:device:).md)
+- [init(forReadingWithData: Data, device: any MTLDevice)](mpskeyedunarchiver/init(forreadingwithdata:device:).md)
 ### Instance Methods
 - [func mpsMTLDevice() -> any MTLDevice](mpskeyedunarchiver/mpsmtldevice.md)
 ### Type Methods

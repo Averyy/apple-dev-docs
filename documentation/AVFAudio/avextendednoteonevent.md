@@ -26,9 +26,9 @@ Use this to allow an app to trigger a custom note on event on one of several App
 ## Topics
 
 ### Creating a Note On Event
-- [init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:groupid:duration:).md)
+- [init(midiNote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:groupid:duration:)-60hve.md)
   Creates an event with a MIDI note, velocity, group identifier, and duration.
-- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:).md)
+- [init(midiNote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:)-rqr5.md)
   Creates a note on event with the default instrument.
 ### Configuring a Note On Event
 - [var midiNote: Float](avextendednoteonevent/midinote.md)
@@ -44,6 +44,9 @@ Use this to allow an app to trigger a custom note on event on one of several App
 ### Getting the Default Instrument
 - [class let defaultInstrument: UInt32](avextendednoteonevent/defaultinstrument.md)
   A constant that represents the default instrument identifier.
+### Initializers
+- [init(MIDINote: Float, velocity: Float, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:groupid:duration:)-985j8.md)
+- [init(MIDINote: Float, velocity: Float, instrumentID: UInt32, groupID: UInt32, duration: AVMusicTimeStamp)](avextendednoteonevent/init(midinote:velocity:instrumentid:groupid:duration:)-3a40r.md)
 
 ## Relationships
 

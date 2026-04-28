@@ -45,6 +45,8 @@ To perform one or more actions, you add them to a new [`CXTransaction`](cxtransa
 ### Accessing Call Action Attributes
 - [var callUUID: UUID](cxcallaction/calluuid.md)
   The unique identifier for the call associated with the action.
+### Initializers
+- [init(callUUID: UUID)](cxcallaction/init(calluuid:).md)
 
 ## Relationships
 

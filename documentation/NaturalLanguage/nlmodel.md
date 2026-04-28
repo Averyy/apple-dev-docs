@@ -78,7 +78,7 @@ do {
 ## Topics
 
 ### Creating a model
-- [convenience init(mlModel: MLModel) throws](nlmodel/init(mlmodel:).md)
+- [convenience init(mlModel: MLModel) throws](nlmodel/init(mlmodel:)-9tpjr.md)
   Creates a new natural language model based on the given Core ML model instance.
 - [convenience init(contentsOf: URL) throws](nlmodel/init(contentsof:).md)
   Creates a new natural language model based on a compiled Core ML model at the given URL.
@@ -101,6 +101,9 @@ do {
   A model you train to classify natural language text.
 - [struct MLWordTagger](../CreateML/MLWordTagger.md)
   A word-tagging model you train to classify natural language text at the word level.
+### Initializers
+- [convenience init(MLModel: MLModel) throws](nlmodel/init(mlmodel:)-4o6g8.md)
+- [convenience init(contentsOfURL: URL) throws](nlmodel/init(contentsofurl:).md)
 
 ## Relationships
 

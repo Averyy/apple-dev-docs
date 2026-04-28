@@ -47,6 +47,8 @@ Use an [`MKLocalSearch`](mklocalsearch.md) object to execute a single search req
 ### Getting search results
 - [MKLocalSearch.Response](mklocalsearch/response.md)
   The results from a map-based search.
+### Initializers
+- [init(pointsOfInterestRequest: MKLocalPointsOfInterestRequest)](mklocalsearch/init(pointsofinterestrequest:).md)
 
 ## Relationships
 

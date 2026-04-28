@@ -64,6 +64,8 @@ You can also create predicates that include variables using the [`evaluate(with:
 ### Getting a String Representation
 - [var predicateFormat: String](nspredicate/predicateformat.md)
   The predicate’s format string.
+### Initializers
+- [init?(coder: NSCoder)](nspredicate/init(coder:).md)
 ### Instance Methods
 - [func allowEvaluation(validator: any NSPredicateValidating) throws](nspredicate/allowevaluation(validator:).md)
 

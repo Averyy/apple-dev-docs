@@ -8,6 +8,7 @@ The number of pages produced by the layout of the web view.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 
 ## Declaration
 

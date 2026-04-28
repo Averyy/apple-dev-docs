@@ -7,6 +7,8 @@ Get a list of active extensions for a user on a device.
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

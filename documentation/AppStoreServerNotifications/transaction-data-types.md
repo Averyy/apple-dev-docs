@@ -76,16 +76,30 @@ Refer to these data types for decoded transaction and renewal information payloa
   The renewal status for an auto-renewable subscription.
 - [type autoRenewProductId](autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
+- [type billingPlanType](billingplantype.md)
 - [type expirationIntent](expirationintent.md)
   The reason an auto-renewable subscription expired.
 - [type expiresDate](expiresdate.md)
   The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 - [type isUpgraded](isupgraded.md)
   A Boolean value that indicates whether the customer upgraded to another subscription.
+- [type renewalBillingPlanType](renewalbillingplantype.md)
 - [type renewalDate](renewaldate.md)
   The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
 - [type renewalPrice](renewalprice.md)
   The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
+### Monthly subscriptions with 12-month commitments
+- [object TransactionCommitmentInfo](transactioncommitmentinfo.md)
+- [type billingPeriodNumber](billingperiodnumber.md)
+- [type commitmentExpiresDate](commitmentexpiresdate.md)
+- [type commitmentPrice](commitmentprice.md)
+- [type totalBillingPeriods](totalbillingperiods.md)
+- [object RenewalCommitmentInfo](renewalcommitmentinfo.md)
+- [type commitmentAutoRenewProductId](commitmentautorenewproductid.md)
+- [type commitmentAutoRenewStatus](commitmentautorenewstatus.md)
+- [type commitmentRenewalBillingPlanType](commitmentrenewalbillingplantype.md)
+- [type commitmentRenewalDate](commitmentrenewaldate.md)
+- [type commitmentRenewalPrice](commitmentrenewalprice.md)
 ### Family Sharing
 - [type inAppOwnershipType](inappownershiptype.md)
   A string that describes whether the transaction was purchased by the customer, or is available to them through Family Sharing.

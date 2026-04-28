@@ -44,6 +44,8 @@ With a block device resource, a probe operation may successfully get a result bu
   The match result, representing the recognition and usability of a probed resource.
 - [enum FSMatchResult](fsmatchresult.md)
   A type that represents the recognition and usability of a probed resource.
+### Initializers
+- [init?(coder: NSCoder)](fsproberesult/init(coder:).md)
 
 ## Relationships
 

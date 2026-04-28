@@ -20,6 +20,8 @@ class AccessibilityRequest
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](accessibilityrequest/init(coder:).md)
 ### Instance Properties
 - [var technology: AccessibilityTechnology](accessibilityrequest/technology.md)
 ### Type Properties

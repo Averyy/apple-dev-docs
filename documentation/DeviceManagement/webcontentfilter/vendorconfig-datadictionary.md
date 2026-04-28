@@ -8,8 +8,11 @@ A custom dictionary for the filtering service plug-in.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - macOS 10.15+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

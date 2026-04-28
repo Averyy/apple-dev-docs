@@ -7,6 +7,8 @@ The payload that configures FileVault.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

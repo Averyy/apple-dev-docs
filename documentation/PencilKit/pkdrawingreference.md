@@ -54,6 +54,8 @@ A [`PKDrawingReference`](pkdrawingreference.md) object stores the user-drawn con
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](pkdrawingreference/requiredcontentversion.md)
   The version of PencilKit necessary to use the drawing.
+### Initializers
+- [init?(coder: NSCoder)](pkdrawingreference/init(coder:).md)
 
 ## Relationships
 

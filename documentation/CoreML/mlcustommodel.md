@@ -43,6 +43,8 @@ This defines the Objective-C name for the class, which Core ML needs to access y
   Predicts output values from the given input features.
 - [func predictions(from: any MLBatchProvider, options: MLPredictionOptions) throws -> any MLBatchProvider](mlcustommodel/predictions(from:options:).md)
   Predicts output values from the given batch of input features.
+### Initializers
+- [init(modelDescription: MLModelDescription, parameterDictionary: [String : Any]) throws](mlcustommodel/init(modeldescription:parameterdictionary:).md)
 
 
 ---

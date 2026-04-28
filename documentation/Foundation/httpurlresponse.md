@@ -27,7 +27,7 @@ The [`HTTPURLResponse`](httpurlresponse.md) class is a subclass of [`URLResponse
 ## Topics
 
 ### Initializing a response object
-- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:).md)
+- [init?(url: URL, statusCode: Int, httpVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:)-21j4x.md)
   Initializes an HTTP URL response object with a status code, protocol version, and response headers.
 ### Getting HTTP response headers
 - [var allHeaderFields: [AnyHashable : Any]](httpurlresponse/allheaderfields.md)
@@ -39,6 +39,8 @@ The [`HTTPURLResponse`](httpurlresponse.md) class is a subclass of [`URLResponse
   Returns a localized string corresponding to a specified HTTP status code.
 - [var statusCode: Int](httpurlresponse/statuscode.md)
   The response’s HTTP status code.
+### Initializers
+- [init?(URL: URL, statusCode: Int, HTTPVersion: String?, headerFields: [String : String]?)](httpurlresponse/init(url:statuscode:httpversion:headerfields:)-3kiww.md)
 
 ## Relationships
 

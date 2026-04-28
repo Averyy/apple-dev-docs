@@ -68,6 +68,8 @@ Methods for applying affine transformations to the current graphics context and 
   Sets the current transformation matrix to the receiver’s transformation matrix.
 - [func concat()](nsaffinetransform/concat.md)
   Appends the receiver’s matrix to the current transformation matrix stored in the current graphics context, replacing the current transformation matrix with the result.
+### Initializers
+- [init?(coder: NSCoder)](nsaffinetransform/init(coder:).md)
 
 ## Relationships
 

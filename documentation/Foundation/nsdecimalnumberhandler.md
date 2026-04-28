@@ -36,6 +36,8 @@ For more information, see the [`NSDecimalNumberBehaviors`](nsdecimalnumberbehavi
 ### Initializing a decimal number handler
 - [init(roundingMode: NSDecimalNumber.RoundingMode, scale: Int16, raiseOnExactness: Bool, raiseOnOverflow: Bool, raiseOnUnderflow: Bool, raiseOnDivideByZero: Bool)](nsdecimalnumberhandler/init(roundingmode:scale:raiseonexactness:raiseonoverflow:raiseonunderflow:raiseondividebyzero:).md)
   Returns an `NSDecimalNumberHandler` object initialized so it behaves as specified by the method’s arguments.
+### Initializers
+- [init?(coder: NSCoder)](nsdecimalnumberhandler/init(coder:).md)
 
 ## Relationships
 

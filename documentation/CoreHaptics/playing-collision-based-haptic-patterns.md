@@ -106,7 +106,7 @@ manager.startDeviceMotionUpdates(to: motionQueue) { deviceMotion, error in
 
 ##### Play Variable Haptic Patterns on Collision
 
-When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, [`UICollisionBehaviorDelegate`](https://developer.apple.com/documentation/UIKit/UICollisionBehaviorDelegate), to respond to collisions.
+When the sphere collides with a wall, the dynamics framework sends a callback to its delegate. `ViewController` implements this delegate, doc://com.apple.documentation/documentation/uikit/uicollisionbehaviordelegate, to respond to collisions.
 
 To vary the haptic at the point of collision, check the sphere’s velocity and map it to a normalized (0 to 1) intensity and sharpness value, as follows:
 

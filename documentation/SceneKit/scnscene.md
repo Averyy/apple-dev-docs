@@ -45,7 +45,7 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
   Loads a scene from a file with the specified name in the app’s main bundle.
 - [convenience init?(named: String, inDirectory: String?, options: [SCNSceneSource.LoadingOption : Any]?)](scnscene/init(named:indirectory:options:).md)
   Loads a scene from a file with the specified name in a specific subdirectory of the app’s main bundle.
-- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:).md)
+- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:)-7ugvv.md)
   Loads a scene from the specified URL.
 ### Managing Animated Effects in a Scene
 - [var isPaused: Bool](scnscene/ispaused.md)
@@ -96,6 +96,9 @@ The simplest way to create a scene is through Xcode’s SceneKit Scene Editor. S
   Options for the [`write(to:options:delegate:progressHandler:)`](scnscene/write(to:options:delegate:progresshandler:).md) method.
 - [typealias SCNSceneExportProgressHandler](scnsceneexportprogresshandler.md)
   The signature for the block that SceneKit calls during scene export.
+### Initializers
+- [convenience init(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:)-2hc8n.md)
+- [init?(coder: NSCoder)](scnscene/init(coder:).md)
 ### Instance Properties
 - [var screenSpaceReflectionMaximumDistance: CGFloat](scnscene/screenspacereflectionmaximumdistance.md)
 - [var screenSpaceReflectionSampleCount: Int](scnscene/screenspacereflectionsamplecount.md)

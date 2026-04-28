@@ -37,6 +37,7 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 - [var cornerRadius: CGFloat](pkpaymentbutton/cornerradius.md)
   The radius, in points, for the rounded corners on the button.
 ### Initializers
+- [convenience init(paymentButtonType: PKPaymentButtonType, paymentButtonStyle: PKPaymentButtonStyle, disableCardArt: Bool)](pkpaymentbutton/init(paymentbuttontype:paymentbuttonstyle:disablecardart:).md)
 - [convenience init(type: PKPaymentButtonType, style: PKPaymentButtonStyle, disableCardArt: Bool)](pkpaymentbutton/init(type:style:disablecardart:).md)
 
 ## Relationships
@@ -71,13 +72,13 @@ To trigger a payment through Apple Pay in a WatchKit app, use [`WKInterfacePayme
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContextMenuInteractionDelegate](../UIKit/UIContextMenuInteractionDelegate.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIDynamicItem](../UIKit/UIDynamicItem.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
 - [UIFocusItem](../UIKit/UIFocusItem.md)
 - [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.passkit/objc(pl)UIAppearanceContainer)
 - [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)

@@ -28,6 +28,8 @@ The system returns [`HKQueryAnchor`](hkqueryanchor.md) objects in both the ancho
 ### Creating Anchor Objects
 - [convenience init(fromValue: Int)](hkqueryanchor/init(fromvalue:).md)
   Returns an anchor object from the provided anchor value.
+### Initializers
+- [init?(coder: NSCoder)](hkqueryanchor/init(coder:).md)
 
 ## Relationships
 

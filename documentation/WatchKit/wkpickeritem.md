@@ -37,6 +37,8 @@ The style of the picker determines how you configure the items of that picker:
   A small image to display next to the title string.
 - [var caption: String?](wkpickeritem/caption.md)
   A caption for the item’s content.
+### Initializers
+- [init?(coder: NSCoder)](wkpickeritem/init(coder:).md)
 
 ## Relationships
 

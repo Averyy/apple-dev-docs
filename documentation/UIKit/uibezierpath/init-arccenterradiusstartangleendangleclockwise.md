@@ -49,7 +49,7 @@ After calling this method, the current point is set to the point on the arc at t
   Creates and returns a new Bézier path object with a rounded rectangular path.
 - [convenience init(roundedRect: CGRect, byRoundingCorners: UIRectCorner, cornerRadii: CGSize)](uibezierpath/init(roundedrect:byroundingcorners:cornerradii:).md)
   Creates and returns a new Bézier path object with a rectangular path rounded at the specified corners.
-- [convenience init(cgPath: CGPath)](uibezierpath/init(cgpath:).md)
+- [convenience init(cgPath: CGPath)](uibezierpath/init(cgpath:)-833n8.md)
   Creates and returns a new Bézier path object with the contents of a Core Graphics path.
 - [func reversing() -> UIBezierPath](uibezierpath/reversing.md)
   Creates and returns a new Bézier path object with the reversed contents of the current path.

@@ -8,6 +8,7 @@ A Boolean value indicating whether the receiver is done loading content.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 
 ## Declaration
 

@@ -50,6 +50,8 @@ A contact can be in only one container. CardDAV accounts usually have only one c
   The name of the container.
 - [let CNContainerTypeKey: String](cncontainertypekey.md)
   The type of the container.
+### Initializers
+- [init?(coder: NSCoder)](cncontainer/init(coder:).md)
 
 ## Relationships
 

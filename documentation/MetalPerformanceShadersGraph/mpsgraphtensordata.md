@@ -26,6 +26,15 @@ Pass data to a graph using a tensor data, a reference will be taken to your data
 ## Topics
 
 ### Initializers
+- [init(MPSImageBatch: [MPSImage])](mpsgraphtensordata/init(mpsimagebatch:).md)
+- [init(MPSMatrix: MPSMatrix)](mpsgraphtensordata/init(mpsmatrix:).md)
+- [init(MPSMatrix: MPSMatrix, rank: Int)](mpsgraphtensordata/init(mpsmatrix:rank:).md)
+- [init(MPSNDArray: MPSNDArray)](mpsgraphtensordata/init(mpsndarray:).md)
+- [init(MPSVector: MPSVector)](mpsgraphtensordata/init(mpsvector:).md)
+- [init(MPSVector: MPSVector, rank: Int)](mpsgraphtensordata/init(mpsvector:rank:).md)
+- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType)](mpsgraphtensordata/init(mtlbuffer:shape:datatype:).md)
+- [init(MTLBuffer: any MTLBuffer, shape: [NSNumber], dataType: MPSDataType, rowBytes: Int)](mpsgraphtensordata/init(mtlbuffer:shape:datatype:rowbytes:).md)
+- [init(MTLTensor: any MTLTensor)](mpsgraphtensordata/init(mtltensor:).md)
 - [init(MPSMatrix)](mpsgraphtensordata/init(_:)-2go2.md)
   Initializes a tensor data with an MPS matrix.
 - [init(MPSNDArray)](mpsgraphtensordata/init(_:)-4bnfb.md)

@@ -38,6 +38,8 @@ You can create a media timing function by supplying your own cubic Bézier curve
 ### Constants
 - [Predefined Timing Functions](predefined-timing-functions.md)
   Constants that specify system-provided timing functions, used by [`init(name:)`](camediatimingfunction/init(name:).md).
+### Initializers
+- [init?(coder: NSCoder)](camediatimingfunction/init(coder:).md)
 
 ## Relationships
 

@@ -32,6 +32,8 @@ Use this device to attach a display that’s shown in a [`VZVirtualMachineView`]
   The width of the display, in pixels.
 - [var pixelsPerInch: Int](vzmacgraphicsdisplayconfiguration/pixelsperinch.md)
   The pixel density in pixels per inch.
+### Initializers
+- [convenience init(forScreen: NSScreen, sizeInPoints: NSSize)](vzmacgraphicsdisplayconfiguration/init(forscreen:sizeinpoints:).md)
 
 ## Relationships
 

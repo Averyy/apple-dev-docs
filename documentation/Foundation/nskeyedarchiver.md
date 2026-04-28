@@ -90,6 +90,8 @@ An [`NSArchiver`](nsarchiver.md) object can write the archive data to a file or 
   Names of exceptions raised by this class if problems occur while creating an archive.
 - [Keyed Archiver Root Object Key](keyed-archiver-root-object-key.md)
   Keys that the archiver uses in the hierarchy of encoded objects.
+### Initializers
+- [init(forWritingWithMutableData: NSMutableData)](nskeyedarchiver/init(forwritingwithmutabledata:).md)
 
 ## Relationships
 

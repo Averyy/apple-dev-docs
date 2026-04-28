@@ -28,7 +28,7 @@ class AVMovie
 ### Creating a movie
 - [convenience init(url: URL)](avmovie/init(url:).md)
   Creates a movie that models the media at the specified URL.
-- [init(url: URL, options: [String : Any]?)](avmovie/init(url:options:).md)
+- [init(url: URL, options: [String : Any]?)](avmovie/init(url:options:)-1wjrq.md)
   Creates a movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?)](avmovie/init(data:options:).md)
   Creates a movie object from a movie file’s data.
@@ -77,6 +77,9 @@ class AVMovie
 ### Accessing data storage
 - [var defaultMediaDataStorage: AVMediaDataStorage?](avmovie/defaultmediadatastorage.md)
   The default storage container for media data added to a movie.
+### Initializers
+- [init(URL: URL, options: [String : Any]?)](avmovie/init(url:options:)-3tgg4.md)
+- [convenience init(URL: URL, options: [String : Any]?)](avmovie/init(url:options:)-9sf6c.md)
 
 ## Relationships
 

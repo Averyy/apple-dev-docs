@@ -72,6 +72,8 @@ The framework defines four regions, and doesn’t support configuring region set
   Encodes the region using the specified encoder.
 - [func isEqual(Any) -> Bool](avcaptionregion/isequal(_:).md)
   Returns a Boolean value that indicates whether an object equals another.
+### Initializers
+- [init?(coder: NSCoder)](avcaptionregion/init(coder:).md)
 
 ## Relationships
 

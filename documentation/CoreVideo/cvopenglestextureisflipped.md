@@ -8,6 +8,7 @@ Returns whether the image is flipped vertically or not.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - tvOS 9.0+
 
 ## Declaration

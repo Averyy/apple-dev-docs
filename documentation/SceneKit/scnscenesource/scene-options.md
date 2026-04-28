@@ -26,7 +26,7 @@ An [`SCNScene`](scnscene.md) object containing the entire scene graph from the s
 
 #### Discussion
 
-Calling this method is equivalent to calling [`scene(options:statusHandler:)`](scnscenesource/scene(options:statushandler:).md) with a block that checks its `error` parameter to see whether the status is [`SCNSceneSourceStatus.error`](scnscenesourcestatus/error.md). To load a scene without creating a scene source object, use the [`SCNScene`](scnscene.md) method [`init(url:options:)`](scnscene/init(url:options:).md).
+Calling this method is equivalent to calling [`scene(options:statusHandler:)`](scnscenesource/scene(options:statushandler:).md) with a block that checks its `error` parameter to see whether the status is [`SCNSceneSourceStatus.error`](scnscenesourcestatus/error.md). To load a scene without creating a scene source object, use the [`SCNScene`](scnscene.md) method [`init(url:options:)`](scnscene/init(url:options:)-7ugvv.md).
 
 A scene source can contain objects that are not part of its scene graph. To obtain these objects, you must load them individually with the the [`entryWithIdentifier:withClass:`](scnscenesource/entrywithidentifier:withclass:.md) or [`entries(passingTest:)`](scnscenesource/entries(passingtest:).md) method. For example, a scene file containing a game character could include several animations for the character geometry (such as running, jumping, and standing idle). Because you typically do not apply multiple animations at once, the scene file contains these animations without their being attached to the character geometry.
 

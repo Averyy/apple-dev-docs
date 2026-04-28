@@ -66,6 +66,10 @@ If you subclass and implement any custom layout attributes, you must also overri
   Specifies the item’s position on the z axis.
 - [var isHidden: Bool](uicollectionviewlayoutattributes/ishidden.md)
   Determines whether the item is currently displayed.
+### Initializers
+- [convenience init(forCellWithIndexPath: IndexPath)](uicollectionviewlayoutattributes/init(forcellwithindexpath:).md)
+- [convenience init(forDecorationViewOfKind: String, withIndexPath: IndexPath)](uicollectionviewlayoutattributes/init(fordecorationviewofkind:withindexpath:).md)
+- [convenience init(forSupplementaryViewOfKind: String, withIndexPath: IndexPath)](uicollectionviewlayoutattributes/init(forsupplementaryviewofkind:withindexpath:).md)
 
 ## Relationships
 

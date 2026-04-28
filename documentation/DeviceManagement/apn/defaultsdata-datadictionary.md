@@ -8,6 +8,9 @@ An array of access point name dictionaries.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

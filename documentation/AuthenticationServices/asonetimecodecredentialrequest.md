@@ -19,6 +19,7 @@ class ASOneTimeCodeCredentialRequest
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](asonetimecodecredentialrequest/init(coder:).md)
 - [init(credentialIdentity: ASOneTimeCodeCredentialIdentity)](asonetimecodecredentialrequest/init(credentialidentity:).md)
 
 ## Relationships

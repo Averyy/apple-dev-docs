@@ -20,6 +20,7 @@ class CPNowPlayingSportsEventStatus
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpnowplayingsportseventstatus/init(coder:).md)
 - [init(eventStatusText: [String]?, eventStatusImage: UIImage?, eventClock: CPNowPlayingSportsClock?)](cpnowplayingsportseventstatus/init(eventstatustext:eventstatusimage:eventclock:).md)
   Initialize an event status with optional event status text, an optional event status image, and an optional event clock.
 ### Instance Properties

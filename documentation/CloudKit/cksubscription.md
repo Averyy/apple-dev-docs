@@ -56,6 +56,8 @@ APNs limits the size of a push notification’s payload and CloudKit may omit ke
   The behavior that a subscription provides.
 - [CKSubscription.SubscriptionType](cksubscription/subscriptiontype-swift.enum.md)
   Constants that identify a subscription’s behavior.
+### Initializers
+- [init?(coder: NSCoder)](cksubscription/init(coder:).md)
 
 ## Relationships
 

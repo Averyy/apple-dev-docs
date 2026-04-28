@@ -33,6 +33,8 @@ Typically, a PDF panel—that is, a panel created by an [`NSPDFPanel`](nspdfpane
   The paper size to use when exporting content as a PDF file.
 - [var attributes: NSMutableDictionary](nspdfinfo/attributes.md)
   A dictionary of additional attributes that describe how to export content as a PDF file.
+### Initializers
+- [init?(coder: NSCoder)](nspdfinfo/init(coder:).md)
 
 ## Relationships
 

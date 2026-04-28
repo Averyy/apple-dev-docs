@@ -45,6 +45,7 @@ You provide estimates for each trip using the map template’s [`updateEstimates
 - [var userInfo: Any?](cptrip/userinfo.md)
   A custom object associated with the trip.
 ### Initializers
+- [init?(coder: NSCoder)](cptrip/init(coder:).md)
 - [init(originWaypoint: CPNavigationWaypoint, destinationWaypoint: CPNavigationWaypoint, routeChoices: [CPRouteChoice])](cptrip/init(originwaypoint:destinationwaypoint:routechoices:).md)
   Initialize a @c CPTrip with an origin waypoint, destination waypoint, and route choices.
 ### Instance Properties

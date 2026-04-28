@@ -48,7 +48,7 @@ The created `NSEvent` instance or `nil` if the instance could not be created.
   Creates and returns a new event object that describes a custom event.
 - [init?(eventRef: UnsafeRawPointer)](nsevent/init(eventref:).md)
   Creates and returns a new event object for a Carbon event.
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:).md)
+- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
 
 

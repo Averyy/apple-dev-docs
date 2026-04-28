@@ -158,6 +158,8 @@ node.eulerAngles = SCNVector3Make(node.eulerAngles.x, node.eulerAngles.y, newRol
 ### Synchronizing a Physics Body with its Node
 - [func resetTransform()](scnphysicsbody/resettransform.md)
   Updates the position and orientation of a body in the physics simulation to match that of the node to which the body is attached.
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsbody/init(coder:).md)
 ### Instance Properties
 - [var angularRestingThreshold: CGFloat](scnphysicsbody/angularrestingthreshold.md)
 - [var linearRestingThreshold: CGFloat](scnphysicsbody/linearrestingthreshold.md)

@@ -8,9 +8,12 @@ A dictionary that contains device name settings.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS 2.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

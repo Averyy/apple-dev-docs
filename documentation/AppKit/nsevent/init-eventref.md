@@ -38,7 +38,7 @@ This method is valid for all events. The created `NSEvent` object retains the `E
   Creates and returns a new event object that describes a tracking-rectangle or cursor-update event.
 - [class func otherEvent(with: NSEvent.EventType, location: NSPoint, modifierFlags: NSEvent.ModifierFlags, timestamp: TimeInterval, windowNumber: Int, context: NSGraphicsContext?, subtype: Int16, data1: Int, data2: Int) -> NSEvent?](nsevent/otherevent(with:location:modifierflags:timestamp:windownumber:context:subtype:data1:data2:).md)
   Creates and returns a new event object that describes a custom event.
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:).md)
+- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
 
 

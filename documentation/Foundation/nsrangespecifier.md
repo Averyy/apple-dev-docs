@@ -33,6 +33,7 @@ You don’t normally subclass `NSRangeSpecifier`.
   Returns the object specifier representing the first object of the range.
 ### Initializers
 - [init?(coder: NSCoder)](nsrangespecifier/init(coder:).md)
+- [init(containerClassDescription: NSScriptClassDescription, containerSpecifier: NSScriptObjectSpecifier?, key: String, startSpecifier: NSScriptObjectSpecifier?, endSpecifier: NSScriptObjectSpecifier?)](nsrangespecifier/init(containerclassdescription:containerspecifier:key:startspecifier:endspecifier:).md)
 
 ## Relationships
 

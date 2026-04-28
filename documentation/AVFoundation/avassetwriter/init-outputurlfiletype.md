@@ -30,7 +30,7 @@ Writing fails if a file already exists at the output URL.
 
 ## See Also
 
-- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:).md)
+- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-xt34.md)
   Returns a new object that writes media data to a container file at the output URL.
 - [init(contentType: UTType)](avassetwriter/init(contenttype:).md)
   Creates an object that outputs segment data in a specified container format.

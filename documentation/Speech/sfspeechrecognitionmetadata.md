@@ -32,6 +32,8 @@ class SFSpeechRecognitionMetadata
 ### Analyzing voice
 - [var voiceAnalytics: SFVoiceAnalytics?](sfspeechrecognitionmetadata/voiceanalytics.md)
   An analysis of the transcription segment’s vocal properties.
+### Initializers
+- [init?(coder: NSCoder)](sfspeechrecognitionmetadata/init(coder:).md)
 
 ## Relationships
 

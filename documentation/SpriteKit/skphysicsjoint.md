@@ -46,6 +46,8 @@ An [`SKPhysicsJoint`](skphysicsjoint.md) object connects two physics bodies so t
   The instantaneous reaction force, in newtons, currently being directed at the anchor point.
 - [var reactionTorque: CGFloat](skphysicsjoint/reactiontorque.md)
   Instantaneous reaction torque, in newton-meters,  currently being directed at the anchor point.
+### Initializers
+- [init?(coder: NSCoder)](skphysicsjoint/init(coder:).md)
 
 ## Relationships
 

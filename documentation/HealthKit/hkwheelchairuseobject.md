@@ -24,6 +24,8 @@ class HKWheelchairUseObject
 ### Accessing Wheelchair Use Data
 - [var wheelchairUse: HKWheelchairUse](hkwheelchairuseobject/wheelchairuse.md)
   A value indicating the user’s wheelchair use.
+### Initializers
+- [init?(coder: NSCoder)](hkwheelchairuseobject/init(coder:).md)
 
 ## Relationships
 

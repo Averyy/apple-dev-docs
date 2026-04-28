@@ -32,6 +32,8 @@ For more details on working with Audio Unit presets, see [`Audio Units - How to 
   The preset’s name.
 - [var number: Int](auaudiounitpreset/number.md)
   The preset’s unique numeric identifier.
+### Initializers
+- [init?(coder: NSCoder)](auaudiounitpreset/init(coder:).md)
 
 ## Relationships
 

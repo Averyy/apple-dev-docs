@@ -28,6 +28,11 @@ class NSPersistentHistoryToken
 
 You can save a token to disk and fetch history when your app loads based on that token. See [`Keep track of the most recent history`](consuming-relevant-store-changes#Keep-track-of-the-most-recent-history.md) in [`Consuming relevant store changes`](consuming-relevant-store-changes.md).
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](nspersistenthistorytoken/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

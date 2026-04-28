@@ -8,6 +8,7 @@ Inserts the given feature in the set if it is not already present.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

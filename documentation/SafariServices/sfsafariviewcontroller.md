@@ -63,13 +63,13 @@ For more information on the proposed PCM web standard, see [`Introducing Private
 ## Topics
 
 ### Creating a View Controller
-- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:).md)
+- [init(url: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:)-305vl.md)
   Initializes and configures a Safari view controller that loads the specified URL.
 - [SFSafariViewController.Configuration](sfsafariviewcontroller/configuration-swift.class.md)
   A configuration object that defines how a Safari view controller should be initialized.
-- [convenience init(url: URL)](sfsafariviewcontroller/init(url:).md)
+- [convenience init(url: URL)](sfsafariviewcontroller/init(url:)-5kpkn.md)
   Initializes a Safari view controller that loads the specified URL.
-- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:).md)
+- [init(url: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:)-3aatz.md)
   Initializes a Safari view controller that will load the specified URL, entering Reader mode if Reader mode is requested and available.
 ### Responding to View Controller Interaction
 - [var delegate: (any SFSafariViewControllerDelegate)?](sfsafariviewcontroller/delegate.md)
@@ -92,6 +92,10 @@ For more information on the proposed PCM web standard, see [`Introducing Private
 - [SFSafariViewController.ActivityButton](sfsafariviewcontroller/activitybutton.md)
 - [SFSafariViewController.DataStore](sfsafariviewcontroller/datastore.md)
 - [SFSafariViewController.PrewarmingToken](sfsafariviewcontroller/prewarmingtoken.md)
+### Initializers
+- [convenience init(URL: URL)](sfsafariviewcontroller/init(url:)-3wyoq.md)
+- [init(URL: URL, configuration: SFSafariViewController.Configuration)](sfsafariviewcontroller/init(url:configuration:)-1wubj.md)
+- [init(URL: URL, entersReaderIfAvailable: Bool)](sfsafariviewcontroller/init(url:entersreaderifavailable:)-6ob1w.md)
 
 ## Relationships
 
@@ -108,9 +112,9 @@ For more information on the proposed PCM web standard, see [`Introducing Private
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.safariservices/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UIStateRestoring](../UIKit/UIStateRestoring.md)

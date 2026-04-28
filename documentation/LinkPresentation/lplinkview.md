@@ -42,11 +42,13 @@ linkView.sizeToFit()
 ### Creating a link view
 - [init(metadata: LPLinkMetadata)](lplinkview/init(metadata:).md)
   Initializes a link view with specified metadata.
-- [init(url: URL)](lplinkview/init(url:).md)
+- [init(url: URL)](lplinkview/init(url:)-6f6kt.md)
   Initializes a placeholder link view without metadata for a given URL.
 ### Specifying metadata
 - [var metadata: LPLinkMetadata](lplinkview/metadata.md)
   The metadata from which to generate a rich presentation.
+### Initializers
+- [init(URL: URL)](lplinkview/init(url:)-8r0tp.md)
 
 ## Relationships
 
@@ -74,12 +76,12 @@ linkView.sizeToFit()
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UICoordinateSpace](../UIKit/UICoordinateSpace.md)
 - [UIDynamicItem](../UIKit/UIDynamicItem.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
 - [UIFocusItem](../UIKit/UIFocusItem.md)
 - [UIFocusItemContainer](../UIKit/UIFocusItemContainer.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.Link-Presentation/objc(pl)UIAppearanceContainer)
 - [UILargeContentViewerItem](../UIKit/UILargeContentViewerItem.md)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIPopoverPresentationControllerSourceItem](../UIKit/UIPopoverPresentationControllerSourceItem.md)

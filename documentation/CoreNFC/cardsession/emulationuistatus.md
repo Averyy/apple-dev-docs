@@ -8,6 +8,7 @@ The final status to show in the user interface when ending card emulation.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

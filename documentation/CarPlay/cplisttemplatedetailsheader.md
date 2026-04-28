@@ -33,6 +33,7 @@ This class is designed specifically for CarPlay templates and follows CarPlay de
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cplisttemplatedetailsheader/init(coder:).md)
 - [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, actionButtons: [CPButton])](cplisttemplatedetailsheader/init(thumbnail:title:subtitle:actionbuttons:).md)
   Creates a new details header with the specified content and action buttons.
 - [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, bodyVariants: [NSAttributedString], actionButtons: [CPButton])](cplisttemplatedetailsheader/init(thumbnail:title:subtitle:bodyvariants:actionbuttons:).md)

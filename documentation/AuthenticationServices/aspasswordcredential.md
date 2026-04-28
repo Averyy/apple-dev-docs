@@ -30,6 +30,8 @@ class ASPasswordCredential
   The user for a password credential object.
 - [var password: String](aspasswordcredential/password.md)
   The password for a password credential object.
+### Initializers
+- [init?(coder: NSCoder)](aspasswordcredential/init(coder:).md)
 
 ## Relationships
 

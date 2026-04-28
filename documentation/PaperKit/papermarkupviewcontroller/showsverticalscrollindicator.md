@@ -8,6 +8,7 @@ A Boolean value that controls whether the vertical scroll indicator is visible.
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 - macOS 26.1+
 - visionOS 26.1+
 

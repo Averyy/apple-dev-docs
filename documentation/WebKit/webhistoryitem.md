@@ -17,7 +17,7 @@ class WebHistoryItem
 ## Topics
 
 ### Initializing WebHistoryItem objects
-- [init!(urlString: String!, title: String!, lastVisitedTimeInterval: TimeInterval)](webhistoryitem/init(urlstring:title:lastvisitedtimeinterval:).md)
+- [init!(urlString: String!, title: String!, lastVisitedTimeInterval: TimeInterval)](webhistoryitem/init(urlstring:title:lastvisitedtimeinterval:)-5amr.md)
   Initializes the receiver with a URL,`URLString`, a title specified by `title` and the last time this item was visited specified by `time` title, and time last visited.
 ### Getting URL information
 - [var urlString: String!](webhistoryitem/urlstring.md)
@@ -34,6 +34,8 @@ class WebHistoryItem
   The icon for the receiver’s page, or `nil` if none exists.
 - [var lastVisitedTimeInterval: TimeInterval](webhistoryitem/lastvisitedtimeinterval.md)
   The last time and date the receiver’s page was visited.
+### Initializers
+- [init!(URLString: String!, title: String!, lastVisitedTimeInterval: TimeInterval)](webhistoryitem/init(urlstring:title:lastvisitedtimeinterval:)-d9r0.md)
 
 ## Relationships
 

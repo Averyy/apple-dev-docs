@@ -50,6 +50,8 @@ The identity of a beacon is defined by its [`uuid`](clbeacon/uuid.md), [`major`]
 ### Getting the observation timestamp
 - [var timestamp: Date](clbeacon/timestamp.md)
   A timestamp representing when the beacon was observed.
+### Initializers
+- [init?(coder: NSCoder)](clbeacon/init(coder:).md)
 
 ## Relationships
 

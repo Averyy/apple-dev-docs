@@ -7,7 +7,7 @@ Coordinate the scheduling and synchronization of your app’s tasks, and log inf
 
 **Availability**:
 - iOS 8.0+
-- iPadOS 8.0+
+- iPadOS ?+
 - Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 9.0+

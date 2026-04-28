@@ -39,9 +39,9 @@ It works on images with 8-bit SPP, and thus supports either 8-bit gray or 24-bit
   Initializes a newly allocated bitmap image representation so it can render the specified image.
 - [init?(bitmapDataPlanes: UnsafeMutablePointer<UnsafeMutablePointer<UInt8>?>?, pixelsWide: Int, pixelsHigh: Int, bitsPerSample: Int, samplesPerPixel: Int, hasAlpha: Bool, isPlanar: Bool, colorSpaceName: NSColorSpaceName, bytesPerRow: Int, bitsPerPixel: Int)](nsbitmapimagerep/init(bitmapdataplanes:pixelswide:pixelshigh:bitspersample:samplesperpixel:hasalpha:isplanar:colorspacename:bytesperrow:bitsperpixel:).md)
   Initializes a newly allocated bitmap image representation so it can render the specified image.
-- [init(cgImage: CGImage)](nsbitmapimagerep/init(cgimage:).md)
+- [init(cgImage: CGImage)](nsbitmapimagerep/init(cgimage:)-7o5tz.md)
   Returns a bitmap image representation from a Core Graphics image object.
-- [init(ciImage: CIImage)](nsbitmapimagerep/init(ciimage:).md)
+- [init(ciImage: CIImage)](nsbitmapimagerep/init(ciimage:)-7bi19.md)
   Returns a bitmap image representation from a Core Image object.
 - [init?(data: Data)](nsbitmapimagerep/init(data:).md)
   Initializes a newly allocated bitmap image representation from the specified data.

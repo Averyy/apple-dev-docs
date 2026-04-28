@@ -8,6 +8,7 @@ Securely pair and connect to external devices over peer-to-peer Wi-Fi.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 #### Overview
 

@@ -26,9 +26,9 @@ For real-time output you should use an instance of [`NSView`](https://developer.
 ## Topics
 
 ### Creating a Renderer
-- [init(cglContext: UnsafeMutableRawPointer, options: [AnyHashable : Any]?)](carenderer/init(cglcontext:options:).md)
+- [init(cglContext: UnsafeMutableRawPointer, options: [AnyHashable : Any]?)](carenderer/init(cglcontext:options:)-1l3m2.md)
   Creates and returns a `CARenderer` instance with the render target specified by the Core OpenGL context.
-- [init(mtlTexture: any MTLTexture, options: [AnyHashable : Any]?)](carenderer/init(mtltexture:options:).md)
+- [init(mtlTexture: any MTLTexture, options: [AnyHashable : Any]?)](carenderer/init(mtltexture:options:)-1cr0b.md)
   Creates a layer renderer from a Metal texture.
 ### Getting the Rendered Layer
 - [var layer: CALayer?](carenderer/layer.md)
@@ -51,6 +51,9 @@ For real-time output you should use an instance of [`NSView`](https://developer.
   Release any data associated with the current frame.
 ### Instance Methods
 - [func setDestination(any MTLTexture)](carenderer/setdestination(_:).md)
+### Initializers
+- [init(CGLContext: UnsafeMutableRawPointer, options: [AnyHashable : Any]?)](carenderer/init(cglcontext:options:)-6ywk8.md)
+- [init(MTLTexture: any MTLTexture, options: [AnyHashable : Any]?)](carenderer/init(mtltexture:options:)-51l7q.md)
 
 ## Relationships
 

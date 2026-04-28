@@ -37,7 +37,7 @@ This function is thread safe.
 
 - `theHost`: The host, obtained by previously calling [`CFHostCreateCopy(_:_:)`](cfhostcreatecopy(_:_:).md), [`CFHostCreateWithAddress(_:_:)`](cfhostcreatewithaddress(_:_:).md), or [`CFHostCreateWithName(_:_:)`](cfhostcreatewithname(_:_:).md), that is to be resolved. This value must not be `NULL`.
 - `info`: A value of type `CFHostInfoType` specifying the type of information that is to be retrieved. See [`CFHostInfoType`](cfhostinfotype.md) for possible values.
-- `error`: A pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure, that, if an error occurs, is set to the error and the error’s domain. In synchronous mode, the error indicates why resolution failed, and in asynchronous mode, the error indicates why resolution failed to start.
+- `error`: A pointer to a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror structure, that, if an error occurs, is set to the error and the error’s domain. In synchronous mode, the error indicates why resolution failed, and in asynchronous mode, the error indicates why resolution failed to start.
 
 ## See Also
 

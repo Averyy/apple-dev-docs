@@ -26,6 +26,11 @@ You don’t create instances of this class yourself. When fetching records using
 
 For information about how to use a [`CKQueryOperation.Cursor`](ckqueryoperation/cursor-swift.class.md) object, see [`CKQueryOperation`](ckqueryoperation.md).
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](ckqueryoperation/cursor-swift.class/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

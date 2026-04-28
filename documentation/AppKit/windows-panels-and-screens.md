@@ -18,6 +18,8 @@ Organize your view hierarchies and facilitate their display onscreen.
 - [class NSWindowTabGroup](nswindowtabgroup.md)
   A group of windows that display together as a single tabbed window.
 ### Window Restoration
+- [Restoring your app’s state with AppKit](restoring-your-app-s-state-with-appkit.md)
+  Provide continuity for people using your app by preserving current activities on macOS.
 - [protocol NSWindowRestoration](nswindowrestoration.md)
   A set of methods that restoration classes must implement to handle the recreation of windows.
 - [protocol NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)

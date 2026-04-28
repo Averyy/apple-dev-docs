@@ -56,6 +56,8 @@ For information on how to handle actions, see [`Handling notifications and notif
   The behaviors associated with the action.
 - [struct UNNotificationActionOptions](unnotificationactionoptions.md)
   The behaviors you can apply to an action.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationaction/init(coder:).md)
 
 ## Relationships
 

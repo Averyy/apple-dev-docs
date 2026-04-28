@@ -100,6 +100,8 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
   The Shazam ID for the song.
 - [class func fetch(shazamID: String, completionHandler: (SHMediaItem?, (any Error)?) -> Void)](shmediaitem/fetch(shazamid:completionhandler:).md)
   Requests the media item for the song with the specified Shazam ID.
+### Initializers
+- [init?(coder: NSCoder)](shmediaitem/init(coder:).md)
 ### Default Implementations
 - [Identifiable Implementations](shmediaitem/identifiable-implementations.md)
 

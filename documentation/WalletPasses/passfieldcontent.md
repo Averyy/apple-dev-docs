@@ -36,7 +36,7 @@ object PassFieldContent
 - `isRelative` (boolean): A Boolean value that controls whether the date appears as a relative date. The default value is `false`, which displays the date as an absolute date. This key doesn’t affect  the pass relevance calculation.
 - `key` (string) *(required)*: A unique key that identifies a field in the pass; for example, `“departure-gate”`.
 - `label` (localizable string): The text for a field label.
-- `numberStyle` (string): The style of the number to display in the field. Formatter styles have the same meaning as the formats with corresponding names in [`NumberFormatter.Style`](https://developer.apple.com/documentation/Foundation/NumberFormatter/Style).
+- `numberStyle` (string): The style of the number to display in the field. Formatter styles have the same meaning as the formats with corresponding names in doc://com.apple.documentation/documentation/foundation/numberformatter/style.
 - `textAlignment` (string): The alignment for the content of a field. The default is natural alignment, which aligns the text based on its script direction. This key is invalid for primary and back fields.
 - `timeStyle` (string): The style of the time displayed in the field.
 - `value` (localizable string, ISO 8601 date, or number) *(required)*: The value to use for the field; for example, `42`. A date or time value needs to include a time zone.

@@ -35,7 +35,7 @@ A new material property object whose [`type`](mdlmaterialproperty/type.md) prope
   Initializes a material property without a value.
 - [convenience init(name: String, semantic: MDLMaterialSemantic, string: String?)](mdlmaterialproperty/init(name:semantic:string:).md)
   Initializes a material property with a string value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](mdlmaterialproperty/init(name:semantic:url:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](mdlmaterialproperty/init(name:semantic:url:)-2ldk4.md)
   Initializes a material property with a URL value.
 - [convenience init(name: String, semantic: MDLMaterialSemantic, textureSampler: MDLTextureSampler?)](mdlmaterialproperty/init(name:semantic:texturesampler:).md)
   Initializes a material property with a texture sampler object.

@@ -8,6 +8,7 @@ Creates a location trigger using the region parameter.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - watchOS 8.0+
 
 ## Declaration

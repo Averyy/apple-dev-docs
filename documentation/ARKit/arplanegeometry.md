@@ -40,6 +40,8 @@ The shape of a plane geometry is always convex. That is, the boundary polygon fo
 ### Finding Boundary Points
 - [var boundaryVertices: [simd_float3]](arplanegeometry/boundaryvertices-3h98l.md)
   An array of vertex positions for each point along the plane’s boundary.
+### Initializers
+- [init?(coder: NSCoder)](arplanegeometry/init(coder:).md)
 
 ## Relationships
 

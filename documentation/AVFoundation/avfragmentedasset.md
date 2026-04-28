@@ -46,6 +46,8 @@ Associate a fragmented asset with an instance of [`AVFragmentedAssetMinder`](avf
   Returns tracks that present media of a specified type.
 - [func tracks(withMediaCharacteristic: AVMediaCharacteristic) -> [AVFragmentedAssetTrack]](avfragmentedasset/tracks(withmediacharacteristic:).md)
   Returns tracks that present media of a specified characteristic.
+### Initializers
+- [convenience init(URL: URL, options: [String : Any]?)](avfragmentedasset/init(url:options:).md)
 
 ## Relationships
 

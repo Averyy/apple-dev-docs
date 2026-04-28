@@ -33,6 +33,8 @@ An [`SKReachConstraints`](skreachconstraints.md) object is used to describe the 
   The minimum angle that the node can have after it is rotated by a reach event.
 - [var upperAngleLimit: CGFloat](skreachconstraints/upperanglelimit.md)
   The maximum angle that the node can have after it is rotated by a reach event.
+### Initializers
+- [init?(coder: NSCoder)](skreachconstraints/init(coder:).md)
 
 ## Relationships
 

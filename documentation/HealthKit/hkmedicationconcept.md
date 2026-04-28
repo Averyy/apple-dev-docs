@@ -25,6 +25,8 @@ A medication concept represents the idea of a medication, like ibuprofen or insu
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](hkmedicationconcept/init(coder:).md)
 ### Instance Properties
 - [var displayText: String](hkmedicationconcept/displaytext.md)
   The display name for this medication.

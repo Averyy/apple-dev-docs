@@ -7,6 +7,7 @@ Get the details of a merchant token event after receiving a notification.
 
 **Availability**:
 - App Store Connect API 1.0.10+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Mentions
 

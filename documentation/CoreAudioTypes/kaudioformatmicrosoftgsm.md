@@ -8,6 +8,7 @@ A key that specifies the Microsoft GSM 6.10 - ACM code 49 codec, and uses no fla
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 13.0+
 - macOS 10.6+
 - tvOS 9.0+
 - visionOS 1.0+

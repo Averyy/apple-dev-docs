@@ -31,6 +31,8 @@ You don’t create use this class directly. Instead, use a class that inherits f
   The name of the machine learning key.
 - [var scope: String?](mlkey/scope.md)
   The applicable scope of the machine learning key.
+### Initializers
+- [init?(coder: NSCoder)](mlkey/init(coder:).md)
 
 ## Relationships
 

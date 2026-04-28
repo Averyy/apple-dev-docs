@@ -8,6 +8,7 @@ An error that indicates the file wasn’t found.
 **Availability**:
 - iOS 4.3+
 - iPadOS 4.3+
+- Mac Catalyst 13.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

@@ -26,7 +26,7 @@ init(timeRange: CMTimeRange)
 
 ## See Also
 
-- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:).md)
+- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:)-4rc2g.md)
   Creates an object that presents a segment of a media file that the specified URL references.
 
 

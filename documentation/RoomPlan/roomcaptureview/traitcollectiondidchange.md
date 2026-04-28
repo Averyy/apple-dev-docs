@@ -8,6 +8,7 @@ Notifies the view when the device orientation changes.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

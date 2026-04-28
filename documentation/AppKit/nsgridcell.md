@@ -32,6 +32,8 @@ Use a grid cell to specify the content view to display and to position the conte
 - [var xPlacement: NSGridCell.Placement](nsgridcell/xplacement.md)
 - [var yPlacement: NSGridCell.Placement](nsgridcell/yplacement.md)
 - [NSGridCell.Placement](nsgridcell/placement.md)
+### Initializers
+- [init?(coder: NSCoder)](nsgridcell/init(coder:).md)
 
 ## Relationships
 

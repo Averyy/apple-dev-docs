@@ -62,6 +62,8 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
   The definition of a triangle in the mesh, available with the [`triangle(at:)`](gkmeshgraph/triangle(at:).md) method.
 ### Instance Methods
 - [func classForGenericArgument(at: Int) -> AnyClass](gkmeshgraph/classforgenericargument(at:).md)
+### Initializers
+- [convenience init(nodes: [GKGraphNode])](gkmeshgraph/init(nodes:).md)
 
 ## Relationships
 

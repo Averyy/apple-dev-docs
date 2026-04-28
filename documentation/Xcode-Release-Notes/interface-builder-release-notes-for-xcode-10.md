@@ -56,7 +56,7 @@ Read these notes when you’re building interfaces in Xcode 10.
 - Fixed an issue with rendering table view cells that are scrolled out of view at design time. (41213048)
 - Fixed a problem where issues for different objects were incorrectly coalesced. (13162286)
 - Fixed an issue where clicking a build issue wouldn’t select the referenced object in the canvas. (14779509)
-- Fixed a crash when viewing the Attributes inspector for an [`NSLevelIndicatorCell`](https://developer.apple.com/documentation/AppKit/NSLevelIndicatorCell) in a cell-based [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView). (39231884)
+- Fixed a crash when viewing the Attributes inspector for an doc://com.apple.documentation/documentation/appkit/nslevelindicatorcell in a cell-based [`NSTableView`](https://developer.apple.com/documentation/AppKit/NSTableView). (39231884)
 - Fixed an issue where storyboard view controllers would change their relative placement unexpectedly while navigating between code and the Interface Builder canvas. (40925441)
 - Fixed an issue that would cause the view hierarchy to not render if the canvas area was scrolled before presenting the view hierarchy. (27635197)
 - Fixed an issue where connect-to-source mistakenly allowed adding code to Swift generated interfaces. (35263074)

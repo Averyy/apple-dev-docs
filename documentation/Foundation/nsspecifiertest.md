@@ -40,6 +40,7 @@ You should rarely need to subclass `NSSpecifierTest`.
   These are passed to  [`init(objectSpecifier:comparisonOperator:test:)`](nsspecifiertest/init(objectspecifier:comparisonoperator:test:).md) to specify the comparison operator.
 ### Initializers
 - [init?(coder: NSCoder)](nsspecifiertest/init(coder:).md)
+- [init(objectSpecifier: NSScriptObjectSpecifier?, comparisonOperator: NSSpecifierTest.TestComparisonOperation, testObject: Any?)](nsspecifiertest/init(objectspecifier:comparisonoperator:testobject:).md)
 
 ## Relationships
 

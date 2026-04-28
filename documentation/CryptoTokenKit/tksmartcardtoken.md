@@ -27,7 +27,7 @@ class TKSmartCardToken
 ## Topics
 
 ### Creating Smart Card Tokens
-- [init(smartCard: TKSmartCard, aid: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:).md)
+- [init(smartCard: TKSmartCard, aid: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-38ak2.md)
   Initializes a smart card token with the specified smart card, application identifier, and token driver.
 ### Accessing the Application Identifier
 - [var aid: Data?](tksmartcardtoken/aid.md)
@@ -44,6 +44,8 @@ class TKSmartCardToken
   An object that implements encoding using Compact-TLV encoding according to ISO 7816-4.
 - [class TKSimpleTLVRecord](tksimpletlvrecord.md)
   An object that implements encoding using Simple-TLV encoding according to ISO 7816-4.
+### Initializers
+- [init(smartCard: TKSmartCard, AID: Data?, instanceID: String, tokenDriver: TKSmartCardTokenDriver)](tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-90hza.md)
 
 ## Relationships
 

@@ -34,7 +34,7 @@ Calendar uses the first URL that you provide as the preferred way for users to j
 ## Topics
 
 ### Creating Conference Descriptors
-- [init(title: String?, urlDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:).md)
+- [init(title: String?, urlDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-4yf7.md)
   Creates an object that describes a virtual conference, including a name and URL to join the conference.
 ### Configuring Virtual Conferences
 - [var title: String?](ekvirtualconferencedescriptor/title.md)
@@ -45,6 +45,8 @@ Calendar uses the first URL that you provide as the preferred way for users to j
   Details about how users join a virtual conference, including a title and URL.
 - [var conferenceDetails: String?](ekvirtualconferencedescriptor/conferencedetails.md)
   Additional information about the conference that users may find helpful.
+### Initializers
+- [init(title: String?, URLDescriptors: [EKVirtualConferenceURLDescriptor], conferenceDetails: String?)](ekvirtualconferencedescriptor/init(title:urldescriptors:conferencedetails:)-1a9zt.md)
 
 ## Relationships
 

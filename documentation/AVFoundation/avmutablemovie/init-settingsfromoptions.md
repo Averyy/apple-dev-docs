@@ -34,7 +34,7 @@ On initialization, the [`defaultMediaDataStorage`](avmutablemovie/defaultmediada
 
 ## See Also
 
-- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:).md)
+- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-8rnnj.md)
   Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(data: Data, options: [String : Any]?, error: ()) throws](avmutablemovie/init(data:options:error:).md)
   Creates a mutable movie object from a movie stored in a data object.

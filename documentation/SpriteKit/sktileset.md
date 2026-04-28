@@ -51,6 +51,9 @@ Tile sets also define the arrangement of tiles within a tile map. In addition to
   The tile set’s type.
 - [enum SKTileSetType](sktilesettype.md)
   An enumeration defining how tiles are arranged.
+### Initializers
+- [init?(coder: NSCoder)](sktileset/init(coder:).md)
+- [convenience init?(fromURL: URL)](sktileset/init(fromurl:).md)
 
 ## Relationships
 

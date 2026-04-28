@@ -8,6 +8,7 @@ Marks a directory as a favorite and sets its relative order in the Favorites lis
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

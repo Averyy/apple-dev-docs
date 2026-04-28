@@ -57,6 +57,9 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
 ### Pathfinding with a Graph
 - [func findPath(from: GKGraphNode, to: GKGraphNode) -> [GKGraphNode]](gkgraph/findpath(from:to:).md)
   Computes and returns a sequence of nodes that represents the shortest traversal of the graph between the specified nodes.
+### Initializers
+- [init?(coder: NSCoder)](gkgraph/init(coder:).md)
+- [init(nodes: [GKGraphNode])](gkgraph/init(nodes:).md)
 
 ## Relationships
 

@@ -98,6 +98,8 @@ Additionally, wherever possible, this class uses a single instance to represent 
   A unique string identifying the HealthKit object type.
 - [func requiresPerObjectAuthorization() -> Bool](hkobjecttype/requiresperobjectauthorization.md)
   Returns a Boolean that indicates whether the data type requires per-object authorization.
+### Initializers
+- [init?(coder: NSCoder)](hkobjecttype/init(coder:).md)
 ### Type Methods
 - [class func medicationDoseEventType() -> HKMedicationDoseEventType](hkobjecttype/medicationdoseeventtype.md)
 - [class func stateOfMindType() -> HKStateOfMindType](hkobjecttype/stateofmindtype.md)

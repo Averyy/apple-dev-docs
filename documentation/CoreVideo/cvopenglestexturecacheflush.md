@@ -8,6 +8,7 @@ Performs internal housekeeping/recycling operations on a texture cache.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - tvOS 9.0+
 
 ## Declaration

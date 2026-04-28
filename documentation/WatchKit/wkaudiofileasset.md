@@ -27,9 +27,9 @@ To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](wkaudiofilep
 ## Topics
 
 ### Creating an Asset
-- [convenience init(url: URL)](wkaudiofileasset/init(url:).md)
+- [convenience init(url: URL)](wkaudiofileasset/init(url:)-8ndda.md)
   Returns an asset for the audio file at the specified URL.
-- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](wkaudiofileasset/init(url:title:albumtitle:artist:).md)
+- [convenience init(url: URL, title: String?, albumTitle: String?, artist: String?)](wkaudiofileasset/init(url:title:albumtitle:artist:)-447fg.md)
   Returns an audio file asset and sets the metadata for that item.
 ### Getting the Asset’s Properties
 - [var url: URL](wkaudiofileasset/url.md)
@@ -42,6 +42,9 @@ To play an audio file asset, wrap it in a [`WKAudioFilePlayerItem`](wkaudiofilep
   The album title information for the audio file.
 - [var artist: String?](wkaudiofileasset/artist.md)
   The artist information for the audio file.
+### Initializers
+- [convenience init(URL: URL)](wkaudiofileasset/init(url:)-49spv.md)
+- [convenience init(URL: URL, title: String?, albumTitle: String?, artist: String?)](wkaudiofileasset/init(url:title:albumtitle:artist:)-5zloc.md)
 
 ## Relationships
 

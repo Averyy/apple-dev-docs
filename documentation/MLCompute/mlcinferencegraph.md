@@ -56,6 +56,8 @@ class MLCInferenceGraph
 ### Inspecting Inference Graphs
 - [var deviceMemorySize: Int](mlcinferencegraph/devicememorysize.md)
   The device memory size in bytes for all intermediate tensors in the inference graph.
+### Initializers
+- [convenience init()](mlcinferencegraph/init.md)
 
 ## Relationships
 

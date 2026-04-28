@@ -7,6 +7,8 @@ A response from the device after it processes the command to change the FileVaul
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

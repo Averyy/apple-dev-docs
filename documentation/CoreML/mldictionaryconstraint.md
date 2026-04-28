@@ -25,6 +25,8 @@ class MLDictionaryConstraint
 ### Accessing the constraint
 - [var keyType: MLFeatureType](mldictionaryconstraint/keytype.md)
   The key type for the dictionary.
+### Initializers
+- [init?(coder: NSCoder)](mldictionaryconstraint/init(coder:).md)
 
 ## Relationships
 

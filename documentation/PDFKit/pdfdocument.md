@@ -32,7 +32,7 @@ You initialize a `PDFDocument` object with PDF data or with a URL to a PDF file.
 ## Topics
 
 ### Initializing Documents
-- [init?(url: URL)](pdfdocument/init(url:).md)
+- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
 - [init?(data: Data)](pdfdocument/init(data:).md)
   Initializes a `PDFDocument` object with the passed-in data.
@@ -57,6 +57,8 @@ You initialize a `PDFDocument` object with PDF data or with a URL to a PDF file.
   A structure that specifies file writing options for a document.
 ### Instance Properties
 - [var accessPermissions: PDFAccessPermissions](pdfdocument/accesspermissions.md)
+### Initializers
+- [init?(URL: URL)](pdfdocument/init(url:)-7sttu.md)
 ### Instance Methods
 - [func selection(from: PDFPage, at: CGPoint, to: PDFPage, at: CGPoint, with: PDFSelectionGranularity) -> PDFSelection?](pdfdocument/selection(from:at:to:at:with:).md)
 

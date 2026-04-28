@@ -108,6 +108,10 @@ The mutable subclass of `NSIndexSet` is [`NSMutableIndexSet`](nsmutableindexset.
   Returns an *iterator* over the elements of this *sequence*.
 - [struct NSIndexSetIterator](nsindexsetiterator.md)
   An iterator suitable for enumerating the elements of an index set.
+### Initializers
+- [init?(coder: NSCoder)](nsindexset/init(coder:).md)
+- [init(indexesInRange: NSRange)](nsindexset/init(indexesinrange:)-67dvw.md)
+- [convenience init(indexesInRange: NSRange)](nsindexset/init(indexesinrange:)-n2eh.md)
 ### Default Implementations
 - [Sequence Implementations](nsindexset/sequence-implementations.md)
 

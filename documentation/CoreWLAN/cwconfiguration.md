@@ -35,6 +35,8 @@ class CWConfiguration
   Require an administrator password to create a computer-to-computer network.
 - [var requireAdministratorForPower: Bool](cwconfiguration/requireadministratorforpower.md)
   Require an administrator password to change the interface power state.
+### Initializers
+- [init?(coder: NSCoder)](cwconfiguration/init(coder:).md)
 
 ## Relationships
 

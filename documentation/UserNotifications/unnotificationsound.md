@@ -70,6 +70,8 @@ You can use the `afconvert` command-line tool to convert sounds. For example, to
 - [class var defaultRingtone: UNNotificationSound](unnotificationsound/defaultringtone.md)
 ### Type Methods
 - [class func ringtoneSoundNamed(UNNotificationSoundName) -> Self](unnotificationsound/ringtonesoundnamed(_:).md)
+### Initializers
+- [init?(coder: NSCoder)](unnotificationsound/init(coder:).md)
 
 ## Relationships
 

@@ -37,7 +37,7 @@ The meaning of a string value depends on the renderer (or other software compone
 
 - [init(name: String, semantic: MDLMaterialSemantic)](mdlmaterialproperty/init(name:semantic:).md)
   Initializes a material property without a value.
-- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](mdlmaterialproperty/init(name:semantic:url:).md)
+- [convenience init(name: String, semantic: MDLMaterialSemantic, url: URL?)](mdlmaterialproperty/init(name:semantic:url:)-2ldk4.md)
   Initializes a material property with a URL value.
 - [convenience init(name: String, semantic: MDLMaterialSemantic, textureSampler: MDLTextureSampler?)](mdlmaterialproperty/init(name:semantic:texturesampler:).md)
   Initializes a material property with a texture sampler object.

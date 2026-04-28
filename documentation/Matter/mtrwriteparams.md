@@ -23,6 +23,8 @@ class MTRWriteParams
 ### Instance Properties
 - [var dataVersion: NSNumber?](mtrwriteparams/dataversion.md)
 - [var timedWriteTimeout: NSNumber?](mtrwriteparams/timedwritetimeout.md)
+### Initializers
+- [init?(coder: NSCoder)](mtrwriteparams/init(coder:).md)
 
 ## Relationships
 

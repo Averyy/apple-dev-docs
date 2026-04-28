@@ -22,6 +22,8 @@ class MTRCommissioneeInfo
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](mtrcommissioneeinfo/init(coder:).md)
 ### Instance Properties
 - [var attributes: [MTRAttributePath : [String : Any]]?](mtrcommissioneeinfo/attributes.md)
   Attributes that were read from the commissionee.  This will contain the following, if they are available:

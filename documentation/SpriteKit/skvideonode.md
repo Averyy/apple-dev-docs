@@ -35,11 +35,11 @@ This class renders a video at a given size and location in your scene with no ex
 - [Adding a Video to a Scene](adding-a-video-to-a-scene.md)
   Play video in your scene by adding a video node.
 ### Creating a Video Node
-- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:).md)
+- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
   Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
 - [init(fileNamed: String)](skvideonode/init(filenamed:).md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(url: URL)](skvideonode/init(url:).md)
+- [init(url: URL)](skvideonode/init(url:)-2im38.md)
   Initializes a video node using a URL.
 - [init?(coder: NSCoder)](skvideonode/init(coder:).md)
   Tells you when to initialize a video node that was created from an archive.
@@ -57,6 +57,11 @@ This class renders a video at a given size and location in your scene with no ex
   Starts video playback.
 - [func pause()](skvideonode/pause.md)
   Pauses video playback.
+### Initializers
+- [init(AVPlayer: AVPlayer)](skvideonode/init(avplayer:)-7s6co.md)
+- [init(AVPlayer: AVPlayer)](skvideonode/init(avplayer:)-8uhsn.md)
+- [init(URL: URL)](skvideonode/init(url:)-49ou9.md)
+- [init(URL: URL)](skvideonode/init(url:)-8rxuu.md)
 
 ## Relationships
 

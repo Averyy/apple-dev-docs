@@ -20,7 +20,7 @@ init(coder: NSCoder)
   Initializes and returns an image object using the provided image data.
 - [convenience init?(dataIgnoringOrientation: Data)](nsimage/init(dataignoringorientation:).md)
   Initializes and returns an image object using the provided image data and ignoring the EXIF orientation tags.
-- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:).md)
+- [convenience init(cgImage: CGImage, size: NSSize)](nsimage/init(cgimage:size:)-8oznv.md)
   Creates a new image using the contents of the provided image.
 - [convenience init?(pasteboard: NSPasteboard)](nsimage/init(pasteboard:).md)
   Initializes and returns an image object with data from the specified pasteboard.

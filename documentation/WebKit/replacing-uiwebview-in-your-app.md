@@ -26,7 +26,7 @@ If you need a high degree of configurability or are using web content in ways un
 
 ##### Implement Delegates for Functionality
 
-[`WKWebView`](wkwebview.md) uses various delegates to implement functionality that’s similar to [`UIWebViewDelegate`](https://developer.apple.com/documentation/UIKit/UIWebViewDelegate). The table below shows the [`UIWebViewDelegate`](https://developer.apple.com/documentation/UIKit/UIWebViewDelegate) methods and their [`WKWebView`](wkwebview.md) equivalents in the [`WKNavigationDelegate`](wknavigationdelegate.md) column.
+[`WKWebView`](wkwebview.md) uses various delegates to implement functionality that’s similar to doc://com.apple.documentation/documentation/uikit/uiwebviewdelegate. The table below shows the doc://com.apple.documentation/documentation/uikit/uiwebviewdelegate methods and their [`WKWebView`](wkwebview.md) equivalents in the [`WKNavigationDelegate`](wknavigationdelegate.md) column.
 
 | `UIWebViewDelegate` | `WKNavigationDelegate` |
 | --- | --- |

@@ -29,6 +29,8 @@ The CryptoTokenKit framework provides the following concrete subclasses: [`TKTok
 ### Finishing the Operation
 - [func finish() throws](tktokenauthoperation/finish.md)
   Finishes the authentication operation.
+### Initializers
+- [init?(coder: NSCoder)](tktokenauthoperation/init(coder:).md)
 
 ## Relationships
 

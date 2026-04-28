@@ -75,6 +75,8 @@ SceneKit also uses [`SCNMaterialProperty`](scnmaterialproperty.md) objects elsew
   The source of texture coordinates for mapping the material property’s image contents.
 - [var borderColor: Any?](scnmaterialproperty/bordercolor.md)
   A color used to fill in areas of a material’s surface not covered by the material property’s image contents.
+### Initializers
+- [init?(coder: NSCoder)](scnmaterialproperty/init(coder:).md)
 ### Instance Properties
 - [var textureComponents: SCNColorMask](scnmaterialproperty/texturecomponents.md)
 ### Type Methods

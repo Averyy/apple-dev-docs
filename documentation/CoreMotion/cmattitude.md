@@ -47,6 +47,8 @@ The `CMAttitude` class offers three different mathematical representations of at
 ### Obtaining the Change in Attitude
 - [func multiply(byInverseOf: CMAttitude)](cmattitude/multiply(byinverseof:).md)
   Yields the change in attitude given a specific attitude.
+### Initializers
+- [init?(coder: NSCoder)](cmattitude/init(coder:).md)
 
 ## Relationships
 

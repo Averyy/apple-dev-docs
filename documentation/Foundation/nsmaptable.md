@@ -87,6 +87,8 @@ When configuring map tables, note that only the options listed in [`NSMapTableOp
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
 ### Deprecated
 - [Legacy Map Table Implementation](legacy-map-table-implementation.md)
+### Initializers
+- [init?(coder: NSCoder)](nsmaptable/init(coder:).md)
 
 ## Relationships
 

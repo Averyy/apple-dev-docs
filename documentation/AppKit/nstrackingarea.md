@@ -48,6 +48,8 @@ Other [`NSView`](nsview.md) methods related to [`NSTrackingArea`](nstrackingarea
 ### Constants
 - [NSTrackingArea.Options](nstrackingarea/options-swift.struct.md)
   The data type defined for the constants specified in the `options` parameter of [`init(rect:options:owner:userInfo:)`](nstrackingarea/init(rect:options:owner:userinfo:).md). These constants are described below; you can specify multiple constants by performing a bitwise-OR operation with them. In particular, you must supply one or more of the tracking-type constants (that is, [`mouseEnteredAndExited`](nstrackingarea/options-swift.struct/mouseenteredandexited.md), [`mouseMoved`](nstrackingarea/options-swift.struct/mousemoved.md), and [`cursorUpdate`](nstrackingarea/options-swift.struct/cursorupdate.md)) and one of the active constants (that is, [`activeWhenFirstResponder`](nstrackingarea/options-swift.struct/activewhenfirstresponder.md), [`activeInKeyWindow`](nstrackingarea/options-swift.struct/activeinkeywindow.md), [`activeInActiveApp`](nstrackingarea/options-swift.struct/activeinactiveapp.md), and [`activeAlways`](nstrackingarea/options-swift.struct/activealways.md)). In addition, you may specify any of the behavior constants (that is, [`assumeInside`](nstrackingarea/options-swift.struct/assumeinside.md), [`inVisibleRect`](nstrackingarea/options-swift.struct/invisiblerect.md), and [`enabledDuringMouseDrag`](nstrackingarea/options-swift.struct/enabledduringmousedrag.md)).
+### Initializers
+- [init?(coder: NSCoder)](nstrackingarea/init(coder:).md)
 
 ## Relationships
 

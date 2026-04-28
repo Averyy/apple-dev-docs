@@ -8,6 +8,7 @@ Activate the current credential to perform a transaction in card emulation mode.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

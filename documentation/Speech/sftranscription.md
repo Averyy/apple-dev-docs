@@ -43,6 +43,8 @@ An `SFTranscription` represents only a potential version of the speech. It might
   The average pause duration between words, measured in seconds.
 - [var speakingRate: Double](sftranscription/speakingrate.md)
   The number of words spoken per minute.
+### Initializers
+- [init?(coder: NSCoder)](sftranscription/init(coder:).md)
 
 ## Relationships
 

@@ -44,7 +44,7 @@ If any file wrapper in the directory doesn’t have a preferred filename, its pr
   The filename of the file wrapper object
 - [var fileAttributes: [String : Any]](filewrapper/fileattributes.md)
   A dictionary of file attributes.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:).md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
 - [convenience init?(path: String)](filewrapper/init(path:).md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the path.

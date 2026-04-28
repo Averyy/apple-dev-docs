@@ -7,6 +7,8 @@ A response from the device after it processes the command to verify the deviceâ€
 
 **Availability**:
 - macOS 11.5+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -19,7 +19,7 @@ A `CGImage` representation of the asset, or `NULL` if a CGImage representation c
 
 This method returns the biggest, best representation available.
 
-To create a correctly-rotated UIImage object from the CGImage, you use [`imageWithCGImage:scale:orientation:`](https://developer.apple.com/documentation/UIKit/UIImage/imageWithCGImage:scale:orientation:) or [`init(cgImage:scale:orientation:)`](https://developer.apple.com/documentation/UIKit/UIImage/init(cgImage:scale:orientation:)), passing the values of [`orientation()`](alassetrepresentation/orientation().md) and [`scale()`](alassetrepresentation/scale().md).
+To create a correctly-rotated UIImage object from the CGImage, you use [`imageWithCGImage:scale:orientation:`](https://developer.apple.com/documentation/UIKit/UIImage/imageWithCGImage:scale:orientation:) or doc://com.apple.documentation/documentation/uikit/uiimage/init(cgimage:scale:orientation:), passing the values of [`orientation()`](alassetrepresentation/orientation().md) and [`scale()`](alassetrepresentation/scale().md).
 
 > **Note**:  In iOS 8 and later, use the Photos framework to access different versions and sizes of a photo asset. See [`PHImageManager`](https://developer.apple.com/documentation/Photos/PHImageManager).
 

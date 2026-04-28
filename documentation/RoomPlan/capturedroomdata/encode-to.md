@@ -8,6 +8,7 @@ Serializes captured room data to the specified encoder.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

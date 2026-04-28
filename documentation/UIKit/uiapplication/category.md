@@ -8,6 +8,7 @@ Constants that describe the types of apps in the system.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

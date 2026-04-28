@@ -239,6 +239,7 @@ The Metal Performance Shaders framework supports the following functionality:
 - [var MPSImageType_texelFormatStandard: MPSImageType](mpsimagetype_texelformatstandard.md)
 - [var MPSImageType_texelFormatUnorm8: MPSImageType](mpsimagetype_texelformatunorm8.md)
 - [var MPSImageType_typeMask: MPSImageType](mpsimagetype_typemask.md)
+- [let MPSRectNoClip: MTLRegion](mpsrectnoclip.md)
 ### Type Aliases
 - [typealias MPSPackedFloat3](mpspackedfloat3-swift.typealias.md)
   A packed three-element vector.

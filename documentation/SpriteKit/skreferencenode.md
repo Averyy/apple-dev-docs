@@ -52,6 +52,8 @@ When each scene is loaded, the reference nodes are resolved dynamically, and the
   Initializes a reference node from a file in the app’s main bundle.
 - [init?(coder: NSCoder)](skreferencenode/init(coder:).md)
   A method that initializes a reference node from an archive.
+- [init(URL: URL?)](skreferencenode/init(url:)-8glm0.md)
+- [convenience init(URL: URL)](skreferencenode/init(url:)-8yn6r.md)
 ### Regenerating
 - [func resolve()](skreferencenode/resolve.md)
   Loads the reference node’s content and adds it as a new child node.

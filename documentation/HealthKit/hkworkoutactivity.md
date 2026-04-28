@@ -70,6 +70,9 @@ Workout activity objects partition a workout into a set of separate activities. 
   The key path for accessing activities with a matching minimum quantity.
 - [let HKPredicateKeyPathWorkoutActivitySumQuantity: String](hkpredicatekeypathworkoutactivitysumquantity.md)
   The key path for accessing activities with a matching sum.
+### Initializers
+- [init?(coder: NSCoder)](hkworkoutactivity/init(coder:).md)
+- [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](hkworkoutactivity/init(workoutconfiguration:startdate:enddate:metadata:).md)
 
 ## Relationships
 

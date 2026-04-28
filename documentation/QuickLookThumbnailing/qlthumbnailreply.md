@@ -34,6 +34,9 @@ class QLThumbnailReply
 ### Customizing a Thumbnail Reply
 - [var extensionBadge: String](qlthumbnailreply/extensionbadge.md)
   A short string that identifies the file type that the system uses as a badge when producing an icon thumbnail.
+### Initializers
+- [convenience init(contextSize: CGSize, currentContextDrawingBlock: () -> Bool)](qlthumbnailreply/init(contextsize:currentcontextdrawingblock:).md)
+- [convenience init(contextSize: CGSize, drawingBlock: (CGContext) -> Bool)](qlthumbnailreply/init(contextsize:drawingblock:).md)
 
 ## Relationships
 

@@ -30,7 +30,7 @@ A new player item, initialized to play `asset`.
 
 ## See Also
 
-- [convenience init(url: URL)](avplayeritem/init(url:).md)
+- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
   Creates a player item with a specified URL.
 - [convenience init(asset: any AVAsset & Sendable)](avplayeritem/init(asset:)-1nme9.md)
 - [convenience init(asset: AVAsset, automaticallyLoadedAssetKeys: [AVPartialAsyncProperty<AVAsset>])](avplayeritem/init(asset:automaticallyloadedassetkeys:)-5czjh.md)

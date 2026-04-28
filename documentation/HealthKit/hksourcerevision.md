@@ -51,6 +51,8 @@ Like many HealthKit classes, the [`HKSourceRevision`](hksourcerevision.md) class
   A string that identifies the operating system used to save a sample.
 - [var productType: String?](hksourcerevision/producttype.md)
   A string that identifies the device used to save a sample.
+### Initializers
+- [init?(coder: NSCoder)](hksourcerevision/init(coder:).md)
 
 ## Relationships
 

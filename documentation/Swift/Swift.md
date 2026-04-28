@@ -60,7 +60,8 @@ Swift is developed in the open. To learn more about the open source Swift projec
 - [Swift Standard Library](swift-standard-library.md)
   Solve complex problems and write high-performance, readable code.
 ### Observation
-- [Observation](../swift#Observation/swift#Observation.md)
+- [Observation](../observation/observation.md)
+  Make responsive apps that update the presentation when underlying data changes.
 ### Distributed Actors
 - [Distributed](../distributed/distributed.md)
   Build systems that run distributed code across multiple processes and devices.

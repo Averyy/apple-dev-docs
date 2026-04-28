@@ -46,6 +46,8 @@ For signatures longer than [`maximumQuerySignatureDuration`](shcatalog/maximumqu
 ### Getting the content type
 - [static var shazamSignature: UTType](../UniformTypeIdentifiers/UTType-swift.struct/shazamSignature.md)
   A type that represents a signature.
+### Initializers
+- [init?(coder: NSCoder)](shsignature/init(coder:).md)
 
 ## Relationships
 

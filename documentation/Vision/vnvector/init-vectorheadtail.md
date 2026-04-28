@@ -34,7 +34,7 @@ convenience init(vectorHead head: VNPoint, tail: VNPoint)
   Creates a new vector by multiplying the specified vector’s x-axis and y-axis projections by the scalar value.
 - [convenience init(r: Double, theta: Double)](vnvector/init(r:theta:).md)
   Creates a new vector in polar coordinate space.
-- [init(xComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:).md)
+- [init(xComponent: Double, yComponent: Double)](vnvector/init(xcomponent:ycomponent:)-3p5k3.md)
   Creates a new vector in Cartesian coordinate space, based on its x-axis and y-axis projections.
 - [class var zero: VNVector](vnvector/zero.md)
   A vector object with zero length.

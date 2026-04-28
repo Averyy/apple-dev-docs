@@ -67,6 +67,7 @@ Once an [`XMLDTD`](xmldtd.md) instance is in place, you can add, remove, and cha
   Returns the DTD node representing the notation declaration identified by the specified notation name.
 ### Initializers
 - [init()](xmldtd/init.md)
+- [convenience init(contentsOfURL: URL, options: XMLNode.Options) throws](xmldtd/init(contentsofurl:options:).md)
 
 ## Relationships
 

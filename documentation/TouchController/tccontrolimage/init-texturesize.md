@@ -8,6 +8,7 @@ Creates a new image with the specified texture and size.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -26,11 +27,11 @@ A new `TCControlImage` instance.
 
 ## See Also
 
-- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:).md)
+- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-22z05.md)
   Creates a new image from a CGImage.
 - [init(texture: any MTLTexture, size: CGSize, highlight: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](tccontrolimage/init(texture:size:highlight:offset:tintcolor:).md)
   Creates a new image with the specified texture, size, highlight texture, offset, and color tint.
-- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:).md)
+- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-3hqf.md)
   Creates a new image from a UIImage.
 
 

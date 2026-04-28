@@ -7,6 +7,8 @@ The payload that configures the desktop wallpaper.
 
 **Availability**:
 - macOS 10.10+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

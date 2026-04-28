@@ -81,6 +81,8 @@ If the user chooses to share to Messages, the same metadata passes directly thro
   A remote URL corresponding to a representative video for the URL.
 - [var videoProvider: NSItemProvider?](lplinkmetadata/videoprovider.md)
   An object that retrieves data corresponding to a representative video for the URL.
+### Initializers
+- [init?(coder: NSCoder)](lplinkmetadata/init(coder:).md)
 
 ## Relationships
 

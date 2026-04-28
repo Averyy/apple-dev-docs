@@ -35,7 +35,7 @@ The `data` parameter of this method (an [`NSData`](https://developer.apple.com/d
 
 ## See Also
 
-- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:).md)
+- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-rw0y.md)
   Initializes a scene source for reading the scene graph from a specified file.
 
 

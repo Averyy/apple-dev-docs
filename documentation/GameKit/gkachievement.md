@@ -77,6 +77,8 @@ To reset the player’s progress on all achievements, use the [`resetAchievement
 ### Deprecated
 - [Deprecated Symbols](gkachievement-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Initializers
+- [init?(coder: NSCoder)](gkachievement/init(coder:).md)
 
 ## Relationships
 

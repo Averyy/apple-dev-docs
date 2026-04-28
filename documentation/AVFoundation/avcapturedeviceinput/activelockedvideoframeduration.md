@@ -28,6 +28,8 @@ Set this property to run the receiver’s associated [`AVCaptureDevice`](avcaptu
 
 > **Note**: Setting this property may cause a lengthy reconfiguration of the receiver, similar to setting [`activeFormat`](avcapturedevice/activeformat.md) or [`sessionPreset`](avcapturesession/sessionpreset.md).
 
+> **Note**: When using this property, set the exposure duration with [`setExposureModeCustom(duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md) to one half the frame duration (or less) to maintain full dynamic range.
+
 > ❗ **Important**: If you set this property to a valid value while the receiver’s [`minSupportedLockedVideoFrameDuration`](avcapturedevice/minsupportedlockedvideoframeduration.md) is `kCMTimeInvalid`, it throws an `NSInvalidArgumentException`.
 
 > ❗ **Important**: If you set this property while the receiver’s  [`isLockedVideoFrameDurationSupported`](avcapturedeviceinput/islockedvideoframedurationsupported.md) property returns `false`, it throws an `NSInvalidArgumentException`.

@@ -22,6 +22,7 @@ class AXMathExpressionFenced
 
 ### Initializers
 - [init(expressions: [AXMathExpression], open: String, close: String)](axmathexpressionfenced/init(expressions:open:close:).md)
+- [init(expressions: [AXMathExpression], openString: String, closeString: String)](axmathexpressionfenced/init(expressions:openstring:closestring:).md)
 ### Instance Properties
 - [var closeString: String](axmathexpressionfenced/closestring.md)
 - [var expressions: [AXMathExpression]](axmathexpressionfenced/expressions.md)

@@ -68,6 +68,8 @@ For backward compatibility on Mach, `-[NSPort allocWithZone:]` returns an instan
   Type for the platform-specific native socket handle.
 ### Structures
 - [struct DidBecomeInvalidMessage](port/didbecomeinvalidmessage.md)
+### Initializers
+- [init?(coder: NSCoder)](port/init(coder:).md)
 
 ## Relationships
 

@@ -34,6 +34,8 @@ class MIDICIDeviceInfo
   The revision number of the device model number.
 - [var midiDestination: MIDIEndpointRef](midicideviceinfo/mididestination.md)
   The MIDI destination the device’s MIDI entity uses for capability inquiries.
+### Initializers
+- [init?(coder: NSCoder)](midicideviceinfo/init(coder:).md)
 
 ## Relationships
 

@@ -35,7 +35,7 @@ If `encodingInvalidCharacters` is `true`, this initializer tries to encode the s
   Creates a URL components object with all components left undefined.
 - [init?(string: String)](nsurlcomponents/init(string:).md)
   Creates a URL components object by parsing a URL in string form.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:).md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 
 

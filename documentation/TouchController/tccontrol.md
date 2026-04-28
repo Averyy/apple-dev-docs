@@ -8,6 +8,7 @@ A protocol that defines the base properties and methods for all touch controls.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -16,12 +16,12 @@ class WebResource
 
 #### Overview
 
-Use the [`init(data:url:mimeType:textEncodingName:frameName:)`](webresource/init(data:url:mimetype:textencodingname:framename:).md) method to initialize a newly created `WebResource` object. Use the other methods in this class to get the properties of a `WebResource` object.
+Use the [`init(data:url:mimeType:textEncodingName:frameName:)`](webresource/init(data:url:mimetype:textencodingname:framename:)-914h4.md) method to initialize a newly created `WebResource` object. Use the other methods in this class to get the properties of a `WebResource` object.
 
 ## Topics
 
 ### Initializing
-- [init!(data: Data!, url: URL!, mimeType: String!, textEncodingName: String!, frameName: String!)](webresource/init(data:url:mimetype:textencodingname:framename:).md)
+- [init!(data: Data!, url: URL!, mimeType: String!, textEncodingName: String!, frameName: String!)](webresource/init(data:url:mimetype:textencodingname:framename:)-914h4.md)
   Initializes and returns a web resource instance.
 ### Getting attributes
 - [var data: Data!](webresource/data.md)
@@ -34,6 +34,9 @@ Use the [`init(data:url:mimeType:textEncodingName:frameName:)`](webresource/init
   The receiver’s text encoding name.
 - [var frameName: String!](webresource/framename.md)
   The name of the frame. If the receiver does not represent the contents of an entire HTML frame, this is `nil`.
+### Initializers
+- [init?(coder: NSCoder)](webresource/init(coder:).md)
+- [init!(data: Data!, URL: URL!, MIMEType: String!, textEncodingName: String!, frameName: String!)](webresource/init(data:url:mimetype:textencodingname:framename:)-6mz1.md)
 
 ## Relationships
 

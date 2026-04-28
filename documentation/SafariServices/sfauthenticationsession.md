@@ -39,8 +39,9 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
 - [SFAuthenticationSession.CompletionHandler](sfauthenticationsession/completionhandler.md)
   The completion handler for an authentication session when the user cancels or finishes the login.
 ### Initializers
-- [init(url: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](sfauthenticationsession/init(url:callbackurlscheme:completionhandler:).md)
+- [init(url: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](sfauthenticationsession/init(url:callbackurlscheme:completionhandler:)-55qgp.md)
   Initializes the SFAuthenticationSession in an application.
+- [init(URL: URL, callbackURLScheme: String?, completionHandler: SFAuthenticationSession.CompletionHandler)](sfauthenticationsession/init(url:callbackurlscheme:completionhandler:)-7iwvl.md)
 ### Instance Methods
 - [func cancel()](sfauthenticationsession/cancel.md)
   Cancels the currently running session when the consent dialog is up or when the webpage is up. This is how applications stop the login process.
@@ -67,8 +68,7 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
   Messages that describe a content blocker error.
 - [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
-  Messages that describe an authentication error.
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
 - [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
   The domain for authentication errors.
 

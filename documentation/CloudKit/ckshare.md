@@ -96,6 +96,8 @@ share[CKShare.SystemFieldKey.shareType] = "com.example.app.album"
 ### Classes
 - [CKShare.AccessRequester](ckshare/accessrequester.md)
 - [CKShare.BlockedIdentity](ckshare/blockedidentity.md)
+### Initializers
+- [init(rootRecord: CKRecord, share: CKRecord.ID)](ckshare/init(rootrecord:share:).md)
 ### Instance Properties
 - [var allowsAccessRequests: Bool](ckshare/allowsaccessrequests.md)
   Indicates whether uninvited users can request access to this share.

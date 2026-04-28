@@ -57,6 +57,8 @@ For information on using a custom kernel to enhance Rosetta performance, see [`A
   Sets the Rosetta caching options using the options you specify.
 - [VZLinuxRosettaDirectoryShare.CachingOptions](vzlinuxrosettadirectoryshare/cachingoptions-swift.enum.md)
   Socket values you specify to configure Rosetta’s caching capabilities.
+### Initializers
+- [init(error: ()) throws](vzlinuxrosettadirectoryshare/init(error:).md)
 
 ## Relationships
 

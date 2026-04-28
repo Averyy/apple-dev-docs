@@ -28,6 +28,11 @@ class NSNull
 
 [`NSNull`](nsnull.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFNull`](https://developer.apple.com/documentation/CoreFoundation/CFNull). See [`Toll-Free Bridging`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information on toll-free bridging.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](nsnull/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

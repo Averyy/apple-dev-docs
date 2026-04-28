@@ -128,6 +128,8 @@ The protocol is adopted by AppKit interface objects to support window restoratio
 
 ## See Also
 
+- [Restoring your app’s state with AppKit](restoring-your-app-s-state-with-appkit.md)
+  Provide continuity for people using your app by preserving current activities on macOS.
 - [protocol NSWindowRestoration](nswindowrestoration.md)
   A set of methods that restoration classes must implement to handle the recreation of windows.
 

@@ -8,6 +8,7 @@ Share Wi-Fi network credentials securely between devices and connected accessori
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 #### Overview
 

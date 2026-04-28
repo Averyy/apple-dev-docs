@@ -37,7 +37,7 @@ func ABSetMe(_ addressBook: ABAddressBookRef!, _ moi: ABPersonRef!)
   Returns a search element object that specifies a query for records of this type.
 - [func ABPersonCreateWithVCardRepresentation(CFData!) -> Unmanaged<ABPersonRef>!](abpersoncreatewithvcardrepresentation(_:).md)
   Returns a new ABPerson object initialized with the given data in vCard format.
-- [func ABPersonSetImageData(ABRecord!, CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abpersonsetimagedata(_:_:_:).md)
+- [func ABPersonSetImageData(ABRecord!, CFData!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abpersonsetimagedata(_:_:).md)
   Sets the image for this person to the given data.
 
 

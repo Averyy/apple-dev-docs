@@ -31,7 +31,7 @@ The name is compared against all valid identity names, including full names, sho
 
 - [init?(persistentReference: Data)](cbidentity/init(persistentreference:).md)
   Returns the identity object matching the persistent reference data.
-- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:).md)
+- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
 
 

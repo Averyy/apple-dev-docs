@@ -7,6 +7,8 @@ A dictionary that describes the result of a command to change the firmware passw
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -24,6 +24,7 @@ Or, a representation of the amount of time remaining in the event, or a section 
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpnowplayingsportsclock/init(coder:).md)
 - [init(elapsedTime: TimeInterval, paused: Bool)](cpnowplayingsportsclock/init(elapsedtime:paused:).md)
   Represents a duration of time that has elapsed so far in this event, or play period of the event (quarter/inning/period).
 - [init(timeRemaining: TimeInterval, paused: Bool)](cpnowplayingsportsclock/init(timeremaining:paused:).md)

@@ -8,6 +8,7 @@ A key that specifies the MPEG-4 HVXC codec, and uses no flags.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 13.0+
 - macOS 10.2+
 - tvOS 9.0+
 - visionOS 1.0+

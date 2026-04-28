@@ -21,10 +21,12 @@ If a reason is provided, the corresponding mode will show up as an option, but a
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](nssharingservicepicker/collaborationmoderestriction/init(coder:).md)
 - [init(disabledMode: NSSharingCollaborationMode)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:).md)
 - [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:).md)
 - [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:).md)
 - [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunch: URL)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunch:).md)
+- [init(disabledMode: NSSharingCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](nssharingservicepicker/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:).md)
 ### Instance Properties
 - [var alertDismissButtonTitle: String?](nssharingservicepicker/collaborationmoderestriction/alertdismissbuttontitle.md)
   The label on the alert button which will simply confirm that the alert was viewed and dismiss it Defaults to “OK”

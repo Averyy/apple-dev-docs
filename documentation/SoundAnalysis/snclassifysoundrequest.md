@@ -61,7 +61,7 @@ For more information about creating and using classify sound requests, see:
 ## Topics
 
 ### Creating a Request
-- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:).md)
+- [init(mlModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-6rmee.md)
   Creates a request that uses a custom sound classification model.
 - [init(classifierIdentifier: SNClassifierIdentifier) throws](snclassifysoundrequest/init(classifieridentifier:).md)
   Creates a request that uses the framework’s built-in sound classification model.
@@ -80,6 +80,8 @@ For more information about creating and using classify sound requests, see:
 ### Instance Properties
 - [var windowDurationConstraint: SNTimeDurationConstraint](snclassifysoundrequest/windowdurationconstraint-5no60.md)
   A range or list of sound duration times the request’s underlying sound classifier supports.
+### Initializers
+- [init(MLModel: MLModel) throws](snclassifysoundrequest/init(mlmodel:)-9p7qz.md)
 
 ## Relationships
 

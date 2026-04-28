@@ -7,6 +7,8 @@ A dictionary of login scripts.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

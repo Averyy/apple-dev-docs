@@ -94,6 +94,9 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
 ### Constants
 - [Keyed Unarchiving Exception Names](keyed-unarchiving-exception-names.md)
   Names of exceptions that are raised by `NSKeyedUnarchiver` if there is a problem extracting an archive.
+### Initializers
+- [init(forReadingFromData: Data) throws](nskeyedunarchiver/init(forreadingfromdata:).md)
+- [init(forReadingWithData: Data)](nskeyedunarchiver/init(forreadingwithdata:).md)
 ### Type Methods
 - [class func unarchiveTopLevelObjectWithData(NSData) throws -> AnyObject?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:)-9oaeu.md)
 - [static func unarchivedArrayOfObjects<DecodedObject>(ofClass: DecodedObject.Type, from: Data) throws -> [DecodedObject]?](nskeyedunarchiver/unarchivedarrayofobjects(ofclass:from:).md)

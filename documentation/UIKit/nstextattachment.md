@@ -64,6 +64,8 @@ In macOS 12 and iOS 15 and later, [`NSTextAttachmentViewProvider`](nstextattachm
   Registers a specific file type with the attachment view provider.
 - [class func textAttachmentViewProviderClass(forFileType: String) -> AnyClass?](nstextattachment/textattachmentviewproviderclass(forfiletype:).md)
   Returns the text attachment view provider class, if any, for the file type you specify.
+### Initializers
+- [init?(coder: NSCoder)](nstextattachment/init(coder:).md)
 
 ## Relationships
 

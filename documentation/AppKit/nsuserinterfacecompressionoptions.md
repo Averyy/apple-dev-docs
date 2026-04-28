@@ -56,6 +56,8 @@ To compare two different compression options objects, use the methods described 
   Creates a new compression options object representing the union with the provided options.
 - [func subtracting(NSUserInterfaceCompressionOptions) -> NSUserInterfaceCompressionOptions](nsuserinterfacecompressionoptions/subtracting(_:).md)
   Creates a new compression options object with the supplied options removed.
+### Initializers
+- [init(compressionOptions: Set<NSUserInterfaceCompressionOptions>)](nsuserinterfacecompressionoptions/init(compressionoptions:).md)
 
 ## Relationships
 

@@ -60,6 +60,8 @@ The preferred place to create a texture atlas is within an asset catalog (see [`
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](sktextureatlas/customplaygroundquicklook.md)
   A custom playground quick look for this instance.
+### Initializers
+- [init?(coder: NSCoder)](sktextureatlas/init(coder:).md)
 
 ## Relationships
 

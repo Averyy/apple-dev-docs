@@ -24,13 +24,6 @@ class IMKServer
 ### Getting a Bundle for the Input Method
 - [func bundle() -> Bundle!](imkserver/bundle.md)
   Returns an `NSBundle` object for the input method.
-### Constants
-- [IMKModeDictionary](imkmodedictionary.md)
-  The input method mode dictionary key.
-- [IMKControllerClass](imkcontrollerclass.md)
-  The input method controller class key.
-- [IMKDelegateClass](imkdelegateclass.md)
-  The input method delegate class key.
 ### Instance Methods
 - [func lastKeyEventWasDeadKey() -> Bool](imkserver/lastkeyeventwasdeadkey.md)
 - [func paletteWillTerminate() -> Bool](imkserver/palettewillterminate.md)

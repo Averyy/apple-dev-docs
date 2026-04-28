@@ -38,7 +38,7 @@ You rarely instantiate `SBApplication` objects directly. Instead, you get the sh
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given bundle identifier.
 - [init?(processIdentifier: pid_t)](sbapplication/init(processidentifier:).md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given process identifier.
-- [init?(url: URL)](sbapplication/init(url:).md)
+- [init?(url: URL)](sbapplication/init(url:)-6xbe5.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given URL.
 ### Creating a Scripting Class
 - [func `class`(forScriptingClass: String) -> AnyClass?](sbapplication/class(forscriptingclass:).md)
@@ -57,6 +57,9 @@ You rarely instantiate `SBApplication` objects directly. Instead, you get the sh
 ### Managing the Delegate
 - [var delegate: (any SBApplicationDelegate)?](sbapplication/delegate.md)
   The error-handling delegate of the receiver.
+### Initializers
+- [init?(URL: URL)](sbapplication/init(url:)-2kr06.md)
+- [init?(URL: URL)](sbapplication/init(url:)-4bno1.md)
 
 ## Relationships
 

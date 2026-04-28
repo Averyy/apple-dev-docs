@@ -34,6 +34,8 @@ class CLLocationSourceInformation
   A Boolean value that indicates whether the system receives the location from an external accessory.
 - [var isSimulatedBySoftware: Bool](cllocationsourceinformation/issimulatedbysoftware.md)
   A Boolean value that indicates whether the system generates the location using on-device software simulation.
+### Initializers
+- [init?(coder: NSCoder)](cllocationsourceinformation/init(coder:).md)
 
 ## Relationships
 

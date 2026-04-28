@@ -31,6 +31,8 @@ When Scene Kit prepares to render a scene, it evaluates the list of constraints 
 ### Creating a Transform Constraint
 - [convenience init(inWorldSpace: Bool, with: (SCNNode, SCNMatrix4) -> SCNMatrix4)](scntransformconstraint/init(inworldspace:with:).md)
   Creates a new transform constraint.
+### Initializers
+- [convenience init(inWorldSpace: Bool, withBlock: (SCNNode, SCNMatrix4) -> SCNMatrix4)](scntransformconstraint/init(inworldspace:withblock:).md)
 ### Type Methods
 - [class func orientationConstraint(inWorldSpace: Bool, with: (SCNNode, SCNQuaternion) -> SCNQuaternion) -> Self](scntransformconstraint/orientationconstraint(inworldspace:with:).md)
 - [class func positionConstraint(inWorldSpace: Bool, with: (SCNNode, SCNVector3) -> SCNVector3) -> Self](scntransformconstraint/positionconstraint(inworldspace:with:).md)

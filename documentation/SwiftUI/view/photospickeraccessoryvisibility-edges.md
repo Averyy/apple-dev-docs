@@ -8,6 +8,7 @@ Sets the accessory visibility of the Photos picker. Accessories include anything
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

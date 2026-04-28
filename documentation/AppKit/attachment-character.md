@@ -4,6 +4,12 @@
 
 A character that denotes an attachment.
 
+## Topics
+
+### Constants
+- [class var character: Int](nstextattachment/character.md)
+  Specifies a character that denotes an attachment.
+
 
 ---
 

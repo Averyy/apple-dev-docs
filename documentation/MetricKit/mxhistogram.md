@@ -41,6 +41,8 @@ If there’s data only in the 0…9 ms and 20…29 ms buckets, then the report s
   The total number of buckets in the histogram.
 - [class MXHistogramBucket](mxhistogrambucket.md)
   An object representing a bucket of data in a histogram.
+### Initializers
+- [init?(coder: NSCoder)](mxhistogram/init(coder:).md)
 
 ## Relationships
 

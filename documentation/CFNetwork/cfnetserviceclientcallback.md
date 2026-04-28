@@ -30,7 +30,7 @@ Your callback function will be called when there are results of resolving a CFNe
 ## Parameters
 
 - `theService`: CFNetService associated with this callback function.
-- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure whose `error` field contain may contain an error code.
+- `error`: Pointer to a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror structure whose `error` field contain may contain an error code.
 - `info`: User-defined context information. The value of `info` is the same as the value of the `info` field of the [`CFNetServiceClientContext`](cfnetserviceclientcontext.md) structure that was provided when [`CFNetServiceSetClient(_:_:_:)`](cfnetservicesetclient(_:_:_:).md) was called for the CFNetService associated with this callback function.
 
 ## See Also

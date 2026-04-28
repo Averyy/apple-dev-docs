@@ -235,6 +235,8 @@ To load a particle system from a file you created with Xcode, use the [`init(nam
 ### Sample Code
 - [Building a document browser app for custom file formats](../UIKit/building-a-document-browser-app-for-custom-file-formats.md)
   Implement a custom document file format to manage user interactions with files on different cloud storage providers.
+### Initializers
+- [init?(coder: NSCoder)](scnparticlesystem/init(coder:).md)
 ### Instance Properties
 - [var orientationDirection: SCNVector3](scnparticlesystem/orientationdirection.md)
 - [var particleIntensity: CGFloat](scnparticlesystem/particleintensity.md)

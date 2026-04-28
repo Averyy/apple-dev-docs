@@ -28,6 +28,8 @@ You can use sections when displaying a query’s items or collections in your ap
   The localized title of the media query section.
 - [var range: NSRange](mpmediaquerysection/range.md)
   The range in the media query’s items or collections array that the media query section represents.
+### Initializers
+- [init?(coder: NSCoder)](mpmediaquerysection/init(coder:).md)
 
 ## Relationships
 

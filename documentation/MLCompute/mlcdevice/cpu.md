@@ -30,7 +30,7 @@ A device that uses the CPU.
   Creates a device that you can configure to use multiple compute devices.
 - [enum MLCDeviceType](mlcdevicetype.md)
   A device type for execution of a neural network.
-- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:).md)
+- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:)-4mj85.md)
   Creates a device using the GPUs you specify.
 - [class func gpu() -> Self?](mlcdevice/gpu.md)
   Creates a device that uses a GPU, if one exists.

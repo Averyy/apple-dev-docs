@@ -56,6 +56,8 @@ See also NSAppleScript Additions Reference in the Application Kit framework, whi
 ### Instance Properties
 - [var richTextSource: NSAttributedString?](nsapplescript/richtextsource.md)
   Returns the syntax-highlighted source code of the receiver if the receiver has been compiled and its source code is available.
+### Initializers
+- [init?(contentsOfURL: URL, error: AutoreleasingUnsafeMutablePointer<NSDictionary?>?)](nsapplescript/init(contentsofurl:error:).md)
 
 ## Relationships
 

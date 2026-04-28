@@ -47,6 +47,8 @@ You can use the `NSString` objects in the arrays returned by methods such as [`a
 ### Notifications
 - [static let NSClassDescriptionNeededForClass: NSNotification.Name](nsnotification/name-swift.struct/nsclassdescriptionneededforclass.md)
   Posted by [`init(for:)`](nsclassdescription/init(for:).md) when a class description cannot be found for a class.
+### Initializers
+- [init?(forClass: AnyClass)](nsclassdescription/init(forclass:).md)
 
 ## Relationships
 

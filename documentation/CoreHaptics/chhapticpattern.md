@@ -64,6 +64,8 @@ Regardless of the building block you choose to generate a custom haptic, you can
 ### Exporting a Haptic Pattern
 - [func exportDictionary() throws -> [CHHapticPattern.Key : Any]](chhapticpattern/exportdictionary.md)
   Returns the dictionary representation of the haptic pattern.
+### Initializers
+- [init(contentsOfURL: URL) throws](chhapticpattern/init(contentsofurl:).md)
 
 ## Relationships
 

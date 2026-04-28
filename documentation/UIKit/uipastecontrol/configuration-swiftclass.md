@@ -39,6 +39,8 @@ The paste button ([`UIPasteControl`](uipastecontrol.md)) property [`configuratio
   An option that determines whether the paste button composes an icon, textual label, or both.
 - [UIPasteControl.DisplayMode](uipastecontrol/displaymode.md)
   Options that determine whether a paste button composes an icon, textual label, or both.
+### Initializers
+- [init?(coder: NSCoder)](uipastecontrol/configuration-swift.class/init(coder:).md)
 ### Instance Properties
 - [var imagePlacement: NSDirectionalRectEdge](uipastecontrol/configuration-swift.class/imageplacement.md)
 

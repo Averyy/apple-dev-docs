@@ -105,6 +105,8 @@ In Objective-C, don’t create font objects using the `alloc` and `init` methods
   A font descriptor for the font.
 - [class UIFontDescriptor](uifontdescriptor.md)
   A collection of attributes that describes a font.
+### Initializers
+- [init?(coder: NSCoder)](uifont/init(coder:).md)
 
 ## Relationships
 

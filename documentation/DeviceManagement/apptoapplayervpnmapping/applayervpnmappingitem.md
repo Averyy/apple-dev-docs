@@ -7,6 +7,8 @@ A dictionary defining a per-app VPN relationship.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

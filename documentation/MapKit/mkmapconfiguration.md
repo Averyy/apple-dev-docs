@@ -27,6 +27,8 @@ class MKMapConfiguration
   The value that indicates the map’s elevation style.
 - [MKMapConfiguration.ElevationStyle](mkmapconfiguration/elevationstyle-swift.enum.md)
   Values that control the map’s elevation style.
+### Initializers
+- [init?(coder: NSCoder)](mkmapconfiguration/init(coder:).md)
 
 ## Relationships
 

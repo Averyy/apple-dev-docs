@@ -119,7 +119,7 @@ Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1,
 
 ## See Also
 
-- [Xcode 26.5 Beta 2 Release Notes](xcode-26_5-release-notes.md)
+- [Xcode 26.5 Beta 3 Release Notes](xcode-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

@@ -141,6 +141,8 @@ Because each alias represents a separate name, an individual with one or more al
   Name substituted for the purposes of familiarity *(for example, “Johnny”)*.
 - [var phoneticRepresentation: PersonNameComponents?](nspersonnamecomponents/phoneticrepresentation.md)
   The phonetic representation name components of the receiver.
+### Initializers
+- [init?(coder: NSCoder)](nspersonnamecomponents/init(coder:).md)
 
 ## Relationships
 

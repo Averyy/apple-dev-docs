@@ -57,6 +57,8 @@ For instructions on how to create your own custom formatter, see [`Creating a Cu
   The formatting context for a formatter.
 - [Formatter.UnitStyle](formatter/unitstyle.md)
   Specifies the width of the unit, determining the textual representation.
+### Initializers
+- [init?(coder: NSCoder)](formatter/init(coder:).md)
 
 ## Relationships
 

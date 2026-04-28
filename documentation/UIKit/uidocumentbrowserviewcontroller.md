@@ -107,6 +107,8 @@ Third-party storage services can also provide access to the documents they manag
   The document types that the browser can open.
 - [func transitionController(forDocumentURL: URL) -> UIDocumentBrowserTransitionController](uidocumentbrowserviewcontroller/transitioncontroller(fordocumenturl:).md)
   Creates a transition controller that provides the standard system-loading and segue animations for the document browser.
+### Initializers
+- [init(forOpeningContentTypes: [UTType]?)](uidocumentbrowserviewcontroller/init(foropeningcontenttypes:).md)
 
 ## Relationships
 

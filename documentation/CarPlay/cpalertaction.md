@@ -40,6 +40,7 @@ Use an alert action to display a button on an alert. The combination of the aler
   The declaration for an alert action handler.
 ### Initializers
 - [init(title: String, color: UIColor, handler: CPAlertActionHandler)](cpalertaction/init(title:color:handler:).md)
+- [init?(coder: NSCoder)](cpalertaction/init(coder:).md)
 ### Instance Properties
 - [var color: UIColor?](cpalertaction/color.md)
 

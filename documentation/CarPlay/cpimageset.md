@@ -30,6 +30,8 @@ CarPlay is set to dark appearance by default in most vehicles, but does provide 
   The image the system displays when the user interface style is light.
 - [var darkContentImage: UIImage](cpimageset/darkcontentimage.md)
   The image the system displays when the user interface style is dark.
+### Initializers
+- [init?(coder: NSCoder)](cpimageset/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,9 @@ The command to get a list of the managed books on a device.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -70,6 +70,8 @@ For more information on calculating statistical data, see [`HKStatisticsQuery`](
   Returns the date interval of the most recent sample that matches the query.
 - [func mostRecentQuantityDateInterval(for: HKSource) -> DateInterval?](hkstatistics/mostrecentquantitydateinterval(for:).md)
   Returns the date interval of the most recent sample that matches the query and was created by the specified source.
+### Initializers
+- [init?(coder: NSCoder)](hkstatistics/init(coder:).md)
 
 ## Relationships
 

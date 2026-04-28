@@ -38,6 +38,8 @@ If you requested partial results from the speech recognizer, the transcriptions 
 ### Determining whether transcriptions are final
 - [var isFinal: Bool](sfspeechrecognitionresult/isfinal.md)
   A Boolean value that indicates whether speech recognition is complete and whether the transcriptions are final.
+### Initializers
+- [init?(coder: NSCoder)](sfspeechrecognitionresult/init(coder:).md)
 
 ## Relationships
 

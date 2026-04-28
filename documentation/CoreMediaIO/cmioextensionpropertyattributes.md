@@ -36,6 +36,8 @@ Use a property attributes object to describe attributes such as the minimum and 
 ### Specifying a Read-Only Attribute
 - [class var readOnlyPropertyAttribute: CMIOExtensionPropertyAttributes<AnyObject>](cmioextensionpropertyattributes/readonlypropertyattribute.md)
   A class property for a read-only property attribute.
+### Initializers
+- [init?(coder: NSCoder)](cmioextensionpropertyattributes/init(coder:).md)
 
 ## Relationships
 

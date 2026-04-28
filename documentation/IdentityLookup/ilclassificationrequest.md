@@ -17,6 +17,11 @@ The abstract superclass for classification requests.
 class ILClassificationRequest
 ```
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](ilclassificationrequest/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

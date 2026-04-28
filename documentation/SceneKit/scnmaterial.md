@@ -103,6 +103,8 @@ You attach one or more materials to an instance of the [`SCNGeometry`](scngeomet
   A Boolean value that determines whether SceneKit uses depth information when rendering the material.
 - [var colorBufferWriteMask: SCNColorMask](scnmaterial/colorbufferwritemask.md)
 - [struct SCNColorMask](scncolormask.md)
+### Initializers
+- [init?(coder: NSCoder)](scnmaterial/init(coder:).md)
 ### Instance Properties
 - [var clearCoat: SCNMaterialProperty](scnmaterial/clearcoat.md)
 - [var clearCoatNormal: SCNMaterialProperty](scnmaterial/clearcoatnormal.md)

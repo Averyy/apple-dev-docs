@@ -8,10 +8,13 @@ The payload that configures Wi-Fi settings.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

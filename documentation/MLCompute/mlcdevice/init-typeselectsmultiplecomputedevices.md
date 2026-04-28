@@ -33,7 +33,7 @@ For the `type` parameter, use [`MLCDeviceType.any`](mlcdevicetype/any.md) unless
   Creates a device of the type you specify.
 - [enum MLCDeviceType](mlcdevicetype.md)
   A device type for execution of a neural network.
-- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:).md)
+- [convenience init?(gpuDevices: [any MTLDevice])](mlcdevice/init(gpudevices:)-4mj85.md)
   Creates a device using the GPUs you specify.
 - [class func cpu() -> Self](mlcdevice/cpu.md)
   Creates a device that uses the CPU.

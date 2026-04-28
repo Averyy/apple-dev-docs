@@ -7,6 +7,7 @@ The card information related to a merchant token, including its card art and met
 
 **Availability**:
 - App Store Connect API 1.0.10+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Declaration
 

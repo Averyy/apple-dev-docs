@@ -62,6 +62,8 @@ You can display a workflow with an instance of [`AMWorkflowView`](amworkflowview
   Moves the action from the specified start position to the specified end position in the receiving workflow.
 - [func removeAction(AMAction)](amworkflow/removeaction(_:).md)
   Removes the specified action from the workflow.
+### Initializers
+- [convenience init(contentsOfURL: URL) throws](amworkflow/init(contentsofurl:).md)
 
 ## Relationships
 

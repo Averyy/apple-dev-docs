@@ -58,6 +58,8 @@ class NWTCPConnection
   The network path over which the connection was established.
 - [var txtRecord: Data?](nwtcpconnection/txtrecord.md)
   The TXT record associated with a connected Bonjour service endpoint.
+### Initializers
+- [init(upgradeForConnection: NWTCPConnection)](nwtcpconnection/init(upgradeforconnection:).md)
 
 ## Relationships
 

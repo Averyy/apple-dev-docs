@@ -46,6 +46,8 @@ To detect QR codes in an image or video, choose [`CIDetectorTypeQRCode`](cidetec
   The image coordinate of the upper-left corner of the detected QR code.
 - [var topRight: CGPoint](ciqrcodefeature/topright-swift.property.md)
   The image coordinate of the upper-right corner of the detected QR code.
+### Initializers
+- [init?(coder: NSCoder)](ciqrcodefeature/init(coder:).md)
 
 ## Relationships
 

@@ -7,7 +7,7 @@ Integrate web content seamlessly into your app, and customize content interactio
 
 **Availability**:
 - iOS 16.0+
-- iPadOS 16.0+
+- iPadOS ?+
 - Mac Catalyst 13.1+
 - macOS 10.2+
 - visionOS 1.0+

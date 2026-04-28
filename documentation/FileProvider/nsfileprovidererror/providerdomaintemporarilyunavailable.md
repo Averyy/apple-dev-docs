@@ -8,6 +8,7 @@ An error indicating that the system is unable to service requests for the domain
 **Availability**:
 - iOS 17.1+
 - iPadOS 17.1+
+- Mac Catalyst 17.1+
 - macOS 14.1+
 - visionOS 1.0+
 

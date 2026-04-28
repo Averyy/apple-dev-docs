@@ -31,6 +31,8 @@ class CWNetworkProfile
   The service set identifier (SSID) for the network profile, encoded as a string.
 - [var ssidData: Data?](cwnetworkprofile/ssiddata.md)
   The service set identifier (SSID) for the network profile, returned as data.
+### Initializers
+- [init?(coder: NSCoder)](cwnetworkprofile/init(coder:).md)
 
 ## Relationships
 

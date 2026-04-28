@@ -75,6 +75,8 @@ For more information about requesting authorization for user interactions, see [
   A Boolean value indicating the system displays a button for in-app notification settings.
 ### Instance Properties
 - [var directMessagesSetting: UNNotificationSetting](unnotificationsettings/directmessagessetting.md)
+### Initializers
+- [init?(coder: NSCoder)](unnotificationsettings/init(coder:).md)
 
 ## Relationships
 

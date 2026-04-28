@@ -66,6 +66,8 @@ Create and configure a [`WKUserContentController`](wkusercontentcontroller.md) o
   Removes all rules lists from the content controller.
 - [class WKContentRuleList](wkcontentrulelist.md)
   A compiled list of rules to apply to web content.
+### Initializers
+- [init?(coder: NSCoder)](wkusercontentcontroller/init(coder:).md)
 
 ## Relationships
 

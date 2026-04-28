@@ -46,7 +46,7 @@ Note that many settings dictionary elements aren’t relevant for the format, so
   Creates an audio format instance from a stream description.
 - [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
   Creates an audio format instance from a stream description and channel layout.
-- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:).md)
+- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
 
 

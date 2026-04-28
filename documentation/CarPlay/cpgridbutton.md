@@ -30,6 +30,7 @@ class CPGridButton
 - [var image: UIImage](cpgridbutton/image.md)
   The image displayed on the button.
 ### Initializers
+- [init?(coder: NSCoder)](cpgridbutton/init(coder:).md)
 - [init(titleVariants: [String], image: UIImage, messageConfiguration: CPMessageGridItemConfiguration?, handler: ((CPGridButton) -> Void)?)](cpgridbutton/init(titlevariants:image:messageconfiguration:handler:).md)
   Initialize a button with a title, image, and message configuration.
 ### Instance Properties

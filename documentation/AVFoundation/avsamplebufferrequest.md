@@ -44,6 +44,8 @@ class AVSampleBufferRequest
   The preferred minimum number of samples to load.
 - [var startCursor: AVSampleCursor](avsamplebufferrequest/startcursor.md)
   The starting cursor position.
+### Initializers
+- [init(startCursor: AVSampleCursor)](avsamplebufferrequest/init(startcursor:).md)
 
 ## Relationships
 

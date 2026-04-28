@@ -7,6 +7,8 @@ The payload that configures parental control for dictation and profanity.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

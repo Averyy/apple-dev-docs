@@ -111,7 +111,7 @@ The system requires your app extension to have the [`com.apple.developer.accesso
 
 #### Receive and Process Notifications
 
-When a notification occurs on the iPhone, the system invokes your extension by calling [`activate(for:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/activate(for:)), passing in a session object. Save a reference to the session for use across multiple notifications.
+When a notification occurs on the iPhone, the system invokes your extension by calling doc://com.apple.documentation/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/activate(for:), passing in a session object. Save a reference to the session for use across multiple notifications.
 
 The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/addNotification(_:alertingContext:)) on your extension, passing in the notification’s details. Parse the <doc://com.apple.documentation/documentation/accessorynotifications/accessorynotification`` structure, selecting just the information your accessory needs. Notification details include:
 
@@ -417,7 +417,7 @@ The [`notificationCanAlert`](https://developer.apple.com/documentation/Accessory
 
 The [`isSuppressedByFocus`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/isSuppressedByFocus) property indicates whether the device’s Focus state suppresses notification alerts.
 
-For incoming call notifications, check [`isIncomingCall`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/isIncomingCall) to apply special handling. Use [`sound`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/sound-swift.property) to determine sound characteristics, including whether the notification should ignore silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Sound-swift.struct/shouldIgnoreSilentMode).
+For incoming call notifications, check doc://com.apple.documentation/documentation/accessorynotifications/AlertingContext/isIncomingCall to apply special handling. Use [`sound`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/sound-swift.property) to determine sound characteristics, including whether the notification should ignore silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Sound-swift.struct/shouldIgnoreSilentMode).
 
 #### Handle Notification Updates and Removals
 

@@ -8,6 +8,7 @@ A string that encodes the hardware and software release versions of the Secure E
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

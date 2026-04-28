@@ -57,7 +57,7 @@ A new transition.
   Creates a transition where the new scene moves in on top of the old scene.
 - [class func push(with: SKTransitionDirection, duration: TimeInterval) -> SKTransition](sktransition/push(with:duration:).md)
   Creates a transition where the new scene moves in, pushing the old scene out of the view.
-- [init(ciFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:).md)
+- [init(ciFilter: CIFilter, duration: TimeInterval)](sktransition/init(cifilter:duration:)-451za.md)
   Creates a transition that uses a Core Image filter to perform the transition.
 
 

@@ -78,6 +78,10 @@ If you want to play the system beep sound, use the [`beep()`](nssound/beep().md)
 ### Constants
 - [NSPasteboard Type for Sound Data](nspasteboard-type-for-sound-data.md)
   The `NSSound` class defines this common pasteboard data type.
+### Initializers
+- [init?(coder: NSCoder)](nssound/init(coder:).md)
+- [init?(contentsOfURL: URL, byReference: Bool)](nssound/init(contentsofurl:byreference:).md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nssound/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

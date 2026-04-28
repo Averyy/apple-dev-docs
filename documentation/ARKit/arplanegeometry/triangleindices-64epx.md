@@ -8,6 +8,7 @@ An array of indices describing the triangle mesh formed by the plane geometry’
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 
 ## Declaration
 

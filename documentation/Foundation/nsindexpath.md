@@ -68,6 +68,8 @@ Each index in an index path represents the index into an array of children from 
   Copies the indexes stored in the index path from the positions specified by the position range into the specified indexes.
 - [func getIndexes(UnsafeMutablePointer<Int>)](nsindexpath/getindexes(_:).md)
   Copies the objects contained in the index path into indexes.
+### Initializers
+- [init?(coder: NSCoder)](nsindexpath/init(coder:).md)
 
 ## Relationships
 

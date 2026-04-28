@@ -28,6 +28,8 @@ class CMPedometerEvent
   The type of change that occurred.
 - [enum CMPedometerEventType](cmpedometereventtype.md)
   Constants indicating the change that occurred to the user’s pedestrian activity.
+### Initializers
+- [init?(coder: NSCoder)](cmpedometerevent/init(coder:).md)
 
 ## Relationships
 

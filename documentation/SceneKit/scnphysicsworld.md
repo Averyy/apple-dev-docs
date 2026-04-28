@@ -64,6 +64,8 @@ You do not create [`SCNPhysicsWorld`](scnphysicsworld.md) objects directly; inst
 ### Search Options
 - [SCNPhysicsWorld.TestOption](scnphysicsworld/testoption.md)
   Keys in options dictionaries that affect how SceneKit searches for bodies in a collision, ray, or sweep test.
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsworld/init(coder:).md)
 
 ## Relationships
 

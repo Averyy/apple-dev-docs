@@ -29,11 +29,11 @@ On iOS platforms, this method draws the image onto a render buffer for the OpenG
 
 ## See Also
 
-- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:).md)
+- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:)-6rp6d.md)
   Creates a Core Image context from a CGL context, using the specified options, color space, and pixel format object.
-- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:).md)
+- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:)-8ajef.md)
   Creates a Core Image context from an EAGL context.
-- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:).md)
+- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:)-6uyqj.md)
   Creates a Core Image context from an EAGL context using the specified options.
 - [init?(forOfflineGPUAtIndex: UInt32)](cicontext/init(forofflinegpuatindex:).md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display.

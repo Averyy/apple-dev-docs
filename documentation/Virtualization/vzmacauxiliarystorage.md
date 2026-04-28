@@ -43,7 +43,7 @@ When using an existing file, the hardware model of the `VZMacPlatformConfigurati
 ### Creating the auxiliary storage
 - [init(contentsOfURL: URL)](vzmacauxiliarystorage/init(contentsofurl:).md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
-- [init(url: URL)](vzmacauxiliarystorage/init(url:).md)
+- [init(url: URL)](vzmacauxiliarystorage/init(url:)-68cz.md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
 - [init(creatingStorageAt: URL, hardwareModel: VZMacHardwareModel, options: VZMacAuxiliaryStorage.InitializationOptions) throws](vzmacauxiliarystorage/init(creatingstorageat:hardwaremodel:options:).md)
   Creates an initialized Mac auxiliary storage instance that describes a specific hardware model at a URL you specify.
@@ -53,7 +53,9 @@ When using an existing file, the hardware model of the `VZMacPlatformConfigurati
 - [var url: URL](vzmacauxiliarystorage/url.md)
   The URL of the auxiliary storage on the local file system.
 ### Initializers
+- [init(URL: URL)](vzmacauxiliarystorage/init(url:)-42aee.md)
 - [init(contentsOf: URL)](vzmacauxiliarystorage/init(contentsof:).md)
+- [init(creatingStorageAtURL: URL, hardwareModel: VZMacHardwareModel, options: VZMacAuxiliaryStorage.InitializationOptions) throws](vzmacauxiliarystorage/init(creatingstorageaturl:hardwaremodel:options:).md)
 ### Default Implementations
 - [VZMacAuxiliaryStorage Implementations](vzmacauxiliarystorage/vzmacauxiliarystorage-implementations.md)
 

@@ -31,6 +31,8 @@ class CMIOExtensionStreamCustomClockConfiguration
   The number of events to use for rate smoothing.
 - [var numberOfAveragesForRateSmoothing: UInt32](cmioextensionstreamcustomclockconfiguration/numberofaveragesforratesmoothing.md)
   The number of averages to use for rate smoothing.
+### Initializers
+- [init?(coder: NSCoder)](cmioextensionstreamcustomclockconfiguration/init(coder:).md)
 
 ## Relationships
 

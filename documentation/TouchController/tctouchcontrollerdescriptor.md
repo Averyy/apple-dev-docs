@@ -8,6 +8,7 @@ A descriptor for configuring a touch controller.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -19,7 +20,7 @@ class TCTouchControllerDescriptor
 
 ### Creating a touch controller descriptor
 - [init()](tctouchcontrollerdescriptor/init.md)
-- [convenience init(mtkView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:).md)
+- [convenience init(mtkView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:)-7cs6u.md)
 ### Inspecting the controller descriptor
 - [var colorPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/colorpixelformat.md)
   The pixel format for the drawable texture.
@@ -35,6 +36,8 @@ class TCTouchControllerDescriptor
   The size of the view the touch controller’s drawable is embedded in, in points.
 - [var stencilAttachmentPixelFormat: MTLPixelFormat](tctouchcontrollerdescriptor/stencilattachmentpixelformat.md)
   The pixel format for the stencil attachment.
+### Initializers
+- [convenience init(MTKView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:)-25g2c.md)
 
 ## Relationships
 

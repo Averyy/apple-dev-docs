@@ -37,7 +37,7 @@ let playerItem = AVPlayerItem(asset: composition)
 ## Topics
 
 ### Creating a composition
-- [convenience init(urlAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:).md)
+- [convenience init(urlAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:)-rh4y.md)
   Creates a mutable composition that uses the specified initialization options.
 ### Loading tracks
 - [static var tracks: AVAsyncProperty<Root, [AVMutableCompositionTrack]>](avpartialasyncproperty/tracks-92p4a.md)
@@ -82,6 +82,8 @@ let playerItem = AVPlayerItem(asset: composition)
   The encoded or authored size of the visual portion of the asset.
 ### Instance methods
 - [func insertTimeRange(CMTimeRange, of: AVAsset, at: CMTime, isolation: isolated (any Actor)?) async throws](avmutablecomposition/inserttimerange(_:of:at:isolation:).md)
+### Initializers
+- [convenience init(URLAssetInitializationOptions: [String : Any]?)](avmutablecomposition/init(urlassetinitializationoptions:)-6codz.md)
 
 ## Relationships
 

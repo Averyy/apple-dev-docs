@@ -61,6 +61,7 @@ At runtime, use [`maximumSectionCount`](cplisttemplate/maximumsectioncount.md) t
 ### Initializers
 - [convenience init(items: [CPListItem])](cplistsection/init(items:)-32d0q.md)
 - [convenience init(items: [CPListItem], header: String?, sectionIndexTitle: String?)](cplistsection/init(items:header:sectionindextitle:)-743we.md)
+- [init?(coder: NSCoder)](cplistsection/init(coder:).md)
 - [convenience init(items: [any CPListTemplateItem])](cplistsection/init(items:)-6ksy3.md)
 - [convenience init(items: [any CPListTemplateItem], header: String?, sectionIndexTitle: String?)](cplistsection/init(items:header:sectionindextitle:)-6xewg.md)
 

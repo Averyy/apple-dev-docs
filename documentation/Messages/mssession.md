@@ -58,6 +58,11 @@ Use the following workflow to receive and update a message.
 
 The Messages app updates the message in the transcript as soon as the user taps the send button.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](mssession/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

@@ -35,6 +35,8 @@ Observations resulting from Vision image analysis requests inherit from this abs
   The level of confidence in the observation’s accuracy.
 - [typealias VNConfidence](vnconfidence.md)
   A type alias for the confidence value of an observation.
+### Initializers
+- [init?(coder: NSCoder)](vnobservation/init(coder:).md)
 
 ## Relationships
 

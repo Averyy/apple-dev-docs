@@ -38,6 +38,10 @@ class NSTextListElement
   An attributed string that represents the string the framework displays for this element taking into account markers and the indentation level of the list element.
 - [var contents: NSAttributedString?](nstextlistelement/contents.md)
   The text list element contents without markers and formatting.
+### Initializers
+- [convenience init?(childElements: [NSTextListElement], textList: NSTextList, nestingLevel: Int)](nstextlistelement/init(childelements:textlist:nestinglevel:).md)
+- [convenience init(contents: NSAttributedString, markerAttributes: [NSAttributedString.Key : Any]?, textList: NSTextList, childElements: [NSTextListElement]?)](nstextlistelement/init(contents:markerattributes:textlist:childelements:).md)
+- [init(parentElement: NSTextListElement?, textList: NSTextList, contents: NSAttributedString?, markerAttributes: [NSAttributedString.Key : Any]?, childElements: [NSTextListElement]?)](nstextlistelement/init(parentelement:textlist:contents:markerattributes:childelements:).md)
 
 ## Relationships
 

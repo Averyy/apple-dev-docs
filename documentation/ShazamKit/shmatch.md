@@ -31,6 +31,8 @@ A single query signature may match more than one reference signature. In additio
   An array of the media items in the catalog that match the query signature, in order of the quality of the match.
 - [var querySignature: SHSignature](shmatch/querysignature.md)
   The query signature for the match.
+### Initializers
+- [init?(coder: NSCoder)](shmatch/init(coder:).md)
 
 ## Relationships
 

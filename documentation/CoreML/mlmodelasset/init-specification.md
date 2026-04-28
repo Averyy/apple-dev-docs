@@ -27,7 +27,7 @@ convenience init(specification specificationData: Data) throws
 
 - [convenience init(specification: Data, blobMapping: [URL : Data]) throws](mlmodelasset/init(specification:blobmapping:).md)
   Construct a model asset from an ML Program specification by replacing blob file references with corresponding in-memory blobs.
-- [convenience init(url: URL) throws](mlmodelasset/init(url:).md)
+- [convenience init(url: URL) throws](mlmodelasset/init(url:)-43988.md)
   Constructs a ModelAsset from a compiled model URL.
 
 

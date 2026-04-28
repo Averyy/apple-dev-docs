@@ -25,6 +25,8 @@ class MTRReadParams
 - [var minEventNumber: NSNumber?](mtrreadparams/mineventnumber.md)
 - [var shouldAssumeUnknownAttributesReportable: Bool](mtrreadparams/shouldassumeunknownattributesreportable.md)
 - [var shouldFilterByFabric: Bool](mtrreadparams/shouldfilterbyfabric.md)
+### Initializers
+- [init?(coder: NSCoder)](mtrreadparams/init(coder:).md)
 
 ## Relationships
 

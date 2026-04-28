@@ -46,7 +46,7 @@ The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive f
 ## Topics
 
 ### Creating a Scene Source
-- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:).md)
+- [init?(url: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-rw0y.md)
   Initializes a scene source for reading the scene graph from a specified file.
 - [init?(data: Data, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(data:options:).md)
   Initializes a scene source for reading the scene graph contained in an `NSData` object.
@@ -87,6 +87,9 @@ The [`SCNSceneSource`](scnscenesource.md) class can also load SceneKit archive f
   The signature for the block that SceneKit calls periodically to report progress while loading a scene.
 - [enum SCNSceneSourceStatus](scnscenesourcestatus.md)
   Constants identifying phases of SceneKit’s scene loading process, used in a [`SCNSceneSourceStatusHandler`](scnscenesourcestatushandler.md) block.
+### Initializers
+- [convenience init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-46vsm.md)
+- [init?(URL: URL, options: [SCNSceneSource.LoadingOption : Any]?)](scnscenesource/init(url:options:)-5xjuk.md)
 
 ## Relationships
 

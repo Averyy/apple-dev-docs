@@ -8,7 +8,10 @@ A dictionary that contains default application bundle identifiers for each defau
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 - visionOS 2.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

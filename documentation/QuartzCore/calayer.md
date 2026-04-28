@@ -278,6 +278,8 @@ If the layer object was created by a view, the view typically assigns itself as 
 - [var wantsDynamicContentScaling: Bool](calayer/wantsdynamiccontentscaling.md)
 ### Type methods
 - [class func cornerCurveExpansionFactor(CALayerCornerCurve) -> CGFloat](calayer/cornercurveexpansionfactor(_:).md)
+### Initializers
+- [init?(coder: NSCoder)](calayer/init(coder:).md)
 ### Instance Properties
 - [var toneMapMode: CALayer.ToneMapMode](calayer/tonemapmode-swift.property.md)
 

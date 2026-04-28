@@ -45,6 +45,8 @@ You need at least one contact property key to fetch a contact’s properties. Us
 ### Specifying the Keys to Fetch
 - [var keysToFetch: [any CNKeyDescriptor]](cncontactfetchrequest/keystofetch.md)
   The properties to fetch in the returned contacts.
+### Initializers
+- [init?(coder: NSCoder)](cncontactfetchrequest/init(coder:).md)
 
 ## Relationships
 

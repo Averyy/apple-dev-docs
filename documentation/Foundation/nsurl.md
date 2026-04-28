@@ -344,7 +344,18 @@ if (!success) {
 - [convenience init?(scheme: String, host: String?, path: String)](nsurl/init(scheme:host:path:).md)
   Initializes a newly created NSURL with a specified scheme, host, and path.
 ### Initializers
+- [init(absoluteURLWithDataRepresentation: Data, relativeToURL: URL?)](nsurl/init(absoluteurlwithdatarepresentation:relativetourl:).md)
+- [convenience init(byResolvingAliasFileAtURL: URL, options: NSURL.BookmarkResolutionOptions) throws](nsurl/init(byresolvingaliasfileaturl:options:).md)
+- [convenience init(byResolvingBookmarkData: Data, options: NSURL.BookmarkResolutionOptions, relativeToURL: URL?, bookmarkDataIsStale: UnsafeMutablePointer<ObjCBool>?) throws](nsurl/init(byresolvingbookmarkdata:options:relativetourl:bookmarkdataisstale:).md)
+- [init?(coder: NSCoder)](nsurl/init(coder:).md)
+- [init(dataRepresentation: Data, relativeToURL: URL?)](nsurl/init(datarepresentation:relativetourl:)-8fa9z.md)
+- [init(dataRepresentation: Data, relativeToURL: URL?)](nsurl/init(datarepresentation:relativetourl:)-8jv1p.md)
+- [init(fileURLWithFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeToURL: URL?)](nsurl/init(fileurlwithfilesystemrepresentation:isdirectory:relativetourl:).md)
+- [init(fileURLWithPath: String, isDirectory: Bool, relativeToURL: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativetourl:).md)
+- [init(fileURLWithPath: String, relativeToURL: URL?)](nsurl/init(fileurlwithpath:relativetourl:).md)
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
+- [convenience init?(string: String, relativeToURL: URL?)](nsurl/init(string:relativetourl:)-48a3i.md)
+- [init?(string: String, relativeToURL: URL?)](nsurl/init(string:relativetourl:)-6beup.md)
 
 ## Relationships
 

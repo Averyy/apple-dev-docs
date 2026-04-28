@@ -7,6 +7,8 @@ A response from the device after it processes the command to get a list of activ
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

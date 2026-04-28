@@ -35,6 +35,9 @@ Provide a specific time and time zone in the date components to display a correc
   The start date and time of the range.
 - [var endDateComponents: DateComponents](pkdatecomponentsrange/enddatecomponents.md)
   The end date and time of the range.
+### Initializers
+- [init?(coder: NSCoder)](pkdatecomponentsrange/init(coder:).md)
+- [init?(startDateComponents: DateComponents, endDateComponents: DateComponents)](pkdatecomponentsrange/init(startdatecomponents:enddatecomponents:).md)
 
 ## Relationships
 

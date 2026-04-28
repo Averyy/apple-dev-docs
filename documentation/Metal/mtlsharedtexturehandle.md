@@ -30,6 +30,8 @@ class MTLSharedTextureHandle
   The device object that created the texture.
 - [var label: String?](mtlsharedtexturehandle/label.md)
   A string that identifies the texture.
+### Initializers
+- [init?(coder: NSCoder)](mtlsharedtexturehandle/init(coder:).md)
 
 ## Relationships
 

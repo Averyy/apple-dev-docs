@@ -60,7 +60,7 @@ For more information about the NBD URL format, see the [`Network Block Device UR
 ## Topics
 
 ### Creating network block device attachments
-- [convenience init(url: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:).md)
+- [convenience init(url: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:)-6q4m7.md)
   Creates a new network block device (NBD) storage attachment from an NDB Uniform Resource Indicator (URI) represented as a URL that you provide.
 - [init(url: URL, timeout: TimeInterval, isForcedReadOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws](vznetworkblockdevicestoragedeviceattachment/init(url:timeout:isforcedreadonly:synchronizationmode:).md)
   Creates a new network block device storage attachment from an NBD Uniform Resource Indicator (URI) represented as a URL, timeout value, and read-only and synchronization modes that you provide.
@@ -81,6 +81,9 @@ For more information about the NBD URL format, see the [`Network Block Device UR
   The object that receives messages about changes to the network block device attachment.
 - [protocol VZNetworkBlockDeviceStorageDeviceAttachmentDelegate](vznetworkblockdevicestoragedeviceattachmentdelegate.md)
   Methods you implement to respond to changes to a network block device attachment.
+### Initializers
+- [convenience init(URL: URL) throws](vznetworkblockdevicestoragedeviceattachment/init(url:)-9emt.md)
+- [init(URL: URL, timeout: TimeInterval, forcedReadOnly: Bool, synchronizationMode: VZDiskSynchronizationMode) throws](vznetworkblockdevicestoragedeviceattachment/init(url:timeout:forcedreadonly:synchronizationmode:).md)
 
 ## Relationships
 

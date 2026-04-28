@@ -36,7 +36,7 @@ The path is constructed in a counter-clockwise direction, starting at the top-le
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.
 - [init(rect: NSRect)](nsbezierpath/init(rect:).md)
   Creates and returns a new Bézier path object initialized with a rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:).md)
+- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
 - [var flattened: NSBezierPath](nsbezierpath/flattened.md)
   A flattened version of the path object.
 - [var reversed: NSBezierPath](nsbezierpath/reversed.md)

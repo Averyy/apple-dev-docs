@@ -21,8 +21,9 @@ class IOBluetoothOBEXSession
   Initializes a Bluetooth-based OBEX Session using a Bluetooth device.
 - [init!(incomingRFCOMMChannel: IOBluetoothRFCOMMChannel!, eventSelector: Selector!, selectorTarget: Any!, refCon: UnsafeMutableRawPointer!)](iobluetoothobexsession/init(incomingrfcommchannel:eventselector:selectortarget:refcon:).md)
   Initializes a Bluetooth-based OBEX Session using an incoming RFCOMM channel.
-- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:).md)
+- [init!(sdpServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:)-h1xg.md)
   Initializes a Bluetooth-based OBEX Session using an SDP service record.
+- [init!(SDPServiceRecord: IOBluetoothSDPServiceRecord!)](iobluetoothobexsession/init(sdpservicerecord:)-34uaf.md)
 ### Instance Methods
 - [func closeTransportConnection() -> OBEXError](iobluetoothobexsession/closetransportconnection.md)
   An OBEXSession override. When this is called by the session baseclass, we will close the transport connection if it is opened. In our case, it will be the RFCOMM channel that needs closing.

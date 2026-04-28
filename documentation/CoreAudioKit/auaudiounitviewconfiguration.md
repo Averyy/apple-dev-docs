@@ -30,6 +30,8 @@ class AUAudioUnitViewConfiguration
   The configured height.
 - [var hostHasController: Bool](auaudiounitviewconfiguration/hosthascontroller.md)
   A Boolean value that indicates whether the host shows its own control surface in this view configuration.
+### Initializers
+- [init?(coder: NSCoder)](auaudiounitviewconfiguration/init(coder:).md)
 
 ## Relationships
 

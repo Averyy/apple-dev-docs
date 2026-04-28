@@ -8,6 +8,7 @@ An error code that indicates the location push service isn’t available on this
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

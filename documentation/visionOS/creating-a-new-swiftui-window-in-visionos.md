@@ -12,7 +12,7 @@ Display and manage multiple SwiftUI windows in your visionOS app.
 
 This sample code project demonstrates how to open a new SwiftUI view and a separate window group to manage multiple windows, assigning a unique `id` to each newly created window. In the sample, the app displays a SwiftUI window with a [`Button`](https://developer.apple.com/documentation/SwiftUI/Button) that a person can tap to open a new window view, as the following image illustrates:
 
-![A screenshot of a visionOS app in Simulator displaying one center window, with a button labeled 'Open a new window', and two smaller translucent windows on either side labeled 'New window number 0' and 'New window number 1'.](https://docs-assets.developer.apple.com/published/c598c2c0c671cf1a943975fee28877ba/sample-new-window-1-main-view.png)
+![](https://docs-assets.developer.apple.com/published/c598c2c0c671cf1a943975fee28877ba/sample-new-window-1-main-view.png)
 
 ##### Create a Variable to Track Window Ids
 

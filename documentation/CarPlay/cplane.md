@@ -32,6 +32,7 @@ class CPLane
 - [init()](cplane/init.md)
 - [init(angles: [Measurement<UnitAngle>])](cplane/init(angles:).md)
 - [init(angles: [Measurement<UnitAngle>], highlightedAngle: Measurement<UnitAngle>, isPreferred: Bool)](cplane/init(angles:highlightedangle:ispreferred:).md)
+- [init?(coder: NSCoder)](cplane/init(coder:).md)
 ### Instance Properties
 - [var angles: [Measurement<UnitAngle>]](cplane/angles.md)
 - [var highlightedAngle: Measurement<UnitAngle>?](cplane/highlightedangle.md)

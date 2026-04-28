@@ -56,6 +56,10 @@ You can create a  `CIFilterGenerator` object  programmatically, using the method
 ### Constants
 - [Exported Keys](exported-keys.md)
   Keys for the exported parameters of a filter generator object.
+### Initializers
+- [init?(coder: NSCoder)](cifiltergenerator/init(coder:).md)
+- [init?(contentsOfURL: URL)](cifiltergenerator/init(contentsofurl:)-4nqjf.md)
+- [init?(contentsOfURL: URL)](cifiltergenerator/init(contentsofurl:)-8q8ic.md)
 
 ## Relationships
 

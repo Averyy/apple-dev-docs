@@ -28,7 +28,7 @@ You use an asset writer to write media to file formats such as the QuickTime mov
 ## Topics
 
 ### Creating an asset writer
-- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:).md)
+- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-xt34.md)
   Returns a new object that writes media data to a container file at the output URL.
 - [init(outputURL: URL, fileType: AVFileType) throws](avassetwriter/init(outputurl:filetype:).md)
   Creates an object that writes media data to a container file at the output URL.
@@ -133,6 +133,9 @@ You use an asset writer to write media to file formats such as the QuickTime mov
   The location of the container file that the writer outputs.
 - [var outputFileType: AVFileType](avassetwriter/outputfiletype.md)
   The type of container file that the writer outputs.
+### Initializers
+- [convenience init(URL: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-24qcl.md)
+- [init(URL: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-9j3k4.md)
 
 ## Relationships
 

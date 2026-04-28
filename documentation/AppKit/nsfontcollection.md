@@ -66,6 +66,8 @@ You can publicize the font collection as a named collection and it is presented 
   These constants are used as keys in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` dictionary to indicate the changes that have taken place.
 - [NSFontCollection.ActionTypeKey](nsfontcollection/actiontypekey.md)
   The following actions are possible values of the [`actionUserInfoKey`](nsfontcollection/actionuserinfokey.md) in the [`didChangeNotification`](nsfontcollection/didchangenotification.md) `userInfo` method.
+### Initializers
+- [init?(coder: NSCoder)](nsfontcollection/init(coder:).md)
 
 ## Relationships
 

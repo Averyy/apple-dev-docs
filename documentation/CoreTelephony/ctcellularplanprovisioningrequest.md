@@ -37,6 +37,8 @@ This class is only available to carrier apps with suitable entitlements.
   The provisioning request’s matching identifier (MatchingID).
 - [var oid: String?](ctcellularplanprovisioningrequest/oid.md)
   The provisioning request’s Object Identifier (OID).
+### Initializers
+- [init?(coder: NSCoder)](ctcellularplanprovisioningrequest/init(coder:).md)
 
 ## Relationships
 

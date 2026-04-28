@@ -8,6 +8,7 @@ Schedule prominent alarms and countdowns to help people manage their time.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 #### Overview
 

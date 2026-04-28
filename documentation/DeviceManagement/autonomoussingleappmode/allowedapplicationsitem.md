@@ -7,6 +7,8 @@ A dictionary that specifies an app that can be granted access to the Accessibilt
 
 **Availability**:
 - macOS 10.13.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

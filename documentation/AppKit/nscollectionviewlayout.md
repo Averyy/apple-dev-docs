@@ -176,6 +176,8 @@ If your layout object supports more fine-grained invalidation than the [`NSColle
   Prepares the layout object to be uninstalled from the collection view.
 - [func finalizeLayoutTransition()](nscollectionviewlayout/finalizelayouttransition.md)
   Performs any final steps related to a layout transition before the transition animations actually occur.
+### Initializers
+- [init?(coder: NSCoder)](nscollectionviewlayout/init(coder:).md)
 
 ## Relationships
 

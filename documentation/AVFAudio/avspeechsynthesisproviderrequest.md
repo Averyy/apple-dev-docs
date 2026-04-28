@@ -23,7 +23,7 @@ class AVSpeechSynthesisProviderRequest
 ## Topics
 
 ### Creating a request
-- [init(ssmlRepresentation: String, voice: AVSpeechSynthesisProviderVoice)](avspeechsynthesisproviderrequest/init(ssmlrepresentation:voice:).md)
+- [init(ssmlRepresentation: String, voice: AVSpeechSynthesisProviderVoice)](avspeechsynthesisproviderrequest/init(ssmlrepresentation:voice:)-7elh.md)
   Creates a request with a voice and a description.
 ### Inspecting a request
 - [var ssmlRepresentation: String](avspeechsynthesisproviderrequest/ssmlrepresentation.md)
@@ -32,6 +32,9 @@ class AVSpeechSynthesisProviderRequest
   The voice to use in the speech request.
 - [class AVSpeechSynthesisProviderVoice](avspeechsynthesisprovidervoice.md)
   An object that represents a voice that an audio unit provides to its host.
+### Initializers
+- [init(SSMLRepresentation: String, voice: AVSpeechSynthesisProviderVoice)](avspeechsynthesisproviderrequest/init(ssmlrepresentation:voice:)-5v77t.md)
+- [init?(coder: NSCoder)](avspeechsynthesisproviderrequest/init(coder:).md)
 
 ## Relationships
 

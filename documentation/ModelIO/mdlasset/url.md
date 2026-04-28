@@ -21,7 +21,7 @@ var url: URL? { get }
 
 #### Discussion
 
-For assets created from a URL (with the [`init(url:)`](mdlasset/init(url:).md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer), this property is the URL that the asset was loaded from. For assets created manually, this property’s value is `nil`.
+For assets created from a URL (with the [`init(url:)`](mdlasset/init(url:)-1f4ym.md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md) initializer), this property is the URL that the asset was loaded from. For assets created manually, this property’s value is `nil`.
 
 ## See Also
 

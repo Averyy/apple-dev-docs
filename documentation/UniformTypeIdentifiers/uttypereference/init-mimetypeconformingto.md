@@ -33,7 +33,7 @@ This initializer returns `nil` if the system doesn’t know the MIME type.
 
 - [convenience init?(String)](uttypereference/init(_:).md)
   Creates a type based on an identifier.
-- [convenience init?(mimeType: String)](uttypereference/init(mimetype:).md)
+- [convenience init?(mimeType: String)](uttypereference/init(mimetype:)-1txq0.md)
   Creates a type based on a MIME type.
 - [convenience init?(filenameExtension: String)](uttypereference/init(filenameextension:).md)
   Creates a type that represents the specified filename extension.

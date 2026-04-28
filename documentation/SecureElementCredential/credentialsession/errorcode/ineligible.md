@@ -8,6 +8,7 @@ The current device and user configuation are ineligible to use this service.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

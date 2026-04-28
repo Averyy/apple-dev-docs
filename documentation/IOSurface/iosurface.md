@@ -24,6 +24,7 @@ class IOSurface
 ### Initializers
 - [init?(properties: [IOSurfacePropertyKey : any Sendable])](iosurface/init(properties:).md)
 - [init(IOSurfaceRef)](iosurface/init(_:).md)
+- [init?(coder: NSCoder)](iosurface/init(coder:).md)
 ### Instance Properties
 - [var allocationSize: Int](iosurface/allocationsize.md)
 - [var allowsPixelSizeCasting: Bool](iosurface/allowspixelsizecasting.md)

@@ -43,6 +43,9 @@ Use a content filter to limit an [`SCStream`](scstream.md) object’s output to 
   The display type of the presented stream.
 - [var style: SCShareableContentStyle](sccontentfilter/style.md)
   The display style of the sharable content.
+### Initializers
+- [init(display: SCDisplay, includingApplications: [SCRunningApplication], exceptingWindows: [SCWindow])](sccontentfilter/init(display:includingapplications:exceptingwindows:).md)
+- [init(display: SCDisplay, includingWindows: [SCWindow])](sccontentfilter/init(display:includingwindows:).md)
 ### Instance Properties
 - [var includeMenuBar: Bool](sccontentfilter/includemenubar.md)
 - [var includedApplications: [SCRunningApplication]](sccontentfilter/includedapplications.md)

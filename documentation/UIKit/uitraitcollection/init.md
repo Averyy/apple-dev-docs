@@ -52,7 +52,7 @@ A trait collection whose traits are set to “unspecified”.
   Creates a trait collection that contains only the specified active appearance trait.
 - [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](uitraitcollection/init(toolbaritempresentationsize:).md)
   Creates a trait collection that contains only the specified toolbar item presentation size trait.
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-5zqph.md)
 
 
 ---

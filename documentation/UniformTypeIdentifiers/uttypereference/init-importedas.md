@@ -28,7 +28,7 @@ init(importedAs identifier: String)
 
 - [convenience init?(String)](uttypereference/init(_:).md)
   Creates a type based on an identifier.
-- [convenience init?(mimeType: String)](uttypereference/init(mimetype:).md)
+- [convenience init?(mimeType: String)](uttypereference/init(mimetype:)-1txq0.md)
   Creates a type based on a MIME type.
 - [convenience init?(mimeType: String, conformingTo: UTType)](uttypereference/init(mimetype:conformingto:).md)
   Creates a type based on a MIME type and a supertype that it conforms to.

@@ -26,7 +26,7 @@ convenience init(contentsOf url: URL) throws
 
 ## See Also
 
-- [convenience init(mlModel: MLModel) throws](nlmodel/init(mlmodel:).md)
+- [convenience init(mlModel: MLModel) throws](nlmodel/init(mlmodel:)-9tpjr.md)
   Creates a new natural language model based on the given Core ML model instance.
 
 

@@ -25,6 +25,11 @@ A [`WKProcessPool`](wkprocesspool.md) object represents a single process that We
 
 If your app creates multiple web views, assign the same [`WKProcessPool`](wkprocesspool.md) object to web views that may safely share a process space. Instantiate an instance of this class and assign it to the [`processPool`](wkwebviewconfiguration/processpool.md) property of each web view’s [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](wkprocesspool/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

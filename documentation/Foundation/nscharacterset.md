@@ -107,6 +107,8 @@ The `NSCharacterSet` class declares the programmatic interface for an object tha
   Returns a Boolean value that indicates whether the receiver is a superset of another given character set.
 - [func longCharacterIsMember(UTF32Char) -> Bool](nscharacterset/longcharacterismember(_:).md)
   Returns a Boolean value that indicates whether a given long character is a member of the receiver.
+### Initializers
+- [init(charactersInString: String)](nscharacterset/init(charactersinstring:).md)
 
 ## Relationships
 

@@ -60,6 +60,8 @@ func createPlane(for planeAnchor: ARPlaneAnchor, material: Material) -> ModelEnt
 ### Inspecting Plane Y-Rotation
 - [var rotationOnYAxis: Float](arplaneextent/rotationonyaxis.md)
   A radian value that indicates a plane’s y-axis orientation.
+### Initializers
+- [init?(coder: NSCoder)](arplaneextent/init(coder:).md)
 
 ## Relationships
 

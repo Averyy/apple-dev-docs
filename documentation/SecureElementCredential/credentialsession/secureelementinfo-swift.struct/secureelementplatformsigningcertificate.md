@@ -8,6 +8,7 @@ A certificate you use to authenticate against the Certification Authority of the
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

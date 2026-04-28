@@ -38,6 +38,8 @@ Pass this object to [`prepareCustomLanguageModel(for:configuration:completion:)`
   The location of a compiled vocabulary file.
 - [var weight: NSNumber?](sfspeechlanguagemodel/configuration/weight.md)
   The relative weight of the language model customization. Value must be between 0.0 and 1.0 inclusive.
+### Initializers
+- [init?(coder: NSCoder)](sfspeechlanguagemodel/configuration/init(coder:).md)
 
 ## Relationships
 

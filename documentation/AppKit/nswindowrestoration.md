@@ -33,6 +33,8 @@ At launch time, the application object retrieves the restoration class and uses 
 
 ## See Also
 
+- [Restoring your app’s state with AppKit](restoring-your-app-s-state-with-appkit.md)
+  Provide continuity for people using your app by preserving current activities on macOS.
 - [protocol NSUserInterfaceItemIdentification](nsuserinterfaceitemidentification.md)
   A set of methods used to associate a unique identifier with objects in your user interface.
 

@@ -23,6 +23,25 @@ typealias MTLPackedFloat3 = _MTLPackedFloat3
 
 A structure that contains three 32-bit floating-point values with no additional padding.
 
+## Topics
+
+### Structures
+- [MTLPackedFloat3.__Unnamed_struct___Anonymous_field0](mtlpackedfloat3-swift.typealias/__unnamed_struct___anonymous_field0.md)
+- [MTLPackedFloat3.__Unnamed_union___Anonymous_field0](mtlpackedfloat3-swift.typealias/__unnamed_union___anonymous_field0.md)
+### Instance Properties
+- [var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0.__Unnamed_struct___Anonymous_field0](mtlpackedfloat3-swift.typealias/__anonymous_field0.md)
+- [var elements: (Float, Float, Float)](mtlpackedfloat3-swift.typealias/elements-8fddh.md)
+- [var elements: (Float, Float, Float)](mtlpackedfloat3-swift.typealias/elements-9o66u.md)
+- [var x: Float](mtlpackedfloat3-swift.typealias/x-5cc6v.md)
+- [var x: Float](mtlpackedfloat3-swift.typealias/x-8287.md)
+- [var x: Float](mtlpackedfloat3-swift.typealias/x-kpnz.md)
+- [var y: Float](mtlpackedfloat3-swift.typealias/y-3rvmr.md)
+- [var y: Float](mtlpackedfloat3-swift.typealias/y-3zmij.md)
+- [var y: Float](mtlpackedfloat3-swift.typealias/y-568xc.md)
+- [var z: Float](mtlpackedfloat3-swift.typealias/z-47dek.md)
+- [var z: Float](mtlpackedfloat3-swift.typealias/z-5juk6.md)
+- [var z: Float](mtlpackedfloat3-swift.typealias/z-760a9.md)
+
 ## Relationships
 
 ### Conforms To

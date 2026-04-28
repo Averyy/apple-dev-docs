@@ -28,7 +28,7 @@ The default store contains the rules that your app created specifically for the 
 
 ## See Also
 
-- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:).md)
+- [convenience init!(url: URL!)](wkcontentruleliststore/init(url:)-dile.md)
   Creates a new content rule list store in the specified directory.
 
 

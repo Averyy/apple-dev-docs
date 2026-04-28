@@ -20,7 +20,7 @@ The sample app draws the following entities in its main view:
 - A cone
 - A cylinder
 
-![A screenshot of a visionOS app in Simulator with one translucent window displaying five white, three-dimensional entities in a horizontal row. From left to right, the shapes are a box, a rounded box, a right sphere, a cone, and a cylinder that all top-align.](https://docs-assets.developer.apple.com/published/5e013edfa7e1ad36291edb644bd975c2/sample-3d-shapes-1-main-view.png)
+![](https://docs-assets.developer.apple.com/published/5e013edfa7e1ad36291edb644bd975c2/sample-3d-shapes-1-main-view.png)
 
 RealityKit defines the `Box`, `Sphere`, `Cone`, and `Cylinder` types, and the app creates a `roundedBox` type by adding a `cornerRadius` to `Box`.
 

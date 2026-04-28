@@ -7,6 +7,8 @@ The payload that configures Game Center parental controls.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

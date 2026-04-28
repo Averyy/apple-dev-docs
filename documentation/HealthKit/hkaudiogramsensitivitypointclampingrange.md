@@ -26,6 +26,7 @@ At times, it may be required to indicate that a sensitivity point has been clamp
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](hkaudiogramsensitivitypointclampingrange/init(coder:).md)
 - [convenience init(lowerBound: NSNumber?, upperBound: NSNumber?) throws](hkaudiogramsensitivitypointclampingrange/init(lowerbound:upperbound:).md)
 ### Instance Properties
 - [var lowerBound: HKQuantity?](hkaudiogramsensitivitypointclampingrange/lowerbound.md)

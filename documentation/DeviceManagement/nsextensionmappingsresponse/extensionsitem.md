@@ -7,6 +7,8 @@ A dictionary that contains information about an extension.
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

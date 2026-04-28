@@ -51,7 +51,7 @@ The created `NSEvent` object or `nil` if the object couldn’t be created.
   Creates and returns a new event object that describes a tracking-rectangle or cursor-update event.
 - [init?(eventRef: UnsafeRawPointer)](nsevent/init(eventref:).md)
   Creates and returns a new event object for a Carbon event.
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:).md)
+- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
 
 

@@ -38,7 +38,7 @@ To speak the text, pass the utterance to an instance of [`AVSpeechSynthesizer`](
   Creates an utterance with the attributed text string that you specify for the speech synthesizer to speak.
 - [let AVSpeechSynthesisIPANotationAttribute: String](avspeechsynthesisipanotationattribute.md)
   A string that contains International Phonetic Alphabet (IPA) symbols the speech synthesizer uses to control pronunciation of certain words or phrases.
-- [init?(ssmlRepresentation: String)](avspeechutterance/init(ssmlrepresentation:).md)
+- [init?(ssmlRepresentation: String)](avspeechutterance/init(ssmlrepresentation:)-8zam9.md)
   Creates a speech utterance with an Speech Synthesis Markup Language (SSML) string.
 
 

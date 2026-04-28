@@ -30,7 +30,7 @@ When you change the preferred filename, the default implementation of this prope
 
 - [func addFileWrapper(FileWrapper) -> String](filewrapper/addfilewrapper(_:).md)
   Adds a child file wrapper to the receiver, which must be a directory file wrapper.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:).md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
 - [func write(to: URL, options: FileWrapper.WritingOptions, originalContentsURL: URL?) throws](filewrapper/write(to:options:originalcontentsurl:).md)
   Recursively writes the entire contents of a file wrapper to a given file-system URL.

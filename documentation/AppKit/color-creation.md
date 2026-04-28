@@ -16,7 +16,7 @@ Load colors from asset catalogs, and create colors from raw component values, su
 - [typealias Name](nscolor/name.md)
   The name of a color.
 ### Creating a color using RGB components
-- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:).md)
+- [init(srgbRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-9oz51.md)
   Creates a color object from the specified components in the sRGB colorspace.
 - [init(displayP3Red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(displayp3red:green:blue:alpha:).md)
   Creates a color object from the specified components in the Display P3 color space.
@@ -70,7 +70,7 @@ Load colors from asset catalogs, and create colors from raw component values, su
   Constants for specifying a cell’s tint color.
 ### Converting other types of color objects
 - [convenience init(Color)](nscolor/init(_:).md)
-- [init?(cgColor: CGColor)](nscolor/init(cgcolor:).md)
+- [init?(cgColor: CGColor)](nscolor/init(cgcolor:)-1hzl8.md)
   Creates a color object using the specified Core Graphics color.
 - [init(CIColor: CIColor)](nscolor/init(cicolor:)-3rxsk.md)
   Creates a color object from the specified Core Image color.

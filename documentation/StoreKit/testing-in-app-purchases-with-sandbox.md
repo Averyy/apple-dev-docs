@@ -29,7 +29,7 @@ For more information on the workflow from signing agreements to testing, see [`A
 
 Next, prepare your app to test:
 
-- During developement, build and run your app from Xcode. At this stage, you don’t need to upload your app binary to App Store Connect to test it in the sandbox environment.
+- During development, build and run your app from Xcode. At this stage, you don’t need to upload your app binary to App Store Connect to test it in the sandbox environment.
 - During beta testing, download your app from TestFlight.
 
 Finally, to gain access to the sandbox settings, follow the instructions below to sign in to your Sandbox Apple Account. The instructions differ for a development-signed app and for an app you download from TestFlight.

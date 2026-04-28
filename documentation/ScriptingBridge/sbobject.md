@@ -52,6 +52,8 @@ You can discover the names of dynamically generated classes such as `iTunesAppli
   Returns an object representing the specified property of the receiver.
 - [func elementArray(withCode: DescType) -> SBElementArray](sbobject/elementarray(withcode:).md)
   Returns an array containing every child of the receiver with the given class-type code.
+### Initializers
+- [init?(coder: NSCoder)](sbobject/init(coder:).md)
 ### Instance Methods
 - [func lastError() -> (any Error)?](sbobject/lasterror.md)
   The error from the last event this object sent, or nil if it succeeded.

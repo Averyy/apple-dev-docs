@@ -8,6 +8,7 @@ A status display to indicate an error, such as an exclamation mark.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Functions for validating information the framework displays in an Apple Pay Late
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

@@ -51,7 +51,7 @@ The initialized Apple event (an instance of `NSAppleEventDescriptor`), or `nil` 
   Initializes a newly allocated instance as an empty list descriptor.
 - [convenience init(recordDescriptor: ())](nsappleeventdescriptor/init(recorddescriptor:).md)
   Initializes a newly allocated instance as a descriptor that is an Apple event record.
-- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:).md)
+- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-5cioa.md)
   Initializes a newly allocated instance as a descriptor for the specified Carbon `AEDesc` structure.
 - [convenience init?(descriptorType: DescType, bytes: UnsafeRawPointer?, length: Int)](nsappleeventdescriptor/init(descriptortype:bytes:length:).md)
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an arbitrary sequence of bytes and a length count).

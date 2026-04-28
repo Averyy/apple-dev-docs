@@ -38,7 +38,7 @@ The path is constructed by starting at the origin of `aRect` and adding line seg
   Creates and returns a new Bézier path object initialized with an oval path inscribed in the specified rectangle.
 - [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:).md)
+- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
 - [var flattened: NSBezierPath](nsbezierpath/flattened.md)
   A flattened version of the path object.
 - [var reversed: NSBezierPath](nsbezierpath/reversed.md)

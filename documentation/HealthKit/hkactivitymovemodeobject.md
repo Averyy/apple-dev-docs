@@ -24,6 +24,8 @@ class HKActivityMoveModeObject
 ### Accessing the data
 - [var activityMoveMode: HKActivityMoveMode](hkactivitymovemodeobject/activitymovemode.md)
   A property that contains the movement mode value.
+### Initializers
+- [init?(coder: NSCoder)](hkactivitymovemodeobject/init(coder:).md)
 
 ## Relationships
 

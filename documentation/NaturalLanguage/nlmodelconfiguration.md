@@ -35,6 +35,8 @@ class NLModelConfiguration
   The natural language model type of the model.
 - [NLModel.ModelType](nlmodel/modeltype.md)
   The different types of a natural language model.
+### Initializers
+- [init?(coder: NSCoder)](nlmodelconfiguration/init(coder:).md)
 
 ## Relationships
 

@@ -157,6 +157,8 @@ Although it’s possible to create content—[`CHHapticPattern`](chhapticpattern
 ### Managing Power
 - [var isAutoShutdownEnabled: Bool](chhapticengine/isautoshutdownenabled.md)
   A Boolean value that indicates whether the haptic engine starts and stops automatically on request from one of its pattern players, or when idle.
+### Initializers
+- [init(andReturnError: ()) throws](chhapticengine/init(andreturnerror:).md)
 ### Instance Properties
 - [var intendedSpatialExperience: any SpatialAudioExperience](chhapticengine/intendedspatialexperience-55ca0.md)
   The CHHapticEngine’s intended [`SpatialAudioExperience`](https://developer.apple.com/documentation/AudioToolbox/SpatialAudioExperience).

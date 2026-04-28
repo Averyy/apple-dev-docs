@@ -20,6 +20,12 @@ A unique identifier for a place.
 class Identifier
 ```
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](mkmapitem/identifier-swift.class/init(coder:).md)
+- [init?(identifierString: String)](mkmapitem/identifier-swift.class/init(identifierstring:).md)
+
 ## Relationships
 
 ### Inherits From

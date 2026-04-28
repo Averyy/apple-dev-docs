@@ -46,6 +46,8 @@ A Thread network defines parameters that all connected devices use. [`THCredenti
   The date and time that the framework stored the credential in the database.
 - [var lastModificationDate: Date?](thcredentials/lastmodificationdate.md)
   The date and time that the framework updated the credential in the database.
+### Initializers
+- [init?(coder: NSCoder)](thcredentials/init(coder:).md)
 
 ## Relationships
 

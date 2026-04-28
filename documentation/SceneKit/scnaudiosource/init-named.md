@@ -36,7 +36,7 @@ This method looks in the system caches for an audio source with the specified na
 
 - [convenience init?(fileNamed: String)](scnaudiosource/init(filenamed:).md)
   Initializes an audio source from an audio file in the application’s main bundle.
-- [init?(url: URL)](scnaudiosource/init(url:).md)
+- [init?(url: URL)](scnaudiosource/init(url:)-3qyjs.md)
   Initializes an audio source from the specified audio file.
 
 

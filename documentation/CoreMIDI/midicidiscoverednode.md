@@ -31,6 +31,8 @@ class MIDICIDiscoveredNode
   A Boolean value that indicates whether this node supports MIDI-CI properties.
 - [var maximumSysExSize: NSNumber](midicidiscoverednode/maximumsysexsize.md)
   The maximum size of a System Exclusive (SysEx) message this node supports.
+### Initializers
+- [init?(coder: NSCoder)](midicidiscoverednode/init(coder:).md)
 
 ## Relationships
 

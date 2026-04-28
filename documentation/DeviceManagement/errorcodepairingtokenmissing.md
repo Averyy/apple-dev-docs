@@ -7,6 +7,8 @@ An error response that indicates a missing pairing token.
 
 **Availability**:
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

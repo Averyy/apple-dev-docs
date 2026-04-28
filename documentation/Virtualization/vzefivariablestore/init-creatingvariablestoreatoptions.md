@@ -21,7 +21,7 @@ init(creatingVariableStoreAt URL: URL, options: VZEFIVariableStore.Initializatio
 
 ## See Also
 
-- [init(url: URL)](vzefivariablestore/init(url:).md)
+- [init(url: URL)](vzefivariablestore/init(url:)-83pcn.md)
   Initialize the variable store from the URL of an existing file.
 - [VZEFIVariableStore.InitializationOptions](vzefivariablestore/initializationoptions.md)
   Constants that describe the options available when creating a new Extensible Firmware Interface (EFI) variable store.

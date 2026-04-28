@@ -87,6 +87,7 @@ When you reverse geocode a geographic coordinate using a [`CLGeocoder`](clgeocod
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<CLPlacemark>](clplacemark/defaultresolverspecification.md)
 ### Initializers
+- [init?(coder: NSCoder)](clplacemark/init(coder:).md)
 - [convenience init(location: CLLocation, name: String?, postalAddress: CNPostalAddress?)](clplacemark/init(location:name:postaladdress:).md)
 
 ## Relationships

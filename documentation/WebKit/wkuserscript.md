@@ -39,6 +39,8 @@ Create a [`WKUserScript`](wkuserscript.md) object when you want to inject custom
   Constants for the times at which to inject script content into a webpage.
 - [var isForMainFrameOnly: Bool](wkuserscript/isformainframeonly.md)
   A Boolean value that indicates whether to inject the script into the main frame or all frames.
+### Initializers
+- [init(source: String, injectionTime: WKUserScriptInjectionTime, forMainFrameOnly: Bool, inContentWorld: WKContentWorld)](wkuserscript/init(source:injectiontime:formainframeonly:incontentworld:).md)
 
 ## Relationships
 

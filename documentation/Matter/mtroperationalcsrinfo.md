@@ -21,10 +21,14 @@ class MTROperationalCSRInfo
 ## Topics
 
 ### Initializers
-- [init(csr: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csr:csrnonce:csrelementstlv:attestationsignature:).md)
-- [init?(csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrelementstlv:attestationsignature:).md)
-- [init?(csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrnonce:csrelementstlv:attestationsignature:).md)
-- [init?(csrResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](mtroperationalcsrinfo/init(csrresponseparams:).md)
+- [init(csr: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csr:csrnonce:csrelementstlv:attestationsignature:)-69823.md)
+- [init?(csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrelementstlv:attestationsignature:)-pboh.md)
+- [init?(csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrnonce:csrelementstlv:attestationsignature:)-82w0o.md)
+- [init?(csrResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](mtroperationalcsrinfo/init(csrresponseparams:)-86yeg.md)
+- [init(CSR: Data, csrNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csr:csrnonce:csrelementstlv:attestationsignature:)-2l26j.md)
+- [init?(CSRElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrelementstlv:attestationsignature:)-73sbs.md)
+- [init?(CSRNonce: Data, csrElementsTLV: Data, attestationSignature: Data)](mtroperationalcsrinfo/init(csrnonce:csrelementstlv:attestationsignature:)-7tep6.md)
+- [init?(CSRResponseParams: MTROperationalCredentialsClusterCSRResponseParams)](mtroperationalcsrinfo/init(csrresponseparams:)-3o8qo.md)
 ### Instance Properties
 - [var attestationSignature: Data](mtroperationalcsrinfo/attestationsignature.md)
 - [var csr: Data](mtroperationalcsrinfo/csr.md)

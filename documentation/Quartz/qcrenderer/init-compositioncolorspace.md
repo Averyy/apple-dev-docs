@@ -31,7 +31,7 @@ Note that [`snapshotImage()`](qcrenderer/snapshotimage().md) and [`createSnapsho
 
 - [init!(openGLContext: NSOpenGLContext!, pixelFormat: NSOpenGLPixelFormat!, file: String!)](qcrenderer/init(openglcontext:pixelformat:file:).md)
   Creates a  renderer object with an `NSOpenGLContext` object and a composition file.
-- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:).md)
+- [init!(cglContext: CGLContextObj!, pixelFormat: CGLPixelFormatObj!, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(cglcontext:pixelformat:colorspace:composition:)-7at42.md)
   Creates a  renderer object  with a `CGLContextObj` object, a pixel format, a color space, and a composition object.
 - [init!(offScreenWith: NSSize, colorSpace: CGColorSpace!, composition: QCComposition!)](qcrenderer/init(offscreenwith:colorspace:composition:).md)
   Creates an offscreen renderer of a given size with the provided color space and composition object.

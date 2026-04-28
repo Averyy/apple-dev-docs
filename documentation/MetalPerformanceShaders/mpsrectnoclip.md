@@ -1,17 +1,25 @@
 # MPSRectNoClip
 
-**Framework**: Metal Performance Shaders
+**Framework**: Metal Performance Shaders  
+**Kind**: var
 
-The default clipping rectangle for a kernel object.
+**Availability**:
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.0+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
 
-#### Overview
+## Declaration
 
-This is a special constant to indicate no clipping is to be done, that is, the entire image will be used.
+```swift
+let MPSRectNoClip: MTLRegion
+```
 
-## Topics
+#### Discussion
 
-### Constants
-- [let MPSRectNoClip: MTLRegion](mpsrectnoclip.md)
+If this constant is used in an image filter operation, no clipping is done and the entire image is used.
 
 
 ---

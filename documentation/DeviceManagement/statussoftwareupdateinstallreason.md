@@ -8,9 +8,12 @@ A status report of the reason for a pending software update on the device.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 18.4+
 - visionOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

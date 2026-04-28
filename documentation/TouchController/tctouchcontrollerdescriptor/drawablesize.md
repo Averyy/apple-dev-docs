@@ -8,6 +8,7 @@ The size of the drawable to which the touch controller’s contents be drawn, in
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

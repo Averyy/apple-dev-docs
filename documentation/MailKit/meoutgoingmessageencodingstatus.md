@@ -35,6 +35,8 @@ As a user composes a new message, MailKit requests the encoding status from your
   An error that the message encoder encountered while determining the encoding status for the outgoing message.
 - [var addressesFailingEncryption: [MEEmailAddress]](meoutgoingmessageencodingstatus/addressesfailingencryption.md)
   An array of email addresses that prevent the message security handler from signing the message.
+### Initializers
+- [init?(coder: NSCoder)](meoutgoingmessageencodingstatus/init(coder:).md)
 
 ## Relationships
 

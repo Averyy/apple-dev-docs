@@ -25,6 +25,8 @@ class RPBroadcastConfiguration
   The duration of movie clips sent the to the movie clip handler extension.
 - [var videoCompressionProperties: [String : any NSSecureCoding & NSObjectProtocol]?](rpbroadcastconfiguration/videocompressionproperties.md)
   The compression properties for encoding movie clips that are to be overwritten.
+### Initializers
+- [init?(coder: NSCoder)](rpbroadcastconfiguration/init(coder:).md)
 
 ## Relationships
 

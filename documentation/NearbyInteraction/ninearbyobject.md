@@ -47,6 +47,8 @@ For more information, see [`Initiating and maintaining a session`](initiating-an
 ### Explaining participation
 - [NINearbyObject.RemovalReason](ninearbyobject/removalreason.md)
   The reason a session removed a nearby object.
+### Initializers
+- [init?(coder: NSCoder)](ninearbyobject/init(coder:).md)
 
 ## Relationships
 

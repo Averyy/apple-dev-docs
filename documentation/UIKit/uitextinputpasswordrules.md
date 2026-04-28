@@ -27,6 +27,8 @@ class UITextInputPasswordRules
 ### Getting the rules
 - [var passwordRulesDescriptor: String](uitextinputpasswordrules/passwordrulesdescriptor.md)
   A string representing a set of password rules.
+### Initializers
+- [init?(coder: NSCoder)](uitextinputpasswordrules/init(coder:).md)
 
 ## Relationships
 

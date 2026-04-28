@@ -70,7 +70,7 @@ func fetchWebAuthToken(for apiToken: String,
 ## Topics
 
 ### Creating a Fetch Token Operation
-- [convenience init(apiToken: String)](ckfetchwebauthtokenoperation/init(apitoken:).md)
+- [convenience init(apiToken: String)](ckfetchwebauthtokenoperation/init(apitoken:)-14712.md)
   Creates a fetch operation for the specified API token.
 - [init()](ckfetchwebauthtokenoperation/init.md)
   Creates an empty fetch operation.
@@ -79,6 +79,8 @@ func fetchWebAuthToken(for apiToken: String,
   The API token that allows access to an app’s container.
 - [var fetchWebAuthTokenCompletionBlock: ((String?, (any Error)?) -> Void)?](ckfetchwebauthtokenoperation/fetchwebauthtokencompletionblock.md)
   The block to execute when the operation finishes.
+### Initializers
+- [convenience init(APIToken: String)](ckfetchwebauthtokenoperation/init(apitoken:)-6oo0y.md)
 ### Instance Properties
 - [var fetchWebAuthTokenResultBlock: ((Result<String, any Error>) -> Void)?](ckfetchwebauthtokenoperation/fetchwebauthtokenresultblock.md)
   The closure to execute when the operation finishes.

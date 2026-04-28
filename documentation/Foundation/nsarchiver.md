@@ -52,6 +52,8 @@ In macOS 10.2 and later, [`NSArchiver`](nsarchiver.md) and [`NSUnarchiver`](nsun
 ### Constants
 - [Archiving Exception Names](archiving-exception-names.md)
   Raised by `NSArchiver` if there are problems initializing or encoding.
+### Initializers
+- [init(forWritingWithMutableData: NSMutableData)](nsarchiver/init(forwritingwithmutabledata:).md)
 
 ## Relationships
 

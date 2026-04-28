@@ -30,6 +30,8 @@ This class ties together a credential and its corresponding transport types (USB
   The array of transport types.
 - [ASAuthorizationSecurityKeyPublicKeyCredentialDescriptor.Transport](asauthorizationsecuritykeypublickeycredentialdescriptor/transport.md)
   A structure that defines the security key credential transport type.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationsecuritykeypublickeycredentialdescriptor/init(coder:).md)
 
 ## Relationships
 

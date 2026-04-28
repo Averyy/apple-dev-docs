@@ -376,6 +376,8 @@ All trademarks and registered trademarks mentioned herein are the property of th
   Set by the Block as the matching progresses, completes, or fails. Used by the method [`enumerateMatches(in:options:range:using:)`](nsregularexpression/enumeratematches(in:options:range:using:).md).
 - [NSRegularExpression.MatchingOptions](nsregularexpression/matchingoptions.md)
   The matching options constants specify the reporting, completion and matching rules to the expression matching methods. These constants are used by all methods that search for, or replace values, using a regular expression.
+### Initializers
+- [init?(coder: NSCoder)](nsregularexpression/init(coder:).md)
 
 ## Relationships
 

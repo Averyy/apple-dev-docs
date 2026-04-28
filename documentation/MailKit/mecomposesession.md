@@ -26,6 +26,8 @@ class MEComposeSession
   The properties of the mail message, such as the subject and recipients.
 ### Instance Properties
 - [var composeContext: MEComposeContext](mecomposesession/composecontext.md)
+### Initializers
+- [init?(coder: NSCoder)](mecomposesession/init(coder:).md)
 
 ## Relationships
 

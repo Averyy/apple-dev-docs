@@ -34,7 +34,7 @@ Additionally, you can configure a set of sharing capabilities that allow people 
 ## Topics
 
 ### Creating a document header
-- [init(url: URL)](uidocumentproperties/init(url:).md)
+- [init(url: URL)](uidocumentproperties/init(url:)-zeio.md)
   Creates a document properties object from document data at the URL you specify.
 - [init(metadata: LPLinkMetadata)](uidocumentproperties/init(metadata:).md)
   Creates a document properties object from the metadata object you specify.
@@ -49,6 +49,8 @@ Additionally, you can configure a set of sharing capabilities that allow people 
 ### Supporting sharing
 - [var activityViewControllerProvider: (() -> UIActivityViewController)?](uidocumentproperties/activityviewcontrollerprovider.md)
   A closure that provides an activity view controller for sharing the document.
+### Initializers
+- [init(URL: URL)](uidocumentproperties/init(url:)-1rzp3.md)
 
 ## Relationships
 

@@ -40,6 +40,8 @@ A contact (that is, an instance of [`CNContact`](cncontact.md)) has properties, 
 ### Handling Exceptions
 - [let CNContactPropertyNotFetchedExceptionName: String](cncontactpropertynotfetchedexceptionname.md)
   Exception thrown when an accessed property was not fetched.
+### Initializers
+- [init?(coder: NSCoder)](cncontactproperty/init(coder:).md)
 
 ## Relationships
 

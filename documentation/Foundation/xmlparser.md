@@ -67,6 +67,8 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
   Indicates an error in XML parsing.
 - [XMLParser.ErrorCode](xmlparser/errorcode.md)
   The following error codes are defined by `NSXMLParser`. For error codes not listed here, see the `<libxml/xmlerror.h>` header file.
+### Initializers
+- [convenience init?(contentsOfURL: URL)](xmlparser/init(contentsofurl:).md)
 ### Instance Properties
 - [var allowedExternalEntityURLs: Set<URL>?](xmlparser/allowedexternalentityurls.md)
 - [var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.property.md)

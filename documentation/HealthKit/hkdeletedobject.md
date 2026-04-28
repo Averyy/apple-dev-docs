@@ -36,6 +36,8 @@ Deleted objects are temporary; the system may remove them from the HealthKit sto
   The universally unique identifier (UUID) for the HealthKit object that was deleted from the store.
 - [var metadata: [String : Any]?](hkdeletedobject/metadata.md)
   The metadata associated with the deleted object.
+### Initializers
+- [init?(coder: NSCoder)](hkdeletedobject/init(coder:).md)
 
 ## Relationships
 

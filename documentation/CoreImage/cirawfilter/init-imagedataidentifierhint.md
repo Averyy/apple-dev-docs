@@ -26,7 +26,7 @@ convenience init?(imageData data: Data, identifierHint: String?)
 
 ## See Also
 
-- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:).md)
+- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:)-6209q.md)
   Creates a RAW filter from the pixel buffer and its properties that you specify.
 - [convenience init?(imageURL: URL)](cirawfilter/init(imageurl:).md)
   Creates a RAW filter from the image at the URL location that you specify.

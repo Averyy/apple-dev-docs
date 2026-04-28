@@ -22,6 +22,8 @@ class MEMessageActionDecision
 ### Type Methods
 - [class func action(MEMessageAction) -> Self](memessageactiondecision/action(_:).md)
 - [class func actions([MEMessageAction]) -> Self](memessageactiondecision/actions(_:).md)
+### Initializers
+- [init?(coder: NSCoder)](memessageactiondecision/init(coder:).md)
 
 ## Relationships
 

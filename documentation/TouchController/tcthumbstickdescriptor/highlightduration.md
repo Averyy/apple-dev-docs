@@ -8,6 +8,7 @@ The time it takes for a highlight to fade away, in seconds.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

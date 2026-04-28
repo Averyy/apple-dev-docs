@@ -7,6 +7,8 @@ The payload that configures associated domains.
 
 **Availability**:
 - macOS 10.15+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

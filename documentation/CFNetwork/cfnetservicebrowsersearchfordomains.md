@@ -41,7 +41,7 @@ For any one CFNetServiceBrowser, only one domain search or one service search ca
 
 - `browser`: The CFNetServiceBrowser, obtained by previously calling [`CFNetServiceBrowserCreate(_:_:_:)`](cfnetservicebrowsercreate(_:_:_:).md), that is to perform the search; cannot be `NULL`.
 - `registrationDomains`: `TRUE` to search for only registration domains; `FALSE` to search for domains that can be browsed for services. For this version of the CFNetServices API, the registration domain is the local domain maintained by the mDNS responder running on the same machine as the calling application.
-- `error`: A pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure, that, if an error occurs, will be set to the error and the error’s domain and passed to your callback function. Pass `NULL` if you don’t want to receive the error that may occur as a result of this particular call.
+- `error`: A pointer to a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror structure, that, if an error occurs, will be set to the error and the error’s domain and passed to your callback function. Pass `NULL` if you don’t want to receive the error that may occur as a result of this particular call.
 
 ## See Also
 

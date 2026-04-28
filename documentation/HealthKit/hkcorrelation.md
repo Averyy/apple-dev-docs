@@ -60,6 +60,10 @@ For more information, see the [`init(type:start:end:objects:metadata:)`](hkcorre
 ### Specifying Predicate Key Paths
 - [let HKPredicateKeyPathCorrelation: String](hkpredicatekeypathcorrelation.md)
   The key path for accessing the object’s correlation inside a predicate format string.
+### Initializers
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>)](hkcorrelation/init(type:startdate:enddate:objects:).md)
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, device: HKDevice?, metadata: [String : Any]?)](hkcorrelation/init(type:startdate:enddate:objects:device:metadata:).md)
+- [convenience init(type: HKCorrelationType, startDate: Date, endDate: Date, objects: Set<HKSample>, metadata: [String : Any]?)](hkcorrelation/init(type:startdate:enddate:objects:metadata:).md)
 
 ## Relationships
 

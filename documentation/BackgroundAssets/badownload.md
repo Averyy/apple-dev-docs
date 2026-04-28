@@ -43,6 +43,8 @@ class BADownload
   Constants that indicate the state of a download.
 ### Downloading nonessential assets
 - [func removingEssential() -> Self](badownload/removingessential.md)
+### Initializers
+- [init?(coder: NSCoder)](badownload/init(coder:).md)
 
 ## Relationships
 

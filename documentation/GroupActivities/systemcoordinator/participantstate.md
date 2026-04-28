@@ -57,7 +57,8 @@ Observe the participant’s spatial state from the [`localParticipantState`](sys
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
-- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](../SwiftUI/View/groupActivityAssociation(_:).md)
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View
+](../SwiftUI/View/groupActivityAssociation(_:).md)
   Specifies how a view should be associated with the current SharePlay group activity.
 - [class GroupActivityAssociationInteraction](groupactivityassociationinteraction.md)
   An interaction configures a view’s association with the current SharePlay group activity.

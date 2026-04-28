@@ -36,6 +36,8 @@ This class provides methods for managing the extension’s permissions, allowing
 ### Initializers
 - [init(for: WKWebExtension)](wkwebextensioncontext/init(for:).md)
   Returns a web extension context initialized with a specified extension.
+- [init(forExtension: WKWebExtension)](wkwebextensioncontext/init(forextension:)-5v7j1.md)
+- [convenience init(forExtension: WKWebExtension)](wkwebextensioncontext/init(forextension:)-6gjca.md)
 ### Instance Properties
 - [var baseURL: URL](wkwebextensioncontext/baseurl.md)
   The base URL the context uses for loading extension resources or injecting content into webpages.

@@ -8,6 +8,7 @@ A key that specifies the AMR Wideband speech codec, and uses no flags.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 13.0+
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS 1.0+

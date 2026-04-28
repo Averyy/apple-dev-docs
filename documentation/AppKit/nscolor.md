@@ -166,7 +166,12 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
 - [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
 ### Initializers
-- [init(ciColor: CIColor)](nscolor/init(cicolor:).md)
+- [init?(CGColor: CGColor)](nscolor/init(cgcolor:)-3pxs.md)
+- [init(SRGBRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-3vuej.md)
+- [init(ciColor: CIColor)](nscolor/init(cicolor:)-1jbdc.md)
+- [init(forControlTint: NSControlTint)](nscolor/init(forcontroltint:).md)
+- [init?(fromPasteboard: NSPasteboard)](nscolor/init(frompasteboard:).md)
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nscolor/init(pasteboardpropertylist:oftype:).md)
 ### Default Implementations
 - [NSColor Implementations](nscolor/nscolor-implementations.md)
 

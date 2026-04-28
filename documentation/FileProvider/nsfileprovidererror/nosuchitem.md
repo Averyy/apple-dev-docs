@@ -8,6 +8,7 @@ An error indicating that the specified item doesn’t exist.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

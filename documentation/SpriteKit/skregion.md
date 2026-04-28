@@ -48,6 +48,8 @@ An [`SKRegion`](skregion.md) object defines a mathematical shape and is typicall
   Returns a Core Graphics path that defines the region.
 - [func contains(CGPoint) -> Bool](skregion/contains(_:).md)
   Returns a Boolean value that indicates whether a particular point is contained in the region.
+### Initializers
+- [init?(coder: NSCoder)](skregion/init(coder:).md)
 
 ## Relationships
 

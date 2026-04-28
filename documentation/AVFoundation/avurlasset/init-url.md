@@ -26,7 +26,7 @@ convenience init(url: URL)
 
 ## See Also
 
-- [init(url: URL, options: [String : Any]?)](avurlasset/init(url:options:).md)
+- [init(url: URL, options: [String : Any]?)](avurlasset/init(url:options:)-2x8uu.md)
   Creates an asset that models the media resource at the specified URL.
 - [Initialization options](avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.

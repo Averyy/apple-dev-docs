@@ -72,6 +72,7 @@ You must also override the primitive methods of the [`NSSet`](nsset.md) class.
   Empties the receiving set, then adds each object contained in another given set.
 ### Initializers
 - [init?(coder: NSCoder)](nsmutableset/init(coder:).md)
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsmutableset/init(objects:count:).md)
 
 ## Relationships
 

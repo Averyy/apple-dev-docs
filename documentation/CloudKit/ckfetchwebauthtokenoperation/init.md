@@ -26,7 +26,7 @@ You must set [`apiToken`](ckfetchwebauthtokenoperation/apitoken.md) before you e
 
 ## See Also
 
-- [convenience init(apiToken: String)](ckfetchwebauthtokenoperation/init(apitoken:).md)
+- [convenience init(apiToken: String)](ckfetchwebauthtokenoperation/init(apitoken:)-14712.md)
   Creates a fetch operation for the specified API token.
 
 

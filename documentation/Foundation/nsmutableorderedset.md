@@ -92,6 +92,7 @@ class NSMutableOrderedSet
   Adds each object in another given set to the receiving mutable ordered set, if not present.
 ### Initializers
 - [init?(coder: NSCoder)](nsmutableorderedset/init(coder:).md)
+- [convenience init(objects: UnsafePointer<AnyObject>, count: Int)](nsmutableorderedset/init(objects:count:).md)
 
 ## Relationships
 

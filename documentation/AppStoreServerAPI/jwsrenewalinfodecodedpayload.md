@@ -42,6 +42,8 @@ object JWSRenewalInfoDecodedPayload
 - `renewalPrice` (renewalPrice): The renewal price, in milliunits, of the auto-renewable subscription that renews at the next billing period.
 - `signedDate` (signedDate): The UNIX time, in milliseconds, that the App Store signed the JSON Web Signature (JWS) data.
 - `advancedCommerceInfo` (advancedCommerceRenewalInfo): Renewal information that is present only for Advanced Commerce SKUs.
+- `commitmentInfo` (RenewalCommitmentInfo)
+- `renewalBillingPlanType` (renewalBillingPlanType)
 
 ## See Also
 

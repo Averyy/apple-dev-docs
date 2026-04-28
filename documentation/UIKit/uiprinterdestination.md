@@ -25,7 +25,7 @@ You can use `UIPrinterDestination` to describe a printer so that it populates in
 ## Topics
 
 ### Creating a printer destination
-- [init(url: URL)](uiprinterdestination/init(url:).md)
+- [init(url: URL)](uiprinterdestination/init(url:)-7ck5j.md)
   Creates a printer destination with the specified address.
 ### Describing the printer
 - [var displayName: String?](uiprinterdestination/displayname.md)
@@ -34,6 +34,9 @@ You can use `UIPrinterDestination` to describe a printer so that it populates in
   A DNS TXT record to identify the printer.
 - [var url: URL](uiprinterdestination/url.md)
   The address of the printer.
+### Initializers
+- [init(URL: URL)](uiprinterdestination/init(url:)-c1e8.md)
+- [init?(coder: NSCoder)](uiprinterdestination/init(coder:).md)
 
 ## Relationships
 

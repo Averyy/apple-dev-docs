@@ -31,7 +31,7 @@ A new player initialized to play `item`.
 
 ## See Also
 
-- [init(url: URL)](avplayer/init(url:).md)
+- [init(url: URL)](avplayer/init(url:)-87cxx.md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
 - [init()](avplayer/init.md)
   Creates a player object.

@@ -31,7 +31,7 @@ To create positional audio effects, create an [`SCNAudioPlayer`](scnaudioplayer.
   Returns the audio source associated with the specified filename.
 - [convenience init?(fileNamed: String)](scnaudiosource/init(filenamed:).md)
   Initializes an audio source from an audio file in the application’s main bundle.
-- [init?(url: URL)](scnaudiosource/init(url:).md)
+- [init?(url: URL)](scnaudiosource/init(url:)-3qyjs.md)
   Initializes an audio source from the specified audio file.
 ### Controlling 3D Audio Spatialization
 - [var isPositional: Bool](scnaudiosource/ispositional.md)
@@ -50,6 +50,9 @@ To create positional audio effects, create an [`SCNAudioPlayer`](scnaudioplayer.
   A Boolean value that determines whether the audio source should play repeatedly.
 - [var shouldStream: Bool](scnaudiosource/shouldstream.md)
   A Boolean value that determines whether the audio source should stream content from its source URL when playing.
+### Initializers
+- [init?(URL: URL)](scnaudiosource/init(url:)-8cknu.md)
+- [init?(coder: NSCoder)](scnaudiosource/init(coder:).md)
 
 ## Relationships
 

@@ -30,6 +30,8 @@ To provide a preview from a swipe gesture, use an instance of this class with [`
 ### Configuring a preview scene activation
 - [QLPreviewSceneActivationConfiguration.Options](qlpreviewsceneactivationconfiguration/options.md)
   A class that represents the configuration for a preview scene activation.
+### Initializers
+- [init(itemsAtURLs: [URL], options: QLPreviewSceneActivationConfiguration.Options?)](qlpreviewsceneactivationconfiguration/init(itemsaturls:options:).md)
 
 ## Relationships
 

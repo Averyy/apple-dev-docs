@@ -8,6 +8,7 @@ Retrieve data and derived metrics from sensors on an iPhone, or paired Apple Wat
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 #### Overview
 

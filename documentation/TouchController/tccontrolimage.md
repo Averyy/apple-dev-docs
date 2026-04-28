@@ -8,6 +8,7 @@ Represents an image to be rendered using Metal.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -18,13 +19,13 @@ class TCControlImage
 ## Topics
 
 ### Creating a control image
-- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:).md)
+- [convenience init?(cgImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-22z05.md)
   Creates a new image from a CGImage.
 - [convenience init(texture: any MTLTexture, size: CGSize)](tccontrolimage/init(texture:size:).md)
   Creates a new image with the specified texture and size.
 - [init(texture: any MTLTexture, size: CGSize, highlight: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](tccontrolimage/init(texture:size:highlight:offset:tintcolor:).md)
   Creates a new image with the specified texture, size, highlight texture, offset, and color tint.
-- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:).md)
+- [convenience init?(uiImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-3hqf.md)
   Creates a new image from a UIImage.
 ### Inspecting the control image
 - [var highlightTexture: (any MTLTexture)?](tccontrolimage/highlighttexture.md)
@@ -37,6 +38,10 @@ class TCControlImage
   The Metal texture to use for the image.
 - [var tintColor: CGColor](tccontrolimage/tintcolor.md)
   The color tint to apply to the texture. The color ref is retained.
+### Initializers
+- [convenience init?(CGImage: CGImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(cgimage:size:device:)-6wxv8.md)
+- [convenience init?(UIImage: UIImage, size: CGSize, device: any MTLDevice)](tccontrolimage/init(uiimage:size:device:)-9csn2.md)
+- [init(texture: any MTLTexture, size: CGSize, highlightTexture: (any MTLTexture)?, offset: CGPoint, tintColor: CGColor)](tccontrolimage/init(texture:size:highlighttexture:offset:tintcolor:).md)
 
 ## Relationships
 

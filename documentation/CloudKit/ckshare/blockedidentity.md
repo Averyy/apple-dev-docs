@@ -20,6 +20,8 @@ class BlockedIdentity
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](ckshare/blockedidentity/init(coder:).md)
 ### Instance Properties
 - [var contact: CNContact](ckshare/blockedidentity/contact.md)
   A displayable CNContact representing the blocked user.

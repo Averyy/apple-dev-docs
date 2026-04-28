@@ -71,6 +71,8 @@ NSUnitConverterLinear *kilometersToMeters = [[NSUnitConverterLinear alloc] initW
   Initializes the unit converter with the coefficient you specify.
 - [init(coefficient: Double, constant: Double)](unitconverterlinear/init(coefficient:constant:).md)
   Creates a unit converter with the coefficient and constant you specify.
+### Initializers
+- [init?(coder: NSCoder)](unitconverterlinear/init(coder:).md)
 
 ## Relationships
 

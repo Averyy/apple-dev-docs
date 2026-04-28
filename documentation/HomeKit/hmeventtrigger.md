@@ -103,6 +103,8 @@ Use an [`HMEventTrigger`](hmeventtrigger.md) object to trigger the execution of 
   Creates a predicate that evaluates whether the event occurred before a significant event.
 - [class func predicateForEvaluatingTrigger(occurringAfter: String, applyingOffset: DateComponents?) -> NSPredicate](hmeventtrigger/predicateforevaluatingtrigger(occurringafter:applyingoffset:).md)
   Creates a predicate that evaluates whether the event occurred before a significant event.
+### Initializers
+- [init(name: String, events: [HMEvent], endEvents: [HMEvent]?, recurrences: [DateComponents]?, predicate: NSPredicate?)](hmeventtrigger/init(name:events:endevents:recurrences:predicate:).md)
 
 ## Relationships
 

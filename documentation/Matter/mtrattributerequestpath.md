@@ -22,6 +22,7 @@ class MTRAttributeRequestPath
 
 ### Initializers
 - [init(endpointID: NSNumber?, clusterID: NSNumber?, attributeID: NSNumber?)](mtrattributerequestpath/init(endpointid:clusterid:attributeid:).md)
+- [init?(coder: NSCoder)](mtrattributerequestpath/init(coder:).md)
 ### Instance Properties
 - [var attribute: NSNumber?](mtrattributerequestpath/attribute.md)
 - [var cluster: NSNumber?](mtrattributerequestpath/cluster.md)

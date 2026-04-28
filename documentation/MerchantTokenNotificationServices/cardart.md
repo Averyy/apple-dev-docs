@@ -7,6 +7,7 @@ Data for displaying art to represent a card.
 
 **Availability**:
 - App Store Connect API 1.0.10+
+- Apple Pay Merchant Token Management API 1.0.12+
 
 ## Declaration
 

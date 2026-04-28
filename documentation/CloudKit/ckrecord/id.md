@@ -59,6 +59,8 @@ Use a record ID to fetch the corresponding [`CKRecord`](ckrecord.md) object from
 ### Getting the Record ID’s Zone
 - [var zoneID: CKRecordZone.ID](ckrecord/id/zoneid.md)
   The ID of the zone that contains the record.
+### Initializers
+- [init?(coder: NSCoder)](ckrecord/id/init(coder:).md)
 
 ## Relationships
 

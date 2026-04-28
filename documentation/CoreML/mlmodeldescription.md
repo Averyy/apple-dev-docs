@@ -52,6 +52,8 @@ class MLModelDescription
   A dictionary of the descriptions for the model’s parameters.
 - [class MLParameterDescription](mlparameterdescription.md)
   A description of a model parameter that includes a default value and a constraint, if applicable.
+### Initializers
+- [init?(coder: NSCoder)](mlmodeldescription/init(coder:).md)
 
 ## Relationships
 

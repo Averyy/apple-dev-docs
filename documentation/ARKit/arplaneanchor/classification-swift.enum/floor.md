@@ -8,6 +8,7 @@ The plane anchor represents a real-world floor, ground plane, or similar large h
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 
 ## Declaration
 

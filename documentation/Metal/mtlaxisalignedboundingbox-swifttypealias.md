@@ -19,6 +19,12 @@ The bounds for an axis-aligned bounding box.
 typealias MTLAxisAlignedBoundingBox = _MTLAxisAlignedBoundingBox
 ```
 
+## Topics
+
+### Instance Properties
+- [var max: MTLPackedFloat3](mtlaxisalignedboundingbox-swift.typealias/max.md)
+- [var min: MTLPackedFloat3](mtlaxisalignedboundingbox-swift.typealias/min.md)
+
 ## Relationships
 
 ### Conforms To

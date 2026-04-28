@@ -41,6 +41,8 @@ Geo tracking requires coordination with the user at various phases of the geo-tr
   The accuracy of geo tracking at the time the session captured the frame.
 - [ARGeoTrackingStatus.Accuracy](argeotrackingstatus/accuracy-swift.enum.md)
   Values that are possible for the current accuracy of geo tracking.
+### Initializers
+- [init?(coder: NSCoder)](argeotrackingstatus/init(coder:).md)
 
 ## Relationships
 

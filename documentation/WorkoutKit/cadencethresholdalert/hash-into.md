@@ -8,6 +8,7 @@ Hashes the essential components of the cadence threshold alert by feeding them i
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

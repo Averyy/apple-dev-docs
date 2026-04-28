@@ -8,6 +8,12 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### 121 20260427
+
+**New features**
+
+- Added the following fields in [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md) to support monthly subscriptions with a 12-month commitment: [`TransactionCommitmentInfo`](transactioncommitmentinfo.md) and [`billingPlanType`](billingplantype.md); and the following fields in [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md):   [`RenewalCommitmentInfo`](renewalcommitmentinfo.md) and [`renewalBillingPlanType`](renewalbillingplantype.md).
+
 ##### 120 20260413
 
 **New features**

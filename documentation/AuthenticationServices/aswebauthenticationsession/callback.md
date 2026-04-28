@@ -53,7 +53,7 @@ When [`ASWebAuthenticationSession`](aswebauthenticationsession.md) navigates to 
 
 ## See Also
 
-- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:).md)
+- [init(url: URL, callback: ASWebAuthenticationSession.Callback, completionHandler: ASWebAuthenticationSession.CompletionHandler)](aswebauthenticationsession/init(url:callback:completionhandler:)-6nut7.md)
   Creates a web authentication session instance that uses a callback to evaluate a redirection URL.
 - [ASWebAuthenticationSession.CompletionHandler](aswebauthenticationsession/completionhandler.md)
   A completion handler for the web authentication session.

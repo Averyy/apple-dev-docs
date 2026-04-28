@@ -26,6 +26,8 @@ class ILMessageFilterQueryRequest
   The body of a message received from an unknown sender.
 - [var receiverISOCountryCode: String?](ilmessagefilterqueryrequest/receiverisocountrycode.md)
   The ISO Country Code of the receiving phone number, in format specified by the ISO 3166-2 standard.
+### Initializers
+- [init?(coder: NSCoder)](ilmessagefilterqueryrequest/init(coder:).md)
 
 ## Relationships
 

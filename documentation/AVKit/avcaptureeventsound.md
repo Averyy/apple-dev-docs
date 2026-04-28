@@ -8,6 +8,7 @@ A sound object for a capture event.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -22,7 +23,7 @@ class AVCaptureEventSound
 ## Topics
 
 ### Creating a sound
-- [init(url: URL) throws](avcaptureeventsound/init(url:).md)
+- [init(url: URL) throws](avcaptureeventsound/init(url:)-2a6o4.md)
   Creates a sound object for a capture event.
 ### Accessing default sounds
 - [class var cameraShutter: AVCaptureEventSound](avcaptureeventsound/camerashutter.md)
@@ -31,6 +32,8 @@ class AVCaptureEventSound
   The default sound for starting a video recording.
 - [class var endVideoRecording: AVCaptureEventSound](avcaptureeventsound/endvideorecording.md)
   The default sound for ending a video recording.
+### Initializers
+- [init(URL: URL) throws](avcaptureeventsound/init(url:)-3e9o9.md)
 
 ## Relationships
 

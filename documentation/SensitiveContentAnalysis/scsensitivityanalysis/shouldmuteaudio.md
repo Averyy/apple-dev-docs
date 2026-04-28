@@ -8,6 +8,7 @@ Intervention guidance that suggests the app mute the audio of the current video 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

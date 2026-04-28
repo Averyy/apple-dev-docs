@@ -33,6 +33,8 @@ class NSTintConfiguration
   The color the system supplies when you create a tint configuration.
 - [var equivalentContentTintColor: NSColor?](nstintconfiguration/equivalentcontenttintcolor.md)
   A color object that matches the effective content tint.
+### Initializers
+- [init?(coder: NSCoder)](nstintconfiguration/init(coder:).md)
 
 ## Relationships
 

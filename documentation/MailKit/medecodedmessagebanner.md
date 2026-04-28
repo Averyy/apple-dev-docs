@@ -16,6 +16,7 @@ class MEDecodedMessageBanner
 
 ### Initializers
 - [init(title: String, primaryActionTitle: String, dismissable: Bool)](medecodedmessagebanner/init(title:primaryactiontitle:dismissable:).md)
+- [init?(coder: NSCoder)](medecodedmessagebanner/init(coder:).md)
 ### Instance Properties
 - [var isDismissable: Bool](medecodedmessagebanner/isdismissable.md)
 - [var primaryActionTitle: String](medecodedmessagebanner/primaryactiontitle.md)

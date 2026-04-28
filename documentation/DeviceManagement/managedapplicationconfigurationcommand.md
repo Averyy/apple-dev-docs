@@ -8,10 +8,13 @@ The command to get app configurations from managed apps on a device.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - macOS 10.15+
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

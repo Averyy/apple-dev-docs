@@ -42,6 +42,8 @@ class MXMetaData
   Returns the contents of the metadata as a dictionary.
 - [func jsonRepresentation() -> Data](mxmetadata/jsonrepresentation.md)
   Returns the contents of the metadata in JSON format.
+### Initializers
+- [init?(coder: NSCoder)](mxmetadata/init(coder:).md)
 ### Instance Properties
 - [var bundleIdentifier: String](mxmetadata/bundleidentifier.md)
 

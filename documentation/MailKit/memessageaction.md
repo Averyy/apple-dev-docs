@@ -35,6 +35,8 @@ class MEMessageAction
 - [MEMessageAction.Flag](memessageaction/flag.md)
 - [MEMessageAction.MessageColor](memessageaction/messagecolor.md)
   A color that the system uses to display a message in the message list.
+### Initializers
+- [init?(coder: NSCoder)](memessageaction/init(coder:).md)
 
 ## Relationships
 

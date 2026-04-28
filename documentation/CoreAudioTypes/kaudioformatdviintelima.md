@@ -8,6 +8,7 @@ A key that specifies the codec defined by DVI/Intel IMA ADPCM - ACM code 17, and
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 13.0+
 - macOS 10.6+
 - tvOS 9.0+
 - visionOS 1.0+

@@ -8,6 +8,7 @@ The Metal texture to use for the image when highlighted. May be `nil`.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

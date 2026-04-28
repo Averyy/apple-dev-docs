@@ -8,6 +8,7 @@ The name that the framework suggests when the user names the accessory being set
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
+- Mac Catalyst 15.4+
 
 ## Declaration
 

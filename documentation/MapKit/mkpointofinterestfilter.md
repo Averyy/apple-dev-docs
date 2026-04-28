@@ -40,6 +40,10 @@ You can apply a point of interest filter in a map view ([`pointOfInterestFilter`
   Returns a Boolean value indicating whether the filter excludes the point of interest category.
 - [func includes(MKPointOfInterestCategory) -> Bool](mkpointofinterestfilter/includes(_:).md)
   Returns a Boolean value indicating whether the filter includes the point of interest category.
+### Initializers
+- [init?(coder: NSCoder)](mkpointofinterestfilter/init(coder:).md)
+- [init(excludingCategories: [MKPointOfInterestCategory])](mkpointofinterestfilter/init(excludingcategories:).md)
+- [init(includingCategories: [MKPointOfInterestCategory])](mkpointofinterestfilter/init(includingcategories:).md)
 
 ## Relationships
 

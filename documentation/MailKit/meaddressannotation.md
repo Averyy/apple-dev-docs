@@ -27,6 +27,8 @@ Mail displays the status of an annotation as part of the address tokens in the T
   Indicates an address may be invalid or needs attention.
 - [class func error(withLocalizedDescription: String) -> MEAddressAnnotation](meaddressannotation/error(withlocalizeddescription:).md)
   Indicates an address is invalid and may result in failure to deliver a message.
+### Initializers
+- [init?(coder: NSCoder)](meaddressannotation/init(coder:).md)
 
 ## Relationships
 

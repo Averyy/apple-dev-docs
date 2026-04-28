@@ -16,7 +16,7 @@ class CBIdentity
 
 #### Overview
 
-You can obtain a `CBIdentity` object from one of the following class factory methods: [`init(name:authority:)`](cbidentity/init(name:authority:).md), [`init(uuidString:authority:)`](cbidentity/init(uuidstring:authority:).md), [`init(persistentReference:)`](cbidentity/init(persistentreference:).md), or [`identityWithCSIdentity:`](cbidentity/identitywithcsidentity:.md).
+You can obtain a `CBIdentity` object from one of the following class factory methods: [`init(name:authority:)`](cbidentity/init(name:authority:).md), [`init(uuidString:authority:)`](cbidentity/init(uuidstring:authority:)-13vns.md), [`init(persistentReference:)`](cbidentity/init(persistentreference:).md), or [`identityWithCSIdentity:`](cbidentity/identitywithcsidentity:.md).
 
 A `CBIdentity` object has methods to support for interoperability with the Core Services Identity API. Send [`CSIdentity`](cbidentity/csidentity.md) to your `CBIdentity` object to return an opaque object for use in the Core Services Identity API. Similarly, call [`identityWithCSIdentity:`](cbidentity/identitywithcsidentity:.md) to use an Core Services Identity opaque object in the Collaboration framework.
 
@@ -29,7 +29,7 @@ There are two subclasses of `CBIdentity`: `CBGroupIdentity` and `CBUserIdentity`
   Returns the identity object with the given name from the specified identity authority.
 - [init?(persistentReference: Data)](cbidentity/init(persistentreference:).md)
   Returns the identity object matching the persistent reference data.
-- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:).md)
+- [init?(uuidString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-13vns.md)
   Returns the identity object with the given UUID from the specified identity authority.
 ### Getting Identity Attributes
 - [var aliases: [String]](cbidentity/aliases.md)
@@ -54,6 +54,8 @@ There are two subclasses of `CBIdentity`: `CBGroupIdentity` and `CBUserIdentity`
 - [var persistentReference: Data?](cbidentity/persistentreference.md)
   Returns a persistent reference to store a reference to an identity.
 ### Initializers
+- [init?(UUIDString: String, authority: CBIdentityAuthority)](cbidentity/init(uuidstring:authority:)-7xuzv.md)
+- [init?(coder: NSCoder)](cbidentity/init(coder:).md)
 - [init?(uniqueIdentifier: UUID, authority: CBIdentityAuthority)](cbidentity/init(uniqueidentifier:authority:).md)
 ### Instance Properties
 - [var uniqueIdentifier: UUID](cbidentity/uniqueidentifier.md)

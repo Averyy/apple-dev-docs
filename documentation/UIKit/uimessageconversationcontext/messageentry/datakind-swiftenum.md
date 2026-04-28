@@ -8,6 +8,7 @@ A list of options that represent the kinds of data a message can contain.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

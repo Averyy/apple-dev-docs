@@ -8,6 +8,7 @@ A payload for authenticating a HomeKit accessory.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 - visionOS 1.0+
 
 ## Declaration
@@ -25,12 +26,15 @@ For details about the payload’s content, please join the [`MFi Program`](https
 ## Topics
 
 ### Creating a Payload
-- [init?(url: URL?)](hmaccessorysetuppayload/init(url:).md)
+- [init?(url: URL?)](hmaccessorysetuppayload/init(url:)-7ytm5.md)
   Creates an accessory setup payload.
-- [init?(url: URL, ownershipToken: HMAccessoryOwnershipToken?)](hmaccessorysetuppayload/init(url:ownershiptoken:).md)
+- [init?(url: URL, ownershipToken: HMAccessoryOwnershipToken?)](hmaccessorysetuppayload/init(url:ownershiptoken:)-32mrj.md)
   Creates an accessory setup payload instance that includes an ownership token.
 - [class HMAccessoryOwnershipToken](hmaccessoryownershiptoken.md)
   Authentication data that your app provides when adding an accessory to a home.
+### Initializers
+- [init?(URL: URL?)](hmaccessorysetuppayload/init(url:)-j8tu.md)
+- [init?(URL: URL, ownershipToken: HMAccessoryOwnershipToken?)](hmaccessorysetuppayload/init(url:ownershiptoken:)-24qin.md)
 
 ## Relationships
 

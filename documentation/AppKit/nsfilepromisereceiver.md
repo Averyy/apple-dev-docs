@@ -65,6 +65,8 @@ draggingInfo.enumerateDraggingItems(options: [], for: view, classes: [NSFileProm
 ### Type Properties
 - [class var readableDraggedTypes: [String]](nsfilepromisereceiver/readabledraggedtypes.md)
   An array containing dragged file types that are readable.
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsfilepromisereceiver/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

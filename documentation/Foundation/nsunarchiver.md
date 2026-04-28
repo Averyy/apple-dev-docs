@@ -49,6 +49,8 @@ In macOS 10.2 and later, [`NSArchiver`](nsarchiver.md) and [`NSUnarchiver`](nsun
   Instructs the receiver to use the class with a given name when instantiating objects whose ostensible class, according to the archived data, is another given name.
 - [func replace(Any, with: Any)](nsunarchiver/replace(_:with:).md)
   Causes the receiver to substitute one given object for another whenever the latter is extracted from the archive.
+### Initializers
+- [init?(forReadingWithData: Data)](nsunarchiver/init(forreadingwithdata:).md)
 
 ## Relationships
 

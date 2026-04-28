@@ -42,6 +42,8 @@ You can include a snap behavior in a custom, composite behavior by starting with
   The point to which to snap.
 - [var damping: CGFloat](uisnapbehavior/damping.md)
   The amount of oscillation of a dynamic item during the conclusion of a snap.
+### Initializers
+- [init(item: any UIDynamicItem, snapToPoint: CGPoint)](uisnapbehavior/init(item:snaptopoint:).md)
 
 ## Relationships
 

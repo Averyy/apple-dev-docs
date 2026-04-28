@@ -8,6 +8,7 @@ An update that contains data about the pressure and depth.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -32,6 +33,8 @@ class CMWaterSubmersionMeasurement
   The depth state.
 - [CMWaterSubmersionMeasurement.DepthState](cmwatersubmersionmeasurement/depthstate.md)
   A state based on the device’s depth under water.
+### Initializers
+- [init?(coder: NSCoder)](cmwatersubmersionmeasurement/init(coder:).md)
 
 ## Relationships
 

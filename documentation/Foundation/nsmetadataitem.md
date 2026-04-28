@@ -27,7 +27,7 @@ Metadata items provide a simple interface to retrieve the available attribute na
 ## Topics
 
 ### Creating a Metadata Item
-- [init?(url: URL)](nsmetadataitem/init(url:).md)
+- [init?(url: URL)](nsmetadataitem/init(url:)-9xxs3.md)
   Initializes a metadata item with a given URL.
 ### Getting Item Attributes
 - [var attributes: [String]](nsmetadataitem/attributes.md)
@@ -222,6 +222,8 @@ Metadata items provide a simple interface to retrieve the available attribute na
 ### iCloud Sharing Role Values
 - [let NSMetadataUbiquitousSharedItemRoleOwner: String](nsmetadataubiquitousshareditemroleowner.md)
 - [let NSMetadataUbiquitousSharedItemRoleParticipant: String](nsmetadataubiquitousshareditemroleparticipant.md)
+### Initializers
+- [init?(URL: URL)](nsmetadataitem/init(url:)-viww.md)
 
 ## Relationships
 

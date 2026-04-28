@@ -22,6 +22,8 @@ class MTREndpointInfo
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](mtrendpointinfo/init(coder:).md)
 ### Instance Properties
 - [var children: [MTREndpointInfo]](mtrendpointinfo/children.md)
   The direct children of this endpoint. This excludes indirect descendants even if they are listed in the PartsList attribute of this endpoint due to the Full-Family Pattern being used. Refer to Endpoint Composition Patterns in the Matter specification for details.

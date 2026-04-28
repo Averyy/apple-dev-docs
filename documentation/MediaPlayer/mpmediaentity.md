@@ -40,6 +40,8 @@ This is the superclass for [`MPMediaItem`](mpmediaitem.md) and [`MPMediaItemColl
 ### Media entity property keys
 - [Media entity property keys](media-entity-property-keys.md)
   The property keys used to retrieve metadata for media entities.
+### Initializers
+- [init?(coder: NSCoder)](mpmediaentity/init(coder:).md)
 
 ## Relationships
 

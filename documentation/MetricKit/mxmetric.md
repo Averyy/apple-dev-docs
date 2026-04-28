@@ -25,6 +25,8 @@ class MXMetric
   Returns the contents of a metric as a dictionary.
 - [func jsonRepresentation() -> Data](mxmetric/jsonrepresentation.md)
   Returns the contents of the metric in JSON format.
+### Initializers
+- [init?(coder: NSCoder)](mxmetric/init(coder:).md)
 
 ## Relationships
 

@@ -7,6 +7,8 @@ A regular expression and its description to enforce password compliance.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

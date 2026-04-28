@@ -31,7 +31,7 @@ Both the [`MDLPhotometricLight`](mdlphotometriclight.md) and [`MDLAreaLight`](md
 ## Topics
 
 ### Creating a Photometric Light
-- [init?(iesProfile: URL)](mdlphotometriclight/init(iesprofile:).md)
+- [init?(iesProfile: URL)](mdlphotometriclight/init(iesprofile:)-57hxs.md)
   Initializes a light from photometry data in the file at the specified URL.
 ### Interpreting the Light Web as a Cube Texture
 - [func generateCubemap(fromLight: Int)](mdlphotometriclight/generatecubemap(fromlight:).md)
@@ -45,6 +45,8 @@ Both the [`MDLPhotometricLight`](mdlphotometriclight.md) and [`MDLAreaLight`](md
   Data containing spherical harmonics coefficients that describe the light’s intensity in all directions.
 - [var sphericalHarmonicsLevel: Int](mdlphotometriclight/sphericalharmonicslevel.md)
   The number of levels of generated spherical harmonics information.
+### Initializers
+- [init?(IESProfile: URL)](mdlphotometriclight/init(iesprofile:)-64z2m.md)
 ### Instance Methods
 - [func generateTexture(Int) -> MDLTexture](mdlphotometriclight/generatetexture(_:).md)
 

@@ -65,6 +65,8 @@ class SupportedCapabilities
   A value that indicates the volume’s support for case sensitivity.
 - [FSVolume.CaseFormat](fsvolume/caseformat.md)
   An enumeration of case-sensitivity support types.
+### Initializers
+- [init?(coder: NSCoder)](fsvolume/supportedcapabilities/init(coder:).md)
 
 ## Relationships
 

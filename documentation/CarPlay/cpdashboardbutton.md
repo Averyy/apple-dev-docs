@@ -28,6 +28,8 @@ class CPDashboardButton
   The array of subtitle variants for the button.
 - [var image: UIImage](cpdashboardbutton/image.md)
   The image the button displays.
+### Initializers
+- [init?(coder: NSCoder)](cpdashboardbutton/init(coder:).md)
 
 ## Relationships
 

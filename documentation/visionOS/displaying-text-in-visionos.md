@@ -19,7 +19,7 @@ This sample app uses SwiftUI views to display text in four distinct styles:
 
 The following image shows how the scene renders in visionOS:
 
-![A screenshot of a visionOS app in Simulator, displaying a translucent window with four lines of center-aligned text in a vertical arrangement. From top to bottom, the lines exhibit the following styles: large title, subheadline, bold, and regular with a green color.](https://docs-assets.developer.apple.com/published/b0b559a94b06c521fe5a19afaae2670e/sample-text-1-main-view.png)
+![](https://docs-assets.developer.apple.com/published/b0b559a94b06c521fe5a19afaae2670e/sample-text-1-main-view.png)
 
 The app’s main view displays four lines of text by creating a [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) instance for each line:
 

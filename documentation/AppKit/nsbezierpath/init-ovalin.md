@@ -34,7 +34,7 @@ If the `aRect` parameter specifies a square, the inscribed path is a circle. The
   Creates and returns a new Bézier path object initialized with a rectangular path.
 - [init(roundedRect: NSRect, xRadius: CGFloat, yRadius: CGFloat)](nsbezierpath/init(roundedrect:xradius:yradius:).md)
   Creates and returns a new Bézier path object initialized with a rounded rectangular path.
-- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:).md)
+- [init(cgPath: CGPath)](nsbezierpath/init(cgpath:)-96cxk.md)
 - [var flattened: NSBezierPath](nsbezierpath/flattened.md)
   A flattened version of the path object.
 - [var reversed: NSBezierPath](nsbezierpath/reversed.md)

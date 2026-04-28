@@ -33,6 +33,8 @@ class PDFActionRemoteGoTo
 ### Accessing the URL of the Referenced Document
 - [var url: URL](pdfactionremotegoto/url.md)
   Returns the URL of the document referenced by the remote go-to action.
+### Initializers
+- [init(pageIndex: Int, atPoint: CGPoint, fileURL: URL)](pdfactionremotegoto/init(pageindex:atpoint:fileurl:).md)
 
 ## Relationships
 

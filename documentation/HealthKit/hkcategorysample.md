@@ -88,6 +88,10 @@ For more information, see [`init(type:value:start:end:metadata:)`](hkcategorysam
 ### Specifying Predicate Key Paths
 - [let HKPredicateKeyPathCategoryValue: String](hkpredicatekeypathcategoryvalue.md)
   The key path for accessing the category sample’s value.
+### Initializers
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date)](hkcategorysample/init(type:value:startdate:enddate:).md)
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](hkcategorysample/init(type:value:startdate:enddate:device:metadata:).md)
+- [convenience init(type: HKCategoryType, value: Int, startDate: Date, endDate: Date, metadata: [String : Any]?)](hkcategorysample/init(type:value:startdate:enddate:metadata:).md)
 
 ## Relationships
 

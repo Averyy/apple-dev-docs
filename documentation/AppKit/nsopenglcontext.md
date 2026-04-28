@@ -25,7 +25,7 @@ Every [`NSOpenGLContext`](nsopenglcontext.md) object wraps a low-level, platform
 ### Creating Contexts
 - [init?(format: NSOpenGLPixelFormat, share: NSOpenGLContext?)](nsopenglcontext/init(format:share:).md)
   Returns an OpenGL context object initialized with the specified pixel format information.
-- [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:).md)
+- [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:)-30lqr.md)
   Initializes and returns an OpenGL context object using an existing CGL context.
 ### Managing the Current Context
 - [class func clearCurrentContext()](nsopenglcontext/clearcurrentcontext.md)
@@ -64,6 +64,9 @@ Every [`NSOpenGLContext`](nsopenglcontext.md) object wraps a low-level, platform
 ### Constants
 - [NSOpenGLContext.Parameter](nsopenglcontext/parameter.md)
   Constants that specify context parameters.
+### Initializers
+- [init?(CGLContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:)-4jlgm.md)
+- [init?(format: NSOpenGLPixelFormat, shareContext: NSOpenGLContext?)](nsopenglcontext/init(format:sharecontext:).md)
 
 ## Relationships
 

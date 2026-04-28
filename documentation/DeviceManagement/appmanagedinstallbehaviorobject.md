@@ -8,8 +8,11 @@ A dictionary that describes how and when to install an app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -29,11 +29,11 @@ init?(portaitEffectsMatte matte: AVPortraitEffectsMatte, options: [CIImageOption
   Initializes an image object by reading an image from a URL.
 - [init?(contentsOf: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsof:options:).md)
   Initializes an image object by reading an image from a URL, using the specified options.
-- [init(cgImage: CGImage)](ciimage/init(cgimage:).md)
+- [init(cgImage: CGImage)](ciimage/init(cgimage:)-2kvvb.md)
   Initializes an image object with a Quartz 2D image.
-- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:).md)
+- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-8663h.md)
   Initializes an image object with a Quartz 2D image, using the specified options.
-- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:).md)
+- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-e2bz.md)
 - [init?(data: Data)](ciimage/init(data:).md)
   Initializes an image object with the supplied image data.
 - [init?(data: Data, options: [CIImageOption : Any]?)](ciimage/init(data:options:).md)

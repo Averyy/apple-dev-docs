@@ -39,13 +39,13 @@ The destination’s [`colorSpace`](ciimage/colorspace.md) property will default 
 
 - [init(pixelBuffer: CVPixelBuffer)](cirenderdestination/init(pixelbuffer:).md)
   Creates a render destination based on a Core Video pixel buffer.
-- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:).md)
+- [init(ioSurface: IOSurface)](cirenderdestination/init(iosurface:)-1hfcq.md)
   Creates a render destination based on an `IOSurface` object.
-- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:).md)
+- [init(mtlTexture: any MTLTexture, commandBuffer: (any MTLCommandBuffer)?)](cirenderdestination/init(mtltexture:commandbuffer:)-2iu5i.md)
   Creates a render destination based on a Metal texture.
 - [init(width: Int, height: Int, pixelFormat: MTLPixelFormat, commandBuffer: (any MTLCommandBuffer)?, mtlTextureProvider: (() -> any MTLTexture)?)](cirenderdestination/init(width:height:pixelformat:commandbuffer:mtltextureprovider:).md)
   Creates a render destination based on a Metal texture with specified pixel format.
-- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:).md)
+- [init(glTexture: UInt32, target: UInt32, width: Int, height: Int)](cirenderdestination/init(gltexture:target:width:height:)-9ci8e.md)
   Creates a render destination based on an OpenGL texture.
 
 

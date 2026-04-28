@@ -21,7 +21,7 @@ init(metadata: LPLinkMetadata)
 
 ## See Also
 
-- [init(url: URL)](lplinkview/init(url:).md)
+- [init(url: URL)](lplinkview/init(url:)-6f6kt.md)
   Initializes a placeholder link view without metadata for a given URL.
 
 

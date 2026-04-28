@@ -7,6 +7,8 @@ A dictionary that contains further details about this error.
 
 **Availability**:
 - macOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

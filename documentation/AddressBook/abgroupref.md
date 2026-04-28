@@ -24,9 +24,9 @@ class ABGroupRef
 
 - [class ABPersonRef](abpersonref.md)
   A reference to an ABPerson object.
-- [typealias ABMultiValue](abmultivalue-swift.typealias.md)
+- [typealias ABMultiValue](abmultivalueref.md)
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
-- [typealias ABMutableMultiValue](abmutablemultivalue-swift.typealias.md)
+- [typealias ABMutableMultiValue](abmutablemultivalueref.md)
   A reference to an ABMutableMultiValue object.
 
 

@@ -48,6 +48,8 @@ class AVSpeechSynthesisMarker
   The byte offset into the audio buffer.
 - [AVSpeechSynthesisMarker.Mark](avspeechsynthesismarker/mark-swift.enum.md)
   Constants that describe the type of text.
+### Initializers
+- [init?(coder: NSCoder)](avspeechsynthesismarker/init(coder:).md)
 
 ## Relationships
 

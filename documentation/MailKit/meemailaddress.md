@@ -16,6 +16,7 @@ class MEEmailAddress
 
 ### Initializers
 - [init(rawString: String)](meemailaddress/init(rawstring:).md)
+- [init?(coder: NSCoder)](meemailaddress/init(coder:).md)
 ### Instance Properties
 - [var addressString: String?](meemailaddress/addressstring.md)
 - [var rawString: String](meemailaddress/rawstring.md)

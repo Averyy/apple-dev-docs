@@ -8,6 +8,7 @@ An opaque object that identifies a specific version of a domain.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 11.3+
 - visionOS 1.0+
 
@@ -42,6 +43,8 @@ Only file provider extensions based on the [`NSFileProviderReplicatedExtension`]
 ### Creating Versions
 - [func next() -> NSFileProviderDomainVersion](nsfileproviderdomainversion/next.md)
   Creates a new version that supersedes the current version.
+### Initializers
+- [init?(coder: NSCoder)](nsfileproviderdomainversion/init(coder:).md)
 
 ## Relationships
 

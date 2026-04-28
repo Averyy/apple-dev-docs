@@ -33,6 +33,8 @@ class NSGridRow
 - [func cell(at: Int) -> NSGridCell](nsgridrow/cell(at:).md)
 ### Merging Cells in the Row
 - [func mergeCells(in: NSRange)](nsgridrow/mergecells(in:).md)
+### Initializers
+- [init?(coder: NSCoder)](nsgridrow/init(coder:).md)
 
 ## Relationships
 

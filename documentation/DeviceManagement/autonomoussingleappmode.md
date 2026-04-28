@@ -7,6 +7,8 @@ The payload that configures Autonomous Single App mode.
 
 **Availability**:
 - macOS 10.13.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

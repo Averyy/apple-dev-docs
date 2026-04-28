@@ -40,6 +40,9 @@ The system provides this information to help you understand the reliability and 
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a government ID.
 - [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using an unspecified method.
+### Enumeration Cases
+- [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
+  Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
 
 ## Relationships
 

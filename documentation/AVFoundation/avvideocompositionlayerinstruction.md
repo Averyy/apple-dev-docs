@@ -45,6 +45,8 @@ class AVVideoCompositionLayerInstruction
 - [AVVideoCompositionLayerInstruction.TransformRamp](avvideocompositionlayerinstruction/transformramp.md)
 - [func getTransformRamp(for: CMTime, start: UnsafeMutablePointer<CGAffineTransform>?, end: UnsafeMutablePointer<CGAffineTransform>?, timeRange: UnsafeMutablePointer<CMTimeRange>?) -> Bool](avvideocompositionlayerinstruction/gettransformramp(for:start:end:timerange:).md)
   Obtains the transform ramp that includes a specified time.
+### Initializers
+- [init?(coder: NSCoder)](avvideocompositionlayerinstruction/init(coder:).md)
 
 ## Relationships
 

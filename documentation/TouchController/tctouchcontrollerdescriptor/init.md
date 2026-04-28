@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -15,7 +16,7 @@ init()
 
 ## See Also
 
-- [convenience init(mtkView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:).md)
+- [convenience init(mtkView: MTKView)](tctouchcontrollerdescriptor/init(mtkview:)-7cs6u.md)
 
 
 ---

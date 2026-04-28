@@ -25,7 +25,7 @@ You specify this string at initialization time.
 
 ## See Also
 
-- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:).md)
+- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:)-9s8h7.md)
   Creates and returns a tile overlay object using the specified tile-access template.
 - [func url(forTilePath: MKTileOverlayPath) -> URL](mktileoverlay/url(fortilepath:).md)
   Returns the URL to use to access the specified tile.

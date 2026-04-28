@@ -8,6 +8,7 @@ Information about an auto-renewable subscription, such as its status, period, su
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -88,6 +89,10 @@ struct SubscriptionInfo
 
 - [Implementing a store in your app using the StoreKit API](implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
+  Configure, merchandise, and grant access to a monthly subscription with a 12-month commitment.
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
+  Handle renewals, cancellations, billing issues, refund requests, and price changes, and test subscriptions with a commitment plan.
 - [struct Product](product.md)
   Information about a product that you configure in App Store Connect.
 - [typealias SubscriptionInfo](subscriptioninfo.md)

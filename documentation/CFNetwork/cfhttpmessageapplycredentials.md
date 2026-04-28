@@ -39,7 +39,7 @@ This function is thread safe as long as another thread does not alter the same `
 - `auth`: A `CFHTTPAuthentication` object specifying the authentication method to perform.
 - `username`: Username for performing the authentication.
 - `password`: Password for performing the authentication.
-- `error`: If an error occurs, upon return contains a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) object that describes the error and the error’s domain. Pass `NULL` if you don’t want to receive error information.
+- `error`: If an error occurs, upon return contains a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror object that describes the error and the error’s domain. Pass `NULL` if you don’t want to receive error information.
 
 ## See Also
 

@@ -7,7 +7,7 @@ Render advanced 3D graphics and compute data in parallel with graphics processor
 
 **Availability**:
 - iOS 8.0+
-- iPadOS 8.0+
+- iPadOS ?+
 - Mac Catalyst 13.0+
 - macOS 10.11+
 - tvOS 9.0+

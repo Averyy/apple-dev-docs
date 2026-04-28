@@ -42,15 +42,15 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [init()](cicontext/init.md)
   Initializes a context without a specific rendering destination, using default options.
 ### Creating a Context for CPU-Based Rendering
-- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](cicontext/init(cgcontext:options:).md)
+- [init(cgContext: CGContext, options: [CIContextOption : Any]?)](cicontext/init(cgcontext:options:)-6p78w.md)
   Creates a Core Image context from a Quartz context, using the specified options.
 ### Creating a Context for GPU-Based Rendering
-- [init(mtlDevice: any MTLDevice)](cicontext/init(mtldevice:).md)
+- [init(mtlDevice: any MTLDevice)](cicontext/init(mtldevice:)-swey.md)
   Creates a Core Image context using the specified Metal device.
-- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:).md)
+- [init(mtlDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:)-26usb.md)
   Creates a Core Image context using the specified Metal device and options.
-- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:).md)
-- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:).md)
+- [init(mtlCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:)-7dtqk.md)
+- [init(mtlCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:)-6i3me.md)
 ### Rendering Images
 - [func createCGImage(CIImage, from: CGRect) -> CGImage?](cicontext/createcgimage(_:from:).md)
   Creates a Core Graphics image from a region of a Core Image image instance.
@@ -137,11 +137,11 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [func startTask(toRender: CIImage, to: CIRenderDestination) throws -> CIRenderTask](cicontext/starttask(torender:to:).md)
   Renders an image to a destination so that point (0, 0) of the image maps to point (0, 0) of the destination.
 ### Deprecated
-- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:).md)
+- [init(cglContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:)-6rp6d.md)
   Creates a Core Image context from a CGL context, using the specified options, color space, and pixel format object.
-- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:).md)
+- [init(eaglContext: EAGLContext)](cicontext/init(eaglcontext:)-8ajef.md)
   Creates a Core Image context from an EAGL context.
-- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:).md)
+- [init(eaglContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:)-6uyqj.md)
   Creates a Core Image context from an EAGL context using the specified options.
 - [init?(forOfflineGPUAtIndex: UInt32)](cicontext/init(forofflinegpuatindex:).md)
   Creates an OpenGL-based Core Image context using a GPU that is not currently driving a display.
@@ -152,6 +152,14 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [func draw(CIImage, at: CGPoint, from: CGRect)](cicontext/draw(_:at:from:).md)
   Renders a region of an image to a point in the context destination.
 ### Initializers
+- [init(CGContext: CGContext, options: [CIContextOption : Any]?)](cicontext/init(cgcontext:options:)-1yzwi.md)
+- [init(CGLContext: CGLContextObj, pixelFormat: CGLPixelFormatObj?, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?)](cicontext/init(cglcontext:pixelformat:colorspace:options:)-3t25h.md)
+- [init(EAGLContext: EAGLContext)](cicontext/init(eaglcontext:)-293h1.md)
+- [init(EAGLContext: EAGLContext, options: [CIContextOption : Any]?)](cicontext/init(eaglcontext:options:)-2853a.md)
+- [init(MTLCommandQueue: any MTLCommandQueue)](cicontext/init(mtlcommandqueue:)-2pgxu.md)
+- [init(MTLCommandQueue: any MTLCommandQueue, options: [CIContextOption : Any]?)](cicontext/init(mtlcommandqueue:options:)-q929.md)
+- [init(MTLDevice: any MTLDevice)](cicontext/init(mtldevice:)-8ksdj.md)
+- [init(MTLDevice: any MTLDevice, options: [CIContextOption : Any]?)](cicontext/init(mtldevice:options:)-15xqo.md)
 - [init?(forOfflineGPUAt: UInt32)](cicontext/init(forofflinegpuat:).md)
 - [init?(forOfflineGPUAt: UInt32, colorSpace: CGColorSpace?, options: [CIContextOption : Any]?, sharedContext: CGLContextObj?)](cicontext/init(forofflinegpuat:colorspace:options:sharedcontext:).md)
 - [init(options: [CIContextOption : Any]?)](cicontext/init(options:).md)

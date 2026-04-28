@@ -28,7 +28,7 @@ If the receiver *does not* have an authority component (user, password, host, or
 
 If the receiver has `nil` values for all component properties, such as when initializing with [`init()`](nsurlcomponents/init().md), this property returns an `NSURL` object with an empty string, because a URL always has a path—even if it’s an empty string.
 
-This property can be used only to obtain a URL based on the values of the other properties. To configure a components object based on an existing URL, call either the [`componentsWithURL:resolvingAgainstBaseURL:`](nsurlcomponents/componentswithurl:resolvingagainstbaseurl:.md) or [`init(url:resolvingAgainstBaseURL:)`](nsurlcomponents/init(url:resolvingagainstbaseurl:).md) method.
+This property can be used only to obtain a URL based on the values of the other properties. To configure a components object based on an existing URL, call either the [`componentsWithURL:resolvingAgainstBaseURL:`](nsurlcomponents/componentswithurl:resolvingagainstbaseurl:.md) or [`init(url:resolvingAgainstBaseURL:)`](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md) method.
 
 ## See Also
 

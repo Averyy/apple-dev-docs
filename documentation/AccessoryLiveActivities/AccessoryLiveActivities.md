@@ -8,6 +8,7 @@ Forward Live Activity alerts from iPhone to an accessory you develop.
 **Availability**:
 - iOS 26.5+ (Beta)
 - iPadOS 26.5+ (Beta)
+- Mac Catalyst 26.5+ (Beta)
 
 #### Overview
 

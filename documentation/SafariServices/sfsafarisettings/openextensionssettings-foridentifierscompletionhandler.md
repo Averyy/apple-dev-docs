@@ -8,6 +8,7 @@ Presents the extensions pane from Safari Settings.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 - visionOS 26.2+
 
 ## Declaration

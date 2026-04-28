@@ -47,6 +47,8 @@ The system delivers a diagnostic report as soon as it’s available.
   The starting time of the reporting period.
 - [var timeStampEnd: Date](mxdiagnosticpayload/timestampend.md)
   The ending time of the reporting period.
+### Initializers
+- [init?(coder: NSCoder)](mxdiagnosticpayload/init(coder:).md)
 
 ## Relationships
 

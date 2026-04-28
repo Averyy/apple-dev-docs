@@ -8,6 +8,7 @@ A type of button that people use to redeem an offer code.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 15.0+
 - visionOS 1.0+
 

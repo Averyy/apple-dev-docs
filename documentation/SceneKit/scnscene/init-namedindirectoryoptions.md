@@ -26,7 +26,7 @@ A new scene object, or `nil` if no scene could be loaded.
 
 #### Discussion
 
-This method provides a convenient way to load a complete scene from a file in the app’s main bundle. Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to locate the scene file and passing the resulting URL to the [`init(url:options:)`](scnscene/init(url:options:).md) method.
+This method provides a convenient way to load a complete scene from a file in the app’s main bundle. Calling this method is equivalent to using the [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) class to locate the scene file and passing the resulting URL to the [`init(url:options:)`](scnscene/init(url:options:)-7ugvv.md) method.
 
 For more detailed options or to load only part of a file’s scene graph, use the [`SCNSceneSource`](scnscenesource.md) class.
 
@@ -42,7 +42,7 @@ When creating a scene using Xcode’s Scene Editor or an external tool, you shou
 
 - [convenience init?(named: String)](scnscene/init(named:).md)
   Loads a scene from a file with the specified name in the app’s main bundle.
-- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:).md)
+- [convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]?) throws](scnscene/init(url:options:)-7ugvv.md)
   Loads a scene from the specified URL.
 
 

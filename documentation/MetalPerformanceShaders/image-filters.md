@@ -261,9 +261,6 @@ void  MyBlurTextureInPlace(id <MTLTexture> __strong *inTexture, float blurRadius
   A kernel that consumes one texture and produces one texture.
 - [class MPSBinaryImageKernel](mpsbinaryimagekernel.md)
   A kernel that consumes two textures and produces one texture.
-### Constants
-- [MPSRectNoClip](mpsrectnoclip.md)
-  The default clipping rectangle for a kernel object.
 
 
 ---

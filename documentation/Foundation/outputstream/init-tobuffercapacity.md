@@ -43,7 +43,7 @@ When the number of bytes written to `buffer` has reached `capacity`, the streamâ
   Returns an initialized output stream that will write to memory.
 - [convenience init?(toFileAtPath: String, append: Bool)](outputstream/init(tofileatpath:append:).md)
   Returns an initialized output stream for writing to a specified file.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:).md)
+- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
 
 

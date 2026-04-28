@@ -55,6 +55,8 @@ let request = UNNotificationRequest(identifier: "com.example.mynotification", co
   The content associated with the notification.
 - [var trigger: UNNotificationTrigger?](unnotificationrequest/trigger.md)
   The conditions that trigger the delivery of the notification.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationrequest/init(coder:).md)
 
 ## Relationships
 

@@ -39,6 +39,8 @@ You can use an [`NSShadow`](nsshadow.md) object in one of two ways. First, you c
 ### Setting a shadow
 - [func set()](nsshadow/set.md)
   Sets the shadow of subsequent drawing operations to the current shadow.
+### Initializers
+- [init?(coder: NSCoder)](nsshadow/init(coder:).md)
 
 ## Relationships
 

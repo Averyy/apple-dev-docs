@@ -8,10 +8,13 @@ The payload that configures a PKCS #1-formatted certificate.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

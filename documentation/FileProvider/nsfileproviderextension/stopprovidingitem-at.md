@@ -8,6 +8,7 @@ Tells the File Provider extension that a given document is no longer being acces
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

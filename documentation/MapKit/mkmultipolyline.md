@@ -32,6 +32,8 @@ Use a [`MKMultiPolyline`](mkmultipolyline.md) object when you have multiple dist
 ### Accessing polyline objects
 - [var polylines: [MKPolyline]](mkmultipolyline/polylines.md)
   An array containing the polyline objects that make up the multipolyline object.
+### Initializers
+- [init(polylines: [MKPolyline])](mkmultipolyline/init(polylines:).md)
 
 ## Relationships
 

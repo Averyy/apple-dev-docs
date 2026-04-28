@@ -36,6 +36,8 @@ class CSSearchQueryContext
 ### Filtering the results
 - [var filterQueries: [String]](cssearchquerycontext/filterqueries.md)
   The query string used to filter the results.
+### Initializers
+- [init?(coder: NSCoder)](cssearchquerycontext/init(coder:).md)
 
 ## Relationships
 

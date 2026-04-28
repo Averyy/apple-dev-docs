@@ -8,6 +8,7 @@ Provides a task to perform before this view appears
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

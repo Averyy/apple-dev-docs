@@ -51,6 +51,7 @@ For more information on Entity-Component architecture and pathfinding graphs, se
   Removes a pathfinding graph from the list of graphs managed by the scene.
 ### Initializers
 - [convenience init?(fileNamed: String, rootNode: any GKSceneRootNodeType)](gkscene/init(filenamed:rootnode:).md)
+- [init?(coder: NSCoder)](gkscene/init(coder:).md)
 ### Instance Methods
 - [func addGraph(GKGraph, name: String)](gkscene/addgraph(_:name:).md)
 

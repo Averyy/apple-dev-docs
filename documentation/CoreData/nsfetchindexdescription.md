@@ -34,6 +34,8 @@ class NSFetchIndexDescription
   The name of the fetch index description.
 - [var partialIndexPredicate: NSPredicate?](nsfetchindexdescription/partialindexpredicate.md)
   A predicate that selects rows for indexing, if the index is a partial index.
+### Initializers
+- [init?(coder: NSCoder)](nsfetchindexdescription/init(coder:).md)
 
 ## Relationships
 

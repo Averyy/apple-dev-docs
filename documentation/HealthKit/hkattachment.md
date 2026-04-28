@@ -93,6 +93,8 @@ do {
   Additional data associated with the attachment in the HealthKit store.
 - [HKAttachment.AsyncBytes](hkattachment/asyncbytes.md)
   An asynchronous sequence that returns the attached file as a series of bytes.
+### Initializers
+- [init?(coder: NSCoder)](hkattachment/init(coder:).md)
 
 ## Relationships
 

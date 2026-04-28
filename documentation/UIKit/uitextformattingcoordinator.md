@@ -39,6 +39,8 @@ class UITextFormattingCoordinator
   The delegate of the text-formatting coordinator.
 - [protocol UITextFormattingCoordinatorDelegate](uitextformattingcoordinatordelegate.md)
   The methods that delegates of text-formatting coordinators implement to apply font panel settings to the currently selected text.
+### Initializers
+- [convenience init(forWindowScene: UIWindowScene)](uitextformattingcoordinator/init(forwindowscene:).md)
 
 ## Relationships
 

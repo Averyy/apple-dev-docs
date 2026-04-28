@@ -7,6 +7,8 @@ The payload that configures macOS App Store restrictions.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

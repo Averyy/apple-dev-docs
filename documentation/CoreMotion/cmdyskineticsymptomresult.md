@@ -41,6 +41,8 @@ The following equation is always true: [`percentUnlikely`](cmdyskineticsymptomre
   The percentage of time when dyskinetic symptoms were unlikely.
 - [var percentLikely: Float](cmdyskineticsymptomresult/percentlikely.md)
   The percentage of time when dyskinetic symptoms were likely.
+### Initializers
+- [init?(coder: NSCoder)](cmdyskineticsymptomresult/init(coder:).md)
 
 ## Relationships
 

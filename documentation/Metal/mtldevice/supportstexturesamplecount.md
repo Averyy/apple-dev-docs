@@ -41,7 +41,7 @@ Consider a GPU device’s limitations for sample count by checking [`MTLTexture`
 - [`MTLRenderPipelineDescriptor`](mtlrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlrenderpipelinedescriptor/rastersamplecount.md)
 - [`MTLTileRenderPipelineDescriptor`](mtltilerenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtltilerenderpipelinedescriptor/rastersamplecount.md)
 - [`MTLMeshRenderPipelineDescriptor`](mtlmeshrenderpipelinedescriptor.md)`.`[`rasterSampleCount`](mtlmeshrenderpipelinedescriptor/rastersamplecount.md)
-- [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView)`.`[`sampleCount`](https://developer.apple.com/documentation/MetalKit/MTKView/sampleCount)
+- [`MTKView`](https://developer.apple.com/documentation/MetalKit/MTKView)`.`doc://com.apple.documentation/documentation/metalkit/mtkview/samplecount
 
 ## Parameters
 

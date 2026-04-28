@@ -23,7 +23,7 @@ The SLRequest object encapsulates the properties of an HTTP request, providing a
 
 HTTP requests have these common components: an HTTP request method (GET, POST, PUT, or DELETE), a URL identifying the operation to perform, a set of query parameters, and an optional multipart POST body that contains additional data. The values for these properties depend on the request you are sending and the target service provider. Refer to each supported social networking site’s documentation for possible values. Links to documentation are provided in Table 1.
 
-Use the [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:).md) method to initialize a newly created `SLRequest` object passing the required property values. Use the [`addMultipartData(_:withName:type:)`](slrequest/addmultipartdata(_:withname:type:).md) to optionally specify a multipart POST body. After you create your request, use the [`perform(handler:)`](slrequest/perform(handler:).md) method to send the request, specifying the handler to call when the request is done.
+Use the [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md) method to initialize a newly created `SLRequest` object passing the required property values. Use the [`addMultipartData(_:withName:type:)`](slrequest/addmultipartdata(_:withname:type:).md) to optionally specify a multipart POST body. After you create your request, use the [`perform(handler:)`](slrequest/perform(handler:).md) method to send the request, specifying the handler to call when the request is done.
 
 If you already have a sending mechanism, you can use the [`preparedURLRequest()`](slrequest/preparedurlrequest().md) method to create the request that you send using an [`NSURLConnection`](https://developer.apple.com/documentation/Foundation/NSURLConnection) object. If the request requires user authorization, set the [`account`](slrequest/account.md) property to an [`ACAccount`](https://developer.apple.com/documentation/Accounts/ACAccount) object.
 
@@ -40,7 +40,7 @@ Table 1  Social Services Individual Documentation Sites
 ## Topics
 
 ### Initializing Requests
-- [init!(forServiceType: String!, requestMethod: SLRequestMethod, url: URL!, parameters: [AnyHashable : Any]!)](slrequest/init(forservicetype:requestmethod:url:parameters:).md)
+- [init!(forServiceType: String!, requestMethod: SLRequestMethod, url: URL!, parameters: [AnyHashable : Any]!)](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md)
   Initializes a newly created request object with the specified properties.
 - [let SLServiceTypeFacebook: String](slservicetypefacebook.md)
 - [let SLServiceTypeTwitter: String](slservicetypetwitter.md)
@@ -71,6 +71,8 @@ Table 1  Social Services Individual Documentation Sites
   Specifies a named multipart POST body for this request.
 - [func addMultipartData(Data!, withName: String!, type: String!)](slrequest/addmultipartdata(_:withname:type:).md)
   Specifies a named multipart POST body for this request.
+### Initializers
+- [init!(forServiceType: String!, requestMethod: SLRequestMethod, URL: URL!, parameters: [AnyHashable : Any]!)](slrequest/init(forservicetype:requestmethod:url:parameters:)-92b1d.md)
 
 ## Relationships
 

@@ -35,6 +35,8 @@ The `NCWidgetController` class should not be subclassed.
   Sets whether the specified widget has content to display.
 ### Type Methods
 - [class func `default`() -> NCWidgetController](ncwidgetcontroller/default.md)
+### Initializers
+- [convenience init()](ncwidgetcontroller/init.md)
 
 ## Relationships
 

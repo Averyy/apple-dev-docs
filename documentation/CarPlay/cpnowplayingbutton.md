@@ -33,6 +33,8 @@ You don’t use this class directly, or create your own subclasses. Instead, you
   A Boolean value that indicates whether the button is in an enabled state.
 - [var isSelected: Bool](cpnowplayingbutton/isselected.md)
   A Boolean value that indicates whether the button is in a selected state.
+### Initializers
+- [init?(coder: NSCoder)](cpnowplayingbutton/init(coder:).md)
 
 ## Relationships
 

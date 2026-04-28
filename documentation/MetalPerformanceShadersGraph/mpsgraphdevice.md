@@ -22,7 +22,8 @@ class MPSGraphDevice
 ## Topics
 
 ### Initializers
-- [convenience init(mtlDevice: any MTLDevice)](mpsgraphdevice/init(mtldevice:).md)
+- [convenience init(MTLDevice: any MTLDevice)](mpsgraphdevice/init(mtldevice:)-7ex12.md)
+- [convenience init(mtlDevice: any MTLDevice)](mpsgraphdevice/init(mtldevice:)-4ettd.md)
   Creates a device from a given Metal device.
 ### Instance Properties
 - [var metalDevice: (any MTLDevice)?](mpsgraphdevice/metaldevice.md)

@@ -8,7 +8,10 @@ A dictionary of values associated with an app.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 17.2+
 - visionOS 2.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

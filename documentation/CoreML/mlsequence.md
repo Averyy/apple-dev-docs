@@ -41,6 +41,10 @@ A sequence stores a series of integers or strings of any length as the underlyin
   An array of strings in the sequence.
 - [var int64Values: [NSNumber]](mlsequence/int64values.md)
   An array of 64-bit integers in the sequence.
+### Initializers
+- [init?(coder: NSCoder)](mlsequence/init(coder:).md)
+- [convenience init(int64Array: [NSNumber])](mlsequence/init(int64array:).md)
+- [convenience init(stringArray: [String])](mlsequence/init(stringarray:).md)
 
 ## Relationships
 

@@ -30,6 +30,8 @@ A MDLColorSwatchTexture object procedurally generates texel data by creating a g
   Initializes a texture that creates a vertical gradient between two colors.
 - [init(colorTemperatureGradientFrom: Float, toColorTemperature: Float, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colortemperaturegradientfrom:tocolortemperature:name:texturedimensions:).md)
   Initializes a texture that creates a vertical gradient between two color temperatures.
+### Initializers
+- [init(colorGradientFrom: CGColor, toColor: CGColor, name: String?, textureDimensions: vector_int2)](mdlcolorswatchtexture/init(colorgradientfrom:tocolor:name:texturedimensions:).md)
 
 ## Relationships
 

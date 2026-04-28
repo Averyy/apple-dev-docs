@@ -25,6 +25,9 @@ typealias TXTRecordRef = _TXTRecordRef_t
 ### Miscellaneous
 - [Force Natural Alignment](force-natural-alignment.md)
 - [Private Data](private-data.md)
+### Instance Properties
+- [var ForceNaturalAlignment: UnsafeMutablePointer<CChar>!](txtrecordref/forcenaturalalignment.md)
+- [var PrivateData: (CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar, CChar)](txtrecordref/privatedata.md)
 
 ## Relationships
 

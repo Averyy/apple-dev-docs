@@ -27,6 +27,8 @@ class MLImageSize
   The height of an image feature in pixels.
 - [var pixelsWide: Int](mlimagesize/pixelswide.md)
   The width of an image feature in pixels.
+### Initializers
+- [init?(coder: NSCoder)](mlimagesize/init(coder:).md)
 
 ## Relationships
 

@@ -80,6 +80,8 @@ Physics fields can affect both [`SCNPhysicsBody`](scnphysicsbody.md) objects and
   The signature for a block that SceneKit calls to determine the effect of a custom field on an object.
 - [enum SCNPhysicsFieldScope](scnphysicsfieldscope.md)
   Options for defining the region of space affected by a physics field, used by the [`scope`](scnphysicsfield/scope.md) property.
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsfield/init(coder:).md)
 
 ## Relationships
 

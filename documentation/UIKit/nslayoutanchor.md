@@ -120,6 +120,8 @@ For more information on the anchor properties, see [`bottomAnchor`](https://deve
   The name assigned to the anchor for debugging purposes.
 - [var item: AnyObject?](../AppKit/NSLayoutAnchor/item.md)
   The layout item used to calculate the anchor’s position.
+### Initializers
+- [init?(coder: NSCoder)](nslayoutanchor/init(coder:).md)
 
 ## Relationships
 

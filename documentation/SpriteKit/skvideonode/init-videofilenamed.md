@@ -30,11 +30,11 @@ An initialized video node.
 
 ## See Also
 
-- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:).md)
+- [init(avPlayer: AVPlayer)](skvideonode/init(avplayer:)-9ydbu.md)
   Initializes a video node using an existing [`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer) object.
 - [init(fileNamed: String)](skvideonode/init(filenamed:).md)
   Initializes a video node using a video file stored in the app bundle.
-- [init(url: URL)](skvideonode/init(url:).md)
+- [init(url: URL)](skvideonode/init(url:)-2im38.md)
   Initializes a video node using a URL.
 - [init?(coder: NSCoder)](skvideonode/init(coder:).md)
   Tells you when to initialize a video node that was created from an archive.

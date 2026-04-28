@@ -24,9 +24,9 @@ Use the [`ITLibrary`](itlibrary.md) properties and methods to retrieve media ite
 ## Topics
 
 ### Essentials
-- [convenience init(apiVersion: String) throws](itlibrary/init(apiversion:).md)
+- [convenience init(apiVersion: String) throws](itlibrary/init(apiversion:)-71e74.md)
   Initializes an instance of [`ITLibrary`](itlibrary.md) that can retrieve media entities.
-- [init(apiVersion: String, options: ITLibInitOptions) throws](itlibrary/init(apiversion:options:).md)
+- [init(apiVersion: String, options: ITLibInitOptions) throws](itlibrary/init(apiversion:options:)-9eorg.md)
   Initializes an instance of `ITLibrary` that can retrieve media entities.
 - [enum ITLibInitOptions](itlibinitoptions.md)
   These constants describe initialization options for an iTunes library.
@@ -60,6 +60,11 @@ Use the [`ITLibrary`](itlibrary.md) properties and methods to retrieve media ite
   These constants describe the features that an iTunes library supports.
 - [var musicFolderLocation: URL?](itlibrary/musicfolderlocation.md)
   The location of the iTunes music folder.
+### Initializers
+- [convenience init(APIVersion: String) throws](itlibrary/init(apiversion:)-1ryrd.md)
+- [convenience init(APIVersion: String) throws](itlibrary/init(apiversion:)-2f5om.md)
+- [init(APIVersion: String, options: ITLibInitOptions) throws](itlibrary/init(apiversion:options:)-3a3ng.md)
+- [convenience init(APIVersion: String, options: ITLibInitOptions) throws](itlibrary/init(apiversion:options:)-d24u.md)
 
 ## Relationships
 

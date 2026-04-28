@@ -38,6 +38,8 @@ Like many HealthKit classes, the [`HKWorkoutConfiguration`](hkworkoutconfigurati
   The possible locations for swimming.
 - [var lapLength: HKQuantity?](hkworkoutconfiguration/laplength.md)
   The length of the lap for a workout session.
+### Initializers
+- [init?(coder: NSCoder)](hkworkoutconfiguration/init(coder:).md)
 
 ## Relationships
 

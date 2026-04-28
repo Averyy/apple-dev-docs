@@ -96,6 +96,8 @@ func fetchShareMetadata(for shareURLs: [URL],
   The closure to execute as the operation fetches individual shares.
 - [var fetchShareMetadataCompletionBlock: (((any Error)?) -> Void)?](ckfetchsharemetadataoperation/fetchsharemetadatacompletionblock.md)
   The closure to execute when the operation finishes.
+### Initializers
+- [convenience init(share: [URL])](ckfetchsharemetadataoperation/init(share:).md)
 ### Instance Properties
 - [var fetchShareMetadataResultBlock: ((Result<Void, any Error>) -> Void)?](ckfetchsharemetadataoperation/fetchsharemetadataresultblock.md)
   The closure to execute when the operation finishes.

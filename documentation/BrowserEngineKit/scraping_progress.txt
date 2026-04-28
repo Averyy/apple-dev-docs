@@ -1,4 +1,4 @@
 Completed scraping BrowserEngineKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 389
+Total pages scraped: 390
+Pages skipped (unchanged): 2
 Pages failed: 0

@@ -103,7 +103,9 @@ NSString *action = [myDecisionTree findActionForAnswers:answers];
 - [var randomSource: GKRandomSource](gkdecisiontree/randomsource.md)
   The randomizer to be used when evaluating parts of the tree that branch randomly.
 ### Initializers
-- [init(url: URL, error: (any Error)?)](gkdecisiontree/init(url:error:).md)
+- [init(url: URL, error: (any Error)?)](gkdecisiontree/init(url:error:)-2us7r.md)
+- [init(URL: URL, error: (any Error)?)](gkdecisiontree/init(url:error:)-4hgap.md)
+- [init?(coder: NSCoder)](gkdecisiontree/init(coder:).md)
 ### Instance Methods
 - [func export(to: URL, error: (any Error)?) -> Bool](gkdecisiontree/export(to:error:).md)
 

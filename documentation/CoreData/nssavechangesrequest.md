@@ -34,6 +34,8 @@ class NSSaveChangesRequest
   The objects that were deleted in the calling context.
 - [var lockedObjects: Set<NSManagedObject>?](nssavechangesrequest/lockedobjects.md)
   The objects that were flagged for optimistic locking on the calling context.
+### Initializers
+- [init(insertedObjects: Set<NSManagedObject>?, updatedObjects: Set<NSManagedObject>?, deletedObjects: Set<NSManagedObject>?, lockedObjects: Set<NSManagedObject>?)](nssavechangesrequest/init(insertedobjects:updatedobjects:deletedobjects:lockedobjects:).md)
 
 ## Relationships
 

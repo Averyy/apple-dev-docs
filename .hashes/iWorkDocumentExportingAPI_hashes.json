@@ -1,40 +1,40 @@
 {
   "metadata": {
-    "last_updated": "2026-04-24T07:41:49.816197",
+    "last_updated": "2026-04-28T07:31:08.609633",
     "total_pages": 4,
-    "session_id": "2026-04-24T07:41:49.218642"
+    "session_id": "2026-04-28T07:31:08.056610"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/iWorkDocumentExportingAPI.json": {
-      "hash": "f58fff9e82dd9f43ae1721171ef4fb5dcd38dcd91abe0fb8925464fe6ce8c36d",
-      "last_checked": "2026-04-24T07:41:49.556963",
+      "hash": "59efbfe8fa998d3fcdd3217fbf2b00229003a71b19a925f99e097f0c8457dbd3",
+      "last_checked": "2026-04-28T07:31:08.371066",
       "status": "unchanged",
-      "session_id": "2026-04-24T07:41:49.218642",
-      "etag": "W/\"c1e4af6c4587f05ea23418459c877b7d\"",
+      "session_id": "2026-04-28T07:31:08.056610",
+      "etag": "W/\"a49b704a846dc3b04f396e319e672324\"",
       "file_path": "documentation/iWorkDocumentExportingAPI/iWorkDocumentExportingAPI.md"
     },
     "https://developer.apple.com/documentation/iWorkDocumentExportingAPI": {
-      "hash": "f58fff9e82dd9f43ae1721171ef4fb5dcd38dcd91abe0fb8925464fe6ce8c36d",
-      "last_checked": "2026-04-24T07:41:49.458308",
+      "hash": "59efbfe8fa998d3fcdd3217fbf2b00229003a71b19a925f99e097f0c8457dbd3",
+      "last_checked": "2026-04-28T07:31:08.251939",
       "status": "unchanged",
-      "session_id": "2026-04-24T07:41:49.218642",
-      "etag": "W/\"c1e4af6c4587f05ea23418459c877b7d\"",
+      "session_id": "2026-04-28T07:31:08.056610",
+      "etag": "W/\"a49b704a846dc3b04f396e319e672324\"",
       "file_path": "documentation/iWorkDocumentExportingAPI/iWorkDocumentExportingAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/iworkdocumentexportingapi/create-an-export-job-(v2).json": {
-      "hash": "d0256f3d388619a3882b486f9de5530df78fcdd0289b0d236146341a55f03374",
-      "last_checked": "2026-04-24T07:41:49.794730",
+      "hash": "85b7b5a3b2c4ae9b347f4f835c0dc119dbedb699d434f8da988bbbe1cd56b0b2",
+      "last_checked": "2026-04-28T07:31:08.608049",
       "status": "unchanged",
-      "session_id": "2026-04-24T07:41:49.218642",
-      "etag": "W/\"791b4d50a91d7468a1136f224b45333b\"",
+      "session_id": "2026-04-28T07:31:08.056610",
+      "etag": "W/\"409e98544d4f917db82b1207005393e0\"",
       "file_path": "documentation/iWorkDocumentExportingAPI/create-an-export-job-v2.md"
     },
     "https://developer.apple.com/documentation/iworkdocumentexportingapi/create-an-export-job-(v2)": {
-      "hash": "d0256f3d388619a3882b486f9de5530df78fcdd0289b0d236146341a55f03374",
-      "last_checked": "2026-04-14T07:30:16.760190",
+      "hash": "85b7b5a3b2c4ae9b347f4f835c0dc119dbedb699d434f8da988bbbe1cd56b0b2",
+      "last_checked": "2026-04-28T07:31:08.608202",
       "status": "unchanged",
-      "session_id": "2026-04-14T07:30:16.098770",
-      "etag": "W/\"791b4d50a91d7468a1136f224b45333b\"",
+      "session_id": "2026-04-28T07:31:08.056610",
+      "etag": "W/\"409e98544d4f917db82b1207005393e0\"",
       "file_path": "documentation/iWorkDocumentExportingAPI/create-an-export-job-v2.md"
     }
   }

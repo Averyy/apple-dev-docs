@@ -39,6 +39,8 @@ class CXTransaction
 ### Adding Actions
 - [func addAction(CXAction)](cxtransaction/addaction(_:).md)
   Adds the specified action to the transaction.
+### Initializers
+- [init?(coder: NSCoder)](cxtransaction/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A pose joint represented as a normalized point in an image, along with a label a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

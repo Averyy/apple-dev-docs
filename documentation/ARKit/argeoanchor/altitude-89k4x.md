@@ -8,6 +8,7 @@ Vertical distance, in meters, between this anchor and sea level.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

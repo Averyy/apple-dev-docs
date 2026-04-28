@@ -25,6 +25,8 @@ class MEMessageEncodingResult
   An error that occurred while the message encoder encrypted the message.
 - [var signingError: (any Error)?](memessageencodingresult/signingerror.md)
   An error that occurred while the message encoder signed the message.
+### Initializers
+- [init?(coder: NSCoder)](memessageencodingresult/init(coder:).md)
 
 ## Relationships
 

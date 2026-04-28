@@ -25,7 +25,7 @@ class func canImportFileExtension(_ extension: String) -> Bool
 
 #### Discussion
 
-If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), you can use the [`init(url:)`](mdlasset/init(url:).md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer to import an asset with the specified filename extension.
+If this method returns [`true`](https://developer.apple.com/documentation/Swift/true), you can use the [`init(url:)`](mdlasset/init(url:)-1f4ym.md) or [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md) initializer to import an asset with the specified filename extension.
 
 The set of supported extensions and formats includes:
 
@@ -44,13 +44,13 @@ Additional formats may be supported as well.
 
 ## See Also
 
-- [init(url: URL)](mdlasset/init(url:).md)
+- [init(url: URL)](mdlasset/init(url:)-1f4ym.md)
   Initializes an asset from the file at the specified URL.
 - [init(bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(bufferallocator:).md)
   Initializes an empty asset, using the specified buffer allocator.
-- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:).md)
+- [init(url: URL?, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?)](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md)
   Initializes an asset from the file at the specified URL, using the specified vertex descriptor and buffer allocator.
-- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:).md)
+- [init(url: URL, vertexDescriptor: MDLVertexDescriptor?, bufferAllocator: (any MDLMeshBufferAllocator)?, preserveTopology: Bool, error: NSErrorPointer)](mdlasset/init(url:vertexdescriptor:bufferallocator:preservetopology:error:)-510xi.md)
   Initializes an asset from the file at the specified URL, using the specified options for allocating and transforming data during import.
 
 

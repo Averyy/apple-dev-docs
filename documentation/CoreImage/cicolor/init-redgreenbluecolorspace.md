@@ -36,7 +36,7 @@ This will return null if the `CGColorSpace` is not `kCGColorSpaceModelRGB`. The 
 
 ## See Also
 
-- [init(cgColor: CGColor)](cicolor/init(cgcolor:).md)
+- [init(cgColor: CGColor)](cicolor/init(cgcolor:)-1hzk4.md)
   Create a Core Image color object with a Core Graphics color object.
 - [convenience init(color: UIColor)](cicolor/init(color:).md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/init(red:green:blue:alpha:).md)

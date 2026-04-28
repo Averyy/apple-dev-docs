@@ -19,8 +19,6 @@ case invalidNotificationResponse
 
 - [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
   An error that indicates alert coordination timed out.
-- [AccessoryError.unableToGetUserResponse](accessoryerror/unabletogetuserresponse.md)
-  An error that indicates the system is unable to handle a notification response.
 
 
 ---

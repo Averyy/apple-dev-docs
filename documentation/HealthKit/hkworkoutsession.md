@@ -97,6 +97,8 @@ Apple Watch runs one workout session at a time. If a second workout starts while
   The workout activity performed during this session.
 - [var locationType: HKWorkoutSessionLocationType](hkworkoutsession/locationtype.md)
   A value that indicates whether the workout session occurred indoors or outdoors.
+### Initializers
+- [init?(coder: NSCoder)](hkworkoutsession/init(coder:).md)
 
 ## Relationships
 

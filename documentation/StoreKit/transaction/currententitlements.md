@@ -8,6 +8,7 @@ A sequence of the latest transactions that entitle a customer to In-App Purchase
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -26,6 +27,7 @@ static var currentEntitlements: Transaction.Transactions { get }
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Supporting business model changes by using the app transaction](supporting-business-model-changes-by-using-the-app-transaction.md)
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Discussion
 

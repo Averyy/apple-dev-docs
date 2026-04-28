@@ -36,6 +36,8 @@ Your app must include an Intents Extension that handles the intent corresponding
   The action that Siri performs when the user selects the assistant cell.
 - [enum CPAssistantCellActionType](cpassistantcellactiontype.md)
   The supported Siri actions of the assistant cell.
+### Initializers
+- [init?(coder: NSCoder)](cpassistantcellconfiguration/init(coder:).md)
 
 ## Relationships
 

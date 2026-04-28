@@ -24,6 +24,8 @@ class CNChangeHistoryEvent
 ### Processing an event
 - [func accept(any CNChangeHistoryEventVisitor)](cnchangehistoryevent/accept(_:).md)
   Forwards the event to the delegate you provide to process the change-history event.
+### Initializers
+- [init?(coder: NSCoder)](cnchangehistoryevent/init(coder:).md)
 
 ## Relationships
 

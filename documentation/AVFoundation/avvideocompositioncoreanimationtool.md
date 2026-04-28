@@ -40,6 +40,9 @@ Any animations will be interpreted on the video’s timeline, not real-time, so 
   Compose the composited video frames with the Core Animation layer.
 - [AVVideoCompositionCoreAnimationTool.Configuration](avvideocompositioncoreanimationtool/configuration.md)
   Configurable properties for initializing a new AVVideoCompositionCoreAnimationTool instance.
+### Initializers
+- [convenience init(postProcessingAsVideoLayer: CALayer, inLayer: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayer:inlayer:).md)
+- [convenience init(postProcessingAsVideoLayers: [CALayer], inLayer: CALayer)](avvideocompositioncoreanimationtool/init(postprocessingasvideolayers:inlayer:).md)
 
 ## Relationships
 

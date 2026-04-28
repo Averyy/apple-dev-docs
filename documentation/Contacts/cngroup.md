@@ -44,6 +44,8 @@ Contacts may be members of one or more groups, depending upon their accounts.
   The identifier of the group.
 - [let CNGroupNameKey: String](cngroupnamekey.md)
   The name of the group.
+### Initializers
+- [init?(coder: NSCoder)](cngroup/init(coder:).md)
 
 ## Relationships
 

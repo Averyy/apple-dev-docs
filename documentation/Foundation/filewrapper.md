@@ -45,7 +45,7 @@ A file wrapper has these attributes:
 ## Topics
 
 ### Creating File Wrappers
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:).md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
 - [convenience init?(path: String)](filewrapper/init(path:).md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the path.
@@ -116,10 +116,11 @@ A file wrapper has these attributes:
   The icon that represents the file wrapper.
 ### Constants
 - [FileWrapper.ReadingOptions](filewrapper/readingoptions.md)
-  Reading options that can be set by the [`init(url:options:)`](filewrapper/init(url:options:).md) and [`read(from:options:)`](filewrapper/read(from:options:).md) methods.
+  Reading options that can be set by the [`init(url:options:)`](filewrapper/init(url:options:)-70161.md) and [`read(from:options:)`](filewrapper/read(from:options:).md) methods.
 - [FileWrapper.WritingOptions](filewrapper/writingoptions.md)
   Writing options that can be set by the [`write(to:options:originalContentsURL:)`](filewrapper/write(to:options:originalcontentsurl:).md) method.
 ### Initializers
+- [init(URL: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-6g2yr.md)
 - [init?(coder: NSCoder)](filewrapper/init(coder:).md)
 
 ## Relationships

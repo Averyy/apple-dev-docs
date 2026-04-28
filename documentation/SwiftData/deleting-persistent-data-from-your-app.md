@@ -24,7 +24,7 @@ Data-driven apps typically provide a way for a person to delete data, and this s
 
 #### Swipe to Delete
 
-The sample app shows a list of animals. A person using the app can delete an animal using a swipe gesture. For example, the following code adds the swipe-to-delete option to the `AnimalList` view by applying the [`onDelete(perform:)`](https://developer.apple.com/documentation/SwiftUI/DynamicViewContent/onDelete(perform:)) modifier to [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach):
+The sample app shows a list of animals. A person using the app can delete an animal using a swipe gesture. For example, the following code adds the swipe-to-delete option to the `AnimalList` view by applying the doc://com.apple.documentation/documentation/swiftui/dynamicviewcontent/ondelete(perform:) modifier to [`ForEach`](https://developer.apple.com/documentation/SwiftUI/ForEach):
 
 ```swift
 private struct AnimalList: View {
@@ -44,7 +44,7 @@ private struct AnimalList: View {
 }
 ```
 
-The [`onDelete(perform:)`](https://developer.apple.com/documentation/SwiftUI/DynamicViewContent/onDelete(perform:)) modifier in the previous code calls the custom method `removeAnimals` to remove one or more animals from the list. This method receives an [`IndexSet`](https://developer.apple.com/documentation/Foundation/IndexSet) which identifies the animals to delete. The method then iterates through the index set, deleting each animal using the [`ModelContext`](modelcontext.md) method [`delete(_:)`](modelcontext/delete(_:).md).
+The doc://com.apple.documentation/documentation/swiftui/dynamicviewcontent/ondelete(perform:) modifier in the previous code calls the custom method `removeAnimals` to remove one or more animals from the list. This method receives an [`IndexSet`](https://developer.apple.com/documentation/Foundation/IndexSet) which identifies the animals to delete. The method then iterates through the index set, deleting each animal using the [`ModelContext`](modelcontext.md) method [`delete(_:)`](modelcontext/delete(_:).md).
 
 ```swift
 private func removeAnimals(at indexSet: IndexSet) {

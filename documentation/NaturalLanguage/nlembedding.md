@@ -84,6 +84,8 @@ Your custom embedding can use any kind of string that’s useful to your app, su
   Retrieves the current version of a sentence embedding for the given language.
 - [class func supportedSentenceEmbeddingRevisions(for: NLLanguage) -> IndexSet](nlembedding/supportedsentenceembeddingrevisions(for:).md)
   Retrieves all version numbers of a sentence embedding for the given language.
+### Initializers
+- [convenience init(contentsOfURL: URL) throws](nlembedding/init(contentsofurl:).md)
 
 ## Relationships
 

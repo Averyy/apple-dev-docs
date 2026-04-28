@@ -32,6 +32,8 @@ class MXSignpostIntervalData
   The total amount of data written to disk or other long term storage during the logged intervals.
 - [var cumulativeHitchTimeRatio: Measurement<Unit>?](mxsignpostintervaldata/cumulativehitchtimeratio.md)
   The ratio of the total time spent hitching to the total time spent animating during the logged intervals.
+### Initializers
+- [init?(coder: NSCoder)](mxsignpostintervaldata/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ The asynchronous sequence that emits a transaction when the system creates or up
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -28,6 +29,7 @@ static var updates: Transaction.Transactions { get }
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
 - [Getting started with In-App Purchase using StoreKit views](getting-started-with-in-app-purchases-using-storekit-views.md)
 - [Merchandising win-back offers in your app](merchandising-win-back-offers-in-your-app.md)
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
 #### Discussion
 

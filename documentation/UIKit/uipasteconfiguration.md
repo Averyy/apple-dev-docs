@@ -37,6 +37,9 @@ class UIPasteConfiguration
 - [func addTypeIdentifiers(forAccepting: any NSItemProviderReading.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-4fvd6.md)
   Expands the array of accepted UTIs for a paste configuration, based on those declared as supported by a specified class.
 - [func addTypeIdentifiers<T>(forAccepting: T.Type)](uipasteconfiguration/addtypeidentifiers(foraccepting:)-8af7o.md)
+### Initializers
+- [init?(coder: NSCoder)](uipasteconfiguration/init(coder:).md)
+- [convenience init(typeIdentifiersForAcceptingClass: any NSItemProviderReading.Type)](uipasteconfiguration/init(typeidentifiersforacceptingclass:).md)
 
 ## Relationships
 

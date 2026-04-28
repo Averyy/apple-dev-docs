@@ -26,11 +26,11 @@ Do not call this initializer directly; it’s called by the system when you shou
 
 ## See Also
 
-- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:).md)
+- [init(avAudioNode: AVAudioNode?)](skaudionode/init(avaudionode:)-969st.md)
   Initializes an audio node from an AVFoundation audio node.
 - [convenience init(fileNamed: String)](skaudionode/init(filenamed:).md)
   Initializes an audio node from an audio asset with the specified filename.
-- [convenience init(url: URL)](skaudionode/init(url:).md)
+- [convenience init(url: URL)](skaudionode/init(url:)-8v3q0.md)
   Initializes an audio node from an audio asset with the specified URL.
 
 

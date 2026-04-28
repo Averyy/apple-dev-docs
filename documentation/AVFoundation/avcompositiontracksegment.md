@@ -29,7 +29,7 @@ You typically use this class to save a low-level representation of a composition
 ### Creating a segment
 - [init(timeRange: CMTimeRange)](avcompositiontracksegment/init(timerange:).md)
   Creates an object that presents an empty composition track segment.
-- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:).md)
+- [init(url: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:)-4rc2g.md)
   Creates an object that presents a segment of a media file that the specified URL references.
 ### Accessing segment properties
 - [var sourceURL: URL?](avcompositiontracksegment/sourceurl.md)
@@ -38,6 +38,9 @@ You typically use this class to save a low-level representation of a composition
   An identifier of a track in the container file whose media this track segment presents.
 - [var isEmpty: Bool](avcompositiontracksegment/isempty.md)
   A Boolean value that indicates whether the segment is empty.
+### Initializers
+- [init(URL: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:)-9shbx.md)
+- [convenience init(URL: URL, trackID: CMPersistentTrackID, sourceTimeRange: CMTimeRange, targetTimeRange: CMTimeRange)](avcompositiontracksegment/init(url:trackid:sourcetimerange:targettimerange:)-qoz.md)
 
 ## Relationships
 

@@ -27,6 +27,8 @@ class UNNotificationActionIcon
   Creates an action icon by using a system symbol image.
 - [convenience init(templateImageName: String)](unnotificationactionicon/init(templateimagename:).md)
   Creates an action icon based on an image in your app’s bundle, preferably in an asset catalog.
+### Initializers
+- [init?(coder: NSCoder)](unnotificationactionicon/init(coder:).md)
 
 ## Relationships
 

@@ -53,6 +53,8 @@ Use [`NSException`](nsexception.md) to implement exception handling. An exceptio
   Returns the top-level error handler.
 - [func NSSetUncaughtExceptionHandler(((NSException) -> Void)?)](nssetuncaughtexceptionhandler(_:).md)
   Changes the top-level error handler.
+### Initializers
+- [init?(coder: NSCoder)](nsexception/init(coder:).md)
 
 ## Relationships
 

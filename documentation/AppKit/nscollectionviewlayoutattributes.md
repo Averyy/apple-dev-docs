@@ -74,6 +74,11 @@ In addition to defining your `NSCollectionViewLayoutAttributes` subclass, overri
   Constants specifying the type of element in the collection view.
 - [Inter-Item Gap Support](inter-item-gap-support.md)
   Constant for supporting inter-item gaps.
+### Initializers
+- [convenience init(forDecorationViewOfKind: NSCollectionView.DecorationElementKind, withIndexPath: IndexPath)](nscollectionviewlayoutattributes/init(fordecorationviewofkind:withindexpath:).md)
+- [convenience init(forInterItemGapBeforeIndexPath: IndexPath)](nscollectionviewlayoutattributes/init(forinteritemgapbeforeindexpath:).md)
+- [convenience init(forItemWithIndexPath: IndexPath)](nscollectionviewlayoutattributes/init(foritemwithindexpath:).md)
+- [convenience init(forSupplementaryViewOfKind: NSCollectionView.SupplementaryElementKind, withIndexPath: IndexPath)](nscollectionviewlayoutattributes/init(forsupplementaryviewofkind:withindexpath:).md)
 
 ## Relationships
 

@@ -29,6 +29,7 @@ This object holds all information about the interface of an exported object or r
 ### Initializers
 - [init(with: Protocol)](nsxpcinterface/init(with:).md)
   Returns an NSXPCInterface instance for a given protocol.
+- [init(withProtocol: Protocol)](nsxpcinterface/init(withprotocol:).md)
 ### Instance Properties
 - [var `protocol`: Protocol](nsxpcinterface/protocol.md)
   The Objective-C protocol that this interface is based on.

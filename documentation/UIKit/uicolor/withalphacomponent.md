@@ -35,9 +35,9 @@ A subclass with explicit opacity components should override this method to retur
 
 - [convenience init(Color)](uicolor/init(_:).md)
   Creates a color object that encapsulates a SwiftUI color.
-- [init(ciColor: CIColor)](uicolor/init(cicolor:).md)
+- [init(ciColor: CIColor)](uicolor/init(cicolor:)-2z057.md)
   Creates a color object that encapsulates a Core Image color.
-- [init(cgColor: CGColor)](uicolor/init(cgcolor:).md)
+- [init(cgColor: CGColor)](uicolor/init(cgcolor:)-27r9g.md)
   Creates a color object using the specified Quartz color reference.
 
 

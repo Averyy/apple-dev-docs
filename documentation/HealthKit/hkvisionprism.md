@@ -91,6 +91,8 @@ do {
   The orientation of the vertical portion of the correction.
 - [enum HKPrismBase](hkprismbase.md)
   The orientation of the prism correction, represented by the location of the prism’s base (the thickest part of the prism).
+### Initializers
+- [init?(coder: NSCoder)](hkvisionprism/init(coder:).md)
 
 ## Relationships
 

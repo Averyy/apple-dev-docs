@@ -8,6 +8,7 @@ Provide UI for translations of text people select.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Topics
 

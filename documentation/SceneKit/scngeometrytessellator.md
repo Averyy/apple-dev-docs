@@ -23,6 +23,8 @@ class SCNGeometryTessellator
 ### Choosing a Smoothing Algorithm
 - [var smoothingMode: SCNTessellationSmoothingMode](scngeometrytessellator/smoothingmode.md)
 - [enum SCNTessellationSmoothingMode](scntessellationsmoothingmode.md)
+### Initializers
+- [init?(coder: NSCoder)](scngeometrytessellator/init(coder:).md)
 ### Instance Properties
 - [var edgeTessellationFactor: CGFloat](scngeometrytessellator/edgetessellationfactor.md)
 - [var insideTessellationFactor: CGFloat](scngeometrytessellator/insidetessellationfactor.md)

@@ -41,7 +41,7 @@ The stream must be opened before it can be used.
   Returns an initialized output stream that will write to memory.
 - [init(toBuffer: UnsafeMutablePointer<UInt8>, capacity: Int)](outputstream/init(tobuffer:capacity:).md)
   Returns an initialized output stream that can write to a provided buffer.
-- [init?(url: URL, append: Bool)](outputstream/init(url:append:).md)
+- [init?(url: URL, append: Bool)](outputstream/init(url:append:)-5soau.md)
   Returns an initialized output stream for writing to a specified URL.
 
 

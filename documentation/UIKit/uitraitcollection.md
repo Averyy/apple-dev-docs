@@ -184,7 +184,7 @@ For information on creating custom traits, see [`Providing data to the view hier
   Creates a trait collection that contains only the specified active appearance trait.
 - [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](uitraitcollection/init(toolbaritempresentationsize:).md)
   Creates a trait collection that contains only the specified toolbar item presentation size trait.
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-5zqph.md)
 - [init(imageDynamicRange: UIImage.DynamicRange)](uitraitcollection/init(imagedynamicrange:).md)
   Construct a new trait collection with the given image content dynamic range.
 - [init(listEnvironment: UIListEnvironment)](uitraitcollection/init(listenvironment:).md)
@@ -200,6 +200,7 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [init(traitsFrom: [UITraitCollection])](uitraitcollection/init(traitsfrom:).md)
   Creates a trait collection that consists of traits merged from a specified array of trait collections.
 ### Initializers
+- [init(HDRHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-3nnko.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-3as8f.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-3fg2.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-4100d.md)
@@ -216,6 +217,7 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-836bk.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-8k1t1.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-vvgw.md)
+- [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
 ### Instance Methods
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-162et.md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-1n0uk.md)

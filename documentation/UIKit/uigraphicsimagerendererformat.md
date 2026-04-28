@@ -40,6 +40,8 @@ The image renderer format object contains properties that determine the attribut
   Constants that specify the color range of the image renderer context.
 - [var prefersExtendedRange: Bool](uigraphicsimagerendererformat/prefersextendedrange.md)
   A Boolean value that specifies whether the bitmap context uses extended color.
+### Initializers
+- [convenience init(forTraitCollection: UITraitCollection)](uigraphicsimagerendererformat/init(fortraitcollection:).md)
 ### Instance Properties
 - [var supportsHighDynamicRange: Bool](uigraphicsimagerendererformat/supportshighdynamicrange.md)
 

@@ -39,6 +39,8 @@ class VNCircle
   Determines if this circle, including its boundary, contains the specified point.
 - [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](vncircle/contains(_:incircumferentialringofwidth:).md)
   Determines if a ring around this circle’s circumference contains the specified point.
+### Initializers
+- [init?(coder: NSCoder)](vncircle/init(coder:).md)
 
 ## Relationships
 

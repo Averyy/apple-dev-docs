@@ -45,6 +45,9 @@ When formatting the time interval, the time text provider drops the morning/even
   The end date for the time interval.
 - [var timeZone: TimeZone?](clktimeintervaltextprovider/timezone.md)
   The time zone used to format time values.
+### Initializers
+- [convenience init(startDate: Date, endDate: Date)](clktimeintervaltextprovider/init(startdate:enddate:).md)
+- [convenience init(startDate: Date, endDate: Date, timeZone: TimeZone?)](clktimeintervaltextprovider/init(startdate:enddate:timezone:).md)
 
 ## Relationships
 

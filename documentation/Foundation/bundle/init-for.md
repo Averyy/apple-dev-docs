@@ -34,7 +34,7 @@ The `NSBundle` object that dynamically loaded `aClass` (a loadable bundle), the 
   Returns the bundle object that contains the current executable.
 - [init?(identifier: String)](bundle/init(identifier:).md)
   Returns the `NSBundle` instance that has the specified bundle identifier.
-- [convenience init?(url: URL)](bundle/init(url:).md)
+- [convenience init?(url: URL)](bundle/init(url:)-3n9rf.md)
   Returns an `NSBundle` object initialized to correspond to the specified file URL.
 - [init?(path: String)](bundle/init(path:).md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.

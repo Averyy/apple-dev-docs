@@ -23,12 +23,14 @@ class NFCVASReaderSession
 ## Topics
 
 ### Creating a VAS Reader Session
-- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:).md)
+- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:)-23h52.md)
   Creates a VAS reader session.
 - [class NFCVASCommandConfiguration](nfcvascommandconfiguration.md)
   An object providing the configuration for a GET VAS DATA command.
 - [protocol NFCVASReaderSessionDelegate](nfcvasreadersessiondelegate.md)
   A protocol that an object implements to receive callbacks from a VAS reader session.
+### Initializers
+- [init(VASCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:)-8qhci.md)
 
 ## Relationships
 

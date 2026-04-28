@@ -8,6 +8,7 @@ Values you use to set the Apple Pay Later action.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

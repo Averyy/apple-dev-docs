@@ -45,6 +45,7 @@ The vibrancy effect is color-dependent. Any subviews that you add to the [`conte
   Creates a vibrancy effect for use in Notification Center.
 ### Initializers
 - [init(blurEffect: UIBlurEffect, style: UIVibrancyEffectStyle)](uivibrancyeffect/init(blureffect:style:).md)
+- [init(forBlurEffect: UIBlurEffect)](uivibrancyeffect/init(forblureffect:).md)
 ### Default Implementations
 - [UIVibrancyEffect Implementations](uivibrancyeffect/uivibrancyeffect-implementations.md)
 

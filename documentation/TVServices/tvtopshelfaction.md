@@ -23,11 +23,13 @@ When configuring a [`TVTopShelfItem`](tvtopshelfitem.md) to display in a carouse
 ## Topics
 
 ### Creating an Action Object
-- [init(url: URL)](tvtopshelfaction/init(url:).md)
+- [init(url: URL)](tvtopshelfaction/init(url:)-2zqfn.md)
   Creates a new action object that displays the content at the specified URL.
 ### Getting the URL
 - [var url: URL](tvtopshelfaction/url.md)
   The URL of the content you want to display.
+### Initializers
+- [init(URL: URL)](tvtopshelfaction/init(url:)-6nuwx.md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ Returns the maximum size for the specified widget display mode.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 
 ## Declaration
 

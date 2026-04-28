@@ -7,6 +7,8 @@ A response from the device after it processes the command to update the local ad
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

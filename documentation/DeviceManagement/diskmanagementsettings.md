@@ -7,6 +7,8 @@ The declaration to configure disk management settings on the device.
 
 **Availability**:
 - macOS 15.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

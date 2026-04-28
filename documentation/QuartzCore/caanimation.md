@@ -70,6 +70,7 @@ In a Scene Kit app, [`CAAnimation`](caanimation.md) objects support additional m
 ### Initializers
 - [init(SCNAnimation: SCNAnimation)](caanimation/init(scnanimation:).md)
   Creates an animation from a SceneKit animation.
+- [init?(coder: NSCoder)](caanimation/init(coder:).md)
 ### Instance Properties
 - [var preferredFrameRateRange: CAFrameRateRange](caanimation/preferredframeraterange.md)
 

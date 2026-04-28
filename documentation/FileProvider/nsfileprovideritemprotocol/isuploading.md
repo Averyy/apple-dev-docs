@@ -8,6 +8,7 @@ A Boolean value that indicates whether the item is currently uploading to your r
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

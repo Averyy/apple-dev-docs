@@ -7,6 +7,8 @@ The declaration to configure Migration Assistant settings.
 
 **Availability**:
 - macOS 26.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

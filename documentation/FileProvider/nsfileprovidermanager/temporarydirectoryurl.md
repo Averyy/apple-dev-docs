@@ -8,6 +8,7 @@ Returns the URL of a directory that the File Provider extension can use to tempo
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

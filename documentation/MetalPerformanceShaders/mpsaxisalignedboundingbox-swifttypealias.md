@@ -19,6 +19,12 @@ An axis-aligned bounding box.
 typealias MPSAxisAlignedBoundingBox = _MPSAxisAlignedBoundingBox
 ```
 
+## Topics
+
+### Instance Properties
+- [var max: vector_float3](mpsaxisalignedboundingbox-swift.typealias/max.md)
+- [var min: vector_float3](mpsaxisalignedboundingbox-swift.typealias/min.md)
+
 ## Relationships
 
 ### Conforms To

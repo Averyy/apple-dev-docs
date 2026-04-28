@@ -29,6 +29,8 @@ To preserve user privacy, a Message Filter app extension can’t contact the ser
 ### Getting Data from the Response
 - [var data: Data](ilnetworkresponse/data.md)
   The data returned in the HTTPS response.
+### Initializers
+- [init?(coder: NSCoder)](ilnetworkresponse/init(coder:).md)
 
 ## Relationships
 

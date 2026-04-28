@@ -62,6 +62,8 @@ Alternatively, either add the access point or display the dashboard so that the 
 ### Retrieving Group Information
 - [var groupIdentifier: String?](gkachievementdescription/groupidentifier.md)
   The identifier for the group that the achievement description is part of.
+### Initializers
+- [init?(coder: NSCoder)](gkachievementdescription/init(coder:).md)
 ### Instance Properties
 - [var activityIdentifier: String](gkachievementdescription/activityidentifier.md)
   The identifier of the game activity associated with this achievement, as configured by the developer in App Store Connect.

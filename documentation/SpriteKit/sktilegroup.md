@@ -48,6 +48,8 @@ The preferred method to create tile groups is to use the editor tools in Xcode. 
 ### Creating an Empty Tile Group
 - [class func empty() -> Self](sktilegroup/empty.md)
   Creates an empty tile that erases the existing tile at that location on a tile map.
+### Initializers
+- [init?(coder: NSCoder)](sktilegroup/init(coder:).md)
 
 ## Relationships
 

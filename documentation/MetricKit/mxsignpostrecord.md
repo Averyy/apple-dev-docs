@@ -31,6 +31,8 @@ class MXSignpostRecord
 - [var isInterval: Bool](mxsignpostrecord/isinterval.md)
 - [var name: String](mxsignpostrecord/name.md)
 - [var subsystem: String](mxsignpostrecord/subsystem.md)
+### Initializers
+- [init?(coder: NSCoder)](mxsignpostrecord/init(coder:).md)
 
 ## Relationships
 

@@ -36,6 +36,7 @@ To learn more about both ways of using polygon obstacles, see [`Pathfinding`](ht
   Returns the point coordinates of the specified vertex.
 ### Initializers
 - [convenience init(points: [SIMD2<Float>])](gkpolygonobstacle/init(points:).md)
+- [init?(coder: NSCoder)](gkpolygonobstacle/init(coder:).md)
 
 ## Relationships
 

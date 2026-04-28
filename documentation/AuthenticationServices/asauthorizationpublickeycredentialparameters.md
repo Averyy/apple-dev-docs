@@ -29,6 +29,8 @@ This object is mainly for signing algorithm negotiation, and is only relevant fo
   Creates the object with an algorithm.
 - [var algorithm: ASCOSEAlgorithmIdentifier](asauthorizationpublickeycredentialparameters/algorithm.md)
   The algorithm to use for negitation between the authenticator and the relying party.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationpublickeycredentialparameters/init(coder:).md)
 
 ## Relationships
 

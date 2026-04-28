@@ -8,7 +8,10 @@ The payload that configures a Google account.
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
+- Mac Catalyst 9.3+
 - visionOS 1.1+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

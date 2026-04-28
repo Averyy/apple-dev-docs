@@ -153,6 +153,8 @@ Before you can configure your real-time URL for the production environment, your
 ### Error information
 - [Error codes](error-codes.md)
   Understand the error codes that Retention Messaging API responses return.
+### Type Aliases
+- [type billingPlanType](billingplantype.md)
 
 
 ---

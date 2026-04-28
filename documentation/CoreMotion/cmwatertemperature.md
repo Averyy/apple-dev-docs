@@ -8,6 +8,7 @@ An update that contains data about the water temperature.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -26,6 +27,8 @@ class CMWaterTemperature
   The water temperature.
 - [var temperatureUncertainty: Measurement<UnitTemperature>](cmwatertemperature/temperatureuncertainty.md)
   The amount of uncertainty in the measurement of the water temperature.
+### Initializers
+- [init?(coder: NSCoder)](cmwatertemperature/init(coder:).md)
 
 ## Relationships
 

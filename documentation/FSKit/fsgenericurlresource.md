@@ -31,11 +31,13 @@ Use the `Info.plist` key `FSSupportedSchemes` to provide an array of case-insens
 ## Topics
 
 ### Creating a generic URL resource
-- [init(url: URL)](fsgenericurlresource/init(url:).md)
+- [init(url: URL)](fsgenericurlresource/init(url:)-2cmhi.md)
   Creates a generic URL resource with the given URL.
 ### Accessing resource properties
 - [var url: URL](fsgenericurlresource/url.md)
   The URL represented by the resource.
+### Initializers
+- [init(URL: URL)](fsgenericurlresource/init(url:)-3957q.md)
 
 ## Relationships
 

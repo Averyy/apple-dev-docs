@@ -22,7 +22,7 @@ var settings: [String : Any] { get }
 
 #### Discussion
 
-See [`init(url:settings:)`](avaudiorecorder/init(url:settings:).md) for supported keys and values.
+See [`init(url:settings:)`](avaudiorecorder/init(url:settings:)-5whyq.md) for supported keys and values.
 
 ## See Also
 

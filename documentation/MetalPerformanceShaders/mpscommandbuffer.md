@@ -22,6 +22,7 @@ class MPSCommandBuffer
 ### Initializers
 - [init(commandBuffer: any MTLCommandBuffer)](mpscommandbuffer/init(commandbuffer:).md)
 - [convenience init(from: any MTLCommandQueue)](mpscommandbuffer/init(from:).md)
+- [convenience init(fromCommandQueue: any MTLCommandQueue)](mpscommandbuffer/init(fromcommandqueue:).md)
 ### Instance Properties
 - [var commandBuffer: any MTLCommandBuffer](mpscommandbuffer/commandbuffer.md)
 - [var heapProvider: (any MPSHeapProvider)?](mpscommandbuffer/heapprovider.md)

@@ -103,6 +103,8 @@ A single audio converter instance may perform more than one of the above transfo
 - [enum AVAudioContentSource](avaudiocontentsource.md)
 - [var dynamicRangeControlConfiguration: AVAudioDynamicRangeControlConfiguration](avaudioconverter/dynamicrangecontrolconfiguration.md)
 - [enum AVAudioDynamicRangeControlConfiguration](avaudiodynamicrangecontrolconfiguration.md)
+### Initializers
+- [init?(fromFormat: AVAudioFormat, toFormat: AVAudioFormat)](avaudioconverter/init(fromformat:toformat:).md)
 
 ## Relationships
 

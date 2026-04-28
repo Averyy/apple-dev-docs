@@ -50,6 +50,8 @@ The text system supports four alignment types: left, center, right, and decimal 
   Initializes a newly allocated text tab with the specified alignment and location.
 - [var tabStopType: NSParagraphStyle.TextTabType](../AppKit/NSTextTab/tabStopType.md)
   The text tab’s type of tab stop.
+### Initializers
+- [init?(coder: NSCoder)](nstexttab/init(coder:).md)
 
 ## Relationships
 

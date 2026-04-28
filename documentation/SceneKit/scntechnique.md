@@ -204,6 +204,8 @@ void main() {
   Sets a value for the specified shader  variable or attribute name, using subscript syntax.
 - [subscript(Any) -> Any?](scntechnique/subscript(_:).md)
   Returns the value associated with the specified GLSL uniform variable or attribute name, using subscript syntax.
+### Initializers
+- [init?(coder: NSCoder)](scntechnique/init(coder:).md)
 ### Instance Properties
 - [var library: (any MTLLibrary)?](scntechnique/library.md)
 

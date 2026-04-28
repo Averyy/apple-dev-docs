@@ -28,7 +28,8 @@ The default style for a TipView.
 
 ## See Also
 
-- [func tipViewStyle(some TipViewStyle) -> some View](../SwiftUI/View/tipViewStyle(_:).md)
+- [func tipViewStyle(some TipViewStyle) -> some View
+](../SwiftUI/View/tipViewStyle(_:).md)
   Sets the given style for TipView within the view hierarchy.
 - [protocol TipViewStyle](tipviewstyle.md)
   A type that applies custom appearance to all tips within a view hierarchy.

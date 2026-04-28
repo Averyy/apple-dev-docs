@@ -45,6 +45,9 @@ Typically, you create a gazetteer at development time, such as in a macOS playgr
   The gazetteer represented as a data instance.
 - [var language: NLLanguage?](nlgazetteer/language.md)
   The language of the gazetteer.
+### Initializers
+- [convenience init(contentsOfURL: URL) throws](nlgazetteer/init(contentsofurl:)-13iyg.md)
+- [init(contentsOfURL: URL) throws](nlgazetteer/init(contentsofurl:)-3inpk.md)
 
 ## Relationships
 

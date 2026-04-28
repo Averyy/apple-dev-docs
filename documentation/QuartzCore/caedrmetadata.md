@@ -36,6 +36,8 @@ If you need specific tone-mapping behavior, set the [`edrMetadata`](cametallayer
 - [class var isAvailable: Bool](caedrmetadata/isavailable.md)
 ### Type Methods
 - [class func hlg(ambientViewingEnvironment: Data) -> CAEDRMetadata](caedrmetadata/hlg(ambientviewingenvironment:).md)
+### Initializers
+- [init?(coder: NSCoder)](caedrmetadata/init(coder:).md)
 
 ## Relationships
 

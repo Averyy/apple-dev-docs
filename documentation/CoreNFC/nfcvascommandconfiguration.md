@@ -19,7 +19,7 @@ class NFCVASCommandConfiguration
 ## Topics
 
 ### Creating a Command Configuration
-- [init(vasMode: NFCVASCommandConfiguration.Mode, passTypeIdentifier: String, url: URL?)](nfcvascommandconfiguration/init(vasmode:passtypeidentifier:url:).md)
+- [init(vasMode: NFCVASCommandConfiguration.Mode, passTypeIdentifier: String, url: URL?)](nfcvascommandconfiguration/init(vasmode:passtypeidentifier:url:)-9bh8w.md)
   Creates a VAS command configuration object.
 ### Setting Configuration Items
 - [var mode: NFCVASCommandConfiguration.Mode](nfcvascommandconfiguration/mode-swift.property.md)
@@ -30,6 +30,8 @@ class NFCVASCommandConfiguration
   A type identifier for the Wallet Pass.
 - [var url: URL?](nfcvascommandconfiguration/url.md)
   A merchant URL.
+### Initializers
+- [init(VASMode: NFCVASCommandConfiguration.Mode, passTypeIdentifier: String, url: URL?)](nfcvascommandconfiguration/init(vasmode:passtypeidentifier:url:)-1dcy0.md)
 
 ## Relationships
 
@@ -46,7 +48,7 @@ class NFCVASCommandConfiguration
 
 ## See Also
 
-- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:).md)
+- [init(vasCommandConfigurations: [NFCVASCommandConfiguration], delegate: any NFCVASReaderSessionDelegate, queue: dispatch_queue_t?)](nfcvasreadersession/init(vascommandconfigurations:delegate:queue:)-23h52.md)
   Creates a VAS reader session.
 - [protocol NFCVASReaderSessionDelegate](nfcvasreadersessiondelegate.md)
   A protocol that an object implements to receive callbacks from a VAS reader session.

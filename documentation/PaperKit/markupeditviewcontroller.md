@@ -8,6 +8,7 @@ A view controller that manages the interface for inserting content into a canvas
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -51,9 +52,9 @@ A view controller that manages the interface for inserting content into a canvas
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.paperkit/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UIStateRestoring](../UIKit/UIStateRestoring.md)

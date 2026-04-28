@@ -18,6 +18,7 @@ class CPListImageRowItemCardElement
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cplistimagerowitemcardelement/init(coder:).md)
 - [init(image: UIImage, showsImageFullHeight: Bool, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(image:showsimagefullheight:title:subtitle:tintcolor:).md)
   Initialize a card element with an image.
 - [init(thumbnail: CPThumbnailImage, title: String?, subtitle: String?, tintColor: UIColor?)](cplistimagerowitemcardelement/init(thumbnail:title:subtitle:tintcolor:).md)

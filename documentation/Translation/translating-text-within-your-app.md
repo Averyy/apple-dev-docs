@@ -7,7 +7,6 @@ Display simple system translations and create custom translation experiences.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - Xcode 16.0+
 
@@ -317,11 +316,14 @@ For testing, you can delete locally downloaded models in macOS by choosing Syste
 
 ## See Also
 
-- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
+- [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View
+](../SwiftUI/View/translationPresentation(isPresented:text:attachmentAnchor:arrowEdge:replacementAction:).md)
   Presents a translation popover when a given condition is true.
-- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View](../SwiftUI/View/translationTask(_:action:).md)
+- [func translationTask(TranslationSession.Configuration?, action: (TranslationSession) async -> Void) -> some View
+](../SwiftUI/View/translationTask(_:action:).md)
   Adds a task to perform before this view appears or when the translation configuration changes.
-- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View](../SwiftUI/View/translationTask(source:target:action:).md)
+- [func translationTask(source: Locale.Language?, target: Locale.Language?, action: (TranslationSession) async -> Void) -> some View
+](../SwiftUI/View/translationTask(source:target:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
 - [class TranslationSession](translationsession.md)
   A class that performs translations between a pair of languages.

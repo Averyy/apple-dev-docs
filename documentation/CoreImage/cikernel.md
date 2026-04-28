@@ -84,6 +84,8 @@ The Core Image Kernel Language is a dialect of the OpenGL Shading Language. See 
   Creates a single kernel object.
 - [class func makeKernels(source: String) -> [CIKernel]?](cikernel/makekernels(source:).md)
   Creates and returns and array of  `CIKernel` objects.
+### Initializers
+- [convenience init?(string: String)](cikernel/init(string:).md)
 
 ## Relationships
 

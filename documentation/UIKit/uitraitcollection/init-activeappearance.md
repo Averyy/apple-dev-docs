@@ -48,7 +48,7 @@ init(activeAppearance userInterfaceActiveAppearance: UIUserInterfaceActiveAppear
   Creates a trait collection that contains only the specified content size category trait.
 - [init(toolbarItemPresentationSize: UINSToolbarItemPresentationSize)](uitraitcollection/init(toolbaritempresentationsize:).md)
   Creates a trait collection that contains only the specified toolbar item presentation size trait.
-- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:).md)
+- [init(hdrHeadroomUsageLimit: UIHDRHeadroomUsageLimit)](uitraitcollection/init(hdrheadroomusagelimit:)-5zqph.md)
 
 
 ---

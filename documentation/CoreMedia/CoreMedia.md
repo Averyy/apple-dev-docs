@@ -7,7 +7,7 @@ Represent time-based audio-visual assets with essential data types.
 
 **Availability**:
 - iOS 4.0+
-- iPadOS 4.0+
+- iPadOS ?+
 - Mac Catalyst 13.1+
 - macOS 10.7+
 - tvOS 9.0+

@@ -39,11 +39,11 @@ For information about how to detect beacons, see [`Determining the proximity to 
 ### Creating a beacon region
 - [init(beaconIdentityConstraint: CLBeaconIdentityConstraint, identifier: String)](clbeaconregion/init(beaconidentityconstraint:identifier:).md)
   Creates and returns a region object that targets beacons that satisfy the specified beacon identity constraints.
-- [init(uuid: UUID, identifier: String)](clbeaconregion/init(uuid:identifier:).md)
+- [init(uuid: UUID, identifier: String)](clbeaconregion/init(uuid:identifier:)-6hg8v.md)
   Creates and returns a region object that targets beacons with the specified UUID.
-- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(uuid:major:identifier:).md)
+- [init(uuid: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(uuid:major:identifier:)-8ur0j.md)
   Creates and returns a region object that targets beacons with the specified UUID and major value.
-- [init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](clbeaconregion/init(uuid:major:minor:identifier:).md)
+- [init(uuid: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](clbeaconregion/init(uuid:major:minor:identifier:)-24h7w.md)
   Creates and returns a region object that targets beacons with the specified UUID, and major and minor values.
 - [typealias CLBeaconMajorValue](clbeaconmajorvalue.md)
   The most significant value in a beacon.
@@ -73,6 +73,10 @@ For information about how to detect beacons, see [`Determining the proximity to 
   Creates and returns a region object that targets a beacon with the specified proximity ID, major value, and minor value.
 - [var proximityUUID: UUID](clbeaconregion/proximityuuid.md)
   The unique ID of the beacons you’re targeting.
+### Initializers
+- [init(UUID: UUID, identifier: String)](clbeaconregion/init(uuid:identifier:)-6114g.md)
+- [init(UUID: UUID, major: CLBeaconMajorValue, identifier: String)](clbeaconregion/init(uuid:major:identifier:)-71t0b.md)
+- [init(UUID: UUID, major: CLBeaconMajorValue, minor: CLBeaconMinorValue, identifier: String)](clbeaconregion/init(uuid:major:minor:identifier:)-9ejej.md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ Returns the location of a joint with a given name.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

@@ -15,7 +15,7 @@ class IOBluetoothAccessibilityIgnoredImageCell
 ## Relationships
 
 ### Inherits From
-- [NSImageCell](../AppKit/NSImageCell.md)
+- [NSImageCell](doc://com.apple.iobluetoothui/objc(cs)NSImageCell)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

@@ -122,6 +122,8 @@ CKQueryOperation *queryOp = [[CKQueryOperation alloc] initWithQuery:query];
   The ID of the referenced record.
 - [CKRecord.ReferenceAction](ckrecord/referenceaction.md)
   Constants that indicate the behavior when deleting a referenced record.
+### Initializers
+- [init?(coder: NSCoder)](ckrecord/reference/init(coder:).md)
 
 ## Relationships
 

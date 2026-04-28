@@ -8,6 +8,9 @@ A dictionary that contains shared device configuration settings.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
+- Mac Catalyst 13.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

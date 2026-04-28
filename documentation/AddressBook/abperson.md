@@ -58,7 +58,7 @@ The `ABPerson` class is “toll-free bridged” with its procedural C opaque-typ
 - [Person Flags](person-flags.md)
   Settings that determine how person records are displayed.
 ### Initializers
-- [init!(vCardRepresentation: Data!)](abperson/init(vcardrepresentation:).md)
+- [init!(vCardRepresentation: Data!)](abperson/init(vcardrepresentation:)-1bqog.md)
 ### Default Implementations
 - [ABPerson Implementations](abperson/abperson-implementations.md)
 
@@ -78,9 +78,9 @@ The `ABPerson` class is “toll-free bridged” with its procedural C opaque-typ
 
 - [class ABGroup](abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue-swift.class.md)
+- [class ABMultiValue](abmultivalue.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
+- [class ABMutableMultiValue](abmutablemultivalue.md)
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.

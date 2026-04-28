@@ -27,7 +27,7 @@ If you don’t have a URL backing your document, create a metadata object manual
 
 ## See Also
 
-- [init(url: URL)](uidocumentproperties/init(url:).md)
+- [init(url: URL)](uidocumentproperties/init(url:)-zeio.md)
   Creates a document properties object from document data at the URL you specify.
 - [var metadata: LPLinkMetadata](uidocumentproperties/metadata.md)
   The document’s metadata.

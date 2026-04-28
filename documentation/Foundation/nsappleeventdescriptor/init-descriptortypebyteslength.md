@@ -49,7 +49,7 @@ An instance of `NSAppleEventDescriptor` with the specified type and data. Return
   Initializes a newly allocated instance as an empty list descriptor.
 - [convenience init(recordDescriptor: ())](nsappleeventdescriptor/init(recorddescriptor:).md)
   Initializes a newly allocated instance as a descriptor that is an Apple event record.
-- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:).md)
+- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-5cioa.md)
   Initializes a newly allocated instance as a descriptor for the specified Carbon `AEDesc` structure.
 - [convenience init?(descriptorType: DescType, data: Data?)](nsappleeventdescriptor/init(descriptortype:data:).md)
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an instance of `NSData`).

@@ -33,6 +33,8 @@ This sample stores the results from a hearing test. The sample stores the audiog
   An array of sensitivity point objects.
 ### Initializers
 - [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], start: Date, end: Date, device: HKDevice?, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:start:end:device:metadata:).md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, device: HKDevice?, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:startdate:enddate:device:metadata:).md)
+- [convenience init(sensitivityPoints: [HKAudiogramSensitivityPoint], startDate: Date, endDate: Date, metadata: [String : Any]?)](hkaudiogramsample/init(sensitivitypoints:startdate:enddate:metadata:).md)
 
 ## Relationships
 

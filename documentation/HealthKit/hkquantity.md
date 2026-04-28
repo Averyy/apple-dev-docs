@@ -51,6 +51,8 @@ Like many HealthKit classes, the [`HKQuantity`](hkquantity.md) class is not exte
 ### Comparing Quantities
 - [func compare(HKQuantity) -> ComparisonResult](hkquantity/compare(_:).md)
   Compares two values after converting them to the same units.
+### Initializers
+- [init?(coder: NSCoder)](hkquantity/init(coder:).md)
 
 ## Relationships
 

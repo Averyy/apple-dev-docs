@@ -36,6 +36,7 @@ All match patterns are specified as strings. Apart from the special `<all_urls>`
 - [WKWebExtension.MatchPattern.Options](wkwebextension/matchpattern/options.md)
   Constants used by [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) to indicate matching options.
 ### Initializers
+- [init?(coder: NSCoder)](wkwebextension/matchpattern/init(coder:).md)
 - [init(scheme: String, host: String, path: String) throws](wkwebextension/matchpattern/init(scheme:host:path:).md)
   Returns a pattern object for the specified scheme, host, and path strings.
 - [init(string: String) throws](wkwebextension/matchpattern/init(string:).md)

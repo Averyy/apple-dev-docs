@@ -8,6 +8,7 @@ Transforms the contents of this paper with the specified transform.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

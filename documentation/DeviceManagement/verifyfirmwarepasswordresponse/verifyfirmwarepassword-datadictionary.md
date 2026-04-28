@@ -7,6 +7,8 @@ A dictionary containing the results of the command.
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

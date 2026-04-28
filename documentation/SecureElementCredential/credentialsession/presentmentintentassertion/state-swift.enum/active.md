@@ -8,6 +8,7 @@ The presentment intent assertion is active, offering exclusive use of the device
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

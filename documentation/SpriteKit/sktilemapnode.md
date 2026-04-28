@@ -77,6 +77,9 @@ To work with a tile map programmatically, you supply `SKTileMapNode` with a tile
   Sets an attribute value for an attached shader.
 - [func value(forAttributeNamed: String) -> SKAttributeValue?](sktilemapnode/value(forattributenamed:).md)
   The value of a shader attribute.
+### Initializers
+- [init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWithTileGroup: SKTileGroup)](sktilemapnode/init(tileset:columns:rows:tilesize:fillwithtilegroup:)-58e45.md)
+- [convenience init(tileSet: SKTileSet, columns: Int, rows: Int, tileSize: CGSize, fillWithTileGroup: SKTileGroup)](sktilemapnode/init(tileset:columns:rows:tilesize:fillwithtilegroup:)-86yc2.md)
 
 ## Relationships
 

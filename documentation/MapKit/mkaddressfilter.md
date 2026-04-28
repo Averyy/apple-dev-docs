@@ -42,6 +42,10 @@ Use this object to filter search results by criteria, such as country, region, a
   Indicates whether options are excluded from filtering.
 - [func includes(MKAddressFilter.Options) -> Bool](mkaddressfilter/includes(_:).md)
   Indicates whether options are included for filtering.
+### Initializers
+- [init?(coder: NSCoder)](mkaddressfilter/init(coder:).md)
+- [init(excludingOptions: MKAddressFilter.Options)](mkaddressfilter/init(excludingoptions:).md)
+- [init(includingOptions: MKAddressFilter.Options)](mkaddressfilter/init(includingoptions:).md)
 
 ## Relationships
 

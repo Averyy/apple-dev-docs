@@ -7,6 +7,8 @@ The payload that configures the kernel extension policies.
 
 **Availability**:
 - macOS 10.13.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

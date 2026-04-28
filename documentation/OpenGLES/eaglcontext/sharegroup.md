@@ -19,11 +19,11 @@ var sharegroup: EAGLSharegroup { get }
 
 #### Discussion
 
-Retrieve the sharegroup of a context when you want to create two or more contexts that share rendering resources. Call [`init(api:)`](eaglcontext/init(api:).md) to initialize the first context, retrieve its sharegroup, and then initialize additional contexts by calling [`init(api:sharegroup:)`](eaglcontext/init(api:sharegroup:).md), passing this sharegroup as the parameter.
+Retrieve the sharegroup of a context when you want to create two or more contexts that share rendering resources. Call [`init(api:)`](eaglcontext/init(api:)-q09o.md) to initialize the first context, retrieve its sharegroup, and then initialize additional contexts by calling [`init(api:sharegroup:)`](eaglcontext/init(api:sharegroup:)-2rt8m.md), passing this sharegroup as the parameter.
 
 ## See Also
 
-- [init?(api: EAGLRenderingAPI, sharegroup: EAGLSharegroup)](eaglcontext/init(api:sharegroup:).md)
+- [init?(api: EAGLRenderingAPI, sharegroup: EAGLSharegroup)](eaglcontext/init(api:sharegroup:)-2rt8m.md)
   Initializes and returns a newly allocated rendering context with the specified version of OpenGL ES rendering API and the specified sharegroup.
 
 

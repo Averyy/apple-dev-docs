@@ -34,6 +34,8 @@ Once your [`status`](avexternalsyncdevice/status.md) changes to `AVExternalSyncD
 
 > **Note**: Calling this method may cause a lengthy reconfiguration of the receiver, similar to setting a new active format or [`sessionPreset`](avcapturesession/sessionpreset.md).
 
+> **Note**: When using this property, set the exposure duration with [`setExposureModeCustom(duration:iso:completionHandler:)`](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md) to one half the frame duration (or less) to maintain full dynamic range.
+
 > ❗ **Important**: Calling this method throws an `NSInvalidArgumentException` if [`isExternalSyncSupported`](avcapturedeviceinput/isexternalsyncsupported.md) returns `false`.
 
 > ❗ **Important**: The provided external sync device’s `status` must be `AVExternalSyncDeviceStatusReady` when you call this method, otherwise an `NSInvalidArgumentException` is thrown.

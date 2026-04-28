@@ -8,6 +8,7 @@ A Boolean value that indicates whether the message thread is “junk”, such as
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ A unique identifier for an item managed by the File Provider extension.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - macOS 11.0+
 - visionOS 1.0+
 

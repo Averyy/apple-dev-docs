@@ -78,6 +78,8 @@ For more information about push notification alerts and how they display to the 
   The key that identifies the localized string for the notification’s subtitle.
 - [var subtitleLocalizationArgs: [CKRecord.FieldKey]?](cksubscription/notificationinfo-swift.class/subtitlelocalizationargs.md)
   The fields for building a notification’s subtitle.
+### Initializers
+- [init?(coder: NSCoder)](cksubscription/notificationinfo-swift.class/init(coder:).md)
 
 ## Relationships
 

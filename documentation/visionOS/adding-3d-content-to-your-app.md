@@ -17,7 +17,7 @@ Windows are an important part of your app’s interface. With visionOS, apps aut
 Incorporate depth effects into your custom views as needed, and use 3D layout options to arrange views in your windows.
 
 - Apply a [`shadow(color:radius:x:y:)`](https://developer.apple.com/documentation/SwiftUI/View/shadow(color:radius:x:y:)) or [`visualEffect(_:)`](https://developer.apple.com/documentation/SwiftUI/View/visualEffect(_:)) modifier to the view.
-- Lift or highlight the view when someone looks at it using a [`hoverEffect(_:in:isEnabled:)`](https://developer.apple.com/documentation/SwiftUI/View/hoverEffect(_:in:isEnabled:)) modifier.
+- Lift or highlight the view when someone looks at it using a doc://com.apple.documentation/documentation/swiftui/view/hovereffect(_:in:isenabled:) modifier.
 - Lay out views using a [`ZStack`](https://developer.apple.com/documentation/SwiftUI/ZStack).
 - Animate view-related changes with [`transform3DEffect(_:)`](https://developer.apple.com/documentation/SwiftUI/View/transform3DEffect(_:)).
 - Rotate the view using a [`rotation3DEffect(_:axis:anchor:anchorZ:perspective:)`](https://developer.apple.com/documentation/SwiftUI/View/rotation3DEffect(_:axis:anchor:anchorZ:perspective:)) modifier.

@@ -7,6 +7,8 @@ A response from the device after it processes the command to install an enterpri
 
 **Availability**:
 - macOS 10.13.6+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

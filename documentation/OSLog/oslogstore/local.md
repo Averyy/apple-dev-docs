@@ -20,7 +20,7 @@ Gaining access to the local unified logging system requires permission from the 
 
 ## See Also
 
-- [convenience init(url: URL) throws](oslogstore/init(url:).md)
+- [convenience init(url: URL) throws](oslogstore/init(url:)-5v3w7.md)
   Creates a log store based on a log archive.
 
 

@@ -8,6 +8,7 @@ An error indicating that there isn’t an app extension within the app bundle.
 **Availability**:
 - iOS 17.1+
 - iPadOS 17.1+
+- Mac Catalyst 17.1+
 - macOS 14.1+
 - visionOS 1.0+
 

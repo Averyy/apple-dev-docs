@@ -56,6 +56,7 @@ An [`NSTabViewItem`](nstabviewitem.md) is a convenient way for presenting inform
   These constants describe the current display state of a tab:
 ### Initializers
 - [convenience init(viewController: NSViewController)](nstabviewitem/init(viewcontroller:).md)
+- [init?(coder: NSCoder)](nstabviewitem/init(coder:).md)
 ### Instance Properties
 - [var image: NSImage?](nstabviewitem/image.md)
   Gets and set the image for this tab view item. The image may only be used in certain tab view styles and options.

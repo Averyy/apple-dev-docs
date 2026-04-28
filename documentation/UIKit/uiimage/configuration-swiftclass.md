@@ -36,6 +36,7 @@ Images may contain multiple variants to account for environmental factors, such 
 - [var traitCollection: UITraitCollection?](uiimage/configuration-swift.class/traitcollection.md)
   The traits associated with the image configuration.
 ### Initializers
+- [init?(coder: NSCoder)](uiimage/configuration-swift.class/init(coder:).md)
 - [convenience init(locale: Locale?)](uiimage/configuration-swift.class/init(locale:).md)
 - [convenience init(traitCollection: UITraitCollection?)](uiimage/configuration-swift.class/init(traitcollection:).md)
 ### Instance Properties

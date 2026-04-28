@@ -32,7 +32,7 @@ The system automatically loads values for the specified property identifiers bef
 
 ## See Also
 
-- [convenience init(url: URL)](avplayeritem/init(url:).md)
+- [convenience init(url: URL)](avplayeritem/init(url:)-1xrtk.md)
   Creates a player item with a specified URL.
 - [convenience init(asset: AVAsset)](avplayeritem/init(asset:)-87rjl.md)
   Creates a player item for a specified asset.

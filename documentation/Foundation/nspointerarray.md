@@ -67,6 +67,8 @@ When enumerating a pointer array with [`NSFastEnumeration`](nsfastenumeration.md
   The functions in use by the receiver.
 - [class NSPointerFunctions](nspointerfunctions.md)
   An instance of `NSPointerFunctions` defines callout functions appropriate for managing a pointer reference held somewhere else.
+### Initializers
+- [init?(coder: NSCoder)](nspointerarray/init(coder:).md)
 
 ## Relationships
 

@@ -35,6 +35,8 @@ class UIKey
   A string that represents the text value of the key combined with any active modifier keys.
 - [var charactersIgnoringModifiers: String](uikey/charactersignoringmodifiers.md)
   A string that represents the text value of the key without modifier keys.
+### Initializers
+- [init?(coder: NSCoder)](uikey/init(coder:).md)
 
 ## Relationships
 

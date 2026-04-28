@@ -32,6 +32,8 @@ class MLParameterDescription
   The constraints of this paramter description value, if and only if the value is numerical.
 - [class MLNumericConstraint](mlnumericconstraint.md)
   The value limitations of a number.
+### Initializers
+- [init?(coder: NSCoder)](mlparameterdescription/init(coder:).md)
 
 ## Relationships
 

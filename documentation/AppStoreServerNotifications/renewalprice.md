@@ -30,12 +30,14 @@ To determine the storefront, use the [`storefront`](storefront.md) value in the 
   The renewal status for an auto-renewable subscription.
 - [type autoRenewProductId](autorenewproductid.md)
   The identifier of the product that renews at the next billing period.
+- [type billingPlanType](billingplantype.md)
 - [type expirationIntent](expirationintent.md)
   The reason an auto-renewable subscription expired.
 - [type expiresDate](expiresdate.md)
   The UNIX time, in milliseconds, an auto-renewable subscription purchase expires or renews.
 - [type isUpgraded](isupgraded.md)
   A Boolean value that indicates whether the customer upgraded to another subscription.
+- [type renewalBillingPlanType](renewalbillingplantype.md)
 - [type renewalDate](renewaldate.md)
   The UNIX time, in milliseconds, when the most recent auto-renewable subscription purchase expires.
 

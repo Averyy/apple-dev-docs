@@ -22,7 +22,7 @@ var data: Data? { get }
 
 #### Discussion
 
-If the scene source was created using the [`sceneSourceWithData:options:`](scnscenesource/scenesourcewithdata:options:.md) or [`init(data:options:)`](scnscenesource/init(data:options:).md) method, this property’s value is the data from which the scene source was created. If the scene source was created from a scene file using the the [`sceneSourceWithURL:options:`](scnscenesource/scenesourcewithurl:options:.md) or [`init(url:options:)`](scnscenesource/init(url:options:).md) method, this property’s value is the data loaded from that URL at the time the scene source was created.
+If the scene source was created using the [`sceneSourceWithData:options:`](scnscenesource/scenesourcewithdata:options:.md) or [`init(data:options:)`](scnscenesource/init(data:options:).md) method, this property’s value is the data from which the scene source was created. If the scene source was created from a scene file using the the [`sceneSourceWithURL:options:`](scnscenesource/scenesourcewithurl:options:.md) or [`init(url:options:)`](scnscenesource/init(url:options:)-rw0y.md) method, this property’s value is the data loaded from that URL at the time the scene source was created.
 
 ## See Also
 

@@ -8,9 +8,12 @@ The payload that configures a global HTTP proxy.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.9+
 - tvOS 9.0+
 - visionOS 2.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

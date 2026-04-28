@@ -32,8 +32,10 @@ For related documentation, see [`Mac Technology Overview`](https://developer.app
 - [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
 - [kDADiskOptionPrivate](kdadiskoptionprivate.md)
 ### Variables
+- [var kDADiskClaimOptionDefault: Int](kdadiskclaimoptiondefault.md)
 - [let kDADiskDescriptionFSKitPrefix: CFString](kdadiskdescriptionfskitprefix.md)
 - [let kDADiskDescriptionRepairRunningKey: CFString](kdadiskdescriptionrepairrunningkey.md)
+- [var kDADiskEjectOptionDefault: Int](kdadiskejectoptiondefault.md)
 - [var kDADiskMountOptionNoFollow: Int](kdadiskmountoptionnofollow.md)
 
 

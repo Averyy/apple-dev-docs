@@ -43,6 +43,8 @@ Raycasts can intersect with planes (flat surfaces) or meshes (uneven surfaces). 
   A vector that describes the ray’s trajectory in 3D space.
 - [var origin: simd_float3](arraycastquery/origin.md)
   A 3D coordinate that defines the ray’s starting place.
+### Initializers
+- [init(origin: simd_float3, direction: simd_float3, allowingTarget: ARRaycastQuery.Target, alignment: ARRaycastQuery.TargetAlignment)](arraycastquery/init(origin:direction:allowingtarget:alignment:).md)
 
 ## Relationships
 

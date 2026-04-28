@@ -33,6 +33,8 @@ A single [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) can con
 ### Locating Recognized Text
 - [func boundingBox(for: Range<String.Index>) throws -> VNRectangleObservation?](vnrecognizedtext/boundingbox(for:).md)
   Calculates the bounding box around the characters in the range of a string.
+### Initializers
+- [init?(coder: NSCoder)](vnrecognizedtext/init(coder:).md)
 
 ## Relationships
 

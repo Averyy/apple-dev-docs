@@ -21,7 +21,7 @@ init()
 
 ## See Also
 
-- [init?(url: URL)](pdfdocument/init(url:).md)
+- [init?(url: URL)](pdfdocument/init(url:)-98jte.md)
   Initializes a `PDFDocument` object with the contents at the specified URL (if the URL is invalid, this method returns `NULL`).
 - [init?(data: Data)](pdfdocument/init(data:).md)
   Initializes a `PDFDocument` object with the passed-in data.

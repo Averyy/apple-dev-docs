@@ -30,7 +30,7 @@ You can also query this object to find out about the supported camera models, de
 ## Topics
 
 ### Creating a filter
-- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:).md)
+- [convenience init?(cvPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:)-6209q.md)
   Creates a RAW filter from the pixel buffer and its properties that you specify.
 - [convenience init?(imageData: Data, identifierHint: String?)](cirawfilter/init(imagedata:identifierhint:).md)
   Creates a RAW filter from the image data and type hint that you specify.
@@ -125,6 +125,8 @@ You can also query this object to find out about the supported camera models, de
   A value that indicates the amount to subtract from the shadows in the image.
 - [var sharpnessAmount: Float](cirawfilter/sharpnessamount.md)
   A value that indicates the amount of sharpness to apply to the edges of the image.
+### Initializers
+- [convenience init?(CVPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:)-6321o.md)
 ### Instance Properties
 - [var isHighlightRecoveryEnabled: Bool](cirawfilter/ishighlightrecoveryenabled.md)
 - [var isHighlightRecoverySupported: Bool](cirawfilter/ishighlightrecoverysupported.md)

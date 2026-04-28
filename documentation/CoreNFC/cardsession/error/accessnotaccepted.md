@@ -8,6 +8,7 @@ The person using the app hasn’t yet accepted or declined your app’s request 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

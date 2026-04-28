@@ -20,6 +20,7 @@ class CPNavigationWaypoint
 
 ### Initializers
 - [convenience init(centerPoint: CPLocationCoordinate3D, locationThreshold: Measurement<UnitLength>?, name: String?, address: String?, entryPoints: [CPLocationCoordinate3D], timeZone: TimeZone?)](cpnavigationwaypoint/init(centerpoint:locationthreshold:name:address:entrypoints:timezone:).md)
+- [init?(coder: NSCoder)](cpnavigationwaypoint/init(coder:).md)
 - [convenience init(mapItem: MKMapItem, locationThreshold: Measurement<UnitLength>?, entryPoints: [CPLocationCoordinate3D])](cpnavigationwaypoint/init(mapitem:locationthreshold:entrypoints:).md)
 ### Instance Properties
 - [var address: String?](cpnavigationwaypoint/address.md)

@@ -51,6 +51,8 @@ For more details about particle systems and particle properties, see [`SCNPartic
 ### Constants
 - [enum SCNParticleInputMode](scnparticleinputmode.md)
   Options for the input value of the property controller’s animation, used by the [`inputMode`](scnparticlepropertycontroller/inputmode.md) property.
+### Initializers
+- [init?(coder: NSCoder)](scnparticlepropertycontroller/init(coder:).md)
 
 ## Relationships
 

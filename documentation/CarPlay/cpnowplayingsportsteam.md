@@ -20,6 +20,7 @@ class CPNowPlayingSportsTeam
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpnowplayingsportsteam/init(coder:).md)
 - [init(name: String, logo: CPNowPlayingSportsTeamLogo, teamStandings: String?, eventScore: String, possessionIndicator: UIImage?, favorite: Bool)](cpnowplayingsportsteam/init(name:logo:teamstandings:eventscore:possessionindicator:favorite:).md)
   Initialize a sports team for display on the now playing screen.
 ### Instance Properties

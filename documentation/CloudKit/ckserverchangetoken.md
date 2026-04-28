@@ -54,6 +54,11 @@ func readToken(at url: URL) throws -> CKServerChangeToken? {
 }
 ```
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](ckserverchangetoken/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

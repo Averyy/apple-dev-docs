@@ -24,7 +24,7 @@ var serializedRepresentation: Data? { get }
 
 This property contains a data object in the format used by the [`fileContents`](https://developer.apple.com/documentation/AppKit/NSPasteboard/PasteboardType/fileContents) pasteboard type. This data object is also suitable for passing to [`init(serializedRepresentation:)`](filewrapper/init(serializedrepresentation:).md).
 
-This property may be `nil` if the user modifies the contents of the file system node after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:).md), but before [`FileWrapper`](filewrapper.md) has read the contents of the file.  You can use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of this problem.
+This property may be `nil` if the user modifies the contents of the file system node after you call [`read(from:options:)`](filewrapper/read(from:options:).md) or [`init(url:options:)`](filewrapper/init(url:options:)-70161.md), but before [`FileWrapper`](filewrapper.md) has read the contents of the file.  You can use the [`immediate`](filewrapper/readingoptions/immediate.md) reading option to reduce the likelihood of this problem.
 
 ## See Also
 

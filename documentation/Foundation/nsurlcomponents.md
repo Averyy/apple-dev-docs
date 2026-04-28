@@ -39,7 +39,7 @@ You create a URL components object in one of three ways: from an [`NSString`](ns
   Creates a URL components object by parsing a URL in string form.
 - [init?(string: String, encodingInvalidCharacters: Bool)](nsurlcomponents/init(string:encodinginvalidcharacters:).md)
   Creates a URL components instance from the provided string, optionally IDNA- and percent-encoding any invalid characters.
-- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:).md)
+- [init?(url: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-3bbte.md)
   Creates a URL components object by parsing the URL from an `NSURL` object.
 ### Getting the URL
 - [var string: String?](nsurlcomponents/string.md)
@@ -100,6 +100,9 @@ You create a URL components object in one of three ways: from an [`NSString`](ns
   Returns the character range of the scheme in the string returned by the string property.
 - [var rangeOfUser: NSRange](nsurlcomponents/rangeofuser.md)
   Returns the character range of the user in the string returned by the string property.
+### Initializers
+- [init?(URL: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-5k5ld.md)
+- [convenience init?(URL: URL, resolvingAgainstBaseURL: Bool)](nsurlcomponents/init(url:resolvingagainstbaseurl:)-6mpr5.md)
 
 ## Relationships
 

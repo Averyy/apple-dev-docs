@@ -8,6 +8,7 @@ Defines grouping of text formatting components in view.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -19,6 +20,7 @@ class ComponentGroup
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](uitextformattingviewcontroller/componentgroup/init(coder:).md)
 - [init(components: [UITextFormattingViewController.Component])](uitextformattingviewcontroller/componentgroup/init(components:).md)
   Creates a group of components.
 ### Instance Properties

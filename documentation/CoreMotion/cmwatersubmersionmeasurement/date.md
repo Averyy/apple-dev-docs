@@ -8,6 +8,7 @@ The time and date when the system recorded the measurements.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

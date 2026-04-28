@@ -7,6 +7,8 @@ The payload that configures the Finder’s contextual menu to bypass the system 
 
 **Availability**:
 - macOS 10.8+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

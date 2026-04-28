@@ -47,6 +47,8 @@ The framework provides specialized buttons for common actions, such as [`CPConta
   A button for getting directions to the contact’s location.
 - [class CPContactMessageButton](cpcontactmessagebutton.md)
   A button that activates Siri and initiates the compose message flow.
+### Initializers
+- [init?(coder: NSCoder)](cpcontact/init(coder:).md)
 
 ## Relationships
 

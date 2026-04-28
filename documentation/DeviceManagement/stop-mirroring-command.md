@@ -8,7 +8,10 @@ Stop mirroring the display to another device.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - macOS 10.10+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

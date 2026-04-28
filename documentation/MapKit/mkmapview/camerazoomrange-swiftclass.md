@@ -39,6 +39,8 @@ Create a camera zoom range to limit the distance to which the user can zoom. Aft
   The maximum distance of the camera to the center of the map, measured in meters.
 - [var minCenterCoordinateDistance: CLLocationDistance](mkmapview/camerazoomrange-swift.class/mincentercoordinatedistance.md)
   The minimum distance of the camera to the center of the map, measured in meters.
+### Initializers
+- [init?(coder: NSCoder)](mkmapview/camerazoomrange-swift.class/init(coder:).md)
 
 ## Relationships
 

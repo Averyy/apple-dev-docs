@@ -63,6 +63,8 @@ hat.skinner.skeleton = hero.skinner.skeleton;
   The geometry source that defines the influence of each bone on the positions the geometry’s vertices.
 - [var boneIndices: SCNGeometrySource](scnskinner/boneindices.md)
   The geometry source defining the mapping from bone indices in skeleton data to the skinner’s bones array.
+### Initializers
+- [init?(coder: NSCoder)](scnskinner/init(coder:).md)
 
 ## Relationships
 

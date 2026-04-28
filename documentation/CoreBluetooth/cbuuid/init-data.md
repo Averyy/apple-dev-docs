@@ -36,9 +36,9 @@ This method is useful when handling the UUID of a Bluetooth attribute in raw byt
 
 - [init(string: String)](cbuuid/init(string:).md)
   Creates a Core Bluetooth UUID object from a 16-, 32-, or 128-bit UUID string.
-- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:).md)
+- [init(cfuuid: CFUUID)](cbuuid/init(cfuuid:)-3h0ry.md)
   Creates a Core Bluetooth UUID object from a Core Foundation UUID object.
-- [init(nsuuid: UUID)](cbuuid/init(nsuuid:).md)
+- [init(nsuuid: UUID)](cbuuid/init(nsuuid:)-2amob.md)
   Creates a Core Bluetooth UUID object from a Foundation UUID object.
 
 

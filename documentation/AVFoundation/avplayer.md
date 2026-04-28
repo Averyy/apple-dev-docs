@@ -58,7 +58,7 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ## Topics
 
 ### Creating a player
-- [init(url: URL)](avplayer/init(url:).md)
+- [init(url: URL)](avplayer/init(url:)-87cxx.md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
 - [init(playerItem: AVPlayerItem?)](avplayer/init(playeritem:).md)
   Creates a new player to play the specified player item.
@@ -218,6 +218,9 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ### Displaying closed captions
 - [var isClosedCaptionDisplayEnabled: Bool](avplayer/isclosedcaptiondisplayenabled.md)
   A Boolean value that indicates whether the player uses closed captioning.
+### Initializers
+- [convenience init(URL: URL)](avplayer/init(url:)-8aqw0.md)
+- [init(URL: URL)](avplayer/init(url:)-9cqj1.md)
 ### Instance Properties
 - [var allowsCaptureOfClearKeyVideo: Bool](avplayer/allowscaptureofclearkeyvideo.md)
   Indicates whether the video output of ClearKey Encrypted Video can be captured

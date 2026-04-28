@@ -35,7 +35,7 @@ Pixel formats are incompatible if they use different renderers; this can happen 
 
 ## See Also
 
-- [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:).md)
+- [init?(cglContextObj: CGLContextObj)](nsopenglcontext/init(cglcontextobj:)-30lqr.md)
   Initializes and returns an OpenGL context object using an existing CGL context.
 
 

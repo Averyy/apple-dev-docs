@@ -44,6 +44,8 @@ You can also discover the identities of your app’s users by executing one of t
   Identifiers that match contacts in the local Contacts database.
 - [var nameComponents: PersonNameComponents?](ckuseridentity/namecomponents.md)
   The user’s name.
+### Initializers
+- [init?(coder: NSCoder)](ckuseridentity/init(coder:).md)
 
 ## Relationships
 

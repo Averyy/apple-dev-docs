@@ -58,6 +58,8 @@ Physics shapes are immutable, but you can change the shape associated with a phy
 ### Shape Options
 - [SCNPhysicsShape.Option](scnphysicsshape/option.md)
   Keys for the options dictionary used when creating a physics shape.
+### Initializers
+- [init?(coder: NSCoder)](scnphysicsshape/init(coder:).md)
 
 ## Relationships
 

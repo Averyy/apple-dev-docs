@@ -31,6 +31,8 @@ To request scene activation from an interaction with a [`UICollectionView`](uico
   Creates an activation interaction.
 - [UIWindowScene.ActivationInteraction.ConfigurationProvider](uiwindowscene/activationinteraction/configurationprovider.md)
   A type alias defining a closure that provides an activation configuration for the activation interaction.
+### Initializers
+- [init(configurationProvider: UIWindowScene.ActivationInteraction.ConfigurationProvider, errorHandler: (any Error) -> Void)](uiwindowscene/activationinteraction/init(configurationprovider:errorhandler:).md)
 
 ## Relationships
 

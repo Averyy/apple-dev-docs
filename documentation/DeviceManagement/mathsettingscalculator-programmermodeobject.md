@@ -7,6 +7,8 @@ The declaration to configure programmer mode in the calculator app.
 
 **Availability**:
 - macOS 15.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

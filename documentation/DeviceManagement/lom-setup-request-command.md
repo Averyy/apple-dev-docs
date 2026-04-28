@@ -7,6 +7,8 @@ Get information from a device to set up lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

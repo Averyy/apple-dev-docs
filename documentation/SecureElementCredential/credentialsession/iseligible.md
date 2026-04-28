@@ -8,6 +8,7 @@ A Boolean value that indicates whether the app or app extension is eligible to s
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

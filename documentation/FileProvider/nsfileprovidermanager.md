@@ -8,6 +8,7 @@ A manager object that you use to communicate with the file provider from either 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 
@@ -121,6 +122,8 @@ class NSFileProviderManager
 ### Collecting diagnostic reports
 - [func requestDiagnosticCollection(for: NSFileProviderItemIdentifier, errorReason: any Error, completionHandler: ((any Error)?) -> Void)](nsfileprovidermanager/requestdiagnosticcollection(for:errorreason:completionhandler:).md)
   Requests a diagnostics collection for use when working directly with Apple to improve sync behavior.
+### Initializers
+- [convenience init?(forDomain: NSFileProviderDomain)](nsfileprovidermanager/init(fordomain:).md)
 
 ## Relationships
 

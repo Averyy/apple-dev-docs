@@ -24,6 +24,11 @@ class ID
 
 You don’t create notification IDs directly. The server creates them when it creates instances of [`CKNotification`](cknotification.md) that correspond to the push notifications that CloudKit sends to your app. You can compare two IDs using the [`isEqual(_:)`](https://developer.apple.com/documentation/ObjectiveC/NSObjectProtocol/isEqual(_:)) method to determine whether two notifications are the same. This class defines no methods or properties.
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](cknotification/id/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

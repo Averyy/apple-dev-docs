@@ -76,6 +76,12 @@ For more information about working with external documents, see [`Providing acce
   Initializes and returns a document picker that can export or copy the specified document.
 - [init(urls: [URL], in: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:in:).md)
   Creates and returns a document picker that can export or move the specified documents.
+### Initializers
+- [init(URL: URL, inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(url:inmode:).md)
+- [init(URLs: [URL], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(urls:inmode:).md)
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentpickerviewcontroller/init(documenttypes:inmode:).md)
+- [convenience init(forExportingURLs: [URL])](uidocumentpickerviewcontroller/init(forexportingurls:).md)
+- [init(forExportingURLs: [URL], asCopy: Bool)](uidocumentpickerviewcontroller/init(forexportingurls:ascopy:).md)
 
 ## Relationships
 

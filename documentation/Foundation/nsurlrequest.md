@@ -58,9 +58,9 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotoco
 ## Topics
 
 ### Creating requests
-- [convenience init(url: URL)](nsurlrequest/init(url:).md)
+- [convenience init(url: URL)](nsurlrequest/init(url:)-7dmpd.md)
   Creates a URL request for a specified URL.
-- [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:).md)
+- [init(url: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-2giyj.md)
   Creates a URL request with the specified URL, cache policy, and timeout values.
 ### Working with a cache policy
 - [var cachePolicy: NSURLRequest.CachePolicy](nsurlrequest/cachepolicy-swift.property.md)
@@ -110,6 +110,12 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotoco
   The entity that initiates the network request.
 - [NSURLRequest.Attribution](nsurlrequest/attribution-swift.enum.md)
   The entities that can make a network request.
+### Initializers
+- [convenience init(URL: URL)](nsurlrequest/init(url:)-9mck0.md)
+- [convenience init(URL: URL)](nsurlrequest/init(url:)-9plp8.md)
+- [init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-59r40.md)
+- [convenience init(URL: URL, cachePolicy: NSURLRequest.CachePolicy, timeoutInterval: TimeInterval)](nsurlrequest/init(url:cachepolicy:timeoutinterval:)-7xiv0.md)
+- [init?(coder: NSCoder)](nsurlrequest/init(coder:).md)
 ### Instance Properties
 - [var allowsPersistentDNS: Bool](nsurlrequest/allowspersistentdns.md)
 - [var allowsUltraConstrainedNetworkAccess: Bool](nsurlrequest/allowsultraconstrainednetworkaccess.md)

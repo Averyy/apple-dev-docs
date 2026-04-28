@@ -68,6 +68,9 @@ Recurrence rules can have an end, represented by an [`EKRecurrenceEnd`](ekrecurr
   An array of ordinal numbers that filters which recurrences to include in the recurrence rule’s frequency.
 - [func EK_LOSE_FRACTIONAL_SECONDS_DO_NOT_USE()](ek_lose_fractional_seconds_do_not_use().md)
   A deprecated function.
+### Initializers
+- [init(recurrenceWithFrequency: EKRecurrenceFrequency, interval: Int, daysOfTheWeek: [EKRecurrenceDayOfWeek]?, daysOfTheMonth: [NSNumber]?, monthsOfTheYear: [NSNumber]?, weeksOfTheYear: [NSNumber]?, daysOfTheYear: [NSNumber]?, setPositions: [NSNumber]?, end: EKRecurrenceEnd?)](ekrecurrencerule/init(recurrencewithfrequency:interval:daysoftheweek:daysofthemonth:monthsoftheyear:weeksoftheyear:daysoftheyear:setpositions:end:).md)
+- [init(recurrenceWithFrequency: EKRecurrenceFrequency, interval: Int, end: EKRecurrenceEnd?)](ekrecurrencerule/init(recurrencewithfrequency:interval:end:).md)
 
 ## Relationships
 

@@ -33,6 +33,8 @@ class AVDateRangeMetadataGroup
   The start date for the metadata date range group.
 - [var endDate: Date?](avdaterangemetadatagroup/enddate.md)
   The end date for the metadata date range group.
+### Initializers
+- [init(items: [AVMetadataItem], startDate: Date, endDate: Date?)](avdaterangemetadatagroup/init(items:startdate:enddate:).md)
 
 ## Relationships
 

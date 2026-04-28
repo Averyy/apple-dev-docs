@@ -21,7 +21,7 @@ An initialized shared instance of an `SBApplication` subclass that represents a 
 
 #### Discussion
 
-If you must initialize an `SBApplication` object explictly, you should use this initializer if possible; unlike [`init(processIdentifier:)`](sbapplication/init(processidentifier:).md) and [`init(url:)`](sbapplication/init(url:).md), this method is not dependent on changeable factors such as the target application’s path or process ID. Even so, you should rarely have to initialize an `SBApplication` object yourself; instead, you should initialize an application-specific subclass such as `iTunesApplication`.
+If you must initialize an `SBApplication` object explictly, you should use this initializer if possible; unlike [`init(processIdentifier:)`](sbapplication/init(processidentifier:).md) and [`init(url:)`](sbapplication/init(url:)-6xbe5.md), this method is not dependent on changeable factors such as the target application’s path or process ID. Even so, you should rarely have to initialize an `SBApplication` object yourself; instead, you should initialize an application-specific subclass such as `iTunesApplication`.
 
 Note that this method does not check whether an application with the given bundle identifier actually exists.
 
@@ -33,7 +33,7 @@ Note that this method does not check whether an application with the given bundl
 
 - [init?(processIdentifier: pid_t)](sbapplication/init(processidentifier:).md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given process identifier.
-- [init?(url: URL)](sbapplication/init(url:).md)
+- [init?(url: URL)](sbapplication/init(url:)-6xbe5.md)
   Returns an instance of an `SBApplication` subclass that represents the target application identified by the given URL.
 
 

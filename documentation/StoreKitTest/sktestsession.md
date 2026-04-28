@@ -118,6 +118,8 @@ Before automating a test session with `SKTestSession`, you must create a StoreKi
 - [func buyProduct(identifier: Product.ID, options: Set<Product.PurchaseOption>) async throws -> Transaction](sktestsession/buyproduct(identifier:options:).md)
 - [func setSimulatedError<API>(API.Failure?, forAPI: API) async throws](sktestsession/setsimulatederror(_:forapi:).md)
 - [func simulatedError<API>(forAPI: API) async -> API.Failure?](sktestsession/simulatederror(forapi:).md)
+### Initializers
+- [init(contentsOfURL: URL) throws](sktestsession/init(contentsofurl:).md)
 
 ## Relationships
 

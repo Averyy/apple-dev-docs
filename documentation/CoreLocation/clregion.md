@@ -42,6 +42,8 @@ This is an abstract base class. Instantiate one of the provided subclasses that 
   The center point of the region.
 - [var radius: CLLocationDistance](clregion/radius.md)
   The radius (measured in meters) that defines the region’s outer boundary.
+### Initializers
+- [init?(coder: NSCoder)](clregion/init(coder:).md)
 
 ## Relationships
 

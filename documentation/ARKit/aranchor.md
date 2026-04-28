@@ -55,6 +55,9 @@ In addition to creating your own `ARAnchor` instances to track the real-world po
   The unique identifier of the session that owns this anchor.
 - [var transform: simd_float4x4](aranchor/transform.md)
   A matrix encoding the position, orientation, and scale of the anchor relative to the world coordinate space of the AR session the anchor is placed in.
+### Initializers
+- [init(anchor: ARAnchor)](aranchor/init(anchor:).md)
+- [init?(coder: NSCoder)](aranchor/init(coder:).md)
 
 ## Relationships
 

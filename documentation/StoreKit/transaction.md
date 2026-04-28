@@ -8,6 +8,7 @@ Information that represents the customer’s purchase of a product in your app.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -23,7 +24,9 @@ struct Transaction
 
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 - [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
+- [Managing the life cycle of monthly subscriptions with a 12-month commitment](managing-lifecycle-of-monthly-subscriptions-with-a-12-month-commitment-.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)
 - [Testing refund requests](testing-refund-requests.md)
 - [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)

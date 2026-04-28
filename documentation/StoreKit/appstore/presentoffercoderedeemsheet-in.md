@@ -45,7 +45,8 @@ In Mac apps built with Mac Catalyst, this method throws a [`StoreKitError.unknow
 
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
   Enable customers to redeem offer codes through the App Store or within your app.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](appstore/presentoffercoderedeemsheet(from:).md)
   Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.

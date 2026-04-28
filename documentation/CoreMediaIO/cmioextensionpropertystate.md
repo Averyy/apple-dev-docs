@@ -31,6 +31,8 @@ Create a property state object by specifying the type of data it stores, which m
   The value for a property state.
 - [var attributes: CMIOExtensionPropertyAttributes<ObjectType>?](cmioextensionpropertystate/attributes.md)
   The attributes for a property state.
+### Initializers
+- [init?(coder: NSCoder)](cmioextensionpropertystate/init(coder:).md)
 
 ## Relationships
 

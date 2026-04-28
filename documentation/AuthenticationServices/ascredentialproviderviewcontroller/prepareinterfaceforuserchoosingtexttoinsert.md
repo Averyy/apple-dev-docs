@@ -8,6 +8,7 @@ Prepare the view controller to show a list of all insertable text with user sele
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -51,11 +51,11 @@ You can use the [`init(colorSpace:components:count:)`](nscolor/init(colorspace:c
 - [class func availableColorSpaces(with: NSColorSpace.Model) -> [NSColorSpace]](nscolorspace/availablecolorspaces(with:).md)
   Returns the list of color spaces available on the system that are displayed in the color panel, in the order they are displayed in the color panel.
 ### Initializing a Custom Color Space Object
-- [init?(cgColorSpace: CGColorSpace)](nscolorspace/init(cgcolorspace:).md)
+- [init?(cgColorSpace: CGColorSpace)](nscolorspace/init(cgcolorspace:)-889nv.md)
   Initializes and returns a color space object initialized from a Core Graphics color-space object.
 - [init?(colorSyncProfile: UnsafeMutableRawPointer)](nscolorspace/init(colorsyncprofile:).md)
   Initializes and returns a color space object from the specified ColorSync profile.
-- [init?(iccProfileData: Data)](nscolorspace/init(iccprofiledata:).md)
+- [init?(iccProfileData: Data)](nscolorspace/init(iccprofiledata:)-8rl9d.md)
   Initializes and returns a color space object from the specified ICC profile.
 ### Accessing Color Space Data and Attributes
 - [var cgColorSpace: CGColorSpace?](nscolorspace/cgcolorspace.md)
@@ -72,6 +72,10 @@ You can use the [`init(colorSpace:components:count:)`](nscolor/init(colorspace:c
   The localized name of the color space.
 - [var numberOfColorComponents: Int](nscolorspace/numberofcolorcomponents.md)
   The number of components, excluding alpha, the color space supports.
+### Initializers
+- [init?(CGColorSpace: CGColorSpace)](nscolorspace/init(cgcolorspace:)-90qpy.md)
+- [init?(ICCProfileData: Data)](nscolorspace/init(iccprofiledata:)-jhas.md)
+- [init?(coder: NSCoder)](nscolorspace/init(coder:).md)
 
 ## Relationships
 

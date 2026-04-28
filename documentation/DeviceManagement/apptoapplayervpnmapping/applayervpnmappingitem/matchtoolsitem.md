@@ -7,6 +7,8 @@ Specifies a per-app VPN rule to match network traffic that the app’s spawned c
 
 **Availability**:
 - macOS 10.15.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

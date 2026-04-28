@@ -74,6 +74,8 @@ You can create a custom video compositor by implementing the [`AVVideoCompositin
 ### Specifying a custom compositor
 - [var customVideoCompositorClass: (any AVVideoCompositing.Type)?](avmutablevideocomposition/customvideocompositorclass.md)
   The custom compositor class to use.
+### Initializers
+- [init(propertiesOfAsset: AVAsset, prototypeInstruction: AVVideoCompositionInstruction)](avmutablevideocomposition/init(propertiesofasset:prototypeinstruction:).md)
 
 ## Relationships
 

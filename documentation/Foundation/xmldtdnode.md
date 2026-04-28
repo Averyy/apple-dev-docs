@@ -21,14 +21,14 @@ class XMLDTDNode
 
 [`XMLDTDNode`](xmldtdnode.md) objects can be of four kinds—element, attribute-list, entity, or notation declaration—and can also be of a subkind, as specified by a [`XMLDTDNode.DTDKind`](xmldtdnode/dtdkind-swift.enum.md) constant. For example, a DTD entity-declaration node could represent an unparsed entity declaration ([`XMLDTDNode.DTDKind.unparsed`](xmldtdnode/dtdkind-swift.enum/unparsed.md)) rather than a parameter entity declaration ([`XMLDTDNode.DTDKind.parameter`](xmldtdnode/dtdkind-swift.enum/parameter.md)). You can use a DTD node’s subkind to help determine how to handle the value of the node.
 
-You can create an [`XMLDTDNode`](xmldtdnode.md) object with the [`init(xmlString:)`](xmldtdnode/init(xmlstring:).md) method, the [`XMLNode`](xmlnode.md) class method [`dtdNode(withXMLString:)`](xmlnode/dtdnode(withxmlstring:).md), or with the [`XMLNode`](xmlnode.md) initializer [`init(kind:options:)`](xmlnode/init(kind:options:).md) (in the latter method supplying the appropriate [`XMLNode.Kind`](xmlnode/kind-swift.enum.md) constant).
+You can create an [`XMLDTDNode`](xmldtdnode.md) object with the [`init(xmlString:)`](xmldtdnode/init(xmlstring:)-1dyhd.md) method, the [`XMLNode`](xmlnode.md) class method [`dtdNode(withXMLString:)`](xmlnode/dtdnode(withxmlstring:).md), or with the [`XMLNode`](xmlnode.md) initializer [`init(kind:options:)`](xmlnode/init(kind:options:).md) (in the latter method supplying the appropriate [`XMLNode.Kind`](xmlnode/kind-swift.enum.md) constant).
 
 Setting the object value or string value of an [`XMLDTDNode`](xmldtdnode.md) objects affects different parts of different kinds of declaration. See the related programming topic for more information.
 
 ## Topics
 
 ### Initializing an NSXMLDTDNode Object
-- [init?(xmlString: String)](xmldtdnode/init(xmlstring:).md)
+- [init?(xmlString: String)](xmldtdnode/init(xmlstring:)-1dyhd.md)
   Returns an `NSXMLDTDNode` object initialized with the DTD declaration in a given string.
 ### Managing the DTD Node Kind
 - [var dtdKind: XMLDTDNode.DTDKind](xmldtdnode/dtdkind-swift.property.md)
@@ -48,6 +48,7 @@ Setting the object value or string value of an [`XMLDTDNode`](xmldtdnode.md) obj
   Constants that specify the kind and subkind of DTD declaration represented by an `NSXMLDTDNode` object. You set the DTD-node kind using the doc:nsxmldtdnode/1806486-setdtdkind method.
 ### Initializers
 - [init()](xmldtdnode/init.md)
+- [init?(XMLString: String)](xmldtdnode/init(xmlstring:)-1bnga.md)
 - [init(kind: XMLNode.Kind, options: XMLNode.Options)](xmldtdnode/init(kind:options:).md)
 
 ## Relationships

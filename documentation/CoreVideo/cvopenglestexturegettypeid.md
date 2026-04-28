@@ -8,6 +8,7 @@ Returns the Core Foundation type identifier for a Core Video texture-based image
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - tvOS 9.0+
 
 ## Declaration

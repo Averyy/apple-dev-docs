@@ -8,6 +8,7 @@ Create a lightweight, in-the-moment experience or demo version for your app that
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 #### Overview
 

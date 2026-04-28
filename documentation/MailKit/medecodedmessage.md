@@ -28,6 +28,7 @@ When MailKit invokes your message security handler’s [`decodedMessage(forMessa
 ### Initializers
 - [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?)](medecodedmessage/init(data:securityinformation:context:).md)
 - [init(data: Data?, securityInformation: MEMessageSecurityInformation, context: Data?, banner: MEDecodedMessageBanner?)](medecodedmessage/init(data:securityinformation:context:banner:).md)
+- [init?(coder: NSCoder)](medecodedmessage/init(coder:).md)
 ### Instance Properties
 - [var banner: MEDecodedMessageBanner?](medecodedmessage/banner.md)
 - [var context: Data?](medecodedmessage/context.md)

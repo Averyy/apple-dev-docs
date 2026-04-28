@@ -86,6 +86,8 @@ A noise object doesn’t contain noise values or pixel color values for the nois
   Scales the entire noise field by the specified x, y, and z factors.
 ### Initializers
 - [convenience init()](gknoise/init.md)
+- [convenience init(noiseSource: GKNoiseSource)](gknoise/init(noisesource:).md)
+- [init(noiseSource: GKNoiseSource, gradientColors: [NSNumber : UIColor])](gknoise/init(noisesource:gradientcolors:).md)
 ### Instance Methods
 - [func value(atPosition: vector_float2) -> Float](gknoise/value(atposition:).md)
 

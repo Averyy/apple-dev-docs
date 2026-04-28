@@ -63,6 +63,8 @@ To learn more about graphs and pathfinding, see [`Pathfinding`](https://develope
   Returns a Boolean value indicating whether the specified nodes are protected from disconnection due to the addition of obstacles.
 ### Instance Methods
 - [func classForGenericArgument(at: Int) -> AnyClass](gkobstaclegraph/classforgenericargument(at:).md)
+### Initializers
+- [convenience init(nodes: [GKGraphNode])](gkobstaclegraph/init(nodes:).md)
 
 ## Relationships
 

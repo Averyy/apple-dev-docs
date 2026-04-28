@@ -7,6 +7,8 @@ The command to get information from a device to set up lights-out management (LO
 
 **Availability**:
 - macOS 11.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

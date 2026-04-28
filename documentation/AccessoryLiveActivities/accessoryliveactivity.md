@@ -26,6 +26,8 @@ struct AccessoryLiveActivity
   A string that uniquely identifies the Live Activity.
 - [let sourceBundleIdentifier: String](accessoryliveactivity/sourcebundleidentifier.md)
   The bundle identifier of the app that started the Live Activity.
+- [let sourceBundleName: String](accessoryliveactivity/sourcebundlename.md)
+  The name of the app from which the activity content originated.
 ### Accessing the activity’s state and content
 - [let state: ActivityState](accessoryliveactivity/state.md)
   The current state of the activity in its life cycle.

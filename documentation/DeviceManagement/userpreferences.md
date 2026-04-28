@@ -7,6 +7,8 @@ The payload that configures iCloud password preferences.
 
 **Availability**:
 - macOS 10.12+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

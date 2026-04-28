@@ -21,8 +21,9 @@ All operations are asynchronous and will callback over a respective delegate met
 ## Topics
 
 ### Initializers
-- [init!(obexSession: IOBluetoothOBEXSession!)](obexfiletransferservices/init(obexsession:).md)
+- [init!(obexSession: IOBluetoothOBEXSession!)](obexfiletransferservices/init(obexsession:)-8xm7d.md)
   Create a new OBEXFileTransferServices object
+- [init!(OBEXSession: IOBluetoothOBEXSession!)](obexfiletransferservices/init(obexsession:)-8au7l.md)
 ### Instance Properties
 - [var delegate: AnyObject!](obexfiletransferservices/delegate.md)
 ### Instance Methods

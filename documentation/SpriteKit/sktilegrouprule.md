@@ -38,6 +38,8 @@ When a tile is filled in a tile map, the tile group rule defines how neighboring
   A name associated with the tile group rule.
 - [var tileDefinitions: [SKTileDefinition]](sktilegrouprule/tiledefinitions.md)
   The tile definitions used for this rule.
+### Initializers
+- [init?(coder: NSCoder)](sktilegrouprule/init(coder:).md)
 
 ## Relationships
 

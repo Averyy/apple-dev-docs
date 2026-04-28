@@ -28,6 +28,8 @@ This class holds the platform credential identifier.
 ### Creating the descriptor
 - [init(credentialID: Data)](asauthorizationplatformpublickeycredentialdescriptor/init(credentialid:).md)
   Creates the descriptor with a credential.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationplatformpublickeycredentialdescriptor/init(coder:).md)
 
 ## Relationships
 

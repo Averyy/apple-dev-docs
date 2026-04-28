@@ -20,6 +20,8 @@ class AccessRequester
 
 ## Topics
 
+### Initializers
+- [init?(coder: NSCoder)](ckshare/accessrequester/init(coder:).md)
 ### Instance Properties
 - [var contact: CNContact](ckshare/accessrequester/contact.md)
   A displayable CNContact representing the requester.

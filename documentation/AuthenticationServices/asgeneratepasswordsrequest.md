@@ -18,6 +18,7 @@ class ASGeneratePasswordsRequest
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](asgeneratepasswordsrequest/init(coder:).md)
 - [init(serviceIdentifier: ASCredentialServiceIdentifier, passwordFieldPasswordRules: String?, confirmPasswordFieldPasswordRules: String?, passwordRulesFromQuirks: String?)](asgeneratepasswordsrequest/init(serviceidentifier:passwordfieldpasswordrules:confirmpasswordfieldpasswordrules:passwordrulesfromquirks:).md)
 ### Instance Properties
 - [var confirmPasswordFieldPasswordRules: String?](asgeneratepasswordsrequest/confirmpasswordfieldpasswordrules.md)

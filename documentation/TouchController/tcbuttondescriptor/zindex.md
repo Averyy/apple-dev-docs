@@ -8,6 +8,7 @@ The z-index of the button. A lower z-index is drawn first.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

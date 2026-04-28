@@ -8,7 +8,10 @@ The only app available for use on the iOS device.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
+- Mac Catalyst 6.0+
 - tvOS 10.2+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

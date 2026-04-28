@@ -55,6 +55,8 @@ object JWSTransactionDecodedPayload
 - `type` (type): The type of the in-app purchase.
 - `webOrderLineItemId` (webOrderLineItemId): The unique identifier of subscription purchase events across devices, including subscription renewals.
 - `advancedCommerceInfo` (advancedCommerceTransactionInfo): Transaction information that is present only for Advanced Commerce SKUs.
+- `billingPlanType` (billingPlanType)
+- `commitmentInfo` (TransactionCommitmentInfo)
 
 ## See Also
 

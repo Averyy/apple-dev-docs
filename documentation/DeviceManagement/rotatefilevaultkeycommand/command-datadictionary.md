@@ -7,6 +7,8 @@ The command to change the FileVault primary password on a device.
 
 **Availability**:
 - macOS 10.9+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

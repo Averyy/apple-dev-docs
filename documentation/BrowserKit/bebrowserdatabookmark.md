@@ -36,6 +36,8 @@ This class represents a single bookmark or bookmark folder with its associated m
 ### Managing bookmark hierarchy
 - [var parentIdentifier: String?](bebrowserdatabookmark/parentidentifier.md)
   A string that identifies the bookmark’s parent folder.
+### Initializers
+- [init(asFolder: Bool, title: String, identifier: String, url: URL?, parentIdentifier: String?)](bebrowserdatabookmark/init(asfolder:title:identifier:url:parentidentifier:).md)
 
 ## Relationships
 

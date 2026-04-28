@@ -31,6 +31,9 @@ class UIDeferredMenuElement
 - [var identifier: UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.property.md)
   The identifier of this deferred menu element.
 - [UIDeferredMenuElement.Identifier](uideferredmenuelement/identifier-swift.struct.md)
+### Initializers
+- [convenience init(provider: (([UIMenuElement]) -> Void) -> Void)](uideferredmenuelement/init(provider:).md)
+- [convenience init(uncachedProvider: (([UIMenuElement]) -> Void) -> Void)](uideferredmenuelement/init(uncachedprovider:).md)
 
 ## Relationships
 

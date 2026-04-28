@@ -7,6 +7,8 @@ The payload that configures Time Machine.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

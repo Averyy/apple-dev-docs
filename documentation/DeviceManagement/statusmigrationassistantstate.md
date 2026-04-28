@@ -7,6 +7,8 @@ The current migration state of the system.
 
 **Availability**:
 - macOS 26.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

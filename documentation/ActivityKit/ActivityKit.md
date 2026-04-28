@@ -8,6 +8,7 @@ Share live updates from your app as Live Activities on iPhone, iPad, Apple Watch
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 #### Overview
 

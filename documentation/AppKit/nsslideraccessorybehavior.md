@@ -23,6 +23,7 @@ class NSSliderAccessoryBehavior
   The handler block is invoked on interaction.
 - [init(target: Any?, action: Selector)](nsslideraccessorybehavior/init(target:action:).md)
   The action is sent to the target on interaction.
+- [init?(coder: NSCoder)](nsslideraccessorybehavior/init(coder:).md)
 ### Type Properties
 - [class var automatic: NSSliderAccessoryBehavior](nsslideraccessorybehavior/automatic.md)
   The behavior is automatically picked to be the system standard, given the slider’s current context.

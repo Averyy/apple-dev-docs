@@ -8,6 +8,7 @@ Interactions with the App Store, such as managing subscriptions, verifying devic
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+
@@ -57,7 +58,8 @@ Use these static functions and variables to perform tasks like showing the manag
   Enable customers to redeem offer codes through the App Store or within your app.
 - [static func presentOfferCodeRedeemSheet(in: UIWindowScene) async throws](appstore/presentoffercoderedeemsheet(in:).md)
   Displays a sheet in the window scene that enables customers to redeem an offer code that you configure in App Store Connect.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
+](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [static func presentOfferCodeRedeemSheet(from: NSViewController) async throws](appstore/presentoffercoderedeemsheet(from:).md)
   Displays a sheet in the view that enables customers to redeem an offer code that you configure in App Store Connect.

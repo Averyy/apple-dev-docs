@@ -65,6 +65,8 @@ Use the methods and properties of `CNInstantMessageAddress` to identify instant 
   Instant message service for Skype.
 - [let CNInstantMessageServiceYahoo: String](cninstantmessageserviceyahoo.md)
   Instant message service for Yahoo.
+### Initializers
+- [init?(coder: NSCoder)](cninstantmessageaddress/init(coder:).md)
 
 ## Relationships
 

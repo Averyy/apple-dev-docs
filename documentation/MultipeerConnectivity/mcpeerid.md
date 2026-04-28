@@ -53,6 +53,8 @@ if ([oldDisplayName isEqualToString:displayName]) {
   Initializes a peer.
 - [var displayName: String](mcpeerid/displayname.md)
   The display name for this peer.
+### Initializers
+- [init?(coder: NSCoder)](mcpeerid/init(coder:).md)
 
 ## Relationships
 

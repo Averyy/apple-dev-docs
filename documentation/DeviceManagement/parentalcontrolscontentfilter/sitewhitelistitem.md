@@ -7,6 +7,8 @@ A dictionary defining a site for the allow list.
 
 **Availability**:
 - macOS 10.7+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

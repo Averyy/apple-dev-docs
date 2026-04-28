@@ -32,7 +32,7 @@ Run an [`SNRequest`](snrequest.md) on an audio file by creating an `SNAudioFileA
 ## Topics
 
 ### Creating an Analyzer
-- [init(url: URL) throws](snaudiofileanalyzer/init(url:).md)
+- [init(url: URL) throws](snaudiofileanalyzer/init(url:)-336no.md)
   Creates a new audio file analyzer.
 ### Managing Requests
 - [func add(any SNRequest, withObserver: any SNResultsObserving) throws](snaudiofileanalyzer/add(_:withobserver:).md)
@@ -52,6 +52,8 @@ Run an [`SNRequest`](snrequest.md) on an audio file by creating an `SNAudioFileA
   Analyzes the audio file asynchronously.
 - [func cancelAnalysis()](snaudiofileanalyzer/cancelanalysis.md)
   Cancels all the asynchronous sound analysis requests the analyzer is currently processing.
+### Initializers
+- [init(URL: URL) throws](snaudiofileanalyzer/init(url:)-2skhg.md)
 
 ## Relationships
 

@@ -104,6 +104,8 @@ The [`CAEmitterCell`](caemittercell.md) class represents one source of particles
   Returns the default value of the property with the specified key.
 - [func shouldArchiveValue(forKey: String) -> Bool](caemittercell/shouldarchivevalue(forkey:).md)
   Returns a Boolean value indicating whether the value for a given key should be archived.
+### Initializers
+- [init?(coder: NSCoder)](caemittercell/init(coder:).md)
 
 ## Relationships
 

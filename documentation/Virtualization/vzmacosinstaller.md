@@ -103,6 +103,8 @@ installer.install(completionHandler: { (result: Result) in
   Start installing macOS.
 - [func install() async throws](vzmacosinstaller/install.md)
   Start installing macOS.
+### Initializers
+- [init(virtualMachine: VZVirtualMachine, restoreImageURL: URL)](vzmacosinstaller/init(virtualmachine:restoreimageurl:).md)
 
 ## Relationships
 

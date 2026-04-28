@@ -35,7 +35,7 @@ let assetWriter = AVAssetWriter(contentType: contentType)
 
 ## See Also
 
-- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:).md)
+- [convenience init(url: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-xt34.md)
   Returns a new object that writes media data to a container file at the output URL.
 - [init(outputURL: URL, fileType: AVFileType) throws](avassetwriter/init(outputurl:filetype:).md)
   Creates an object that writes media data to a container file at the output URL.

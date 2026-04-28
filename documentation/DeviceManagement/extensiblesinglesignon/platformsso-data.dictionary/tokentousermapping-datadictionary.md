@@ -7,6 +7,8 @@ The attribute mapping to use when creating users, or for authorization.
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

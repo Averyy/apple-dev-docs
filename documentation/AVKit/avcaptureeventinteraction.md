@@ -71,6 +71,9 @@ The event handler queries the capture event to determine its phase, and when the
   A Boolean value that indicates whether this capture event interaction is in an enabled state.
 - [class var defaultCaptureSoundDisabled: Bool](avcaptureeventinteraction/defaultcapturesounddisabled.md)
   A Boolean value that indicates whether the default sound is in a disabled state.
+### Initializers
+- [init(eventHandler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(eventhandler:).md)
+- [init(primaryEventHandler: (AVCaptureEvent) -> Void, secondaryEventHandler: (AVCaptureEvent) -> Void)](avcaptureeventinteraction/init(primaryeventhandler:secondaryeventhandler:).md)
 
 ## Relationships
 

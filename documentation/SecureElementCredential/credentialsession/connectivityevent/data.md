@@ -8,6 +8,7 @@ The data a credential receives during card emulation.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

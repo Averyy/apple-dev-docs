@@ -27,6 +27,8 @@ class MLSequenceConstraint
   The description that all sequence elements must match.
 - [var countRange: NSRange](mlsequenceconstraint/countrange.md)
   The range of values allowed for the sequence’s length.
+### Initializers
+- [init?(coder: NSCoder)](mlsequenceconstraint/init(coder:).md)
 
 ## Relationships
 

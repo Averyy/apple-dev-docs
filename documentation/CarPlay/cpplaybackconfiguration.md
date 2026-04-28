@@ -22,6 +22,7 @@ class CPPlaybackConfiguration
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpplaybackconfiguration/init(coder:).md)
 - [init(preferredPresentation: CPPlaybackConfiguration.Presentation, playbackAction: CPPlaybackConfiguration.Action, elapsedTime: CMTime, duration: CMTime)](cpplaybackconfiguration/init(preferredpresentation:playbackaction:elapsedtime:duration:).md)
   Initialize a description of the playable media content that is represented by template items.
 ### Instance Properties

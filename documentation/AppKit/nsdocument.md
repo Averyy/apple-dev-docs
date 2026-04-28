@@ -380,6 +380,9 @@ In macOS 10.6 and later, `NSDocument` supports the ability to open multiple docu
 - [func relinquishPresentedItem(toReader: ((() -> Void)?) -> Void)](nsdocument/relinquishpresenteditem(toreader:).md)
 - [func relinquishPresentedItem(toWriter: ((() -> Void)?) -> Void)](nsdocument/relinquishpresenteditem(towriter:).md)
 - [func savePresentedItemChanges(completionHandler: ((any Error)?) -> Void)](nsdocument/savepresenteditemchanges(completionhandler:).md)
+### Initializers
+- [convenience init(contentsOfURL: URL, ofType: String) throws](nsdocument/init(contentsofurl:oftype:).md)
+- [convenience init(forURL: URL?, withContentsOfURL: URL, ofType: String) throws](nsdocument/init(forurl:withcontentsofurl:oftype:).md)
 
 ## Relationships
 

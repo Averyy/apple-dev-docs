@@ -52,6 +52,8 @@ You can use the [`MeasurementFormatter`](measurementformatter.md) class to creat
   Returns a new measurement by adding the receiver to the specified measurement.
 - [func subtracting(Measurement<Unit>) -> Measurement<Unit>](nsmeasurement/subtracting(_:).md)
   Returns a new measurement by subtracting the specified measurement from the receiver.
+### Initializers
+- [init?(coder: NSCoder)](nsmeasurement/init(coder:).md)
 
 ## Relationships
 

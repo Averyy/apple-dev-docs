@@ -23,6 +23,8 @@ class CPLaneGuidance
   An array of strings that represent the instruction for this lane guidance, arranged from most- to least-preferred.
 - [var lanes: [CPLane]](cplaneguidance/lanes.md)
   An array of lane objects, each describing a single lane.
+### Initializers
+- [init?(coder: NSCoder)](cplaneguidance/init(coder:).md)
 
 ## Relationships
 

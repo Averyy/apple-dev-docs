@@ -209,6 +209,12 @@ Additionally, the unit class uses a single unit instance to represent all copies
 ### Constants
 - [enum HKMetricPrefix](hkmetricprefix.md)
   Prefixes that can be added to SI units to change the order of magnitude.
+### Initializers
+- [init?(coder: NSCoder)](hkunit/init(coder:).md)
+- [convenience init(fromEnergyFormatterUnit: EnergyFormatter.Unit)](hkunit/init(fromenergyformatterunit:).md)
+- [convenience init(fromLengthFormatterUnit: LengthFormatter.Unit)](hkunit/init(fromlengthformatterunit:).md)
+- [convenience init(fromMassFormatterUnit: MassFormatter.Unit)](hkunit/init(frommassformatterunit:).md)
+- [convenience init(fromString: String)](hkunit/init(fromstring:).md)
 ### Type Methods
 - [class func appleEffortScore() -> Self](hkunit/appleeffortscore.md)
 - [class func lux() -> Self](hkunit/lux.md)

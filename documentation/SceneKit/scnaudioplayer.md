@@ -29,7 +29,7 @@ An [`SCNAudioPlayer`](scnaudioplayer.md) object controls playback of a positiona
 ### Creating an Audio Player
 - [init(source: SCNAudioSource)](scnaudioplayer/init(source:).md)
   Initializes an audio player for playing the specified simple audio source.
-- [init(avAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:).md)
+- [init(avAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:)-4u514.md)
   Initializes an audio player for playing the specified AVFoundation audio node.
 ### Working with Audio Sources
 - [var audioSource: SCNAudioSource?](scnaudioplayer/audiosource.md)
@@ -41,6 +41,9 @@ An [`SCNAudioPlayer`](scnaudioplayer.md) object controls playback of a positiona
   A block called by SceneKit when playback of the player’s audio source is about to begin.
 - [var didFinishPlayback: (() -> Void)?](scnaudioplayer/didfinishplayback.md)
   A block called by SceneKit when playback of the player’s audio source has completed.
+### Initializers
+- [convenience init(AVAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:)-1xsj6.md)
+- [init(AVAudioNode: AVAudioNode)](scnaudioplayer/init(avaudionode:)-6dktc.md)
 
 ## Relationships
 

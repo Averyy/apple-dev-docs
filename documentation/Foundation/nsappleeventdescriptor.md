@@ -31,7 +31,7 @@ The most common reason to construct an Apple event with an instance of `NSAppleE
 
 When you work with an instance of `NSAppleEventDescriptor`, you can access the underlying descriptor directly, if necessary, with the [`aeDesc`](nsappleeventdescriptor/aedesc.md) method. Other methods, including [`descriptorWithDescriptorType:bytes:length:`](nsappleeventdescriptor/descriptorwithdescriptortype:bytes:length:.md) make it possible to create and initialize instances of `NSAppleEventDescriptor` without creating temporary instances of `NSData`.
 
-The designated initializer for `NSAppleEventDescriptor` is [`init(aeDescNoCopy:)`](nsappleeventdescriptor/init(aedescnocopy:).md). However, it is unlikely that you will need to create a subclass of `NSAppleEventDescriptor`.
+The designated initializer for `NSAppleEventDescriptor` is [`init(aeDescNoCopy:)`](nsappleeventdescriptor/init(aedescnocopy:)-5cioa.md). However, it is unlikely that you will need to create a subclass of `NSAppleEventDescriptor`.
 
 Cocoa doesn’t currently provide a mechanism for applications to directly send raw Apple events (though compiling and executing an AppleScript script with `NSAppleScript` may result in Apple events being sent). However, Cocoa applications have full access to the Apple Event Manager C APIs for working with Apple events. So, for example, you might use an instance of  `NSAppleEventDescriptor` to assemble an Apple event and call the Apple Event Manager function `AESend(_:_:_:_:_:_:_:)` to send it.
 
@@ -62,7 +62,7 @@ If you need to send Apple events, or if you need more information on some of the
   Initializes a newly allocated instance as an empty list descriptor.
 - [convenience init(recordDescriptor: ())](nsappleeventdescriptor/init(recorddescriptor:).md)
   Initializes a newly allocated instance as a descriptor that is an Apple event record.
-- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:).md)
+- [init(aeDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-5cioa.md)
   Initializes a newly allocated instance as a descriptor for the specified Carbon `AEDesc` structure.
 - [convenience init?(descriptorType: DescType, bytes: UnsafeRawPointer?, length: Int)](nsappleeventdescriptor/init(descriptortype:bytes:length:).md)
   Initializes a newly allocated instance as a descriptor with the specified descriptor type and data (from an arbitrary sequence of bytes and a length count).
@@ -129,8 +129,10 @@ If you need to send Apple events, or if you need more information on some of the
 ### Supporting Types
 - [NSAppleEventDescriptor.SendOptions](nsappleeventdescriptor/sendoptions.md)
 ### Initializers
+- [init(AEDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-236vs.md)
 - [init(applicationURL: URL)](nsappleeventdescriptor/init(applicationurl:).md)
 - [init(bundleIdentifier: String)](nsappleeventdescriptor/init(bundleidentifier:).md)
+- [init?(coder: NSCoder)](nsappleeventdescriptor/init(coder:).md)
 - [init(date: Date)](nsappleeventdescriptor/init(date:).md)
 - [init(double: Double)](nsappleeventdescriptor/init(double:).md)
 - [init(fileURL: URL)](nsappleeventdescriptor/init(fileurl:).md)

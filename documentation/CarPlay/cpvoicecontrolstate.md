@@ -30,6 +30,8 @@ class CPVoiceControlState
   The image displayed while the voice control template is in this state.
 - [var repeats: Bool](cpvoicecontrolstate/repeats.md)
   A Boolean value that indicates whether the display of an animated image repeats the animation sequence indefinitely.
+### Initializers
+- [init?(coder: NSCoder)](cpvoicecontrolstate/init(coder:).md)
 ### Instance Properties
 - [var actionButtons: [CPButton]](cpvoicecontrolstate/actionbuttons.md)
   An array of action buttons displayed in the template.

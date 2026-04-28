@@ -33,6 +33,8 @@ The device creates an assertion when signing in with an existing credential. Use
 ### Accessing assertion properties
 - [var largeBlob: ASAuthorizationPublicKeyCredentialLargeBlobAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/largeblob-29ggs.md)
   The request’s binary large object value.
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationplatformpublickeycredentialassertion/init(coder:).md)
 ### Instance Properties
 - [var attachment: ASAuthorizationPublicKeyCredentialAttachment](asauthorizationplatformpublickeycredentialassertion/attachment.md)
 - [var prf: ASAuthorizationPublicKeyCredentialPRFAssertionOutput?](asauthorizationplatformpublickeycredentialassertion/prf-8o9sr.md)

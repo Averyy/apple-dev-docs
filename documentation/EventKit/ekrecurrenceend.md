@@ -39,6 +39,9 @@ The `EKRecurrenceEnd` class defines the end of a recurrence rule defined by an [
   The end date of the recurrence end, or `nil` if the recurrence end is count-based.
 - [var occurrenceCount: Int](ekrecurrenceend/occurrencecount.md)
   The occurrence count of the recurrence end, or `0` if the recurrence end is date-based.
+### Initializers
+- [init?(coder: NSCoder)](ekrecurrenceend/init(coder:).md)
+- [convenience init(endDate: Date)](ekrecurrenceend/init(enddate:).md)
 
 ## Relationships
 

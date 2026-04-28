@@ -29,6 +29,8 @@ class MLNumericConstraint
   The largest numerical value allowed by this constraint.
 - [var enumeratedNumbers: Set<NSNumber>?](mlnumericconstraint/enumeratednumbers.md)
   A set of the numbers allowed in this constraint.
+### Initializers
+- [init?(coder: NSCoder)](mlnumericconstraint/init(coder:).md)
 
 ## Relationships
 

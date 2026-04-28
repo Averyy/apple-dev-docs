@@ -31,6 +31,8 @@ class Decoration
 ### Creating Image Decoration Views
 - [static func image(UIImage?, color: UIColor?, size: UICalendarView.DecorationSize) -> UICalendarView.Decoration](uicalendarview/decoration/image(_:color:size:).md)
   Creates a new calendar view decoration with the image, color, and size that you specify.
+### Initializers
+- [convenience init(customViewProvider: () -> UIView)](uicalendarview/decoration/init(customviewprovider:).md)
 
 ## Relationships
 

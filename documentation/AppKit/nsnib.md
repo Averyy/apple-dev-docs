@@ -42,6 +42,8 @@ You can subclass `NSNib` if you want to extend or specialize nib-loading behavio
 ### Constants
 - [Nib Loading Keys](nib-loading-keys.md)
   The `NSNib` class uses the following constants which are used as keys in the dictionary passed to [`instantiateNibWithExternalNameTable:`](nsnib/instantiatenibwithexternalnametable:.md).
+### Initializers
+- [init?(coder: NSCoder)](nsnib/init(coder:).md)
 
 ## Relationships
 

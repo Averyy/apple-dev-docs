@@ -29,6 +29,8 @@ When MailKit invokes your message security handler’s [`encode(_:composeContext
   A Boolean value that indicates if the message encoder signed the message.
 - [var rawData: Data](meencodedoutgoingmessage/rawdata.md)
   The encrypted, signed, or both encrypted and signed data for the outgoing message.
+### Initializers
+- [init?(coder: NSCoder)](meencodedoutgoingmessage/init(coder:).md)
 
 ## Relationships
 

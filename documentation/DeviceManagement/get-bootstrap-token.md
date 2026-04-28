@@ -8,8 +8,11 @@ Gets the bootstrap token from the server.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 10.15+
 - visionOS 26.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

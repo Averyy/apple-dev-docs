@@ -29,6 +29,7 @@ class MEMessageSecurityInformation
   An error that indicates the security handler couldn’t decode the message’s digital signatures.
 ### Initializers
 - [init(signers: [MEMessageSigner], isEncrypted: Bool, signingError: (any Error)?, encryptionError: (any Error)?, shouldBlockRemoteContent: Bool, localizedRemoteContentBlockingReason: String?)](memessagesecurityinformation/init(signers:isencrypted:signingerror:encryptionerror:shouldblockremotecontent:localizedremotecontentblockingreason:).md)
+- [init?(coder: NSCoder)](memessagesecurityinformation/init(coder:).md)
 ### Instance Properties
 - [var localizedRemoteContentBlockingReason: String?](memessagesecurityinformation/localizedremotecontentblockingreason.md)
 - [var shouldBlockRemoteContent: Bool](memessagesecurityinformation/shouldblockremotecontent.md)

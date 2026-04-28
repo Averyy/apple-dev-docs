@@ -25,17 +25,17 @@ The `NEHotspotConfiguration` class contains configuration properties and credent
 ## Topics
 
 ### Initializing a configuration
-- [init(ssid: String)](nehotspotconfiguration/init(ssid:).md)
+- [init(ssid: String)](nehotspotconfiguration/init(ssid:)-9apfi.md)
   Creates a new hotspot configuration, identified by an SSID, for an open Wi-Fi network.
-- [init(ssid: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssid:passphrase:iswep:).md)
+- [init(ssid: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssid:passphrase:iswep:)-3ll1v.md)
   Creates a new hotspot configuration, identified by an SSID, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
-- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(ssid:eapsettings:).md)
+- [init(ssid: String, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(ssid:eapsettings:)-53cpf.md)
   Creates a new hotspot configuration, identified by an SSID, for a WPA/WPA2 enterprise Wi-Fi network with EAP settings.
-- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(hs20settings:eapsettings:).md)
+- [init(hs20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(hs20settings:eapsettings:)-291m2.md)
   Creates a new hotspot configuration, identified by a domain name, for a Hotspot 2.0 Wi-Fi network with HS 2.0 and EAP settings.
-- [init(ssidPrefix: String)](nehotspotconfiguration/init(ssidprefix:).md)
+- [init(ssidPrefix: String)](nehotspotconfiguration/init(ssidprefix:)-1v8bx.md)
   Creates a new hotspot configuration, identified by an SSID prefix string, for an open Wi-Fi network.
-- [init(ssidPrefix: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssidprefix:passphrase:iswep:).md)
+- [init(ssidPrefix: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssidprefix:passphrase:iswep:)-7ttmu.md)
   Creates a new hotspot configuration, identified by an SSID prefix string, for a protected WEP or WPA/WPA2 personal Wi-Fi network.
 ### Accessing configuration properties
 - [var ssid: String](nehotspotconfiguration/ssid.md)
@@ -48,6 +48,13 @@ The `NEHotspotConfiguration` class contains configuration properties and credent
   Restricts the lifetime of a configuration to the operating status of the app that created it.
 - [var hidden: Bool](nehotspotconfiguration/hidden.md)
   A Boolean value that indicates the visibility of the SSID.
+### Initializers
+- [init(HS20Settings: NEHotspotHS20Settings, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(hs20settings:eapsettings:)-6tb5g.md)
+- [init(SSID: String)](nehotspotconfiguration/init(ssid:)-2n6vw.md)
+- [init(SSID: String, eapSettings: NEHotspotEAPSettings)](nehotspotconfiguration/init(ssid:eapsettings:)-55nae.md)
+- [init(SSID: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssid:passphrase:iswep:)-35lmk.md)
+- [init(SSIDPrefix: String)](nehotspotconfiguration/init(ssidprefix:)-xdns.md)
+- [init(SSIDPrefix: String, passphrase: String, isWEP: Bool)](nehotspotconfiguration/init(ssidprefix:passphrase:iswep:)-93vo6.md)
 
 ## Relationships
 

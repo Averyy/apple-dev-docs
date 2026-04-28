@@ -19,7 +19,7 @@ convenience init?(color: NSColor)
 
 ## See Also
 
-- [init(cgColor: CGColor)](cicolor/init(cgcolor:).md)
+- [init(cgColor: CGColor)](cicolor/init(cgcolor:)-1hzk4.md)
   Create a Core Image color object with a Core Graphics color object.
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/init(red:green:blue:alpha:).md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.

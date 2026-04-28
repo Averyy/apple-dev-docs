@@ -49,6 +49,8 @@ You create individual instances by providing an email address, phone number, or 
   The user’s phone number.
 - [var userRecordID: CKRecord.ID?](ckuseridentity/lookupinfo-swift.class/userrecordid.md)
   The ID of the user record.
+### Initializers
+- [init?(coder: NSCoder)](ckuseridentity/lookupinfo-swift.class/init(coder:).md)
 
 ## Relationships
 

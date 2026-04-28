@@ -22,7 +22,7 @@ class VNVideoProcessor
 ## Topics
 
 ### Creating a Video Processor
-- [init(url: URL)](vnvideoprocessor/init(url:).md)
+- [init(url: URL)](vnvideoprocessor/init(url:)-94b7.md)
   Creates a video processor to perform Vision requests against the specified video asset.
 ### Performing Requests
 - [func addRequest(VNRequest, processingOptions: VNVideoProcessor.RequestProcessingOptions) throws](vnvideoprocessor/addrequest(_:processingoptions:).md)
@@ -39,6 +39,8 @@ class VNVideoProcessor
   Adds a Vision request to perform with the specified configuration.
 - [func analyze(with: CMTimeRange) throws](vnvideoprocessor/analyze(with:).md)
   Analyzes the specifed time range of the video content.
+### Initializers
+- [init(URL: URL)](vnvideoprocessor/init(url:)-38vj9.md)
 
 ## Relationships
 

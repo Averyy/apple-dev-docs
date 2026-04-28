@@ -36,6 +36,8 @@ class AVPlayerItemRenderedLegibleOutput
   The dispatch queue on which the output calls the delegate object.
 - [protocol AVPlayerItemRenderedLegibleOutputPushDelegate](avplayeritemrenderedlegibleoutputpushdelegate.md)
   A delegate that handles the rendered pixel buffers produced by a rendered legible output object.
+### Initializers
+- [init(videoDisplaySize: CGSize)](avplayeritemrenderedlegibleoutput/init(videodisplaysize:).md)
 
 ## Relationships
 

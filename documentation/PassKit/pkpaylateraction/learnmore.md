@@ -8,6 +8,7 @@ An action that displays a button that a person can tap to learn more about Apple
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

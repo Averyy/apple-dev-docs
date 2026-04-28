@@ -37,6 +37,8 @@ class NSExtensionItem
   These keys correspond to the extension item properties and are specified in the extension’s `Info.plist`.
 - [UTI Subtypes for Data Detector Types](uti-subtypes-for-data-detector-types.md)
   These constants represent sub-Uniform Type Identifier of `com.apple.structured-text`
+### Initializers
+- [init?(coder: NSCoder)](nsextensionitem/init(coder:).md)
 
 ## Relationships
 

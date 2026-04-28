@@ -21,6 +21,7 @@ static func showManageSubscriptions(in scene: UIWindowScene) async throws
 ## Mentions
 
 - [Testing In-App Purchases in Xcode](testing-in-app-purchases-in-xcode.md)
+- [Supporting monthly subscriptions with a 12-month commitment](supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 - [Testing at all stages of development with Xcode and the sandbox](testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md)
 - [Testing failing subscription renewals and In-App Purchases](testing-failing-subscription-renewals-and-in-app-purchases.md)
 - [Testing win-back offers in Xcode](testing-win-back-offers-in-xcode.md)

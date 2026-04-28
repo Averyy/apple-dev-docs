@@ -8,6 +8,7 @@ A lightly-processed photo with data that the system may use to process and fetch
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

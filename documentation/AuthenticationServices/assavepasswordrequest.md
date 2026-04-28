@@ -18,6 +18,7 @@ class ASSavePasswordRequest
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](assavepasswordrequest/init(coder:).md)
 - [init(serviceIdentifier: ASCredentialServiceIdentifier, credential: ASPasswordCredential, sessionID: String, event: ASSavePasswordRequest.Event)](assavepasswordrequest/init(serviceidentifier:credential:sessionid:event:).md)
 - [init(serviceIdentifier: ASCredentialServiceIdentifier, credential: ASPasswordCredential, sessionID: String, event: ASSavePasswordRequest.Event, passwordKind: ASGeneratedPassword.Kind?)](assavepasswordrequest/init(serviceidentifier:credential:sessionid:event:passwordkind:).md)
 - [init(serviceIdentifier: ASCredentialServiceIdentifier, credential: ASPasswordCredential, title: String?, sessionID: String, event: ASSavePasswordRequest.Event)](assavepasswordrequest/init(serviceidentifier:credential:title:sessionid:event:).md)

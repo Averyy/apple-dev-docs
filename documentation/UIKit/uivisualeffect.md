@@ -19,6 +19,11 @@ An initializer for visual effect views and blur and vibrancy effect objects.
 class UIVisualEffect
 ```
 
+## Topics
+
+### Initializers
+- [init?(coder: NSCoder)](uivisualeffect/init(coder:).md)
+
 ## Relationships
 
 ### Inherits From

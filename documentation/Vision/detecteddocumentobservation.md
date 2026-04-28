@@ -8,6 +8,7 @@ The heat map that’s a pixel buffer in a one-component floating-point pixel for
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

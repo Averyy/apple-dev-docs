@@ -42,6 +42,8 @@ class VNPoint
   Returns the distance to another point.
 - [class func distance(VNPoint, VNPoint) -> Double](vnpoint/distance(_:_:).md)
   Calculates the distance between two points.
+### Initializers
+- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ Returns the live workout builder associated with the workout session.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - watchOS 5.0+
 
 ## Declaration

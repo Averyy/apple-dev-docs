@@ -23,6 +23,11 @@ typealias MTLPackedFloat4x3 = _MTLPackedFloat4x3
 
 Metal uses the values `[0,0,0,1]` as the bottom row of the `4x4` matrix.
 
+## Topics
+
+### Instance Properties
+- [var columns: (MTLPackedFloat3, MTLPackedFloat3, MTLPackedFloat3, MTLPackedFloat3)](mtlpackedfloat4x3-swift.typealias/columns.md)
+
 ## Relationships
 
 ### Conforms To

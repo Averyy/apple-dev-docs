@@ -36,6 +36,9 @@ class UIDocumentMenuViewController
   Adds a custom menu item to the list of document pickers.
 - [enum UIDocumentMenuOrder](uidocumentmenuorder.md)
   The insertion point for custom menu items.
+### Initializers
+- [init(URL: URL, inMode: UIDocumentPickerMode)](uidocumentmenuviewcontroller/init(url:inmode:).md)
+- [init(documentTypes: [String], inMode: UIDocumentPickerMode)](uidocumentmenuviewcontroller/init(documenttypes:inmode:).md)
 
 ## Relationships
 

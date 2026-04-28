@@ -133,6 +133,8 @@ You never subclass [`SCNAction`](scnaction.md) directly. Instead, create actions
   Constants affecting the animation curve of an action, used by the [`timingMode`](scnaction/timingmode.md) property.
 - [typealias SCNActionTimingFunction](scnactiontimingfunction.md)
   The signature for a block that manages animation timing, used by the [`timingFunction`](scnaction/timingfunction.md) property.
+### Initializers
+- [init?(coder: NSCoder)](scnaction/init(coder:).md)
 
 ## Relationships
 

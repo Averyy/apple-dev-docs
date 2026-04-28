@@ -20,7 +20,7 @@ The [`CGEvent`](https://developer.apple.com/documentation/CoreGraphics/CGEvent) 
 
 ## See Also
 
-- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:).md)
+- [init?(cgEvent: CGEvent)](nsevent/init(cgevent:)-4igjn.md)
   Creates and returns an event object for a Core Graphics event.
 - [var locationInWindow: NSPoint](nsevent/locationinwindow.md)
   The event location in the base coordinate system of the associated window.

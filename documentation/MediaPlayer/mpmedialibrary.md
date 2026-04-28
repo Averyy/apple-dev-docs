@@ -47,6 +47,8 @@ To retrieve media items from the media library, build a custom query as describe
 ### Adding an item to the media library
 - [func addItem(withProductID: String, completionHandler: (([MPMediaEntity], (any Error)?) -> Void)?)](mpmedialibrary/additem(withproductid:completionhandler:).md)
   Adds the designated item to the user’s music library.
+### Initializers
+- [init?(coder: NSCoder)](mpmedialibrary/init(coder:).md)
 
 ## Relationships
 

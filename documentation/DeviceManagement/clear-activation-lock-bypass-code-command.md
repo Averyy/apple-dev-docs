@@ -8,8 +8,11 @@ Clear the Activation Lock bypass code on a device.
 **Availability**:
 - iOS 7.1+
 - iPadOS 7.1+
+- Mac Catalyst 7.1+
 - macOS 10.15+
 - visionOS 2.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

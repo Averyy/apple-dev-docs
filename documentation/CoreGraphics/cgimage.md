@@ -110,13 +110,13 @@ A bitmap image is a rectangular array of pixels, each of which represents a sing
 ## Relationships
 
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [Testing.AttachableAsImage](doc://com.apple.coregraphics/7Testing17AttachableAsImageP)
 
 ## See Also
 

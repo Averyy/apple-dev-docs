@@ -69,6 +69,8 @@ Use pasteboard items during a single pasteboard interaction, rather than retaini
 - [func detectedMetadata(for: Set<PartialKeyPath<NSPasteboardItem.DetectedMetadata>>) async throws -> NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata(for:).md)
   Determines available metadata from the specified metadata types for this pasteboard item, without notifying the person using the app.
 - [NSPasteboardItem.DetectedMetadata](nspasteboarditem/detectedmetadata.md)
+### Initializers
+- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nspasteboarditem/init(pasteboardpropertylist:oftype:).md)
 ### Instance Properties
 - [var collaborationMetadata: SWCollaborationMetadata?](nspasteboarditem/collaborationmetadata.md)
   A model object you use for conveying data during a collaboration.

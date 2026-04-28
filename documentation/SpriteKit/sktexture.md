@@ -72,6 +72,10 @@ After a texture is loaded into the graphics hardware memory, it stays in memory 
   Load the data of multiple textures into memory.
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](sktexture/customplaygroundquicklook.md)
+### Initializers
+- [convenience init(CGImage: CGImage)](sktexture/init(cgimage:)-4ypk.md)
+- [init?(coder: NSCoder)](sktexture/init(coder:).md)
+- [convenience init(rect: CGRect, inTexture: SKTexture)](sktexture/init(rect:intexture:).md)
 
 ## Relationships
 

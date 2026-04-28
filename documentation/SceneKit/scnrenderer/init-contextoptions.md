@@ -30,7 +30,7 @@ Use this initializer to create a SceneKit renderer that draws into OpenGL contex
 
 ## Parameters
 
-- `context`: An OpenGL rendering context: either a [`cglContextObj`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext/cglContextObj) reference (in macOS) or an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) object (in iOS).
+- `context`: An OpenGL rendering context: either a [`cglContextObj`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext/cglContextObj) reference (in macOS) or an doc://com.apple.documentation/documentation/opengles/eaglcontext object (in iOS).
 - `options`: An optional dictionary for future extensions.
 
 ## See Also

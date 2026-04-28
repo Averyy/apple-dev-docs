@@ -137,7 +137,20 @@ As with any class cluster, subclasses of `NSNumber` must override the primitive 
 - [func NSDecimalIsNotANumber(UnsafePointer<Decimal>) -> Bool](nsdecimalisnotanumber(_:).md)
   Returns a Boolean that indicates whether a given decimal contains a valid number.
 ### Initializers
+- [init(bool: Bool)](nsnumber/init(bool:).md)
+- [init(char: CChar)](nsnumber/init(char:).md)
 - [init?(coder: NSCoder)](nsnumber/init(coder:).md)
+- [init(double: Double)](nsnumber/init(double:).md)
+- [init(float: Float)](nsnumber/init(float:).md)
+- [init(int: Int32)](nsnumber/init(int:).md)
+- [init(integer: Int)](nsnumber/init(integer:).md)
+- [init(longLong: Int64)](nsnumber/init(longlong:).md)
+- [init(short: Int16)](nsnumber/init(short:).md)
+- [init(unsignedChar: UInt8)](nsnumber/init(unsignedchar:).md)
+- [init(unsignedInt: UInt32)](nsnumber/init(unsignedint:).md)
+- [init(unsignedInteger: UInt)](nsnumber/init(unsignedinteger:).md)
+- [init(unsignedLongLong: UInt64)](nsnumber/init(unsignedlonglong:).md)
+- [init(unsignedShort: UInt16)](nsnumber/init(unsignedshort:).md)
 ### Default Implementations
 - [ExpressibleByBooleanLiteral Implementations](nsnumber/expressiblebybooleanliteral-implementations.md)
 - [ExpressibleByFloatLiteral Implementations](nsnumber/expressiblebyfloatliteral-implementations.md)

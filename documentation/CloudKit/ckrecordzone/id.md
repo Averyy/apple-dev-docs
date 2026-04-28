@@ -63,6 +63,7 @@ To fetch a record zone from the database, use a [`CKFetchRecordZonesOperation`](
 - [static let defaultZoneName: String](ckrecordzone/id/defaultzonename.md)
   The name of the default zone.
 ### Initializers
+- [init?(coder: NSCoder)](ckrecordzone/id/init(coder:).md)
 - [convenience init(zoneName: String, ownerName: String?)](ckrecordzone/id/init(zonename:ownername:)-2hzo4.md)
 
 ## Relationships

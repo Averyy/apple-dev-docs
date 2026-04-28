@@ -39,6 +39,8 @@ class HKFHIRResource
   The full URL for the source of the FHIR resource.
 - [var data: Data](hkfhirresource/data.md)
   The JSON representation of the FHIR resource.
+### Initializers
+- [init?(coder: NSCoder)](hkfhirresource/init(coder:).md)
 
 ## Relationships
 

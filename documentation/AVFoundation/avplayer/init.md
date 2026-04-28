@@ -23,7 +23,7 @@ init()
 
 ## See Also
 
-- [init(url: URL)](avplayer/init(url:).md)
+- [init(url: URL)](avplayer/init(url:)-87cxx.md)
   Creates a new player to play a single audiovisual resource referenced by a given URL.
 - [init(playerItem: AVPlayerItem?)](avplayer/init(playeritem:).md)
   Creates a new player to play the specified player item.

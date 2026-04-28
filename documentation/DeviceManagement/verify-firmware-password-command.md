@@ -7,6 +7,8 @@ Verify the firmware password on a device.
 
 **Availability**:
 - macOS 10.13+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 #### Discussion
 

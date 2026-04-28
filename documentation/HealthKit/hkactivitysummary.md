@@ -65,6 +65,8 @@ You can display an active summary in iOS using the [`HKActivityRingView`](https:
 ### Specifying predicate key paths
 - [let HKPredicateKeyPathDateComponents: String](hkpredicatekeypathdatecomponents.md)
   The key path for accessing an activity summary’s date components.
+### Initializers
+- [init?(coder: NSCoder)](hkactivitysummary/init(coder:).md)
 ### Instance Properties
 - [var isPaused: Bool](hkactivitysummary/ispaused.md)
 

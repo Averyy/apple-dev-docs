@@ -41,6 +41,8 @@ A filename is usually a valid UTF-8 sequence, but can be an arbitrary byte seque
   The filename, represented as a Unicode string.
 - [var debugDescription: String](fsfilename/debugdescription.md)
   The filename, represented as a potentially lossy conversion to a string.
+### Initializers
+- [init?(coder: NSCoder)](fsfilename/init(coder:).md)
 
 ## Relationships
 

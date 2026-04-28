@@ -21,12 +21,8 @@ This error can occur if you call [`requestForwarding(for:)`](accessorynotificati
 
 ## See Also
 
-- [AccessoryError.accessoryNotificationsUnsupported](accessoryerror/accessorynotificationsunsupported.md)
-  An error that indicates accessory notifications are not supported in the current configuration.
 - [AccessoryError.unsupportedAccessory](accessoryerror/unsupportedaccessory.md)
   An error that indicates the system doesn’t support notification forwarding for the provided accessory.
-- [AccessoryError.unableToPresentSettings](accessoryerror/unabletopresentsettings.md)
-  An error that indicates the system cannot present settings UI.
 
 
 ---

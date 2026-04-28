@@ -43,7 +43,7 @@ Instances of this class are immutable.
   Creates an audio format instance from a stream description.
 - [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
   Creates an audio format instance from a stream description and channel layout.
-- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:).md)
+- [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
 ### Getting the Audio Stream Description
 - [var streamDescription: UnsafePointer<AudioStreamBasicDescription>](avaudioformat/streamdescription.md)
@@ -74,6 +74,9 @@ Instances of this class are immutable.
 ### Constants
 - [enum AVAudioCommonFormat](avaudiocommonformat.md)
   The format options that describe common audio formats.
+### Initializers
+- [init(CMAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-2tldd.md)
+- [init?(coder: NSCoder)](avaudioformat/init(coder:).md)
 
 ## Relationships
 

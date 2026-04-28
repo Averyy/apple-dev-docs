@@ -7,6 +7,8 @@ The command to schedule a background scan for operating-system updates on a devi
 
 **Availability**:
 - macOS 10.11+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

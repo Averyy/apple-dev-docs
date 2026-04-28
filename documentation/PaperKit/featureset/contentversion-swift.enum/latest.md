@@ -8,6 +8,7 @@ A property that returns latest version of PaperKit, which supports all currently
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

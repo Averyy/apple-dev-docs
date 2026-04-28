@@ -87,6 +87,8 @@ If your app provides other gestures in the same view hierarchy, you can use the 
   The mode of the text interaction.
 - [enum UITextInteractionMode](uitextinteractionmode.md)
   Modes that determine the selection behaviors that a text interaction provides.
+### Initializers
+- [convenience init(forMode: UITextInteractionMode)](uitextinteraction/init(formode:).md)
 
 ## Relationships
 

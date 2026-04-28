@@ -8,6 +8,7 @@ Provides an array of vertex indices that respresents the geometric primitive at 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

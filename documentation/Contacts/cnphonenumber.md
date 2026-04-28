@@ -37,6 +37,8 @@ class CNPhoneNumber
 ### Deprecated
 - [init!()](cnphonenumber/init.md)
 - [class func new() -> Self!](cnphonenumber/new.md)
+### Initializers
+- [init?(coder: NSCoder)](cnphonenumber/init(coder:).md)
 
 ## Relationships
 

@@ -22,6 +22,7 @@ class UISymbolContentTransition
 
 ### Initializers
 - [convenience init(any ContentTransitionSymbolEffect & SymbolEffect, options: SymbolEffectOptions)](uisymbolcontenttransition/init(_:options:).md)
+- [init?(coder: NSCoder)](uisymbolcontenttransition/init(coder:).md)
 ### Instance Properties
 - [var contentTransition: any ContentTransitionSymbolEffect & SymbolEffect](uisymbolcontenttransition/contenttransition-52cbh.md)
 - [var options: SymbolEffectOptions](uisymbolcontenttransition/options-7jxvh.md)

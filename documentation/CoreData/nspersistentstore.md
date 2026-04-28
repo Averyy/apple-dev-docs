@@ -82,6 +82,8 @@ You must override these methods:
 ### Providing a Migration Manager
 - [class func migrationManagerClass() -> AnyClass](nspersistentstore/migrationmanagerclass.md)
   Returns the migration manager class for this store class.
+### Initializers
+- [init(persistentStoreCoordinator: NSPersistentStoreCoordinator?, configurationName: String?, URL: URL, options: [AnyHashable : Any]?)](nspersistentstore/init(persistentstorecoordinator:configurationname:url:options:).md)
 
 ## Relationships
 

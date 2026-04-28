@@ -8,6 +8,7 @@ A delegate that receives updates about ambient pressure, water pressure, water t
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

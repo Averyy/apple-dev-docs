@@ -8,6 +8,7 @@ A time range in an audiovisual presentation for content with an interstitial des
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - tvOS 9.0+
 - visionOS 1.0+
 
@@ -33,6 +34,8 @@ When you associate interstitial time ranges with an [`AVPlayerItem`](https://dev
 ### Inspecting an Interstitial Time Range
 - [var timeRange: CMTimeRange](avinterstitialtimerange/timerange.md)
   The time range identified as interstitial content.
+### Initializers
+- [init?(coder: NSCoder)](avinterstitialtimerange/init(coder:).md)
 
 ## Relationships
 

@@ -25,7 +25,7 @@ The value of this key is an [`NSString`](https://developer.apple.com/documentati
 
 ## See Also
 
-- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:).md)
+- [convenience init(identifier: String, url: URL, options: [AnyHashable : Any]?) throws](unnotificationattachment/init(identifier:url:options:)-83grx.md)
   Creates an attachment object from the specified file and options.
 - [let UNNotificationAttachmentOptionsThumbnailHiddenKey: String](unnotificationattachmentoptionsthumbnailhiddenkey.md)
   A Boolean value indicating whether the system hides the attachment’s thumbnail.

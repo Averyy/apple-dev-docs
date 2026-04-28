@@ -8,6 +8,7 @@ The region used to determine when the system sends the notification.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - watchOS 3.0+
 
 ## Declaration

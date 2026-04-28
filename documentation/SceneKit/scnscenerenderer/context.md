@@ -25,7 +25,7 @@ var context: UnsafeMutableRawPointer? { get }
 
 In macOS, the value of this property is a Core OpenGL [`cglContextObj`](https://developer.apple.com/documentation/AppKit/NSOpenGLContext/cglContextObj) object.
 
-In iOS, the value of this property is an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) object.
+In iOS, the value of this property is an doc://com.apple.documentation/documentation/opengles/eaglcontext object.
 
 
 ---

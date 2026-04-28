@@ -43,6 +43,8 @@ Create a passkey registration credential to provide a response to a passkey regi
   An output from WebAuthn extensions.
 - [struct ASPasskeyRegistrationCredentialExtensionOutput](aspasskeyregistrationcredentialextensionoutput-swift.struct.md)
   A type that encapsulates output for various WebAuthn extensions during passkey assertion.
+### Initializers
+- [init?(coder: NSCoder)](aspasskeyregistrationcredential/init(coder:).md)
 
 ## Relationships
 

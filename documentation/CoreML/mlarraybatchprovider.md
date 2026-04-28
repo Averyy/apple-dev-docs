@@ -34,6 +34,8 @@ This batch provider supports an array of feature providers or a dictionary of ar
 ### Accessing the feature providers
 - [var array: [any MLFeatureProvider]](mlarraybatchprovider/array.md)
   The array of feature providers.
+### Initializers
+- [init(featureProviderArray: [any MLFeatureProvider])](mlarraybatchprovider/init(featureproviderarray:).md)
 
 ## Relationships
 

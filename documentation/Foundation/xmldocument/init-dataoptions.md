@@ -38,7 +38,7 @@ If you specify `NSXMLDocumentTidyXML` as one of the options, NSXMLDocument perfo
   Initializes and returns an NSXMLDocument object created from the XML or HTML contents of a URL-referenced source
 - [init(rootElement: XMLElement?)](xmldocument/init(rootelement:).md)
   Returns an `NSXMLDocument` object initialized with a single child, the root element.
-- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:).md)
+- [convenience init(xmlString: String, options: XMLNode.Options) throws](xmldocument/init(xmlstring:options:)-65m2r.md)
   Initializes and returns an `NSXMLDocument` object created from a string containing XML markup text.
 - [class func replacementClass(for: AnyClass) -> AnyClass](xmldocument/replacementclass(for:).md)
   Overridden by subclasses to substitute a custom class for an NSXML class that the parser uses to create node instances.

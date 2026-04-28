@@ -79,7 +79,7 @@ if(pixFmt == nil) {
 
 - [func getValues(UnsafeMutablePointer<GLint>, forAttribute: NSOpenGLPixelFormatAttribute, forVirtualScreen: GLint)](nsopenglpixelformat/getvalues(_:forattribute:forvirtualscreen:).md)
   Gets the value for the specified pixel format attribute.
-- [init?(cglPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:).md)
+- [init?(cglPixelFormatObj: CGLPixelFormatObj)](nsopenglpixelformat/init(cglpixelformatobj:)-2zqw4.md)
   Returns an OpenGL pixel format object initialized with using an existing CGL pixel format object.
 
 

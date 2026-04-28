@@ -8,6 +8,7 @@ A set of strings that identifies the primary recipients of the message.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

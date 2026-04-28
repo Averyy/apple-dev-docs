@@ -95,6 +95,8 @@ You create a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object in you
   A Boolean value that indicates whether HTML5 videos require the user to start playing them (`true`) or whether the videos play automatically (`false`).
 - [var mediaPlaybackRequiresUserAction: Bool](wkwebviewconfiguration/mediaplaybackrequiresuseraction.md)
   Deprecated property.
+### Initializers
+- [init?(coder: NSCoder)](wkwebviewconfiguration/init(coder:).md)
 ### Instance Properties
 - [var allowsInlinePredictions: Bool](wkwebviewconfiguration/allowsinlinepredictions.md)
 - [var showsSystemScreenTimeBlockingView: Bool](wkwebviewconfiguration/showssystemscreentimeblockingview.md)

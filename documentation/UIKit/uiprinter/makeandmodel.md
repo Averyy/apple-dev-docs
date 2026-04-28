@@ -21,7 +21,7 @@ var makeAndModel: String? { get }
 
 The string in this property is provided by the printer and usually consists of the manufacturer’s name, the model name of the printer, and the model number of the printer.
 
-For printers you create yourself using the [`init(url:)`](uiprinter/init(url:).md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
+For printers you create yourself using the [`init(url:)`](uiprinter/init(url:)-1mibn.md) method, the value of this property is `nil` until you successfully connect to the printer using the [`contactPrinter(_:)`](uiprinter/contactprinter(_:).md) method.
 
 ## See Also
 

@@ -36,6 +36,8 @@ To initiate a file transfer operation, call the [`transferUserInfo(_:)`](wcsessi
   A Boolean value indicating whether the data is still being transferred.
 - [func cancel()](wcsessionuserinfotransfer/cancel.md)
   Cancels the data transfer.
+### Initializers
+- [init?(coder: NSCoder)](wcsessionuserinfotransfer/init(coder:).md)
 
 ## Relationships
 

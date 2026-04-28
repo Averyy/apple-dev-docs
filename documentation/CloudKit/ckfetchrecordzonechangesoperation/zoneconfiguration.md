@@ -32,6 +32,8 @@ class ZoneConfiguration
   The maximum number of records to fetch from the record zone.
 - [var desiredKeys: [CKRecord.FieldKey]?](ckfetchrecordzonechangesoperation/zoneconfiguration/desiredkeys.md)
   The fields to fetch for the requested records.
+### Initializers
+- [init?(coder: NSCoder)](ckfetchrecordzonechangesoperation/zoneconfiguration/init(coder:).md)
 
 ## Relationships
 

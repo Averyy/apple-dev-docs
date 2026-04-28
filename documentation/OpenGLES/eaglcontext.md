@@ -26,9 +26,9 @@ Before drawing to a context, you must bind a complete framebuffer object to the 
 ## Topics
 
 ### Creating Contexts
-- [convenience init?(api: EAGLRenderingAPI)](eaglcontext/init(api:).md)
+- [convenience init?(api: EAGLRenderingAPI)](eaglcontext/init(api:)-q09o.md)
   Initializes and returns a newly allocated rendering context with the specified version of the OpenGL ES rendering API.
-- [init?(api: EAGLRenderingAPI, sharegroup: EAGLSharegroup)](eaglcontext/init(api:sharegroup:).md)
+- [init?(api: EAGLRenderingAPI, sharegroup: EAGLSharegroup)](eaglcontext/init(api:sharegroup:)-2rt8m.md)
   Initializes and returns a newly allocated rendering context with the specified version of OpenGL ES rendering API and the specified sharegroup.
 ### Setting the Current Context
 - [class func setCurrent(EAGLContext?) -> Bool](eaglcontext/setcurrent(_:).md)
@@ -58,6 +58,9 @@ Before drawing to a context, you must bind a complete framebuffer object to the 
 - [func presentRenderbuffer(Int, afterMinimumDuration: CFTimeInterval) -> Bool](eaglcontext/presentrenderbuffer(_:afterminimumduration:).md)
 - [func presentRenderbuffer(Int, atTime: CFTimeInterval) -> Bool](eaglcontext/presentrenderbuffer(_:attime:).md)
 - [func texImageIOSurface(IOSurfaceRef, target: Int, internalFormat: Int, width: UInt32, height: UInt32, format: Int, type: Int, plane: UInt32) -> Bool](eaglcontext/teximageiosurface(_:target:internalformat:width:height:format:type:plane:).md)
+### Initializers
+- [convenience init?(API: EAGLRenderingAPI)](eaglcontext/init(api:)-54mtn.md)
+- [init?(API: EAGLRenderingAPI, sharegroup: EAGLSharegroup)](eaglcontext/init(api:sharegroup:)-3gr8h.md)
 
 ## Relationships
 

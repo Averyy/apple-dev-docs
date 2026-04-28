@@ -43,6 +43,8 @@ You use the [`MLCustomLayer`](mlcustomlayer.md) protocol to define the behavior 
   Evaluates the custom layer with the given inputs.
 - [func encode(commandBuffer: any MTLCommandBuffer, inputs: [any MTLTexture], outputs: [any MTLTexture]) throws](mlcustomlayer/encode(commandbuffer:inputs:outputs:).md)
   Encodes GPU commands to evaluate the custom layer.
+### Initializers
+- [init(parameterDictionary: [String : Any]) throws](mlcustomlayer/init(parameterdictionary:).md)
 
 ## See Also
 

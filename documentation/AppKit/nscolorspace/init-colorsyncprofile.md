@@ -26,9 +26,9 @@ The initialized `NSColorSpace` object or `nil` if initialization was not success
 
 - [var colorSyncProfile: UnsafeMutableRawPointer?](nscolorspace/colorsyncprofile.md)
   The ColorSync profile from which the color space was created.
-- [init?(cgColorSpace: CGColorSpace)](nscolorspace/init(cgcolorspace:).md)
+- [init?(cgColorSpace: CGColorSpace)](nscolorspace/init(cgcolorspace:)-889nv.md)
   Initializes and returns a color space object initialized from a Core Graphics color-space object.
-- [init?(iccProfileData: Data)](nscolorspace/init(iccprofiledata:).md)
+- [init?(iccProfileData: Data)](nscolorspace/init(iccprofiledata:)-8rl9d.md)
   Initializes and returns a color space object from the specified ICC profile.
 
 

@@ -22,6 +22,7 @@ class MTRClusterPath
 
 ### Initializers
 - [init(endpointID: NSNumber, clusterID: NSNumber)](mtrclusterpath/init(endpointid:clusterid:).md)
+- [init?(coder: NSCoder)](mtrclusterpath/init(coder:).md)
 ### Instance Properties
 - [var cluster: NSNumber](mtrclusterpath/cluster.md)
 - [var endpoint: NSNumber](mtrclusterpath/endpoint.md)

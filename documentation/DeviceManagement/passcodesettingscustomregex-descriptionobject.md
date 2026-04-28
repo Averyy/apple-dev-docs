@@ -7,6 +7,8 @@ A dictionary that contains supported OS language IDs for the keys and values tha
 
 **Availability**:
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

@@ -113,6 +113,8 @@ for (NSPropertyDescription *property in anEntity) {
   The version hash for the receiver.
 - [var versionHashModifier: String?](nsentitydescription/versionhashmodifier.md)
   The version hash modifier for the receiver.
+### Initializers
+- [init?(coder: NSCoder)](nsentitydescription/init(coder:).md)
 
 ## Relationships
 

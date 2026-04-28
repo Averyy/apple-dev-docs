@@ -69,6 +69,8 @@ Once a tile definition has been created, you encapsulate it in a [`SKTileGroup`]
   The placement weight of the tile definition.
 - [var size: CGSize](sktiledefinition/size.md)
   The size of the tile definition in points.
+### Initializers
+- [init?(coder: NSCoder)](sktiledefinition/init(coder:).md)
 
 ## Relationships
 

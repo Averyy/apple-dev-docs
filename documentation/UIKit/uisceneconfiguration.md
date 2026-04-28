@@ -44,6 +44,8 @@ When the user requests a new instance of your app’s user interface, UIKit look
   The role assigned to the scene configuration.
 - [UISceneSession.Role](uiscenesession/role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
+### Initializers
+- [init?(coder: NSCoder)](uisceneconfiguration/init(coder:).md)
 
 ## Relationships
 

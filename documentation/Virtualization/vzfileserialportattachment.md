@@ -23,13 +23,15 @@ Create a [`VZSerialPortAttachment`](vzserialportattachment.md) object and assign
 ## Topics
 
 ### Creating the attachment point
-- [init(url: URL, append: Bool) throws](vzfileserialportattachment/init(url:append:).md)
+- [init(url: URL, append: Bool) throws](vzfileserialportattachment/init(url:append:)-37g72.md)
   Creates a file-based serial port attachment object.
 ### Getting the file details
 - [var url: URL](vzfileserialportattachment/url.md)
   The URL of a file on the local file system.
 - [var append: Bool](vzfileserialportattachment/append.md)
   A Boolean that indicates whether the virtual machine appends data to the file.
+### Initializers
+- [init(URL: URL, append: Bool) throws](vzfileserialportattachment/init(url:append:)-7xoxy.md)
 
 ## Relationships
 

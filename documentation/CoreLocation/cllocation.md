@@ -89,6 +89,8 @@ Use [`CLLocation`](cllocation.md) objects as-is, and don’t subclass them.
   The accuracy of a speed.
 - [typealias CLLocationDirectionAccuracy](cllocationdirectionaccuracy.md)
   The accuracy of a compass heading.
+### Initializers
+- [init?(coder: NSCoder)](cllocation/init(coder:).md)
 
 ## Relationships
 

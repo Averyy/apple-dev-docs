@@ -8,6 +8,7 @@ A Boolean value that determines whether HTML5 videos can play automatically or r
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 
 ## Declaration
 

@@ -8,7 +8,10 @@ The declaration to configure the device to allow WebAuthn enterprise attestation
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

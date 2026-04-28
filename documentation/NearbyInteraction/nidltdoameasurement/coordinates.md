@@ -8,6 +8,7 @@ A triplet that represents the location in 3D space of the anchor that provides t
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

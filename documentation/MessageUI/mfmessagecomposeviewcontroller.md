@@ -117,7 +117,7 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 ## Topics
 
 ### Responding to the view controller dismissal
-- [var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
+- [var messageComposeDelegate: MFMessageComposeViewControllerDelegate?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
   The delegate to which message-related notifications should be sent.
 - [protocol MFMessageComposeViewControllerDelegate](mfmessagecomposeviewcontrollerdelegate.md)
   An interface for responding to user interactions with a message compose view controller.
@@ -179,9 +179,9 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
-- [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)
+- [UIKit.UIAppearanceContainer](doc://com.apple.messageui/objc(pl)UIAppearanceContainer)
 - [UIPasteConfigurationSupporting](../UIKit/UIPasteConfigurationSupporting.md)
 - [UIResponderStandardEditActions](../UIKit/UIResponderStandardEditActions.md)
 - [UIStateRestoring](../UIKit/UIStateRestoring.md)

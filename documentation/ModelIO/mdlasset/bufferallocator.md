@@ -21,7 +21,7 @@ var bufferAllocator: any MDLMeshBufferAllocator { get }
 
 #### Discussion
 
-You specify an allocator when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:).md) initializer. If you do not specify an allocator, or import an asset through other means, the [`MDLAsset`](mdlasset.md) class uses an internal allocator object.
+You specify an allocator when loading an asset with the [`init(url:vertexDescriptor:bufferAllocator:)`](mdlasset/init(url:vertexdescriptor:bufferallocator:)-1tchi.md) initializer. If you do not specify an allocator, or import an asset through other means, the [`MDLAsset`](mdlasset.md) class uses an internal allocator object.
 
 For example, to use the MetalKit framework for loading vertex data into GPU buffers for rendering with Metal, pass a [`MTKMeshBufferAllocator`](https://developer.apple.com/documentation/MetalKit/MTKMeshBufferAllocator) object for the `bufferAllocator` parameter. By specifying an allocator, you ensure that mesh data is copied a minimal number of times between being read from a file and being loaded into GPU memory for rendering.
 

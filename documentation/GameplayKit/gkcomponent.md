@@ -44,6 +44,8 @@ For more information on Entity-Component architecture, read [`Entities and Compo
   Notifies the component that it has been assigned to an entity.
 - [func willRemoveFromEntity()](gkcomponent/willremovefromentity.md)
   Notifies the component that it has been removed from an entity.
+### Initializers
+- [init?(coder: NSCoder)](gkcomponent/init(coder:).md)
 
 ## Relationships
 

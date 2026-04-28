@@ -45,6 +45,8 @@ class ASAuthorizationAppleIDCredential
   Possible values for the real user indicator.
 ### Instance Properties
 - [var userAgeRange: ASUserAgeRange](asauthorizationappleidcredential/useragerange.md)
+### Initializers
+- [init?(coder: NSCoder)](asauthorizationappleidcredential/init(coder:).md)
 
 ## Relationships
 

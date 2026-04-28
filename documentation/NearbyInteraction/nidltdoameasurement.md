@@ -8,6 +8,7 @@ Information from a Downlink Time-Difference-of-Arrival anchor that you use to de
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -43,6 +44,8 @@ Only sessions that run a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) rec
   The type of anchor message that the measurement derives from.
 - [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
   The drift, as a ratio, across the frequencies of the receiver and the anchor.
+### Initializers
+- [init?(coder: NSCoder)](nidltdoameasurement/init(coder:).md)
 
 ## Relationships
 

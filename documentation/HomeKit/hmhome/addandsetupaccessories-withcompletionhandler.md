@@ -8,6 +8,7 @@ Finds and adds nearby accessories to the home using a HomeKit code provided by y
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 
 ## Declaration
 

@@ -44,7 +44,7 @@ The file wrapper is initialized with open permissions: anyone can write to or re
   A dictionary of file attributes.
 - [var regularFileContents: Data?](filewrapper/regularfilecontents.md)
   The contents of the file-system node associated with a regular-file file wrapper.
-- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:).md)
+- [init(url: URL, options: FileWrapper.ReadingOptions) throws](filewrapper/init(url:options:)-70161.md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the URL.
 - [convenience init?(path: String)](filewrapper/init(path:).md)
   Initializes a file wrapper instance whose kind is determined by the type of file-system node located by the path.

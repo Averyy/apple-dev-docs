@@ -41,7 +41,7 @@ struct InitializationOptions
 
 - [init(creatingVariableStoreAt: URL, options: VZEFIVariableStore.InitializationOptions) throws](vzefivariablestore/init(creatingvariablestoreat:options:).md)
   Creates a new EFI variable store at specified the URL on the filesystem, initialization options, and error-return variable.
-- [init(url: URL)](vzefivariablestore/init(url:).md)
+- [init(url: URL)](vzefivariablestore/init(url:)-83pcn.md)
   Initialize the variable store from the URL of an existing file.
 
 

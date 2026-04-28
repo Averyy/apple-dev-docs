@@ -35,6 +35,7 @@ class ASCredentialServiceIdentifier
 - [ASCredentialServiceIdentifier.IdentifierType](ascredentialserviceidentifier/identifiertype.md)
   Possible values for the service identifier type.
 ### Initializers
+- [init?(coder: NSCoder)](ascredentialserviceidentifier/init(coder:).md)
 - [init(identifier: String, type: ASCredentialServiceIdentifier.IdentifierType, displayName: String)](ascredentialserviceidentifier/init(identifier:type:displayname:).md)
   Initializes an ASCredentialServiceIdentifier object.
 ### Instance Properties

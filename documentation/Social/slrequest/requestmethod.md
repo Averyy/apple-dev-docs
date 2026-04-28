@@ -19,7 +19,7 @@ var requestMethod: SLRequestMethod { get }
 
 #### Discussion
 
-Use this property to look up the method of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:).md). Possible values are described in [`SLRequestMethod`](slrequestmethod.md).
+Use this property to look up the method of the HTTP request that was set in [`init(forServiceType:requestMethod:url:parameters:)`](slrequest/init(forservicetype:requestmethod:url:parameters:)-2cnf1.md). Possible values are described in [`SLRequestMethod`](slrequestmethod.md).
 
 ## See Also
 

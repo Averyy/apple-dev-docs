@@ -16,7 +16,7 @@ func imageAlignment() -> NSImageAlignment
 
 #### Return Value
 
-The alignment of the image. See [`NSImageAlignment`](https://developer.apple.com/documentation/AppKit/NSImageAlignment) for possible values.
+The alignment of the image. See doc://com.apple.documentation/documentation/appkit/nsimagealignment for possible values.
 
 #### Discussion
 

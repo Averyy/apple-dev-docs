@@ -84,7 +84,8 @@ struct SampleView: View {
 
 ## See Also
 
-- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
+- [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View
+](../SwiftUI/View/popoverTip(_:arrowEdge:action:).md)
   Presents a popover tip on the modified view.
 
 

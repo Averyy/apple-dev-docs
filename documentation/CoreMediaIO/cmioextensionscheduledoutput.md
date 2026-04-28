@@ -25,6 +25,8 @@ class CMIOExtensionScheduledOutput
   The buffer sequence number that was output.
 - [var hostTimeInNanoseconds: UInt64](cmioextensionscheduledoutput/hosttimeinnanoseconds.md)
   The host time in nanoseconds when the buffer was output.
+### Initializers
+- [init?(coder: NSCoder)](cmioextensionscheduledoutput/init(coder:).md)
 
 ## Relationships
 

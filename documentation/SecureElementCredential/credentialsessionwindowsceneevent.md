@@ -8,6 +8,7 @@ A CredentialSession event send to a `UIScene` or `UIWindowScene`.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

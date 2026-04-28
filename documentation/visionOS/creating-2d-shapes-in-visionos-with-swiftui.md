@@ -19,7 +19,7 @@ The following image shows the main view of the app, which draws four shapes:
 - A triangle
 - A dashed line
 
-![A screenshot of a visionOS app in Simulator with one translucent window displaying a circle, a square, a triangle, and a dotted line that top-align.](https://docs-assets.developer.apple.com/published/b90e18496a4aec9e565db5247d51fa7b/sample-2d-shapes-1-main-view.png)
+![](https://docs-assets.developer.apple.com/published/b90e18496a4aec9e565db5247d51fa7b/sample-2d-shapes-1-main-view.png)
 
 SwiftUI defines the `Circle` and `Rectangle` types, and the sample defines the custom types `Triangle` and `Line`.
 

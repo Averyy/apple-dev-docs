@@ -14,10 +14,6 @@
 
 ## See Also
 
-- [DADiskClaimOptions](dadiskclaimoptions.md)
-  Options for DADiskClaim().
-- [DADiskEjectOptions](dadiskejectoptions.md)
-  Options for DADiskEject().
 - [typealias DADiskMountOptions](dadiskmountoptions.md)
   Options for DADiskMount().
 - [typealias DADiskRenameOptions](dadiskrenameoptions.md)

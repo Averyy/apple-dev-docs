@@ -8,6 +8,7 @@ External NFC reader is detected, i.e. presence of a NFC field
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

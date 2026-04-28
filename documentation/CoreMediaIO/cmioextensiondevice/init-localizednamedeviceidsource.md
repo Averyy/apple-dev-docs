@@ -7,6 +7,7 @@ Creates an extension device.
 
 **Availability**:
 - Mac Catalyst 15.4+
+- macOS 10.7+
 
 ## Declaration
 

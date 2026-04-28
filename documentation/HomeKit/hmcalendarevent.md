@@ -27,6 +27,8 @@ class HMCalendarEvent
 ### Inspecting the calendar event
 - [var fireDateComponents: DateComponents](hmcalendarevent/firedatecomponents.md)
   The date components that specify when the event is triggered.
+### Initializers
+- [init(fireDateComponents: DateComponents)](hmcalendarevent/init(firedatecomponents:).md)
 
 ## Relationships
 

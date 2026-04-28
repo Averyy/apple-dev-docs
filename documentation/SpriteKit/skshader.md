@@ -73,6 +73,8 @@ Compiling a shader and the uniform data associated with it can be expensive. Bec
 ### Executing Shaders in Metal and OpenGL
 - [Executing Shaders in Metal and OpenGL](executing-shaders-in-metal-and-opengl.md)
   Toggle between renderers to make sure your shader code compiles in both the Metal and OpenGL environments.
+### Initializers
+- [init?(coder: NSCoder)](skshader/init(coder:).md)
 
 ## Relationships
 

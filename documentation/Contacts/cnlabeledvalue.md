@@ -518,6 +518,8 @@ Labels describe the context for a property. For example, the label for a phone n
   The label for the contact’s parent’s sibling’s younger daughter.
 - [let CNLabelContactRelationYoungerCousinParentsSiblingsSon: String](cnlabelcontactrelationyoungercousinparentssiblingsson.md)
   The label for the contact’s parent’s sibling’s younger son.
+### Initializers
+- [init?(coder: NSCoder)](cnlabeledvalue/init(coder:).md)
 
 ## Relationships
 

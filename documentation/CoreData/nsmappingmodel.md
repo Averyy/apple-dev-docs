@@ -34,6 +34,9 @@ class NSMappingModel
   The entity mappings for the mapping model.
 - [var entityMappingsByName: [String : NSEntityMapping]](nsmappingmodel/entitymappingsbyname.md)
   The entity mappings for the mapping model, keyed by name.
+### Initializers
+- [init?(contentsOfURL: URL?)](nsmappingmodel/init(contentsofurl:).md)
+- [init?(fromBundles: [Bundle]?, forSourceModel: NSManagedObjectModel?, destinationModel: NSManagedObjectModel?)](nsmappingmodel/init(frombundles:forsourcemodel:destinationmodel:).md)
 
 ## Relationships
 

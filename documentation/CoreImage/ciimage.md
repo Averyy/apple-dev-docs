@@ -76,11 +76,11 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   Initializes an image object by reading an image from a URL.
 - [init?(contentsOf: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsof:options:).md)
   Initializes an image object by reading an image from a URL, using the specified options.
-- [init(cgImage: CGImage)](ciimage/init(cgimage:).md)
+- [init(cgImage: CGImage)](ciimage/init(cgimage:)-2kvvb.md)
   Initializes an image object with a Quartz 2D image.
-- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:).md)
+- [init(cgImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-8663h.md)
   Initializes an image object with a Quartz 2D image, using the specified options.
-- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:).md)
+- [init(cgImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-e2bz.md)
 - [init?(data: Data)](ciimage/init(data:).md)
   Initializes an image object with the supplied image data.
 - [init?(data: Data, options: [CIImageOption : Any]?)](ciimage/init(data:options:).md)
@@ -97,19 +97,19 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [init?(portaitEffectsMatte: AVPortraitEffectsMatte, options: [CIImageOption : Any]?)](ciimage/init(portaiteffectsmatte:options:).md)
 - [init?(semanticSegmentationMatte: AVSemanticSegmentationMatte)](ciimage/init(semanticsegmentationmatte:).md)
 - [init?(semanticSegmentationMatte: AVSemanticSegmentationMatte, options: [CIImageOption : Any]?)](ciimage/init(semanticsegmentationmatte:options:).md)
-- [init(cvImageBuffer: CVImageBuffer)](ciimage/init(cvimagebuffer:).md)
+- [init(cvImageBuffer: CVImageBuffer)](ciimage/init(cvimagebuffer:)-7wmzq.md)
   Initializes an image object from the contents of a Core Video image buffer.
-- [init(cvImageBuffer: CVImageBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvimagebuffer:options:).md)
+- [init(cvImageBuffer: CVImageBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvimagebuffer:options:)-8upim.md)
   Initializes an image object from the contents of a Core Video image buffer, using the specified options.
-- [init(cvPixelBuffer: CVPixelBuffer)](ciimage/init(cvpixelbuffer:).md)
+- [init(cvPixelBuffer: CVPixelBuffer)](ciimage/init(cvpixelbuffer:)-3wng7.md)
   Initializes an image object from the contents of a Core Video pixel buffer.
-- [init(cvPixelBuffer: CVPixelBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvpixelbuffer:options:).md)
+- [init(cvPixelBuffer: CVPixelBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvpixelbuffer:options:)-9x2pz.md)
   Initializes an image object from the contents of a Core Video pixel buffer using the specified options.
-- [init?(mtlTexture: any MTLTexture, options: [CIImageOption : Any]?)](ciimage/init(mtltexture:options:).md)
+- [init?(mtlTexture: any MTLTexture, options: [CIImageOption : Any]?)](ciimage/init(mtltexture:options:)-67uvj.md)
   Initializes an image object with data supplied by a Metal texture.
-- [init(ioSurface: IOSurfaceRef)](ciimage/init(iosurface:).md)
+- [init(ioSurface: IOSurfaceRef)](ciimage/init(iosurface:)-5e9yc.md)
   Initializes an image with the contents of an IOSurface.
-- [init(ioSurface: IOSurfaceRef, options: [CIImageOption : Any]?)](ciimage/init(iosurface:options:).md)
+- [init(ioSurface: IOSurfaceRef, options: [CIImageOption : Any]?)](ciimage/init(iosurface:options:)-48cta.md)
   Initializes, using the specified options, an image with the contents of an IOSurface.
 ### Creating an Image by Modifying an Existing Image
 - [func applyingFilter(String, parameters: [String : Any]) -> CIImage](ciimage/applyingfilter(_:parameters:).md)
@@ -215,15 +215,15 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 ### AutoAdjustment Keys
 - [struct CIImageAutoAdjustmentOption](ciimageautoadjustmentoption.md)
 ### Deprecated
-- [init(cgLayer: CGLayer)](ciimage/init(cglayer:).md)
+- [init(cgLayer: CGLayer)](ciimage/init(cglayer:)-2lgo6.md)
   Initializes an image object  from the contents supplied by a CGLayer object.
-- [init(cgLayer: CGLayer, options: [CIImageOption : Any]?)](ciimage/init(cglayer:options:).md)
+- [init(cgLayer: CGLayer, options: [CIImageOption : Any]?)](ciimage/init(cglayer:options:)-3p3l3.md)
   Initializes an image object  from the contents supplied by a CGLayer object, using the  specified options.
 - [init(texture: UInt32, size: CGSize, flipped: Bool, colorSpace: CGColorSpace?)](ciimage/init(texture:size:flipped:colorspace:).md)
   Initializes an image object with data supplied by an OpenGL texture.
 - [init(texture: UInt32, size: CGSize, flipped: Bool, options: [CIImageOption : Any]?)](ciimage/init(texture:size:flipped:options:).md)
   Initializes an image object with data supplied by an OpenGL texture.
-- [init(ioSurface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CIImageOption : Any]?)](ciimage/init(iosurface:plane:format:options:).md)
+- [init(ioSurface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CIImageOption : Any]?)](ciimage/init(iosurface:plane:format:options:)-93isn.md)
   Initializes, using the specified format and options, an image with the contents of a specific data plane in an IOSurface.
 - [static let textureTarget: CIImageOption](ciimageoption/texturetarget.md)
   The key for an OpenGL texture target.
@@ -248,13 +248,43 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
   Create an image by changing the receiver’s contentAverageLightLevel property.
 - [func settingContentHeadroom(Float) -> CIImage](ciimage/settingcontentheadroom(_:).md)
   Create an image by changing the receiver’s contentHeadroom property.
+### Initializers
+- [init(CGImage: CGImage)](ciimage/init(cgimage:)-5vlch.md)
+- [init(CGImage: CGImage)](ciimage/init(cgimage:)-8cm8a.md)
+- [init(CGImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-1ksqh.md)
+- [init(CGImage: CGImage, options: [CIImageOption : Any]?)](ciimage/init(cgimage:options:)-28wtj.md)
+- [init(CGImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-2dium.md)
+- [init(CGImageSource: CGImageSource, index: Int, options: [CIImageOption : Any]?)](ciimage/init(cgimagesource:index:options:)-4b3fz.md)
+- [init(CGLayer: CGLayer)](ciimage/init(cglayer:)-3wseb.md)
+- [init(CGLayer: CGLayer)](ciimage/init(cglayer:)-8o853.md)
+- [init(CGLayer: CGLayer, options: [CIImageOption : Any]?)](ciimage/init(cglayer:options:)-34jjk.md)
+- [init(CGLayer: CGLayer, options: [CIImageOption : Any]?)](ciimage/init(cglayer:options:)-8su8t.md)
+- [init(CVImageBuffer: CVImageBuffer)](ciimage/init(cvimagebuffer:)-6k44w.md)
+- [init(CVImageBuffer: CVImageBuffer)](ciimage/init(cvimagebuffer:)-9fq4l.md)
+- [init(CVImageBuffer: CVImageBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvimagebuffer:options:)-79c2d.md)
+- [init(CVImageBuffer: CVImageBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvimagebuffer:options:)-7g0yo.md)
+- [init(CVPixelBuffer: CVPixelBuffer)](ciimage/init(cvpixelbuffer:)-1z0mw.md)
+- [init(CVPixelBuffer: CVPixelBuffer)](ciimage/init(cvpixelbuffer:)-5p2mz.md)
+- [init(CVPixelBuffer: CVPixelBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvpixelbuffer:options:)-6rkzb.md)
+- [init(CVPixelBuffer: CVPixelBuffer, options: [CIImageOption : Any]?)](ciimage/init(cvpixelbuffer:options:)-8i44g.md)
+- [init(IOSurface: IOSurfaceRef)](ciimage/init(iosurface:)-72me3.md)
+- [init(IOSurface: IOSurfaceRef)](ciimage/init(iosurface:)-7dwj8.md)
+- [init(IOSurface: IOSurfaceRef, options: [CIImageOption : Any]?)](ciimage/init(iosurface:options:)-4dwl5.md)
+- [init(IOSurface: IOSurfaceRef, options: [CIImageOption : Any]?)](ciimage/init(iosurface:options:)-7qdsg.md)
+- [init(IOSurface: IOSurfaceRef, plane: Int, format: CIFormat, options: [CIImageOption : Any]?)](ciimage/init(iosurface:plane:format:options:)-7k35r.md)
+- [init?(MTLTexture: any MTLTexture, options: [CIImageOption : Any]?)](ciimage/init(mtltexture:options:)-510vm.md)
+- [init?(MTLTexture: any MTLTexture, options: [CIImageOption : Any]?)](ciimage/init(mtltexture:options:)-5ou1j.md)
+- [init?(coder: NSCoder)](ciimage/init(coder:).md)
+- [init?(contentsOfURL: URL)](ciimage/init(contentsofurl:)-1e9r3.md)
+- [init?(contentsOfURL: URL)](ciimage/init(contentsofurl:)-9vlbb.md)
+- [init?(contentsOfURL: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsofurl:options:)-7g3lx.md)
+- [init?(contentsOfURL: URL, options: [CIImageOption : Any]?)](ciimage/init(contentsofurl:options:)-93guu.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
-- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -268,6 +298,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [Testing.AttachableAsImage](doc://com.apple.coreimage/7Testing17AttachableAsImageP)
 
 ## See Also
 

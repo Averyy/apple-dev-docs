@@ -44,7 +44,7 @@ let asset = AVURLAsset(url: url, options: options)
 ### Creating an asset
 - [convenience init(url: URL)](avurlasset/init(url:).md)
   Creates an asset that models the media at the specified URL.
-- [init(url: URL, options: [String : Any]?)](avurlasset/init(url:options:).md)
+- [init(url: URL, options: [String : Any]?)](avurlasset/init(url:options:)-2x8uu.md)
   Creates an asset that models the media resource at the specified URL.
 - [Initialization options](avurlasset-initialization-options.md)
   Specify options to configure the initialization of a media asset.
@@ -90,6 +90,9 @@ let asset = AVURLAsset(url: url, options: options)
   The properties of the media extension format reader that decodes the asset.
 - [class AVMediaExtensionProperties](avmediaextensionproperties.md)
   An object that describes a Media Extension.
+### Initializers
+- [init(URL: URL, options: [String : Any]?)](avurlasset/init(url:options:)-1t08s.md)
+- [convenience init(URL: URL, options: [String : Any]?)](avurlasset/init(url:options:)-4zhx7.md)
 
 ## Relationships
 

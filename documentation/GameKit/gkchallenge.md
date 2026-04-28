@@ -68,6 +68,8 @@ You can load the challenges issued by the local player using the [`loadReceivedC
   The player who receives the challenge.
 - [typealias GKChallengeComposeCompletionBlock](gkchallengecomposecompletionblock.md)
   A completion block that provides information about the player who issues a challenge and the players who receive it.
+### Initializers
+- [init?(coder: NSCoder)](gkchallenge/init(coder:).md)
 
 ## Relationships
 

@@ -38,7 +38,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 ### Creating a type
 - [convenience init?(String)](uttypereference/init(_:).md)
   Creates a type based on an identifier.
-- [convenience init?(mimeType: String)](uttypereference/init(mimetype:).md)
+- [convenience init?(mimeType: String)](uttypereference/init(mimetype:)-1txq0.md)
   Creates a type based on a MIME type.
 - [convenience init?(mimeType: String, conformingTo: UTType)](uttypereference/init(mimetype:conformingto:).md)
   Creates a type based on a MIME type and a supertype that it conforms to.
@@ -95,6 +95,11 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 - [static var shazamSignature: UTType](uttype-swift.struct/shazamsignature.md)
   A type that represents a signature.
 ### Initializers
+- [convenience init?(MIMEType: String)](uttypereference/init(mimetype:)-7gu84.md)
+- [convenience init?(MIMEType: String, conformingToType: UTType)](uttypereference/init(mimetype:conformingtotype:).md)
+- [init?(coder: NSCoder)](uttypereference/init(coder:).md)
+- [convenience init?(filenameExtension: String, conformingToType: UTType)](uttypereference/init(filenameextension:conformingtotype:).md)
+- [convenience init?(identifier: String)](uttypereference/init(identifier:).md)
 - [convenience init?(tag: String, tagClass: String, conformingTo: UTType?)](uttypereference/init(tag:tagclass:conformingto:).md)
 ### Default Implementations
 - [UTTypeReference Implementations](uttypereference/uttypereference-implementations.md)

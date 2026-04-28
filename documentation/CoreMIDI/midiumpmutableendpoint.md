@@ -19,7 +19,8 @@ class MIDIUMPMutableEndpoint
 ## Topics
 
 ### Initializers
-- [init?(name: String, deviceInfo: MIDI2DeviceInfo, productInstanceID: String, midiProtocol: MIDIProtocolID, destinationCallback: MIDIReceiveBlock)](midiumpmutableendpoint/init(name:deviceinfo:productinstanceid:midiprotocol:destinationcallback:).md)
+- [init?(name: String, deviceInfo: MIDI2DeviceInfo, productInstanceID: String, MIDIProtocol: MIDIProtocolID, destinationCallback: MIDIReceiveBlock)](midiumpmutableendpoint/init(name:deviceinfo:productinstanceid:midiprotocol:destinationcallback:)-23tn4.md)
+- [init?(name: String, deviceInfo: MIDI2DeviceInfo, productInstanceID: String, midiProtocol: MIDIProtocolID, destinationCallback: MIDIReceiveBlock)](midiumpmutableendpoint/init(name:deviceinfo:productinstanceid:midiprotocol:destinationcallback:)-1bsgt.md)
 ### Instance Properties
 - [var isEnabled: Bool](midiumpmutableendpoint/isenabled.md)
 - [var mutableFunctionBlocks: [MIDIUMPMutableFunctionBlock]](midiumpmutableendpoint/mutablefunctionblocks.md)

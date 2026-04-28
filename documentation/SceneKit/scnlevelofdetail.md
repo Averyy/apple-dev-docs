@@ -46,6 +46,8 @@ The geometries associated with lower levels of detail need not share all attribu
   The maximum radius (in pixels) of the geometry’s bounding sphere for this level of detail to appear.
 - [var worldSpaceDistance: CGFloat](scnlevelofdetail/worldspacedistance.md)
   The minimum distance from the current point of view for this level of detail to appear.
+### Initializers
+- [init?(coder: NSCoder)](scnlevelofdetail/init(coder:).md)
 
 ## Relationships
 

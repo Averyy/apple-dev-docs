@@ -47,6 +47,8 @@ HealthKit objects are all immutable. With a few exceptions (such as the object�
   The key path for accessing the object’s UUID inside a predicate format string.
 - [let HKPredicateKeyPathMetadata: String](hkpredicatekeypathmetadata.md)
   The key path for accessing the object’s metadata dictionary inside a predicate format string.
+### Initializers
+- [init?(coder: NSCoder)](hkobject/init(coder:).md)
 
 ## Relationships
 

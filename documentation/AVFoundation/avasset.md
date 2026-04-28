@@ -39,7 +39,7 @@ You load the tracks for an asset by asynchronously loading its [`tracks`](avpart
 ## Topics
 
 ### Creating an asset
-- [convenience init(url: URL)](avasset/init(url:).md)
+- [convenience init(url: URL)](avasset/init(url:)-42gl8.md)
   Creates an asset that models the media at the specified URL.
 ### Loading duration and timing
 - [static var duration: AVAsyncProperty<Root, CMTime>](avpartialasyncproperty/duration.md)
@@ -136,6 +136,8 @@ You load the tracks for an asset by asynchronously loading its [`tracks`](avpart
 ### Deprecated
 - [Deprecated symbols](avasset-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Initializers
+- [convenience init(URL: URL)](avasset/init(url:)-8cql6.md)
 
 ## Relationships
 

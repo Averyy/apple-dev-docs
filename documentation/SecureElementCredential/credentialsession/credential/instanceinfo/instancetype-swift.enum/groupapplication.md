@@ -8,6 +8,7 @@ A type that indicates an instance is a member of a group of application instance
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

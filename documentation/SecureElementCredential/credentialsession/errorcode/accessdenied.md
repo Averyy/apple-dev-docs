@@ -8,6 +8,7 @@ The person using the app declined to grant permission for the operation.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

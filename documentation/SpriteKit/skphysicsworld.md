@@ -72,6 +72,8 @@ The physics world allows you to:
 ### Sampling Physics Fields
 - [func sampleFields(at: vector_float3) -> vector_float3](skphysicsworld/samplefields(at:).md)
   Samples all of the field nodes in the scene and returns the summation of their forces at that point.
+### Initializers
+- [init?(coder: NSCoder)](skphysicsworld/init(coder:).md)
 
 ## Relationships
 

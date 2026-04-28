@@ -51,6 +51,8 @@ An `NSTextRange` consists of the starting and terminating locations. There the t
   Determines if the text location you specify is in the current text range.
 - [func contains(NSTextRange) -> Bool](nstextrange/contains(_:)-5j4y2.md)
   Determines if the text range you specify is in the current text range.
+### Initializers
+- [init?(location: any NSTextLocation, endLocation: (any NSTextLocation)?)](nstextrange/init(location:endlocation:).md)
 
 ## Relationships
 

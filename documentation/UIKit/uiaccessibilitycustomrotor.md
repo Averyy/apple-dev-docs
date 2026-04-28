@@ -51,6 +51,10 @@ You might use an instance of this class to find the next link in an article, or 
   The name of the rotor.
 - [var attributedName: NSAttributedString](uiaccessibilitycustomrotor/attributedname.md)
   The name of the rotor as an attributed string.
+### Initializers
+- [init(attributedName: NSAttributedString, itemSearchBlock: UIAccessibilityCustomRotor.Search)](uiaccessibilitycustomrotor/init(attributedname:itemsearchblock:).md)
+- [init(name: String, itemSearchBlock: UIAccessibilityCustomRotor.Search)](uiaccessibilitycustomrotor/init(name:itemsearchblock:).md)
+- [init(systemType: UIAccessibilityCustomRotor.SystemRotorType, itemSearchBlock: UIAccessibilityCustomRotor.Search)](uiaccessibilitycustomrotor/init(systemtype:itemsearchblock:).md)
 
 ## Relationships
 

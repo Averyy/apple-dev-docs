@@ -36,7 +36,7 @@ Use this method to create movies from movie headers that are not stored in files
 
 ## See Also
 
-- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:).md)
+- [init(url: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-8rnnj.md)
   Creates a mutable movie object from a movie header stored in a QuickTime movie file of ISO base media file.
 - [init(settingsFrom: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrom:options:).md)
   Creates a mutable movie object without tracks.

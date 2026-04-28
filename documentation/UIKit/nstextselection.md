@@ -55,6 +55,9 @@ class NSTextSelection
 ### Creating subselections
 - [func textSelection([NSTextRange]) -> NSTextSelection](nstextselection/textselection(_:).md)
   Creates a subselection of the current text selection with the ranges you specify.
+### Initializers
+- [convenience init(location: any NSTextLocation, affinity: NSTextSelection.Affinity)](nstextselection/init(location:affinity:).md)
+- [init(ranges: [NSTextRange], affinity: NSTextSelection.Affinity, granularity: NSTextSelection.Granularity)](nstextselection/init(ranges:affinity:granularity:).md)
 
 ## Relationships
 

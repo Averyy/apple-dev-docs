@@ -26,13 +26,15 @@ To let users join a virtual conference, you provide one or more URL descriptor o
 ## Topics
 
 ### Creating URL Descriptors
-- [init(title: String?, url: URL)](ekvirtualconferenceurldescriptor/init(title:url:).md)
+- [init(title: String?, url: URL)](ekvirtualconferenceurldescriptor/init(title:url:)-8l9d9.md)
   Creates a URL descriptor with the given title and URL.
 ### Configuring URL Descriptors
 - [var title: String?](ekvirtualconferenceurldescriptor/title.md)
   The user-visible name of a room where virtual conferences take place, such as Personal Room or Team Room.
 - [var url: URL](ekvirtualconferenceurldescriptor/url.md)
   The URL that users open to join a virtual conference.
+### Initializers
+- [init(title: String?, URL: URL)](ekvirtualconferenceurldescriptor/init(title:url:)-alzy.md)
 
 ## Relationships
 

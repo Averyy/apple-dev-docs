@@ -47,6 +47,9 @@ class CollaborationModeRestriction
   The mode that is disabled.
 - [func description() -> String](uiactivityviewcontroller/collaborationmoderestriction/description.md)
   Returns a description of the disabled mode.
+### Initializers
+- [init?(coder: NSCoder)](uiactivityviewcontroller/collaborationmoderestriction/init(coder:).md)
+- [init(disabledMode: UIActivityCollaborationMode, alertTitle: String, alertMessage: String, alertDismissButtonTitle: String, alertRecoverySuggestionButtonTitle: String, alertRecoverySuggestionButtonLaunchURL: URL)](uiactivityviewcontroller/collaborationmoderestriction/init(disabledmode:alerttitle:alertmessage:alertdismissbuttontitle:alertrecoverysuggestionbuttontitle:alertrecoverysuggestionbuttonlaunchurl:).md)
 
 ## Relationships
 

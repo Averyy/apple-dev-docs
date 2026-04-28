@@ -30,7 +30,7 @@ The controls in the view use bindings to set the values of the filter. See [`Coc
 
 ## Parameters
 
-- `inUIConfiguration`: A dictionary that contains values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/Quartz/IKUISizeFlavor) and [`kCIUIParameterSet`](kciuiparameterset.md) keys. For allowed values for the [`IKUISizeFlavor`](https://developer.apple.com/documentation/Quartz/IKUISizeFlavor) key, see [`User Interface Options`](user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](kciuiparameterset.md) key, see [`User Interface Control Options`](user-interface-control-options.md).
+- `inUIConfiguration`: A dictionary that contains values for the doc://com.apple.documentation/documentation/quartz/ikuisizeflavor and [`kCIUIParameterSet`](kciuiparameterset.md) keys. For allowed values for the doc://com.apple.documentation/documentation/quartz/ikuisizeflavor key, see [`User Interface Options`](user-interface-options.md). For allowed values for the [`kCIUIParameterSet`](kciuiparameterset.md) key, see [`User Interface Control Options`](user-interface-control-options.md).
 - `inKeys`: An array of the input keys for which you do *not* want to provide a user interface. Pass `nil` if you want all input keys to be represented in the user interface.
 
 

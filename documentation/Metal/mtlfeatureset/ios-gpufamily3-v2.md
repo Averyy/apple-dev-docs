@@ -8,6 +8,7 @@ The GPU family 3, version 2 feature set for iOS.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -32,6 +32,7 @@ class HKAudiogramSensitivityPoint
 - [var rightEarSensitivity: HKQuantity?](hkaudiogramsensitivitypoint/rightearsensitivity.md)
   The sensitivity of the right ear.
 ### Initializers
+- [init?(coder: NSCoder)](hkaudiogramsensitivitypoint/init(coder:).md)
 - [convenience init(frequency: HKQuantity, tests: [HKAudiogramSensitivityTest]) throws](hkaudiogramsensitivitypoint/init(frequency:tests:).md)
 ### Instance Properties
 - [var tests: [HKAudiogramSensitivityTest]](hkaudiogramsensitivitypoint/tests.md)

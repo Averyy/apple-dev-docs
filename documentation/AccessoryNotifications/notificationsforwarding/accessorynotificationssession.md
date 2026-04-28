@@ -17,7 +17,7 @@ protocol AccessoryNotificationsSession : Sendable
 
 #### Overview
 
-Use the session object provided to [`activate(for:)`](notificationsforwarding/accessorynotificationshandler/activate(for:).md) to send messages to your accessory and communicate notification responses back to the system.
+Use the session object provided to `NotificationsForwarding/AccessoryNotificationsHandler/activate(for:)` to send messages to your accessory and communicate notification responses back to the system.
 
 ## Topics
 

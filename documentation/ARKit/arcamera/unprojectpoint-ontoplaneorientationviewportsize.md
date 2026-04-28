@@ -8,6 +8,7 @@ Returns the projection of a point from the 2D space of a view rendering the scen
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
+- Mac Catalyst 12.0+
 
 ## Declaration
 

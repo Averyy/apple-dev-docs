@@ -32,6 +32,8 @@ Use an `SFSafariPage` object in your Safari app extension to send messages to in
 ### Instance Methods
 - [func getContainingTab(completionHandler: (SFSafariTab) -> Void)](sfsafaripage/getcontainingtab(completionhandler:).md)
 - [func getScreenshotOfVisibleArea(completionHandler: (NSImage?) -> Void)](sfsafaripage/getscreenshotofvisiblearea(completionhandler:).md)
+### Initializers
+- [init?(coder: NSCoder)](sfsafaripage/init(coder:).md)
 
 ## Relationships
 

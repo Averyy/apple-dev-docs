@@ -8,6 +8,7 @@ Camera position tracking is not available.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 
 ## Declaration
 

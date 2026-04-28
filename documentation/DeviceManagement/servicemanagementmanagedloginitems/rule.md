@@ -7,6 +7,8 @@ A dictionary that configures a service management rule.
 
 **Availability**:
 - macOS 13.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

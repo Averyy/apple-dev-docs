@@ -24,6 +24,8 @@ class HKFitzpatrickSkinTypeObject
 ### Accessing Skin Type Data
 - [var skinType: HKFitzpatrickSkinType](hkfitzpatrickskintypeobject/skintype.md)
   The user’s skin type.
+### Initializers
+- [init?(coder: NSCoder)](hkfitzpatrickskintypeobject/init(coder:).md)
 
 ## Relationships
 

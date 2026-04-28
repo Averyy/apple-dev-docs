@@ -31,6 +31,8 @@ class MLMultiArrayShapeConstraint
   The type of the shape constraint.
 - [enum MLMultiArrayShapeConstraintType](mlmultiarrayshapeconstrainttype.md)
   The possible types of shape constraints.
+### Initializers
+- [init?(coder: NSCoder)](mlmultiarrayshapeconstraint/init(coder:).md)
 
 ## Relationships
 

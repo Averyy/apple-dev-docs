@@ -21,8 +21,10 @@ class MTRXPCDeviceControllerParameters
 ## Topics
 
 ### Initializers
-- [init(xpConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpconnectionblock:uniqueidentifier:).md)
-- [init(xpcConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpcconnectionblock:uniqueidentifier:).md)
+- [init(XPCConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpcconnectionblock:uniqueidentifier:)-3wkoh.md)
+- [init(XPConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpconnectionblock:uniqueidentifier:)-5vgjx.md)
+- [init(xpConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpconnectionblock:uniqueidentifier:)-44d5q.md)
+- [init(xpcConnectionBlock: () -> NSXPCConnection, uniqueIdentifier: UUID)](mtrxpcdevicecontrollerparameters/init(xpcconnectionblock:uniqueidentifier:)-9ep5u.md)
   A controller created from this way will connect to a remote instance of an MTRDeviceController loaded in an XPC Service
 ### Instance Properties
 - [var uniqueIdentifier: UUID](mtrxpcdevicecontrollerparameters/uniqueidentifier.md)

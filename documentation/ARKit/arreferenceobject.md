@@ -65,6 +65,8 @@ To bundle reference objects into an app, use your Xcode project’s asset catalo
 ### Debugging a Reference Object
 - [var rawFeaturePoints: ARPointCloud](arreferenceobject/rawfeaturepoints.md)
   A coarse representation of the space-mapping data contained in the reference object.
+### Initializers
+- [init?(coder: NSCoder)](arreferenceobject/init(coder:).md)
 
 ## Relationships
 

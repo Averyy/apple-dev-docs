@@ -8,6 +8,7 @@ A unique identifier of an audio session.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 13.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS 1.0+

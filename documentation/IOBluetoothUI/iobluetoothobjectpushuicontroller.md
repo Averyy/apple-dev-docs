@@ -19,6 +19,7 @@ class IOBluetoothObjectPushUIController
 ### Initializers
 - [init!(objectPushWith: IOBluetoothDevice!, withFiles: [Any]!, delegate: Any!)](iobluetoothobjectpushuicontroller/init(objectpushwith:withfiles:delegate:).md)
   Creates and returns a new IOBluetoothObjectPush object
+- [init!(objectPushWithBluetoothDevice: IOBluetoothDevice!, withFiles: [Any]!, delegate: Any!)](iobluetoothobjectpushuicontroller/init(objectpushwithbluetoothdevice:withfiles:delegate:).md)
 ### Instance Methods
 - [func beginSheetModal(for: NSWindow!, modalDelegate: Any!, didEnd: Selector!, contextInfo: UnsafeMutableRawPointer!) -> IOReturn](iobluetoothobjectpushuicontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).md)
   Runs the transfer UI as a sheet on the target window.

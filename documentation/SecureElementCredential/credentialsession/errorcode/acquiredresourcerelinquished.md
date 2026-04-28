@@ -8,6 +8,7 @@ The system relinquished an underlying shared resource, preventing the operation 
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

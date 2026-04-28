@@ -27,7 +27,7 @@ This initializer sets up KVO observation for `keyPath` with the following [`NSKe
 - [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new)
 - [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old)
 
-The inclusion of the [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new) and [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the [`newKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/newKey) and [`oldKey`](https://developer.apple.com/documentation/Foundation/NSKeyValueChangeKey/oldKey) keys.
+The inclusion of the [`new`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/new) and [`old`](https://developer.apple.com/documentation/Foundation/NSKeyValueObservingOptions/old) options means that any custom KVO handler you provide in the expectation’s [`handler`](xctkvoexpectation/handler-swift.property.md) property receives a change info dictionary that contains the doc://com.apple.documentation/documentation/foundation/nskeyvaluechangekey/newkey and doc://com.apple.documentation/documentation/foundation/nskeyvaluechangekey/oldkey keys.
 
 ## Parameters
 

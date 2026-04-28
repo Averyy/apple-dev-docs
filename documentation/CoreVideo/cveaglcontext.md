@@ -3,11 +3,12 @@
 **Framework**: Core Video  
 **Kind**: typealias
 
-A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) pointer when appropriate.
+A type that resolves to an doc://com.apple.documentation/documentation/opengles/eaglcontext pointer when appropriate.
 
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - tvOS 9.0+
 - visionOS 1.0+
 

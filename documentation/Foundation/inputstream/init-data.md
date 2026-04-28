@@ -36,7 +36,7 @@ The stream must be opened before it can be used.
 
 - [convenience init?(fileAtPath: String)](inputstream/init(fileatpath:).md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given path.
-- [init?(url: URL)](inputstream/init(url:).md)
+- [init?(url: URL)](inputstream/init(url:)-1lfmj.md)
   Initializes and returns an `NSInputStream` object that reads data from the file at a given URL.
 
 

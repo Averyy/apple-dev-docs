@@ -43,6 +43,8 @@ class CXStartCallAction
 ### Completing Actions
 - [func fulfill(withDateStarted: Date)](cxstartcallaction/fulfill(withdatestarted:).md)
   Reports the successful execution of the action at the specified time.
+### Initializers
+- [init(callUUID: UUID, handle: CXHandle)](cxstartcallaction/init(calluuid:handle:).md)
 
 ## Relationships
 

@@ -32,6 +32,10 @@ You don’t normally subclass `NSLogicalTest`.
   Returns an `NSLogicalTest` object initialized to perform a `NOT` operation on the given `NSScriptWhoseTest` object.
 - [init(orTestWith: [NSSpecifierTest])](nslogicaltest/init(ortestwith:).md)
   Returns an `NSLogicalTest` object initialized to perform an `OR` operation with the `NSSpecifierTest` objects in a given array.
+### Initializers
+- [init(andTestWithTests: [NSSpecifierTest])](nslogicaltest/init(andtestwithtests:).md)
+- [init(notTestWithTest: NSScriptWhoseTest)](nslogicaltest/init(nottestwithtest:).md)
+- [init(orTestWithTests: [NSSpecifierTest])](nslogicaltest/init(ortestwithtests:).md)
 
 ## Relationships
 

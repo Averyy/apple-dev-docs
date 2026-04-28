@@ -36,6 +36,8 @@ You can use this object to determine the primary language currently being used f
   A notification that posts when the current input mode changes.
 ### Structures
 - [UITextInputMode.CurrentInputModeDidChangeMessage](uitextinputmode/currentinputmodedidchangemessage.md)
+### Initializers
+- [init?(coder: NSCoder)](uitextinputmode/init(coder:).md)
 
 ## Relationships
 

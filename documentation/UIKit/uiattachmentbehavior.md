@@ -82,6 +82,9 @@ The attachment behavior derives its coordinate system from the reference view of
   Constants for specifying standard ranges.
 - [struct UIOffset](uioffset.md)
   A structure that specifies an amount to offset a position.
+### Initializers
+- [convenience init(item: any UIDynamicItem, attachedToItem: any UIDynamicItem)](uiattachmentbehavior/init(item:attachedtoitem:).md)
+- [init(item: any UIDynamicItem, offsetFromCenter: UIOffset, attachedToItem: any UIDynamicItem, offsetFromCenter: UIOffset)](uiattachmentbehavior/init(item:offsetfromcenter:attachedtoitem:offsetfromcenter:).md)
 
 ## Relationships
 

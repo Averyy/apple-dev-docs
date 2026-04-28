@@ -35,6 +35,8 @@ The crash report for an uncaught Objective-C [`NSException`](https://developer.a
 - [var exceptionName: String](mxcrashdiagnosticobjectivecexceptionreason/exceptionname.md)
 - [var exceptionType: String](mxcrashdiagnosticobjectivecexceptionreason/exceptiontype.md)
 - [var formatString: String](mxcrashdiagnosticobjectivecexceptionreason/formatstring.md)
+### Initializers
+- [init?(coder: NSCoder)](mxcrashdiagnosticobjectivecexceptionreason/init(coder:).md)
 
 ## Relationships
 

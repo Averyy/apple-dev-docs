@@ -96,6 +96,8 @@ When configuring hash tables, note that only the options listed in [`NSHashTable
   Components in a bit-field to specify the behavior of elements in an [`NSHashTable`](nshashtable.md) object.
 ### Deprecated
 - [Legacy Hash Table Implementation](legacy-hash-table-implementation.md)
+### Initializers
+- [init?(coder: NSCoder)](nshashtable/init(coder:).md)
 
 ## Relationships
 

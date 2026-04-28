@@ -86,6 +86,8 @@ This class includes several convenience constructors that each apply a grouping 
   An array of media items that match the media query’s predicate.
 - [var collections: [MPMediaItemCollection]?](mpmediaquery/collections.md)
   An array of media item collections whose contained items match the query’s media property predicate.
+### Initializers
+- [init?(coder: NSCoder)](mpmediaquery/init(coder:).md)
 
 ## Relationships
 

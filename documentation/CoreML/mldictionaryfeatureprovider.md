@@ -34,6 +34,8 @@ If your input data is stored in a dictionary, consider this type of [`MLFeatureP
   Subscript interface for the feature provider to pass through to the dictionary.
 - [var dictionary: [String : MLFeatureValue]](mldictionaryfeatureprovider/dictionary.md)
   The backing dictionary.
+### Initializers
+- [init?(coder: NSCoder)](mldictionaryfeatureprovider/init(coder:).md)
 
 ## Relationships
 

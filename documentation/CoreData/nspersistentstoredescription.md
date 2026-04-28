@@ -27,7 +27,7 @@ class NSPersistentStoreDescription
 ## Topics
 
 ### Creating a Persistent Store Description
-- [init(url: URL)](nspersistentstoredescription/init(url:).md)
+- [init(url: URL)](nspersistentstoredescription/init(url:)-ko0l.md)
   Initializes the receiver with a URL for the store.
 ### Configuring a Persistent Store Description
 - [var url: URL?](nspersistentstoredescription/url.md)
@@ -58,6 +58,9 @@ class NSPersistentStoreDescription
 ### Syncing to CloudKit
 - [var cloudKitContainerOptions: NSPersistentCloudKitContainerOptions?](nspersistentstoredescription/cloudkitcontaineroptions.md)
   Options that customize how this store description aligns with a CloudKit database.
+### Initializers
+- [init(URL: URL)](nspersistentstoredescription/init(url:)-3snc6.md)
+- [convenience init(URL: URL)](nspersistentstoredescription/init(url:)-58ysp.md)
 
 ## Relationships
 

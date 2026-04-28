@@ -21,7 +21,8 @@ class MTRCertificateInfo
 ## Topics
 
 ### Initializers
-- [init?(tlvBytes: Data)](mtrcertificateinfo/init(tlvbytes:).md)
+- [init?(tlvBytes: Data)](mtrcertificateinfo/init(tlvbytes:)-56yg9.md)
+- [init?(TLVBytes: Data)](mtrcertificateinfo/init(tlvbytes:)-9fmvz.md)
 ### Instance Properties
 - [var issuer: MTRDistinguishedNameInfo](mtrcertificateinfo/issuer.md)
 - [var notAfter: Date](mtrcertificateinfo/notafter.md)

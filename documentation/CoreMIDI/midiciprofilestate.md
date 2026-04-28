@@ -33,6 +33,8 @@ class MIDICIProfileState
   The object’s enabled profiles.
 - [var disabledProfiles: [MIDICIProfile]](midiciprofilestate/disabledprofiles.md)
   The object’s disabled profiles.
+### Initializers
+- [init?(coder: NSCoder)](midiciprofilestate/init(coder:).md)
 
 ## Relationships
 

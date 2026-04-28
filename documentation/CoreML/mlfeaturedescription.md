@@ -61,6 +61,8 @@ An `MLFeatureDescription` may also include constraints, which specify the limita
   The constraints for a sequence feature.
 - [class MLSequenceConstraint](mlsequenceconstraint.md)
   The constraints for a sequence feature.
+### Initializers
+- [init?(coder: NSCoder)](mlfeaturedescription/init(coder:).md)
 
 ## Relationships
 

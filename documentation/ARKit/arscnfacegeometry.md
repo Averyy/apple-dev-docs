@@ -36,6 +36,8 @@ When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update
 ### Updating the Geometry
 - [func update(from: ARFaceGeometry)](arscnfacegeometry/update(from:).md)
   Deforms the SceneKit geometry to match the specified face mesh.
+### Initializers
+- [convenience init()](arscnfacegeometry/init.md)
 
 ## Relationships
 
@@ -52,8 +54,8 @@ When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [SCNAnimatable](../SceneKit/SCNAnimatable.md)
-- [SCNBoundingVolume](../SceneKit/SCNBoundingVolume.md)
 - [SCNShadable](../SceneKit/SCNShadable.md)
+- [SceneKit.SCNBoundingVolume](doc://com.apple.arkit/objc(pl)SCNBoundingVolume)
 
 ## See Also
 

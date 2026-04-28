@@ -18,7 +18,7 @@ init?(JSONData jsonData: Data, manifestURL: URL)
 
 ## See Also
 
-- [init?(jsonData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:).md)
+- [init?(jsonData: Data, manifestURL: URL)](bewebappmanifest/init(jsondata:manifesturl:)-3azfg.md)
   Returns nil if manifestURL is invalid or jsonData cannot be parsed.
 
 

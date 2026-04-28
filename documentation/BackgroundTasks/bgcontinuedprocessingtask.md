@@ -8,6 +8,7 @@ A task that starts in the foreground and can continue running in the background 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

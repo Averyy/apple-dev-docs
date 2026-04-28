@@ -49,6 +49,8 @@ The lap, segment, and marker events are used to identify periods of interest dur
   Instantiates and returns a new workout event with the specified type, date, and metadata.
 - [var date: Date](hkworkoutevent/date.md)
   The time when the transition occurred.
+### Initializers
+- [init?(coder: NSCoder)](hkworkoutevent/init(coder:).md)
 
 ## Relationships
 

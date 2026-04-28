@@ -28,7 +28,7 @@ You can use a single tile overlay object to represent all of the tiles at one or
 ## Topics
 
 ### Creating a tile overlay
-- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:).md)
+- [init(urlTemplate: String?)](mktileoverlay/init(urltemplate:)-9s8h7.md)
   Creates and returns a tile overlay object using the specified tile-access template.
 ### Accessing the tile attributes
 - [var tileSize: CGSize](mktileoverlay/tilesize.md)
@@ -50,6 +50,8 @@ You can use a single tile overlay object to represent all of the tiles at one or
   Loads the specified tile asynchronously.
 - [struct MKTileOverlayPath](mktileoverlaypath.md)
   Values that specify the path indexes for a single overlay tile.
+### Initializers
+- [init(URLTemplate: String?)](mktileoverlay/init(urltemplate:)-1wri0.md)
 
 ## Relationships
 

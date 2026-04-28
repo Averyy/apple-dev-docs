@@ -40,11 +40,13 @@ The [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.
 
 - [Gestures](https://developer.apple.com/design/Human-Interface-Guidelines/gestures#watchOS)
   A gesture is a physical motion that a person uses to directly affect an object in an app or game on their device.
-- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md)
+- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View
+](../SwiftUI/View/handGestureShortcut(_:isEnabled:).md)
   Assigns a hand gesture shortcut to the modified control.
 - [static let primaryAction: HandGestureShortcut](../SwiftUI/HandGestureShortcut/primaryAction.md)
   The hand gesture shortcut for the primary action.
-- [func clipShape<S>(S, style: FillStyle) -> some View](../SwiftUI/View/clipShape(_:style:).md)
+- [func clipShape<S>(S, style: FillStyle) -> some View
+](../SwiftUI/View/clipShape(_:style:).md)
   Sets a clipping shape for this view.
 - [static var verticalPage: VerticalPageTabViewStyle](../SwiftUI/TabViewStyle/verticalPage.md)
   A `TabViewStyle` that displays a vertical page `TabView` interaction and appearance.

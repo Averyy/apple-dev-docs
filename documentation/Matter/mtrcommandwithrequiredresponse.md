@@ -23,6 +23,7 @@ class MTRCommandWithRequiredResponse
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](mtrcommandwithrequiredresponse/init(coder:).md)
 - [init(path: MTRCommandPath, commandFields: [String : Any]?, requiredResponse: [NSNumber : [String : Any]]?)](mtrcommandwithrequiredresponse/init(path:commandfields:requiredresponse:).md)
 ### Instance Properties
 - [var commandFields: [String : Any]?](mtrcommandwithrequiredresponse/commandfields.md)

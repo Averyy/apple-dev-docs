@@ -9,6 +9,7 @@ Converts a rectangle from the specified coordinate space to the coordinate space
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - tvOS ?+
 - visionOS 1.0+
 

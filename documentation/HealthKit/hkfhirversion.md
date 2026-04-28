@@ -45,6 +45,8 @@ Use an [`HKFHIRVersion`](hkfhirversion.md) instance to represent the version of 
   An official release of the FHIR specification.
 - [struct HKFHIRRelease](hkfhirrelease.md)
   Official releases of the FHIR specification.
+### Initializers
+- [init?(coder: NSCoder)](hkfhirversion/init(coder:).md)
 
 ## Relationships
 

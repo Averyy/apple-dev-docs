@@ -89,6 +89,8 @@ All attributes in the attributes dictionary are optional.
   Constants that can be used as keys to retrieve information about a font descriptor from its trait dictionary.
 ### Requiring Font Assets
 - [var requiresFontAssetRequest: Bool](nsfontdescriptor/requiresfontassetrequest.md)
+### Initializers
+- [init?(coder: NSCoder)](nsfontdescriptor/init(coder:).md)
 
 ## Relationships
 

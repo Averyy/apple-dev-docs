@@ -23,6 +23,8 @@ class AVMetricMediaRendition
 ### Inspecting the rendition
 - [var stableID: String?](avmetricmediarendition/stableid.md)
 - [var url: URL?](avmetricmediarendition/url.md)
+### Initializers
+- [init?(coder: NSCoder)](avmetricmediarendition/init(coder:).md)
 
 ## Relationships
 

@@ -24,6 +24,8 @@ class VNFaceLandmarkRegion
 ### Instance Properties
 - [var pointCount: Int](vnfacelandmarkregion/pointcount.md)
   The number of points in the face region.
+### Initializers
+- [init?(coder: NSCoder)](vnfacelandmarkregion/init(coder:).md)
 
 ## Relationships
 

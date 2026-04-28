@@ -8,6 +8,7 @@ An event indicating that the device’s submersion state has changed.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
@@ -26,6 +27,8 @@ class CMWaterSubmersionEvent
   The new submersion state.
 - [CMWaterSubmersionEvent.State](cmwatersubmersionevent/state-swift.enum.md)
   The device’s submersion state.
+### Initializers
+- [init?(coder: NSCoder)](cmwatersubmersionevent/init(coder:).md)
 
 ## Relationships
 

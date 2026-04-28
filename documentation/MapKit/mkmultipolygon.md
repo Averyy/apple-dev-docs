@@ -32,6 +32,8 @@ Use a [`MKMultiPolygon`](mkmultipolygon.md) when you have multiple distinct poly
 ### Accessing polygons
 - [var polygons: [MKPolygon]](mkmultipolygon/polygons.md)
   An array containing the polygons that make up the multipolygon object.
+### Initializers
+- [init(polygons: [MKPolygon])](mkmultipolygon/init(polygons:).md)
 
 ## Relationships
 

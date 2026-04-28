@@ -42,6 +42,8 @@ In the case that [`componentsPerVector`](argeometrysource/componentspervector.md
   The offset, in bytes, from the beginning of the buffer.
 - [var stride: Int](argeometrysource/stride.md)
   The length, in bytes, of the start of one vector in the buffer to the start of the next vector.
+### Initializers
+- [init?(coder: NSCoder)](argeometrysource/init(coder:).md)
 
 ## Relationships
 

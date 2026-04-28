@@ -8,10 +8,13 @@ A dictionary that describes a provisioning profile list item.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

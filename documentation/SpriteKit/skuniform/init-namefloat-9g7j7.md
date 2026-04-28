@@ -8,6 +8,7 @@ Initializes a new uniform object that holds a vector of four floating-point numb
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 - macOS 10.8+
 - tvOS ?+
 

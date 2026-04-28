@@ -27,9 +27,9 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
 ## Topics
 
 ### Creating a PCM Audio Buffer
-- [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:).md)
+- [init?(pcmFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-5jhd5.md)
   Creates a PCM audio buffer instance for PCM audio data.
-- [init?(pcmFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:).md)
+- [init?(pcmFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-9iwe7.md)
   Creates a PCM audio buffer instance without copying samples, for PCM audio data, with a specified buffer list and a deallocator closure.
 ### Getting and Setting the Frame Length
 - [var frameLength: AVAudioFrameCount](avaudiopcmbuffer/framelength.md)
@@ -45,6 +45,9 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
   The buffer’s 32-bit integer audio samples.
 - [var stride: Int](avaudiopcmbuffer/stride.md)
   The buffer’s number of interleaved channels.
+### Initializers
+- [init?(PCMFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-2ms1j.md)
+- [init?(PCMFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-7scyk.md)
 
 ## Relationships
 

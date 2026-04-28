@@ -27,7 +27,7 @@ When you tell a reference node to load its content, SceneKit loads the reference
 ## Topics
 
 ### Creating a Reference Node
-- [init?(url: URL)](scnreferencenode/init(url:).md)
+- [init?(url: URL)](scnreferencenode/init(url:)-9dkfj.md)
   Initializes a node whose content is to be loaded from the referenced URL.
 ### Loading and Unloading a Reference Node’s Content
 - [var referenceURL: URL](scnreferencenode/referenceurl.md)
@@ -44,6 +44,8 @@ When you tell a reference node to load its content, SceneKit loads the reference
 - [enum SCNReferenceLoadingPolicy](scnreferenceloadingpolicy.md)
   Options for when to load the reference node’s content, used by the [`loadingPolicy`](scnreferencenode/loadingpolicy.md) property.
 ### Initializers
+- [convenience init?(URL: URL)](scnreferencenode/init(url:)-9w131.md)
+- [init?(URL: URL)](scnreferencenode/init(url:)-w5vu.md)
 - [init?(coder: NSCoder)](scnreferencenode/init(coder:).md)
 
 ## Relationships

@@ -8,6 +8,7 @@ The label of the subscribe button that a subscription store view uses.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 1.0+
 - watchOS 10.0+
@@ -42,13 +43,17 @@ struct SubscriptionStoreButtonLabel
 
 ## See Also
 
-- [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View](../SwiftUI/View/subscriptionStoreControlIcon(icon:).md)
+- [func subscriptionStoreControlIcon(icon: (Product, Product.SubscriptionInfo) -> some View) -> some View
+](../SwiftUI/View/subscriptionStoreControlIcon(icon:).md)
   Sets a view to use to decorate individual subscription options within a subscription store view.
-- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View](../SwiftUI/View/subscriptionStorePickerItemBackground(_:).md)
+- [func subscriptionStorePickerItemBackground(some ShapeStyle) -> some View
+](../SwiftUI/View/subscriptionStorePickerItemBackground(_:).md)
   Sets the background style for picker items of the subscription store view instances within a view.
-- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View](../SwiftUI/View/subscriptionStorePickerItemBackground(_:in:).md)
+- [func subscriptionStorePickerItemBackground(some ShapeStyle, in: some Shape) -> some View
+](../SwiftUI/View/subscriptionStorePickerItemBackground(_:in:).md)
   Sets the background shape and style for subscription store view picker items within a view.
-- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View](../SwiftUI/View/subscriptionStoreButtonLabel(_:).md)
+- [func subscriptionStoreButtonLabel(SubscriptionStoreButtonLabel) -> some View
+](../SwiftUI/View/subscriptionStoreButtonLabel(_:).md)
   Configures subscription store view instances within a view to use the provided button label.
 
 

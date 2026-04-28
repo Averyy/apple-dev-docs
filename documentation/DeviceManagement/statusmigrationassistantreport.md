@@ -7,6 +7,8 @@ Reports the status of a completed migration.
 
 **Availability**:
 - macOS 26.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

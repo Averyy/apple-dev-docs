@@ -3,10 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a product page localization search keywords linkage request resource.
+The data structure that represents a custom product page localization search keyword linkage request resource.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.1+
 
 ## Declaration
 

@@ -45,7 +45,7 @@ struct WritingOptions
 ## See Also
 
 - [FileWrapper.ReadingOptions](filewrapper/readingoptions.md)
-  Reading options that can be set by the [`init(url:options:)`](filewrapper/init(url:options:).md) and [`read(from:options:)`](filewrapper/read(from:options:).md) methods.
+  Reading options that can be set by the [`init(url:options:)`](filewrapper/init(url:options:)-70161.md) and [`read(from:options:)`](filewrapper/read(from:options:).md) methods.
 
 
 ---

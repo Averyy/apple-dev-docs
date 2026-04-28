@@ -7,6 +7,8 @@ A dictionary that describes disk space the content cache uses.
 
 **Availability**:
 - macOS 10.15.4+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

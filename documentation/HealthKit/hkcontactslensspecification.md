@@ -127,6 +127,8 @@ do {
   Part of the contact’s fit, it measures the curve of the back side of the contact, measured in mm.
 - [var diameter: HKQuantity?](hkcontactslensspecification/diameter.md)
   Part of the contact’s fit, it measures the diameter of the lens, measured in mm.
+### Initializers
+- [init?(coder: NSCoder)](hkcontactslensspecification/init(coder:).md)
 
 ## Relationships
 

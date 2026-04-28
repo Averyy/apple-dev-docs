@@ -34,6 +34,8 @@ To create instances of this class, use one of the defined creation methods. Choo
   The data object containing the raw image data.
 - [var imageName: String?](wkimage/imagename.md)
   The name of the image to load from the Watch app’s bundle.
+### Initializers
+- [init?(coder: NSCoder)](wkimage/init(coder:).md)
 
 ## Relationships
 

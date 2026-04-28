@@ -45,6 +45,8 @@ To demonstrate, an [`ARMeshGeometry`](armeshgeometry.md) instance with two trian
   The geometry’s type of data (triangle, or line).
 - [enum ARGeometryPrimitiveType](argeometryprimitivetype.md)
   The kind of connection between vertices.
+### Initializers
+- [init?(coder: NSCoder)](argeometryelement/init(coder:).md)
 
 ## Relationships
 

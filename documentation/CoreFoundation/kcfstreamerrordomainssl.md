@@ -24,8 +24,6 @@ let kCFStreamErrorDomainSSL: Int32
 
 - [let kCFStreamErrorDomainNetDB: Int32](../CFNetwork/kCFStreamErrorDomainNetDB.md)
   The error code is an error code defined in `netdb.h`.
-- [let kCFStreamErrorDomainNetServices: Int32](../CFNetwork/kCFStreamErrorDomainNetServices.md)
-  The error code is a `CFNetService` error code. For details, see the [`CFNetServicesError`](doc://com.apple.cfnetwork/documentation/CFNetwork/CFNetServicesError) enumeration.
 - [let kCFStreamErrorDomainMach: Int32](../CFNetwork/kCFStreamErrorDomainMach.md)
   The error code is a Mach error code defined in `mach/error.h`.
 - [let kCFStreamErrorDomainFTP: Int32](../CFNetwork/kCFStreamErrorDomainFTP.md)

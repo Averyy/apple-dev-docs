@@ -24,7 +24,7 @@ static var networkFailure: CKError.Code { get }
 
 You can retry network failures immediately, but have your app implement a backoff period so that it doesn’t attempt the same operation repeatedly.
 
-If the network is unavailable, have your app monitor for network reachability and wait to reissue the operation when the network is available again. See [`CFNetworkErrors`](https://developer.apple.com/documentation/CFNetwork/CFNetworkErrors) for more information.
+If the network is unavailable, have your app monitor for network reachability and wait to reissue the operation when the network is available again. See doc://com.apple.documentation/documentation/cfnetwork/cfnetworkerrors for more information.
 
 ## See Also
 

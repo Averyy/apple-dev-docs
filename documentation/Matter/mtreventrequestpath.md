@@ -22,6 +22,7 @@ class MTREventRequestPath
 
 ### Initializers
 - [init(endpointID: NSNumber?, clusterID: NSNumber?, eventID: NSNumber?)](mtreventrequestpath/init(endpointid:clusterid:eventid:).md)
+- [init?(coder: NSCoder)](mtreventrequestpath/init(coder:).md)
 ### Instance Properties
 - [var cluster: NSNumber?](mtreventrequestpath/cluster.md)
 - [var endpoint: NSNumber?](mtreventrequestpath/endpoint.md)

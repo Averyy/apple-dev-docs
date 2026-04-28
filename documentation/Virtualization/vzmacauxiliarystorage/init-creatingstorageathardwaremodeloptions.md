@@ -36,7 +36,7 @@ Use this method to create a new auxiliary storage object that describes a specif
 
 - [init(contentsOfURL: URL)](vzmacauxiliarystorage/init(contentsofurl:).md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
-- [init(url: URL)](vzmacauxiliarystorage/init(url:).md)
+- [init(url: URL)](vzmacauxiliarystorage/init(url:)-68cz.md)
   Initializes an auxiliary storage object with data from the location at the URL you provide.
 - [VZMacAuxiliaryStorage.InitializationOptions](vzmacauxiliarystorage/initializationoptions.md)
   Options you can set when creating new auxiliary storage.

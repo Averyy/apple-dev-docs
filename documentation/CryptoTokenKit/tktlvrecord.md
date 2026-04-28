@@ -46,6 +46,8 @@ The CryptoTokenKit framework provides the following concrete subclasses for vari
 ### Accessing Record Data
 - [var data: Data](tktlvrecord/data.md)
   The record data, including the tag, length, and value fields.
+### Initializers
+- [convenience init?(fromData: Data)](tktlvrecord/init(fromdata:).md)
 
 ## Relationships
 

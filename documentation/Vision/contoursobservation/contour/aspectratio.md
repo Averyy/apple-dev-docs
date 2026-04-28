@@ -8,6 +8,7 @@ The aspect ratio of the contour, which is the image’s width divided by its hei
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

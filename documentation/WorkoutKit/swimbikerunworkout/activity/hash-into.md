@@ -8,6 +8,7 @@ Hashes the essential components of the activity by feeding them into the given h
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - watchOS 10.0+
 
 ## Declaration

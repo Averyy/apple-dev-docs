@@ -23,6 +23,7 @@ class AXBrailleTable
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](axbrailletable/init(coder:).md)
 - [init?(identifier: String)](axbrailletable/init(identifier:).md)
   Returns nil if there is no table with the given identifier.
 ### Instance Properties

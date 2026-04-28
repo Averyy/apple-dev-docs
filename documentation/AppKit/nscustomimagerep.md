@@ -33,6 +33,8 @@ When called upon to produce an image, an [`NSCustomImageRep`](nscustomimagerep.m
   The delegate object that renders the image for the image representation.
 - [var drawSelector: Selector?](nscustomimagerep/drawselector.md)
   The selector for the delegate’s drawing method.
+### Initializers
+- [init(drawSelector: Selector, delegate: Any)](nscustomimagerep/init(drawselector:delegate:).md)
 
 ## Relationships
 

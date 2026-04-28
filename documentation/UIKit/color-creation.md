@@ -33,9 +33,9 @@ Create color objects when you want to use specific colors in your UI, altering t
 ### Creating a color from another color object
 - [convenience init(Color)](uicolor/init(_:).md)
   Creates a color object that encapsulates a SwiftUI color.
-- [init(ciColor: CIColor)](uicolor/init(cicolor:).md)
+- [init(ciColor: CIColor)](uicolor/init(cicolor:)-2z057.md)
   Creates a color object that encapsulates a Core Image color.
-- [init(cgColor: CGColor)](uicolor/init(cgcolor:).md)
+- [init(cgColor: CGColor)](uicolor/init(cgcolor:)-27r9g.md)
   Creates a color object using the specified Quartz color reference.
 - [func withAlphaComponent(CGFloat) -> UIColor](uicolor/withalphacomponent(_:).md)
   Creates a color object that has the same color space and component values as the receiver, but has the specified alpha component.

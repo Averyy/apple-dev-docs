@@ -25,7 +25,7 @@ A device object representing the hardware (iPhone, iPod Touch, or Apple Watch) t
 
 ## See Also
 
-- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:).md)
+- [init(name: String?, manufacturer: String?, model: String?, hardwareVersion: String?, firmwareVersion: String?, softwareVersion: String?, localIdentifier: String?, udiDeviceIdentifier: String?)](hkdevice/init(name:manufacturer:model:hardwareversion:firmwareversion:softwareversion:localidentifier:udideviceidentifier:)-3663q.md)
   Initializes a new device object.
 
 

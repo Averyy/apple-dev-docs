@@ -8,7 +8,10 @@ The payload that configures the Apple TV remote.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
+- Mac Catalyst 11.3+
 - tvOS 11.3+
+- Device Assignment Services ?+
+- VPP License Management ?+
 
 ## Declaration
 

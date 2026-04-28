@@ -42,7 +42,7 @@ AppKit in macOS 11 includes new features, as well as API changes and deprecation
 
 ###### Nscell Mouse Tracking
 
-- The `lastPoint` sent to `continueTracking` was always the [`mouseDown(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/mouseDown(with:)) point instead of the point or the previous event. This caused problems with [`NSCell`](https://developer.apple.com/documentation/AppKit/NSCell) subclasses and has been resolved for apps linked on or after macOS Big Sur 11 beta.
+- The `lastPoint` sent to `continueTracking` was always the [`mouseDown(with:)`](https://developer.apple.com/documentation/AppKit/NSResponder/mouseDown(with:)) point instead of the point or the previous event. This caused problems with doc://com.apple.documentation/documentation/appkit/nscell subclasses and has been resolved for apps linked on or after macOS Big Sur 11 beta.
 
 ###### Nsimage
 
