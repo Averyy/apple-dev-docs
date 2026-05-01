@@ -1,4 +1,4 @@
 Completed scraping App Store Connect API!
-Total pages scraped: 5808
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 5809
 Pages failed: 0

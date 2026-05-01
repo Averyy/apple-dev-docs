@@ -1,4 +1,4 @@
 Completed scraping File Provider UI!
-Total pages scraped: 19
-Pages skipped (unchanged): 2
+Total pages scraped: 0
+Pages skipped (unchanged): 21
 Pages failed: 0

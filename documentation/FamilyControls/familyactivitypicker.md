@@ -76,15 +76,17 @@ Your app passes the selected values to the appropriate instances and methods fro
 ### Creating activity pickers
 - [init(selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(selection:).md)
   Creates a new activity picker.
+- [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(headertext:footertext:selection:).md)
+  Creates a new activity picker with optional header and footer text.
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View
+](../SwiftUI/View/familyActivityPicker(title:headerText:footerText:isPresented:selection:).md)
+  Present an activity picker sheet for selecting apps and websites to manage.
 ### Accessing the content
 - [var body: some View](familyactivitypicker/body.md)
   The content of this view.
 ### Adding view modifiers
 - [View Modifiers](familyactivitypicker-view-modifiers.md)
   Apply standard modifiers to configure the family activity picker view and the views it contains.
-### Initializers
-- [init(headerText: String?, footerText: String?, selection: Binding<FamilyActivitySelection>)](familyactivitypicker/init(headertext:footertext:selection:).md)
-  Creates a new activity picker with optional header and footer text.
 
 ## Relationships
 

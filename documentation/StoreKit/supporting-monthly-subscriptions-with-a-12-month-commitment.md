@@ -97,7 +97,7 @@ The following code example filters the product’s list of pricing terms to find
 ```swift
 if let commitmentTerms = product.subscription?.pricingTerms.first(where: { $0.billingPlanType == .monthly }) {
     let monthlyPrice = commitmentTerms.billingDisplayPrice
-    let totalCommitmentPrice = commitmentTerms.commitmentInfo?.price
+    let totalCommitmentPrice = commitmentTerms.commitmentInfo.price
     // Display both monthly and total commitment amounts to the customer before purchase.
 }
 ```

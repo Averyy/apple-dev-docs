@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:31:04.312671",
+    "last_updated": "2026-05-01T07:42:56.493069",
     "total_pages": 50,
-    "session_id": "2026-04-28T07:31:00.917773"
+    "session_id": "2026-05-01T07:42:50.862779"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppStoreReceipts.json": {
       "hash": "524420fe9ef3a417993859e20dff5e0f1f9d728bcbb02f420e8dcee4a334e128",
-      "last_checked": "2026-04-28T07:31:01.234764",
+      "last_checked": "2026-05-01T07:42:51.245390",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"d2a20897163ca09bfbb11e4a5b3efb31\"",
       "file_path": "documentation/AppStoreReceipts/AppStoreReceipts.md"
     },
     "https://developer.apple.com/documentation/AppStoreReceipts": {
       "hash": "524420fe9ef3a417993859e20dff5e0f1f9d728bcbb02f420e8dcee4a334e128",
-      "last_checked": "2026-04-28T07:31:01.138701",
+      "last_checked": "2026-05-01T07:42:51.135906",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"d2a20897163ca09bfbb11e4a5b3efb31\"",
       "file_path": "documentation/AppStoreReceipts/AppStoreReceipts.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/app-store-receipt-data-types.json": {
       "hash": "4cf7d49c6b08e9c0417e02d1b5e4a97f37dd4cb1e37039d3effadaaf2ab6970f",
-      "last_checked": "2026-04-28T07:31:01.525455",
+      "last_checked": "2026-05-01T07:42:51.653921",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"0658d8541fa83bdd29b642c4f36a634e\"",
       "file_path": "documentation/AppStoreReceipts/app-store-receipt-data-types.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/validating-receipts-on-the-device.json": {
       "hash": "cd4ba6fc8aaebf2587e778c608dcc1324c556352c64478395e692ee6960b7020",
-      "last_checked": "2026-04-28T07:31:01.622548",
+      "last_checked": "2026-05-01T07:42:51.978413",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"ebf716f8ec0b67918e47c4c2bbc5744e\"",
       "file_path": "documentation/AppStoreReceipts/validating-receipts-on-the-device.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/verify-receipt.json": {
       "hash": "86ecadfa3cc59ca0d8bc7038676c730d498ad38e753f80df953a43ba67045d52",
-      "last_checked": "2026-04-28T07:31:01.780172",
+      "last_checked": "2026-05-01T07:42:52.142730",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"0224e0cf4848e8abbc02e4002473a371\"",
       "file_path": "documentation/AppStoreReceipts/verify-receipt.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/requestbody.json": {
       "hash": "dd78c21f84f690129c77c1c5a0d40e17e29fc3297208def95f13bfe4066cc1f9",
-      "last_checked": "2026-04-28T07:31:01.949228",
+      "last_checked": "2026-05-01T07:42:52.443409",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"8cd3dc22351453418b50e10aba46a919\"",
       "file_path": "documentation/AppStoreReceipts/requestbody.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody.json": {
       "hash": "3875bfa89dc93c262e9778c658c036e7c112caa295294f75fa55dcc019848307",
-      "last_checked": "2026-04-28T07:31:02.055137",
+      "last_checked": "2026-05-01T07:42:52.780208",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"039e64bb2c90ced7812ab55c96d86f7b\"",
       "file_path": "documentation/AppStoreReceipts/responsebody.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/error.json": {
       "hash": "82a74e5d7446f459bdbbfe767e3013f891b1015ab22f7ca68b91c190c4cd2377",
-      "last_checked": "2026-04-28T07:31:02.198338",
+      "last_checked": "2026-05-01T07:42:53.056284",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"a79f2a520bc983e3c2680dc40e2ea49f\"",
       "file_path": "documentation/AppStoreReceipts/error.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/original_transaction_id.json": {
       "hash": "888b0741e88d6fa4b221b04f327053c37ae61f8e3e49bca8cd3aba6ba0feaa28",
-      "last_checked": "2026-04-28T07:31:02.343719",
+      "last_checked": "2026-05-01T07:42:53.224936",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"500e5cfc958d1bdbc78546d6ed2a5f35\"",
       "file_path": "documentation/AppStoreReceipts/original-transaction-id.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/transaction_id.json": {
       "hash": "bae1595b6f060227af72faaad537c7595d1eb9df30fed991fea8c777e5cb6c2a",
-      "last_checked": "2026-04-28T07:31:02.434766",
+      "last_checked": "2026-05-01T07:42:53.400522",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"31678e91ed893d12dd49b9f5e7a477c3\"",
       "file_path": "documentation/AppStoreReceipts/transaction-id.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/app_account_token.json": {
       "hash": "5701c4e68a5b152c0aa3b267f1b663b531b2182bdb6be9e821056f87754743fa",
-      "last_checked": "2026-04-28T07:31:02.554446",
+      "last_checked": "2026-05-01T07:42:53.571279",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"e06768a8624cedb323aa2a42d7fb607f\"",
       "file_path": "documentation/AppStoreReceipts/app-account-token.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/status.json": {
       "hash": "ca6fe043d30c2f8011bd0a1fa909ee4b454c140c10f99c3ebc6ffba45bed7508",
-      "last_checked": "2026-04-28T07:31:02.691971",
+      "last_checked": "2026-05-01T07:42:53.865744",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"59a3ba38898df3af73d7a719079fd86d\"",
       "file_path": "documentation/AppStoreReceipts/status.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/auto_renew_status.json": {
       "hash": "5ddef30ff6e9d65f22dff5d61422e19be262dfd85e4adb1e39401c1684f06995",
-      "last_checked": "2026-04-28T07:31:02.781433",
+      "last_checked": "2026-05-01T07:42:54.046979",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"c45c8ec547aae3ff9a8439d2fc3fe582\"",
       "file_path": "documentation/AppStoreReceipts/auto-renew-status.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/is_in_billing_retry_period.json": {
       "hash": "52d6aa76566b7af02985cd4708c6e2823bf2cd4d22ec6de13f9c1228ba185b22",
-      "last_checked": "2026-04-28T07:31:02.876814",
+      "last_checked": "2026-05-01T07:42:54.351775",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"b1eef1fd32dce9b138668bc331fc125d\"",
       "file_path": "documentation/AppStoreReceipts/is-in-billing-retry-period.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/is_in_intro_offer_period.json": {
       "hash": "6000f51d43d79b53d57ecf2fe95559471979bc8253dc796f11dcde098d7e5a30",
-      "last_checked": "2026-04-28T07:31:03.019563",
+      "last_checked": "2026-05-01T07:42:54.638542",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"24a3312ce54f11f7c27c16b1cea3b245\"",
       "file_path": "documentation/AppStoreReceipts/is-in-intro-offer-period.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/is_trial_period.json": {
       "hash": "ea876748c42ca5c010242d04764846ab9ea73fe57822f1b3f53c5977675e6f08",
-      "last_checked": "2026-04-28T07:31:03.160426",
+      "last_checked": "2026-05-01T07:42:54.814660",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"1a95455b475f457325b9ca09c80c21d9\"",
       "file_path": "documentation/AppStoreReceipts/is-trial-period.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/expiration_intent.json": {
       "hash": "99e25f8d3e737af79723f898e4c6f1848b9ba7c522a9a636a95a2d53906b2442",
-      "last_checked": "2026-04-28T07:31:03.260216",
+      "last_checked": "2026-05-01T07:42:54.972934",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"ead96d1268625d3115382fa4b5315967\"",
       "file_path": "documentation/AppStoreReceipts/expiration-intent.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/cancellation_date_ms.json": {
       "hash": "6d0abbe05ff235925063cfe97a56e40018af88ddb5e91e5d1833bfe43f8db740",
-      "last_checked": "2026-04-28T07:31:03.400792",
+      "last_checked": "2026-05-01T07:42:55.160550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"9e430f851841034285d2542bda4519dc\"",
       "file_path": "documentation/AppStoreReceipts/cancellation-date-ms.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/expires_date_ms.json": {
       "hash": "d5957f88e23ef7e8eadac02e44a295cfc75afcd7ff55fe59bf9b59b546bfcfff",
-      "last_checked": "2026-04-28T07:31:03.492808",
+      "last_checked": "2026-05-01T07:42:55.349648",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"af4a43bd31d934c861f7ea46f11256b5\"",
       "file_path": "documentation/AppStoreReceipts/expires-date-ms.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/promotional_offer_id.json": {
       "hash": "5336db559573ee7b3c229f5add64eb9f6ff2a679dba0d55872cdcf12a4bca4e0",
-      "last_checked": "2026-04-28T07:31:03.637924",
+      "last_checked": "2026-05-01T07:42:55.518227",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"72cfc8929cdad70fa52c05a28f4fd545\"",
       "file_path": "documentation/AppStoreReceipts/promotional-offer-id.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/offer_code_ref_name.json": {
       "hash": "15662c5ffee70fc26e74f98d335c0b91ad6252ce13198c06be3268e47c231a42",
-      "last_checked": "2026-04-28T07:31:03.777985",
+      "last_checked": "2026-05-01T07:42:55.674254",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"3a83b7fcd3d276251b950cfe0682e28b\"",
       "file_path": "documentation/AppStoreReceipts/offer-code-ref-name.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/in_app_ownership_type.json": {
       "hash": "edf09699a4d3d8298fc6ccbe72a85098fbcc792f91efcff110a52a90891664c0",
-      "last_checked": "2026-04-28T07:31:03.876346",
+      "last_checked": "2026-05-01T07:42:55.851646",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"4f10094bf8f831f0ffac44d3dc2cc5c1\"",
       "file_path": "documentation/AppStoreReceipts/in-app-ownership-type.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/pending_renewal_info-data.dictionary.json": {
       "hash": "94f8b6683ec30c41d7736f2846ad2c7ee3dee7b26720503f79fee43ca3ddad58",
-      "last_checked": "2026-04-28T07:31:03.976318",
+      "last_checked": "2026-05-01T07:42:56.016352",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"4d0a2a551e7a01b14895719cbff25406\"",
       "file_path": "documentation/AppStoreReceipts/responsebody/pending-renewal-info-datadictionary.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/latest_receipt_info-data.dictionary.json": {
       "hash": "245389ef586556865727a536f9b08af60adcf01b1502de07074aaace6a864e76",
-      "last_checked": "2026-04-28T07:31:04.125332",
+      "last_checked": "2026-05-01T07:42:56.174862",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"dbffb881f4c5a43bd14e9751de630089\"",
       "file_path": "documentation/AppStoreReceipts/responsebody/latest-receipt-info-datadictionary.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary.json": {
       "hash": "28da0534488ce01b0778344dc746ba510f65e760493eb74a91c880d5626149a4",
-      "last_checked": "2026-04-28T07:31:04.214675",
+      "last_checked": "2026-05-01T07:42:56.358290",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"d05d4aeaf1e67be2ead0236cd88d1769\"",
       "file_path": "documentation/AppStoreReceipts/responsebody/receipt-datadictionary.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appstorereceipts/responsebody/receipt-data.dictionary/in_app-data.dictionary.json": {
       "hash": "2735d4ce91bc7afb7fc26c466423d98ef7d25e74cb350ca2da4865c3857678b2",
-      "last_checked": "2026-04-28T07:31:04.311412",
+      "last_checked": "2026-05-01T07:42:56.433374",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:00.917773",
+      "session_id": "2026-05-01T07:42:50.862779",
       "etag": "W/\"ef4d1b1c68c2d8b6bac6b4b5f6cb01fb\"",
       "file_path": "documentation/AppStoreReceipts/responsebody/receipt-data.dictionary/in-app-datadictionary.md"
     },

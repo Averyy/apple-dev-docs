@@ -1,23 +1,23 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:10.962852",
+    "last_updated": "2026-05-01T07:41:37.929334",
     "total_pages": 296,
-    "session_id": "2026-04-28T07:29:58.323562"
+    "session_id": "2026-05-01T07:41:12.062870"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BackgroundAssets.json": {
       "hash": "4b1c34e8c97e0616136b120fdb417cbee6fda7c931516611f04b66267390504a",
-      "last_checked": "2026-04-28T07:29:58.706180",
+      "last_checked": "2026-05-01T07:41:12.405800",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"56a73dba98550cb2d4079eb6a1d6f4cf\"",
       "file_path": "documentation/BackgroundAssets/BackgroundAssets.md"
     },
     "https://developer.apple.com/documentation/BackgroundAssets": {
       "hash": "4b1c34e8c97e0616136b120fdb417cbee6fda7c931516611f04b66267390504a",
-      "last_checked": "2026-04-28T07:29:58.613214",
+      "last_checked": "2026-05-01T07:41:12.323271",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"56a73dba98550cb2d4079eb6a1d6f4cf\"",
       "file_path": "documentation/BackgroundAssets/BackgroundAssets.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager.json": {
       "hash": "df801afa153f40781c8fb8e93af07f48c526fdd218788142784d4ec96ab3abd2",
-      "last_checked": "2026-04-28T07:29:59.883040",
+      "last_checked": "2026-05-01T07:41:15.412576",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"fdad52a25ffecb310e52ef3ba90394e6\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw.json": {
       "hash": "7d68d5026797e7370387204b2d121d28c6978c5d755fe29728b3191a1999c73b",
-      "last_checked": "2026-04-28T07:30:00.032979",
+      "last_checked": "2026-05-01T07:41:15.704757",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e8ff99cfcef20660a274d459ff85e17e\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextensionconfiguration.json": {
       "hash": "7461ec4f3379d35129be92d6195aed5f26e034e7627882777c1d9b8fe5cf1694",
-      "last_checked": "2026-04-28T07:30:00.295475",
+      "last_checked": "2026-05-01T07:41:15.864041",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"927021eb2e04a3f5b592acc4b96dd118\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextensionconfiguration.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/downloading-essential-assets-in-the-background.json": {
       "hash": "46d96f385e38de94406ca62fe66fd2ce1c86d392f6e5cc35013ef890ab888cd0",
-      "last_checked": "2026-04-28T07:29:59.791618",
+      "last_checked": "2026-05-01T07:41:15.083015",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"cf594119c9d3db221bee4c345b7b3fd2\"",
       "file_path": "documentation/BackgroundAssets/downloading-essential-assets-in-the-background.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baurldownload.json": {
       "hash": "5bf4330195ecbd27313d193762830b7f5b16b18c2d054a7a599892f220313db0",
-      "last_checked": "2026-04-28T07:30:00.376952",
+      "last_checked": "2026-05-01T07:41:16.023885",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"71efdcbd6b136c55f6fa113a9a92cb6a\"",
       "file_path": "documentation/BackgroundAssets/baurldownload.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload.json": {
       "hash": "270aef24c79b95871c0171c3a689fadd5dccaeb7808043942120dedab8abe405",
-      "last_checked": "2026-04-28T07:30:00.455776",
+      "last_checked": "2026-05-01T07:41:16.322373",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2395b1f1283b3fafbcd80e93c157b585\"",
       "file_path": "documentation/BackgroundAssets/badownload.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct.json": {
       "hash": "b6dc7cc0e1ce1424193356ade7e41e9c8d86d92f948a267fe625a6174929edeb",
-      "last_checked": "2026-04-28T07:30:05.654568",
+      "last_checked": "2026-05-01T07:41:27.466637",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"94fe46582337c802c8d04052052f181d\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swiftstruct.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrordomain.json": {
       "hash": "fee082a9fcc4159b5da067ebcbd5760ccc57cc152068f7a46cce16593878ed96",
-      "last_checked": "2026-04-28T07:30:00.614135",
+      "last_checked": "2026-05-01T07:41:16.787184",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e745e53059992984418e8bbabcebabb8\"",
       "file_path": "documentation/BackgroundAssets/baerrordomain.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode.json": {
       "hash": "c0d5cbdc57cba92c33db26e0e5e070b1af25766363084759a0765b279f8c4d89",
-      "last_checked": "2026-04-28T07:30:00.739830",
+      "last_checked": "2026-05-01T07:41:17.128511",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3830519e7e35dc800fb69c179d8d01fb\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager.json": {
       "hash": "7cba6a80de2c9326ec6a2cb42b0733cdd103b55c4f47cb3c7ef19179dcda674f",
-      "last_checked": "2026-04-28T07:29:59.346532",
+      "last_checked": "2026-05-01T07:41:14.011527",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"229f4141757cccfd9636440fdd2851b8\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/manageddownloaderextension.json": {
       "hash": "8bb9af7b9b012e3a920d4a24537718d653e5ca8322c606ed52795e082c36d8e5",
-      "last_checked": "2026-04-28T07:29:59.501825",
+      "last_checked": "2026-05-01T07:41:14.322146",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"edb0801ca69a2a014f9dea044f2f8d08\"",
       "file_path": "documentation/BackgroundAssets/manageddownloaderextension.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack.json": {
       "hash": "6665e9a0d2ea82da01933a23530a977d171a9cd0312c4e19b8cd818154262964",
-      "last_checked": "2026-04-28T07:29:59.267975",
+      "last_checked": "2026-05-01T07:41:13.693054",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3d732ee8cd742a0f46be88e75374e7ef\"",
       "file_path": "documentation/BackgroundAssets/assetpack.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest.json": {
       "hash": "1d53920dd7054ea00725eff4a2c116a0e4c12b806073da356f3c816eff85a73e",
-      "last_checked": "2026-04-28T07:29:59.605268",
+      "last_checked": "2026-05-01T07:41:14.483995",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ea7e636f78f939a4ee9bfe21fc231956\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/managedbackgroundassetserror.json": {
       "hash": "293838fb01dc16a1915f518c5a55e5a6e0c4e67e79c6c746ea6b7779c7812586",
-      "last_checked": "2026-04-28T07:30:00.533550",
+      "last_checked": "2026-05-01T07:41:16.628899",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"0a696ddf049366948e7d998c0c071983\"",
       "file_path": "documentation/BackgroundAssets/managedbackgroundassetserror.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/shared.json": {
       "hash": "49fcb725d9ec01de1b2f19599c7d4b7c578c2b08b4768d9d46b002780edfa11a",
-      "last_checked": "2026-04-28T07:30:03.444243",
+      "last_checked": "2026-05-01T07:41:22.944670",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ad3ba088bdb7a486f39618d480db894f\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/shared.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/scheduledownload(_:).json": {
       "hash": "c4a03c3224c672130a2078ca095d16849d05aaa385783c63dd0ab91e475c94e1",
-      "last_checked": "2026-04-28T07:30:03.522213",
+      "last_checked": "2026-05-01T07:41:23.111492",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3153f116c91c545df09f319de9b4c2a0\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/scheduledownload.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/startforegrounddownload(_:).json": {
       "hash": "65c8cb780886e789ee518e6c24511e7021002bc9854dfdd680dc15111e269139",
-      "last_checked": "2026-04-28T07:30:03.597669",
+      "last_checked": "2026-05-01T07:41:23.267802",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d2dfe79d71a1225bd8ccd7c928f73922\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/startforegrounddownload.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/cancel(_:).json": {
       "hash": "6b8c3a3fb07fdde27b73e95c0125916ce408c47f4ab3ab5a8c440902f2f08c9e",
-      "last_checked": "2026-04-28T07:30:03.671546",
+      "last_checked": "2026-05-01T07:41:23.431887",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a1994b42002e313365ba01ff72131d7d\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/cancel.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/delegate.json": {
       "hash": "10199fa96ec53061526a7e2f22218a562127799e9dd3953d7d62a0feaa06118f",
-      "last_checked": "2026-04-28T07:30:03.745960",
+      "last_checked": "2026-05-01T07:41:23.608190",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"47b5754e029c090e1c9294306035773b\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/delegate.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate.json": {
       "hash": "51c849b3bb0ea4c410307b72f09bf9fa263129e4c26c917cbc43177b0563ec85",
-      "last_checked": "2026-04-28T07:30:03.819943",
+      "last_checked": "2026-05-01T07:41:23.772164",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2c41d821ce2b057b6f116aab3d3062ee\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/fetchcurrentdownloads().json": {
       "hash": "06d734db61445daddaa4318e5813ac4b920aaa21dfc1ca3f367c46163b1c2a8a",
-      "last_checked": "2026-04-28T07:30:03.897278",
+      "last_checked": "2026-05-01T07:41:23.934183",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"15cbbed30103e92a6616785b328647fd\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/fetchcurrentdownloads.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/fetchcurrentdownloads(completionhandler:).json": {
       "hash": "76ad0c8ae93fe161841acf42c761aedd554d404a771e591ae376903825787b2f",
-      "last_checked": "2026-04-28T07:30:03.974365",
+      "last_checked": "2026-05-01T07:41:24.125903",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3596dfd7912de695f5b9b93a2ed33d2d\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/fetchcurrentdownloads-completionhandler.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/withexclusivecontrol(_:).json": {
       "hash": "b36734eb69cb69e46296c4288f8678653b44aa2e17324465b35e5072ed9a0a30",
-      "last_checked": "2026-04-28T07:30:04.047820",
+      "last_checked": "2026-05-01T07:41:24.294333",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a5ef42fe5b6cd06acafd2c73d36f9bf5\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/withexclusivecontrol.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanager/withexclusivecontrol(beforedate:perform:).json": {
       "hash": "9e3f0fb61a6bb28d3cd2df4bef59b7fa9d16b288c09cad76cf0b13a727961fff",
-      "last_checked": "2026-04-28T07:30:04.168574",
+      "last_checked": "2026-05-01T07:41:24.460166",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ffa878afb1bc7d9248582750dcc41360\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanager/withexclusivecontrol-beforedateperform.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/backgrounddownload(_:didreceive:).json": {
       "hash": "a68118762e071b90cc6ec33f7c88094171ba342afc5bee6982b771e3b16c379b",
-      "last_checked": "2026-04-28T07:30:04.254773",
+      "last_checked": "2026-05-01T07:41:24.645555",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"cb478e142fdb4403e2d6a60fbd7afb0d\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/backgrounddownload-didreceive.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/backgrounddownload(_:finishedwithfileurl:).json": {
       "hash": "e9f4ffb1a70c00bd2b732c705ffae584d3c860456d5704b823a1b1936d8cf468",
-      "last_checked": "2026-04-28T07:30:04.327057",
+      "last_checked": "2026-05-01T07:41:24.804545",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"285a44ced4152c4ada30d631878241b2\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/backgrounddownload-finishedwithfileurl.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/backgrounddownload(_:failedwitherror:).json": {
       "hash": "7677e075a0fbd74b0e4dcf166bb95d0d2d99c25ca4dced9fdaae4c4e86976f0a",
-      "last_checked": "2026-04-28T07:30:04.432173",
+      "last_checked": "2026-05-01T07:41:24.982588",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"dd52eed3844c255689ec4a4bfd41b0f4\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/backgrounddownload-failedwitherror.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/downloads(for:manifesturl:extensioninfo:).json": {
       "hash": "9028e5867978e6146dbd897ded87962ac9cf2de9770a75b7724eb7b74d0bff38",
-      "last_checked": "2026-04-28T07:30:04.591122",
+      "last_checked": "2026-05-01T07:41:25.162284",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"733413b1d55306a1716f1b2a2880fc47\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/downloads-formanifesturlextensioninfo.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/bacontentrequest.json": {
       "hash": "5ff24819989e5db0b33ee4b34e14799a6a2a2f8a082de009f05f177bec23e9ab",
-      "last_checked": "2026-04-28T07:30:04.666924",
+      "last_checked": "2026-05-01T07:41:25.333571",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"9ada96f464b0ca9667ed2142ae4af1a8\"",
       "file_path": "documentation/BackgroundAssets/bacontentrequest.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baappextensioninfo.json": {
       "hash": "fa807155d5130a8a61239684bd2865b2e6a26753ee25d2302fcac6789be67c58",
-      "last_checked": "2026-04-28T07:30:04.751587",
+      "last_checked": "2026-05-01T07:41:25.493005",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d51a8cfd74e99f0fa353192b6778e5a6\"",
       "file_path": "documentation/BackgroundAssets/baappextensioninfo.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/extensionwillterminate()-236ac.json": {
       "hash": "7c31313403b764f9d3d7fab13b83b9f6ae261b8a555e21c73411c3d8b56194c3",
-      "last_checked": "2026-04-28T07:30:04.820679",
+      "last_checked": "2026-05-01T07:41:25.669513",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ca3039ba9c70a397bcea306b747ab7a8\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/extensionwillterminate-236ac.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloaderextension-qwaw/extensionwillterminate().json": {
       "hash": "19816e95d328cb939af156a344f2f1d58ccd071915903ef5f04ffd386489162c",
-      "last_checked": "2026-04-28T07:30:04.891837",
+      "last_checked": "2026-05-01T07:41:25.834410",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"eb65a5ba232f4993014c2b3bd26614f4\"",
       "file_path": "documentation/BackgroundAssets/badownloaderextension-qwaw/extensionwillterminate.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baurldownload/init(identifier:request:essential:filesize:applicationgroupidentifier:priority:).json": {
       "hash": "2f12c8f1d0f0f5dda7e1ac3b9adccbcf6c6f30bb123c442fe923b2f74a8adc73",
-      "last_checked": "2026-04-28T07:30:04.969607",
+      "last_checked": "2026-05-01T07:41:26.003137",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d0e07b7d9c1f092106c0ebf3b44c8fa5\"",
       "file_path": "documentation/BackgroundAssets/baurldownload/init-identifierrequestessentialfilesizeapplicationgroupidentifierpriority.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baurldownload/init(identifier:request:filesize:applicationgroupidentifier:).json": {
       "hash": "366874d25985571c8762ce75a1db3004d702e8ce1bcc56dc209fdeabcf61dde6",
-      "last_checked": "2026-04-28T07:30:05.074491",
+      "last_checked": "2026-05-01T07:41:26.162048",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"c5e8944efb9a945327c3bd6d86ee528f\"",
       "file_path": "documentation/BackgroundAssets/baurldownload/init-identifierrequestfilesizeapplicationgroupidentifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baurldownload/init(identifier:request:applicationgroupidentifier:).json": {
       "hash": "e951ae256bb79d7e5d197de5689cc7a72fabb1ddcf62ec3678d71a67d3307b26",
-      "last_checked": "2026-04-28T07:30:05.152004",
+      "last_checked": "2026-05-01T07:41:26.314685",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"81b3caa08005193104530a156b29f742\"",
       "file_path": "documentation/BackgroundAssets/baurldownload/init-identifierrequestapplicationgroupidentifier.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baurldownload/init(identifier:request:applicationgroupidentifier:priority:).json": {
       "hash": "221592f92a9e98c8cef3bb56e322f2fe47b86f377b9fcbb0eec2607d45f1f64b",
-      "last_checked": "2026-04-28T07:30:05.252651",
+      "last_checked": "2026-05-01T07:41:26.599813",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"30977e48c6ba4eb4417f7465989b188c\"",
       "file_path": "documentation/BackgroundAssets/baurldownload/init-identifierrequestapplicationgroupidentifierpriority.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/identifier.json": {
       "hash": "2840650907916ef6c090951bdbb85e571f8db58b527135012c5cef3cb5a4bbe8",
-      "last_checked": "2026-04-28T07:30:05.321714",
+      "last_checked": "2026-05-01T07:41:26.762947",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ff44e709bcf8087fc08e23d0a5c44afe\"",
       "file_path": "documentation/BackgroundAssets/badownload/identifier.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/uniqueidentifier.json": {
       "hash": "5e586a1e81cb9f8bd4bcb2a826f1a60593f284242aba7138713e8d5b1155029a",
-      "last_checked": "2026-04-28T07:30:05.390085",
+      "last_checked": "2026-05-01T07:41:26.936840",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3d12e40e22e254d367c887b8c468131d\"",
       "file_path": "documentation/BackgroundAssets/badownload/uniqueidentifier.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/isessential.json": {
       "hash": "a92986589d9e9698c8d1ea5ca4da9ee50814904971e1b6f91e1fa4930c3e9948",
-      "last_checked": "2026-04-28T07:30:05.489964",
+      "last_checked": "2026-05-01T07:41:27.124543",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"984e3a3e5be8ce522244b2173eaa2f5d\"",
       "file_path": "documentation/BackgroundAssets/badownload/isessential.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.property.json": {
       "hash": "da6c45c94d7c170a9c27ced86805e28c796b6f8f5cf4fce69105cb6bbd4664bc",
-      "last_checked": "2026-04-28T07:30:05.566603",
+      "last_checked": "2026-05-01T07:41:27.306373",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ec78ba4543d53859ba0984b5fb1e520f\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swiftproperty.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.property.json": {
       "hash": "eab477c44558ade64dcdefa34222998ae2f1781fc3ebc59824da250b2366b854",
-      "last_checked": "2026-04-28T07:30:05.733037",
+      "last_checked": "2026-05-01T07:41:27.637410",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"49dc68be4ea187a5bbea1b11e4bce359\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swiftproperty.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum.json": {
       "hash": "dc0832b50fa85acdfc900e133d767d61df3e2b1c8dafa09c446651bfced2b47c",
-      "last_checked": "2026-04-28T07:30:05.807883",
+      "last_checked": "2026-05-01T07:41:27.821841",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"0e45d6e296e7a548ed8fbf35ec538aa1\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swiftenum.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/removingessential().json": {
       "hash": "7ad09d0e873023c01653e612c9475a1e487f9d35332f0e5bde86c8a2c543c782",
-      "last_checked": "2026-04-28T07:30:05.888093",
+      "last_checked": "2026-05-01T07:41:27.995466",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"408942a2620c9fd295b6bc0ebd1fcea0\"",
       "file_path": "documentation/BackgroundAssets/badownload/removingessential.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct/init(_:).json": {
       "hash": "13a85cfe75d97c3a2e1e0e9ad4545d396aca8dc41db56a9085d42a302b753ced",
-      "last_checked": "2026-04-28T07:30:10.094644",
+      "last_checked": "2026-05-01T07:41:36.248812",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"9bf10d73dc42fc85b16cf7b13d7c8702\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swift.struct/init.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct/init(rawvalue:).json": {
       "hash": "6013a068e6a736090b2f762f5612fd13dd11c7c81e74b21d91a9cb569b9cde45",
-      "last_checked": "2026-04-28T07:30:10.168214",
+      "last_checked": "2026-05-01T07:41:36.423571",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2fb0c087c05a50347c11fc8f530634af\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swift.struct/init-rawvalue.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct/default.json": {
       "hash": "93a0e517a18a3a5c1783eae7eeb55ed1d86739b498ffd3e80edc133a35488f65",
-      "last_checked": "2026-04-28T07:30:10.254654",
+      "last_checked": "2026-05-01T07:41:36.584997",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"5324a173db2ef75d4b5bc991de8c91cd\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swift.struct/default.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct/min.json": {
       "hash": "fd3f51d4682a6cf27fde9cc4986697d3b4d98fe49be431eaf57b14e11e3bfe05",
-      "last_checked": "2026-04-28T07:30:10.334051",
+      "last_checked": "2026-05-01T07:41:36.734566",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"098806cdc97380aac643c0eb00ed4298\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swift.struct/min.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/priority-swift.struct/max.json": {
       "hash": "1779c0f0cc81044d5cff63fbb4eb6806838b0ae158a23f0fb46735db125c149d",
-      "last_checked": "2026-04-28T07:30:10.406996",
+      "last_checked": "2026-05-01T07:41:36.905542",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"1fda407a7367a276582e0d8e5c395c33\"",
       "file_path": "documentation/BackgroundAssets/badownload/priority-swift.struct/max.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/callfromextensionnotallowed.json": {
       "hash": "145f08eb257fdf82a7aad62e74eb6695ec75704483e713fa7db8dd6a61b79a60",
-      "last_checked": "2026-04-28T07:30:06.235587",
+      "last_checked": "2026-05-01T07:41:28.649596",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"843d543cac5aaa834a3294688cdcd772\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/callfromextensionnotallowed.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/callfrominactiveprocessnotallowed.json": {
       "hash": "197e1b23014b1b1c9ec72bdedf9bae63e50f704180171d6b26c736e01b0e2351",
-      "last_checked": "2026-04-28T07:30:06.317318",
+      "last_checked": "2026-05-01T07:41:28.938873",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"4b2cf18bde820bb4c78f0867f839a2ad\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/callfrominactiveprocessnotallowed.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/callerconnectioninvalid.json": {
       "hash": "7fb9f7f20f23316af52fa489bfe050509da3f8bdd522a17b59aa4f2e21e73281",
-      "last_checked": "2026-04-28T07:30:06.397804",
+      "last_checked": "2026-05-01T07:41:29.108879",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"effcc91e6162258e297d79f9043b3593\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/callerconnectioninvalid.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/callerconnectionnotaccepted.json": {
       "hash": "29203795188d037d7fefbf70d76be90c9da2b6d816baabcec9b39d5f9ded0b42",
-      "last_checked": "2026-04-28T07:30:06.474461",
+      "last_checked": "2026-05-01T07:41:29.283739",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ef3cb1a5afe2b7c3c0e236d6e7edcc72\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/callerconnectionnotaccepted.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadalreadyfailed.json": {
       "hash": "374b126e0f01c92571e59979f2b0baf5efd8dea4f8d3b2d98b69c55ba17248a8",
-      "last_checked": "2026-04-28T07:30:06.548428",
+      "last_checked": "2026-05-01T07:41:29.458472",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"f4faeb63927e7e1b4267af3d5992d478\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadalreadyfailed.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadalreadyscheduled.json": {
       "hash": "a9cef358dbcccfc980af2ce3d95f190c81968dbe3f6046df770bc546c89c45a6",
-      "last_checked": "2026-04-28T07:30:06.655708",
+      "last_checked": "2026-05-01T07:41:29.759399",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2e9cbe3784a8487857b23e9e05da8a63\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadalreadyscheduled.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadbackgroundactivityprohibited.json": {
       "hash": "282e92d673fdbf1aa5b81d1c8377c0ff00868f2e9e66186cea91253a1da52fc2",
-      "last_checked": "2026-04-28T07:30:06.723854",
+      "last_checked": "2026-05-01T07:41:29.933624",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b00f30a79b2deeb194ae8d251b3e5b9d\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadbackgroundactivityprohibited.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadessentialdownloadnotpermitted.json": {
       "hash": "df40977a03062defdce9bf0a078478423a7f6d97d22d374eb06bd4e47096ff2e",
-      "last_checked": "2026-04-28T07:30:06.805826",
+      "last_checked": "2026-05-01T07:41:30.111665",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b49697756c8f9dad726eda11e12154c8\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadessentialdownloadnotpermitted.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadfailedtostart.json": {
       "hash": "edf1e52085c509cf7c92e9df81be8690eb4c25a361837ef084f337b89aefd8b0",
-      "last_checked": "2026-04-28T07:30:06.887370",
+      "last_checked": "2026-05-01T07:41:30.317100",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"7fe40ec8cab8ab585414a20de6a4ba8f\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadfailedtostart.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadinvalid.json": {
       "hash": "2e6e09b6775f54fba604bfc4273c6cd73f8e4a2ee7bb72dd602160c6b0295617",
-      "last_checked": "2026-04-28T07:30:06.963487",
+      "last_checked": "2026-05-01T07:41:30.486614",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b4cf412e6b205a9c2cb6be5e1a436272\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadinvalid.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadnotscheduled.json": {
       "hash": "a48b6592617b71c0166a4b4b22d45ec14c390318c8d77ccbb44545e28930188f",
-      "last_checked": "2026-04-28T07:30:07.046532",
+      "last_checked": "2026-05-01T07:41:30.634624",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b55b4f37072b228c6cd73ddc432a4e79\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadnotscheduled.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloadwouldexceedallowance.json": {
       "hash": "4fdf6bb857e8cdc188f5ec1ead4d41467001e62f5f12aca4a13153a321cadfa8",
-      "last_checked": "2026-04-28T07:30:07.118773",
+      "last_checked": "2026-05-01T07:41:30.807894",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2301b887cd5673f32e708ebc5236d3b6\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloadwouldexceedallowance.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/sessiondownloadallowanceexceeded.json": {
       "hash": "417b32f8c64c34a361023ca930532e7e1a68f241360b1601ad8098ec4b580483",
-      "last_checked": "2026-04-28T07:30:07.195769",
+      "last_checked": "2026-05-01T07:41:30.969198",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"4a3b7ac8ff7061d145b3ed212ce529a0\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/sessiondownloadallowanceexceeded.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/sessiondownloaddisallowedbyallowance.json": {
       "hash": "232275708978b7440fbbd5488727e1e66910101ceff25d782463ed24218a114b",
-      "last_checked": "2026-04-28T07:30:07.323092",
+      "last_checked": "2026-05-01T07:41:31.155361",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e6bf47def77c9a3e730f071557b4b67e\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/sessiondownloaddisallowedbyallowance.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/sessiondownloaddisallowedbydomain.json": {
       "hash": "2de0a8cf777e4fc73b8d9dbacb3ce5771c0a0b4aa2200a97c9c2427c4ed048c7",
-      "last_checked": "2026-04-28T07:30:07.445311",
+      "last_checked": "2026-05-01T07:41:31.316839",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"22481e2cc65599eec64e38549ee0f67e\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/sessiondownloaddisallowedbydomain.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.json": {
       "hash": "89ec93fdd353b161d959d0e3bc08a36aaf460d150820ce5ed97bd4900baa07cd",
-      "last_checked": "2026-04-28T07:30:07.517407",
+      "last_checked": "2026-05-01T07:41:31.493465",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"4cd0d0737017d300c4900da0d0269d69\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/sessiondownloadnotpermittedbeforeapplaunch.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/downloaddoesnotexist.json": {
       "hash": "973c2e4ecf2656d6d91e5eb6657dec267960450bc2a5987cfcfc27ddb8cd7121",
-      "last_checked": "2026-04-28T07:30:07.696184",
+      "last_checked": "2026-05-01T07:41:31.862191",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"83445425b19753a4cfee49c12adcb8ee\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/downloaddoesnotexist.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baerrorcode/init(rawvalue:).json": {
       "hash": "01a8011c6cf1d9c9708ca69a4c9d3fb687f74404a5534d47861e32718446a097",
-      "last_checked": "2026-04-28T07:30:07.588570",
+      "last_checked": "2026-05-01T07:41:31.687828",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a73cca4708410f0707f4dd6102a3e7f0\"",
       "file_path": "documentation/BackgroundAssets/baerrorcode/init-rawvalue.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/allassetpacks.json": {
       "hash": "4904af5b494c09c7f1d29a28501a25e61bf41846d99ecc7471e11f5260fe4281",
-      "last_checked": "2026-04-28T07:30:01.903974",
+      "last_checked": "2026-05-01T07:41:19.193059",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"33f2290c4680ede088691105196aee5d\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/allassetpacks.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/statusupdates.json": {
       "hash": "dfd84149b9bb6311b379141a1a6de13951f2f210f19614c50b192870c654e732",
-      "last_checked": "2026-04-28T07:30:01.542389",
+      "last_checked": "2026-05-01T07:41:18.418903",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a2360507320723a102a068099ee07c5d\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/statusupdates.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/assetpack(withid:).json": {
       "hash": "b65b838557f8efe107f960c5042f09c95d7b7be22cbf3accfad0b294db91135b",
-      "last_checked": "2026-04-28T07:30:02.032454",
+      "last_checked": "2026-05-01T07:41:19.416773",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b6138f2b443e3a5fe96c4cea412aaaeb\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/assetpack-withid.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/checkforupdates().json": {
       "hash": "3eca677702225814dbff12963b654e911af3b521287c2d763fab64175d1deed4",
-      "last_checked": "2026-04-28T07:30:02.367321",
+      "last_checked": "2026-05-01T07:41:20.390341",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"9c9af3800e45e0bb2ec51fa86cf9d905\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/checkforupdates.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/contents(at:searchinginassetpackwithid:options:).json": {
       "hash": "0c782e38ee4be4c5354936bc01e6e2e37222d1198d72e0719fbe330178303eb0",
-      "last_checked": "2026-04-28T07:30:02.055557",
+      "last_checked": "2026-05-01T07:41:19.703325",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e91b08d1224c526ad2e73668ddb6f575\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/contents-atsearchinginassetpackwithidoptions.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/descriptor(for:searchinginassetpackwithid:).json": {
       "hash": "3c0b6e927f3edc28191ceb1117ffaf46667d89d15ee0319a3c80705f37c4b46d",
-      "last_checked": "2026-04-28T07:30:02.164508",
+      "last_checked": "2026-05-01T07:41:19.871466",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"7c9a28b0f5ef4c28f420b111d05deec9\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/descriptor-forsearchinginassetpackwithid.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/ensurelocalavailability(of:).json": {
       "hash": "aecc4ebac63fa9de09f9ecd0328e5d4481ac2e1725bd596cd76788d884c82617",
-      "last_checked": "2026-04-28T07:30:02.463816",
+      "last_checked": "2026-05-01T07:41:20.695527",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"8d605daee7bc75236858ec52f2c60c83\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/ensurelocalavailability-of.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/remove(assetpackwithid:).json": {
       "hash": "a866ca81bb9263155c280bdcf13e0147278b5cf61a6dfc0566398cf4ab5e925b",
-      "last_checked": "2026-04-28T07:30:02.594110",
+      "last_checked": "2026-05-01T07:41:20.978834",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"35e86331ab1a7d3a28e5d5b558972320\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/remove-assetpackwithid.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/status(ofassetpackwithid:).json": {
       "hash": "bab2cf40216b722ec925ea311f27b23ba52b22c5c1ec2360a7c557890642dc30",
-      "last_checked": "2026-04-28T07:30:01.824613",
+      "last_checked": "2026-05-01T07:41:19.028613",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3b665e85ea91f0c99aa60e9dabf6719e\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/status-ofassetpackwithid.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/statusupdates(forassetpackwithid:).json": {
       "hash": "93af75fec3dd40b3870ac2d8385544e602eb45624f6ba73ba060e26f8a480b85",
-      "last_checked": "2026-04-28T07:30:01.631095",
+      "last_checked": "2026-05-01T07:41:18.577730",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2bc4fe8f60f20243971699f26421c400\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/statusupdates-forassetpackwithid.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/url(for:).json": {
       "hash": "fbd3b306518a0601a6b255135c41f6d2b1d294e02d91b24642638c70c72cc398",
-      "last_checked": "2026-04-28T07:30:02.277085",
+      "last_checked": "2026-05-01T07:41:20.197920",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"413d0d7e89b2ecc9267ada8c01102128\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/url-for.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/shared.json": {
       "hash": "e55fcc0f85bd6f7dddb2c9bd27e98c1b835c37b9d944804e97f51dda8175a72d",
-      "last_checked": "2026-04-28T07:30:01.456236",
+      "last_checked": "2026-05-01T07:41:18.253738",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b5def9162b321c2056a6e80f045ec0e1\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/shared.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate.json": {
       "hash": "c4f109b63dc81218b45e3ca033d9c2fe7c6209dc86a76deea0f09eac89158173",
-      "last_checked": "2026-04-28T07:30:01.705158",
+      "last_checked": "2026-05-01T07:41:18.730645",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e5cf22d150032c47274f839ae397ddd9\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/manageddownloaderextension/shoulddownload(_:).json": {
       "hash": "c880b551b3a29272485e979b373750095766b9f261c5083d84357277b7894749",
-      "last_checked": "2026-04-28T07:30:02.975757",
+      "last_checked": "2026-05-01T07:41:21.820459",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"8fe7fe90bb236322070a2ef16cd03a07\"",
       "file_path": "documentation/BackgroundAssets/manageddownloaderextension/shoulddownload.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status.json": {
       "hash": "d5c56490867a743e4c25052c2882376e1418d392c7af04df790627bc6c7d0bca",
-      "last_checked": "2026-04-28T07:30:01.046817",
+      "last_checked": "2026-05-01T07:41:17.625055",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"11492928ab20aa1b235ee0357f41d85f\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/downloadsize.json": {
       "hash": "b8d6cbdf3ae54ee6e6e811f26bc4b85107e09875836b80761c97607a776fa2b7",
-      "last_checked": "2026-04-28T07:30:01.376573",
+      "last_checked": "2026-05-01T07:41:18.101784",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"07a3ad05294e448fe914f89c26a141d0\"",
       "file_path": "documentation/BackgroundAssets/assetpack/downloadsize.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/id.json": {
       "hash": "fbf69817180b985ae79ad86becbca472a497cf6b1278cfc0968875dcd28f1e5b",
-      "last_checked": "2026-04-28T07:30:00.817214",
+      "last_checked": "2026-05-01T07:41:17.316003",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d08cedf3c2b663c45b2c2264ca8e29bf\"",
       "file_path": "documentation/BackgroundAssets/assetpack/id.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/userinfo.json": {
       "hash": "eaac15c1c6c8c8d72ee1bbdeea3513e8eb5aff52b6bcab7147ded1a52b040d44",
-      "last_checked": "2026-04-28T07:30:01.162965",
+      "last_checked": "2026-05-01T07:41:17.788735",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2365053ca33cd85ed4acffe72f22a33d\"",
       "file_path": "documentation/BackgroundAssets/assetpack/userinfo.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/version.json": {
       "hash": "ba24d34d9497e88759702cdb3c4f2abc8493b5110aba66aa0977082ab82a1017",
-      "last_checked": "2026-04-28T07:30:00.931276",
+      "last_checked": "2026-05-01T07:41:17.472844",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"516e390e5187e0172be9df1de37a589f\"",
       "file_path": "documentation/BackgroundAssets/assetpack/version.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/download(for:).json": {
       "hash": "2d8b9aa7540b07279ec088f86533facbd3ecb1c6d1e67dc15b5032041feb68d4",
-      "last_checked": "2026-04-28T07:30:01.292754",
+      "last_checked": "2026-05-01T07:41:17.944487",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"80ed030a26b06ac05c705b078053fd55\"",
       "file_path": "documentation/BackgroundAssets/assetpack/download-for.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest/decodingconfiguration.json": {
       "hash": "25a58178bdb4ac4a4a02e0bd834007aed33e3139b49ab6d80ecc40022494ee3f",
-      "last_checked": "2026-04-28T07:30:03.361578",
+      "last_checked": "2026-05-01T07:41:22.789356",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"87bfe2620390face417d40b86e3dbdd6\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest/decodingconfiguration.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest/init(contentsof:appgroupid:).json": {
       "hash": "7123140e7d40eea656bab1956e90c4ba5cfb440577820661b6262f52fb47c509",
-      "last_checked": "2026-04-28T07:30:03.068576",
+      "last_checked": "2026-05-01T07:41:21.979354",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"6b693a554f56fa858389a2bcdff9987d\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest/init-contentsofappgroupid.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest/init(from:appgroupid:).json": {
       "hash": "f90ca8d8b0572cbae68e4d1ebb836330356b00e7f5f4073a12c0662fddcfa550",
-      "last_checked": "2026-04-28T07:30:03.135814",
+      "last_checked": "2026-05-01T07:41:22.151599",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"dd47cabd822f01a8972195c535800192\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest/init-fromappgroupid.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest/assetpacks.json": {
       "hash": "18434e2eb8414214651edbe180a7182c406f65bc07367ed9a1d5b3c11027e6b4",
-      "last_checked": "2026-04-28T07:30:03.279704",
+      "last_checked": "2026-05-01T07:41:22.620091",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"bde94bb10f62a008e0333469342a8106\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest/assetpacks.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanifest/alldownloads(for:).json": {
       "hash": "453291996973f73c14394f57b3193ba2f4bb95adedcd19e8a8c732c557d7e06d",
-      "last_checked": "2026-04-28T07:30:03.205884",
+      "last_checked": "2026-05-01T07:41:22.457843",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3557490698cae4ea81c5e60b1708aeed\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanifest/alldownloads-for.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/managedbackgroundassetserror/assetpacknotfound(withid:).json": {
       "hash": "75196c2e853f6bb26b9a99f13dd9836994be0867e175079057708350af27721a",
-      "last_checked": "2026-04-28T07:30:06.086837",
+      "last_checked": "2026-05-01T07:41:28.326227",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"2d194abbec22a8d9bd95c6887a011517\"",
       "file_path": "documentation/BackgroundAssets/managedbackgroundassetserror/assetpacknotfound-withid.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/managedbackgroundassetserror/filenotfound(at:).json": {
       "hash": "346156c06592bb34b908c55824f58e756ea6a23df2ecea7b3fcd50f6071d2739",
-      "last_checked": "2026-04-28T07:30:06.165224",
+      "last_checked": "2026-05-01T07:41:28.487691",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"14dc134e9d6a661f1e8aad25745835bb\"",
       "file_path": "documentation/BackgroundAssets/managedbackgroundassetserror/filenotfound-at.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/downloaddidbegin(_:).json": {
       "hash": "573e037f5a75abe2d84db55afaeafb3719c977d09240b1ae9816c7c2c1492ddb",
-      "last_checked": "2026-04-28T07:30:08.722902",
+      "last_checked": "2026-05-01T07:41:34.055046",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"239463d1ed67b1fc46e8e889ac114ca3\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/downloaddidbegin.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/download(_:didreceive:completionhandler:).json": {
       "hash": "5427c4c949238a5fc9f403b8ebd653b7c3b823b7747ffffce56ec72197b11a81",
-      "last_checked": "2026-04-28T07:30:08.807193",
+      "last_checked": "2026-05-01T07:41:34.211695",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"4626ece6f5b53e4ac7444a1723ea4b7d\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/download-didreceivecompletionhandler.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/download(_:didwritebytes:totalbyteswritten:totalbytesexpectedtowrite:).json": {
       "hash": "1705dc3dd52de98818563bc53725a9eb0a7ad6a4fa0a4154b7cc27d0599925fe",
-      "last_checked": "2026-04-28T07:30:08.879759",
+      "last_checked": "2026-05-01T07:41:34.391495",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"3b92b993c542de9ec5fedcc5fe4800a3\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/download-didwritebytestotalbyteswrittentotalbytesexpectedtowrite.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/downloaddidpause(_:).json": {
       "hash": "7062d464860ea41c663cbbc77e87adf2d2d03c2dd893e7494d80229136240665",
-      "last_checked": "2026-04-28T07:30:09.002752",
+      "last_checked": "2026-05-01T07:41:34.567280",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"9555b4cd1c2f65bc7ec7cecb4b3446fd\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/downloaddidpause.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/download(_:finishedwithfileurl:).json": {
       "hash": "dd051ba367418f6d1d8ddd25d9f496f6ef281dbf1e85b3bf0b0d1a0b207680bf",
-      "last_checked": "2026-04-28T07:30:09.128059",
+      "last_checked": "2026-05-01T07:41:34.739682",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d29dd2a451cc63ae170ae7dd73f5105f\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/download-finishedwithfileurl.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownloadmanagerdelegate/download(_:failedwitherror:).json": {
       "hash": "8c7ef062cbe4e68dd65423af5d229a2602fb56b20cb7fb3ca7e9d220119e6b98",
-      "last_checked": "2026-04-28T07:30:09.246766",
+      "last_checked": "2026-05-01T07:41:34.903013",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a02ef4ad75b66cf00a72ab08402f896f\"",
       "file_path": "documentation/BackgroundAssets/badownloadmanagerdelegate/download-failedwitherror.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/bacontentrequest/install.json": {
       "hash": "1af15290b09ec712a55703ab251dd2d3fca07b965599f522c67931550b5f00b4",
-      "last_checked": "2026-04-28T07:30:09.381480",
+      "last_checked": "2026-05-01T07:41:35.071009",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"13d994a2b57f4247aca8c0b969ea9c16\"",
       "file_path": "documentation/BackgroundAssets/bacontentrequest/install.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/bacontentrequest/periodic.json": {
       "hash": "f714eac6fdb95fe71d3f4d6f4019445327910f5e7d787177f56e8281c80dec56",
-      "last_checked": "2026-04-28T07:30:09.462573",
+      "last_checked": "2026-05-01T07:41:35.238432",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"c572840e803fd6ae7e3d9298a0f89b99\"",
       "file_path": "documentation/BackgroundAssets/bacontentrequest/periodic.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/bacontentrequest/update.json": {
       "hash": "d284365ca8678509fb898cb1068d2eeb6100e9bd6dba326ad0d5313b55bf8a7f",
-      "last_checked": "2026-04-28T07:30:09.582903",
+      "last_checked": "2026-05-01T07:41:35.411322",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ebe4e9da2fbf591fe5ff7bc4a39fa593\"",
       "file_path": "documentation/BackgroundAssets/bacontentrequest/update.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/bacontentrequest/init(rawvalue:).json": {
       "hash": "831ff6ad64ef94889f9f35da7dbd25f548e06888a7b3a7aa29118b4eab14b855",
-      "last_checked": "2026-04-28T07:30:09.656702",
+      "last_checked": "2026-05-01T07:41:35.571093",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a77841e264f74e6fd94fe5a9cd4824f1\"",
       "file_path": "documentation/BackgroundAssets/bacontentrequest/init-rawvalue.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baappextensioninfo/restrictedessentialdownloadsizeremaining-5r8v0.json": {
       "hash": "64fa2645bf2f4bfa0518a25b4af289e28d656eea4b206ad333b640a1c549cb4a",
-      "last_checked": "2026-04-28T07:30:09.781142",
+      "last_checked": "2026-05-01T07:41:35.758351",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"efbc058e424b79dc226c0614ce858255\"",
       "file_path": "documentation/BackgroundAssets/baappextensioninfo/restrictedessentialdownloadsizeremaining-5r8v0.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baappextensioninfo/restricteddownloadsizeremaining-4hea4.json": {
       "hash": "48859a36e2120933994e4c3d6557575e35e8126fee98e16f898b5fe8e4bca037",
-      "last_checked": "2026-04-28T07:30:09.939706",
+      "last_checked": "2026-05-01T07:41:35.921659",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"0afeafe708bb6b504f3732aec53bd22c\"",
       "file_path": "documentation/BackgroundAssets/baappextensioninfo/restricteddownloadsizeremaining-4hea4.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/created.json": {
       "hash": "831f0ac9f2000b017832cc39d8c2c6dba1431416d2afc2bfaf5d7890527c3a75",
-      "last_checked": "2026-04-28T07:30:10.502918",
+      "last_checked": "2026-05-01T07:41:37.064447",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"632b20328c769a04b63f21bdca6161a7\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/created.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/waiting.json": {
       "hash": "523748a0bc4e26483a1ce35a506607425c46dc5953e5eecde252a9ce1d941f67",
-      "last_checked": "2026-04-28T07:30:10.644474",
+      "last_checked": "2026-05-01T07:41:37.243536",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e05d615cb6ca57913ea98738b44d0f76\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/waiting.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/downloading.json": {
       "hash": "604679e92c2ef4c461ed02a4b0fa9c7c7e07fe824d8a20b1e86ff0b6827e00b3",
-      "last_checked": "2026-04-28T07:30:10.729317",
+      "last_checked": "2026-05-01T07:41:37.419976",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d19403a61d211dab1a9e1fbf2b7a48c6\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/downloading.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/finished.json": {
       "hash": "6aca3e80b2905ec578616ea930906c0ebb1f522f031009c321ef430207ee6d62",
-      "last_checked": "2026-04-28T07:30:10.811780",
+      "last_checked": "2026-05-01T07:41:37.574472",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"905565f9f816f652de3349053f00e658\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/finished.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/failed.json": {
       "hash": "35c78326067b04a22497a13552b25ecfff123a6a1edfe0f7deab5ca34c196311",
-      "last_checked": "2026-04-28T07:30:10.892113",
+      "last_checked": "2026-05-01T07:41:37.770019",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"e1c9f09ff92f0c27c5273751174decbd\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/failed.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/state-swift.enum/init(rawvalue:).json": {
       "hash": "baba80a709590e61f9bdea9c37a908133fad7647cd64c871dc9dd262d9c71b83",
-      "last_checked": "2026-04-28T07:30:10.961752",
+      "last_checked": "2026-05-01T07:41:37.925751",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"6045477b9e41152287360e4f8f6869b1\"",
       "file_path": "documentation/BackgroundAssets/badownload/state-swift.enum/init-rawvalue.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate/began(_:).json": {
       "hash": "fac33c98972dfd2facc3cad484ffff9f0749307ad145fe757b8cd333abfd0470",
-      "last_checked": "2026-04-28T07:30:08.327081",
+      "last_checked": "2026-05-01T07:41:33.231685",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"8212270962bb28495850fb9e72f693c0\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate/began.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate/downloading(_:_:).json": {
       "hash": "817eb33df1afb7a34daee176edbb2e54e4f396b13afbef38d3aceb1a136b71d9",
-      "last_checked": "2026-04-28T07:30:08.434294",
+      "last_checked": "2026-05-01T07:41:33.385777",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"4b98d37b4e8b2c89d36228bda8836d49\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate/downloading.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate/failed(_:_:).json": {
       "hash": "1bbcb04f6a51eadaf0ff824fad35d877f4ebd1c691fc02d72b5e34baf058a524",
-      "last_checked": "2026-04-28T07:30:08.635198",
+      "last_checked": "2026-05-01T07:41:33.899636",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"53b1f4b35986b9fa91ee214474a203dd\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate/failed.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate/finished(_:).json": {
       "hash": "047cc6d8762fc04c0569ac80a1428ae798c995d32c0224369bb5389757542fea",
-      "last_checked": "2026-04-28T07:30:08.585080",
+      "last_checked": "2026-05-01T07:41:33.722064",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"0102fda7e029fe065caf4b04b743f859\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate/finished.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/downloadstatusupdate/paused(_:).json": {
       "hash": "4a1544e5a36498c623f08ed122bb70f5749f59b42bc74a24465cd259bf9fafa1",
-      "last_checked": "2026-04-28T07:30:08.509439",
+      "last_checked": "2026-05-01T07:41:33.559019",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"c78edff3672f68af3fc7177c448253f0\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/downloadstatusupdate/paused.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/downloadavailable.json": {
       "hash": "14569b2841baa09eef7687a70008faa73515bf1f7e8107e2692878756f903831",
-      "last_checked": "2026-04-28T07:30:07.770560",
+      "last_checked": "2026-05-01T07:41:32.038991",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ede271194297416795e3ca65e03387ca\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/downloadavailable.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/downloaded.json": {
       "hash": "74ea84ee15deaa22ec827c8953f15d6b6303f04c9b637d56208479ae9570f43c",
-      "last_checked": "2026-04-28T07:30:07.909388",
+      "last_checked": "2026-05-01T07:41:32.392790",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"a99d3653cf283b5073fa2fa7156920cc\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/downloaded.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/downloading.json": {
       "hash": "1b275b07f271af80b4a66661727c21180ba43337b830cac146f9acff05e419b0",
-      "last_checked": "2026-04-28T07:30:07.841743",
+      "last_checked": "2026-05-01T07:41:32.214781",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"47afd075fa80042e5189c3a61da2f5cd\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/downloading.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/obsolete.json": {
       "hash": "32ba08984fdc11d53993091540148c39c40f29eac807122955bb1b68b27cfd27",
-      "last_checked": "2026-04-28T07:30:08.122651",
+      "last_checked": "2026-05-01T07:41:32.901947",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"7b69d0e109f6cbd89d13fa2ef1522a5e\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/obsolete.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/outofdate.json": {
       "hash": "fa78e021634b4e0d3a09c5b9a6f7311aba4a7e8e0f18b7613302a744b1c5b2fb",
-      "last_checked": "2026-04-28T07:30:07.993195",
+      "last_checked": "2026-05-01T07:41:32.733405",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"5821146170aa2316be93a7843bd0d621\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/outofdate.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/uptodate.json": {
       "hash": "4c5904ac982ab475c411606f66f2229a54513467fc10a447e70210e5e88652d9",
-      "last_checked": "2026-04-28T07:30:07.976758",
+      "last_checked": "2026-05-01T07:41:32.558438",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"533e33a2cf64e7696cc920485d49fbca\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/uptodate.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpack/status/updateavailable.json": {
       "hash": "a1b5bda19845c64ec813f32be56f2ec1833d4c16f2f4799dfc2fe23434f1faac",
-      "last_checked": "2026-04-28T07:30:08.246215",
+      "last_checked": "2026-05-01T07:41:33.063147",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"d2eb754d7b7ab45b520e79939b7e7041\"",
       "file_path": "documentation/BackgroundAssets/assetpack/status/updateavailable.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/testing-asset-packs-locally.json": {
       "hash": "ec614c67ce050b0d9c398564e0f2ef94bd6553fe1639dcad8ddb3f8a7fa0c791",
-      "last_checked": "2026-04-28T07:29:59.139692",
+      "last_checked": "2026-05-01T07:41:13.328714",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"5e22d5b1f92e2a7af17d216e75b6ff23\"",
       "file_path": "documentation/BackgroundAssets/testing-asset-packs-locally.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/creating-managed-asset-packs.json": {
       "hash": "4cde906826421c75f26012c86c583656c4b52127ed0e81961770f44807ae9ccf",
-      "last_checked": "2026-04-28T07:29:58.938990",
+      "last_checked": "2026-05-01T07:41:12.841348",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"dcab8be09f3f24ff756558f240e088cb\"",
       "file_path": "documentation/BackgroundAssets/creating-managed-asset-packs.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/downloading-apple-hosted-asset-packs.json": {
       "hash": "07588a2b10665df7d2d7c826a989e0f4b83780c7cf0219807ac1777a168bcbcb",
-      "last_checked": "2026-04-28T07:29:59.018508",
+      "last_checked": "2026-05-01T07:41:13.023040",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"98de3bf323b1129bd12bdb2fcbbc0c28\"",
       "file_path": "documentation/BackgroundAssets/downloading-apple-hosted-asset-packs.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/configuring-an-unmanaged-background-assets-project.json": {
       "hash": "fe118652e98acb09db9889a23353eff81c59e6d25bef1c77f374425da4b720ee",
-      "last_checked": "2026-04-28T07:29:59.684924",
+      "last_checked": "2026-05-01T07:41:14.784016",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ddd4fe97c767ec31f1a9cd527b6d9351\"",
       "file_path": "documentation/BackgroundAssets/configuring-an-unmanaged-background-assets-project.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/assetpackisavailablelocally(withid:).json": {
       "hash": "4322c541f3a274bca0e6dc4454846dc54718642bad097111191b2afdff9d6b4e",
-      "last_checked": "2026-04-28T07:30:02.669811",
+      "last_checked": "2026-05-01T07:41:21.142447",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"52545eccce86824779aac2deff151ba0\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/assetpackisavailablelocally-withid.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/ensurelocalavailability(of:requirelatestversion:).json": {
       "hash": "305fa5c36d422eae803ac8713e1a6c7f65a708b856c3974084d2be9c1307603f",
-      "last_checked": "2026-04-28T07:30:02.744650",
+      "last_checked": "2026-05-01T07:41:21.309914",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"b6de5e3997073f1d8ee7a259aa00e191\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/ensurelocalavailability-ofrequirelatestversion.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/localstatus(ofassetpackwithid:).json": {
       "hash": "41c03900608c1faeae13e7c3b632dd2f341aca8970cb759471cd0900f46330a2",
-      "last_checked": "2026-04-28T07:30:02.825794",
+      "last_checked": "2026-05-01T07:41:21.469214",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ccd63a381e2394e65e9f8b599093743c\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/localstatus-ofassetpackwithid.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/assetpackmanager/status(relativeto:).json": {
       "hash": "8f42541da7054d950419906eb4d4f8e75625c9fa6e4ba0007b23540c32cbbb7b",
-      "last_checked": "2026-04-28T07:30:02.898833",
+      "last_checked": "2026-05-01T07:41:21.648208",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"f8d21da3eeff8f4ca0e01168997585e9\"",
       "file_path": "documentation/BackgroundAssets/assetpackmanager/status-relativeto.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/badownload/init(coder:).json": {
       "hash": "499f003a77c737b573a5228ba71d2d050a5255376312f1a0a35658eb97987649",
-      "last_checked": "2026-04-28T07:30:05.962526",
+      "last_checked": "2026-05-01T07:41:28.147989",
       "status": "new",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"baa58fc52e2a86e1736fc1e845f5a721\"",
       "file_path": "documentation/BackgroundAssets/badownload/init-coder.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/backgroundassets/baappextensioninfo/init(coder:).json": {
       "hash": "dc9d67985a31fb37bc331fd29be10e14f747ea9bb521b8e110760a9dcafe2211",
-      "last_checked": "2026-04-28T07:30:10.020291",
+      "last_checked": "2026-05-01T07:41:36.093241",
       "status": "new",
-      "session_id": "2026-04-28T07:29:58.323562",
+      "session_id": "2026-05-01T07:41:12.062870",
       "etag": "W/\"ed479830a9bd25d79fb6e269e69876dc\"",
       "file_path": "documentation/BackgroundAssets/baappextensioninfo/init-coder.md"
     },

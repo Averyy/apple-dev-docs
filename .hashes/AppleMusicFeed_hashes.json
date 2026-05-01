@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:56.687227",
+    "last_updated": "2026-05-01T07:42:45.799963",
     "total_pages": 80,
-    "session_id": "2026-04-28T07:30:52.796712"
+    "session_id": "2026-05-01T07:42:36.342692"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppleMusicFeed.json": {
       "hash": "61427d1ee4b54af9293051ef31356892ceea0829def9b8057586996d30da34fc",
-      "last_checked": "2026-04-28T07:30:53.093172",
+      "last_checked": "2026-05-01T07:42:36.577882",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"7b9fb1b0398ad0d6aa107e66060f8a23\"",
       "file_path": "documentation/AppleMusicFeed/AppleMusicFeed.md"
     },
     "https://developer.apple.com/documentation/AppleMusicFeed": {
       "hash": "61427d1ee4b54af9293051ef31356892ceea0829def9b8057586996d30da34fc",
-      "last_checked": "2026-04-28T07:30:53.006117",
+      "last_checked": "2026-05-01T07:42:36.471340",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"7b9fb1b0398ad0d6aa107e66060f8a23\"",
       "file_path": "documentation/AppleMusicFeed/AppleMusicFeed.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/generating-developer-tokens.json": {
       "hash": "f9b03436f4dc14bb632e079c1dc0bd77ff094ae272947c80fe078f6eb1409cc7",
-      "last_checked": "2026-04-28T07:30:53.300277",
+      "last_checked": "2026-05-01T07:42:36.991600",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"4ea8ff3e6ed63bf69ef81818489ecd48\"",
       "file_path": "documentation/AppleMusicFeed/generating-developer-tokens.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/requesting-a-feed-export.json": {
       "hash": "3d62d95503bd52b1ff002e51bbd4f3ff76965a5919e403875487069dfc4ed6e9",
-      "last_checked": "2026-04-28T07:30:53.440354",
+      "last_checked": "2026-05-01T07:42:37.177687",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"997f527d703443b66c4ca14f57ef9d16\"",
       "file_path": "documentation/AppleMusicFeed/requesting-a-feed-export.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/interpreting-responses.json": {
       "hash": "89a300f450ad1d41075aee02f7c51a0f20cba7899b8038c908cd2cfa44bbc39b",
-      "last_checked": "2026-04-28T07:30:53.512820",
+      "last_checked": "2026-05-01T07:42:37.343163",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"67c12264cf329ea0d88d011e79f097ce\"",
       "file_path": "documentation/AppleMusicFeed/interpreting-responses.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album.json": {
       "hash": "854b2c74219f8d135f6b9f605f46cd3ef1abb9f760fb660de0a684a608ee2f8a",
-      "last_checked": "2026-04-28T07:30:53.632917",
+      "last_checked": "2026-05-01T07:42:37.420381",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"6319f2ad3b76593f91cc0f74377ce210\"",
       "file_path": "documentation/AppleMusicFeed/album.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song.json": {
       "hash": "c77009b23ae7394ee4a5c04a153794f5cd6999d47bc25b8dea66e92765a14bd0",
-      "last_checked": "2026-04-28T07:30:53.754963",
+      "last_checked": "2026-05-01T07:42:37.833852",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"0b1dc5aba9e08cf367131a1c28da0255\"",
       "file_path": "documentation/AppleMusicFeed/song.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist.json": {
       "hash": "6a19a9df29162dec52ab4bee14f9763a6929c3cfe301eeba98a2b9368e433660",
-      "last_checked": "2026-04-28T07:30:53.824663",
+      "last_checked": "2026-05-01T07:42:38.135516",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"b29153b5a009e294494cf943b63524a9\"",
       "file_path": "documentation/AppleMusicFeed/artist.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartalbums.json": {
       "hash": "f652b4b428f4ce7641971872ec2f8583985c00764f8e12a30644931e2c28379e",
-      "last_checked": "2026-04-28T07:30:53.992989",
+      "last_checked": "2026-05-01T07:42:38.426234",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"dfaa07ed67567418cd4b6d883f45ec9d\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs.json": {
       "hash": "b743963bbd7c8ba875ea9bc3f5641fcaf2b54b8a8e7bae7d1e9b5b32d550b0bc",
-      "last_checked": "2026-04-28T07:30:54.067483",
+      "last_checked": "2026-05-01T07:42:38.722433",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"2577b862cb748884c086130b931a654a\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/artistrole.json": {
       "hash": "b0a978d01219e1a5de885a772c19f64f8ef77788de0ea24c53e7e7f37ad98039",
-      "last_checked": "2026-04-28T07:30:54.191179",
+      "last_checked": "2026-05-01T07:42:39.042796",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"c23d9a3e932b6ef886f325b876215f7f\"",
       "file_path": "documentation/AppleMusicFeed/album/artistrole.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/artworks-data.dictionary.json": {
       "hash": "b7d55c441c8cb8f97aae31b9d53d1af7ed768dde3daae85f1a780146e68c75fe",
-      "last_checked": "2026-04-28T07:30:54.282723",
+      "last_checked": "2026-05-01T07:42:39.357671",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"c761bbe935e89e5ca35e49a12d479d88\"",
       "file_path": "documentation/AppleMusicFeed/album/artworks-datadictionary.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/genre.json": {
       "hash": "39d08190b57f1952656ab3e9c6757dbd853678a7e2c60c6d5bd84cce990c757a",
-      "last_checked": "2026-04-28T07:30:54.355388",
+      "last_checked": "2026-05-01T07:42:39.660217",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"23129a1c80080313a7580e108575bcf5\"",
       "file_path": "documentation/AppleMusicFeed/album/genre.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/name-data.dictionary.json": {
       "hash": "871004a625621c1e584424640bad168d365dff8d5dba18b15cb30438c257c48c",
-      "last_checked": "2026-04-28T07:30:54.475652",
+      "last_checked": "2026-05-01T07:42:39.981585",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"0d5a33ee223dc057963c07c523dcad1b\"",
       "file_path": "documentation/AppleMusicFeed/album/name-datadictionary.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/namepronunciation-data.dictionary.json": {
       "hash": "c962f63fce28182607ed5034db9a6e81ce3faa85ca923983bbea55b99ab9383d",
-      "last_checked": "2026-04-28T07:30:54.547395",
+      "last_checked": "2026-05-01T07:42:40.154305",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"6cd7860d368fe78973760201da28e0d4\"",
       "file_path": "documentation/AppleMusicFeed/album/namepronunciation-datadictionary.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/prices-data.dictionary.json": {
       "hash": "07c41b857522b03f2b1f9ea7ca13d8ee074928ca2d8ceaee9ca9eafeee2dc641",
-      "last_checked": "2026-04-28T07:30:54.638243",
+      "last_checked": "2026-05-01T07:42:40.444996",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"6c99f5e18486bec10cec55d1a59b8747\"",
       "file_path": "documentation/AppleMusicFeed/album/prices-datadictionary.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/recordlabel.json": {
       "hash": "f6e3beb980b5d8656ec191790967a91f71f1ce3a13883e6e2738bceaa3fb593d",
-      "last_checked": "2026-04-28T07:30:54.762139",
+      "last_checked": "2026-05-01T07:42:40.603901",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"f024d3e7b0929bec06d8b79975345a75\"",
       "file_path": "documentation/AppleMusicFeed/album/recordlabel.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/relatedartist.json": {
       "hash": "5577e550fe7182c70bf82d0a808da812929aa64920c110c954f4e168334fbcb2",
-      "last_checked": "2026-04-28T07:30:54.830610",
+      "last_checked": "2026-05-01T07:42:40.920490",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"f83602431018f60e51adf4b6dd1af074\"",
       "file_path": "documentation/AppleMusicFeed/album/relatedartist.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/relatedsong.json": {
       "hash": "941163c5ac53f51e4b44d557e2f27fd9c157945ca4d17b40d3923671ec174073",
-      "last_checked": "2026-04-28T07:30:54.903561",
+      "last_checked": "2026-05-01T07:42:41.221565",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"5ffc87621d2ecb1bfdbe0581b395fda3\"",
       "file_path": "documentation/AppleMusicFeed/album/relatedsong.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/releasedate-data.dictionary.json": {
       "hash": "4f0beac44e79417c1888e46cc84fc1da5f8249886ea88f81ffef41b8e822e6b1",
-      "last_checked": "2026-04-28T07:30:54.992225",
+      "last_checked": "2026-05-01T07:42:41.383832",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"e6bfe749fdfac34f316e954f1351ad7f\"",
       "file_path": "documentation/AppleMusicFeed/album/releasedate-datadictionary.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/titleversion-data.dictionary.json": {
       "hash": "50a4845eb3f2c7e36d872f37f13af05f8914e58a9b653200cd6f401337d3b1de",
-      "last_checked": "2026-04-28T07:30:55.060093",
+      "last_checked": "2026-05-01T07:42:41.538837",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"2ab14e9f33a457d1e0e617f212fc7746\"",
       "file_path": "documentation/AppleMusicFeed/album/titleversion-datadictionary.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/titleversionpronunciation-data.dictionary.json": {
       "hash": "fe04a1dde283bb4118a1a8d2f8aa274ed4a4d2bf4dec5d06f6817e1638c841ef",
-      "last_checked": "2026-04-28T07:30:55.137991",
+      "last_checked": "2026-05-01T07:42:41.855863",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"3d6fba6df146ec5cea28226b429433e3\"",
       "file_path": "documentation/AppleMusicFeed/album/titleversionpronunciation-datadictionary.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/artistrole.json": {
       "hash": "d96f02fb4d2757552ef9b36d99c90d017b0af708a97799f74f9fb8151cf354b9",
-      "last_checked": "2026-04-28T07:30:55.209131",
+      "last_checked": "2026-05-01T07:42:42.011818",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"fcbb3b18b3ad573e3816caf98ad04eba\"",
       "file_path": "documentation/AppleMusicFeed/song/artistrole.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/genre.json": {
       "hash": "eed171a1f7b8912156c944cbb9c977d067d825c7d749e13109798cecd248022c",
-      "last_checked": "2026-04-28T07:30:55.280853",
+      "last_checked": "2026-05-01T07:42:42.330195",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"05833eb24fd0800b65177bf03a7fd6a5\"",
       "file_path": "documentation/AppleMusicFeed/song/genre.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/name-data.dictionary.json": {
       "hash": "d19bffc98928c3b15dee8163b365cb305197c96c5467dce99bcd648f96026ef0",
-      "last_checked": "2026-04-28T07:30:55.356225",
+      "last_checked": "2026-05-01T07:42:42.498823",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"1033222ed9d68b902ae1ee8646f46ced\"",
       "file_path": "documentation/AppleMusicFeed/song/name-datadictionary.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/namepronunciation-data.dictionary.json": {
       "hash": "1937bc7f1aad1f82371ef3970f67680b538f2d8daaab836a3d24b8bcba3d425c",
-      "last_checked": "2026-04-28T07:30:55.425438",
+      "last_checked": "2026-05-01T07:42:42.661688",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"7c8b47408673c4f5e5309f670a5cc6a8\"",
       "file_path": "documentation/AppleMusicFeed/song/namepronunciation-datadictionary.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/prices-data.dictionary.json": {
       "hash": "55b36af4514aaf3f8c59b01c67746243572b549884a735d80706e1cbc71d7b15",
-      "last_checked": "2026-04-28T07:30:55.507641",
+      "last_checked": "2026-05-01T07:42:42.975264",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"4f3f12921982eb2dc1d41260c4991073\"",
       "file_path": "documentation/AppleMusicFeed/song/prices-datadictionary.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/relatedalbum.json": {
       "hash": "77163e91b9e8f022850fbf3efb7b442b0679a8e98f20ef394414c0b0333d8253",
-      "last_checked": "2026-04-28T07:30:55.575528",
+      "last_checked": "2026-05-01T07:42:43.138143",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"dad447d34be2ed9fe63b45734da856a1\"",
       "file_path": "documentation/AppleMusicFeed/song/relatedalbum.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/relatedartist.json": {
       "hash": "38fb1c62b31a811726d2581319d1cdc490ead7cc31bbf92288fc55ef3e369cbe",
-      "last_checked": "2026-04-28T07:30:55.648972",
+      "last_checked": "2026-05-01T07:42:43.442106",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"8a3bcc35767009bf0981839ec1553a6f\"",
       "file_path": "documentation/AppleMusicFeed/song/relatedartist.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/releasedate-data.dictionary.json": {
       "hash": "a9dbd5de7dd4d2961046f1e15d321ef3ec17cd74ab3081a3fbde6391a4c1302b",
-      "last_checked": "2026-04-28T07:30:55.720615",
+      "last_checked": "2026-05-01T07:42:43.733008",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"d7f293e04168c5c3bbf0d9b21119b897\"",
       "file_path": "documentation/AppleMusicFeed/song/releasedate-datadictionary.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/titleversion-data.dictionary.json": {
       "hash": "5e0eabe31bc3b25a1f87041d9672f91d0caaef8e9b59f84c12262fa528671f8c",
-      "last_checked": "2026-04-28T07:30:55.848674",
+      "last_checked": "2026-05-01T07:42:43.911675",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"cd71a47b3bca0456c31cf54be53c36be\"",
       "file_path": "documentation/AppleMusicFeed/song/titleversion-datadictionary.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/titleversionpronunciation-data.dictionary.json": {
       "hash": "0c973340b267c8a57c1492c809cea9a969c8e844fe79a5cf06be98d956629e9c",
-      "last_checked": "2026-04-28T07:30:55.941825",
+      "last_checked": "2026-05-01T07:42:44.085492",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"736783ef33ce8b654ad033e84ea12c7e\"",
       "file_path": "documentation/AppleMusicFeed/song/titleversionpronunciation-datadictionary.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/name-data.dictionary.json": {
       "hash": "3233886415ce6194308cb08ee92636b291addd279695cd842b94d53a1b4b1e75",
-      "last_checked": "2026-04-28T07:30:56.008171",
+      "last_checked": "2026-05-01T07:42:44.387884",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"a27e1f9fc54e90aac9c572ffd140fc57\"",
       "file_path": "documentation/AppleMusicFeed/artist/name-datadictionary.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/artist/namepronunciation-data.dictionary.json": {
       "hash": "678ede0ccf04d182768f3d47fd8318b19d1b11e33f42f05b75be6bbbc154b3e7",
-      "last_checked": "2026-04-28T07:30:56.126800",
+      "last_checked": "2026-05-01T07:42:44.561397",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"a39b896f972c53d5e07e86e97adc0ee6\"",
       "file_path": "documentation/AppleMusicFeed/artist/namepronunciation-datadictionary.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartalbums/genre-data.dictionary.json": {
       "hash": "e1a9aea83b0e74cb84abe0db4e38e186db15f5be6398244902555fecac2492aa",
-      "last_checked": "2026-04-28T07:30:56.193639",
+      "last_checked": "2026-05-01T07:42:44.725241",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"1dec45cd87bc06ca24fa8740470af72a\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/genre-datadictionary.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartalbums/rankings-data.dictionary.json": {
       "hash": "2a226c16f3863fc57b51d785a1cb17ef188c1ffe73f9cf012bc07cd67a585bd0",
-      "last_checked": "2026-04-28T07:30:56.263110",
+      "last_checked": "2026-05-01T07:42:44.894512",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"10e17a0bab4cc1be2e0004f4cdc9bfd3\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartalbums/rankings-datadictionary.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs/genre-data.dictionary.json": {
       "hash": "3bc4d3dfd9115f89aad984232e43783ab21a85425d1bfeaefef78e92186069b1",
-      "last_checked": "2026-04-28T07:30:56.332919",
+      "last_checked": "2026-05-01T07:42:45.067977",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"765316cf86cee33dc9e93141c75d1846\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/genre-datadictionary.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/popularitytopchartsongs/rankings-data.dictionary.json": {
       "hash": "ff3230429c34b3e73d7b447b1fba41d209e6f3005b1c4e62c664de55c016c3ed",
-      "last_checked": "2026-04-28T07:30:56.428550",
+      "last_checked": "2026-05-01T07:42:45.270779",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"608f7eb04a257c637b5843660a6fda1c\"",
       "file_path": "documentation/AppleMusicFeed/popularitytopchartsongs/rankings-datadictionary.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/artworks-data.dictionary/artwork-data.dictionary.json": {
       "hash": "ba6a04f780db86fbbd7096903744a807bc52bc64cf1d29671fddb81e365005ed",
-      "last_checked": "2026-04-28T07:30:56.539045",
+      "last_checked": "2026-05-01T07:42:45.458166",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"dbf4cc08076992314d1d2fee69fe2a69\"",
       "file_path": "documentation/AppleMusicFeed/album/artworks-data.dictionary/artwork-datadictionary.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/album/prices-data.dictionary/price.json": {
       "hash": "a6c13f983da8b943b9f3337121ea0309b3352d7064b665f35d18cc3162f8e607",
-      "last_checked": "2026-04-28T07:30:56.615943",
+      "last_checked": "2026-05-01T07:42:45.623074",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"724932af5508b46ce11aef23179ddd00\"",
       "file_path": "documentation/AppleMusicFeed/album/prices-data.dictionary/price.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemusicfeed/song/prices-data.dictionary/price.json": {
       "hash": "2e83e188a162c440835eed368970f132549d5c185ae12058ea5b6f128cfea37e",
-      "last_checked": "2026-04-28T07:30:56.686150",
+      "last_checked": "2026-05-01T07:42:45.796507",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:52.796712",
+      "session_id": "2026-05-01T07:42:36.342692",
       "etag": "W/\"602f927220e91b7bf9e1ac53a972c711\"",
       "file_path": "documentation/AppleMusicFeed/song/prices-data.dictionary/price.md"
     },

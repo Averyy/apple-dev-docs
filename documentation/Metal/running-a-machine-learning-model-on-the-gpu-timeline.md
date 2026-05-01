@@ -18,6 +18,8 @@ The app multiplies two matrices on both the CPU and the Metal device, then repor
 
 > **Note**: The sample’s model is a relatively simple network that multiplies two matrices, a task which most apps can run more efficiently with the CPU or GPU shader code.
 
+For an example of multiplying matrices directly in a GPU kernel function with inline tensor operations, see [`Running inline ML operations in a shader with Metal 4`](running-inline-ml-operations-in-a-shader-with-metal-4.md).
+
 When you run the app, it:
 
 1. Creates Metal resources, most of which are reusable

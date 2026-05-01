@@ -76,7 +76,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 - [App Store Discovery and Engagement](app-store-discovery-and-engagement.md)
   Analyze how users interact with your app on the App Store.
 - [App Store Retention Messaging](app-store-retention-messaging.md)
-  Analyze how users interact with your app on the App Store.
+  Analyze how users interact with retention messages during the subscription cancellation flow.
 
 
 ---

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:57.507030",
+    "last_updated": "2026-05-01T07:42:43.085909",
     "total_pages": 84,
-    "session_id": "2026-04-28T07:30:53.679805"
+    "session_id": "2026-05-01T07:42:34.164338"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Collaboration.json": {
       "hash": "0d7de88d27de8deaf50ef82fe61ae3ea7c8ce6deed24d78b31b0de77c1c69404",
-      "last_checked": "2026-04-28T07:30:54.000457",
+      "last_checked": "2026-05-01T07:42:34.558168",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"a280f766c3fbf75ebc77438b797f7dcb\"",
       "file_path": "documentation/Collaboration/Collaboration.md"
     },
     "https://developer.apple.com/documentation/Collaboration": {
       "hash": "0d7de88d27de8deaf50ef82fe61ae3ea7c8ce6deed24d78b31b0de77c1c69404",
-      "last_checked": "2026-04-28T07:30:53.918937",
+      "last_checked": "2026-05-01T07:42:34.438095",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"a280f766c3fbf75ebc77438b797f7dcb\"",
       "file_path": "documentation/Collaboration/Collaboration.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbgroupidentity.json": {
       "hash": "15fd537cdd21d81e15b479394ba3ba56673166be0db0728874e1a448f9cf3570",
-      "last_checked": "2026-04-28T07:30:54.291037",
+      "last_checked": "2026-05-01T07:42:34.813917",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"d7ca37a220156a2b6093621b18ef38a3\"",
       "file_path": "documentation/Collaboration/cbgroupidentity.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity.json": {
       "hash": "78073da51a6fd2f6b05073cc7a864d3a04448c87a5fe5849f06da13bc753b212",
-      "last_checked": "2026-04-28T07:30:54.449193",
+      "last_checked": "2026-05-01T07:42:34.943964",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"b8a237b211bc8289e798c7556dcdcc48\"",
       "file_path": "documentation/Collaboration/cbidentity.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentityauthority.json": {
       "hash": "ad93eda8134ce272175723e07ca07aed435a812bf14ee680481c73814bf777f3",
-      "last_checked": "2026-04-28T07:30:54.527113",
+      "last_checked": "2026-05-01T07:42:35.271673",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"413f819a78a7a1823b3f90f5ed58f1ce\"",
       "file_path": "documentation/Collaboration/cbidentityauthority.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker.json": {
       "hash": "323f291dce0186fa7986f31f9cb2133d5fd02484b78bfb5a5bbf74bddea0cde5",
-      "last_checked": "2026-04-28T07:30:54.604039",
+      "last_checked": "2026-05-01T07:42:35.433340",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"ffeca1522358091cacb1f6bb2d747423\"",
       "file_path": "documentation/Collaboration/cbidentitypicker.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity.json": {
       "hash": "2e5b06b6e5014f43b22d2f0459fdaeee15be71316d391ffaf24ff7efe79ee462",
-      "last_checked": "2026-04-28T07:30:54.726787",
+      "last_checked": "2026-05-01T07:42:35.605258",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"b2d3c704e1172793da356b60e3a7dfe2\"",
       "file_path": "documentation/Collaboration/cbuseridentity.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbgroupidentity/init(posixgid:authority:).json": {
       "hash": "8205bb91c93b0dea2d943e166c540a6a0b6740c3aef189d5e304a33832a6bb53",
-      "last_checked": "2026-04-28T07:30:54.844605",
+      "last_checked": "2026-05-01T07:42:35.763495",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"b7035df262429c1788e2a38c7d530d3f\"",
       "file_path": "documentation/Collaboration/cbgroupidentity/init-posixgidauthority.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbgroupidentity/posixgid.json": {
       "hash": "7b1dcc6be5acf9ff910e05f843c400f7f1bae46563f133fe0bdf58fc983010d8",
-      "last_checked": "2026-04-28T07:30:54.914685",
+      "last_checked": "2026-05-01T07:42:35.894839",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"2063ebf4eb5fa4eec26e7babeafd3cb5\"",
       "file_path": "documentation/Collaboration/cbgroupidentity/posixgid.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbgroupidentity/memberidentities.json": {
       "hash": "e49324b2f24208360eb8d3ed21b5262d472fecf1d1881812c1e6ba449ab87801",
-      "last_checked": "2026-04-28T07:30:54.984342",
+      "last_checked": "2026-05-01T07:42:36.065448",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"1bf6c58b604f88efc438e4fe48f55827\"",
       "file_path": "documentation/Collaboration/cbgroupidentity/memberidentities.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(name:authority:).json": {
       "hash": "47bfc67791d803557ddac25bfd856c438eb64389fec1204330c4a6b334c21831",
-      "last_checked": "2026-04-28T07:30:55.054496",
+      "last_checked": "2026-05-01T07:42:36.249274",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"2851c558cfd69badeffa6b6ef684dcee\"",
       "file_path": "documentation/Collaboration/cbidentity/init-nameauthority.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(persistentreference:).json": {
       "hash": "415526abb2e57414afba6844a0cad4c1ef86e0978c3ceab52b95f9df5e762632",
-      "last_checked": "2026-04-28T07:30:55.125684",
+      "last_checked": "2026-05-01T07:42:36.410475",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"01721e5e47760d712fc308dc44ef3817\"",
       "file_path": "documentation/Collaboration/cbidentity/init-persistentreference.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/aliases.json": {
       "hash": "90343fa3da58b3621b179a9cfa7fea6cfc57de6eba6decabd1abd8d98d678b17",
-      "last_checked": "2026-04-28T07:30:55.312425",
+      "last_checked": "2026-05-01T07:42:36.695746",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"7299f1edd0b4d7baf260ef0b0a17fdd2\"",
       "file_path": "documentation/Collaboration/cbidentity/aliases.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/authority.json": {
       "hash": "d4911fc9158270db8af79de75cb2d002c3ca2d9f2ff918d652c4d501fc6559a6",
-      "last_checked": "2026-04-28T07:30:55.379093",
+      "last_checked": "2026-05-01T07:42:36.867827",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"e7b8bf53838ab54674a35455f5af7454\"",
       "file_path": "documentation/Collaboration/cbidentity/authority.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/emailaddress.json": {
       "hash": "56298d000d9e029f8667e1a4f1084451b04aa3b10bd3f7a1cae86fa73e022ab8",
-      "last_checked": "2026-04-28T07:30:55.450160",
+      "last_checked": "2026-05-01T07:42:37.037265",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"d46bacccd3d3a3f508fb863849adc5d1\"",
       "file_path": "documentation/Collaboration/cbidentity/emailaddress.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/fullname.json": {
       "hash": "f12583329f14c132fc7cc9365b17cfd3f935946da13da099caee591509d339d7",
-      "last_checked": "2026-04-28T07:30:55.523661",
+      "last_checked": "2026-05-01T07:42:37.168830",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"cb2582dfc769535d350d0c72cbc9d43f\"",
       "file_path": "documentation/Collaboration/cbidentity/fullname.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/image.json": {
       "hash": "f59f892677365dce813aaadb7d9bd57e50b1dfabd67e3c32808fa9e30878c412",
-      "last_checked": "2026-04-28T07:30:55.589167",
+      "last_checked": "2026-05-01T07:42:37.305877",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"7c326cc5bd435f3c88da72cdfb2abf00\"",
       "file_path": "documentation/Collaboration/cbidentity/image.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/ishidden.json": {
       "hash": "806011359b74c8d924dac4fc8e9c43cb01331e7541435fa03e43908a27ebf305",
-      "last_checked": "2026-04-28T07:30:55.662821",
+      "last_checked": "2026-05-01T07:42:37.469075",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"9aec2db5d3c382b306f894aa3fabf795\"",
       "file_path": "documentation/Collaboration/cbidentity/ishidden.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/ismember(ofgroup:).json": {
       "hash": "ed7c05f1beecdc2e7e742bdf1c9425bdb98d8a8849a41e5162750b8bc87646f9",
-      "last_checked": "2026-04-28T07:30:55.757330",
+      "last_checked": "2026-05-01T07:42:37.590403",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"f7d99d474aa40ca60ef663a9d18a0abb\"",
       "file_path": "documentation/Collaboration/cbidentity/ismember-ofgroup.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/posixname.json": {
       "hash": "aa0f3a03a3bb678bdda102b408d777f2b56423dc8f21b151feaae135074b3bd8",
-      "last_checked": "2026-04-28T07:30:55.844237",
+      "last_checked": "2026-05-01T07:42:37.890137",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"1f9d1fea6f00fe1b3baef2fea9ec3471\"",
       "file_path": "documentation/Collaboration/cbidentity/posixname.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/uuidstring.json": {
       "hash": "3c09140698fc91b8c28f0c54b0f93ad6bbff2a4d9212e824f7180b26933472a7",
-      "last_checked": "2026-04-28T07:30:55.921816",
+      "last_checked": "2026-05-01T07:42:38.187855",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"9f74841df587026e95061819e76565b1\"",
       "file_path": "documentation/Collaboration/cbidentity/uuidstring.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/persistentreference.json": {
       "hash": "4bcaa30ec7105c5a0f10a1e6b128a92a1721f5b9f44536fc21d2b0fb37b455a2",
-      "last_checked": "2026-04-28T07:30:55.990140",
+      "last_checked": "2026-05-01T07:42:38.507497",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"912d8ff03498947ede41ee7ba4dbf238\"",
       "file_path": "documentation/Collaboration/cbidentity/persistentreference.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(uniqueidentifier:authority:).json": {
       "hash": "e257aab142a9f430f34648a219814969b69469b84f42d72a068a3529dd2406a0",
-      "last_checked": "2026-04-28T07:30:56.197087",
+      "last_checked": "2026-05-01T07:42:39.161276",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"b10f353d3ecc83f0f7a84569fd317a71\"",
       "file_path": "documentation/Collaboration/cbidentity/init-uniqueidentifierauthority.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/uniqueidentifier.json": {
       "hash": "83e7cfb083453ec6d2182da0cb655ec613ca6e5aacce1f72baad700978e703b1",
-      "last_checked": "2026-04-28T07:30:56.267673",
+      "last_checked": "2026-05-01T07:42:39.474286",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"da66ee69c06d67ba68e2c07a88ab25cd\"",
       "file_path": "documentation/Collaboration/cbidentity/uniqueidentifier.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentityauthority/localizedname.json": {
       "hash": "e24d5780a10557477d3d2cd7d8a36c5d783287ae029fe915141f43361ac44a05",
-      "last_checked": "2026-04-28T07:30:56.349725",
+      "last_checked": "2026-05-01T07:42:39.779677",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"01f070c95ef138955b517bebad86ff67\"",
       "file_path": "documentation/Collaboration/cbidentityauthority/localizedname.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentityauthority/local().json": {
       "hash": "0e89de3b0c9caa3f278d517b529fb719b8b11f445f839cbfee43a99268fabf28",
-      "last_checked": "2026-04-28T07:30:56.431604",
+      "last_checked": "2026-05-01T07:42:39.957449",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"58caa542d169db09ef42bf0377829a41\"",
       "file_path": "documentation/Collaboration/cbidentityauthority/local.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentityauthority/managed().json": {
       "hash": "045c4b76ef0d3b45f9419561d6d586b5b634c9ab8ef88d6b8ff0a44a604f4148",
-      "last_checked": "2026-04-28T07:30:56.501543",
+      "last_checked": "2026-05-01T07:42:40.123203",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"09c0f413ff61d1042d51ed28011a3bc1\"",
       "file_path": "documentation/Collaboration/cbidentityauthority/managed.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentityauthority/default().json": {
       "hash": "556c1b8661057fd3bb33bc111a37b223cb356d42cef8fd183cbad4dee2e7e2bf",
-      "last_checked": "2026-04-28T07:30:56.572670",
+      "last_checked": "2026-05-01T07:42:40.443968",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"c820055c56b48c8bc133a8b4a69c040d\"",
       "file_path": "documentation/Collaboration/cbidentityauthority/default.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/runmodal(for:modaldelegate:didend:contextinfo:).json": {
       "hash": "dc9f3f859ff657702b7ef25bfb624a7688f45fc94a3883eb1c49cbe586adce4e",
-      "last_checked": "2026-04-28T07:30:56.648714",
+      "last_checked": "2026-05-01T07:42:40.767521",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"c347873a8602db8c02802420a065df1f\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/runmodal-formodaldelegatedidendcontextinfo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/runmodal(for:completionhandler:).json": {
       "hash": "8d1ad0c5d4e39bb694e8841faa8862151432484a5fb7d89c9022c84df2040d30",
-      "last_checked": "2026-04-28T07:30:56.735498",
+      "last_checked": "2026-05-01T07:42:40.946479",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"7fa45a3345ad935e8f9bd22953e660e6\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/runmodal-forcompletionhandler.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/runmodal().json": {
       "hash": "1de462ec7767946bdc2dd5b41e60b964289e17f5fec9b69a4dcc0f1f593f3e85",
-      "last_checked": "2026-04-28T07:30:56.809331",
+      "last_checked": "2026-05-01T07:42:41.139955",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"13c56fd9dab17f01dddd2e4bbb87a353\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/runmodal.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/identities.json": {
       "hash": "12c9863475724b55dcb50e2f9ec2359591e347a6be5c17a1054a1173d35bd980",
-      "last_checked": "2026-04-28T07:30:56.876981",
+      "last_checked": "2026-05-01T07:42:41.307844",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"378c8414046f74aa6d27384501db89c5\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/identities.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/title.json": {
       "hash": "7bcf0f6f8f11bc86499e408eb9a2ef7ceeb8fac2757a786f9da3f50d43056beb",
-      "last_checked": "2026-04-28T07:30:56.956263",
+      "last_checked": "2026-05-01T07:42:41.496387",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"1614a7e211b2946d0f5bed8d76bf6346\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/title.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentitypicker/allowsmultipleselection.json": {
       "hash": "e8c28898cec28890fe5b1ea54fd0eb033944ca5ccec46a675343a02eb421c78d",
-      "last_checked": "2026-04-28T07:30:57.108623",
+      "last_checked": "2026-05-01T07:42:41.789035",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"30336c098ae51b9192e02f8bc3749f1b\"",
       "file_path": "documentation/Collaboration/cbidentitypicker/allowsmultipleselection.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity/authenticate(withpassword:).json": {
       "hash": "32f93ac91e29d511dacd79cad7ca415960b521590cd7c6e016d303480c3f676e",
-      "last_checked": "2026-04-28T07:30:57.187671",
+      "last_checked": "2026-05-01T07:42:42.119850",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"bbcdf04c9f6c4b184677cade8c03928d\"",
       "file_path": "documentation/Collaboration/cbuseridentity/authenticate-withpassword.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity/certificate.json": {
       "hash": "670f505a1e674a75490c73a2f8fb557551d8d37425e7f112882a6c23bbdc62f5",
-      "last_checked": "2026-04-28T07:30:57.256653",
+      "last_checked": "2026-05-01T07:42:42.309781",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"bdf701dad4bb95ee6cd9101d56661f41\"",
       "file_path": "documentation/Collaboration/cbuseridentity/certificate.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity/isenabled.json": {
       "hash": "1871385c79cc2d454cb637c9262f0724c049729d3f3842cb7ad21aac7747ddbc",
-      "last_checked": "2026-04-28T07:30:57.372568",
+      "last_checked": "2026-05-01T07:42:42.490067",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"e59ed4b6222f2fad68df065e93aae9e8\"",
       "file_path": "documentation/Collaboration/cbuseridentity/isenabled.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity/posixuid.json": {
       "hash": "40335f1167014110d10faebc763f3afe757dc8bb0bcfc2a4e9e87976dc21cb19",
-      "last_checked": "2026-04-28T07:30:57.438765",
+      "last_checked": "2026-05-01T07:42:42.791666",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"49c1fe7e90ac9f1c6d927ada4d193daa\"",
       "file_path": "documentation/Collaboration/cbuseridentity/posixuid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbuseridentity/init(posixuid:authority:).json": {
       "hash": "545d7aba15afb29eaa6b4f8efa525772b838ec68591d1ad533f3ef49cbaea90d",
-      "last_checked": "2026-04-28T07:30:57.505757",
+      "last_checked": "2026-05-01T07:42:43.082859",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"da7ed0bc5ebee72a78607d12aad4efa5\"",
       "file_path": "documentation/Collaboration/cbuseridentity/init-posixuidauthority.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(uuidstring:authority:)-13vns.json": {
       "hash": "85bf3a945c0ccaa1ccd3c3bf0244213e52b9a405ef4d9b48ca4a0b69e976a136",
-      "last_checked": "2026-04-28T07:30:55.195432",
+      "last_checked": "2026-05-01T07:42:36.568208",
       "status": "new",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"726996ab0ca4b9d1a8aeb3593ed15bbf\"",
       "file_path": "documentation/Collaboration/cbidentity/init-uuidstringauthority-13vns.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(uuidstring:authority:)-7xuzv.json": {
       "hash": "87fbc61b6dd38cdf84ec6ed02069511fcb62341e58aafd3eb38b84f5e5f86f20",
-      "last_checked": "2026-04-28T07:30:56.057782",
+      "last_checked": "2026-05-01T07:42:38.684286",
       "status": "new",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"b5df981fad62c0f70b6f27be2cf82885\"",
       "file_path": "documentation/Collaboration/cbidentity/init-uuidstringauthority-7xuzv.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/collaboration/cbidentity/init(coder:).json": {
       "hash": "bd61b1f3b21a9d89327f7ef4c06eeabb47fa3a609fbcd51a113760766a26e76d",
-      "last_checked": "2026-04-28T07:30:56.128917",
+      "last_checked": "2026-05-01T07:42:38.857734",
       "status": "new",
-      "session_id": "2026-04-28T07:30:53.679805",
+      "session_id": "2026-05-01T07:42:34.164338",
       "etag": "W/\"55786351daf3c52bc1e548c1c3bcd6a6\"",
       "file_path": "documentation/Collaboration/cbidentity/init-coder.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:51.543420",
+    "last_updated": "2026-05-01T07:42:36.341190",
     "total_pages": 112,
-    "session_id": "2026-04-28T07:30:46.788931"
+    "session_id": "2026-05-01T07:42:28.310024"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ContactsUI.json": {
       "hash": "3f69c1c44b4e8c91da54af4c8b162561225be44fd0071a1988707f27847e29f1",
-      "last_checked": "2026-04-28T07:30:47.039335",
+      "last_checked": "2026-05-01T07:42:28.544921",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"fc2810546a6d485db06cf8f9fdf5302e\"",
       "file_path": "documentation/ContactsUI/ContactsUI.md"
     },
     "https://developer.apple.com/documentation/ContactsUI": {
       "hash": "3f69c1c44b4e8c91da54af4c8b162561225be44fd0071a1988707f27847e29f1",
-      "last_checked": "2026-04-28T07:30:46.952341",
+      "last_checked": "2026-05-01T07:42:28.451712",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"fc2810546a6d485db06cf8f9fdf5302e\"",
       "file_path": "documentation/ContactsUI/ContactsUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller.json": {
       "hash": "e126e83712b78ad4d9e8ae1e52163854e379f30446a11b741266c08863054751",
-      "last_checked": "2026-04-28T07:30:47.314103",
+      "last_checked": "2026-05-01T07:42:28.791381",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"0195aedee4ad6173f3c64535611a6ba7\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller.json": {
       "hash": "5648ddbbd789dbb5868eb0c6bddd0bb1390879edc3a2822905b9734d0e222fd2",
-      "last_checked": "2026-04-28T07:30:47.395828",
+      "last_checked": "2026-05-01T07:42:28.979644",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"4f1226d38faa5636215c7326556a7427\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker.json": {
       "hash": "91b6cd236b4d015ffa8f9bf7e3dcb5568dee119b94bd5e611c9f027bf8b3e9af",
-      "last_checked": "2026-04-28T07:30:47.527204",
+      "last_checked": "2026-05-01T07:42:29.108620",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"b71a3bfc407fd2eaf81015ddd07e1143\"",
       "file_path": "documentation/ContactsUI/cncontactpicker.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton.json": {
       "hash": "c3188bd0b376725aa37d6c189815d1542e8322a5d9ed7f5b290c4cb12a786a74",
-      "last_checked": "2026-04-28T07:30:47.654465",
+      "last_checked": "2026-05-01T07:42:29.256983",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"cb555c4b05eeac97ecdf6a6e20ae5a81\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(for:).json": {
       "hash": "a748339547bafe326aa55f9e916f99c17a54b7b0fb4072cf7a51c49faa019d7e",
-      "last_checked": "2026-04-28T07:30:47.772241",
+      "last_checked": "2026-05-01T07:42:29.423491",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"dab7cf8b7d36cc5b15b616ad2437bc60\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-for.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(forcontact:).json": {
       "hash": "389cd431fa14018bdd7883a4d344b99cf813b0bf907f1e84c09fa1ee55f5974d",
-      "last_checked": "2026-04-28T07:30:47.890201",
+      "last_checked": "2026-05-01T07:42:29.607886",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"080e98491ea3bd9cc2583a3e91e87a0b\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forcontact.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(forunknowncontact:).json": {
       "hash": "00f832ae1bd05745c60c09d626663cae08be8c393102ff3909855cebbff7ab64",
-      "last_checked": "2026-04-28T07:30:48.013121",
+      "last_checked": "2026-05-01T07:42:29.737564",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"d698b322381c4397ade55aad7ae4b60d\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-forunknowncontact.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/init(fornewcontact:).json": {
       "hash": "546ee9e46171ecd480fdf406df4c062b1c7527d4dc523c76481d91019e1e891c",
-      "last_checked": "2026-04-28T07:30:48.083496",
+      "last_checked": "2026-05-01T07:42:29.915255",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"55e88bb469f595c25248037a20af7385\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/init-fornewcontact.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/delegate.json": {
       "hash": "a8324f51493cb5376eeadab92eeaae71c9ff48a13db74aac772c02e2ee254f0f",
-      "last_checked": "2026-04-28T07:30:48.167274",
+      "last_checked": "2026-05-01T07:42:30.033243",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"32a5f302fa14366d5a180c6f505becc0\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/delegate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontrollerdelegate.json": {
       "hash": "9871932342555d2b38003749322587d21ce2b08b094225f1db952279f6273593",
-      "last_checked": "2026-04-28T07:30:48.292832",
+      "last_checked": "2026-05-01T07:42:30.217879",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"1be59aef89ad998bb53f4e7f5ee30985\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/descriptorforrequiredkeys().json": {
       "hash": "4d04e72e9076735170e2021af4d88cac1029d8c16135a231d91bd7dac8a112be",
-      "last_checked": "2026-04-28T07:30:48.408554",
+      "last_checked": "2026-05-01T07:42:30.336733",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"a5c90d2c911ff5e09ba2d3c929e7a517\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/descriptorforrequiredkeys.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/contact.json": {
       "hash": "f1151383bd44b95abda8be143c4d08736ca451b03a210bdf20779d54cf8445cd",
-      "last_checked": "2026-04-28T07:30:48.534646",
+      "last_checked": "2026-05-01T07:42:30.489057",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"3a6179b4abd467b90d858adb4d04f148\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/contact.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/alternatename.json": {
       "hash": "ef3fca856633a7af2ec9d5df10696b631f9d01f4914be749069d1fbcb087485a",
-      "last_checked": "2026-04-28T07:30:48.604277",
+      "last_checked": "2026-05-01T07:42:30.668501",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"f3a4379999e4b434bd0d15ea3524c0e5\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/alternatename.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/message.json": {
       "hash": "cc58de3f7598acee71f9a10c3756bda7a4315f81c840e04016fc06da1bd36990",
-      "last_checked": "2026-04-28T07:30:48.724243",
+      "last_checked": "2026-05-01T07:42:30.776067",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"48f50c262e902adde7900dfac2c5e71a\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/message.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/displayedpropertykeys.json": {
       "hash": "ad9b66b58806be076039a175eae0bb8d1776f10034c82a186ef67334ad7131ec",
-      "last_checked": "2026-04-28T07:30:48.793158",
+      "last_checked": "2026-05-01T07:42:30.980217",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"0e9b1a410255d46059d38d0c6a722c14\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/displayedpropertykeys.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/parentgroup.json": {
       "hash": "edad66b34d18be50b719e12dc00bc832f7890c42775317a6eaff114f4b05f856",
-      "last_checked": "2026-04-28T07:30:48.876998",
+      "last_checked": "2026-05-01T07:42:31.130760",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"1faece657a2d9e7d072ba0b3acdd949f\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/parentgroup.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/parentcontainer.json": {
       "hash": "2e7f8bfc2e8871b7064e92a815859c9d83b6ad16fd11ef83354be4b7497b0b58",
-      "last_checked": "2026-04-28T07:30:48.944342",
+      "last_checked": "2026-05-01T07:42:31.284705",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"c63a750adf58da5f7a784b44c15b69d8\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/parentcontainer.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/contactstore.json": {
       "hash": "0d3999d99a6e1eefe5787486123ba08d72cce274a876d54a4f32b57504664f44",
-      "last_checked": "2026-04-28T07:30:49.019322",
+      "last_checked": "2026-05-01T07:42:31.452397",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"fba83a9428bfbe45012aa594d71767f5\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/contactstore.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/allowsediting.json": {
       "hash": "aaa24f00bcd05c41f7f39bbdc853e976fa66ca87b0f99392c90e0c961ed69383",
-      "last_checked": "2026-04-28T07:30:49.085497",
+      "last_checked": "2026-05-01T07:42:31.588571",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"09a8e7352f8b7ad1a4fbea945e9a18c4\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/allowsediting.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/allowsactions.json": {
       "hash": "528e1827fa52ba2a549c6f9fdcacfe21cc826e016e2c548200d163b346e1cb74",
-      "last_checked": "2026-04-28T07:30:49.154635",
+      "last_checked": "2026-05-01T07:42:31.724810",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"0f76ca36756d4dee45a83728ee73a868\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/allowsactions.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/shouldshowlinkedcontacts.json": {
       "hash": "fe7113b44fd55035ddd8e99d350787c01a1d82e9033a248457a6261f2ab7521c",
-      "last_checked": "2026-04-28T07:30:49.223232",
+      "last_checked": "2026-05-01T07:42:31.848690",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"2338a09623403c10b714a88c1133f10a\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/shouldshowlinkedcontacts.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontroller/highlightproperty(withkey:identifier:).json": {
       "hash": "0a08104b5e1c8fdec49dccaf3b4cd586896459c45f3242683dac15d4fbd5fa2b",
-      "last_checked": "2026-04-28T07:30:49.293993",
+      "last_checked": "2026-05-01T07:42:32.148480",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"aa00ae5a68312034bbb7b426e495487b\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontroller/highlightproperty-withkeyidentifier.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller/displayedpropertykeys.json": {
       "hash": "cab4ac37ae5667eee471c1e4506d7789bb9680a9b93e1ec2348581c40023ebd7",
-      "last_checked": "2026-04-28T07:30:49.366589",
+      "last_checked": "2026-05-01T07:42:32.266489",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"020e40800ceb94cf10c78028c6bc607b\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller/displayedpropertykeys.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller/delegate.json": {
       "hash": "2b196dbb886829395a0509b0282f2bde4120273f421c9a02a49031bbec69e104",
-      "last_checked": "2026-04-28T07:30:49.486121",
+      "last_checked": "2026-05-01T07:42:32.379575",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"65eb02809c0cd12d1d428776c41c611c\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller/delegate.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate.json": {
       "hash": "1ecf03a90650797392c7d0f2685087e4e25081e4f8d917c65d999701ba14e8b4",
-      "last_checked": "2026-04-28T07:30:49.569603",
+      "last_checked": "2026-05-01T07:42:32.551195",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"1a87de56f598bea06820af4fdc8e652a\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller/predicateforenablingcontact.json": {
       "hash": "7c8e7ce1c6d360a143c00ea7dd823e97001a051aef26ab6f5c08669dc1e973dc",
-      "last_checked": "2026-04-28T07:30:49.733969",
+      "last_checked": "2026-05-01T07:42:32.722490",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"0cbaefe542b11bc6bdd3785f1d5103a6\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller/predicateforenablingcontact.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller/predicateforselectionofcontact.json": {
       "hash": "576b9c8b8777375a2b09958012366b6bd9d8e96a3b6f850ddbda1647e67e5db6",
-      "last_checked": "2026-04-28T07:30:49.811788",
+      "last_checked": "2026-05-01T07:42:32.855543",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"3c2c004078c37912f5b2a46a4904d764\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller/predicateforselectionofcontact.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerviewcontroller/predicateforselectionofproperty.json": {
       "hash": "6afee2fae6aff51d89e92754f3141c38757ce6917554a568b7142d85cd691793",
-      "last_checked": "2026-04-28T07:30:49.884642",
+      "last_checked": "2026-05-01T07:42:33.152230",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"77746a7d0a1180381f2d3d49c2b67ea0\"",
       "file_path": "documentation/ContactsUI/cncontactpickerviewcontroller/predicateforselectionofproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/delegate.json": {
       "hash": "f7e41b9d38778fcef80239c53762a6d008c325d4bad01686f2f31b4bc66941ba",
-      "last_checked": "2026-04-28T07:30:49.956480",
+      "last_checked": "2026-05-01T07:42:33.258237",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"b988a27520ac77c213b93192a6e6d65e\"",
       "file_path": "documentation/ContactsUI/cncontactpicker/delegate.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/displayedkeys.json": {
       "hash": "8dba30e11cc4b5ceaa61b2940f4ebfe04d124a43c32cd67d00dbb246f63e378a",
-      "last_checked": "2026-04-28T07:30:50.024750",
+      "last_checked": "2026-05-01T07:42:33.400651",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"2225b5de6409896f7796d98fce8b37ac\"",
       "file_path": "documentation/ContactsUI/cncontactpicker/displayedkeys.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/showrelative(to:of:preferrededge:).json": {
       "hash": "4979c99efa6c08234b26caf8a7823ca2cbeebf4481c3ff285f59caeed5ff69fb",
-      "last_checked": "2026-04-28T07:30:50.098027",
+      "last_checked": "2026-05-01T07:42:33.526023",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"1833d075c32c0210c7dafab69249abd4\"",
       "file_path": "documentation/ContactsUI/cncontactpicker/showrelative-toofpreferrededge.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpicker/close().json": {
       "hash": "952cabc4cacb4c9ab75f8b0abba8b148db7f4f9650e53093b97fdc4ea4a8ade3",
-      "last_checked": "2026-04-28T07:30:50.166405",
+      "last_checked": "2026-05-01T07:42:33.683540",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"ca10b4178c97e1128a6b71a2b5144fce\"",
       "file_path": "documentation/ContactsUI/cncontactpicker/close.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/init(querystring:ignoredemails:ignoredphonenumbers:approvalcallback:).json": {
       "hash": "a32e2ac14877dbbaae0ec33b165168876332a7cb252b2e237c8abfff79d3b9bc",
-      "last_checked": "2026-04-28T07:30:50.236317",
+      "last_checked": "2026-05-01T07:42:33.862652",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"c8b4238cccc9522bdf3f4f9e53fdffad\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/init-querystringignoredemailsignoredphonenumbersapprovalcallback.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/caption.json": {
       "hash": "513d7c387f9db705a57fd66283aa26994546bccaf750cac1110b9ba6911062b8",
-      "last_checked": "2026-04-28T07:30:50.316825",
+      "last_checked": "2026-05-01T07:42:34.016969",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"2757f2c2e841b2bb22099e958d9bb341\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/caption.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/style.json": {
       "hash": "7940f173fb0d4a86092ba52b726157f514b2d56bdb793638a53229bd613723ff",
-      "last_checked": "2026-04-28T07:30:50.440584",
+      "last_checked": "2026-05-01T07:42:34.150479",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"333b8369d5cfc43eec8424562240140b\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/style.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:shouldperformdefaultactionfor:).json": {
       "hash": "be26bd24d7ac62ce61ec511d23444e32f4003467dae3977a5f1fd8d5e6773e2f",
-      "last_checked": "2026-04-28T07:30:50.517571",
+      "last_checked": "2026-05-01T07:42:34.328856",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"ea6b9bbd458fd137a04f3d87a952e6e5\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-shouldperformdefaultactionfor.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactviewcontrollerdelegate/contactviewcontroller(_:didcompletewith:).json": {
       "hash": "dccf0deab12c4ddbfb502f844f7f0c33f56cac7c8a57c0aecd18630519ba9558",
-      "last_checked": "2026-04-28T07:30:50.589283",
+      "last_checked": "2026-05-01T07:42:34.490687",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"4e769da44ce8c52477f9c23621d74f24\"",
       "file_path": "documentation/ContactsUI/cncontactviewcontrollerdelegate/contactviewcontroller-didcompletewith.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-7vcyc.json": {
       "hash": "a64a7131d338f1a343dc254e47e7700116c7d71b401e867ee7f696a9ab51d9b2",
-      "last_checked": "2026-04-28T07:30:50.659674",
+      "last_checked": "2026-05-01T07:42:34.623209",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"2f267fdbfbc0188b5d10c3231d070752\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-7vcyc.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-1xfpt.json": {
       "hash": "df7d20304e13b903c46e4e7d922af89f398dcc379a6dfb3409a6580c253c9c5c",
-      "last_checked": "2026-04-28T07:30:50.735464",
+      "last_checked": "2026-05-01T07:42:34.780372",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"7b1ba764e9bc812cb4aac0b41f740e42\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-1xfpt.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselect:)-5neeo.json": {
       "hash": "cb7205710cd3125cdd200bb10225a51adcf148578ee24389eb7b16748d4f98fe",
-      "last_checked": "2026-04-28T07:30:50.807413",
+      "last_checked": "2026-05-01T07:42:35.066876",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"332fba6e662c32631a29a22ace19494b\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselect-5neeo.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpicker(_:didselectcontactproperties:).json": {
       "hash": "5daccd1b856fa7971df04f6ae64cf62ac09dc2c437720ef83179d51dec8dcf45",
-      "last_checked": "2026-04-28T07:30:50.878382",
+      "last_checked": "2026-05-01T07:42:35.197008",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"21be3617bc0ac163859427de36483cf3\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpicker-didselectcontactproperties.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerdidcancel(_:).json": {
       "hash": "bf77b59472f19efe2ca8e9ce1268d8b68580d6dd6d32603cbf6d20c260d0ee37",
-      "last_checked": "2026-04-28T07:30:50.959161",
+      "last_checked": "2026-05-01T07:42:35.305518",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"21cf7707b2b62a113212ee5249b7d3f8\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidcancel.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerwillclose(_:).json": {
       "hash": "49b2bb6886f1e48d7e80dc86beb467e3736f65565c188371af3eb53f4f80c166",
-      "last_checked": "2026-04-28T07:30:51.036189",
+      "last_checked": "2026-05-01T07:42:35.452597",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"472fd71d1581997ade9fa2cf1d4e5ee2\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerwillclose.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/cncontactpickerdelegate/contactpickerdidclose(_:).json": {
       "hash": "11f32b21d51979ea4242e9c273f1b9a3f5bb4db65dfb53bfb967f66aa9ccd05f",
-      "last_checked": "2026-04-28T07:30:51.151749",
+      "last_checked": "2026-05-01T07:42:35.586594",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"729cf5f4dd34a24e91a39354f7ab5723\"",
       "file_path": "documentation/ContactsUI/cncontactpickerdelegate/contactpickerdidclose.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/caption/defaulttext.json": {
       "hash": "0e37d050b5550652a7bc07c87c2b7751e773a29dd88800e86b0f856f519aeb16",
-      "last_checked": "2026-04-28T07:30:51.237428",
+      "last_checked": "2026-05-01T07:42:35.764460",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"be3e85c76164cebe653b96360ac8078c\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/caption/defaulttext.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/caption/email.json": {
       "hash": "c3b565361095fa6bbf90253c2e0826971a9bad015f09b3db34a0105dfa4ab742",
-      "last_checked": "2026-04-28T07:30:51.305408",
+      "last_checked": "2026-05-01T07:42:35.883365",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"2d3dcc77239e28e489ead09a991d4f6d\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/caption/email.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/caption/phone.json": {
       "hash": "b2684c284ae67984c147522ca90c44c3f648417d1ba32781841ed86c00d446ba",
-      "last_checked": "2026-04-28T07:30:51.373196",
+      "last_checked": "2026-05-01T07:42:36.018410",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"56b459d3d228ed08c9033447d5fddfeb\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/caption/phone.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/style/init(imagetrailingedgepadding:imagewidth:imagecolor:).json": {
       "hash": "b6628a23c759a0f4a5947e81f1af48f085bffc3aa4bd45aafd9499d3dbe218d6",
-      "last_checked": "2026-04-28T07:30:51.444008",
+      "last_checked": "2026-05-01T07:42:36.173558",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"d3141ae20b2c707a2a803669ff9d655a\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/style/init-imagetrailingedgepaddingimagewidthimagecolor.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/contactsui/contactaccessbutton/style/automatic.json": {
       "hash": "69e05969c642bee2409c0e4bd883a44c031bee7b6b85095ab84ffb1fdd911fcd",
-      "last_checked": "2026-04-28T07:30:51.540724",
+      "last_checked": "2026-05-01T07:42:36.338672",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.788931",
+      "session_id": "2026-05-01T07:42:28.310024",
       "etag": "W/\"def4fa3e24707259f456a541947edc09\"",
       "file_path": "documentation/ContactsUI/contactaccessbutton/style/automatic.md"
     },

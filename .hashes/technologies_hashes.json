@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:31:08.708985",
+    "last_updated": "2026-05-01T07:43:02.699851",
     "total_pages": 2,
-    "session_id": "2026-04-28T07:31:08.265221"
+    "session_id": "2026-05-01T07:43:02.299384"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/technologies.json": {
-      "hash": "a0be8d661c1018d712875c294a62429821c6d1c6f8495a965fa4cc16f52446af",
-      "last_checked": "2026-04-28T07:31:08.609491",
+      "hash": "898c6b6cbbfd49a4cc7c9a8b7345f341fe93fb7afa8dcc6bc5f638a0488ec8dd",
+      "last_checked": "2026-05-01T07:43:02.619880",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:08.265221",
-      "etag": "W/\"0b414cff80e18a96ec59fd1311fd6655\"",
+      "session_id": "2026-05-01T07:43:02.299384",
+      "etag": "W/\"c74e23712f64b0f053b30a5213cd4aea\"",
       "file_path": "documentation/technologies/technologies.md"
     },
     "https://developer.apple.com/documentation/technologies": {
-      "hash": "a0be8d661c1018d712875c294a62429821c6d1c6f8495a965fa4cc16f52446af",
-      "last_checked": "2026-04-28T07:31:08.422462",
+      "hash": "898c6b6cbbfd49a4cc7c9a8b7345f341fe93fb7afa8dcc6bc5f638a0488ec8dd",
+      "last_checked": "2026-05-01T07:43:02.429977",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:08.265221",
-      "etag": "W/\"0b414cff80e18a96ec59fd1311fd6655\"",
+      "session_id": "2026-05-01T07:43:02.299384",
+      "etag": "W/\"c74e23712f64b0f053b30a5213cd4aea\"",
       "file_path": "documentation/technologies/technologies.md"
     }
   }

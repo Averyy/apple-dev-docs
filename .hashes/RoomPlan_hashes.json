@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:27:27.647128",
+    "last_updated": "2026-05-01T07:37:07.955654",
     "total_pages": 1065,
-    "session_id": "2026-04-28T07:27:04.599109"
+    "session_id": "2026-05-01T07:36:23.832909"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/RoomPlan.json": {
       "hash": "214721429964f1ae6b43ea42f9776a978e75ecd27bf190137c21b8a81d1002b1",
-      "last_checked": "2026-04-28T07:27:04.856568",
+      "last_checked": "2026-05-01T07:36:24.192359",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"bf14cd6b148919d633b0f7d475e47611\"",
       "file_path": "documentation/RoomPlan/RoomPlan.md"
     },
     "https://developer.apple.com/documentation/RoomPlan": {
       "hash": "214721429964f1ae6b43ea42f9776a978e75ecd27bf190137c21b8a81d1002b1",
-      "last_checked": "2026-04-28T07:27:04.765010",
+      "last_checked": "2026-05-01T07:36:24.101055",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"bf14cd6b148919d633b0f7d475e47611\"",
       "file_path": "documentation/RoomPlan/RoomPlan.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.json": {
       "hash": "aa5aed3079656421af03a0a1adea2a4ae619488e829a4f72da1770f43c452bb0",
-      "last_checked": "2026-04-28T07:27:05.078223",
+      "last_checked": "2026-05-01T07:36:24.601405",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e007f36dfa8b75e1de132d58b9e231a9\"",
       "file_path": "documentation/RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview.json": {
       "hash": "989e88069990ea67769de017f9cd6dbfa60e0c12e4d85d96bac22fda0d6480ea",
-      "last_checked": "2026-04-28T07:27:05.171938",
+      "last_checked": "2026-05-01T07:36:24.768283",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"37a4aef4ac1c3f339c36b2f01fbb8f72\"",
       "file_path": "documentation/RoomPlan/roomcaptureview.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureviewdelegate.json": {
       "hash": "86373d9b1af89c4825a08f612e6e7793ae1b59996b86276961012981802f5a74",
-      "last_checked": "2026-04-28T07:27:05.248139",
+      "last_checked": "2026-05-01T07:36:25.086318",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"636d04681001d7e1eed1b30e1023a39b\"",
       "file_path": "documentation/RoomPlan/roomcaptureviewdelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession.json": {
       "hash": "7dfac86d661ba9c7a4099acd029e54ca5b10b7fc82d1e86ad0dde29a0b2b4341",
-      "last_checked": "2026-04-28T07:27:05.329028",
+      "last_checked": "2026-05-01T07:36:25.243909",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4de1333c6573015552529f9d8c934e83\"",
       "file_path": "documentation/RoomPlan/roomcapturesession.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate.json": {
       "hash": "2a8f03f68f777b581a254d6436a67655a11e48c619496487626f77fd568be786",
-      "last_checked": "2026-04-28T07:27:05.401279",
+      "last_checked": "2026-05-01T07:36:25.547689",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d895912a8972df60968adf0faa173053\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/merging-multiple-scans-into-a-single-structure.json": {
       "hash": "5bb1012866d4a36b810692af2434899f4a95dd0accebeca41d2313a3515b7bc5",
-      "last_checked": "2026-04-28T07:27:05.521515",
+      "last_checked": "2026-05-01T07:36:25.863011",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9a5bedef65b7060d965fcf7ba13eff7d\"",
       "file_path": "documentation/RoomPlan/merging-multiple-scans-into-a-single-structure.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/scanning-the-rooms-of-a-single-structure.json": {
       "hash": "de9edc50777524f168e33365478e5768850a2fe279dcb25ac890b49245507c91",
-      "last_checked": "2026-04-28T07:27:05.657142",
+      "last_checked": "2026-05-01T07:36:26.045550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"915211b2b792d486b187cfb20de7b214\"",
       "file_path": "documentation/RoomPlan/scanning-the-rooms-of-a-single-structure.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom.json": {
       "hash": "3e32a7129d22bb503ca93f62081e8f62eff55123a4191879d3a272bd87751384",
-      "last_checked": "2026-04-28T07:27:05.732673",
+      "last_checked": "2026-05-01T07:36:26.354941",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ab0ece4d28901d4b67fe16b5962d11fb\"",
       "file_path": "documentation/RoomPlan/capturedroom.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure.json": {
       "hash": "6ee139b67ec78f2dbef6bb80ff1d44ac3f4b2bee36454f5e6fb07c6148b22d3b",
-      "last_checked": "2026-04-28T07:27:05.858547",
+      "last_checked": "2026-05-01T07:36:26.686400",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"25343d50164a0283481b06638e9d00a9\"",
       "file_path": "documentation/RoomPlan/capturedstructure.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomdata.json": {
       "hash": "665e02e63305ddd2ef50a8ea2e1ec6595b4dd1f7621300cc9c6afe42b83d0d8c",
-      "last_checked": "2026-04-28T07:27:05.942070",
+      "last_checked": "2026-05-01T07:36:26.986086",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f5e60edd9d0d24cd21694fca914893cf\"",
       "file_path": "documentation/RoomPlan/capturedroomdata.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/captured-object-attributes.json": {
       "hash": "c57aafcf5e44cb8fe59c43d70d48fa670f2a8d0011315f4e2faa68e2ed7dab34",
-      "last_checked": "2026-04-28T07:27:06.036316",
+      "last_checked": "2026-05-01T07:36:27.294175",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f71f9d4c5ed38048b12afbd782d4ee46\"",
       "file_path": "documentation/RoomPlan/captured-object-attributes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/providing-custom-models-for-captured-rooms-and-structure-exports.json": {
       "hash": "87186dbcf6790bca90585ce2da0a95172e4dbb0afac7c6abc9c7921975240198",
-      "last_checked": "2026-04-28T07:27:06.116012",
+      "last_checked": "2026-05-01T07:36:27.451574",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c8671f736d1ef72762eda904052f1d64\"",
       "file_path": "documentation/RoomPlan/providing-custom-models-for-captured-rooms-and-structure-exports.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder.json": {
       "hash": "8fa77b5fe3487a4365eb3b661af8c4baaea91e52f81f9bbc83ff5837171f6020",
-      "last_checked": "2026-04-28T07:27:06.186527",
+      "last_checked": "2026-05-01T07:36:27.622344",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2ad68be5fda9f144373f01e1a72c2dc8\"",
       "file_path": "documentation/RoomPlan/roombuilder.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder.json": {
       "hash": "e36070392dae02b545f943461bcef05a5f3918122c91a4130cf5466b070bb9a0",
-      "last_checked": "2026-04-28T07:27:06.270038",
+      "last_checked": "2026-05-01T07:36:27.786724",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a68b4e4f0150080962581e4cd76c03c6\"",
       "file_path": "documentation/RoomPlan/structurebuilder.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions.json": {
       "hash": "a5a5004f3d2c1c9fff698a021d9abe78172919ee633a13f60b507927b7d6225c",
-      "last_checked": "2026-04-28T07:27:06.349935",
+      "last_checked": "2026-05-01T07:36:28.080659",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3f5043059b574f4392a0d0749e6c9370\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/init(frame:arsession:).json": {
       "hash": "21dabffa300965f97f158b0cd8d1e3247d4fa5f568dcf51dda3ae1fddb8fd6cc",
-      "last_checked": "2026-04-28T07:27:06.423678",
+      "last_checked": "2026-05-01T07:36:28.328052",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0a07c9a98cc0640fbe926e32d82032eb\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/init-framearsession.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/init(frame:).json": {
       "hash": "8f20bc8b5c2dd95d6b06f290924d6d45b015270f65aceeee47b485523441df9e",
-      "last_checked": "2026-04-28T07:27:06.504635",
+      "last_checked": "2026-05-01T07:36:28.613361",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6cbf8e3f7beacf5d60b7f606b9666c15\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/init-frame.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/init(coder:).json": {
       "hash": "e566ee7a744e8247031b004b500f0b0d1c051e9724415b84e19480ae45400213",
-      "last_checked": "2026-04-28T07:27:06.583147",
+      "last_checked": "2026-05-01T07:36:28.772188",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5b9c283c9260481d5da172b91cc07728\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/init-coder.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/capturesession.json": {
       "hash": "24967c075dc2cd69ab648b3dc15d0d186d18e5e341548d505d5f80676fc1b7a4",
-      "last_checked": "2026-04-28T07:27:06.655774",
+      "last_checked": "2026-05-01T07:36:28.923138",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"75d6047a046e1ff5f03226dbc0ebb212\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/capturesession.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/delegate.json": {
       "hash": "d02da6328910cfff6931c6757f7a3132be95120be96f76dd381a9e33ef074c21",
-      "last_checked": "2026-04-28T07:27:06.731236",
+      "last_checked": "2026-05-01T07:36:29.240755",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"94cda11d01f1c302e04461a68b764c36\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/delegate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/ismodelenabled.json": {
       "hash": "9d149af25035fc445bd684def5017c7a8e5b635c21b1e65e0e8c609d9affd066",
-      "last_checked": "2026-04-28T07:27:06.804498",
+      "last_checked": "2026-05-01T07:36:29.405140",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8126de3eba71775e93699618e0028872\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/ismodelenabled.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/subviews.json": {
       "hash": "69192b0260e9a4b40c777cf3399f3b28539d57b2cec2331f721290dfdc32888d",
-      "last_checked": "2026-04-28T07:27:06.882315",
+      "last_checked": "2026-05-01T07:36:29.572819",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e8b5aa1e21110da84760316a6e2365f7\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/subviews.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/layoutsubviews().json": {
       "hash": "5c869fff1ad2150ecdff9b9d3b1e5caaa74d40a0903162064a8f3ffd45eeb814",
-      "last_checked": "2026-04-28T07:27:07.013411",
+      "last_checked": "2026-05-01T07:36:29.939391",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"102be672f6e8dc75fd826169eb16fa46\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/layoutsubviews.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/encode(with:).json": {
       "hash": "b6931a9fcc3948818ef16c8096970e8936b670199b0a84ccf78be9eb624d0381",
-      "last_checked": "2026-04-28T07:27:07.089403",
+      "last_checked": "2026-05-01T07:36:30.258488",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2e2d4e804f72423ceb87660fd9745724\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/encode-with.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureview/traitcollectiondidchange(_:).json": {
       "hash": "fd6978335ae9ccdc2d859adfd7bd864bdee344d4f5e7746c27145846d78f451f",
-      "last_checked": "2026-04-28T07:27:07.163147",
+      "last_checked": "2026-05-01T07:36:30.557372",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0df9cf332a41f470422b231e7a996aae\"",
       "file_path": "documentation/RoomPlan/roomcaptureview/traitcollectiondidchange.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureviewdelegate/captureview(shouldpresent:error:).json": {
       "hash": "13ae78b05ddfc62ff6a92a2b05f3086671a9846b6e8e2f06ae1e545ef568dd4b",
-      "last_checked": "2026-04-28T07:27:07.423541",
+      "last_checked": "2026-05-01T07:36:31.175315",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8d6cc97f730c00f68e728c5ce65fec93\"",
       "file_path": "documentation/RoomPlan/roomcaptureviewdelegate/captureview-shouldpresenterror.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureviewdelegate/captureview(didpresent:error:).json": {
       "hash": "b95ebe0613f61989c8038c304ff7e00b35fdb00173c58221655ac3705b93e5a6",
-      "last_checked": "2026-04-28T07:27:07.491614",
+      "last_checked": "2026-05-01T07:36:31.331919",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0dc6f3d1cf61c781d662c3deb836e5ac\"",
       "file_path": "documentation/RoomPlan/roomcaptureviewdelegate/captureview-didpresenterror.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureviewdelegate/captureview(shouldpresent:error:)-5l74q.json": {
       "hash": "6c705f8e0264458def5549f7c773755f821d2f4c1d0ac92c7e7008ef2617c8e2",
-      "last_checked": "2026-04-28T07:27:07.570005",
+      "last_checked": "2026-05-01T07:36:31.496384",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9e4c997943d872c6b9dea609766d8dd9\"",
       "file_path": "documentation/RoomPlan/roomcaptureviewdelegate/captureview-shouldpresenterror-5l74q.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcaptureviewdelegate/captureview(didpresent:error:)-6em1r.json": {
       "hash": "93f26404d00a6fc08795d5211631f74607b9136f039e4c68c99511b69a553c6b",
-      "last_checked": "2026-04-28T07:27:07.641885",
+      "last_checked": "2026-05-01T07:36:31.666651",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"cece1622552c4eced2da388311ee3489\"",
       "file_path": "documentation/RoomPlan/roomcaptureviewdelegate/captureview-didpresenterror-6em1r.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/init(arsession:).json": {
       "hash": "c41fb199080254305680b1522a2f0b9adc97e3b1c685769b8d2aa89841a2154c",
-      "last_checked": "2026-04-28T07:27:07.711941",
+      "last_checked": "2026-05-01T07:36:31.830387",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d55d37ecba6932a1680b9ae4e756e031\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/init-arsession.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/issupported.json": {
       "hash": "56867252571a06e6594c35a1289363d543994fbcf38a542126ed694235f02014",
-      "last_checked": "2026-04-28T07:27:07.782531",
+      "last_checked": "2026-05-01T07:36:31.978095",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4dc259dfd604c39cf07936c7431ba425\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/issupported.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/run(configuration:).json": {
       "hash": "881206c93177241e1311d70536705fa6e7950c2b0b755b1ebaaf22a182a09bd8",
-      "last_checked": "2026-04-28T07:27:07.852994",
+      "last_checked": "2026-05-01T07:36:32.145017",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6acd773ce08159e4875cb33d2de80cac\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/run-configuration.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/configuration.json": {
       "hash": "e7f9ccaaf3ae4edf07374616d600fb21f24dfdfd1f7d0550ee8fc72ac29e7804",
-      "last_checked": "2026-04-28T07:27:07.928066",
+      "last_checked": "2026-05-01T07:36:32.306389",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"03c19a6b579ffb2aefb530e8ef774346\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/configuration.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/stop().json": {
       "hash": "948c9123461bc6cdb9efb5eda6505254db703ac72bfebe5ba2bc5b8bc01fcf2a",
-      "last_checked": "2026-04-28T07:27:08.007110",
+      "last_checked": "2026-05-01T07:36:32.465184",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a7c4f50e1f3853b91a2c8ff2f7ca6da0\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/stop.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/stop(pausearsession:).json": {
       "hash": "8d3d123c5b00be88081e5643f29089490d0cf050c883d4ecfb4e3f29dec48b94",
-      "last_checked": "2026-04-28T07:27:08.080376",
+      "last_checked": "2026-05-01T07:36:32.625955",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ebf35dd207f0e5041dd69e3759f996d7\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/stop-pausearsession.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/delegate.json": {
       "hash": "20f657dc7b0e2b3438e8e8d3d5942cddc3394ad6784a84e428d9dfdc6cd87dc8",
-      "last_checked": "2026-04-28T07:27:08.199290",
+      "last_checked": "2026-05-01T07:36:32.922065",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"93ba6ca168f94ffd8ec5860d0f305a44\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/delegate.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror.json": {
       "hash": "4d18ae41d64b18956c9e70845d8d2e3248b52aaef3e851cba5c45f3840e5299c",
-      "last_checked": "2026-04-28T07:27:08.276386",
+      "last_checked": "2026-05-01T07:36:33.083061",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8735e8fb89536ff55559d698091ba352\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/arsession.json": {
       "hash": "f6225682ea7b83ee7edfb2b70e7cbfe1444a1685ef7b65aa05f0e286c0435601",
-      "last_checked": "2026-04-28T07:27:08.346940",
+      "last_checked": "2026-05-01T07:36:33.260549",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"774bfeb6427000d9f04b198bc39edcfc\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/arsession.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction.json": {
       "hash": "0467491ec399b5ae05d7987a4a5e8732e12f567a3ad365fba25c262ae8c4891e",
-      "last_checked": "2026-04-28T07:27:08.424625",
+      "last_checked": "2026-05-01T07:36:33.435724",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1d13285abcbf63c926f7fae6747a2cd3\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/init().json": {
       "hash": "1cdac0927b92f53d3da922c9d970765dfa25ffe1e7732cb87fb752bffb39f981",
-      "last_checked": "2026-04-28T07:27:08.499265",
+      "last_checked": "2026-05-01T07:36:33.720612",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2478f132bbd6b6627a8cf73d981c87ea\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/init.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didstartwith:).json": {
       "hash": "6d750ce7ca0d8bb283b0b21dcd33ee8cfe1fd4505cb1e27565524b02a8010440",
-      "last_checked": "2026-04-28T07:27:08.587048",
+      "last_checked": "2026-05-01T07:36:33.890605",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"35099cf0c873e24ec6a8adcb701fe4ae\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didstartwith.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didadd:).json": {
       "hash": "8bcddbaf0eea5e73e1fe9e815e8ad485432863592054d2a28bbc637e5b2566d3",
-      "last_checked": "2026-04-28T07:27:08.660123",
+      "last_checked": "2026-05-01T07:36:34.059739",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a98dd97bd0a34fb8a96bd4e1a344e486\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didadd.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didremove:).json": {
       "hash": "901f16417910a1df6981c00f3e4dfe0a8c86117e9842ec0d888de7fb6896bcc4",
-      "last_checked": "2026-04-28T07:27:08.735474",
+      "last_checked": "2026-05-01T07:36:34.214818",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"60b5f2e2e8e7944b7bd6bd71b059d181\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didremove.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didchange:).json": {
       "hash": "7bbf719f99bce1294502e546bd5f7d0dd950cae28cd7822b888a8a7c357d878b",
-      "last_checked": "2026-04-28T07:27:08.814067",
+      "last_checked": "2026-05-01T07:36:34.368396",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c24f145b8402582b86c1885c250c0aba\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didchange.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didupdate:).json": {
       "hash": "88c3f5e47b7a603d87408292f7193c7a4d77d68776b909c0ab99e38d48a0f91c",
-      "last_checked": "2026-04-28T07:27:08.893904",
+      "last_checked": "2026-05-01T07:36:34.538586",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"89383e124d0bfb9975c5c975c6dbba58\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didupdate.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didprovide:).json": {
       "hash": "9d3a7fb403dcf5aae7f55305e1cb46d473279f55e4306f3dbc11c9b675f56579",
-      "last_checked": "2026-04-28T07:27:08.981772",
+      "last_checked": "2026-05-01T07:36:34.697232",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e1b22d4b3b832183967d743705d2aee9\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didprovide.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didendwith:error:).json": {
       "hash": "ad6b2d8b0920574891676da748cfed73f6b1c03fb15b85eb49ed4be8a5daece8",
-      "last_checked": "2026-04-28T07:27:09.075391",
+      "last_checked": "2026-05-01T07:36:34.867841",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3e01fa1f223fa48fb098eb4c88a4366c\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didendwitherror.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didstartwith:)-3c74n.json": {
       "hash": "216b5f87b9025c6cb621e1ba5ea6e758b257a2c6161274f19448a35b1b0bedaf",
-      "last_checked": "2026-04-28T07:27:09.147767",
+      "last_checked": "2026-05-01T07:36:35.033083",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"11ddb9da3afc2b4b374738ea60f46a48\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didstartwith-3c74n.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didupdate:)-77zyg.json": {
       "hash": "d8b471228faaecea39cde056f6ce287b0780c5a9a9126cf38cd58c1a512d83fa",
-      "last_checked": "2026-04-28T07:27:09.227946",
+      "last_checked": "2026-05-01T07:36:35.353531",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1c23f07f2363ae12f9046afa8458fc9f\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didupdate-77zyg.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didremove:)-9gs76.json": {
       "hash": "cb0fe14d74cb8529306e98ea13aa5979a46029b1f786267bb315a739d6ba8759",
-      "last_checked": "2026-04-28T07:27:09.352076",
+      "last_checked": "2026-05-01T07:36:35.529287",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c1eb46a82464a5f16e7d4d7a15dfa310\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didremove-9gs76.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didchange:)-gv3t.json": {
       "hash": "ed07099111f264461a1ceb3db1ae758ebbed6bfd93e049ba5e53b87be57cb982",
-      "last_checked": "2026-04-28T07:27:09.424213",
+      "last_checked": "2026-05-01T07:36:35.818945",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e4fd2092674c1b127ef2d9949f9056c9\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didchange-gv3t.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didprovide:)-5hvhl.json": {
       "hash": "eabcd1bde850df51b6ee81556a782b9742378577bffcef17c77d78ff8d7d8ae5",
-      "last_checked": "2026-04-28T07:27:09.507539",
+      "last_checked": "2026-05-01T07:36:36.160471",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8fec36fc6a9515755cc0caf964dec251\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didprovide-5hvhl.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesessiondelegate/capturesession(_:didendwith:error:)-5f0mc.json": {
       "hash": "cee33ac14e7c0edfc512e2db572bc103e3f8dd0e89f642543419ede98d34e14f",
-      "last_checked": "2026-04-28T07:27:09.588502",
+      "last_checked": "2026-05-01T07:36:36.468550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"902c963b698affee068b1174c2c942ef\"",
       "file_path": "documentation/RoomPlan/roomcapturesessiondelegate/capturesession-didendwitherror-5f0mc.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/init(from:).json": {
       "hash": "b57227811cf805eb4c42eee427efaeaafd6c50b9bb2acc17d81640b75c84c695",
-      "last_checked": "2026-04-28T07:27:09.656914",
+      "last_checked": "2026-05-01T07:36:36.619134",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b587e9bf76cb8d1c7068763037f50951\"",
       "file_path": "documentation/RoomPlan/capturedroom/init-from.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/identifier.json": {
       "hash": "28fbab482784644942e64df12617fc87b3c23ccfab27d02c44ba537b7889e3ee",
-      "last_checked": "2026-04-28T07:27:09.723593",
+      "last_checked": "2026-05-01T07:36:36.782750",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"62a770997466f96890c28533c7be3661\"",
       "file_path": "documentation/RoomPlan/capturedroom/identifier.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/story.json": {
       "hash": "167fec547fc175aa0d0213c6ccf9984a12124c10c685a19db04a1fe486dd9cf2",
-      "last_checked": "2026-04-28T07:27:09.799878",
+      "last_checked": "2026-05-01T07:36:36.941597",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2c66aca4148080ba695bddd3a37caa2e\"",
       "file_path": "documentation/RoomPlan/capturedroom/story.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/floors.json": {
       "hash": "86d73515c517c1dbe966b03728d6d5d79f932849d2d8cb54c070eb6145006626",
-      "last_checked": "2026-04-28T07:27:09.872602",
+      "last_checked": "2026-05-01T07:36:37.130782",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7b03170c02ed198059bda339f236ea91\"",
       "file_path": "documentation/RoomPlan/capturedroom/floors.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface.json": {
       "hash": "22966def779a7ed543a625479fe8f408ff62cb6ea7bf62173092ac50613ab516",
-      "last_checked": "2026-04-28T07:27:09.963515",
+      "last_checked": "2026-05-01T07:36:37.306852",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ffa3c9f70fd2ea60db89cc473651854b\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/doors.json": {
       "hash": "b4b6fd2fa7e51ac753d3fa78b53390dc6bc3aece3c547ce6c48c4c506d98d0b9",
-      "last_checked": "2026-04-28T07:27:10.039912",
+      "last_checked": "2026-05-01T07:36:37.476718",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"de397a20caabdeb0160fda4b12035917\"",
       "file_path": "documentation/RoomPlan/capturedroom/doors.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/objects.json": {
       "hash": "7c2f883eea4c8f2dd66f3c73165c956ca15327e6d9e48312dd30b0e53102faad",
-      "last_checked": "2026-04-28T07:27:10.109283",
+      "last_checked": "2026-05-01T07:36:37.656432",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"073f9ec0063d5159f39a8351b61b4e5e\"",
       "file_path": "documentation/RoomPlan/capturedroom/objects.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object.json": {
       "hash": "b73c00822a578714f785ba2ef59e8e0e91eb56372af38e6ac77e2637eb7b41ff",
-      "last_checked": "2026-04-28T07:27:10.187541",
+      "last_checked": "2026-05-01T07:36:37.851527",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0bbc0ccb4d9ba4f87de0eac3641e2fc5\"",
       "file_path": "documentation/RoomPlan/capturedroom/object.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/openings.json": {
       "hash": "a2db4259e7475c7fd244fe0dc12fb70e92e5067e4a3960f857cf77a8d1409be2",
-      "last_checked": "2026-04-28T07:27:10.272179",
+      "last_checked": "2026-05-01T07:36:38.171893",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"32cfd194eb227dd9fcc0cec5b8294d55\"",
       "file_path": "documentation/RoomPlan/capturedroom/openings.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/walls.json": {
       "hash": "6bd82197ee5f23695b1da1813cf1fd279c99a6c5b34aa3d83edd91f064542dac",
-      "last_checked": "2026-04-28T07:27:10.342501",
+      "last_checked": "2026-05-01T07:36:38.333549",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9679199968f57fe2cc720eab0a110779\"",
       "file_path": "documentation/RoomPlan/capturedroom/walls.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/windows.json": {
       "hash": "aee87c6fdd11cec12364df3c52fd42d49c0f739381aaaeda586f9a438b5cc63c",
-      "last_checked": "2026-04-28T07:27:10.417006",
+      "last_checked": "2026-05-01T07:36:38.503050",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7fb0f29dafc254aba95a61af67c7f1d4\"",
       "file_path": "documentation/RoomPlan/capturedroom/windows.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/sections.json": {
       "hash": "526ce436b2db354343486c0ccbe8c446a3d5276b2691aa867e55f460aded40de",
-      "last_checked": "2026-04-28T07:27:10.487225",
+      "last_checked": "2026-05-01T07:36:38.665592",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"47625978f76c77ed5198964eb124aa70\"",
       "file_path": "documentation/RoomPlan/capturedroom/sections.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section.json": {
       "hash": "e0817aea477d78aa36b52f52f41719beded9755facf45e4d3c68465534e94626",
-      "last_checked": "2026-04-28T07:27:10.578967",
+      "last_checked": "2026-05-01T07:36:38.829040",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6b39cf0710eb2a1ee0308ff666c8cbc8\"",
       "file_path": "documentation/RoomPlan/capturedroom/section.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/confidence.json": {
       "hash": "7901f80a4bc31320d5d95215c1973030239fa17a2342ed35a6797a8a3c500de7",
-      "last_checked": "2026-04-28T07:27:10.720544",
+      "last_checked": "2026-05-01T07:36:39.000408",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ecc4f20fc34f1545a026d2a5030c8479\"",
       "file_path": "documentation/RoomPlan/capturedroom/confidence.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/version.json": {
       "hash": "f855600eb3a2fa9a404ca7a17ca72b66be3e08243d21f51b87159e6f0773e7cf",
-      "last_checked": "2026-04-28T07:27:10.852459",
+      "last_checked": "2026-05-01T07:36:39.160467",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"71138c0146b4c3a10111aa546a3180a0\"",
       "file_path": "documentation/RoomPlan/capturedroom/version.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/encode(to:).json": {
       "hash": "fb6a8682fbd06ad4fcf0ebba56c8ef782922e6e1eb05d9b24a3b33b32353297b",
-      "last_checked": "2026-04-28T07:27:10.920476",
+      "last_checked": "2026-05-01T07:36:39.328199",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"611faf4bf93ac0686445536e2b623a98\"",
       "file_path": "documentation/RoomPlan/capturedroom/encode-to.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/attributescodablerepresentation.json": {
       "hash": "1b97c181e1d8199ee5333b28d8962d7577f4ae46c94956ccef7490cdd324a7bd",
-      "last_checked": "2026-04-28T07:27:11.021790",
+      "last_checked": "2026-05-01T07:36:39.492514",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1d809c43fc6d2170bea20d97d7942257\"",
       "file_path": "documentation/RoomPlan/capturedroom/attributescodablerepresentation.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/export(to:exportoptions:).json": {
       "hash": "181fb60ff5146b2eaabe185d7584d31f61a6bce4c9b2a915c411b40c24c85924",
-      "last_checked": "2026-04-28T07:27:11.089561",
+      "last_checked": "2026-05-01T07:36:39.680733",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6fb7cfbc28bcdc7084eafb0bed1cb3fb\"",
       "file_path": "documentation/RoomPlan/capturedroom/export-toexportoptions.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/export(to:metadataurl:modelprovider:exportoptions:).json": {
       "hash": "e6e044dc6d11a6e45f547b30bbd50ed3ea8dbe896049533c324f3ed67b08dbae",
-      "last_checked": "2026-04-28T07:27:11.215392",
+      "last_checked": "2026-05-01T07:36:39.855316",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"de231410bf2be6ac919eeb63241f8bf3\"",
       "file_path": "documentation/RoomPlan/capturedroom/export-tometadataurlmodelproviderexportoptions.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider.json": {
       "hash": "b5db2ecd10c40cd1a71c6e6596649d829c6164b306882948069eef335ab46566",
-      "last_checked": "2026-04-28T07:27:11.283911",
+      "last_checked": "2026-05-01T07:36:40.015715",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"071eb7771390bd547ec5d2c766d929a6\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error.json": {
       "hash": "cf52a968c3b40b1c162d5977442e5562d62122d93caa54004a5455805d2fd1ea",
-      "last_checked": "2026-04-28T07:27:11.362055",
+      "last_checked": "2026-05-01T07:36:40.197855",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"afa426d5ee14058dde47dd25c8d33f61\"",
       "file_path": "documentation/RoomPlan/capturedroom/error.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/init(from:).json": {
       "hash": "439fed58df46090bbc7375b1afd3b4a0ee3ad767e87a13346657c53ac88e10ce",
-      "last_checked": "2026-04-28T07:27:11.433196",
+      "last_checked": "2026-05-01T07:36:40.349580",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4925416c6a598431639b2d9edab1237f\"",
       "file_path": "documentation/RoomPlan/capturedstructure/init-from.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/identifier.json": {
       "hash": "ee2e47c22a71881b85e47b759e183defca81c9225080995fc95c9c749d4f36e8",
-      "last_checked": "2026-04-28T07:27:11.509226",
+      "last_checked": "2026-05-01T07:36:40.518579",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b9f06ad8456f85bfd2007266e4dee7cf\"",
       "file_path": "documentation/RoomPlan/capturedstructure/identifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/rooms.json": {
       "hash": "1067623a70d7e1f041cc9af7fca525ad865b7f95009b96689c67bb12e9621772",
-      "last_checked": "2026-04-28T07:27:11.576920",
+      "last_checked": "2026-05-01T07:36:40.674469",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a0831bd4a59f19bd1cc29283c59060af\"",
       "file_path": "documentation/RoomPlan/capturedstructure/rooms.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/floors.json": {
       "hash": "a41e3c8f68ff76973eb50bbe07880b278131940a2843b81bf4a4f6ad0cc36803",
-      "last_checked": "2026-04-28T07:27:11.649168",
+      "last_checked": "2026-05-01T07:36:40.827972",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"58a6a5703bde8ab56585e6773a42cfe8\"",
       "file_path": "documentation/RoomPlan/capturedstructure/floors.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/surface.json": {
       "hash": "4eb8b3df909ce15966f61765ffaf5bb9653017766de8397883f9e71d5ebad5f6",
-      "last_checked": "2026-04-28T07:27:11.787394",
+      "last_checked": "2026-05-01T07:36:40.998820",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ce45ddaab3d31c2a1455257ac838f5a6\"",
       "file_path": "documentation/RoomPlan/capturedstructure/surface.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/doors.json": {
       "hash": "c76d197da843033509dee373add6258f8e28224077895879acd769aa2d850ae2",
-      "last_checked": "2026-04-28T07:27:11.860031",
+      "last_checked": "2026-05-01T07:36:41.165076",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"35878606ff5b962043dc0044c0e8551d\"",
       "file_path": "documentation/RoomPlan/capturedstructure/doors.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/objects.json": {
       "hash": "abe92a46333358417bd8422528a7804ba745ebc28dab00194821932f66b7fe29",
-      "last_checked": "2026-04-28T07:27:11.936365",
+      "last_checked": "2026-05-01T07:36:41.343368",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ab664883036ad3942f5a87a53b0664f5\"",
       "file_path": "documentation/RoomPlan/capturedstructure/objects.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/object.json": {
       "hash": "b5b9289e2fab5919f91c9943680626c2cd918f6ccf37551200a45e6786e98f5b",
-      "last_checked": "2026-04-28T07:27:12.014123",
+      "last_checked": "2026-05-01T07:36:41.527866",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"15f1ae62301b685bee4c1670f86fa71a\"",
       "file_path": "documentation/RoomPlan/capturedstructure/object.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/openings.json": {
       "hash": "fcd6fc9cdb2e7f86e5208dca0bc4def3ed440930e5d6889c1e376b2b954dfd13",
-      "last_checked": "2026-04-28T07:27:12.093164",
+      "last_checked": "2026-05-01T07:36:41.696045",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9e512c20c5406c49fa91b6dc8c49b939\"",
       "file_path": "documentation/RoomPlan/capturedstructure/openings.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/walls.json": {
       "hash": "c7771eab8b3823285940c0269c429b4c6a6566d042f5835d2ee635d1ac2ec3f4",
-      "last_checked": "2026-04-28T07:27:12.224097",
+      "last_checked": "2026-05-01T07:36:41.868453",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9af293890a353c42167890e0527f1992\"",
       "file_path": "documentation/RoomPlan/capturedstructure/walls.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/windows.json": {
       "hash": "20fcd38a1a619b05b70f3308cfc2c2a88c86209318d8d696f79eca4716c4010c",
-      "last_checked": "2026-04-28T07:27:12.294593",
+      "last_checked": "2026-05-01T07:36:42.039173",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1906f1d4ec1527a0bf52b7bd1342db30\"",
       "file_path": "documentation/RoomPlan/capturedstructure/windows.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/sections.json": {
       "hash": "9fade5ff26f7b7e2a54402e28fd1e50975d4769ea6d1318c602f7fbcededd8da",
-      "last_checked": "2026-04-28T07:27:12.372259",
+      "last_checked": "2026-05-01T07:36:42.200807",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9b9f95313557615c9caba458e8d72b3b\"",
       "file_path": "documentation/RoomPlan/capturedstructure/sections.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/section.json": {
       "hash": "a553d5237c7c47717cdcf0a362ffe1482cfd2330264d38834c821e852d52cea1",
-      "last_checked": "2026-04-28T07:27:12.512440",
+      "last_checked": "2026-05-01T07:36:42.361417",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"82f54a6f69c6fc98e2acd38578097e28\"",
       "file_path": "documentation/RoomPlan/capturedstructure/section.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/version.json": {
       "hash": "3fc6ee09179f998498930236d338729e9cf5f7cce34f3a4ed5835d761760ed45",
-      "last_checked": "2026-04-28T07:27:12.583503",
+      "last_checked": "2026-05-01T07:36:42.525940",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3f2da8d77db4bb0b81840fc6e455c4c8\"",
       "file_path": "documentation/RoomPlan/capturedstructure/version.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/encode(to:).json": {
       "hash": "e965ab4a469c7225b561a5cea04033741c84260d7cb36466b8560e4fc63468c1",
-      "last_checked": "2026-04-28T07:27:12.653115",
+      "last_checked": "2026-05-01T07:36:42.687959",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8d6e509f5bde1210dfa19e54ed87e87e\"",
       "file_path": "documentation/RoomPlan/capturedstructure/encode-to.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/export(to:metadataurl:modelprovider:exportoptions:).json": {
       "hash": "101670e9ce48230925343cc0e865f04a4091430164e1ec269048efc139522855",
-      "last_checked": "2026-04-28T07:27:12.722278",
+      "last_checked": "2026-05-01T07:36:42.837721",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e121f8d84eee97f6e223689f889fef45\"",
       "file_path": "documentation/RoomPlan/capturedstructure/export-tometadataurlmodelproviderexportoptions.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/usdexportoptions.json": {
       "hash": "f71125671e5dcdd95e450fb27ef294447faee97e8f8f040359cea2e670e7ab8c",
-      "last_checked": "2026-04-28T07:27:12.805286",
+      "last_checked": "2026-05-01T07:36:43.007230",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"eaca1224a13cb06e26ee1c29728e5d2b\"",
       "file_path": "documentation/RoomPlan/capturedstructure/usdexportoptions.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/modelprovider.json": {
       "hash": "35492ce87f8b387ba8ff326c460c09a315421dcadce0d18aa67faf42dfdc2701",
-      "last_checked": "2026-04-28T07:27:12.930752",
+      "last_checked": "2026-05-01T07:36:43.169082",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9bc635879c189a468734a0ec3a13121c\"",
       "file_path": "documentation/RoomPlan/capturedstructure/modelprovider.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedstructure/error.json": {
       "hash": "2e40c91ecc75fd5c031f6004ba22a992251f943485145a558eaeb6108f0d5270",
-      "last_checked": "2026-04-28T07:27:13.005089",
+      "last_checked": "2026-05-01T07:36:43.328222",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"dc37a592a3c4d6fa7863713d75fea0d4\"",
       "file_path": "documentation/RoomPlan/capturedstructure/error.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomdata/init(from:).json": {
       "hash": "8ecb14161e4e33c2731c539ee80fe81e78d138072b56207ac85578df25527f8f",
-      "last_checked": "2026-04-28T07:27:13.085084",
+      "last_checked": "2026-05-01T07:36:43.485741",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"015c01ee4ae1fa173b3551c5d3323be4\"",
       "file_path": "documentation/RoomPlan/capturedroomdata/init-from.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomdata/encode(to:).json": {
       "hash": "09da1bc1f4cdcd044fc764cc39a82eb13e83ef44de51a4658ea336ad2a4cf07f",
-      "last_checked": "2026-04-28T07:27:13.160079",
+      "last_checked": "2026-05-01T07:36:43.644368",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"09c0f9efb2b13e397a2edf4afad20ed2\"",
       "file_path": "documentation/RoomPlan/capturedroomdata/encode-to.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomattribute.json": {
       "hash": "ffcb002079e9745f1986cc4d42d96451b8e89ed6553af6ea4a4aa6d580eddb7c",
-      "last_checked": "2026-04-28T07:27:13.232986",
+      "last_checked": "2026-05-01T07:36:43.812142",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3df40feb04b6f935252998ed019ccb59\"",
       "file_path": "documentation/RoomPlan/capturedroomattribute.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedelementcategory.json": {
       "hash": "4c62074b960ca0d38d74c8d671eea3cf550c829cc83f6224bc936cad92e16248",
-      "last_checked": "2026-04-28T07:27:13.313438",
+      "last_checked": "2026-05-01T07:36:43.985748",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3bd4e843b8bde6423f66bdc916fca3f1\"",
       "file_path": "documentation/RoomPlan/capturedelementcategory.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairtype.json": {
       "hash": "1cb3502be6865b5d07162b534187a79e530b0bc9723ef869bed5a5bbc60708f1",
-      "last_checked": "2026-04-28T07:27:13.385625",
+      "last_checked": "2026-05-01T07:36:44.162884",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"126a18ad233d688c4f994af80118bd1d\"",
       "file_path": "documentation/RoomPlan/chairtype.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairarmtype.json": {
       "hash": "1ab2271bbff41700ad173bdadc2fb9f6e88e28f96c38861922b011f0ea1d59ee",
-      "last_checked": "2026-04-28T07:27:13.536596",
+      "last_checked": "2026-05-01T07:36:44.318227",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1e6fc8aef4543d356e85844f44640d07\"",
       "file_path": "documentation/RoomPlan/chairarmtype.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairlegtype.json": {
       "hash": "3f30cf21fafb2db6df32816a68fcddde0f80e9ef8fdec4b58384510ecdd20b9b",
-      "last_checked": "2026-04-28T07:27:13.606887",
+      "last_checked": "2026-05-01T07:36:44.483993",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"054a1769ba7e5042f306877beed6ed90\"",
       "file_path": "documentation/RoomPlan/chairlegtype.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairbacktype.json": {
       "hash": "df2d8acf87fa90dddafc75589482d6a0c0efeb24f63e1497a6fea71663ff236e",
-      "last_checked": "2026-04-28T07:27:13.695262",
+      "last_checked": "2026-05-01T07:36:44.652474",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"56a0e042b0ae8c22fab96d0fb52a4b70\"",
       "file_path": "documentation/RoomPlan/chairbacktype.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype.json": {
       "hash": "f77900bc2a334045d1cf91598892347de5bf2472f5ae2988dc598bfc451ed22e",
-      "last_checked": "2026-04-28T07:27:13.774221",
+      "last_checked": "2026-05-01T07:36:44.818415",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"9250d176f22893bdb4fc1f689a786012\"",
       "file_path": "documentation/RoomPlan/sofatype.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/storagetype.json": {
       "hash": "00b402714c348478443025269ea5763f92fb7196c36fbe1a0460b5fd8cf08a3b",
-      "last_checked": "2026-04-28T07:27:13.848176",
+      "last_checked": "2026-05-01T07:36:45.050904",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f9528939058d003e6272b1c862d56001\"",
       "file_path": "documentation/RoomPlan/storagetype.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tabletype.json": {
       "hash": "c3e5662708747a5aac3d8926393cda43de8b800be8ac3c7059b9aa0f2e417aa2",
-      "last_checked": "2026-04-28T07:27:13.931928",
+      "last_checked": "2026-05-01T07:36:45.223021",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e2555f8e4f14383292335da47f39b505\"",
       "file_path": "documentation/RoomPlan/tabletype.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tableshapetype.json": {
       "hash": "cb34bcb9a74a4d99f5e26196a1ac749b1e1f8249d0f7d5d0141cfa1ca69d5f60",
-      "last_checked": "2026-04-28T07:27:14.025602",
+      "last_checked": "2026-05-01T07:36:45.388878",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"eaa761a64734b9e1b24727cf903a302a\"",
       "file_path": "documentation/RoomPlan/tableshapetype.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/init(options:).json": {
       "hash": "5ac249ceb98fb4b5d0090db355f011e5d325195291b2780d614a2bb8956996f9",
-      "last_checked": "2026-04-28T07:27:14.102034",
+      "last_checked": "2026-05-01T07:36:45.540020",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0eaa9c8301f0fb17c546169f503b622b\"",
       "file_path": "documentation/RoomPlan/roombuilder/init-options.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/configurationoptions.json": {
       "hash": "45835ada5527a32278a5b18e0ca01d4205de19e583c2e5f737693e7e66144128",
-      "last_checked": "2026-04-28T07:27:14.172054",
+      "last_checked": "2026-05-01T07:36:45.716525",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"81012140bb56f736e8ef57138c10ff25\"",
       "file_path": "documentation/RoomPlan/roombuilder/configurationoptions.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/capturedroom(from:).json": {
       "hash": "af716ba2fb65e275dc4b4b7a650061284f7d2c81af54ababe20abff68cf81a7c",
-      "last_checked": "2026-04-28T07:27:14.259748",
+      "last_checked": "2026-05-01T07:36:45.871409",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"75bef3da677d21cbf132cbfdcb68177d\"",
       "file_path": "documentation/RoomPlan/roombuilder/capturedroom-from.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror.json": {
       "hash": "239b746f031ffd506ca9926ce20b9ea47ec03d437759e34d56ff63cb85a97b97",
-      "last_checked": "2026-04-28T07:27:14.405240",
+      "last_checked": "2026-05-01T07:36:46.029296",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"88d3a25e7dca8634fea9e27da545b6c6\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/init(options:).json": {
       "hash": "b2df78dbd0eedab9532af974771108b76f8d1b44dcaf2bc766a046acf790d130",
-      "last_checked": "2026-04-28T07:27:14.483975",
+      "last_checked": "2026-05-01T07:36:46.147784",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"37b21dc652db4cfa6cb8344e5206418b\"",
       "file_path": "documentation/RoomPlan/structurebuilder/init-options.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/configurationoptions.json": {
       "hash": "38a267f6acb151be846ba3985616f550a4762d5e661e2265e9765bf5634e2e23",
-      "last_checked": "2026-04-28T07:27:14.555714",
+      "last_checked": "2026-05-01T07:36:46.318303",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7300b7edb58d0fadedac91d1ff3fab5e\"",
       "file_path": "documentation/RoomPlan/structurebuilder/configurationoptions.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/capturedstructure(from:).json": {
       "hash": "8fc3c7c6cd374e10c3f18917075fa51ac3100b1823b709f4906a7d19cd312cc4",
-      "last_checked": "2026-04-28T07:27:14.627328",
+      "last_checked": "2026-05-01T07:36:46.467762",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c3cddd6c93476419bbe2dc4baa1af07e\"",
       "file_path": "documentation/RoomPlan/structurebuilder/capturedstructure-from.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror.json": {
       "hash": "40c77975ac53b884af42b07ed0105f1ead9a21dcf40c6d178c1890ff778e9a74",
-      "last_checked": "2026-04-28T07:27:14.701679",
+      "last_checked": "2026-05-01T07:36:46.607057",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d18b9292a20a37496821d3d740a36857\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions/parametric.json": {
       "hash": "0912391d2b5bcdccbb7057a4ba039f74d49bb94c589e470337a7f298345af38d",
-      "last_checked": "2026-04-28T07:27:14.770830",
+      "last_checked": "2026-05-01T07:36:46.773750",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"445ab2a4e8b67a5e85dc4f2da5996803\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions/parametric.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions/mesh.json": {
       "hash": "89f7a9673d06655d629dfc64dfebf9bf41961c1539da8e8f54356b249bf9189f",
-      "last_checked": "2026-04-28T07:27:14.874145",
+      "last_checked": "2026-05-01T07:36:46.932948",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d9b01ea76323bf69ef34f1c3b000682d\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions/mesh.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions/model.json": {
       "hash": "a74cf5481fb9beefcff4ac61237b94fb57d358a6f462fe4e5c7416a8da0b8ead",
-      "last_checked": "2026-04-28T07:27:14.954651",
+      "last_checked": "2026-05-01T07:36:47.040173",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"94efbb27b0916d510bfff7957cc98b0a\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions/model.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions/init(rawvalue:).json": {
       "hash": "7960022d8c67fe97b4505c43ab416563175370aeddb3cefbb16ea2b924915d73",
-      "last_checked": "2026-04-28T07:27:15.053187",
+      "last_checked": "2026-05-01T07:36:47.156176",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"031989e272d78cb04cc3b42dbdd8e7b9\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions/init-rawvalue.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/configuration/init().json": {
       "hash": "304a8b74b3ba0a42d139965ee21854dcb53be087f16ff154f8e9564a96d8cf55",
-      "last_checked": "2026-04-28T07:27:15.218975",
+      "last_checked": "2026-05-01T07:36:47.472090",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a15e1dcca16910088f48f5fe59e3fc17\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/configuration/init.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/configuration/iscoachingenabled.json": {
       "hash": "3bd65fedd6ade55da8d00314de1c5a66e1638e9435b78365a2d5ee1a803a9020",
-      "last_checked": "2026-04-28T07:27:15.290678",
+      "last_checked": "2026-05-01T07:36:47.643886",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0e9271caa68356a409b30d9057b80c15\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/configuration/iscoachingenabled.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/devicenotsupported.json": {
       "hash": "b714976c16c96e0e67fddd67f36022b80bfde2f15e5cdc3fcddb3bf49af864a2",
-      "last_checked": "2026-04-28T07:27:15.404526",
+      "last_checked": "2026-05-01T07:36:47.760453",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3512af98f45a2d34bd5da402a3b34657\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/devicenotsupported.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/devicetoohot.json": {
       "hash": "20d67f1cdaf37f668e342b725d58f2c0fb699e99d9aaf68ebe4da4620073a475",
-      "last_checked": "2026-04-28T07:27:15.472647",
+      "last_checked": "2026-05-01T07:36:47.900218",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e1aa7296a01a5de3842371961fe6ade5\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/devicetoohot.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/exceedscenesizelimit.json": {
       "hash": "9d66e05b8f81665d03a662ecdce8c67fd5f05f93d545b432cf895390a8a0792a",
-      "last_checked": "2026-04-28T07:27:15.541160",
+      "last_checked": "2026-05-01T07:36:48.031166",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1a017d11b97015a7328f239aaa24de93\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/exceedscenesizelimit.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/invalidarconfiguration.json": {
       "hash": "76208e7e99c62220cb658c3a60f8c7da225b9f5e9af699fffb88dc74832010be",
-      "last_checked": "2026-04-28T07:27:15.637583",
+      "last_checked": "2026-05-01T07:36:48.183092",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7f40ddf3bc37a04bb9ab4ccd2bef2360\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/invalidarconfiguration.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/worldtrackingfailure.json": {
       "hash": "598691c6dcdec31e8e28366b9ffed7e8e2b00d0a666b501f26df53950ac32353",
-      "last_checked": "2026-04-28T07:27:15.716510",
+      "last_checked": "2026-05-01T07:36:48.300570",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f1a3472232ccc897e6c877f63592f2b0\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/worldtrackingfailure.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/internalerror.json": {
       "hash": "5cc4fe194f9f205cbf4398c0fd2fc2ce4e57d1b4cbdb7f3677171113da407719",
-      "last_checked": "2026-04-28T07:27:15.808897",
+      "last_checked": "2026-05-01T07:36:48.444578",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5885510a43a364abeeedd94ebd6b890e\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/internalerror.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/captureerror/errordescription.json": {
       "hash": "87d8c438694bd32f69848f3afc26803fbc2e97df4bce74128b7ba2315ae6ed20",
-      "last_checked": "2026-04-28T07:27:15.901299",
+      "last_checked": "2026-05-01T07:36:48.610742",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"818aa73f89e3e516e0b9ff43b47e9b91\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/captureerror/errordescription.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/normal.json": {
       "hash": "bef994b8e3cf4a2f9a66a172b9e8d0b24f6ef664a5ca420986c41233a989711f",
-      "last_checked": "2026-04-28T07:27:16.003888",
+      "last_checked": "2026-05-01T07:36:48.772289",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0f095e76ebacc7948412985aa9df0055\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/normal.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/moveclosetowall.json": {
       "hash": "218fc5aff2b3c6f3e608f41f89f03089e472ac86416e9a5bdf39923031e3236e",
-      "last_checked": "2026-04-28T07:27:16.072350",
+      "last_checked": "2026-05-01T07:36:48.890968",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"32969ece32d66036a11a23ade2c847aa\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/moveclosetowall.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/moveawayfromwall.json": {
       "hash": "f666b95806c81a87d6f8bf5f3e2b4f28d81a3c471d04c64a9cba18f26e631054",
-      "last_checked": "2026-04-28T07:27:16.172153",
+      "last_checked": "2026-05-01T07:36:49.004942",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0ee0abdce0b9abed7426b91c9c0e7fc3\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/moveawayfromwall.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/turnonlight.json": {
       "hash": "a06d7317400a72df4d7613122d9c1ed78dfbfa4def9ce204bc3112d253d19e26",
-      "last_checked": "2026-04-28T07:27:16.245009",
+      "last_checked": "2026-05-01T07:36:49.132895",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4186370f067ab4620ce8c9a38b0db381\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/turnonlight.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/slowdown.json": {
       "hash": "008ef4fa12afaa1d208155a7b958737c6fdc8093f6a17d6c0518b99f3c42a299",
-      "last_checked": "2026-04-28T07:27:16.318050",
+      "last_checked": "2026-05-01T07:36:49.254376",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"fb7b3908c9b8720864e8c46f7f3a530f\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/slowdown.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roomcapturesession/instruction/lowtexture.json": {
       "hash": "ffa16e18158bad28ba132cde1f5140e4fd3a91ff876c85eeb02e76faac2dd5f9",
-      "last_checked": "2026-04-28T07:27:16.401772",
+      "last_checked": "2026-05-01T07:36:49.390941",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"98c7073e87d6834153eb618214a10d21\"",
       "file_path": "documentation/RoomPlan/roomcapturesession/instruction/lowtexture.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/init(from:).json": {
       "hash": "c78c347704cc0f5b7bc71f85496b9acb7254e86a3958426e5f83c93127595eec",
-      "last_checked": "2026-04-28T07:27:16.481620",
+      "last_checked": "2026-05-01T07:36:49.515971",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e33d239b33bd1f8ea12f7353d93e2465\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/init-from.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/identifier.json": {
       "hash": "d723c165f72fc68a88c164db179f46a7e99e4029ace0e2a03c2406b3a290680d",
-      "last_checked": "2026-04-28T07:27:16.628909",
+      "last_checked": "2026-05-01T07:36:49.633445",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0032c0ce57770e76276c25c9eae941ab\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/identifier.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/parentidentifier.json": {
       "hash": "f6810d4a1a8d38de73643d7b2540b899c79aa6cdbdf4758919154a6029a08493",
-      "last_checked": "2026-04-28T07:27:16.712107",
+      "last_checked": "2026-05-01T07:36:49.770728",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"549466c9533835ddafa97d272a10b611\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/parentidentifier.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.property.json": {
       "hash": "fbaa076d82b89a221926e357faa433e36352446aed555a7eabdd008519b284b5",
-      "last_checked": "2026-04-28T07:27:16.810962",
+      "last_checked": "2026-05-01T07:36:49.880913",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c1769af5e52889ce0c65d9f4afcbebad\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swiftproperty.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum.json": {
       "hash": "11a277e6605475e8498f94b54d5f5aa486a8b241b99d6326e191808cb213cc0a",
-      "last_checked": "2026-04-28T07:27:16.888133",
+      "last_checked": "2026-05-01T07:36:50.014135",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d7d6f9a4254762f490f451230e83c86c\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swiftenum.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/confidence.json": {
       "hash": "8ba396b1420ea2bbf58fe8edf0aaeebe08365bcb4ba820e3aa0a5ca9d7893641",
-      "last_checked": "2026-04-28T07:27:16.960946",
+      "last_checked": "2026-05-01T07:36:50.151548",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4137db5d360d1f2698d144798191cd74\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/confidence.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/transform.json": {
       "hash": "b1dbcb56dfa873a3942495e98d9503092ebaddabb45d5e210056ca3498775d93",
-      "last_checked": "2026-04-28T07:27:17.034422",
+      "last_checked": "2026-05-01T07:36:50.334828",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"368a964b7eab646bba6b2f82619b745c\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/transform.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/dimensions.json": {
       "hash": "7179ab46949ffae723b6a91a8db5a68e88b1633208b3a6757a0f495108414406",
-      "last_checked": "2026-04-28T07:27:17.107391",
+      "last_checked": "2026-05-01T07:36:50.448017",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"19ae97fa4d0a2b00f4a3bb7f8edf9a8b\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/dimensions.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/story.json": {
       "hash": "4008420ac4ae9174a02b73d52d76f8ab2b768f71746e1e92b2411fedf930825c",
-      "last_checked": "2026-04-28T07:27:17.187566",
+      "last_checked": "2026-05-01T07:36:50.590483",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"38e47bc1b9bd40a978a84a583294c5d7\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/story.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/completededges.json": {
       "hash": "0739dc96b6fafd6bd8bbca03da4ccc9747045413bdb3976210842a1ac4edd47b",
-      "last_checked": "2026-04-28T07:27:17.264685",
+      "last_checked": "2026-05-01T07:36:50.726658",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"239f0d6e6da436fb17d33850a7d12e8b\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/completededges.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/edge.json": {
       "hash": "8fa66860b24a8b4c046be2f8fb5d561357336c13e02e4675bd06f9c5268e94cb",
-      "last_checked": "2026-04-28T07:27:17.357989",
+      "last_checked": "2026-05-01T07:36:50.852651",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"685d593b3c00e91381bbfc69819106c4\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/edge.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.property.json": {
       "hash": "42f7fa547d200127a86c5aa05e3cd51a5c66a23c6132a5ff58e1e4d76f0b8b25",
-      "last_checked": "2026-04-28T07:27:17.430079",
+      "last_checked": "2026-05-01T07:36:51.021678",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e9c522c35920555f9696aecc91ad53eb\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swiftproperty.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.struct.json": {
       "hash": "f080065aa3ce402302bc8584a630f63fc7f99b86327779c617474103e5f33940",
-      "last_checked": "2026-04-28T07:27:17.511242",
+      "last_checked": "2026-05-01T07:36:51.180298",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5e6b98c058c51b5bc3e263bdae9567af\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swiftstruct.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/polygoncorners.json": {
       "hash": "3a0dc1e263263092e8deb6552166dffcc15a62e960231706bc36e52532788300",
-      "last_checked": "2026-04-28T07:27:17.591721",
+      "last_checked": "2026-05-01T07:36:51.298675",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6c9b94b37adc1812b18f74b1d7c75414\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/polygoncorners.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/encode(to:).json": {
       "hash": "2c6f2788ac5d9223764a343152d0093b9c949fce3d79c25691b8bcc1527595b2",
-      "last_checked": "2026-04-28T07:27:17.663134",
+      "last_checked": "2026-05-01T07:36:51.438327",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"adcdff6cc794d579c8745cc89db3fdfa\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/encode-to.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/init(from:).json": {
       "hash": "46155564b2a6bea2ec1264f89d4031c45bc8befbe2b2d8bf5e11ec4e74d69d54",
-      "last_checked": "2026-04-28T07:27:17.742020",
+      "last_checked": "2026-05-01T07:36:51.614535",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c5212a0c0697dbd4c7290f7a72cdb87b\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/init-from.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/identifier.json": {
       "hash": "dd46411c9360db18f8a549c50fcba0d2010e27aa6e3d939b3226eaac31b26eb5",
-      "last_checked": "2026-04-28T07:27:17.829315",
+      "last_checked": "2026-05-01T07:36:51.732445",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c3cdbadaf11aab5a9892ad5579c0c6c7\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/identifier.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/parentidentifier.json": {
       "hash": "c0983fcc2add57184d9db33f3cb721da8250eb435b93621f080badf7cdce14a3",
-      "last_checked": "2026-04-28T07:27:17.903338",
+      "last_checked": "2026-05-01T07:36:51.889947",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"604a7c2049ed6246d845e928170df87d\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/parentidentifier.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.property.json": {
       "hash": "1d2475a8112e4ee5440aca1ace150300cc284b58fa1a5dd92865db64d7f8fe03",
-      "last_checked": "2026-04-28T07:27:17.990874",
+      "last_checked": "2026-05-01T07:36:52.010659",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"44fbb8a70e5c83bde7d04496a8d8ae07\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swiftproperty.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum.json": {
       "hash": "0cdf8a7baf44448b627a0f8060d189f0c50a8433e9dfa75431de2390d2d78d6a",
-      "last_checked": "2026-04-28T07:27:18.088908",
+      "last_checked": "2026-05-01T07:36:52.192584",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6e9063d9d25b3fe086fcad95800e8054\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swiftenum.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/confidence.json": {
       "hash": "8d259099b31b8ba1a715c6a5ef90faff325d644206a10f1234d4ab65bee5106b",
-      "last_checked": "2026-04-28T07:27:18.174000",
+      "last_checked": "2026-05-01T07:36:52.315174",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"27a69981365224d3ad88b27a2fa38857\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/confidence.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/transform.json": {
       "hash": "76144fe442fbf830ad6a1662e40d0d225d9b21810e826d2823a7068071eb3914",
-      "last_checked": "2026-04-28T07:27:18.246718",
+      "last_checked": "2026-05-01T07:36:52.455223",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2dcc4f30db9d8cf1a9a070abef3e81dd\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/transform.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/dimensions.json": {
       "hash": "20f4b892c069fdfc3e62625d4c92efd76117718ab6b16fe42c5284346cf9b986",
-      "last_checked": "2026-04-28T07:27:18.315236",
+      "last_checked": "2026-05-01T07:36:52.644580",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c4da7cce149bdd026784812ba0a09acc\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/dimensions.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/story.json": {
       "hash": "6581a655b49eaaaa356097f5edc9b4e865243c5bf5f96f73bbd37e4d51b266d0",
-      "last_checked": "2026-04-28T07:27:18.397495",
+      "last_checked": "2026-05-01T07:36:52.754457",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7fd9bd7ff82fd5b4edc1ac60f08c7cca\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/story.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/attributes.json": {
       "hash": "c60c7bcdb8089cae0acf54fbae3095e2773e5ad4b9c1184eeb979ea8d5b18382",
-      "last_checked": "2026-04-28T07:27:18.499894",
+      "last_checked": "2026-05-01T07:36:52.895667",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"456d4b65766db59902b89bed4d9bdfd4\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/attributes.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/attribute(of:).json": {
       "hash": "e7b0496e85625dd29237eb77d742e99d3f548eff3eb647b48ba4ad595fbb8273",
-      "last_checked": "2026-04-28T07:27:18.582566",
+      "last_checked": "2026-05-01T07:36:53.061353",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0d7068baf09b26317e6fb5b688605617\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/attribute-of.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/encode(to:).json": {
       "hash": "34a2e1d1cb76b14a6919e005541f0f3a9e6561216034cc99f88d80a184bab608",
-      "last_checked": "2026-04-28T07:27:18.657949",
+      "last_checked": "2026-05-01T07:36:53.168730",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4dfe506545fde30c04819ea517845b87\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/encode-to.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/init(from:).json": {
       "hash": "86c2401f0f7e8de8c5c5b3992ead3988d54a802c1752766f14add65e3bcd1dd8",
-      "last_checked": "2026-04-28T07:27:18.751199",
+      "last_checked": "2026-05-01T07:36:53.322844",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d13d1327d8c2000cdcd460a4ff24c38d\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/init-from.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.property.json": {
       "hash": "421f667cebc87dc5798b39a4ae6ec76d48121fc07d083aee1aeef6bf28cab5d3",
-      "last_checked": "2026-04-28T07:27:18.825334",
+      "last_checked": "2026-05-01T07:36:53.485960",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5a5e97354e8a0b9fc2d09bbe08559c84\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swiftproperty.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum.json": {
       "hash": "8149a7cb8069721b6b7061e284b2bc2f46cdbce1873dc6da837c041c36852a5a",
-      "last_checked": "2026-04-28T07:27:18.890509",
+      "last_checked": "2026-05-01T07:36:53.605274",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e9dcb48f5e48c988d227d3c0f9f69e5d\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swiftenum.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/story.json": {
       "hash": "e7a83470341527bee00caf0924cc7266fd591e36421f9c6b52de0d82d60985a1",
-      "last_checked": "2026-04-28T07:27:18.969593",
+      "last_checked": "2026-05-01T07:36:53.752343",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7ba41dcf364b121c3880029ce9bd9631\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/story.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/center.json": {
       "hash": "a9151f26823f86f4a267b80e117f2c068b5cba73ac5af3dd2a93436a50d7ca60",
-      "last_checked": "2026-04-28T07:27:19.049431",
+      "last_checked": "2026-05-01T07:36:53.902144",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0047c33a2f3cd81947c43dc10f1e83b1\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/center.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/encode(to:).json": {
       "hash": "e364e9ad30db6c97a51ca3894f2ed4e36386146f60280117ed057e125f15e5a5",
-      "last_checked": "2026-04-28T07:27:19.141969",
+      "last_checked": "2026-05-01T07:36:54.052732",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a8d2e7f05d18e1b560f8725c9a659a58\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/encode-to.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/confidence/high.json": {
       "hash": "de54dcc495769ea6369aac43aeb6347f056dc9e52d8887d3924b09c49f627540",
-      "last_checked": "2026-04-28T07:27:19.214586",
+      "last_checked": "2026-05-01T07:36:54.161675",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"20e94aed2594de9911c99d8857276c7a\"",
       "file_path": "documentation/RoomPlan/capturedroom/confidence/high.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/confidence/medium.json": {
       "hash": "0a26b778c0086a037130d78e3c670ca8fb1feb44adddfc4e8d46cf2242304dd8",
-      "last_checked": "2026-04-28T07:27:19.298694",
+      "last_checked": "2026-05-01T07:36:54.279402",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5d99c98cf35c94d4c6f6c726c9d4f38b\"",
       "file_path": "documentation/RoomPlan/capturedroom/confidence/medium.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/confidence/low.json": {
       "hash": "1d862c9d0394010f72ae5a0c59db9ee030847007d4fa6d2482837f2766fbc89a",
-      "last_checked": "2026-04-28T07:27:19.375485",
+      "last_checked": "2026-05-01T07:36:54.411072",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5ef8ff11bec179d40e9254d0c5bb85d2\"",
       "file_path": "documentation/RoomPlan/capturedroom/confidence/low.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/attributescodablerepresentation/init(from:).json": {
       "hash": "883456e36ba4c5ad18c3bfaf3580288425d6e8363e09fd4a35b1ae1cb92e5deb",
-      "last_checked": "2026-04-28T07:27:19.454107",
+      "last_checked": "2026-05-01T07:36:54.549478",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"25bbb5cba8c3e2a2faffe37232225919\"",
       "file_path": "documentation/RoomPlan/capturedroom/attributescodablerepresentation/init-from.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/attributescodablerepresentation/init(attributes:).json": {
       "hash": "99b04ba9ddd9923dc90e7234416a4af8c444d2a3dac77cd13fe75f270b307e27",
-      "last_checked": "2026-04-28T07:27:19.529962",
+      "last_checked": "2026-05-01T07:36:54.688994",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1c81c306bf426ffaead6cad1e3d2931d\"",
       "file_path": "documentation/RoomPlan/capturedroom/attributescodablerepresentation/init-attributes.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/attributescodablerepresentation/attributes.json": {
       "hash": "cd2e098110146926a73932e4bdcad7e048629cec92210069506f8c480a0903d9",
-      "last_checked": "2026-04-28T07:27:19.599846",
+      "last_checked": "2026-05-01T07:36:54.822067",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e12254987ead916733aadd9b84152434\"",
       "file_path": "documentation/RoomPlan/capturedroom/attributescodablerepresentation/attributes.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/init().json": {
       "hash": "40c5b25e30a3bc3a1b8e3e3a5a6ed4912d0b42de770c2c47d6982647601b6bc9",
-      "last_checked": "2026-04-28T07:27:19.672240",
+      "last_checked": "2026-05-01T07:36:54.935248",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b3a88b6848287a8a083b09d5c0114f98\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/init.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/modelfileurls.json": {
       "hash": "f4ae240869c2e0a18b5a0220a23ecb37bdca9230d712f1c962c601ba33a74184",
-      "last_checked": "2026-04-28T07:27:19.749826",
+      "last_checked": "2026-05-01T07:36:55.071869",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6fc1963e1b854d664f3ec231c7da736f\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/modelfileurls.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/modelfileurl(for:)-9irqx.json": {
       "hash": "72cd070967512782601028c2c7a58dc84cc9488763f931abec14c3cd752d2070",
-      "last_checked": "2026-04-28T07:27:19.821558",
+      "last_checked": "2026-05-01T07:36:55.210010",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"51b899e1a38a133140bf3d51e0caa650\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/modelfileurl-for-9irqx.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/modelfileurl(for:)-96rvb.json": {
       "hash": "3b349f794a58d9697d755e45252bbc578c2a9efb60cd2c81bc520b4d7d26e51e",
-      "last_checked": "2026-04-28T07:27:19.902299",
+      "last_checked": "2026-05-01T07:36:55.327993",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5e2d16b25d1786d94fa4c895d831195f\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/modelfileurl-for-96rvb.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/modelfileurl(for:)-58ykp.json": {
       "hash": "7c81fb8b19ddad1794b766efccf79cedeb825a3d85665fc491309433874c9769",
-      "last_checked": "2026-04-28T07:27:19.988405",
+      "last_checked": "2026-05-01T07:36:55.472814",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"13dca7558a9aaccd24a39cf8e78d0b61\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/modelfileurl-for-58ykp.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/setmodelfileurl(_:for:)-8xio.json": {
       "hash": "983a85ad27f5781ba040599c35b06206d70647beb37d0aaccc414688ed6f21bd",
-      "last_checked": "2026-04-28T07:27:20.076198",
+      "last_checked": "2026-05-01T07:36:55.602550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"47bbc98e0611240ac05a33196975f51b\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/setmodelfileurl-for-8xio.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/setmodelfileurl(_:for:)-4law9.json": {
       "hash": "0e29f139b3ea8a31a851dc0b2eee7c40ded900748eff4e5cd8945d502fa00cc0",
-      "last_checked": "2026-04-28T07:27:20.153989",
+      "last_checked": "2026-05-01T07:36:55.714559",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"183728788e8c9db85606d1c4ee7ecfeb\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/setmodelfileurl-for-4law9.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/error.json": {
       "hash": "1c2b4f462b1b192637548cdcf4fff772abeee05fba2394efe2568b07a1146f77",
-      "last_checked": "2026-04-28T07:27:20.235794",
+      "last_checked": "2026-05-01T07:36:55.836933",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3d5562cf09e3bcacc4790bd8355919af\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/error.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/devicenotsupported.json": {
       "hash": "fd5a8d4d4e8116376960d522cc8fe2b6ff6011642efe5324b95e23808f5c9653",
-      "last_checked": "2026-04-28T07:27:20.314774",
+      "last_checked": "2026-05-01T07:36:55.978635",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6e13d23c82f13afef10fcafb7784d148\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/devicenotsupported.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/urlinvalidfileextension.json": {
       "hash": "a41c019b5ac779914423acdd6fe3a99c3f4ecdaf00cd844052fafe88453c220a",
-      "last_checked": "2026-04-28T07:27:20.387798",
+      "last_checked": "2026-05-01T07:36:56.100139",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"da87925558de8b8db54c9522a1341d27\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/urlinvalidfileextension.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/urlinvalidfilepath.json": {
       "hash": "31a9e0d7d1ad2485ef1196ee4a4641934e6c9079845d97ec794470f5844049a1",
-      "last_checked": "2026-04-28T07:27:20.472121",
+      "last_checked": "2026-05-01T07:36:56.241510",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e0db4c206c4ba3e259cd7f7ff063b478\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/urlinvalidfilepath.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/urlinvalidscheme.json": {
       "hash": "d373a380f7fe3d0e24b1744c09c4d23e42a93ecf2183e2cc84909f9704c2397d",
-      "last_checked": "2026-04-28T07:27:20.647758",
+      "last_checked": "2026-05-01T07:36:56.369500",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"51a6c1a4d8d7872e577ecca14bdcc250\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/urlinvalidscheme.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/urlmissingfileextension.json": {
       "hash": "8262166842c457f617e99c88fb9a2c47283d7a67771e459445e8dfc98782e3fc",
-      "last_checked": "2026-04-28T07:27:20.722904",
+      "last_checked": "2026-05-01T07:36:56.482843",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"cef016ce6dd69b76ba892e8fe7e05133\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/urlmissingfileextension.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/error/errordescription.json": {
       "hash": "8ae22f79a92b4270f6d080735e397d8c29cddbe7cd5f0e421a3c1447c9716665",
-      "last_checked": "2026-04-28T07:27:20.797418",
+      "last_checked": "2026-05-01T07:36:56.617841",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f8eb8320d5b5098167d5c35385dbb870\"",
       "file_path": "documentation/RoomPlan/capturedroom/error/errordescription.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomattribute/shortidentifier.json": {
       "hash": "0e5ba9594e002f56fe119590216526dd91c088fd9d4c6834d266faa6a88bf438",
-      "last_checked": "2026-04-28T07:27:20.860821",
+      "last_checked": "2026-05-01T07:36:56.762974",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2e40e53cfd9e8f9a87ed17ec8c814738\"",
       "file_path": "documentation/RoomPlan/capturedroomattribute/shortidentifier.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroomattribute/parentcategory.json": {
       "hash": "5848ec5d4517a26bc3cbc8ec891bbd485eac2a5436b33e760a2d4693cd359ce8",
-      "last_checked": "2026-04-28T07:27:20.945115",
+      "last_checked": "2026-05-01T07:36:56.890702",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c401418a2b9b3b80d8dad9931f678a69\"",
       "file_path": "documentation/RoomPlan/capturedroomattribute/parentcategory.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedelementcategory/object(_:).json": {
       "hash": "10b65c1474c1a82f240cbec255add46c4405e128c819bcc0f432936c1913e255",
-      "last_checked": "2026-04-28T07:27:21.026380",
+      "last_checked": "2026-05-01T07:36:57.021685",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"eadf7390ce5c802e1047df536d19f632\"",
       "file_path": "documentation/RoomPlan/capturedelementcategory/object.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedelementcategory/surface(_:).json": {
       "hash": "40e19b78b5f3cb7d0c93a8ab5e70d7c8a3baa79b0fd01a281e78af9595a4e025",
-      "last_checked": "2026-04-28T07:27:21.103084",
+      "last_checked": "2026-05-01T07:36:57.155337",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3023dc648ae416bf23ff3a3b1e0bd498\"",
       "file_path": "documentation/RoomPlan/capturedelementcategory/surface.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairtype/dining.json": {
       "hash": "854fc80844b2fc3d6643dcff05f604b600b2d2885fa18e9379ff5b9d841b3c36",
-      "last_checked": "2026-04-28T07:27:21.198612",
+      "last_checked": "2026-05-01T07:36:57.258775",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"abf375ae527358030f1d76286cbdf7f0\"",
       "file_path": "documentation/RoomPlan/chairtype/dining.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairtype/stool.json": {
       "hash": "416fe45083f21e80e2d2619effb0ec990687707fc718810c0bbe069f3f71d202",
-      "last_checked": "2026-04-28T07:27:21.276030",
+      "last_checked": "2026-05-01T07:36:57.393475",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"63bde320f15b11a92503a5327ab93c10\"",
       "file_path": "documentation/RoomPlan/chairtype/stool.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairtype/swivel.json": {
       "hash": "f14034176b1762a7d2482af9d79ec914b68a412b4edb06fb9e663831b046144e",
-      "last_checked": "2026-04-28T07:27:21.359434",
+      "last_checked": "2026-05-01T07:36:57.503535",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"07a34e04ef7fd308520a3ae207a3e45b\"",
       "file_path": "documentation/RoomPlan/chairtype/swivel.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairtype/unidentified.json": {
       "hash": "b8633bde0d72e10e5c4945be60c3fa8e7ed30ff9c894e1c798de26899ce632fc",
-      "last_checked": "2026-04-28T07:27:21.447564",
+      "last_checked": "2026-05-01T07:36:57.670532",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f787bbb042dbc223fdfebd839a8a6315\"",
       "file_path": "documentation/RoomPlan/chairtype/unidentified.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairarmtype/existing.json": {
       "hash": "131c401b045816ba7d4d89e410d5000d428d2b73cd2a3c0d358f3a65d51b5aeb",
-      "last_checked": "2026-04-28T07:27:21.524134",
+      "last_checked": "2026-05-01T07:36:57.793279",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8419a2585f996224bcdcc3cc52120154\"",
       "file_path": "documentation/RoomPlan/chairarmtype/existing.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairarmtype/missing.json": {
       "hash": "9dba4c98bbca9fe3ab350fb5e441cbb1685dec80649eb9eba613f5d484097373",
-      "last_checked": "2026-04-28T07:27:21.605753",
+      "last_checked": "2026-05-01T07:36:57.922133",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"bf96136831f6c5421650af10bda2fe57\"",
       "file_path": "documentation/RoomPlan/chairarmtype/missing.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairlegtype/four.json": {
       "hash": "4462f8d11dfb762722d125b651523478224d0e8d904095c8e62e3906b193376b",
-      "last_checked": "2026-04-28T07:27:21.718243",
+      "last_checked": "2026-05-01T07:36:58.048198",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"39c5fc819de333bd4724ab3a865dbbe7\"",
       "file_path": "documentation/RoomPlan/chairlegtype/four.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairlegtype/star.json": {
       "hash": "cf6b77b4a7757ead015b6267fb207f79bfc97a70e259383a68dfd8c75478bfa2",
-      "last_checked": "2026-04-28T07:27:21.799247",
+      "last_checked": "2026-05-01T07:36:58.196687",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1d7c6cb0b70d36bbe576debecc766fce\"",
       "file_path": "documentation/RoomPlan/chairlegtype/star.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairlegtype/unidentified.json": {
       "hash": "2c8c94157741f0f5ac451de2eefae13726cc9d2fe10823f06687f3306f239024",
-      "last_checked": "2026-04-28T07:27:21.922457",
+      "last_checked": "2026-05-01T07:36:58.368062",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2dca832e363f7ffdf467f08fe11431f1\"",
       "file_path": "documentation/RoomPlan/chairlegtype/unidentified.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairbacktype/existing.json": {
       "hash": "da1d65018c9c8271ca4ac3e5a8d57cda83d1813089952ce04194e21ff9016d90",
-      "last_checked": "2026-04-28T07:27:22.008319",
+      "last_checked": "2026-05-01T07:36:58.507836",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6abfebe3a05eb52443029143fa76bc2c\"",
       "file_path": "documentation/RoomPlan/chairbacktype/existing.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/chairbacktype/missing.json": {
       "hash": "8e42a19d02d4711e0adc58c432c82ddeaead19ff7351217d21eb38a913fef4da",
-      "last_checked": "2026-04-28T07:27:22.089789",
+      "last_checked": "2026-05-01T07:36:58.623999",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8126ef3ea36b3ca0df73a7f0eb71a7f1\"",
       "file_path": "documentation/RoomPlan/chairbacktype/missing.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype/rectangular.json": {
       "hash": "ff049c925983047257d545049a021f9fded5e0741c95ba1d011ab2b83471ae9d",
-      "last_checked": "2026-04-28T07:27:22.166619",
+      "last_checked": "2026-05-01T07:36:58.820497",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b183d614ea8efd53c4468de1c366aea8\"",
       "file_path": "documentation/RoomPlan/sofatype/rectangular.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype/singleseat.json": {
       "hash": "badff1b045cf39d27350283812bcd9d1872b3e87d43c2e535cfdfabfab93ef10",
-      "last_checked": "2026-04-28T07:27:22.232997",
+      "last_checked": "2026-05-01T07:36:58.946874",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c562ecf5cce616610af4fba7c1d0fa92\"",
       "file_path": "documentation/RoomPlan/sofatype/singleseat.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype/lshaped.json": {
       "hash": "2667dae1d556636e087267d5217d7f697b1824538924c36595c61c9672cf3696",
-      "last_checked": "2026-04-28T07:27:22.306098",
+      "last_checked": "2026-05-01T07:36:59.094339",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"533277e972ee222480e7be42507fc5cf\"",
       "file_path": "documentation/RoomPlan/sofatype/lshaped.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype/lshapedextension.json": {
       "hash": "22554834600577fc058bdf2cd71d195ba666ba640df8a46db880e0e72ce2dae6",
-      "last_checked": "2026-04-28T07:27:22.379371",
+      "last_checked": "2026-05-01T07:36:59.217634",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8c38e4575994a23ee6ee8dbfc3e7f41a\"",
       "file_path": "documentation/RoomPlan/sofatype/lshapedextension.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/sofatype/unidentified.json": {
       "hash": "29f51051a9d9259b6a35bf44e2beb29095ceb85fed07fa500270f67075007b01",
-      "last_checked": "2026-04-28T07:27:22.447537",
+      "last_checked": "2026-05-01T07:36:59.326661",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"07471dc2660421c94d78dc27e17af703\"",
       "file_path": "documentation/RoomPlan/sofatype/unidentified.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/storagetype/cabinet.json": {
       "hash": "e93038ef4e747812eae20c694d346dcf9413a2b6e9cdd00565aaef89a1d69101",
-      "last_checked": "2026-04-28T07:27:22.524466",
+      "last_checked": "2026-05-01T07:36:59.444423",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"eb47c96dff3ed138ad2222a739f2df68\"",
       "file_path": "documentation/RoomPlan/storagetype/cabinet.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/storagetype/shelf.json": {
       "hash": "76b6e0a177799fc28081e1b2ad99c39deb964efdfb97acad77cec8fabe3eeeff",
-      "last_checked": "2026-04-28T07:27:22.603988",
+      "last_checked": "2026-05-01T07:36:59.572461",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c7e1668675efaaa9680985adea58b846\"",
       "file_path": "documentation/RoomPlan/storagetype/shelf.md"
     },
@@ -4871,9 +4871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tabletype/dining.json": {
       "hash": "f0c26106c9c6a12dc303e19925fad5f303e5b838722385f8153fa808925be22f",
-      "last_checked": "2026-04-28T07:27:22.724967",
+      "last_checked": "2026-05-01T07:36:59.720703",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b280832d59ab2d715bcd99810f785336\"",
       "file_path": "documentation/RoomPlan/tabletype/dining.md"
     },
@@ -4887,9 +4887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tabletype/coffee.json": {
       "hash": "585e9599aba5f0f20b31f9249f4478750d08589d5421207ee685560faa72d35f",
-      "last_checked": "2026-04-28T07:27:22.799397",
+      "last_checked": "2026-05-01T07:36:59.855521",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"12e86f9d331bb939cd1e11d69156f54b\"",
       "file_path": "documentation/RoomPlan/tabletype/coffee.md"
     },
@@ -4903,9 +4903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tabletype/unidentified.json": {
       "hash": "52ec5fcc1def6ab731e8dcbc377b5e0d47b532326a5240b370bf6c547ea3bc33",
-      "last_checked": "2026-04-28T07:27:22.866682",
+      "last_checked": "2026-05-01T07:36:59.975718",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e5ebe0d5b178e02d7e3af8a20edb783e\"",
       "file_path": "documentation/RoomPlan/tabletype/unidentified.md"
     },
@@ -5063,9 +5063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tableshapetype/rectangular.json": {
       "hash": "232c80bf436d8420114f42df1feaae86c0ed4cc24b9685c855697ef695fe4523",
-      "last_checked": "2026-04-28T07:27:22.941204",
+      "last_checked": "2026-05-01T07:37:00.155854",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"30b49ec58c9f2ec0d723e19709d25f77\"",
       "file_path": "documentation/RoomPlan/tableshapetype/rectangular.md"
     },
@@ -5079,9 +5079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tableshapetype/circularelliptic.json": {
       "hash": "bbf81406190c0aac85d9e1b67145d6e175a1e03f458e65cf925d391d50f4b5bc",
-      "last_checked": "2026-04-28T07:27:23.019124",
+      "last_checked": "2026-05-01T07:37:00.284164",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a78770909e7a419b3dd897438be94e07\"",
       "file_path": "documentation/RoomPlan/tableshapetype/circularelliptic.md"
     },
@@ -5095,9 +5095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tableshapetype/lshaped.json": {
       "hash": "81c01a6c678d2169da80734cc599ad69a5f9faf332875044db7a5afa976e6508",
-      "last_checked": "2026-04-28T07:27:23.103120",
+      "last_checked": "2026-05-01T07:37:00.398034",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5b48922d9473dd4e1dcfc0bfd78544ac\"",
       "file_path": "documentation/RoomPlan/tableshapetype/lshaped.md"
     },
@@ -5111,9 +5111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/tableshapetype/unidentified.json": {
       "hash": "6d0ef2d97ef12c55c9946990311371d1dfd8f3135981e98f54df325dd48dbff2",
-      "last_checked": "2026-04-28T07:27:23.177686",
+      "last_checked": "2026-05-01T07:37:00.528192",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"19a7bbef3d46e8282c254f31f16c3f7e\"",
       "file_path": "documentation/RoomPlan/tableshapetype/unidentified.md"
     },
@@ -5271,9 +5271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/configurationoptions/init(rawvalue:).json": {
       "hash": "c5e6dec412b4ba2a8dce774309a101569af39c7746225454d113c86f937500ed",
-      "last_checked": "2026-04-28T07:27:23.257630",
+      "last_checked": "2026-05-01T07:37:00.655621",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b1b98963ac5abd2ed4c05161a46a7d3f\"",
       "file_path": "documentation/RoomPlan/roombuilder/configurationoptions/init-rawvalue.md"
     },
@@ -5303,9 +5303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/configurationoptions/beautifyobjects.json": {
       "hash": "d85f088335ed83e1c24ab1892d49c19dd2130e6e42785ba10d628e9a44bd208b",
-      "last_checked": "2026-04-28T07:27:23.409527",
+      "last_checked": "2026-05-01T07:37:00.933157",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d59d927a75620d38df7dce14af21ebef\"",
       "file_path": "documentation/RoomPlan/roombuilder/configurationoptions/beautifyobjects.md"
     },
@@ -5415,9 +5415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/insufficientinput.json": {
       "hash": "d65585f5ae708e9cb80d151d1d06ed7b7b1c251a260cbb1195f56336ee92cd8d",
-      "last_checked": "2026-04-28T07:27:23.475536",
+      "last_checked": "2026-05-01T07:37:01.053352",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3b541f9820dc706d8b1b4aa939208327\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/insufficientinput.md"
     },
@@ -5431,9 +5431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/invalidinput.json": {
       "hash": "81baf05a26b6b86059a7b20fff61e7c0500ec946c6079049981d6dd681c7503e",
-      "last_checked": "2026-04-28T07:27:23.549226",
+      "last_checked": "2026-05-01T07:37:01.180786",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e38a9a9e132fc165399f5825216d7c65\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/invalidinput.md"
     },
@@ -5447,9 +5447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/exceedscenesizelimit.json": {
       "hash": "81a3ead21d04eeb0be2ed71457f60e3c4876c6d5254d9e44de13fb3dc7093210",
-      "last_checked": "2026-04-28T07:27:23.639711",
+      "last_checked": "2026-05-01T07:37:01.309605",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"04deea375274a1088580bb257353c689\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/exceedscenesizelimit.md"
     },
@@ -5463,9 +5463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/internalerror.json": {
       "hash": "8dfcbb4453a515fafc7a6302fbc8ae9fd7a295ec737ab538ee23df4646c44a1d",
-      "last_checked": "2026-04-28T07:27:23.709680",
+      "last_checked": "2026-05-01T07:37:01.458563",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3ce4aec21c24ed30e073d4d2be18f8b8\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/internalerror.md"
     },
@@ -5479,9 +5479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/devicenotsupported.json": {
       "hash": "e6656acfb94310394b0a394b1d71f835f63e3ad6f66fbdd389c0a8a5186ccb84",
-      "last_checked": "2026-04-28T07:27:23.775750",
+      "last_checked": "2026-05-01T07:37:01.589619",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b1a15f9ff78d5ce9b8e9446b386b29a3\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/devicenotsupported.md"
     },
@@ -5495,9 +5495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/builderror/errordescription.json": {
       "hash": "e43c8444e99569fb73822456dee1511cfe37dc237e66f8d7529a1fd0cd4ab4bd",
-      "last_checked": "2026-04-28T07:27:23.847106",
+      "last_checked": "2026-05-01T07:37:01.715411",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"99f2597c2f3c75a2934d918784bfbdf9\"",
       "file_path": "documentation/RoomPlan/roombuilder/builderror/errordescription.md"
     },
@@ -5703,9 +5703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/devicenotsupported.json": {
       "hash": "3ed0a84b4bc9ff3c37469d6c3ca40c5859cb2d518a32b8ae780ee22052cb3c3d",
-      "last_checked": "2026-04-28T07:27:23.914355",
+      "last_checked": "2026-05-01T07:37:01.833311",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a424c595fdbfe5c3c43ef256f2ef8b67\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/devicenotsupported.md"
     },
@@ -5719,9 +5719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/exceedscenesizelimit.json": {
       "hash": "1fbf1bcb795a617b6b3515983bcc399bd5192367202de58c9027d811d54e70aa",
-      "last_checked": "2026-04-28T07:27:23.987169",
+      "last_checked": "2026-05-01T07:37:01.950494",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"2f8f7f2c32e08308dafe4b38cb9b5f20\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/exceedscenesizelimit.md"
     },
@@ -5735,9 +5735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/insufficientinput.json": {
       "hash": "169610dbd1dd3d888cfb9ae8ff7d91d173fe0c956d9a136f57e07fc8b1404c6e",
-      "last_checked": "2026-04-28T07:27:24.096559",
+      "last_checked": "2026-05-01T07:37:02.076013",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"84095b43ad0c9d64ccea7112339d6c92\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/insufficientinput.md"
     },
@@ -5751,9 +5751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/internalerror.json": {
       "hash": "b8ab129d643fb51be099bc085a1c82cbcce0b24d030f2d98bb298c8c270a9a16",
-      "last_checked": "2026-04-28T07:27:24.180986",
+      "last_checked": "2026-05-01T07:37:02.207594",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f702bf3becd3698af8b6f4c830ad3414\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/internalerror.md"
     },
@@ -5767,9 +5767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/invalidinput.json": {
       "hash": "aeae1e72e1a71c87435225f7c6016aa3f13fe3d064e95bd5b3484f5b438858bf",
-      "last_checked": "2026-04-28T07:27:24.243852",
+      "last_checked": "2026-05-01T07:37:02.348864",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"63ce5be0e6cf7ee8b241bcb1fbae798a\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/invalidinput.md"
     },
@@ -5783,9 +5783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/invalidroomlocation.json": {
       "hash": "7d70edca45315a8769284446398121965341bd5ef4e04474d01aff2c0e6bb6b5",
-      "last_checked": "2026-04-28T07:27:24.322827",
+      "last_checked": "2026-05-01T07:37:02.485747",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0e31b3cb9deb13d994ee6463f1d4ee31\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/invalidroomlocation.md"
     },
@@ -5799,9 +5799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/structurebuilder/builderror/errordescription.json": {
       "hash": "e96eaabc36c2d2577c29b6df158ae79345dc87d2782cce66e1246bba07529bfc",
-      "last_checked": "2026-04-28T07:27:24.442920",
+      "last_checked": "2026-05-01T07:37:02.651591",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6819ee343d1d98f252b1f18d13994f6a\"",
       "file_path": "documentation/RoomPlan/structurebuilder/builderror/errordescription.md"
     },
@@ -6263,9 +6263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum/floor.json": {
       "hash": "7b2459344c42a232c4a1a1f72b60a8a49d7e182eef4a5f7c659badbe562e2fa3",
-      "last_checked": "2026-04-28T07:27:24.525229",
+      "last_checked": "2026-05-01T07:37:02.787026",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"dbe0cb039d72b501f96bb5f31111732d\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swift.enum/floor.md"
     },
@@ -6279,9 +6279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum/door(isopen:).json": {
       "hash": "50f2905856afc1b00136fe9a8b45d4b78db5cdad79ee9a674104146a2f90c3f9",
-      "last_checked": "2026-04-28T07:27:24.606156",
+      "last_checked": "2026-05-01T07:37:02.905979",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"fe534429c260fdb9cf22f0af6cef1e06\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swift.enum/door-isopen.md"
     },
@@ -6295,9 +6295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum/opening.json": {
       "hash": "705de88cf292cf3c7d6841ac40e93bd3d73c71d5be5f09a8ebd4c72bce423c4f",
-      "last_checked": "2026-04-28T07:27:24.678785",
+      "last_checked": "2026-05-01T07:37:03.026742",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"cf71fd44cfcbf6077dabd364b266f11f\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swift.enum/opening.md"
     },
@@ -6311,9 +6311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum/wall.json": {
       "hash": "90bb52dc8c2c72d211edfa5482c90eab188fe4d0575bc0cca111c206c171df7e",
-      "last_checked": "2026-04-28T07:27:24.758638",
+      "last_checked": "2026-05-01T07:37:03.158780",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"8694abbf950ef2c6b80515d6c935c694\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swift.enum/wall.md"
     },
@@ -6327,9 +6327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/category-swift.enum/window.json": {
       "hash": "0cc7638d37d7c24e26e3178c3647b8edb4effced11f3a909e8cd8c936a787e5d",
-      "last_checked": "2026-04-28T07:27:24.834099",
+      "last_checked": "2026-05-01T07:37:03.312874",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"0f15baf5bb31d904b246b68724fee8d2\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/category-swift.enum/window.md"
     },
@@ -6455,9 +6455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/edge/top.json": {
       "hash": "30fdf44bdc21afb5ec5ffb1d09a859b5df24369b139eff50d9054c9bc722cb6d",
-      "last_checked": "2026-04-28T07:27:24.903489",
+      "last_checked": "2026-05-01T07:37:03.432710",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"29b76e496313633d02af68e834ebb0e9\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/edge/top.md"
     },
@@ -6471,9 +6471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/edge/bottom.json": {
       "hash": "ece8efb3fc8570abde7d623734c1f97328ebe98a83d583716dada62a2e4c1c8e",
-      "last_checked": "2026-04-28T07:27:24.982417",
+      "last_checked": "2026-05-01T07:37:03.577561",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"02d017613274e1f3085ce0f88d930bdf\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/edge/bottom.md"
     },
@@ -6487,9 +6487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/edge/left.json": {
       "hash": "3689ed15bdabd051a7dfd70365013f9259046be7539233450ce6219c7544ead6",
-      "last_checked": "2026-04-28T07:27:25.055811",
+      "last_checked": "2026-05-01T07:37:03.714072",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"65aa83ec9364905ff2686075f6df4768\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/edge/left.md"
     },
@@ -6503,9 +6503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/edge/right.json": {
       "hash": "35a580c87b469bd39ef510823790b269f244233e594adcd38e29e3a6cff0b76c",
-      "last_checked": "2026-04-28T07:27:25.124385",
+      "last_checked": "2026-05-01T07:37:03.850435",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6fedbc2f1f23f3d0bb30ee18512b9eb5\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/edge/right.md"
     },
@@ -6663,9 +6663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.struct/startangle.json": {
       "hash": "862c8df5f724ef3b1b11ce7d928c646ebc4c9d3e0e9d4e8872b5f530c55676e3",
-      "last_checked": "2026-04-28T07:27:25.230160",
+      "last_checked": "2026-05-01T07:37:03.964912",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"5106d06c0fe281cdcccb90a4b2dd9234\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swift.struct/startangle.md"
     },
@@ -6679,9 +6679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.struct/endangle.json": {
       "hash": "18d8c0469281cd98388b0bee22f62ccbb3c1a27c8114cc8d69facc209e42d10f",
-      "last_checked": "2026-04-28T07:27:25.331953",
+      "last_checked": "2026-05-01T07:37:04.103777",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6c1d34366f95efa99fbe7d14e6644ad4\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swift.struct/endangle.md"
     },
@@ -6695,9 +6695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.struct/radius.json": {
       "hash": "f518321bc70399c0272208b02cbec0c75fffa2bfa1f9eb2c655b92e3574ab4f7",
-      "last_checked": "2026-04-28T07:27:25.413769",
+      "last_checked": "2026-05-01T07:37:04.227776",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"7183a740a1a33b538a8e0129c6dcd7db\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swift.struct/radius.md"
     },
@@ -6727,9 +6727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/surface/curve-swift.struct/center.json": {
       "hash": "28bd4e6785b2951bd375f1d680e1ea0580d4c8498965d77f39417c55207ba51b",
-      "last_checked": "2026-04-28T07:27:25.490831",
+      "last_checked": "2026-05-01T07:37:04.357692",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"c4c07aa5d3648035fd430000760a176c\"",
       "file_path": "documentation/RoomPlan/capturedroom/surface/curve-swift.struct/center.md"
     },
@@ -6759,9 +6759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/bathtub.json": {
       "hash": "0854ae69dd5a5b82d05b91f78225a31ecdddc145e2260b12c50408d75c770fcb",
-      "last_checked": "2026-04-28T07:27:25.588871",
+      "last_checked": "2026-05-01T07:37:04.481264",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6345b3a3d218be1e5194e45a3e0e209e\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/bathtub.md"
     },
@@ -6775,9 +6775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/bed.json": {
       "hash": "355a4c48232a956536ea30a72c7c4c463ba8f466e53cdf14f913bd5050bd9a86",
-      "last_checked": "2026-04-28T07:27:25.670705",
+      "last_checked": "2026-05-01T07:37:04.624228",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b1e68b84f199853833eff4c9ddf3c915\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/bed.md"
     },
@@ -6791,9 +6791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/chair.json": {
       "hash": "408f55dd724357ac8a7da8df7ece6238d50a56662f79d60ee9d2a9607e193262",
-      "last_checked": "2026-04-28T07:27:25.749318",
+      "last_checked": "2026-05-01T07:37:04.788881",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3dcf405a931d89d545c1c19e43e4525f\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/chair.md"
     },
@@ -6807,9 +6807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/dishwasher.json": {
       "hash": "735104537af7f3e4af085ae9e6beca2470fbe4b72d5fd3175437124b91c1c57f",
-      "last_checked": "2026-04-28T07:27:25.822008",
+      "last_checked": "2026-05-01T07:37:04.917154",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"cd6cdbac1079f650f3cf378ec079a225\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/dishwasher.md"
     },
@@ -6823,9 +6823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/fireplace.json": {
       "hash": "d384414e24379782aee5ca465f513f0334593a3ac758f0db5fd49bcf660b22c0",
-      "last_checked": "2026-04-28T07:27:25.897953",
+      "last_checked": "2026-05-01T07:37:05.041897",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3a6f7bf7fec88a08e00a6de8344f522a\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/fireplace.md"
     },
@@ -6839,9 +6839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/oven.json": {
       "hash": "85a5ec79d94f67f4f53fe507f97f01f6394502831c8301a42e65087d28dfc193",
-      "last_checked": "2026-04-28T07:27:25.966291",
+      "last_checked": "2026-05-01T07:37:05.163280",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"3e2efe4f926a154299da7a81807ec042\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/oven.md"
     },
@@ -6855,9 +6855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/refrigerator.json": {
       "hash": "e110ee8b953459a2d4744142640503dda9a67623037f5de8f03ceec3bb3ce116",
-      "last_checked": "2026-04-28T07:27:26.052150",
+      "last_checked": "2026-05-01T07:37:05.302266",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"694d9983f40965de19524ab18e57aece\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/refrigerator.md"
     },
@@ -6871,9 +6871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/sink.json": {
       "hash": "bd46d9c2ec2a3c026932433ab77235f547144c562d91998887c151cbac862e38",
-      "last_checked": "2026-04-28T07:27:26.130784",
+      "last_checked": "2026-05-01T07:37:05.414742",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"56cf3b77f4e75dcea2582c6a6c2530fd\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/sink.md"
     },
@@ -6887,9 +6887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/sofa.json": {
       "hash": "48708cc103792b886f1c0d4bb73c4e5aea644fb0c129b3197d31ac94bac81976",
-      "last_checked": "2026-04-28T07:27:26.203524",
+      "last_checked": "2026-05-01T07:37:05.540302",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"64e0ed589d8c52c39228a31d72c50db6\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/sofa.md"
     },
@@ -6903,9 +6903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/stairs.json": {
       "hash": "481bbf2968a663e48a87bc474db373e2ab638ff7c9d0679c430cfbfa3c39ec42",
-      "last_checked": "2026-04-28T07:27:26.295129",
+      "last_checked": "2026-05-01T07:37:05.648472",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"1a365e930738322e6a5461557df70fa1\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/stairs.md"
     },
@@ -6919,9 +6919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/storage.json": {
       "hash": "54b8390ee34be710a1adf6a412599575451691c01b3e2431f6b278c1898b9c62",
-      "last_checked": "2026-04-28T07:27:26.370327",
+      "last_checked": "2026-05-01T07:37:05.784712",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e689eb4ffdda5dcd0b2ccbf094dacbef\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/storage.md"
     },
@@ -6935,9 +6935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/stove.json": {
       "hash": "c4e92fe00e0ffc85bea5512e1d6c4881de70e5cad1dd5b0bba0a29d0c610ee99",
-      "last_checked": "2026-04-28T07:27:26.443058",
+      "last_checked": "2026-05-01T07:37:05.908152",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ada8a57b2cb555e4b3c3c4707ec84566\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/stove.md"
     },
@@ -6951,9 +6951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/table.json": {
       "hash": "9867225e6c85bc383b3bfc4122080e2090a955b92b1771fe1f1e86adb803f555",
-      "last_checked": "2026-04-28T07:27:26.524757",
+      "last_checked": "2026-05-01T07:37:06.027802",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"639ce4dc24aaf6d4944ed8a2f1b52cff\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/table.md"
     },
@@ -6967,9 +6967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/television.json": {
       "hash": "ff04b71db79d984de1ab917857946ad2ad75490efd94ce8469f3b2a25f2ccd6e",
-      "last_checked": "2026-04-28T07:27:26.600117",
+      "last_checked": "2026-05-01T07:37:06.172471",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e7061a7f0adaed90890b58f4db8e86de\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/television.md"
     },
@@ -6983,9 +6983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/toilet.json": {
       "hash": "da8d007e6cecb41283320d66ad0070ef79c28ff7d6d0f0e4211da338c2c96774",
-      "last_checked": "2026-04-28T07:27:26.668595",
+      "last_checked": "2026-05-01T07:37:06.295239",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"d6229be47a877c2b9e6f279caa2b30c9\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/toilet.md"
     },
@@ -6999,9 +6999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/washerdryer.json": {
       "hash": "e55c789c79b2ff09f22a2b489bd3b64c65070b6b13d99623158103d022fe3667",
-      "last_checked": "2026-04-28T07:27:26.742249",
+      "last_checked": "2026-05-01T07:37:06.451431",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"f226bc131985ba5ffa32cd1f570cf939\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/washerdryer.md"
     },
@@ -7015,9 +7015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/supportedattributetypes.json": {
       "hash": "dcc3d1c6be4b717262995c07aecfdf0fd2d12917a1e568bd34df35e0abf23432",
-      "last_checked": "2026-04-28T07:27:26.817562",
+      "last_checked": "2026-05-01T07:37:06.560502",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"862b99d8179b784a65de54e080034521\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/supportedattributetypes.md"
     },
@@ -7031,9 +7031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/supportedcombinations.json": {
       "hash": "569e04e2848dea122b3c12b2363a9d2ec592fcfa6e1f2a0d8eef13cd77b6d7f0",
-      "last_checked": "2026-04-28T07:27:26.891668",
+      "last_checked": "2026-05-01T07:37:06.696434",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"4d905d6a2a374f9c78d92ce7dff90df6\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/supportedcombinations.md"
     },
@@ -7047,9 +7047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/object/category-swift.enum/supportscombination(_:).json": {
       "hash": "af9b95ffd23f63173a371a4fe6dcae362f322bd788d64d8a225d5f8e3b1fde4a",
-      "last_checked": "2026-04-28T07:27:26.970038",
+      "last_checked": "2026-05-01T07:37:06.826866",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"e6cc9c4ccf8fbbfbded486ef35a3482a\"",
       "file_path": "documentation/RoomPlan/capturedroom/object/category-swift.enum/supportscombination.md"
     },
@@ -7207,9 +7207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/livingroom.json": {
       "hash": "dc6256da4b544e30b9d9f7716c20b3aaf2fc5d1c79d412b6d83d529f821add4b",
-      "last_checked": "2026-04-28T07:27:27.042457",
+      "last_checked": "2026-05-01T07:37:06.956706",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"a827c21c8e25220289ae82e5e5c3287c\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/livingroom.md"
     },
@@ -7223,9 +7223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/kitchen.json": {
       "hash": "8b04cd9ecf1d8c1f3ef806f6f37f4eed7f98d782f99208c55662182e900fda89",
-      "last_checked": "2026-04-28T07:27:27.121844",
+      "last_checked": "2026-05-01T07:37:07.071590",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"ac89b2095e94eae2249a9c7921bb7dfb\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/kitchen.md"
     },
@@ -7239,9 +7239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/diningroom.json": {
       "hash": "58ec2caed68a114b48397629c6d68fdb0e50c37176f39a5dffa58641c79963e9",
-      "last_checked": "2026-04-28T07:27:27.198000",
+      "last_checked": "2026-05-01T07:37:07.189237",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"6573fdebec8c6416edb0ea600e1cab4e\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/diningroom.md"
     },
@@ -7255,9 +7255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/bedroom.json": {
       "hash": "75562f30f27a2b5bd618ff2270b132984ac78ee935b8a2713be99056b33d41bd",
-      "last_checked": "2026-04-28T07:27:27.281721",
+      "last_checked": "2026-05-01T07:37:07.320509",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"18523a9dbbd851b3fac36891804e8c7b\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/bedroom.md"
     },
@@ -7271,9 +7271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/bathroom.json": {
       "hash": "6cca6054eb1f4a8d0273a8f031b3016cfb81f2846ce0b285ad87ff547bdc0ff7",
-      "last_checked": "2026-04-28T07:27:27.355918",
+      "last_checked": "2026-05-01T07:37:07.450302",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"967759d7bb70a48b4d2466c08058054b\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/bathroom.md"
     },
@@ -7287,9 +7287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/section/label-swift.enum/unidentified.json": {
       "hash": "e7e1334cc7bba7fdcee484785ec14f1bab59d62e94529845aebf9b79e78c21af",
-      "last_checked": "2026-04-28T07:27:27.421984",
+      "last_checked": "2026-05-01T07:37:07.578474",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b40c50462443df0c8da7ac56d2850433\"",
       "file_path": "documentation/RoomPlan/capturedroom/section/label-swift.enum/unidentified.md"
     },
@@ -7367,9 +7367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/error/attributecombinationnotsupported.json": {
       "hash": "f2e2beaffb2d84a4584e5117203a30daaa0aa9119d4f7187450383ecc6372e06",
-      "last_checked": "2026-04-28T07:27:27.490354",
+      "last_checked": "2026-05-01T07:37:07.711499",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"bb9cf62e578234225bd45b01d8b2e346\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/error/attributecombinationnotsupported.md"
     },
@@ -7383,9 +7383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/error/nonexistingfile(url:).json": {
       "hash": "14e8bc5d1dfa1a586aab807254206921bf08640ff286e60342432bad807b9d32",
-      "last_checked": "2026-04-28T07:27:27.572534",
+      "last_checked": "2026-05-01T07:37:07.846073",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"838e88b228e41cd918f50cc511f855c9\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/error/nonexistingfile-url.md"
     },
@@ -7399,9 +7399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/modelprovider/error/errordescription.json": {
       "hash": "8e9f7c515f6b797678dffc84b439a47d70d30734ce6d2b270e37d9bba0b46785",
-      "last_checked": "2026-04-28T07:27:27.646048",
+      "last_checked": "2026-05-01T07:37:07.953042",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"46c0211d52c670544b3da7fd3c07780f\"",
       "file_path": "documentation/RoomPlan/capturedroom/modelprovider/error/errordescription.md"
     },
@@ -8487,9 +8487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/capturedroom/usdexportoptions/rawvalue.json": {
       "hash": "9690d536fff2813cc6316da3aec1ace219677efc05f09bd6634978034c7ec33a",
-      "last_checked": "2026-04-28T07:27:15.135567",
+      "last_checked": "2026-05-01T07:36:47.317809",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"efe9a5f6adca6259f6971b051e65d3ef\"",
       "file_path": "documentation/RoomPlan/capturedroom/usdexportoptions/rawvalue.md"
     },
@@ -8503,9 +8503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/roombuilder/configurationoptions/rawvalue.json": {
       "hash": "ebdaa3dc0aa2928007fa92543afe27db34309e9697807c0e26da01ef96a27326",
-      "last_checked": "2026-04-28T07:27:23.336386",
+      "last_checked": "2026-05-01T07:37:00.780928",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:04.599109",
+      "session_id": "2026-05-01T07:36:23.832909",
       "etag": "W/\"b59532cf4918c8818f2334da888a3b8b\"",
       "file_path": "documentation/RoomPlan/roombuilder/configurationoptions/rawvalue.md"
     },
@@ -8519,7 +8519,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/roomplan/com.apple.roomplan/objc(pl)uiappearancecontainer.json": {
       "hash": "",
-      "last_checked": "2026-04-28T07:27:07.312840",
+      "last_checked": "2026-05-01T07:36:30.929006",
       "status": "error",
       "error": "HTTP 404"
     }

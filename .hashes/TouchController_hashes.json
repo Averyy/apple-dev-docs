@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:27:24.341640",
+    "last_updated": "2026-05-01T07:36:42.909636",
     "total_pages": 1106,
-    "session_id": "2026-04-28T07:27:00.647928"
+    "session_id": "2026-05-01T07:35:54.262795"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TouchController.json": {
       "hash": "246f94509cdce3d4719da34d4c1ddf910395b0d0e4c7ecfa6bbca25bd2c4bdbf",
-      "last_checked": "2026-04-28T07:27:00.972314",
+      "last_checked": "2026-05-01T07:35:54.490188",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1d236ff4b6c95ef466ebdd7ccd1d64a3\"",
       "file_path": "documentation/TouchController/TouchController.md"
     },
     "https://developer.apple.com/documentation/TouchController": {
       "hash": "246f94509cdce3d4719da34d4c1ddf910395b0d0e4c7ecfa6bbca25bd2c4bdbf",
-      "last_checked": "2026-04-28T07:27:00.864284",
+      "last_checked": "2026-05-01T07:35:54.409207",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1d236ff4b6c95ef466ebdd7ccd1d64a3\"",
       "file_path": "documentation/TouchController/TouchController.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller.json": {
       "hash": "aa488184064d71a53d9a390fb3402ef934e119fbcde533e8c020eb31c994d0fd",
-      "last_checked": "2026-04-28T07:27:01.201257",
+      "last_checked": "2026-05-01T07:35:54.920394",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0e024c17cfba4b11231b9c5d21389792\"",
       "file_path": "documentation/TouchController/tctouchcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol.json": {
       "hash": "a0d569e28d2d7e59e750f53d520c1d2150c76234b6e4fddfdd73c766bf6c93e4",
-      "last_checked": "2026-04-28T07:27:01.277220",
+      "last_checked": "2026-05-01T07:35:55.032258",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"67ab5a71b2b2678473281bf8057a8a86\"",
       "file_path": "documentation/TouchController/tccontrol.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbutton.json": {
       "hash": "a085a8b3074109d773258e9cd355eafaf5dc43e7fa25705503d7b24dcefd1cc8",
-      "last_checked": "2026-04-28T07:27:01.356908",
+      "last_checked": "2026-05-01T07:35:55.333208",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f244c72a551bd9b856bb21a8489c2fee\"",
       "file_path": "documentation/TouchController/tcbutton.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad.json": {
       "hash": "8c9760384e978929125d839e8d958c8cd8364c9ff99d252c40aa0ddeae73a5ae",
-      "last_checked": "2026-04-28T07:27:01.462809",
+      "last_checked": "2026-05-01T07:35:55.668187",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9e247526b3515d4333b198cef936c335\"",
       "file_path": "documentation/TouchController/tcdirectionpad.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick.json": {
       "hash": "869548bd122647c01d1572c24bd89ec76f5ab0842ffc62500fb1bf471b3bd9fc",
-      "last_checked": "2026-04-28T07:27:01.715939",
+      "last_checked": "2026-05-01T07:35:56.154855",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4bb5e1174a3f9af8ec90ae558c0f4e21\"",
       "file_path": "documentation/TouchController/tcthumbstick.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle.json": {
       "hash": "9a1459dc2086e96ba0f136b5981063c64f1755f1d86d6677c130fdc411e7be60",
-      "last_checked": "2026-04-28T07:27:01.842876",
+      "last_checked": "2026-05-01T07:35:56.338101",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f6e9b9cb62ce729657b0a5e777d660ab\"",
       "file_path": "documentation/TouchController/tcthrottle.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpad.json": {
       "hash": "f5cac92e2886fa0012c0b3044676e1c775e40f8f98f22e8cb9612e68f4a64f8e",
-      "last_checked": "2026-04-28T07:27:01.916877",
+      "last_checked": "2026-05-01T07:35:56.621644",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3199aa69e8b99b09f343749898a83b0c\"",
       "file_path": "documentation/TouchController/tctouchpad.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor.json": {
       "hash": "87d6660de8299d425618060ab7994640deaa01721f1f66f9a07966ea4b03ce54",
-      "last_checked": "2026-04-28T07:27:04.321878",
+      "last_checked": "2026-05-01T07:36:01.586375",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7180cc52e5363d19382541a2b1118a65\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor.json": {
       "hash": "4f812f1e39ad23fc8ab1e69ba24800d593ba61d5b4341b5411aab05f7cc078d5",
-      "last_checked": "2026-04-28T07:27:04.543772",
+      "last_checked": "2026-05-01T07:36:02.053819",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"132d98dc85449874c889c9eca392f974\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor.json": {
       "hash": "d206b43ebcb65475384f656400b11c4f11b6fe474ba2c1a338ee8c510d57ee59",
-      "last_checked": "2026-04-28T07:27:05.025110",
+      "last_checked": "2026-05-01T07:36:03.008555",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"231df8c4873c41076d370c997faa6d5d\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor.json": {
       "hash": "130bad9f448029ed8bc6a2da4e149c3409dfcbf6068ca84b0d6a651a5366cca9",
-      "last_checked": "2026-04-28T07:27:04.857669",
+      "last_checked": "2026-05-01T07:36:02.637155",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1df15a6112866af9f75c3a5c76f633a5\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor.json": {
       "hash": "5e6394d629999f5b8a90fb545da862b009064af639020a282b87d4bf866d3473",
-      "last_checked": "2026-04-28T07:27:05.168383",
+      "last_checked": "2026-05-01T07:36:03.302807",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"acf80f8304f7bb0cf1cee43ee0d8476c\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/init(descriptor:).json": {
       "hash": "8c3713352f7c40a4fdc991f19516c0c9844f78876e82612c6fc272206817d68f",
-      "last_checked": "2026-04-28T07:27:03.016416",
+      "last_checked": "2026-05-01T07:35:58.341704",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"69a679e5bd2e6796aa6c005b33c02f4b\"",
       "file_path": "documentation/TouchController/tctouchcontroller/init-descriptor.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor.json": {
       "hash": "795df6d1b27794409d0c50ffe72edf14bd069263bee7b53d8179cef8ce3d16bf",
-      "last_checked": "2026-04-28T07:27:03.087337",
+      "last_checked": "2026-05-01T07:35:58.534162",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a28be362a7ca6deb278a8a12e2e731ae\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/buttons.json": {
       "hash": "450759063c686178132a361b9ec20f19667da041215216a3c9d3a33e7b4a0af1",
-      "last_checked": "2026-04-28T07:27:03.156570",
+      "last_checked": "2026-05-01T07:35:58.823737",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e274022bc002ac6860d18ad675f92006\"",
       "file_path": "documentation/TouchController/tctouchcontroller/buttons.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/controls.json": {
       "hash": "65f2aea13da8d503f9329bda13e0647a6e3119437b53a42a8c22770e2430b8e6",
-      "last_checked": "2026-04-28T07:27:03.242187",
+      "last_checked": "2026-05-01T07:35:58.991585",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f23bad68c222fca7fe5e24f2f09f7635\"",
       "file_path": "documentation/TouchController/tctouchcontroller/controls.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/device.json": {
       "hash": "ecf3fb46c077d6a3efa1475203d4c6609f0b411c28e16d8ea5550c2b246c725c",
-      "last_checked": "2026-04-28T07:27:03.372935",
+      "last_checked": "2026-05-01T07:35:59.125152",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"bac2380b11f962a8efd98b274acf3490\"",
       "file_path": "documentation/TouchController/tctouchcontroller/device.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/directionpads.json": {
       "hash": "e6541f66c94273e4848a34f56099dda4694b5f542cabf0aaabb304faffdd6a71",
-      "last_checked": "2026-04-28T07:27:03.456299",
+      "last_checked": "2026-05-01T07:35:59.291514",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7019a1c0f93e9969821aabc5cbac3a41\"",
       "file_path": "documentation/TouchController/tctouchcontroller/directionpads.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/isconnected.json": {
       "hash": "d95357d86bca9ac71dbeaa3b039f66b7ae15f3b32c8d09b256d7244bb66b661f",
-      "last_checked": "2026-04-28T07:27:03.788292",
+      "last_checked": "2026-05-01T07:35:59.977667",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"fea81c7c6d3e5a91df0c82439adb8afc\"",
       "file_path": "documentation/TouchController/tctouchcontroller/isconnected.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/throttles.json": {
       "hash": "3b01b9785a2823389aae80fe75d3845d9be36e7824b4764420d6cc7fd1e23dd4",
-      "last_checked": "2026-04-28T07:27:03.927427",
+      "last_checked": "2026-05-01T07:36:00.328384",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"188488b3ce75465d62ade954927c556c\"",
       "file_path": "documentation/TouchController/tctouchcontroller/throttles.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/thumbsticks.json": {
       "hash": "11c0b39e8b15fb67c914b2488a5491fa70efc89282709cf8938e0b8bfe282bf4",
-      "last_checked": "2026-04-28T07:27:03.997683",
+      "last_checked": "2026-05-01T07:36:00.485989",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7a0d96f87d065729ace5db26d25459df\"",
       "file_path": "documentation/TouchController/tctouchcontroller/thumbsticks.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/touchpads.json": {
       "hash": "ad53d6eac4bb2cf2002fce5d9e04d2126f2c7d1660a1f162556d13c035628f16",
-      "last_checked": "2026-04-28T07:27:04.072150",
+      "last_checked": "2026-05-01T07:36:00.805545",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f4029770a063e85bc8ba58e73e81784b\"",
       "file_path": "documentation/TouchController/tctouchcontroller/touchpads.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/connect().json": {
       "hash": "5190e7a9432e59e24a7796a022fed6681cc5db50da71ef76357930e1eb85edc9",
-      "last_checked": "2026-04-28T07:27:05.239576",
+      "last_checked": "2026-05-01T07:36:03.489515",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c839577a1bb9cb3ca803f18fa7a6649e\"",
       "file_path": "documentation/TouchController/tctouchcontroller/connect.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/disconnect().json": {
       "hash": "0f8b6eda276b7a53858018d6a1e13ddc5a6f287a955ab881c57672973ef20cfb",
-      "last_checked": "2026-04-28T07:27:05.379547",
+      "last_checked": "2026-05-01T07:36:03.654304",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"460c92b2b89096555373c05dc2b19568\"",
       "file_path": "documentation/TouchController/tctouchcontroller/disconnect.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/control(at:).json": {
       "hash": "47f19374e9e84b22a3b9523292a2bf5d1b7119e9e6c837397aa5a05e94968f13",
-      "last_checked": "2026-04-28T07:27:05.456153",
+      "last_checked": "2026-05-01T07:36:03.779931",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7c1477d470b0fa4f84ca5fb11f883ae5\"",
       "file_path": "documentation/TouchController/tctouchcontroller/control-at.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchbegan(at:index:).json": {
       "hash": "e70d924ee78205f2e04ab0f54a3cb3493ae65698e3de0a766d430e775c845b22",
-      "last_checked": "2026-04-28T07:27:05.689801",
+      "last_checked": "2026-05-01T07:36:04.278812",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"aabd3a9ad17136e6e157a9e99d459e9e\"",
       "file_path": "documentation/TouchController/tctouchcontroller/handletouchbegan-atindex.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchended(at:index:).json": {
       "hash": "5d390f7a63f12b845c3bdd400c8211edaa246cffd3aec33a9d3e23cb070b3ea4",
-      "last_checked": "2026-04-28T07:27:05.825218",
+      "last_checked": "2026-05-01T07:36:04.395811",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b9625d7f1f6b588c1cc4268ab54788a2\"",
       "file_path": "documentation/TouchController/tctouchcontroller/handletouchended-atindex.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/handletouchmoved(at:index:).json": {
       "hash": "c3e410cb9b879b5bb67e0780409cf480b99b6eb0d8aa7cd1b57f7eced26bf792",
-      "last_checked": "2026-04-28T07:27:05.896341",
+      "last_checked": "2026-05-01T07:36:04.566626",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f16b7fef66affd1e3aaadb104bcf1323\"",
       "file_path": "documentation/TouchController/tctouchcontroller/handletouchmoved-atindex.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/removeallcontrols().json": {
       "hash": "69e273993c1b570af54190e3def44d4fe94c934b8bbc778f17c4ac244a55e7a1",
-      "last_checked": "2026-04-28T07:27:05.989768",
+      "last_checked": "2026-05-01T07:36:04.867825",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7d618ce711daf9dcb889e82ff8409654\"",
       "file_path": "documentation/TouchController/tctouchcontroller/removeallcontrols.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/label.json": {
       "hash": "6594ee3190464538c636af7c23029c7300a30ade7841097efd8647b96112f44d",
-      "last_checked": "2026-04-28T07:27:06.309404",
+      "last_checked": "2026-05-01T07:36:05.470083",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d94ed05fde375d5b421cf085248e6487\"",
       "file_path": "documentation/TouchController/tccontrol/label.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel.json": {
       "hash": "5f574fcf0d2ee616278d49ae3c874962f9ad8fcee859d1a24fbb2b98f6d6d646",
-      "last_checked": "2026-04-28T07:27:06.395718",
+      "last_checked": "2026-05-01T07:36:05.651132",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"db61cc4dfa67ecc2dd549669f428979e\"",
       "file_path": "documentation/TouchController/tccontrollabel.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchbegan(at:).json": {
       "hash": "180bd65fbf331e6b58b3ea87de973669914d60ac87ef3a97f5278b463ee95592",
-      "last_checked": "2026-04-28T07:27:06.541112",
+      "last_checked": "2026-05-01T07:36:05.973615",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ef2d008a96d8a464446997e1a540c079\"",
       "file_path": "documentation/TouchController/tccontrol/handletouchbegan-at.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchmoved(at:).json": {
       "hash": "b703adefac2c083739ba7e24a118f32491911a64b7a2bef38a3d09f746405dbb",
-      "last_checked": "2026-04-28T07:27:06.637676",
+      "last_checked": "2026-05-01T07:36:06.103761",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"fcc43cb534c767a055e44cce5cf849b7\"",
       "file_path": "documentation/TouchController/tccontrol/handletouchmoved-at.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/handletouchended(at:).json": {
       "hash": "70b19484ef2a11160ffa8bbe219fbcaf98438a43b1c6a5262f5387b3093bff98",
-      "last_checked": "2026-04-28T07:27:06.704699",
+      "last_checked": "2026-05-01T07:36:06.280445",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"986012afe3a0ef50036ab1c74a5f12f1\"",
       "file_path": "documentation/TouchController/tccontrol/handletouchended-at.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/compositelabel.json": {
       "hash": "456e24169cd35f227f38b6452925e9a236e918abe17a948a5c761af19240143f",
-      "last_checked": "2026-04-28T07:27:07.135431",
+      "last_checked": "2026-05-01T07:36:07.205039",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1ee91c72b07408a3b24474dbb361508a\"",
       "file_path": "documentation/TouchController/tcdirectionpad/compositelabel.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/downlabel.json": {
       "hash": "9ac9b5d48ae8442b31d1a58b4ff0a7fe0bc29fba73e2703509796da798090bf5",
-      "last_checked": "2026-04-28T07:27:07.327514",
+      "last_checked": "2026-05-01T07:36:07.495294",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"36423219860f5b8dfbfdfe31ec0423b9\"",
       "file_path": "documentation/TouchController/tcdirectionpad/downlabel.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/isdigital.json": {
       "hash": "06ad532828e0fbc42858b1fddd08c5b83943aafb3f3da141027ddbb30c558748",
-      "last_checked": "2026-04-28T07:27:07.554668",
+      "last_checked": "2026-05-01T07:36:07.989761",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f3d90117e40f55714bae2af2e9d0391f\"",
       "file_path": "documentation/TouchController/tcdirectionpad/isdigital.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/isradial.json": {
       "hash": "620cc6f626affe8eb943944997ee753fdf180d79c382409b33170e8b3859d8d4",
-      "last_checked": "2026-04-28T07:27:07.632022",
+      "last_checked": "2026-05-01T07:36:08.151236",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e61172e3d0c68ae5e628989f858c3aa4\"",
       "file_path": "documentation/TouchController/tcdirectionpad/isradial.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/leftlabel.json": {
       "hash": "7b50e5cce9bd9e063ff5af9dcbf8def8d042e8f97eac46230c16f8bbc8413cda",
-      "last_checked": "2026-04-28T07:27:07.770987",
+      "last_checked": "2026-05-01T07:36:08.439724",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a409615d64125ef44dfb6cc9793dbf77\"",
       "file_path": "documentation/TouchController/tcdirectionpad/leftlabel.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/rightlabel.json": {
       "hash": "81f67b129f8b89a0cf3ad98a8a1d4387cf1c70080370271f1a54430f197aa3eb",
-      "last_checked": "2026-04-28T07:27:07.910421",
+      "last_checked": "2026-05-01T07:36:08.740654",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"fbbb8e33251bedb388d14c56d58dd4d7\"",
       "file_path": "documentation/TouchController/tcdirectionpad/rightlabel.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/uplabel.json": {
       "hash": "3c9911ebd2019b7f947dc0e7d6aa3a8b8d86b90e769083770792c6a56f0a66d8",
-      "last_checked": "2026-04-28T07:27:08.059283",
+      "last_checked": "2026-05-01T07:36:09.006521",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ac439820db90c3d20b41fe45bdb045c3\"",
       "file_path": "documentation/TouchController/tcdirectionpad/uplabel.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/sticksize.json": {
       "hash": "080cf0ce7781296821841e9dd9b764cb59d6acee72cf8822aad49eee8a884641",
-      "last_checked": "2026-04-28T07:27:08.885546",
+      "last_checked": "2026-05-01T07:36:10.624570",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6085054aaa9293201f1fa9c04560f97b\"",
       "file_path": "documentation/TouchController/tcthumbstick/sticksize.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/basevalue.json": {
       "hash": "7969be07c57e21f6877dd2b26940c8f43b42212dd5d2a9f51cbb047d92b922d2",
-      "last_checked": "2026-04-28T07:27:09.188550",
+      "last_checked": "2026-05-01T07:36:11.084865",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b632c0d812dec140e5df53dac2171b0d\"",
       "file_path": "documentation/TouchController/tcthrottle/basevalue.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/indicatorsize.json": {
       "hash": "4d3e59794e8350ea3478e75140c69c5df0b76b78a3a4a974a683235952b85c20",
-      "last_checked": "2026-04-28T07:27:09.402603",
+      "last_checked": "2026-05-01T07:36:11.568100",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4c5722961a617fef0d5656622fde8e81\"",
       "file_path": "documentation/TouchController/tcthrottle/indicatorsize.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/throttlesize.json": {
       "hash": "b5dfbf0fbd7ae9c72162cc920f76dd0605783523cc1e95c374b90f743917d4b3",
-      "last_checked": "2026-04-28T07:27:09.544797",
+      "last_checked": "2026-05-01T07:36:11.907852",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"bf1f8f61946ee319554a153442190941\"",
       "file_path": "documentation/TouchController/tcthrottle/throttlesize.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/init().json": {
       "hash": "ee13d8417611c4882dbfa67b38b688e7f1f695ee8e6d0b9e12f59dedb97b2312",
-      "last_checked": "2026-04-28T07:27:14.342167",
+      "last_checked": "2026-05-01T07:36:21.570230",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6abee5150edd0f26bc6016fe29da2fcb\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/init.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/anchor.json": {
       "hash": "fdc16ce38fecd8c973ae71f233ad427f19b69daead42957b13e877e6f6e910c8",
-      "last_checked": "2026-04-28T07:27:14.900263",
+      "last_checked": "2026-05-01T07:36:22.920074",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f85740f302e4776c44e61e62cf6fe9ff\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/anchor.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/label.json": {
       "hash": "de0c15798b63186e99a88e78d1f1580022c9e4510c9608a514f0c461eb52b43a",
-      "last_checked": "2026-04-28T07:27:14.721524",
+      "last_checked": "2026-05-01T07:36:22.423245",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"df3db5393ca37c8971b786e72fa877b5\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/label.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/offset.json": {
       "hash": "e75533672cb397077b19f59da2fd4802ab95a3429ac29955d36759d4b29245a6",
-      "last_checked": "2026-04-28T07:27:14.802284",
+      "last_checked": "2026-05-01T07:36:22.588451",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9f3f3529e77b4fd8cb16818b47a400d2\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/offset.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/size.json": {
       "hash": "5bef22fac78da109e0a82b068ad9a855548c0029d94b8c01cca8b4f16123da91",
-      "last_checked": "2026-04-28T07:27:14.880495",
+      "last_checked": "2026-05-01T07:36:22.747528",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"db08a1df131792c2cfb6173f80e990c8\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/size.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/init().json": {
       "hash": "491360daff18d05847b9b1d1b44398ef80abda5f4f582ac151516787d31dc746",
-      "last_checked": "2026-04-28T07:27:15.377798",
+      "last_checked": "2026-05-01T07:36:23.735293",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c09a46c18e4bc6fd42eb2e55d724e464\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/init.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/anchor.json": {
       "hash": "107417b75dd74f57b047bbb14f69124cf9698b26de1f21b4d1d10ac5a61b9dc3",
-      "last_checked": "2026-04-28T07:27:16.756774",
+      "last_checked": "2026-05-01T07:36:26.603459",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"db7088af0c8ea474226e08c2206781d8\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/anchor.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/compositelabel.json": {
       "hash": "944b528f4128c7b2fd73ff1f37bde1e574f8da1063731e4fa1528f82534db34f",
-      "last_checked": "2026-04-28T07:27:15.488840",
+      "last_checked": "2026-05-01T07:36:23.911168",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f6c15f99239b6d77b72db241040f7c3b\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/compositelabel.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/downlabel.json": {
       "hash": "995852c9d5cdaf9112b49cf33e53597ef949f659cfeff53da5ca6602942a8d7f",
-      "last_checked": "2026-04-28T07:27:15.646234",
+      "last_checked": "2026-05-01T07:36:24.235589",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"21a4200870b00a965273e2cfdcbacdb3\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/downlabel.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/isdigital.json": {
       "hash": "62ac438d0f6ccfc183f46b7b9540ed32959de1f23d7b0509e88066f5056b34d0",
-      "last_checked": "2026-04-28T07:27:15.896605",
+      "last_checked": "2026-05-01T07:36:24.736814",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"97602dc442695d191ccca68de2831440\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/isdigital.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/isradial.json": {
       "hash": "8e91c2980d482a74f8bb5bb30350f6858f8146fcc99cfbf64e5c1fb059b7833c",
-      "last_checked": "2026-04-28T07:27:15.979016",
+      "last_checked": "2026-05-01T07:36:24.911223",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"12db552994d0ee718f97253008e10a19\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/isradial.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/leftlabel.json": {
       "hash": "98ab5a76d29557f00b5a1a7aced6dddda3d020dd2dcdc19eb2769f2c3e3d61a6",
-      "last_checked": "2026-04-28T07:27:16.134259",
+      "last_checked": "2026-05-01T07:36:25.245424",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1d53eb1b5ac070b5f3c082047fda573a\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/leftlabel.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/offset.json": {
       "hash": "f937ae1e57041878ee61c61a1a72354db5693baf5dfa1c55b28ea0bb75ad5148",
-      "last_checked": "2026-04-28T07:27:16.206414",
+      "last_checked": "2026-05-01T07:36:25.415237",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"26515ef2a6489047cef89ec3d5bdbfe3\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/offset.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/rightlabel.json": {
       "hash": "9074d03607dca377d8533e597ed3b9761a503ab15ecedcdb3106ab4a1b596eff",
-      "last_checked": "2026-04-28T07:27:16.370104",
+      "last_checked": "2026-05-01T07:36:25.766563",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a11cb2ce8fa82d97f398f9119af23d4f\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/rightlabel.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/size.json": {
       "hash": "f37629222aaa204478833617521505da2fd8f592ef24f97af9af5f5150ae8d34",
-      "last_checked": "2026-04-28T07:27:16.391161",
+      "last_checked": "2026-05-01T07:36:25.931105",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2c4f14bd8759920538b921fa16a0be08\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/size.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/uplabel.json": {
       "hash": "56c02692754a29595d1041c4dd8549c5da62a8f6f6712a20858558ddccaf11d9",
-      "last_checked": "2026-04-28T07:27:16.615016",
+      "last_checked": "2026-05-01T07:36:26.258022",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c887d7b44608cc1c2cb3d6c94690091c\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/uplabel.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/init().json": {
       "hash": "9d9434f7239fd675f2401eb85b4a517ee244115002cee86d642a1dbdce1272d9",
-      "last_checked": "2026-04-28T07:27:19.052591",
+      "last_checked": "2026-05-01T07:36:31.765689",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1c1828ba0c42951b23f505b4d223d5fa\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/init.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/anchor.json": {
       "hash": "4ff893561f004f01b8605ba513af3ef7e1ea455a2ab42e985244412508e01db8",
-      "last_checked": "2026-04-28T07:27:19.814332",
+      "last_checked": "2026-05-01T07:36:33.426001",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"425369997c7db17887d83f8a0458ae47\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/anchor.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/label.json": {
       "hash": "67b87b4b3c3084b000301f319398542518ff64b7b9c2eebce2e988e97849c1b7",
-      "last_checked": "2026-04-28T07:27:19.379910",
+      "last_checked": "2026-05-01T07:36:32.411393",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4a227dd702249d9e648b2bb80ae78c53\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/label.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/offset.json": {
       "hash": "c495f1e47688c4725bda3ae8376333dcf9f761934c48df1067b22b64cc95c533",
-      "last_checked": "2026-04-28T07:27:19.456537",
+      "last_checked": "2026-05-01T07:36:32.576694",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"18cb4a0d75a40fc00f2c8930b83558c2\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/offset.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/size.json": {
       "hash": "619ae3d006afbddeaf8aa5602c91c8a8ab9494e265f7dbab312aaa24a61f2610",
-      "last_checked": "2026-04-28T07:27:19.474647",
+      "last_checked": "2026-05-01T07:36:32.732469",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3f1148927f56aebe556bf1b0bcb8f488\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/size.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/sticksize.json": {
       "hash": "a604f285aa65ecbde9ca85093ec11a50f2542c46efed04e908c1d98568b82f3b",
-      "last_checked": "2026-04-28T07:27:19.660365",
+      "last_checked": "2026-05-01T07:36:33.103014",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"936f01f224fd15fd05ed1e3d1b1992d6\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/sticksize.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/init().json": {
       "hash": "9ca4da3ba0f0df2a3e030d113dc6f84e67022c6623f83188da8ae9849e81fed3",
-      "last_checked": "2026-04-28T07:27:17.790941",
+      "last_checked": "2026-05-01T07:36:28.907931",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"853ce661bb00433783e3291206e2367f\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/init.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/anchor.json": {
       "hash": "9bad4c3efa72c64ca2dd927b98af7c4a9e631553c6007654db22ec2f9203dbaa",
-      "last_checked": "2026-04-28T07:27:18.823156",
+      "last_checked": "2026-05-01T07:36:31.260737",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9d1e6996d26039c9b0e6398add0ec10a\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/anchor.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/basevalue.json": {
       "hash": "ad2a55ff5833f9712dbceaef3ea438df02f99bb5b4e63e43c99b4c20959ab635",
-      "last_checked": "2026-04-28T07:27:17.952763",
+      "last_checked": "2026-05-01T07:36:29.229653",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"963a6cc7c7e3bba84dc9977fd3d52da8\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/basevalue.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/indicatorsize.json": {
       "hash": "0bd28e2c4ed897dcb7e3ca0099d36b2c578e76480fee2423af2bc953b7a82249",
-      "last_checked": "2026-04-28T07:27:18.164784",
+      "last_checked": "2026-05-01T07:36:29.721861",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e53002c2a1052c6c933d049004001ad3\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/indicatorsize.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/label.json": {
       "hash": "268f1477ae1d13f2e46e3e7b47233fc43141d6dbfb384eccb0480475dd0652dd",
-      "last_checked": "2026-04-28T07:27:18.243912",
+      "last_checked": "2026-05-01T07:36:29.877153",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9bb4619b1fc15fb834f40b68f7f9c0e5\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/label.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/offset.json": {
       "hash": "bab2c50600d9be28cd4867be88f15eb177bd1be166fa06a10d6c4342b7c71db1",
-      "last_checked": "2026-04-28T07:27:18.329279",
+      "last_checked": "2026-05-01T07:36:30.051856",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9ac811d5a95fd4cdba74b15abd95b4a8\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/offset.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/orientation.json": {
       "hash": "641b8a2c96e0db3eb53ffc4da08ed3d110a0937ee676e291da814750374cd760",
-      "last_checked": "2026-04-28T07:27:18.415039",
+      "last_checked": "2026-05-01T07:36:30.362632",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"39e8353378afb4863c89bf303358eaa1\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/orientation.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/size.json": {
       "hash": "0b4e9ce8bb33d5360c292d14e3db2dbc856a43f2a5b0d2b3f390e56c16e9572b",
-      "last_checked": "2026-04-28T07:27:18.437956",
+      "last_checked": "2026-05-01T07:36:30.534965",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5d755d0e68b5138a6e65197a8ed47ac7\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/size.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/throttlesize.json": {
       "hash": "90346e8a0d3ab98aa3feae5c0b100687cb947f59fe74fdb539306243b9ebf9ab",
-      "last_checked": "2026-04-28T07:27:18.641362",
+      "last_checked": "2026-05-01T07:36:30.892403",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"03cab18180de12aeac2e6267682db6b1\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/throttlesize.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/init().json": {
       "hash": "90f9c5464a5595254b3a7f1d1c12148c22a79d69ac564d58234373458094bd40",
-      "last_checked": "2026-04-28T07:27:20.018806",
+      "last_checked": "2026-05-01T07:36:33.904245",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0a18ec8840aa695f790cbf524d831ee4\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/init.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/anchor.json": {
       "hash": "00125cd5f2f19338cfcb6f37e8f9d468bddffebab143ae1edd48722e90e19dd7",
-      "last_checked": "2026-04-28T07:27:20.685264",
+      "last_checked": "2026-05-01T07:36:35.277499",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5b3d3a0f3237ace1f3d037f616a37b3f\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/anchor.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/label.json": {
       "hash": "44f62e04f44b85d22611e15fa5ff3b9634d413c87fd6cacd737a7df9cb6d4b9d",
-      "last_checked": "2026-04-28T07:27:20.274859",
+      "last_checked": "2026-05-01T07:36:34.415151",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"af3abf21879563a879439420ae057a07\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/label.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/offset.json": {
       "hash": "3c09a18e25fdd07b3c008a5a9abd78182711e803e27d83a036ef1e7512920f12",
-      "last_checked": "2026-04-28T07:27:20.354951",
+      "last_checked": "2026-05-01T07:36:34.589166",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b66dda0b849e9a9b85edd771b05a1e4f\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/offset.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/size.json": {
       "hash": "c7acfa88c8d6b9e137c06f739eee6ac74e7b32917f539bfa29318f5661ad892d",
-      "last_checked": "2026-04-28T07:27:20.549638",
+      "last_checked": "2026-05-01T07:36:34.937686",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"98249eb7bf266f211b03d4dd0152dac5\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/size.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/colorpixelformat.json": {
       "hash": "21f2d67120a7f49fbe0aeaa915a82a6853d19f510cc94c5bb7045542d349a864",
-      "last_checked": "2026-04-28T07:27:13.645031",
+      "last_checked": "2026-05-01T07:36:20.222930",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d7ebd3a09362b83d80fa543904cbc457\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/colorpixelformat.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/depthattachmentpixelformat.json": {
       "hash": "e1fcd3ae4903041882bb79a788d9364535b79045db86d2bd4898ae3db0d308c6",
-      "last_checked": "2026-04-28T07:27:13.719630",
+      "last_checked": "2026-05-01T07:36:20.375829",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"69c78144dde6b893709a0bc0be01a120\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/depthattachmentpixelformat.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/device.json": {
       "hash": "e410e40d755176d3db7f7337cbb9a4dee86227fdd69ad25d622ca9c41afd90d6",
-      "last_checked": "2026-04-28T07:27:13.857753",
+      "last_checked": "2026-05-01T07:36:20.552904",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e1440efb644a8d1b6241a79b353818e6\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/device.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/samplecount.json": {
       "hash": "dfcd8631384017007199b79dd05f2867ed49492bdc4089d96f3fda208a75afb2",
-      "last_checked": "2026-04-28T07:27:14.004669",
+      "last_checked": "2026-05-01T07:36:20.909409",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d57200256f6ad874165a5e1d62c979f9\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/samplecount.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/stencilattachmentpixelformat.json": {
       "hash": "34e4e2283d123017b104278d16913eeab8bad41460bece6126bdad2f8379060a",
-      "last_checked": "2026-04-28T07:27:14.192196",
+      "last_checked": "2026-05-01T07:36:21.241075",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"56f84178beaefde8798770c821a83c64\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/stencilattachmentpixelformat.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/name.json": {
       "hash": "2f7e46a66c9ff744bf3f3492bd001d4eeccaa23995fd9ef042a382821ed53971",
-      "last_checked": "2026-04-28T07:27:22.431463",
+      "last_checked": "2026-05-01T07:36:38.896954",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2bfbc63ce2e605b4c90449660a0d886e\"",
       "file_path": "documentation/TouchController/tccontrollabel/name.md"
     },
@@ -5751,9 +5751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch.json": {
       "hash": "f64581c08994335287a42bfa8178a9e9e5968c5c93e34295636d2122ee4531d3",
-      "last_checked": "2026-04-28T07:27:01.589029",
+      "last_checked": "2026-05-01T07:35:55.850991",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"8ed0cc5275a00ebd77ef3faee3309b6f\"",
       "file_path": "documentation/TouchController/tcswitch.md"
     },
@@ -5767,9 +5767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents.json": {
       "hash": "cd6632b474c007a98fc6142c1adbc79e7b4d69603913873a515bd4f3c64bfb8e",
-      "last_checked": "2026-04-28T07:27:02.046654",
+      "last_checked": "2026-05-01T07:35:56.948373",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"06b0261371a4bcbac7bf4f87e9afb656\"",
       "file_path": "documentation/TouchController/tccontrolcontents.md"
     },
@@ -5783,9 +5783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage.json": {
       "hash": "0c509a1a288ca183ffb6ef46d5396ff8fef2bf8d087aad6ff58a2a3318cfa44a",
-      "last_checked": "2026-04-28T07:27:02.266218",
+      "last_checked": "2026-05-01T07:35:57.250276",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"8a7cda408f0c8c4a844722007c5c7a18\"",
       "file_path": "documentation/TouchController/tccontrolimage.md"
     },
@@ -5799,9 +5799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout.json": {
       "hash": "79f503aec9bf6bad3d681472b62a20b90bc84e6a20b7cd7dbeddcdd49dbeea7f",
-      "last_checked": "2026-04-28T07:27:02.340998",
+      "last_checked": "2026-05-01T07:35:57.560517",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f74ea925f97fc9f2af9b8eaad5dce560\"",
       "file_path": "documentation/TouchController/tccontrollayout.md"
     },
@@ -5815,9 +5815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape.json": {
       "hash": "e681f5fd196b84db7b40dfafc08855c9fe5af412ab1a18bad8d805f528f4b180",
-      "last_checked": "2026-04-28T07:27:02.408530",
+      "last_checked": "2026-05-01T07:35:57.868808",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"aaad08c9e9725df99bb630afb4e4d1b0\"",
       "file_path": "documentation/TouchController/tccontrolcontents/buttonshape.md"
     },
@@ -5831,9 +5831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection.json": {
       "hash": "f9c20ffc646136d15d3934f95f83c800da0e661fc103d0ea5fee0e93fd6c9627",
-      "last_checked": "2026-04-28T07:27:02.878530",
+      "last_checked": "2026-05-01T07:35:58.020568",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"97bd7f3aaae4246c874338eb8344885d\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection.md"
     },
@@ -5847,9 +5847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle.json": {
       "hash": "0a384ed854a85e3646cf6d2c525b797a9df336e21e5bb02f5d05eae3e5a898f9",
-      "last_checked": "2026-04-28T07:27:02.946370",
+      "last_checked": "2026-05-01T07:35:58.182814",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"59af0875b6770a9dca8d2eb4aeb1b80b\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle.md"
     },
@@ -5863,9 +5863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/drawablesize.json": {
       "hash": "e079a9897678dd902de6e28af1693b469c534347b1383bcd04791d14c79242ac",
-      "last_checked": "2026-04-28T07:27:03.537424",
+      "last_checked": "2026-05-01T07:35:59.448060",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"505f1199dbecd8d78f872a27799c15aa\"",
       "file_path": "documentation/TouchController/tctouchcontroller/drawablesize.md"
     },
@@ -5879,9 +5879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/size.json": {
       "hash": "9ee07187d2c5ae2eb0080567345fab1d39e2c83f85cd94110ae8d1854716961f",
-      "last_checked": "2026-04-28T07:27:03.561507",
+      "last_checked": "2026-05-01T07:35:59.661159",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e29e185ababb70e54dcc0a6439d5537b\"",
       "file_path": "documentation/TouchController/tctouchcontroller/size.md"
     },
@@ -5895,9 +5895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/switches.json": {
       "hash": "d695d3c2acf72285148f43c4f53030061cb8fb6beee89796202994a4f8957899",
-      "last_checked": "2026-04-28T07:27:03.710216",
+      "last_checked": "2026-05-01T07:35:59.819193",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3987a0b7ec05e12df05bc3e35046d9ca\"",
       "file_path": "documentation/TouchController/tctouchcontroller/switches.md"
     },
@@ -5911,9 +5911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/issupported.json": {
       "hash": "122512deefbb045c0623f06bdeaa80b4be296f0ecb02885c19a173959d2a3f3b",
-      "last_checked": "2026-04-28T07:27:03.858116",
+      "last_checked": "2026-05-01T07:36:00.170732",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3a91ac6592e9a502f7fc6de477fb870a\"",
       "file_path": "documentation/TouchController/tctouchcontroller/issupported.md"
     },
@@ -5927,9 +5927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/controller.json": {
       "hash": "8b6aefd3bf7f4c3a69c49d75909550a6bd96fcd2d412ade560284b34b94da6f6",
-      "last_checked": "2026-04-28T07:27:04.138075",
+      "last_checked": "2026-05-01T07:36:01.113242",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c7576af5dcb271a391e88bfdadfb3887\"",
       "file_path": "documentation/TouchController/tctouchcontroller/controller.md"
     },
@@ -5943,9 +5943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addbutton(descriptor:).json": {
       "hash": "5a33d1a1d36be46d83ec3eefc4eff96d1586f0bcc73df195c9454a642bfc2893",
-      "last_checked": "2026-04-28T07:27:04.205916",
+      "last_checked": "2026-05-01T07:36:01.406945",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9006ba6ad5d1585db8bfd57dbc996189\"",
       "file_path": "documentation/TouchController/tctouchcontroller/addbutton-descriptor.md"
     },
@@ -5959,9 +5959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/adddirectionpad(descriptor:).json": {
       "hash": "659248ac21533f8df70f389a16af825487e4f8359f6c01b75df7022b43a8aad3",
-      "last_checked": "2026-04-28T07:27:04.456033",
+      "last_checked": "2026-05-01T07:36:01.750027",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ae50102a2235d09c868798eede71d041\"",
       "file_path": "documentation/TouchController/tctouchcontroller/adddirectionpad-descriptor.md"
     },
@@ -5975,9 +5975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addswitch(descriptor:).json": {
       "hash": "1d3d06b86df6c78a2dbd40022e1869742bd3737794e29f84db036ab7213d4c4e",
-      "last_checked": "2026-04-28T07:27:04.625030",
+      "last_checked": "2026-05-01T07:36:02.183554",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0d6e3769d32c794c007067f080747d4a\"",
       "file_path": "documentation/TouchController/tctouchcontroller/addswitch-descriptor.md"
     },
@@ -5991,9 +5991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor.json": {
       "hash": "0f19a6ffedc1b91a1258fc5bee15ab4edfd2f5a4504b1366f2ac6d8affe4c7a7",
-      "last_checked": "2026-04-28T07:27:04.659189",
+      "last_checked": "2026-05-01T07:36:02.344706",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"bf2d19dd23c4ade50e12ae20ae0bf43f\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor.md"
     },
@@ -6007,9 +6007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addthrottle(descriptor:).json": {
       "hash": "f0a4bb151f1c428616e35543d1606ceca645f38093bb5ad450834fafe673f7aa",
-      "last_checked": "2026-04-28T07:27:04.769520",
+      "last_checked": "2026-05-01T07:36:02.465780",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e0c12d4a4804c557a236e1d09b25c8d4\"",
       "file_path": "documentation/TouchController/tctouchcontroller/addthrottle-descriptor.md"
     },
@@ -6023,9 +6023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addthumbstick(descriptor:).json": {
       "hash": "053a3ba9d38731cf52f5547c5366f05ab0de48ce44849aae8d6be822d2cc04f6",
-      "last_checked": "2026-04-28T07:27:04.948598",
+      "last_checked": "2026-05-01T07:36:02.839012",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4f9a8f9c5b96feab136d612eaee6b2eb\"",
       "file_path": "documentation/TouchController/tctouchcontroller/addthumbstick-descriptor.md"
     },
@@ -6039,9 +6039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/addtouchpad(descriptor:).json": {
       "hash": "cd2f3fc888187c9565aaf26c847d4d265c630ea8e1392baaf086262149eb59ef",
-      "last_checked": "2026-04-28T07:27:05.098898",
+      "last_checked": "2026-05-01T07:36:03.177932",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ff17aea44f34574bd96f2c5781b14f60\"",
       "file_path": "documentation/TouchController/tctouchcontroller/addtouchpad-descriptor.md"
     },
@@ -6055,9 +6055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/automaticallylayoutcontrols(for:).json": {
       "hash": "d634b4efee9259dc20f81b6ce5ad23b0b605cb45611f8cd0d98a8b546aa72dd2",
-      "last_checked": "2026-04-28T07:27:05.537215",
+      "last_checked": "2026-05-01T07:36:03.955794",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"19a24194aaa67101ddecf752f37ba844\"",
       "file_path": "documentation/TouchController/tctouchcontroller/automaticallylayoutcontrols-for.md"
     },
@@ -6071,9 +6071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/render(using:).json": {
       "hash": "53180683b09d7b4242c7f17b5e95200df3cf056db902bc09ca33d63f3ad6df20",
-      "last_checked": "2026-04-28T07:27:05.555541",
+      "last_checked": "2026-05-01T07:36:04.127928",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"38e031b311ac971d4c88fafcd87c9fa4\"",
       "file_path": "documentation/TouchController/tctouchcontroller/render-using.md"
     },
@@ -6087,9 +6087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontroller/removecontrol(_:).json": {
       "hash": "64968eed9b674b42a81064ca504d746f285b96d2888a9cea0f6f98d208c13384",
-      "last_checked": "2026-04-28T07:27:05.967523",
+      "last_checked": "2026-05-01T07:36:04.693314",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"eb15f916a5331f1f4499153cb145bfa4\"",
       "file_path": "documentation/TouchController/tctouchcontroller/removecontrol.md"
     },
@@ -6103,9 +6103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcgamecontrollerproductcategorytouchcontroller.json": {
       "hash": "1a8b53813cecfe4bfae1be3b1324a7cf85e5e603334324ecae3590a314de261e",
-      "last_checked": "2026-04-28T07:27:06.093720",
+      "last_checked": "2026-05-01T07:36:05.032471",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"52a6c6bea72a22629f637b3e9ac71450\"",
       "file_path": "documentation/TouchController/tcgamecontrollerproductcategorytouchcontroller.md"
     },
@@ -6119,9 +6119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/isenabled.json": {
       "hash": "cc1c64551dee0f26eaa0750b6004122f7253b6cb79b303cc86c5465757cb25a7",
-      "last_checked": "2026-04-28T07:27:06.166686",
+      "last_checked": "2026-05-01T07:36:05.151876",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"058409fa87e8099b533b33e2d352bac2\"",
       "file_path": "documentation/TouchController/tccontrol/isenabled.md"
     },
@@ -6135,9 +6135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/highlightduration.json": {
       "hash": "ec7bebf156b4a1145d760e72e47c04ef9c6a4608fd6518d16b0a396db7c3039e",
-      "last_checked": "2026-04-28T07:27:06.236971",
+      "last_checked": "2026-05-01T07:36:05.309095",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d1204397d23bfd73c23fc0a1e9f71a08\"",
       "file_path": "documentation/TouchController/tccontrol/highlightduration.md"
     },
@@ -6151,9 +6151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/ispressed.json": {
       "hash": "c22aedd2b53839e5b3208df36e3e2393c51ccdeaeca3c609f3575ab3570a0880",
-      "last_checked": "2026-04-28T07:27:06.465531",
+      "last_checked": "2026-05-01T07:36:05.815708",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0fd11e8c290b07ae046b244ad1ec0982\"",
       "file_path": "documentation/TouchController/tccontrol/ispressed.md"
     },
@@ -6167,9 +6167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrol/collidershape.json": {
       "hash": "d72727d584e99fef84dd3fe6d47bf91c59e323fbdd657daf06e51cc14d2cd776",
-      "last_checked": "2026-04-28T07:27:06.774184",
+      "last_checked": "2026-05-01T07:36:06.445059",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a8552903816ca98135d397e62befd0a9\"",
       "file_path": "documentation/TouchController/tccontrol/collidershape.md"
     },
@@ -6183,9 +6183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape.json": {
       "hash": "bb9eb077d324fe811c86f0e295d4f8780da41457286841532bce3b474230707a",
-      "last_checked": "2026-04-28T07:27:06.846621",
+      "last_checked": "2026-05-01T07:36:06.560593",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"69acd749f838740454e521a3caee6eb7\"",
       "file_path": "documentation/TouchController/tccollidershape.md"
     },
@@ -6199,9 +6199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbutton/contents.json": {
       "hash": "67284bd4c792ac30ca625fa8440a3ff7a674c85bd25f03f48ad5008b266957dd",
-      "last_checked": "2026-04-28T07:27:06.864288",
+      "last_checked": "2026-05-01T07:36:06.736016",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d7c157e47d43fb35b0641cea2d9d9a73\"",
       "file_path": "documentation/TouchController/tcbutton/contents.md"
     },
@@ -6215,9 +6215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbutton/highlightduration.json": {
       "hash": "625fbf390a889a40b06ae94f6a10afcd40be00b0cd03a69dfbb27f9ad2fc4e04",
-      "last_checked": "2026-04-28T07:27:06.990430",
+      "last_checked": "2026-05-01T07:36:06.909499",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"20918cadb342250d483a1848e4a49839\"",
       "file_path": "documentation/TouchController/tcbutton/highlightduration.md"
     },
@@ -6231,9 +6231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbutton/collidershape.json": {
       "hash": "b21fcd928e66765575117c00e2695ebfe6c0c9e6f7efb728349238a21ed28f93",
-      "last_checked": "2026-04-28T07:27:07.061647",
+      "last_checked": "2026-05-01T07:36:07.084273",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1665c1703bac42b75560c2beb146b450\"",
       "file_path": "documentation/TouchController/tcbutton/collidershape.md"
     },
@@ -6247,9 +6247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/downcontents.json": {
       "hash": "2c2aceb6a632b8b86d847192e4478c0bf9d9207938c5bf06f8b79270ea60edf1",
-      "last_checked": "2026-04-28T07:27:07.202549",
+      "last_checked": "2026-05-01T07:36:07.381016",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9b74d8477541a27ba6899b9e4e0e1876\"",
       "file_path": "documentation/TouchController/tcdirectionpad/downcontents.md"
     },
@@ -6263,9 +6263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/highlightduration.json": {
       "hash": "f53dd48291b933d165f7d9c90d1f58b816d17e8dd941204d60ff4a66c711f5da",
-      "last_checked": "2026-04-28T07:27:07.408927",
+      "last_checked": "2026-05-01T07:36:07.677821",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9043a2893f5e24f1b7d7ec0bff9c541c\"",
       "file_path": "documentation/TouchController/tcdirectionpad/highlightduration.md"
     },
@@ -6279,9 +6279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/inputismutuallyexclusive.json": {
       "hash": "34591ca78cbe1b302a792e716fdd31cfac0ad99f166f497b29d68f37e4e9266f",
-      "last_checked": "2026-04-28T07:27:07.483308",
+      "last_checked": "2026-05-01T07:36:07.812778",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5475e78bff4ae795e0bebdecee69cfac\"",
       "file_path": "documentation/TouchController/tcdirectionpad/inputismutuallyexclusive.md"
     },
@@ -6295,9 +6295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/leftcontents.json": {
       "hash": "a98e312f16df820eb1a20542ee83c82803bc8dfe06e788f5cf97bfb5d8077940",
-      "last_checked": "2026-04-28T07:27:07.652862",
+      "last_checked": "2026-05-01T07:36:08.326990",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1798517eabb4627e2e9c5d3571c45370\"",
       "file_path": "documentation/TouchController/tcdirectionpad/leftcontents.md"
     },
@@ -6311,9 +6311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/rightcontents.json": {
       "hash": "2fdcc8fbd10a14ae525cab132c63d2e067ba3b12213b0b0a4fcfd27c0ce4a3c8",
-      "last_checked": "2026-04-28T07:27:07.792766",
+      "last_checked": "2026-05-01T07:36:08.619817",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9252b7ac39ee362dc40909c3bd5799ca\"",
       "file_path": "documentation/TouchController/tcdirectionpad/rightcontents.md"
     },
@@ -6327,9 +6327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/upcontents.json": {
       "hash": "2e4d33be8434fc92a69d231ad65e380d96b41b23019d10653a765041a4834aab",
-      "last_checked": "2026-04-28T07:27:07.980997",
+      "last_checked": "2026-05-01T07:36:08.871469",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6ff8976d14acd501940179104a9e8800\"",
       "file_path": "documentation/TouchController/tcdirectionpad/upcontents.md"
     },
@@ -6343,9 +6343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpad/collidershape.json": {
       "hash": "79bf9c8f592bd59ac49bdc79662ec9255fafedcb89239960e094e716ea82259e",
-      "last_checked": "2026-04-28T07:27:08.131045",
+      "last_checked": "2026-05-01T07:36:09.120973",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c4c526b7a914c71bc826eb16f2ce066f\"",
       "file_path": "documentation/TouchController/tcdirectionpad/collidershape.md"
     },
@@ -6359,9 +6359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch/contents.json": {
       "hash": "2f30b06e89d3f9da6c1a91959491e069113110668d1254899b6dd84169931a05",
-      "last_checked": "2026-04-28T07:27:08.204076",
+      "last_checked": "2026-05-01T07:36:09.292969",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9c92ee9736d7359701a2b871929b3bf1\"",
       "file_path": "documentation/TouchController/tcswitch/contents.md"
     },
@@ -6375,9 +6375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch/highlightduration.json": {
       "hash": "e85d59acf62a908b27f5b20caee78d6ee4c10fb49aa2b021d817cb0e057f18a8",
-      "last_checked": "2026-04-28T07:27:08.278609",
+      "last_checked": "2026-05-01T07:36:09.463270",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1694cca177d86ea080ab86da0dd54d1d\"",
       "file_path": "documentation/TouchController/tcswitch/highlightduration.md"
     },
@@ -6391,9 +6391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch/isswitchedon.json": {
       "hash": "60f71dea62f8d6199e24f088a6720aaab2755059c5e3017a27c2b523a9f24d85",
-      "last_checked": "2026-04-28T07:27:08.350985",
+      "last_checked": "2026-05-01T07:36:09.638064",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"95a18af398a11aed5f4253a47116ad21\"",
       "file_path": "documentation/TouchController/tcswitch/isswitchedon.md"
     },
@@ -6407,9 +6407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch/switchedoncontents.json": {
       "hash": "6bc5949e938055a06d7051d692d50653798bb006ae89507df695cd7bfad1f51c",
-      "last_checked": "2026-04-28T07:27:08.420637",
+      "last_checked": "2026-05-01T07:36:09.762845",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"23059a70d99a531e313f8962ca2218ee\"",
       "file_path": "documentation/TouchController/tcswitch/switchedoncontents.md"
     },
@@ -6423,9 +6423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitch/collidershape.json": {
       "hash": "478c8d141582d4cbf504021df14165168921a14e356e5ef47d50a3dbde39d793",
-      "last_checked": "2026-04-28T07:27:08.500778",
+      "last_checked": "2026-05-01T07:36:09.906784",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e67aa757e034598255bbf675a8fa3591\"",
       "file_path": "documentation/TouchController/tcswitch/collidershape.md"
     },
@@ -6439,9 +6439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/backgroundcontents.json": {
       "hash": "2c9be0bef12239849bed3dcc79e77dd72a04ddcdf820c3e7f9ccdebc780aa8d1",
-      "last_checked": "2026-04-28T07:27:08.524651",
+      "last_checked": "2026-05-01T07:36:10.076773",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"312e4e515f263f4c0738f6b8930897c9\"",
       "file_path": "documentation/TouchController/tcthumbstick/backgroundcontents.md"
     },
@@ -6455,9 +6455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/hideswhennotpressed.json": {
       "hash": "3b3dfb7d114ca9efed34e0ee7391f78e5a315510ea1294fe5a6c4954019befb3",
-      "last_checked": "2026-04-28T07:27:08.634508",
+      "last_checked": "2026-05-01T07:36:10.229278",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"47efa7a34a5c491b6957c32e36241f55\"",
       "file_path": "documentation/TouchController/tcthumbstick/hideswhennotpressed.md"
     },
@@ -6471,9 +6471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/highlightduration.json": {
       "hash": "3cd05a240ace166255066ed6e1a6cbd2ee6d9b290e1d311ec32202027410eda2",
-      "last_checked": "2026-04-28T07:27:08.710268",
+      "last_checked": "2026-05-01T07:36:10.355152",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4a82982323717910aee99affbdc62283\"",
       "file_path": "documentation/TouchController/tcthumbstick/highlightduration.md"
     },
@@ -6487,9 +6487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/stickcontents.json": {
       "hash": "5a60f8f1899a00e8e650d69d11b46fec5397828629219a24b0a3a85819e58f79",
-      "last_checked": "2026-04-28T07:27:08.811078",
+      "last_checked": "2026-05-01T07:36:10.510648",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d4bb7b4240d4151cf72be929c0b5a5ab\"",
       "file_path": "documentation/TouchController/tcthumbstick/stickcontents.md"
     },
@@ -6503,9 +6503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstick/collidershape.json": {
       "hash": "6310b7e604cc6973786077383e0c73b4c9c263d1d8e38b6ffa340af3c2b907ca",
-      "last_checked": "2026-04-28T07:27:09.002792",
+      "last_checked": "2026-05-01T07:36:10.755206",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"186bb2da9fd1791a0d0a7e4c05a3336b\"",
       "file_path": "documentation/TouchController/tcthumbstick/collidershape.md"
     },
@@ -6519,9 +6519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/backgroundcontents.json": {
       "hash": "519a610e06659ea6224922ad2b7cb5fc865c1bffb572ec805d8f1f76722da3c9",
-      "last_checked": "2026-04-28T07:27:09.121466",
+      "last_checked": "2026-05-01T07:36:10.915404",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"61ad0549486629561b2769c2aca15589\"",
       "file_path": "documentation/TouchController/tcthrottle/backgroundcontents.md"
     },
@@ -6535,9 +6535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/highlightduration.json": {
       "hash": "cf78d07b0751b4a155d9d896373b694ffebf9bb580b98fa34830a8d32b2ace8e",
-      "last_checked": "2026-04-28T07:27:09.257653",
+      "last_checked": "2026-05-01T07:36:11.268368",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"50a9943f1baa35ec703532e95a87632c\"",
       "file_path": "documentation/TouchController/tcthrottle/highlightduration.md"
     },
@@ -6551,9 +6551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/indicatorcontents.json": {
       "hash": "741c0d51abd7974e6d37e294c22a550586166988ea2f51c2bfb51bbc401afd3a",
-      "last_checked": "2026-04-28T07:27:09.334228",
+      "last_checked": "2026-05-01T07:36:11.396106",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4348fe4cb833aaf4e5471fd4bb7fbca4\"",
       "file_path": "documentation/TouchController/tcthrottle/indicatorcontents.md"
     },
@@ -6567,9 +6567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/snapstobasevalue.json": {
       "hash": "038e7bf5c2a70335fcb712aa644e3f783d3ea4bfd3b6f719823b81442ee4db5a",
-      "last_checked": "2026-04-28T07:27:09.422433",
+      "last_checked": "2026-05-01T07:36:11.738275",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"75a5bf262baca0bca169f38af12c5a3a\"",
       "file_path": "documentation/TouchController/tcthrottle/snapstobasevalue.md"
     },
@@ -6583,9 +6583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/collidershape.json": {
       "hash": "cf98e6c558093fd6c81f789d3066abbf2113a23a448f2be5392a372266efb8d5",
-      "last_checked": "2026-04-28T07:27:09.622831",
+      "last_checked": "2026-05-01T07:36:12.031519",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"11281d5ca8f52e1c543f84dc1202cbd2\"",
       "file_path": "documentation/TouchController/tcthrottle/collidershape.md"
     },
@@ -6599,9 +6599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.property.json": {
       "hash": "6096e0f31fed00a9c68078e110547d79f0a379a1af6e4c864b6d10c8e32b17cf",
-      "last_checked": "2026-04-28T07:27:09.687255",
+      "last_checked": "2026-05-01T07:36:12.197051",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"864933538d93b8b9b069f2069580b3fc\"",
       "file_path": "documentation/TouchController/tcthrottle/orientation-swiftproperty.md"
     },
@@ -6615,9 +6615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum.json": {
       "hash": "2b0eb9698fa34348abc7ddcdec1ce817a3cebb9f674edb8ded279228c1792570",
-      "last_checked": "2026-04-28T07:27:09.813695",
+      "last_checked": "2026-05-01T07:36:12.332641",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"8c57b03e3d5499ff625a8730049d7614\"",
       "file_path": "documentation/TouchController/tcthrottle/orientation-swiftenum.md"
     },
@@ -6631,9 +6631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpad/contents.json": {
       "hash": "093ad641260dd0a52cccad0056dc80dec99980dd4bb306ec2a2445d613aed67e",
-      "last_checked": "2026-04-28T07:27:09.897420",
+      "last_checked": "2026-05-01T07:36:12.504140",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"deaf3ddf0e224ff37c0ebf7708fc5059\"",
       "file_path": "documentation/TouchController/tctouchpad/contents.md"
     },
@@ -6647,9 +6647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpad/highlightduration.json": {
       "hash": "6b3de0467555569e5fa40e01046c225a4f19fc5606c0832b56f945ac13b4070f",
-      "last_checked": "2026-04-28T07:27:09.967659",
+      "last_checked": "2026-05-01T07:36:12.632230",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"eafa4c83afd8c73ca92e3f97c53aaa01\"",
       "file_path": "documentation/TouchController/tctouchpad/highlightduration.md"
     },
@@ -6663,9 +6663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpad/reportsrelativevalues.json": {
       "hash": "1d3a07df581f3ea8cc30263d9908b971956dfafb446aebcc5c4e6f4d218405b6",
-      "last_checked": "2026-04-28T07:27:09.987614",
+      "last_checked": "2026-05-01T07:36:12.768877",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"77285786c3018cede0b03a154e2c8df2\"",
       "file_path": "documentation/TouchController/tctouchpad/reportsrelativevalues.md"
     },
@@ -6679,9 +6679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpad/collidershape.json": {
       "hash": "6cbf83cafe19861101ba86e915072f6e26beadbbc2ea55fc21e645271b45ba6b",
-      "last_checked": "2026-04-28T07:27:10.111409",
+      "last_checked": "2026-05-01T07:36:12.882181",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0ac577df4adefcfecbf3bded7dd398a7\"",
       "file_path": "documentation/TouchController/tctouchpad/collidershape.md"
     },
@@ -6695,9 +6695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/init(images:).json": {
       "hash": "d7b2df98ee55015655f2d6d1dd276dec215dcf2178496a668561e071d014506d",
-      "last_checked": "2026-04-28T07:27:10.189843",
+      "last_checked": "2026-05-01T07:36:13.042620",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3cfa10562cbc142b1f3dfad3b7ec1658\"",
       "file_path": "documentation/TouchController/tccontrolcontents/init-images.md"
     },
@@ -6711,9 +6711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/images.json": {
       "hash": "f07ee97046c1d3cd7784a75e298e695b9a9ff9e1258c49b26ed84b4d05a5e595",
-      "last_checked": "2026-04-28T07:27:10.274802",
+      "last_checked": "2026-05-01T07:36:13.164602",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1a01b004be6a73ea5b1af35a7aa55e4a\"",
       "file_path": "documentation/TouchController/tccontrolcontents/images.md"
     },
@@ -6727,9 +6727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttoncontents(forsystemimagenamed:size:shape:controller:).json": {
       "hash": "6c4fe906a4ceed58694c390dde0d87def6432c9fcb2f250a8ba03a1080e57c69",
-      "last_checked": "2026-04-28T07:27:10.347046",
+      "last_checked": "2026-05-01T07:36:13.339521",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"fce39f2b4e25ea569a7afd5d3dda91a7\"",
       "file_path": "documentation/TouchController/tccontrolcontents/buttoncontents-forsystemimagenamedsizeshapecontroller.md"
     },
@@ -6743,9 +6743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/directionpadcontents(label:size:style:direction:controller:).json": {
       "hash": "86533568e6e9ceaee3503da6b3cd7fdbff19c66cffd93438b970dad6f38f0dff",
-      "last_checked": "2026-04-28T07:27:10.423130",
+      "last_checked": "2026-05-01T07:36:13.505412",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b4c20d17ead645f28ff9dfcb0d95f62d\"",
       "file_path": "documentation/TouchController/tccontrolcontents/directionpadcontents-labelsizestyledirectioncontroller.md"
     },
@@ -6759,9 +6759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/switchedoncontents(forsystemimagenamed:size:shape:controller:).json": {
       "hash": "46470e546b678ff5e796b61243516fdd34e338931246bff66c819369c45b9682",
-      "last_checked": "2026-04-28T07:27:10.494257",
+      "last_checked": "2026-05-01T07:36:13.616798",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"058e6a4e95e3b28a93c13448e0ca61c9\"",
       "file_path": "documentation/TouchController/tccontrolcontents/switchedoncontents-forsystemimagenamedsizeshapecontroller.md"
     },
@@ -6775,9 +6775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/throttlebackgroundcontents(size:controller:).json": {
       "hash": "7f9082f12d35c9fd5e126700e170a0c56616401072f9844efb1607defa4ac8ad",
-      "last_checked": "2026-04-28T07:27:10.576411",
+      "last_checked": "2026-05-01T07:36:13.750577",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"22ad2fe2846729124c65ae6fcbfad35f\"",
       "file_path": "documentation/TouchController/tccontrolcontents/throttlebackgroundcontents-sizecontroller.md"
     },
@@ -6791,9 +6791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/throttleindicatorcontents(size:controller:).json": {
       "hash": "0851120c95fcce20c8319c19416264a096d86055a37fcc4d249007c396dc087a",
-      "last_checked": "2026-04-28T07:27:10.646251",
+      "last_checked": "2026-05-01T07:36:13.883319",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1ad7941774aadb3ba4b1baa44fb4e731\"",
       "file_path": "documentation/TouchController/tccontrolcontents/throttleindicatorcontents-sizecontroller.md"
     },
@@ -6807,9 +6807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/thumbstickstickbackgroundcontents(size:controller:).json": {
       "hash": "0df3075d089360e2499e1bc250a0c841633bd1edf739b1302daf516ee25db625",
-      "last_checked": "2026-04-28T07:27:10.714906",
+      "last_checked": "2026-05-01T07:36:14.048093",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2cd7233534e16e2a759ea136ac39adf6\"",
       "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickbackgroundcontents-sizecontroller.md"
     },
@@ -6823,9 +6823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/thumbstickstickcontents(size:controller:).json": {
       "hash": "0a9f48de44e94e0fa9ef6fb42e84ac475a83a332604c6ebc3946e5e2db425d37",
-      "last_checked": "2026-04-28T07:27:10.855206",
+      "last_checked": "2026-05-01T07:36:14.202692",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f7cace445c018035a4f18b14e3112ec5\"",
       "file_path": "documentation/TouchController/tccontrolcontents/thumbstickstickcontents-sizecontroller.md"
     },
@@ -6855,9 +6855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:).json": {
       "hash": "caf1a5cf2813c061249abfa46023cdf021ae9fbdf2aab89ddc75189d5015e2bd",
-      "last_checked": "2026-04-28T07:27:11.025317",
+      "last_checked": "2026-05-01T07:36:14.475881",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"706ed98ea566dac8807e0a822ca5143d\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-texturesize.md"
     },
@@ -6871,9 +6871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:highlight:offset:tintcolor:).json": {
       "hash": "cb513aa7b2a7d9b5734ee6bbcf3d841f3e53786530d02ccdb2600cce4a82482f",
-      "last_checked": "2026-04-28T07:27:11.154258",
+      "last_checked": "2026-05-01T07:36:14.646437",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2e4cf1e6e0b33abcf786645ea92bc2a9\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlightoffsettintcolor.md"
     },
@@ -6903,9 +6903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/highlighttexture.json": {
       "hash": "855a6b51aefea52f470b50110c835c67203a7c4d616450e709574429a3ae4029",
-      "last_checked": "2026-04-28T07:27:11.315129",
+      "last_checked": "2026-05-01T07:36:14.955924",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"aba9dc78169f68b5f104e48914e88536\"",
       "file_path": "documentation/TouchController/tccontrolimage/highlighttexture.md"
     },
@@ -6919,9 +6919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/offset.json": {
       "hash": "65e169a890178c66f3df79ecc998289c9e838d474eb7dce8703f2e14b5e32412",
-      "last_checked": "2026-04-28T07:27:11.338216",
+      "last_checked": "2026-05-01T07:36:15.141922",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f12770c2b99b4459899975ecb4667c43\"",
       "file_path": "documentation/TouchController/tccontrolimage/offset.md"
     },
@@ -6935,9 +6935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/size.json": {
       "hash": "c0cc24c145fcc5e943eaff98947d2ccd0dbd49bf6eb31eae23ac9973376984be",
-      "last_checked": "2026-04-28T07:27:11.452800",
+      "last_checked": "2026-05-01T07:36:15.274900",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a438e22f35e324281fe0fc857192a990\"",
       "file_path": "documentation/TouchController/tccontrolimage/size.md"
     },
@@ -6951,9 +6951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/texture.json": {
       "hash": "59cd929f1a208c9a08a4941d3c83f890dcef5e580e7e757c9c4b073baaf70d4e",
-      "last_checked": "2026-04-28T07:27:11.522300",
+      "last_checked": "2026-05-01T07:36:15.589626",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"dff6a18729a362818a238be109ac2a67\"",
       "file_path": "documentation/TouchController/tccontrolimage/texture.md"
     },
@@ -6967,9 +6967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/tintcolor.json": {
       "hash": "779d509575c5571fc3d080f207b8ae74eb8a56ee8c75d7c8053e5c3b909d93b7",
-      "last_checked": "2026-04-28T07:27:11.656987",
+      "last_checked": "2026-05-01T07:36:15.896387",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b95fbc7bd9ef52e901c388c2a5cf4103\"",
       "file_path": "documentation/TouchController/tccontrolimage/tintcolor.md"
     },
@@ -6983,9 +6983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/anchor.json": {
       "hash": "fe8ef0132c778e1f0904b05aaf15df3446324d3da355ba4129b85818f7ab4077",
-      "last_checked": "2026-04-28T07:27:11.942539",
+      "last_checked": "2026-05-01T07:36:16.673974",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"714379561d81b2e223eec8a3318f594a\"",
       "file_path": "documentation/TouchController/tccontrollayout/anchor.md"
     },
@@ -6999,9 +6999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/anchorcoordinatesystem.json": {
       "hash": "13f69a83176cdebcc0bdc49ff3ecbab74823e86d18552b023bdeca597c9d2317",
-      "last_checked": "2026-04-28T07:27:12.011797",
+      "last_checked": "2026-05-01T07:36:16.831323",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"db8dcda4dd0e4e67b4f48c859c383896\"",
       "file_path": "documentation/TouchController/tccontrollayout/anchorcoordinatesystem.md"
     },
@@ -7015,9 +7015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/offset.json": {
       "hash": "aea4493831aed21f7eda578dab797a7f894fb9b94f1e011e47e89131829b7501",
-      "last_checked": "2026-04-28T07:27:12.090409",
+      "last_checked": "2026-05-01T07:36:17.131933",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"362c7708061bca47aaf2509c10b3690e\"",
       "file_path": "documentation/TouchController/tccontrollayout/offset.md"
     },
@@ -7031,9 +7031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/position.json": {
       "hash": "9a1db9cc57e8d7601812a25798485e3e27781afc391d6e7af5dc5d0f9c06a72d",
-      "last_checked": "2026-04-28T07:27:12.167209",
+      "last_checked": "2026-05-01T07:36:17.289247",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7f178f319e1ea0e1e72c39fea394a8c6\"",
       "file_path": "documentation/TouchController/tccontrollayout/position.md"
     },
@@ -7047,9 +7047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/size.json": {
       "hash": "710af72b0353abead8bc758992da986da263079da8c1f9657d84a250763ae1f1",
-      "last_checked": "2026-04-28T07:27:12.244304",
+      "last_checked": "2026-05-01T07:36:17.610671",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"06199daffd536a4aaf2f99f14c8dd900\"",
       "file_path": "documentation/TouchController/tccontrollayout/size.md"
     },
@@ -7063,9 +7063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayout/zindex.json": {
       "hash": "97c49e6196eb3de6d4cf4dd878431a85237a145d8c712b2abbbfaec96a575f52",
-      "last_checked": "2026-04-28T07:27:12.412544",
+      "last_checked": "2026-05-01T07:36:17.779942",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4be6cc1679f983331e0905a5b8072cb4\"",
       "file_path": "documentation/TouchController/tccontrollayout/zindex.md"
     },
@@ -7079,9 +7079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape/circle.json": {
       "hash": "30a187f40c3bb3f13d6638bf5ed371298639b6d5cbbbdf769f363ada6fbf80fb",
-      "last_checked": "2026-04-28T07:27:12.520956",
+      "last_checked": "2026-05-01T07:36:17.938931",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"db090de312db3d3936c2377125a35b56\"",
       "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/circle.md"
     },
@@ -7095,9 +7095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape/rect.json": {
       "hash": "0119df01924ad353055cd91b40be809fedfae49b8c77086ddbe511e7aae06721",
-      "last_checked": "2026-04-28T07:27:12.586518",
+      "last_checked": "2026-05-01T07:36:18.092550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f134a8b19c1f6781aa2076726965b9c1\"",
       "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/rect.md"
     },
@@ -7111,9 +7111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/buttonshape/init(rawvalue:).json": {
       "hash": "e46c1c3a6dd9a1452c8926c00aa5323c9bb74eef44d84e9eff5a0b98dfcea928",
-      "last_checked": "2026-04-28T07:27:12.715789",
+      "last_checked": "2026-05-01T07:36:18.270029",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b12c06f7e3814d2b0ddc1f3aa87b94f2\"",
       "file_path": "documentation/TouchController/tccontrolcontents/buttonshape/init-rawvalue.md"
     },
@@ -7127,9 +7127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/down.json": {
       "hash": "ef29d90a38cc56183fda52067f492b4b52df1458044a5c33bc596d94d6111b53",
-      "last_checked": "2026-04-28T07:27:12.791153",
+      "last_checked": "2026-05-01T07:36:18.424055",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2a325c9086bbc9a8051497a142a4fafc\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/down.md"
     },
@@ -7143,9 +7143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/left.json": {
       "hash": "965a0849a9382bcc9c77977a72d964967ea95f9b0f8742e8b97437bb266bf3e1",
-      "last_checked": "2026-04-28T07:27:12.859685",
+      "last_checked": "2026-05-01T07:36:18.584925",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f3a06a22eef1a86ef053cc536c53180f\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/left.md"
     },
@@ -7159,9 +7159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/right.json": {
       "hash": "ff450b24253a581643e6b1811df8f1cd47da4a07b8b96600f681bd9e8ca99e8f",
-      "last_checked": "2026-04-28T07:27:12.935381",
+      "last_checked": "2026-05-01T07:36:18.743030",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"542a358bda4de388e6bd861eec3b4176\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/right.md"
     },
@@ -7175,9 +7175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/up.json": {
       "hash": "3248fecb32ae5c13e6c09bb62ffd74502a4dc339a67e2eec0cc4cfb705d35f4a",
-      "last_checked": "2026-04-28T07:27:13.025766",
+      "last_checked": "2026-05-01T07:36:18.902476",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"946186177e5a22c61f8f9dd9b479e435\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/up.md"
     },
@@ -7191,9 +7191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpaddirection/init(rawvalue:).json": {
       "hash": "a9531e53c608680ba0f33822acb52c08bad40b4174bc067b8f6646b819f797bb",
-      "last_checked": "2026-04-28T07:27:13.105175",
+      "last_checked": "2026-05-01T07:36:19.053086",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d78874ce6ce7bfce177099e5327833fe\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpaddirection/init-rawvalue.md"
     },
@@ -7207,9 +7207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/circle.json": {
       "hash": "f8f2d7f244e753467c78bb0f6d84a478de464073a35ebcde11d6d3ed7ff621cb",
-      "last_checked": "2026-04-28T07:27:13.239897",
+      "last_checked": "2026-05-01T07:36:19.219238",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f06c3b2dcbf1400d5208a2149eb4ffd2\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/circle.md"
     },
@@ -7223,9 +7223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/pentagon.json": {
       "hash": "f6cc7bbcdf69c35e318ab8013e37a08a4a87fa01289688466297f35ecf9dc70a",
-      "last_checked": "2026-04-28T07:27:13.311040",
+      "last_checked": "2026-05-01T07:36:19.390996",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"04027a3a95f37ef7901bec7a54076a89\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/pentagon.md"
     },
@@ -7239,9 +7239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolcontents/dpadelementstyle/init(rawvalue:).json": {
       "hash": "7c74eed5fc9bfed5bd6225fce43a233a780335013dd4667b148a3cb2bf9520f6",
-      "last_checked": "2026-04-28T07:27:13.330220",
+      "last_checked": "2026-05-01T07:36:19.556552",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"21d4bded74afd9ef1c14638f08f700a0\"",
       "file_path": "documentation/TouchController/tccontrolcontents/dpadelementstyle/init-rawvalue.md"
     },
@@ -7255,9 +7255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init().json": {
       "hash": "a3d7f67bfd416799b655525e4b9de6587e24a14b5611c576f6a2a387ac26384d",
-      "last_checked": "2026-04-28T07:27:13.448145",
+      "last_checked": "2026-05-01T07:36:19.855537",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"03ffcee38d6bd0ea5491d8e42bb1e530\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init.md"
     },
@@ -7287,9 +7287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/drawablesize.json": {
       "hash": "0a93f5db415d4f56a4a361843d09fb510791dcdf4483a92099d7dcb560a8f492",
-      "last_checked": "2026-04-28T07:27:13.934834",
+      "last_checked": "2026-05-01T07:36:20.741025",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ae781b7ae9acd1a067bde20e161eaf07\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/drawablesize.md"
     },
@@ -7303,9 +7303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/size.json": {
       "hash": "d31fd2a8dcf5477f9b3bcbd5f86d4fb21ae8f45f6919a704e570158b76c51852",
-      "last_checked": "2026-04-28T07:27:14.076606",
+      "last_checked": "2026-05-01T07:36:21.066814",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"face8e1e53c6f3788f8c1d65b211c9ba\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/size.md"
     },
@@ -7319,9 +7319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/contents.json": {
       "hash": "bf166fad59aad02ac3935d702920da355540e22ec54b511155b18d8aba38f366",
-      "last_checked": "2026-04-28T07:27:14.423482",
+      "last_checked": "2026-05-01T07:36:21.886618",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"78af268a8cca8f4bfd5d27e56a87b21c\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/contents.md"
     },
@@ -7335,9 +7335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/highlightduration.json": {
       "hash": "e47fd4add8890e675a59069b7f1b41a13aa8fd6d8b5b4814ea15dce34308485d",
-      "last_checked": "2026-04-28T07:27:14.512656",
+      "last_checked": "2026-05-01T07:36:22.043697",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"05fe674749e4f8cbd20c64eb8258d825\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/highlightduration.md"
     },
@@ -7351,9 +7351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/zindex.json": {
       "hash": "fd05a617b6059032d595713b7d197c32325e8146747b0c55287e96921f41b50e",
-      "last_checked": "2026-04-28T07:27:14.592902",
+      "last_checked": "2026-05-01T07:36:22.216816",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f45e318089d51edb0df38c58f1c3454e\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/zindex.md"
     },
@@ -7367,9 +7367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor.json": {
       "hash": "45a42c11b0667fb48907bdf1c730e472d922b922de4d3e6cc66c7019f71c82cf",
-      "last_checked": "2026-04-28T07:27:15.041688",
+      "last_checked": "2026-05-01T07:36:23.077171",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"37c18c98fb3eb314a747b7afc4d2100e\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor.md"
     },
@@ -7383,9 +7383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/anchorcoordinatesystem.json": {
       "hash": "24c8ff8d8859be5f38de4f61d4e904dd5db7201eb217f86936b6bf1938dc6c5e",
-      "last_checked": "2026-04-28T07:27:15.131349",
+      "last_checked": "2026-05-01T07:36:23.250762",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"624734bc692d8567590d344ec8f27050\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/anchorcoordinatesystem.md"
     },
@@ -7399,9 +7399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem.json": {
       "hash": "d3a204840b42accc8026276bfe31dddc76b3d925b8b8b765f18617e9fabfdf8e",
-      "last_checked": "2026-04-28T07:27:15.202407",
+      "last_checked": "2026-05-01T07:36:23.422518",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d26b812fabaa99b4d90728afeb2ba3b0\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem.md"
     },
@@ -7415,9 +7415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcbuttondescriptor/collidershape.json": {
       "hash": "c2d96b059fcbbf2561dd3abee2245261422cd359804714e60982619c571e0c08",
-      "last_checked": "2026-04-28T07:27:15.306710",
+      "last_checked": "2026-05-01T07:36:23.581237",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9d9686dc81fbb9c8a70c9c49fab6e46a\"",
       "file_path": "documentation/TouchController/tcbuttondescriptor/collidershape.md"
     },
@@ -7431,9 +7431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/downcontents.json": {
       "hash": "4d3b203f31966ee0bd8d5fdffdb98984e69018afff924be66542f22496104599",
-      "last_checked": "2026-04-28T07:27:15.562264",
+      "last_checked": "2026-05-01T07:36:24.076342",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"68fe7bdcc15db52fbc2dbd134c112229\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/downcontents.md"
     },
@@ -7447,9 +7447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/highlightduration.json": {
       "hash": "55db519975d298da85c11fe68e8557ef65fe950e8fd56760bf1709470c8f89d3",
-      "last_checked": "2026-04-28T07:27:15.739987",
+      "last_checked": "2026-05-01T07:36:24.413551",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d3ba0cbb06190425502821143151b4f4\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/highlightduration.md"
     },
@@ -7463,9 +7463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/inputismutuallyexclusive.json": {
       "hash": "fa76df4cee0306d97c4ac28442e32b053b42184222a30528897865decd7954c3",
-      "last_checked": "2026-04-28T07:27:15.761435",
+      "last_checked": "2026-05-01T07:36:24.572924",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c0efdab7bd9556898f50b26c0c6e55b2\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/inputismutuallyexclusive.md"
     },
@@ -7479,9 +7479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/leftcontents.json": {
       "hash": "eda9ff0edd23e664e13ef72e460f9a2d22f7f09ca86ac7a8e8a88265ea743c94",
-      "last_checked": "2026-04-28T07:27:16.058372",
+      "last_checked": "2026-05-01T07:36:25.081777",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d42641845b4406e3f37f94a627b07847\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/leftcontents.md"
     },
@@ -7495,9 +7495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/rightcontents.json": {
       "hash": "5f0766927f02146532a414f1b49d4e09064fd2f5a717d0718055814c4df46dcf",
-      "last_checked": "2026-04-28T07:27:16.280861",
+      "last_checked": "2026-05-01T07:36:25.599378",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"deef8164fb7b2a250aed71e0cbfc7e1d\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/rightcontents.md"
     },
@@ -7511,9 +7511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/upcontents.json": {
       "hash": "2f07ed702cbc3c10a5bacb25dea0f68c87aac3704ecf8b96e99ec708bf46cc38",
-      "last_checked": "2026-04-28T07:27:16.535364",
+      "last_checked": "2026-05-01T07:36:26.105707",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b7f295ef0ed679aee198381e0c097ec9\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/upcontents.md"
     },
@@ -7527,9 +7527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/zindex.json": {
       "hash": "ed71c94c6e057c609635f9ce8b09b804093e740c0f925261a160c0acced1d2e3",
-      "last_checked": "2026-04-28T07:27:16.690218",
+      "last_checked": "2026-05-01T07:36:26.443470",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"617dfd3d093f8a9f3cf21bba65e4e7be\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/zindex.md"
     },
@@ -7543,9 +7543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/anchorcoordinatesystem.json": {
       "hash": "3d62f6e04a649e19425e67ddbfa50d370bb659fa69fcea1bce4b1466a854d323",
-      "last_checked": "2026-04-28T07:27:16.831169",
+      "last_checked": "2026-05-01T07:36:26.763610",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"10eccd45654ec46646cc5745772f47cb\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/anchorcoordinatesystem.md"
     },
@@ -7559,9 +7559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcdirectionpaddescriptor/collidershape.json": {
       "hash": "a0c092445e03672b9fd3f572a197f307264e0b7db5619707e38068df55ab2eb8",
-      "last_checked": "2026-04-28T07:27:16.847766",
+      "last_checked": "2026-05-01T07:36:26.931341",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4e34abef74a8d3c8a23ab0df6a786fcc\"",
       "file_path": "documentation/TouchController/tcdirectionpaddescriptor/collidershape.md"
     },
@@ -7575,9 +7575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/init().json": {
       "hash": "eeb56c04994abf7693f48f365792c278035c8884f7517f08de9f2c4f22c774e1",
-      "last_checked": "2026-04-28T07:27:16.909831",
+      "last_checked": "2026-05-01T07:36:27.099327",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a3ca964d5a5e38e077eb06dd1c8b87fc\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/init.md"
     },
@@ -7591,9 +7591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/contents.json": {
       "hash": "d2a196dbdcbda2bc11f453fe2c64cd3c630d3bcdca26744bc7d05b6ef43f2004",
-      "last_checked": "2026-04-28T07:27:17.041015",
+      "last_checked": "2026-05-01T07:36:27.256594",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"404b282634c6b7c50b1e50f0e8de1e9a\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/contents.md"
     },
@@ -7607,9 +7607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/highlightduration.json": {
       "hash": "3908a6b72cf1489e2c1d74ed6effda563aafe18e40a19f3c25a34cd491e49e25",
-      "last_checked": "2026-04-28T07:27:17.115921",
+      "last_checked": "2026-05-01T07:36:27.428800",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3246703165842d41c955ece26483e35d\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/highlightduration.md"
     },
@@ -7623,9 +7623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/label.json": {
       "hash": "2750f1a1c54bb7eddf1c6817ebd3fb4b4ac8694d1c7d2397d689f70c072b8e93",
-      "last_checked": "2026-04-28T07:27:17.203244",
+      "last_checked": "2026-05-01T07:36:27.585425",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d17736e7bd623b73fdf06844e1ca2a32\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/label.md"
     },
@@ -7639,9 +7639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/offset.json": {
       "hash": "df7a5a60c183de3fa65aa0111b3ccbf8865cc16cf5a7a44fcffee4f55f85bc80",
-      "last_checked": "2026-04-28T07:27:17.281653",
+      "last_checked": "2026-05-01T07:36:27.752659",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"13206a05050170481b4a0230c89c354b\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/offset.md"
     },
@@ -7655,9 +7655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/size.json": {
       "hash": "95e0f2c26125b415513b5961c687fab0db086c0aadaf3306789b7fc7acf2bcce",
-      "last_checked": "2026-04-28T07:27:17.355323",
+      "last_checked": "2026-05-01T07:36:27.927923",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"90d6848d9c7e459c6371b0a1d0e6b3c1\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/size.md"
     },
@@ -7671,9 +7671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/switchedoncontents.json": {
       "hash": "5a0d2b06051f0adea8a360c5590b635c19f041518b5c977598d6e20d38033328",
-      "last_checked": "2026-04-28T07:27:17.376400",
+      "last_checked": "2026-05-01T07:36:28.092351",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"96df11f139c04239024d75f86db22271\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/switchedoncontents.md"
     },
@@ -7687,9 +7687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/zindex.json": {
       "hash": "52b58a41c4bee962dbd36f684fcac59d51922d30366d71be6a4fc747d34962ee",
-      "last_checked": "2026-04-28T07:27:17.502086",
+      "last_checked": "2026-05-01T07:36:28.244517",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b99e20782f2ab07e88d604b6f6fa1b4d\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/zindex.md"
     },
@@ -7703,9 +7703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/anchor.json": {
       "hash": "6cc4462e794fa4903454e28dd7f8c9f15b033bcb354cfa6200fe57b7f3f3c959",
-      "last_checked": "2026-04-28T07:27:17.526815",
+      "last_checked": "2026-05-01T07:36:28.408454",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4d311e6c2d131d6888330963b6a105dc\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/anchor.md"
     },
@@ -7719,9 +7719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/anchorcoordinatesystem.json": {
       "hash": "9aeccfa8d32d0679394f5b47582a974146ea078050f055db7f4844b06469a565",
-      "last_checked": "2026-04-28T07:27:17.652710",
+      "last_checked": "2026-05-01T07:36:28.578298",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"55f34d69bf958ea1908b4c6a754905f1\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/anchorcoordinatesystem.md"
     },
@@ -7735,9 +7735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcswitchdescriptor/collidershape.json": {
       "hash": "2ee98b737dd5ecc4b311a7397f66ae0f24b45c31e982e8665f8d6def1c8b172e",
-      "last_checked": "2026-04-28T07:27:17.723704",
+      "last_checked": "2026-05-01T07:36:28.732973",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"66b70b1c3cfdbd9fab41d403c84d9a0d\"",
       "file_path": "documentation/TouchController/tcswitchdescriptor/collidershape.md"
     },
@@ -7751,9 +7751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/backgroundcontents.json": {
       "hash": "365981af66b4d6ed2c47c606ee04a3a80b0dc6a1a7b29a8c7bb1a249f947380f",
-      "last_checked": "2026-04-28T07:27:17.877699",
+      "last_checked": "2026-05-01T07:36:29.071413",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a06b016e1b90f12a20804c802191fa2b\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/backgroundcontents.md"
     },
@@ -7767,9 +7767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/highlightduration.json": {
       "hash": "32f1ee173f666afc89eae66e23b1cfbd7fa2c159e6d4ff17115a06c443c9f0e9",
-      "last_checked": "2026-04-28T07:27:18.030853",
+      "last_checked": "2026-05-01T07:36:29.400460",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6dd4a85b634973d25fa55170a4d5df74\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/highlightduration.md"
     },
@@ -7783,9 +7783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/indicatorcontents.json": {
       "hash": "c4b7706b6c344ab293e096d400d8455148dedee2a03c1b58580cf57762c8cdd8",
-      "last_checked": "2026-04-28T07:27:18.048472",
+      "last_checked": "2026-05-01T07:36:29.566025",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"560f3e82f29c2a52c9c4e24d89907884\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/indicatorcontents.md"
     },
@@ -7799,9 +7799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/snapstobasevalue.json": {
       "hash": "4378a384a4b8cf533abe397f5ca73a46cc078b2fa342dfef0508251ca1e0be2b",
-      "last_checked": "2026-04-28T07:27:18.556846",
+      "last_checked": "2026-05-01T07:36:30.716890",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"38b6a4a47a319b53781d7abf9060fe83\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/snapstobasevalue.md"
     },
@@ -7815,9 +7815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/zindex.json": {
       "hash": "94a3a275b7d732c125b70b431e47aa2b785127f98e075c4ab71685ac5a27eead",
-      "last_checked": "2026-04-28T07:27:18.728867",
+      "last_checked": "2026-05-01T07:36:31.090012",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e91ef3cb8e8a829f10ed35f06dde77b7\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/zindex.md"
     },
@@ -7831,9 +7831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/anchorcoordinatesystem.json": {
       "hash": "56fd47b0edd93f2b9311542fc197faeeae5a4de499a18cc5f517be2e5ce40fea",
-      "last_checked": "2026-04-28T07:27:18.900219",
+      "last_checked": "2026-05-01T07:36:31.419229",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9a57a13e8cb796a63cec77769ce6aa73\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/anchorcoordinatesystem.md"
     },
@@ -7847,9 +7847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottledescriptor/collidershape.json": {
       "hash": "da170591dd626f4ef63123b082f0df752bd97ff242ee9bbb64b9987ddaec4082",
-      "last_checked": "2026-04-28T07:27:18.918626",
+      "last_checked": "2026-05-01T07:36:31.577955",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a788210ec852d005c4d6914b1ca51c0f\"",
       "file_path": "documentation/TouchController/tcthrottledescriptor/collidershape.md"
     },
@@ -7863,9 +7863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/backgroundcontents.json": {
       "hash": "19b0b389c11155a82155aae5c41484f5944689fd0414e4eb85d87e7d909d0621",
-      "last_checked": "2026-04-28T07:27:19.074958",
+      "last_checked": "2026-05-01T07:36:31.930205",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3ff46221b0a63a3672a866f7f6aa2e1e\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/backgroundcontents.md"
     },
@@ -7879,9 +7879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/hideswhennotpressed.json": {
       "hash": "e2a528e7508393d8faa927edd95654b75b7844c3992af622711da4c8dfb6181d",
-      "last_checked": "2026-04-28T07:27:19.211687",
+      "last_checked": "2026-05-01T07:36:32.087845",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5809ff28cf69ffd51642a2da91d14f83\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/hideswhennotpressed.md"
     },
@@ -7895,9 +7895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/highlightduration.json": {
       "hash": "deac04777fbce7e97b80ad9a7d9039bf42ff2e4b7e265796c75121c409e786d0",
-      "last_checked": "2026-04-28T07:27:19.292506",
+      "last_checked": "2026-05-01T07:36:32.239491",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d410f7d0aeb9f96819c98f6ef1ec2261\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/highlightduration.md"
     },
@@ -7911,9 +7911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/stickcontents.json": {
       "hash": "b41c904becd32313d55cd4db95a08613226e32f5832c0503f2089e6fab989ab3",
-      "last_checked": "2026-04-28T07:27:19.527883",
+      "last_checked": "2026-05-01T07:36:32.936923",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1b377b52375170d032be7a643828bf69\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/stickcontents.md"
     },
@@ -7927,9 +7927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/zindex.json": {
       "hash": "c0f199f7e9573721fed3475058a7b0c57629c8101c6dbab9bf3732892b5eae46",
-      "last_checked": "2026-04-28T07:27:19.739026",
+      "last_checked": "2026-05-01T07:36:33.266706",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"60b6f43d07d0c148e8f010744a217e84\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/zindex.md"
     },
@@ -7943,9 +7943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/anchorcoordinatesystem.json": {
       "hash": "74c6612352be56bdabd275d9f9b6c680ffa37d8404f018732c41d879cd79462a",
-      "last_checked": "2026-04-28T07:27:19.911645",
+      "last_checked": "2026-05-01T07:36:33.576430",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a9e68d293db0683f726908be2fb0a41f\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/anchorcoordinatesystem.md"
     },
@@ -7959,9 +7959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthumbstickdescriptor/collidershape.json": {
       "hash": "5aa1e8f37c0410e241f1276aa20f0ed15c811e0aec0fc04c2c5e914ae399a884",
-      "last_checked": "2026-04-28T07:27:19.979902",
+      "last_checked": "2026-05-01T07:36:33.744001",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"092e7e8ee6b30634eb59edf121a5dac9\"",
       "file_path": "documentation/TouchController/tcthumbstickdescriptor/collidershape.md"
     },
@@ -7975,9 +7975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/contents.json": {
       "hash": "251436fb4f7b087071a9517039579e3d0b1fb0edd41888071264b262977d29d2",
-      "last_checked": "2026-04-28T07:27:20.124403",
+      "last_checked": "2026-05-01T07:36:34.100287",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5d3621a8c6d67b9954fcea3eb3f44647\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/contents.md"
     },
@@ -7991,9 +7991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/highlightduration.json": {
       "hash": "5696ed31b302fb822f7fd70fa794babf17bc8fbd152d92fd94fdd12c73023f1e",
-      "last_checked": "2026-04-28T07:27:20.197898",
+      "last_checked": "2026-05-01T07:36:34.262892",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"cb0098dd6f0254fca1389d8072f3b70a\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/highlightduration.md"
     },
@@ -8007,9 +8007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/reportsrelativevalues.json": {
       "hash": "56bb5b40c21880521f74518379ce5690a7e45baf5d9da889926432ef48872f38",
-      "last_checked": "2026-04-28T07:27:20.474921",
+      "last_checked": "2026-05-01T07:36:34.756936",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"036bd861017c7a1f6c5e047327a8672f\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/reportsrelativevalues.md"
     },
@@ -8023,9 +8023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/zindex.json": {
       "hash": "59b6dd1de9d8f51426f36aeb9b8e910b0bc2c81842a2bff6a18066bb345ee091",
-      "last_checked": "2026-04-28T07:27:20.568140",
+      "last_checked": "2026-05-01T07:36:35.106076",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"71b374c208554b8f4378b7a09eb2fdd9\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/zindex.md"
     },
@@ -8039,9 +8039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/anchorcoordinatesystem.json": {
       "hash": "4012da41e9e87119304d175d7890f14016db6b5b844441ed2d45a4e5de1a75d2",
-      "last_checked": "2026-04-28T07:27:20.706186",
+      "last_checked": "2026-05-01T07:36:35.442090",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"cf26fc68e0b4003fcac4eadf89422b0d\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/anchorcoordinatesystem.md"
     },
@@ -8055,9 +8055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchpaddescriptor/collidershape.json": {
       "hash": "7e575e6fda37444b53b293933be02d6632d759803c8f10718c8a0849d72c1887",
-      "last_checked": "2026-04-28T07:27:20.827713",
+      "last_checked": "2026-05-01T07:36:35.604635",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"fcedf4cd94a715ec684f3b9c99a0ea12\"",
       "file_path": "documentation/TouchController/tctouchpaddescriptor/collidershape.md"
     },
@@ -8071,9 +8071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/init(name:role:).json": {
       "hash": "2fd09993913f10e502212aab3682e96df3a26161acda4b6de5daa13582dfc034",
-      "last_checked": "2026-04-28T07:27:20.913260",
+      "last_checked": "2026-05-01T07:36:35.772592",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"eee1e0662c44d8471f36efb904a5a816\"",
       "file_path": "documentation/TouchController/tccontrollabel/init-namerole.md"
     },
@@ -8087,9 +8087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.property.json": {
       "hash": "aca7debd7f6c044cdddfe31ca6bd7d5774b9bd808b1968f6f33c3798f6726d3e",
-      "last_checked": "2026-04-28T07:27:20.934360",
+      "last_checked": "2026-05-01T07:36:35.939426",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"380b9ed4407d633fa2bf2355f25a901f\"",
       "file_path": "documentation/TouchController/tccontrollabel/role-swiftproperty.md"
     },
@@ -8103,9 +8103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum.json": {
       "hash": "10bc40cd3c833dfb3ea33298487c2fc93bb845942c7efc7d76685402bdfc1264",
-      "last_checked": "2026-04-28T07:27:21.100999",
+      "last_checked": "2026-05-01T07:36:36.136692",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c4cd97c21984702414b72d5c06be8dbf\"",
       "file_path": "documentation/TouchController/tccontrollabel/role-swiftenum.md"
     },
@@ -8119,9 +8119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttona.json": {
       "hash": "7cc774d9fc0f0cf3d759bf8cf83bb46b2b7215da8e574ab3689d655c591bf44f",
-      "last_checked": "2026-04-28T07:27:21.225644",
+      "last_checked": "2026-05-01T07:36:36.307991",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"88200c370dbbbea39b7b6eef2390d768\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttona.md"
     },
@@ -8135,9 +8135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonb.json": {
       "hash": "1d617151faf10210a3938e9caa379e064db3755bb7f23331a51c96574b05416a",
-      "last_checked": "2026-04-28T07:27:21.302691",
+      "last_checked": "2026-05-01T07:36:36.469664",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"48721d04fa5fbb48f2679de94edb0a2a\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonb.md"
     },
@@ -8151,9 +8151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonleftshoulder.json": {
       "hash": "9c5673fb718f1ae524f1cb9f0932428e2045960ee8c21c836b059731e407f304",
-      "last_checked": "2026-04-28T07:27:21.380179",
+      "last_checked": "2026-05-01T07:36:36.641892",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"33854a38800c7bb5c90157882cbec16e\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonleftshoulder.md"
     },
@@ -8167,9 +8167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonlefttrigger.json": {
       "hash": "0aab7136bc017e581b21d06e7839ddaefe50c747eec3e2185296fa53203a70e6",
-      "last_checked": "2026-04-28T07:27:21.460117",
+      "last_checked": "2026-05-01T07:36:36.805252",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"8df3628bf3e0879b1fb72a67ceebf0f8\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonlefttrigger.md"
     },
@@ -8183,9 +8183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonmenu.json": {
       "hash": "40095ff86ef7aaa3336b788323811789dd545be9b665729ca182e80a76e92feb",
-      "last_checked": "2026-04-28T07:27:21.535376",
+      "last_checked": "2026-05-01T07:36:36.964418",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"16c32fdd068ae2ed634a8c87c800aaea\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonmenu.md"
     },
@@ -8199,9 +8199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonoptions.json": {
       "hash": "041623391fcfb17feea536656eca4ce0421d6db19aadfeea7599247dc3c3220d",
-      "last_checked": "2026-04-28T07:27:21.557242",
+      "last_checked": "2026-05-01T07:36:37.146708",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6b5639a2a145f481bedd8a001231e3f2\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonoptions.md"
     },
@@ -8215,9 +8215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrightshoulder.json": {
       "hash": "b6f0739466c5efb728465e277774604f8330415e42a4039cd160194ee7031438",
-      "last_checked": "2026-04-28T07:27:21.663039",
+      "last_checked": "2026-05-01T07:36:37.324858",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"395333f506027951602a494b6b641f6b\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonrightshoulder.md"
     },
@@ -8231,9 +8231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonrighttrigger.json": {
       "hash": "0a3a353b882cb608c22d1c3824a8fb0ea90da358b8065a85ac83ecb66a8cd4b9",
-      "last_checked": "2026-04-28T07:27:21.745819",
+      "last_checked": "2026-05-01T07:36:37.486953",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0525ce55aace4d0ae42e524aa50ee378\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonrighttrigger.md"
     },
@@ -8247,9 +8247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttonx.json": {
       "hash": "832e7f2606865248d5dea79f1d54571cfe94f5312ba6a0a84ab5bfb9e4a6b0e5",
-      "last_checked": "2026-04-28T07:27:21.820433",
+      "last_checked": "2026-05-01T07:36:37.702730",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7a34dabf1e1f5ab5f3981fc8b5032e30\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttonx.md"
     },
@@ -8263,9 +8263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/buttony.json": {
       "hash": "3a89bc87c9019dafdb871fd5242fda0aa18014d7ffe49d37d9867689d4092aed",
-      "last_checked": "2026-04-28T07:27:21.896760",
+      "last_checked": "2026-05-01T07:36:37.878768",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"38785271b684a8522f0f2b471fed3371\"",
       "file_path": "documentation/TouchController/tccontrollabel/buttony.md"
     },
@@ -8279,9 +8279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/directionpad.json": {
       "hash": "436b49121025d7b704de0a990a955d5abc845909ce089b24186303cc6dda2863",
-      "last_checked": "2026-04-28T07:27:22.010964",
+      "last_checked": "2026-05-01T07:36:38.074162",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a7a7c1c05dbacd025d30f237a589c15d\"",
       "file_path": "documentation/TouchController/tccontrollabel/directionpad.md"
     },
@@ -8295,9 +8295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstick.json": {
       "hash": "c9695e58be1cac8f3d5a3e4a9006cce97bbdc4b3ca465b57d56744bb2373306f",
-      "last_checked": "2026-04-28T07:27:22.102586",
+      "last_checked": "2026-05-01T07:36:38.237490",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"75040ffc721f126d8fbbebe0cb6427c9\"",
       "file_path": "documentation/TouchController/tccontrollabel/leftthumbstick.md"
     },
@@ -8311,9 +8311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/leftthumbstickbutton.json": {
       "hash": "c106cc7f140be705b400b51add16b30c4bbc2e508f14cbb50fbe245f519f9ad0",
-      "last_checked": "2026-04-28T07:27:22.187551",
+      "last_checked": "2026-05-01T07:36:38.408338",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a717be41bc762a8b09f5ef0d8243b75c\"",
       "file_path": "documentation/TouchController/tccontrollabel/leftthumbstickbutton.md"
     },
@@ -8327,9 +8327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstick.json": {
       "hash": "001f475d86207b009d1e9dd63bdfda4dbca6c45def339cc90b7e7d0e7c3ac706",
-      "last_checked": "2026-04-28T07:27:22.277537",
+      "last_checked": "2026-05-01T07:36:38.573107",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"c07cac182ed93a3d8ea08a85ae2e6c75\"",
       "file_path": "documentation/TouchController/tccontrollabel/rightthumbstick.md"
     },
@@ -8343,9 +8343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/rightthumbstickbutton.json": {
       "hash": "f56bc9bdce06ea2647cda93a2124e4e69aa31b0be5e7244fa7951e3a80f5e191",
-      "last_checked": "2026-04-28T07:27:22.356158",
+      "last_checked": "2026-05-01T07:36:38.743496",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6ecb66b402ad72b0cf4863cceb5a659a\"",
       "file_path": "documentation/TouchController/tccontrollabel/rightthumbstickbutton.md"
     },
@@ -8359,9 +8359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/circle.json": {
       "hash": "4b2bb3ea143f20b249f7757f3d8d45a08bda033f108a50f003924de4b43e6ec2",
-      "last_checked": "2026-04-28T07:27:22.508087",
+      "last_checked": "2026-05-01T07:36:39.055190",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"8ffd2ae1ff93cb2d11370c5e0cff0d3c\"",
       "file_path": "documentation/TouchController/tccollidershape/circle.md"
     },
@@ -8375,9 +8375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/leftside.json": {
       "hash": "ee1d25a64fd308fd31830cf829df415164e0b938792f172b433cb8700c10f0a5",
-      "last_checked": "2026-04-28T07:27:22.586689",
+      "last_checked": "2026-05-01T07:36:39.211191",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0ee4653689c14690440571bebcded1e8\"",
       "file_path": "documentation/TouchController/tccollidershape/leftside.md"
     },
@@ -8391,9 +8391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/rect.json": {
       "hash": "6e1ae46b73b6fa8fd1a9d6b5a3faf17742cef99313590fb461a64ddc4a4afd92",
-      "last_checked": "2026-04-28T07:27:22.655647",
+      "last_checked": "2026-05-01T07:36:39.376860",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"96ef74df3df81e22ceeea35e30882ac5\"",
       "file_path": "documentation/TouchController/tccollidershape/rect.md"
     },
@@ -8407,9 +8407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/rightside.json": {
       "hash": "95c866a6e92d727c477fe8448b082a5ca69908a3d7bc412ba02fb82620bd9bdd",
-      "last_checked": "2026-04-28T07:27:22.749413",
+      "last_checked": "2026-05-01T07:36:39.551363",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e97b7bd65b69df1fbf15ea1c9b2cee10\"",
       "file_path": "documentation/TouchController/tccollidershape/rightside.md"
     },
@@ -8423,9 +8423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccollidershape/init(rawvalue:).json": {
       "hash": "4c7095cb4af3d5959492642b40df51d25b7940a8d9774e1419ce2ddebd7db0b2",
-      "last_checked": "2026-04-28T07:27:22.847628",
+      "last_checked": "2026-05-01T07:36:39.722434",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"b03b604a0e4c6237e8269a04729a5bb7\"",
       "file_path": "documentation/TouchController/tccollidershape/init-rawvalue.md"
     },
@@ -8439,9 +8439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/horizontal.json": {
       "hash": "6a73c10ee6d3d4a6a41e0eb3cdf718568fabc6cafd3d948f9b62fe6e66a56a04",
-      "last_checked": "2026-04-28T07:27:22.927206",
+      "last_checked": "2026-05-01T07:36:39.889670",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"4bf6cdc96b17759c2699e35c442f7bae\"",
       "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/horizontal.md"
     },
@@ -8455,9 +8455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/vertical.json": {
       "hash": "c1cb2d5390c0c0aace9df528c8cd19beebc28a8e4f876bb415d3a003c09fb800",
-      "last_checked": "2026-04-28T07:27:23.011524",
+      "last_checked": "2026-05-01T07:36:40.059818",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9bfbbdff2b091ec5d3b265ad0bf02da0\"",
       "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/vertical.md"
     },
@@ -8471,9 +8471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tcthrottle/orientation-swift.enum/init(rawvalue:).json": {
       "hash": "b83f421b8e1a1ca6060f944c867bc508077789df5dbbfd8483579d88f529a92c",
-      "last_checked": "2026-04-28T07:27:23.125979",
+      "last_checked": "2026-05-01T07:36:40.228439",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"9b8f6506023b3bba0afeb21ad8c55d6c\"",
       "file_path": "documentation/TouchController/tcthrottle/orientation-swift.enum/init-rawvalue.md"
     },
@@ -8487,9 +8487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/bottomcenter.json": {
       "hash": "81509ae631c34f17475cc3776ff915f4ce00c2934867a0a70c797e8a210dcac5",
-      "last_checked": "2026-04-28T07:27:23.196580",
+      "last_checked": "2026-05-01T07:36:40.400861",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"14ca9b79e9813a75caeea7267595c8f6\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/bottomcenter.md"
     },
@@ -8503,9 +8503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/bottomleft.json": {
       "hash": "bda3a7968aeb132d6a225ff80330abe4d636b35698909f67808ffe78aa317a7f",
-      "last_checked": "2026-04-28T07:27:23.272120",
+      "last_checked": "2026-05-01T07:36:40.561391",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"1c36c153a1a89c963f25b9c60d2c6554\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/bottomleft.md"
     },
@@ -8519,9 +8519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/bottomright.json": {
       "hash": "6e06eb09b3cead8fd085027e785179ed41b6657b563436a558eac5f4e9590577",
-      "last_checked": "2026-04-28T07:27:23.292908",
+      "last_checked": "2026-05-01T07:36:40.737976",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"a0e1ecc46156e763237b80bde67da673\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/bottomright.md"
     },
@@ -8535,9 +8535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/center.json": {
       "hash": "57cfe9bac0f10732ba2a7194a87427442296497b969ab004550adf7010edb7c2",
-      "last_checked": "2026-04-28T07:27:23.357462",
+      "last_checked": "2026-05-01T07:36:40.909153",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"ad01c6877b3a851918c683dd32a5a43d\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/center.md"
     },
@@ -8551,9 +8551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/centerleft.json": {
       "hash": "e9a55fdc021b4686d82fe265bbc992f0c57a28b28603673701a01acf74b5c3a5",
-      "last_checked": "2026-04-28T07:27:23.509650",
+      "last_checked": "2026-05-01T07:36:41.077966",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"852719fe14f5f7c496b6fd909e378040\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/centerleft.md"
     },
@@ -8567,9 +8567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/centerright.json": {
       "hash": "3fc9a21aeba86a0f26e905c05af8bb242611158a3eb2582b4fe7b6084b048d21",
-      "last_checked": "2026-04-28T07:27:23.527277",
+      "last_checked": "2026-05-01T07:36:41.243711",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"f838c4e4011744a9966d919e32c175d1\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/centerright.md"
     },
@@ -8583,9 +8583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/topcenter.json": {
       "hash": "028ad35acd1168f99e87cf1dc6e4d6ad1ef9130245581acd42d873d896257d8f",
-      "last_checked": "2026-04-28T07:27:23.648161",
+      "last_checked": "2026-05-01T07:36:41.420167",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"685918e5c05591b0c6e77bbca88efe50\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/topcenter.md"
     },
@@ -8599,9 +8599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/topleft.json": {
       "hash": "bb0fde010512c3089c438cc4b4b48ed2adef355668f91603ad4e98cabe402463",
-      "last_checked": "2026-04-28T07:27:23.669294",
+      "last_checked": "2026-05-01T07:36:41.589681",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5dbe8928ef983ac993c6274bc5a748ca\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/topleft.md"
     },
@@ -8615,9 +8615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/topright.json": {
       "hash": "1da2c249fb2feeccff3dee59d6f4984c6e078031b4645f4ca8b833bcb66ce2e8",
-      "last_checked": "2026-04-28T07:27:23.824027",
+      "last_checked": "2026-05-01T07:36:41.763289",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d9da368c001e771bcb1ea41732316eb3\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/topright.md"
     },
@@ -8631,9 +8631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchor/init(rawvalue:).json": {
       "hash": "3ea37630b395559153b13b7aecafe56c3ac8d639dda882d224dc71c067cd43fe",
-      "last_checked": "2026-04-28T07:27:23.896658",
+      "last_checked": "2026-05-01T07:36:41.931467",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"7d4eaf93bd7e4a02521c1a3d603934d0\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchor/init-rawvalue.md"
     },
@@ -8647,9 +8647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/absolute.json": {
       "hash": "a01131ca1d8b54f867fe7f7702698c249c28acfa0ea9d7fcb1dc674de0ce87ec",
-      "last_checked": "2026-04-28T07:27:23.969998",
+      "last_checked": "2026-05-01T07:36:42.100530",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"d15617e97834c597f1b3beabf343e3d1\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/absolute.md"
     },
@@ -8663,9 +8663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/relative.json": {
       "hash": "9aecfd66af849f278af6bec1506f1377565579549298d89d6634599d49b40ff3",
-      "last_checked": "2026-04-28T07:27:24.045818",
+      "last_checked": "2026-05-01T07:36:42.270176",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"80ec9e31087ccc89061aae52e300b577\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/relative.md"
     },
@@ -8679,9 +8679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollayoutanchorcoordinatesystem/init(rawvalue:).json": {
       "hash": "b6189d4d9662afc684fe2f54b49de13a47d65d5006eb5a1c608d5b2b13deae7a",
-      "last_checked": "2026-04-28T07:27:24.128508",
+      "last_checked": "2026-05-01T07:36:42.435791",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2e885762c77809cb0f3f4afe6292786d\"",
       "file_path": "documentation/TouchController/tccontrollayoutanchorcoordinatesystem/init-rawvalue.md"
     },
@@ -8695,9 +8695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum/button.json": {
       "hash": "ed871131ce0388c29b1b5c5f383aedef63ed7117cecce0d103a9b3a988435439",
-      "last_checked": "2026-04-28T07:27:24.193995",
+      "last_checked": "2026-05-01T07:36:42.594250",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"3d1e38e62ef8c978aba5f45a34ebadd6\"",
       "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/button.md"
     },
@@ -8711,9 +8711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum/directionpad.json": {
       "hash": "f7429acdb5e53915160c733b882b35d7cf26ccc5a1a50a75764831b731d95f26",
-      "last_checked": "2026-04-28T07:27:24.320532",
+      "last_checked": "2026-05-01T07:36:42.744287",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"66cde29caecc659c2c62a093cf310c24\"",
       "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/directionpad.md"
     },
@@ -8727,9 +8727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrollabel/role-swift.enum/init(rawvalue:).json": {
       "hash": "d105312734900088ab02df062d04dbda88fb900fa801be94eb13ce71b8aa8fd0",
-      "last_checked": "2026-04-28T07:27:24.340263",
+      "last_checked": "2026-05-01T07:36:42.906820",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"39aae656bab927510c06bc0b78b26a93\"",
       "file_path": "documentation/TouchController/tccontrollabel/role-swift.enum/init-rawvalue.md"
     },
@@ -8743,9 +8743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-22z05.json": {
       "hash": "addffa86712785500faf7c81adeb5c483073eb565378f8b4d6206e44579d5f7a",
-      "last_checked": "2026-04-28T07:27:10.923591",
+      "last_checked": "2026-05-01T07:36:14.361725",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"2e0ea87252d075dab62878ac0d161419\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-22z05.md"
     },
@@ -8759,9 +8759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-3hqf.json": {
       "hash": "75a58237b2d9f899ba939b66bbea74066917f312e91030b9c2fe331bbde31336",
-      "last_checked": "2026-04-28T07:27:11.225382",
+      "last_checked": "2026-05-01T07:36:14.781710",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"6380eed298e34ca0b3e847e9836aab0a\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-3hqf.md"
     },
@@ -8775,9 +8775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(cgimage:size:device:)-6wxv8.json": {
       "hash": "c77ad8e90b5ac4a231b5f4fa0df36ac062913af9a4656eff7d8b01791066ec56",
-      "last_checked": "2026-04-28T07:27:11.675311",
+      "last_checked": "2026-05-01T07:36:16.055711",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e20ad082f1c9b2080e707b16e13a4031\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-cgimagesizedevice-6wxv8.md"
     },
@@ -8791,9 +8791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(uiimage:size:device:)-9csn2.json": {
       "hash": "e0bd8c1dde48fb8fe24e1dc8c9807148f76f2bcf604f59b4b0c868fe81a9f5ae",
-      "last_checked": "2026-04-28T07:27:11.801594",
+      "last_checked": "2026-05-01T07:36:16.213771",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"0bcb756f1a5fae772265c682489c0a5a\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-uiimagesizedevice-9csn2.md"
     },
@@ -8807,9 +8807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tccontrolimage/init(texture:size:highlighttexture:offset:tintcolor:).json": {
       "hash": "c3cf8700d48742a9374b98792806f17f2d885bf199071d317795de609590ecb5",
-      "last_checked": "2026-04-28T07:27:11.869661",
+      "last_checked": "2026-05-01T07:36:16.518839",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"93cb692bd16e99075204c48a0285ca94\"",
       "file_path": "documentation/TouchController/tccontrolimage/init-texturesizehighlighttextureoffsettintcolor.md"
     },
@@ -8823,9 +8823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-7cs6u.json": {
       "hash": "4600e4d7a89074b7812bc3394d34b026d6756b01f46426cfdecd5c77ccda96f9",
-      "last_checked": "2026-04-28T07:27:13.567983",
+      "last_checked": "2026-05-01T07:36:20.044836",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"e8e7a8e1513772ae9192d4859c080f79\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-7cs6u.md"
     },
@@ -8839,9 +8839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/touchcontroller/tctouchcontrollerdescriptor/init(mtkview:)-25g2c.json": {
       "hash": "96dc9456f3d9d82942d7da4c0e1f3c096e8ab5223e0260832791d3d3a1d37b73",
-      "last_checked": "2026-04-28T07:27:14.272881",
+      "last_checked": "2026-05-01T07:36:21.403859",
       "status": "new",
-      "session_id": "2026-04-28T07:27:00.647928",
+      "session_id": "2026-05-01T07:35:54.262795",
       "etag": "W/\"5299ced03832cb7c87abeb74292e1c95\"",
       "file_path": "documentation/TouchController/tctouchcontrollerdescriptor/init-mtkview-25g2c.md"
     },

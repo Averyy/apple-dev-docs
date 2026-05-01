@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:30.036541",
+    "last_updated": "2026-05-01T07:42:01.737638",
     "total_pages": 222,
-    "session_id": "2026-04-28T07:30:18.162285"
+    "session_id": "2026-05-01T07:41:42.067037"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PushToTalk.json": {
       "hash": "840a9673507fad24bfdec58073990f202b4971a42aa156020ee5d938e51c8347",
-      "last_checked": "2026-04-28T07:30:18.481759",
+      "last_checked": "2026-05-01T07:41:42.456849",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"3c2d30885f1d585904eb6b88072f1637\"",
       "file_path": "documentation/PushToTalk/PushToTalk.md"
     },
     "https://developer.apple.com/documentation/PushToTalk": {
       "hash": "840a9673507fad24bfdec58073990f202b4971a42aa156020ee5d938e51c8347",
-      "last_checked": "2026-04-28T07:30:18.399510",
+      "last_checked": "2026-05-01T07:41:42.342046",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"3c2d30885f1d585904eb6b88072f1637\"",
       "file_path": "documentation/PushToTalk/PushToTalk.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/creating-a-push-to-talk-app.json": {
       "hash": "6ae4e90b83ef6b5f0ca302adb33088358c0b5fdaa8e7d34fe503970bcabe8c68",
-      "last_checked": "2026-04-28T07:30:18.793007",
+      "last_checked": "2026-05-01T07:41:42.730147",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"8e45dd04f5ede9a511078f514cbc94d0\"",
       "file_path": "documentation/PushToTalk/creating-a-push-to-talk-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager.json": {
       "hash": "fbae83bad3ea3d276f0ac70779aa8a8dac3dff49a050860197f0885e951a3149",
-      "last_checked": "2026-04-28T07:30:18.963064",
+      "last_checked": "2026-05-01T07:41:42.930675",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"1465aa024181d265865f3c7bea9efb37\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate.json": {
       "hash": "b309f865004c9e61a121f50077c671ed54b0c03d6fea67d98460e20631c41a1a",
-      "last_checked": "2026-04-28T07:30:19.122455",
+      "last_checked": "2026-05-01T07:41:43.230597",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"c397dcd5b924d47666792565a0f8b3f2\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pttransmissionmode.json": {
       "hash": "cea08879e36283c0c9f16a89888553b0e0aba74290946eb7eec276799e9a2668",
-      "last_checked": "2026-04-28T07:30:19.225472",
+      "last_checked": "2026-05-01T07:41:43.534189",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"a20c8f7491836e61eb24e705ce4b9d66\"",
       "file_path": "documentation/PushToTalk/pttransmissionmode.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptservicestatus.json": {
       "hash": "5ca75880e1764112c5eed4a60c4267226b45836a853869b9cf8cac8c30315d8f",
-      "last_checked": "2026-04-28T07:30:19.370759",
+      "last_checked": "2026-05-01T07:41:43.695201",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"daee35c8d4e1f12643c2e3077bdfdf29\"",
       "file_path": "documentation/PushToTalk/ptservicestatus.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneljoinreason.json": {
       "hash": "27adc03bbfeaacafc6cb511bb4add8e1123d5ccd36539024028703f112e34bf3",
-      "last_checked": "2026-04-28T07:30:19.517518",
+      "last_checked": "2026-05-01T07:41:43.865062",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"edec5fb5ddef0283c83c7c3bc4ebf0cd\"",
       "file_path": "documentation/PushToTalk/ptchanneljoinreason.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason.json": {
       "hash": "99bd2a6aaeafa8734c8f6435518d1b844a39256d2a1405da19c6947749b7ad5d",
-      "last_checked": "2026-04-28T07:30:19.615064",
+      "last_checked": "2026-05-01T07:41:44.192278",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"2b5e265c9f315e7a6191ae85459be202\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource.json": {
       "hash": "901d567f60995b1dbb5ac865bd960a7e25533c9ec2d615d7980c82f2a0a6344b",
-      "last_checked": "2026-04-28T07:30:19.724310",
+      "last_checked": "2026-05-01T07:41:44.355289",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"69c9672f46c1d51a13981a8d5670c8fa\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneldescriptor.json": {
       "hash": "be063d94a3acc4a0c8c00dcd24f22493e078370bd0973ae0f22dbea30b9d9245",
-      "last_checked": "2026-04-28T07:30:19.820803",
+      "last_checked": "2026-05-01T07:41:44.511446",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b444070b694d93b15aa66dc974aef714\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelrestorationdelegate.json": {
       "hash": "34b15b0c2ca833ce0061468a38e51e5973596066670d200bfbc16bab478d47a4",
-      "last_checked": "2026-04-28T07:30:19.918573",
+      "last_checked": "2026-05-01T07:41:44.682253",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4fec16c5efa9bcdaf56d0f7fd4d537d4\"",
       "file_path": "documentation/PushToTalk/ptchannelrestorationdelegate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptparticipant.json": {
       "hash": "1d609991e1f6943092c9dd1168f8feee5953f218a7b8e8519104d4862deb173b",
-      "last_checked": "2026-04-28T07:30:20.014813",
+      "last_checked": "2026-05-01T07:41:44.855024",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"44a1cc1d56b879da2cff221acec46195\"",
       "file_path": "documentation/PushToTalk/ptparticipant.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptpushresult.json": {
       "hash": "c540bab99580ef97d46a7501f31043b4633dbc3b08a4ff483b87021e0e4d2f6a",
-      "last_checked": "2026-04-28T07:30:20.112606",
+      "last_checked": "2026-05-01T07:41:45.032143",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"954faf17020debabe0a25f1a38862806\"",
       "file_path": "documentation/PushToTalk/ptpushresult.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct.json": {
       "hash": "126e9291f11b460c84060501a4bac055fc39aca254210aa15dbf8601c12bf5fe",
-      "last_checked": "2026-04-28T07:30:20.208356",
+      "last_checked": "2026-05-01T07:41:45.188779",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"9c9f87b0fa0bce8832fe6fd95a4691d0\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swiftstruct.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code.json": {
       "hash": "e5d70e612fc31504d9a66a9bf4a7d435f30b27f51af6253b947aab8222aa5a75",
-      "last_checked": "2026-04-28T07:30:20.343910",
+      "last_checked": "2026-05-01T07:41:45.495676",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"481aaac5ee72da362a0ba065da28effa\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct.json": {
       "hash": "54f27a108400380acfef45fbeadcbb93a80c02e7fecbbdf3547a05b363b252fc",
-      "last_checked": "2026-04-28T07:30:20.445875",
+      "last_checked": "2026-05-01T07:41:45.673556",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"6dd47d6cf2b0b6946831a35aabb68d2c\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swiftstruct.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code.json": {
       "hash": "be463eeaf7e4921a2c4cd6018415592c16c79503b5ffce56563381a6eeec31de",
-      "last_checked": "2026-04-28T07:30:20.541606",
+      "last_checked": "2026-05-01T07:41:45.809002",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"a6150bd0b733fa9b24b8cfc67fbe9724\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerrordomain.json": {
       "hash": "f5ad6e1ef20d39b474c81364ccf22508c895fee9eac42da8ff22fb1d190d0d83",
-      "last_checked": "2026-04-28T07:30:20.636448",
+      "last_checked": "2026-05-01T07:41:45.977996",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"e1ba6c684b66ab0bd2ac50aca1879e0c\"",
       "file_path": "documentation/PushToTalk/ptchannelerrordomain.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerrordomain.json": {
       "hash": "06e01b5e9d002224c7a58dd63285e7a02fc4eb6ddb8c5033bd9fa3a0abe0b472",
-      "last_checked": "2026-04-28T07:30:20.738698",
+      "last_checked": "2026-05-01T07:41:46.111063",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"fc622444ccda2f2020d3533a4447c232\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerrordomain.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/channelmanager(delegate:restorationdelegate:completionhandler:).json": {
       "hash": "853892bcd72a81c287fcc8ea426e54e1e709792273545f94597a6629910de099",
-      "last_checked": "2026-04-28T07:30:20.845489",
+      "last_checked": "2026-05-01T07:41:46.425576",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"f38e7be3cf7a8fc4a123a0813ed235fc\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/channelmanager-delegaterestorationdelegatecompletionhandler.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/activechanneluuid.json": {
       "hash": "e5d675cf395211b159cc502c4d69a7cb23cd2f15b5af429a646bec851d3f82a7",
-      "last_checked": "2026-04-28T07:30:20.937330",
+      "last_checked": "2026-05-01T07:41:46.740417",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"c046995c852b26e2ef3e121b4a58a9e5\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/activechanneluuid.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/requestjoinchannel(channeluuid:descriptor:).json": {
       "hash": "c87eb5f59445b582be82a748ee62d53d2656b7214519e22c8c47fb281f2b59f9",
-      "last_checked": "2026-04-28T07:30:20.975066",
+      "last_checked": "2026-05-01T07:41:46.900834",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"7615ce516d48c062264bc627591c2cb6\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/requestjoinchannel-channeluuiddescriptor.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/leavechannel(channeluuid:).json": {
       "hash": "e230f0e7e1c4bae2d9538e9253365c0f0c19fcbff159a4dcfd969c8c49d5a3d7",
-      "last_checked": "2026-04-28T07:30:21.086783",
+      "last_checked": "2026-05-01T07:41:47.012893",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"0784c7a96805f2a3f425584b6f0aa406\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/leavechannel-channeluuid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/settransmissionmode(_:channeluuid:completionhandler:).json": {
       "hash": "cd4ce4b107957f4852fd0a0f2162a431b45901b7dccc598efba27bbd26a7478f",
-      "last_checked": "2026-04-28T07:30:21.232491",
+      "last_checked": "2026-05-01T07:41:47.330810",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"82b4bead2ad6a655272bb6d31e40f0d9\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/settransmissionmode-channeluuidcompletionhandler.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/requestbegintransmitting(channeluuid:).json": {
       "hash": "6aa740685d1ee3a234e3c5fbc844166bbbf36f06f3ba8248c31772ed1e4cb00c",
-      "last_checked": "2026-04-28T07:30:21.369877",
+      "last_checked": "2026-05-01T07:41:47.450897",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"25d2a6c1c1129e08b687bcb9b98e1be6\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/requestbegintransmitting-channeluuid.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/stoptransmitting(channeluuid:).json": {
       "hash": "b370fb9e79d999751d2a8f39e0cc2dc2e598e5dd249f708284b3b958985a94c7",
-      "last_checked": "2026-04-28T07:30:21.531883",
+      "last_checked": "2026-05-01T07:41:47.618050",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"ca2366db1fec413b3bd6eef0a272cffa\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/stoptransmitting-channeluuid.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/setaccessorybuttoneventsenabled(_:channeluuid:completionhandler:).json": {
       "hash": "6ca9f40faa598b374089620cb5382584d6eddac9a8b1056f97dd5c26dbf7632e",
-      "last_checked": "2026-04-28T07:30:21.635581",
+      "last_checked": "2026-05-01T07:41:47.781861",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"3dd78e12c62bae006c9253be08387c06\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/setaccessorybuttoneventsenabled-channeluuidcompletionhandler.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/setactiveremoteparticipant(_:channeluuid:completionhandler:).json": {
       "hash": "9136da35dee135a9c492a30a6578f551eb69f6c6c4e9bfb50eac0afebf6c9924",
-      "last_checked": "2026-04-28T07:30:21.745938",
+      "last_checked": "2026-05-01T07:41:47.950075",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"41757d3962b5878a2e94f73826140c61\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/setactiveremoteparticipant-channeluuidcompletionhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/setchanneldescriptor(_:channeluuid:completionhandler:).json": {
       "hash": "0a0fcb70be8678d67b49c784466fb355c80c559ef6e75befae15602120ad9d69",
-      "last_checked": "2026-04-28T07:30:21.844926",
+      "last_checked": "2026-05-01T07:41:48.111033",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b202ec1c944e2981d9ab8cc1c2093754\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/setchanneldescriptor-channeluuidcompletionhandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanager/setservicestatus(_:channeluuid:completionhandler:).json": {
       "hash": "f704fd3a2553c58f6dd87ecbd6d4df2026381bb0665ce5a8f528cc82928a8049",
-      "last_checked": "2026-04-28T07:30:21.964355",
+      "last_checked": "2026-05-01T07:41:48.260716",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"8645954d7921b924a9e9e3463b93459c\"",
       "file_path": "documentation/PushToTalk/ptchannelmanager/setservicestatus-channeluuidcompletionhandler.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:channeluuid:didbegintransmittingfrom:).json": {
       "hash": "a2448f9b9ce370e6ae0b0333ac2449e1fdecb2417a242bcd55f5cf29e12bfadd",
-      "last_checked": "2026-04-28T07:30:22.063905",
+      "last_checked": "2026-05-01T07:41:48.374935",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"02a84348d038e6c727fbfcf344d36fd6\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-channeluuiddidbegintransmittingfrom.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:channeluuid:didendtransmittingfrom:).json": {
       "hash": "63caaf2d62835f3e488947747adf3a90d11a22e8947abff3879346c0350912e3",
-      "last_checked": "2026-04-28T07:30:22.165890",
+      "last_checked": "2026-05-01T07:41:48.509074",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"58592127527962b0e11f8c61b34ed477\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-channeluuiddidendtransmittingfrom.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:failedtobegintransmittinginchannel:error:).json": {
       "hash": "48fe295b5019566dacc0636e0c9e69d2c5bb285ba14c30bee8c485552af6b97b",
-      "last_checked": "2026-04-28T07:30:22.268513",
+      "last_checked": "2026-05-01T07:41:48.636469",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"9141be8fc96b49516775e47e00b60f1f\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-failedtobegintransmittinginchannelerror.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:failedtostoptransmittinginchannel:error:).json": {
       "hash": "97496318aeffa6c61c6c03dbaa15b06cc4fac1f483fda24cf6cef34504a0bd00",
-      "last_checked": "2026-04-28T07:30:22.374894",
+      "last_checked": "2026-05-01T07:41:48.806591",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"99298d219a13dd5fe8f62894e740ea0c\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-failedtostoptransmittinginchannelerror.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/incomingserviceupdatepush(channelmanager:channeluuid:pushpayload:ishighpriority:remaininghighprioritybudget:completion:).json": {
       "hash": "f47babd7b32921ff755051f12438d3e18bc6e894fd4f3af3becf90a465d2473f",
-      "last_checked": "2026-04-28T07:30:22.521156",
+      "last_checked": "2026-05-01T07:41:48.965234",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"1917014fc1ae435be4f346c7ad0e7756\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/incomingserviceupdatepush-channelmanagerchanneluuidpushpayloadishighpriorityremaininghighprioritybudgetcompletion.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:didactivate:).json": {
       "hash": "02de887d19a60ce73a32c051c41a9cd668e787bd2235f26dca83721661884929",
-      "last_checked": "2026-04-28T07:30:22.614897",
+      "last_checked": "2026-05-01T07:41:49.142712",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"35db1340bc1a9491f78cb4f18e4a6f32\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-didactivate.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:diddeactivate:).json": {
       "hash": "115b7b05fbf9264c5c03831f00500e0492df42cad84ef9eb9530f97f768c8664",
-      "last_checked": "2026-04-28T07:30:22.707686",
+      "last_checked": "2026-05-01T07:41:49.261707",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"064ce43db3f17e4af11c53936c4f0dc3\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-diddeactivate.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:didjoinchannel:reason:).json": {
       "hash": "e5ff76341b4e5eeba997fd5d76e6f0796fa153cb07c5b2701b5a260f409211aa",
-      "last_checked": "2026-04-28T07:30:22.825351",
+      "last_checked": "2026-05-01T07:41:49.439927",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"82c6b3974a91f5e95b3de23f582134df\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-didjoinchannelreason.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:didleavechannel:reason:).json": {
       "hash": "4f5e5d64e19e208b8f07b7c9e65091990b676e044c9c3544a95e0b29dcb1bfa3",
-      "last_checked": "2026-04-28T07:30:22.934828",
+      "last_checked": "2026-05-01T07:41:49.616589",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"c3a48a1e9acdab84afc7f504a97ce042\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-didleavechannelreason.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:failedtojoinchannel:error:).json": {
       "hash": "42211fd013b0cb463cbf35e0ffe9edcd2ab250858e6ad316a60a4ac8b1a4a46d",
-      "last_checked": "2026-04-28T07:30:23.078114",
+      "last_checked": "2026-05-01T07:41:49.789139",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"e68430eb89ccb7dcac82f54a460fc793\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-failedtojoinchannelerror.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:failedtoleavechannel:error:).json": {
       "hash": "87d6524effdda042876a2c5609952848e976a5363baeae1dee8779bed40fe74f",
-      "last_checked": "2026-04-28T07:30:23.178215",
+      "last_checked": "2026-05-01T07:41:49.963898",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"83180ab22df73c862b8beff572c4983b\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-failedtoleavechannelerror.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/channelmanager(_:receivedephemeralpushtoken:).json": {
       "hash": "d49f976d031d70771ec9640d71e2850f27d0b1e9cfdec8e156ae9d7506b57c0f",
-      "last_checked": "2026-04-28T07:30:23.298871",
+      "last_checked": "2026-05-01T07:41:50.121157",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"2c7668664837131f1430c31988942f17\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/channelmanager-receivedephemeralpushtoken.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).json": {
       "hash": "ed2d34279386abc05daf67816a4a4dc2544b9e04899fe93c5ae7cbc8e0773ebf",
-      "last_checked": "2026-04-28T07:30:23.407985",
+      "last_checked": "2026-05-01T07:41:50.308430",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"595637512d3178de5ac767ddb7eb6da8\"",
       "file_path": "documentation/PushToTalk/ptchannelmanagerdelegate/incomingpushresult-channelmanagerchanneluuidpushpayload.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pttransmissionmode/fullduplex.json": {
       "hash": "da3fbf7ed49626ed7e0361f5f4582392b42b612a95111001ad29c36686bee08e",
-      "last_checked": "2026-04-28T07:30:23.524237",
+      "last_checked": "2026-05-01T07:41:50.475986",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"9836645bfe95c731378645e8b2a6009b\"",
       "file_path": "documentation/PushToTalk/pttransmissionmode/fullduplex.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pttransmissionmode/halfduplex.json": {
       "hash": "d2f3040181708ca11c9907392173683bee83f9098055ac8bc574162f4b1fc060",
-      "last_checked": "2026-04-28T07:30:23.614484",
+      "last_checked": "2026-05-01T07:41:50.638474",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"d967f466be6445aafef9e6d2d8506656\"",
       "file_path": "documentation/PushToTalk/pttransmissionmode/halfduplex.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pttransmissionmode/listenonly.json": {
       "hash": "8ccaa8f5519c0a254ea54d6a66e630b2ee7574d2b364a993d3fbf460a9f97cce",
-      "last_checked": "2026-04-28T07:30:23.717909",
+      "last_checked": "2026-05-01T07:41:50.934587",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"755049223cb1706a52d79b7dbf4c7d6c\"",
       "file_path": "documentation/PushToTalk/pttransmissionmode/listenonly.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/pttransmissionmode/init(rawvalue:).json": {
       "hash": "e4eb7ccf5f8f3f67d04ea8bf93b12fed9c15f75eaadb327989567a433ec8b50f",
-      "last_checked": "2026-04-28T07:30:23.814947",
+      "last_checked": "2026-05-01T07:41:51.249652",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b614f19c101562ff51f9abb8cb86bb4b\"",
       "file_path": "documentation/PushToTalk/pttransmissionmode/init-rawvalue.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptservicestatus/ready.json": {
       "hash": "7d08029cf1545e7e91bfcc30c5d2ae5201436d87482a388fd0977cbf023fa8fe",
-      "last_checked": "2026-04-28T07:30:23.919095",
+      "last_checked": "2026-05-01T07:41:51.405993",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"be84624bebb11ca5a31ed0c0eae4d44c\"",
       "file_path": "documentation/PushToTalk/ptservicestatus/ready.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptservicestatus/connecting.json": {
       "hash": "3fe35477330d6919b43778d3bfbf377600c0f0088690e11051d13bbb8e7f15c9",
-      "last_checked": "2026-04-28T07:30:23.954472",
+      "last_checked": "2026-05-01T07:41:51.571585",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b39e67f8b8da97eeb371a1025c9d09c8\"",
       "file_path": "documentation/PushToTalk/ptservicestatus/connecting.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptservicestatus/unavailable.json": {
       "hash": "98b4aaaacbfcf741d0ed56b18eaf1557f4ca9757f3ec69e4c6e2733c6ccf5348",
-      "last_checked": "2026-04-28T07:30:24.006883",
+      "last_checked": "2026-05-01T07:41:51.745572",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"9cad2e053266ed4e0f35daa6330c443e\"",
       "file_path": "documentation/PushToTalk/ptservicestatus/unavailable.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptservicestatus/init(rawvalue:).json": {
       "hash": "c93030998ce389d868da4a0f085d96098ac8cd573a0bf753bf5175e5916aba92",
-      "last_checked": "2026-04-28T07:30:24.146372",
+      "last_checked": "2026-05-01T07:41:51.876085",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"725235c3cf1be38434250f7e7072d349\"",
       "file_path": "documentation/PushToTalk/ptservicestatus/init-rawvalue.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneljoinreason/developerrequest.json": {
       "hash": "f31c16a74492f09ca9b9c3263c635545f193c57cfad5040eb6189877e03c30d2",
-      "last_checked": "2026-04-28T07:30:24.236755",
+      "last_checked": "2026-05-01T07:41:52.053865",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"fa76296e866738c3b239c9adc9cec6f2\"",
       "file_path": "documentation/PushToTalk/ptchanneljoinreason/developerrequest.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneljoinreason/channelrestoration.json": {
       "hash": "b232cc7339a3a7bb8f60add52b9a5b20e79e273d510361fdd3863ea7dd6e352a",
-      "last_checked": "2026-04-28T07:30:24.270163",
+      "last_checked": "2026-05-01T07:41:52.228736",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"2e8ce6966a2baf589e11c66c026431ec\"",
       "file_path": "documentation/PushToTalk/ptchanneljoinreason/channelrestoration.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneljoinreason/init(rawvalue:).json": {
       "hash": "871d9984427620862bbf6f6bb9ae4d2ed5e476886322664f61f22dd95d5f4119",
-      "last_checked": "2026-04-28T07:30:24.397849",
+      "last_checked": "2026-05-01T07:41:52.399630",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"8287998085b77c21d37304bf5b016731\"",
       "file_path": "documentation/PushToTalk/ptchanneljoinreason/init-rawvalue.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason/userrequest.json": {
       "hash": "921358a76e343784e9412e6d4c1987a547f2291f210a2ca03ddedb6986aedb85",
-      "last_checked": "2026-04-28T07:30:24.496094",
+      "last_checked": "2026-05-01T07:41:52.567068",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"239dadd043e5b3b6d63012148b6a0eb8\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason/userrequest.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason/developerrequest.json": {
       "hash": "516730201895eb094d7affadda51037b99ea0121abc2db1ccfd1a1e72da2538b",
-      "last_checked": "2026-04-28T07:30:24.609028",
+      "last_checked": "2026-05-01T07:41:52.737150",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"57a1425ef6d0ad61f94d63b2b8efc19d\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason/developerrequest.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason/systempolicy.json": {
       "hash": "fe88ec64b9cf176f614a79cc354aba8c775b72d93a8810d8a23f6d633617a177",
-      "last_checked": "2026-04-28T07:30:24.732067",
+      "last_checked": "2026-05-01T07:41:52.903385",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4ca1a8100f0ddd924657b4fd38abca62\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason/systempolicy.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason/unknown.json": {
       "hash": "23121d89d86927d9fe59f09e9aefda1f6dc6f4da4440050cb698a9163446a890",
-      "last_checked": "2026-04-28T07:30:24.866167",
+      "last_checked": "2026-05-01T07:41:53.054683",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"58e6e484d87f385668d2832f9091fd99\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason/unknown.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelleavereason/init(rawvalue:).json": {
       "hash": "dfe9b44aa564b79fb50e7160a37aae09c42ffd0c245cea445bdf5294c5da4598",
-      "last_checked": "2026-04-28T07:30:24.913207",
+      "last_checked": "2026-05-01T07:41:53.227200",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"aae072b74a9d9b518a7da6ac328d7261\"",
       "file_path": "documentation/PushToTalk/ptchannelleavereason/init-rawvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource/userrequest.json": {
       "hash": "72116d94f39f5324b4ae1dddc908a0f97f1b37ef9ae3b28ac31404a30d516922",
-      "last_checked": "2026-04-28T07:30:25.038195",
+      "last_checked": "2026-05-01T07:41:53.363337",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"3813edbce74e8c3029a3af06f76b4b1c\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource/userrequest.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource/developerrequest.json": {
       "hash": "598584d4c61ffc80452631193ff9bc36b6672628a1b0885abe77fa65b6aa227a",
-      "last_checked": "2026-04-28T07:30:25.144151",
+      "last_checked": "2026-05-01T07:41:53.543166",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4fe933b0d712f708160550acdd5b32f9\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource/developerrequest.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource/handsfreebutton.json": {
       "hash": "111a009c1757033695da39d262ff392663b390e42787e6dfc9520e448430f070",
-      "last_checked": "2026-04-28T07:30:25.278919",
+      "last_checked": "2026-05-01T07:41:53.662035",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"319f8580ae1ec381c8a032149e768202\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource/handsfreebutton.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource/unknown.json": {
       "hash": "e39750d74f3bd126888799bc290b8b7bd4e1d65e78c08e27431bab1ec5eddbc4",
-      "last_checked": "2026-04-28T07:30:25.371025",
+      "last_checked": "2026-05-01T07:41:53.810933",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"f599664f4cacc9dad1efb80a0945ea86\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource/unknown.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneltransmitrequestsource/init(rawvalue:).json": {
       "hash": "ddfe4a5a7a30e783fd8d50148736c58a7364720c511e4b913e94452a20337f05",
-      "last_checked": "2026-04-28T07:30:25.406547",
+      "last_checked": "2026-05-01T07:41:53.970262",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b6913043b0c679f36f96d0de0d2e9e2e\"",
       "file_path": "documentation/PushToTalk/ptchanneltransmitrequestsource/init-rawvalue.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneldescriptor/init(name:image:).json": {
       "hash": "988f64ef67c44df09ba085ffece453d86373d4521888c3bc24af57f9eb6ab7ef",
-      "last_checked": "2026-04-28T07:30:25.543879",
+      "last_checked": "2026-05-01T07:41:54.115428",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b13804ca3c032e48357df4fe86cce508\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor/init-nameimage.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneldescriptor/name.json": {
       "hash": "f19ab06c73b906f3ff0852b66d913924a5fdc170cb8cb0bb01bd1a15242ec16f",
-      "last_checked": "2026-04-28T07:30:25.683629",
+      "last_checked": "2026-05-01T07:41:54.272894",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"ba994f868fe4886011ede5d5c9acd427\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor/name.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchanneldescriptor/image.json": {
       "hash": "e7b8154c9395e244208d6ab4fa2ec8b54e80d824d71f9bbd3ca1e99814acc447",
-      "last_checked": "2026-04-28T07:30:25.774282",
+      "last_checked": "2026-05-01T07:41:54.460871",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"bbf53a82b348c7414fa19be9f104bdfc\"",
       "file_path": "documentation/PushToTalk/ptchanneldescriptor/image.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelrestorationdelegate/channeldescriptor(restoredchanneluuid:).json": {
       "hash": "8855e635ca8a9db7f4a1115a069254ddd4f4fd49f79beb2edae4aa26ebb2d198",
-      "last_checked": "2026-04-28T07:30:25.894230",
+      "last_checked": "2026-05-01T07:41:54.582688",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"94abc681bfe3d60656f68475fe0d2d6c\"",
       "file_path": "documentation/PushToTalk/ptchannelrestorationdelegate/channeldescriptor-restoredchanneluuid.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptparticipant/init(name:image:).json": {
       "hash": "b4db9c5814f0e97048ca54bd3c4e88be9eba37b9bd1f22df4e5ac15cc510b169",
-      "last_checked": "2026-04-28T07:30:25.981398",
+      "last_checked": "2026-05-01T07:41:54.705029",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"0b49ad26d9a497648a59965373698251\"",
       "file_path": "documentation/PushToTalk/ptparticipant/init-nameimage.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptparticipant/name.json": {
       "hash": "a593ae73b6fb94544365f86971d8454dc44357d9f4fc7b1b47dea3f8b7b4acff",
-      "last_checked": "2026-04-28T07:30:26.015092",
+      "last_checked": "2026-05-01T07:41:54.898860",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"f5d37ffda02748735ab18dcb18ae76ba\"",
       "file_path": "documentation/PushToTalk/ptparticipant/name.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptparticipant/image.json": {
       "hash": "71c29bfd0e2b06408d900054c1570ac0f71cf13206156ba252604a3f6410ac53",
-      "last_checked": "2026-04-28T07:30:26.140382",
+      "last_checked": "2026-05-01T07:41:55.022869",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"e6e336996f3ad558cafe8abb06583955\"",
       "file_path": "documentation/PushToTalk/ptparticipant/image.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptpushresult/activeremoteparticipant(_:).json": {
       "hash": "a8ba1f2e588a076a963b157367602a4c01fc0164d065c350f10caa2d87e4341d",
-      "last_checked": "2026-04-28T07:30:26.236962",
+      "last_checked": "2026-05-01T07:41:55.190213",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"6921cee23e4a8bcef6392fe7e1b26d99\"",
       "file_path": "documentation/PushToTalk/ptpushresult/activeremoteparticipant.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptpushresult/leavechannel.json": {
       "hash": "f94c97805d1529f1b21383d5e784aaeb4b341aa0c8432d564c83c92c495d426b",
-      "last_checked": "2026-04-28T07:30:26.334096",
+      "last_checked": "2026-05-01T07:41:55.348728",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"e7a3c382bbd388f658863c9ebb988d64\"",
       "file_path": "documentation/PushToTalk/ptpushresult/leavechannel.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-error-constants.json": {
       "hash": "30f854d311ea66c97edf2982ecb4edfa1bf5b00b18166eb4fd9ce079a86208b0",
-      "last_checked": "2026-04-28T07:30:26.427993",
+      "last_checked": "2026-05-01T07:41:55.466394",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"73dd9f47f0ef5fc344650f365b9791ac\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-error-constants.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/errordomain.json": {
       "hash": "e59034e30b2d525777e8eaa678dba9c94a721b9fa923d10a26ad7d07005cac62",
-      "last_checked": "2026-04-28T07:30:26.520104",
+      "last_checked": "2026-05-01T07:41:55.635884",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"d1f5c831ac86c3979000c73b8689f74a\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/errordomain.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/unknown.json": {
       "hash": "063883a23d2058fa6617ef08369c25ed44fb870b0cde38b26f784b163a649882",
-      "last_checked": "2026-04-28T07:30:26.636296",
+      "last_checked": "2026-05-01T07:41:55.799558",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"b2fcef966dd724ba519ab5e158e6fcdc\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/unknown.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/appnotforeground.json": {
       "hash": "c0a73f2562025d18a8846a6df1d9b0a352d75c7baea871df40311ae433ea1499",
-      "last_checked": "2026-04-28T07:30:26.674687",
+      "last_checked": "2026-05-01T07:41:56.025443",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"0e663892b6ed3f51709cc8c62172860b\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/appnotforeground.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/channelnotfound.json": {
       "hash": "60a3b3b495a589ccff1af626b1e75c3c8bf13850b05dda2db5991fde4152af3f",
-      "last_checked": "2026-04-28T07:30:26.791585",
+      "last_checked": "2026-05-01T07:41:56.163764",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"8ce962f479e774dda69e08d314c15fd8\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/channelnotfound.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/channellimitreached.json": {
       "hash": "570a242151d959ec30ab6776539df2182d4baef11ab0e0e86a90195d8a03fea7",
-      "last_checked": "2026-04-28T07:30:26.883144",
+      "last_checked": "2026-05-01T07:41:56.332455",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"ecf1a8223e90a3c3920a41c66763f63e\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/channellimitreached.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/callactive.json": {
       "hash": "3a75cc9a05fbf7dcc844915e447443ca89d5062ab6739796a0187568797b51ab",
-      "last_checked": "2026-04-28T07:30:26.977028",
+      "last_checked": "2026-05-01T07:41:56.534583",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"8f0565b9fb89bdf7171a4f72887d5c62\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/callactive.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/transmissioninprogress.json": {
       "hash": "711493512b6e5940820fe04f74821fa7942ef455e2065eb9348f6f60a23930ea",
-      "last_checked": "2026-04-28T07:30:27.074980",
+      "last_checked": "2026-05-01T07:41:56.707582",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4a1a50e9d166becb780e200a3a1d9e57\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/transmissioninprogress.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/transmissionnotfound.json": {
       "hash": "54bcf04751e85673c050913f19f1917ce4da07b07eebbb8bc424ed52f48fb672",
-      "last_checked": "2026-04-28T07:30:27.170527",
+      "last_checked": "2026-05-01T07:41:56.871290",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"63a72d391ea84a15c10e8c8c0297a0f2\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/transmissionnotfound.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/devicemanagementrestriction.json": {
       "hash": "8638fa07f2ac12886eb93fac9492e219866aec96363459de5461850bcd49c0f1",
-      "last_checked": "2026-04-28T07:30:27.281703",
+      "last_checked": "2026-05-01T07:41:57.055470",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"5362ccf2409f2b4f7e95d88fe4bb25f8\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/devicemanagementrestriction.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/screentimerestriction.json": {
       "hash": "2bf6f6e34b39277a5c2b73a3b94ae67ff4bef017845ae01ca84ae39d88fd1351",
-      "last_checked": "2026-04-28T07:30:27.398667",
+      "last_checked": "2026-05-01T07:41:57.220068",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"62f0abcfbd5ce9cafde3b8062e47e46d\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/screentimerestriction.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/transmissionnotallowed.json": {
       "hash": "d809fd8cd7769de0c66fcfb150a8e9036bd1823ee820e81a48495ed7e4e26d22",
-      "last_checked": "2026-04-28T07:30:27.515623",
+      "last_checked": "2026-05-01T07:41:57.382148",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4928503d0ddaee479ee6d01ea34910cf\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/transmissionnotallowed.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/code/init(rawvalue:).json": {
       "hash": "9633b29edae56de4c1e4c2861d08be7e221349665b07916ca145ec91767e2a80",
-      "last_checked": "2026-04-28T07:30:27.619938",
+      "last_checked": "2026-05-01T07:41:57.565374",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"691da8fa2e73113a470ab8a711379522\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/code/init-rawvalue.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiation-error-constants.json": {
       "hash": "4e67cf703b5264f01d84b6c48c7608540a803b433fda8c610c6c7fe5c01d3e55",
-      "last_checked": "2026-04-28T07:30:27.723131",
+      "last_checked": "2026-05-01T07:41:57.731638",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"18fb18923c35e5dc97d67524f6573cb3\"",
       "file_path": "documentation/PushToTalk/ptinstantiation-error-constants.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/errordomain.json": {
       "hash": "302db19ba31ae434b23577e3e7d10320ec22d3e56e572cdfe4c24e830df72790",
-      "last_checked": "2026-04-28T07:30:27.813311",
+      "last_checked": "2026-05-01T07:41:57.863014",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"7336c91e64c86aff9d6459c6e049cc24\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/errordomain.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/unknown.json": {
       "hash": "69009f4071f6c9346629e3cde73ec9a0720300c44de427e845498b44a948778a",
-      "last_checked": "2026-04-28T07:30:27.925037",
+      "last_checked": "2026-05-01T07:41:58.048671",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"652724776eff1499b3db1a4e3f37dcda\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/unknown.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/invalidplatform.json": {
       "hash": "c5570264cae7d8a7388bb11443bac9e0191fa8388162800fdffb47613d13d9d9",
-      "last_checked": "2026-04-28T07:30:28.021985",
+      "last_checked": "2026-05-01T07:41:58.177842",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"cce48fd542cfabd3fa97044bbc5cf5ec\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/invalidplatform.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/missingbackgroundmode.json": {
       "hash": "6e8119ac074f5fcb916aea1550e0bfaddba1ff9b0c3eed648b4409883ab6b783",
-      "last_checked": "2026-04-28T07:30:28.117072",
+      "last_checked": "2026-05-01T07:41:58.309320",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"a25e4334d1444b990f63eb0c513954b2\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/missingbackgroundmode.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/missingpushserverenvironment.json": {
       "hash": "51f15d26379eafb467b6186880b1f65c89f2574d1b338904a6096b84177cc415",
-      "last_checked": "2026-04-28T07:30:28.230716",
+      "last_checked": "2026-05-01T07:41:58.494841",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"e30745ae7454024d625390b450e822d5\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/missingpushserverenvironment.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/missingentitlement.json": {
       "hash": "f625b3f2e8f72ab15bf4ea8abbc41e18d01fb2bfd64b784828a49a18ffb882ac",
-      "last_checked": "2026-04-28T07:30:28.338359",
+      "last_checked": "2026-05-01T07:41:58.626266",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4f3f8b432b6668a16d34e26cdff3b0b9\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/missingentitlement.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/instantiationalreadyinprogress.json": {
       "hash": "2a90473246f052e5bec146d9ad2f6195a762c4b7cee5891e56dcb67fd726dca5",
-      "last_checked": "2026-04-28T07:30:28.435014",
+      "last_checked": "2026-05-01T07:41:58.813299",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"544db8541eff250b42872492f626ea97\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/instantiationalreadyinprogress.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/code/init(rawvalue:).json": {
       "hash": "246371dae50f02db840dc1964d300fafc08ec4af5e8d26fdbb83dffd4f54e944",
-      "last_checked": "2026-04-28T07:30:28.530593",
+      "last_checked": "2026-05-01T07:41:58.926179",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"d88e7e9ceb5aba3fd7253f393a8f6771\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/code/init-rawvalue.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/unknown.json": {
       "hash": "0c71212e5be523c2d44360e93e6653c2726b6fd323e44c1fee234ebfbce482f9",
-      "last_checked": "2026-04-28T07:30:28.631419",
+      "last_checked": "2026-05-01T07:41:59.103398",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"89dd299ac0b6a26318d694c2c9ac9ba0\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/unknown.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/appnotforeground.json": {
       "hash": "6f74ac0d7fce4fd36c648b51028cffcb5b2cb08a09ff0807aedd43654bb2d9cf",
-      "last_checked": "2026-04-28T07:30:28.725705",
+      "last_checked": "2026-05-01T07:41:59.273411",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"a8d45ae88f95892180fe4f4b651e648f\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/appnotforeground.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/channelnotfound.json": {
       "hash": "71b877de4b30d6a7f4ec955cf1ddbf46189e5664545fbac227a37f88903ef02b",
-      "last_checked": "2026-04-28T07:30:28.763168",
+      "last_checked": "2026-05-01T07:41:59.428784",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"c72b80426b81dfa4849d725946e3ae76\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/channelnotfound.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/channellimitreached.json": {
       "hash": "2592ff132bdc0242e53e7153d2cc6937f86e582d763d61db5b58e038ec8c7c10",
-      "last_checked": "2026-04-28T07:30:28.899588",
+      "last_checked": "2026-05-01T07:41:59.615261",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"536dd0ad78886b262e8e9c503e41b7df\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/channellimitreached.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/callactive.json": {
       "hash": "118fc015bc8b9873cadc33b907180dce7d5f31465aadfff352caf6fce751a334",
-      "last_checked": "2026-04-28T07:30:29.010367",
+      "last_checked": "2026-05-01T07:41:59.784521",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"05340fdd8fbc253c3b091af96a50b1e4\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/callactive.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/transmissioninprogress.json": {
       "hash": "58e6503e6033d6d6b8de00ed43a6a213bfc9718fc4b5dfd8e64bf3876f20ee81",
-      "last_checked": "2026-04-28T07:30:29.105223",
+      "last_checked": "2026-05-01T07:41:59.935540",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"da11c4606396edda6c77c86e03c4b940\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/transmissioninprogress.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/transmissionnotfound.json": {
       "hash": "98f1b00a022174e41742869f3414620f6f77c7955c85b52ec59f3fcd3e4d8949",
-      "last_checked": "2026-04-28T07:30:29.139052",
+      "last_checked": "2026-05-01T07:42:00.131722",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"44ee2cf277ff587465a33e54a77a9e8f\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/transmissionnotfound.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/devicemanagementrestriction.json": {
       "hash": "ff112269af991ecc829f09ab9c4ba89e721837dd189f2504f90af7175f8d1a10",
-      "last_checked": "2026-04-28T07:30:29.268676",
+      "last_checked": "2026-05-01T07:42:00.294267",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"26de96f2dcdb2f918f399823db9d7a21\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/devicemanagementrestriction.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/screentimerestriction.json": {
       "hash": "a4db0e5312162ed250dca9971c821046aa95824a54750f7d3101ef411e23b929",
-      "last_checked": "2026-04-28T07:30:29.379518",
+      "last_checked": "2026-05-01T07:42:00.423216",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"37e4e9387793df05c4212e2eb10bb9a0\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/screentimerestriction.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptchannelerror-swift.struct/transmissionnotallowed.json": {
       "hash": "ff65ca3fd4e13b5adb0ec27b4f838deb47545c9eabd8cbc84af25cd3e7761315",
-      "last_checked": "2026-04-28T07:30:29.491229",
+      "last_checked": "2026-05-01T07:42:00.630423",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"7799fba4a5e840dd45d40883e963b6c7\"",
       "file_path": "documentation/PushToTalk/ptchannelerror-swift.struct/transmissionnotallowed.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/unknown.json": {
       "hash": "cefbcee899943781712f516a983632f67ef970e548f36a7b3a3760bc36277dfb",
-      "last_checked": "2026-04-28T07:30:29.595004",
+      "last_checked": "2026-05-01T07:42:00.853372",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"47b44e1862e5708112096f44b3791730\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/unknown.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/invalidplatform.json": {
       "hash": "eba54aa919d72da23f04a89e80c6076cffe6f460a0f080cd849934373e11fff8",
-      "last_checked": "2026-04-28T07:30:29.688928",
+      "last_checked": "2026-05-01T07:42:01.024775",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"9b8a26f77e9691a6b68ee070c05a659e\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/invalidplatform.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/missingbackgroundmode.json": {
       "hash": "5ddcdbc942e80e9592bf50727d63a34d5d2d2e45017136144a3d304028722462",
-      "last_checked": "2026-04-28T07:30:29.782677",
+      "last_checked": "2026-05-01T07:42:01.208786",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"4cb2ce8ac2d799ed354bdc5076d84534\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/missingbackgroundmode.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/missingpushserverenvironment.json": {
       "hash": "4a164b36b0f9e2a95f1f5681b3577f363be5c8b6289080bbed3215ae54cff51a",
-      "last_checked": "2026-04-28T07:30:29.816439",
+      "last_checked": "2026-05-01T07:42:01.419385",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"c6891dcdc59cf7649931fd69d969e740\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/missingpushserverenvironment.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/missingentitlement.json": {
       "hash": "3ad4170bf1ca7a2d940c2735844f6275cc9205663ecfb1088eaede442a6e0ea0",
-      "last_checked": "2026-04-28T07:30:29.901711",
+      "last_checked": "2026-05-01T07:42:01.612968",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"7821d11eccf00e28c654f27d9baee02d\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/missingentitlement.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pushtotalk/ptinstantiationerror-swift.struct/instantiationalreadyinprogress.json": {
       "hash": "53965c35263cd5874bfa72107dc55d47be8d102ac8c4400b5b7c51c69316c1f8",
-      "last_checked": "2026-04-28T07:30:30.035234",
+      "last_checked": "2026-05-01T07:42:01.734160",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:18.162285",
+      "session_id": "2026-05-01T07:41:42.067037",
       "etag": "W/\"04a049d1c0456de73b34ab2185c99b39\"",
       "file_path": "documentation/PushToTalk/ptinstantiationerror-swift.struct/instantiationalreadyinprogress.md"
     },

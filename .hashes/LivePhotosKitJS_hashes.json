@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:52.593547",
+    "last_updated": "2026-05-01T07:42:36.385910",
     "total_pages": 114,
-    "session_id": "2026-04-28T07:30:46.696580"
+    "session_id": "2026-05-01T07:42:27.350272"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/LivePhotosKitJS.json": {
       "hash": "01e40851d84f45a20d4b81bcad6bda75a7e535fbadc977bd1e6ca6f760d3695b",
-      "last_checked": "2026-04-28T07:30:47.051470",
+      "last_checked": "2026-05-01T07:42:27.597439",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"2e7b9131f00acc5df2ac5dc8cd39f204\"",
       "file_path": "documentation/LivePhotosKitJS/LivePhotosKitJS.md"
     },
     "https://developer.apple.com/documentation/LivePhotosKitJS": {
       "hash": "01e40851d84f45a20d4b81bcad6bda75a7e535fbadc977bd1e6ca6f760d3695b",
-      "last_checked": "2026-04-28T07:30:46.940233",
+      "last_checked": "2026-05-01T07:42:27.496092",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"2e7b9131f00acc5df2ac5dc8cd39f204\"",
       "file_path": "documentation/LivePhotosKitJS/LivePhotosKitJS.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.json": {
       "hash": "5c6b1da75c764d8a638604d4ce6b84768f301c4faf9a2d4ab830635e73b63cdc",
-      "last_checked": "2026-04-28T07:30:47.280082",
+      "last_checked": "2026-05-01T07:42:27.908965",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"c4e0b81498d63689a091b8cc0a456f80\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player.json": {
       "hash": "d96c8fc7e7b4d945e300edfff7d398cf692e472fc87b5bcda8b57fd45ed5db2f",
-      "last_checked": "2026-04-28T07:30:47.368379",
+      "last_checked": "2026-05-01T07:42:28.073272",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"428e3676c199cda1a1119b672106d623\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskitplayer.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.errors.json": {
       "hash": "d6bf21c9e12d749f43d2c79bc37aab8f8008b4032f99fdc05ceafb9f5e06dcaa",
-      "last_checked": "2026-04-28T07:30:47.517612",
+      "last_checked": "2026-05-01T07:42:28.372946",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"25340d795e6ede069ac04f9915ed325e\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskiterrors.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.playbackstyle.json": {
       "hash": "54b0ef446920f17eb7ca5e3159bd68b75fd5a732d8039e6f9b15d823fc732059",
-      "last_checked": "2026-04-28T07:30:47.599645",
+      "last_checked": "2026-05-01T07:42:28.534288",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"8eb7805cc5e38eceff15a9fef697159f\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskitplaybackstyle.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype.json": {
       "hash": "3bc9362c4b3bc496c99e6f1762584a67b018e56a732f19064c9ba0d81892c4eb",
-      "last_checked": "2026-04-28T07:30:47.692443",
+      "last_checked": "2026-05-01T07:42:28.707366",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"9a74f9b772f36a78c08d03bf02a13ee7\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskiteffecttype.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/livephotoskit_loaded.json": {
       "hash": "b894e7a2dbc0e1b347efc963176ce52a3beb35db773cd7c0cc90dc706a1b5df6",
-      "last_checked": "2026-04-28T07:30:47.782969",
+      "last_checked": "2026-05-01T07:42:28.838581",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"8fe6d6d55851d9fbd10e0edbb48a146b\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/livephotoskit-loaded.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/version.json": {
       "hash": "28873cd7e2ff5973c05289e7e97694e7cb32bc7e79544bc4c2a3c8a16248ae49",
-      "last_checked": "2026-04-28T07:30:47.870951",
+      "last_checked": "2026-05-01T07:42:28.958921",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"6d0e40c0eb554e74781bb7f9df72e79a\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/version.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/build_number.json": {
       "hash": "6417c5223c5e4b1c58161f969c632dc0079dc202d8793475102cdf4f27dbe95f",
-      "last_checked": "2026-04-28T07:30:47.957090",
+      "last_checked": "2026-05-01T07:42:29.097623",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"7c8847a34d294a77480b0b08b497db02\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/build-number.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/mastering_number.json": {
       "hash": "fdfb2e7108b9a235b95aaf797c592a92213dc2b74f9d6bbeefc1ae614356b09c",
-      "last_checked": "2026-04-28T07:30:48.053385",
+      "last_checked": "2026-05-01T07:42:29.273470",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"e4871a119a208abed02fe2b0c0c1d201\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/mastering-number.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/augmentelementasplayer.json": {
       "hash": "bbb6b65930f68e245a36035b65c3322ca39f383cdd0164c54b0f990b2b252001",
-      "last_checked": "2026-04-28T07:30:48.141042",
+      "last_checked": "2026-05-01T07:42:29.449588",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"195e3be7c9cef4c6816a5b9e23ae2654\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/augmentelementasplayer.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit/createplayer.json": {
       "hash": "303fe96cc285044dc1bccadf8191ee3f81d278e5638001986f735ffd636ec4f3",
-      "last_checked": "2026-04-28T07:30:48.223324",
+      "last_checked": "2026-05-01T07:42:29.578998",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"61315fdf442767cedd461ae0b10d249b\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit/createplayer.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/livephotoskit.player.json": {
       "hash": "c2c9d3a0c131a088b9af187111542b70e3fec45c1bd0d9d2bf51529dca42d115",
-      "last_checked": "2026-04-28T07:30:48.358590",
+      "last_checked": "2026-05-01T07:42:29.752227",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"6e94ceb0df5321e6ae2d8895539999ee\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/livephotoskitplayer.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/currenttime.json": {
       "hash": "ac72c464b01c7aea2e8f6810e86820fff381a0d2e48ece2c4b41f3092f82fac4",
-      "last_checked": "2026-04-28T07:30:48.445167",
+      "last_checked": "2026-05-01T07:42:29.916847",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"84e46b1efb174fe76bb595fd8c8bcc11\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/currenttime.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/duration.json": {
       "hash": "bcc0b22e84db49d834ff48b9576c111c7b3a2f44fdb4f26282ea55eb2c9e02e1",
-      "last_checked": "2026-04-28T07:30:48.532315",
+      "last_checked": "2026-05-01T07:42:30.082625",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"0f08d28c1c2859a8d838cb296d21ad0e\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/duration.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/photoheight.json": {
       "hash": "2b481689b936e69e40ea3d5332d0281624cf826fe82b26ad142b152b17b8ee9a",
-      "last_checked": "2026-04-28T07:30:48.769519",
+      "last_checked": "2026-05-01T07:42:30.217537",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"94efb8c5722d2716eafebb1b6e67921e\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/photoheight.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/phototime.json": {
       "hash": "2fc6213fd44efd882994599f58e81a84196c926f55331a23b76ea30676291bac",
-      "last_checked": "2026-04-28T07:30:48.863205",
+      "last_checked": "2026-05-01T07:42:30.351961",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"3455056646e16e7685b9248221c1c190\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/phototime.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/photowidth.json": {
       "hash": "86aae3974b9f899abf40fa6b524e712e448073fb0fd4f4c4cc8c03461f633788",
-      "last_checked": "2026-04-28T07:30:48.959694",
+      "last_checked": "2026-05-01T07:42:30.662760",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"2030db42bc62cfa46578ab6d15f31bb6\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/photowidth.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/canplay.json": {
       "hash": "824b6c85ef8e1b31dfb9ff976d081ce74b5e03c224b9b81bb314c4e1a961107c",
-      "last_checked": "2026-04-28T07:30:49.047643",
+      "last_checked": "2026-05-01T07:42:30.822900",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"ed248f7cbe27d5551d2689cf857aea95\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/canplay.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/errors.json": {
       "hash": "797d1db2f319d772e456547fc552bd302262f1aacc50e8884be02a586df80eac",
-      "last_checked": "2026-04-28T07:30:49.131945",
+      "last_checked": "2026-05-01T07:42:30.967148",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"a2912da7b6055935163a3eb091b11b8a\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/errors.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/frametimes.json": {
       "hash": "9474a82a94335e7a88bbc735c6d115b42f4517e8c8ce2e9778d6b6951cb1a961",
-      "last_checked": "2026-04-28T07:30:49.219972",
+      "last_checked": "2026-05-01T07:42:31.089958",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"b7a11eaf35486f728425309855659449\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/frametimes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/isplaying.json": {
       "hash": "87c7448777108b014e4812958a2f6d22f820fc8f681401b23d75939d3ae7ae12",
-      "last_checked": "2026-04-28T07:30:49.301794",
+      "last_checked": "2026-05-01T07:42:31.283540",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"b1615ec37e2e032f265b540ed8e41540\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/isplaying.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/loadprogress.json": {
       "hash": "c59d52250bc3659243c39bbd0f556f5b9ae450459710992306188e88a623c597",
-      "last_checked": "2026-04-28T07:30:49.388642",
+      "last_checked": "2026-05-01T07:42:31.417982",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"c10358d0407321da26f0ec96c813f3be\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/loadprogress.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/metadatavideosrc.json": {
       "hash": "3b7b982f5bd7bfdbbef9a12b859e852abb24ea55136d3b70dcbee7935cc754c8",
-      "last_checked": "2026-04-28T07:30:49.478103",
+      "last_checked": "2026-05-01T07:42:31.599165",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"90b26baf0f44da7f16fccf72d0f37b45\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/metadatavideosrc.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/photo.json": {
       "hash": "45a5831aa2a30723eee96ec29d195dd65dea0bd989fd0d16917ac7c63cea1802",
-      "last_checked": "2026-04-28T07:30:49.562101",
+      "last_checked": "2026-05-01T07:42:31.779903",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"75e19f54a6a1615c511c6b494ce3d28d\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/photo.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/photomimetype.json": {
       "hash": "2166c1de0e36d0ef9fd5fdd14ff89594a4fa689ece94e96ac87e7dbc377eed43",
-      "last_checked": "2026-04-28T07:30:49.651092",
+      "last_checked": "2026-05-01T07:42:31.965227",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"1ea254d77f1793f86dc4982445da6b3b\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/photomimetype.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/photosrc.json": {
       "hash": "fa5d99b788ca993122ccbcef83525e6db056ba8d7a7db32bcef341ff05682f11",
-      "last_checked": "2026-04-28T07:30:49.746441",
+      "last_checked": "2026-05-01T07:42:32.163647",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"009e66654ab9c310361cc7bad09b1d67\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/photosrc.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/playbackstyle.json": {
       "hash": "badbb13574b32f0f786e87a5d5f4fe32d8c52b2d6a49b30c1542f61951114174",
-      "last_checked": "2026-04-28T07:30:49.836373",
+      "last_checked": "2026-05-01T07:42:32.348463",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"daeb350800717ec74072d48ae3c158ca\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/playbackstyle.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/proactivelyloadsvideo.json": {
       "hash": "f7420c93f8a24b781c5490f91e45c8be19b9a6214a4304eb2d7bf0301f1893fb",
-      "last_checked": "2026-04-28T07:30:49.927238",
+      "last_checked": "2026-05-01T07:42:32.480728",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"c160e0c0097eb632a0dc53c816464571\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/proactivelyloadsvideo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/renderedtime.json": {
       "hash": "5c9f6d659639e88724370fef3e468b0608b6926a746a8697258f612f6b4d9807",
-      "last_checked": "2026-04-28T07:30:50.016691",
+      "last_checked": "2026-05-01T07:42:32.611133",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"a7bc7a8b482e914ed33e624f0e244092\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/renderedtime.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/showsnativecontrols.json": {
       "hash": "1c26e9a196fd850f50adce24de2f916e9837018c6a91cd417a44ca893ae2e9bd",
-      "last_checked": "2026-04-28T07:30:50.144407",
+      "last_checked": "2026-05-01T07:42:32.748788",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"be09cfaab521aa2b1afbe0a3531b8d1c\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/showsnativecontrols.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/video.json": {
       "hash": "3debb50d835ea7726dcbb60b080ad93cd4e422095c72913e4ce9551728818b13",
-      "last_checked": "2026-04-28T07:30:50.228342",
+      "last_checked": "2026-05-01T07:42:32.870507",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"ede70ee79fd50e673d0102795d0de801\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/video.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/videoheight.json": {
       "hash": "f1ee2a613c7e2bb76413a5ef4afcfbda0372752da8e6a71d3c90808479bed9d7",
-      "last_checked": "2026-04-28T07:30:50.308428",
+      "last_checked": "2026-05-01T07:42:33.049566",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"959aba0513353dcf825dcdc4403225e5\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/videoheight.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/videomimetype.json": {
       "hash": "1f8ac8369298c88df756ab9b721abf11410944a991bc74ab360b4d5de5ecfd15",
-      "last_checked": "2026-04-28T07:30:50.396132",
+      "last_checked": "2026-05-01T07:42:33.160533",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"d0bbd259053389ad098b34eb3de8c825\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/videomimetype.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/videorotation.json": {
       "hash": "808cf2a5a612f37cf0dfc4db9ad72f1a45cb16795112ce68991f464c19361a4d",
-      "last_checked": "2026-04-28T07:30:50.505403",
+      "last_checked": "2026-05-01T07:42:33.332952",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"c980d97cf0dbd28a09333b365c5acef6\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/videorotation.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/videosrc.json": {
       "hash": "2101a339d5452cd64ef8b059b07bebb87a020dc5547d1e88e8aa8aa81b27de1c",
-      "last_checked": "2026-04-28T07:30:50.591922",
+      "last_checked": "2026-05-01T07:42:33.455973",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"794ce7048b187806ef35f853e3d82489\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/videosrc.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/videowidth.json": {
       "hash": "526e40bc28ca049d7aee014d3b3dab9f9bde37a06c6b1fa0d8ddfa7aec6fea79",
-      "last_checked": "2026-04-28T07:30:50.692500",
+      "last_checked": "2026-05-01T07:42:33.628461",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"760828418f200e402fdbf57bbe47fc22\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/videowidth.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/wantstoplay.json": {
       "hash": "101d290479505e55483d84d61a37f997f0932f62ddaa51062878c640e794259f",
-      "last_checked": "2026-04-28T07:30:50.780373",
+      "last_checked": "2026-05-01T07:42:33.803827",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"4a048d4863908712815dcb39d4d941df\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/wantstoplay.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/autoplay.json": {
       "hash": "9645a444a80fbcb3815d678bd3277197b9eaa7d62d2bc9ad212668b3ce8be7cd",
-      "last_checked": "2026-04-28T07:30:50.869254",
+      "last_checked": "2026-05-01T07:42:33.928602",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"b552dcef1895357abfe8117a531fead1\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/autoplay.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/effecttype.json": {
       "hash": "a6cc31ec3489175df04129dce581cdc043b64d794a56d04004984b5b844917ce",
-      "last_checked": "2026-04-28T07:30:50.967609",
+      "last_checked": "2026-05-01T07:42:34.104141",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"b9d81724cc62120daf64fcc708c05f11\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/effecttype.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/beginfinishingplaybackearly.json": {
       "hash": "e286d9793eb816e605ca5c87820bcbb99d2cd3c74ee5712495f6d0a3c87c36f8",
-      "last_checked": "2026-04-28T07:30:51.085976",
+      "last_checked": "2026-05-01T07:42:34.246101",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"c63e4abba43bf7b5aaf3b912085de8f2\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/beginfinishingplaybackearly.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/pause.json": {
       "hash": "439371780048717b2b6f85adb6f82de0a7c3be0e21866ac7f51539b00de4e83b",
-      "last_checked": "2026-04-28T07:30:51.181687",
+      "last_checked": "2026-05-01T07:42:34.372869",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"74dec53c16581861e52f22b91461cb59\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/pause.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/play.json": {
       "hash": "93ef19a91f6c371010bf3d1d4301b92dbe00d980d071a3d230906bc029b4d04f",
-      "last_checked": "2026-04-28T07:30:51.268247",
+      "last_checked": "2026-05-01T07:42:34.508475",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"6fa631a1bde1db241b1fab97ac45c788\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/play.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/stop.json": {
       "hash": "212bdfb70ef72d2c1d253c83bd2f948159e0614cf48af4dafc86c498b34056a1",
-      "last_checked": "2026-04-28T07:30:51.349644",
+      "last_checked": "2026-05-01T07:42:34.663842",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"00912b4e0ad2663d5708cdf4011bc528\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/stop.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/toggle.json": {
       "hash": "e143b5676a80982c628ae9b7f61377387393d1be5c80442b49c14c283d56bb4f",
-      "last_checked": "2026-04-28T07:30:51.430572",
+      "last_checked": "2026-05-01T07:42:34.781877",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"cc2610684adaed0f99c73dc3dc27f56f\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/toggle.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.player/updatesize.json": {
       "hash": "e10340862c985c51ed4e2c5e6b1b942e1c2d9b17db26ccbe628ca553a50bf35c",
-      "last_checked": "2026-04-28T07:30:51.546692",
+      "last_checked": "2026-05-01T07:42:34.911610",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"edc908c59968380113972fd51fce02d7\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.player/updatesize.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.errors/video_failed_to_load.json": {
       "hash": "0500ff3680abcb31f3a71c99be753c033232b47dbe0b1abb07e8ae55b922e4f3",
-      "last_checked": "2026-04-28T07:30:51.687117",
+      "last_checked": "2026-05-01T07:42:35.044291",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"6629d132a2f3b06aaa4460df09fe20ae\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.errors/video-failed-to-load.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.errors/photo_failed_to_load.json": {
       "hash": "014cd63a14d6884e301f1e84a980f892ab9b5157b1d3558e488486f4d729ce4c",
-      "last_checked": "2026-04-28T07:30:51.777663",
+      "last_checked": "2026-05-01T07:42:35.171774",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"3e13aa27042c08a940cb7d7f1fb035f3\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.errors/photo-failed-to-load.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.playbackstyle/full.json": {
       "hash": "19d0159cd636057aa6ecabed59d352ec109b2e66b67e79f400e64bac253c1511",
-      "last_checked": "2026-04-28T07:30:51.876757",
+      "last_checked": "2026-05-01T07:42:35.306306",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"2bd3609a8a865b1d5b84c81d914c8c57\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.playbackstyle/full.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.playbackstyle/hint.json": {
       "hash": "9fd7e14d292630324124f5353d337c7d0554f6733348fd0fdc0fc816a27ef90d",
-      "last_checked": "2026-04-28T07:30:51.994159",
+      "last_checked": "2026-05-01T07:42:35.428531",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"815ee1fc1419516d0d757615bdeaf009\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.playbackstyle/hint.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.playbackstyle/loop.json": {
       "hash": "709f498f11b5a874283fe9c1d238a734471edbd3413a9438dfcf2590fe609fa4",
-      "last_checked": "2026-04-28T07:30:52.081388",
+      "last_checked": "2026-05-01T07:42:35.597914",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"ecdd7b2ead923540b9bc85cfade32fb2\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.playbackstyle/loop.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.playbackstyle/default.json": {
       "hash": "4812a616db92c27fc7ecd4a252c5391777be83a82c0f02339f998b1003440482",
-      "last_checked": "2026-04-28T07:30:52.166628",
+      "last_checked": "2026-05-01T07:42:35.730244",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"69bb408941be26599efe48bd4fe8e09f\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.playbackstyle/default.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype/bounce.json": {
       "hash": "bbeeabf95fba2da58205769d4f7a1078f2555c1ca0037e6ad92ddb76fa2b56f8",
-      "last_checked": "2026-04-28T07:30:52.250679",
+      "last_checked": "2026-05-01T07:42:35.842456",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"e857682309d133acbec2d69043f88e25\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.effecttype/bounce.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype/exposure.json": {
       "hash": "5021243f4088d7200fd90f80c86dac870f624c08c7961f1345e6c7cf2006a28e",
-      "last_checked": "2026-04-28T07:30:52.332687",
+      "last_checked": "2026-05-01T07:42:35.961481",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"9bbfc590304219e61933cadce7e4fdc1\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.effecttype/exposure.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype/live.json": {
       "hash": "928c2bfdff9659a292db33c9351558011b14915c80f368a8fb1ff381d6a47cf1",
-      "last_checked": "2026-04-28T07:30:52.419110",
+      "last_checked": "2026-05-01T07:42:36.119317",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"972f4677baa1c551f3dbb77b37a4f766\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.effecttype/live.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype/loop.json": {
       "hash": "5d7fbe9f5a7c2d1a799932896f1bd8f3b97f8e898bf7b979f6022bb96157c6ec",
-      "last_checked": "2026-04-28T07:30:52.503930",
+      "last_checked": "2026-05-01T07:42:36.243252",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"4d06ee4b6f99c46c83ce82e34f4d03b2\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.effecttype/loop.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/livephotoskitjs/livephotoskit.effecttype/default.json": {
       "hash": "fb224b355c986ad285ab4a12f2a8e399514e5443146ab317eed03a1469254190",
-      "last_checked": "2026-04-28T07:30:52.592510",
+      "last_checked": "2026-05-01T07:42:36.373848",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:46.696580",
+      "session_id": "2026-05-01T07:42:27.350272",
       "etag": "W/\"cb6b52acd7240e5666d6826ed1304a00\"",
       "file_path": "documentation/LivePhotosKitJS/livephotoskit.effecttype/default.md"
     },

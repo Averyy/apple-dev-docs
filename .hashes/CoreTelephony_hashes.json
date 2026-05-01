@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-04-28T07:30:18.159239",
+    "last_updated": "2026-05-01T07:41:45.506041",
     "total_pages": 268,
-    "session_id": "2026-04-28T07:30:04.401980"
+    "session_id": "2026-05-01T07:41:19.933689"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CoreTelephony.json": {
       "hash": "32733495a26eb245a1dd0a89cadd7f8a990e14014c058aee941e3aa6ce6d7f34",
-      "last_checked": "2026-04-28T07:30:04.754609",
+      "last_checked": "2026-05-01T07:41:20.318355",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a604ccad61cfcd729c2ede80e87aa324\"",
       "file_path": "documentation/CoreTelephony/CoreTelephony.md"
     },
     "https://developer.apple.com/documentation/CoreTelephony": {
       "hash": "32733495a26eb245a1dd0a89cadd7f8a990e14014c058aee941e3aa6ce6d7f34",
-      "last_checked": "2026-04-28T07:30:04.647004",
+      "last_checked": "2026-05-01T07:41:20.207093",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a604ccad61cfcd729c2ede80e87aa324\"",
       "file_path": "documentation/CoreTelephony/CoreTelephony.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo.json": {
       "hash": "d1420c6f83faebd32eec1a13685e13a85e616e62c3b1f347f08c9c6261bf983e",
-      "last_checked": "2026-04-28T07:30:05.005832",
+      "last_checked": "2026-05-01T07:41:20.734195",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4d3472571dce033c574079de3686b2aa\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning.json": {
       "hash": "69d9b84149c305616e5406a0a5f4596e34d1a8bd4910b1bfff58b313981ab816",
-      "last_checked": "2026-04-28T07:30:05.104053",
+      "last_checked": "2026-05-01T07:41:21.051760",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"9541266685bab984b13a753309f55a90\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest.json": {
       "hash": "7b7b37c719f31a459093b9ec89b9322ad18944a3c9cff35a5231e9f1f67c2ce6",
-      "last_checked": "2026-04-28T07:30:05.193486",
+      "last_checked": "2026-05-01T07:41:21.347811",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"7d58992dcd7fde539cb94f63338e5186\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties.json": {
       "hash": "dc0b9a82ad411cc2e7ca0692ed906e800b59e617d87650aa248771863a8c09c5",
-      "last_checked": "2026-04-28T07:30:05.229753",
+      "last_checked": "2026-05-01T07:41:21.720539",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"61859748ab2c45bca3185bfd44deaa0a\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplancapability.json": {
       "hash": "0fcc205cc9a2f35ac57869b62f3c15c51897c0119302520fa19b6eac7d9bf186",
-      "last_checked": "2026-04-28T07:30:05.397973",
+      "last_checked": "2026-05-01T07:41:22.026815",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"7ad62f106b57c436e1e1a4e1ebb105da\"",
       "file_path": "documentation/CoreTelephony/ctcellularplancapability.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanstatus.json": {
       "hash": "fc0de92d80a1aeb173e3b12e7d6989e4283f77ad0a9c12a602593421c5ea764c",
-      "last_checked": "2026-04-28T07:30:05.432244",
+      "last_checked": "2026-05-01T07:41:22.342550",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a768a349bc21a7240549bfae6aa19c20\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanstatus.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber.json": {
       "hash": "6c09b44345206b81fb8b15926dd5a8a062794405106f22c7cb417dd406b476bb",
-      "last_checked": "2026-04-28T07:30:05.607053",
+      "last_checked": "2026-05-01T07:41:22.500404",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"b7a743377a63d97e9450767e5de0a664\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriberdelegate.json": {
       "hash": "f36a7106fa5487167b0a5edea57f8e76d7bf74cbec89ed82c5fb0baccc2f4c55",
-      "last_checked": "2026-04-28T07:30:05.704139",
+      "last_checked": "2026-05-01T07:41:22.677982",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"25e8d0fbe91494cc0ad33015129406fd\"",
       "file_path": "documentation/CoreTelephony/ctsubscriberdelegate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriberinfo.json": {
       "hash": "f0f837e24455261db7269dde60559fa77158d47360b318d2989054959b33f697",
-      "last_checked": "2026-04-28T07:30:05.741834",
+      "last_checked": "2026-05-01T07:41:22.846014",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"8e02f9a359ae9fb1b05aafd0b190b382\"",
       "file_path": "documentation/CoreTelephony/ctsubscriberinfo.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardata.json": {
       "hash": "633158fce07691e863a58889fac817f7af9e86e4becc07941134cc0800ead498",
-      "last_checked": "2026-04-28T07:30:05.902388",
+      "last_checked": "2026-05-01T07:41:23.028228",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"902ee821b610bf57c820f27883146844\"",
       "file_path": "documentation/CoreTelephony/ctcellulardata.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cterror.json": {
       "hash": "325ea894ebcd907672dc65820e32e93b0c83fc6027e59c29f797d07b8d3ec486",
-      "last_checked": "2026-04-28T07:30:06.071069",
+      "last_checked": "2026-05-01T07:41:23.652853",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"3a3cab24abe64d2ff0d275d73b284970\"",
       "file_path": "documentation/CoreTelephony/cterror.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier.json": {
       "hash": "9b7ddd85340c09fa8062b3203188d301e3130014c3046a70666eb7a0cb311b70",
-      "last_checked": "2026-04-28T07:30:06.239804",
+      "last_checked": "2026-05-01T07:41:23.964444",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"eb18d9e4952ffbab6e809da7ea133db4\"",
       "file_path": "documentation/CoreTelephony/ctcarrier.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcall.json": {
       "hash": "855bc4f1bc99de90eb41a0b7aa104721d04cbd758dbb96e0052c7243ce45cff0",
-      "last_checked": "2026-04-28T07:30:06.330755",
+      "last_checked": "2026-05-01T07:41:24.130263",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a72805aa6b0d7e1beede7ae35307c9a0\"",
       "file_path": "documentation/CoreTelephony/ctcall.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallcenter.json": {
       "hash": "8e30a5ba7725d9bb3393ad91553758b4cf9e3b7631d69e33531273294132562a",
-      "last_checked": "2026-04-28T07:30:06.366923",
+      "last_checked": "2026-05-01T07:41:24.446536",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"9ef321e89fd60752448ed098cbc443d5\"",
       "file_path": "documentation/CoreTelephony/ctcallcenter.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/dataserviceidentifier.json": {
       "hash": "8e0e20644c0342925ce196b89388e6ffb2d68bfc93410cb76233aab4f6df1f28",
-      "last_checked": "2026-04-28T07:30:06.522085",
+      "last_checked": "2026-05-01T07:41:24.622714",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"b62980827603076cd6a7161bd127c579\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/dataserviceidentifier.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/delegate.json": {
       "hash": "e194e3d49edd97f27278df3c222a04049af5204a7f952ce72f5a79e103aa1425",
-      "last_checked": "2026-04-28T07:30:06.619374",
+      "last_checked": "2026-05-01T07:41:24.955235",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"e43ddf6f4672882bc7341b8fe8abc05a\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/delegate.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfodelegate.json": {
       "hash": "eaf24b4d4d3f5e29d04492e7d2cea541f99e8c8c6f3dd9726d69121c0d2b3395",
-      "last_checked": "2026-04-28T07:30:06.705619",
+      "last_checked": "2026-05-01T07:41:25.132740",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"b18ba7c8862a8e461ef369aaf7e74a6f\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfodelegate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology.json": {
       "hash": "ebe062a335572ac0df72041527da73fea21d5321c1e92b10d9fcf6a613e5b53b",
-      "last_checked": "2026-04-28T07:30:06.791722",
+      "last_checked": "2026-05-01T07:41:25.308463",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4c8f75ce01e32d0b54ead83052d9d690\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/servicecurrentradioaccesstechnology.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/radio-access-technology-constants.json": {
       "hash": "654e910e4680d4bbff77511949d2bf7c1b4c32911e4496abf0940005d7143bb8",
-      "last_checked": "2026-04-28T07:30:06.929421",
+      "last_checked": "2026-05-01T07:41:25.617840",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"c56ce7a5a15c3575e03037a4a6cb7650\"",
       "file_path": "documentation/CoreTelephony/radio-access-technology-constants.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/currentradioaccesstechnology.json": {
       "hash": "16b3223b4f68cec559f5e2ed6c818842348a4057d779f63a77c271870825b32d",
-      "last_checked": "2026-04-28T07:30:06.966083",
+      "last_checked": "2026-05-01T07:41:25.789151",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"421fe0ba9e07d0f2706c3c7faae09148\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/currentradioaccesstechnology.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/subscribercellularprovider.json": {
       "hash": "966164dd201ad6395e8355c0ceb3be0f06210998b75aa208dc07463e1b9bce5a",
-      "last_checked": "2026-04-28T07:30:07.125248",
+      "last_checked": "2026-05-01T07:41:26.113319",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"aec5bd7757f7c9ec21df4af67e9dc821\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/subscribercellularprovider.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/subscribercellularproviderdidupdatenotifier.json": {
       "hash": "68d05e59315819c63681154d27169160c43b7c9c1666df083c7ed5f9c35fcd35",
-      "last_checked": "2026-04-28T07:30:07.213122",
+      "last_checked": "2026-05-01T07:41:26.284942",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"558f9bed66473205728d5b92dad14215\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/subscribercellularproviderdidupdatenotifier.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/servicesubscribercellularproviders.json": {
       "hash": "f9473b58341acb43bffc41b339dbe4553904c41ff8939984fa2e3f1e195999df",
-      "last_checked": "2026-04-28T07:30:07.300835",
+      "last_checked": "2026-05-01T07:41:26.592226",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"1a2a0d827fe1b2c3d6af5199e320da65\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/servicesubscribercellularproviders.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.json": {
       "hash": "d260e9f5b3ccb2a3107d66934d0a15549ca7c8624f215bbeee9ab1073797aecd",
-      "last_checked": "2026-04-28T07:30:07.422018",
+      "last_checked": "2026-05-01T07:41:26.839673",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"28a77bf14afc810122a4ad473eadcde4\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfo/servicesubscribercellularprovidersdidupdatenotifier.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning/supportscellularplan().json": {
       "hash": "d403439e09a6f135283bc64fa538a6f095909befcd98abbc5ff531c67292665a",
-      "last_checked": "2026-04-28T07:30:07.514512",
+      "last_checked": "2026-05-01T07:41:27.133833",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"28bfdf66bcbd5f049315f9928e7776bd\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning/supportscellularplan.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning/supportsembeddedsim.json": {
       "hash": "886222a4bb27110884d55696fd6eed7cedc7e799583275479b2c0e9c6fd5fb85",
-      "last_checked": "2026-04-28T07:30:07.619310",
+      "last_checked": "2026-05-01T07:41:27.305288",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"62e294b94474e1537eefa063e3d018b0\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning/supportsembeddedsim.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning/addplan(request:properties:completionhandler:).json": {
       "hash": "f99c2579ffba1fc0c09957dc594a73f84b87b12ce84fea829784e15281b7535b",
-      "last_checked": "2026-04-28T07:30:07.758541",
+      "last_checked": "2026-05-01T07:41:27.486099",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"5973571d9f79c9184cc3529191990e3a\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning/addplan-requestpropertiescompletionhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning/addplan(with:completionhandler:).json": {
       "hash": "bd01749741c4a74b4afe6d1cd0ca03e6a42642de5243c68f30afa544e1fb05fa",
-      "last_checked": "2026-04-28T07:30:07.794031",
+      "last_checked": "2026-05-01T07:41:27.792348",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"be9a57edd3930a6a8a5067986f4a0922\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning/addplan-withcompletionhandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult.json": {
       "hash": "db21412d13115fd784a77576b4869ec8020f9a3e0c048a7e3e53391415502f68",
-      "last_checked": "2026-04-28T07:30:07.926484",
+      "last_checked": "2026-05-01T07:41:27.959476",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"18a80f0d9e6011296ff5ae311a1bea07\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioning/update(_:completionhandler:).json": {
       "hash": "23db4d16616143ea1a067736f90e2e13f8af9cfd2fc5362f9238c882ff175d66",
-      "last_checked": "2026-04-28T07:30:08.011014",
+      "last_checked": "2026-05-01T07:41:28.141678",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"9bdf5dd3b2879f5572181003749ab467\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioning/update-completionhandler.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/address.json": {
       "hash": "d36b9e5add79213aa23a2705acae3bd8b740e86d794c13e0c04d695c4be63319",
-      "last_checked": "2026-04-28T07:30:08.044633",
+      "last_checked": "2026-05-01T07:41:28.310464",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"bc60775223f09a7de012dcce78bd09b2\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/address.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/confirmationcode.json": {
       "hash": "7979191718d333a20b7102cf1a5ce6dd6a6af9f4c3ee138fe353b9a686e6bb88",
-      "last_checked": "2026-04-28T07:30:08.175877",
+      "last_checked": "2026-05-01T07:41:28.467953",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f23901bd78e84a422e63be5752400e65\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/confirmationcode.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/eid.json": {
       "hash": "753b72f73e92959bda75656fa086166b2663b734635799861c63f1028b356723",
-      "last_checked": "2026-04-28T07:30:08.262212",
+      "last_checked": "2026-05-01T07:41:28.640080",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"1284f6b3ab8d840efd2d153ec065aba7\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/eid.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/iccid.json": {
       "hash": "a60ccc82d51ccb0434d6920298dbe0ad23096af5f23edf7c645beabf801dcb6a",
-      "last_checked": "2026-04-28T07:30:08.353809",
+      "last_checked": "2026-05-01T07:41:28.840880",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"67667f6d899c7ec08e9279eddde66b9d\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/iccid.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/matchingid.json": {
       "hash": "296a3ec01f10ae9d13c01374299eec0d5cddfc85f1af4a748f7e6ca184b7cf45",
-      "last_checked": "2026-04-28T07:30:08.499240",
+      "last_checked": "2026-05-01T07:41:29.006944",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"504e1418e35de4ef2e551091890cbdb5\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/matchingid.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/oid.json": {
       "hash": "b69ccc6a7fb47ee30097214d3357ab475ffeae500353b2c29dd6dd81127f5a1f",
-      "last_checked": "2026-04-28T07:30:08.546605",
+      "last_checked": "2026-05-01T07:41:29.162414",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ba830697c6312674d7e39bfac2112bc6\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/oid.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/associatediccid.json": {
       "hash": "8b96214ee6361ec726e9d008c01b82212a5b7ffab6fee1163e8304129915dd16",
-      "last_checked": "2026-04-28T07:30:08.810156",
+      "last_checked": "2026-05-01T07:41:29.501188",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"93d1fc8a466008cc99864e2d42632163\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/associatediccid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/simcapability.json": {
       "hash": "f89d46b0cc363e0b73b8688366ab72d522fb89ddb17822d9ec69515e5c643480",
-      "last_checked": "2026-04-28T07:30:08.961096",
+      "last_checked": "2026-05-01T07:41:29.685807",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fe3537033b27a8f695b40e184e9f5e50\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/simcapability.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/supportedregioncodes-yhu5.json": {
       "hash": "9138c522f8ecd72016ebcf376daef79a8155e996c7b382c248722e93c719639a",
-      "last_checked": "2026-04-28T07:30:08.994911",
+      "last_checked": "2026-05-01T07:41:29.849491",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"60bed8ea0f5727b71a4efbb0b187336c\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/supportedregioncodes-yhu5.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplancapability/init(rawvalue:).json": {
       "hash": "9694f0784ede7155f22a690a54bcbb49cb53449a983fb5c5bbdcd0b0f5571728",
-      "last_checked": "2026-04-28T07:30:09.475260",
+      "last_checked": "2026-05-01T07:41:30.550368",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"0cca1013537ea6e3111c2118390d70ca\"",
       "file_path": "documentation/CoreTelephony/ctcellularplancapability/init-rawvalue.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplancapability/dataandvoice.json": {
       "hash": "49be146eb43829675df2906b652cdf28fbd5324d16081915707657c545f8c44d",
-      "last_checked": "2026-04-28T07:30:09.506302",
+      "last_checked": "2026-05-01T07:41:30.712523",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4704a974b290f8040c7a141b88cb6e39\"",
       "file_path": "documentation/CoreTelephony/ctcellularplancapability/dataandvoice.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplancapability/dataonly.json": {
       "hash": "3db627a0aa8e54978afe49b412361e47a352fc96d55bfa5d329108be7290e690",
-      "last_checked": "2026-04-28T07:30:09.629094",
+      "last_checked": "2026-05-01T07:41:30.875018",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"77b6bbb08a5b184361591adcc030cc3e\"",
       "file_path": "documentation/CoreTelephony/ctcellularplancapability/dataonly.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanstatus/gettokenwithcompletion(_:).json": {
       "hash": "4dfbbbee9832bc3623d2f38e0ead466e7ee780ac2bc0de52bec0ad95fef55e3f",
-      "last_checked": "2026-04-28T07:30:09.726538",
+      "last_checked": "2026-05-01T07:41:31.037848",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"cac67a6998a9ecae86b87c5ffaaf0f3a\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanstatus/gettokenwithcompletion.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanstatus/checkvalidity(oftoken:completionhandler:).json": {
       "hash": "4dc65f376d09b8553da9a75f3f56c1589383ed9afb8fe621459a4b5a6e3dadff",
-      "last_checked": "2026-04-28T07:30:09.869087",
+      "last_checked": "2026-05-01T07:41:31.200876",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"68cc3218401880f9ea7d08f3863b6be7\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanstatus/checkvalidity-oftokencompletionhandler.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber/identifier.json": {
       "hash": "f60874706f8144c79ecf22d80e87865dcccd0fc5cadbd4acbd3c047af118287a",
-      "last_checked": "2026-04-28T07:30:09.959629",
+      "last_checked": "2026-05-01T07:41:31.354860",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"45b96870b8132e27d29207fc14af38ac\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber/identifier.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber/delegate.json": {
       "hash": "31da60d1043a01c03fe9294f9b44728a234aa0fbd045f34255c9cd4ee03f3831",
-      "last_checked": "2026-04-28T07:30:10.097076",
+      "last_checked": "2026-05-01T07:41:31.541969",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"1869929193b0e8ff6ecfb785a49e18cf\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber/delegate.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber/carriertoken.json": {
       "hash": "c859b26faec251495402a8eb5e0f81a1d34768a8ce64f122e91c6cf8cc82f681",
-      "last_checked": "2026-04-28T07:30:10.198113",
+      "last_checked": "2026-05-01T07:41:31.695198",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"300b9d204c733353b699580d558ac29c\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber/carriertoken.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber/refreshcarriertoken().json": {
       "hash": "399a4c40c823b92d0d9eb6234de3e2d8085d412ee86f9953aed9ef95c82d22a2",
-      "last_checked": "2026-04-28T07:30:10.309554",
+      "last_checked": "2026-05-01T07:41:31.850487",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"e1c3b182bf0809253f1082c32a34aac6\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber/refreshcarriertoken.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscribertokenrefreshed.json": {
       "hash": "835fa15364b0ce89c74edd5cdc802ecc132c8768a8e93578c640a47690ea6d49",
-      "last_checked": "2026-04-28T07:30:10.408598",
+      "last_checked": "2026-05-01T07:41:32.036135",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"3f06020bbb5f65f2c5b0ee706acebe17\"",
       "file_path": "documentation/CoreTelephony/ctsubscribertokenrefreshed.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriber/issiminserted.json": {
       "hash": "82b8306f3ff0088ba862d62a7833218c4ec89f416dc771ec31bd153636c074ee",
-      "last_checked": "2026-04-28T07:30:10.513038",
+      "last_checked": "2026-05-01T07:41:32.208482",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"1200a62ff8c2aa3c2843d3a8c10b1576\"",
       "file_path": "documentation/CoreTelephony/ctsubscriber/issiminserted.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriberdelegate/subscribertokenrefreshed(_:).json": {
       "hash": "9c574157087c2df5cc36a1966d0f60ebaf24c9b9173710f8492c2268e3879c5a",
-      "last_checked": "2026-04-28T07:30:10.634820",
+      "last_checked": "2026-05-01T07:41:32.373596",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"bd01db0d389ee977a183fc21beb36e48\"",
       "file_path": "documentation/CoreTelephony/ctsubscriberdelegate/subscribertokenrefreshed.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriberinfo/subscribers().json": {
       "hash": "bcbc2dd790df35b1197c03cf7ecd22ab5d7c5e230411bbd19ab76a2c770feaac",
-      "last_checked": "2026-04-28T07:30:10.735396",
+      "last_checked": "2026-05-01T07:41:32.537826",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"54e014bdb1e4cfb7c0400c59fe0dcb85\"",
       "file_path": "documentation/CoreTelephony/ctsubscriberinfo/subscribers.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctsubscriberinfo/subscriber().json": {
       "hash": "f5b676c3cd9f577440245830d06de419c3dec57b6c42b3c42164d28dfb57e794",
-      "last_checked": "2026-04-28T07:30:10.934456",
+      "last_checked": "2026-05-01T07:41:32.690564",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"b36794cdaa27e8bc678727c41da2a8ef\"",
       "file_path": "documentation/CoreTelephony/ctsubscriberinfo/subscriber.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardata/restrictedstate.json": {
       "hash": "90f7ec5a99514846935227d775b16b217ebc0bfe8d193e56ccaee8ed7a49d0d8",
-      "last_checked": "2026-04-28T07:30:11.040186",
+      "last_checked": "2026-05-01T07:41:32.842359",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"15b056dfde9b336b9a8c611ce8e7369d\"",
       "file_path": "documentation/CoreTelephony/ctcellulardata/restrictedstate.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardatarestrictedstate.json": {
       "hash": "c903b08f72ee91c67321a2c4e2c1ecf1c7425eed9abb19a8ebf5f6c8f87d6315",
-      "last_checked": "2026-04-28T07:30:11.136916",
+      "last_checked": "2026-05-01T07:41:33.013667",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"20a49dde4b5e5130279a8ec119ad5c33\"",
       "file_path": "documentation/CoreTelephony/ctcellulardatarestrictedstate.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardata/cellulardatarestrictiondidupdatenotifier.json": {
       "hash": "42782c02a4df9d892eda8bbcf944886cd25351d7a6cadd466cb93a6e4d261e3e",
-      "last_checked": "2026-04-28T07:30:11.170091",
+      "last_checked": "2026-05-01T07:41:33.187938",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"96d16a2bc2c60217bab16715ee42f7a1\"",
       "file_path": "documentation/CoreTelephony/ctcellulardata/cellulardatarestrictiondidupdatenotifier.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cellulardatarestrictiondidupdatenotifier.json": {
       "hash": "fb25af7b7985456f7e34a30a14f51b60e6c397df6b648a2d4121a05cd65b43dd",
-      "last_checked": "2026-04-28T07:30:11.296196",
+      "last_checked": "2026-05-01T07:41:33.364926",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"78753a97199cffe8932ddff6654399c8\"",
       "file_path": "documentation/CoreTelephony/cellulardatarestrictiondidupdatenotifier.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cterror/domain.json": {
       "hash": "d237fc3a91d823fd834e99f66f5af63810593dae08d8a6ddc5262b4b185dbda1",
-      "last_checked": "2026-04-28T07:30:12.163198",
+      "last_checked": "2026-05-01T07:41:34.859193",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"618ed37ac905ad99558df45a6d662837\"",
       "file_path": "documentation/CoreTelephony/cterror/domain.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cterror/error.json": {
       "hash": "1fa0bede0c68810eabd742b6dde985bf19dca8d7643b777600f4756a92864646",
-      "last_checked": "2026-04-28T07:30:12.307819",
+      "last_checked": "2026-05-01T07:41:35.029641",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"3548aaab8e6a082d53ebcf5cc1456c6e\"",
       "file_path": "documentation/CoreTelephony/cterror/error.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/error-domain-codes.json": {
       "hash": "115eb8c82203b7f9ad6d7bd8f539d610b106c98d78a8763b88149393cfa87c25",
-      "last_checked": "2026-04-28T07:30:12.398115",
+      "last_checked": "2026-05-01T07:41:35.195519",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"2bb38fd15fa2397041f3828092356a34\"",
       "file_path": "documentation/CoreTelephony/error-domain-codes.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cterror/init().json": {
       "hash": "392c1045dfd305a49dd4d30996cdf41ac8da1e9420a451ffc0affdecd26197f4",
-      "last_checked": "2026-04-28T07:30:12.490265",
+      "last_checked": "2026-05-01T07:41:35.342297",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"7e2c00fb017cbfe49442acd1207e7b61\"",
       "file_path": "documentation/CoreTelephony/cterror/init.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cterror/init(domain:error:).json": {
       "hash": "0ca3d7b948c37e1e2326a4b120d2979b585684762687b47f230d3adb2fc832e4",
-      "last_checked": "2026-04-28T07:30:12.585300",
+      "last_checked": "2026-05-01T07:41:35.494929",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"dd55ba5623b41d1aeb8b06488be1ba48\"",
       "file_path": "documentation/CoreTelephony/cterror/init-domainerror.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier/allowsvoip.json": {
       "hash": "fd16bbf233506a228663b977a21b330a9a8f61e8e8fbcd2a7a4d204f52c9d9bb",
-      "last_checked": "2026-04-28T07:30:12.672405",
+      "last_checked": "2026-05-01T07:41:35.670780",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a3f215dce0847cab6dd6f2b25e2b7053\"",
       "file_path": "documentation/CoreTelephony/ctcarrier/allowsvoip.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier/carriername.json": {
       "hash": "6a41a32e65f46ad30f7f5f2041f6ce1e659f2a5f50611b4523c50528cca08110",
-      "last_checked": "2026-04-28T07:30:12.706182",
+      "last_checked": "2026-05-01T07:41:35.990986",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"7f34861785d212b73a0588a0c0cee41f\"",
       "file_path": "documentation/CoreTelephony/ctcarrier/carriername.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier/isocountrycode.json": {
       "hash": "a6109bfe365b72d5661daf2f0bc49804d1b30b1d08f112763326ced3c41687db",
-      "last_checked": "2026-04-28T07:30:12.834300",
+      "last_checked": "2026-05-01T07:41:36.170641",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"deeaab0dd333043440c5b95b22002769\"",
       "file_path": "documentation/CoreTelephony/ctcarrier/isocountrycode.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier/mobilecountrycode.json": {
       "hash": "c0381155938698160b7690951ea4a1d9d93cadee8ae83a681b0e6c9eee292cdc",
-      "last_checked": "2026-04-28T07:30:12.930117",
+      "last_checked": "2026-05-01T07:41:36.325642",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"0f8cd7ba87cd18ada87562648d66097f\"",
       "file_path": "documentation/CoreTelephony/ctcarrier/mobilecountrycode.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcarrier/mobilenetworkcode.json": {
       "hash": "2c115b8568db5199844a6c4eb40fb9b6d1aa8a0f9f0d5366c4a62e6ac5cccb67",
-      "last_checked": "2026-04-28T07:30:13.021360",
+      "last_checked": "2026-05-01T07:41:36.484908",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"c8e4dd959101ee71b840f2850860da2a\"",
       "file_path": "documentation/CoreTelephony/ctcarrier/mobilenetworkcode.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcall/callid.json": {
       "hash": "3db1c168a59b7bd99647ecd60b97aabba306cbec031080cc7f6d20f691524311",
-      "last_checked": "2026-04-28T07:30:13.112185",
+      "last_checked": "2026-05-01T07:41:36.666380",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"61c4b61fa762d9e376f7aa3db97b4ddc\"",
       "file_path": "documentation/CoreTelephony/ctcall/callid.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcall/callstate.json": {
       "hash": "7babf6ac65ae127805afa395d678fad15323a62e5df8c2279c99703272466cae",
-      "last_checked": "2026-04-28T07:30:13.226880",
+      "last_checked": "2026-05-01T07:41:36.859713",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ff2fa1cee03e84a0af362fc5f6d57f47\"",
       "file_path": "documentation/CoreTelephony/ctcall/callstate.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cellular-call-states.json": {
       "hash": "d1ecfd6d622066e13c425365a5af09058d13bd60ec9af2d34feaf43056fc42ec",
-      "last_checked": "2026-04-28T07:30:13.275316",
+      "last_checked": "2026-05-01T07:41:37.023963",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"0c0d7d1835ee5fba20f3435fa2319dfb\"",
       "file_path": "documentation/CoreTelephony/cellular-call-states.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallcenter/calleventhandler.json": {
       "hash": "fde9e2aa2975cea8d61bc08814e833886a9f538abeb0d52d2c2f80ce64b81c66",
-      "last_checked": "2026-04-28T07:30:13.374340",
+      "last_checked": "2026-05-01T07:41:37.182229",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"9259cbce0bdbea2c4869d6fac072529e\"",
       "file_path": "documentation/CoreTelephony/ctcallcenter/calleventhandler.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallcenter/currentcalls.json": {
       "hash": "ac05b1beac6189806222d2807674f927bcdf8b6a1ee83d2994e6fec6baa29cbd",
-      "last_checked": "2026-04-28T07:30:13.407993",
+      "last_checked": "2026-05-01T07:41:37.351604",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"66b5cc7fccee17e26440d5165bbb96ca\"",
       "file_path": "documentation/CoreTelephony/ctcallcenter/currentcalls.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/cttelephonynetworkinfodelegate/dataserviceidentifierdidchange(_:).json": {
       "hash": "b206323ad04723454bd2f52602032ff4a6e2ea6e97f2aa3ecb5cdf2705d4574e",
-      "last_checked": "2026-04-28T07:30:13.721747",
+      "last_checked": "2026-05-01T07:41:37.523249",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"1d2c4667b1f162ad80522df147604f25\"",
       "file_path": "documentation/CoreTelephony/cttelephonynetworkinfodelegate/dataserviceidentifierdidchange.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologygprs.json": {
       "hash": "e4090ddd40e8e46b455de0d5f1e9acd42bba4ce78c4e9533ff5ed595e3972deb",
-      "last_checked": "2026-04-28T07:30:13.822308",
+      "last_checked": "2026-05-01T07:41:37.680698",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fd4ce054c763a9cd1f7c3178083976f7\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologygprs.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologyedge.json": {
       "hash": "0ad5652b974893cb6fb80e6604dfb5a81b7aaf5b55871a82dea7752aef34f981",
-      "last_checked": "2026-04-28T07:30:13.915474",
+      "last_checked": "2026-05-01T07:41:37.849396",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"12e18cc4dc41ba714fa399fa19ddeabf\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyedge.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologywcdma.json": {
       "hash": "9c65de07746642ede2e2125766ffa2821b4ab0533aa16d4c779d6554ace3c860",
-      "last_checked": "2026-04-28T07:30:14.054953",
+      "last_checked": "2026-05-01T07:41:38.009543",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"197687a636ce3b976c5876e27e0c7ab9\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologywcdma.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologyhsdpa.json": {
       "hash": "ed770f26bbd116e03469ba69aaa2e27fbe8c2df65b50f216d591d89506c062ad",
-      "last_checked": "2026-04-28T07:30:14.151631",
+      "last_checked": "2026-05-01T07:41:38.188697",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ee450b6349d7533f8106b7ca0d8205a0\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyhsdpa.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologyhsupa.json": {
       "hash": "a5a6343f6c02d42aae8f96b7329cb92976de5ce85a94ff7a121ce5c12d2cc14e",
-      "last_checked": "2026-04-28T07:30:14.244562",
+      "last_checked": "2026-05-01T07:41:38.374412",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fa0bc6d827d3722baa7c77be3f23a908\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyhsupa.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologycdma1x.json": {
       "hash": "05a5b014f072320408b47c4986072354706cdfb06bcae3bd478f08de2889b037",
-      "last_checked": "2026-04-28T07:30:14.340297",
+      "last_checked": "2026-05-01T07:41:38.551079",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"cd46e65dd0c5f5afc9a49ffbe5bf7356\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdma1x.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologycdmaevdorev0.json": {
       "hash": "45f4a383988eb7153fe3e0b2327515c2fc8d9463190286924265393a4cf3291f",
-      "last_checked": "2026-04-28T07:30:14.465913",
+      "last_checked": "2026-05-01T07:41:38.706871",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fb2b12071229a4dcf8c074b0cb9e26b1\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdmaevdorev0.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologycdmaevdoreva.json": {
       "hash": "f7d982d202406a44ea3b16cec36c84665efa40a96177745ec6a33ee5d462a32c",
-      "last_checked": "2026-04-28T07:30:14.564256",
+      "last_checked": "2026-05-01T07:41:38.875858",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"37769c6a5db1cc4e9d29fc19d40fdf09\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdmaevdoreva.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologycdmaevdorevb.json": {
       "hash": "a53b61249a2cce1a1944199b7353869cb93e0716dd175bd46e970a9c26816b89",
-      "last_checked": "2026-04-28T07:30:14.662543",
+      "last_checked": "2026-05-01T07:41:39.035747",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fe38a104e0b08d431688250cb004f589\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologycdmaevdorevb.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologyehrpd.json": {
       "hash": "52d52de73953ddf2530516de3b800b39c4d8319d9d265ad76330a22cab260c16",
-      "last_checked": "2026-04-28T07:30:14.800454",
+      "last_checked": "2026-05-01T07:41:39.214246",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f09d89ba064bfff6bf2d21db7424da76\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologyehrpd.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologylte.json": {
       "hash": "aca886001c4818dc00d090617d096b148d8407cd58d4920ee3b9093176516f10",
-      "last_checked": "2026-04-28T07:30:14.895759",
+      "last_checked": "2026-05-01T07:41:39.371754",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"c2cef740c8522fdffbed13ec257e232e\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologylte.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologynrnsa.json": {
       "hash": "bfd921925190b94382d32e5dea74252b45c605122647cf8eb26db9919cdb2464",
-      "last_checked": "2026-04-28T07:30:14.986636",
+      "last_checked": "2026-05-01T07:41:39.560822",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a6f4e93b7a9bd3ed7015ad82699c7026\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologynrnsa.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctradioaccesstechnologynr.json": {
       "hash": "d30fb280a7a7163c675e280bdf6dcacee8f7d7ad65b35a86cff1e77f0765db2c",
-      "last_checked": "2026-04-28T07:30:15.105005",
+      "last_checked": "2026-05-01T07:41:39.737945",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f7fe0a54170fb788d7f83fcd0301cac8\"",
       "file_path": "documentation/CoreTelephony/ctradioaccesstechnologynr.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult/fail.json": {
       "hash": "254b3ddfcda03f01b5148056d33b42ed0c8c6f6bab4d50eb4d72d09ce8675b1c",
-      "last_checked": "2026-04-28T07:30:15.139298",
+      "last_checked": "2026-05-01T07:41:39.901012",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"2dddd87a6eb7e3725c65f9e9729588e8\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult/fail.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult/success.json": {
       "hash": "f3a4876135a49a79f477f3cd1950444560985b159d5ace3e6d8a418f7f6a27ff",
-      "last_checked": "2026-04-28T07:30:15.248809",
+      "last_checked": "2026-05-01T07:41:40.075440",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"540cc3082828d005551a2f2143790f2a\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult/success.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult/unknown.json": {
       "hash": "0d9912c30feffcc756632fbf47667541164155d847225f6da728afc8a7ce9360",
-      "last_checked": "2026-04-28T07:30:15.351610",
+      "last_checked": "2026-05-01T07:41:40.241776",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"cbd874ffd2ab3c5a7f9b5ec6f081c49b\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult/unknown.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult/cancel.json": {
       "hash": "89f288ec4606bf7b2a2faf6ef884e08a9877712d64ed3e84be8477eb5ae27314",
-      "last_checked": "2026-04-28T07:30:15.387689",
+      "last_checked": "2026-05-01T07:41:40.431764",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"0536ff50e48aa869c2c26ae994c26448\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult/cancel.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningaddplanresult/init(rawvalue:).json": {
       "hash": "de3b5f4c6c5cb430ecc3f6efb292cc5623f2f6b3833fed7ef1e038f445353cad",
-      "last_checked": "2026-04-28T07:30:15.503183",
+      "last_checked": "2026-05-01T07:41:40.592746",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"2f9dff5f9da55245ac2453f534028c22\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningaddplanresult/init-rawvalue.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardatarestrictedstate/notrestricted.json": {
       "hash": "441d7e0e09c1860694dc829164a721c4bd6772c96f741d879d555e8b10974e8f",
-      "last_checked": "2026-04-28T07:30:15.758858",
+      "last_checked": "2026-05-01T07:41:41.035156",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"d9d7d9aed81f20956a7013bd151597c8\"",
       "file_path": "documentation/CoreTelephony/ctcellulardatarestrictedstate/notrestricted.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardatarestrictedstate/restricted.json": {
       "hash": "145dc9dee1ec9e395c3b0a8875a398c3b3da7de26a4e2a5a1542d53a16f37234",
-      "last_checked": "2026-04-28T07:30:15.857755",
+      "last_checked": "2026-05-01T07:41:41.198785",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"6077ac1b5c213de18bd27465d3ffbcad\"",
       "file_path": "documentation/CoreTelephony/ctcellulardatarestrictedstate/restricted.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardatarestrictedstate/restrictedstateunknown.json": {
       "hash": "aae827b13d0ec43b3d2e19b947446f20030c9304b3bf645cc2a4e1d78c25b2f3",
-      "last_checked": "2026-04-28T07:30:15.948699",
+      "last_checked": "2026-05-01T07:41:41.357979",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"e951e36f997e6bfa9ec4ce4bc1dadf22\"",
       "file_path": "documentation/CoreTelephony/ctcellulardatarestrictedstate/restrictedstateunknown.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellulardatarestrictedstate/init(rawvalue:).json": {
       "hash": "ccf39e7010ce6ef089259de280d3eb9f06409bd3c7725c3dc8432395867c60c2",
-      "last_checked": "2026-04-28T07:30:16.066530",
+      "last_checked": "2026-05-01T07:41:41.534061",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"65a57e75b588ae05faa64aa0d032462a\"",
       "file_path": "documentation/CoreTelephony/ctcellulardatarestrictedstate/init-rawvalue.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/kcterrordomainmach.json": {
       "hash": "720941cf3227ea441a93097bbcfabc4dd36b8aa4b4f60160f3549c472042c9c3",
-      "last_checked": "2026-04-28T07:30:17.543271",
+      "last_checked": "2026-05-01T07:41:44.561192",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"b77d64ff9ba65f5696f62abb46f0f8d3\"",
       "file_path": "documentation/CoreTelephony/kcterrordomainmach.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/kcterrordomainnoerror.json": {
       "hash": "d49a4db5887a16579c6a4d57beb5d3730182cf63e6d68ae87a6d8671eaa3250c",
-      "last_checked": "2026-04-28T07:30:17.664233",
+      "last_checked": "2026-05-01T07:41:44.728317",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"0c3b63e43765661e80cbd5cdc9d2b0c3\"",
       "file_path": "documentation/CoreTelephony/kcterrordomainnoerror.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/kcterrordomainposix.json": {
       "hash": "99e8e25628468a3f6c9dbe76d7d70e8d0a60a955647704596cb8676f297c5462",
-      "last_checked": "2026-04-28T07:30:17.760396",
+      "last_checked": "2026-05-01T07:41:44.888938",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"41e70791b99280c7718d814f02a669ad\"",
       "file_path": "documentation/CoreTelephony/kcterrordomainposix.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallstatedialing.json": {
       "hash": "c7494b5b1a823b5b32bf0b7455621807c3ad55d79dff096f98f737ef3a0c3a52",
-      "last_checked": "2026-04-28T07:30:17.856882",
+      "last_checked": "2026-05-01T07:41:45.057341",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"7c52c9aafc5bd17833d81e052e0dff07\"",
       "file_path": "documentation/CoreTelephony/ctcallstatedialing.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallstateincoming.json": {
       "hash": "c0e12e859f2ba63146959f39bc41e7f2e05ea39a678e5e31aef5ec1409142f19",
-      "last_checked": "2026-04-28T07:30:17.960109",
+      "last_checked": "2026-05-01T07:41:45.218193",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"928b71f048e50914a35d0edbf185ae2b\"",
       "file_path": "documentation/CoreTelephony/ctcallstateincoming.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallstateconnected.json": {
       "hash": "e573b2761548e25a236a4300fbd22e63e38ce94bd9e45304b79a13404f4e562b",
-      "last_checked": "2026-04-28T07:30:18.052651",
+      "last_checked": "2026-05-01T07:41:45.371855",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"619c88034627372cd113d21fc13ce6ec\"",
       "file_path": "documentation/CoreTelephony/ctcallstateconnected.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcallstatedisconnected.json": {
       "hash": "74cfe2c75c5976df1873e0af53ab5d9ccc65c58e2a90c692e5f9a63b6ae5d35a",
-      "last_checked": "2026-04-28T07:30:18.158117",
+      "last_checked": "2026-05-01T07:41:45.496091",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"78f8ec0092de09db732f8cf0cab54678\"",
       "file_path": "documentation/CoreTelephony/ctcallstatedisconnected.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager.json": {
       "hash": "3f2775ca38df9cb3f189410a384d0ca9c057d2cf22999d81871dce2a895d45d8",
-      "last_checked": "2026-04-28T07:30:05.936528",
+      "last_checked": "2026-05-01T07:41:23.348929",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"8a81aeb8ff49572a2d541fffa2cad618\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/lifecycle.json": {
       "hash": "7e965c61ba5aa043f7c005fe5bc39cb78563fc17ba8d859e700c740a4fe9b2e8",
-      "last_checked": "2026-04-28T07:30:09.129851",
+      "last_checked": "2026-05-01T07:41:30.004858",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f17abe625066b8c7a9aa492442197526\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/lifecycle.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/lifecycleproperties.json": {
       "hash": "0a46764665caab399bab6eb676cf7615d1b18ab6510dedcef84618db8e75bb91",
-      "last_checked": "2026-04-28T07:30:09.162410",
+      "last_checked": "2026-05-01T07:41:30.214083",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"25e4337951467307172b6f77ba00add1\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/lifecycleproperties.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/shared.json": {
       "hash": "ab77f699e362b76ad11a6ab377a44a597d2fca6bd8772538d1da50200091c222",
-      "last_checked": "2026-04-28T07:30:11.400364",
+      "last_checked": "2026-05-01T07:41:33.524297",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"d63bfa0aeea4b68f2dfceaa7c3ae6ddd\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/shared.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/availablesliceappcategories.json": {
       "hash": "f8d00795927e048133bdee202992927eb861ce8e2bbdb2d851d65b231c84b2fc",
-      "last_checked": "2026-04-28T07:30:11.495605",
+      "last_checked": "2026-05-01T07:41:33.702804",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"9c9ec833aff546b597c9e703c13612f5\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/availablesliceappcategories.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/activatepreferredsliceforcategory(_:).json": {
       "hash": "239c6fc6651c1cc05ac81935cb1270c2d99642932a425e74e3f805a194451fd1",
-      "last_checked": "2026-04-28T07:30:11.585643",
+      "last_checked": "2026-05-01T07:41:33.870606",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"13b9860bdd053a1bdd8beaafd365965d\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/activatepreferredsliceforcategory.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/disableslicing().json": {
       "hash": "df94c1c9da7cf4b1940ebc5e62d590498254707d0a0a09183d0c40e9d3afe9cc",
-      "last_checked": "2026-04-28T07:30:11.674333",
+      "last_checked": "2026-05-01T07:41:34.024660",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"fd16bf8653f86e0c0a0073e19bf620cd\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/disableslicing.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/activeslices.json": {
       "hash": "5da9c4b1470dfc3b16805183ecd4069b9554d0b34b6c81fbfd531c87e2efcc72",
-      "last_checked": "2026-04-28T07:30:11.802861",
+      "last_checked": "2026-05-01T07:41:34.186816",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"cffbf027c2beda323c9c461e8deeaa23\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/activeslices.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/slice.json": {
       "hash": "4bbeb0e045e5fea214ae858b2ce2a8517a64e880f5331e7a0852ddbd4049fc90",
-      "last_checked": "2026-04-28T07:30:11.902051",
+      "last_checked": "2026-05-01T07:41:34.357695",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f41c0570077897458109fd55aebff55c\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/slice.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/appcategory.json": {
       "hash": "30c9e3457c2d1fa27bc81b70d0f3e7e830e7c2ee5b96ce7613b7b4f9ee436b96",
-      "last_checked": "2026-04-28T07:30:12.001166",
+      "last_checked": "2026-05-01T07:41:34.535794",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ad87e88118aa03ded9679deb00fb094b\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/appcategory.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass.json": {
       "hash": "d41dbd75cc34293b4d370dbd728fe7d25671ea8e07739c69579c62a2c0e88a5c",
-      "last_checked": "2026-04-28T07:30:12.035333",
+      "last_checked": "2026-05-01T07:41:34.692582",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"df37a2f584298e4480655733fbb96aac\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/lifecycle/expirationdate.json": {
       "hash": "828614dbc5802335668d519af8cbe2a504d247abfbf72111e525ad5ad10e5167",
-      "last_checked": "2026-04-28T07:30:15.590121",
+      "last_checked": "2026-05-01T07:41:40.754000",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4f67b263ba43cb13ce97df7b888cafff\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/lifecycle/expirationdate.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/slice/appcategory.json": {
       "hash": "e7933bfad50f817efc9ce1bdfcc56276d0aea0ec6dcb7085f1b51a6a936bd7ae",
-      "last_checked": "2026-04-28T07:30:16.178351",
+      "last_checked": "2026-05-01T07:41:41.701579",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"c817e619d631730a0eeeb019687c166e\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/slice/appcategory.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/slice/trafficclass.json": {
       "hash": "87c4897aeb6a83fcfd535d341e85496e2d49f4b25d37c26cfc059752d9988541",
-      "last_checked": "2026-04-28T07:30:16.213884",
+      "last_checked": "2026-05-01T07:41:42.000643",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"e028bbe21d421046be6b1598a69f36b5\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/slice/trafficclass.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/slice/networkinterfacename.json": {
       "hash": "dc703911fefb182964bf92f0d6cbb96cc1dc0feb16cd5ad15dc01026d6daad7c",
-      "last_checked": "2026-04-28T07:30:16.306713",
+      "last_checked": "2026-05-01T07:41:42.189666",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"af1b2a46bd88859a0f0bb24ff8d8b28a\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/slice/networkinterfacename.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/appcategory/gaming.json": {
       "hash": "0377023eaa4d6e95bb9eaf053b68b3a9beff08be4bcc2644870c2ffc883963a8",
-      "last_checked": "2026-04-28T07:30:16.406216",
+      "last_checked": "2026-05-01T07:41:42.336297",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"73fcdb88b59b1e65183453322e2f4ef8\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/appcategory/gaming.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/appcategory/communication.json": {
       "hash": "d2fc68f65765880016d62c3a034b642feed135bc8e90c7384c610ef797ee2d19",
-      "last_checked": "2026-04-28T07:30:16.498189",
+      "last_checked": "2026-05-01T07:41:42.503616",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"146cc5fb4f98474c2456cfe0e086f040\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/appcategory/communication.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/appcategory/streaming.json": {
       "hash": "7276306566b3767a06f1c6fa4c89a67dd8df3d89f9bb11a346589fbf6a2b7dc7",
-      "last_checked": "2026-04-28T07:30:16.585093",
+      "last_checked": "2026-05-01T07:41:42.660148",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"08fe7b5cf44fe1f5cc57cfa6e62e744e\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/appcategory/streaming.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/appcategory/description.json": {
       "hash": "bd8293a88c8a89983a524c2c0ec8de5229fafe3120869fe16c06b3e647944501",
-      "last_checked": "2026-04-28T07:30:16.697010",
+      "last_checked": "2026-05-01T07:41:42.817437",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"cf36dab3a9c587d4461a292708bf94d3\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/appcategory/description.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/any.json": {
       "hash": "e71e9a4ba466778e45777edab9362368f107ca55e812ca187576a00df9dac86d",
-      "last_checked": "2026-04-28T07:30:16.730528",
+      "last_checked": "2026-05-01T07:41:42.936142",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"a4cd155c3936e98730296a03bb7102c7\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/any.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/background.json": {
       "hash": "0234d8d74072c61424f96d2dd29e179e565159250e4931c01e2d6c3c98173484",
-      "last_checked": "2026-04-28T07:30:16.858354",
+      "last_checked": "2026-05-01T07:41:43.101192",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"bedd9902841bc5b27d1c7cf4a6928541\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/background.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/responsivedata.json": {
       "hash": "5642759a39fdf25fe60095c6a6c6e86b62ecd13525c442016725bf5b93a794cb",
-      "last_checked": "2026-04-28T07:30:16.953803",
+      "last_checked": "2026-05-01T07:41:43.254143",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ac702e80d6c4bf9a39dca6f1cf994f38\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/responsivedata.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/avstreaming.json": {
       "hash": "2feb6abb70e1786e74149bc4456f3c9d99f00ca654cbec934dba65d911422cf2",
-      "last_checked": "2026-04-28T07:30:17.041652",
+      "last_checked": "2026-05-01T07:41:43.415805",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"ac2b14d4604521e8e3c8bb2f9731badf\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/avstreaming.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/responsiveav.json": {
       "hash": "bd9da383b0b49c141fe7653f617847285c12366c3059127252acecae93df3dc8",
-      "last_checked": "2026-04-28T07:30:17.137597",
+      "last_checked": "2026-05-01T07:41:43.581174",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4361e3c24ceacb9d5b322144d63c4063\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/responsiveav.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/video.json": {
       "hash": "052fc132764de8885b71d1a22b7e1019ffd41fae835f101761a72714967d5fb1",
-      "last_checked": "2026-04-28T07:30:17.229955",
+      "last_checked": "2026-05-01T07:41:43.795933",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"da2e6ada5f5932e4ef970e86e74a7e8b\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/video.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/voice.json": {
       "hash": "d70e79ba152f039f71eff98c022c4d352df66e5d45903e30d07f4b5ddcea17fd",
-      "last_checked": "2026-04-28T07:30:17.321119",
+      "last_checked": "2026-05-01T07:41:43.978967",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"2db14fcb1649b7da37d6f1c18efecea3\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/voice.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/signaling.json": {
       "hash": "21019427b277d3e6e117fd87242c23a512f46437caa018e69eec21446cbc54a7",
-      "last_checked": "2026-04-28T07:30:17.415860",
+      "last_checked": "2026-05-01T07:41:44.141857",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"633b08cea4e3ded475824ef1ee3f9fcc\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/signaling.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctslicingmanager/trafficclass/description.json": {
       "hash": "e878e881b41a0d44897e3946b571670f15d021a197369ffc6b4ab67b35aade19",
-      "last_checked": "2026-04-28T07:30:17.512146",
+      "last_checked": "2026-05-01T07:41:44.302361",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"5ff057f2dbaf75a759007aca383ef39e\"",
       "file_path": "documentation/CoreTelephony/ctslicingmanager/trafficclass/description.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanprovisioningrequest/init(coder:).json": {
       "hash": "3924efc32a9050332ad632bb49b17577545df2ca3988683899e8fb69d02e15b5",
-      "last_checked": "2026-04-28T07:30:08.718399",
+      "last_checked": "2026-05-01T07:41:29.333687",
       "status": "new",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"d6a7f2e0d32a879d29e53fe7511808d2\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanprovisioningrequest/init-coder.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/init(coder:).json": {
       "hash": "44ba73fb9208c655df6adc1bbe3d7684ebe3bcb3b4ea76e79b9d6156e6daae52",
-      "last_checked": "2026-04-28T07:30:09.376819",
+      "last_checked": "2026-05-01T07:41:30.378779",
       "status": "new",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"4930838b05273e743a761d165b1efa71\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/init-coder.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/coretelephony/ctcellularplanproperties/lifecycle/init(coder:).json": {
       "hash": "be3dbd98f086dab64483fa5ddd8fa5ff2526ed26756f8b89c70ae8a0b0b2b4b5",
-      "last_checked": "2026-04-28T07:30:15.620875",
+      "last_checked": "2026-05-01T07:41:40.923432",
       "status": "new",
-      "session_id": "2026-04-28T07:30:04.401980",
+      "session_id": "2026-05-01T07:41:19.933689",
       "etag": "W/\"f87266ac1bdb6063d82543767a90bcb6\"",
       "file_path": "documentation/CoreTelephony/ctcellularplanproperties/lifecycle/init-coder.md"
     },
