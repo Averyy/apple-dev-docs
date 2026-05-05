@@ -31,9 +31,9 @@ protocol ABImageClient : NSObjectProtocol
   An object that encapsulates all information about a person in the Address Book database.
 - [class ABGroup](abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue.md)
+- [class ABMultiValue](abmultivalue-swift.class.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue.md)
+- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
   A mutable representation of a property that might have multiple values.
 - [class ABRecord](abrecord-swift.class.md)
   An abstract class that defines the common properties for all Address Book records.

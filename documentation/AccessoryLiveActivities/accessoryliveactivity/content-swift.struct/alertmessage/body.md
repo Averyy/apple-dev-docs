@@ -6,8 +6,8 @@
 The body text of the alert.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

@@ -44,14 +44,12 @@ struct SettingsView: View {
 
 ## See Also
 
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
-  Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 - [struct DevicePicker](devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 - [class DDDevicePickerViewController](dddevicepickerviewcontroller.md)
   A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
-- [NSApplicationServices](../BundleResources/Information-Property-List/NSApplicationServices.md)
-  A list of service providers and the devices that they support.
+- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+  Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
 
 ---

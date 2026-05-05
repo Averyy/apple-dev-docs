@@ -55,7 +55,7 @@ This type of observation results from a [`VNRecognizeTextRequest`](vnrecognizete
 
 - [Recognizing Text in Images](recognizing-text-in-images.md)
   Add text-recognition features to your app using the Vision framework.
-- [Structuring Recognized Text on a Document](../visionkit/structuring_recognized_text_on_a_document.md)
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.

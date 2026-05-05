@@ -7,8 +7,8 @@
 Indicates that the system invalidated the session and stopped sending Live Activity updates.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

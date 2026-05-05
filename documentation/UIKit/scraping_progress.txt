@@ -1,4 +1,4 @@
 Completed scraping UIKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 11081
+Total pages scraped: 11079
+Pages skipped (unchanged): 2
 Pages failed: 0

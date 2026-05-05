@@ -3,7 +3,7 @@
 **Framework**: DeviceDiscoveryUI  
 **Kind**: init
 
-Creates a view controller that displays the other, available devices on your local network.
+Creates a view controller that displays the available devices on your local network.
 
 **Availability**:
 - iOS 26.0+
@@ -25,8 +25,8 @@ Creates a view controller that displays the other, available devices on your loc
 
 ## See Also
 
-- [static func isSupported(NWBrowser.Descriptor, using: NWParameters?) -> Bool](dddevicepickerviewcontroller/issupported(_:using:).md)
-  Returns a Boolean value that indicates whether the current device supports device discovery.
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
+  Creates a view controller with the parameters and access level you specify that displays the available devices on network.
 
 
 ---

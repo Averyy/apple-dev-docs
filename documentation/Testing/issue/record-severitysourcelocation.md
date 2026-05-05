@@ -7,7 +7,7 @@ Records an issue that a test encounters while it’s running.
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

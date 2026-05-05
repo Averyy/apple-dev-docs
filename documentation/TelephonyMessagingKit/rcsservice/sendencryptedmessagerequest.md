@@ -6,8 +6,8 @@
 A structure that represents a request to send an encrypted message.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

@@ -7,7 +7,7 @@ Construct an instance of this type with the given path extension and encoding qu
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

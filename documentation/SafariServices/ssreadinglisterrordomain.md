@@ -21,7 +21,7 @@ let SSReadingListErrorDomain: String
 
 - [class SSReadingList](ssreadinglist.md)
   An object for adding items to a user’s Safari Reading List.
-- [SSReadingListError.Code](ssreadinglisterror/code.md)
+- [SSReadingListError.Code](ssreadinglisterrorcode.md)
   Messages that describe a Safari Reading List error.
 - [struct SSReadingListError](ssreadinglisterror.md)
   A Safari Reading List error.

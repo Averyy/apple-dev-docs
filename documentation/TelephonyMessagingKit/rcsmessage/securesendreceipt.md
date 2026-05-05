@@ -6,8 +6,8 @@
 A structure that contains the security context of an end-to-end encrypted message.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

@@ -6,12 +6,12 @@
 Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
 
 **Availability**:
-- macOS 11.0+
+- macOS 10.10+
 
 ## Declaration
 
 ```swift
-func hv_vcpu_get_exec_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutablePointer<UInt64>) -> hv_return_t
+func hv_vcpu_get_exec_time(_ vcpu: hv_vcpuid_t, _ time: UnsafeMutablePointer<UInt64>) -> hv_return_t
 ```
 
 #### Return Value
@@ -29,7 +29,7 @@ func hv_vcpu_get_exec_time(_ vcpu: hv_vcpu_t, _ time: UnsafeMutablePointer<UInt6
 
 ## See Also
 
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
+- [func hv_vcpu_run(hv_vcpuid_t) -> hv_return_t](hv_vcpu_run(_:).md)
   Starts the execution of a vCPU.
 - [func hv_vcpus_exit(UnsafeMutablePointer<hv_vcpu_t>, UInt32) -> hv_return_t](hv_vcpus_exit(_:_:).md)
   Forces an immediate exit of a set of vCPUs of the VM.

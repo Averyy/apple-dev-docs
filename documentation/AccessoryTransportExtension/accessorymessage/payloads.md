@@ -6,9 +6,9 @@
 An array of payload objects that comprise the message.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
-- Mac Catalyst 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

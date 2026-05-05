@@ -27,8 +27,7 @@ Always display the device picker as a full-screen, modal view. If the user selec
 
 ```swift
 // This example uses the default application services parameters;
-// however, you can add a NWProtocolFramer to provide application-level
-// messaging.
+// however, you can add a `NWProtocolFramer` to provide application-level messaging.
 let parameters = NWParameters.applicationService
 
 // Create the view controller for the endpoint picker.
@@ -44,7 +43,7 @@ let endpoint: NWEndpoint
 do {
     endpoint = try await devicePickerController.endpoint
 } catch {
-    // The user canceled the endpoint picker view.
+    // A person canceled the endpoint picker view.
     return
 }
 
@@ -55,15 +54,16 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
 ## Topics
 
 ### Creating device picker view controllers
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:).md)
+  Creates a view controller that displays the available devices on your local network.
+- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
+  Creates a view controller with the parameters and access level you specify that displays the available devices on network.
+### Determining device support
 - [static func isSupported(NWBrowser.Descriptor, using: NWParameters?) -> Bool](dddevicepickerviewcontroller/issupported(_:using:).md)
   Returns a Boolean value that indicates whether the current device supports device discovery.
-- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:).md)
-  Creates a view controller that displays the other, available devices on your local network.
 ### Accessing the selected endpoint
 - [var endpoint: NWEndpoint](dddevicepickerviewcontroller/endpoint.md)
-  A network connection endpoint for the device selected by the user.
-### Initializers
-- [convenience init?(browseDescriptor: NWBrowser.Descriptor, parameters: NWParameters?, access: DDDevicePairingAccess)](dddevicepickerviewcontroller/init(browsedescriptor:parameters:access:).md)
+  A network connection endpoint for the device that a person selected.
 
 ## Relationships
 
@@ -93,14 +93,12 @@ myDeviceConnectionManager.connectTo(endpoint: endpoint)
 
 ## See Also
 
-- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
-  Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 - [struct DevicePicker](devicepicker.md)
   A SwiftUI view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 - [struct DevicePickerSupportedAction](devicepickersupportedaction.md)
   An environment value that indicates whether the current device supports device discovery.
-- [NSApplicationServices](../BundleResources/Information-Property-List/NSApplicationServices.md)
-  A list of service providers and the devices that they support.
+- [Connecting a tvOS app to other devices over the local network](connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
+  Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS devices that the user can connect to over their local network.
 
 
 ---

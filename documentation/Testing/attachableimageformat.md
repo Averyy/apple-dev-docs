@@ -7,7 +7,7 @@ A type describing image formats supported by the system that can be used when at
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

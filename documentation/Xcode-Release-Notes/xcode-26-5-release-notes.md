@@ -1,4 +1,4 @@
-# Xcode 26.5 Beta 3 Release Notes
+# Xcode 26.5 RC Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.5 beta 3 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 beta 3 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 beta 3 requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.5 RC includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 RC supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 RC requires a Mac running macOS Tahoe 26.2 or later.
 
 ##### General
 
@@ -29,7 +29,14 @@ Xcode 26.5 beta 3 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26
 
 ###### Resolved Issues
 
-- Fixed:  Users interacting with Claude Code might receive an error message about their OAuth token being expired.  (175464325)
+- Fixed: Users interacting with Claude Code might receive an error message about their OAuth token being expired.  (175464325)
+
+##### Instruments
+
+###### Resolved Issues
+
+- Fixed: Typing in the filter field at the bottom of the Symbols window would create a token for every character  (172423349)
+- Fixed an issue where profiling using Metal System Trace with GPU Counters capture could cause memory footprint of Instruments to increase to tens of gigabytes.  (173195251)
 
 ##### Localization
 
@@ -37,40 +44,29 @@ Xcode 26.5 beta 3 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26
 
 - Fixed: Generated code for String Catalog symbol generation will no longer produce a compiler error for Packages that default to MainActor isolation.  (173302714) (FB22329375)
 
-#### Updates in Xcode 265 Beta 2
-
 ##### Security
 
-###### Resolved Issues in Xcode 265 Beta 2
+###### Resolved Issues
 
 - Fixed: Mac (Designed for iPad) apps with pointer authentication are now compatible with macOS Tahoe 26.5 and newer. Add `LSMinimumSystemVersion` with value `26.5` to your app’s Info.plist to ensure the app only runs on Tahoe 26.5 and newer.  (171174887)
 
 ##### Simulator
 
-###### Resolved Issues in Xcode 265 Beta 2
+###### Resolved Issues
 
 - Fixed: Pasteboard Synchronization within Simulator.app is currently not functioning.  (173403967) (FB22340739)
 
-##### Testing
-
-###### Resolved Issues in Xcode 265 Beta 2
-
-- Fixed: Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
-
-#### Updates in Xcode 265 Beta
-
-##### Instruments
-
-###### Resolved Issues in Xcode 265 Beta
-
-- Fixed: Typing in the filter field at the bottom of the Symbols window would create a token for every character  (172423349)
-- Fixed an issue where profiling using Metal System Trace with GPU Counters capture could cause memory footprint of Instruments to increase to tens of gigabytes.  (173195251)
-
 ##### Storekit Testing in Xcode
 
-###### New Features in Xcode 265 Beta
+###### New Features
 
 - New billing plan APIs can be tested using [`StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode). Configure a monthly with 12-month commitment billing plan for your auto-renewable subscriptions in the StoreKit Configuration, and simulate subscribing to the billing plan through the Transaction Manager in Xcode.  (168522699)
+
+##### Testing
+
+###### Resolved Issues
+
+- Fixed: Tests fail to run on iOS 15 simulators  (173337319) (FB22333623)
 
 ## See Also
 

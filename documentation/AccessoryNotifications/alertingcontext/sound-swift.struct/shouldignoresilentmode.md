@@ -6,8 +6,8 @@
 A Boolean value that indicates whether the sound ignores local silent mode.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

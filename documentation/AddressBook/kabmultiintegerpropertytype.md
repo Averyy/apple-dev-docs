@@ -3,7 +3,7 @@
 **Framework**: Address Book  
 **Kind**: var
 
-Multiinteger property. Returned as an [`ABMultiValue`](abmultivalueref.md) of [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) objects.
+Multiinteger property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFNumber`](https://developer.apple.com/documentation/CoreFoundation/CFNumber) objects.
 
 **Availability**:
 - iOS ?+
@@ -35,9 +35,9 @@ var kABMultiIntegerPropertyType: Int { get }
 - [var kABMultiRealPropertyType: Int](kabmultirealpropertytype.md)
   Multireal property.
 - [var kABMultiDateTimePropertyType: Int](kabmultidatetimepropertytype.md)
-  Multi–date-time property. Returned as an [`ABMultiValue`](abmultivalueref.md) of [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) objects.
+  Multi–date-time property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFDate`](https://developer.apple.com/documentation/CoreFoundation/CFDate) objects.
 - [var kABMultiDictionaryPropertyType: Int](kabmultidictionarypropertytype.md)
-  Multidictionary property. Returned as an [`ABMultiValue`](abmultivalueref.md) of [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) objects.
+  Multidictionary property. Returned as an [`ABMultiValue`](abmultivalue-swift.typealias.md) of [`CFDictionary`](https://developer.apple.com/documentation/CoreFoundation/CFDictionary) objects.
 
 
 ---

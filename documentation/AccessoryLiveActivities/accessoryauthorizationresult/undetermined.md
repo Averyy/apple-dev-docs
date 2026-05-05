@@ -6,8 +6,8 @@
 An option that indicates the system hasn’t shown the authorization prompt to the person.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

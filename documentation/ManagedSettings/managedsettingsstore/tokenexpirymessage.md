@@ -6,8 +6,8 @@
 A message that is posted in NotificationCenter when ManagedSettingsStore tokens are expired
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 - Mac Catalyst ?+
 
 ## Declaration

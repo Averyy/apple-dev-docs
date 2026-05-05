@@ -1,4 +1,4 @@
 Completed scraping Social!
-Total pages scraped: 0
-Pages skipped (unchanged): 66
+Total pages scraped: 63
+Pages skipped (unchanged): 3
 Pages failed: 0

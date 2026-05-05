@@ -6,8 +6,8 @@
 A class for requesting permission to forward Live Activities to your accessory and handle them in your accessory’s data provider extension.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

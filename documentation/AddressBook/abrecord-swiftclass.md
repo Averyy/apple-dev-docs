@@ -66,9 +66,9 @@ The `ABRecord` class is “toll-free bridged” with its procedural C opaque-typ
   An object that encapsulates all information about a person in the Address Book database.
 - [class ABGroup](abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue.md)
+- [class ABMultiValue](abmultivalue-swift.class.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue.md)
+- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.

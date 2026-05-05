@@ -3,6 +3,8 @@
 **Framework**: DeviceDiscoveryUI  
 **Kind**: init
 
+Initializes a device-pairing view controller with the provided listener and requested access level for device discovery.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

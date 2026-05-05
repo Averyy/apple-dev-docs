@@ -16,7 +16,7 @@ For example code using the fast path, see [`Extracting phone numbers from text i
 
 - **Accurate**: The accurate path uses a neural network to find text in terms of strings and lines, and then performs further analysis to find individual words and sentences. This approach is much more in line with how humans read text.
 
-For example code using the accurate path, see [`Structuring Recognized Text on a Document`](https://developer.apple.com/documentation/visionkit/structuring_recognized_text_on_a_document).
+For example code using the accurate path, see [`Structuring recognized text on a document`](https://developer.apple.com/documentation/VisionKit/structuring-recognized-text-on-a-document).
 
 Using either path, you may optionally apply a language-correction phase based on Natural Language Processing (NLP) to minimize the potential for misreadings.
 
@@ -104,7 +104,7 @@ Enabling language correction on the request helps minimize common recognition er
 
 ## See Also
 
-- [Structuring Recognized Text on a Document](../visionkit/structuring_recognized_text_on_a_document.md)
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Extracting phone numbers from text in images](extracting-phone-numbers-from-text-in-images.md)
   Analyze and filter phone numbers from text in live capture by using Vision.

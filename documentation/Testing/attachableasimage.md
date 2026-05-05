@@ -7,7 +7,7 @@ A protocol describing images that can be converted to instances of [`Attachment`
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

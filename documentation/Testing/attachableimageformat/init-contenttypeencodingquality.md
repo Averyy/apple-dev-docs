@@ -7,7 +7,7 @@ Initialize an instance of this type with the given content type and encoding qua
 
 **Availability**:
 - Swift 6.3+
-- Xcode 26.4+ (Beta)
+- Xcode 26.4+
 
 ## Declaration
 

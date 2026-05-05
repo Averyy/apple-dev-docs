@@ -6,8 +6,8 @@
 A constant you use to configure your data provider extension’s capability to forward Live Activities to your accessory.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

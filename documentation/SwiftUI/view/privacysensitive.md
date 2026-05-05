@@ -43,6 +43,8 @@ struct BankAccountView: View {
 
 - [Designing your app for the Always On state](../watchOS-Apps/designing-your-app-for-the-always-on-state.md)
   Customize your watchOS app’s user interface for continuous display.
+- [Protecting sensitive content when screen sharing and remote control are active](protecting-sensitive-content-when-screen-sharing.md)
+  Detect active screen capture sessions and respond appropriately to protect sensitive content in your app.
 - [func redacted(reason: RedactionReasons) -> some View](view/redacted(reason:).md)
   Adds a reason to apply a redaction to this view hierarchy.
 - [func unredacted() -> some View](view/unredacted.md)

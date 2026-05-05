@@ -6,8 +6,8 @@
 A Boolean value that indicates whether the accessory can alert the person for the notification.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

@@ -7,8 +7,8 @@
 Provides an updated Live Activity and requests confirmation that the accessory displayed an alert.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

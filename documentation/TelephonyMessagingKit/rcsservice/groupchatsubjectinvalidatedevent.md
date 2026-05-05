@@ -6,8 +6,8 @@
 Event triggered when a group’s encryption state changes, which causes the group subject to be cleared on the server.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 
 ## Declaration
 

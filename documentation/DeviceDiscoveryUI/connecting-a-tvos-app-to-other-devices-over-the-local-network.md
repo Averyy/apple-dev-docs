@@ -249,8 +249,6 @@ Start the listener as quickly as possible after your app launches. This ensures 
   A UIKit view that displays other devices on the network, and creates an encrypted connection to a copy of your app running on that device.
 - [struct DevicePickerSupportedAction](devicepickersupportedaction.md)
   An environment value that indicates whether the current device supports device discovery.
-- [NSApplicationServices](../BundleResources/Information-Property-List/NSApplicationServices.md)
-  A list of service providers and the devices that they support.
 
 
 ---

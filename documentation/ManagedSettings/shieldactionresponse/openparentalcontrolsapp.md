@@ -6,8 +6,8 @@
 An instruction for the system to open your parental controls app that is responsible for shielding the application or web browser
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 - Mac Catalyst ?+
 
 ## Declaration

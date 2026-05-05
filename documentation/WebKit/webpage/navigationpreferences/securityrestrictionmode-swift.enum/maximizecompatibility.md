@@ -6,11 +6,11 @@
 Enhanced security protections optimized for maintaining web compatibility. Disables JIT compilation and enables increased MTE adoption.
 
 **Availability**:
-- iOS 26.5+ (Beta)
-- iPadOS 26.5+ (Beta)
+- iOS 26.5+
+- iPadOS 26.5+
 - Mac Catalyst ?+
-- macOS 26.5+ (Beta)
-- visionOS 26.5+ (Beta)
+- macOS 26.5+
+- visionOS 26.5+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: DeviceDiscoveryUI  
 **Kind**: property
 
-A network connection endpoint for the device selected by the user.
+A network connection endpoint for the device that a person selected.
 
 **Availability**:
 - iOS 26.0+
@@ -20,14 +20,14 @@ A network connection endpoint for the device selected by the user.
 
 #### Discussion
 
-Your app can asynchronously read from this property. The system populates this property when the user selects a device from the endpoint picker. If the user cancels the picker, the system throws an error.
+Your app can asynchronously read from this property. The system populates this property when someone selects a device from the endpoint picker. If someone cancels the picker, the system throws an error.
 
 ```swift
 let endpoint: NWEndpoint
 do {
     endpoint = try await myEndpointPickerHandler.endpoint
 } catch {
-    // The user canceled the endpoint picker view.
+    // Someone canceled the endpoint picker view.
     return
 }
 

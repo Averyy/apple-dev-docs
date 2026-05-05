@@ -25,7 +25,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | App Name | Name of app as set in App Store Connect. | `string` |
 | App Apple Identifier | The unique identifier assigned to the app by Apple. | `integer` |
 | Current Group Subscription | Name of the subscription group the user most recently subscribed to. | `string` |
-| Current Subscription Group Identifier | The unique identifier assigned to the subscription group by Apple. | `string` |
+| Current Subscription Group Identifier | The unique identifier assigned to the subscription group by Apple. | `integer` |
 | Current Subscription | Name of the subscription that the user most recently subscribed to. | `string` |
 | Current Subscription Identifier | The unique identifier assigned to the subscription by Apple. | `integer` |
 | Event | Type of engagement event. | `string` |

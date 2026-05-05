@@ -20,7 +20,7 @@ func ABMultiValueInsert(_ multiValue: ABMutableMultiValueRef!, _ value: CFTypeRe
 
 #### Discussion
 
-This function performs no type checking and will let you adda value whose type does not match the types of the other valuesin the list. However, if you try to use a multi-value list whosevalues are not all of the same type, functions, such as the ABRecord [`ABRecordSetValue(_:_:_:_:)`](abrecordsetvalue(_:_:_:).md) function,will returns `NULL` or kABErrorProperty.
+This function performs no type checking and will let you adda value whose type does not match the types of the other valuesin the list. However, if you try to use a multi-value list whosevalues are not all of the same type, functions, such as the ABRecord [`ABRecordSetValue(_:_:_:_:)`](abrecordsetvalue(_:_:_:_:).md) function,will returns `NULL` or kABErrorProperty.
 
 ## Parameters
 
@@ -48,7 +48,7 @@ This function performs no type checking and will let you adda value whose type d
   Returns a new ABMultiValue object.
 - [func ABMultiValueCreateCopy(ABMultiValueRef!) -> Unmanaged<ABMultiValueRef>!](abmultivaluecreatecopy(_:).md)
   Returns a copy of a multi-value object.
-- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable().md)
+- [func ABMultiValueCreateMutable(ABPropertyType) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutable(_:).md)
   Returns a newly created mutable multi-value list object.
 - [func ABMultiValueCreateMutableCopy(ABMultiValue!) -> Unmanaged<ABMutableMultiValue>!](abmultivaluecreatemutablecopy(_:).md)
   Returns a mutable copy of a multi-value object.

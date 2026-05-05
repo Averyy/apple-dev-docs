@@ -60,7 +60,7 @@ Connect the iPhone to the Mac over USB. The first time you run this sample app, 
 
 - [Recognizing Text in Images](recognizing-text-in-images.md)
   Add text-recognition features to your app using the Vision framework.
-- [Structuring Recognized Text on a Document](../visionkit/structuring_recognized_text_on_a_document.md)
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Locating and displaying recognized text](locating-and-displaying-recognized-text.md)
   Perform text recognition on a photo using the Vision framework’s text-recognition request.

@@ -1,132 +1,132 @@
 {
   "metadata": {
-    "last_updated": "2026-05-01T07:43:03.486534",
+    "last_updated": "2026-05-05T07:29:38.064691",
     "total_pages": 16,
-    "session_id": "2026-05-01T07:43:00.766860"
+    "session_id": "2026-05-05T07:29:36.568735"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SigninwithApple.json": {
-      "hash": "43f638a9b8ffc385173b7fdecf345e867f63fb9e4c4acbe9ee1ed67f2a00635b",
-      "last_checked": "2026-05-01T07:43:01.021792",
+      "hash": "18965f0e373042852bdf013e3e86fea9342e0a6e4fab247aeee2e5d1d1879aca",
+      "last_checked": "2026-05-05T07:29:36.907500",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"1fa68a640eb600c44e52bbc7193f1e8c\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"9f1e23d5e9c6cc399293309d3d4419e0\"",
       "file_path": "documentation/SigninwithApple/SigninwithApple.md"
     },
     "https://developer.apple.com/documentation/SigninwithApple": {
-      "hash": "43f638a9b8ffc385173b7fdecf345e867f63fb9e4c4acbe9ee1ed67f2a00635b",
-      "last_checked": "2026-05-01T07:43:00.899590",
+      "hash": "18965f0e373042852bdf013e3e86fea9342e0a6e4fab247aeee2e5d1d1879aca",
+      "last_checked": "2026-05-05T07:29:36.757112",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"1fa68a640eb600c44e52bbc7193f1e8c\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"9f1e23d5e9c6cc399293309d3d4419e0\"",
       "file_path": "documentation/SigninwithApple/SigninwithApple.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app.json": {
-      "hash": "7da694eb5c45afe034dc6df5c81b07394db7d49e16865567a5d859655852c0e8",
-      "last_checked": "2026-05-01T07:43:01.438471",
+      "hash": "208783ebe63742d070f7fbacf38902d3062934c4d70695c2078a33ff969a2369",
+      "last_checked": "2026-05-05T07:29:37.186617",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"0d7b93574d7f4d43825d8189639a5ccd\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"cc5c2e3273e423b8587b04b9354b7a27\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app": {
-      "hash": "7da694eb5c45afe034dc6df5c81b07394db7d49e16865567a5d859655852c0e8",
-      "last_checked": "2026-04-28T07:31:07.860270",
+      "hash": "208783ebe63742d070f7fbacf38902d3062934c4d70695c2078a33ff969a2369",
+      "last_checked": "2026-05-05T07:29:37.186690",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"0d7b93574d7f4d43825d8189639a5ccd\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"cc5c2e3273e423b8587b04b9354b7a27\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-in-your-app.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/signinwithapplejs.json": {
       "hash": "",
-      "last_checked": "2026-05-01T07:43:01.694533",
+      "last_checked": "2026-05-05T07:29:37.411631",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/signinwithapplerestapi.json": {
       "hash": "",
-      "last_checked": "2026-05-01T07:43:02.028037",
+      "last_checked": "2026-05-05T07:29:37.627318",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-on-the-web.json": {
-      "hash": "635cf8df67f939ed66a570e23622a6e712aa39174ee95894f8d8ea2b763e534c",
-      "last_checked": "2026-05-01T07:43:02.266284",
+      "hash": "6317603c3fcb3e1188a73f2480911d7ce3911e3f3792c62f4279edcdc2b99457",
+      "last_checked": "2026-05-05T07:29:37.709591",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"0a072159fc30b8d2080b83ea54696ef3\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"857cfac7fa6d87e28914e3f55ba86ac4\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-on-the-web": {
-      "hash": "635cf8df67f939ed66a570e23622a6e712aa39174ee95894f8d8ea2b763e534c",
-      "last_checked": "2026-04-28T07:31:08.332281",
+      "hash": "6317603c3fcb3e1188a73f2480911d7ce3911e3f3792c62f4279edcdc2b99457",
+      "last_checked": "2026-05-05T07:29:37.709662",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"0a072159fc30b8d2080b83ea54696ef3\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"857cfac7fa6d87e28914e3f55ba86ac4\"",
       "file_path": "documentation/SigninwithApple/displaying-sign-in-with-apple-buttons-on-the-web.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/configuring-your-environment-for-sign-in-with-apple.json": {
-      "hash": "6c5598c24abe3bd38ab4622ef074a2d94bdab66effae7fa16231a9dd605903cf",
-      "last_checked": "2026-05-01T07:43:02.582762",
+      "hash": "00ca9db102b322b9ad698fe99576e78e808ac8fd65640fad9239c51d8589ce75",
+      "last_checked": "2026-05-05T07:29:37.799824",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"eae20acb17e550ed1c4780730988dc57\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"64a4ffc8ba886a39208234df2770acf8\"",
       "file_path": "documentation/SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/configuring-your-environment-for-sign-in-with-apple": {
-      "hash": "6c5598c24abe3bd38ab4622ef074a2d94bdab66effae7fa16231a9dd605903cf",
-      "last_checked": "2026-04-28T07:31:08.514220",
+      "hash": "00ca9db102b322b9ad698fe99576e78e808ac8fd65640fad9239c51d8589ce75",
+      "last_checked": "2026-05-05T07:29:37.799923",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"eae20acb17e550ed1c4780730988dc57\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"64a4ffc8ba886a39208234df2770acf8\"",
       "file_path": "documentation/SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/processing-changes-for-sign-in-with-apple-accounts.json": {
-      "hash": "4c6d10d33cb7f1b2c324ded35c751ac653ad1f3ad7d3aa45c5747544287f771c",
-      "last_checked": "2026-05-01T07:43:02.888904",
+      "hash": "9755242febd2386a9ba9364c7ae8d756c3e5581e96bf46c68fddec369910b1ef",
+      "last_checked": "2026-05-05T07:29:37.889722",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"7e89470e3093c5af55c83b47380a0401\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"dcc8d3661772e6c24c966c47adf55c9f\"",
       "file_path": "documentation/SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/processing-changes-for-sign-in-with-apple-accounts": {
-      "hash": "4c6d10d33cb7f1b2c324ded35c751ac653ad1f3ad7d3aa45c5747544287f771c",
-      "last_checked": "2026-04-28T07:31:08.620603",
+      "hash": "9755242febd2386a9ba9364c7ae8d756c3e5581e96bf46c68fddec369910b1ef",
+      "last_checked": "2026-05-05T07:29:37.889813",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"7e89470e3093c5af55c83b47380a0401\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"dcc8d3661772e6c24c966c47adf55c9f\"",
       "file_path": "documentation/SigninwithApple/processing-changes-for-sign-in-with-apple-accounts.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team.json": {
-      "hash": "7064230edb8a1eca0a754a50c2f1f0b961392510aa5d215641941fd6d51b4650",
-      "last_checked": "2026-05-01T07:43:03.184647",
+      "hash": "e65f78e23eb0d146447fcc02a2b679d7aa7168e34c65145d9e9eab75931785b9",
+      "last_checked": "2026-05-05T07:29:37.977469",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"3b955a2fa310a3566764377a9edcdc75\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"187c65b71afb703aa217868b5e78db5b\"",
       "file_path": "documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team": {
-      "hash": "7064230edb8a1eca0a754a50c2f1f0b961392510aa5d215641941fd6d51b4650",
-      "last_checked": "2026-04-28T07:31:08.659093",
+      "hash": "e65f78e23eb0d146447fcc02a2b679d7aa7168e34c65145d9e9eab75931785b9",
+      "last_checked": "2026-05-05T07:29:37.977539",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"3b955a2fa310a3566764377a9edcdc75\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"187c65b71afb703aa217868b5e78db5b\"",
       "file_path": "documentation/SigninwithApple/transferring-your-apps-and-users-to-another-team.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team.json": {
-      "hash": "2f3505be54be33770de93d368f091b4ce64588933839b6522313127da4865582",
-      "last_checked": "2026-05-01T07:43:03.483526",
+      "hash": "7a05dabec6cb94e53ae8d8f4fc49ff688f420ad73f0b8a8838a854f06daca654",
+      "last_checked": "2026-05-05T07:29:38.063807",
       "status": "unchanged",
-      "session_id": "2026-05-01T07:43:00.766860",
-      "etag": "W/\"bdc840ef655b27ab505af0c4f41dca20\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"4b64bb663fc089442c0e367c76c8311b\"",
       "file_path": "documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team.md"
     },
     "https://developer.apple.com/documentation/signinwithapple/bringing-new-apps-and-users-into-your-team": {
-      "hash": "2f3505be54be33770de93d368f091b4ce64588933839b6522313127da4865582",
-      "last_checked": "2026-04-28T07:31:08.780925",
+      "hash": "7a05dabec6cb94e53ae8d8f4fc49ff688f420ad73f0b8a8838a854f06daca654",
+      "last_checked": "2026-05-05T07:29:38.063913",
       "status": "unchanged",
-      "session_id": "2026-04-28T07:31:07.155816",
-      "etag": "W/\"bdc840ef655b27ab505af0c4f41dca20\"",
+      "session_id": "2026-05-05T07:29:36.568735",
+      "etag": "W/\"4b64bb663fc089442c0e367c76c8311b\"",
       "file_path": "documentation/SigninwithApple/bringing-new-apps-and-users-into-your-team.md"
     }
   }

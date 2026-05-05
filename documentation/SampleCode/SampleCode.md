@@ -1161,7 +1161,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use the Vision framework to isolate and apply colors to people in an image.
 - [Selecting a selfie based on capture quality](../Vision/selecting-a-selfie-based-on-capture-quality.md)
   Compare face-capture quality in a set of images by using Vision.
-- [Structuring Recognized Text on a Document](../visionkit/structuring_recognized_text_on_a_document.md)
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Tracking Multiple Objects or Rectangles in Video](../Vision/tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.

@@ -76,7 +76,7 @@ documentCameraViewController.delegate = self;
 
 ## See Also
 
-- [Structuring Recognized Text on a Document](structuring_recognized_text_on_a_document.md)
+- [Structuring recognized text on a document](structuring-recognized-text-on-a-document.md)
   Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [protocol VNDocumentCameraViewControllerDelegate](vndocumentcameraviewcontrollerdelegate.md)
   A delegate protocol through which the document camera returns its scanned results.
