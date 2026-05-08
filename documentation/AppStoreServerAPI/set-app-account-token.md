@@ -29,7 +29,7 @@ You can assign the same `appAccountToken` value to more than one transaction, ac
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/{originalTransactionId}/appAccountToken`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/transactions/{originalTransactionId}/appAccountToken`
 
 ## Parameters
 

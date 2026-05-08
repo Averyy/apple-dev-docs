@@ -19,7 +19,7 @@ If you manage entitlement logic on your server, your server can call `Finish Tra
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/{transactionId}/finish`
+`POST https://api.storekit-sandbox.apple.com/inApps/v1/transactions/{transactionId}/finish`
 
 ## Parameters
 

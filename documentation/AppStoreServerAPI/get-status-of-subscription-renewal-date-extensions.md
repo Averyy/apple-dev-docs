@@ -21,7 +21,7 @@ This endpoint provides basic status information about a request you initiate whe
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/extend/mass/{productId}/{requestIdentifier}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/subscriptions/extend/mass/{productId}/{requestIdentifier}`
 
 ## Parameters
 

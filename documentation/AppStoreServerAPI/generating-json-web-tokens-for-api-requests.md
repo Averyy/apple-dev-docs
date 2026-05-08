@@ -91,7 +91,7 @@ The following example for the [`App Store Server API`](AppStoreServerAPI.md) sho
 
 ```other
 curl -v -H 'Authorization: Bearer [signed token]' 
-"https://api.storekit.itunes.apple.com/inApps/v1/subscriptions/{transactionId}"
+"https://api.storekit.apple.com/inApps/v1/subscriptions/{transactionId}"
 ```
 
 ## See Also

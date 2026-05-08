@@ -35,7 +35,7 @@ The default distribution identifier is a multi-value list’sprimary identifier.
   Returns an array of all the groups in the Address Book database.
 - [func ABGroupAddGroup(ABGroupRef!, ABGroupRef!) -> Bool](abgroupaddgroup(_:_:).md)
   Adds a subgroup to another group.
-- [func ABGroupAddMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupaddmember(_:_:_:).md)
+- [func ABGroupAddMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupaddmember(_:_:).md)
   Adds a person to a group.
 - [func ABGroupCopyArrayOfAllMembers(ABRecord!) -> Unmanaged<CFArray>!](abgroupcopyarrayofallmembers(_:).md)
   Returns an array of persons in a group.
@@ -51,7 +51,7 @@ The default distribution identifier is a multi-value list’sprimary identifier.
   Creates an ABSearchElement object that specifies a queryfor ABGroup records.
 - [func ABGroupRemoveGroup(ABGroupRef!, ABGroupRef!) -> Bool](abgroupremovegroup(_:_:).md)
   Removes a subgroup from a group.
-- [func ABGroupRemoveMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupremovemember(_:_:_:).md)
+- [func ABGroupRemoveMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupremovemember(_:_:).md)
   Removes a person from a group.
 
 

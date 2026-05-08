@@ -6,12 +6,12 @@
 Creates a VM instance for the current process.
 
 **Availability**:
-- macOS 10.10+
+- macOS 11.0+
 
 ## Declaration
 
 ```swift
-func hv_vm_create(_ flags: hv_vm_options_t) -> hv_return_t
+func hv_vm_create(_ config: hv_vm_config_t?) -> hv_return_t
 ```
 
 #### Return Value
@@ -23,6 +23,10 @@ func hv_vm_create(_ flags: hv_vm_options_t) -> hv_return_t
 Intel-based Mac computers have different parameters:
 
 - **`flags`**: Reserved. Pass [`HV_VM_DEFAULT`](hv_vm_default.md) to this argument.
+
+## Parameters
+
+- `config`: The configuration of the vCPU, which must be `nil`. Apple silicon only.
 
 ## See Also
 

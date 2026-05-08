@@ -24,7 +24,7 @@ To configure URLs again, call [`Configure Realtime URL`](configure-realtime-url.
 
 ## Endpoint
 
-`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/realtime/url`
+`DELETE https://api.storekit-sandbox.apple.com/inApps/v1/messaging/realtime/url`
 
 ## See Also
 

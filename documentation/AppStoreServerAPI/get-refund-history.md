@@ -28,18 +28,18 @@ The App Store Server API returns information based on the customer’s in-app pu
 To get a customer’s full refund history for your app, start by calling the endpoint without any query parameters, as follows:
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v2/refund/lookup/{anyTransactionId}
+GET https://api.storekit.apple.com/inApps/v2/refund/lookup/{anyTransactionId}
 ```
 
 For subsequent requests, include the [`revision`](get-refund-history/revision.md) token from the previous [`RefundHistoryResponse`](refundhistoryresponse.md).
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v2/refund/lookup/{anyTransactionId}?revision={revision}
+GET https://api.storekit.apple.com/inApps/v2/refund/lookup/{anyTransactionId}?revision={revision}
 ```
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v2/refund/lookup/{anyTransactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v2/refund/lookup/{anyTransactionId}`
 
 ## Parameters
 

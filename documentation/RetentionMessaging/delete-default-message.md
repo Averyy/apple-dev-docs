@@ -20,7 +20,7 @@ This endpoint is idempotent. If the product has no configured default message fo
 
 ## Endpoint
 
-`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
+`DELETE https://api.storekit-sandbox.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
 
 ## Parameters
 

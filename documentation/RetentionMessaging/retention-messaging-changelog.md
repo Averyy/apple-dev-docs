@@ -8,6 +8,10 @@ Learn about new features and updates in the Retention Messaging API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Retention Messaging API.
 
+##### Server Update 20260505
+
+Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.
+
 ##### 15 20260427
 
 **New features**

@@ -32,7 +32,7 @@ For more information about this and related endpoints, including subscription el
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/extend/{originalTransactionId}`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/subscriptions/extend/{originalTransactionId}`
 
 ## Parameters
 

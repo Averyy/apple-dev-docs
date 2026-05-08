@@ -21,7 +21,7 @@ Images need to be in an `APPROVED` state before the system can display messages 
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/list`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/image/list`
 
 ## See Also
 

@@ -15,7 +15,7 @@ Creates a new workout step with the provided goal and alerts.
 ## Declaration
 
 ```swift
-init(goal: WorkoutGoal = .open, alert: (WorkoutAlert)? = nil)
+init(goal: WorkoutGoal = .open, alert: (any WorkoutAlert)? = nil)
 ```
 
 ## Parameters

@@ -29,7 +29,7 @@ The App Store Server API returns information based on the customer’s in-app pu
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/refund/lookup/{originalTransactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/refund/lookup/{originalTransactionId}`
 
 ## Parameters
 

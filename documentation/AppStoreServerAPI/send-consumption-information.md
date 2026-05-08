@@ -52,7 +52,7 @@ If your customers request access to or deletion of their personal data related t
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v2/transactions/consumption/{transactionId}`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v2/transactions/consumption/{transactionId}`
 
 ## Parameters
 

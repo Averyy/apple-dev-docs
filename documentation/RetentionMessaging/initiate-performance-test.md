@@ -27,7 +27,7 @@ Your server needs to pass the performance test before you can configure a real-t
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/performanceTest`
+`POST https://api.storekit-sandbox.apple.com/inApps/v1/messaging/performanceTest`
 
 ## Request Body
 

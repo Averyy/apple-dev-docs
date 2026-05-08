@@ -19,7 +19,7 @@ Call this endpoint using the [`testNotificationToken`](get-test-notification-sta
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/notifications/test/{testNotificationToken}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/notifications/test/{testNotificationToken}`
 
 ## Parameters
 

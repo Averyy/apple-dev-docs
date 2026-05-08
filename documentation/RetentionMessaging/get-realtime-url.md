@@ -24,7 +24,7 @@ For more information on configuring your `Get Retention Message` endpoint, see [
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/realtime/url`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/realtime/url`
 
 ## See Also
 

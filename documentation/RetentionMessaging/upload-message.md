@@ -51,7 +51,7 @@ In the sandbox testing environment, the system automatically sets message and im
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
 
 ## Parameters
 

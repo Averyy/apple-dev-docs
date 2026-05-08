@@ -27,7 +27,7 @@ This endpoint is available in the production and sandbox environments. For more 
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/notifications/history`
+`POST https://api.storekit-sandbox.apple.com/inApps/v1/notifications/history`
 
 ## Parameters
 

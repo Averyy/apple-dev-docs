@@ -22,7 +22,7 @@ For information about setting up default messages, see [`Setting up retention me
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
 
 ## Parameters
 

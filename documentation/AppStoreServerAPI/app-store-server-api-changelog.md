@@ -8,6 +8,10 @@ Learn about new features and updates in the App Store Server API.
 
 Use this changelog to learn about feature updates, deprecations, and removals for the App Store Server API.
 
+##### Server Update 20260505
+
+Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit.apple.com`, and `api.storekit-sandbox.itunes.apple.com` to `api.storekit-sandbox.apple.com`. The previous domains will continue to be supported.
+
 ##### 121 20260427
 
 **New features**
@@ -201,7 +205,7 @@ New features
 The API is now available in the production environment, using the following base URL:
 
 ```other
-https://api.storekit.itunes.apple.com/inApps/
+https://api.storekit.apple.com/inApps/
 ```
 
 ##### 10b1 20210607

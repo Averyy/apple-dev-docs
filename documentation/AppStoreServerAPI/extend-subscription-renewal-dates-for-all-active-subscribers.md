@@ -30,7 +30,7 @@ For more information about this endpoint, including subscription eligibility, ge
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/extend/mass`
+`POST https://api.storekit-sandbox.apple.com/inApps/v1/subscriptions/extend/mass`
 
 ## Request Body
 

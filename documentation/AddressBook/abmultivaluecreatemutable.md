@@ -57,4 +57,4 @@ A newly created ABMutableMultiValueobject. You are responsible for releasing thi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abmultivaluecreatemutable())*

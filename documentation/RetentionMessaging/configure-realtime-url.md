@@ -42,7 +42,7 @@ To delete—or deconfigure—your endpoint’s URL entirely, call [`Delete Realt
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/realtime/url`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/messaging/realtime/url`
 
 ## Request Body
 

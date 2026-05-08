@@ -24,7 +24,7 @@ To delete an image associated with a message, call [`Delete Image`](delete-image
 
 ## Endpoint
 
-`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
+`DELETE https://api.storekit-sandbox.apple.com/inApps/v1/messaging/message/{messageIdentifier}`
 
 ## Parameters
 

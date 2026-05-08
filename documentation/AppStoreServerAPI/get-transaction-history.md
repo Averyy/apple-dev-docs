@@ -24,7 +24,7 @@ You can also specify a sort order. The App Store sorts the transactions based on
 The `productId`, `productType`, and `subscriptionGroupIdentifier` query parameters allow you to specify multiple values. To specify more than one value for a query parameter, include it in the request multiple times. For example, to filter the transaction history by non-consumable and auto-renewable product types, include the following within your request:
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v2/history/{anyTransactionId}?productType=NON_CONSUMABLE&productType=AUTO_RENEWABLE
+GET https://api.storekit.apple.com/inApps/v2/history/{anyTransactionId}?productType=NON_CONSUMABLE&productType=AUTO_RENEWABLE
 ```
 
 When you specify multiple values for a single query parameter, the response contains transactions that match any of the values.
@@ -34,18 +34,18 @@ When you specify multiple values for a single query parameter, the response cont
 To request a full transaction history in ascending order for your app, start by calling the endpoint without any query parameters, as follows:
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v2/history/{anyTransactionId}} 
+GET https://api.storekit.apple.com/inApps/v2/history/{anyTransactionId}} 
 ```
 
 For subsequent requests, include the `revision` token from the previous [`HistoryResponse`](historyresponse.md).
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v2/history/{anyTransactionId}?revision={revision}
+GET https://api.storekit.apple.com/inApps/v2/history/{anyTransactionId}?revision={revision}
 ```
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v2/history/{anyTransactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v2/history/{anyTransactionId}`
 
 ## Parameters
 

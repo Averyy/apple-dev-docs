@@ -21,7 +21,7 @@ Call this endpoint to get a list of all uploaded message identifiers and check t
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/message/list`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/message/list`
 
 ## See Also
 

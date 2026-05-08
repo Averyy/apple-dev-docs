@@ -29,6 +29,7 @@ Xcode 26.5 RC includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, 
 
 ###### Resolved Issues
 
+- Fixed: An issue causing malformed data in RunSomeTests MCP tool call  (170415923)
 - Fixed: Users interacting with Claude Code might receive an error message about their OAuth token being expired.  (175464325)
 
 ##### Instruments

@@ -49,7 +49,7 @@ In the sandbox testing environment, the system automatically sets the message an
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
 
 ## Parameters
 

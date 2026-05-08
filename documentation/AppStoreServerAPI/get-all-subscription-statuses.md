@@ -20,12 +20,12 @@ This API returns the status for all of the customer’s subscriptions, organized
 Specify multiple values for the `status` query parameter to get a response that contains subscriptions with statuses that match any of the values. For example, the following request returns subscriptions that are active ([`status`](get-all-subscription-statuses/status.md) value of `1`) and subscriptions that are in the Billing Grace Period ([`status`](get-all-subscription-statuses/status.md) value of `4`):
 
 ```javascript
-GET https://api.storekit.itunes.apple.com/inApps/v1/subscriptions/{anyTransactionId}?status=1&status=4
+GET https://api.storekit.apple.com/inApps/v1/subscriptions/{anyTransactionId}?status=1&status=4
 ```
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/subscriptions/{anyTransactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/subscriptions/{anyTransactionId}`
 
 ## Parameters
 

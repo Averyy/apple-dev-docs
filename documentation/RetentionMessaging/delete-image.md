@@ -22,7 +22,7 @@ This endpoint isn’t idempotent. If the system doesn’t find the image, this e
 
 ## Endpoint
 
-`DELETE https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
+`DELETE https://api.storekit-sandbox.apple.com/inApps/v1/messaging/image/{imageIdentifier}`
 
 ## Parameters
 

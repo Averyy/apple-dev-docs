@@ -23,7 +23,7 @@ This endpoint responds with a `testNotificationToken` in [`SendTestNotificationR
 
 ## Endpoint
 
-`POST https://api.storekit-sandbox.itunes.apple.com/inApps/v1/notifications/test`
+`POST https://api.storekit-sandbox.apple.com/inApps/v1/notifications/test`
 
 ## See Also
 

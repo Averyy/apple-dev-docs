@@ -35,7 +35,7 @@ To present promotional-offer or switch-plan retention messages instead of defaul
 
 ## Endpoint
 
-`PUT https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
+`PUT https://api.storekit-sandbox.apple.com/inApps/v1/messaging/default/{productId}/{locale}`
 
 ## Parameters
 

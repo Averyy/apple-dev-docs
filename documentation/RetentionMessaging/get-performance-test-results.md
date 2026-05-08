@@ -21,7 +21,7 @@ The API returns a JSON object that contains [`PerformanceTestConfig`](performanc
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/messaging/performanceTest/result/{requestId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/messaging/performanceTest/result/{requestId}`
 
 ## Parameters
 

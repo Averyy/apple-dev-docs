@@ -48,13 +48,13 @@ The App Store Server Library is an open source library from Apple, available in 
 All App Store Server API endpoints are available for testing in the sandbox environment, except [`Look Up Order ID`](look-up-order-id.md). Access the sandbox environment by sending requests to the endpoints using the following base URL:
 
 ```other
-https://api.storekit-sandbox.itunes.apple.com/
+https://api.storekit-sandbox.apple.com/
 ```
 
 For example, to call [`Get Transaction History`](get-transaction-history.md) in the sandbox environment, send a request using the sandbox URL:
 
 ```other
-https://api.storekit-sandbox.itunes.apple.com/inApps/v2/history/{anyTransactionId}
+https://api.storekit-sandbox.apple.com/inApps/v2/history/{anyTransactionId}
 ```
 
 Note that `/inApps` in the path is case-sensitive.

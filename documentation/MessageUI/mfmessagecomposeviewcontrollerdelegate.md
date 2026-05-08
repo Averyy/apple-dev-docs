@@ -36,7 +36,7 @@ The [`MFMessageComposeViewControllerDelegate`](mfmessagecomposeviewcontrollerdel
 
 ## See Also
 
-- [var messageComposeDelegate: MFMessageComposeViewControllerDelegate?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
+- [var messageComposeDelegate: (any MFMessageComposeViewControllerDelegate)?](mfmessagecomposeviewcontroller/messagecomposedelegate.md)
   The delegate to which message-related notifications should be sent.
 
 

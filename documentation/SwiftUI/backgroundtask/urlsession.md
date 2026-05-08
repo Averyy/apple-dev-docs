@@ -1,9 +1,9 @@
-# urlSession
+# urlSession(_:)
 
 **Framework**: SwiftUI  
-**Kind**: property
+**Kind**: method
 
-A task that responds to background URL sessions.
+A task that responds to background URL sessions matching the given identifier.
 
 **Availability**:
 - iOS 16.0+
@@ -17,17 +17,25 @@ A task that responds to background URL sessions.
 ## Declaration
 
 ```swift
-static var urlSession: BackgroundTask<String, Void> { get }
+static func urlSession(_ identifier: String) -> BackgroundTask<Void, Void>
 ```
+
+#### Return Value
+
+A background task that you can handle with your app or extension.
+
+## Parameters
+
+- `identifier`: The identifier to match.
 
 ## See Also
 
-- [static func urlSession(String) -> BackgroundTask<Void, Void>](backgroundtask/urlsession(_:).md)
-  A task that responds to background URL sessions matching the given identifier.
+- [static var urlSession: BackgroundTask<String, Void>](backgroundtask/urlsession.md)
+  A task that responds to background URL sessions.
 - [static func urlSession(matching: (String) -> Bool) -> BackgroundTask<String, Void>](backgroundtask/urlsession(matching:).md)
   A task that responds to background URL sessions matching the given predicate.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/backgroundtask/urlsession)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/backgroundtask/urlsession(_:))*

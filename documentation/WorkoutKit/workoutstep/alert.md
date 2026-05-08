@@ -15,7 +15,7 @@ Alerts used during the step.
 ## Declaration
 
 ```swift
-var alert: (WorkoutAlert)?
+var alert: (any WorkoutAlert)?
 ```
 
 ## See Also

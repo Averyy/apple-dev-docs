@@ -19,7 +19,7 @@ Use this endpoint to get transaction information for any transaction identifier,
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/{transactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/transactions/{transactionId}`
 
 ## Parameters
 

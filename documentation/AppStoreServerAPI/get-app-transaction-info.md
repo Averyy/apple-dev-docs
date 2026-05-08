@@ -23,7 +23,7 @@ App transaction information includes details about the app the customer purchase
 
 ## Endpoint
 
-`GET https://api.storekit-sandbox.itunes.apple.com/inApps/v1/transactions/appTransactions/{anyTransactionId}`
+`GET https://api.storekit-sandbox.apple.com/inApps/v1/transactions/appTransactions/{anyTransactionId}`
 
 ## Parameters
 
