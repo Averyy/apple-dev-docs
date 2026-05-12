@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias CMStructVersion = UInt
+typealias CMStructVersion = UInt32
 ```
 
 ## See Also

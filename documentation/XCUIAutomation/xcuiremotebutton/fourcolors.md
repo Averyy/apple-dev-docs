@@ -23,34 +23,34 @@ case fourColors
 
 ## See Also
 
-- [XCUIRemoteButton.up](xcuiremote/button/up.md)
+- [XCUIRemoteButton.up](xcuiremotebutton/up.md)
   A constant that represents the up button on a remote.
-- [XCUIRemoteButton.down](xcuiremote/button/down.md)
+- [XCUIRemoteButton.down](xcuiremotebutton/down.md)
   A constant that represents the down button on a remote.
-- [XCUIRemoteButton.left](xcuiremote/button/left.md)
+- [XCUIRemoteButton.left](xcuiremotebutton/left.md)
   A constant that represents the left button on a remote.
-- [XCUIRemoteButton.right](xcuiremote/button/right.md)
+- [XCUIRemoteButton.right](xcuiremotebutton/right.md)
   A constant that represents the right button on a remote.
-- [XCUIRemoteButton.select](xcuiremote/button/select.md)
+- [XCUIRemoteButton.select](xcuiremotebutton/select.md)
   A constant that represents the select button on a remote.
-- [XCUIRemoteButton.menu](xcuiremote/button/menu.md)
+- [XCUIRemoteButton.menu](xcuiremotebutton/menu.md)
   A constant that represents the menu button on a remote.
-- [XCUIRemoteButton.playPause](xcuiremote/button/playpause.md)
+- [XCUIRemoteButton.playPause](xcuiremotebutton/playpause.md)
   A constant that represents the play-and-pause button on a remote.
-- [XCUIRemoteButton.home](xcuiremote/button/home.md)
+- [XCUIRemoteButton.home](xcuiremotebutton/home.md)
   A constant that represents the home button on a remote.
-- [XCUIRemoteButton.pageUp](xcuiremote/button/pageup.md)
+- [XCUIRemoteButton.pageUp](xcuiremotebutton/pageup.md)
   A constant that represents the page up button on a remote.
-- [XCUIRemoteButton.pageDown](xcuiremote/button/pagedown.md)
+- [XCUIRemoteButton.pageDown](xcuiremotebutton/pagedown.md)
   A constant that represents the page down button on a remote.
-- [XCUIRemoteButton.guide](xcuiremote/button/guide.md)
+- [XCUIRemoteButton.guide](xcuiremotebutton/guide.md)
   A constant that represents the guide button on a remote.
-- [XCUIRemoteButton.oneTwoThree](xcuiremote/button/onetwothree.md)
+- [XCUIRemoteButton.oneTwoThree](xcuiremotebutton/onetwothree.md)
   A constant that represents the channel-tuning button on a remote.
-- [XCUIRemoteButton.tvProvider](xcuiremote/button/tvprovider.md)
+- [XCUIRemoteButton.tvProvider](xcuiremotebutton/tvprovider.md)
   A constant that represents the TV provider button on a remote.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremote/button/fourcolors)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremotebutton/fourcolors)*

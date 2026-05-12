@@ -112,6 +112,8 @@ You can only bind a [`WebPage`](webpage.md) to a single [`WebView`](webview-swif
 
 ## See Also
 
+- [Building a cross-platform web browser](building-a-cross-platform-web-browser.md)
+  Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 - [class WebPage](webpage.md)
   An object that controls and manages the behavior of interactive web content.
 

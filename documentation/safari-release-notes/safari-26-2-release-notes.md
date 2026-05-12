@@ -65,7 +65,6 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Added support for `display-p3-linear` colors in CSS. (159579630)
 - Added support for `text-decoration-line` values `spelling-error` and `grammar-error`. (160494378)
 - Added support for `flip-x` and `flip-y` options in `position-try-fallback` for CSS Anchor Positioning.  (163497870)
-- Added support for allowing positioned boxes in scrollable containing blocks to overflow in the scrollable direction. (163595289)
 
 ###### Resolved Issues
 
@@ -93,7 +92,6 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed handling of `::first-letter` pseudo-elements to always force `inline` display unless floated.(160710650)
 - Fixed the behavior of the nesting selector `&` directly inside `@scope` to correctly act like `:where(:scope)` for proper specificity handling. (160769736)
 - Fixed `position-try-fallback` resolution by treating names as tree-scoped references to properly search shadow DOM host scopes. (161081231)
-- Fixed an issue where a `<select>` element with long `<option>` text caused horizontal scrolling when nested inside a flex item. (161563289)
 - Fixed `getComputedStyle` to return numeric values for `orphans` and `widows` instead of the internal `auto` value, ensuring the computed values correctly reflect the CSS specification. (161566631)
 - Fixed `column-count: 1` so that it now correctly creates a multi-column container per the CSS Multi-column Layout specification. (161611444)
 - Fixed the calculation of anchor positions in `vertical-rl` multi-column layouts by correctly flipping coordinates in fragmented flows. (161616545)
@@ -370,7 +368,6 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 - Fixed missing `pointerenter` and `mouseenter` events when a child element moved under the mouse. (161362257)
 - Fixed an issue where only one CSP violation report was sent for multiple enforced `require-trusted-types-for` directives. (161740298)
 - Fixed Trusted Types incorrectly treating `null` or `undefined` policy return values as `null` instead of empty strings during `createHTML`, `createScript`, and `createScriptURL` operations. (161837641)
-- Fixed `attachShadow()` to default to using the global custom element registry instead of the host’s registry when `customElementRegistry` is `null`. (161949419)
 - Fixed `attachShadow()` to use the global custom element registry by default when `customElementRegistry` is `null`, aligning with the specification. (161949493)
 
 ###### Deprecations
@@ -452,8 +449,8 @@ Safari 26.2 is available for iOS 26.2, iPadOS 26.2, visionOS 26.2, macOS 26.2, m
 
 ## See Also
 
-- [Safari 26.5 Beta Release Notes](safari-26_5-release-notes.md)
-  Released March 30, 2026 — 26.5 beta (20624.2.1)
+- [Safari 26.5 Release Notes](safari-26_5-release-notes.md)
+  Released May 11, 2026 — 26.5 (20624.2.5)
 - [Safari 26.4 Release Notes](safari-26_4-release-notes.md)
   Released March 24, 2026 — 26.4 (20624.1.16)
 - [Safari 26.3 Release Notes](safari-26_3-release-notes.md)

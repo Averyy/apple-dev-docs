@@ -58,6 +58,8 @@ Subclass this class to define the user interface for your content proposal.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
 - [UIFocusEnvironment](../UIKit/UIFocusEnvironment.md)

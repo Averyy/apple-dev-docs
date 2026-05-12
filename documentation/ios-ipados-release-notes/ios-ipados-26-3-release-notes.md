@@ -25,7 +25,7 @@ The iOS & iPadOS 26.2 SDK provides support to develop apps for iPhone and iPad r
 
 ## See Also
 
-- [iOS & iPadOS 26.5 RC Release Notes](ios-ipados-26_5-release-notes.md)
+- [iOS & iPadOS 26.5 Release Notes](ios-ipados-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [iOS & iPadOS 26.4 Release Notes](ios-ipados-26_4-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

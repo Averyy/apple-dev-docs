@@ -1,12 +1,18 @@
-# Safari 26.5 Beta Release Notes
+# Safari 26.5 Release Notes
 
 **Framework**: Safari Release Notes
 
-Released March 30, 2026 — 26.5 beta (20624.2.1)
+Released May 11, 2026 — 26.5 (20624.2.5)
 
 #### Overview
 
-Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5 beta, macOS 26.5 beta, macOS Sequoia, and macOS Sonoma.
+Safari 26.5 is available for iOS 26.5, iPadOS 26.5, visionOS 26.5, macOS 26.5, macOS Sequoia, and macOS Sonoma.
+
+##### Accessibility
+
+###### Resolved Issues
+
+- Fixed an issue where the accessibility tree could permanently be empty if built during early page load when only a scroll area and web area were present. (174244620)
 
 ##### Animations
 
@@ -15,12 +21,15 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed support for the `scroll` animation timeline range name in scroll-driven animations. (171630023)
 - Fixed an issue where scroll-driven animations were not properly paused when `animation-play-state` was dynamically set to `paused`. (171630127)
 - Fixed an issue where view timeline animations near the 0% and 100% thresholds reported incorrect progress values. (171630157)
+- Fixed a regression where animating to an implicit value for individual transform properties failed to animate. (173717819)
+- Fixed an issue where animation timelines could fail to restore correctly after navigating back to a page from the back-forward cache. (174561577)
 
 ##### Css
 
 ###### New Features
 
 - Added support for the `:open` pseudo-class for `<details>`, `<dialog>`, `<select>`, and `<input>` elements. (173253012)
+- Added support for `element-scoped` keyword in `random()`. Updated `random()` caching behavior so that custom property identifiers like `random(--foo)` are matched globally to the document rather than scoped to individual elements, aligning with the updated specification. Removed support for `element-shared`. (174037391)
 
 ###### Resolved Issues
 
@@ -33,6 +42,13 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed an issue where ideographic space did not hang when using `hanging-punctuation: first`. (172669250)
 - Fixed an issue where media queries failed to re-evaluate during viewport resizing when CSS anchor positioning and viewport units were both in use. (172864699)
 - Fixed an issue where chains of three or more anchor-positioned elements didn’t resolve correctly. (173357622)
+- Fixed an issue where `lh` and `rlh` units resolved with double-zoom when `line-height` is a number. (173515568)
+- Fixed an issue where the `rlh` unit was double-zoomed when resolving with evaluation-time zoom for unzoomed properties. (173518838)
+- Fixed an issue where `anchor()` fallback values did not accept unitless zero. (173554237)
+- Fixed an issue where an element with `display: contents` did not establish an anchor scope when using `anchor-scope`. (173718365)
+- Fixed an issue where fixed-position boxes anchored to children of sticky-positioned boxes did not stick correctly. (173722628)
+- Fixed an issue where `aspect-ratio` was not honored correctly when the page was zoomed in. (174498486)
+- Fixed an issue where `:has(:empty)` was not invalidated when the content of a child element changed from empty to non-empty. (174501418)
 
 ##### Editing
 
@@ -47,6 +63,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 ###### Resolved Issues
 
 - Fixed an issue where a `readonly` date `<input>` could still be edited via keyboard using the date picker. (171535893)
+- Fixed an issue on iOS and iPadOS where `datalist` suggestions were presented directly over the associated input, obscuring it. (174264299)
 
 ##### Html
 
@@ -54,6 +71,12 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 
 - Fixed `dragenter` and `dragleave` events to include `relatedTarget` in the event object. (172048448)
 - Fixed an issue on iOS where the drag thumbnail could show an incorrect image after long-pressing an image with an embedded link. (172293971)
+
+##### Images
+
+###### Resolved Issues
+
+- Fixed a regression where images with `srcset` and `sizes` attributes containing `calc()` expressions with division by zero were not displayed. (173954748)
 
 ##### Javascript
 
@@ -67,6 +90,13 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 
 - Fixed an issue where the media controls volume button was mispositioned and overlapped with other controls in right-to-left locales. (171182590)
 - Fixed an issue where `MediaCapabilities.decodingInfo()` always returned `false` for `spatialRendering`. (172689752)
+
+##### Networking
+
+###### Resolved Issues
+
+- Fixed an issue where downloaded files used the file extension from the URL path instead of the HTTP `Content-Type` header. (173705083)
+- Fixed an issue where downloaded files were saved with incorrect or missing file extensions when the URL path extension did not match the HTTP `Content-Type` header. (173945210)
 
 ##### Rendering
 
@@ -95,6 +125,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed event name mapping for `onbegin`, `onend`, and `onrepeat` on `SVGAnimationElement` and added the missing `onend` event handler. (172581017)
 - Fixed an issue where an SVG `<image>` element was not repainted when its `href` attribute was removed. (172875166)
 - Fixed an issue where UI events such as wheel failed to fire for inner SVG elements. (173009454)
+- Fixed an issue where SVG cursors set via `cursor: url()` appeared blurry on high DPI displays. (173950927)
 
 ##### Scrolling
 
@@ -119,6 +150,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 ###### Resolved Issues
 
 - Fixed an issue where `DecompressionStream` discarded valid decompressed output when extra trailing bytes were present after the compressed stream, instead of enqueuing the output before throwing. (171020155)
+- Fixed an issue where calling preventDefault() on pointerdown events did not prevent page scrolling when only passive touch event listeners are installed. (173988278)
 
 ##### Web Extensions
 
@@ -141,6 +173,7 @@ Safari 26.5 beta is available for iOS 26.5 beta, iPadOS 26.5 beta, visionOS 26.5
 - Fixed `RTCRtpSynchronizationSource.timestamp` to use the correct time base. (172689387)
 - Fixed an issue where remote audio and video track IDs were incorrectly derived from SDP. (172689452)
 - Fixed `RTCRtpTransceiver.setCodecPreferences()` to accept codecs with case-insensitive `mimeType` matching. (172689477)
+- Fixed an issue where the camera did not turn on automatically in Google Meet when media permissions were set to “Allow”. (174023905)
 
 ## See Also
 

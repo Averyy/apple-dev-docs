@@ -17,6 +17,8 @@ Connect [`WebView`](webview-swift.struct.md) to a [`WebPage`](webpage.md) to int
 ## Topics
 
 ### Essentials
+- [Building a cross-platform web browser](building-a-cross-platform-web-browser.md)
+  Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 - [struct WebView](webview-swift.struct.md)
   A view that displays some web content.
 - [class WebPage](webpage.md)

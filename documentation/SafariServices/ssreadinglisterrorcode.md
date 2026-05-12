@@ -46,4 +46,4 @@ enum SSReadingListErrorCode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterror/code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterrorcode)*

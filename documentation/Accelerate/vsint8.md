@@ -17,7 +17,7 @@ A 128-bit vector packed with `signed char` values.
 ## Declaration
 
 ```swift
-typealias vSInt8 = SIMD16<CChar>
+typealias vSInt8 = SIMD16<Int8>
 ```
 
 ## See Also

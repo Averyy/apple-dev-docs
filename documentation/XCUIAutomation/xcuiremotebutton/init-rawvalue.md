@@ -22,4 +22,4 @@ init?(rawValue: UInt)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremote/button/init(rawvalue:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremotebutton/init(rawvalue:))*

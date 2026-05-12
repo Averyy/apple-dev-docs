@@ -224,6 +224,8 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
 
 ## See Also
 
+- [Building a cross-platform web browser](building-a-cross-platform-web-browser.md)
+  Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 - [struct WebView](webview-swift.struct.md)
   A view that displays some web content.
 

@@ -1,4 +1,4 @@
-# Xcode 26.5 RC Release Notes
+# Xcode 26.5 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.5 RC includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 RC supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 RC requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 requires a Mac running macOS Tahoe 26.2 or later.
 
 ##### General
 
@@ -62,6 +62,45 @@ Xcode 26.5 RC includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, 
 ###### New Features
 
 - New billing plan APIs can be tested using [`StoreKit Testing in Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode). Configure a monthly with 12-month commitment billing plan for your auto-renewable subscriptions in the StoreKit Configuration, and simulate subscribing to the billing plan through the Transaction Manager in Xcode.  (168522699)
+
+##### Swift
+
+###### Known Issues
+
+- When a closure with explicit captures is passed as an argument to a `nonisolated(nonsending)` parameter or converted to a `nonisolated(nonsending)` type, its isolation was inferred from the parent context instead of being directly set to `nonisolated(nonsending)`. The difference in isolation wasn’t observable by callers until Swift 6.3.2, which introduced a bug fix for an actor hop optimization that previously didn’t work when a `nonisolated(nonsending)` function value came from a parameter position. In particular, this affects projects that have enabled the `NonisolatedNonsendingByDefault` feature (via `ApproachableConcurrency` or directly). For example: ```swift
+ @MainActor
+ func compute(_ fn: nonisolated(nonsending) @Sendable () async -> Void) async {
+   await fn()
+ }
+ 
+ func performComputation() async {
+   let x: Int = 42
+   await compute { [x] in // closure isolation is inferred to be @concurrent
+     print(x)
+   }
+ }
+``` In this example, the Swift compiler would no longer hop back to `@MainActor` after `await fn()` returns because `fn` is `nonisolated(nonsending)` and should have executed on `@MainActor` already, but because the closure isolation was incorrectly inferred to be `@concurrent`, any *synchronous* calls that follow `fn` one are going to be executed in a `@concurrent` isolation context instead of the `@MainActor` one.  (176582055) **Workaround:** There are multiple ways to work around this issue. ```None
+  1. Remove explicit captures when values could be captured implicitly.
+
+  The example from Description becomes:	
+``` ```swift
+ func performComputation() async {
+   let x: Int = ...
+   await compute {
+     print(x)
+   }
+ }
+``` 1. Convert a closure into a local function that is explicitly `nonisolated(nonsending)`: The example from Description becomes: ```swift
+ func performComputation() async {
+   let x: Int = ...
+ 
+   @Sendable nonisolated(nonsending) func performAction() async {
+     print(x)
+   }
+ 
+   await compute(performAction)
+ }
+```
 
 ##### Testing
 

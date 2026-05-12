@@ -54,4 +54,4 @@ enum SFErrorCode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sferror/code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sferrorcode)*
