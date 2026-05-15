@@ -1,4 +1,4 @@
-# Create a leaderboard set release
+# Create a Leaderboard Set Release
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,9 +14,9 @@ Add a new leaderboard set release.
 
 ## See Also
 
-- [Read leaderboard set release information](get-v1-gamecenterleaderboardsetreleases-_id_.md)
+- [Read Leaderboard Set Release Information](get-v1-gamecenterleaderboardsetreleases-_id_.md)
   Get information about a leaderboard set release.
-- [Delete a leaderboard set release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
+- [Delete a Leaderboard Set Release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
   Delete a new leaderboard set release.
 
 

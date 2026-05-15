@@ -7,36 +7,36 @@ Manage localizations for your achievements.
 ## Topics
 
 ### Reading achievements localizations
-- [Read Game Center achievement localization information](get-v2-gamecenterachievementlocalizations-_id_.md)
+- [Read Game Center Achievement Localization Information](get-v2-gamecenterachievementlocalizations-_id_.md)
   Get information about a specific Game Center achievement localization.
-- [List all images for a Game Center achievement localization](get-v2-gamecenterachievementlocalizations-_id_-image.md)
+- [List All Images for a Game Center Achievement Localization](get-v2-gamecenterachievementlocalizations-_id_-image.md)
   Get a list of images for a specific Game Center achievement localization.
-- [Get all image IDs for a Game Center achievement localization](get-v2-gamecenterachievementlocalizations-_id_-relationships-image.md)
+- [Get All Image IDs for a Game Center Achievement Localization](get-v2-gamecenterachievementlocalizations-_id_-relationships-image.md)
   Get a list of image resource IDs for a specific Game Center achievement localization.
-- [List all localizations for an achievement](get-v1-gamecenterachievements-_id_-localizations.md)
+- [List All Localizations for an Achievement](get-v1-gamecenterachievements-_id_-localizations.md)
   Read information about the release for specific achievement.
 - [GET /v1/gameCenterAchievements/{id}/relationships/localizations](get-v1-gamecenterachievements-_id_-relationships-localizations.md)
-- [Read achievement localization information](get-v1-gamecenterachievementlocalizations-_id_.md)
+- [Read Achievement Localization Information](get-v1-gamecenterachievementlocalizations-_id_.md)
   Read localized information for a specific locale for a specific achievement.
-- [Read the achievement localization information](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
+- [Read the Achievement Localization Information](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
   Read the achievement associated with specific localized information.
-- [Read the achievement ID for a  localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
+- [Read the Achievement ID for a Localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
   Read the achievement ID associated with specific localized information.
-- [Read the image for a specific achievement localization](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
+- [Read the Image for a Specific Achievement Localization](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
   Read the achievement image associated with specific localized information.
 - [GET /v1/gameCenterAchievementLocalizations/{id}/relationships/gameCenterAchievementImage](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
 ### Creating, modifying, and deleting achievements localizations
-- [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)
+- [Create a Game Center Achievement Localization](post-v2-gamecenterachievementlocalizations.md)
   Create a Game Center achievement localization.
-- [Modify a Game Center achievement localization](patch-v2-gamecenterachievementlocalizations-_id_.md)
+- [Modify a Game Center Achievement Localization](patch-v2-gamecenterachievementlocalizations-_id_.md)
   Update a specific Game Center achievement localization.
-- [Delete a Game Center achievement localization](delete-v2-gamecenterachievementlocalizations-_id_.md)
+- [Delete a Game Center Achievement Localization](delete-v2-gamecenterachievementlocalizations-_id_.md)
   Delete a specific Game Center achievement localization.
-- [Create an achievement localization](post-v1-gamecenterachievementlocalizations.md)
+- [Create an Achievement Localization](post-v1-gamecenterachievementlocalizations.md)
   Add Game Center achievement localized information for a new locale.
-- [Edit an achievement localization](patch-v1-gamecenterachievementlocalizations-_id_.md)
+- [Edit an Achievement Localization](patch-v1-gamecenterachievementlocalizations-_id_.md)
   Modify localized Game Center achievement information for a particular language.
-- [Delete an achievement localization](delete-v1-gamecenterachievementlocalizations-_id_.md)
+- [Delete an Achievement Localization](delete-v1-gamecenterachievementlocalizations-_id_.md)
   Delete localization metadata that’s associated with an achievement.
 ### Objects
 - [object GameCenterAchievementLocalizationV2](gamecenterachievementlocalizationv2.md)

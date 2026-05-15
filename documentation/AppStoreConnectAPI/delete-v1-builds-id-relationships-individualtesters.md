@@ -1,4 +1,4 @@
-# Remove Individual Testers from a Build
+# Remove Individual Testers From a Build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

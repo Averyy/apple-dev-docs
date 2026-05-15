@@ -1,4 +1,4 @@
-# Get classic match requests
+# Get Classic Match Requests
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,7 +22,7 @@ Get match requests that don’t use matchmaking rules.
 
 ## See Also
 
-- [Get rule-based match requests](get-v1-gamecenterdetails-_id_-metrics-rulebasedmatchmakingrequests.md)
+- [Get Rule-Based Match Requests](get-v1-gamecenterdetails-_id_-metrics-rulebasedmatchmakingrequests.md)
   Get match requests that use matchmaking rules.
 
 

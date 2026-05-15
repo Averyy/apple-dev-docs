@@ -1,4 +1,4 @@
-# Read the segments for a report
+# Read the Segments for a Report
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -66,17 +66,17 @@ https://api.appstoreconnect.apple.com/v1/analyticsReportInstances/d4a141c8-7647-
 
 ## See Also
 
-- [Read report information](get-v1-analyticsreports-_id_.md)
+- [Read Report Information](get-v1-analyticsreports-_id_.md)
   Get details for a specific analytics report.
-- [Read a list of instances of a report](get-v1-analyticsreports-_id_-instances.md)
+- [Read a List of Instances of a Report](get-v1-analyticsreports-_id_-instances.md)
   Read list of all the granularity options for a specific type of analytics report.
-- [Read report instance information](get-v1-analyticsreportinstances-_id_.md)
+- [Read Report Instance Information](get-v1-analyticsreportinstances-_id_.md)
   Get details for a specific instance of an analytics report.
-- [Read segment IDs for a report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
+- [Read Segment IDs for a Report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
   Get Ids for a specific analytics report segment.
-- [Read the details for a report segment](get-v1-analyticsreportsegments-_id_.md)
+- [Read the Details for a Report Segment](get-v1-analyticsreportsegments-_id_.md)
   Get details and download information for a specific analytics report segment.
-- [Read a list of a report instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
+- [Read a List of a Report Instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
   Read list of all the instance IDs for a specific type of analytics report.
 
 

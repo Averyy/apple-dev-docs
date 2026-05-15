@@ -12,7 +12,7 @@ Get information about the grace period and modify the opt-in value.
 - [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
 - [Read the Billing Grace Period Value](get-v1-subscriptiongraceperiods-_id_.md)
   Get the Boolean value that represents the billing grace period opt-in state and the duration of the billing grace period.
-- [Modify the Billing Grace Period Opt-in Status and Duration](patch-v1-subscriptiongraceperiods-_id_.md)
+- [Modify the Billing Grace Period Opt-In Status and Duration](patch-v1-subscriptiongraceperiods-_id_.md)
   Change the Boolean value representing the billing grace period opt-in status.
 ### Object
 - [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)

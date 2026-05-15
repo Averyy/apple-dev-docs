@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCustomCodesLinkagesResponse
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCodesLinkagesResponse.Data](inapppurchaseoffercodecustomcodeslinkagesresponse/data-data.dictionary.md)
   The data element of the request body.
 

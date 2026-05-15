@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Read report requests](get-v1-apps-_id_-analyticsreportrequests.md)
+- [Read Report Requests](get-v1-apps-_id_-analyticsreportrequests.md)
   Read analytics report requests for a specific app.
 
 

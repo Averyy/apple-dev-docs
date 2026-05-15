@@ -7,15 +7,15 @@ Create, modify, and delete promotion images for your in-app purchases.
 ## Topics
 
 ### Endpoints
-- [Create an image for an in-app purchase](post-v1-inapppurchaseimages.md)
+- [Create an Image for an In-App Purchase](post-v1-inapppurchaseimages.md)
   Reserve an image asset to appear in the App Store, representing an in-app purchase.
-- [Read in-app purchase image information](get-v1-inapppurchaseimages-_id_.md)
+- [Read In-App Purchase Image Information](get-v1-inapppurchaseimages-_id_.md)
   Read details about a specific in-app purchase image.
-- [List in-app purchase images](get-v2-inapppurchases-_id_-images.md)
+- [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
   List all images for a specific in-app purchase.
-- [Read in-app purchase image information](patch-v1-inapppurchaseimages-_id_.md)
+- [Read In-App Purchase Image Information](patch-v1-inapppurchaseimages-_id_.md)
   Read details about a specific in-app purchase image.
-- [Delete an in-app purchase image](delete-v1-inapppurchaseimages-_id_.md)
+- [Delete an In-App Purchase Image](delete-v1-inapppurchaseimages-_id_.md)
   Delete the image asset that appears on the App Store listing that represents an in-app purchase.
 ### Objects
 - [object InAppPurchaseImage](inapppurchaseimage.md)

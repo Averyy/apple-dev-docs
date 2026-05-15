@@ -20,7 +20,7 @@ Create, modify, and delete in-app purchases for your app.
 - [List All Price Points for an In-App Purchase](get-v2-inapppurchases-_id_-pricepoints.md)
   Get a list of possible price points for an in-app purchase.
 - [GET /v2/inAppPurchases/{id}/relationships/pricePoints](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
-- [List all in-app purchase price point equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
+- [List All In-App Purchase Price Point Equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
   Get a list of in-app purchase price points and their equivalent in a specified currency.
 - [GET /v1/inAppPurchasePricePoints/{id}/relationships/equalizations](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
 - [Read Promoted Purchase Information for an In-App Purchase](get-v2-inapppurchases-_id_-promotedpurchase.md)
@@ -45,7 +45,7 @@ Create, modify, and delete in-app purchases for your app.
 - [Read Information About the Availability of an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaseavailability.md)
   Get information about the territory availablity for an in-app purchase.
 - [GET /v2/inAppPurchases/{id}/relationships/inAppPurchaseAvailability](get-v2-inapppurchases-_id_-relationships-inapppurchaseavailability.md)
-- [List in-app purchase images](get-v2-inapppurchases-_id_-images.md)
+- [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
   List all images for a specific in-app purchase.
 - [GET /v2/inAppPurchases/{id}/relationships/images](get-v2-inapppurchases-_id_-relationships-images.md)
 - [GET /v2/inAppPurchases/{id}/offerCodes](get-v2-inapppurchases-_id_-offercodes.md)

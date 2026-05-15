@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
   Get the age rating declaration for the app info.
 - [Modify an Age Rating Declaration](patch-v1-ageratingdeclarations-_id_.md)
   Provide age-related information so the App Store can determine the age rating for your app.

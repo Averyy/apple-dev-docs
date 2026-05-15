@@ -31,7 +31,7 @@ Get a list of resource IDs representing introductory offers for an auto-renewabl
 - [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
 - [List All Introductory Offers for a Subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
-- [Delete an Introductory Offer from a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an Introductory Offer From a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.

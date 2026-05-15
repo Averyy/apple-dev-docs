@@ -24,7 +24,7 @@ object GameCenterMatchmakingTestRequestInlineCreate
 
 ## Properties
 
-- `attributes` (GameCenterMatchmakingTestRequestInlineCreate.Attributes) *(required)*: The object attributes.
+- `attributes` (GameCenterMatchmakingTestRequestInlineCreate.Attributes): The object attributes.
 - `id` (string): A unique identifier for the match request.
 - `relationships` (GameCenterMatchmakingTestRequestInlineCreate.Relationships): The object relationships.
 - `type` (string) *(required)*: The type of resource object.

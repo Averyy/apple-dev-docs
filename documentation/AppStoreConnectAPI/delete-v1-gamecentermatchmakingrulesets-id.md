@@ -1,4 +1,4 @@
-# Delete a rule set
+# Delete a Rule Set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Delete a rule set along with its matchmaking rules and teams.
 
 ## See Also
 
-- [Create a rule set](post-v1-gamecentermatchmakingrulesets.md)
+- [Create a Rule Set](post-v1-gamecentermatchmakingrulesets.md)
   Create a rule set to contain matchmaking rules and teams.
-- [Modify a rule set](patch-v1-gamecentermatchmakingrulesets-_id_.md)
+- [Modify a Rule Set](patch-v1-gamecentermatchmakingrulesets-_id_.md)
   Update the attributes of a rule set.
 
 

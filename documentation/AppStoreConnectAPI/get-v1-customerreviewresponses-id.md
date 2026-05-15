@@ -16,6 +16,7 @@ Get information about a specific response you wrote to a customer review, includ
 
 - `fields[customerReviewResponses]` ([string]): Fields to return for the included related types.
 - `include` ([string]): Relationship data to include in the response.
+- `fields[customerReviews]` ([string])
 
 ## See Also
 

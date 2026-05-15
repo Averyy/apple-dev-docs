@@ -35,7 +35,7 @@ Get information about review screenshot for a specific auto-renewable subscripti
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
-- [Delete an Introductory Offer from a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an Introductory Offer From a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.

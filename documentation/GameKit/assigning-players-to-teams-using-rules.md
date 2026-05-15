@@ -12,17 +12,17 @@ Game Center applies the team rules to match requests in the queue after applying
 
 Before you begin adding team rules:
 
-- Create a rule set to contain the team rules using the [`Create a rule set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint.
-- Add compatibility and distance rules that filter the match requests using the [`Create a rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
+- Create a rule set to contain the team rules using the [`Create a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint.
+- Add compatibility and distance rules that filter the match requests using the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
 - Add match rules, such as skill-level rules, that apply to compatible requests.
 
 For more information on creating the other types of rules, see [`Letting players join matches using party codes`](letting-players-join-matches-using-party-codes.md) and [`Finding players with similar skill levels`](finding-players-with-similar-skill-levels.md).
 
 ##### Add Teams to the Rule Set
 
-Create two or more teams to compete in your game using the [`Create a team`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingTeams) endpoint.
+Create two or more teams to compete in your game using the [`Create a Team`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingTeams) endpoint.
 
-In the attributes property, pass the minimum and maximum players, and a name of the team. In the relationships property, pass the rule set `id` that the [`Create a rule set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint returns in the response.
+In the attributes property, pass the minimum and maximum players, and a name of the team. In the relationships property, pass the rule set `id` that the [`Create a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint returns in the response.
 
 ```json
 POST /v1/gameCenterMatchmakingTeams
@@ -82,7 +82,7 @@ Write an expression that returns [`true`](https://developer.apple.com/documentat
 length(teams[?name == 'red'].players[]) == length(teams[?name == 'blue'].players[])
 ```
 
-Pass the rule type, the expression, and the rule set, along with other settings, to the [`Create a rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
+Pass the rule type, the expression, and the rule set, along with other settings, to the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRules
@@ -148,7 +148,7 @@ func matchmakerViewController(_ viewController: GKMatchmakerViewController,
 }
 ```
 
-Before your implementation of this delegate method starts the game, you can get all the team assignments from the [`GKMatch`](gkmatch.md) object. Use the [`players`](gkmatch/players.md) property to get the players that accepted the invitation, including the player that initiated the match. Then use the `GKMatch.``playersProperties` to get the game-specific properties for each player, such as the `skill` property, including the team assignment. If you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team that you previously configured using the [`Create a team`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingTeams) endpoint.
+Before your implementation of this delegate method starts the game, you can get all the team assignments from the [`GKMatch`](gkmatch.md) object. Use the [`players`](gkmatch/players.md) property to get the players that accepted the invitation, including the player that initiated the match. Then use the `GKMatch.``playersProperties` to get the game-specific properties for each player, such as the `skill` property, including the team assignment. If you add team rules to your rule set, use the `gc` and `team` keys to get the name of the player’s team that you previously configured using the [`Create a Team`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingTeams) endpoint.
 
 ```swift
 // Get the local player's team assignment.

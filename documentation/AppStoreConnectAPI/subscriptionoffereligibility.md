@@ -12,11 +12,6 @@
 string SubscriptionOfferEligibility
 ```
 
-#### Possible Values
-
-- **`STACK_WITH_INTRO_OFFERS`**: A subscription offer than can be combined with an introductory offer.
-- **`REPLACE_INTRO_OFFERS`**: A subscription offer than repalces an introductory offer.
-
 ## See Also
 
 - [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)

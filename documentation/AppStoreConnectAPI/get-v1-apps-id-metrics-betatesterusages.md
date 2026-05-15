@@ -1,4 +1,4 @@
-# Read beta tester metrics for an app
+# Read Beta Tester Metrics for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

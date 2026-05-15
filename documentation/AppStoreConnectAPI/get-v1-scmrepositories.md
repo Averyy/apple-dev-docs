@@ -14,6 +14,8 @@ List all Git repositories Xcode Cloud can access.
 
 ## Parameters
 
+- `fields[scmGitReferences]` ([string]): Additional fields to include for each Repositories resource returned by the response.
+- `fields[scmProviders]` ([string])
 - `fields[scmRepositories]` ([string]): Additional fields to include for each Repositories resource returned by the response.
 - `filter[id]` ([string]): Filter the returned repositories using the ID of the Repositories resource.
 - `include` ([string]): The relationship data to include in the response.

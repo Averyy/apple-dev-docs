@@ -7,11 +7,11 @@ Manage a leaderboard set releases.
 ## Topics
 
 ### Managing leaderboard set releases
-- [Read leaderboard set release information](get-v1-gamecenterleaderboardsetreleases-_id_.md)
+- [Read Leaderboard Set Release Information](get-v1-gamecenterleaderboardsetreleases-_id_.md)
   Get information about a leaderboard set release.
-- [Create a leaderboard set release](post-v1-gamecenterleaderboardsetreleases.md)
+- [Create a Leaderboard Set Release](post-v1-gamecenterleaderboardsetreleases.md)
   Add a new leaderboard set release.
-- [Delete a leaderboard set release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
+- [Delete a Leaderboard Set Release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
   Delete a new leaderboard set release.
 ### Objects
 - [object GameCenterLeaderboardSetRelease](gamecenterleaderboardsetrelease.md)

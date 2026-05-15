@@ -1,4 +1,4 @@
-# Read information for an uploaded asset pack
+# Read Information for an Uploaded Asset Pack
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Get details about an uploaded asset pack for Apple hosted background asset.
 
 ## See Also
 
-- [Create a reservation for an asset pack upload](post-v1-backgroundassetuploadfiles.md)
+- [Create a Reservation for an Asset Pack Upload](post-v1-backgroundassetuploadfiles.md)
   Begin the process of uploading an asset pack for Apple-hosted background assets.
-- [Commit an uploaded asset pack to a background asset version](patch-v1-backgroundassetuploadfiles-_id_.md)
+- [Commit an Uploaded Asset Pack to a Background Asset Version](patch-v1-backgroundassetuploadfiles-_id_.md)
   Associate an uploaded asset pack with a background asset version to finish the upload process.
 
 

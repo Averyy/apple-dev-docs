@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)
+- [Read the State of Game Center for an App](get-v1-apps-_id_-gamecenterdetail.md)
   Get Game Center detail information for an app.
 - [GET /v1/apps/{id}/relationships/gameCenterDetail](get-v1-apps-_id_-relationships-gamecenterdetail.md)
 

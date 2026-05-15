@@ -18,7 +18,7 @@ Delete a specific screenshot from an in-app event.
 
 ## See Also
 
-- [List the images for an in-app event](get-v1-appeventscreenshots-_id_.md)
+- [List the Images for an In-App Event](get-v1-appeventscreenshots-_id_.md)
 - [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)
 - [POST /v1/appEventScreenshots](post-v1-appeventscreenshots.md)
 

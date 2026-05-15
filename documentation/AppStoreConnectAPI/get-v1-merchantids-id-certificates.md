@@ -1,4 +1,4 @@
-# List certificates for a merchant ID
+# List Certificates for a Merchant ID
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -28,16 +28,16 @@ Get a list of all certificates for a specific merchant ID.
 
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
   Create and update certificates so your app uses Apple Pay and Wallet.
-- [List merchant IDs](get-v1-merchantids.md)
+- [List Merchant IDs](get-v1-merchantids.md)
   List all merchant Ids for your team.
-- [Read details for a merchant ID](get-v1-merchantids-_id_.md)
+- [Read Details for a Merchant ID](get-v1-merchantids-_id_.md)
   Get information for a merchant ID.
 - [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
-- [Modify merchant IDs](patch-v1-merchantids-_id_.md)
+- [Modify Merchant IDs](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
-- [Create a merchant ID](post-v1-merchantids.md)
+- [Create a Merchant ID](post-v1-merchantids.md)
   Add a new merchant ID to your team.
-- [Delete a merchant ID](delete-v1-merchantids-_id_.md)
+- [Delete a Merchant ID](delete-v1-merchantids-_id_.md)
   Delete a specific merchant ID.
 
 

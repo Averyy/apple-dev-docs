@@ -1,4 +1,4 @@
-# Read in-app event information
+# Read In-App Event Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

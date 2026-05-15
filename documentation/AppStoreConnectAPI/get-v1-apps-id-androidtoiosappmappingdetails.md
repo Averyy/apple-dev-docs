@@ -1,4 +1,4 @@
-# Read the Android to iOS app mapping details for an app
+# Read the Android to iOS App Mapping Details for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,7 +19,7 @@ Get details about the Android to iOS app mapping for a specific app.
 
 ## See Also
 
-- [List the IDs of Android to iOS app mapping details for an app](get-v1-apps-_id_-relationships-androidtoiosappmappingdetails.md)
+- [List the IDs of Android to iOS App Mapping Details for an App](get-v1-apps-_id_-relationships-androidtoiosappmappingdetails.md)
   Get the IDs of Android to iOS app mapping details for a specific app.
 
 

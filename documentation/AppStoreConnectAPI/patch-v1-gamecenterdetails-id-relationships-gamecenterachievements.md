@@ -1,4 +1,4 @@
-# Modify associated achievements
+# Modify Associated Achievements
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,20 +14,20 @@ Modify the achievements for a Game Center detail.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md) response.
 
 ## See Also
 
-- [List all Game Center achievements for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterachievementsv2.md)
+- [List All Game Center Achievements for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterachievementsv2.md)
   Get a list of achievements for a specific Game Center detail.
-- [Get all achievement IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
+- [Get All Achievement IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
   Get a list of achievement resource IDs for a specific Game Center detail.
-- [List all achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
+- [List All Achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
   List all achievement information for a Game Center detail.
-- [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
-- [List achievements](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
+- [List Achievements](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
   List the achievements for a Game Center detail.
 
 

@@ -1,4 +1,4 @@
-# Read version information for an alternative distribution package
+# Read Version Information for an Alternative Distribution Package
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -87,11 +87,11 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/e651dbc
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
   Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
-- [Read alternative distribution package information](get-v1-alternativedistributionpackages-_id_.md)
+- [Read Alternative Distribution Package Information](get-v1-alternativedistributionpackages-_id_.md)
   Get information about a specific alternative distribution package.
-- [Create an alternative distribution package](post-v1-alternativedistributionpackages.md)
-  Create an alternative distribution package for an app store version.
-- [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Create an Alternative Distribution Package](post-v1-alternativedistributionpackages.md)
+  Create an alternative distribution package for an App Store version.
+- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
 
 

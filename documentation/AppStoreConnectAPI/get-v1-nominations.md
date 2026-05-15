@@ -1,4 +1,4 @@
-# List nominations
+# List Nominations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,8 +14,11 @@ Get all featuring nominations.
 
 ## Parameters
 
-- `exists[inAppEvents]` (boolean)
+- `fields[actors]` ([string])
+- `fields[appEvents]` ([string])
+- `fields[apps]` ([string])
 - `fields[nominations]` ([string])
+- `fields[territories]` ([string])
 - `filter[hasInAppEvents]` ([string])
 - `filter[relatedApps]` ([string])
 - `filter[state]` ([string]) *(required)*
@@ -29,13 +32,13 @@ Get all featuring nominations.
 
 ## See Also
 
-- [Create a featuring nomination](post-v1-nominations.md)
+- [Create a Featuring Nomination](post-v1-nominations.md)
   Tell Apple about your upcoming app or feature.
-- [Read details for a nomination](get-v1-nominations-_id_.md)
+- [Read Details for a Nomination](get-v1-nominations-_id_.md)
   Get information for a specific featuring nomination.
-- [Modify a nomination](patch-v1-nominations-_id_.md)
+- [Modify a Nomination](patch-v1-nominations-_id_.md)
   Update a specific featuring nomination.
-- [Delete a featuring nomination](delete-v1-nominations-_id_.md)
+- [Delete a Featuring Nomination](delete-v1-nominations-_id_.md)
   Remove a specific featuring nomination.
 
 

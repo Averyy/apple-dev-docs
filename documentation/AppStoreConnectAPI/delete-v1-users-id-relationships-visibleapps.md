@@ -1,4 +1,4 @@
-# Remove Visible Apps from a User
+# Remove Visible Apps From a User
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

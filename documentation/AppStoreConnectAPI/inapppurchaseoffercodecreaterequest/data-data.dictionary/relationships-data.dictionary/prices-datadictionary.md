@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCreateRequest.Data.Relationships.Prices.Data](inapppurchaseoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

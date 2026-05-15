@@ -12,7 +12,7 @@ Apple builds an index of alternative marketplace apps in order to integrate them
 
 The application catalog-crawling mechanism is based on two standard industry practices: [`sitemaps`](https://developer.apple.comhttps://sitemaps.org) and semantic, [`structured data schemas`](https://developer.apple.comhttps://schema.org).
 
-App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a marketplace search detail URL`](post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
+App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a Marketplace Search Detail Url`](post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
 
 Here’s an example catalog with two applications – an app called Backyard Birds, and another called Camping App:
 
@@ -34,7 +34,7 @@ The following items are required for the alternative marketplace:
 
 > **Note**:  Apple infers the hostname from the root sitemap URL you configure by using `POST-v1-marketplaceDomains`.
 
-The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail URL`](post-v1-marketplacesearchdetails.md).
+The marketplace submits the sitemap URL to App Store Connect with [`Add a Marketplace Search Detail Url`](post-v1-marketplacesearchdetails.md).
 
 The sitemap is the root file where Applebot start its crawl and then it proceeds to the application URLs.
 
@@ -258,14 +258,14 @@ For this example, the user searches for outdoor apps. There are three apps that 
 
 ## See Also
 
-- [Add a marketplace search detail URL](post-v1-marketplacesearchdetails.md)
+- [Add a Marketplace Search Detail Url](post-v1-marketplacesearchdetails.md)
   Add a search detail URL for the alternative marketplace.
-- [Read the marketplace search detail URL](get-v1-apps-_id_-marketplacesearchdetail.md)
+- [Read the Marketplace Search Detail Url](get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
 - [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
-- [Modify a marketplace search detail URL](patch-v1-marketplacesearchdetails-_id_.md)
+- [Modify a Marketplace Search Detail Url](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
-- [Delete a marketplace search detail URL](delete-v1-marketplacesearchdetails-_id_.md)
+- [Delete a Marketplace Search Detail Url](delete-v1-marketplacesearchdetails-_id_.md)
   Delete search detail URL for the alternative marketplace.
 
 

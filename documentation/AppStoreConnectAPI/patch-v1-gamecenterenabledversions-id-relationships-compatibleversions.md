@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Remove Compatible Versions from a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Remove Compatible Versions From a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 
 
 ---

@@ -1,4 +1,4 @@
-# Read public link usage metrics for a beta group
+# Read Public Link Usage Metrics for a Beta Group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

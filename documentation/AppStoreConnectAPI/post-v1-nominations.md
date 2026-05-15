@@ -1,4 +1,4 @@
-# Create a featuring nomination
+# Create a Featuring Nomination
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Tell Apple about your upcoming app or feature.
 
 ## See Also
 
-- [List nominations](get-v1-nominations.md)
+- [List Nominations](get-v1-nominations.md)
   Get all featuring nominations.
-- [Read details for a nomination](get-v1-nominations-_id_.md)
+- [Read Details for a Nomination](get-v1-nominations-_id_.md)
   Get information for a specific featuring nomination.
-- [Modify a nomination](patch-v1-nominations-_id_.md)
+- [Modify a Nomination](patch-v1-nominations-_id_.md)
   Update a specific featuring nomination.
-- [Delete a featuring nomination](delete-v1-nominations-_id_.md)
+- [Delete a Featuring Nomination](delete-v1-nominations-_id_.md)
   Remove a specific featuring nomination.
 
 

@@ -14,11 +14,6 @@ A string that represents the possible components of a build bundle.
 string BuildBundleType
 ```
 
-#### Discussion
-
-- Possible Values - APP:
-- APP_CLIP:
-
 ## See Also
 
 - [object BuildBundle](buildbundle.md)

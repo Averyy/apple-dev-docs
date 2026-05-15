@@ -1,4 +1,4 @@
-# Read custom product page version information
+# Read Custom Product Page Version Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -57,17 +57,18 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/c7eadc0b-4
 - `fields[appCustomProductPageVersions]` ([string])
 - `include` ([string])
 - `limit[appCustomProductPageLocalizations]` (integer)
+- `fields[appCustomProductPages]` ([string])
 
 ## See Also
 
-- [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
+- [List Custom Product Page Versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
+- [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
 - [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
-- [Create a custom product page version](post-v1-appcustomproductpageversions.md)
+- [Create a Custom Product Page Version](post-v1-appcustomproductpageversions.md)
   Add a version for your app custom product page.
-- [Modify a custom product page version](patch-v1-appcustomproductpageversions-_id_.md)
+- [Modify a Custom Product Page Version](patch-v1-appcustomproductpageversions-_id_.md)
   Update the name and visibility status of an app custom product page.
 
 

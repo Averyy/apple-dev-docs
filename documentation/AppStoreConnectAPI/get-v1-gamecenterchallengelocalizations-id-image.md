@@ -1,4 +1,4 @@
-# Read image information for a challenge localization
+# Read Image Information for a Challenge Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,13 +18,13 @@ Get details about the image for a specific Game Center challenge localization.
 
 ## See Also
 
-- [Read challenge image information](get-v1-gamecenterchallengeimages-_id_.md)
+- [Read Challenge Image Information](get-v1-gamecenterchallengeimages-_id_.md)
   Get information for a specific Game Center challenge image.
-- [Create a challenge image](post-v1-gamecenterchallengeimages.md)
+- [Create a Challenge Image](post-v1-gamecenterchallengeimages.md)
   Reserve an image for a Game Center challenge.
-- [Commit an image for a challenge](patch-v1-gamecenterchallengeimages-_id_.md)
+- [Commit an Image for a Challenge](patch-v1-gamecenterchallengeimages-_id_.md)
   Commit an uploaded image asset as a Game Center challenge image.
-- [Delete a challenge image](delete-v1-gamecenterchallengeimages-_id_.md)
+- [Delete a Challenge Image](delete-v1-gamecenterchallengeimages-_id_.md)
   Remove a specific image from a Game Center challenge.
 
 

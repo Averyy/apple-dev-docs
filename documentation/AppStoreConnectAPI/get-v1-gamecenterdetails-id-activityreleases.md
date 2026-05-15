@@ -1,4 +1,4 @@
-# Get activity releases for a Game Center detail
+# Get Activity Releases for a Game Center Detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -25,7 +25,7 @@ List all activity release information for a specific Game Center detail.
 
 ## See Also
 
-- [Get activity release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-activityreleases.md)
+- [Get Activity Release IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-activityreleases.md)
   List all activity release IDs for a specific Game Center detail.
 
 

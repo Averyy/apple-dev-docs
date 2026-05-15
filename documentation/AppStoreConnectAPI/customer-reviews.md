@@ -28,7 +28,7 @@ To manage your responses to the customers reviews, use the endpoints in [`Custom
 - [Read Customer Review Information](get-v1-customerreviews-_id_.md)
   Get information about a specific customer review, including the review content.
 ### Reading review summariztions
-- [Read customer review summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
+- [Read Customer Review Summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
   Get the customer review summarization for a specific app.
 ### Objects
 - [object CustomerReviewsResponse](customerreviewsresponse.md)

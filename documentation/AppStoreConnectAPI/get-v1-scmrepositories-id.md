@@ -64,8 +64,10 @@ GET https://api.appstoreconnect.apple.com/v1/scmRepositories/a2b04ba9-85fa-478c-
 
 ## Parameters
 
+- `fields[scmGitReferences]` ([string]): Additional fields to include for the Repositories resource returned by the response.
 - `fields[scmRepositories]` ([string]): Additional fields to include for the Repositories resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[scmProviders]` ([string])
 
 ## See Also
 

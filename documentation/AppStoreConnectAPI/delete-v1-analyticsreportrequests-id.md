@@ -1,4 +1,4 @@
-# Delete a report request
+# Delete a Report Request
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -35,19 +35,19 @@ DELETE https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5
 
 ## Parameters
 
-- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`Read report requests`](get-v1-apps-_id_-analyticsreportrequests.md) response.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`Read Report Requests`](get-v1-apps-_id_-analyticsreportrequests.md) response.
 
 ## See Also
 
-- [Request reports](post-v1-analyticsreportrequests.md)
+- [Request Reports](post-v1-analyticsreportrequests.md)
   Request analytics reports for your apps.
-- [Read report requests](get-v1-apps-_id_-analyticsreportrequests.md)
+- [Read Report Requests](get-v1-apps-_id_-analyticsreportrequests.md)
   Read analytics report requests for a specific app.
-- [Read report request information](get-v1-analyticsreportrequests-_id_.md)
+- [Read Report Request Information](get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
-- [Read reports for a specific request](get-v1-analyticsreportrequests-_id_-reports.md)
+- [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 
 

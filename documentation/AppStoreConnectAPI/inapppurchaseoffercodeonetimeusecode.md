@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeOneTimeUseCode
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Attributes](inapppurchaseoffercodeonetimeusecode/attributes-data.dictionary.md)
   Attributes that describe an in-app purchase offer code one-time use code resource.
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary.md)

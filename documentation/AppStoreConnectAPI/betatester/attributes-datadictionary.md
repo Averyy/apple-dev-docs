@@ -21,7 +21,7 @@ object BetaTester.Attributes
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object BetaTester.Attributes.AppDevices](betatester/attributes-data.dictionary/appdevices-data.dictionary.md)
   Information about devices used by the beta tester.
 

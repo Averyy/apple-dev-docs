@@ -1,4 +1,4 @@
-# List all in-app purchase price point equalizations
+# List All In-App Purchase Price Point Equalizations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

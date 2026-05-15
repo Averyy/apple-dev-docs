@@ -1,4 +1,4 @@
-# List PassTypeID Ids for a certificate
+# List Passtypeid IDs for a Certificate
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

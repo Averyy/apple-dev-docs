@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 

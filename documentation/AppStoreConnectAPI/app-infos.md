@@ -19,7 +19,7 @@ For more information about the metadata in the `appInfos` resource, see [`App an
   Read App Store information including your App Store state, age ratings, Brazil age rating, and kids’ age band.
 - [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)
   Get information about an app that is currently live on App Store, or that goes live with the next version.
-- [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 ### Modifying App Information
 - [Modify an App Info](patch-v1-appinfos-_id_.md)
@@ -28,11 +28,11 @@ For more information about the metadata in the `appInfos` resource, see [`App an
 - [App Categories and Subcategories](app-categories-and-subcategories.md)
   Read the category and subcategory information of an App Info.
 ### Reading Localization Information
-- [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 - [GET /v1/appInfos/{id}/relationships/appInfoLocalizations](get-v1-appinfos-_id_-relationships-appinfolocalizations.md)
 ### Reading Age Rating Information
-- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
   Get the age rating declaration for the app info.
 - [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 ### Objects

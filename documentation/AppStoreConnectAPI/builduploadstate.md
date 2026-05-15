@@ -14,13 +14,6 @@ A string that represents the state of a build upload.
 string BuildUploadState
 ```
 
-#### Discussion
-
-- Possible Values - AWAITING_UPLOAD:
-- PROCESSING:
-- FAILED:
-- COMPLETE:
-
 ## See Also
 
 - [object BuildUpload](buildupload.md)

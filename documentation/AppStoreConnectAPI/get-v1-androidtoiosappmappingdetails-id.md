@@ -1,4 +1,4 @@
-# Read Android to iOS app mapping details
+# Read Android to iOS App Mapping Details
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,11 +18,11 @@ Get information about a specific android to iOS app mapping detail.
 
 ## See Also
 
-- [Modify an Android to iOS app mapping detail](patch-v1-androidtoiosappmappingdetails-_id_.md)
+- [Modify an Android to iOS App Mapping Detail](patch-v1-androidtoiosappmappingdetails-_id_.md)
   Update an Android to iOS app mapping detail.
-- [Create an Android to iOS app mapping detail](post-v1-androidtoiosappmappingdetails.md)
+- [Create an Android to iOS App Mapping Detail](post-v1-androidtoiosappmappingdetails.md)
   Create a detail that maps an Android app to an iOS app.
-- [Delete an Android to iOS mapping detail](delete-v1-androidtoiosappmappingdetails-_id_.md)
+- [Delete an Android to iOS Mapping Detail](delete-v1-androidtoiosappmappingdetails-_id_.md)
   Remove a specific Android to iOS mapping detail.
 
 

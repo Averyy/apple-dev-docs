@@ -1,4 +1,4 @@
-# Read metrics for beta testers in a beta group
+# Read Metrics for Beta Testers in a Beta Group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -72,7 +72,7 @@ https://api.appstoreconnect.apple.com/v1/betaGroups/db51edb0-a8a4-4be9-8481-09df
 - `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the `betaTesters` resource ID from the [`List Beta Testers`](get-v1-betatesters.md) response.
 - `groupBy` ([string])
 - `limit` (integer)
-- `period` (string)
+- `period` (string): -`P7D`: 7 days -`P30D`: 30 days -`P90D`: 90 days -`P365D`: 356 days
 
 ## See Also
 
@@ -83,10 +83,10 @@ https://api.appstoreconnect.apple.com/v1/betaGroups/db51edb0-a8a4-4be9-8481-09df
 - [Read the App Information of a Beta Group](get-v1-betagroups-_id_-app.md)
   Get the app information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/app](get-v1-betagroups-_id_-relationships-app.md)
-- [Read recruitment criteria for a beta group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
+- [Read Recruitment Criteria for a Beta Group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
   Get the recruitment criteria information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriteria](get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
-- [Read build compatibilty for a beta group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [Read Build Compatibilty for a Beta Group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
   Get the build compatibilty information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriterionCompatibleBuildCheck](get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
 

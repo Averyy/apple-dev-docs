@@ -13,45 +13,45 @@ For more information about how to use achievements in your app, see [`Manage ach
 ## Topics
 
 ### Reading achievements
-- [Read Game Center achievement information](get-v2-gamecenterachievements-_id_.md)
+- [Read Game Center Achievement Information](get-v2-gamecenterachievements-_id_.md)
   Get information about a specific Game Center achievement.
-- [List all versions for a Game Center achievement](get-v2-gamecenterachievements-_id_-versions.md)
+- [List All Versions for a Game Center Achievement](get-v2-gamecenterachievements-_id_-versions.md)
   Get a list of versions for a specific Game Center achievement.
-- [Get all version IDs for a Game Center achievement](get-v2-gamecenterachievements-_id_-relationships-versions.md)
+- [Get All Version IDs for a Game Center Achievement](get-v2-gamecenterachievements-_id_-relationships-versions.md)
   Get a list of version resource IDs for a specific Game Center achievement.
-- [List all achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
+- [List All Achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
   List all achievement information for a Game Center detail.
-- [Read achievement information](get-v1-gamecenterachievements-_id_.md)
+- [Read Achievement Information](get-v1-gamecenterachievements-_id_.md)
   Read information about a specific Game Center achievement.
-- [List all localizations for an achievement](get-v1-gamecenterachievements-_id_-localizations.md)
+- [List All Localizations for an Achievement](get-v1-gamecenterachievements-_id_-localizations.md)
   Read information about the release for specific achievement.
-- [Read release information for an achievement](get-v1-gamecenterachievements-_id_-releases.md)
+- [Read Release Information for an Achievement](get-v1-gamecenterachievements-_id_-releases.md)
   Read the state of an achievement release and related information.
 - [GET /v1/gameCenterAchievements/{id}/relationships/releases](get-v1-gamecenterachievements-_id_-relationships-releases.md)
-- [List associated group achievement information for an achievement](get-v1-gamecenterachievements-_id_-groupachievement.md)
+- [List Associated Group Achievement Information for an Achievement](get-v1-gamecenterachievements-_id_-groupachievement.md)
   Read information about the group for specific achievement.
-- [List group achievements for an achievement](get-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
+- [List Group Achievements for an Achievement](get-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   List associated group achievements for a specific achievement.
-- [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 ### Creating, modifying, and deleting achievements
-- [Create a Game Center achievement](post-v2-gamecenterachievements.md)
+- [Create a Game Center Achievement](post-v2-gamecenterachievements.md)
   Create a Game Center achievement.
-- [Modify a Game Center achievement](patch-v2-gamecenterachievements-_id_.md)
+- [Modify a Game Center Achievement](patch-v2-gamecenterachievements-_id_.md)
   Update a specific Game Center achievement.
-- [Modify the activity for a Game Center achievement](patch-v2-gamecenterachievements-_id_-relationships-activity.md)
+- [Modify the Activity for a Game Center Achievement](patch-v2-gamecenterachievements-_id_-relationships-activity.md)
   Update the activity relationship for a specific Game Center achievement.
-- [Delete a Game Center achievement](delete-v2-gamecenterachievements-_id_.md)
+- [Delete a Game Center Achievement](delete-v2-gamecenterachievements-_id_.md)
   Delete a specific Game Center achievement.
-- [Create an achievement](post-v1-gamecenterachievements.md)
+- [Create an Achievement](post-v1-gamecenterachievements.md)
   Add an achievement to a Game Center detail.
-- [Modify an achievement](patch-v1-gamecenterachievements-_id_.md)
+- [Modify an Achievement](patch-v1-gamecenterachievements-_id_.md)
   Modify properties for a specific achievement.
-- [Modify the group for an achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
+- [Modify the Group for an Achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   Modify the achievement group for a specific achievement.
 - [PATCH /v1/gameCenterAchievements/{id}/relationships/activity](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
-- [Delete an achievement](delete-v1-gamecenterachievements-_id_.md)
+- [Delete an Achievement](delete-v1-gamecenterachievements-_id_.md)
   Delete a specific achievement.
 ### Objects
 - [object GameCenterAchievementV2](gamecenterachievementv2.md)

@@ -32,13 +32,13 @@ Next, you create a public key from the private key you created in the previous s
 openssl ec -in private_key.pem -pubout > public_key.pem
 ```
 
-This command creates the file `public_key.pem`, which contains your public key. Run this command any time to generate a copy of your public key file. To request your existing public key from App Store Connect, see [`Read an app’s alternative distribution key`](get-v1-apps-_id_-alternativedistributionkey.md).
+This command creates the file `public_key.pem`, which contains your public key. Run this command any time to generate a copy of your public key file. To request your existing public key from App Store Connect, see [`Read an App’s Alternative Distribution Key`](get-v1-apps-_id_-alternativedistributionkey.md).
 
 ##### Create an Alternative Distribution Key
 
-Next, upload your public key to App Store Connect using the endpoint described in [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
+Next, upload your public key to App Store Connect using the endpoint described in [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md).
 
-An alternative distribution key applies to all apps in your account. You can optionally make an application-specific alternative distirbution key by adding the app Apple ID for your marketplace app in the `relationships` object in the JSON payload when calling [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md). You can find this app Apple ID by calling [`List Apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect. This relationship is optional. If you don’t include a relationship to an app Apple ID, the alternative distribution key is associated with all alternative distubution apps on your account.
+An alternative distribution key applies to all apps in your account. You can optionally make an application-specific alternative distirbution key by adding the app Apple ID for your marketplace app in the `relationships` object in the JSON payload when calling [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md). You can find this app Apple ID by calling [`List Apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect. This relationship is optional. If you don’t include a relationship to an app Apple ID, the alternative distribution key is associated with all alternative distubution apps on your account.
 
 To access your marketplace app’s app Apple ID, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/).
 
@@ -119,16 +119,16 @@ After you sign the JWT, provide the token to the app developer so they can uploa
 
 - [Creating and configuring keys for web distribution](creating-and-configuring-keys-for-web-distribution.md)
   Manage keys you use to sign JSON web tokens (JWTs).
-- [Add an alternative distribution key](post-v1-alternativedistributionkeys.md)
+- [Add an Alternative Distribution Key](post-v1-alternativedistributionkeys.md)
   Add an alternative distribution key for your alternative marketplace app or web distribution.
-- [List alternative distribution keys](get-v1-alternativedistributionkeys.md)
+- [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
+- [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
 - [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
-- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+- [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
-- [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
+- [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 
 

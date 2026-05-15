@@ -1,4 +1,4 @@
-# List all queues
+# List All Queues
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -15,12 +15,13 @@ Get information about all queues.
 ## Parameters
 
 - `fields[gameCenterMatchmakingQueues]` ([string]): The fields of the queues to include in the response.
+- `fields[gameCenterMatchmakingRuleSets]` ([string])
 - `include` ([string]): The type of rule set to include in the response.
 - `limit` (integer): The maximum number of queues to fetch.
 
 ## See Also
 
-- [Read queue information](get-v1-gamecentermatchmakingqueues-_id_.md)
+- [Read Queue Information](get-v1-gamecentermatchmakingqueues-_id_.md)
   Get information about a specific queue and its related objects.
 
 

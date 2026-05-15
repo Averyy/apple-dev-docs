@@ -16,6 +16,7 @@ Get the specific localized subscription group display name and optional custom a
 
 - `fields[subscriptionGroupLocalizations]` ([string])
 - `include` ([string])
+- `fields[subscriptionGroups]` ([string])
 
 ## See Also
 

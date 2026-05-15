@@ -91,7 +91,7 @@ Similarly, you can’t delete App Clip experiences for an already released app v
 
 ##### Manage Beta App Clip Experiences
 
-Verifying that the launch experience of the App Clip is free of errors is a key task when developing an App Clip. When you distribute your full app with TestFlight, you can configure beta App Clip experiences that testers use to launch your App Clip with the TestFlight app. To help automate creating and updating beta App Clip experiences, use the [`Beta App Clip Invocations`](beta-app-clip-invocations.md) resource. It provides functionality to create, read, update, and delete a beta App Clip experience. For example, use the [`Create an App Clip Invocation for Testers in TestFlight`](post-v1-betaappclipinvocations.md) endpoint to create a beta App Clip experience.
+Verifying that the launch experience of the App Clip is free of errors is a key task when developing an App Clip. When you distribute your full app with TestFlight, you can configure beta App Clip experiences that testers use to launch your App Clip with the TestFlight app. To help automate creating and updating beta App Clip experiences, use the [`Beta App Clip Invocations`](beta-app-clip-invocations.md) resource. It provides functionality to create, read, update, and delete a beta App Clip experience. For example, use the [`Create an App Clip Invocation for Testers in Testflight`](post-v1-betaappclipinvocations.md) endpoint to create a beta App Clip experience.
 
 ## Topics
 

@@ -16,20 +16,20 @@
 
 ## See Also
 
-- [Read price schedule information for an app](get-v1-apps-_id_-apppriceschedule.md)
+- [Read Price Schedule Information for an App](get-v1-apps-_id_-apppriceschedule.md)
   Read price schedule details for a specific app.
 - [GET /v1/apps/{id}/relationships/appPriceSchedule](get-v1-apps-_id_-relationships-apppriceschedule.md)
-- [Read an app's price schedule information](get-v1-apppriceschedules-_id_.md)
+- [Read an App's Price Schedule Information](get-v1-apppriceschedules-_id_.md)
   List the price schedule details for a specific app.
-- [List automatically generated prices for an app](get-v1-apppriceschedules-_id_-automaticprices.md)
+- [List Automatically Generated Prices for an App](get-v1-apppriceschedules-_id_-automaticprices.md)
   List the automatically calculated prices for an app generated from a base territory.
-- [Read the base territory for an app's price schedule](get-v1-apppriceschedules-_id_-baseterritory.md)
+- [Read the Base Territory for an App's Price Schedule](get-v1-apppriceschedules-_id_-baseterritory.md)
   Read the base territory and currency for a specific app.
-- [List manually chosen prices for an app](get-v1-apppriceschedules-_id_-manualprices.md)
+- [List Manually Chosen Prices for an App](get-v1-apppriceschedules-_id_-manualprices.md)
   List the prices you chose for a specific app.
 - [GET /v1/appPriceSchedules/{id}/relationships/baseTerritory](get-v1-apppriceschedules-_id_-relationships-baseterritory.md)
 - [GET /v1/appPriceSchedules/{id}/relationships/manualPrices](get-v1-apppriceschedules-_id_-relationships-manualprices.md)
-- [Add a scheduled price change to an app](post-v1-apppriceschedules.md)
+- [Add a Scheduled Price Change to an App](post-v1-apppriceschedules.md)
   Create a scheduled price change for an app.
 
 

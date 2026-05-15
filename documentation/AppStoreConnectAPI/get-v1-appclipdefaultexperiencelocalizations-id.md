@@ -17,6 +17,7 @@ Get localized metadata that appears on the App Clip card of a specific default A
 - `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experience Localizations resource returned by the response.
 - `fields[appClipHeaderImages]` ([string]): Additional fields to include for each Default App Clip Experience Localizations resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[appClipDefaultExperiences]` ([string])
 
 ## See Also
 

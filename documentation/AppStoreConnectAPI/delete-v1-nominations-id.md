@@ -1,4 +1,4 @@
-# Delete a featuring nomination
+# Delete a Featuring Nomination
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -10,7 +10,7 @@ Remove a specific featuring nomination.
 
 #### Overview
 
-- id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List nominations`](get-v1-nominations.md) response.
+- id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List Nominations`](get-v1-nominations.md) response.
 
 ## Endpoint
 
@@ -22,13 +22,13 @@ Remove a specific featuring nomination.
 
 ## See Also
 
-- [Create a featuring nomination](post-v1-nominations.md)
+- [Create a Featuring Nomination](post-v1-nominations.md)
   Tell Apple about your upcoming app or feature.
-- [List nominations](get-v1-nominations.md)
+- [List Nominations](get-v1-nominations.md)
   Get all featuring nominations.
-- [Read details for a nomination](get-v1-nominations-_id_.md)
+- [Read Details for a Nomination](get-v1-nominations-_id_.md)
   Get information for a specific featuring nomination.
-- [Modify a nomination](patch-v1-nominations-_id_.md)
+- [Modify a Nomination](patch-v1-nominations-_id_.md)
   Update a specific featuring nomination.
 
 

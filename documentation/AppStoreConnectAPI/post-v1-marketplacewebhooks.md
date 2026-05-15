@@ -1,4 +1,4 @@
-# Add a marketplace webhook configuration
+# Add a Marketplace Webhook Configuration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -69,11 +69,11 @@ POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks
 
 ## See Also
 
-- [Read marketplace webhook information](get-v1-marketplacewebhooks.md)
+- [Read Marketplace Webhook Information](get-v1-marketplacewebhooks.md)
   Get the endpoint URL for alternative distribution package notifications.
-- [Modify a marketplace webhook configuration](patch-v1-marketplacewebhooks-_id_.md)
+- [Modify a Marketplace Webhook Configuration](patch-v1-marketplacewebhooks-_id_.md)
   Update the endpoint URL and secret for alternative distribution package notifications.
-- [Delete a marketplace webhook configuration](delete-v1-marketplacewebhooks-_id_.md)
+- [Delete a Marketplace Webhook Configuration](delete-v1-marketplacewebhooks-_id_.md)
   Delete a specific marketplace notifcation endpoint URL.
 
 

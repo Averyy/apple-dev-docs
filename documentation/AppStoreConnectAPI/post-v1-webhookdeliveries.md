@@ -1,4 +1,4 @@
-# Redeliver a previous notification
+# Redeliver a Previous Notification
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -10,7 +10,7 @@ Resend a webhook notification from a specified template.
 
 #### Overview
 
-> **Note**: The `template` in this payload is the original delivery that you want to resend. Find the `id` using [`Read the deliveries for a webhook`](get-v1-webhooks-_id_-deliveries.md).
+> **Note**: The `template` in this payload is the original delivery that you want to resend. Find the `id` using [`Read the Deliveries for a Webhook`](get-v1-webhooks-_id_-deliveries.md).
 
 ## Endpoint
 
@@ -18,7 +18,7 @@ Resend a webhook notification from a specified template.
 
 ## See Also
 
-- [Read the deliveries for a webhook](get-v1-webhooks-_id_-deliveries.md)
+- [Read the Deliveries for a Webhook](get-v1-webhooks-_id_-deliveries.md)
   Get a list of deliveries for a specific webhook configuration.
 - [GET /v1/webhooks/{id}/relationships/deliveries](get-v1-webhooks-_id_-relationships-deliveries.md)
 

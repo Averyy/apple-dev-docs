@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse.Data](inapppurchaseoffercodeonetimeusecodeslinkagesresponse/data-data.dictionary.md)
   The data element of the request body.
 

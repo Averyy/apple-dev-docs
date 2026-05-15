@@ -16,7 +16,7 @@ object InAppPurchaseOfferCode.Relationships
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCode.Relationships.CustomCodes](inapppurchaseoffercode/relationships-data.dictionary/customcodes-data.dictionary.md)
   The data and links that describe the custom codes of the in-app purchase offer code.
 - [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes](inapppurchaseoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary.md)

@@ -33,13 +33,13 @@ When a new app version passes notarization for an app that installs from your ma
 
 A *notification webhook* is an endpoint that you create on your marketplace server, which receives HTTP POST requests from App Store Connect. The POST requests describe important events about your app or the apps that your marketplace distributes.
 
-To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Add a marketplace webhook configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-marketplaceWebhooks) endpoint:
+To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Add a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-marketplaceWebhooks) endpoint:
 
 ```None
 POST https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks
 ```
 
-Any time you reconfigure your web server, use the [`Modify a marketplace webhook configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-marketplaceWebhooks-_id_) endpoint to update App Store Connect.
+Any time you reconfigure your web server, use the [`Modify a Marketplace Webhook Configuration`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-marketplaceWebhooks-_id_) endpoint to update App Store Connect.
 
 For more information about managing webhook endpoint configuration for your marketplace, see [`Notifications`](https://developer.apple.com/documentation/AppStoreConnectAPI/notifications).
 

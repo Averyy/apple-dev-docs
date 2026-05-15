@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Update the app store version for a specific app.
+Update the App Store version for a specific app.
 
 **Availability**:
 - App Store Connect API 1.2+

@@ -1,4 +1,4 @@
-# Deactivate a Subscription Offer with Offer Codes
+# Deactivate a Subscription Offer With Offer Codes
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

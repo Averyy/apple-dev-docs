@@ -13,11 +13,11 @@ The `betaAppClipInvocations` resource represents an App Clip experience you make
 ### Managing Beta App Clip Invocation
 - [Read Beta App Clip Invocation Information](get-v1-betaappclipinvocations-_id_.md)
   Get a specific App Clip invocation you configure for testing.
-- [Create an App Clip Invocation for Testers in TestFlight](post-v1-betaappclipinvocations.md)
+- [Create an App Clip Invocation for Testers in Testflight](post-v1-betaappclipinvocations.md)
   Configure a new App Clip experience that testers launch using the TestFlight app.
 - [Modify an App Clip Invocation You Provide to Testers](patch-v1-betaappclipinvocations-_id_.md)
   Change an App Clip invocation you make available to testers in the TestFlight app.
-- [Delete an App Clip Invocation for Testers in TestFlight](delete-v1-betaappclipinvocations-_id_.md)
+- [Delete an App Clip Invocation for Testers in Testflight](delete-v1-betaappclipinvocations-_id_.md)
   Delete an App Clip invocation you make available to testers in TestFlight.
 ### Objects
 - [object BetaAppClipInvocation](betaappclipinvocation.md)

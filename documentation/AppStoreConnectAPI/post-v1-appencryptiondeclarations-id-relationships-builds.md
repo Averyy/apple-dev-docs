@@ -18,7 +18,7 @@ Assign one or more builds to an app encryption declaration.
 
 ## See Also
 
-- [Create an app encryption declarations](post-v1-appencryptiondeclarations.md)
+- [Create an App Encryption Declarations](post-v1-appencryptiondeclarations.md)
   Add an app encryption delcaration for a specific app.
 
 

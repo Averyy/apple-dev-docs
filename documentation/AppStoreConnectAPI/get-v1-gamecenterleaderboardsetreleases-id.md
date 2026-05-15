@@ -1,4 +1,4 @@
-# Read leaderboard set release information
+# Read Leaderboard Set Release Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -16,12 +16,14 @@ Get information about a leaderboard set release.
 
 - `fields[gameCenterLeaderboardSetReleases]` ([string])
 - `include` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
 
 ## See Also
 
-- [Create a leaderboard set release](post-v1-gamecenterleaderboardsetreleases.md)
+- [Create a Leaderboard Set Release](post-v1-gamecenterleaderboardsetreleases.md)
   Add a new leaderboard set release.
-- [Delete a leaderboard set release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
+- [Delete a Leaderboard Set Release](delete-v1-gamecenterleaderboardsetreleases-_id_.md)
   Delete a new leaderboard set release.
 
 

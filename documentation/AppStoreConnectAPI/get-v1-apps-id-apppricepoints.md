@@ -1,4 +1,4 @@
-# List all price points for an app
+# List All Price Points for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -186,9 +186,9 @@ https://api.appstoreconnect.apple.com/v1/apps/6447402192/appPricePoints?filter%5
 ## See Also
 
 - [GET /v1/apps/{id}/relationships/appPricePoints](get-v1-apps-_id_-relationships-apppricepoints.md)
-- [Read app price point information](get-v3-apppricepoints-_id_.md)
+- [Read App Price Point Information](get-v3-apppricepoints-_id_.md)
   Get details about a specific app price point.
-- [List app price point equalizations](get-v3-apppricepoints-_id_-equalizations.md)
+- [List App Price Point Equalizations](get-v3-apppricepoints-_id_-equalizations.md)
   List all equivalent app prices points to a base price point.
 - [GET /v3/appPricePoints/{id}/relationships/equalizations](get-v3-apppricepoints-_id_-relationships-equalizations.md)
 

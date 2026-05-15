@@ -18,6 +18,7 @@ Get a specific App Clip.
 - `fields[appClips]` ([string]): Additional fields to include for each App Clips resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[appClipDefaultExperiences]` (integer): The number of included App Clips resources to return if the default App Clip experience localizations relationship is included.
+- `fields[apps]` ([string])
 
 
 ---

@@ -6,25 +6,25 @@ Manage Game Center leaderboard set member localizations.
 
 #### Overview
 
-Use Game Center leaderboard set member localizations to specify the specific localizations that a leaderboard displays when referenced as part of a Game Center Leaderboard set. See [`Create a leaderboard set localization`](post-v1-gamecenterleaderboardsetlocalizations.md) for more information. If you instead want to create a localization for a specific leaderboard, see [`Create a leaderboard localization`](post-v1-gamecenterleaderboardlocalizations.md).
+Use Game Center leaderboard set member localizations to specify the specific localizations that a leaderboard displays when referenced as part of a Game Center Leaderboard set. See [`Create a Leaderboard Set Localization`](post-v1-gamecenterleaderboardsetlocalizations.md) for more information. If you instead want to create a localization for a specific leaderboard, see [`Create a Leaderboard Localization`](post-v1-gamecenterleaderboardlocalizations.md).
 
 ## Topics
 
 ### Managing leaderboard set member localizations
-- [Read leaderboard set member localization information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)
+- [Read Leaderboard Set Member Localization Information](get-v1-gamecenterleaderboardsetmemberlocalizations.md)
   Get information about leaderboard member set localizations.
-- [Read leaderboard information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboard.md)
+- [Read Leaderboard Information for a Leaderboard Set Member Localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboard.md)
   Get information about a leaderboard for a specific leaderboard set member localization.
-- [Read tge leaderboard ID for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboard.md)
+- [Read Tge Leaderboard ID for a Leaderboard Set Member Localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboard.md)
   Get the leaderboard ID for a specific leaderboard set member localization.
-- [Read leaderboard set information for a leaderboard set member localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
+- [Read Leaderboard Set Information for a Leaderboard Set Member Localization](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-gamecenterleaderboardset.md)
   Get information about a leaderboard set for a specific leaderboard set member localization.
 - [GET /v1/gameCenterLeaderboardSetMemberLocalizations/{id}/relationships/gameCenterLeaderboardSet](get-v1-gamecenterleaderboardsetmemberlocalizations-_id_-relationships-gamecenterleaderboardset.md)
-- [Create a leaderboard set member localization](post-v1-gamecenterleaderboardsetmemberlocalizations.md)
+- [Create a Leaderboard Set Member Localization](post-v1-gamecenterleaderboardsetmemberlocalizations.md)
   Add a new leaderboard set localization.
-- [Modify a leaderboard set member localization](patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
+- [Modify a Leaderboard Set Member Localization](patch-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
   Edit a leaderboard set member localization.
-- [Delete a leaderboard set member localization](delete-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
+- [Delete a Leaderboard Set Member Localization](delete-v1-gamecenterleaderboardsetmemberlocalizations-_id_.md)
   Delete a localization that’s associated with a leaderboard set member.
 ### Objects
 - [object GameCenterLeaderboardSetMemberLocalization](gamecenterleaderboardsetmemberlocalization.md)

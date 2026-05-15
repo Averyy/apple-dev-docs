@@ -7,20 +7,20 @@ Update your server-side code to use new features, and test your code against API
 ##### New Features
 
 - Getting an app’s price points and [`List All Price Points for an In-App Purchase`](get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
-- [`List app price point equalizations`](get-v3-apppricepoints-_id_-equalizations.md) allows for setting equalized prices.
+- [`List App Price Point Equalizations`](get-v3-apppricepoints-_id_-equalizations.md) allows for setting equalized prices.
 - Getting and managing an app’s price schedules   and [`In-App purchase price schedules`](in-app-purchase-price-schedules.md) support automatic prices, manual prices, and base territory configuration.
 - Getting and managing an app’s availability, [`In-app purchase availability`](in-app-purchase-availability.md) and [`Subscription availability`](subscription-availability.md) supports configuring availabilty for apps, in-app purchases, and subscriptions.
 
 ##### Deprecations
 
-- The `List all price points for an app V1` endpoint is now deprecated and replaced with [`List all price points for an app`](get-v1-apps-_id_-apppricepoints.md).
-- The `List all prices for an app` endpoint is now deprecated and replaced with [`Read price schedule information for an app`](get-v1-apps-_id_-apppriceschedule.md).
+- The `List all price points for an app V1` endpoint is now deprecated and replaced with [`List All Price Points for an App`](get-v1-apps-_id_-apppricepoints.md).
+- The `List all prices for an app` endpoint is now deprecated and replaced with [`Read Price Schedule Information for an App`](get-v1-apps-_id_-apppriceschedule.md).
 - The `List all available territories for an app` endpoint is now deprecated and replaced with `GET-v1-appAvailabilities-{id}`.
 - The `AppPricePointV2` object deprecated and replaced with [`AppPricePointV3`](apppricepointv3.md).
 - The `List all price points for an app V1` endpoint is now deprecated and replaced with `List app price tiers`.
 - The `Read app price tier information` endpoint is now deprecated and replaced with `Read App Price Point Information`.
 
-> ❗ **Important**:  If you use [`Add a scheduled price change to an app`](post-v1-apppriceschedules.md) to add a scheduled price change to your App, you can’t use `AppPriceInlineCreate` to change your App’s price.
+> ❗ **Important**:  If you use [`Add a Scheduled Price Change to an App`](post-v1-apppriceschedules.md) to add a scheduled price change to your App, you can’t use `AppPriceInlineCreate` to change your App’s price.
 
 ##### Note to Developers
 
@@ -28,6 +28,8 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 
 ## See Also
 
+- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
@@ -55,8 +57,6 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

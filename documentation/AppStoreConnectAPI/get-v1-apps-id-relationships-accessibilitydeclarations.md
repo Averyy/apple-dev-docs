@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [List all accessibility declarations for an app](get-v1-apps-_id_-accessibilitydeclarations.md)
+- [List All Accessibility Declarations for an App](get-v1-apps-_id_-accessibilitydeclarations.md)
   Get a list of the accessibility declarations for a specific app.
 
 

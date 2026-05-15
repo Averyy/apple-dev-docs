@@ -1,4 +1,4 @@
-# Delete a Promotional Offer from a Subscription
+# Delete a Promotional Offer From a Subscription
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

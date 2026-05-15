@@ -20,6 +20,7 @@ Get information about a specific review screenshot for an in-app purchase.
 
 - `fields[inAppPurchaseAppStoreReviewScreenshots]` ([string])
 - `include` ([string])
+- `fields[inAppPurchases]` ([string])
 
 ## See Also
 

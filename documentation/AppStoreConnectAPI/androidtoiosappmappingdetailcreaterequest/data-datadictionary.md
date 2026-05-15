@@ -16,7 +16,7 @@ object AndroidToIosAppMappingDetailCreateRequest.Data
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Attributes](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an Android to iOS app mapping detail of a create request resource.
 - [object AndroidToIosAppMappingDetailCreateRequest.Data.Relationships](androidtoiosappmappingdetailcreaterequest/data-data.dictionary/relationships-data.dictionary.md)

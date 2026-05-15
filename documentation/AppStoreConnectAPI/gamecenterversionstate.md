@@ -14,18 +14,6 @@ A string representing the state of a Game Center version.
 string GameCenterVersionState
 ```
 
-#### Discussion
-
-- Possible Values - PREPARE_FOR_SUBMISSION:
-- READY_FOR_REVIEW:
-- WAITING_FOR_REVIEW:
-- IN_REVIEW:
-- REJECTED:
-- ACCEPTED:
-- PENDING_RELEASE:
-- LIVE:
-- REPLACED_WITH_NEW_VERSION:
-
 ## See Also
 
 - [object GameCenterAppVersion](gamecenterappversion.md)

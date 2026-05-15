@@ -1,4 +1,4 @@
-# Get queue session information
+# Get Queue Session Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -375,13 +375,13 @@ GET https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingQueues/0df9ae6
 
 ## See Also
 
-- [Get queue size](get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingqueuesizes.md)
+- [Get Queue Size](get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingqueuesizes.md)
   Get the time that match requests are in a specific queue.
-- [Get experimental queue size](get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingqueuesizes.md)
+- [Get Experimental Queue Size](get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingqueuesizes.md)
   Get the number of match requests that the queue processes using its experimental rule set.
-- [Get match request time in queue](get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingrequests.md)
+- [Get Match Request Time in Queue](get-v1-gamecentermatchmakingqueues-_id_-metrics-matchmakingrequests.md)
   Get the match requests that a specific queue processes.
-- [Get experimental match request time in queue](get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingrequests.md)
+- [Get Experimental Match Request Time in Queue](get-v1-gamecentermatchmakingqueues-_id_-metrics-experimentmatchmakingrequests.md)
   Get the match requests that a specific queue processes using its experimental rule set.
 
 

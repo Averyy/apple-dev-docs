@@ -212,6 +212,7 @@ GET https://api.appstoreconnect.apple.com/v1/ciProducts?limit=10&sort=latestBuil
 - `limit` (integer): The number of Products resources to return.
 - `limit[primaryRepositories]` (integer): The number of included Products resources to return if the primary repositories relationship is included.
 - `fields[apps]` ([string]): Additional fields to include for each Products resource returned by the response.
+- `fields[bundleIds]` ([string])
 
 ## See Also
 

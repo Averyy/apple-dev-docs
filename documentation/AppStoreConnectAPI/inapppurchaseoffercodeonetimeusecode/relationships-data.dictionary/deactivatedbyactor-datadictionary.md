@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCode.Relationships.DeactivatedByActor.Data](inapppurchaseoffercodeonetimeusecode/relationships-data.dictionary/deactivatedbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

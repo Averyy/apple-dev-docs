@@ -517,13 +517,13 @@ The class takes the following steps to create a new identity:
 
 1. Generates a private key.
 2. Stores the private key in the keychain with a label that corresponds to the device ID using the [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) API.
-3. Gets an external representation of the key and converts the data to [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) keys.
+3. Gets an external representation of the key and converts the data to [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) keys.
 4. Creates a [`Certificate`](https://developer.apple.comhttps://swiftpackageindex.com/apple/swift-certificates/main/documentation/x509/certificate) using these keys.
 5. Converts the self-signed certificate back to a native keychain type and stores it in the keychain with the same label as the private key.
 
 Storing the identity in the keychain ensures that it persists across app launches and remains secure. The private key never leaves the device.
 
-> **Note**: For more examples of storing keys in the keychain and best practices, see [`Storing CryptoKit Keys in the Keychain`](https://developer.apple.com/documentation/CryptoKit/storing-cryptokit-keys-in-the-keychain).
+> **Note**: For more examples of storing keys in the keychain and best practices, see doc://com.apple.documentation/documentation/cryptokit/storing-cryptokit-keys-in-the-keychain.
 
 ##### Validate Peer Certificates
 

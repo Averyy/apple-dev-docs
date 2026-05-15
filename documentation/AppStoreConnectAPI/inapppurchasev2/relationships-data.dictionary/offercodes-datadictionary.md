@@ -16,7 +16,7 @@ object InAppPurchaseV2.Relationships.OfferCodes
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseV2.Relationships.OfferCodes.Data](inapppurchasev2/relationships-data.dictionary/offercodes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

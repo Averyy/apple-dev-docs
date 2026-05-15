@@ -10,11 +10,11 @@ Encrypt the contents of a string and save the result to the file system, then de
 
 #### Overview
 
-This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](https://developer.apple.com/documentation/Swift/String) structure using a [`SymmetricKey`](https://developer.apple.com/documentation/CryptoKit/SymmetricKey). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
+This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](https://developer.apple.com/documentation/Swift/String) structure using a [`SymmetricKey`](https://developer.apple.com/documentation/cryptokit/symmetrickey). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
 
 ##### Generate a Symmetric Key
 
-The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) framework to create the symmetric cryptographic key.
+The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework to create the symmetric cryptographic key.
 
 ```swift
 let key = SymmetricKey(size: SymmetricKeySize.bits256)

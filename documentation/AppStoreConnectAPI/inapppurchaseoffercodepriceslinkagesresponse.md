@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodePricesLinkagesResponse
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodePricesLinkagesResponse.Data](inapppurchaseoffercodepriceslinkagesresponse/data-data.dictionary.md)
 
 ## Properties

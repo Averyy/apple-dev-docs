@@ -1,4 +1,4 @@
-# List Available macOS Versions for an Xcode Version
+# List Available Macos Versions for an Xcode Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

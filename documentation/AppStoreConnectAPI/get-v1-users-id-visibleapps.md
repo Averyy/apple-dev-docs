@@ -25,7 +25,7 @@ Get a list of apps that a user on your team can view.
   Give a user on your team access to one or more apps.
 - [Replace the List of Visible Apps for a User](patch-v1-users-_id_-relationships-visibleapps.md)
   Replace the list of apps a user on your team can see.
-- [Remove Visible Apps from a User](delete-v1-users-_id_-relationships-visibleapps.md)
+- [Remove Visible Apps From a User](delete-v1-users-_id_-relationships-visibleapps.md)
   Remove a user on your team’s access to one or more apps.
 
 

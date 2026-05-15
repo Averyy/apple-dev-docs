@@ -15,11 +15,11 @@ For more information, see [`Matchmaking rules`](https://developer.apple.com/docu
 ## Topics
 
 ### Creating, modifying, and deleting rules
-- [Create a rule](post-v1-gamecentermatchmakingrules.md)
+- [Create a Rule](post-v1-gamecentermatchmakingrules.md)
   Add a matchmaking rule to a rule set.
-- [Modify a rule](patch-v1-gamecentermatchmakingrules-_id_.md)
+- [Modify a Rule](patch-v1-gamecentermatchmakingrules-_id_.md)
   Update a specific matchmaking rule in a rule set.
-- [Delete a rule](delete-v1-gamecentermatchmakingrules-_id_.md)
+- [Delete a Rule](delete-v1-gamecentermatchmakingrules-_id_.md)
   Delete a matchmaking rule in a rule set.
 ### Objects
 - [object GameCenterMatchmakingRuleCreateRequest](gamecentermatchmakingrulecreaterequest.md)

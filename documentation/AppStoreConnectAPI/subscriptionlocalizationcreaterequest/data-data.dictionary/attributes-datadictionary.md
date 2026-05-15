@@ -14,8 +14,8 @@ object SubscriptionLocalizationCreateRequest.Data.Attributes
 
 ## Properties
 
-- `description` (string)
-- `locale` (string) *(required)*
+- `description` (string): Include this field before submitting, even though it’s optional when creating the resource.
+- `locale` (string) *(required)*: The specified locale. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
 - `name` (string) *(required)*
 
 ## See Also

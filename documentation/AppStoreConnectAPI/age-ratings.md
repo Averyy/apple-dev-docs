@@ -17,15 +17,15 @@ For more information about age ratings, see [`Set an app age rating`](https://de
 ## Topics
 
 ### Reading and modifying declarations
-- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
   Get the age rating declaration for the app info.
 - [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 - [Modify an Age Rating Declaration](patch-v1-ageratingdeclarations-_id_.md)
   Provide age-related information so the App Store can determine the age rating for your app.
 ### Reading territory age rating
-- [List territory age ratings for an app info](get-v1-appinfos-_id_-territoryageratings.md)
+- [List Territory Age Ratings for an App Info](get-v1-appinfos-_id_-territoryageratings.md)
   List all territory age ratings for a specific app info.
-- [List territory age rating Ids for an app info](get-v1-appinfos-_id_-relationships-territoryageratings.md)
+- [List Territory Age Rating IDs for an App Info](get-v1-appinfos-_id_-relationships-territoryageratings.md)
   List all territory age rating IDs for a specific app info.
 ### Objects and data types
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

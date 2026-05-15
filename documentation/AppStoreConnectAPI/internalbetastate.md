@@ -14,16 +14,6 @@ String that represents a build’s availability for internal testing.
 string InternalBetaState
 ```
 
-##### Possible Values
-
-- **`PROCESSING`**: 
-- **`PROCESSING_EXCEPTION`**: 
-- **`MISSING_EXPORT_COMPLIANCE`**: 
-- **`READY_FOR_BETA_TESTING`**: 
-- **`IN_BETA_TESTING`**: 
-- **`EXPIRED`**: 
-- **`IN_EXPORT_COMPLIANCE_REVIEW`**: 
-
 ## See Also
 
 - [object BuildBetaDetail](buildbetadetail.md)

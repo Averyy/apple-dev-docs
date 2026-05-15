@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get information for a specific app store version.
+Get information for a specific App Store version.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -33,6 +33,7 @@ Get information for a specific app store version.
 - `limit[appStoreVersionExperiments]` (integer)
 - `limit[appStoreVersionExperimentsV2]` (integer)
 - `fields[alternativeDistributionPackages]` ([string])
+- `fields[apps]` ([string])
 - `fields[gameCenterAppVersions]` ([string])
 
 ## See Also

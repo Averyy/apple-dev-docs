@@ -11,7 +11,7 @@ Use the Testing APIs to apply matchmaking rules to sample match requests and pla
 ## Topics
 
 ### Applying rule sets to sample requests
-- [Test a rule set](post-v1-gamecentermatchmakingrulesettests.md)
+- [Test a Rule Set](post-v1-gamecentermatchmakingrulesettests.md)
   Apply the given rule set to the given sample match requests.
 ### Objects
 - [object GameCenterMatchmakingRuleSetTestCreateRequest](gamecentermatchmakingrulesettestcreaterequest.md)

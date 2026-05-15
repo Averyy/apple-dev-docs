@@ -20,7 +20,7 @@
   Create a subscription offer that provides offer codes for an auto-renewable subscription.
 - [Read Subscription Offer Code Information](get-v1-subscriptionoffercodes-_id_.md)
   Get details about a specific subscription offer that has offer codes for an auto-renewable subscription.
-- [Deactivate a Subscription Offer with Offer Codes](patch-v1-subscriptionoffercodes-_id_.md)
+- [Deactivate a Subscription Offer With Offer Codes](patch-v1-subscriptionoffercodes-_id_.md)
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
 - [List All Subscription Offer Code Prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.

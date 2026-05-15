@@ -1,4 +1,4 @@
-# List availability for an app
+# List Availability for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

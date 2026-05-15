@@ -16,7 +16,7 @@ object AndroidToIosAppMappingDetailUpdateRequest
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object AndroidToIosAppMappingDetailUpdateRequest.Data](androidtoiosappmappingdetailupdaterequest/data-data.dictionary.md)
   The data structure that represents an Android to iOS app mapping detail update request resource.
 

@@ -24,13 +24,13 @@ Both Team and Individual keys can use these endpoints with the correct role.
 ## Topics
 
 ### Reading and deleting beta feedback screenshot submissions
-- [List all beta feedback screenshot submissions for an app](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
+- [List All Beta Feedback Screenshot Submissions for an App](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
   Get beta feedback screenshot submissions for a specific app.
-- [List all beta feedback screenshot submission IDs for an app](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
+- [List All Beta Feedback Screenshot Submission IDs for an App](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
   Get a list of beta feedback screenshot submissions for a specific app.
-- [Read a beta feedback screenshot submission](get-v1-betafeedbackscreenshotsubmissions-_id_.md)
+- [Read a Beta Feedback Screenshot Submission](get-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Get information for a specific beta feedback screenshot submission.
-- [Delete a beta feedback screenshot submission](delete-v1-betafeedbackscreenshotsubmissions-_id_.md)
+- [Delete a Beta Feedback Screenshot Submission](delete-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Delete a beta feedback screenshot submission from your app.
 ### Objects
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)

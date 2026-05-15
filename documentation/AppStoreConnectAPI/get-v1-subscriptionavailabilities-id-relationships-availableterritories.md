@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [Read the availability of a subscription](get-v1-subscriptionavailabilities-_id_.md)
+- [Read the Availability of a Subscription](get-v1-subscriptionavailabilities-_id_.md)
   Get information about the territory availability for a subscription.
-- [List the territory availability of a subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)
+- [List the Territory Availability of a Subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)
   List the territory availability and currency of a specific subscription.
-- [Modify the territory availability of a subscription](post-v1-subscriptionavailabilities.md)
+- [Modify the Territory Availability of a Subscription](post-v1-subscriptionavailabilities.md)
   Update the territory availability of a specific subscription.
 
 

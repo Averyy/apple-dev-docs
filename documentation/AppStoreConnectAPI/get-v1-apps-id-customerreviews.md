@@ -80,7 +80,7 @@ https://api.appstoreconnect.apple.com/v1/apps/682658836/customerReviews?limit=1
 ## See Also
 
 - [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
-- [Read customer review summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
+- [Read Customer Review Summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
   Get the customer review summarization for a specific app.
 
 

@@ -16,7 +16,7 @@ object MarketplaceWebhookResponse
 
 #### Discussion
 
-Use this object with [`Add a marketplace webhook configuration`](post-v1-marketplacewebhooks.md).
+Use this object with [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md).
 
 ## Properties
 

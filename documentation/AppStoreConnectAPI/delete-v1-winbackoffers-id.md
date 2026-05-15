@@ -1,4 +1,4 @@
-# Delete a win-back offer
+# Delete a Win-Back Offer
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -28,23 +28,23 @@ DELETE https://api.appstoreconnect.apple.com/v1/winBackOffers/10759170294
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `winBackOffers` resource ID from the [`List win-back offers`](get-v1-subscriptions-_id_-winbackoffers.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `winBackOffers` resource ID from the [`List Win-Back Offers`](get-v1-subscriptions-_id_-winbackoffers.md) response.
 
 ## See Also
 
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
   Configure win-back offers for your auto-renewable subscriptions with the App Store Connect API.
-- [List win-back offers](get-v1-subscriptions-_id_-winbackoffers.md)
+- [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
   List all win-back offers for a specific subscription.
 - [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
-- [Read win-back offer information](get-v1-winbackoffers-_id_.md)
+- [Read Win-Back Offer Information](get-v1-winbackoffers-_id_.md)
   Read details about a specific win-back offer.
-- [List win-back offer prices](get-v1-winbackoffers-_id_-prices.md)
+- [List Win-Back Offer Prices](get-v1-winbackoffers-_id_-prices.md)
   List all prices for specific win-back offers.
 - [GET /v1/winBackOffers/{id}/relationships/prices](get-v1-winbackoffers-_id_-relationships-prices.md)
-- [Create a win-back offer](post-v1-winbackoffers.md)
+- [Create a Win-Back Offer](post-v1-winbackoffers.md)
   Create a win-back offer for a specific subscription.
-- [Modify a win-back offer](patch-v1-winbackoffers-_id_.md)
+- [Modify a Win-Back Offer](patch-v1-winbackoffers-_id_.md)
   Edit details for a specific win-back offer.
 
 

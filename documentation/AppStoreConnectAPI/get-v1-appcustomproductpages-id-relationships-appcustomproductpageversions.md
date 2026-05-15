@@ -1,4 +1,4 @@
-# Get all version IDs for an app custom product page
+# Get All Version IDs for an App Custom Product Page
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,17 +18,17 @@ Get a list of custom product page version IDs associated with a custom product p
 
 ## See Also
 
-- [Create a custom product page](post-v1-appcustomproductpages.md)
+- [Create a Custom Product Page](post-v1-appcustomproductpages.md)
   Add a custom product page for your app.
-- [Modify an app custom product page](patch-v1-appcustomproductpages-_id_.md)
+- [Modify an App Custom Product Page](patch-v1-appcustomproductpages-_id_.md)
   Update the name and visibility status of an app custom product page.
-- [List all custom product pages for an app](get-v1-apps-_id_-appcustomproductpages.md)
+- [List All Custom Product Pages for an App](get-v1-apps-_id_-appcustomproductpages.md)
   Get a list of all custom product pages for a specific app.
-- [Read custom product page information](get-v1-appcustomproductpages-_id_.md)
+- [Read Custom Product Page Information](get-v1-appcustomproductpages-_id_.md)
   Get information about a specific app custom product page.
-- [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
+- [List Custom Product Page Versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [Delete an app custom product page](delete-v1-appcustomproductpages-_id_.md)
+- [Delete an App Custom Product Page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.
 
 

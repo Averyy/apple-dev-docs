@@ -40,7 +40,7 @@ After your app is approved by App Review, and after you add it to a marketplace 
       ...
 ```
 
-You can also find the app Apple ID by going to App Store Connect > My Apps > Select an app > App Information > Apple ID. Next, look up the `appStoreVersion` by calling [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) using the app Apple ID. Then, call [`Create an alternative distribution package`](post-v1-alternativedistributionpackages.md) using the `data.relationships.appStoreVersion.id` from the previous response. Use the sample payload below as a guide:
+You can also find the app Apple ID by going to App Store Connect > My Apps > Select an app > App Information > Apple ID. Next, look up the `appStoreVersion` by calling [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) using the app Apple ID. Then, call [`Create an Alternative Distribution Package`](post-v1-alternativedistributionpackages.md) using the `data.relationships.appStoreVersion.id` from the previous response. Use the sample payload below as a guide:
 
 ```other
 {
@@ -58,7 +58,7 @@ You can also find the app Apple ID by going to App Store Connect > My Apps > Sel
 }
 ```
 
-If you opt-in to notifications, and the associated marketplace has set up webhooks with the [`Add a marketplace webhook configuration`](post-v1-marketplacewebhooks.md) endpoint, the marketplace is notified that a new alternative distribution package is available. If you did not opt-in, you’ll need to provide the alternative distribution package ID to the marketplace.
+If you opt-in to notifications, and the associated marketplace has set up webhooks with the [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md) endpoint, the marketplace is notified that a new alternative distribution package is available. If you did not opt-in, you’ll need to provide the alternative distribution package ID to the marketplace.
 
 If you manage an alternative marketplace, you can get the alternative distribution package ID either from a notification from the webhooks API or manually from the app developer. A marketplace can’t generate alternative distribution packages on behalf of the app developer. The marketplace developer uses the App Store Connect API key associated with the marketplace provider’s account to download ADPs.
 
@@ -77,7 +77,7 @@ After your web distribution app is approved by App Review, you need to create th
       ...
 ```
 
-You can also find the app Apple ID by going to App Store Connect > My Apps > Select an app > App Information > Apple ID. Next, look up the `appStoreVersion` by calling [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) using the app Apple ID. Then, call [`Create an alternative distribution package`](post-v1-alternativedistributionpackages.md) using the `data.relationships.appStoreVersion.id` from the previous response. Use the sample payload below as a guide:
+You can also find the app Apple ID by going to App Store Connect > My Apps > Select an app > App Information > Apple ID. Next, look up the `appStoreVersion` by calling [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) using the app Apple ID. Then, call [`Create an Alternative Distribution Package`](post-v1-alternativedistributionpackages.md) using the `data.relationships.appStoreVersion.id` from the previous response. Use the sample payload below as a guide:
 
 ```other
 {
@@ -99,17 +99,17 @@ To learn more about next steps for your web distribution app, see [`Installing y
 
 ##### Select the Most Recent Distribution Package
 
-Only one alternative distribution package can exist for an `appStoreVersion.` It’s possible that you might have multiple versions of an alternative distribution package. To ensure you’re selecting the most recent `alternativeDistributionPackageVersion` when there are multiple versions available, use `filter[state]=COMPLETED` when calling the [`Read version information for an alternative distribution package`](get-v1-alternativedistributionpackages-_id_-versions.md) endpoint.
+Only one alternative distribution package can exist for an `appStoreVersion.` It’s possible that you might have multiple versions of an alternative distribution package. To ensure you’re selecting the most recent `alternativeDistributionPackageVersion` when there are multiple versions available, use `filter[state]=COMPLETED` when calling the [`Read Version Information for an Alternative Distribution Package`](get-v1-alternativedistributionpackages-_id_-versions.md) endpoint.
 
 ## See Also
 
-- [Read alternative distribution package information](get-v1-alternativedistributionpackages-_id_.md)
+- [Read Alternative Distribution Package Information](get-v1-alternativedistributionpackages-_id_.md)
   Get information about a specific alternative distribution package.
-- [Create an alternative distribution package](post-v1-alternativedistributionpackages.md)
-  Create an alternative distribution package for an app store version.
-- [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Create an Alternative Distribution Package](post-v1-alternativedistributionpackages.md)
+  Create an alternative distribution package for an App Store version.
+- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
-- [Read version information for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-versions.md)
+- [Read Version Information for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-versions.md)
   Get version detail information about a specific alternative distribution package.
 
 

@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeUpdateRequest.Data
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeUpdateRequest.Data.Attributes](inapppurchaseoffercodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify an in-app purchase offer code update request.
 

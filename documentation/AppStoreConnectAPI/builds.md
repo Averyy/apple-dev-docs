@@ -23,7 +23,7 @@ Once the build is in the system, you can use the API to perform actions like:
   Get information about a specific build.
 - [Read the App Information of a Build](get-v1-builds-_id_-app.md)
   Get the app information for a specific build.
-- [Read the app ID of a build](get-v1-builds-_id_-relationships-app.md)
+- [Read the App ID of a Build](get-v1-builds-_id_-relationships-app.md)
   Get the app ID for a specific build.
 - [Read the App Store Version Information of a Build](get-v1-builds-_id_-appstoreversion.md)
   Get the App Store version of a specific build.
@@ -31,7 +31,7 @@ Once the build is in the system, you can use the API to perform actions like:
 - [Read the Prerelease Version of a Build](get-v1-builds-_id_-prereleaseversion.md)
   Get the prerelease version for a specific build.
 - [GET /v1/builds/{id}/relationships/preReleaseVersion](get-v1-builds-_id_-relationships-prereleaseversion.md)
-- [Read usage metrics for a beta build](get-v1-builds-_id_-metrics-betabuildusages.md)
+- [Read Usage Metrics for a Beta Build](get-v1-builds-_id_-metrics-betabuildusages.md)
   Get usage metrics for a specific build.
 ### Modifying Builds
 - [Modify a Build](patch-v1-builds-_id_.md)
@@ -45,7 +45,7 @@ Once the build is in the system, you can use the API to perform actions like:
   Remove access to a specific build for all beta testers in one or more beta groups.
 - [Assign Individual Testers to a Build](post-v1-builds-_id_-relationships-individualtesters.md)
   Enable a beta tester who is not a part of a beta group to test a build.
-- [Remove Individual Testers from a Build](delete-v1-builds-_id_-relationships-individualtesters.md)
+- [Remove Individual Testers From a Build](delete-v1-builds-_id_-relationships-individualtesters.md)
   Remove access to test a specific build from one or more individually assigned testers.
 ### Listing Individually Assigned Beta Testers
 - [List All Individual Testers for a Build](get-v1-builds-_id_-individualtesters.md)

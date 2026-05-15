@@ -1,4 +1,4 @@
-# Read activity image information 
+# Read Activity Image Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,11 +18,11 @@ Get information for a specific Game Center activity image.
 
 ## See Also
 
-- [Create an activity image](post-v1-gamecenteractivityimages.md)
+- [Create an Activity Image](post-v1-gamecenteractivityimages.md)
   Reserve an image for a Game Center activity.
-- [Commit an image for an activity](patch-v1-gamecenteractivityimages-_id_.md)
+- [Commit an Image for an Activity](patch-v1-gamecenteractivityimages-_id_.md)
   Commit an uploaded image asset as a Game Center activity image.
-- [Delete an activity image](delete-v1-gamecenteractivityimages-_id_.md)
+- [Delete an Activity Image](delete-v1-gamecenteractivityimages-_id_.md)
   Remove a specific image from a Game Center activity.
 
 

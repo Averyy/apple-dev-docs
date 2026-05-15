@@ -133,7 +133,7 @@ POST https://api.appstoreconnect.apple.com/v1/appStoreVersions
 ## See Also
 
 - [Modify an App Store Version](patch-v1-appstoreversions-_id_.md)
-  Update the app store version for a specific app.
+  Update the App Store version for a specific app.
 - [Delete an App Store Version](delete-v1-appstoreversions-_id_.md)
   Delete an app store version that is associated with an app.
 

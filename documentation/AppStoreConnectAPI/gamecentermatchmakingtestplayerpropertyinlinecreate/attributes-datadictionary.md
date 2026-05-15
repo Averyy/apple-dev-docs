@@ -16,7 +16,7 @@ object GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes
 
 ## Properties
 
-- `playerId` (string) *(required)*: A unique identifier for the player.
+- `playerId` (string): A unique identifier for the player.
 - `properties` ([Property]): The key-value pairs representing the game-specific property values.
 
 

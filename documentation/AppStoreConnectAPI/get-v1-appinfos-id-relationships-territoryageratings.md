@@ -1,4 +1,4 @@
-# List territory age rating Ids for an app info
+# List Territory Age Rating IDs for an App Info
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ List all territory age rating IDs for a specific app info.
 
 ## See Also
 
-- [List territory age ratings for an app info](get-v1-appinfos-_id_-territoryageratings.md)
+- [List Territory Age Ratings for an App Info](get-v1-appinfos-_id_-territoryageratings.md)
   List all territory age ratings for a specific app info.
 
 

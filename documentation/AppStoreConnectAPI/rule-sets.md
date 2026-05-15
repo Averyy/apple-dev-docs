@@ -11,24 +11,24 @@ The `rule set` resource represents a set of rules associated with a queue that G
 ## Topics
 
 ### Creating, modifying, and deleting rule sets
-- [Create a rule set](post-v1-gamecentermatchmakingrulesets.md)
+- [Create a Rule Set](post-v1-gamecentermatchmakingrulesets.md)
   Create a rule set to contain matchmaking rules and teams.
-- [Modify a rule set](patch-v1-gamecentermatchmakingrulesets-_id_.md)
+- [Modify a Rule Set](patch-v1-gamecentermatchmakingrulesets-_id_.md)
   Update the attributes of a rule set.
-- [Delete a rule set](delete-v1-gamecentermatchmakingrulesets-_id_.md)
+- [Delete a Rule Set](delete-v1-gamecentermatchmakingrulesets-_id_.md)
   Delete a rule set along with its matchmaking rules and teams.
 ### Reading rule set information
-- [List all rule sets](get-v1-gamecentermatchmakingrulesets.md)
+- [List All Rule Sets](get-v1-gamecentermatchmakingrulesets.md)
   Get information about all rule sets and their associated objects.
-- [Read rule set information](get-v1-gamecentermatchmakingrulesets-_id_.md)
+- [Read Rule Set Information](get-v1-gamecentermatchmakingrulesets-_id_.md)
   Get information about a specific rule set and its related objects.
-- [List queues in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-matchmakingqueues.md)
+- [List Queues in a Rule Set](get-v1-gamecentermatchmakingrulesets-_id_-matchmakingqueues.md)
   Get information about queues that belong to a rule set.
 - [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/matchmakingQueues](get-v1-gamecentermatchmakingrulesets-_id_-relationships-matchmakingqueues.md)
-- [List rules in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-rules.md)
+- [List Rules in a Rule Set](get-v1-gamecentermatchmakingrulesets-_id_-rules.md)
   Get information about the rules in a rule set.
 - [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/rules](get-v1-gamecentermatchmakingrulesets-_id_-relationships-rules.md)
-- [List teams in a rule set](get-v1-gamecentermatchmakingrulesets-_id_-teams.md)
+- [List Teams in a Rule Set](get-v1-gamecentermatchmakingrulesets-_id_-teams.md)
   Get information about the teams in a rule set.
 - [GET /v1/gameCenterMatchmakingRuleSets/{id}/relationships/teams](get-v1-gamecentermatchmakingrulesets-_id_-relationships-teams.md)
 ### Objects

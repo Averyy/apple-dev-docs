@@ -16,7 +16,7 @@ object AnalyticsReportSegmentResponse
 
 #### Discussion
 
-Use this object with [`Read the details for a report segment`](get-v1-analyticsreportsegments-_id_.md).
+Use this object with [`Read the Details for a Report Segment`](get-v1-analyticsreportsegments-_id_.md).
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# Modify a rule
+# Modify a Rule
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Update a specific matchmaking rule in a rule set.
 
 ## See Also
 
-- [Create a rule](post-v1-gamecentermatchmakingrules.md)
+- [Create a Rule](post-v1-gamecentermatchmakingrules.md)
   Add a matchmaking rule to a rule set.
-- [Delete a rule](delete-v1-gamecentermatchmakingrules-_id_.md)
+- [Delete a Rule](delete-v1-gamecentermatchmakingrules-_id_.md)
   Delete a matchmaking rule in a rule set.
 
 

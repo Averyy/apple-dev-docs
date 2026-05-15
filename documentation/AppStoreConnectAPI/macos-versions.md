@@ -15,11 +15,11 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
 ## Topics
 
 ### Getting macOS Version Information
-- [List All macOS Versions Available in Xcode Cloud](get-v1-cimacosversions.md)
+- [List All Macos Versions Available in Xcode Cloud](get-v1-cimacosversions.md)
   List all macOS versions available to Xcode Cloud workflows.
-- [Read macOS Version Information](get-v1-cimacosversions-_id_.md)
+- [Read Macos Version Information](get-v1-cimacosversions-_id_.md)
   Get information about a specific macOS version that’s available to Xcode Cloud workflows.
-- [List Available Xcode Versions for a macOS Version](get-v1-cimacosversions-_id_-xcodeversions.md)
+- [List Available Xcode Versions for a Macos Version](get-v1-cimacosversions-_id_-xcodeversions.md)
   List all Xcode versions available for a specific macOS version in Xcode Cloud.
 - [GET /v1/ciMacOsVersions/{id}/relationships/xcodeVersions](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
 ### Objects

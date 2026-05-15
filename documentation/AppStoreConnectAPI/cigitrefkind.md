@@ -14,11 +14,6 @@ A string that represents the kind of a Git References resource.
 string CiGitRefKind
 ```
 
-#### Possible Values
-
-- **`BRANCH`**: The Git reference represents a branch.
-- **`TAG`**: The Git reference represents a tag.
-
 ## See Also
 
 - [object ScmGitReference.Attributes](scmgitreference/attributes-data.dictionary.md)

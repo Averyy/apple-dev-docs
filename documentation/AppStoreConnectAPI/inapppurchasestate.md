@@ -12,21 +12,6 @@
 string InAppPurchaseState
 ```
 
-##### Possible Values
-
-- **`APPROVED`**: 
-- **`DEVELOPER_ACTION_NEEDED`**: 
-- **`DEVELOPER_REMOVED_FROM_SALE`**: 
-- **`IN_REVIEW`**: 
-- **`MISSING_METADATA`**: 
-- **`PENDING_BINARY_APPROVAL`**: 
-- **`PROCESSING_CONTENT`**: 
-- **`READY_TO_SUBMIT`**: 
-- **`REJECTED`**: 
-- **`REMOVED_FROM_SALE`**: 
-- **`WAITING_FOR_REVIEW`**: 
-- **`WAITING_FOR_UPLOAD`**: 
-
 ## See Also
 
 - [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)

@@ -1,4 +1,4 @@
-# Create a team
+# Create a Team
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -64,9 +64,9 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterMatchmakingTeams
 
 ## See Also
 
-- [Modify a team](patch-v1-gamecentermatchmakingteams-_id_.md)
+- [Modify a Team](patch-v1-gamecentermatchmakingteams-_id_.md)
   Update a specific team in a rule set.
-- [Delete a team](delete-v1-gamecentermatchmakingteams-_id_.md)
+- [Delete a Team](delete-v1-gamecentermatchmakingteams-_id_.md)
   Delete a game-specific team in a rule set.
 
 

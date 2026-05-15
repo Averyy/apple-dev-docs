@@ -1,4 +1,4 @@
-# List all assets packs for an app
+# List All Assets Packs for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -26,9 +26,9 @@ Get information about the Apple-hosted background assets for a specific app.
 
 ## See Also
 
-- [List the assets packs IDs for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
-- [Modify a background asset](patch-v1-backgroundassets-_id_.md)
+- [Modify a Background Asset](patch-v1-backgroundassets-_id_.md)
   Update a specific background asset.
 
 

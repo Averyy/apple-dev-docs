@@ -1,4 +1,4 @@
-# Remove Specified Beta Testers from All Groups and Builds of an App
+# Remove Specified Beta Testers From All Groups and Builds of an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

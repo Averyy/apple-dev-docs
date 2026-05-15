@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Attributes](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to create an in-app purchase offer code custom code create request.
 - [object InAppPurchaseOfferCodeCustomCodeCreateRequest.Data.Relationships](inapppurchaseoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)

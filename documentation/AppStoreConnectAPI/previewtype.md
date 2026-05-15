@@ -24,22 +24,22 @@ string PreviewType
 
 Possible values
 
-- term `IPHONE_67`
-- term `IPHONE_65`
-- term `IPHONE_61`
-- term `IPHONE_58`
-- term `IPHONE_55`
-- term `IPHONE_47`
-- term `IPHONE_40`
-- term `IPHONE_35`
-- term `IPAD_PRO_3GEN_129`
-- term `IPAD_PRO_3GEN_11`
-- term `IPAD_PRO_129`
-- term `IPAD_105`
-- term `IPAD_97`
-- term `DESKTOP`
-- term `APPLE_TV`
-- term `APPLE_VISION_PRO`
+- `IPHONE_67`
+- `IPHONE_65`
+- `IPHONE_61`
+- `IPHONE_58`
+- `IPHONE_55`
+- `IPHONE_47`
+- `IPHONE_40`
+- `IPHONE_35`
+- `IPAD_PRO_3GEN_129`
+- `IPAD_PRO_3GEN_11`
+- `IPAD_PRO_129`
+- `IPAD_105`
+- `IPAD_97`
+- `DESKTOP`
+- `APPLE_TV`
+- `APPLE_VISION_PRO`
 
 ## See Also
 

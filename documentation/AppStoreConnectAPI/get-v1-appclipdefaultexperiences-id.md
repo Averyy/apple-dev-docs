@@ -20,6 +20,7 @@ Get a specific default App Clip experience.
 - `fields[appStoreVersions]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[appClipDefaultExperienceLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the default App Clip experience localizations relationship is included.
+- `fields[appClips]` ([string])
 
 ## See Also
 

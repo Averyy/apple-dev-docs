@@ -20,12 +20,12 @@ A string that indicates the version to use for the NIAP Functional Package for T
 
 #### Discussion
 
-App Transport Security (ATS) allows you to further restrict default TLS client behavior in order to meet requirements outlined by the United States government’s National Information Assurance Partnership (NIAP) Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options for applications aimed at regulated environments.
+App Transport Security (ATS) allows you to further restrict default TLS client behavior to help meet requirements outlined by the United States government’s National Information Assurance Partnership (NIAP) Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options to help developers create NIAP-compliant modes of operations for their apps.
 
 The value of this key is a string, which can have the following values:
 
 - **`none`**: Apply no additional requirements. This value results in the default ATS behavior.
-- **`FCP_v2.1`**: Make your default client connections compliant with the [`Functional Package for Transport Layer Security (TLS) Version 2.1`](https://developer.apple.comhttps://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html).
+- **`FCP_v2.1`**: Make your default client connections enforce additional requirements (described below) as specified in the [`Functional Package for Transport Layer Security (TLS) Version 2.1`](https://developer.apple.comhttps://www.niap-ccevs.org/static_html/protection-profile/519/PKG_TLS_V2.1.html).
 - **`recommended`**: Use the recommended version of the NIAP functional package for the operating system version your app is running on. Currently, this is equivalent to `FCP_v2.1`.
 
 The `FCP_v2.1` value adds the following requirements on top of standard ATS:

@@ -1,4 +1,4 @@
-# Delete a beta feedback crash submission
+# Delete a Beta Feedback Crash Submission
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,17 +14,17 @@ Delete a beta feedback crash submission from your app.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaFeedbackCrashSubmissions` resource ID from the [`List all beta feedback crash submissions for an app`](get-v1-apps-_id_-betafeedbackcrashsubmissions.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaFeedbackCrashSubmissions` resource ID from the [`List All Beta Feedback Crash Submissions for an App`](get-v1-apps-_id_-betafeedbackcrashsubmissions.md) response.
 
 ## See Also
 
-- [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
+- [List All Beta Feedback Crash Submissions for an App](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
-- [List all beta feedback crash submission IDs for an app](get-v1-apps-_id_-relationships-betafeedbackcrashsubmissions.md)
+- [List All Beta Feedback Crash Submission IDs for an App](get-v1-apps-_id_-relationships-betafeedbackcrashsubmissions.md)
   Get a list of beta feedback crash submissions for a specific app.
-- [Read beta feedback crash submission information](get-v1-betafeedbackcrashsubmissions-_id_.md)
+- [Read Beta Feedback Crash Submission Information](get-v1-betafeedbackcrashsubmissions-_id_.md)
   Get information for a specific beta feedback crash submission.
-- [Read the crash log for a beta feedback crash submission](get-v1-betafeedbackcrashsubmissions-_id_-crashlog.md)
+- [Read the Crash Log for a Beta Feedback Crash Submission](get-v1-betafeedbackcrashsubmissions-_id_-crashlog.md)
   Get crash log information for a specific beta feedback crash submission.
 - [GET /v1/betaFeedbackCrashSubmissions/{id}/relationships/crashLog](get-v1-betafeedbackcrashsubmissions-_id_-relationships-crashlog.md)
 

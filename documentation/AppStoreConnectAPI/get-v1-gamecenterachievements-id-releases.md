@@ -1,4 +1,4 @@
-# Read release information for an achievement
+# Read Release Information for an Achievement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -60,15 +60,15 @@ https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/4a6bcd3d-0325-41
 
 ## See Also
 
-- [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 - [GET /v1/gameCenterAchievements/{id}/relationships/releases](get-v1-gamecenterachievements-_id_-relationships-releases.md)
-- [Read Game Center achievement release information](get-v1-gamecenterachievementreleases-_id_.md)
+- [Read Game Center Achievement Release Information](get-v1-gamecenterachievementreleases-_id_.md)
   Read the state of a specific achievement release.
-- [Create a Game Center achievement release](post-v1-gamecenterachievementreleases.md)
+- [Create a Game Center Achievement Release](post-v1-gamecenterachievementreleases.md)
   Create a release for an achievement and a Game Center detail.
-- [Delete a Game Center achievement release](delete-v1-gamecenterachievementreleases-_id_.md)
+- [Delete a Game Center Achievement Release](delete-v1-gamecenterachievementreleases-_id_.md)
   Delete a release of an achievement or Game Center detail.
 
 

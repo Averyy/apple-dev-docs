@@ -1,4 +1,4 @@
-# List app screenshot sets Ids for a custom product page localization
+# List App Screenshot Sets IDs for a Custom Product Page Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ List the app screenshot set IDs for a specific custom product page localization.
 
 ## See Also
 
-- [List app screenshot sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
+- [List App Screenshot Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
   List the app screenshot sets for a specific custom product page localization.
 
 

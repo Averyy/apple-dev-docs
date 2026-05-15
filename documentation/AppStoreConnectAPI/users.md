@@ -29,7 +29,7 @@ The `users` resource represents an App Store Connect user. You can change or del
   Give a user on your team access to one or more apps.
 - [Replace the List of Visible Apps for a User](patch-v1-users-_id_-relationships-visibleapps.md)
   Replace the list of apps a user on your team can see.
-- [Remove Visible Apps from a User](delete-v1-users-_id_-relationships-visibleapps.md)
+- [Remove Visible Apps From a User](delete-v1-users-_id_-relationships-visibleapps.md)
   Remove a user on your team’s access to one or more apps.
 ### Objects and Data Types
 - [object User](user.md)

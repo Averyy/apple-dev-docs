@@ -12,12 +12,6 @@
 string SubscriptionCustomerEligibility
 ```
 
-#### Possible Values
-
-- **`NEW`**: A customer who has not previously subscribed to this subscription.
-- **`EXISTING`**: A customer who is currently subscribed to this subscription.
-- **`EXPIRED`**: A customer who was but is not currently subscribed to this subscription.
-
 ## See Also
 
 - [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)

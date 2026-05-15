@@ -1,4 +1,4 @@
-# Delete an subscription image
+# Delete an Subscription Image
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,18 +18,18 @@ Delete the image asset that appears on the App Store listing that represents an 
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List subscription images`](get-v1-subscriptions-_id_-images.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List Subscription Images`](get-v1-subscriptions-_id_-images.md) response.
 
 ## See Also
 
-- [Create an image for a subscription](post-v1-subscriptionimages.md)
+- [Create an Image for a Subscription](post-v1-subscriptionimages.md)
   Reserve an image asset to appear in the App Store, representing a subscription.
-- [Read subscription image information](get-v1-subscriptionimages-_id_.md)
+- [Read Subscription Image Information](get-v1-subscriptionimages-_id_.md)
   Read details about a specific subscription image.
-- [List subscription images](get-v1-subscriptions-_id_-images.md)
+- [List Subscription Images](get-v1-subscriptions-_id_-images.md)
   List all images for a specific subscription.
 - [GET /v1/subscriptions/{id}/relationships/images](get-v1-subscriptions-_id_-relationships-images.md)
-- [Read subscription image information](patch-v1-subscriptionimages-_id_.md)
+- [Read Subscription Image Information](patch-v1-subscriptionimages-_id_.md)
   Read details about a specific subscription image.
 
 

@@ -6,7 +6,7 @@ Add and read information for alternative distribution package notifications.
 
 #### Overview
 
-Alternative marketplaces can use the marketplace webhooks API [`Add a marketplace webhook configuration`](post-v1-marketplacewebhooks.md) endpoint to set up an `endpointURL,` where the marketplace receives notifications about changes to apps that it distributes.
+Alternative marketplaces can use the marketplace webhooks API [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md) endpoint to set up an `endpointURL,` where the marketplace receives notifications about changes to apps that it distributes.
 
 The most typical notifications are:
 
@@ -14,7 +14,7 @@ The most typical notifications are:
 - A specific app version needs to be removed.
 - All versions of an app need to be removed.
 
-To learn more about configuring a webhook URL using the API, see [`Add a marketplace webhook configuration`](post-v1-marketplacewebhooks.md).
+To learn more about configuring a webhook URL using the API, see [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md).
 
 To learn more about server-side processing of marketplace webhook notifications, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
 
@@ -23,13 +23,13 @@ To learn more about server-side processing of marketplace webhook notifications,
 ## Topics
 
 ### Managing Webhook Endpoint URLs
-- [Read marketplace webhook information](get-v1-marketplacewebhooks.md)
+- [Read Marketplace Webhook Information](get-v1-marketplacewebhooks.md)
   Get the endpoint URL for alternative distribution package notifications.
-- [Add a marketplace webhook configuration](post-v1-marketplacewebhooks.md)
+- [Add a Marketplace Webhook Configuration](post-v1-marketplacewebhooks.md)
   Add a new endpoint URL and secret for alternative distribution package notifications.
-- [Modify a marketplace webhook configuration](patch-v1-marketplacewebhooks-_id_.md)
+- [Modify a Marketplace Webhook Configuration](patch-v1-marketplacewebhooks-_id_.md)
   Update the endpoint URL and secret for alternative distribution package notifications.
-- [Delete a marketplace webhook configuration](delete-v1-marketplacewebhooks-_id_.md)
+- [Delete a Marketplace Webhook Configuration](delete-v1-marketplacewebhooks-_id_.md)
   Delete a specific marketplace notifcation endpoint URL.
 ### Objects
 - [object MarketplaceWebhook](marketplacewebhook.md)

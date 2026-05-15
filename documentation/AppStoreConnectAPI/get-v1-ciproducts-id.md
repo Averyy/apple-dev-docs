@@ -87,6 +87,7 @@ GET https://api.appstoreconnect.apple.comv1/ciProducts/1987a0d5-a64d-4799-b7d2-a
 - `include` ([string]): The relationship data to include in the response.
 - `limit[primaryRepositories]` (integer): The number of included Products resources to return if the primary repositories relationship is included.
 - `fields[apps]` ([string]): Additional fields to include for each Products resource returned by the response.
+- `fields[bundleIds]` ([string])
 
 ## See Also
 

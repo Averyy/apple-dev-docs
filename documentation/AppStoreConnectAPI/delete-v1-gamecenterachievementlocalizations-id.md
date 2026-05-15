@@ -1,4 +1,4 @@
-# Delete an achievement localization
+# Delete an Achievement Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -40,19 +40,19 @@ HTTP/1.1 204 No Content
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List all localizations for an achievement`](get-v1-gamecenterachievements-_id_-localizations.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List All Localizations for an Achievement`](get-v1-gamecenterachievements-_id_-localizations.md) response.
 
 ## See Also
 
-- [Create a Game Center achievement localization](post-v2-gamecenterachievementlocalizations.md)
+- [Create a Game Center Achievement Localization](post-v2-gamecenterachievementlocalizations.md)
   Create a Game Center achievement localization.
-- [Modify a Game Center achievement localization](patch-v2-gamecenterachievementlocalizations-_id_.md)
+- [Modify a Game Center Achievement Localization](patch-v2-gamecenterachievementlocalizations-_id_.md)
   Update a specific Game Center achievement localization.
-- [Delete a Game Center achievement localization](delete-v2-gamecenterachievementlocalizations-_id_.md)
+- [Delete a Game Center Achievement Localization](delete-v2-gamecenterachievementlocalizations-_id_.md)
   Delete a specific Game Center achievement localization.
-- [Create an achievement localization](post-v1-gamecenterachievementlocalizations.md)
+- [Create an Achievement Localization](post-v1-gamecenterachievementlocalizations.md)
   Add Game Center achievement localized information for a new locale.
-- [Edit an achievement localization](patch-v1-gamecenterachievementlocalizations-_id_.md)
+- [Edit an Achievement Localization](patch-v1-gamecenterachievementlocalizations-_id_.md)
   Modify localized Game Center achievement information for a particular language.
 
 

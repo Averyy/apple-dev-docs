@@ -11,15 +11,15 @@ When you launch a noteworthy app or make an important update to an existing one,
 ## Topics
 
 ### Managing nominations
-- [Create a featuring nomination](post-v1-nominations.md)
+- [Create a Featuring Nomination](post-v1-nominations.md)
   Tell Apple about your upcoming app or feature.
-- [List nominations](get-v1-nominations.md)
+- [List Nominations](get-v1-nominations.md)
   Get all featuring nominations.
-- [Read details for a nomination](get-v1-nominations-_id_.md)
+- [Read Details for a Nomination](get-v1-nominations-_id_.md)
   Get information for a specific featuring nomination.
-- [Modify a nomination](patch-v1-nominations-_id_.md)
+- [Modify a Nomination](patch-v1-nominations-_id_.md)
   Update a specific featuring nomination.
-- [Delete a featuring nomination](delete-v1-nominations-_id_.md)
+- [Delete a Featuring Nomination](delete-v1-nominations-_id_.md)
   Remove a specific featuring nomination.
 ### Objects
 - [object Nomination](nomination.md)

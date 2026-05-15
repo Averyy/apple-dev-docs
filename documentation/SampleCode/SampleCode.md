@@ -45,8 +45,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
 - [Editing Spatial Audio with an audio mix](../Cinematic/editing-spatial-audio-with-an-audio-mix.md)
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
-- [Enhancing your app’s privacy and security with quantum-secure workflows](../CryptoKit/enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows.md)
-  Use quantum-secure cryptography to protect your app from quantum attacks.
 - [Enhancing your app with machine learning-based video effects](../VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects.md)
   Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [Enhancing your custom text engine with Writing Tools](../AppKit/enhancing-your-custom-text-engine-with-writing-tools.md)
@@ -248,6 +246,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a structured user interface that simplifies navigation in your app.
 - [Organize Your User Interface with a Stack View](../AppKit/organize-your-user-interface-with-a-stack-view.md)
   Group individual views in your app’s user interface into a scrollable stack view.
+- [Restoring your app’s state with AppKit](../AppKit/restoring-your-app-s-state-with-appkit.md)
+  Provide continuity for people using your app by preserving current activities on macOS.
 - [Supporting Collection View Drag and Drop Through File Promises](../AppKit/supporting-collection-view-drag-and-drop-through-file-promises.md)
   Share data between macOS apps during drag and drop by using an item provider.
 - [Supporting Drag and Drop Through File Promises](../AppKit/supporting-drag-and-drop-through-file-promises.md)
@@ -732,6 +732,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use argument buffers to render terrain in real time with a GPU-driven pipeline.
 - [Running a machine learning model on the GPU timeline](../Metal/running-a-machine-learning-model-on-the-gpu-timeline.md)
   Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
+- [Running inline ML operations in a shader with Metal 4](../Metal/running-inline-ml-operations-in-a-shader-with-metal-4.md)
+  Multiply matrices across multiple GPU cores with inline tensor operations.
 - [Selecting device objects for compute processing](../Metal/selecting-device-objects-for-compute-processing.md)
   Switch dynamically between multiple GPUs to efficiently execute a compute-intensive simulation.
 - [Selecting device objects for graphics rendering](../Metal/selecting-device-objects-for-graphics-rendering.md)
@@ -783,6 +785,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Share screen recordings, or broadcast live audio and video of your app, by adding ReplayKit to your macOS apps and games.
 - [Selecting Photos and Videos in iOS](../PhotoKit/selecting-photos-and-videos-in-ios.md)
   Improve the user experience of finding and selecting assets by using the Photos picker.
+- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
+  Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 ### RealityKit and Reality Composer Pro
 - [Altering RealityKit Rendering with Shader Functions](../realitykit/altering_realitykit_rendering_with_shader_functions.md)
   Create rendering effects by writing surface shaders and geometry modifiers.
@@ -974,8 +978,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a simple `netcat` tool that establishes network connections and transfers data.
 - [Monitoring System Events with Endpoint Security](../EndpointSecurity/monitoring-system-events-with-endpoint-security.md)
   Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
-- [Performing Common Cryptographic Operations](../CryptoKit/performing-common-cryptographic-operations.md)
-  Use CryptoKit to carry out operations like hashing, key generation, and encryption.
 - [Receiving Voice and Text Communications on a Local Network](../NetworkExtension/receiving-voice-and-text-communications-on-a-local-network.md)
   Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 - [Running GUI Linux in a virtual machine on a Mac](../Virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac.md)
@@ -990,8 +992,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Configure and run a PIR server to support a URL filter using Apple’s open source container tool.
 - [Sharing Wi-Fi network credentials](../WiFiInfrastructure/Sharing-Wi-Fi-network-credentials.md)
   Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
-- [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md)
-  Convert between strongly typed cryptographic keys and native keychain types.
 - [Using the Bloom filter tool to configure a URL filter](../NetworkExtension/using-the-bloom-filter-tool.md)
   Create the files a URL filter needs for its Bloom prefilter.
 ### TV
@@ -1161,8 +1161,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use the Vision framework to isolate and apply colors to people in an image.
 - [Selecting a selfie based on capture quality](../Vision/selecting-a-selfie-based-on-capture-quality.md)
   Compare face-capture quality in a set of images by using Vision.
-- [Structuring recognized text on a document](../VisionKit/structuring-recognized-text-on-a-document.md)
-  Detect, recognize, and structure text on a business card or receipt using Vision and VisionKit.
 - [Tracking Multiple Objects or Rectangles in Video](../Vision/tracking-multiple-objects-or-rectangles-in-video.md)
   Apply Vision algorithms to track objects or rectangles throughout a video.
 - [Tracking the User’s Face in Real Time](../Vision/tracking-the-user-s-face-in-real-time.md)

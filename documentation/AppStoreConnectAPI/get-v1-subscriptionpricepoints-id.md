@@ -16,6 +16,7 @@ Get details about a specific subscription price point.
 
 - `fields[subscriptionPricePoints]` ([string])
 - `include` ([string])
+- `fields[territories]` ([string])
 
 ## See Also
 

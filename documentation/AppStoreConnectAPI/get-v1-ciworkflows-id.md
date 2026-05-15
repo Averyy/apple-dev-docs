@@ -122,6 +122,9 @@ GET https://api.appstoreconnect.apple.com/v1/ciWorkflows/3fa0575f-4de0-44cb-bf0f
 - `fields[ciWorkflows]` ([string]): Additional fields to include for the Workflows resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `fields[scmRepositories]` ([string]): Additional fields to include for the Workflows resource returned by the response.
+- `fields[ciMacOsVersions]` ([string])
+- `fields[ciProducts]` ([string])
+- `fields[ciXcodeVersions]` ([string])
 
 ## See Also
 

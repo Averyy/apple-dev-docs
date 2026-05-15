@@ -43,7 +43,7 @@ In the POST body, the alternative distribution package version ID refers to the 
 GET https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/6B29FC40-CA47-1067-B31D-00DD010662DA
 ```
 
-For more information about the `alternativeDistributionPackageVersions/{id}` endpoint, see [`Read information for an alternative distribution package version`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVersions-_id_).
+For more information about the `alternativeDistributionPackageVersions/{id}` endpoint, see [`Read Information for an Alternative Distribution Package Version`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVersions-_id_).
 
 Example response:
 
@@ -68,7 +68,7 @@ In the response, navigate to the `data.attributes.url`, which downloads `alterna
 | `manifest.json` | Instructions you use to assemble the alternative distribution package. |
 | `signature` | A signature that the device’s operating system uses to verify the package contents. |
 
-> 💡 **Tip**: Save the `alternativeDistributionPackageId` in case you want to query App Store Connect for all alternative distribution package versions outside of a normal `AlternativeDistributionPackageVersionAvailable` notification. For more information, see [`Read alternative distribution package information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackages-_id_).
+> 💡 **Tip**: Save the `alternativeDistributionPackageId` in case you want to query App Store Connect for all alternative distribution package versions outside of a normal `AlternativeDistributionPackageVersionAvailable` notification. For more information, see [`Read Alternative Distribution Package Information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackages-_id_).
 
 For more information on alternative distribution package workflows, see [`Alternative Distribution Packages`](https://developer.apple.com/documentation/AppStoreConnectAPI/alternative-distribution-packages).
 
@@ -179,7 +179,7 @@ The variants reside at the top of the manifest. The first variant in the example
 GET https://api.appstoreconnect.apple.com/alternativeDistributionPackageVariants/219750db-80c2-4c75-aecc-fa67835f384d
 ```
 
-For more information about the `alternativeDistributionPackageVariants` endpoint, see [`Read information for an alternative distribution package variants`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVariants-_id_).
+For more information about the `alternativeDistributionPackageVariants` endpoint, see [`Read Information for an Alternative Distribution Package Variants`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVariants-_id_).
 
 Example response:
 
@@ -209,7 +209,7 @@ If someone already has a prior version of the app installed, the system selects 
 GET https://api.appstoreconnect.apple.com/alternativeDistributionPackageDeltas/ffbc52b6-f76b-4d51-9eff-5388bc6b7572
 ```
 
-For more information about the `alternativeDistributionPackageDeltas` endpoint, see [`Read information for alternative distribution package deltas`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageDeltas-_id_).
+For more information about the `alternativeDistributionPackageDeltas` endpoint, see [`Read Information for Alternative Distribution Package Deltas`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageDeltas-_id_).
 
 Example response:
 

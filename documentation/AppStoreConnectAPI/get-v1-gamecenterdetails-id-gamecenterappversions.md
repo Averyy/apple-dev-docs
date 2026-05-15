@@ -1,4 +1,4 @@
-# Read app versions for a Game Center detail
+# Read App Versions for a Game Center Detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -170,7 +170,7 @@ https://api.appstoreconnect.apple.com/v1/gameCenterDetails/83b895ff-7bfe-5056-12
 - [GET /v1/gameCenterAppVersions/{id}](get-v1-gamecenterappversions-_id_.md)
   Read the Game Center enablement state and related app version information.
 - [GET /v1/gameCenterAppVersions/{id}/appStoreVersion](get-v1-gamecenterappversions-_id_-appstoreversion.md)
-  Read the app store version and related information for an app version.
+  Read the App Store version and related information for an app version.
 - [GET /v1/gameCenterAppVersions/{id}/relationships/appStoreVersion](get-v1-gamecenterappversions-_id_-relationships-appstoreversion.md)
 - [GET /v1/gameCenterAppVersions/{id}/compatibilityVersions](get-v1-gamecenterappversions-_id_-compatibilityversions.md)
   Get compatibility version information for a specific app version.

@@ -13,34 +13,34 @@ You can update the Promotional Text for your custom product page localization at
 ## Topics
 
 ### Managing localizations
-- [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
+- [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [Read custom product page localization information](get-v1-appcustomproductpagelocalizations-_id_.md)
+- [Read Custom Product Page Localization Information](get-v1-appcustomproductpagelocalizations-_id_.md)
   Get information about a specific app custom product page localization.
-- [Create a custom product page localization](post-v1-appcustomproductpagelocalizations.md)
+- [Create a Custom Product Page Localization](post-v1-appcustomproductpagelocalizations.md)
   Add a localization for your app custom product page.
-- [Modify custom product page localization information](patch-v1-appcustomproductpagelocalizations-_id_.md)
+- [Modify Custom Product Page Localization Information](patch-v1-appcustomproductpagelocalizations-_id_.md)
   Update the promotional text for an app custom product page localization.
-- [Delete an app custom product page localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
+- [Delete an App Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
   Delete localized metadata that you configured for a custom product page.
 ### Getting preview set information
-- [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-apppreviewsets.md)
+- [List App Preview Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-apppreviewsets.md)
   List the app preview sets for a specific custom product page localization.
-- [List app preview set Ids for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-apppreviewsets.md)
+- [List App Preview Set IDs for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-apppreviewsets.md)
   List the app preview set IDs for a specific custom product page localization.
 ### Getting screenshot information
-- [List app screenshot sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
+- [List App Screenshot Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
   List the app screenshot sets for a specific custom product page localization.
-- [List app screenshot sets Ids for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-appscreenshotsets.md)
+- [List App Screenshot Sets IDs for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-appscreenshotsets.md)
   List the app screenshot set IDs for a specific custom product page localization.
 ### Managing search keywords
-- [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
+- [List App Preview Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
   List the app preview sets for a specific custom product page localization.
-- [List all search keywords for a customer product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [List All Search Keywords for a Customer Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Get a list of search keyword IDs for a customer product page localization.
-- [Add a search keyword to a custom product page localization](post-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [Add a Search Keyword to a Custom Product Page Localization](post-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Assign one or more search keywords to a specific custom product page localization.
-- [Remove a search keyword from a custom product page localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [Remove a Search Keyword From a Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Unassign a search keyword from a specific custom product page localization.
 ### Objects
 - [object AppKeyword](appkeyword.md)

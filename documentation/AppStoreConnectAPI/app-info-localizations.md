@@ -24,7 +24,7 @@ You can update localized metadata when your app is in an editable state. For mor
 - [Managing metadata in your app by using locale shortcodes](managing-metadata-in-your-app-by-using-locale-shortcodes.md)
   Optimize your app’s user experience by adding localized metadata with App Store Connect API.
 ### Reading App Localization Information
-- [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 - [Read App Info Localization Information](get-v1-appinfolocalizations-_id_.md)
   Read localized app-level information.

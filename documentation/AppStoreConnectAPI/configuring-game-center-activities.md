@@ -17,7 +17,7 @@ Before you begin creating your activities, you need these items:
 
 ##### Create the Activity
 
-Begin creating the activity by using the [`Create an activity`](post-v1-gamecenteractivities.md) endpoint. Provide these attributes in your payload:
+Begin creating the activity by using the [`Create an Activity`](post-v1-gamecenteractivities.md) endpoint. Provide these attributes in your payload:
 
 - **`referenceName`**: A 40 character or less alphanumeric string.
 - **`vendorIdentifier`**: A reverse url scheme label for this activity.
@@ -49,11 +49,11 @@ When you create an activity you use a payload like this:
 }
 ```
 
-In the response you get an `id` in the top-level data object. This `id` represents the Game Center activity. You can find this `id` at anytime using [`List all activities for a Game Center detail`](get-v1-gamecenterdetails-_id_-gamecenteractivities.md) or [`List all activities for a Game Center group`](get-v1-gamecentergroups-_id_-gamecenteractivities.md) for a grouped app.
+In the response you get an `id` in the top-level data object. This `id` represents the Game Center activity. You can find this `id` at anytime using [`List All Activities for a Game Center Detail`](get-v1-gamecenterdetails-_id_-gamecenteractivities.md) or [`List All Activities for a Game Center Group`](get-v1-gamecentergroups-_id_-gamecenteractivities.md) for a grouped app.
 
 ##### Create the Activity Version
 
-You next need to create a version for your Game center activity. The version is the parent object for localizations, the `fallbackUrl` and the activity image. Create the activity version using [`Create an activity version`](post-v1-gamecenteractivityversions.md). The `fallbackUrl` is what the system uses to support operating systems before iOS 26, macOS 26, and tvOS 26, to direct a player to an invitation page on the web. To learn more about deep links and `fallbackUrl`, see [`Creating activities for your game`](https://developer.apple.comhttps://developer.apple.com/documentation/gamekit/creating-activities-for-your-game#Add-universal-link-support).
+You next need to create a version for your Game center activity. The version is the parent object for localizations, the `fallbackUrl` and the activity image. Create the activity version using [`Create an Activity Version`](post-v1-gamecenteractivityversions.md). The `fallbackUrl` is what the system uses to support operating systems before iOS 26, macOS 26, and tvOS 26, to direct a player to an invitation page on the web. To learn more about deep links and `fallbackUrl`, see [`Creating activities for your game`](https://developer.apple.comhttps://developer.apple.com/documentation/gamekit/creating-activities-for-your-game#Add-universal-link-support).
 
 ```json
 {
@@ -78,7 +78,7 @@ You next need to create a version for your Game center activity. The version is 
 
 ##### Add an Activity Version Localization
 
-You next add an activity version localization by using [`Add an activity localization`](post-v1-gamecenteractivitylocalizations.md). The `locale` and `name` attributes are required. The `name` represent the label shown for the activity inside the Games app. For a list of possible `locale` values, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md). The `description` attribute is optional but can help a player better understand the activity. The localization requires a relationship to its parent activity version. At minimum, one activity version localization is required for submission to review.
+You next add an activity version localization by using [`Add an Activity Localization`](post-v1-gamecenteractivitylocalizations.md). The `locale` and `name` attributes are required. The `name` represent the label shown for the activity inside the Games app. For a list of possible `locale` values, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md). The `description` attribute is optional but can help a player better understand the activity. The localization requires a relationship to its parent activity version. At minimum, one activity version localization is required for submission to review.
 
 Use a payload like this:
 
@@ -105,9 +105,9 @@ Use a payload like this:
 
 ##### Add the Activity Version Image
 
-Adding a default activity image is very similar to adding an app store screenshot or app review image. You can associate the activity version default image with an activity version or an activity localization. When you create a new activity version, the default image is inherited. At minimum, a default image is required for submission to review.
+Adding a default activity image is very similar to adding an App Store screenshot or app review image. You can associate the activity version default image with an activity version or an activity localization. When you create a new activity version, the default image is inherited. At minimum, a default image is required for submission to review.
 
-Start by using [`Create an activity image`](post-v1-gamecenteractivityimages.md) with a payload that looks like this:
+Start by using [`Create an Activity Image`](post-v1-gamecenteractivityimages.md) with a payload that looks like this:
 
 ```json
 {
@@ -131,7 +131,7 @@ Start by using [`Create an activity image`](post-v1-gamecenteractivityimages.md)
 
 The response includes one or more `PUT` requests; use these URL’s to upload your image.
 
-After uploading, use [`Commit an image for an activity`](patch-v1-gamecenteractivityimages-_id_.md) to commit your image to the related resource with a payload like this:
+After uploading, use [`Commit an Image for an Activity`](patch-v1-gamecenteractivityimages-_id_.md) to commit your image to the related resource with a payload like this:
 
 ```json
 {
@@ -149,7 +149,7 @@ To learn more uploading images, see [`Uploading Assets to App Store Connect`](up
 
 ##### Relate Your Activity to a Leaderboard
 
-If your activity is not a multiplayer activity, it must be have a relationship to a leaderboard. If you don’t have an existing or appropriate leaderboard for your activity, you can create one using [`Create a leaderboard`](post-v1-gamecenterleaderboards.md). A multiplayer activity, using the `supportsPartyCode` attribute, can be used as a lobby for a group game session.  When you’re ready to relate your activity to your leaderboard, use [`PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity`](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md) with the Game Center leaderboard `id` in the request URL and with a payload like this:
+If your activity is not a multiplayer activity, it must be have a relationship to a leaderboard. If you don’t have an existing or appropriate leaderboard for your activity, you can create one using [`Create a Leaderboard`](post-v1-gamecenterleaderboards.md). A multiplayer activity, using the `supportsPartyCode` attribute, can be used as a lobby for a group game session.  When you’re ready to relate your activity to your leaderboard, use [`PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity`](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md) with the Game Center leaderboard `id` in the request URL and with a payload like this:
 
 ```json
 {
@@ -164,7 +164,7 @@ If your activity is not a multiplayer activity, it must be have a relationship t
 
 > **Note**: One localization and a default image are required for submission.
 
-Now, you’re ready to submit your activity version for review. Use [`Add an activity version release`](post-v1-gamecenteractivityversionreleases.md) to attach your activity version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a review submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated activity version to app review.
+Now, you’re ready to submit your activity version for review. Use [`Add an Activity Version Release`](post-v1-gamecenteractivityversionreleases.md) to attach your activity version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated activity version to app review.
 
 Use a payload like this:
 
@@ -190,7 +190,7 @@ Use a payload like this:
 }
 ```
 
-> 💡 **Tip**: Read a list of the past activity version releases using [`Get activity releases for a Game Center detail`](get-v1-gamecenterdetails-_id_-activityreleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center activity version that is currently `LIVE`.
+> 💡 **Tip**: Read a list of the past activity version releases using [`Get Activity Releases for a Game Center Detail`](get-v1-gamecenterdetails-_id_-activityreleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center activity version that is currently `LIVE`.
 
 ## See Also
 

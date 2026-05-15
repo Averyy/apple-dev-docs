@@ -1,4 +1,4 @@
-# Add a challenge localization
+# Add a Challenge Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,19 +18,19 @@ Add a localization for a specific Game Center challenge.
 
 ## See Also
 
-- [Read challenge localization information](get-v1-gamecenterchallengelocalizations-_id_.md)
+- [Read Challenge Localization Information](get-v1-gamecenterchallengelocalizations-_id_.md)
   Get information for a specific Game Center challenge localization.
-- [Read image information for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)
+- [Read Image Information for a Challenge Localization](get-v1-gamecenterchallengelocalizations-_id_-image.md)
   Get details about the image for a specific Game Center challenge localization.
-- [Get the image ID for a challenge localization](get-v1-gamecenterchallengelocalizations-_id_-relationships-image.md)
+- [Get the Image ID for a Challenge Localization](get-v1-gamecenterchallengelocalizations-_id_-relationships-image.md)
   Get the image ID for a specific Game Center challenge localization.
-- [List all localizations for a challenge version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
+- [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the localization IDs for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the Localization IDs for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
-- [Modify a challenge localization](patch-v1-gamecenterchallengelocalizations-_id_.md)
+- [Modify a Challenge Localization](patch-v1-gamecenterchallengelocalizations-_id_.md)
   Update localization information for a specific Game Center challenge.
-- [Delete a challenge localization](delete-v1-gamecenterchallengelocalizations-_id_.md)
+- [Delete a Challenge Localization](delete-v1-gamecenterchallengelocalizations-_id_.md)
   Remove a specific localization from a Game Center challenge.
 
 

@@ -16,7 +16,7 @@ object AlternativeDistributionPackageVariantsResponse
 
 #### Discussion
 
-This object is the response that contains a list of alternative distribution package variants. For more information, see [`List variants information`](get-v1-alternativedistributionpackageversions-_id_-variants.md). The schema of the response body is below.
+This object is the response that contains a list of alternative distribution package variants. For more information, see [`List Variants Information`](get-v1-alternativedistributionpackageversions-_id_-variants.md). The schema of the response body is below.
 
 ```javascript
 {

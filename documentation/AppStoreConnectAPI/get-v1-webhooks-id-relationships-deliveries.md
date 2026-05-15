@@ -16,9 +16,9 @@
 
 ## See Also
 
-- [Read the deliveries for a webhook](get-v1-webhooks-_id_-deliveries.md)
+- [Read the Deliveries for a Webhook](get-v1-webhooks-_id_-deliveries.md)
   Get a list of deliveries for a specific webhook configuration.
-- [Redeliver a previous notification](post-v1-webhookdeliveries.md)
+- [Redeliver a Previous Notification](post-v1-webhookdeliveries.md)
   Resend a webhook notification from a specified template.
 
 

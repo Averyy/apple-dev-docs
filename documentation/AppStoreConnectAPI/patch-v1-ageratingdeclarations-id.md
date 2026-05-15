@@ -17,7 +17,7 @@ Provide age-related information so the App Store can determine the age rating fo
 
 #### Discussion
 
-Every app store version has an age rating declaration. Use this endpoint to edit the declaration and provide app-characteristic information so App Store Connect can determine the appropriate age rating for the app.
+Every App Store version has an age rating declaration. Use this endpoint to edit the declaration and provide app-characteristic information so App Store Connect can determine the appropriate age rating for the app.
 
 Use this endpoint to indicate whether an app is Made for Kids.
 
@@ -123,7 +123,6 @@ PATCH https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-18
     "attributes": {
       "alcoholTobaccoOrDrugUseOrReferences": "NONE",
       "contests": “NONE”,
-      “gamblingAndContests”: false,
       "gambling": false,
       "gamblingSimulated": "NONE",
       "medicalOrTreatmentInformation": "NONE",
@@ -162,7 +161,7 @@ The request body you use to update an Age Rating Declaration.
 
 ## See Also
 
-- [Read age rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
   Get the age rating declaration for the app info.
 - [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 

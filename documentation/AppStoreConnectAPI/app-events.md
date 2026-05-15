@@ -7,7 +7,7 @@ Create, manage, and schedule in-app events for your app.
 ## Topics
 
 ### Endpoints
-- [Read in-app event information](get-v1-appevents-_id_.md)
+- [Read In-App Event Information](get-v1-appevents-_id_.md)
 - [GET /v1/appEvents/{id}/localizations](get-v1-appevents-_id_-localizations.md)
 - [GET /v1/appEvents/{id}/relationships/localizations](get-v1-appevents-_id_-relationships-localizations.md)
 - [GET /v1/apps/{id}/appEvents](get-v1-apps-_id_-appevents.md)

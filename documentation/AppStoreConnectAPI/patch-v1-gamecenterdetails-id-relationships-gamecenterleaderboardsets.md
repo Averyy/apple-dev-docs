@@ -1,4 +1,4 @@
-# Modify the associated leaderboard sets for a Game Center detail
+# Modify the Associated Leaderboard Sets for a Game Center Detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,23 +14,23 @@ Edit the associated leaderboard sets for a Game Center detail.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md) response.
 
 ## See Also
 
-- [Enable Game Center for an app](post-v1-gamecenterdetails.md)
+- [Enable Game Center for an App](post-v1-gamecenterdetails.md)
   Create a Game Center detail for an app.
-- [Modify a Game Center detail for an app](patch-v1-gamecenterdetails-_id_.md)
+- [Modify a Game Center Detail for an App](patch-v1-gamecenterdetails-_id_.md)
   Edit challenge state, default leaderboards, and groups.
-- [Modify the achievements for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
+- [Modify the Achievements for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
   Update the achievements relationship for a specific Game Center detail.
-- [Modify the leaderboard sets for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsetsv2.md)
+- [Modify the Leaderboard Sets for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsetsv2.md)
   Update the leaderboard sets relationship for a specific Game Center detail.
-- [Modify the leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsv2.md)
+- [Modify the Leaderboards for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboardsv2.md)
   Update the leaderboards relationship for a specific Game Center detail.
-- [Modify the associated leaderboards for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the Associated Leaderboards for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   Edit the associated leaderboards for a Game Center detail.
-- [Modify the challenges minimum platform version for a Game Center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
+- [Modify the Challenges Minimum Platform Version for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
   Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 
 

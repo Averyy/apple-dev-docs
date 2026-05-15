@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [Read information about the Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)
+- [Read Information About the Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_.md)
   Get information about the territory availablity for an in-app purchase.
-- [List the territory availablity of an in-app purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
+- [List the Territory Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
   List all the territories where an in-app purchase is available.
-- [Modify the territory availablity of an in-app purchase](post-v1-inapppurchaseavailabilities.md)
+- [Modify the Territory Availablity of an In-App Purchase](post-v1-inapppurchaseavailabilities.md)
   Update the territory availablity of a specific in-app purchase.
 
 

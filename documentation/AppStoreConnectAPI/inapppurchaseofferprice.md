@@ -16,7 +16,7 @@ object InAppPurchaseOfferPrice
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferPrice.Relationships](inapppurchaseofferprice/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 

@@ -27,40 +27,40 @@ To manage Apple-hosted background assets, be sure you have one of the following 
 - [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
   Manage background assets for your App store apps.
 ### Relating background assets to your app
-- [Create asset pack record](post-v1-backgroundassets.md)
+- [Create Asset Pack Record](post-v1-backgroundassets.md)
   Create an asset pack record for your Apple-hosted background assets.
-- [Create asset pack version record](post-v1-backgroundassetversions.md)
+- [Create Asset Pack Version Record](post-v1-backgroundassetversions.md)
   Create an asset pack version record for your Apple-hosted background assets.
 ### Uploading background asset files
-- [Read information for an uploaded asset pack](get-v1-backgroundassetuploadfiles-_id_.md)
+- [Read Information for an Uploaded Asset Pack](get-v1-backgroundassetuploadfiles-_id_.md)
   Get details about an uploaded asset pack for Apple hosted background asset.
-- [Create a reservation for an asset pack upload](post-v1-backgroundassetuploadfiles.md)
+- [Create a Reservation for an Asset Pack Upload](post-v1-backgroundassetuploadfiles.md)
   Begin the process of uploading an asset pack for Apple-hosted background assets.
-- [Commit an uploaded asset pack to a background asset version](patch-v1-backgroundassetuploadfiles-_id_.md)
+- [Commit an Uploaded Asset Pack to a Background Asset Version](patch-v1-backgroundassetuploadfiles-_id_.md)
   Associate an uploaded asset pack with a background asset version to finish the upload process.
 ### Reading background asset information
-- [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)
+- [List All Assets Packs for an App](get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the assets packs IDs for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
-- [Read background assets information](get-v1-backgroundassets-_id_.md)
+- [Read Background Assets Information](get-v1-backgroundassets-_id_.md)
   Get details about a specific background asset.
-- [Read version details for a background asset](get-v1-backgroundassets-_id_-versions.md)
+- [Read Version Details for a Background Asset](get-v1-backgroundassets-_id_-versions.md)
   Get details about a specific background asset version.
-- [Read version IDs for a background asset](get-v1-backgroundassets-_id_-relationships-versions.md)
+- [Read Version IDs for a Background Asset](get-v1-backgroundassets-_id_-relationships-versions.md)
   Get version IDs about a specific background asset version.
 ### Reading background asset version information
-- [Read background asset version App Store releases information.](get-v1-backgroundassetversionappstorereleases-_id_.md)
+- [Read Background Asset Version App Store Releases Information.](get-v1-backgroundassetversionappstorereleases-_id_.md)
   Get the state of a background asset version App Store release.
-- [Read background assets external beta release information](get-v1-backgroundassetversionexternalbetareleases-_id_.md)
+- [Read Background Assets External Beta Release Information](get-v1-backgroundassetversionexternalbetareleases-_id_.md)
   Get the state of a background asset version external beta release.
-- [Read background assets internal beta release information](get-v1-backgroundassetversioninternalbetareleases-_id_.md)
+- [Read Background Assets Internal Beta Release Information](get-v1-backgroundassetversioninternalbetareleases-_id_.md)
   Get the state of a background asset version internal beta release.
-- [Read background assets information](get-v1-backgroundassetversions-_id_.md)
+- [Read Background Assets Information](get-v1-backgroundassetversions-_id_.md)
   Get details about a specific background asset version.
-- [Read background asset upload file information for a background asset version](get-v1-backgroundassetversions-_id_-backgroundassetuploadfiles.md)
+- [Read Background Asset Upload File Information for a Background Asset Version](get-v1-backgroundassetversions-_id_-backgroundassetuploadfiles.md)
   Get details about a background asset upload file for a specific background asset version.
-- [Get the background asset upload files resource ID for a background asset version](get-v1-backgroundassetversions-_id_-relationships-backgroundassetuploadfiles.md)
+- [Get the Background Asset Upload Files Resource ID for a Background Asset Version](get-v1-backgroundassetversions-_id_-relationships-backgroundassetuploadfiles.md)
   Get the ID for an uploaded asset pack Apple hosted background asset version
 ### Objects
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

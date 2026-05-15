@@ -16,7 +16,7 @@ object ReviewSubmissionCreateRequest.Data.Attributes
 
 #### Overview
 
-> **Note**: The attribute `platform` is no longer required when using [`Create a review submission`](post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
+> **Note**: The attribute `platform` is no longer required when using [`Create a Review Submission`](post-v1-reviewsubmissions.md). You can optionally add the attribute platform when using [`Modify a Review Submission`](patch-v1-reviewsubmissions-_id_.md).
 
 ## Properties
 

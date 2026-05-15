@@ -30,13 +30,13 @@ Create a public key from the private key you created in the previous section. Th
 openssl ec -in private_key.pem -pubout > public_key.pem
 ```
 
-This command creates the file `public_key.pem`, which contains your public key. Run this command any time to generate a copy of your public key file. To request your existing public key from App Store Connect, see [`Read an app’s alternative distribution key`](get-v1-apps-_id_-alternativedistributionkey.md).
+This command creates the file `public_key.pem`, which contains your public key. Run this command any time to generate a copy of your public key file. To request your existing public key from App Store Connect, see [`Read an App’s Alternative Distribution Key`](get-v1-apps-_id_-alternativedistributionkey.md).
 
 ##### Create an Alternative Distribution Key
 
-> **Note**:  For web-distribution apps, add a single alternative distribution key, then add an alternative distribution domain. For more information, see [`Add an alternative distribution domain`](post-v1-alternativedistributiondomains.md) and [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
+> **Note**:  For web-distribution apps, add a single alternative distribution key, then add an alternative distribution domain. For more information, see [`Add an Alternative Distribution Domain`](post-v1-alternativedistributiondomains.md) and [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md).
 
-Next, upload your public key to App Store Connect using the endpoint described in [`Add an alternative distribution key`](post-v1-alternativedistributionkeys.md).
+Next, upload your public key to App Store Connect using the endpoint described in [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md).
 
 The `id` in the `relationships` object is the app Apple ID for your app. You can find this app Apple ID by calling [`List Apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect.
 
@@ -74,16 +74,16 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 
 - [Creating keys and establishing alternative marketplace connections](creating-keys-and-establishing-alternative-marketplace-connections.md)
   Manage keys you use to sign JSON web tokens and connect marketplaces with apps.
-- [Add an alternative distribution key](post-v1-alternativedistributionkeys.md)
+- [Add an Alternative Distribution Key](post-v1-alternativedistributionkeys.md)
   Add an alternative distribution key for your alternative marketplace app or web distribution.
-- [List alternative distribution keys](get-v1-alternativedistributionkeys.md)
+- [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [Read alternative distribution key information](get-v1-alternativedistributionkeys-_id_.md)
+- [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
 - [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
-- [Read an app’s alternative distribution key](get-v1-apps-_id_-alternativedistributionkey.md)
+- [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
-- [Remove an alternative distribution key](delete-v1-alternativedistributionkeys-_id_.md)
+- [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 
 

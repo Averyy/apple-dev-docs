@@ -1,4 +1,4 @@
-# List all localizations for a Game Center achievement version
+# List All Localizations for a Game Center Achievement Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -37,11 +37,11 @@ Get a list of localizations for a specific Game Center achievement version.
 
 ## See Also
 
-- [Read Game Center achievement version information](get-v2-gamecenterachievementversions-_id_.md)
+- [Read Game Center Achievement Version Information](get-v2-gamecenterachievementversions-_id_.md)
   Get information about a specific Game Center achievement version.
-- [Get all localization IDs for a Game Center achievement version](get-v2-gamecenterachievementversions-_id_-relationships-localizations.md)
+- [Get All Localization IDs for a Game Center Achievement Version](get-v2-gamecenterachievementversions-_id_-relationships-localizations.md)
   Get a list of localization resource IDs for a specific Game Center achievement version.
-- [Create a Game Center achievement version](post-v2-gamecenterachievementversions.md)
+- [Create a Game Center Achievement Version](post-v2-gamecenterachievementversions.md)
   Create a Game Center achievement version.
 
 

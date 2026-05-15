@@ -1,4 +1,4 @@
-# Delete an alternative distribution domain
+# Delete an Alternative Distribution Domain
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -34,11 +34,11 @@ DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{
 
 ## See Also
 
-- [Add an alternative distribution domain](post-v1-alternativedistributiondomains.md)
+- [Add an Alternative Distribution Domain](post-v1-alternativedistributiondomains.md)
   Add an alternative distribution domain to your account.
-- [Read alternative distribution domain information](get-v1-alternativedistributiondomains-_id_.md)
+- [Read Alternative Distribution Domain Information](get-v1-alternativedistributiondomains-_id_.md)
   Read information for a specific alternative distribution domain.
-- [List alternative distribution domains](get-v1-alternativedistributiondomains.md)
+- [List Alternative Distribution Domains](get-v1-alternativedistributiondomains.md)
   List all the alternative distribution domains for your account.
 
 

@@ -18,6 +18,7 @@ Get the custom end user license agreement associated with an app, and the territ
 - `fields[territories]` ([string])
 - `include` ([string])
 - `limit[territories]` (integer)
+- `fields[apps]` ([string])
 
 ## See Also
 

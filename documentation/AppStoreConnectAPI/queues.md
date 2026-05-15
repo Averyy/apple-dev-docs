@@ -11,16 +11,16 @@ The `queue` resource represents a queue of match requests that Game Center appli
 ## Topics
 
 ### Creating, modifying, and deleting queues
-- [Create a queue](post-v1-gamecentermatchmakingqueues.md)
+- [Create a Queue](post-v1-gamecentermatchmakingqueues.md)
   Create a queue and add it to a rule set.
-- [Modify a queue](patch-v1-gamecentermatchmakingqueues-_id_.md)
+- [Modify a Queue](patch-v1-gamecentermatchmakingqueues-_id_.md)
   Update the properties of a specific queue.
-- [Delete a queue](delete-v1-gamecentermatchmakingqueues-_id_.md)
+- [Delete a Queue](delete-v1-gamecentermatchmakingqueues-_id_.md)
   Delete a specific queue in a rule set.
 ### Reading queue information
-- [List all queues](get-v1-gamecentermatchmakingqueues.md)
+- [List All Queues](get-v1-gamecentermatchmakingqueues.md)
   Get information about all queues.
-- [Read queue information](get-v1-gamecentermatchmakingqueues-_id_.md)
+- [Read Queue Information](get-v1-gamecentermatchmakingqueues-_id_.md)
   Get information about a specific queue and its related objects.
 ### Objects
 - [object GameCenterMatchmakingQueueCreateRequest](gamecentermatchmakingqueuecreaterequest.md)

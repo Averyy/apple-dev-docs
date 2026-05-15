@@ -16,6 +16,7 @@ Get App Store Review details for an App Clip.
 
 - `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each App Clip App Store Review Details resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[appClipDefaultExperiences]` ([string])
 
 ## See Also
 

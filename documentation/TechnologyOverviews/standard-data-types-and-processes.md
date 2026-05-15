@@ -80,7 +80,7 @@ Once you have a filtered list of results, apply sort descriptors to arrange them
 Protect your app’s data, and store any data you write to disk securely. People’s devices contain a lot of personal information, and even information that might not seem personal can expose details about someone’s habits or choices. Apple platforms make it easy to encrypt and decrypt the data and files you create. In addition, make sure you adopt [`Security`](https://developer.apple.com/documentation/Security) for handling data to reduce the likelihood of a malicious attack gaining access to that data.
 
 - When serializing data, adopt [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) for all of your custom data types.
-- [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) before you save it to disk, or apply [`FileProtectionType`](https://developer.apple.com/documentation/Foundation/FileProtectionType) to the files you write to disk.
+- [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) before you save it to disk, or apply [`FileProtectionType`](https://developer.apple.com/documentation/Foundation/FileProtectionType) to the files you write to disk.
 - Store passwords, cryptographic keys, certificates, secret information, and other small chunks of sensitive data in the device [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services).
 - Store data files in your app’s container directory, which other apps can’t access by default.
 - Validate all data you receive from external sources before incorporating it into your data structures.

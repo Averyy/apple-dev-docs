@@ -16,6 +16,7 @@ Get details about a specific offer code for an auto-renewable subscription.
 
 - `fields[subscriptionOfferCodeCustomCodes]` ([string])
 - `include` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
 
 ## See Also
 

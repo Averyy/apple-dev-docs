@@ -14,12 +14,6 @@ String that represents a Made for Kids app’s age band.
 string KidsAgeBand
 ```
 
-#### Possible Values
-
-- **FIVE_AND_UNDER**: A literal that represents the age band for ages 5 and under.
-- **SIX_TO_EIGHT**: A literal that represents the age band for ages 6 to 8.
-- **NINE_TO_ELEVEN**: A literal that represents the age band for ages 9 to 11.
-
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

@@ -1,4 +1,4 @@
-# Add a search keyword to a custom product page localization
+# Add a Search Keyword to a Custom Product Page Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Assign one or more search keywords to a specific custom product page localizatio
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List custom product pages localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List Custom Product Pages Localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
 
 ## See Also
 
-- [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
+- [List App Preview Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-searchkeywords.md)
   List the app preview sets for a specific custom product page localization.
-- [List all search keywords for a customer product page localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [List All Search Keywords for a Customer Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Get a list of search keyword IDs for a customer product page localization.
-- [Remove a search keyword from a custom product page localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
+- [Remove a Search Keyword From a Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_-relationships-searchkeywords.md)
   Unassign a search keyword from a specific custom product page localization.
 
 

@@ -18,7 +18,7 @@ Add App Store review details to an App Store version, including contact and demo
   Get App Review details you provided, including contact information, demo account, and notes.
 - [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 - [Modify an App Store Review Detail](patch-v1-appstorereviewdetails-_id_.md)
-  Update the app store review details, including the contact information, demo account, and notes.
+  Update the App Store review details, including the contact information, demo account, and notes.
 
 
 ---

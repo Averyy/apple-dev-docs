@@ -1,4 +1,4 @@
-# Delete a challenge version release
+# Delete a Challenge Version Release
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Remove a specific version release from a Game Center challenge version.
 
 ## See Also
 
-- [Add a challenge version release](post-v1-gamecenterchallengeversionreleases.md)
+- [Add a Challenge Version Release](post-v1-gamecenterchallengeversionreleases.md)
   Add a version release for a specific Game Center challenge version.
-- [Read challenge version release information](get-v1-gamecenterchallengeversionreleases-_id_.md)
+- [Read Challenge Version Release Information](get-v1-gamecenterchallengeversionreleases-_id_.md)
   Get information for a specific Game Center challenge version release.
 
 

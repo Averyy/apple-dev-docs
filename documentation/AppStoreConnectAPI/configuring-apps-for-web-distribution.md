@@ -14,13 +14,13 @@ Begin making your app eligible for download from your website by selecting your 
 
 ##### Add an Alternative Distribution Domain
 
-[`Add an alternative distribution domain`](post-v1-alternativedistributiondomains.md) to represent your app’s base web domain, from which all traffic must flow. This domain is where people can download and install your web distribution app. This domain is enabled for all apps on your account.
+[`Add an Alternative Distribution Domain`](post-v1-alternativedistributiondomains.md) to represent your app’s base web domain, from which all traffic must flow. This domain is where people can download and install your web distribution app. This domain is enabled for all apps on your account.
 
 ##### Obtain and Distribute Your Alternative Distribution Package
 
 Next, you need to obtain the alternative distribution package ID.
 
-If your web distribution app is already approved, you need to generate an alternative distribution package by using the [`Create an alternative distribution package`](post-v1-alternativedistributionpackages.md) endpoint.
+If your web distribution app is already approved, you need to generate an alternative distribution package by using the [`Create an Alternative Distribution Package`](post-v1-alternativedistributionpackages.md) endpoint.
 
 If your web distribution app is not in one of the following states (all of which are after approval by App Review): `Pending Developer Release, Pending Apple Release,` or `Ready for Distribution,` the alternative distribution package is automatically created after approval.
 

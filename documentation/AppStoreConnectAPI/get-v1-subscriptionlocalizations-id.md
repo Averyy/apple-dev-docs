@@ -16,6 +16,7 @@ Get the specific localized metadata for an auto-renewable subscription.
 
 - `fields[subscriptionLocalizations]` ([string])
 - `include` ([string])
+- `fields[subscriptions]` ([string])
 
 ## See Also
 

@@ -16,7 +16,7 @@ object BackgroundAssetUpdateRequest.Data
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object BackgroundAssetUpdateRequest.Data.Attributes](backgroundassetupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
   The request body you use to modify a background asset update request.
 

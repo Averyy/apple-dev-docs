@@ -15,16 +15,16 @@ To manage Game Center activity localizations, be sure you have one of the follow
 ## Topics
 
 ### Managing Game Center activities
-- [Read activity localization information](get-v1-gamecenteractivitylocalizations-_id_.md)
+- [Read Activity Localization Information](get-v1-gamecenteractivitylocalizations-_id_.md)
   Get information for a specific Game Center activity localization.
-- [Read image information for an activity localization](get-v1-gamecenteractivitylocalizations-_id_-image.md)
+- [Read Image Information for an Activity Localization](get-v1-gamecenteractivitylocalizations-_id_-image.md)
   Get details about the image for a specific Game Center activity localization.
 - [GET /v1/gameCenterActivityLocalizations/{id}/relationships/image](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
-- [Add an activity localization](post-v1-gamecenteractivitylocalizations.md)
+- [Add an Activity Localization](post-v1-gamecenteractivitylocalizations.md)
   Add a localization for a specific Game Center activity.
-- [Modify an activity localization](patch-v1-gamecenteractivitylocalizations-_id_.md)
+- [Modify an Activity Localization](patch-v1-gamecenteractivitylocalizations-_id_.md)
   Update localization information for a specific Game Center activity.
-- [Delete an activity localization](delete-v1-gamecenteractivitylocalizations-_id_.md)
+- [Delete an Activity Localization](delete-v1-gamecenteractivitylocalizations-_id_.md)
   Remove a specific localization from a Game Center activity.
 ### Objects
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)

@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor.Data](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

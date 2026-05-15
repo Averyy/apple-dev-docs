@@ -18,13 +18,6 @@ string CiActionType
 
 - [App Store Connect API 3.2 release notes](app-store-connect-api-3-2-release-notes.md)
 
-#### Possible Values
-
-- **BUILD**: The action is a build action.
-- **ANALYZE**: The action is an analyze action.
-- **TEST**: The action is a test action.
-- **ARCHIVE**: The action is an archive action.
-
 ## See Also
 
 - [object CiProduct](ciproduct.md)

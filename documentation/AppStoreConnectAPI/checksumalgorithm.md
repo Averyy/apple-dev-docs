@@ -14,11 +14,6 @@ The data structure that represents a checksum algorithm resource.
 string ChecksumAlgorithm
 ```
 
-#### Discussion
-
-- Possible Values - MD5:
-- SHA_256:
-
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

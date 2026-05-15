@@ -1,4 +1,4 @@
-# List app preview sets for a custom product page localization
+# List App Preview Sets for a Custom Product Page Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

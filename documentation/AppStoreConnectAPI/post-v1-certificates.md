@@ -18,7 +18,7 @@ Create a new certificate using a certificate signing request.
 
 ## See Also
 
-- [Modify a certificate](patch-v1-certificates-_id_.md)
+- [Modify a Certificate](patch-v1-certificates-_id_.md)
   Update the activation status for a specific certificate.
 
 

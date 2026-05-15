@@ -1,4 +1,4 @@
-# Read beta tester usage metrics
+# Read Beta Tester Usage Metrics
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -68,13 +68,13 @@ https://api.appstoreconnect.apple.com/v1/betaTesters/1aa1fe09-bb5c-47dd-a067-a60
 
 - `filter[apps]` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `apps` resource ID from the [`List Apps`](get-v1-apps.md) response.
 - `limit` (integer)
-- `period` (string)
+- `period` (string): -`P7D`: 7 days -`P30D`: 30 days -`P90D`: 90 days -`P365D`: 356 days
 
 ## See Also
 
-- [Read beta tester metrics for an app](get-v1-apps-_id_-metrics-betatesterusages.md)
+- [Read Beta Tester Metrics for an App](get-v1-apps-_id_-metrics-betatesterusages.md)
   Get usage metrics for beta testers of a specific app.
-- [Read metrics for beta testers in a beta group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
+- [Read Metrics for Beta Testers in a Beta Group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
 
 

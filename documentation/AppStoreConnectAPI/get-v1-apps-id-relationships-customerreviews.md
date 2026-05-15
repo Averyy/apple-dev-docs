@@ -18,7 +18,7 @@
 
 - [List All Customer Reviews for an App](get-v1-apps-_id_-customerreviews.md)
   Get a list of customer reviews for a specific app.
-- [Read customer review summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
+- [Read Customer Review Summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
   Get the customer review summarization for a specific app.
 
 

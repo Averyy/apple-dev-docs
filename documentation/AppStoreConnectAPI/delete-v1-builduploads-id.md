@@ -1,4 +1,4 @@
-# Remove a build upload
+# Remove a Build Upload
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,13 +18,13 @@ Remove a specific build upload for an app.
 
 ## See Also
 
-- [List all build uploads for an app](get-v1-apps-_id_-builduploads.md)
+- [List All Build Uploads for an App](get-v1-apps-_id_-builduploads.md)
   Get a list of all build uploads for a specific app.
-- [List all build uploads IDs for an app](get-v1-apps-_id_-relationships-builduploads.md)
+- [List All Build Uploads IDs for an App](get-v1-apps-_id_-relationships-builduploads.md)
   Get a list of all build upload Ids for a specific app.
-- [Read build upload information](get-v1-builduploads-_id_.md)
+- [Read Build Upload Information](get-v1-builduploads-_id_.md)
   Get details about a specific build upload file for an app.
-- [Create a build upload](post-v1-builduploads.md)
+- [Create a Build Upload](post-v1-builduploads.md)
   Add a new build upload to an app.
 
 

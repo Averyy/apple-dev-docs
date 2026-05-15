@@ -1,4 +1,4 @@
-# Remove Builds from a Beta Group
+# Remove Builds From a Beta Group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,7 +20,7 @@ Remove access to test one or more builds from beta testers in a specific beta gr
 
 - [Add Beta Testers to a Beta Group](post-v1-betagroups-_id_-relationships-betatesters.md)
   Add a specific beta tester to one or more beta groups for beta testing.
-- [Remove Beta Testers from a Beta Group](delete-v1-betagroups-_id_-relationships-betatesters.md)
+- [Remove Beta Testers From a Beta Group](delete-v1-betagroups-_id_-relationships-betatesters.md)
   Remove a specific beta tester from a one or more beta groups, revoking their access to test builds associated with those groups.
 - [Add Builds to a Beta Group](post-v1-betagroups-_id_-relationships-builds.md)
   Associate builds with a beta group to enable the group to test the builds.

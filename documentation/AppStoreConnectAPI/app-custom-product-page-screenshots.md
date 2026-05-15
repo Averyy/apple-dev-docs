@@ -16,7 +16,7 @@ To upload screenshots, begin by using the [`Create an App Screenshot Set`](post-
 ## Topics
 
 ### Endpoints
-- [List app screenshot sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
+- [List App Screenshot Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-appscreenshotsets.md)
   List the app screenshot sets for a specific custom product page localization.
 - [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
   List all ordered screenshots in a screenshot set.

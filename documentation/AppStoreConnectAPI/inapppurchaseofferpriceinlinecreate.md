@@ -16,7 +16,7 @@ object InAppPurchaseOfferPriceInlineCreate
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferPriceInlineCreate.Relationships](inapppurchaseofferpriceinlinecreate/relationships-data.dictionary.md)
 
 ## Properties

@@ -16,7 +16,7 @@ object ReviewSubmissionUpdateRequest.Data.Attributes
 
 #### Overview
 
-> **Note**: You can optionally add the attribute platform when using [`Modify a review submission`](patch-v1-reviewsubmissions-_id_.md).
+> **Note**: You can optionally add the attribute platform when using [`Modify a Review Submission`](patch-v1-reviewsubmissions-_id_.md).
 
 ## Properties
 

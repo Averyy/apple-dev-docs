@@ -1,4 +1,4 @@
-# Read the groups in a Game Center detail
+# Read the Groups in a Game Center Detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -34,17 +34,17 @@ Get a list of groups in a Game Center detail.
 
 ## See Also
 
-- [Read the state of Game Center for an app](get-v1-apps-_id_-gamecenterdetail.md)
+- [Read the State of Game Center for an App](get-v1-apps-_id_-gamecenterdetail.md)
   Get Game Center detail information for an app.
-- [Read Game Center details](get-v1-gamecenterdetails-_id_.md)
+- [Read Game Center Details](get-v1-gamecenterdetails-_id_.md)
   Read a specific Game Center detail and related information.
-- [Read app versions for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
+- [Read App Versions for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
   Get a list of app versions for a Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/gameCenterAppVersions](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
 - [GET /v1/gameCenterDetails/{id}/relationships/gameCenterGroup](get-v1-gamecenterdetails-_id_-relationships-gamecentergroup.md)
-- [Read the challenges for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
+- [Read the Challenges for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center detail.
-- [Read challenge Ids for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterchallenges.md)
+- [Read Challenge IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterchallenges.md)
   List all the challenge IDs for a specific Game Center detail.
 
 

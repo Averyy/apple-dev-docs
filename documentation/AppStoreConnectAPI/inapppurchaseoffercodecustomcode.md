@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCustomCode
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCode.Attributes](inapppurchaseoffercodecustomcode/attributes-data.dictionary.md)
   Attributes that describe an in-app purchase offer code custom code resource.
 - [object InAppPurchaseOfferCodeCustomCode.Relationships](inapppurchaseoffercodecustomcode/relationships-data.dictionary.md)

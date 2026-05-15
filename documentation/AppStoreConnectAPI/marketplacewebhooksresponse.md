@@ -16,7 +16,7 @@ object MarketplaceWebhooksResponse
 
 #### Discussion
 
-Use this object with [`Read marketplace webhook information`](get-v1-marketplacewebhooks.md).
+Use this object with [`Read Marketplace Webhook Information`](get-v1-marketplacewebhooks.md).
 
 ## Properties
 

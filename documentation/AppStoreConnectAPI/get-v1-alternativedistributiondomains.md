@@ -1,4 +1,4 @@
-# List alternative distribution domains
+# List Alternative Distribution Domains
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -35,11 +35,11 @@ List all the alternative distribution domains for your account.
 
 ## See Also
 
-- [Add an alternative distribution domain](post-v1-alternativedistributiondomains.md)
+- [Add an Alternative Distribution Domain](post-v1-alternativedistributiondomains.md)
   Add an alternative distribution domain to your account.
-- [Read alternative distribution domain information](get-v1-alternativedistributiondomains-_id_.md)
+- [Read Alternative Distribution Domain Information](get-v1-alternativedistributiondomains-_id_.md)
   Read information for a specific alternative distribution domain.
-- [Delete an alternative distribution domain](delete-v1-alternativedistributiondomains-_id_.md)
+- [Delete an Alternative Distribution Domain](delete-v1-alternativedistributiondomains-_id_.md)
   Delete the alternative distribution search domain for an app.
 
 

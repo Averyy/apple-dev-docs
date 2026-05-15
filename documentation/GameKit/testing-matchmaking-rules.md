@@ -101,7 +101,7 @@ Then append a corresponding [`GameCenterMatchmakingTestPlayerPropertyInlineCreat
 
 ##### Test the Matchmaking Rules
 
-Apply the matchmaking rules by passing the associated rule set and the sample match requests to the [`Test a rule set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSetTests) endpoint. Pass the rule set `id` using the `matchmakingRuleSet` field and pass resource objects representing the match requests in the `matchmakingRequests` field. Then pass the array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestRequestInlineCreate) and [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestPlayerPropertyInlineCreate) objects, that you create above, in the `included` field.
+Apply the matchmaking rules by passing the associated rule set and the sample match requests to the [`Test a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSetTests) endpoint. Pass the rule set `id` using the `matchmakingRuleSet` field and pass resource objects representing the match requests in the `matchmakingRequests` field. Then pass the array of [`GameCenterMatchmakingTestRequestInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestRequestInlineCreate) and [`GameCenterMatchmakingTestPlayerPropertyInlineCreate`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingTestPlayerPropertyInlineCreate) objects, that you create above, in the `included` field.
 
 ```json
 POST /v1/gameCenterMatchmakingRuleSetTests

@@ -1,4 +1,4 @@
-# Read report requests
+# Read Report Requests
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -93,15 +93,15 @@ GET https://api.appstoreconnect.apple.com/v1/apps/1476097583/analyticsReportRequ
 
 ## See Also
 
-- [Request reports](post-v1-analyticsreportrequests.md)
+- [Request Reports](post-v1-analyticsreportrequests.md)
   Request analytics reports for your apps.
-- [Read report request information](get-v1-analyticsreportrequests-_id_.md)
+- [Read Report Request Information](get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
-- [Read reports for a specific request](get-v1-analyticsreportrequests-_id_-reports.md)
+- [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
-- [Delete a report request](delete-v1-analyticsreportrequests-_id_.md)
+- [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
 
 

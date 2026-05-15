@@ -11,7 +11,7 @@ App Store Connect API version 3.8 provides resources that enable you to automate
 ##### New Features
 
 - The [`Merchant ID`](merchantids.md) resource is now available to automate tasks related to Apple Pay and Apple Wallet. Apple Pay certificates now have enum values on the `certificates` resource.
-- [`Modify a certificate`](patch-v1-certificates-_id_.md) is now available. Use this endpoint to modify the activation status of your Payment Processing certificate. To learn more, see [`Managing merchant IDs and Payment Processing certificates`](managing-payment-processing-certificates.md).
+- [`Modify a Certificate`](patch-v1-certificates-_id_.md) is now available. Use this endpoint to modify the activation status of your Payment Processing certificate. To learn more, see [`Managing merchant IDs and Payment Processing certificates`](managing-payment-processing-certificates.md).
 - Create public links that accept testers with specific device and OS combinations using the `betaRecruitmentCriteria` resource. To learn more, see [`Beta recruitment criteria`](beta-recruitment-criteria.md).
 - Use the new `nominations` resource to share your new content, app enhancement, or app launch with Apple. To learn more see, [`Getting featured on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/getting-featured/).
 - Three new content statuses, `TRADER_STATUS_NOT_PROVIDED`, `TRADER_STATUS_VERIFICATION_FAILED`, and `TRADER_STATUS_VERIFICATION_STATUS_MISSING` are available for [`TerritoryAvailability.Attributes`](territoryavailability/attributes-data.dictionary.md). To learn more, see [`Manage European Union Digital Services Act trader requirements`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements).
@@ -31,6 +31,8 @@ App Store Connect API version 3.8 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
@@ -58,8 +60,6 @@ App Store Connect API version 3.8 provides resources that enable you to automate
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

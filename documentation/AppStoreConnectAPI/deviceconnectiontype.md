@@ -14,14 +14,6 @@ A string that represents the ways a device was connected for a specific crash.
 string DeviceConnectionType
 ```
 
-#### Discussion
-
-- Possible Values - WIFI:
-- MOBILE_DATA:
-- WIRE:
-- UNKNOWN:
-- NONE:
-
 ## See Also
 
 - [object BetaCrashLog](betacrashlog.md)

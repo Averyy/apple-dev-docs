@@ -16,6 +16,7 @@ Get details about a specific one-time use offer code for an auto-renewable subsc
 
 - `fields[subscriptionOfferCodeOneTimeUseCodes]` ([string])
 - `include` ([string])
+- `fields[subscriptionOfferCodes]` ([string])
 
 ## See Also
 

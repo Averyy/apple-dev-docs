@@ -1,4 +1,4 @@
-# Modify custom product page localization information
+# Modify Custom Product Page Localization Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -68,17 +68,17 @@ PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPageLocalizations
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List custom product pages localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page localization resource ID from the [`List Custom Product Pages Localizations`](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md) response.
 
 ## See Also
 
-- [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
+- [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [Read custom product page localization information](get-v1-appcustomproductpagelocalizations-_id_.md)
+- [Read Custom Product Page Localization Information](get-v1-appcustomproductpagelocalizations-_id_.md)
   Get information about a specific app custom product page localization.
-- [Create a custom product page localization](post-v1-appcustomproductpagelocalizations.md)
+- [Create a Custom Product Page Localization](post-v1-appcustomproductpagelocalizations.md)
   Add a localization for your app custom product page.
-- [Delete an app custom product page localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
+- [Delete an App Custom Product Page Localization](delete-v1-appcustomproductpagelocalizations-_id_.md)
   Delete localized metadata that you configured for a custom product page.
 
 

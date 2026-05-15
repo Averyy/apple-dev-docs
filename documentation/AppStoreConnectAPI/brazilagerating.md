@@ -14,15 +14,6 @@ String that represents the app’s age rating as it appears on the App Store in 
 string BrazilAgeRating
 ```
 
-##### Possible Values
-
-- **`L`**: A literal that represents the rating L.
-- **`TEN`**: A literal that represents the rating 10.
-- **`TWELVE`**: A literal that represents the rating 12.
-- **`FOURTEEN`**: A literal that represents the rating 14.
-- **`SIXTEEN`**: A literal that represents the rating 16.
-- **`EIGHTEEN`**: A literal that represents the rating 18.
-
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)

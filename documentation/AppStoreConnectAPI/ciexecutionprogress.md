@@ -14,12 +14,6 @@ A string that represents the progress of an ongoing Xcode Cloud build.
 string CiExecutionProgress
 ```
 
-#### Possible Values
-
-- **PENDING**: Xcode Cloud hasn’t started the build.
-- **RUNNING**: Xcode Cloud is performing the build.
-- **COMPLETE**: Xcode Cloud completed the build.
-
 ## See Also
 
 - [object CiProduct](ciproduct.md)

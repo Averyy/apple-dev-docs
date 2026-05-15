@@ -12,12 +12,6 @@
 string InAppPurchaseType
 ```
 
-##### Possible Values
-
-- **`CONSUMABLE`**: 
-- **`NON_CONSUMABLE`**: 
-- **`NON_RENEWING_SUBSCRIPTION`**: 
-
 ## See Also
 
 - [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)

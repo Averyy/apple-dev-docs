@@ -1,4 +1,4 @@
-# Modify a queue
+# Modify a Queue
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Update the properties of a specific queue.
 
 ## See Also
 
-- [Create a queue](post-v1-gamecentermatchmakingqueues.md)
+- [Create a Queue](post-v1-gamecentermatchmakingqueues.md)
   Create a queue and add it to a rule set.
-- [Delete a queue](delete-v1-gamecentermatchmakingqueues-_id_.md)
+- [Delete a Queue](delete-v1-gamecentermatchmakingqueues-_id_.md)
   Delete a specific queue in a rule set.
 
 

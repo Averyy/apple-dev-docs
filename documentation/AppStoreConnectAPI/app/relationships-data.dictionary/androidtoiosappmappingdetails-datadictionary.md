@@ -16,7 +16,7 @@ object App.Relationships.AndroidToIosAppMappingDetails
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object App.Relationships.AndroidToIosAppMappingDetails.Data](app/relationships-data.dictionary/androidtoiosappmappingdetails-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

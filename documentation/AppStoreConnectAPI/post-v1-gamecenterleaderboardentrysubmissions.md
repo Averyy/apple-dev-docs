@@ -1,4 +1,4 @@
-# Add a score to a leaderbaord
+# Add a Score to a Leaderbaord
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

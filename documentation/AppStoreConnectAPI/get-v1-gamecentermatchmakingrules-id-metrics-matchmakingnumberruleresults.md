@@ -1,4 +1,4 @@
-# Get numeric rule results
+# Get Numeric Rule Results
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,9 +22,9 @@ Get the results of a specific matchmaking rule that returns numeric values.
 
 ## See Also
 
-- [Get Boolean rule results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
+- [Get Boolean Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
   Get the results of a specific matchmaking rule that returns Boolean values.
-- [Get matchmaking rule errors](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors.md)
+- [Get Matchmaking Rule Errors](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingruleerrors.md)
   Get errors that occur for a specific matchmaking rule.
 
 

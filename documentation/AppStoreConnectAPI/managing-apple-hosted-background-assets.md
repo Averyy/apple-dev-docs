@@ -10,11 +10,11 @@ Use the Background assets API to manage content that Apple hosts, so people can 
 
 #### Create an Asset Pack Record
 
-Once you create your asset pack, you can start configuring your Apple hosted background assets. Begin by using [`Create asset pack record`](post-v1-backgroundassets.md).
+Once you create your asset pack, you can start configuring your Apple hosted background assets. Begin by using [`Create Asset Pack Record`](post-v1-backgroundassets.md).
 
 In the request body, add the name of the asset pack as the `assetPackIdentifier` and add your app’s Apple ID In the relationships section.
 
-This sample payload shows the structure of a [`Create asset pack record`](post-v1-backgroundassets.md) request:
+This sample payload shows the structure of a [`Create Asset Pack Record`](post-v1-backgroundassets.md) request:
 
 ```json
 {
@@ -39,7 +39,7 @@ This call’s response returns a UUID to your asset pack, which you can use in l
 
 #### Create an Asset Pack Version Record
 
-Next, you create a new version for your asset pack by using [`Create asset pack version record`](post-v1-backgroundassetversions.md). In the relationships section, use the ID of the asset pack that the previous API response returned.
+Next, you create a new version for your asset pack by using [`Create Asset Pack Version Record`](post-v1-backgroundassetversions.md). In the relationships section, use the ID of the asset pack that the previous API response returned.
 
 > **Note**: This operation automatically increases the version number based on existing versions.
 
@@ -61,7 +61,7 @@ Next, you create a new version for your asset pack by using [`Create asset pack 
 
 #### Upload an Asset Pack Archive
 
-This process is similar to uploading screenshots or app previews. First, you use [`Create a reservation for an asset pack upload`](post-v1-backgroundassetuploadfiles.md) with a payload like this, where you use the UUID from the response when using [`Create asset pack version record`](post-v1-backgroundassetversions.md):
+This process is similar to uploading screenshots or app previews. First, you use [`Create a Reservation for an Asset Pack Upload`](post-v1-backgroundassetuploadfiles.md) with a payload like this, where you use the UUID from the response when using [`Create Asset Pack Version Record`](post-v1-backgroundassetversions.md):
 
 ```json
 {
@@ -84,7 +84,7 @@ This process is similar to uploading screenshots or app previews. First, you use
 }
 ```
 
-You can optionally upload the asset manifest, to check its validity, by using [`Create a reservation for an asset pack upload`](post-v1-backgroundassetuploadfiles.md) before you upload your full asset pack. The system checks the validity of your manifest and returns an error, if there is an issue. Use a payload like this to verify your manifest:
+You can optionally upload the asset manifest, to check its validity, by using [`Create a Reservation for an Asset Pack Upload`](post-v1-backgroundassetuploadfiles.md) before you upload your full asset pack. The system checks the validity of your manifest and returns an error, if there is an issue. Use a payload like this to verify your manifest:
 
 ```json
 {
@@ -107,11 +107,11 @@ You can optionally upload the asset manifest, to check its validity, by using [`
 }
 ```
 
-Then, you upload the file with `PUT` request or requests, as necessary, which are included in the response of [`Create a reservation for an asset pack upload`](post-v1-backgroundassetuploadfiles.md).
+Then, you upload the file with `PUT` request or requests, as necessary, which are included in the response of [`Create a Reservation for an Asset Pack Upload`](post-v1-backgroundassetuploadfiles.md).
 
 #### Commit Your Asset Pack to Begin Processing
 
-When you successfully upload your archive, you use [`Commit an uploaded asset pack to a background asset version`](patch-v1-backgroundassetuploadfiles-_id_.md) to commit the upload. After this call, your upload starts processing. Use a payload like this including the upload file ID:
+When you successfully upload your archive, you use [`Commit an Uploaded Asset Pack to a Background Asset Version`](patch-v1-backgroundassetuploadfiles-_id_.md) to commit the upload. After this call, your upload starts processing. Use a payload like this including the upload file ID:
 
 ```json
 {

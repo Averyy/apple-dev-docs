@@ -18,7 +18,7 @@ The benefits of the Secure Enclave are balanced against a few restrictions. In p
 
 The steps required to create a key pair with the Secure Enclave are similar to those for creating a key pair in the usual way, as described in [`Generating New Cryptographic Keys`](generating-new-cryptographic-keys.md). The following sections highlight the differences.
 
-> **Note**:  This article describes how to use the Security framework to access the Secure Enclave. To access it with [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) instead, use that framework’s [`SecureEnclave`](https://developer.apple.com/documentation/CryptoKit/SecureEnclave) enumeration.
+> **Note**:  This article describes how to use the Security framework to access the Secure Enclave. To access it with [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) instead, use that framework’s [`SecureEnclave`](https://developer.apple.com/documentation/cryptokit/secureenclave) enumeration.
 
 ##### Specify Access Control
 

@@ -22,7 +22,7 @@ object GameCenterMatchmakingTestPlayerPropertyInlineCreate
 
 ## Properties
 
-- `attributes` (GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes) *(required)*: The attributes of the resource object.
+- `attributes` (GameCenterMatchmakingTestPlayerPropertyInlineCreate.Attributes): The attributes of the resource object.
 - `id` (string): The identifier for the resource object.
 - `type` (string) *(required)*: The type of the resource object.
 

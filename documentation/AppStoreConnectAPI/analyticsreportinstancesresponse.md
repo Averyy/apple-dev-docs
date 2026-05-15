@@ -16,7 +16,7 @@ object AnalyticsReportInstancesResponse
 
 #### Discussion
 
-Use this object with [`Read a list of instances of a report`](get-v1-analyticsreports-_id_-instances.md).
+Use this object with [`Read a List of Instances of a Report`](get-v1-analyticsreports-_id_-instances.md).
 
 ## Properties
 

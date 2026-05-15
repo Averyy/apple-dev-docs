@@ -12,7 +12,7 @@ This article shows one way to find players by skill level that you can combine w
 
 ##### Create a Skill Level Rule Set and Queue
 
-First create a rule set to contain the skill-level rule. Pass a reference name, the minimum players, and the maximum players properties that are game-specific to the [`Create a rule set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint.
+First create a rule set to contain the skill-level rule. Pass a reference name, the minimum players, and the maximum players properties that are game-specific to the [`Create a Rule Set`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRuleSets) endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRuleSets
@@ -47,7 +47,7 @@ Retain the `id` field of the [`GameCenterMatchmakingRuleSet`](https://developer.
 }
 ```
 
-Then create and add the rule set to a skill-level queue. Pass a reference name and the rule set that you create to the [`Create a queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Relationships-data.dictionary/RuleSet-data.dictionary/Data-data.dictionary) object.
+Then create and add the rule set to a skill-level queue. Pass a reference name and the rule set that you create to the [`Create a Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingQueues) endpoint. Pass the `id` for the rule set in the [`GameCenterMatchmakingQueueCreateRequest.Data.Relationships.RuleSet.Data`](https://developer.apple.com/documentation/AppStoreConnectAPI/GameCenterMatchmakingQueueCreateRequest/Data-data.dictionary/Relationships-data.dictionary/RuleSet-data.dictionary/Data-data.dictionary) object.
 
 ```json
 POST /v1/gameCenterMatchmakingQueues
@@ -119,7 +119,7 @@ For more information on the Game Center functions you can use in expressions, se
 
 ##### Create a Match Rule Containing the Expression
 
-Create a skill-level rule and add it to the rule set. Pass `MATCH` for the rule `type` field, the skill-level expression, and the rule set, along with other settings, to the [`Create a rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) ``endpoint.
+Create a skill-level rule and add it to the rule set. Pass `MATCH` for the rule `type` field, the skill-level expression, and the rule set, along with other settings, to the [`Create a Rule`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterMatchmakingRules) ``endpoint.
 
 ```json
 POST /v1/gameCenterMatchmakingRules

@@ -18,6 +18,9 @@ Get an app screenshot set including its display target, language, and the screen
 - `fields[appScreenshots]` ([string])
 - `include` ([string])
 - `limit[appScreenshots]` (integer)
+- `fields[appCustomProductPageLocalizations]` ([string])
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
 
 
 ---

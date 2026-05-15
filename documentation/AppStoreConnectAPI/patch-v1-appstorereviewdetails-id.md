@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Update the app store review details, including the contact information, demo account, and notes.
+Update the App Store review details, including the contact information, demo account, and notes.
 
 **Availability**:
 - App Store Connect API 1.2+

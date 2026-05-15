@@ -1,4 +1,4 @@
-# Get review submissions for an app
+# Get Review Submissions for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -76,7 +76,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/reviewSubmissions
 
 ## See Also
 
-- [List review submission Ids](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List Review Submission IDs](get-v1-apps-_id_-relationships-reviewsubmissions.md)
   Get the list of review submission IDs for a specific app.
 
 

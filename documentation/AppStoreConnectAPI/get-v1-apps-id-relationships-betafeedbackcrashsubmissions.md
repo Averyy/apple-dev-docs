@@ -1,4 +1,4 @@
-# List all beta feedback crash submission IDs for an app
+# List All Beta Feedback Crash Submission IDs for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,14 +22,14 @@ Get a list of beta feedback crash submissions for a specific app.
 
 ## See Also
 
-- [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
+- [List All Beta Feedback Crash Submissions for an App](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
-- [Read beta feedback crash submission information](get-v1-betafeedbackcrashsubmissions-_id_.md)
+- [Read Beta Feedback Crash Submission Information](get-v1-betafeedbackcrashsubmissions-_id_.md)
   Get information for a specific beta feedback crash submission.
-- [Read the crash log for a beta feedback crash submission](get-v1-betafeedbackcrashsubmissions-_id_-crashlog.md)
+- [Read the Crash Log for a Beta Feedback Crash Submission](get-v1-betafeedbackcrashsubmissions-_id_-crashlog.md)
   Get crash log information for a specific beta feedback crash submission.
 - [GET /v1/betaFeedbackCrashSubmissions/{id}/relationships/crashLog](get-v1-betafeedbackcrashsubmissions-_id_-relationships-crashlog.md)
-- [Delete a beta feedback crash submission](delete-v1-betafeedbackcrashsubmissions-_id_.md)
+- [Delete a Beta Feedback Crash Submission](delete-v1-betafeedbackcrashsubmissions-_id_.md)
   Delete a beta feedback crash submission from your app.
 
 

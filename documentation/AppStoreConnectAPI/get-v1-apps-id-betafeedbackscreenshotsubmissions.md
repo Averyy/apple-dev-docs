@@ -1,4 +1,4 @@
-# List all beta feedback screenshot submissions for an app
+# List All Beta Feedback Screenshot Submissions for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -30,7 +30,7 @@ Get beta feedback screenshot submissions for a specific app.
 
 ## See Also
 
-- [List all beta feedback crash submissions for an app](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
+- [List All Beta Feedback Crash Submissions for an App](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
 
 

@@ -1,4 +1,4 @@
-# Read information for an alternative distribution package variants
+# Read Information for an Alternative Distribution Package Variants
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -50,7 +50,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVariants/
 
 ## See Also
 
-- [List variants information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
+- [List Variants Information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
 
 

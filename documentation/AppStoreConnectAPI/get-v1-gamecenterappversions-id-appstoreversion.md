@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Read the app store version and related information for an app version.
+Read the App Store version and related information for an app version.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -33,7 +33,7 @@ Read the app store version and related information for an app version.
 
 ## See Also
 
-- [Read app versions for a Game Center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
+- [Read App Versions for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
   Get a list of app versions for a Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/gameCenterAppVersions](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
 - [GET /v1/gameCenterAppVersions/{id}](get-v1-gamecenterappversions-_id_.md)

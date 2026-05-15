@@ -13,44 +13,44 @@ For more information about how to use leaderboards in your app, see [`Configure 
 ## Topics
 
 ### Reading leaderboards
-- [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)
+- [Read Game Center Leaderboard Information](get-v2-gamecenterleaderboards-_id_.md)
   Get information about a specific Game Center leaderboard.
-- [List all versions for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
+- [List All Versions for a Game Center Leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
   Get a list of versions for a specific Game Center leaderboard.
-- [Get all version IDs for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
+- [Get All Version IDs for a Game Center Leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
   Get a list of version resource IDs for a specific Game Center leaderboard.
-- [Read leaderboard information](get-v1-gamecenterleaderboards-_id_.md)
+- [Read Leaderboard Information](get-v1-gamecenterleaderboards-_id_.md)
   Read information about a specific leaderboard.
-- [Read group information for a leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
+- [Read Group Information for a Leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
   Read the group leadboard to which a leaderboard belongs.
-- [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
+- [List All Localizations for a Leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
 - [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
-- [List all groups to which a leaderboard belongs ](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [List All Groups to Which a Leaderboard Belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
-- [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
+- [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
 - [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 ### Creating, modifying, and deleting leaderboards
-- [Create a Game Center leaderboard](post-v2-gamecenterleaderboards.md)
+- [Create a Game Center Leaderboard](post-v2-gamecenterleaderboards.md)
   Create a Game Center leaderboard.
-- [Modify a Game Center leaderboard](patch-v2-gamecenterleaderboards-_id_.md)
+- [Modify a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_.md)
   Update a specific Game Center leaderboard.
-- [Modify the activity for a Game Center leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the Activity for a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-activity.md)
   Update the activity relationship for a specific Game Center leaderboard.
-- [Modify the challenge for a Game Center leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Modify the Challenge for a Game Center Leaderboard](patch-v2-gamecenterleaderboards-_id_-relationships-challenge.md)
   Update the challenge relationship for a specific Game Center leaderboard.
-- [Delete a Game Center leaderboard](delete-v2-gamecenterleaderboards-_id_.md)
+- [Delete a Game Center Leaderboard](delete-v2-gamecenterleaderboards-_id_.md)
   Delete a specific Game Center leaderboard.
-- [Create a leaderboard](post-v1-gamecenterleaderboards.md)
+- [Create a Leaderboard](post-v1-gamecenterleaderboards.md)
   Add a new leaderboard to your app.
-- [Edit a leaderboard](patch-v1-gamecenterleaderboards-_id_.md)
+- [Edit a Leaderboard](patch-v1-gamecenterleaderboards-_id_.md)
   Modify the details of a leaderboard.
-- [Edit the relationship between a leaderboard and a group leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
 - [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
 - [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
-- [Delete a leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
+- [Delete a Leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 ### Objects and types
 - [object GameCenterLeaderboardV2](gamecenterleaderboardv2.md)

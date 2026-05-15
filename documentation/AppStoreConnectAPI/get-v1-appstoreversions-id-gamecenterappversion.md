@@ -1,4 +1,4 @@
-# Read Game Center app version information of an App Store version
+# Read Game Center App Version Information of an App Store Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

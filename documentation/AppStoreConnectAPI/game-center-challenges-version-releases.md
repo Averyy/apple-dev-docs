@@ -7,11 +7,11 @@ Manage compatible Game Center challenge version releases.
 ## Topics
 
 ### Managing version releases
-- [Add a challenge version release](post-v1-gamecenterchallengeversionreleases.md)
+- [Add a Challenge Version Release](post-v1-gamecenterchallengeversionreleases.md)
   Add a version release for a specific Game Center challenge version.
-- [Read challenge version release information](get-v1-gamecenterchallengeversionreleases-_id_.md)
+- [Read Challenge Version Release Information](get-v1-gamecenterchallengeversionreleases-_id_.md)
   Get information for a specific Game Center challenge version release.
-- [Delete a challenge version release](delete-v1-gamecenterchallengeversionreleases-_id_.md)
+- [Delete a Challenge Version Release](delete-v1-gamecenterchallengeversionreleases-_id_.md)
   Remove a specific version release from a Game Center challenge version.
 ### Objects
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)

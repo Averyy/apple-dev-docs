@@ -15,14 +15,14 @@ The `certificates` resource represents the digital certificates you use to sign 
 ### Creating and modifying certificates
 - [Create a Certificate](post-v1-certificates.md)
   Create a new certificate using a certificate signing request.
-- [Modify a certificate](patch-v1-certificates-_id_.md)
+- [Modify a Certificate](patch-v1-certificates-_id_.md)
   Update the activation status for a specific certificate.
 ### Getting certificate infomation and data
 - [List and Download Certificates](get-v1-certificates.md)
   Find and list certificates and download their data.
 - [Read and Download Certificate Information](get-v1-certificates-_id_.md)
   Get information about a certificate and download the certificate data.
-- [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
 - [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
 ### Revoking certificates

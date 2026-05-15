@@ -16,6 +16,7 @@ Get information about an app screenshot and its upload and processing status.
 
 - `fields[appScreenshots]` ([string])
 - `include` ([string])
+- `fields[appScreenshotSets]` ([string])
 
 ## See Also
 

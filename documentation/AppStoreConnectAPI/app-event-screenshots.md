@@ -7,7 +7,7 @@ Create and update screenshots your product page uses for the card or detail view
 ## Topics
 
 ### Endpoints
-- [List the images for an in-app event](get-v1-appeventscreenshots-_id_.md)
+- [List the Images for an In-App Event](get-v1-appeventscreenshots-_id_.md)
 - [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)
 - [POST /v1/appEventScreenshots](post-v1-appeventscreenshots.md)
 - [Delete an App Event Screenshot](delete-v1-appeventscreenshots-_id_.md)

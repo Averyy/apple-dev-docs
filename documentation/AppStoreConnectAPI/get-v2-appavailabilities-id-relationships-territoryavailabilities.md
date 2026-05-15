@@ -18,7 +18,7 @@
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)
   Get information about your app’s availalbility.
-- [Read App Availablity Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
+- [Read App Availability Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
   Read the territory availablity for a specific app.
 - [Create an App Pre-Order](post-v2-appavailabilities.md)
   Create an app pre-order and set the expected app release date.

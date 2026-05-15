@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [List availability for an app](get-v1-apps-_id_-appavailabilityv2.md)
+- [List Availability for an App](get-v1-apps-_id_-appavailabilityv2.md)
   Get a list of availabilities for a specific app.
 
 

@@ -16,6 +16,7 @@ Get the image that appears on the App Clip card of a default App Clip experience
 
 - `fields[appClipHeaderImages]` ([string]): Additional fields to include for each App Clip Header Images resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string])
 
 ## See Also
 

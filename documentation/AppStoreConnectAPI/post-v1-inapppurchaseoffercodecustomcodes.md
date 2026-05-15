@@ -1,4 +1,4 @@
-# Create an in-app purchase offer code custom code
+# Create an In-App Purchase Offer Code Custom Code
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,13 +18,13 @@ Create a custom code for an in-app purchase offer code.
 
 ## See Also
 
-- [List all custom codes for an in-app purchase offer code](get-v1-inapppurchaseoffercodes-_id_-customcodes.md)
+- [List All Custom Codes for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-customcodes.md)
   Get a list of custom codes for a specific in-app purchase offer code.
-- [Get all custom code IDs for an in-app purchase offer code](get-v1-inapppurchaseoffercodes-_id_-relationships-customcodes.md)
+- [Get All Custom Code IDs for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-relationships-customcodes.md)
   Get a list of custom code resource IDs for a specific in-app purchase offer code.
-- [Read in-app purchase offer code custom code information](get-v1-inapppurchaseoffercodecustomcodes-_id_.md)
+- [Read In-App Purchase Offer Code Custom Code Information](get-v1-inapppurchaseoffercodecustomcodes-_id_.md)
   Get information about a specific in-app purchase offer code custom code.
-- [Modify an in-app purchase offer code custom code](patch-v1-inapppurchaseoffercodecustomcodes-_id_.md)
+- [Modify an In-App Purchase Offer Code Custom Code](patch-v1-inapppurchaseoffercodecustomcodes-_id_.md)
   Update a specific in-app purchase offer code custom code.
 
 

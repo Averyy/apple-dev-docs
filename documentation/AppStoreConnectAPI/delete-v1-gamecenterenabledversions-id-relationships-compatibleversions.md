@@ -1,4 +1,4 @@
-# Remove Compatible Versions from a Game Center Enabled Version
+# Remove Compatible Versions From a Game Center Enabled Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

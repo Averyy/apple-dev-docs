@@ -40,7 +40,7 @@ Get a list of possible price points for an in-app purchase.
 - [Delete an In-App Purchase](delete-v2-inapppurchases-_id_.md)
   Delete a specific in-app purchase from your app.
 - [GET /v2/inAppPurchases/{id}/relationships/pricePoints](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
-- [List all in-app purchase price point equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
+- [List All In-App Purchase Price Point Equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
   Get a list of in-app purchase price points and their equivalent in a specified currency.
 - [GET /v1/inAppPurchasePricePoints/{id}/relationships/equalizations](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
 - [Read Promoted Purchase Information for an In-App Purchase](get-v2-inapppurchases-_id_-promotedpurchase.md)

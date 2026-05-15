@@ -115,7 +115,7 @@ GET https://api.appstoreconnect.apple.com/v1/ciXcodeVersions/Xcode12E507:stable
 
 - [List All Xcode Versions Available in Xcode Cloud](get-v1-cixcodeversions.md)
   List all Xcode versions that are available to Xcode Cloud workflows.
-- [List Available macOS Versions for an Xcode Version](get-v1-cixcodeversions-_id_-macosversions.md)
+- [List Available Macos Versions for an Xcode Version](get-v1-cixcodeversions-_id_-macosversions.md)
   List all macOS versions available in Xcode Cloud that support a specific Xcode version.
 - [GET /v1/ciXcodeVersions/{id}/relationships/macOsVersions](get-v1-cixcodeversions-_id_-relationships-macosversions.md)
 

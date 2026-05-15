@@ -1,4 +1,4 @@
-# Create an achievement
+# Create an Achievement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -88,20 +88,20 @@ POST https://api.appstoreconnect.apple.com/v1/gameCenterAchievements -d {
 
 ## See Also
 
-- [Create a Game Center achievement](post-v2-gamecenterachievements.md)
+- [Create a Game Center Achievement](post-v2-gamecenterachievements.md)
   Create a Game Center achievement.
-- [Modify a Game Center achievement](patch-v2-gamecenterachievements-_id_.md)
+- [Modify a Game Center Achievement](patch-v2-gamecenterachievements-_id_.md)
   Update a specific Game Center achievement.
-- [Modify the activity for a Game Center achievement](patch-v2-gamecenterachievements-_id_-relationships-activity.md)
+- [Modify the Activity for a Game Center Achievement](patch-v2-gamecenterachievements-_id_-relationships-activity.md)
   Update the activity relationship for a specific Game Center achievement.
-- [Delete a Game Center achievement](delete-v2-gamecenterachievements-_id_.md)
+- [Delete a Game Center Achievement](delete-v2-gamecenterachievements-_id_.md)
   Delete a specific Game Center achievement.
-- [Modify an achievement](patch-v1-gamecenterachievements-_id_.md)
+- [Modify an Achievement](patch-v1-gamecenterachievements-_id_.md)
   Modify properties for a specific achievement.
-- [Modify the group for an achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
+- [Modify the Group for an Achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   Modify the achievement group for a specific achievement.
 - [PATCH /v1/gameCenterAchievements/{id}/relationships/activity](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
-- [Delete an achievement](delete-v1-gamecenterachievements-_id_.md)
+- [Delete an Achievement](delete-v1-gamecenterachievements-_id_.md)
   Delete a specific achievement.
 
 

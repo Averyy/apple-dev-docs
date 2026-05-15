@@ -1,4 +1,4 @@
-# Modify an App Store version experiement treatment
+# Modify an App Store Version Experiement Treatment
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

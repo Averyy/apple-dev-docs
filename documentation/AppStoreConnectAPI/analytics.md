@@ -20,9 +20,9 @@ This table outlines which roles can use which resources:
 
 | Role | Manage requests | List and download reports |
 | --- | --- | --- |
-| Admin | [`Request reports`](post-v1-analyticsreportrequests.md) and [`Delete a report request`](delete-v1-analyticsreportrequests-_id_.md) | [`Read reports for a specific request`](get-v1-analyticsreportrequests-_id_-reports.md) |
-| Finance |  | [`Read reports for a specific request`](get-v1-analyticsreportrequests-_id_-reports.md) |
-| Sales and Reports |  | [`Read reports for a specific request`](get-v1-analyticsreportrequests-_id_-reports.md) |
+| Admin | [`Request Reports`](post-v1-analyticsreportrequests.md) and [`Delete a Report Request`](delete-v1-analyticsreportrequests-_id_.md) | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
+| Finance |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
+| Sales and Reports |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
 
 The Sales and Reports role can also read [`Download Sales and Trends Reports`](get-v1-salesreports.md) in addition to Analytics Reports.
 
@@ -36,32 +36,32 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
 - [Downloading Analytics Reports](downloading-analytics-reports.md)
   Learn how to request and review data about your apps, their usage, engagement, and performance.
 ### Making, Reading, and Deleting Requests
-- [Request reports](post-v1-analyticsreportrequests.md)
+- [Request Reports](post-v1-analyticsreportrequests.md)
   Request analytics reports for your apps.
-- [Read report requests](get-v1-apps-_id_-analyticsreportrequests.md)
+- [Read Report Requests](get-v1-apps-_id_-analyticsreportrequests.md)
   Read analytics report requests for a specific app.
-- [Read report request information](get-v1-analyticsreportrequests-_id_.md)
+- [Read Report Request Information](get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
-- [Read reports for a specific request](get-v1-analyticsreportrequests-_id_-reports.md)
+- [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read reports Ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
-- [Delete a report request](delete-v1-analyticsreportrequests-_id_.md)
+- [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
 ### Reading Reports, Instances, and Segments
-- [Read report information](get-v1-analyticsreports-_id_.md)
+- [Read Report Information](get-v1-analyticsreports-_id_.md)
   Get details for a specific analytics report.
-- [Read a list of instances of a report](get-v1-analyticsreports-_id_-instances.md)
+- [Read a List of Instances of a Report](get-v1-analyticsreports-_id_-instances.md)
   Read list of all the granularity options for a specific type of analytics report.
-- [Read report instance information](get-v1-analyticsreportinstances-_id_.md)
+- [Read Report Instance Information](get-v1-analyticsreportinstances-_id_.md)
   Get details for a specific instance of an analytics report.
-- [Read the segments for a report](get-v1-analyticsreportinstances-_id_-segments.md)
+- [Read the Segments for a Report](get-v1-analyticsreportinstances-_id_-segments.md)
   Get details for a specific analytics report segment.
-- [Read segment IDs for a report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
+- [Read Segment IDs for a Report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
   Get Ids for a specific analytics report segment.
-- [Read the details for a report segment](get-v1-analyticsreportsegments-_id_.md)
+- [Read the Details for a Report Segment](get-v1-analyticsreportsegments-_id_.md)
   Get details and download information for a specific analytics report segment.
-- [Read a list of a report instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
+- [Read a List of a Report Instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
   Read list of all the instance IDs for a specific type of analytics report.
 ### Objects
 - [object AnalyticsReportRequest](analyticsreportrequest.md)

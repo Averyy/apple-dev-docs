@@ -15,26 +15,26 @@ To read information about your builds after a successful upload, use the [`Build
 ## Topics
 
 ### Managing build uploads
-- [List all build uploads for an app](get-v1-apps-_id_-builduploads.md)
+- [List All Build Uploads for an App](get-v1-apps-_id_-builduploads.md)
   Get a list of all build uploads for a specific app.
-- [List all build uploads IDs for an app](get-v1-apps-_id_-relationships-builduploads.md)
+- [List All Build Uploads IDs for an App](get-v1-apps-_id_-relationships-builduploads.md)
   Get a list of all build upload Ids for a specific app.
-- [Read build upload information](get-v1-builduploads-_id_.md)
+- [Read Build Upload Information](get-v1-builduploads-_id_.md)
   Get details about a specific build upload file for an app.
-- [Create a build upload](post-v1-builduploads.md)
+- [Create a Build Upload](post-v1-builduploads.md)
   Add a new build upload to an app.
-- [Remove a build upload](delete-v1-builduploads-_id_.md)
+- [Remove a Build Upload](delete-v1-builduploads-_id_.md)
   Remove a specific build upload for an app.
 ### Reading and uploading build files
-- [Read build upload file information](get-v1-builduploadfiles-_id_.md)
+- [Read Build Upload File Information](get-v1-builduploadfiles-_id_.md)
   Get details about a specific build upload file for a build upload.
 - [GET /v1/buildUploads/{id}/buildUploadFiles](get-v1-builduploads-_id_-builduploadfiles.md)
   Get build upload file information for a specific build upload.
-- [Read the build upload file ID for a build upload](get-v1-builduploads-_id_-relationships-builduploadfiles.md)
+- [Read the Build Upload File ID for a Build Upload](get-v1-builduploads-_id_-relationships-builduploadfiles.md)
   Get the build upload file ID for a specific build upload.
-- [Create a reservation for a build upload file](post-v1-builduploadfiles.md)
+- [Create a Reservation for a Build Upload File](post-v1-builduploadfiles.md)
   Reserve a build upload file for a specific build upload.
-- [Commit a build upload file](patch-v1-builduploadfiles-_id_.md)
+- [Commit a Build Upload File](patch-v1-builduploadfiles-_id_.md)
   Commit a build upload file to a specific build upload.
 ### Objects
 - [object BuildUpload](buildupload.md)

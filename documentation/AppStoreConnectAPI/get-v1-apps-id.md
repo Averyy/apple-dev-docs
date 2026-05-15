@@ -279,6 +279,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023
 - `fields[gameCenterDetails]` ([string])
 - `fields[androidToIosAppMappingDetails]` ([string])
 - `limit[androidToIosAppMappingDetails]` (integer)
+- `fields[buildIcons]` ([string])
 
 ## See Also
 
@@ -288,7 +289,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
 - [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an app’s encryption declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an App’s Encryption Declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
 
 

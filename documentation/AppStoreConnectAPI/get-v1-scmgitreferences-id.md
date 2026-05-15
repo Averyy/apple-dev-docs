@@ -16,6 +16,7 @@ Get information about a specific Git reference.
 
 - `fields[scmGitReferences]` ([string]): Additional fields to include for the Git References resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[scmRepositories]` ([string])
 
 
 ---

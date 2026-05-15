@@ -1,4 +1,4 @@
-# Read leaderboard information
+# Read Leaderboard Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -87,23 +87,28 @@ https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/843189c3-61a6-48
 - `limit[gameCenterLeaderboardSets]` (integer)
 - `limit[localizations]` (integer)
 - `limit[releases]` (integer)
+- `fields[gameCenterActivities]` ([string])
+- `fields[gameCenterChallenges]` ([string])
+- `fields[gameCenterDetails]` ([string])
+- `fields[gameCenterGroups]` ([string])
+- `fields[gameCenterLeaderboardSets]` ([string])
 
 ## See Also
 
-- [Read Game Center leaderboard information](get-v2-gamecenterleaderboards-_id_.md)
+- [Read Game Center Leaderboard Information](get-v2-gamecenterleaderboards-_id_.md)
   Get information about a specific Game Center leaderboard.
-- [List all versions for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
+- [List All Versions for a Game Center Leaderboard](get-v2-gamecenterleaderboards-_id_-versions.md)
   Get a list of versions for a specific Game Center leaderboard.
-- [Get all version IDs for a Game Center leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
+- [Get All Version IDs for a Game Center Leaderboard](get-v2-gamecenterleaderboards-_id_-relationships-versions.md)
   Get a list of version resource IDs for a specific Game Center leaderboard.
-- [Read group information for a leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
+- [Read Group Information for a Leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
   Read the group leadboard to which a leaderboard belongs.
-- [List all localizations for a leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
+- [List All Localizations for a Leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
 - [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
-- [List all groups to which a leaderboard belongs ](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [List All Groups to Which a Leaderboard Belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
-- [List releases for a leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
+- [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
 - [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 

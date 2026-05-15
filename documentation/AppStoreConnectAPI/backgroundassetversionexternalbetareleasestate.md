@@ -14,16 +14,6 @@ The data structure that represents a background asset version external beta rele
 string BackgroundAssetVersionExternalBetaReleaseState
 ```
 
-#### Discussion
-
-- Possible Values - READY_FOR_BETA_SUBMISSION:
-- WAITING_FOR_REVIEW:
-- IN_REVIEW:
-- REJECTED:
-- PROCESSING_FOR_TESTING:
-- READY_FOR_TESTING:
-- SUPERSEDED:
-
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

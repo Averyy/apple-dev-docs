@@ -1,4 +1,4 @@
-# List all Repositories for a Source Code Management Provider
+# List All Repositories for a Source Code Management Provider
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

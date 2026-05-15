@@ -10,7 +10,7 @@ Encrypt a single file and save the result to the file system, then decrypt and r
 
 #### Overview
 
-This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a single file using a [`SymmetricKey`](https://developer.apple.com/documentation/CryptoKit/SymmetricKey). The sample saves the encrypted file to the user’s temporary directory and then calls a second function that decrypts the contents of the archive and recreates the original file.
+This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a single file using a [`SymmetricKey`](https://developer.apple.com/documentation/cryptokit/symmetrickey). The sample saves the encrypted file to the user’s temporary directory and then calls a second function that decrypts the contents of the archive and recreates the original file.
 
 ##### Configure the Sample Code Project
 
@@ -37,7 +37,7 @@ let decryptedFilePath = FilePath(NSTemporaryDirectory() + "file.decrypted.txt")
 
 ##### Generate a Symmetric Key
 
-The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) framework to generate the symmetric cryptographic key.
+The sample imports the [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) framework to generate the symmetric cryptographic key.
 
 ```swift
 let key = SymmetricKey(size: SymmetricKeySize.bits256)

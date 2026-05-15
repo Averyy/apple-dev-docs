@@ -1,4 +1,4 @@
-# Delete an Introductory Offer from a Subscription
+# Delete an Introductory Offer From a Subscription
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

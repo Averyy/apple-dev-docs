@@ -18,6 +18,9 @@ Get an app preview set that includes its display target, language, and the previ
 - `fields[appPreviews]` ([string])
 - `include` ([string])
 - `limit[appPreviews]` (integer)
+- `fields[appCustomProductPageLocalizations]` ([string])
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
+- `fields[appStoreVersionLocalizations]` ([string])
 
 
 ---

@@ -14,15 +14,6 @@ String that represents the type of icon contained in the build.
 string IconAssetType
 ```
 
-##### Possible Values
-
-- **`APP_STORE`**: 
-- **`MESSAGES_APP_STORE`**: 
-- **`WATCH_APP_STORE`**: 
-- **`TV_OS_HOME_SCREEN`**: 
-- **`TV_OS_TOP_SHELF`**: 
-- **`ALTERNATE_EXPERIMENT`**: 
-
 ## See Also
 
 - [object BuildIcon](buildicon.md)

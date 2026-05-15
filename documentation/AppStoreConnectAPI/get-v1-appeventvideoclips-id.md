@@ -14,6 +14,7 @@
 
 - `fields[appEventVideoClips]` ([string])
 - `include` ([string])
+- `fields[appEventLocalizations]` ([string])
 
 ## See Also
 

@@ -1,4 +1,4 @@
-# Read information for alternative distribution package deltas
+# Read Information for Alternative Distribution Package Deltas
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -50,7 +50,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageDeltas/9d
 
 ## See Also
 
-- [List deltas information](get-v1-alternativedistributionpackageversions-_id_-deltas.md)
+- [List Deltas Information](get-v1-alternativedistributionpackageversions-_id_-deltas.md)
   List deltas for a specific alternative distribution package version.
 
 

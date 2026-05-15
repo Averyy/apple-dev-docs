@@ -16,7 +16,7 @@ object AnalyticsReportRequestCreateRequest
 
 #### Discussion
 
-Use this object with [`Request reports`](post-v1-analyticsreportrequests.md).
+Use this object with [`Request Reports`](post-v1-analyticsreportrequests.md).
 
 ## Topics
 

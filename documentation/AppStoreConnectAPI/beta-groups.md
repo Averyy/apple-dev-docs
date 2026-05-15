@@ -32,22 +32,22 @@ Add beta testers to a group through App Store Connect or with this API.
 - [Read the App Information of a Beta Group](get-v1-betagroups-_id_-app.md)
   Get the app information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/app](get-v1-betagroups-_id_-relationships-app.md)
-- [Read metrics for beta testers in a beta group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
+- [Read Metrics for Beta Testers in a Beta Group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
-- [Read recruitment criteria for a beta group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
+- [Read Recruitment Criteria for a Beta Group](get-v1-betagroups-_id_-betarecruitmentcriteria.md)
   Get the recruitment criteria information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriteria](get-v1-betagroups-_id_-relationships-betarecruitmentcriteria.md)
-- [Read build compatibilty for a beta group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
+- [Read Build Compatibilty for a Beta Group](get-v1-betagroups-_id_-betarecruitmentcriterioncompatiblebuildcheck.md)
   Get the build compatibilty information for a specific beta group.
 - [GET /v1/betaGroups/{id}/relationships/betaRecruitmentCriterionCompatibleBuildCheck](get-v1-betagroups-_id_-relationships-betarecruitmentcriterioncompatiblebuildcheck.md)
 ### Adding and Removing Builds and Testers
 - [Add Beta Testers to a Beta Group](post-v1-betagroups-_id_-relationships-betatesters.md)
   Add a specific beta tester to one or more beta groups for beta testing.
-- [Remove Beta Testers from a Beta Group](delete-v1-betagroups-_id_-relationships-betatesters.md)
+- [Remove Beta Testers From a Beta Group](delete-v1-betagroups-_id_-relationships-betatesters.md)
   Remove a specific beta tester from a one or more beta groups, revoking their access to test builds associated with those groups.
 - [Add Builds to a Beta Group](post-v1-betagroups-_id_-relationships-builds.md)
   Associate builds with a beta group to enable the group to test the builds.
-- [Remove Builds from a Beta Group](delete-v1-betagroups-_id_-relationships-builds.md)
+- [Remove Builds From a Beta Group](delete-v1-betagroups-_id_-relationships-builds.md)
   Remove access to test one or more builds from beta testers in a specific beta group.
 ### Reading Build and Beta Tester Information
 - [List All Builds for a Beta Group](get-v1-betagroups-_id_-builds.md)
@@ -59,7 +59,7 @@ Add beta testers to a group through App Store Connect or with this API.
 - [Get All Beta Tester IDs in a Beta Group](get-v1-betagroups-_id_-relationships-betatesters.md)
   Get a list of the beta tester resource IDs in a specific beta group.
 ### Measuring public link usage
-- [Read public link usage metrics for a beta group](get-v1-betagroups-_id_-metrics-publiclinkusages.md)
+- [Read Public Link Usage Metrics for a Beta Group](get-v1-betagroups-_id_-metrics-publiclinkusages.md)
   Get public link usage metrics for a specific beta group.
 ### Objects
 - [object BetaGroup](betagroup.md)

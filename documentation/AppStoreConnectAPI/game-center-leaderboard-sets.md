@@ -19,58 +19,58 @@ For more information about how to use Leaderboard sets in your app, see [`Config
 ## Topics
 
 ### Reading leaderboard sets
-- [Read Game Center leaderboard set information](get-v2-gamecenterleaderboardsets-_id_.md)
+- [Read Game Center Leaderboard Set Information](get-v2-gamecenterleaderboardsets-_id_.md)
   Get information about a specific Game Center leaderboard set.
-- [List all leaderboards for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
+- [List All Leaderboards for a Game Center Leaderboard Set](get-v2-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
   Get a list of leaderboards for a specific Game Center leaderboard set.
-- [Get all leaderboard IDs for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Get All Leaderboard IDs for a Game Center Leaderboard Set](get-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Get a list of leaderboard resource IDs for a specific Game Center leaderboard set.
-- [List all versions for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-versions.md)
+- [List All Versions for a Game Center Leaderboard Set](get-v2-gamecenterleaderboardsets-_id_-versions.md)
   Get a list of versions for a specific Game Center leaderboard set.
-- [Get all version IDs for a Game Center leaderboard set](get-v2-gamecenterleaderboardsets-_id_-relationships-versions.md)
+- [Get All Version IDs for a Game Center Leaderboard Set](get-v2-gamecenterleaderboardsets-_id_-relationships-versions.md)
   Get a list of version resource IDs for a specific Game Center leaderboard set.
-- [Read leaderboard set information](get-v1-gamecenterleaderboardsets-_id_.md)
+- [Read Leaderboard Set Information](get-v1-gamecenterleaderboardsets-_id_.md)
   Read information about a specific leaderboard set.
-- [List leaderboard information for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
+- [List Leaderboard Information for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-gamecenterleaderboards.md)
   Read the leadboards that belong to a learderboard set.
-- [List leaderboard sets in a group leaderboard set](get-v1-gamecenterleaderboardsets-_id_-groupleaderboardset.md)
+- [List Leaderboard Sets in a Group Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-groupleaderboardset.md)
   List information about leaderboards and leaderboard sets in a group leaderboard set.
-- [List all localizations for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-localizations.md)
+- [List All Localizations for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard set.
 - [GET /v1/gameCenterLeaderboardSets/{id}/relationships/localizations](get-v1-gamecenterleaderboardsets-_id_-relationships-localizations.md)
-- [Read the leaderboards in a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Read the Leaderboards in a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   List all leaderboards in a leaderboard set.
-- [Read the group leaderboard set in a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
+- [Read the Group Leaderboard Set in a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
   List all the group leaderboard sets in a leaderboard set.
-- [List releases for a leaderboard set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
+- [List Releases for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
   Read the state of releases for a leaderboard set and related information.
 - [GET /v1/gameCenterLeaderboardSets/{id}/relationships/releases](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
 ### Creating, editing, and deleting leaderboard sets
-- [Create a Game Center leaderboard set](post-v2-gamecenterleaderboardsets.md)
+- [Create a Game Center Leaderboard Set](post-v2-gamecenterleaderboardsets.md)
   Create a Game Center leaderboard set.
-- [Add a leaderboard to a Game Center leaderboard set](post-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Add a Leaderboard to a Game Center Leaderboard Set](post-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Add a leaderboard to a Game Center leaderboard set.
-- [Modify a Game Center leaderboard set](patch-v2-gamecenterleaderboardsets-_id_.md)
+- [Modify a Game Center Leaderboard Set](patch-v2-gamecenterleaderboardsets-_id_.md)
   Update a specific Game Center leaderboard set.
-- [Modify the leaderboards for a Game Center leaderboard set](patch-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the Leaderboards for a Game Center Leaderboard Set](patch-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Update the leaderboards relationship for a specific Game Center leaderboard set.
-- [Delete a Game Center leaderboard set](delete-v2-gamecenterleaderboardsets-_id_.md)
+- [Delete a Game Center Leaderboard Set](delete-v2-gamecenterleaderboardsets-_id_.md)
   Delete a specific Game Center leaderboard set.
-- [Delete a Game Center leaderboard set](delete-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Delete a Game Center Leaderboard Set](delete-v2-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Delete a specific Game Center leaderboard set.
-- [Create a leaderboard set](post-v1-gamecenterleaderboardsets.md)
+- [Create a Leaderboard Set](post-v1-gamecenterleaderboardsets.md)
   Add a new leaderboard set to your app.
-- [Create a relationship between a leaderboard and a leaderboard set](post-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Create a Relationship Between a Leaderboard and a Leaderboard Set](post-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Add a leaderboard to a leaderboard set.
-- [Edit a leaderboard set](patch-v1-gamecenterleaderboardsets-_id_.md)
+- [Edit a Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_.md)
   Modify the metadata for a leaderboard set.
-- [Modify the leaderboards in leaderboard set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the Leaderboards in Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Edit the positions of leaderboards in an existing leaderboard set.
-- [Edit the releationship between a leaderboard and a group leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
+- [Edit the Releationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
   Modify the group leaderboards in a leaderboard set.
-- [Delete a leaderboard set](delete-v1-gamecenterleaderboardsets-_id_.md)
+- [Delete a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_.md)
   Delete a specifc leaderboard set.
-- [Delete the relationship between a leaderboard and a leaderboard set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Delete the Relationship Between a Leaderboard and a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Remove a leaderboard from a leaderboard set.
 ### Objects
 - [object GameCenterLeaderboardSetV2](gamecenterleaderboardsetv2.md)

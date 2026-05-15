@@ -1,4 +1,4 @@
-# Modify a custom product page version
+# Modify a Custom Product Page Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -63,18 +63,18 @@ PATCH https://appstoreconnect.apple.com/v1/appCustomProductPageVersions/372e5398
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page version resource ID from the [`List custom product page versions`](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app custom product page version resource ID from the [`List Custom Product Page Versions`](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md) response.
 
 ## See Also
 
-- [Read custom product page version information](get-v1-appcustomproductpageversions-_id_.md)
+- [Read Custom Product Page Version Information](get-v1-appcustomproductpageversions-_id_.md)
   Get information about a specific app custom product page version.
-- [List custom product page versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
+- [List Custom Product Page Versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [List custom product pages localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
+- [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
 - [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
-- [Create a custom product page version](post-v1-appcustomproductpageversions.md)
+- [Create a Custom Product Page Version](post-v1-appcustomproductpageversions.md)
   Add a version for your app custom product page.
 
 

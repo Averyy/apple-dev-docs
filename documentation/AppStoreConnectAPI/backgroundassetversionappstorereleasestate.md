@@ -14,18 +14,6 @@ A string that represents the release of a asset.
 string BackgroundAssetVersionAppStoreReleaseState
 ```
 
-#### Discussion
-
-- Possible Values - PREPARE_FOR_SUBMISSION:
-- READY_FOR_REVIEW:
-- WAITING_FOR_REVIEW:
-- IN_REVIEW:
-- ACCEPTED:
-- REJECTED:
-- PROCESSING_FOR_DISTRIBUTION:
-- READY_FOR_DISTRIBUTION:
-- SUPERSEDED:
-
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

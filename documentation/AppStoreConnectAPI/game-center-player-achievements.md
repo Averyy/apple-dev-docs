@@ -11,7 +11,7 @@ This endpoint is different than most in App Store Connect API, this’s used to 
 ## Topics
 
 ### Creating Game Center player achievements
-- [Add a player's score](post-v1-gamecenterplayerachievementsubmissions.md)
+- [Add a Player's Score](post-v1-gamecenterplayerachievementsubmissions.md)
   Add a new entry for a player’s score for a Game Center achievement.
 ### Objects
 - [object GameCenterPlayerAchievementSubmission](gamecenterplayerachievementsubmission.md)

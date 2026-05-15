@@ -16,6 +16,8 @@ Get details about a specific promoted in-app purchase.
 
 - `fields[promotedPurchases]` ([string])
 - `include` ([string])
+- `fields[inAppPurchases]` ([string])
+- `fields[subscriptions]` ([string])
 
 ## See Also
 

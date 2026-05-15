@@ -14,11 +14,6 @@ A string that represents the environment of an offer code.
 string OfferCodeEnvironment
 ```
 
-#### Discussion
-
-- Possible Values - PRODUCTION:
-- SANDBOX:
-
 ## See Also
 
 - [object App](app.md)

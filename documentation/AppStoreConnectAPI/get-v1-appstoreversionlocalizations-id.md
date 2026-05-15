@@ -20,6 +20,7 @@ Read localized version-level information.
 - `include` ([string])
 - `limit[appPreviewSets]` (integer)
 - `limit[appScreenshotSets]` (integer)
+- `fields[appStoreVersions]` ([string])
 - `limit[searchKeywords]` (integer)
 
 ## See Also

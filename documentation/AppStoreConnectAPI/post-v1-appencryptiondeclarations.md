@@ -1,4 +1,4 @@
-# Create an app encryption declarations
+# Create an App Encryption Declarations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

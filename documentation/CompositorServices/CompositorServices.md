@@ -45,7 +45,6 @@ For more information about how to draw your app’s content using Metal, see [`M
 - [enum LayerRendererConfigurationError](layerrendererconfigurationerror.md)
   Errors that can occur when configuring layers.
 ### Articles
-- [CompositorServices Functions](compositorservices-functions.md)
 - [Controlling Metal rendering immersion level](controlling-metal-rendering-immersion-level.md)
   Enable flexible immersive rendering by supporting progressive immersion when rendering your Metal content.
 ### Structures

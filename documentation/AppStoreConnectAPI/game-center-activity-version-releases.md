@@ -15,11 +15,11 @@ To manage Game Center activity version releases, be sure you have one of the fol
 ## Topics
 
 ### Read, create, and update Game Center activity versions
-- [Read activity version release information](get-v1-gamecenteractivityversionreleases-_id_.md)
+- [Read Activity Version Release Information](get-v1-gamecenteractivityversionreleases-_id_.md)
   Get information for a specific Game Center activity version release.
-- [Add an activity version release](post-v1-gamecenteractivityversionreleases.md)
+- [Add an Activity Version Release](post-v1-gamecenteractivityversionreleases.md)
   Add a version release for a specific Game Center activity.
-- [Delete an activity version release](delete-v1-gamecenteractivityversionreleases-_id_.md)
+- [Delete an Activity Version Release](delete-v1-gamecenteractivityversionreleases-_id_.md)
   Remove a specific version release from a Game Center activity.
 ### Objects
 - [object GameCenterActivityVersionRelease](gamecenteractivityversionrelease.md)

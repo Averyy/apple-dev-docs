@@ -18,6 +18,7 @@
 - `include` ([string])
 - `limit[appPreviewSets]` (integer)
 - `limit[appScreenshotSets]` (integer)
+- `fields[appStoreVersionExperimentTreatments]` ([string])
 
 ## See Also
 

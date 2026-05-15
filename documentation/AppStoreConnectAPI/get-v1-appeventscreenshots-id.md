@@ -1,4 +1,4 @@
-# List the images for an in-app event
+# List the Images for an In-App Event
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,6 +14,7 @@
 
 - `fields[appEventScreenshots]` ([string])
 - `include` ([string])
+- `fields[appEventLocalizations]` ([string])
 
 ## See Also
 

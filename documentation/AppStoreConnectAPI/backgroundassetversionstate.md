@@ -14,13 +14,6 @@ The possible states for a background asset version.
 string BackgroundAssetVersionState
 ```
 
-#### Discussion
-
-- Possible Values - AWAITING_UPLOAD:
-- PROCESSING:
-- FAILED:
-- COMPLETE:
-
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)

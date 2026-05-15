@@ -22,7 +22,7 @@ Enable a beta tester who is not a part of a beta group to test a build.
   Add or create a beta group to a build to enable testing.
 - [Remove Access for Beta Groups to a Build](delete-v1-builds-_id_-relationships-betagroups.md)
   Remove access to a specific build for all beta testers in one or more beta groups.
-- [Remove Individual Testers from a Build](delete-v1-builds-_id_-relationships-individualtesters.md)
+- [Remove Individual Testers From a Build](delete-v1-builds-_id_-relationships-individualtesters.md)
   Remove access to test a specific build from one or more individually assigned testers.
 
 

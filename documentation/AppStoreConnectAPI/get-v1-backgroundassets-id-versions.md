@@ -1,4 +1,4 @@
-# Read version details for a background asset
+# Read Version Details for a Background Asset
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -32,13 +32,13 @@ Get details about a specific background asset version.
 
 ## See Also
 
-- [List all assets packs for an app](get-v1-apps-_id_-backgroundassets.md)
+- [List All Assets Packs for an App](get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the assets packs IDs for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
-- [Read background assets information](get-v1-backgroundassets-_id_.md)
+- [Read Background Assets Information](get-v1-backgroundassets-_id_.md)
   Get details about a specific background asset.
-- [Read version IDs for a background asset](get-v1-backgroundassets-_id_-relationships-versions.md)
+- [Read Version IDs for a Background Asset](get-v1-backgroundassets-_id_-relationships-versions.md)
   Get version IDs about a specific background asset version.
 
 

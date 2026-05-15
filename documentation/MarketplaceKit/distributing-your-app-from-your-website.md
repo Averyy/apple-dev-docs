@@ -22,7 +22,7 @@ Distributing your app on the web requires one-time setup with App Store Connect.
 POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains
 ```
 
-For more information about the request’s parameters, see [`Add an alternative distribution domain`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-alternativeDistributionDomains).
+For more information about the request’s parameters, see [`Add an Alternative Distribution Domain`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-alternativeDistributionDomains).
 
 Then, supply a public key that App Store Connect uses to verify installation requests for your app by calling the `alternativeDistributionKeys` endpoint:
 

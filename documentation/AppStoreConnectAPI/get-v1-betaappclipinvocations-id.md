@@ -17,14 +17,15 @@ Get a specific App Clip invocation you configure for testing.
 - `fields[betaAppClipInvocations]` ([string]): Additional fields to include for each Beta App Clip Invocation resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[betaAppClipInvocationLocalizations]` (integer): The number of included Beta App Clip Invocations resources to return if the beta App Clip invocation localizations relationship is included.
+- `fields[betaAppClipInvocationLocalizations]` ([string])
 
 ## See Also
 
-- [Create an App Clip Invocation for Testers in TestFlight](post-v1-betaappclipinvocations.md)
+- [Create an App Clip Invocation for Testers in Testflight](post-v1-betaappclipinvocations.md)
   Configure a new App Clip experience that testers launch using the TestFlight app.
 - [Modify an App Clip Invocation You Provide to Testers](patch-v1-betaappclipinvocations-_id_.md)
   Change an App Clip invocation you make available to testers in the TestFlight app.
-- [Delete an App Clip Invocation for Testers in TestFlight](delete-v1-betaappclipinvocations-_id_.md)
+- [Delete an App Clip Invocation for Testers in Testflight](delete-v1-betaappclipinvocations-_id_.md)
   Delete an App Clip invocation you make available to testers in TestFlight.
 
 

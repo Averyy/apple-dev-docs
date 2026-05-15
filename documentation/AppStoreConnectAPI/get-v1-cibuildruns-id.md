@@ -99,6 +99,10 @@ GET https://api.appstoreconnect.apple.com/v1/ciBuildRuns/56c512e6-111e-4067-8e88
 - `include` ([string]): The relationship data to include in the response.
 - `limit[builds]` (integer): The number of included Build Runs resources to return if the builds relationship is included.
 - `fields[builds]` ([string]): Additional fields to include for the Build Runs resource returned by the response.
+- `fields[ciProducts]` ([string])
+- `fields[ciWorkflows]` ([string])
+- `fields[scmGitReferences]` ([string])
+- `fields[scmPullRequests]` ([string])
 
 ## See Also
 

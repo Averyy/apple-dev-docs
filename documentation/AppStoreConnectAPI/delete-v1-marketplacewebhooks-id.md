@@ -1,4 +1,4 @@
-# Delete a marketplace webhook configuration
+# Delete a Marketplace Webhook Configuration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -30,15 +30,15 @@ DELETE https://api.appstoreconnect.apple.com/v1/marketplaceWebhooks/c74970b8-6be
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplaceWebhooks` resource ID from the [`Read marketplace webhook information`](get-v1-marketplacewebhooks.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `marketplaceWebhooks` resource ID from the [`Read Marketplace Webhook Information`](get-v1-marketplacewebhooks.md) response.
 
 ## See Also
 
-- [Read marketplace webhook information](get-v1-marketplacewebhooks.md)
+- [Read Marketplace Webhook Information](get-v1-marketplacewebhooks.md)
   Get the endpoint URL for alternative distribution package notifications.
-- [Add a marketplace webhook configuration](post-v1-marketplacewebhooks.md)
+- [Add a Marketplace Webhook Configuration](post-v1-marketplacewebhooks.md)
   Add a new endpoint URL and secret for alternative distribution package notifications.
-- [Modify a marketplace webhook configuration](patch-v1-marketplacewebhooks-_id_.md)
+- [Modify a Marketplace Webhook Configuration](patch-v1-marketplacewebhooks-_id_.md)
   Update the endpoint URL and secret for alternative distribution package notifications.
 
 

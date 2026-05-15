@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeOneTimeUseCodeCreateRequest.Data.Relationships.OfferCode](inapppurchaseoffercodeonetimeusecodecreaterequest/data-data.dictionary/relationships-data.dictionary/offercode-data.dictionary.md)
   The request body you use to create an in-app purchase offer code one-time use code for a data relationships offer code.
 

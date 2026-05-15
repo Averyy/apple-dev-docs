@@ -17,13 +17,13 @@ class FamilyActivityData
 
 #### Overview
 
-To fetch a person’s family activity data, use [`installedApplications`](FamilyActivityData/installedApplications.md), [`visitedWebDomains`](FamilyActivityData/visitedWebDomains.md), or [`activityCategories`](FamilyActivityData/activityCategories.md) based on the type of data you need.
+To fetch a person’s family activity data, use doc://com.apple.documentation/documentation/familycontrols/familyactivitydata/installedapplications, doc://com.apple.documentation/documentation/familycontrols/familyactivitydata/visitedwebdomains, or doc://com.apple.documentation/documentation/familycontrols/familyactivitydata/activitycategories based on the type of data you need.
 
 ##### Region Support Authorization and Entitlement
 
 You can develop and test an app that uses this class on devices in any region. Customer installations of your app can only use the class on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
-Your app’s authorization status needs to be [`AuthorizationStatus.approvedWithDataAccess`](AuthorizationStatus/approvedWithDataAccess.md) to use this class.
+Your app’s authorization status needs to be doc://com.apple.documentation/documentation/familycontrols/authorizationstatus/approvedwithdataaccess to use this class.
 
 Your app needs the  [`Family Controls App and Website Usage`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls.app-and-website-usage) entitlement to use this class. Enable the capability on your Xcode target to add the entitlement to your app. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 

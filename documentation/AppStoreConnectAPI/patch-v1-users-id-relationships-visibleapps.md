@@ -24,7 +24,7 @@ Replace the list of apps a user on your team can see.
   Get a list of app resource IDs to which a user on your team has access.
 - [Add Visible Apps to a User](post-v1-users-_id_-relationships-visibleapps.md)
   Give a user on your team access to one or more apps.
-- [Remove Visible Apps from a User](delete-v1-users-_id_-relationships-visibleapps.md)
+- [Remove Visible Apps From a User](delete-v1-users-_id_-relationships-visibleapps.md)
   Remove a user on your team’s access to one or more apps.
 
 

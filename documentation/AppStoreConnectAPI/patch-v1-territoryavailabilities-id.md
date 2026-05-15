@@ -20,7 +20,7 @@ Update the release territories for your app pre-order.
 
 - [Read App Availabilty](get-v2-appavailabilities-_id_.md)
   Get information about your app’s availalbility.
-- [Read App Availablity Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
+- [Read App Availability Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
   Read the territory availablity for a specific app.
 - [GET /v2/appAvailabilities/{id}/relationships/territoryAvailabilities](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
 - [Create an App Pre-Order](post-v2-appavailabilities.md)

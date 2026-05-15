@@ -58,6 +58,7 @@ GET https://api.appstoreconnect.apple.com/v1/scmPullRequests/3372ba3b-013d-4328-
 
 - `fields[scmPullRequests]` ([string]): Additional fields to include for the Pull Requests resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
+- `fields[scmRepositories]` ([string])
 
 
 ---

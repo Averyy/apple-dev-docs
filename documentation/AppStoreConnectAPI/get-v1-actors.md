@@ -70,7 +70,7 @@ https://api.appstoreconnect.apple.com/v1/actors?filter%5Bid%5D=USER%3A2cd2a1ef-c
 ## Parameters
 
 - `fields[actors]` ([string])
-- `filter[id]` ([string]) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`Read review submission information`](get-v1-reviewsubmissions-_id_.md) response with the include [`ReviewSubmission.Relationships.SubmittedByActor`](reviewsubmission/relationships-data.dictionary/submittedbyactor-data.dictionary.md).
+- `filter[id]` ([string]) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`Read Review Submission Information`](get-v1-reviewsubmissions-_id_.md) response with the include [`ReviewSubmission.Relationships.SubmittedByActor`](reviewsubmission/relationships-data.dictionary/submittedbyactor-data.dictionary.md).
 - `limit` (integer)
 
 ## See Also

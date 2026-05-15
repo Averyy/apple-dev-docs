@@ -29,6 +29,7 @@ Get information about a specific auto-renewable subscription.
 - `fields[subscriptionAppStoreReviewScreenshots]` ([string])
 - `limit[promotionalOffers]` (integer)
 - `fields[subscriptionAvailabilities]` ([string])
+- `fields[subscriptionGroups]` ([string])
 - `fields[subscriptionImages]` ([string])
 - `fields[winBackOffers]` ([string])
 - `limit[images]` (integer)
@@ -49,7 +50,7 @@ Get information about a specific auto-renewable subscription.
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
-- [Delete an Introductory Offer from a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an Introductory Offer From a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.

@@ -1,4 +1,4 @@
-# List all accessibility declarations for an app
+# List All Accessibility Declarations for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

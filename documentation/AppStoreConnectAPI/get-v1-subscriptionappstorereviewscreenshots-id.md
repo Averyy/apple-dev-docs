@@ -20,6 +20,7 @@ Get the information about a review screenshot for an auto-renewable subscription
 
 - `fields[subscriptionAppStoreReviewScreenshots]` ([string])
 - `include` ([string])
+- `fields[subscriptions]` ([string])
 
 ## See Also
 

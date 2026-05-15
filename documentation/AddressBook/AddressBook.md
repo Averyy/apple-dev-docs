@@ -20,20 +20,20 @@ The Address Book is a centralized database containing contacts and their persona
 ## Topics
 
 ### Essentials
-- [class ABAddressBook](abaddressbook.md)
+- [class ABAddressBook](abaddressbook-swift.class.md)
   The main object you use to access the Address Book database.
 ### Data Types
 - [class ABPerson](abperson.md)
   An object that encapsulates all information about a person in the Address Book database.
 - [class ABGroup](abgroup.md)
   An object that represents a group of records in the Address Book database.
-- [class ABMultiValue](abmultivalue.md)
+- [class ABMultiValue](abmultivalue-swift.class.md)
   An immutable representation of a property that might have multiple values.
-- [class ABMutableMultiValue](abmutablemultivalue.md)
+- [class ABMutableMultiValue](abmutablemultivalue-swift.class.md)
   A mutable representation of a property that might have multiple values.
 - [protocol ABImageClient](abimageclient.md)
   Methods for responding to a request to load images associated with a contact.
-- [class ABRecord](abrecord.md)
+- [class ABRecord](abrecord-swift.class.md)
   An abstract class that defines the common properties for all Address Book records.
 ### Pickers
 - [class ABPeoplePickerView](abpeoplepickerview.md)

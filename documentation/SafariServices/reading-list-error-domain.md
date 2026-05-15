@@ -12,7 +12,7 @@ The domain used for Reading List errors.
 
 ## See Also
 
-- [SSReadingListError.Code](ssreadinglisterrorcode.md)
+- [SSReadingListError.Code](ssreadinglisterror/code.md)
   Messages that describe a Safari Reading List error.
 
 

@@ -17,7 +17,7 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 - The `INSTALLS` report type now has a detailed and summary monthly option for [`Download Sales and Trends Reports`](get-v1-salesreports.md).
 - The [`TerritoryAvailability.Attributes`](territoryavailability/attributes-data.dictionary.md) resource now has two additional `contentStatuses` possible values, `ICP_NUMBER_MISSING` and `ICP_NUMBER_INVALID`. To learn more, see the “Availability in China mainland” section in [`App Store Connect Help`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/reference/app-information).
 - Developers can now upload screenshots for Apple Watch Series 10, to learn more about possible values, see [`ScreenshotDisplayType`](screenshotdisplaytype.md).
-- Developers can now add an app encryption declaration for a given app using [`Create an app encryption declarations`](post-v1-appencryptiondeclarations.md).
+- Developers can now add an app encryption declaration for a given app using [`Create an App Encryption Declarations`](post-v1-appencryptiondeclarations.md).
 
 ##### Improvements
 
@@ -30,7 +30,7 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 
 ##### Deprecations
 
-- The `app` relationship to [`Create an app encryption declarations`](post-v1-appencryptiondeclarations.md) has been deprecated.
+- The `app` relationship to [`Create an App Encryption Declarations`](post-v1-appencryptiondeclarations.md) has been deprecated.
 - The [`Promoted Purchase Images`](promoted-purchase-images.md) endpoints have been deprecated and replaced with [`Subscription images`](subscription-images.md) and [`In-app purchase images`](in-app-purchase-images.md).
 
 ##### Removals
@@ -39,6 +39,8 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
@@ -66,8 +68,6 @@ App Store Connect API version 3.6 provides resources that enable you to automate
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

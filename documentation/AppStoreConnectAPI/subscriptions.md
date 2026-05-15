@@ -22,7 +22,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
-- [Delete an Introductory Offer from a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an Introductory Offer From a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 - [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.
@@ -40,7 +40,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Get a list of prices for an auto-renewable subscription, by territory.
 - [List All Subscription Prices IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-prices.md)
   Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
-- [Delete Prices from a Subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
+- [Delete Prices From a Subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
   Delete a scheduled subscription price change for an auto-renewable subscription.
 - [Read Review Screenshot Information for a Subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
   Get information about review screenshot for a specific auto-renewable subscription.
@@ -48,7 +48,7 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [Read Information About the Availability of a Subscription](get-v1-subscriptions-_id_-subscriptionavailability.md)
   Get information about the territory availability for a subscription.
 - [GET /v1/subscriptions/{id}/relationships/subscriptionAvailability](get-v1-subscriptions-_id_-relationships-subscriptionavailability.md)
-- [List win-back offers](get-v1-subscriptions-_id_-winbackoffers.md)
+- [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
   List all win-back offers for a specific subscription.
 - [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
 ### Objects

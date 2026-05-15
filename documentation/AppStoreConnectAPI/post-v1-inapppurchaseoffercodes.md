@@ -1,4 +1,4 @@
-# Create an in-app purchase offer code
+# Create an In-App Purchase Offer Code
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,13 +18,13 @@ Create an offer code for an in-app purchase.
 
 ## See Also
 
-- [Read in-app purchase offer code information](get-v1-inapppurchaseoffercodes-_id_.md)
+- [Read In-App Purchase Offer Code Information](get-v1-inapppurchaseoffercodes-_id_.md)
   Get information about a specific in-app purchase offer code.
-- [Modify an in-app purchase offer code](patch-v1-inapppurchaseoffercodes-_id_.md)
+- [Modify an In-App Purchase Offer Code](patch-v1-inapppurchaseoffercodes-_id_.md)
   Update a specific in-app purchase offer code.
-- [List all prices for an in-app purchase offer code](get-v1-inapppurchaseoffercodes-_id_-prices.md)
+- [List All Prices for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-prices.md)
   Get a list of prices for a specific in-app purchase offer code.
-- [Get all price IDs for an in-app purchase offer code](get-v1-inapppurchaseoffercodes-_id_-relationships-prices.md)
+- [Get All Price IDs for an In-App Purchase Offer Code](get-v1-inapppurchaseoffercodes-_id_-relationships-prices.md)
   Get a list of price resource IDs for a specific in-app purchase offer code.
 
 

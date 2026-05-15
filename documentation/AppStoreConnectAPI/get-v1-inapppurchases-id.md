@@ -104,6 +104,7 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchases/6446998023
 - `fields[inAppPurchases]` ([string])
 - `include` ([string])
 - `limit[apps]` (integer)
+- `fields[apps]` ([string])
 
 ## See Also
 

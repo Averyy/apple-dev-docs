@@ -21,7 +21,7 @@ For more information about app previews, see [`App information`](https://develop
   Add a new app preview set to an App Store version localization for a specific app preview type and display size.
 - [Delete an App Preview Set](delete-v1-apppreviewsets-_id_.md)
   Delete an app preview set and all of its previews.
-- [List app preview sets for a custom product page localization](get-v1-appcustomproductpagelocalizations-_id_-apppreviewsets.md)
+- [List App Preview Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-apppreviewsets.md)
   List the app preview sets for a specific custom product page localization.
 - [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)
   List all ordered app previews in a preview set.

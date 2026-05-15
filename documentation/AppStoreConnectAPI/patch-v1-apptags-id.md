@@ -1,4 +1,4 @@
-# Modify app tags
+# Modify App Tags
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

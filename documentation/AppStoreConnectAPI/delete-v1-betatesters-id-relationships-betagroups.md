@@ -1,4 +1,4 @@
-# Remove a Beta Tester from Beta Groups
+# Remove a Beta Tester From Beta Groups
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,7 +22,7 @@ Remove a specific beta tester from one or more beta groups, revoking their acces
   Add one or more beta testers to a specific beta group.
 - [Individually Assign a Beta Tester to Builds](post-v1-betatesters-_id_-relationships-builds.md)
   Individually assign a beta tester to a build.
-- [Individually Unassign a Beta Tester from Builds](delete-v1-betatesters-_id_-relationships-builds.md)
+- [Individually Unassign a Beta Tester From Builds](delete-v1-betatesters-_id_-relationships-builds.md)
   Remove an individually assigned beta tester’s ability to test a build.
 - [Remove a Beta Tester’s Access to Apps](delete-v1-betatesters-_id_-relationships-apps.md)
   Remove a specific beta tester’s access to test any builds of one or more apps.

@@ -23,7 +23,7 @@ object SubscriptionImageUpdateRequest.Data
 ## Properties
 
 - `attributes` (SubscriptionImageUpdateRequest.Data.Attributes): The resource’s attributes.
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List subscription images`](get-v1-subscriptions-_id_-images.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `subscriptionImages` resource ID from the [`List Subscription Images`](get-v1-subscriptions-_id_-images.md) response.
 - `type` (string) *(required)*: The resource type.
 
 

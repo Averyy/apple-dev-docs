@@ -1,4 +1,4 @@
-# List all Game Center achievements for a Game Center detail
+# List All Game Center Achievements for a Game Center Detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -49,16 +49,16 @@ Get a list of achievements for a specific Game Center detail.
 
 ## See Also
 
-- [Get all achievement IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
+- [Get All Achievement IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievementsv2.md)
   Get a list of achievement resource IDs for a specific Game Center detail.
-- [List all achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
+- [List All Achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
   List all achievement information for a Game Center detail.
-- [List achievement releases ](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
 - [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
-- [List achievements](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
+- [List Achievements](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
   List the achievements for a Game Center detail.
-- [Modify associated achievements](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
+- [Modify Associated Achievements](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
   Modify the achievements for a Game Center detail.
 
 

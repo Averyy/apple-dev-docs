@@ -25,7 +25,7 @@ object MerchantId
 ## Properties
 
 - `attributes` (MerchantId.Attributes): Attributes that describe a merchant ID resource.
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the merchant ID resource ID from the [`List merchant IDs`](get-v1-merchantids.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the merchant ID resource ID from the [`List Merchant IDs`](get-v1-merchantids.md) response.
 - `links` (ResourceLinks): Navigational links that include the self-link.
 - `relationships` (MerchantId.Relationships): Navigational links to related data and included resource types and IDs.
 - `type` (string) *(required)*: The resource type.

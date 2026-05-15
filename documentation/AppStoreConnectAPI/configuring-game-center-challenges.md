@@ -18,7 +18,7 @@ Before you begin creating your challenges, you need these items:
 
 ##### Create the Challenge
 
-Begin creating the challenge by using the [`Create a challenge`](post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload:
+Begin creating the challenge by using the [`Create a Challenge`](post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload:
 
 - **`referenceName`**: A 40 character or less alphanumeric string.
 - **`vendorIdentifier`**: A reverse url scheme label for this challenge.
@@ -27,7 +27,7 @@ Begin creating the challenge by using the [`Create a challenge`](post-v1-gamecen
 
 Additionally provide:
 
-- A relationship to a `leaderboard` - Obtain the leaderboard resource ID from the [`List leaderboards`](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md) or [`Read the leaderboards in a group`](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboards.md) response.
+- A relationship to a `leaderboard` - Obtain the leaderboard resource ID from the [`List Leaderboards`](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md) or [`Read the Leaderboards in a Group`](get-v1-gamecentergroups-_id_-relationships-gamecenterleaderboards.md) response.
 - A relationship to a `gameCenterDetail` or a `gameCenterGroup` - If your leaderboard is in a Game Center group, use `gameCenterGroup`.
 - If you’re relating this challenge to a Game Center group, you need to use the `grp.` prefix.
 
@@ -64,11 +64,11 @@ When you create a challenge you use a payload like this:
 }
 ```
 
-In the response you get an `id` in the top-level data object. This `id` represents the Game Center challenge. You can find this `id` at anytime using [`Read the challenges for a Game Center detail`](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md).
+In the response you get an `id` in the top-level data object. This `id` represents the Game Center challenge. You can find this `id` at anytime using [`Read the Challenges for a Game Center Detail`](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md).
 
 ##### Create the Challenge Version
 
-Next, you need to create a version for your Game Center challenge. The version is the parent object for localizations and the challenge default image. Create the challenge version using [`Create a challenge version`](post-v1-gamecenterchallengeversions.md).
+Next, you need to create a version for your Game Center challenge. The version is the parent object for localizations and the challenge default image. Create the challenge version using [`Create a Challenge Version`](post-v1-gamecenterchallengeversions.md).
 
 ```json
 {
@@ -90,7 +90,7 @@ Next, you need to create a version for your Game Center challenge. The version i
 
 ##### Add a Challenge Version Localization
 
-You next add a challenge version localization by using [`Add a challenge localization`](post-v1-gamecenterchallengelocalizations.md). The `locale` and `name` attributes are required. The `name` represent the label shown for the activity inside the Games app. For a list of possible `locale` values, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md). The `description` attribute is optional but can help a player better understand the challenge. The localization requires a relationship to its parent challenge version. At minimum, one challenge version localization is required for submission to review.
+You next add a challenge version localization by using [`Add a Challenge Localization`](post-v1-gamecenterchallengelocalizations.md). The `locale` and `name` attributes are required. The `name` represent the label shown for the activity inside the Games app. For a list of possible `locale` values, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md). The `description` attribute is optional but can help a player better understand the challenge. The localization requires a relationship to its parent challenge version. At minimum, one challenge version localization is required for submission to review.
 
 Use a payload like this:
 
@@ -117,9 +117,9 @@ Use a payload like this:
 
 ##### Add the Challenge Version Image
 
-Adding a default challenge image is very similar to adding an app store screenshot or app review image. You can associate the challenge version default image with a challenge version or a challenge localization. When you create a new challenge version the default image is inherited. At minimum, one challenge version image is required for submission to review.
+Adding a default challenge image is very similar to adding an App Store screenshot or app review image. You can associate the challenge version default image with a challenge version or a challenge localization. When you create a new challenge version the default image is inherited. At minimum, one challenge version image is required for submission to review.
 
-Start by using [`Create a challenge image`](post-v1-gamecenterchallengeimages.md) with a payload that looks like this:
+Start by using [`Create a Challenge Image`](post-v1-gamecenterchallengeimages.md) with a payload that looks like this:
 
 ```json
 {
@@ -143,7 +143,7 @@ Start by using [`Create a challenge image`](post-v1-gamecenterchallengeimages.md
 
 The response includes one or more `PUT` requests; use these URL’s to upload your image.
 
-After uploading, use [`Commit an image for a challenge`](patch-v1-gamecenterchallengeimages-_id_.md) to commit your image to the related resource with a payload like this:
+After uploading, use [`Commit an Image for a Challenge`](patch-v1-gamecenterchallengeimages-_id_.md) to commit your image to the related resource with a payload like this:
 
 ```json
 {
@@ -163,7 +163,7 @@ To learn more uploading images, see [`Uploading Assets to App Store Connect`](up
 
 > **Note**: One localization and a default image are required for submission.
 
-Now, you’re ready to submit your challenge version for review. Use [`Add a challenge version release`](post-v1-gamecenterchallengeversionreleases.md) to attach your challenge version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the state of Game Center for an app`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a review submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated challenge version to app review.
+Now, you’re ready to submit your challenge version for review. Use [`Add a Challenge Version Release`](post-v1-gamecenterchallengeversionreleases.md) to attach your challenge version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated challenge version to app review.
 
 Use a payload like this:
 
@@ -189,7 +189,7 @@ Use a payload like this:
 }
 ```
 
-> 💡 **Tip**: You can read a list of the past challenge version releases and their states using [`Get challenge releases for a Game Center detail`](get-v1-gamecenterdetails-_id_-challengereleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center challenge version that is currently `LIVE`.
+> 💡 **Tip**: You can read a list of the past challenge version releases and their states using [`Get Challenge Releases for a Game Center Detail`](get-v1-gamecenterdetails-_id_-challengereleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center challenge version that is currently `LIVE`.
 
 ## See Also
 

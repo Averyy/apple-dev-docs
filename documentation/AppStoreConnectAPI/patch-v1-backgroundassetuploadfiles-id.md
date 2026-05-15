@@ -1,4 +1,4 @@
-# Commit an uploaded asset pack to a background asset version
+# Commit an Uploaded Asset Pack to a Background Asset Version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,13 +19,13 @@ Associate an uploaded asset pack with a background asset version to finish the u
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `backgroundAssetUploadFiles` resource ID from the [`Read background asset upload file information for a background asset version`](get-v1-backgroundassetversions-_id_-backgroundassetuploadfiles.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `backgroundAssetUploadFiles` resource ID from the [`Read Background Asset Upload File Information for a Background Asset Version`](get-v1-backgroundassetversions-_id_-backgroundassetuploadfiles.md) response.
 
 ## See Also
 
-- [Read information for an uploaded asset pack](get-v1-backgroundassetuploadfiles-_id_.md)
+- [Read Information for an Uploaded Asset Pack](get-v1-backgroundassetuploadfiles-_id_.md)
   Get details about an uploaded asset pack for Apple hosted background asset.
-- [Create a reservation for an asset pack upload](post-v1-backgroundassetuploadfiles.md)
+- [Create a Reservation for an Asset Pack Upload](post-v1-backgroundassetuploadfiles.md)
   Begin the process of uploading an asset pack for Apple-hosted background assets.
 
 

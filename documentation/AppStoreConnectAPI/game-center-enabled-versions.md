@@ -18,7 +18,7 @@ Use a `gameCenterEnabledVersions` resource to indicate which versions of your ap
 - [Add Compatible Versions to a Game Center Enabled Version](post-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 ### Removing and Replacing Compatible Versions
 - [Replace All Compatible Versions for a Game Center Enabled Version](patch-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
-- [Remove Compatible Versions from a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Remove Compatible Versions From a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 ### Objects
 - [object GameCenterEnabledVersion](gamecenterenabledversion.md)
   The data structure that represents the Game Center Enabled Versions resource.

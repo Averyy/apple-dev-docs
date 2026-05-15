@@ -1,4 +1,4 @@
-# Modify a certificate
+# Modify a Certificate
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

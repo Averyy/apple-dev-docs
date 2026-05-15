@@ -10,7 +10,7 @@ Webhooks enable a system to send real-time data to another system over the web. 
 
 A notification webhook is an endpoint you create on your server. This webhook endpoint receives `HTTP POST` requests from App Store Connect. The `POST` requests describe important events about your app. Use the webhooks notifications endpoint to configure the notifications for events happening to your apps.
 
-To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a webhook configuration`](post-v1-webhooks.md) endpoint.
+To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a Webhook Configuration`](post-v1-webhooks.md) endpoint.
 
 To learn more about:
 
@@ -25,24 +25,24 @@ To learn more about:
 - [Understanding webhook events](webhook-events.md)
   Learn the events that describe payloads and the notifications the system sends.
 ### Managing webhook notifications
-- [Read webhook information for an app](get-v1-apps-_id_-webhooks.md)
+- [Read Webhook Information for an App](get-v1-apps-_id_-webhooks.md)
   Read webhook configuration details for a specific app.
-- [Read webhook information](get-v1-webhooks-_id_.md)
+- [Read Webhook Information](get-v1-webhooks-_id_.md)
   Read configuration details for a specific webhook.
-- [Create a webhook configuration](post-v1-webhooks.md)
+- [Create a Webhook Configuration](post-v1-webhooks.md)
   Add a new webhook configuration.
-- [Modify a webhook configuration](patch-v1-webhooks-_id_.md)
+- [Modify a Webhook Configuration](patch-v1-webhooks-_id_.md)
   Update details for a specific webhook.
-- [Delete a webhook](delete-v1-webhooks-_id_.md)
+- [Delete a Webhook](delete-v1-webhooks-_id_.md)
   Remove a specific webhook configuration.
 ### Managing webhook deliveries
-- [Read the deliveries for a webhook](get-v1-webhooks-_id_-deliveries.md)
+- [Read the Deliveries for a Webhook](get-v1-webhooks-_id_-deliveries.md)
   Get a list of deliveries for a specific webhook configuration.
 - [GET /v1/webhooks/{id}/relationships/deliveries](get-v1-webhooks-_id_-relationships-deliveries.md)
-- [Redeliver a previous notification](post-v1-webhookdeliveries.md)
+- [Redeliver a Previous Notification](post-v1-webhookdeliveries.md)
   Resend a webhook notification from a specified template.
 ### Testing webhook configuration
-- [Test your webhook](post-v1-webhookpings.md)
+- [Test Your Webhook](post-v1-webhookpings.md)
   Send an event to your server to verify your server-side webhook configuration.
 ### Objects and types
 - [object Webhook](webhook.md)

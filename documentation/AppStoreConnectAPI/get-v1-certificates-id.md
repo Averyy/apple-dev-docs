@@ -22,7 +22,7 @@ Get information about a certificate and download the certificate data.
 
 - [List and Download Certificates](get-v1-certificates.md)
   Find and list certificates and download their data.
-- [List PassTypeID Ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
 - [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
 

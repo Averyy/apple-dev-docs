@@ -16,7 +16,7 @@ Create, modify, and delete promotional offers for auto-renewable subscriptions.
   Get details about a specific promotional offer for an auto-renewable subscription.
 - [Modify a Promotional Offer](patch-v1-subscriptionpromotionaloffers-_id_.md)
   Update the prices for a specific promotional offer for an auto-renewable subscription.
-- [Delete a Promotional Offer from a Subscription](delete-v1-subscriptionpromotionaloffers-_id_.md)
+- [Delete a Promotional Offer From a Subscription](delete-v1-subscriptionpromotionaloffers-_id_.md)
   Delete a specific promotional offer from an auto-renewable subscription.
 ### Objects
 - [object SubscriptionPromotionalOffer](subscriptionpromotionaloffer.md)

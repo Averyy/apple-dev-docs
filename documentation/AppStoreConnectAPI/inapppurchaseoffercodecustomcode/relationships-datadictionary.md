@@ -16,7 +16,7 @@ object InAppPurchaseOfferCodeCustomCode.Relationships
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.CreatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/createdbyactor-data.dictionary.md)
   The data that describes the created by actor of the in-app purchase offer code custom code.
 - [object InAppPurchaseOfferCodeCustomCode.Relationships.DeactivatedByActor](inapppurchaseoffercodecustomcode/relationships-data.dictionary/deactivatedbyactor-data.dictionary.md)

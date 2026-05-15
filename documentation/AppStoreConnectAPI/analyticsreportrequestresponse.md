@@ -16,7 +16,7 @@ object AnalyticsReportRequestResponse
 
 #### Discussion
 
-Use this object with [`Read report request information`](get-v1-analyticsreportrequests-_id_.md).
+Use this object with [`Read Report Request Information`](get-v1-analyticsreportrequests-_id_.md).
 
 ## Properties
 

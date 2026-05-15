@@ -1,4 +1,4 @@
-# Read information about the Availablity of an In-App Purchase
+# Read Information About the Availablity of an In-App Purchase
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -58,10 +58,10 @@ https://api.appstoreconnect.apple.com/v1/inAppPurchaseAvailabilities/6447501593
 
 ## See Also
 
-- [List the territory availablity of an in-app purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
+- [List the Territory Availablity of an In-App Purchase](get-v1-inapppurchaseavailabilities-_id_-availableterritories.md)
   List all the territories where an in-app purchase is available.
 - [GET /v1/inAppPurchaseAvailabilities/{id}/relationships/availableTerritories](get-v1-inapppurchaseavailabilities-_id_-relationships-availableterritories.md)
-- [Modify the territory availablity of an in-app purchase](post-v1-inapppurchaseavailabilities.md)
+- [Modify the Territory Availablity of an In-App Purchase](post-v1-inapppurchaseavailabilities.md)
   Update the territory availablity of a specific in-app purchase.
 
 

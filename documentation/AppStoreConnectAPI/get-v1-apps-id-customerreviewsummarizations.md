@@ -1,4 +1,4 @@
-# Read customer review summarizations
+# Read Customer Review Summarizations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

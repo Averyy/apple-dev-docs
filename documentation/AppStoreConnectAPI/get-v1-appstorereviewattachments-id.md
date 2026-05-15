@@ -16,6 +16,7 @@ Get information about an App Store review attachment and its upload and processi
 
 - `fields[appStoreReviewAttachments]` ([string])
 - `include` ([string])
+- `fields[appStoreReviewDetails]` ([string])
 
 ## See Also
 

@@ -16,6 +16,7 @@ Get information about the routing app coverage file and its upload and processin
 
 - `fields[routingAppCoverages]` ([string])
 - `include` ([string])
+- `fields[appStoreVersions]` ([string])
 
 ## See Also
 

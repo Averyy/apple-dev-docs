@@ -18,6 +18,7 @@
 - `include` ([string])
 - `limit[appEventScreenshots]` (integer)
 - `limit[appEventVideoClips]` (integer)
+- `fields[appEvents]` ([string])
 
 ## See Also
 

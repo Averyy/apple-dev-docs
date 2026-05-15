@@ -1,4 +1,4 @@
-# List in-app purchases IDs for an app V1
+# List In-App Purchases IDs for an App V1
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,7 +20,7 @@ Get a list of all in-app purchases IDs for a specific app V1.
 
 - [List All In-App Purchases for an App](get-v1-apps-_id_-inapppurchasesv2.md)
   Get a list of the in-app purchases for a specific app.
-- [List in-app purchases IDs for an app](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
+- [List In-App Purchases IDs for an App](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
   Get a list of all in-app purchases IDs for a specific app.
 - [List All In-App Purchases for an App V1](get-v1-apps-_id_-inapppurchases.md)
   List the in-app purchases that are available for your app.

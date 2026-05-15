@@ -7,9 +7,9 @@ Manage the contents of your review submission, which can include your App Store 
 ## Topics
 
 ### Endpoints
-- [Modify a review submission item](patch-v1-reviewsubmissionitems-_id_.md)
+- [Modify a Review Submission Item](patch-v1-reviewsubmissionitems-_id_.md)
   Update a specific review submission item.
-- [Create a review submission item](post-v1-reviewsubmissionitems.md)
+- [Create a Review Submission Item](post-v1-reviewsubmissionitems.md)
   Create a new review submission item.
 - [Remove a Review Submission Item](delete-v1-reviewsubmissionitems-_id_.md)
   Remove a specific item from a review submission.

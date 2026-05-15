@@ -14,12 +14,6 @@ A string that represents the call- termto- termaction verb on the App Clip card.
 string AppClipAction
 ```
 
-#### Possible Values
-
-- **`OPEN`**: 
-- **`VIEW`**: 
-- **`PLAY`**: 
-
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)

@@ -16,7 +16,7 @@ object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferCode.Relationships.OneTimeUseCodes.Data](inapppurchaseoffercode/relationships-data.dictionary/onetimeusecodes-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

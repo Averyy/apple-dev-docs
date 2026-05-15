@@ -10,7 +10,7 @@ A notification webhook is an endpoint that you create on your server, which rece
 
 ##### Configure Your Webhook Notifications
 
-To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a webhook configuration`](post-v1-webhooks.md) endpoint:
+To invoke your webhook, App Store Connect needs to know your server’s webhook endpoint URL. To set up your webhook endpoint the first time, provide the URL to the [`Create a Webhook Configuration`](post-v1-webhooks.md) endpoint:
 
 ```other
 POST https://api.appstoreconnect.apple.com/v1/webhooks
@@ -45,7 +45,7 @@ with a payload like this:
 
 ```
 
-Any time you reconfigure your web server, use the [`Modify a webhook configuration`](patch-v1-webhooks-_id_.md) endpoint to update App Store Connect. The attributes you can modify are `enabled`, `name`, `url`, `secret`, and `eventTypes`.
+Any time you reconfigure your web server, use the [`Modify a Webhook Configuration`](patch-v1-webhooks-_id_.md) endpoint to update App Store Connect. The attributes you can modify are `enabled`, `name`, `url`, `secret`, and `eventTypes`.
 
 ##### Set Up Notification Authentication
 
@@ -79,11 +79,11 @@ Use an implementation of HMAC `hex digest` to generate the hash. For more inform
 
 ##### Review Your Configured Webhook Notifications
 
-Use [`Read webhook information for an app`](get-v1-apps-_id_-webhooks.md) to view a list of webhooks for an app. The response includes the unique IDs and details of your webhook configurations. Use those unique IDs with [`Read webhook information`](get-v1-webhooks-_id_.md) to read details for a specific webhook.
+Use [`Read Webhook Information for an App`](get-v1-apps-_id_-webhooks.md) to view a list of webhooks for an app. The response includes the unique IDs and details of your webhook configurations. Use those unique IDs with [`Read Webhook Information`](get-v1-webhooks-_id_.md) to read details for a specific webhook.
 
 ##### Verify Your Server Is Receiving Notifications
 
-Once you establish your webhook configuration and your listener, you can verify you are receiving notifications by using [`Test your webhook`](post-v1-webhookpings.md), with a payload like this, where the `id` for type `webhooks` is the unique identifier found in the response from [`Create a webhook configuration`](post-v1-webhooks.md) or  [`Read webhook information for an app`](get-v1-apps-_id_-webhooks.md):
+Once you establish your webhook configuration and your listener, you can verify you are receiving notifications by using [`Test Your Webhook`](post-v1-webhookpings.md), with a payload like this, where the `id` for type `webhooks` is the unique identifier found in the response from [`Create a Webhook Configuration`](post-v1-webhooks.md) or  [`Read Webhook Information for an App`](get-v1-apps-_id_-webhooks.md):
 
 ```json
 {
@@ -103,7 +103,7 @@ Once you establish your webhook configuration and your listener, you can verify 
 
 ##### Read a List of Past Deliveries
 
-You can see past notification deliveries sent from App Store Connect to your server,  by using the [`Read the deliveries for a webhook`](get-v1-webhooks-_id_-deliveries.md) endpoint.
+You can see past notification deliveries sent from App Store Connect to your server,  by using the [`Read the Deliveries for a Webhook`](get-v1-webhooks-_id_-deliveries.md) endpoint.
 
 The response looks like this:
 

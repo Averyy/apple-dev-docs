@@ -16,7 +16,7 @@ object InAppPurchaseOfferPrice.Relationships.Territory
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object InAppPurchaseOfferPrice.Relationships.Territory.Data](inapppurchaseofferprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
   The type and ID of a related resource.
 

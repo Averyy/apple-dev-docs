@@ -1,4 +1,4 @@
-# Delete a Game Center leaderboard set localization
+# Delete a Game Center Leaderboard Set Localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -29,26 +29,26 @@ Delete a specific Game Center leaderboard set localization.
 
 ## See Also
 
-- [Read Game Center leaderboard set localization information](get-v2-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Read Game Center Leaderboard Set Localization Information](get-v2-gamecenterleaderboardsetlocalizations-_id_.md)
   Get information about a specific Game Center leaderboard set localization.
-- [List all images for a Game Center leaderboard set localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-image.md)
+- [List All Images for a Game Center Leaderboard Set Localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-image.md)
   Get a list of images for a specific Game Center leaderboard set localization.
-- [Get all image IDs for a Game Center leaderboard set localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-relationships-image.md)
+- [Get All Image IDs for a Game Center Leaderboard Set Localization](get-v2-gamecenterleaderboardsetlocalizations-_id_-relationships-image.md)
   Get a list of image resource IDs for a specific Game Center leaderboard set localization.
-- [Create a Game Center leaderboard set localization](post-v2-gamecenterleaderboardsetlocalizations.md)
+- [Create a Game Center Leaderboard Set Localization](post-v2-gamecenterleaderboardsetlocalizations.md)
   Create a Game Center leaderboard set localization.
-- [Modify a Game Center leaderboard set localization](patch-v2-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Modify a Game Center Leaderboard Set Localization](patch-v2-gamecenterleaderboardsetlocalizations-_id_.md)
   Update a specific Game Center leaderboard set localization.
-- [Read leaderboard set localization information](get-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Read Leaderboard Set Localization Information](get-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Get information about a leaderboard set localization.
-- [Read the image associated with a leaderboard set localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
+- [Read the Image Associated With a Leaderboard Set Localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
   Get information about a leaderboard set image associated with a leaderboard set localization.
 - [GET /v1/gameCenterLeaderboardSetLocalizations/{id}/relationships/gameCenterLeaderboardSetImage](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
-- [Create a leaderboard set localization](post-v1-gamecenterleaderboardsetlocalizations.md)
+- [Create a Leaderboard Set Localization](post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
-- [Modify a leaderboard set localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Modify a Leaderboard Set Localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Edit a leaderboard set localization.
-- [Delete a leaderboard set localization](delete-v1-gamecenterleaderboardsetlocalizations-_id_.md)
+- [Delete a Leaderboard Set Localization](delete-v1-gamecenterleaderboardsetlocalizations-_id_.md)
   Delete a localization that’s associated with a leaderboard set.
 
 

@@ -1,4 +1,4 @@
-# Delete a team
+# Delete a Team
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Delete a game-specific team in a rule set.
 
 ## See Also
 
-- [Create a team](post-v1-gamecentermatchmakingteams.md)
+- [Create a Team](post-v1-gamecentermatchmakingteams.md)
   Add a game-specific team to a rule set.
-- [Modify a team](patch-v1-gamecentermatchmakingteams-_id_.md)
+- [Modify a Team](patch-v1-gamecentermatchmakingteams-_id_.md)
   Update a specific team in a rule set.
 
 

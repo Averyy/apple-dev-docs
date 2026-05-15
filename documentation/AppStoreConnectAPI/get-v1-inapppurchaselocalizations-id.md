@@ -16,6 +16,7 @@ Get the display name and description for a specific locale for an in-app purchas
 
 - `fields[inAppPurchaseLocalizations]` ([string])
 - `include` ([string])
+- `fields[inAppPurchases]` ([string])
 
 ## See Also
 

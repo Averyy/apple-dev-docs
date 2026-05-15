@@ -7,13 +7,13 @@ Manage versions for your Game Center leaderboard sets.
 ## Topics
 
 ### Reading and creating leaderboard set versions
-- [Read Game Center leaderboard set version information](get-v2-gamecenterleaderboardsetversions-_id_.md)
+- [Read Game Center Leaderboard Set Version Information](get-v2-gamecenterleaderboardsetversions-_id_.md)
   Get information about a specific Game Center leaderboard set version.
-- [List all localizations for a Game Center leaderboard set version](get-v2-gamecenterleaderboardsetversions-_id_-localizations.md)
+- [List All Localizations for a Game Center Leaderboard Set Version](get-v2-gamecenterleaderboardsetversions-_id_-localizations.md)
   Get a list of localizations for a specific Game Center leaderboard set version.
-- [Get all localization IDs for a Game Center leaderboard set version](get-v2-gamecenterleaderboardsetversions-_id_-relationships-localizations.md)
+- [Get All Localization IDs for a Game Center Leaderboard Set Version](get-v2-gamecenterleaderboardsetversions-_id_-relationships-localizations.md)
   Get a list of localization resource IDs for a specific Game Center leaderboard set version.
-- [Create a Game Center leaderboard set version](post-v2-gamecenterleaderboardsetversions.md)
+- [Create a Game Center Leaderboard Set Version](post-v2-gamecenterleaderboardsetversions.md)
   Create a Game Center leaderboard set version.
 ### Objects
 - [object GameCenterLeaderboardSetVersionV2](gamecenterleaderboardsetversionv2.md)

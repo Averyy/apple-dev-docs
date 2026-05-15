@@ -16,6 +16,7 @@ Get information about an app preview and its upload and processing status.
 
 - `fields[appPreviews]` ([string])
 - `include` ([string])
+- `fields[appPreviewSets]` ([string])
 
 ## See Also
 

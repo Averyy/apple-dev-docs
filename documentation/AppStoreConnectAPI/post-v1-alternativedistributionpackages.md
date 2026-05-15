@@ -1,9 +1,9 @@
-# Create an alternative distribution package
+# Create an Alternative Distribution Package
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Create an alternative distribution package for an app store version.
+Create an alternative distribution package for an App Store version.
 
 **Availability**:
 - App Store Connect API 3.3+
@@ -72,11 +72,11 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages
 
 - [Creating alternative distribution packages](creating-alternative-distribution-packages.md)
   Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
-- [Read alternative distribution package information](get-v1-alternativedistributionpackages-_id_.md)
+- [Read Alternative Distribution Package Information](get-v1-alternativedistributionpackages-_id_.md)
   Get information about a specific alternative distribution package.
-- [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
-- [Read version information for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-versions.md)
+- [Read Version Information for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-versions.md)
   Get version detail information about a specific alternative distribution package.
 
 

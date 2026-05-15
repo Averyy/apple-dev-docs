@@ -1,4 +1,4 @@
-# Read activity version release information
+# Read Activity Version Release Information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -16,12 +16,13 @@ Get information for a specific Game Center activity version release.
 
 - `fields[gameCenterActivityVersionReleases]` ([string])
 - `include` ([string])
+- `fields[gameCenterActivityVersions]` ([string])
 
 ## See Also
 
-- [Add an activity version release](post-v1-gamecenteractivityversionreleases.md)
+- [Add an Activity Version Release](post-v1-gamecenteractivityversionreleases.md)
   Add a version release for a specific Game Center activity.
-- [Delete an activity version release](delete-v1-gamecenteractivityversionreleases-_id_.md)
+- [Delete an Activity Version Release](delete-v1-gamecenteractivityversionreleases-_id_.md)
   Remove a specific version release from a Game Center activity.
 
 

@@ -16,7 +16,7 @@ object AndroidToIosAppMappingDetail
 
 ## Topics
 
-### Generated dictionaries
+### Dictionaries
 - [object AndroidToIosAppMappingDetail.Attributes](androidtoiosappmappingdetail/attributes-data.dictionary.md)
   Attributes that describe an Android to iOS app mapping detail resource.
 

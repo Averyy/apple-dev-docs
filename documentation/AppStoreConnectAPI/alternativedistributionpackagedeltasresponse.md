@@ -16,7 +16,7 @@ object AlternativeDistributionPackageDeltasResponse
 
 #### Discussion
 
-This object is the response that contains a list of alternative distribution package deltas. For more information about alternative distribution package deltas, see [`List deltas information`](get-v1-alternativedistributionpackageversions-_id_-deltas.md). The schema of the response body is below.
+This object is the response that contains a list of alternative distribution package deltas. For more information about alternative distribution package deltas, see [`List Deltas Information`](get-v1-alternativedistributionpackageversions-_id_-deltas.md). The schema of the response body is below.
 
 ```javascript
 {

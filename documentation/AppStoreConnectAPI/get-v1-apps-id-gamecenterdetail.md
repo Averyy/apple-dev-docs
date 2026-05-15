@@ -1,4 +1,4 @@
-# Read the state of Game Center for an app
+# Read the State of Game Center for an App
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

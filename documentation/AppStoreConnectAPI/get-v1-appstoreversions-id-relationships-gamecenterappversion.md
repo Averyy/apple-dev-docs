@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Read Game Center app version information of an App Store version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
+- [Read Game Center App Version Information of an App Store Version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
   Get the status of Game Center enablement for an App Store version.
 
 

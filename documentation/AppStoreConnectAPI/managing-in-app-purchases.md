@@ -191,7 +191,7 @@ Here’s an example response, truncated for clarity:
 
 Note that the ID for the `4.99` price point is `NjQ0NjQ1MjYxNV91c181`. You use this value in the following step.
 
-To add a price point to an in-app purchase, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a scheduled price change to an in-app purchase`](post-v1-inapppurchasepriceschedules.md)). The first ID is the ID of the in-app purchase, and the final ID is that of the price point.
+To add a price point to an in-app purchase, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a Scheduled Price Change to an In-App Purchase`](post-v1-inapppurchasepriceschedules.md)). The first ID is the ID of the in-app purchase, and the final ID is that of the price point.
 
 > ❗ **Important**:  Review carefully because once a price increase goes into effect, your change can’t be reverted. Be sure to review information about price increases and changes at [`App Store Connect for iPhone and iPad`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/).
 
@@ -318,7 +318,7 @@ At some point, you might want to change the price of your in-app purchase. Use o
 - Make an immediate change of price.
 - Schedule a price change for a future time.
 
-To perform either type of price change, you use a process similar to setting the initial price. First, look up your current price point using `GET /v1/inAppPurchasePriceSchedules/{id}/manualPrices` ([`Read in-app purchase price schedule information`](get-v1-inapppurchasepriceschedules-_id_.md)) — where `id` is the in-app purchase ID — to determine the desired price point. The following screenshot shows what the current pricing looks like in App Store Connect for the in-app purchase.
+To perform either type of price change, you use a process similar to setting the initial price. First, look up your current price point using `GET /v1/inAppPurchasePriceSchedules/{id}/manualPrices` ([`Read In-App Purchase Price Schedule Information`](get-v1-inapppurchasepriceschedules-_id_.md)) — where `id` is the in-app purchase ID — to determine the desired price point. The following screenshot shows what the current pricing looks like in App Store Connect for the in-app purchase.
 
 ![Screenshot of a price schedule from appstoreconnect.apple.com.](https://docs-assets.developer.apple.com/published/b6a27ee1110af1eae7eba4fbc79faf6b/media-4054484%402x.png)
 
@@ -448,7 +448,7 @@ By using extra parameters and filters, you can also see the `priceTier` for the 
 GET /v2/inAppPurchases/{id}/pricePoints?fields%5BinAppPurchasePricePoints%5D=priceTier&filter%5Bterritory%5D=USA&include=inAppPurchasePricePoint
 ```
 
-Now that you know about the current price and the scheduled price change, you might want to schedule another price change, like reverting back to the original price. To accomplish this task, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a scheduled price change to an in-app purchase`](post-v1-inapppurchasepriceschedules.md)) with a payload like this:
+Now that you know about the current price and the scheduled price change, you might want to schedule another price change, like reverting back to the original price. To accomplish this task, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a Scheduled Price Change to an In-App Purchase`](post-v1-inapppurchasepriceschedules.md)) with a payload like this:
 
 ```other
 {

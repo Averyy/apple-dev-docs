@@ -16,12 +16,12 @@
 
 ## See Also
 
-- [List all price points for an app](get-v1-apps-_id_-apppricepoints.md)
+- [List All Price Points for an App](get-v1-apps-_id_-apppricepoints.md)
   Get all the available price points for a specific app.
 - [GET /v1/apps/{id}/relationships/appPricePoints](get-v1-apps-_id_-relationships-apppricepoints.md)
-- [Read app price point information](get-v3-apppricepoints-_id_.md)
+- [Read App Price Point Information](get-v3-apppricepoints-_id_.md)
   Get details about a specific app price point.
-- [List app price point equalizations](get-v3-apppricepoints-_id_-equalizations.md)
+- [List App Price Point Equalizations](get-v3-apppricepoints-_id_-equalizations.md)
   List all equivalent app prices points to a base price point.
 
 

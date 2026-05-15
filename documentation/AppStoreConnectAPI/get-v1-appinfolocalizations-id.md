@@ -16,10 +16,11 @@ Read localized app-level information.
 
 - `fields[appInfoLocalizations]` ([string])
 - `include` ([string])
+- `fields[appInfos]` ([string])
 
 ## See Also
 
-- [List All App Info Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 
 

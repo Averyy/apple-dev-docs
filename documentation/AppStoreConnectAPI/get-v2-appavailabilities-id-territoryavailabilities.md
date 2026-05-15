@@ -1,4 +1,4 @@
-# Read App Availablity Territories
+# Read App Availability Territories
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -11,6 +11,7 @@ Read the territory availablity for a specific app.
 ## Mentions
 
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
+- [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
 
 ## Endpoint
 

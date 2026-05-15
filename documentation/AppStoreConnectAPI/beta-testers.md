@@ -25,11 +25,11 @@ When you create a beta tester, they must have an email address and must be assig
 ### Assigning Groups and Access
 - [Add a Beta Tester to Beta Groups](post-v1-betatesters-_id_-relationships-betagroups.md)
   Add one or more beta testers to a specific beta group.
-- [Remove a Beta Tester from Beta Groups](delete-v1-betatesters-_id_-relationships-betagroups.md)
+- [Remove a Beta Tester From Beta Groups](delete-v1-betatesters-_id_-relationships-betagroups.md)
   Remove a specific beta tester from one or more beta groups, revoking their access to test builds associated with those groups.
 - [Individually Assign a Beta Tester to Builds](post-v1-betatesters-_id_-relationships-builds.md)
   Individually assign a beta tester to a build.
-- [Individually Unassign a Beta Tester from Builds](delete-v1-betatesters-_id_-relationships-builds.md)
+- [Individually Unassign a Beta Tester From Builds](delete-v1-betatesters-_id_-relationships-builds.md)
   Remove an individually assigned beta tester’s ability to test a build.
 - [Remove a Beta Tester’s Access to Apps](delete-v1-betatesters-_id_-relationships-apps.md)
   Remove a specific beta tester’s access to test any builds of one or more apps.
@@ -47,11 +47,11 @@ When you create a beta tester, they must have an email address and must be assig
 - [Get All Beta Group IDs of a Beta Tester's Groups](get-v1-betatesters-_id_-relationships-betagroups.md)
   Get a list of group resource IDs associated with a beta tester.
 ### Beta Tester Metrics
-- [Read beta tester metrics for an app](get-v1-apps-_id_-metrics-betatesterusages.md)
+- [Read Beta Tester Metrics for an App](get-v1-apps-_id_-metrics-betatesterusages.md)
   Get usage metrics for beta testers of a specific app.
-- [Read metrics for beta testers in a beta group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
+- [Read Metrics for Beta Testers in a Beta Group](get-v1-betagroups-_id_-metrics-betatesterusages.md)
   Get beta tester usage metrics for a beta group.
-- [Read beta tester usage metrics](get-v1-betatesters-_id_-metrics-betatesterusages.md)
+- [Read Beta Tester Usage Metrics](get-v1-betatesters-_id_-metrics-betatesterusages.md)
   Get usage metrics for a specific beta tester.
 ### Objects
 - [object BetaTester](betatester.md)

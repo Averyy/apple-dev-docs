@@ -13,7 +13,7 @@ This endpoint is different than most in App Store Connect API, with this you can
 ## Topics
 
 ### Managing Game Center leaderboard scores
-- [Add a score to a leaderbaord](post-v1-gamecenterleaderboardentrysubmissions.md)
+- [Add a Score to a Leaderbaord](post-v1-gamecenterleaderboardentrysubmissions.md)
   Add a new score for a player to a leaderboard.
 ### Objects
 - [object GameCenterLeaderboardEntrySubmission](gamecenterleaderboardentrysubmission.md)

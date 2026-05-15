@@ -21,21 +21,21 @@ For more information about versions, see [`Create a new version`](https://develo
 - [List All App Store Versions for an App](get-v1-apps-_id_-appstoreversions.md)
   Get a list of all App Store versions of an app across all platforms.
 - [Read App Store Version Information](get-v1-appstoreversions-_id_.md)
-  Get information for a specific app store version.
+  Get information for a specific App Store version.
 ### Getting App Store Version Experiments
 - [List All Experiments for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List all experiment IDs for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List All Experiment IDs for an App Store Version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
   Get a list of all experiments IDs for an App Store version across all platforms.
-- [List All Experiments for an App Store Version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
+- [List All Experiments for an App Store Version V1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List all experiments IDs for an App Store version v1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
+- [List All Experiments IDs for an App Store Version V1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
   Get a list of all experiments IDs for an App Store version of an app across all platforms.
 ### Creating and Modifying App Store Versions
 - [Create an App Store Version](post-v1-appstoreversions.md)
   Add a new App Store version or platform to an app.
 - [Modify an App Store Version](patch-v1-appstoreversions-_id_.md)
-  Update the app store version for a specific app.
+  Update the App Store version for a specific app.
 - [Delete an App Store Version](delete-v1-appstoreversions-_id_.md)
   Delete an app store version that is associated with an app.
 ### Attaching a Build to a Version
@@ -74,11 +74,11 @@ For more information about versions, see [`Create a new version`](https://develo
   Get a list of customer reviews for a specific version of your app.
 - [GET /v1/appStoreVersions/{id}/relationships/customerReviews](get-v1-appstoreversions-_id_-relationships-customerreviews.md)
 ### Getting Game Center app versions
-- [Read Game Center app version information of an App Store version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
+- [Read Game Center App Version Information of an App Store Version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
   Get the status of Game Center enablement for an App Store version.
 - [GET /v1/appStoreVersions/{id}/relationships/gameCenterAppVersion](get-v1-appstoreversions-_id_-relationships-gamecenterappversion.md)
 ### Reading Distribution Package Information
-- [Read an App Store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
 - [GET /v1/appStoreVersions/{id}/relationships/alternativeDistributionPackage](get-v1-appstoreversions-_id_-relationships-alternativedistributionpackage.md)
 ### Objects and Data Types

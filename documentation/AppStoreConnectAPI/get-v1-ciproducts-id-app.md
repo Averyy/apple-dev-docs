@@ -25,7 +25,7 @@ Get the app in App Store Connect that’s related to an Xcode Cloud product.
 - `fields[preReleaseVersions]` ([string]): Additional fields to include for each Apps resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `limit[appInfos]` (integer): The number of included Apps resources to return if the app info relationship is included.
-- `limit[appStoreVersions]` (integer): The number of included Apps resources to return if the app store versions relationship is included.
+- `limit[appStoreVersions]` (integer): The number of included Apps resources to return if the App Store versions relationship is included.
 - `limit[betaAppLocalizations]` (integer): The number of included Apps resources to return if the beta app localizations relationship is included.
 - `limit[betaGroups]` (integer): The number of included Apps resources to return if the beta groups relationship is included.
 - `limit[builds]` (integer): The number of included Apps resources to return if the builds relationship is included.
