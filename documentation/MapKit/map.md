@@ -110,15 +110,7 @@ You can also add a variety of controls to allow a person to interact with the ma
   Specifies the selection accessory to display for the selected map item content.
 ### Initializers
 - [init<SelectedValue, C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(bounds:interactionmodes:selection:scope:content:)-335qt.md)
-- [init(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:).md)
-  Creates a map that displays a coordinate region and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
-  Creates a map that displays a coordinate region with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init<SelectedValue, C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-2u4ry.md)
-- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:).md)
-  Creates a map that displays a map rectangle and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
-  Creates a map that displays a map rectangle with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init<SelectedValue, C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(position:bounds:interactionmodes:selection:scope:content:)-96bhq.md)
 
 ## Relationships

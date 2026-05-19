@@ -7,16 +7,16 @@ Identify the C types that correspond to Address Book objects.
 ## Topics
 
 ### Essentials
-- [typealias ABAddressBook](abaddressbook-swift.typealias.md)
+- [typealias ABAddressBook](abaddressbookref.md)
   A reference to an ABAddressBook object.
 ### Data Types
 - [class ABPersonRef](abpersonref.md)
   A reference to an ABPerson object.
 - [class ABGroupRef](abgroupref.md)
   A reference to an ABGroup object.
-- [typealias ABMultiValue](abmultivalue-swift.typealias.md)
+- [typealias ABMultiValue](abmultivalueref.md)
   A reference to an `ABMultiValue` or `ABMutableMultiValueobject`.
-- [typealias ABMutableMultiValue](abmutablemultivalue-swift.typealias.md)
+- [typealias ABMutableMultiValue](abmutablemultivalueref.md)
   A reference to an ABMutableMultiValue object.
 ### Deprecated
 - [struct ABPersonImageFormat](abpersonimageformat.md)

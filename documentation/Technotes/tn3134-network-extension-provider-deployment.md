@@ -82,7 +82,7 @@ In the Screen Time case, content filters are only supported on child devices.  T
 
 1. Add the Family Controls capability to your app.  See [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 2. Run it on a device where the user has signed in as an under 18 child member of an iCloud family.
-3. Request child authorization. On iOS 16 and later, call doc://com.apple.documentation/documentation/familycontrols/authorizationcenter/requestauthorization(for:), passing in the `.child` option. On iOS 15, call doc://com.apple.documentation/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:), which always requests child authorization.
+3. Request child authorization. On iOS 16 and later, call [`requestAuthorization(for:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/requestAuthorization(for:)), passing in the `.child` option. On iOS 15, call [`requestAuthorization(completionHandler:)`](https://developer.apple.com/documentation/FamilyControls/AuthorizationCenter/requestAuthorization(completionHandler:)), which always requests child authorization.
 4. Authorize that as the child’s parent or guardian.
 
 Before submitting your app to the App Store, you must request permission to use the [`Family Controls`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.family-controls) entitlement for distribution.

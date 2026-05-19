@@ -19,7 +19,7 @@ var activityCategories: Set<ActivityCategory> { get async throws }
 
 Each category contains both a `localizedDisplayName` and a `token`.
 
-> ❗ **Important**:  Authorize your app with doc://com.apple.documentation/documentation/familycontrols/authorizationcenter and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
+> ❗ **Important**:  Authorize your app with [`AuthorizationCenter`](AuthorizationCenter.md) and ensure data access is available before accessing this variable. Otherwise, it always throws an error.
 
 ## See Also
 

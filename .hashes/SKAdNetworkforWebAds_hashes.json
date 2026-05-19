@@ -1,120 +1,120 @@
 {
   "metadata": {
-    "last_updated": "2026-05-15T07:30:44.348389",
+    "last_updated": "2026-05-19T07:29:50.437762",
     "total_pages": 14,
-    "session_id": "2026-05-15T07:30:43.476696"
+    "session_id": "2026-05-19T07:29:49.389453"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SKAdNetworkforWebAds.json": {
-      "hash": "d2f5a70a295afcc4da57ee48219c2bf99881b3a95ae3d8ae9c3c01c4e3a0a605",
-      "last_checked": "2026-05-15T07:30:43.804579",
+      "hash": "fd3671b5a214bdff403a0e936dd775850e1a3ae4f62b19a814b696c929dfed20",
+      "last_checked": "2026-05-19T07:29:49.667300",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"9a600342e6bf397f848fd8e45e2c0f8a\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"b4c75506dcc5647b1d6cf46cab19d971\"",
       "file_path": "documentation/SKAdNetworkforWebAds/SKAdNetworkforWebAds.md"
     },
     "https://developer.apple.com/documentation/SKAdNetworkforWebAds": {
-      "hash": "d2f5a70a295afcc4da57ee48219c2bf99881b3a95ae3d8ae9c3c01c4e3a0a605",
-      "last_checked": "2026-05-15T07:30:43.675863",
+      "hash": "fd3671b5a214bdff403a0e936dd775850e1a3ae4f62b19a814b696c929dfed20",
+      "last_checked": "2026-05-19T07:29:49.542636",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"9a600342e6bf397f848fd8e45e2c0f8a\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"b4c75506dcc5647b1d6cf46cab19d971\"",
       "file_path": "documentation/SKAdNetworkforWebAds/SKAdNetworkforWebAds.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/creating-an-attributable-ad-link.json": {
-      "hash": "e3b338d4341c74fa6209b215798db83a7565a4514dc7b7b7ecd6150e06041f74",
-      "last_checked": "2026-05-15T07:30:44.004391",
+      "hash": "9e9db838fc887a9d717868ad067f2d931fd10fb7bb0c96b498eb479517f9d9f6",
+      "last_checked": "2026-05-19T07:29:49.895771",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"e54362d6e0d3a10fe154ee0b849b287e\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"dd692a4c8441711f59556728000a150e\"",
       "file_path": "documentation/SKAdNetworkforWebAds/creating-an-attributable-ad-link.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/creating-an-attributable-ad-link": {
-      "hash": "e3b338d4341c74fa6209b215798db83a7565a4514dc7b7b7ecd6150e06041f74",
-      "last_checked": "2026-05-15T07:30:44.004479",
+      "hash": "9e9db838fc887a9d717868ad067f2d931fd10fb7bb0c96b498eb479517f9d9f6",
+      "last_checked": "2026-05-19T07:29:49.895870",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"e54362d6e0d3a10fe154ee0b849b287e\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"dd692a4c8441711f59556728000a150e\"",
       "file_path": "documentation/SKAdNetworkforWebAds/creating-an-attributable-ad-link.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/get-a-signed-skadnetwork-ad-payload-for-a-web-ad..json": {
-      "hash": "c730e2abeb3e926ffbba209dfed5ad1f0be681f0be5f9422ff82557d6f555fd2",
-      "last_checked": "2026-05-15T07:30:44.080119",
+      "hash": "9fc2da620cdfd976c74c8d2dbb98822cbdd80ab1c39a64738d6867aeeb4fa13d",
+      "last_checked": "2026-05-19T07:29:49.999245",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"64b578fb1f3850d06bd9320bf73310cc\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"f950974429bd1eb0377f1ce8796eafdf\"",
       "file_path": "documentation/SKAdNetworkforWebAds/get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/get-a-signed-skadnetwork-ad-payload-for-a-web-ad.": {
-      "hash": "c730e2abeb3e926ffbba209dfed5ad1f0be681f0be5f9422ff82557d6f555fd2",
-      "last_checked": "2026-05-15T07:30:44.080212",
+      "hash": "9fc2da620cdfd976c74c8d2dbb98822cbdd80ab1c39a64738d6867aeeb4fa13d",
+      "last_checked": "2026-05-19T07:29:49.999330",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"64b578fb1f3850d06bd9320bf73310cc\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"f950974429bd1eb0377f1ce8796eafdf\"",
       "file_path": "documentation/SKAdNetworkforWebAds/get-a-signed-skadnetwork-ad-payload-for-a-web-ad.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/adimpressionrequest.json": {
-      "hash": "4f639197c5c91398b324fcceb5d9f49da205981726e42a6f2736582e01d054e8",
-      "last_checked": "2026-05-15T07:30:44.150834",
+      "hash": "6e2ea4416323e08a1d4522e65b3bb42ea2615fdd04378c36fd91bf18f9d95f10",
+      "last_checked": "2026-05-19T07:29:50.049317",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"c6317e919375d11e193724d7796e94f6\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"76d99cf322dd9ed9554e154425098b60\"",
       "file_path": "documentation/SKAdNetworkforWebAds/adimpressionrequest.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/adimpressionrequest": {
-      "hash": "4f639197c5c91398b324fcceb5d9f49da205981726e42a6f2736582e01d054e8",
-      "last_checked": "2026-05-15T07:30:44.150923",
+      "hash": "6e2ea4416323e08a1d4522e65b3bb42ea2615fdd04378c36fd91bf18f9d95f10",
+      "last_checked": "2026-05-19T07:29:50.049400",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"c6317e919375d11e193724d7796e94f6\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"76d99cf322dd9ed9554e154425098b60\"",
       "file_path": "documentation/SKAdNetworkforWebAds/adimpressionrequest.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/generating-a-signature-for-attributable-web-ads.json": {
-      "hash": "aa7e81cd67603b78a2380ef7bd5999fe185d65123bbec13ceafe14f9549e04c5",
-      "last_checked": "2026-05-15T07:30:44.215930",
+      "hash": "f8699029f954aef6cf7ac849fd52804c1c36e7bbcafa46293e02b20a32853ad4",
+      "last_checked": "2026-05-19T07:29:50.284530",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"e7831d0a9f1a9551651045e897a6b440\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"0f3db2a32965d918b33514c9aadcdc2f\"",
       "file_path": "documentation/SKAdNetworkforWebAds/generating-a-signature-for-attributable-web-ads.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/generating-a-signature-for-attributable-web-ads": {
-      "hash": "aa7e81cd67603b78a2380ef7bd5999fe185d65123bbec13ceafe14f9549e04c5",
-      "last_checked": "2026-05-15T07:30:44.216024",
+      "hash": "f8699029f954aef6cf7ac849fd52804c1c36e7bbcafa46293e02b20a32853ad4",
+      "last_checked": "2026-05-19T07:29:50.284609",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"e7831d0a9f1a9551651045e897a6b440\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"0f3db2a32965d918b33514c9aadcdc2f\"",
       "file_path": "documentation/SKAdNetworkforWebAds/generating-a-signature-for-attributable-web-ads.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/adimpressionresponse.json": {
-      "hash": "287b5968d62af694902dbd981f6bd64ded23a3bde3d11ecd9bb339b352355532",
-      "last_checked": "2026-05-15T07:30:44.288148",
+      "hash": "316d355b270e47d4ff50c6dfd360ae6782c4ce475482c970407a553c696f40a3",
+      "last_checked": "2026-05-19T07:29:50.388063",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"40bf1c11d11f8d1e145747594821dac6\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"09bca731d8d7a4aa7020d21c25fe6067\"",
       "file_path": "documentation/SKAdNetworkforWebAds/adimpressionresponse.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/adimpressionresponse": {
-      "hash": "287b5968d62af694902dbd981f6bd64ded23a3bde3d11ecd9bb339b352355532",
-      "last_checked": "2026-05-15T07:30:44.288253",
+      "hash": "316d355b270e47d4ff50c6dfd360ae6782c4ce475482c970407a553c696f40a3",
+      "last_checked": "2026-05-19T07:29:50.388156",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"40bf1c11d11f8d1e145747594821dac6\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"09bca731d8d7a4aa7020d21c25fe6067\"",
       "file_path": "documentation/SKAdNetworkforWebAds/adimpressionresponse.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/skadnetworkforwebads/signature.json": {
-      "hash": "7cd7dcec8523d8bedf37fb2b299c49cc03da2a4a6b3beb4a1afc16be4ccfc876",
-      "last_checked": "2026-05-15T07:30:44.347093",
+      "hash": "d497d3234a45e8147ce4ed4ade1a5a0f3c082cd29bd62b40db2f633c5bafa8b6",
+      "last_checked": "2026-05-19T07:29:50.436671",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"49f2bea195ee862d667d37e3158103f1\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"bca6dc9af5be5b1aa0259c579ff8f5de\"",
       "file_path": "documentation/SKAdNetworkforWebAds/signature.md"
     },
     "https://developer.apple.com/documentation/skadnetworkforwebads/signature": {
-      "hash": "7cd7dcec8523d8bedf37fb2b299c49cc03da2a4a6b3beb4a1afc16be4ccfc876",
-      "last_checked": "2026-05-15T07:30:44.347205",
+      "hash": "d497d3234a45e8147ce4ed4ade1a5a0f3c082cd29bd62b40db2f633c5bafa8b6",
+      "last_checked": "2026-05-19T07:29:50.436762",
       "status": "unchanged",
-      "session_id": "2026-05-15T07:30:43.476696",
-      "etag": "W/\"49f2bea195ee862d667d37e3158103f1\"",
+      "session_id": "2026-05-19T07:29:49.389453",
+      "etag": "W/\"bca6dc9af5be5b1aa0259c579ff8f5de\"",
       "file_path": "documentation/SKAdNetworkforWebAds/signature.md"
     }
   }

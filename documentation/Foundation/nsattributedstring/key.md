@@ -175,8 +175,6 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 ### Getting formatting attribute keys
 - [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
   The delimiter used when declaring the current list item.
-### Getting writing tools attribute keys
-- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusionattributename.md)
 ### Deprecated Keys
 - [static let expansion: NSAttributedString.Key](nsattributedstring/key/expansion.md)
   The expansion factor of the text.
@@ -193,6 +191,8 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
   Creates an attributed string key.
 - [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
   Creates an attributed string key with the specified raw value.
+### Type Properties
+- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusion.md)
 
 ## Relationships
 
