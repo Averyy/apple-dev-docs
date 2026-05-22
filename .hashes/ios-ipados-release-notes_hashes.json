@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:29:37.662579",
+    "last_updated": "2026-05-22T07:44:34.252370",
     "total_pages": 122,
-    "session_id": "2026-05-19T07:29:31.914531"
+    "session_id": "2026-05-22T07:44:25.289075"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes.json": {
       "hash": "7e7a943972a973ea6e9701e7890e3ba15095c0ed9e5d1d1e380261c25b881d93",
-      "last_checked": "2026-05-19T07:29:32.172682",
+      "last_checked": "2026-05-22T07:44:25.554528",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e54640e4913f20567d7458ab1994f201\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-release-notes.md"
     },
     "https://developer.apple.com/documentation/ios-ipados-release-notes": {
       "hash": "7e7a943972a973ea6e9701e7890e3ba15095c0ed9e5d1d1e380261c25b881d93",
-      "last_checked": "2026-05-19T07:29:32.057953",
+      "last_checked": "2026-05-22T07:44:25.434907",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e54640e4913f20567d7458ab1994f201\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26-release-notes.json": {
       "hash": "ba4cd6c26cfe8e0473ecf130c5664614aa8eb470441483cf5c392ad99d3b723b",
-      "last_checked": "2026-05-19T07:29:33.187021",
+      "last_checked": "2026-05-22T07:44:26.562130",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"c2b3689a5bdc0dc9c9d6225771d63f18\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_5-release-notes.json": {
       "hash": "80a09968c8cdc543daf043e77a992814356ed9468dca75fb97e2123e10ef354f",
-      "last_checked": "2026-05-19T07:29:33.318355",
+      "last_checked": "2026-05-22T07:44:26.880711",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"25eaa8175b5440646f2f5e06ba1e6884\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_4-release-notes.json": {
       "hash": "26f5bc6029669d7dbab6bb5fc0881cdab3cd28e0dcc79dcf9c522401786101d9",
-      "last_checked": "2026-05-19T07:29:33.418298",
+      "last_checked": "2026-05-22T07:44:27.029956",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"5d6158a05886d6e347ff166a1e863f2c\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_3-release-notes.json": {
       "hash": "ad22e0ca170884618119560073df226b8775ac417c8d04fd9ace16c19b28ac80",
-      "last_checked": "2026-05-19T07:29:33.505070",
+      "last_checked": "2026-05-22T07:44:27.200967",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"188eb9893f3f02fa434ca28e524e720d\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_2-release-notes.json": {
       "hash": "0ab166882bc6860914c8c669fc9bafc2ccde55fb6c4f43a55f93ca4e7928ddd9",
-      "last_checked": "2026-05-19T07:29:33.589959",
+      "last_checked": "2026-05-22T07:44:27.319897",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"a0bf3c65f32e31ed3507df077085e86d\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_1-release-notes.json": {
       "hash": "cb69c1f3cd17aa2ede7303e2ecd3fa8aab85778a83f16f6c151492ce34d2a345",
-      "last_checked": "2026-05-19T07:29:33.696092",
+      "last_checked": "2026-05-22T07:44:27.500816",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"90d1fbb04bbe7d2664a7931cd4340b7e\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18-release-notes.json": {
       "hash": "92358d440259be1febf57efc98ae169d4cb607375685c4a1e21e91a312bea5d2",
-      "last_checked": "2026-05-19T07:29:33.759692",
+      "last_checked": "2026-05-22T07:44:27.627390",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e2770dfa02b95fb15b9cc9d1aba84745\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_6-release-notes.json": {
       "hash": "9d66b79c495f10d02d97f6eea5361c0b9bf86be40acf13e142e24cfbf599fbb6",
-      "last_checked": "2026-05-19T07:29:33.810685",
+      "last_checked": "2026-05-22T07:44:27.735374",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"d2cae78e9068f94e11045f2776e918af\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-6-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_5-release-notes.json": {
       "hash": "410d9e5367c1cc73d3f1d3a295d8ca82bea9fb7fc4a8b9b994f82c954be2ed65",
-      "last_checked": "2026-05-19T07:29:33.936951",
+      "last_checked": "2026-05-22T07:44:27.873466",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"584dd8e378636898b523bf118df57347\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-5-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_4-release-notes.json": {
       "hash": "e326852a0ba29b8689b4e0d06d867a5a635470367d756907b6180a861cc27cbe",
-      "last_checked": "2026-05-19T07:29:33.989049",
+      "last_checked": "2026-05-22T07:44:28.008084",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"434615eccfe674cc12b5c685c29c6619\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-4-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_3-release-notes.json": {
       "hash": "5139a71cec3e49c060133f9d7fa242b7f323523a5e67141b2c1f8e7631ddf209",
-      "last_checked": "2026-05-19T07:29:34.058638",
+      "last_checked": "2026-05-22T07:44:28.152020",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"dfd106be060b82a38b4e8e403e1de09a\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-3-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_2-release-notes.json": {
       "hash": "be0870e208ba49d5c8ddc06e398bfe02b78c19d01238bbb467c557a87668c75e",
-      "last_checked": "2026-05-19T07:29:34.192618",
+      "last_checked": "2026-05-22T07:44:28.263976",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"5083557929d501133a3461c9136f6242\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-2-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17_1-release-notes.json": {
       "hash": "e6966a4e2327e743c7619e183ae53cbd43162e3e93e614689a9e10f85dcc5db6",
-      "last_checked": "2026-05-19T07:29:34.240106",
+      "last_checked": "2026-05-22T07:44:28.382302",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"5879b8c0cde017b87e56caa269e14187\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-1-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-17-release-notes.json": {
       "hash": "e4cd357178ee7fd3c0af16bf3a4c0f66fda25dcf4f14370e888028e7f90a6182",
-      "last_checked": "2026-05-19T07:29:34.391908",
+      "last_checked": "2026-05-22T07:44:28.554844",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"716a1c4ed963a5e524e5ae748311805e\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-17-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-16_6-release-notes.json": {
       "hash": "3322cfb144478070696d74f71a77511cc2bb7623cfbf99a6394ef94ea2063bdc",
-      "last_checked": "2026-05-19T07:29:34.494248",
+      "last_checked": "2026-05-22T07:44:28.683622",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"b8fa510ce979ec0aec4fe047c454e911\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-16-6-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-16_5-release-notes.json": {
       "hash": "f494896e3b009f5486f229ea3430cbb5b0af00a9fc269310cff77c2aaec19814",
-      "last_checked": "2026-05-19T07:29:34.593236",
+      "last_checked": "2026-05-22T07:44:28.873513",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"02b2d328026f8fbf203cb8dffff5f0d1\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-16-5-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-16_4-release-notes.json": {
       "hash": "73bb78460fb5a112262ce31b8d8b2aabe100d9b0ee9ef881b2d9efdb5be499d2",
-      "last_checked": "2026-05-19T07:29:34.686066",
+      "last_checked": "2026-05-22T07:44:29.019755",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"d5c943b0a6e9453139ba69ed877f99ea\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-16-4-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-16_3-release-notes.json": {
       "hash": "8ab9ec7c11c92b1631bfb4b490f7b724daaa9322647e0f932043a31cba5ecc28",
-      "last_checked": "2026-05-19T07:29:34.732545",
+      "last_checked": "2026-05-22T07:44:29.134686",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"c5f837511c2d6eefef40e71690474ac5\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-16-3-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-16_2-release-notes.json": {
       "hash": "fc3adadf0a0780375c28a6b3ea171036dbc0a57d537b1f185357afab1cbb6a88",
-      "last_checked": "2026-05-19T07:29:34.793008",
+      "last_checked": "2026-05-22T07:44:29.264703",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"6e4971bbfedb504328d2e8f24384e2f4\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-16-2-release-notes.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-16_1-release-notes.json": {
       "hash": "ec4befcf0c7450d86b02b66d99bc63e0aa4aade9ac4c60f1a9e52ae387e570f6",
-      "last_checked": "2026-05-19T07:29:34.857936",
+      "last_checked": "2026-05-22T07:44:29.404175",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"c27a105c9b083873de8451e6ec1b2b4b\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-16-1-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-16-release-notes.json": {
       "hash": "c5c95c8772ae3ed1a3ff6525abab9201ed78cf6d01206ca9b70fa37866bdbdd6",
-      "last_checked": "2026-05-19T07:29:34.951066",
+      "last_checked": "2026-05-22T07:44:29.522965",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"2673f57274dd9fd38234fa0624b188cc\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-16-release-notes.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ipados-16-release-notes.json": {
       "hash": "78037a7b3356cec03b63905d0d256d575895c90757f8bdfaac49c4d78f680b64",
-      "last_checked": "2026-05-19T07:29:35.018615",
+      "last_checked": "2026-05-22T07:44:29.636894",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"8c28cd3ee2c9e28e235c4ac7f2f68231\"",
       "file_path": "documentation/ios-ipados-release-notes/ipados-16-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_6-release-notes.json": {
       "hash": "5beff4e8342b929aa2726dbdedc3b402af9bfdd6e3a0ac74663d070d4fa12e8b",
-      "last_checked": "2026-05-19T07:29:35.071440",
+      "last_checked": "2026-05-22T07:44:29.757699",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"dd29bb5521b2e789f75336555092c30e\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-6-release-notes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_5-release-notes.json": {
       "hash": "6d11e64e8ebf3a4e7a08974b4985ebf362de39f4cbf5afe57a0a9951c369dc39",
-      "last_checked": "2026-05-19T07:29:35.181359",
+      "last_checked": "2026-05-22T07:44:29.889537",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"bad11b80af06ff1ace8631c11d8c72b8\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-5-release-notes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_4-release-notes.json": {
       "hash": "d27e29306a4205875b98211304a2fa6d6ee3ed7d0dc72a52104c7cf0b95329e3",
-      "last_checked": "2026-05-19T07:29:35.260312",
+      "last_checked": "2026-05-22T07:44:30.124591",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"1e2133030c91ed3c050cff3de80b61ff\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-4-release-notes.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_3-release-notes.json": {
       "hash": "b6a550fe2107cc66b1df1638af4981ab9385690b03c6fae8280b3a33276f112c",
-      "last_checked": "2026-05-19T07:29:35.306497",
+      "last_checked": "2026-05-22T07:44:30.234307",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"3754614a917d0dc305edb604f7a16dbe\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-3-release-notes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_2-release-notes.json": {
       "hash": "3184a1a4b417cf5fce7fac3e873c7530d05928918d0ac347437c421e80b67cb5",
-      "last_checked": "2026-05-19T07:29:35.367959",
+      "last_checked": "2026-05-22T07:44:30.346639",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"a0b4ef39f2c10e5e5c5cea34c592fb48\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-2-release-notes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15_1-release-notes.json": {
       "hash": "91f78e20fcdafe3d98372e88553a62295af5743487bd99db006a590db704cafa",
-      "last_checked": "2026-05-19T07:29:35.428526",
+      "last_checked": "2026-05-22T07:44:30.492520",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"a99f0c66cab308ece5b6f07d77ce6d51\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-1-release-notes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-15-release-notes.json": {
       "hash": "2fcbcd4c74e26f8ec329f808f47e0a2e3a973416661a39ab3d3e82c7a88933ec",
-      "last_checked": "2026-05-19T07:29:35.607793",
+      "last_checked": "2026-05-22T07:44:30.760233",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"6eb0ab952bb0b9cb0e7a09b0078223e9\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-15-release-notes.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_7-release-notes.json": {
       "hash": "9caa8433fe104b71d03f91266edb70d7fdb1fc2744803402bf9925a135e3c600",
-      "last_checked": "2026-05-19T07:29:35.673876",
+      "last_checked": "2026-05-22T07:44:30.888195",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"25540728e7f8feae276d030a2d2de8a5\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-7-release-notes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_6-release-notes.json": {
       "hash": "5dd1b80d44375f565e3650c862cd4464624e441d56a74b65afb09edcbe428cd3",
-      "last_checked": "2026-05-19T07:29:35.771616",
+      "last_checked": "2026-05-22T07:44:31.021268",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"a329fac36f638473babdf7e6bf307d38\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-6-release-notes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_5_1-release-notes.json": {
       "hash": "8500b2cc6bd0f3535b02ae1858b9c6b02490de7de4f636ba0351a07c3d6d08a0",
-      "last_checked": "2026-05-19T07:29:35.849024",
+      "last_checked": "2026-05-22T07:44:31.156804",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"4e1e8aa80f861b4342a3a6a3632b8a5f\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-5-1-release-notes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_5-release-notes.json": {
       "hash": "0336f44daf29bfdceaf4622998e4aaaafab27b41950d4e8d8161bce7a6f112b4",
-      "last_checked": "2026-05-19T07:29:35.909850",
+      "last_checked": "2026-05-22T07:44:31.285500",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"8d17f1fee489997a6eff012cb9377a42\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-5-release-notes.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_4-release-notes.json": {
       "hash": "10ff174630da973b912224103b184a54f20c5a3f66697b9393aaa72c6bd10af9",
-      "last_checked": "2026-05-19T07:29:36.010303",
+      "last_checked": "2026-05-22T07:44:31.461665",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"fe421242c2c07b193b622fcd24b45f71\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-4-release-notes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_3-release-notes.json": {
       "hash": "14c1d72ba6b39c4fe906b65fcbd518710cb0d92360f25a65ed75c3632e988354",
-      "last_checked": "2026-05-19T07:29:36.106244",
+      "last_checked": "2026-05-22T07:44:31.580160",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"df0f1a4fd2f6490a6a5dfdf8e8f6246a\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-3-release-notes.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14_2-release-notes.json": {
       "hash": "f4b7a75b1f787a6fdcf199563632f987322380e59da35336eb9f256d2fa30587",
-      "last_checked": "2026-05-19T07:29:36.216252",
+      "last_checked": "2026-05-22T07:44:31.750140",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"793387ab88e484254c585416fe99dd35\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-2-release-notes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-14-release-notes.json": {
       "hash": "c1291c370f68edfa07c8e21492d8823ffb64e2704d0fd95cf6baeb2443d56ce4",
-      "last_checked": "2026-05-19T07:29:36.345996",
+      "last_checked": "2026-05-22T07:44:31.876146",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"8be253e86566ee6c7e2b7d3ecaf44c46\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-14-release-notes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_7-release-notes.json": {
       "hash": "511b8b3e0b36d3a81a50ac55e3124bbe1c7df3718b4f3fa1b127d59aaefd97e9",
-      "last_checked": "2026-05-19T07:29:36.396572",
+      "last_checked": "2026-05-22T07:44:32.003763",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"2fbbb9c2c049f3a5509b50f36f3acb3d\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-7-release-notes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_6-release-notes.json": {
       "hash": "64ebe911d6abb1434c744768492cbb4f57ac39a443fbeaaefcc97311d9761de8",
-      "last_checked": "2026-05-19T07:29:36.454030",
+      "last_checked": "2026-05-22T07:44:32.119193",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"505cce0259157138d834f802b486ab3d\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-6-release-notes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_5-release-notes.json": {
       "hash": "f148aef55b01fc01c8ba2a9350e178d8d799761e5b0faf0ffba5d7df8ec918c6",
-      "last_checked": "2026-05-19T07:29:36.521539",
+      "last_checked": "2026-05-22T07:44:32.255014",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"d188c583a57efb3c9da98669919a021f\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-5-release-notes.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_4-release-notes.json": {
       "hash": "8b9f48de96475b5b92ad55eec14b4733824ccf1e00ac46ca7ec4c2996806e651",
-      "last_checked": "2026-05-19T07:29:36.606483",
+      "last_checked": "2026-05-22T07:44:32.379339",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"ca78c37cadd331fccafb16b903461953\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-4-release-notes.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_3_1-release-notes.json": {
       "hash": "52d35f92148d983ebe821e737f1f2eb8c3b340ae78e100698c86447f91773183",
-      "last_checked": "2026-05-19T07:29:36.671534",
+      "last_checked": "2026-05-22T07:44:32.507354",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"b9edfd498d61fee1d3b203c98f4b9222\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-3-1-release-notes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_3-release-notes.json": {
       "hash": "476b311bd9844f64f35602c87b37a810a8ab5a58f778904670987b242f4ac99f",
-      "last_checked": "2026-05-19T07:29:36.743952",
+      "last_checked": "2026-05-22T07:44:32.631175",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"1b30ccab839292b6afe53372334d11f6\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-3-release-notes.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_2-release-notes.json": {
       "hash": "74f3d6c19a57aae352e9e794d00a4af58e10e471ec37761b6ccf37cb998c6b91",
-      "last_checked": "2026-05-19T07:29:36.800145",
+      "last_checked": "2026-05-22T07:44:32.774523",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"52e09b4eec9f580d26d1f4e3e4eb2295\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-2-release-notes.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-13_1-release-notes.json": {
       "hash": "1630dbd6ed688f4be46c8da5bb9de27fe27e722b2813477b5f78429690ab609d",
-      "last_checked": "2026-05-19T07:29:36.883442",
+      "last_checked": "2026-05-22T07:44:32.953288",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"d934e8c647aaf2b50d68ad8ce2044ec0\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-13-1-release-notes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-13-release-notes.json": {
       "hash": "3675a921345fcbee2f50c0fc2062cecf3c134e4fa41a51f221065dc3895413eb",
-      "last_checked": "2026-05-19T07:29:37.021640",
+      "last_checked": "2026-05-22T07:44:33.144879",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"fbcfe0835b1ef4ebfae02017f418ea12\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-13-release-notes.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_4-release-notes.json": {
       "hash": "8324d56005887dec730772f925a467ed669ef767840dbd12c0dff235bfc3b85d",
-      "last_checked": "2026-05-19T07:29:37.127844",
+      "last_checked": "2026-05-22T07:44:33.271394",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"7f4c4741f379e0336fa5b1da51fe60a2\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-4-release-notes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_3-release-notes.json": {
       "hash": "8d67d4f5331c49090b33d0de27070f63bf35c742032a264298c70a4b49ee8589",
-      "last_checked": "2026-05-19T07:29:37.174368",
+      "last_checked": "2026-05-22T07:44:33.424892",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"95fc38eb0667708df039b2a8a0418869\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-3-release-notes.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_2-release-notes.json": {
       "hash": "f61a76b7063465c4b9ba4bf5e721deb5de72e2d5cf146f029d68ac47195ac7b5",
-      "last_checked": "2026-05-19T07:29:37.235268",
+      "last_checked": "2026-05-22T07:44:33.548961",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"650fbb61bbc76d275c93a36bd49e5ebc\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-2-release-notes.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_1_3-release-notes.json": {
       "hash": "2b0ac43fa681f47efcca24221024978db4660f4330d9419dd04dcb84fc4e84ef",
-      "last_checked": "2026-05-19T07:29:37.368102",
+      "last_checked": "2026-05-22T07:44:33.671673",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"938619d3b47552ce299777ca73ee7a28\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-1-3-release-notes.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_1_1-release-notes.json": {
       "hash": "3f504a7765d79ff983c2f43976a5d68c7a42f9a952fcec90f4143dca4d4e294c",
-      "last_checked": "2026-05-19T07:29:37.414118",
+      "last_checked": "2026-05-22T07:44:33.807534",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e31f6ee46675466108d81d0253e852d3\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-1-1-release-notes.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12_1-release-notes.json": {
       "hash": "145947baa2a2805a6a23778d1cd4ddd0cf4a5e761dc48843be3ad280cfb7f8f2",
-      "last_checked": "2026-05-19T07:29:37.486229",
+      "last_checked": "2026-05-22T07:44:33.953793",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"af521e8a914497d33f7e819db762a92c\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-1-release-notes.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-12-release-notes.json": {
       "hash": "9d323142e846872ac42a47912f72ea42b61f713ca935f6013149308075de489b",
-      "last_checked": "2026-05-19T07:29:37.550634",
+      "last_checked": "2026-05-22T07:44:34.121218",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"238f230edcb5b1a388d62a5db266fa10\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-12-release-notes.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/foundation-release-notes.json": {
       "hash": "d914f1fef0f74f97092f073e363cd881db0ec08dacbd11daf668219fef7e84cb",
-      "last_checked": "2026-05-19T07:29:37.661140",
+      "last_checked": "2026-05-22T07:44:34.246605",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"c4e3b948d4d4a2c2e9327232a407f25d\"",
       "file_path": "documentation/ios-ipados-release-notes/foundation-release-notes.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-18_6-release-notes.json": {
       "hash": "33126a3532b43ef0f8c093bb4f0bc0fbec3b1fd3150afa849b9b67cc4d50930b",
-      "last_checked": "2026-05-19T07:29:33.266700",
+      "last_checked": "2026-05-22T07:44:26.712068",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"0f0a9ee5760e3271d5e629f5f17ab59b\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-18-6-release-notes.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26_3-release-notes.json": {
       "hash": "25a6aa7624b03b018f46c1abd29b59387df9dd1ef807ce7fd28c8fc847b73405",
-      "last_checked": "2026-05-19T07:29:32.914421",
+      "last_checked": "2026-05-22T07:44:26.073642",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e20e0dc36a2772f9435f10590c196428\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-3-release-notes.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26_2-release-notes.json": {
       "hash": "cb4fbcac1ba1753fe706d7098ba6bb440ff0f20ce53054e04cc7816a3d2a416b",
-      "last_checked": "2026-05-19T07:29:33.011201",
+      "last_checked": "2026-05-22T07:44:26.183305",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"e2e177d9b7dd088f26a4c87b016c4069\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-2-release-notes.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26_1-release-notes.json": {
       "hash": "ab785af06904c312867c5e0271dc4f06f8cccf44f941398b2586b3e509253fec",
-      "last_checked": "2026-05-19T07:29:33.112951",
+      "last_checked": "2026-05-22T07:44:26.376941",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"badbabb3db69391e83a4d4feba1e1cc4\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-1-release-notes.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26_4-release-notes.json": {
       "hash": "c2933fc43ddad6ddc63fe609a18ed3bd00cf113038503229cd81ad7cdd9f9016",
-      "last_checked": "2026-05-19T07:29:32.677373",
+      "last_checked": "2026-05-22T07:44:25.928388",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"976bd303301a7caaa79c8773f2e373c1\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-4-release-notes.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ios-ipados-release-notes/ios-ipados-26_5-release-notes.json": {
       "hash": "ba5c766a473418124f4cab906751c345ed27f69e5e0a42bb9fd52a57643c0555",
-      "last_checked": "2026-05-19T07:29:32.443954",
+      "last_checked": "2026-05-22T07:44:25.711113",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:31.914531",
+      "session_id": "2026-05-22T07:44:25.289075",
       "etag": "W/\"ec237a8ffc8541850c0b4e910fefb461\"",
       "file_path": "documentation/ios-ipados-release-notes/ios-ipados-26-5-release-notes.md"
     },

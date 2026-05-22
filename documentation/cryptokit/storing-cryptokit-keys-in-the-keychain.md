@@ -13,7 +13,7 @@ Convert between strongly typed cryptographic keys and native keychain types.
 
 #### Overview
 
-CryptoKit defines highly specific key types that embody a particular cryptographic algorithm and purpose. Some of these key types, like [`P256.Signing.PrivateKey`](P256/Signing/PrivateKey.md), correspond to items that the [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) API stores natively as [`SecKey`](https://developer.apple.com/documentation/Security/SecKey) instances. Other key types, like [`Curve25519.Signing.PrivateKey`](Curve25519/Signing/PrivateKey.md), have no direct keychain corollary. To store these kinds of keys, you package them as generic passwords.
+CryptoKit defines highly specific key types that embody a particular cryptographic algorithm and purpose. Some of these key types, like [`P256.Signing.PrivateKey`](p256/signing/privatekey.md), correspond to items that the [`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) API stores natively as [`SecKey`](https://developer.apple.com/documentation/Security/SecKey) instances. Other key types, like [`Curve25519.Signing.PrivateKey`](curve25519/signing/privatekey.md), have no direct keychain corollary. To store these kinds of keys, you package them as generic passwords.
 
 This sample code project demonstrates the conversions needed to store all the CryptoKit key types in the keychain.
 
@@ -23,7 +23,7 @@ The sample provides targets for both iOS and macOS. For both platforms, specify 
 
 ##### Declare the Convertibility of Nist Keys
 
-[`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) lets you convert between [`SecKey`](https://developer.apple.com/documentation/Security/SecKey) instances and data in the X9.63 data format. For NIST keys that support that representation, like [`P256`](P256.md), [`P384`](P384.md), and [`P521`](P521.md), CryptoKit defines a property that you use to get the X9.63 data. The framework also provides a complementary initializer that creates a new key from data in that format.
+[`Keychain services`](https://developer.apple.com/documentation/Security/keychain-services) lets you convert between [`SecKey`](https://developer.apple.com/documentation/Security/SecKey) instances and data in the X9.63 data format. For NIST keys that support that representation, like [`P256`](p256.md), [`P384`](p384.md), and [`P521`](p521.md), CryptoKit defines a property that you use to get the X9.63 data. The framework also provides a complementary initializer that creates a new key from data in that format.
 
 Define a protocol called `SecKeyConvertible` to express this interface:
 
@@ -62,7 +62,7 @@ protocol GenericPasswordConvertible: CustomStringConvertible {
 }
 ```
 
-Some keys, like [`Curve25519`](Curve25519.md), adopt this interface directly, and you simply assert that they do:
+Some keys, like [`Curve25519`](curve25519.md), adopt this interface directly, and you simply assert that they do:
 
 ```swift
 extension Curve25519.KeyAgreement.PrivateKey: GenericPasswordConvertible {
@@ -89,7 +89,7 @@ extension Curve25519.Signing.PrivateKey: GenericPasswordConvertible {
 }
 ```
 
-Other keys offer similar functionality, but require modest adjustments to their interface. For example, you provide a secure conversion for instances of [`SymmetricKey`](SymmetricKey.md):
+Other keys offer similar functionality, but require modest adjustments to their interface. For example, you provide a secure conversion for instances of [`SymmetricKey`](symmetrickey.md):
 
 ```swift
 extension SymmetricKey: GenericPasswordConvertible {
@@ -222,7 +222,7 @@ guard let data = SecKeyCopyExternalRepresentation(secKey, &error) as Data? else 
 let key = try T(x963Representation: data)
 ```
 
-Make sure that the type of the key that you initialize using the data matches the type of the original key. For example, initializing a [`P256`](P256.md) key from the data corresponding to a keychain item that you created using a [`P384`](P384.md) key produces undefined results.
+Make sure that the type of the key that you initialize using the data matches the type of the original key. For example, initializing a [`P256`](p256.md) key from the data corresponding to a keychain item that you created using a [`P384`](p384.md) key produces undefined results.
 
 ##### Retrieve Keys Stored As Generic Passwords
 

@@ -10,101 +10,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
 
 ## Topics
 
-### WWDC25
-- [Adding intelligent app features with generative models](../FoundationModels/adding-intelligent-app-features-with-generative-models.md)
-  Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
-  Persist data in your app intuitively with the Swift native persistence framework.
-- [Authoring Apple Immersive Video](../ImmersiveMediaSupport/authoring-apple-immersive-video.md)
-  Prepare and package immersive video content for delivery.
-- [AVCam: Building a camera app](../AVFoundation/avcam-building-a-camera-app.md)
-  Capture photos and record video using the front and rear iPhone and iPad cameras.
-- [Bringing advanced speech-to-text capabilities to your app](../Speech/bringing-advanced-speech-to-text-capabilities-to-your-app.md)
-  Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
-- [Building a workout app for iPhone and iPad](../HealthKit/building-a-workout-app-for-iphone-and-ipad.md)
-  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
-- [Building peer-to-peer apps](../WiFiAware/Building-peer-to-peer-apps.md)
-  Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
-- [Building rich SwiftUI text experiences](../SwiftUI/building-rich-swiftui-text-experiences.md)
-  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
-- [Canyon Crosser: Building a volumetric hike-planning app](../visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md)
-  Create a hike planning app using SwiftUI and RealityKit.
-- [Capturing Cinematic video](../AVFoundation/capturing-cinematic-video.md)
-  Capture video with an adjustable depth of field and focus points.
-- [Capturing Spatial Audio in your iOS app](../AVFoundation/capturing-spatial-audio-in-your-ios-app.md)
-  Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
-- [Code-along: Elevating an app with Swift concurrency](../Swift/code-along-elevating-an-app-with-swift-concurrency.md)
-  Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
-- [Converting projected video to Apple Projected Media Profile](../AVFoundation/converting-projected-video-to-apple-projected-media-profile.md)
-  Convert content with equirectangular or half-equirectangular projection to APMP.
-- [Creating a seamless multiview playback experience](../AVFoundation/creating-a-seamless-multiview-playback-experience.md)
-  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
-- [Drawing a triangle with Metal 4](../Metal/drawing-a-triangle-with-metal-4.md)
-  Render a colorful, rotating 2D triangle by running draw commands with a render pipeline on a GPU.
-- [Editing Spatial Audio with an audio mix](../Cinematic/editing-spatial-audio-with-an-audio-mix.md)
-  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
-- [Enhancing your app with machine learning-based video effects](../VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects.md)
-  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
-- [Enhancing your custom text engine with Writing Tools](../AppKit/enhancing-your-custom-text-engine-with-writing-tools.md)
-  Add Writing Tools support to your custom text engine to enhance the text editing experience.
-- [Filtering traffic by URL](../NetworkExtension/filtering-traffic-by-url.md)
-  Perform fast and robust filtering of full URLs by managing URL filtering configurations.
-- [Generate dynamic game content with guided generation and tools](../FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools.md)
-  Make gameplay more lively with AI generated dialog and encounters personalized to the player.
-- [Implementing a background delivery extension](../FinanceKit/implementing-a-background-delivery-extension.md)
-  Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
-- [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
-- [Landmarks: Applying a background extension effect](../SwiftUI/Landmarks-Applying-a-background-extension-effect.md)
-  Configure an image to blur and extend under a sidebar or inspector panel.
-- [Landmarks: Building an app with Liquid Glass](../SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass.md)
-  Enhance your app experience with system-provided and custom Liquid Glass.
-- [Landmarks: Displaying custom activity badges](../SwiftUI/Landmarks-Displaying-custom-activity-badges.md)
-  Provide people with a way to mark their adventures by displaying animated custom activity badges.
-- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](../SwiftUI/Landmarks-Extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
-  Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
-- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](../SwiftUI/Landmarks-Refining-the-system-provided-glass-effect-in-toolbars.md)
-  Organize toolbars into related groupings to improve their appearance and utility.
-- [Language Introspector](../Foundation/language-introspector.md)
-  Converts data into human-readable text using formatters and locales.
-- [Localizing Landmarks](../Xcode/localizing-landmarks.md)
-  Add localizations to the Landmarks sample code project.
-- [Logging symptoms associated with a medication](../HealthKit/logging-symptoms-associated-with-a-medication.md)
-  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
-- [Managing location-based reminders](../EventKit/managing-location-based-reminders.md)
-  Access reminders set up with geofence-enabled alarms on a person’s calendars.
-- [Optimizing home electricity usage](../EnergyKit/optimizing-home-electricity-usage.md)
-  Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
-- [Performing fast account creation with passkeys](../AuthenticationServices/performing-fast-account-creation-with-passkeys.md)
-  Allow people to quickly create an account with passkeys and associated domains.
-- [Petite Asteroids: Building a volumetric visionOS game](../visionOS/petite-asteroids-building-a-volumetric-visionos-game.md)
-  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
-- [Playing immersive media with AVKit](../AVKit/playing-immersive-media-with-avkit.md)
-  Adopt the system playback interface to provide an immersive video watching experience.
-- [Playing immersive media with RealityKit](../visionOS/playing-immersive-media-with-realitykit.md)
-  Create an immersive video playback experience with RealityKit.
-- [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
-  Create and display spatial scenes in RealityKit
-- [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
-  Scan a document that contains a table and extract its content in a formatted way.
-- [Rendering hover effects in Metal immersive apps](../CompositorServices/rendering_hover_effects_in_metal_immersive_apps.md)
-  Change the appearance of a rendered onscreen element when a player gazes at it.
-- [Scheduling an alarm with AlarmKit](../AlarmKit/scheduling-an-alarm-with-alarmkit.md)
-  Create prominent alerts at specified dates for your iOS app.
-- [Searching, displaying, and navigating to places](../MapKit/searching-displaying-and-navigating-to-places.md)
-  Convert place information between coordinates and user-friendly place names, get cycling directions, and conveniently display formatted addresses.
-- [Supporting real-time ML inference on the CPU](../Accelerate/supporting-real-time-ml-inference-on-the-cpu.md)
-  Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
-- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
-  Maintain game state across multiple players in a race to capture all the coins.
-- [Tracking accessories in volumetric windows](../ARKit/tracking-accessories-in-volumetric-windows.md)
-  Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
-- [Tracking a handheld accessory as a virtual sculpting tool](../ARKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
-  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
-- [Understanding StoreKit workflows](../StoreKit/understanding-storekit-workflows.md)
-  Implement an in-app store with several product types, using StoreKit views.
 ### Accelerate
 - [Adding a bokeh effect to images](../Accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
@@ -204,11 +109,15 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
 - [Interacting with App Clip Codes in AR](../AppClip/interacting-with-app-clip-codes-in-ar.md)
   Display content and provide services in an AR experience with App Clip Codes.
+- [Language Introspector](../Foundation/language-introspector.md)
+  Converts data into human-readable text using formatters and locales.
 - [Synchronizing App Preferences with iCloud](../Foundation/synchronizing-app-preferences-with-icloud.md)
   Store app preferences in iCloud and share them among instances of your app running on a user’s connected devices.
 - [Using JSON with custom types](../Foundation/using-json-with-custom-types.md)
   Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 ### App Intents and SiriKit
+- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Accelerating app interactions with App Intents](../AppIntents/AcceleratingAppInteractionsWithAppIntents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 - [Adding Shortcuts for Wind Down](../SiriKit/adding-shortcuts-for-wind-down.md)
@@ -240,6 +149,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Adopt Touch Bar support by displaying interactive content and controls for your macOS apps.
 - [Developing a Document-Based App](../AppKit/developing-a-document-based-app.md)
   Write an app that creates, manages, edits, and saves text documents.
+- [Enhancing your custom text engine with Writing Tools](../AppKit/enhancing-your-custom-text-engine-with-writing-tools.md)
+  Add Writing Tools support to your custom text engine to enhance the text editing experience.
 - [Integrating a Toolbar and Touch Bar into Your App](../AppKit/integrating-a-toolbar-and-touch-bar-into-your-app.md)
   Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
 - [Navigating Hierarchical Data Using Outline and Split Views](../AppKit/navigating-hierarchical-data-using-outline-and-split-views.md)
@@ -295,6 +206,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Allow users to collaborate on the design of ice cream sundae stickers.
 - [Implementing Alert Push Notifications](../UserNotifications/implementing-alert-push-notifications.md)
   Add visible alert notifications to your app by using the UserNotifications framework.
+- [Implementing a background delivery extension](../FinanceKit/implementing-a-background-delivery-extension.md)
+  Receive up-to-date financial data in your app and its extensions by adding a background delivery extension.
 - [Implementing a virtual conference extension](../EventKit/implementing-a-virtual-conference-extension.md)
   Support adding a virtual conference room to an event in Calendar.
 - [Implementing Background Push Notifications](../UserNotifications/implementing-background-push-notifications.md)
@@ -315,12 +228,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing location-based reminders](../EventKit/managing-location-based-reminders.md)
   Access reminders set up with geofence-enabled alarms on a person’s calendars.
+- [Optimizing home electricity usage](../EnergyKit/optimizing-home-electricity-usage.md)
+  Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
 - [Offering Apple Pay in Your App](../PassKit/offering-apple-pay-in-your-app.md)
   Collect payments with iPhone and Apple Watch using Apple Pay.
 - [Refreshing and Maintaining Your App Using Background Tasks](../BackgroundTasks/refreshing-and-maintaining-your-app-using-background-tasks.md)
   Use scheduled background tasks for refreshing your app content and for performing maintenance.
 - [Retrieve Power and Performance Metrics and Log Insights](../AppStoreConnectAPI/retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
+- [Scheduling an alarm with AlarmKit](../AlarmKit/scheduling-an-alarm-with-alarmkit.md)
+  Create prominent alerts at specified dates for your iOS app.
 - [Sharing CloudKit Data with Other iCloud Users](../CloudKit/sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
 - [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
@@ -376,6 +293,10 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Record spatial features of real-world objects, then use the results to find those objects in the user’s environment and trigger AR content.
 - [Streaming an AR experience](../ARKit/streaming-an-ar-experience.md)
   Control an AR experience remotely by transferring sensor and user input over the network.
+- [Tracking accessories in volumetric windows](../ARKit/tracking-accessories-in-volumetric-windows.md)
+  Translate the position and velocity of tracked handheld accessories to throw virtual balls at a stack of cans.
+- [Tracking a handheld accessory as a virtual sculpting tool](../ARKit/tracking-a-handheld-accessory-as-a-virtual-sculpting-tool.md)
+  Use a tracked accessory with Apple Vision Pro to create a virtual sculpture.
 - [Tracking and altering images](../ARKit/tracking-and-altering-images.md)
   Create images from rectangular shapes found in the user’s environment, and augment their appearance.
 - [Tracking and visualizing faces](../ARKit/tracking-and-visualizing-faces.md)
@@ -399,6 +320,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Generate audio signals using an audio source node and a custom render callback.
 - [Capturing stereo audio from built-In microphones](../AVFAudio/capturing-stereo-audio-from-built-in-microphones.md)
   Configure an iOS device’s built-in microphones to add stereo recording capabilities to your app.
+- [Capturing Spatial Audio in your iOS app](../AVFoundation/capturing-spatial-audio-in-your-ios-app.md)
+  Enhance your app’s audio recording capabilities by supporting Spatial Audio capture.
 - [Capturing system audio with Core Audio taps](../CoreAudio/capturing-system-audio-with-core-audio-taps.md)
   Use a Core Audio tap to capture outgoing audio from a process or group of processes.
 - [Classifying Live Audio Input with a Built-in Sound Classifier](../SoundAnalysis/classifying-live-audio-input-with-a-built-in-sound-classifier.md)
@@ -415,6 +338,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Enhance your app’s experience by incorporating haptic and sound feedback into key interactive moments.
 - [Discovering a third-party media-streaming device](../DeviceDiscoveryExtension/discovering-a-third-party-media-streaming-device.md)
   Build an extension that streams media to a server app in iOS or macOS.
+- [Editing Spatial Audio with an audio mix](../Cinematic/editing-spatial-audio-with-an-audio-mix.md)
+  Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [Encoding and decoding audio](../AudioToolbox/encoding-and-decoding-audio.md)
   Convert audio formats to efficiently manage data and quality.
 - [Explore more content with MusicKit](../musickit/explore_more_content_with_musickit.md)
@@ -466,6 +391,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Provide a way for users of your app to set up an account and start using your services.
 - [Logging a User into Your App with Face ID or Touch ID](../LocalAuthentication/logging-a-user-into-your-app-with-face-id-or-touch-id.md)
   Supplement your own authentication scheme with biometric authentication, making it easy for users to access sensitive parts of your app.
+- [Performing fast account creation with passkeys](../AuthenticationServices/performing-fast-account-creation-with-passkeys.md)
+  Allow people to quickly create an account with passkeys and associated domains.
 - [Simplifying User Authentication in a tvOS App](../AuthenticationServices/simplifying-user-authentication-in-a-tvos-app.md)
   Build a fluid sign-in experience for your tvOS apps using AuthenticationServices.
 ### AVFoundation
@@ -479,12 +406,18 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Render a capture stream with rose-colored filtering and depth effects.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](../AVFoundation/avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
+- [Capturing Cinematic video](../AVFoundation/capturing-cinematic-video.md)
+  Capture video with an adjustable depth of field and focus points.
 - [Capturing consistent color images](../AVFoundation/capturing-consistent-color-images.md)
   Add the power of a photography studio and lighting rig to your app with the new Constant Color API.
 - [Capturing depth using the LiDAR camera](../AVFoundation/capturing-depth-using-the-lidar-camera.md)
   Access the LiDAR camera on supporting devices to capture precise depth data.
+- [Converting projected video to Apple Projected Media Profile](../AVFoundation/converting-projected-video-to-apple-projected-media-profile.md)
+  Convert content with equirectangular or half-equirectangular projection to APMP.
 - [Converting side-by-side 3D video to multiview HEVC and spatial video](../AVFoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video.md)
   Create video content for visionOS by converting an existing 3D HEVC file to a multiview HEVC format, optionally adding spatial metadata to create a spatial video.
+- [Creating a seamless multiview playback experience](../AVFoundation/creating-a-seamless-multiview-playback-experience.md)
+  Build advanced multiview playback experiences with the AVFoundation and AVRouting frameworks.
 - [Debugging AVFoundation audio mixes, compositions, and video compositions](../AVFoundation/debugging-avfoundation-audio-mixes-compositions-and-video-compositions.md)
   Resolve common problems when creating compositions, video compositions, and audio mixes.
 - [Editing and playing HDR video](../AVFoundation/editing-and-playing-hdr-video.md)
@@ -513,27 +446,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Play, write, and export HEVC video with an alpha channel to add overlay effects to your video processing.
 - [Writing fragmented MPEG-4 files for HTTP Live Streaming](../AVFoundation/writing-fragmented-mpeg-4-files-for-http-live-streaming.md)
   Create an HTTP Live Streaming presentation by turning a movie file into a sequence of fragmented MPEG-4 files.
-### CoreML and CreateML
-- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
-  Crop and scale photos using the Vision framework and classify them with a Core ML model.
-- [Counting human body action repetitions in a live video feed](../CreateMLComponents/counting-human-body-action-repetitions-in-a-live-video-feed.md)
-  Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
-- [Creating a model from tabular data](../CreateML/creating-a-model-from-tabular-data.md)
-  Train a machine learning model by using Core ML to import and manage tabular data.
-- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
-  Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
-- [Detecting human body poses in an image](../CoreML/detecting-human-body-poses-in-an-image.md)
-  Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
-- [Finding answers to questions in a text document](../CoreML/finding-answers-to-questions-in-a-text-document.md)
-  Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
-- [Integrating a Core ML Model into Your App](../CoreML/integrating-a-core-ml-model-into-your-app.md)
-  Add a simple model to an app, pass input data to the model, and process the model’s predictions.
-- [Personalizing a Model with On-Device Updates](../CoreML/personalizing-a-model-with-on-device-updates.md)
-  Modify an updatable Core ML model by running an update task with labeled data.
-- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
-  Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
-- [Using Core ML for semantic image segmentation](../CoreML/using-core-ml-for-semantic-image-segmentation.md)
-  Identify multiple objects in an image by using the DEtection TRansformer image-segmentation model.
 ### Developer tools
 - [Autosizing views for localization in iOS](../Xcode/autosizing-views-for-localization-in-ios.md)
   Add auto layout constraints to your app to achieve localizable views.
@@ -543,6 +455,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create Custom Modelers with the CLIPS language and learn how the embedded rules engine works.
 - [Localization-friendly layouts in macOS](../Xcode/localization-friendly-layouts-in-macos.md)
   This project demonstrates localization-friendly auto layout constraints.
+- [Localizing Landmarks](../Xcode/localizing-landmarks.md)
+  Add localizations to the Landmarks sample code project.
 - [Providing an edge-to-edge, full-screen experience in your iPad app running on a Mac](../Apple-Silicon/providing-an-edge-to-edge-full-screen-experience-in-your-ipad-app-running-on-a-mac.md)
   Take advantage of the true native resolution of a Mac display when running your iPad app in full-screen mode on a Mac.
 - [Providing touch gesture equivalents using Touch Alternatives](../Apple-Silicon/providing-touch-gesture-equivalents-using-touch-alternatives.md)
@@ -566,6 +480,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create a physically realistic dice game by adding interactive rolling and scoring.
 - [Supporting Game Controllers](../GameController/supporting-game-controllers.md)
   Support a physical controller or add a virtual controller to enhance how people interact with your game through haptics, lighting, and motion sensing.
+- [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
+  Maintain game state across multiple players in a race to capture all the coins.
 ### Graphics
 - [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building_widgets_using_widgetkit_and_swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
@@ -598,10 +514,14 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create your own workout app, quickly and easily, with HealthKit and SwiftUI.
 - [Building a multidevice workout app](../HealthKit/building-a-multidevice-workout-app.md)
   Mirror a workout from a watchOS app to its companion iOS app, and perform bidirectional communication between them.
+- [Building a workout app for iPhone and iPad](../HealthKit/building-a-workout-app-for-iphone-and-ipad.md)
+  Start a workout in iOS, control it from the Lock Screen with App Intents, and present the workout status with Live Activities.
 - [Building an App to Notify Users of COVID-19 Exposure](../ExposureNotification/building-an-app-to-notify-users-of-covid-19-exposure.md)
   Inform people when they may have been exposed to COVID-19.
 - [Creating a Mobility Health App](../HealthKit/creating-a-mobility-health-app.md)
   Create a health app that allows a clinical care team to send and receive mobility data.
+- [Logging symptoms associated with a medication](../HealthKit/logging-symptoms-associated-with-a-medication.md)
+  Fetch medications and dose events from the HealthKit store, and create symptom samples to associate with them.
 - [Reading and Writing HealthKit Series Data](../HealthKit/reading-and-writing-healthkit-series-data.md)
   Share and read heartbeat and quantity series data using series builders and queries.
 - [Visualizing HealthKit State of Mind in visionOS](../HealthKit/visualizing-healthkit-state-of-mind-in-visionos.md)
@@ -639,8 +559,43 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Display a map that is relevant to the user by filtering points of interest and search results, and constraining the visible region.
 - [Ranging for Beacons](../CoreLocation/ranging-for-beacons.md)
   Configure a device to act as a beacon and to detect surrounding beacons.
+- [Searching, displaying, and navigating to places](../MapKit/searching-displaying-and-navigating-to-places.md)
+  Convert place information between coordinates and user-friendly place names, get cycling directions, and conveniently display formatted addresses.
 - [Sharing Your Location to Find a Park](../CoreLocationUI/sharing-your-location-to-find-a-park.md)
   Ask for location access using a customizable location button.
+### Machine learning
+- [Adding intelligent app features with generative models](../FoundationModels/adding-intelligent-app-features-with-generative-models.md)
+  Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
+- [Bringing advanced speech-to-text capabilities to your app](../Speech/bringing-advanced-speech-to-text-capabilities-to-your-app.md)
+  Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
+- [Classifying Images with Vision and Core ML](../CoreML/classifying-images-with-vision-and-core-ml.md)
+  Crop and scale photos using the Vision framework and classify them with a Core ML model.
+- [Counting human body action repetitions in a live video feed](../CreateMLComponents/counting-human-body-action-repetitions-in-a-live-video-feed.md)
+  Use Create ML Components to analyze a series of video frames and count a person’s repetitive or periodic body movements.
+- [Creating a model from tabular data](../CreateML/creating-a-model-from-tabular-data.md)
+  Train a machine learning model by using Core ML to import and manage tabular data.
+- [Detecting human actions in a live video feed](../CreateML/detecting-human-actions-in-a-live-video-feed.md)
+  Identify body movements by sending a person’s pose data from a series of video frames to an action-classification model.
+- [Detecting human body poses in an image](../CoreML/detecting-human-body-poses-in-an-image.md)
+  Locate people and the stance of their bodies by analyzing an image with a PoseNet model.
+- [Enhancing your app with machine learning-based video effects](../VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects.md)
+  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
+- [Finding answers to questions in a text document](../CoreML/finding-answers-to-questions-in-a-text-document.md)
+  Locate relevant passages in a document by asking the Bidirectional Encoder Representations from Transformers (BERT) model a question.
+- [Generate dynamic game content with guided generation and tools](../FoundationModels/generate-dynamic-game-content-with-guided-generation-and-tools.md)
+  Make gameplay more lively with AI generated dialog and encounters personalized to the player.
+- [Integrating a Core ML Model into Your App](../CoreML/integrating-a-core-ml-model-into-your-app.md)
+  Add a simple model to an app, pass input data to the model, and process the model’s predictions.
+- [Personalizing a Model with On-Device Updates](../CoreML/personalizing-a-model-with-on-device-updates.md)
+  Modify an updatable Core ML model by running an update task with labeled data.
+- [Recognizing tables within a document](../Vision/recognize-tables-within-a-document.md)
+  Scan a document that contains a table and extract its content in a formatted way.
+- [Supporting real-time ML inference on the CPU](../Accelerate/supporting-real-time-ml-inference-on-the-cpu.md)
+  Add real-time digital signal processing to apps like Logic Pro X and GarageBand with the BNNS Graph API.
+- [Understanding a Dice Roll with Vision and Object Detection](../CoreML/understanding-a-dice-roll-with-vision-and-object-detection.md)
+  Detect dice position and values shown in a camera frame, and determine the end of a roll by leveraging a dice detection model.
+- [Using Core ML for semantic image segmentation](../CoreML/using-core-ml-for-semantic-image-segmentation.md)
+  Identify multiple objects in an image by using the DEtection TRansformer image-segmentation model.
 ### Metal
 - [Accelerating ray tracing and motion blur using Metal](../Metal/accelerating-ray-tracing-and-motion-blur-using-metal.md)
   Generate ray-traced images with motion blur using GPU-based parallel processing.
@@ -830,6 +785,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Bring entities that contain materials created with Reality Composer Pro for use in your visionOS app.
 - [Presenting an artist’s scene](../RealityKit/presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
+- [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
+  Create and display spatial scenes in RealityKit
 - [Rendering a windowed game in stereo](../RealityKit/rendering-a-windowed-game-in-stereo.md)
   Bring an iOS or iPadOS game to visionOS and enhance it.
 - [Rendering stereoscopic video with RealityKit](../RealityKit/rendering-stereoscopic-video-with-realitykit.md)
@@ -869,11 +826,15 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Implement best practices for prompting users to review your app in the App Store.
 - [Testing and validating ad impression signatures and postbacks for SKAdNetwork](../StoreKitTest/testing-and-validating-ad-impression-signatures-and-postbacks-for-skadnetwork.md)
   Validate your ad impressions and test your postbacks by creating unit tests using the StoreKit Test framework.
+- [Understanding StoreKit workflows](../StoreKit/understanding-storekit-workflows.md)
+  Implement an in-app store with several product types, using StoreKit views.
 ### Swift and SwiftData
 - [Adding and editing persistent data in your app](../SwiftData/Adding-and-editing-persistent-data-in-your-app.md)
   Create a data entry form for collecting and changing data managed by SwiftData.
 - [Calling APIs Across Language Boundaries](../Swift/CallingAPIsAcrossLanguageBoundaries.md)
   Use a variety of C++ APIs in Swift – and vice-versa – across multiple targets and frameworks in an Xcode project.
+- [Code-along: Elevating an app with Swift concurrency](../Swift/code-along-elevating-an-app-with-swift-concurrency.md)
+  Code along with the WWDC presenter to elevate a SwiftUI app with Swift concurrency.
 - [Defining data relationships with enumerations and model classes](../SwiftData/Defining-data-relationships-with-enumerations-and-model-classes.md)
   Create relationships for static and dynamic data stored in your app.
 - [Deleting persistent data from your app](../SwiftData/Deleting-persistent-data-from-your-app.md)
@@ -905,6 +866,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [Building a great Mac app with SwiftUI](../SwiftUI/building-a-great-mac-app-with-swiftui.md)
   Create engaging SwiftUI Mac apps by incorporating side bars, tables, toolbars, and several other popular user interface elements.
+- [Building rich SwiftUI text experiences](../SwiftUI/building-rich-swiftui-text-experiences.md)
+  Build an editor for formatted text using SwiftUI text editor views and attributed strings.
 - [Composing custom layouts with SwiftUI](../SwiftUI/composing-custom-layouts-with-swiftui.md)
   Arrange views in your app’s interface using layout tools that SwiftUI provides.
 - [Controlling the timing and movements of your animations](../SwiftUI/Controlling-the-timing-and-movements-of-your-animations.md)
@@ -925,6 +888,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create custom focusable views with key-press handlers that accelerate keyboard input and support movement, and control focus programmatically.
 - [Food Truck: Building a SwiftUI multiplatform app](../SwiftUI/food-truck-building-a-swiftui-multiplatform-app.md)
   Create a single codebase and app target for Mac, iPad, and iPhone.
+- [Landmarks: Applying a background extension effect](../SwiftUI/Landmarks-Applying-a-background-extension-effect.md)
+  Configure an image to blur and extend under a sidebar or inspector panel.
+- [Landmarks: Building an app with Liquid Glass](../SwiftUI/Landmarks-Building-an-app-with-Liquid-Glass.md)
+  Enhance your app experience with system-provided and custom Liquid Glass.
+- [Landmarks: Displaying custom activity badges](../SwiftUI/Landmarks-Displaying-custom-activity-badges.md)
+  Provide people with a way to mark their adventures by displaying animated custom activity badges.
+- [Landmarks: Extending horizontal scrolling under a sidebar or inspector](../SwiftUI/Landmarks-Extending-horizontal-scrolling-under-a-sidebar-or-inspector.md)
+  Improve your horizontal scrollbar’s appearance by extending it under a sidebar or inspector.
+- [Landmarks: Refining the system provided Liquid Glass effect in toolbars](../SwiftUI/Landmarks-Refining-the-system-provided-glass-effect-in-toolbars.md)
+  Organize toolbars into related groupings to improve their appearance and utility.
 - [Loading and displaying a large data feed](../SwiftUI/loading-and-displaying-a-large-data-feed.md)
   Consume data in the background, and lower memory use by batching imports and preventing duplicate records.
 - [Managing model data in your app](../SwiftUI/Managing-model-data-in-your-app.md)
@@ -940,6 +913,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### System
 - [Building a custom peer-to-peer protocol](../Network/building-a-custom-peer-to-peer-protocol.md)
   Use networking frameworks to create a custom protocol for playing a game across iOS, iPadOS, watchOS, and tvOS devices.
+- [Building peer-to-peer apps](../WiFiAware/Building-peer-to-peer-apps.md)
+  Communicate with nearby devices over a secure, high-throughput, low-latency connection by using Wi-Fi Aware.
 - [Building an NFC Tag-Reader App](../CoreNFC/building-an-nfc-tag-reader-app.md)
   Read NFC tags with NDEF messages in your app.
 - [Building a passthrough file system](../FSKit/building-a-passthrough-file-system.md)
@@ -962,6 +937,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Implement a configurable virtual MIDI driver as a driver extension that runs in user space in macOS and iPadOS.
 - [Creating NFC Tags from Your iPhone](../CoreNFC/creating-nfc-tags-from-your-iphone.md)
   Save data to tags, and interact with them using native tag protocols.
+- [Enhancing your app’s privacy and security with quantum-secure workflows](../CryptoKit/enhancing-your-app-s-privacy-and-security-with-quantum-secure-workflows.md)
+  Use quantum-secure cryptography to protect your app from quantum attacks.
 - [Encrypting and Decrypting a Single File](../AppleArchive/encrypting-and-decrypting-a-single-file.md)
   Encrypt a single file and save the result to the file system, then decrypt and recreate the original file from the archive file using Apple Encrypted Archive.
 - [Encrypting and Decrypting a String](../AppleArchive/encrypting-and-decrypting-a-string.md)
@@ -970,6 +947,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Compress and encrypt the contents of an entire directory or decompress and decrypt an archived directory  using Apple Encrypted Archive.
 - [Filtering Network Traffic](../NetworkExtension/filtering-network-traffic.md)
   Use the Network Extension framework to allow or deny network connections.
+- [Filtering traffic by URL](../NetworkExtension/filtering-traffic-by-url.md)
+  Perform fast and robust filtering of full URLs by managing URL filtering configurations.
 - [Handling Keyboard Events from a Human Interface Device](../HIDDriverKit/handling-keyboard-events-from-a-human-interface-device.md)
   Process keyboard-related data from a human interface device and dispatch events to the system.
 - [Handling Stylus Input from a Human Interface Device](../HIDDriverKit/handling-stylus-input-from-a-human-interface-device.md)
@@ -978,6 +957,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build a simple `netcat` tool that establishes network connections and transfers data.
 - [Monitoring System Events with Endpoint Security](../EndpointSecurity/monitoring-system-events-with-endpoint-security.md)
   Receive notifications and authorization requests for sensitive operations by creating an Endpoint Security client for your app.
+- [Performing Common Cryptographic Operations](../CryptoKit/performing-common-cryptographic-operations.md)
+  Use CryptoKit to carry out operations like hashing, key generation, and encryption.
 - [Receiving Voice and Text Communications on a Local Network](../NetworkExtension/receiving-voice-and-text-communications-on-a-local-network.md)
   Provide voice and text communication on a local network isolated from Apple Push Notification service by adopting Local Push Connectivity.
 - [Running GUI Linux in a virtual machine on a Mac](../Virtualization/running-gui-linux-in-a-virtual-machine-on-a-mac.md)
@@ -992,6 +973,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Configure and run a PIR server to support a URL filter using Apple’s open source container tool.
 - [Sharing Wi-Fi network credentials](../WiFiInfrastructure/Sharing-Wi-Fi-network-credentials.md)
   Use Wi-Fi Infrastructure to automatically share Wi-Fi network credentials after establishing a Bluetooth connection.
+- [Storing CryptoKit Keys in the Keychain](../CryptoKit/storing-cryptokit-keys-in-the-keychain.md)
+  Convert between strongly typed cryptographic keys and native keychain types.
 - [Using the Bloom filter tool to configure a URL filter](../NetworkExtension/using-the-bloom-filter-tool.md)
   Create the files a URL filter needs for its Bloom prefilter.
 ### TV
@@ -1176,12 +1159,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Substitute a person’s hands with custom models in a fully immersive space.
 - [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
+- [Authoring Apple Immersive Video](../ImmersiveMediaSupport/authoring-apple-immersive-video.md)
+  Prepare and package immersive video content for delivery.
 - [BOT-anist](../visionOS/BOT-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Building an immersive media viewing experience](../visionOS/building-an-immersive-media-viewing-experience.md)
   Add a deeper level of immersion to media playback in your app with RealityKit and Reality Composer Pro.
 - [Building local experiences with room tracking](../visionOS/building-local-experiences-with-room-tracking.md)
   Use room tracking in visionOS to provide custom interactions with physical spaces.
+- [Canyon Crosser: Building a volumetric hike-planning app](../visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md)
+  Create a hike planning app using SwiftUI and RealityKit.
 - [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
@@ -1240,12 +1227,20 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
+- [Petite Asteroids: Building a volumetric visionOS game](../visionOS/petite-asteroids-building-a-volumetric-visionos-game.md)
+  Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
 - [Placing entities using head and device transform](../visionOS/placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
+- [Playing immersive media with AVKit](../AVKit/playing-immersive-media-with-avkit.md)
+  Adopt the system playback interface to provide an immersive video watching experience.
+- [Playing immersive media with RealityKit](../visionOS/playing-immersive-media-with-realitykit.md)
+  Create an immersive video playback experience with RealityKit.
 - [Playing spatial audio](../visionOS/playing-spatial-audio-in-visionos.md)
   Create and adjust spatial audio in visionOS with RealityKit.
+- [Rendering hover effects in Metal immersive apps](../CompositorServices/rendering_hover_effects_in_metal_immersive_apps.md)
+  Change the appearance of a rendered onscreen element when a player gazes at it.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Tracking and visualizing hand movement](../visionOS/tracking-and-visualizing-hand-movement.md)
@@ -1276,6 +1271,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Block web content with your web extension using the declarative net request API.
 - [Adopting New Safari Web Extension APIs](../SafariServices/adopting-new-safari-web-extension-apis.md)
   Improve your web extension in Safari with a non-persistent background page and new tab-override customization.
+- [Building a cross-platform web browser](../WebKit/building-a-cross-platform-web-browser.md)
+  Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
 - [Creating Safari Web Inspector extensions](../SafariServices/creating-safari-web-inspector-extensions.md)
   Learn how to make custom Safari Web Inspector extensions.
 - [Developing a browser app that uses an alternative browser engine](../BrowserEngineKit/developing-a-browser-app-that-uses-an-alternative-browser-engine.md)

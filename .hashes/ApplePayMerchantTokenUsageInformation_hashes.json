@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:29:49.244120",
+    "last_updated": "2026-05-22T07:44:54.704471",
     "total_pages": 24,
-    "session_id": "2026-05-19T07:29:47.995283"
+    "session_id": "2026-05-22T07:44:52.647501"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ApplePayMerchantTokenUsageInformation.json": {
       "hash": "8471099f6056617f4acb05dc464488feb5f2c38501f6f33a446149a9b17153ad",
-      "last_checked": "2026-05-19T07:29:48.257650",
+      "last_checked": "2026-05-22T07:44:53.001589",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"4bd0997c8889384da6eee4dfab617bd2\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/ApplePayMerchantTokenUsageInformation.md"
     },
     "https://developer.apple.com/documentation/ApplePayMerchantTokenUsageInformation": {
       "hash": "8471099f6056617f4acb05dc464488feb5f2c38501f6f33a446149a9b17153ad",
-      "last_checked": "2026-05-19T07:29:48.148594",
+      "last_checked": "2026-05-22T07:44:52.907379",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"4bd0997c8889384da6eee4dfab617bd2\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/ApplePayMerchantTokenUsageInformation.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/currencyamount.json": {
       "hash": "5453041900aa2a65cbae92a4a64d920305f0d95f1ff2fd6a53b38686f16ca833",
-      "last_checked": "2026-05-19T07:29:48.532614",
+      "last_checked": "2026-05-22T07:44:53.236738",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"548f2d86f292979bd6e8fb111aa500a9\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/currencyamount.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/automaticreloadpaymentdetails.json": {
       "hash": "5d6e156c61722f8982eea2fd81f4c0ede2a69d6d81fe4d061851adfed6099ccf",
-      "last_checked": "2026-05-19T07:29:48.585345",
+      "last_checked": "2026-05-22T07:44:53.397061",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"172d133ef56df4f8879c34c163b93923\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/automaticreloadpaymentdetails.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/deferredpaymentdetails.json": {
       "hash": "a1868376d32aa1e40fe4579c2898d2b9c1c343fc3f0c6d787c70ddb07d062cd2",
-      "last_checked": "2026-05-19T07:29:48.640952",
+      "last_checked": "2026-05-22T07:44:53.510491",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"c77138cd9d471e81da36ac9b2b58507e\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/deferredpaymentdetails.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/pastpayment.json": {
       "hash": "1ea98139dfee9ecbc846e6c9932e1d4cc1bd4c980400bf5168f0e91da72e575a",
-      "last_checked": "2026-05-19T07:29:48.703606",
+      "last_checked": "2026-05-22T07:44:53.679098",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"c6e519fe84485a6416deb6a0fc0088a5\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails.json": {
       "hash": "0a5124df73e3e82e78208969504ca80bf5886613a4043af3fe7412da97eb7e0e",
-      "last_checked": "2026-05-19T07:29:48.802960",
+      "last_checked": "2026-05-22T07:44:53.855003",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"8dc0acd038ccf4aac8942d6775b46699\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/upcomingpayment.json": {
       "hash": "c549aab83ead7377f0b116e99f703a514d4f6251c1b89e766c7f35b4b30340d1",
-      "last_checked": "2026-05-19T07:29:48.905725",
+      "last_checked": "2026-05-22T07:44:54.005176",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"d03bd589b5fccddc76f06f5be9b9c287\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/upcomingpayment.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/usageinformation.json": {
       "hash": "6d44d1059f15664aeb2475de3749444e0c19807a5b7a257b7ccf61949090b935",
-      "last_checked": "2026-05-19T07:29:48.967435",
+      "last_checked": "2026-05-22T07:44:54.134694",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"e2c284486d9520beddb08cfa0f0b8358\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/usageinformation.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/pastpayment/lineitems-data.dictionary.json": {
       "hash": "7652af58a80568a425baabcc4db3a8b14754b8079ad944ed18bda8babe20a686",
-      "last_checked": "2026-05-19T07:29:49.011971",
+      "last_checked": "2026-05-22T07:44:54.271195",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"e59157b8b5638a500a74d0205e3c2792\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/lineitems-datadictionary.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/pastpayment/summaryitems-data.dictionary.json": {
       "hash": "a8345e93c10e883e3efb737424869a847624d235d2c2e98bf599b3ea67557fd6",
-      "last_checked": "2026-05-19T07:29:49.080688",
+      "last_checked": "2026-05-22T07:44:54.391073",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"0a80648a0ad893651d6e890ec30832f3\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/pastpayment/summaryitems-datadictionary.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/interval-data.dictionary.json": {
       "hash": "e0d4c6044bdb5494604632601826e3f2fa7f25d4241dd8a2a2075564df13c57e",
-      "last_checked": "2026-05-19T07:29:49.160285",
+      "last_checked": "2026-05-22T07:44:54.513794",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"cb0e337a92f3bcdbbc6df2b7f3272ba4\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/interval-datadictionary.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applepaymerchanttokenusageinformation/recurringpaymentdetails/scheduledpayments-data.dictionary.json": {
       "hash": "3c68cf331b774265eeb8a454c2c353b5f317359b02ecbf38ecc3a012c02b20dc",
-      "last_checked": "2026-05-19T07:29:49.242989",
+      "last_checked": "2026-05-22T07:44:54.696771",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.995283",
+      "session_id": "2026-05-22T07:44:52.647501",
       "etag": "W/\"fc1a3c2f09a566e82ae7d4d4dca55df8\"",
       "file_path": "documentation/ApplePayMerchantTokenUsageInformation/recurringpaymentdetails/scheduledpayments-datadictionary.md"
     },

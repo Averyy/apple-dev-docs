@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:29:48.366434",
+    "last_updated": "2026-05-22T07:44:53.168642",
     "total_pages": 38,
-    "session_id": "2026-05-19T07:29:47.035423"
+    "session_id": "2026-05-22T07:44:50.945868"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/VisualIntelligence.json": {
       "hash": "d866a94faf37328ada41e6b75ae3f36e41af60a01e4dbd08cf8f745860d3ef32",
-      "last_checked": "2026-05-19T07:29:47.329197",
+      "last_checked": "2026-05-22T07:44:51.193220",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"36c88b453e52830c7eb39fdb125d90b2\"",
       "file_path": "documentation/VisualIntelligence/VisualIntelligence.md"
     },
     "https://developer.apple.com/documentation/VisualIntelligence": {
       "hash": "d866a94faf37328ada41e6b75ae3f36e41af60a01e4dbd08cf8f745860d3ef32",
-      "last_checked": "2026-05-19T07:29:47.180808",
+      "last_checked": "2026-05-22T07:44:51.089254",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"36c88b453e52830c7eb39fdb125d90b2\"",
       "file_path": "documentation/VisualIntelligence/VisualIntelligence.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/integrating-your-app-with-visual-intelligence.json": {
       "hash": "627c541a4ea5abf499d23a73c613ca6d2fcd52ae655ab99fc898e4bce8f77196",
-      "last_checked": "2026-05-19T07:29:47.554835",
+      "last_checked": "2026-05-22T07:44:51.608012",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"dd4ead125bf55b6d5b61682e9fa90ba7\"",
       "file_path": "documentation/VisualIntelligence/integrating-your-app-with-visual-intelligence.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor.json": {
       "hash": "27b2f81602cbbaf474f9c56a2015cd2a918930fdf34827d317a41a5b722705b1",
-      "last_checked": "2026-05-19T07:29:47.686164",
+      "last_checked": "2026-05-22T07:44:51.905213",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"d88759e69cc56e6afe36680363cd6d04\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/labels.json": {
       "hash": "581b9ab4d49be4ea43d8db6b4cefc3a595cda2b609e0196f10ea7b054319a7c1",
-      "last_checked": "2026-05-19T07:29:47.753966",
+      "last_checked": "2026-05-22T07:44:52.184055",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"96373da005262cfe59d0508ac19bbc5e\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/labels.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/pixelbuffer.json": {
       "hash": "dd18d385d6f938c527c32bae19d32662af928b9b4706ad8d5e8b040d163d0f58",
-      "last_checked": "2026-05-19T07:29:47.917317",
+      "last_checked": "2026-05-22T07:44:52.342404",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"2dfd85c4871880e1660736a9661a47bd\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/pixelbuffer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/defaultresolverspecification.json": {
       "hash": "1864d207376d05a7ed3e02dc27096d0ac211bf1de1d1b522888cd3bebd72f4b1",
-      "last_checked": "2026-05-19T07:29:48.051362",
+      "last_checked": "2026-05-22T07:44:52.506559",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"f28f5b2484b7a42fae35120ea3355b4e\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/defaultresolverspecification.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/specification.json": {
       "hash": "e8f5d4ec6fa2a0ef8211b99bf5e17c362a1682697f425e0085b4a5d1653a31a5",
-      "last_checked": "2026-05-19T07:29:48.156666",
+      "last_checked": "2026-05-22T07:44:52.838679",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"db19286128340df922c9935f0667ec8d\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/specification.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/valuetype.json": {
       "hash": "7e75e3c926b825fe37b413ffc4c8f5be5e96e13367fb61ff462c8401e2afd95f",
-      "last_checked": "2026-05-19T07:29:48.260398",
+      "last_checked": "2026-05-22T07:44:52.996545",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"262c3da9eea77a8569ebe88ddaa06090\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/valuetype.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visualintelligence/semanticcontentdescriptor/unwrappedtype.json": {
       "hash": "1e11311fed85420ad96c7c54ccfcf2469457ec2ad3a84e5e51e3db5eaa907ac8",
-      "last_checked": "2026-05-19T07:29:48.365414",
+      "last_checked": "2026-05-22T07:44:53.165883",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:47.035423",
+      "session_id": "2026-05-22T07:44:50.945868",
       "etag": "W/\"6a0b4365e9efc132c54d6dc99961366c\"",
       "file_path": "documentation/VisualIntelligence/semanticcontentdescriptor/unwrappedtype.md"
     },

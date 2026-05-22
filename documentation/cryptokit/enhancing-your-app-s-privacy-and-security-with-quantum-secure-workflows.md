@@ -25,7 +25,7 @@ This sample uses round-trip processes — encrypting then decrypting data, or ge
 
 The function `KeyTest/check(_:ciphersuite:)` in the file `KeyTest+PQHPKE.swift` performs a full round-trip using HPKE, encrypting a cleartext message using the encapsulated key and verifying that the recipient recovers the same cleartext when they use the encapsulated key to decrypt the ciphertext they receive. It does this by following these steps:
 
-1. It creates an [`HPKE.Sender`](HPKE/Sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
+1. It creates an [`HPKE.Sender`](hpke/sender.md) using the recipient’s public key, the specified ciphersuite, and additional key-derivation information:
 
 ```swift
 let info = "INFO"
@@ -38,7 +38,7 @@ var sender = try HPKE.Sender(recipientKey: key.publicKey, ciphersuite: ciphersui
 let encapsulation = sender.encapsulatedKey
 ```
 
-1. It creates an [`HPKE.Recipient`](HPKE/Recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
+1. It creates an [`HPKE.Recipient`](hpke/recipient.md) using the recipient’s private key, the ciphersuite, additional key-derivation information, and the encapsulated key:
 
 ```swift
 var recipient = try HPKE.Recipient(privateKey: key, ciphersuite: ciphersuite, info: Data(info.utf8), encapsulatedKey: encapsulation)
@@ -58,7 +58,7 @@ let ciphertext = try sender.seal(Data(message.utf8), authenticating: Data(authen
 let decryption = try recipient.open(ciphertext, authenticating: Data(authenticatedMetadata.utf8))
 ```
 
-The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure [`XWingMLKEM768X25519_SHA256_AES_GCM_256`](HPKE/Ciphersuite/XWingMLKEM768X25519_SHA256_AES_GCM_256.md) ciphersuite:
+The function `testPQHPKE(type:)` in the same file calls the `check(_:ciphersuite:)` function using the quantum-secure doc://com.apple.documentation/documentation/cryptokit/hpke/ciphersuite/xwingmlkem768x25519_sha256_aes_gcm_256 ciphersuite:
 
 ```swift
 internal func testPQHPKE(type: PQHPKEType) throws -> (TestStatus, String) {
@@ -77,7 +77,7 @@ The function `KeyTest/check(_:)` in the file `KeyTest+MLKEM.swift` generates, en
 let encapsulation = try key.publicKey.encapsulate()
 ```
 
-The result of this operation is a [`KEM.EncapsulationResult`](KEM/EncapsulationResult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](KEMPrivateKey/decapsulate(_:).md) method to recover the shared secret:
+The result of this operation is a [`KEM.EncapsulationResult`](kem/encapsulationresult.md) that contains both the shared secret and the encapsulated version. The function passes the encapsulated version to the private key’s [`decapsulate(_:)`](kemprivatekey/decapsulate(_:).md) method to recover the shared secret:
 
 ```swift
 let sharedSecret = try key.decapsulate(encapsulation.encapsulated)
@@ -98,7 +98,7 @@ internal func testMLKEM(type: MLKEMType, useSecureEnclave: Bool) throws -> (Test
 
 #### Create Digital Signatures
 
-The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](MLDSA65.md) and [`MLDSA87`](MLDSA87.md) types. Each function accepts a private key, which it uses to sign a test message:
+The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the doc://com.apple.documentation/documentation/cryptokit/MLDSA65 and doc://com.apple.documentation/documentation/cryptokit/MLDSA87 types. Each function accepts a private key, which it uses to sign a test message:
 
 ```swift
 let message = "TEST MESSAGE"
@@ -168,7 +168,7 @@ internal func testHybridSig(type: HybridSigType) throws -> (TestStatus, String) 
 
 #### Store Cryptographic Keys in the Keychain or in the Secure Enclave
 
-These workflows store the CryptoKit keys in the keychain by converting between strongly typed cryptographic keys and native Keychain types. Where applicable, they also show how to protect keys with the Secure Enclave. For more information, see [`Storing CryptoKit Keys in the Keychain`](storing-cryptokit-keys-in-the-keychain.md).
+These workflows store the CryptoKit keys in the keychain by converting between strongly typed cryptographic keys and native Keychain types. Where applicable, they also show how to protect keys with the Secure Enclave. For more information, see doc://com.apple.documentation/documentation/CryptoKit/storing-cryptokit-keys-in-the-keychain.
 
 ## See Also
 

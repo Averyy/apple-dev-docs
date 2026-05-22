@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:29:46.755195",
+    "last_updated": "2026-05-22T07:44:50.928510",
     "total_pages": 50,
-    "session_id": "2026-05-19T07:29:44.719836"
+    "session_id": "2026-05-22T07:44:47.515519"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExecutionPolicy.json": {
       "hash": "714147b8e2ba73f2e49130efc69017501542cb5945b4b4802ad3cee533a20d45",
-      "last_checked": "2026-05-19T07:29:44.932616",
+      "last_checked": "2026-05-22T07:44:47.750589",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"d656c26c8a82079c8895e02e0d513037\"",
       "file_path": "documentation/ExecutionPolicy/ExecutionPolicy.md"
     },
     "https://developer.apple.com/documentation/ExecutionPolicy": {
       "hash": "714147b8e2ba73f2e49130efc69017501542cb5945b4b4802ad3cee533a20d45",
-      "last_checked": "2026-05-19T07:29:44.848924",
+      "last_checked": "2026-05-22T07:44:47.629075",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"d656c26c8a82079c8895e02e0d513037\"",
       "file_path": "documentation/ExecutionPolicy/ExecutionPolicy.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct.json": {
       "hash": "e9dca3b01207194d5f73b0a249c45b10a91f5a7f8fa69d346a8e4b4fea76ed2c",
-      "last_checked": "2026-05-19T07:29:45.177178",
+      "last_checked": "2026-05-22T07:44:48.043751",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"335e428a9c32ccf47935fc97eb3b7dd2\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swiftstruct.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertool.json": {
       "hash": "4fb5c7651b44ac63cc73a1247dc2f308be7a5a6f703616a24b2e8cd2370433eb",
-      "last_checked": "2026-05-19T07:29:45.418376",
+      "last_checked": "2026-05-22T07:44:48.338263",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"089e14d26fb6f36a28d893b24444c0b3\"",
       "file_path": "documentation/ExecutionPolicy/epdevelopertool.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epexecutionpolicy.json": {
       "hash": "6ef32520bf5eb8ff70e30265b043adeba05def3bc26216dae967aba44121d7cd",
-      "last_checked": "2026-05-19T07:29:45.466967",
+      "last_checked": "2026-05-22T07:44:48.477926",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"6c1827df330f0c17e2309174002bd74d\"",
       "file_path": "documentation/ExecutionPolicy/epexecutionpolicy.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/executionpolicy-constants.json": {
       "hash": "635da172245da41de007f407d34198beed4188d9486fe28f97d0d1446ee2e306",
-      "last_checked": "2026-05-19T07:29:45.550980",
+      "last_checked": "2026-05-22T07:44:48.593271",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"55a33c555ccd8c06441c61cc4f39e438\"",
       "file_path": "documentation/ExecutionPolicy/executionpolicy-constants.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/generic.json": {
       "hash": "790f8e89615ae27f522f748584b8314730e64938c5e6f588def0e3533e00efed",
-      "last_checked": "2026-05-19T07:29:45.599887",
+      "last_checked": "2026-05-22T07:44:48.791405",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"08ea77517ea196dc4a9394d8e4c66daa\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/generic.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/notadevelopertool.json": {
       "hash": "167db403632cce1bf8aad58b1e7feca34719f213ba6e9c269c0cbbc9bc4fe120",
-      "last_checked": "2026-05-19T07:29:45.763275",
+      "last_checked": "2026-05-22T07:44:48.919375",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"a6e24c6300eb096f3dfd818087c30319\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/notadevelopertool.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/errordomain.json": {
       "hash": "1ab6ff71ad1eef07e1ae40c217b019461fc8cdafaf20af8ca6ff3e6d55e65950",
-      "last_checked": "2026-05-19T07:29:45.837344",
+      "last_checked": "2026-05-22T07:44:49.044970",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"538f58a244ac15b943a56ea1946c17f4\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/errordomain.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/code.json": {
       "hash": "7504eecca0ba4bad6dc813c6845e805f0903264b4337ae08148866c9f328409a",
-      "last_checked": "2026-05-19T07:29:46.069854",
+      "last_checked": "2026-05-22T07:44:49.171431",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"535bc507eb4ddb9ca9f62b7ba6d82d55\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/code.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertool/init().json": {
       "hash": "cc3b40b0ab4c5cdc356a18da0d853ca862ce6283a79a303e86418ae4ed7d865c",
-      "last_checked": "2026-05-19T07:29:46.120704",
+      "last_checked": "2026-05-22T07:44:49.328581",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"e0372b3a6f286b2d8c811ade1a43ab43\"",
       "file_path": "documentation/ExecutionPolicy/epdevelopertool/init.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertool/authorizationstatus.json": {
       "hash": "4e93a879909d78d6a3e847538e987b0e70824d661783f9502705d9bc535e20bb",
-      "last_checked": "2026-05-19T07:29:46.205520",
+      "last_checked": "2026-05-22T07:44:49.614370",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"ecfefa25b233c6131da5a19dfe7e02f4\"",
       "file_path": "documentation/ExecutionPolicy/epdevelopertool/authorizationstatus.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epdevelopertool/requestaccess(completionhandler:).json": {
       "hash": "828ec916af8216818b22bbca4d129b8403e0f07f90f5b25bbcae56e50ef4c305",
-      "last_checked": "2026-05-19T07:29:46.313035",
+      "last_checked": "2026-05-22T07:44:49.932596",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"deb528e3f83dac1d0620355fe3e2498d\"",
       "file_path": "documentation/ExecutionPolicy/epdevelopertool/requestaccess-completionhandler.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epexecutionpolicy/init().json": {
       "hash": "b0e0b34f8cec85bf2c8895e8f72be5e156231424a7d2e4930b6030a09501b4ee",
-      "last_checked": "2026-05-19T07:29:46.359693",
+      "last_checked": "2026-05-22T07:44:50.060580",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"3252a0cf35e0d311aa821998bf793650\"",
       "file_path": "documentation/ExecutionPolicy/epexecutionpolicy/init.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/epexecutionpolicy/addexception(for:).json": {
       "hash": "630db047953a62e169c149438931b9bcaed031cac6c6e0e8570437cbd6e258a0",
-      "last_checked": "2026-05-19T07:29:46.416045",
+      "last_checked": "2026-05-22T07:44:50.183902",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"ce055b7dfab57e4fd2fccfafb09a542b\"",
       "file_path": "documentation/ExecutionPolicy/epexecutionpolicy/addexception-for.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperrordomain.json": {
       "hash": "71cbb5b36651984ecf47f016c54f462f01b4f6bf778b59ad3f81e0dd386ea45a",
-      "last_checked": "2026-05-19T07:29:46.566323",
+      "last_checked": "2026-05-22T07:44:50.359924",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"c55661bca6fd647cf00b40555080b9de\"",
       "file_path": "documentation/ExecutionPolicy/eperrordomain.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/code/generic.json": {
       "hash": "456fe20b58b60ef0fafe722f751e06752b65ea626f0a54bc0b7274135b8f250d",
-      "last_checked": "2026-05-19T07:29:46.620596",
+      "last_checked": "2026-05-22T07:44:50.513631",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"a07d09fdfd67e56ff29910e085207f68\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/code/generic.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/code/notadevelopertool.json": {
       "hash": "3a6e30e42003ca0d4d4c48e4b317e29dcc892bb0780e2ea057ad3a2ef99baaaf",
-      "last_checked": "2026-05-19T07:29:46.696251",
+      "last_checked": "2026-05-22T07:44:50.675064",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"e8d40f84f9aa6642ee69b9913f389e06\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/code/notadevelopertool.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/executionpolicy/eperror-swift.struct/code/init(rawvalue:).json": {
       "hash": "1b6d2844364a2bf3ba0f9957f10808b935c636c580436f0d73c2399d0f880b5e",
-      "last_checked": "2026-05-19T07:29:46.754303",
+      "last_checked": "2026-05-22T07:44:50.918110",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:44.719836",
+      "session_id": "2026-05-22T07:44:47.515519",
       "etag": "W/\"327045e442f6776baceb0a882ce2caaf\"",
       "file_path": "documentation/ExecutionPolicy/eperror-swift.struct/code/init-rawvalue.md"
     },

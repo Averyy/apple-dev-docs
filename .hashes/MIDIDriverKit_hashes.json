@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:28:50.361705",
+    "last_updated": "2026-05-22T07:43:29.423912",
     "total_pages": 322,
-    "session_id": "2026-05-19T07:28:33.203780"
+    "session_id": "2026-05-22T07:43:03.774656"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MIDIDriverKit.json": {
       "hash": "adc276ba5056d91daaef893ea6835740175ce81b0f8f1c99d7472904bfa69327",
-      "last_checked": "2026-05-19T07:28:33.478633",
+      "last_checked": "2026-05-22T07:43:04.161035",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5d8f1fc37f41bc328efe2b358d789beb\"",
       "file_path": "documentation/MIDIDriverKit/MIDIDriverKit.md"
     },
     "https://developer.apple.com/documentation/MIDIDriverKit": {
       "hash": "adc276ba5056d91daaef893ea6835740175ce81b0f8f1c99d7472904bfa69327",
-      "last_checked": "2026-05-19T07:28:33.372138",
+      "last_checked": "2026-05-22T07:43:04.054579",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5d8f1fc37f41bc328efe2b358d789beb\"",
       "file_path": "documentation/MIDIDriverKit/MIDIDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/creating-a-midi-device-driver.json": {
       "hash": "46e6046102328403c1d2d5ba5f6341723815ec1535348187a84e7b91fc6c1b9e",
-      "last_checked": "2026-05-19T07:28:33.734150",
+      "last_checked": "2026-05-22T07:43:04.576607",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"6b55f0cef18972ec7fd9ca482fe35e7f\"",
       "file_path": "documentation/MIDIDriverKit/creating-a-midi-device-driver.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination.json": {
       "hash": "0574345654e1cedef7c9a0e663ed804a7ef638af7fc284ce8635aa9dbab7cef3",
-      "last_checked": "2026-05-19T07:28:33.841733",
+      "last_checked": "2026-05-22T07:43:04.878865",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"45b9cb46b694dacc2a8876542a96510b\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice.json": {
       "hash": "48852904127202a04f0353c2bc4d25adb0bcf3b3df1adfd6e3efc938ead59a4a",
-      "last_checked": "2026-05-19T07:28:33.944364",
+      "last_checked": "2026-05-22T07:43:05.107308",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"3ef3c2241786f05dc480e44297175dae\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver.json": {
       "hash": "4b90983a1f0609847e4dfec981b9d3dd44cdf7f92c89407e4d98f08c219e570f",
-      "last_checked": "2026-05-19T07:28:34.173493",
+      "last_checked": "2026-05-22T07:43:05.476414",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5a5f327ff86e09debbe46cd772337a80\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiendpoint.json": {
       "hash": "928dad943b8562f3ada45b945925b4e50904b7cf04d8351bd14a35dae7a22cc5",
-      "last_checked": "2026-05-19T07:28:34.301810",
+      "last_checked": "2026-05-22T07:43:05.781045",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c3b26384768cf288fe9c04e5c53b6e0d\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiendpoint.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity.json": {
       "hash": "9c7625e15c8853e9b5cfd600b437d8ec662e32b35fa13f928d7f897b89dc35ec",
-      "last_checked": "2026-05-19T07:28:34.520263",
+      "last_checked": "2026-05-22T07:43:06.074456",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"68979a78c8cbcc2dc58deca2d001915e\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject.json": {
       "hash": "9e90a843b1720e01e1e0a1f3f520ebc5f7028a69625bad46772cfc77bb778790",
-      "last_checked": "2026-05-19T07:28:34.741587",
+      "last_checked": "2026-05-22T07:43:06.375311",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"bfcb8873a8b83ffe7cc3a04a4e6a7eb4\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource.json": {
       "hash": "350f8dd52796ef438062895d73942a21de7c21bcb3646e50d72bc5731d6f74c1",
-      "last_checked": "2026-05-19T07:28:34.972573",
+      "last_checked": "2026-05-22T07:43:06.681467",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f6353edee262a73395795cba036a3a5c\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit-constants.json": {
       "hash": "4badd8f187439e917ce83b6b0920b160e5792471113fd12d44bb3ec5d88f7533",
-      "last_checked": "2026-05-19T07:28:35.068149",
+      "last_checked": "2026-05-22T07:43:06.838313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5d507d53c322995759e8a3ed548106c6\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit-constants.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit-data-types.json": {
       "hash": "0a91d4413913e6e41cda5b17001d8165482fb8119ec048ea75e42e1b5df5ac09",
-      "last_checked": "2026-05-19T07:28:35.288738",
+      "last_checked": "2026-05-22T07:43:07.128603",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a147201bc333d9582557e67f86ca2d90\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit-data-types.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit.json": {
       "hash": "fedb42ddb97af7edcce159147a242481499a5db8201ab04bb98289b723453de0",
-      "last_checked": "2026-05-19T07:28:35.396038",
+      "last_checked": "2026-05-22T07:43:07.443114",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b094a81c838b290e107483197db68939\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/kiousermididriveruserclienttype.json": {
       "hash": "9e7223a48fc5f369ebaa44232e8369b25b50385506a5fea8bba1f93abfaf279c",
-      "last_checked": "2026-05-19T07:28:35.605307",
+      "last_checked": "2026-05-22T07:43:07.747723",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"7a65869f60134528b79e517041520c0f\"",
       "file_path": "documentation/MIDIDriverKit/kiousermididriveruserclienttype.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/getbaseclassid.json": {
       "hash": "d0352fa75e95b380d2881e1ef42c0a7ead8a32693c6788b92c30945ccc815a80",
-      "last_checked": "2026-05-19T07:28:35.705588",
+      "last_checked": "2026-05-22T07:43:07.918432",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"daa88f99e0b2aa26ed668dcd0134973b\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/getbaseclassid.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/getclassid.json": {
       "hash": "5d9921b78cfc38439a5d184147d0775780ac7e9d6630a0a505feddf8f4f7305a",
-      "last_checked": "2026-05-19T07:28:35.802559",
+      "last_checked": "2026-05-22T07:43:08.075724",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ff8e2f6ac2ec2b6be3998f338a8deca8\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/getclassid.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/setioblock.json": {
       "hash": "f41dde89deb236e405549b6e93df1aa641c6831e5ce563d81d2044c10cc040ad",
-      "last_checked": "2026-05-19T07:28:35.913644",
+      "last_checked": "2026-05-22T07:43:08.234586",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"aa85074ce4311e3fdeada55e6257dcc2\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/setioblock.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/free.json": {
       "hash": "bd29fd653a1f809d6e686734429a333127407024af4684fe0ba4689d93a64da8",
-      "last_checked": "2026-05-19T07:28:36.023127",
+      "last_checked": "2026-05-22T07:43:08.388901",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5444d1238e838aa20a935858e26e8098\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/free.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/init.json": {
       "hash": "bcf4c24c614bc9ec77c8b9e575f5f76dc5fd06c2081cea27c78c3cd0a9fefa27",
-      "last_checked": "2026-05-19T07:28:36.127551",
+      "last_checked": "2026-05-22T07:43:08.523463",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"095e338984c50f2963b83fdf5a4dccfb\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/init.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididestination/create.json": {
       "hash": "6e1bce21e2d04d9aec34a91e1a69730144b973aa5307369aaa243878ab8ebcc0",
-      "last_checked": "2026-05-19T07:28:36.349377",
+      "last_checked": "2026-05-22T07:43:08.673943",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"8cf6c644cab51e1c7a942e2d4282ceee\"",
       "file_path": "documentation/MIDIDriverKit/iousermididestination/create.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/abortdeviceconfigurationchange.json": {
       "hash": "7bed24dc687d33e9e610c590c817f572e243bfb628f6648df37ebc11ee8bad3e",
-      "last_checked": "2026-05-19T07:28:36.455630",
+      "last_checked": "2026-05-22T07:43:08.829799",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0b7e99be54a9cbec931965b166357a84\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/abortdeviceconfigurationchange.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/addentity.json": {
       "hash": "f257921516ad16f39c7a80a4c95b2e7bdd95a0a10db8319530dae1b2cacf0bc3",
-      "last_checked": "2026-05-19T07:28:36.673466",
+      "last_checked": "2026-05-22T07:43:08.981909",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ea52b2b83c7d2fd1efcd18026ad736a5\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/addentity.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/getbaseclassid.json": {
       "hash": "a837495524eab636d8e1fbc171e02f671b9a1889721e3e4991e0a3f4bade0cc7",
-      "last_checked": "2026-05-19T07:28:36.720606",
+      "last_checked": "2026-05-22T07:43:09.152654",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"01010d97189b83193f04e382d36d899d\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/getbaseclassid.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/getclassid.json": {
       "hash": "5e81585eabe199c4daeec2b5545955a2f5dbb1d57324921d1f42b399555166a7",
-      "last_checked": "2026-05-19T07:28:36.947032",
+      "last_checked": "2026-05-22T07:43:09.323189",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"613784e07f54efff4b33579e056259d2\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/getclassid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/getdeviceisrunning.json": {
       "hash": "56039242896054df8a44fb24fd68187c71671a08f856edbf801b4d9e230c20bb",
-      "last_checked": "2026-05-19T07:28:37.045956",
+      "last_checked": "2026-05-22T07:43:09.502416",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"cf6bd4a99ad94e9317b6a188b8b70a05\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/getdeviceisrunning.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/getentities.json": {
       "hash": "923d0a4d790779db96ead984e1d2fa7f1b178d0d9fe3ba31551d195a1da97338",
-      "last_checked": "2026-05-19T07:28:37.277171",
+      "last_checked": "2026-05-22T07:43:09.730892",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"53fb161525109b212945769e429d9f23\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/getentities.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/performdeviceconfigurationchange.json": {
       "hash": "0b51f5ecee1a1d13f2ee8d186197bdb00a9d1cd388d131fcd93a2b5a7abc93e1",
-      "last_checked": "2026-05-19T07:28:37.334570",
+      "last_checked": "2026-05-22T07:43:09.954094",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"74e2923876eb64ea660ca05a52c2da1d\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/performdeviceconfigurationchange.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/removeentity.json": {
       "hash": "4f2136cb16916daa2f590ceacdada83cb459606e438d7c74fd68620f6f6ef71e",
-      "last_checked": "2026-05-19T07:28:37.452361",
+      "last_checked": "2026-05-22T07:43:10.121072",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"7dcc36f989a14687026f18ee25b908b1\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/removeentity.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/requestdeviceconfigurationchange.json": {
       "hash": "c301107931aa0b07bb0c3c3e7dd57bb14384f21f9f6dd40fa915665760ad4b66",
-      "last_checked": "2026-05-19T07:28:37.554793",
+      "last_checked": "2026-05-22T07:43:10.299001",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"649a6df8ced78458ade5c02676f22bfa\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/requestdeviceconfigurationchange.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/setproperties.json": {
       "hash": "8efcfef292aba4af5271fde24deee5c66cea8bbfe7b4c9138b31bb420850da32",
-      "last_checked": "2026-05-19T07:28:37.660186",
+      "last_checked": "2026-05-22T07:43:10.425058",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"eed6f7c48616c8433d9c1f85f250b3fc\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/setproperties.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/startio.json": {
       "hash": "3230fd926956a1a4364fe8c732939f7c578cd158517974dab59404a385f95baa",
-      "last_checked": "2026-05-19T07:28:37.768739",
+      "last_checked": "2026-05-22T07:43:10.573632",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b1baeda33d7b44edd7e69e186a8d18da\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/startio.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/stopio.json": {
       "hash": "05b1e1ef73396a86d4c11ac83d98ae26f482b0dfbcb5fb0054b1ef3dfa0a7f3e",
-      "last_checked": "2026-05-19T07:28:37.871752",
+      "last_checked": "2026-05-22T07:43:10.694642",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"bb82779fcaded23317428a1163eaef86\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/stopio.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/free.json": {
       "hash": "aeffb2ef34a7480311b752635c4609260afd720e7100712ccc73dd1aac20ffe5",
-      "last_checked": "2026-05-19T07:28:37.919532",
+      "last_checked": "2026-05-22T07:43:10.869046",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"34440358104b099d646d4cc7453003e2\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/free.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/init.json": {
       "hash": "3b7f419ef07a38111d80b96e7a0ba68a8445a25b4157257baee415608189f480",
-      "last_checked": "2026-05-19T07:28:38.062046",
+      "last_checked": "2026-05-22T07:43:11.329959",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"74d55ce87455e83e6025590abbcd0aaf\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/init.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididevice/create.json": {
       "hash": "ac1fc0d94df6e0eac0fb624156a92fc1140fcbe4c9ec32ec3c0132dd2356a294",
-      "last_checked": "2026-05-19T07:28:38.158044",
+      "last_checked": "2026-05-22T07:43:11.434251",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"2d9416b94c7505bbaeba7ae8e925b4ae\"",
       "file_path": "documentation/MIDIDriverKit/iousermididevice/create.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/addobject.json": {
       "hash": "ca3e40aea0974848e36a943cff38f355f6097e09dd113463c063085748a389a8",
-      "last_checked": "2026-05-19T07:28:38.202983",
+      "last_checked": "2026-05-22T07:43:11.568603",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"51356fde70bbafaa5658174947e9f53c\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/addobject.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/getmidiobjectforobjectid.json": {
       "hash": "1892e2e99ebb6382242b9015b34a00ab09fd548e61879fef52b54bc465a06971",
-      "last_checked": "2026-05-19T07:28:38.337332",
+      "last_checked": "2026-05-22T07:43:11.746607",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a98ec2b1535ca1674208228dd6b9f1bf\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/getmidiobjectforobjectid.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/getname.json": {
       "hash": "7c977a062dd5326c46655a7fd2b562b91cf7d9d5fe701b3b79a603a447e0d7b0",
-      "last_checked": "2026-05-19T07:28:38.444339",
+      "last_checked": "2026-05-22T07:43:11.915029",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"420c8c28a6e0db1a8e09bf5cd5ba425a\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/getname.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/getworkqueue.json": {
       "hash": "27c46ddadf982576d7c89494a3bd4f3f7df937105899ae2be1c132605a378196",
-      "last_checked": "2026-05-19T07:28:38.538876",
+      "last_checked": "2026-05-22T07:43:12.026175",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"4852a40da2484f2d5fdbb7a2aa93d8e7\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/getworkqueue.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/newuserclient.json": {
       "hash": "327ba424074c11f79c69c1842295ba76cbd89e3f9d73c690bceb5c223dd26c08",
-      "last_checked": "2026-05-19T07:28:38.642264",
+      "last_checked": "2026-05-22T07:43:12.157534",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"e2a596cce59ef53e95cfa92ae8503ff1\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/newuserclient.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/removeobject.json": {
       "hash": "814cfb14b77db87f275862b197356a929f06d5287a22ef931027753406c089ec",
-      "last_checked": "2026-05-19T07:28:38.738726",
+      "last_checked": "2026-05-22T07:43:12.270837",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"e63380139fe27020f338b57df5084845\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/removeobject.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/setname.json": {
       "hash": "b2f49bd905f3aa163c7d3453a0931fd0ce09158506d8e2b40901362660b70adf",
-      "last_checked": "2026-05-19T07:28:38.947546",
+      "last_checked": "2026-05-22T07:43:12.445846",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"45ade9c486595652e1d82b2365c71b56\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/setname.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/start.json": {
       "hash": "abe45cd551741d14083c7a31e75d23b65cd761bff26a1306419ebd128f96968b",
-      "last_checked": "2026-05-19T07:28:39.045850",
+      "last_checked": "2026-05-22T07:43:12.552416",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"daa2058ced6065221053b16c7c25c33d\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/start.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/startio.json": {
       "hash": "0bddb2fa024c730955eea4f3905855ff17f3eddbee303a450052d879a3e0f67b",
-      "last_checked": "2026-05-19T07:28:39.139498",
+      "last_checked": "2026-05-22T07:43:12.676644",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"03696eb88bc3ce3777e8f2f9806f3b43\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/startio.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/stop.json": {
       "hash": "7b94764ae839bbf69939b928f6254a3d96059c1bf94967dc9edff8cf2890fa2a",
-      "last_checked": "2026-05-19T07:28:39.186321",
+      "last_checked": "2026-05-22T07:43:12.836764",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"62003d064a1a509630d832de38ae49fb\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/stop.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/stopio.json": {
       "hash": "ec221cac48345fd8b19605bc1f6e90d7b2bd77138ca3a9f5d2a00cc62335f251",
-      "last_checked": "2026-05-19T07:28:39.305118",
+      "last_checked": "2026-05-22T07:43:12.972293",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"eaebe9cdca238bea01f1727e6bcd4853\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/stopio.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/free.json": {
       "hash": "784229f0917c1810a7716890ff9dd4d5fd19035b7488e6459e6a6bb75b962040",
-      "last_checked": "2026-05-19T07:28:39.400494",
+      "last_checked": "2026-05-22T07:43:13.146747",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"1452d9fb21b2c3650dc6124d83ffaf33\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/free.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermididriver/init.json": {
       "hash": "e9ad14cacfb8d638bad706a383968570a06b77e10d4fa87b63f04c19012afa2d",
-      "last_checked": "2026-05-19T07:28:39.506298",
+      "last_checked": "2026-05-22T07:43:13.274357",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ecbecc6cad3847988f714d260881746a\"",
       "file_path": "documentation/MIDIDriverKit/iousermididriver/init.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiendpoint/getbaseclassid.json": {
       "hash": "db135a81b36b9bf5f4c182bca97ae8f630c077b126d52ca4dd3c913aa6867430",
-      "last_checked": "2026-05-19T07:28:39.607888",
+      "last_checked": "2026-05-22T07:43:13.401360",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"969f4242e117620795eb0a19c552aa57\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiendpoint/getbaseclassid.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiendpoint/getclassid.json": {
       "hash": "d839e599815489103c81419c3b05ee7b9a047de59ec984eb09fbb05da5db3809",
-      "last_checked": "2026-05-19T07:28:39.706093",
+      "last_checked": "2026-05-22T07:43:13.525685",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"36bb89b47710d95bb3e678714e90fc1c\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiendpoint/getclassid.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiendpoint/free.json": {
       "hash": "5f3cb4b16ba7533536287d9f08216ddfd54b4ed93b10c79c13387a420119fdc0",
-      "last_checked": "2026-05-19T07:28:39.801625",
+      "last_checked": "2026-05-22T07:43:13.645749",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"6d67cac5ab4ecd498edfc16018c7df68\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiendpoint/free.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiendpoint/init.json": {
       "hash": "d4ea05bb99ee36985995a71a1dffecb9a498de5afea3c17e7ca14d2de3b1e3b2",
-      "last_checked": "2026-05-19T07:28:39.897004",
+      "last_checked": "2026-05-22T07:43:13.807002",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"33bc952d9afb2ee69f16ca006ea50c9d\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiendpoint/init.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/adddestination.json": {
       "hash": "7a9f00850aa25c4d88a640cc736908f2061b48321525dfee9650aede47fdccf1",
-      "last_checked": "2026-05-19T07:28:39.998401",
+      "last_checked": "2026-05-22T07:43:13.920414",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"4634dbea1c789520fa5fcc7c3863b11c\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/adddestination.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/addsource.json": {
       "hash": "c9de80b6c522929b9efcbb7cb439dc1114855ce283a3f9454056498b869b8407",
-      "last_checked": "2026-05-19T07:28:40.117168",
+      "last_checked": "2026-05-22T07:43:14.879603",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f1abbc6d2baff5be50a6ad2d855db079\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/addsource.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getbaseclassid.json": {
       "hash": "9a3544bc051747a449d5eb487ab9e5cc1c98fe14aa32c919168a6ff0c3c56bf3",
-      "last_checked": "2026-05-19T07:28:40.225872",
+      "last_checked": "2026-05-22T07:43:14.986021",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"057bb575a018eac86a8b0dcaf6324ecb\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getbaseclassid.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getclassid.json": {
       "hash": "c768be1dd119732b15c15d9dbac7cd6f8eba98c5e08729653bf08015e16c7af6",
-      "last_checked": "2026-05-19T07:28:40.274050",
+      "last_checked": "2026-05-22T07:43:15.167920",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b87c79472dbce55e373df56717ec84c6\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getclassid.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getdestination.json": {
       "hash": "3f280ed4e7ff6aaf4e32c381b8a175f41e552895e26abf8576f6cfd9f71b0e4b",
-      "last_checked": "2026-05-19T07:28:40.383661",
+      "last_checked": "2026-05-22T07:43:15.296503",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"e6e7eef1d75a8ba1a523134b8896cba3\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getdestination.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getdestinations.json": {
       "hash": "e0d1255b0a1bb6ce67d23c487c893cf92eb6fcd5c97eedc4defd2be824eac572",
-      "last_checked": "2026-05-19T07:28:40.484123",
+      "last_checked": "2026-05-22T07:43:15.425258",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c5152848bd93692089751b3dc39c274e\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getdestinations.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getsource.json": {
       "hash": "3d7e3832bfe0b2ac0e81cbcf4640a2868d8954e9ccce9600bd74d6b65af37003",
-      "last_checked": "2026-05-19T07:28:40.583115",
+      "last_checked": "2026-05-22T07:43:15.592478",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"049dcfa562e5ca5b1676f94d1ac1753c\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getsource.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/getsources.json": {
       "hash": "6e9c21c70cd90f270c4f3819638a18e37543f15f874afc50c8a56f271f98788d",
-      "last_checked": "2026-05-19T07:28:40.678456",
+      "last_checked": "2026-05-22T07:43:15.701930",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"fe2fb1beec656851a1912f850876f5d2\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/getsources.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/removedestination.json": {
       "hash": "172422dfdcfa39dfe80987d1d6176394a19c4dfe7a645f7ca6f40386f3556ce0",
-      "last_checked": "2026-05-19T07:28:40.780999",
+      "last_checked": "2026-05-22T07:43:15.858141",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"101aa7a04803a0214202ee5c1bd26dbe\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/removedestination.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/removesource.json": {
       "hash": "677ada5cd88a5a45616b6469e5d75f9001a7d39b5bd6f6c3b9154e3ca233f982",
-      "last_checked": "2026-05-19T07:28:40.886838",
+      "last_checked": "2026-05-22T07:43:16.042653",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"d1dc8392d84ba04f5b5c43d2f98ba4cc\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/removesource.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/setproperties.json": {
       "hash": "98e02419015c41d8eff9bfda467ae36e1d16f6825ec330c6e1c670293c37054b",
-      "last_checked": "2026-05-19T07:28:40.974559",
+      "last_checked": "2026-05-22T07:43:16.190698",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"927629aa45260be15401f937d1cad47f\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/setproperties.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/free.json": {
       "hash": "414e4b22ab71f2d3256b9a81f0d0286228e3404b7dd8201a1ed334770dffef48",
-      "last_checked": "2026-05-19T07:28:41.023021",
+      "last_checked": "2026-05-22T07:43:16.313488",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"3d743472e97f004e739279d7b70a915f\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/free.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/init.json": {
       "hash": "1e2fb4a5c4c4bd7b4f045b4c0c86633a381006327981bce569498fa96a5ed4df",
-      "last_checked": "2026-05-19T07:28:41.148687",
+      "last_checked": "2026-05-22T07:43:16.424991",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0609a7cf3a93809a42709877ca9b0d8e\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/init.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidientity/create.json": {
       "hash": "dba1c4c19f464c6739808adcd84c7b40e4d25953cb6ada98224cbdd42f5921a7",
-      "last_checked": "2026-05-19T07:28:41.197967",
+      "last_checked": "2026-05-22T07:43:16.532792",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b5c6c6b811c929399e0072aad63f9819\"",
       "file_path": "documentation/MIDIDriverKit/iousermidientity/create.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/copyproperty-1stjj.json": {
       "hash": "572a2b5a8768205c979dcb6169fb9e1fe66f8695492b14fc1d841e6c9e74fbb8",
-      "last_checked": "2026-05-19T07:28:41.314078",
+      "last_checked": "2026-05-22T07:43:16.661192",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"34d016e70632bbaa355471bfe83c51c2\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/copyproperty-1stjj.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/copyproperty-27g8l.json": {
       "hash": "3fd15b54ab6b0f8f32fc58ed9de5b273696fb1f492eef1e13e194f8c0fc01e3b",
-      "last_checked": "2026-05-19T07:28:41.407118",
+      "last_checked": "2026-05-22T07:43:16.793820",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f48abf0d099dde357f63000646aed7a3\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/copyproperty-27g8l.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getbaseclassid.json": {
       "hash": "2838908d67dbe285519fbe975f7cba8e49d9b79baaf18ff11219f820042bba9d",
-      "last_checked": "2026-05-19T07:28:41.463028",
+      "last_checked": "2026-05-22T07:43:16.958085",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c89af341413ace8271851e1919b0263a\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getbaseclassid.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getclassid.json": {
       "hash": "6e7a5bb65fdcce9919bbde9725d498c73daa37120ea13da8a9446933973e3e21",
-      "last_checked": "2026-05-19T07:28:41.510963",
+      "last_checked": "2026-05-22T07:43:17.092226",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"94c31d63a6a66e93680290a68d94079d\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getclassid.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getname.json": {
       "hash": "dcbf89fe2222a3c33c0824903651331652230331d79b6cd6cba98b303114fd61",
-      "last_checked": "2026-05-19T07:28:41.581572",
+      "last_checked": "2026-05-22T07:43:17.226111",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"2f5d5448ddeb49c9de496ed46cf9fabd\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getname.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getobjectid.json": {
       "hash": "42476c5f5752a626c1bd1318f50dd2756183d0cb3e6c2a03e6dd2f71ae60694b",
-      "last_checked": "2026-05-19T07:28:41.674330",
+      "last_checked": "2026-05-22T07:43:17.377234",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b6b157f59763d1a0ad0970ea7efe59c8\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getobjectid.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getownerobjectid.json": {
       "hash": "83cbb8f2229f13420fc21930471e83b2b38e74efb0999bc5314a3017be2064c5",
-      "last_checked": "2026-05-19T07:28:41.774429",
+      "last_checked": "2026-05-22T07:43:17.485403",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"3602152467edaa8bbbb5dda2011b8c75\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getownerobjectid.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getproperties.json": {
       "hash": "5bd13cfc1cd45a7ec4aae586f12064ff2f9ea4803ba895b811f892b95940fdda",
-      "last_checked": "2026-05-19T07:28:41.872588",
+      "last_checked": "2026-05-22T07:43:17.622330",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"65879f172d05d28030c9c51f88d4d924\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getproperties.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getpropertytype.json": {
       "hash": "0da7de56d2356abe93f3f2cfbdc7f40d2d3226bb2be32cf510193a70fa27ec8d",
-      "last_checked": "2026-05-19T07:28:41.967367",
+      "last_checked": "2026-05-22T07:43:17.735522",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"2cf31c1011a58254ff84e47deccd7e6d\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getpropertytype.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/getworkqueue.json": {
       "hash": "bea04f1cf0130c88bd33d406944ccba3d981adf1f2f30c986aae0610c22667f1",
-      "last_checked": "2026-05-19T07:28:42.014324",
+      "last_checked": "2026-05-22T07:43:17.854102",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5b817a3f57bdc8005c2a093ebe2720b8\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/getworkqueue.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/setname.json": {
       "hash": "bb329032a1681290e600189c1abe6d50785b779c23d99fd0be0272981687f7d3",
-      "last_checked": "2026-05-19T07:28:42.130527",
+      "last_checked": "2026-05-22T07:43:18.017381",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c61b04405b0bd8865ff2f9a52fbb705f\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/setname.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/setproperties.json": {
       "hash": "9179e3fa29b25876418131d87ed1d881220f88d0305ba33993e65eed1fdbb1cf",
-      "last_checked": "2026-05-19T07:28:42.195599",
+      "last_checked": "2026-05-22T07:43:18.137735",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"9ffdec3e13be88cc0f31c0911adc261e\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/setproperties.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/setproperty-24d9k.json": {
       "hash": "dc66366b448872bc83b0d37653834a2865e5619d2e61ae515803c48145385dff",
-      "last_checked": "2026-05-19T07:28:42.325359",
+      "last_checked": "2026-05-22T07:43:18.262351",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c4062aeb9c01fca942a109ae85097c24\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/setproperty-24d9k.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/setproperty-9rf3g.json": {
       "hash": "a384e51dd2a0abef882281f065dd5287defeb2db60eae5271acec9e4e0bfff3c",
-      "last_checked": "2026-05-19T07:28:42.433808",
+      "last_checked": "2026-05-22T07:43:18.418421",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"93ee62cfef13bff94bb7b8094b4cd676\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/setproperty-9rf3g.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/free.json": {
       "hash": "9a4d8f7f2e408edc192f37802cc461f4f606f8e39343e96f1a2b560c7bf58e2b",
-      "last_checked": "2026-05-19T07:28:42.532789",
+      "last_checked": "2026-05-22T07:43:18.593464",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"2c745af4e5f6b9281adb1a9fa4cfab20\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/free.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/init-8nadj.json": {
       "hash": "a9a8d90f1b26daa154f87a46ccd47985719cd99850274a3232137baf5c6b7fdf",
-      "last_checked": "2026-05-19T07:28:42.634254",
+      "last_checked": "2026-05-22T07:43:18.721734",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ac1f807f70badb018c07ac30b4b6967e\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/init-8nadj.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidiobject/init-20qdd.json": {
       "hash": "280232cfa76554c90ccacdb285cb6f29dee7d626153c44b7ad1059600eb7485b",
-      "last_checked": "2026-05-19T07:28:42.733827",
+      "last_checked": "2026-05-22T07:43:18.893258",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"4f5120f067dff5cd2270f69db75fefe3\"",
       "file_path": "documentation/MIDIDriverKit/iousermidiobject/init-20qdd.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/getbaseclassid.json": {
       "hash": "c3218875d82cc34a72adfca6a41bc5a22e6ac427f9fe94bb70d0673dc101c515",
-      "last_checked": "2026-05-19T07:28:42.836603",
+      "last_checked": "2026-05-22T07:43:19.016728",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"502cf8ba31030c7542c7675cc572e15c\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/getbaseclassid.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/getclassid.json": {
       "hash": "bbff52b4e61081a0b37ffaadf8127ffee92e32e5c99bc2f559bad77c21704965",
-      "last_checked": "2026-05-19T07:28:42.930111",
+      "last_checked": "2026-05-22T07:43:19.130758",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"998354c37c04a07e836f1ede822afee5\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/getclassid.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/send.json": {
       "hash": "a683f8f6f718243b86d19d37f394699b0ff53f438b602c51c752533fb8dd77b4",
-      "last_checked": "2026-05-19T07:28:43.025330",
+      "last_checked": "2026-05-22T07:43:19.261480",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c2fb3f5a556f01178c907952b703c448\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/send.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/free.json": {
       "hash": "15d68dbaef56951c90daa835364123e4822270da2d6a20a75ac672dc11930240",
-      "last_checked": "2026-05-19T07:28:43.136782",
+      "last_checked": "2026-05-22T07:43:19.374757",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"52e5110459d515d6787fb260d2997cbb\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/free.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/init.json": {
       "hash": "4ce42fa67b7078065bc4537b93e950d98b34ca1ad168d823dab36e5eeac4cd0c",
-      "last_checked": "2026-05-19T07:28:43.184866",
+      "last_checked": "2026-05-22T07:43:19.530077",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c1cd009365a3f1c41705aa345445bb72\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/init.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/iousermidisource/create.json": {
       "hash": "2914378c83fc2af8287db12ebfa86f9d87b23612bd1bd5468828c7ed5f92df0c",
-      "last_checked": "2026-05-19T07:28:43.299488",
+      "last_checked": "2026-05-22T07:43:19.642237",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"727e1121a4f65405e9e4338d62b38cc8\"",
       "file_path": "documentation/MIDIDriverKit/iousermidisource/create.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/kiousermidiobjectiddriver.json": {
       "hash": "c28dcf4a4b864900d29c71ceba69282d1f782019f27adb5c636ff40712372e01",
-      "last_checked": "2026-05-19T07:28:43.350963",
+      "last_checked": "2026-05-22T07:43:19.776771",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f98550ad179742fb1fc752742245483c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/kiousermidiobjectiddriver.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid.json": {
       "hash": "1ebb6ce9311073ab14d78adbd117e8d6474e59a2bde5f12b0aa8699dca255771",
-      "last_checked": "2026-05-19T07:28:43.463780",
+      "last_checked": "2026-05-22T07:43:19.896636",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"23d7f84a536f59155d37c3dc27f448ec\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiobjectid.json": {
       "hash": "51d71dc3ce85f05653cff397d61ad041763a6501d84cb6089f04b8417edfe10d",
-      "last_checked": "2026-05-19T07:28:43.681472",
+      "last_checked": "2026-05-22T07:43:20.032339",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"4d01c162a8fa2976e43787e611a7d35d\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiobjectid.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty.json": {
       "hash": "eb18d16904ebdb773e7e52942b9a1b9cc33cbda79d05b30234621ce1906cc287",
-      "last_checked": "2026-05-19T07:28:43.795033",
+      "last_checked": "2026-05-22T07:43:20.180499",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c0e616e6ab98a5df794ca33a8e4fed00\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertyselector.json": {
       "hash": "ab9dd2a5b50f5db10e710df22ee9b0741dd9581f8b11bf1fb0f526c79302c85f",
-      "last_checked": "2026-05-19T07:28:43.904748",
+      "last_checked": "2026-05-22T07:43:20.299785",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"9ddeee4e4093569232b1f4a48ab7efb8\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertyselector.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertytype.json": {
       "hash": "38feef2e5242899535a9246c787a8c0d9552f47a328afecb259b32fd10ed283d",
-      "last_checked": "2026-05-19T07:28:43.951604",
+      "last_checked": "2026-05-22T07:43:20.424826",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c2c9f7577db745046c1878bab97d854c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertytype.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiprotocolid.json": {
       "hash": "67561acb9a7783975f2a5226b0a2e4c81d64616e9467620ff514ea16c60b63da",
-      "last_checked": "2026-05-19T07:28:44.072213",
+      "last_checked": "2026-05-22T07:43:20.540157",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"6a1c77d4339ffde4a43b72217d4e93b9\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiprotocolid.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiumpword.json": {
       "hash": "22e81ad1c59a998bd90ab18ed6727b9608c3b783776c4fbc25f77484d6696455",
-      "last_checked": "2026-05-19T07:28:44.121243",
+      "last_checked": "2026-05-22T07:43:20.654412",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c101262d8ea3508e6a4209de5c3732e7\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiumpword.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/midiioblock.json": {
       "hash": "a6faf77d4b252fad6a65b82480c5164874792e05cf8c5ba1a87329a483c8e5c6",
-      "last_checked": "2026-05-19T07:28:44.237489",
+      "last_checked": "2026-05-22T07:43:20.791885",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"71514c06447013570d114ef9c2d05de6\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/midiioblock.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/destination.json": {
       "hash": "b0cf68d4df4789452aba276d16a7855073033a2554b8e0d048ffef7efe18693d",
-      "last_checked": "2026-05-19T07:28:44.331599",
+      "last_checked": "2026-05-22T07:43:20.929403",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"fc1c0cc95d9f7c56ef7b24797d0261ce\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/destination.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/device.json": {
       "hash": "0dfee5f9eb9d369c33d93611d24d01e207e7af25a64b00be3f9bcf03e3ead028",
-      "last_checked": "2026-05-19T07:28:44.434294",
+      "last_checked": "2026-05-22T07:43:21.081734",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"1f0f1bbaf7e15d310084fec5bc25371e\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/device.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/endpoint.json": {
       "hash": "8d52e65593c7007c4788ef431ad3022ba0ba7131b359c13b034628c3278fd2ab",
-      "last_checked": "2026-05-19T07:28:44.531145",
+      "last_checked": "2026-05-22T07:43:21.182566",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"9b9bd1d1ff6ff4ad18ab1734d5d39143\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/endpoint.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/entity.json": {
       "hash": "cf79bc6a45241a63348d207467f34cb7159802fb649262647fe3ffe774038f24",
-      "last_checked": "2026-05-19T07:28:44.642773",
+      "last_checked": "2026-05-22T07:43:21.376646",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"358804ca9a354888fa833d651daea791\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/entity.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/object.json": {
       "hash": "499c9166952ab9ebe84b4b88ec021d8ecb4490aae894a66a19f3ef97ecdacf72",
-      "last_checked": "2026-05-19T07:28:44.743986",
+      "last_checked": "2026-05-22T07:43:21.498790",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5f4cb18c244ee9bc3cfad490b0fd3c2b\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/object.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiclassid/source.json": {
       "hash": "2b6f7318d899f75ac9d2e8285c62cf70e1a67f9d47ff62c7db10ba73e9c0211f",
-      "last_checked": "2026-05-19T07:28:44.860212",
+      "last_checked": "2026-05-22T07:43:21.654094",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"e71f8def68e51172f9648a3398bfd193\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiclassid/source.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/advancescheduletimemusec.json": {
       "hash": "84cbfb763de8d5e46068762cb0a72014f756f98bba3e99bea6d52dcac1a22878",
-      "last_checked": "2026-05-19T07:28:44.965779",
+      "last_checked": "2026-05-22T07:43:21.783602",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a5d1a145174952bc7e1ebb0eb866c881\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/advancescheduletimemusec.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/canroute.json": {
       "hash": "cdd5bf9df9341b50034ad958893d18e55afae8927947c8eec88c3b5e9c6ccc53",
-      "last_checked": "2026-05-19T07:28:45.013256",
+      "last_checked": "2026-05-22T07:43:21.901919",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"d43842563858816a8f460d490a118389\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/canroute.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/connectionuniqueid.json": {
       "hash": "82cd6174e57b737f30892ed5423cbb91102e14468cddc7bee1b021637d56818f",
-      "last_checked": "2026-05-19T07:28:45.148473",
+      "last_checked": "2026-05-22T07:43:22.023593",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"7172ee6f276e27222dd474ce51e9d387\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/connectionuniqueid.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/deviceid.json": {
       "hash": "dcac7fe2d74ba499995c33669f8f5970be9df7aa063d0730dd777caff29ddcac",
-      "last_checked": "2026-05-19T07:28:45.240222",
+      "last_checked": "2026-05-22T07:43:22.158535",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"d6514aee81e242d2bcf65f8e03c73f2d\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/deviceid.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/displayname.json": {
       "hash": "8e2417ac613644de8b685eb2e113132f8ff1dc22bae9f777c635916c709ca3d5",
-      "last_checked": "2026-05-19T07:28:45.339351",
+      "last_checked": "2026-05-22T07:43:22.273360",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"83d94f6b4764c808125b672c36db2b59\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/displayname.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/driverdeviceeditorapp.json": {
       "hash": "614ef8d5ab3b3737b2d667dc72f45f2addfe3fe1baadbc9f7d00b3f41b04c6e7",
-      "last_checked": "2026-05-19T07:28:45.468767",
+      "last_checked": "2026-05-22T07:43:22.415102",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"286a910b19b9c6653b4850fa14d6d386\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/driverdeviceeditorapp.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/driverowner.json": {
       "hash": "32eeb80726dcd9f939133f90c080db9b5935e25aa9ce1a43ecb318420f298810",
-      "last_checked": "2026-05-19T07:28:45.513900",
+      "last_checked": "2026-05-22T07:43:22.606241",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"87828c4418b73888d1848837b810f098\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/driverowner.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/driverversion.json": {
       "hash": "b44cc270400e77452bbf2dd73f0e0e1d1655364b38b996e5aa75dfd0f29ba0d6",
-      "last_checked": "2026-05-19T07:28:45.626631",
+      "last_checked": "2026-05-22T07:43:22.738274",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"17561a1909d4f8b5198a5b39d91aed0b\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/driverversion.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/factorypatchnamefile.json": {
       "hash": "afd8ccf2c4bfffba600de32a8357b23d9583c737f772e0aaa3253d9ed26ffb11",
-      "last_checked": "2026-05-19T07:28:45.674782",
+      "last_checked": "2026-05-22T07:43:22.858800",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"8f13d21795ebeb0920da34537d87a0de\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/factorypatchnamefile.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/image.json": {
       "hash": "5c0323334bdc59a06f280d87f368f113403f6aaef2bb8462dbf46aca579cfd47",
-      "last_checked": "2026-05-19T07:28:45.755161",
+      "last_checked": "2026-05-22T07:43:23.035610",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0133df6afdb47095e6c7620deff2de5e\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/image.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/isbroadcast.json": {
       "hash": "dbd44619921541d883d5537c978341b1711929f76ec54819960c034f0d962811",
-      "last_checked": "2026-05-19T07:28:45.856257",
+      "last_checked": "2026-05-22T07:43:23.138917",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ce96caa7630c796fee2542fd194eba85\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/isbroadcast.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/isdrummachine.json": {
       "hash": "297bcfb96889800393e782e8b733a832535bdd1e9d581b13a3e913d3de912bb0",
-      "last_checked": "2026-05-19T07:28:45.953226",
+      "last_checked": "2026-05-22T07:43:23.266423",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ede1c25062ec92b5ef11f0eebdaad22b\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/isdrummachine.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/iseffectunit.json": {
       "hash": "dee26a68052c96e06ade8f36277f08cd0ffd2de038dd874e374a7427b60b78d8",
-      "last_checked": "2026-05-19T07:28:46.003802",
+      "last_checked": "2026-05-22T07:43:23.446321",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c4803c05c083ad839c1483b09e55cfe9\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/iseffectunit.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/isembeddedentity.json": {
       "hash": "af204bd8a16a0cc5c5ad476a6e278f517a0f13bd56df7e1b5a4145887f323bee",
-      "last_checked": "2026-05-19T07:28:46.129294",
+      "last_checked": "2026-05-22T07:43:23.564313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"5136e2b7d01d6bda6f70ff87e13f7cc4\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/isembeddedentity.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/ismixer.json": {
       "hash": "4677492e80bfd2161bd6ab83054e341a01267b5caa7dafaa90d8f82476534ca2",
-      "last_checked": "2026-05-19T07:28:46.238389",
+      "last_checked": "2026-05-22T07:43:23.714433",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b2a7153e8cae8b31dcaddbb8f4fa48be\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/ismixer.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/issampler.json": {
       "hash": "1b06a5041afe748c28e6c890085d747a25290ae14604480ef85378dc8b926b0d",
-      "last_checked": "2026-05-19T07:28:46.338051",
+      "last_checked": "2026-05-22T07:43:23.846221",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f1aa6113c1e605254759642016b767d0\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/issampler.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/manufacturer.json": {
       "hash": "98981729182f10023e7d22a18a43b2f47237c302303e25db3c40709e9c0e92ce",
-      "last_checked": "2026-05-19T07:28:46.437272",
+      "last_checked": "2026-05-22T07:43:23.993461",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ad0283f0df474fddaed25d7ae2878044\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/manufacturer.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/maxreceivechannels.json": {
       "hash": "00f93d630315ad9823c04352089faaf9193ff6af31e23b6c9e1556729ae88582",
-      "last_checked": "2026-05-19T07:28:46.538897",
+      "last_checked": "2026-05-22T07:43:24.121278",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"654b8746baf14a1063d9199eb1024646\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/maxreceivechannels.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/maxsysexspeed.json": {
       "hash": "bad0f9945fb110e34da4e53b6e0a774ca712a822d02fe2c044854e4a1aa93e6b",
-      "last_checked": "2026-05-19T07:28:46.589136",
+      "last_checked": "2026-05-22T07:43:24.264385",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"12db2c76cef5368299e6edcf26fd401e\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/maxsysexspeed.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/maxtransmitchannels.json": {
       "hash": "b2c06b2cba66877013ddc0a6a869f64e42d8a8f43c1de2e853b73d71eb74d8d6",
-      "last_checked": "2026-05-19T07:28:46.652389",
+      "last_checked": "2026-05-22T07:43:24.394835",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"3d2dc235dd9b3d6f993e4577f598e3ef\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/maxtransmitchannels.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/model.json": {
       "hash": "223d0ef47417fc397c18761a23b064ce324c66ea950083229b14d9c411a35579",
-      "last_checked": "2026-05-19T07:28:46.749307",
+      "last_checked": "2026-05-22T07:43:24.509671",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f50a0920d01855732a428889341f82a8\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/model.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/name.json": {
       "hash": "e47dc0e8538ecaf810345c25c3ec4b92b49c7fc59bd9929916250f1f3c3c2e5c",
-      "last_checked": "2026-05-19T07:28:46.891889",
+      "last_checked": "2026-05-22T07:43:24.634478",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"dae0c4b600b11dc844a77d306de4d819\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/name.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/nameconfiguration.json": {
       "hash": "232c669435bbccd6cd02ff70db7d21d1d1688666ad5f220055354c0eb8dbc1e9",
-      "last_checked": "2026-05-19T07:28:47.000953",
+      "last_checked": "2026-05-22T07:43:24.799246",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b6888d65e6b4b87c3a310ba50bef261c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/nameconfiguration.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/nameconfigurationdictionary.json": {
       "hash": "dddf9d3263f96ed0586ea8942d291bc6bb270f5c54cabc501fb3d0192b595b5d",
-      "last_checked": "2026-05-19T07:28:47.104508",
+      "last_checked": "2026-05-22T07:43:24.931190",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"1b927329e03e4f9260eaa508555d7f11\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/nameconfigurationdictionary.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/offline.json": {
       "hash": "c2fa23189b091e96fb8c2b8a6d2fa1d5d7569a7b16246cfac8e9f3b9a575c6b6",
-      "last_checked": "2026-05-19T07:28:47.201859",
+      "last_checked": "2026-05-22T07:43:25.041021",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"6e6f451c401666c83b8743327ac4ea3d\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/offline.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/pandisruptsstereo.json": {
       "hash": "792d145f3644a33c5db1726542141101fb89d5077667c8e04f8d6a5dcd2bc770",
-      "last_checked": "2026-05-19T07:28:47.300119",
+      "last_checked": "2026-05-22T07:43:25.172493",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"237ed0de98be701d3701c0e787453601\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/pandisruptsstereo.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/private.json": {
       "hash": "ad0d46f368e25d53e220ed1bd86af082159f469d7b6d4a2b6bc60f3b916fad59",
-      "last_checked": "2026-05-19T07:28:47.351121",
+      "last_checked": "2026-05-22T07:43:25.310800",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"51be47026ed44cbf2d5895fe66c72f4c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/private.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/protocolid.json": {
       "hash": "4544bd9e0053833f372ec4e09419e93d94df70c4354ab23f04a4b355117573be",
-      "last_checked": "2026-05-19T07:28:47.478440",
+      "last_checked": "2026-05-22T07:43:25.451885",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"75d97c9e44070823974060773aaa05e0\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/protocolid.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivechannels.json": {
       "hash": "0e19cf6f36d63368f8c6184053d650681bf6a5c5b60220934fec0c0fe86c6e09",
-      "last_checked": "2026-05-19T07:28:47.586031",
+      "last_checked": "2026-05-22T07:43:25.570158",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"4e0dba37cdc78e7055272cf72cf164d5\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivechannels.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesbankselectlsb.json": {
       "hash": "82895a992baa19c9f9cc0788575fb941ed17d5535dc5de541fea81772cc0065c",
-      "last_checked": "2026-05-19T07:28:47.697150",
+      "last_checked": "2026-05-22T07:43:25.719625",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"619c257adeb2ba1a77b385fb39d63d4c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesbankselectlsb.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesbankselectmsb.json": {
       "hash": "b2fa3a4cc416fa1e9587acd116ac8ae036b09c434f10624acb4e484cb1841388",
-      "last_checked": "2026-05-19T07:28:47.793492",
+      "last_checked": "2026-05-22T07:43:25.835948",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a415ab054d5b226122010b31cb5a1a8d\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesbankselectmsb.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesclock.json": {
       "hash": "7ffda0e8cc12f3ca967861c57f2d3b463da6abfad401e5fc48c08a3221c6424b",
-      "last_checked": "2026-05-19T07:28:47.890469",
+      "last_checked": "2026-05-22T07:43:25.980217",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"34f15248c70b33e0171204cd32e8e69a\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesclock.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesmtc.json": {
       "hash": "3196c879599d5bac209132e4080f0967ed93e5ee600ea5f935a222e98504c801",
-      "last_checked": "2026-05-19T07:28:47.989855",
+      "last_checked": "2026-05-22T07:43:26.125512",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"10196664534eb55a750c9f69f82f741a\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesmtc.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesnotes.json": {
       "hash": "914ecf4b2cbd33061680873fdf794b150154ec85306df70eee538d6cdc6cab1f",
-      "last_checked": "2026-05-19T07:28:48.085037",
+      "last_checked": "2026-05-22T07:43:26.263863",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"d3d0074594ba797948209bbdbdeeed06\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesnotes.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/receivesprogramchanges.json": {
       "hash": "426d2ad36cc94c7a0153c6c27868828110c9594e2024abbabc009b7cedff863e",
-      "last_checked": "2026-05-19T07:28:48.182395",
+      "last_checked": "2026-05-22T07:43:26.388714",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"b84994e29b4faa45e15d69f74306d09e\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/receivesprogramchanges.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/singlerealtimeentity.json": {
       "hash": "487cf50d86c017f9199bbf3e269275212007030647b0cac4a30ef8c6f2a96e14",
-      "last_checked": "2026-05-19T07:28:48.236482",
+      "last_checked": "2026-05-22T07:43:26.524579",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0d6be40d8e2d8eaf84f54d09427545e5\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/singlerealtimeentity.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/supportsgeneralmidi.json": {
       "hash": "6b6c12ee053d8d4178b1ec07e7e77ca5e7a5878002903122b3172c5706a8c58d",
-      "last_checked": "2026-05-19T07:28:48.350360",
+      "last_checked": "2026-05-22T07:43:26.644492",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"7834dd7e5321b449298db372830955ed\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/supportsgeneralmidi.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/supportsmmc.json": {
       "hash": "a8875222e25a76c45ac14a59f92d54b1eb2d47912c3962e29a36829d75eb5765",
-      "last_checked": "2026-05-19T07:28:48.453229",
+      "last_checked": "2026-05-22T07:43:26.774560",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"8068e8a2ecca55cad578a055bfb48d08\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/supportsmmc.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/supportsshowcontrol.json": {
       "hash": "433b1c6272e64a6ac724402930b1574c249281719edf1bd2c84367144c52df6d",
-      "last_checked": "2026-05-19T07:28:48.549957",
+      "last_checked": "2026-05-22T07:43:26.916792",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"916b54d4804418c179e78c9b0637a958\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/supportsshowcontrol.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitchannels.json": {
       "hash": "9660cc0bc7cce405b31da6594088c80c5d1006aaa3c3ade7baed3c70db702d5f",
-      "last_checked": "2026-05-19T07:28:48.646020",
+      "last_checked": "2026-05-22T07:43:27.043014",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ca1122eee229196803d228f7c1efbf24\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitchannels.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsbankselectlsb.json": {
       "hash": "6dbb164be2832ab7c8ef25eb9a4f7e1d2baa65f45bc953e5957df5d9ca48019a",
-      "last_checked": "2026-05-19T07:28:48.753648",
+      "last_checked": "2026-05-22T07:43:27.154653",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f529f1c011ad0b5e80254e2a5b6cd8de\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsbankselectlsb.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsbankselectmsb.json": {
       "hash": "8a0ae2ff2c5794109df0869a1def84d457c0f8b8775578479948681a64938e22",
-      "last_checked": "2026-05-19T07:28:48.803884",
+      "last_checked": "2026-05-22T07:43:27.282492",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"c0b85adac4d824b958d15f445befae0a\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsbankselectmsb.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsclock.json": {
       "hash": "694299c76db2a236b2e0ade09422792bd244166e9d8d1083f2a17238dc9dc786",
-      "last_checked": "2026-05-19T07:28:48.916947",
+      "last_checked": "2026-05-22T07:43:27.431861",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"94cf34f88fae74c3ea04539fa1cf920b\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsclock.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsmtc.json": {
       "hash": "698ba8954dd1c9c6333cbdd288bf80a290cbb234689a244dea93f8860d9e9848",
-      "last_checked": "2026-05-19T07:28:49.009274",
+      "last_checked": "2026-05-22T07:43:27.558311",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"194cab62f0efba718333b0de362fe749\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsmtc.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsnotes.json": {
       "hash": "1a63094e03b32c7db8bf7fab637e0f895a556d31bd7e9ce135e8b4a4d96ddedb",
-      "last_checked": "2026-05-19T07:28:49.108908",
+      "last_checked": "2026-05-22T07:43:27.699800",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"e60b70a1d84abbe5964018fcb4c7dde7\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsnotes.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/transmitsprogramchanges.json": {
       "hash": "f8b0a4ba5f3a0992847965427d67139badf5ca3e251453430594938f73661bdb",
-      "last_checked": "2026-05-19T07:28:49.215101",
+      "last_checked": "2026-05-22T07:43:27.811300",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"21dc8f0b4263a8195301f99a4acaf37c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/transmitsprogramchanges.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/umpactivegroupbitmap.json": {
       "hash": "020e3988788a7ee260b921c57092be39aa2c9e99e6c4f50ac8564eef6dcc3a45",
-      "last_checked": "2026-05-19T07:28:49.317030",
+      "last_checked": "2026-05-22T07:43:27.950288",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"9c5342cb64d1392feceaff2445ab7da3\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/umpactivegroupbitmap.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/umpcantransmitgroupless.json": {
       "hash": "b619d2cb528bf5485d71668992069d3ff0c265b0c22e45a4609c458980388372",
-      "last_checked": "2026-05-19T07:28:49.411463",
+      "last_checked": "2026-05-22T07:43:28.090405",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a7cd5bf92bb7eb94b3bf669ffee08177\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/umpcantransmitgroupless.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/uniqueid.json": {
       "hash": "8579843809303218fd5d275e344c0a1a3368f778ff4e878edecebb5abe21f977",
-      "last_checked": "2026-05-19T07:28:49.509027",
+      "last_checked": "2026-05-22T07:43:28.208664",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"6a26d3928375e3d23f59e1df7e48424c\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/uniqueid.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/unknown.json": {
       "hash": "9a4c00d33fc65aa8343de7016e9db431e5f7ab8ba8099b89b2e673f96c729b35",
-      "last_checked": "2026-05-19T07:28:49.610398",
+      "last_checked": "2026-05-22T07:43:28.329493",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0fdef9b05cc6ebce2b6ed099f418d40f\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/unknown.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/userpatchnamefile.json": {
       "hash": "9c8d12455e33c995b79df70875bbace8add57cc39926bba0da513352ded52d4f",
-      "last_checked": "2026-05-19T07:28:49.718190",
+      "last_checked": "2026-05-22T07:43:28.473003",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"52e94c6d717da34db3526b8795021921\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/userpatchnamefile.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiproperty/associatedendpoint.json": {
       "hash": "5e2162ceee331477b8c2927f848f48321608101d5c9063d2596ee0367742f1b5",
-      "last_checked": "2026-05-19T07:28:49.816419",
+      "last_checked": "2026-05-22T07:43:28.629488",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"598f8cd1dd63e2797fea3d190bd52fa7\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiproperty/associatedendpoint.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertytype/data.json": {
       "hash": "19ea5463492da86f5b764b6865ea0722fafdf43ed883e4ea7d173bd9782e5198",
-      "last_checked": "2026-05-19T07:28:49.860069",
+      "last_checked": "2026-05-22T07:43:28.768137",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"f4b7a760d05a420a344569cc64df57a4\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertytype/data.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertytype/dictionary.json": {
       "hash": "a02bbdc07f72a4c15dd8605774c488119ff29a360f0d059c8b004151308f83b2",
-      "last_checked": "2026-05-19T07:28:49.971941",
+      "last_checked": "2026-05-22T07:43:28.892415",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"cde9ee828f2730eee5ece25c01a77080\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertytype/dictionary.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertytype/number.json": {
       "hash": "4a15f1d5f371f6f2bc3ba561884f0812fa1c89e4f186591ec7ca99930441f69a",
-      "last_checked": "2026-05-19T07:28:50.063952",
+      "last_checked": "2026-05-22T07:43:29.020458",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"a95e388b64d7a31de74e500a971ea4c0\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertytype/number.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidipropertytype/string.json": {
       "hash": "8dda4a289f894188b9b408fe407b996616661967c428d9ef4a9a833139ea15f4",
-      "last_checked": "2026-05-19T07:28:50.159051",
+      "last_checked": "2026-05-22T07:43:29.135093",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"9668ee9abb41636ab654c9337646ca2b\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidipropertytype/string.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiprotocolid/midiprotocol_1_0.json": {
       "hash": "28431274127773c62bd302bebe151735d803be9ee5570fa945f999b73e211050",
-      "last_checked": "2026-05-19T07:28:50.252879",
+      "last_checked": "2026-05-22T07:43:29.272404",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"ec305250a179880d43b47206c92ea087\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiprotocolid/midiprotocol-1-0.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mididriverkit/mididriverkit/iousermidiprotocolid/midiprotocol_2_0.json": {
       "hash": "4e28df43514eaf0703d0a4107649b4370df71ef380ef935c8b4593aa16aa56f8",
-      "last_checked": "2026-05-19T07:28:50.360624",
+      "last_checked": "2026-05-22T07:43:29.421216",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:33.203780",
+      "session_id": "2026-05-22T07:43:03.774656",
       "etag": "W/\"0a2e4fea92d033adf67dcd2260e68ec9\"",
       "file_path": "documentation/MIDIDriverKit/mididriverkit/iousermidiprotocolid/midiprotocol-2-0.md"
     },

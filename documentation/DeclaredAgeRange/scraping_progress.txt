@@ -1,4 +1,4 @@
 Completed scraping Declared Age Range!
-Total pages scraped: 44
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 45
 Pages failed: 0

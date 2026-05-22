@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-05-15T08:53:21.718419",
-    "total_files": 786,
+    "last_updated": "2026-05-22T08:53:26.067192",
+    "total_files": 783,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -775,9 +775,6 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/distributed.html": "b42d1e826d1c2f35592b06910c3c5e5703bc0ee929d92bc299019c602819dd70",
     "github:ml-explore/mlx-swift:Source/MLX/Documentation.docc/Articles/wired-memory.md": "906d59d75a85f6a2559c0f86081dc12add2130608bc10351398cbfe01336c3db",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/wired-memory.md": "4d7b3e1fd1fe150096d2191441b3f3030aa9c22158c7ddbe69bbbd443ae66328",
-    "MLX:https://ml-explore.github.io/mlx/build/html/": "1be22876b7f5ab190268d8271f17dbb0c94a78a15e5fd5c7e4d725840aa5528c",
-    "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
-    "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.fsdp_apply_gradients.html": "e6008d850c83334b3588e25425d7f0c7fc8da766fcd069101661c9eabc1aaccc",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/developing.md": "0c23f858032d9f8f8cded26a69d8b86121db62c169becd9b99d63e48d6cf0fe5",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "e0a994b7639c772c4a8ff577913663416ecc2f7cd3fb677d6d2bdb747d13611e",

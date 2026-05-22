@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:28:43.759693",
+    "last_updated": "2026-05-22T07:43:12.734448",
     "total_pages": 408,
-    "session_id": "2026-05-19T07:28:21.368538"
+    "session_id": "2026-05-22T07:42:35.889931"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Cinematic.json": {
       "hash": "d532f14705b00b9e03e962a9c070481514f7e20dc96d1057189fb7a0fd41627d",
-      "last_checked": "2026-05-19T07:28:21.764765",
+      "last_checked": "2026-05-22T07:42:36.119544",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3cc9691ec64814fe403d902e00bbe8ac\"",
       "file_path": "documentation/Cinematic/Cinematic.md"
     },
     "https://developer.apple.com/documentation/Cinematic": {
       "hash": "d532f14705b00b9e03e962a9c070481514f7e20dc96d1057189fb7a0fd41627d",
-      "last_checked": "2026-05-19T07:28:21.646558",
+      "last_checked": "2026-05-22T07:42:36.001330",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3cc9691ec64814fe403d902e00bbe8ac\"",
       "file_path": "documentation/Cinematic/Cinematic.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/playing-and-editing-cinematic-mode-video.json": {
       "hash": "c0c185a8402da844cfe3e82f0889c4c9556a5275fd16197a71781e7112cce6e9",
-      "last_checked": "2026-05-19T07:28:22.149100",
+      "last_checked": "2026-05-22T07:42:36.362562",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"bae4723e6ff71db48fc899e670575b5d\"",
       "file_path": "documentation/Cinematic/playing-and-editing-cinematic-mode-video.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe.json": {
       "hash": "dc816211c492b98a34b6f6100f2a9115b67c6a1ca47da068883c9846d7cb08a3",
-      "last_checked": "2026-05-19T07:28:22.384931",
+      "last_checked": "2026-05-22T07:42:36.502768",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"587de78badfbc01b4509f326a9065899\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2.json": {
       "hash": "214bf33133eedb320b733cc09244db4995ac4d4e8908371eb053cca1797fdc47",
-      "last_checked": "2026-05-19T07:28:22.459462",
+      "last_checked": "2026-05-22T07:42:36.668956",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"19e32de149abfd853cc4ab68622ca62b\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncompositioninfo-7eunn.json": {
       "hash": "7a63c5342952e9392effd9631626d1e76519341fcde6a3af03ff45ef8d99cfd8",
-      "last_checked": "2026-05-19T07:28:22.666803",
+      "last_checked": "2026-05-22T07:42:36.816223",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c40aa681f3107834da893fb930c8fbb4\"",
       "file_path": "documentation/Cinematic/cncompositioninfo-7eunn.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8.json": {
       "hash": "afa49bae2185f7afb93ba0a95511dc6beaae5b9147328fe573252aaa1b1e7765",
-      "last_checked": "2026-05-19T07:28:22.921480",
+      "last_checked": "2026-05-22T07:42:36.983015",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c61d6964eb4a2ae25dbc2a3819a034b7\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/editing-spatial-audio-with-an-audio-mix.json": {
       "hash": "454dbd1c89a750e7dd5d70f938e2604bd8a964ee1ef33ff32f822260024b8a50",
-      "last_checked": "2026-05-19T07:28:22.984395",
+      "last_checked": "2026-05-22T07:42:37.145115",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"96a1e93f5b18192e4c45644473cbcd42\"",
       "file_path": "documentation/Cinematic/editing-spatial-audio-with-an-audio-mix.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct.json": {
       "hash": "e52e1c81a44f9713c36490f3134be6314c846a637ace53ede06a4419ed68f6cd",
-      "last_checked": "2026-05-19T07:28:23.095825",
+      "last_checked": "2026-05-22T07:42:37.315997",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"72932969afcbf834dc6611ce74590919\"",
       "file_path": "documentation/Cinematic/cndetection-swiftstruct.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct.json": {
       "hash": "8148814d6245d770a3ba9703be5a0b120824e11138fca074e8d12c6e8983c225",
-      "last_checked": "2026-05-19T07:28:23.172275",
+      "last_checked": "2026-05-22T07:42:37.473183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"43c019ab13399dcb045105c0b69c04d3\"",
       "file_path": "documentation/Cinematic/cndecision-swiftstruct.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd.json": {
       "hash": "abeadb79b5b3ae5edf6f7db66991776a85964dda5e95229ad6a706eb66d80bb1",
-      "last_checked": "2026-05-19T07:28:23.274771",
+      "last_checked": "2026-05-22T07:42:37.595505",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"0db2c17fcd13ecb5d08e0b3bd1ccf3ad\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw.json": {
       "hash": "a47cf24d01440ae0ea3eaf8d4a7dd8d453074ae9fb3cf526f98efd8a675bf6ac",
-      "last_checked": "2026-05-19T07:28:23.495536",
+      "last_checked": "2026-05-22T07:42:37.758466",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"22e255b4482afae5a56878457d877706\"",
       "file_path": "documentation/Cinematic/cnfixeddetectiontrack-93rrw.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-9a2zo.json": {
       "hash": "22f770819342371eb972b985c426eaf6e4f54f15dc4e943d4aa067a8c2aaafdd",
-      "last_checked": "2026-05-19T07:28:23.596666",
+      "last_checked": "2026-05-22T07:42:37.930904",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ec1966b17dd479f082196301573638da\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype.json": {
       "hash": "237e0359c43f2a60a4af299f09aac1c9399f2e9a52436e7db06e3e7ab0274ecf",
-      "last_checked": "2026-05-19T07:28:23.696778",
+      "last_checked": "2026-05-22T07:42:38.049844",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"61e8c2b0fbe2d669dac8ad2802ab1b8b\"",
       "file_path": "documentation/Cinematic/cndetectiontype.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-swift.struct.json": {
       "hash": "e8263596a684e30759a9c07dfda1375859a8aa6ce235d36e099291763f65bec8",
-      "last_checked": "2026-05-19T07:28:23.795683",
+      "last_checked": "2026-05-22T07:42:38.200187",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"fcbcfa2e415d5f1c4ff87b9207660b91\"",
       "file_path": "documentation/Cinematic/cnboundsprediction-swiftstruct.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598.json": {
       "hash": "4d0a60fbea2d92de42171ae6f845899811356046e28a2482e6b5895db74b67b1",
-      "last_checked": "2026-05-19T07:28:24.005928",
+      "last_checked": "2026-05-22T07:42:38.383310",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4f24c473b4dd4d8a3af2bc3b35cfdaf0\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror.json": {
       "hash": "bb80018c867618642fca948e16ef297abae9db0abc83fe64e68ac56a1ab0de27",
-      "last_checked": "2026-05-19T07:28:24.100805",
+      "last_checked": "2026-05-22T07:42:38.545816",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4a37f569ad66df35f3035a24ff675c48\"",
       "file_path": "documentation/Cinematic/cncinematicerror.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cinematic-enumerations.json": {
       "hash": "7035877433c0a8e29e589d8597875d31aa51a8488e9fef5450fac6656dfca31f",
-      "last_checked": "2026-05-19T07:28:24.184795",
+      "last_checked": "2026-05-22T07:42:38.863496",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"23d8d99f64d312c40f6126201cd662da\"",
       "file_path": "documentation/Cinematic/cinematic-enumerations.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cinematic-constants.json": {
       "hash": "9fe1598c3958ac3f7277f84e05817e030c7855e8b432977e8104a89311a24463",
-      "last_checked": "2026-05-19T07:28:24.297275",
+      "last_checked": "2026-05-22T07:42:39.151636",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5afbd331ecad78704e30d8af802a3cd1\"",
       "file_path": "documentation/Cinematic/cinematic-constants.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cinematic-data-types.json": {
       "hash": "4540d53d40c1e14ac1b7efa54670cd8575a60c7d71b39b9e9744028b7edf7b93",
-      "last_checked": "2026-05-19T07:28:24.386540",
+      "last_checked": "2026-05-22T07:42:39.273177",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d1f6eb48f35bb87f24278796f88b7bc7\"",
       "file_path": "documentation/Cinematic/cinematic-data-types.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev.json": {
       "hash": "bf2fb21dfee9fb6c0bbe08ba36fd8319b7fdd3e3062777eef245fbe6fce36920",
-      "last_checked": "2026-05-19T07:28:24.602772",
+      "last_checked": "2026-05-22T07:42:39.604342",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"bee6fc8e1aa2c162732184aef4182a09\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiocontenttype.json": {
       "hash": "a2f7ef9790454353f6f9d1a99bf2cb10d4cd13951c4cf372cb9743f5e3943d46",
-      "last_checked": "2026-05-19T07:28:24.828606",
+      "last_checked": "2026-05-22T07:42:39.756177",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ab9b84c47c066b0f2a9e82478060a4b4\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle.json": {
       "hash": "461176cb606e0e75b7ee3988cb990416963abfb3fd360b131d12e5e26bcee3ba",
-      "last_checked": "2026-05-19T07:28:24.925982",
+      "last_checked": "2026-05-22T07:42:39.929268",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"beee7836f7bbfc21d575965b1da542dc\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes.json": {
       "hash": "f15b14832d03e38d97bdef08a2d67185cb37f3e8be7f5181004af43623d5d99c",
-      "last_checked": "2026-05-19T07:28:25.190499",
+      "last_checked": "2026-05-22T07:42:40.235633",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"dfd8fba2ee1dd948c8d32778ec65eb43\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame.json": {
       "hash": "b6852cd7fe3ec45b30d86fe7a0daf401e9753338205c1fcaa1626657efea6a91",
-      "last_checked": "2026-05-19T07:28:25.417758",
+      "last_checked": "2026-05-22T07:42:40.528858",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b51291fb850aafea533a85ce2fcaecc4\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/init(asset:changes:progress:).json": {
       "hash": "26dc5485703866c2b89468912e2fb951789790261f45e69b0ba95abb473ab1f7",
-      "last_checked": "2026-05-19T07:28:25.648033",
+      "last_checked": "2026-05-22T07:42:40.819098",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"daa13bcd607cdbb39d0f7200853a9fab\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/init-assetchangesprogress.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/addeddetectiontracks.json": {
       "hash": "dfa74a521db821c870356a14a91f231ed6329f704da24dcb64357a76a41010b6",
-      "last_checked": "2026-05-19T07:28:25.877303",
+      "last_checked": "2026-05-22T07:42:40.971813",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c12f11163ab3fb4f324ff2139c188149\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/addeddetectiontracks.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/fnumber.json": {
       "hash": "1a288d06bf32449443372ebf336ac44decb1d0816fd19208f35edc25a462f16d",
-      "last_checked": "2026-05-19T07:28:25.958923",
+      "last_checked": "2026-05-22T07:42:41.285250",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"be4ea60c0d722fd311a5f7a6f3414ab2\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/fnumber.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/timerange.json": {
       "hash": "a799655f91d48d9eddc4a5b6d00bfd59f13ca706afc773d907477cd5e7ab7f9d",
-      "last_checked": "2026-05-19T07:28:26.035258",
+      "last_checked": "2026-05-22T07:42:41.594100",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e3b91f4f7864139165995687bdc08c70\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/timerange.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/adddetectiontrack(_:).json": {
       "hash": "09764889c27ba7795740f26bae63affbe6beab0ab682cfa5f9274c59b7e3ee09",
-      "last_checked": "2026-05-19T07:28:26.134597",
+      "last_checked": "2026-05-22T07:42:41.906681",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3fe376a9410e185f48e15dd31b3be0b1\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/adddetectiontrack.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/adduserdecision(_:).json": {
       "hash": "103897b613cd42b8662c5e2c71557ed368cb99bc0e82c64335367e4d830cba7d",
-      "last_checked": "2026-05-19T07:28:26.178031",
+      "last_checked": "2026-05-22T07:42:42.085976",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a5f06536968e1490805789610127f0ba\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/adduserdecision.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/basedecisions(in:).json": {
       "hash": "6d585cfb91474f0eb60a3f9373d4111ca9ca27e7f758c2c5c898b3a26ac2828f",
-      "last_checked": "2026-05-19T07:28:26.309282",
+      "last_checked": "2026-05-22T07:42:42.393458",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8acbe8f40d112ae466bed7cde5ee804c\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/basedecisions-in.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes().json": {
       "hash": "962fac25af28e216e17dd2314464f3dd420968d0e610b42be44d58f3b5dbdf4f",
-      "last_checked": "2026-05-19T07:28:26.403199",
+      "last_checked": "2026-05-22T07:42:42.562670",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6ea2e064a1a8563d681cc57cc6303d2f\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes(trimmedby:).json": {
       "hash": "e9e402fb7b57e3f9a5164cecd11619dacd41c3a910065dc14790519e6d339082",
-      "last_checked": "2026-05-19T07:28:26.458434",
+      "last_checked": "2026-05-22T07:42:42.745302",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"763a0ced873e5b6b0a0fef2b411390ac\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes-trimmedby.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/decision(after:).json": {
       "hash": "cd42bc17d66d59db82839a6358c3f92552c4b633235e6cac5f2555a71388018b",
-      "last_checked": "2026-05-19T07:28:26.560786",
+      "last_checked": "2026-05-22T07:42:42.912209",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a3bafb44255f9ea49f882cf3c4b8533d\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/decision-after.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/decision(at:tolerance:).json": {
       "hash": "3938c4ca5363ca8b245e414854c58019ae559174d884066d3579f31456a0ecee",
-      "last_checked": "2026-05-19T07:28:26.614530",
+      "last_checked": "2026-05-22T07:42:43.076189",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b556e04bd041ebb91355cf280712a6f1\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/decision-attolerance.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/decision(before:).json": {
       "hash": "ce8d6a5a69b0e31915e219b63b445cc810f120b2bb3639a17e9abd261e7fe7af",
-      "last_checked": "2026-05-19T07:28:26.706335",
+      "last_checked": "2026-05-22T07:42:43.389890",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"915108282acb44aa8357619c9e5660af\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/decision-before.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/decisions(in:).json": {
       "hash": "dce50f80f7fc7cd59be18aa3a55d676d70a947060210f6889d6b0af8d9b233d9",
-      "last_checked": "2026-05-19T07:28:26.801129",
+      "last_checked": "2026-05-22T07:42:43.547203",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"2633eb90cb6100e24b434ab824f865a8\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/decisions-in.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/detectiontrack(for:)-1xvsa.json": {
       "hash": "29b086f36f1f51b96af5a7a6680e6decfa122d8eb536309a5ba7352ef910a572",
-      "last_checked": "2026-05-19T07:28:26.901489",
+      "last_checked": "2026-05-22T07:42:43.703539",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8bedfa2fe06ea897171f60bb0da8e89b\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/detectiontrack-for-1xvsa.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/detectiontrack(for:)-6f8mk.json": {
       "hash": "fda6b5e8b7e2c50df62ca69ba717df43b9346052188bba701d92f3a8c8d09331",
-      "last_checked": "2026-05-19T07:28:27.010914",
+      "last_checked": "2026-05-22T07:42:44.018418",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"07f2eafd5894afce152578d2be18d03e\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/detectiontrack-for-6f8mk.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame(at:tolerance:).json": {
       "hash": "4cc573b454f0ed1de3281624dec23cf7a0cffa268c8627d4a2cdd0d205a1d42c",
-      "last_checked": "2026-05-19T07:28:27.233610",
+      "last_checked": "2026-05-22T07:42:44.310655",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"09bbd3df84fdc06a00e0de2d4ea3fd41\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame-attolerance.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frames(in:).json": {
       "hash": "3c8f2d0b73e772af278aa5e7677528bd293239ddfba300801a5770c1bcb65d02",
-      "last_checked": "2026-05-19T07:28:27.284553",
+      "last_checked": "2026-05-22T07:42:44.467520",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5b56d503a4190de3844b2f673e8aabcc\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frames-in.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/primarydecision(at:).json": {
       "hash": "ddba830689d7736c4681174aa74c11a7b793a15fe158c48ba85bcbedee843746",
-      "last_checked": "2026-05-19T07:28:27.392861",
+      "last_checked": "2026-05-22T07:42:44.767671",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"2d80dbc8d880d99c74035f6b0efde9bc\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/primarydecision-at.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/reload(changes:).json": {
       "hash": "71d1b0f6ab26d54eaaee33534338883a283f282df670ba8da9f1b757b09ed818",
-      "last_checked": "2026-05-19T07:28:27.492883",
+      "last_checked": "2026-05-22T07:42:45.069113",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e3c85df1e8a766f7c21ea80d75444222\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/reload-changes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/removealluserdecisions().json": {
       "hash": "b555ac9360d6c1d50ea57b36a85a077124543f2a210cb4f4c6afd848662f79e5",
-      "last_checked": "2026-05-19T07:28:27.590126",
+      "last_checked": "2026-05-22T07:42:45.238452",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c9f93f85312469f14ef40230df449163\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/removealluserdecisions.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/removedetectiontrack(_:).json": {
       "hash": "9866beda3500a3c109e375def8261302cc6b9adf22315d7db691b8159cfaaa89",
-      "last_checked": "2026-05-19T07:28:27.688888",
+      "last_checked": "2026-05-22T07:42:45.417006",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"7f9313ac7d62d52235cffd923821dbbc\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/removedetectiontrack.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/removeuserdecision(_:).json": {
       "hash": "aad52ba205e307a91cdc552323a5d645581a7c016a03c6b02af5a912c7f2d1f6",
-      "last_checked": "2026-05-19T07:28:27.792023",
+      "last_checked": "2026-05-22T07:42:45.569265",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b346d9cbdffd38109f9e242f6252a325\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/removeuserdecision.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/secondarydecision(at:).json": {
       "hash": "5be647656d4d81dfafab6033d77153f18b25ce7297a83b09671897e5251eeea9",
-      "last_checked": "2026-05-19T07:28:28.019114",
+      "last_checked": "2026-05-22T07:42:45.864453",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a32e858a01c4bc4cdce95e6bfea74120\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/secondarydecision-at.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/timerangeoftransition(after:).json": {
       "hash": "76dcf91491c3cb449c4b4670634278ef4b385929f9a3899a99da7bf260ee6969",
-      "last_checked": "2026-05-19T07:28:28.127602",
+      "last_checked": "2026-05-22T07:42:46.164426",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"cca0c20cfd9815041cf79fe224412b48\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/timerangeoftransition-after.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/timerangeoftransition(before:).json": {
       "hash": "bbf0f54a0e7bfb81d05022239bac1a14459b58dc09c2840f6313dc6e711f3ada",
-      "last_checked": "2026-05-19T07:28:28.366454",
+      "last_checked": "2026-05-22T07:42:46.468313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5f1c99b22143d2cb1b5b136a7bde7fc9\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/timerangeoftransition-before.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/userdecisions(in:).json": {
       "hash": "3384174b7851a6f5c27f38e32300ca61236beb8e0b3ae8259b5ccb3838f09ac6",
-      "last_checked": "2026-05-19T07:28:28.466312",
+      "last_checked": "2026-05-22T07:42:46.762323",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"78aa080a81e881aad1a10124493f0676\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/userdecisions-in.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/init(asset:).json": {
       "hash": "5981ec279974e048cf36ae1eca9f0385ac889a7f842e4b75d9a7fd9b8c0654b0",
-      "last_checked": "2026-05-19T07:28:28.569239",
+      "last_checked": "2026-05-22T07:42:46.935694",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e1f080dd3e0ced6a0b1aaad2e0ada3ff\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/init-asset.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/allcinematictracks.json": {
       "hash": "6df5bf2de7db398cd39f7bfe4b7e6ab6ea5ab032acfa2a0d78644b016223a0c2",
-      "last_checked": "2026-05-19T07:28:28.616847",
+      "last_checked": "2026-05-22T07:42:47.124872",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"65a87676cc93a45eea253818de5b966c\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/allcinematictracks.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/asset.json": {
       "hash": "2f517ac0215e91a95c7e21eaeeb419378c934e1dac1d62a333288eed44d01eb5",
-      "last_checked": "2026-05-19T07:28:28.742575",
+      "last_checked": "2026-05-22T07:42:47.408747",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"808982d4daaac57268dedcac4fce78f0\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/asset.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/cinematicdisparitytrack.json": {
       "hash": "f71d80cb1176670ccd6d063cf91854a924e69b4ec568233a0275347df3e0f376",
-      "last_checked": "2026-05-19T07:28:28.845274",
+      "last_checked": "2026-05-22T07:42:47.581577",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"379ee69c52d192318bdc163eb6f9ed2b\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/cinematicdisparitytrack.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/cinematicmetadatatrack.json": {
       "hash": "6750e6fc96cd7f80122e51f2689f3d295ea49b9e55acd04307aa151bcb291cca",
-      "last_checked": "2026-05-19T07:28:28.944035",
+      "last_checked": "2026-05-22T07:42:47.750952",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"684bf430bc853d46fdae8fb233332a2f\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/cinematicmetadatatrack.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/cinematicvideotrack.json": {
       "hash": "352410405ade10fa94ea8e7814fdb3d3fbe968c2c03966b51ae6a2d22b7505b6",
-      "last_checked": "2026-05-19T07:28:28.999222",
+      "last_checked": "2026-05-22T07:42:47.903949",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"680b876825e4a69eff884f1d9a6bd686\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/cinematicvideotrack.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/frametimingtrack.json": {
       "hash": "d4d03c344257320b3fb85c1d4a3105d8a4205aa2d65ab87fab954a30ca752ecc",
-      "last_checked": "2026-05-19T07:28:29.047951",
+      "last_checked": "2026-05-22T07:42:48.060238",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8150209330413375d949701dc0c71798\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/frametimingtrack.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/naturalsize.json": {
       "hash": "2658def5e4c825c6769ddb730be9b9307821c6f92f1abd42ff72518d3c2da866",
-      "last_checked": "2026-05-19T07:28:29.121601",
+      "last_checked": "2026-05-22T07:42:48.218085",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ada6717f92dcf95e7d76c98b7864c54a\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/naturalsize.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/preferredsize.json": {
       "hash": "d7d5278a22ce6429bc18b5c34f00d9f85c0d748be3595e8a4b9f49425521e597",
-      "last_checked": "2026-05-19T07:28:29.266302",
+      "last_checked": "2026-05-22T07:42:48.379229",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"76cd2aa00672258f7fe47a97a603ce0d\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/preferredsize.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/preferredtransform.json": {
       "hash": "639be6e5f3337c6f2b90fc53ceb0cef5c38c026e1439e7c5a158197ac4511a3a",
-      "last_checked": "2026-05-19T07:28:29.384455",
+      "last_checked": "2026-05-22T07:42:48.535016",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"898b971e06464f65bd4dc3cc8ad3b0c2\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/preferredtransform.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/sampledatatrackids.json": {
       "hash": "c6ba4be9c24dbb4ffcf7f739802c6eae7506e79202dcce70b68d1997e9abb481",
-      "last_checked": "2026-05-19T07:28:29.488663",
+      "last_checked": "2026-05-22T07:42:48.707797",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c7da6d9043584ae02ffd97061d42a87d\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/sampledatatrackids.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/timerange.json": {
       "hash": "ea1c2c3b52392614651f0d7e7f7d6b5737a0d92a9e042dc4ad1cd3025ef1bf01",
-      "last_checked": "2026-05-19T07:28:29.584617",
+      "last_checked": "2026-05-22T07:42:48.875990",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"0f0432cc3582b5d1fc4e23cad9db0e9b\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/timerange.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/videocompositiontrackids.json": {
       "hash": "5d9f6d1060ae6f3ca2d8a339941bbb0151d209120451b99c2c80a833a95bf6ca",
-      "last_checked": "2026-05-19T07:28:29.685396",
+      "last_checked": "2026-05-22T07:42:49.024244",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"03bf58c44bc6c1a7ed41b9ac8638a629\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/videocompositiontrackids.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/videocompositiontracks.json": {
       "hash": "47e685cd34fbe48260ed8dce27c3b507b8f9979b1fa4b904cf5f17442f09726c",
-      "last_checked": "2026-05-19T07:28:29.789458",
+      "last_checked": "2026-05-22T07:42:49.310168",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4790ef03620ee06124a0aee1caada0f6\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/videocompositiontracks.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetinfo-2ata2/iscinematic(asset:).json": {
       "hash": "50e002302d953bbe210055da45ef4d9a32924896fe716fa46fdfff12dd09f520",
-      "last_checked": "2026-05-19T07:28:29.835909",
+      "last_checked": "2026-05-22T07:42:49.472559",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4a763f43bcfee2e08f45128239bcc7d6\"",
       "file_path": "documentation/Cinematic/cnassetinfo-2ata2/iscinematic-asset.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncompositioninfo-7eunn/inserttimerange(_:of:at:).json": {
       "hash": "f668849ea597624a2c0b1b60470d48249f7169d14d50faea017c345fae869f89",
-      "last_checked": "2026-05-19T07:28:29.949077",
+      "last_checked": "2026-05-22T07:42:49.637469",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"0f0b2d031d14ea7cdd652967a0d932b0\"",
       "file_path": "documentation/Cinematic/cncompositioninfo-7eunn/inserttimerange-ofat.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/attributes.json": {
       "hash": "6c7aaad4e507577741acbcfeb23ece7916d1e0046f37bd8bb057ff2054abf5d8",
-      "last_checked": "2026-05-19T07:28:29.997117",
+      "last_checked": "2026-05-22T07:42:49.921396",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"faf592bb7221cdf05b29799913f94e72\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/attributes.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/frameattributes.json": {
       "hash": "b2d0925e8b0600884ac3b52b8b0b806e47533b1a1e2ed8eb27418f5e1f6c3a2e",
-      "last_checked": "2026-05-19T07:28:30.116285",
+      "last_checked": "2026-05-22T07:42:50.069852",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c996f4e814832c6ae1cb4c5629c79381\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/frameattributes.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/init(commandqueue:sessionattributes:preferredtransform:quality:).json": {
       "hash": "a7a17b50c68de767bb540a63c2d229793bdac4e0a32c6ab033bad70bd5277ce2",
-      "last_checked": "2026-05-19T07:28:30.168880",
+      "last_checked": "2026-05-22T07:42:50.226437",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c065874822404af06278bd97111946f6\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/init-commandqueuesessionattributespreferredtransformquality.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/commandqueue.json": {
       "hash": "ded584d2d74a24d041eefcb9d52f3a4e914a7a65cb068f7d14f3a80660962607",
-      "last_checked": "2026-05-19T07:28:30.278489",
+      "last_checked": "2026-05-22T07:42:50.525674",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e1dbf267a24ccbf6b9cd22e42a153c7f\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/commandqueue.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/preferredtransform.json": {
       "hash": "748658afdaf5cd6de5e922de1e67d5277b0235b12a00a1bdccb209de4a901cdf",
-      "last_checked": "2026-05-19T07:28:30.384567",
+      "last_checked": "2026-05-22T07:42:50.693026",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6b39cbf5bed9e9cbc1735b5b93104182\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/preferredtransform.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/quality.json": {
       "hash": "ced929a5b8831200d857f51d1c30d890b4eb72d6f56214baac21d8d46abc0a26",
-      "last_checked": "2026-05-19T07:28:30.489673",
+      "last_checked": "2026-05-22T07:42:50.845912",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6e293655294ab3a2df02c67810b81293\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/quality.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/sessionattributes.json": {
       "hash": "3b5d8d3c94c04361f7704d5cc5b2f3c4035740935fe9dcc7ae2a64cc629764e9",
-      "last_checked": "2026-05-19T07:28:30.536352",
+      "last_checked": "2026-05-22T07:42:51.010787",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"cbd5d3ee145190a5550c3ee9646a40ae\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/sessionattributes.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationimage:).json": {
       "hash": "44df125e1fc6626a23d95f09e3dfe84b69fbdc19e96a3dea689d6aae99543570",
-      "last_checked": "2026-05-19T07:28:30.620001",
+      "last_checked": "2026-05-22T07:42:51.166452",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c94f565fba2a5c48e50e0c1c1fccfdaa\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/encoderender-toframeattributessourceimagesourcedisparitydestinationimage.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationluma:destinationchroma:).json": {
       "hash": "0dd1d2391351e91130fe4fe0cba4281cf1b6dfd4b36c5dc4b03c59a0e25f6d01",
-      "last_checked": "2026-05-19T07:28:30.715558",
+      "last_checked": "2026-05-22T07:42:51.463698",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"18aabdbac2f73da3411fa31fe10da13a\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/encoderender-toframeattributessourceimagesourcedisparitydestinationlumadestinationchroma.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/encoderender(to:frameattributes:sourceimage:sourcedisparity:destinationrgba:).json": {
       "hash": "a25050e6286a9a86e32c41362fb706bec9afd940cab0f1db4f3bfed32da74420",
-      "last_checked": "2026-05-19T07:28:30.825442",
+      "last_checked": "2026-05-22T07:42:51.672680",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a93c69c0a3149fb717907c4e9d86b5de\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/encoderender-toframeattributessourceimagesourcedisparitydestinationrgba.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/destinationpixelformattypes.json": {
       "hash": "038d23d79c8f346bbc945413354b365840be648ccd90a1455b11598ff1f658d2",
-      "last_checked": "2026-05-19T07:28:31.052976",
+      "last_checked": "2026-05-22T07:42:51.843863",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ea9f3f8cede1b001be5619821c4115c3\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/destinationpixelformattypes.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/sourcepixelformattypes.json": {
       "hash": "0350bb3cc4d02db5acac88b3a8fd7bf5da2b1a1e560aee120ed0d0ca4ead243b",
-      "last_checked": "2026-05-19T07:28:31.162557",
+      "last_checked": "2026-05-22T07:42:52.015273",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a608471eb8f97eba0bded0efd312ab54\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/sourcepixelformattypes.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/init(time:detectiontype:normalizedrect:focusdisparity:).json": {
       "hash": "8b20495a928ed78be3390cd3cc2e9cd63ced4f3b3c30de6654d3ab39d2b57825",
-      "last_checked": "2026-05-19T07:28:31.285066",
+      "last_checked": "2026-05-22T07:42:52.188889",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"996af49f6445d933ac0d7ca7cd27c5f5\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/init-timedetectiontypenormalizedrectfocusdisparity.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/detectiongroupid.json": {
       "hash": "a897bd955f555811bfd048405f5e073d521fbcf4090b191fa412afb0b42cad72",
-      "last_checked": "2026-05-19T07:28:31.384555",
+      "last_checked": "2026-05-22T07:42:52.348401",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"332a4abb27a1b4caa7fd1a3c3c106af6\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/detectiongroupid.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/detectionid.json": {
       "hash": "1e17baa0a35d9641017785584ba606f587a57425d53e0a5a7221541afac87e50",
-      "last_checked": "2026-05-19T07:28:31.492786",
+      "last_checked": "2026-05-22T07:42:52.508805",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"9eccd13e2a9dd34901a5d984105f2021\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/detectionid.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/detectiontype.json": {
       "hash": "623d9bee8da7960698511f66959f3a6bd10d86175e5245fe6abacec40f843b71",
-      "last_checked": "2026-05-19T07:28:31.592060",
+      "last_checked": "2026-05-22T07:42:52.658669",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"aa4bd2b01a0a2ed029cc5af41a16a75a\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/detectiontype.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/focusdisparity.json": {
       "hash": "a2f4d4be2ecdb348595f311596dcdcd19432bc6e2850c7386fbe2e9c0154526c",
-      "last_checked": "2026-05-19T07:28:31.693203",
+      "last_checked": "2026-05-22T07:42:52.826056",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c66e5eed32a288de1fec4b20f993d1dc\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/focusdisparity.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/normalizedrect.json": {
       "hash": "60addf08408eaa33452f43acf1018669c34f7e903812aa79e1681f2b782359be",
-      "last_checked": "2026-05-19T07:28:31.911941",
+      "last_checked": "2026-05-22T07:42:53.126362",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b7d04b546ec4236083427a0339c30ee3\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/normalizedrect.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/time.json": {
       "hash": "687d608d7b2449068327bd93b92f50375a3cdd9ca3f8f42462a5aa65dd9bc4bc",
-      "last_checked": "2026-05-19T07:28:32.022236",
+      "last_checked": "2026-05-22T07:42:53.283090",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a7dcc2ad212360ae1df83df65c70d4f6\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/time.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/accessibilitylabel(for:).json": {
       "hash": "bf53817c3a5c0f5b6bef4f1dd1c249c19ed30bf4fc06e01160b143f77c047836",
-      "last_checked": "2026-05-19T07:28:32.126911",
+      "last_checked": "2026-05-22T07:42:53.461141",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4860664aa5640553b36ce6852780439a\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/accessibilitylabel-for.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetection-swift.struct/disparity(in:sourcedisparity:detectiontype:priordisparity:).json": {
       "hash": "56e14f80227f86f540371315862bbb30d037f9501994d287c10843c86919cbf4",
-      "last_checked": "2026-05-19T07:28:32.235038",
+      "last_checked": "2026-05-22T07:42:53.611641",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"0013875a8434d951e7b698ece7a944bd\"",
       "file_path": "documentation/Cinematic/cndetection-swift.struct/disparity-insourcedisparitydetectiontypepriordisparity.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/init(time:detectiongroupid:strong:).json": {
       "hash": "2deedad6fdf68febe9ab6bbbb63ca90368e7d75bd98bcdd3901645a44baa8e36",
-      "last_checked": "2026-05-19T07:28:32.336896",
+      "last_checked": "2026-05-22T07:42:53.771501",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"91116738553667c8df119b5c8bc60f92\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/init-timedetectiongroupidstrong.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/init(time:detectionid:strong:).json": {
       "hash": "04cc286a24c37ea739175a430968d91ab6b61f170774509313cd426ab617b63a",
-      "last_checked": "2026-05-19T07:28:32.451603",
+      "last_checked": "2026-05-22T07:42:53.925418",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c834f2ab5e7d1e3ea3234d80d6aa79c9\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/init-timedetectionidstrong.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/focusdetectionid-swift.property.json": {
       "hash": "f8d0ef6e784b49f00c051c91526a0b994829b0c76eff9a2fb24cafc24bf1955c",
-      "last_checked": "2026-05-19T07:28:32.546065",
+      "last_checked": "2026-05-22T07:42:54.095658",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f3be7f378aaec5fc0bd38d0cdb9c6df2\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/focusdetectionid-swiftproperty.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/isstrongdecision.json": {
       "hash": "605daef403bb7186e4e2b062e208e0f14da0ee0bac58d9789c8a80a2c89abb27",
-      "last_checked": "2026-05-19T07:28:32.600432",
+      "last_checked": "2026-05-22T07:42:54.263473",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"fe5b5a790517de22d91b461858ebf627\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/isstrongdecision.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/isuserdecision.json": {
       "hash": "381e31c8bcb623c4a84bf0489cede28e1b79a4c84ff2b7c012ade52a9583c93c",
-      "last_checked": "2026-05-19T07:28:32.707859",
+      "last_checked": "2026-05-22T07:42:54.425717",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8cbabd30175a5b0a9b4e22e2630e7239\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/isuserdecision.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/time.json": {
       "hash": "ef664a0d9f1899891bda3fab463592ccd974a415742695008a4da7f9815fea51",
-      "last_checked": "2026-05-19T07:28:32.809774",
+      "last_checked": "2026-05-22T07:42:54.603520",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"309768f8bae75b7999f266bb3687bad3\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/time.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/focusdetectionid-swift.enum.json": {
       "hash": "628685ef58bba60f8335692e769796ff81d1189e174c8e8969c38f03b57e9a07",
-      "last_checked": "2026-05-19T07:28:32.858379",
+      "last_checked": "2026-05-22T07:42:54.756947",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"defc9d8874e34963527620af2f9a9ecd\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/focusdetectionid-swiftenum.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detectiongroupid.json": {
       "hash": "3b0a32c44ba1fe029e911d04778459d3dbd4d33ab302af2d79b3db6f014c1f8c",
-      "last_checked": "2026-05-19T07:28:32.992087",
+      "last_checked": "2026-05-22T07:42:54.920092",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"66268a8e58f03966e395fa34aed2de05\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detectiongroupid.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detectionid.json": {
       "hash": "0cff3a184936f3feb752b821040fb15588b3a0bcf4d89ef508a48ee29077cbe8",
-      "last_checked": "2026-05-19T07:28:33.046028",
+      "last_checked": "2026-05-22T07:42:55.087536",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"0ca89c53f2351f05607a20a7cb44e631\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detectionid.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detectiontype.json": {
       "hash": "8ff074abf269fb54196d69dcbab1979700ce2d93f9d2d3ffdc46a6b5b93aadbe",
-      "last_checked": "2026-05-19T07:28:33.147828",
+      "last_checked": "2026-05-22T07:42:55.247496",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"63f4170aa9b2a1e9f258bb7d82ce9d33\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detectiontype.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/isdiscrete.json": {
       "hash": "8f54258a434d3507d363fc9b4b71195d4e94d211d63b36945819759e024edd86",
-      "last_checked": "2026-05-19T07:28:33.251489",
+      "last_checked": "2026-05-22T07:42:55.413625",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8baaf3a8aa8d1302285a45453a7749e6\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/isdiscrete.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/isusercreated.json": {
       "hash": "16fea5a6dbcf4136fdc3d656e5415d0d972910dc7b213f452cff9147821e203c",
-      "last_checked": "2026-05-19T07:28:33.352493",
+      "last_checked": "2026-05-22T07:42:55.564159",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"98194477480a8a6e49153c792fb4fe56\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/isusercreated.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detection(atorbefore:).json": {
       "hash": "c4c7312160718062fc508e97a21afe23633d1cdf644c6e6a40b636d6606f2c7e",
-      "last_checked": "2026-05-19T07:28:33.453164",
+      "last_checked": "2026-05-22T07:42:55.725628",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"23265172a8675946d1be6da74113a71b\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detection-atorbefore.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detection(nearest:).json": {
       "hash": "df813f2eb6b3f0b65efa3ac9eaa307b553e64e4c9afa94ecadeaa78bbd137ad7",
-      "last_checked": "2026-05-19T07:28:33.557432",
+      "last_checked": "2026-05-22T07:42:55.888985",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"65dcb8aebf05443ebdc711af5db7c51c\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detection-nearest.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontrack-2bxtd/detections(in:).json": {
       "hash": "c3d5abfb6a34267d666b096b60a6b14988a9ae327a425a8e5fa0b057d749685d",
-      "last_checked": "2026-05-19T07:28:33.649628",
+      "last_checked": "2026-05-22T07:42:56.062252",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"190c1f8523fc6455caff7555d7d4a202\"",
       "file_path": "documentation/Cinematic/cndetectiontrack-2bxtd/detections-in.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw/init(focusdisparity:).json": {
       "hash": "3a1ac0133ab8f3503192ea46529cb601267a5e586d32f09a6b386d18f9a5dd39",
-      "last_checked": "2026-05-19T07:28:33.744280",
+      "last_checked": "2026-05-22T07:42:56.221657",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6bcb41e6031df87d833bea7cfdfb56ea\"",
       "file_path": "documentation/Cinematic/cnfixeddetectiontrack-93rrw/init-focusdisparity.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw/init(originaldetection:).json": {
       "hash": "40a8ebcf9bc3bc65577719d81066a8426025435bfa1988c55363613c00119f76",
-      "last_checked": "2026-05-19T07:28:33.854568",
+      "last_checked": "2026-05-22T07:42:56.372731",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ad1770f0cc239fbef91251bf31bafdb9\"",
       "file_path": "documentation/Cinematic/cnfixeddetectiontrack-93rrw/init-originaldetection.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw/focusdisparity.json": {
       "hash": "50b1d993bcd0ccf2222d6837c083248c7572be203668acddbced931fdce92e55",
-      "last_checked": "2026-05-19T07:28:33.955884",
+      "last_checked": "2026-05-22T07:42:56.546492",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f7fb565755c0f3309ebdd66653443284\"",
       "file_path": "documentation/Cinematic/cnfixeddetectiontrack-93rrw/focusdisparity.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnfixeddetectiontrack-93rrw/originaldetection.json": {
       "hash": "d8ad75bad0e1248e55864336523ee1954b7f854595aa5b5bdbbb9eb0f710fa46",
-      "last_checked": "2026-05-19T07:28:34.060571",
+      "last_checked": "2026-05-22T07:42:56.711521",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8e473c4c4a0727c80b1c578f744a3f08\"",
       "file_path": "documentation/Cinematic/cnfixeddetectiontrack-93rrw/originaldetection.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-9a2zo/init(detections:smooth:).json": {
       "hash": "85a9a87cbb0dff60a767e99158e410154b24df39083b9911ea078fa300ec210c",
-      "last_checked": "2026-05-19T07:28:34.170926",
+      "last_checked": "2026-05-22T07:42:56.879446",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b4445b17b81fc078c185cbdf47471560\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo/init-detectionssmooth.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncustomdetectiontrack-9a2zo/alldetections.json": {
       "hash": "7f2907c2450834d5697bfb9eabe6eacd7ec7994b05965749ef775de023475d12",
-      "last_checked": "2026-05-19T07:28:34.283747",
+      "last_checked": "2026-05-22T07:42:57.062955",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6eba7cc983a13e181999cdb21bf57d9b\"",
       "file_path": "documentation/Cinematic/cncustomdetectiontrack-9a2zo/alldetections.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/autofocus.json": {
       "hash": "795602175e01b042a09e140cc52857e02d408e2df6bc02793a46b4343f9f3ff2",
-      "last_checked": "2026-05-19T07:28:34.389313",
+      "last_checked": "2026-05-22T07:42:57.222353",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"9527c972eb0de02d32b8643311f93427\"",
       "file_path": "documentation/Cinematic/cndetectiontype/autofocus.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/catbody.json": {
       "hash": "b25bd7e0867f574322234a58a154a2f3e85df503a0c29a6d765aaddd2ea734db",
-      "last_checked": "2026-05-19T07:28:34.493017",
+      "last_checked": "2026-05-22T07:42:57.391437",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"61850d93235478be1cd2bfd1144ca6e3\"",
       "file_path": "documentation/Cinematic/cndetectiontype/catbody.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/cathead.json": {
       "hash": "f4a37e39cfed5dbcb13a760a22290caaf7c1217dd1e520f3b90e03aeecf2bb19",
-      "last_checked": "2026-05-19T07:28:34.589892",
+      "last_checked": "2026-05-22T07:42:57.580342",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5ea5f1854c7349dde25051574c42befb\"",
       "file_path": "documentation/Cinematic/cndetectiontype/cathead.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/custom.json": {
       "hash": "ca25d4e25ae6493291a21907ed091b8cbf52cc47c8012ed93e7624e0a564d0dc",
-      "last_checked": "2026-05-19T07:28:34.692037",
+      "last_checked": "2026-05-22T07:42:57.751808",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"86b314972238cd67c074b7938f016e1d\"",
       "file_path": "documentation/Cinematic/cndetectiontype/custom.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/dogbody.json": {
       "hash": "da16f15a8447d9d06916f077f62406fab1e0908b76ce8ddb3deb93e2b341b76e",
-      "last_checked": "2026-05-19T07:28:34.743951",
+      "last_checked": "2026-05-22T07:42:57.930679",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3143d2090d69c80882ec1706fb225fa0\"",
       "file_path": "documentation/Cinematic/cndetectiontype/dogbody.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/doghead.json": {
       "hash": "229c6d2451c40ca091db943de59ff1e5929e47385e94f27624aef1b94d4bd772",
-      "last_checked": "2026-05-19T07:28:34.863739",
+      "last_checked": "2026-05-22T07:42:58.092101",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"156df1c0b91d6d82d1ecb89281a87b34\"",
       "file_path": "documentation/Cinematic/cndetectiontype/doghead.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/fixedfocus.json": {
       "hash": "a2e14b56ef11bd8ce445d8ed84c2a7f2bb07f6faa423d1b4279e3a605b1a2a82",
-      "last_checked": "2026-05-19T07:28:34.964360",
+      "last_checked": "2026-05-22T07:42:58.271382",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"22905dbfd4531bf159b5713db46fe454\"",
       "file_path": "documentation/Cinematic/cndetectiontype/fixedfocus.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/humanface.json": {
       "hash": "a94d788eb498b6e473a9d7c69def443af485edaa2ff1455ebeb7bb098a5527a1",
-      "last_checked": "2026-05-19T07:28:35.070284",
+      "last_checked": "2026-05-22T07:42:58.431935",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"7e604016e9615a82999764bac1091102\"",
       "file_path": "documentation/Cinematic/cndetectiontype/humanface.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/humanhead.json": {
       "hash": "1889a897df020d9424d58ae87e122db24e38ab351f03cd50bbdbc3a03300a5ca",
-      "last_checked": "2026-05-19T07:28:35.119778",
+      "last_checked": "2026-05-22T07:42:58.597907",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"36e100090c9ed30f51f5c14996f6b74f\"",
       "file_path": "documentation/Cinematic/cndetectiontype/humanhead.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/humantorso.json": {
       "hash": "1a947ea452a1bfbb6a711d35feacac7a48603d3ac0506daee3f0f2322427273c",
-      "last_checked": "2026-05-19T07:28:35.272266",
+      "last_checked": "2026-05-22T07:42:58.782899",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"32cfecf8ab64da7044119796640eece9\"",
       "file_path": "documentation/Cinematic/cndetectiontype/humantorso.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/sportsball.json": {
       "hash": "d58f85994638056476d5241bf1640ac79ce01f15f8c37798e3529cfa94dce812",
-      "last_checked": "2026-05-19T07:28:35.320684",
+      "last_checked": "2026-05-22T07:42:58.992980",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"44c67607d835f8212d03f1e5a21de3a3\"",
       "file_path": "documentation/Cinematic/cndetectiontype/sportsball.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/unknown.json": {
       "hash": "76fedad80ce60fb16b893627c3a4bcddb3129457dec3c10e832b9c2fab7e4001",
-      "last_checked": "2026-05-19T07:28:35.436015",
+      "last_checked": "2026-05-22T07:42:59.150125",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"23fa40bdf959d94c5ff82416a8edc917\"",
       "file_path": "documentation/Cinematic/cndetectiontype/unknown.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiontype/init(rawvalue:).json": {
       "hash": "2348317d1a9084810a1138dea9776cb48299210fe81bfb6eeb2f27c33ec33483",
-      "last_checked": "2026-05-19T07:28:35.537073",
+      "last_checked": "2026-05-22T07:42:59.327247",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"7c277c996279d0a57bc4dfb5e5db1bd5\"",
       "file_path": "documentation/Cinematic/cndetectiontype/init-rawvalue.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-swift.struct/confidence.json": {
       "hash": "024d5f8ce10939ba3465e88c444ef37690787c11025fafa4ddacad0428a868eb",
-      "last_checked": "2026-05-19T07:28:35.630364",
+      "last_checked": "2026-05-22T07:42:59.502185",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"bf32b6aca40d4281ccbb8dc1d5e0e6b0\"",
       "file_path": "documentation/Cinematic/cnboundsprediction-swift.struct/confidence.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnboundsprediction-swift.struct/normalizedbounds.json": {
       "hash": "1e1edcc7a9de3c7506ed787b6a995763a2fd26a600235ef6479da9fdb5f8b82f",
-      "last_checked": "2026-05-19T07:28:35.734370",
+      "last_checked": "2026-05-22T07:42:59.684563",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f9afdf58b6fe839f3bdc28d31824134a\"",
       "file_path": "documentation/Cinematic/cnboundsprediction-swift.struct/normalizedbounds.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/init(commandqueue:).json": {
       "hash": "524e873662e20b01f8c3382449412c87266e43a0f5754d9f32be9f702649e329",
-      "last_checked": "2026-05-19T07:28:35.829065",
+      "last_checked": "2026-05-22T07:42:59.842310",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"9e16263ee9246daf13b213394f403d15\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/init-commandqueue.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/continuetracking(at:sourceimage:sourcedisparity:).json": {
       "hash": "eaf42f62cecf185cf8291eb9a4eba4b79d7249ee4f546c22ca309625322aced9",
-      "last_checked": "2026-05-19T07:28:35.877611",
+      "last_checked": "2026-05-22T07:43:00.034057",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3007b389297a025f84f15b9be2611d02\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/continuetracking-atsourceimagesourcedisparity.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/findobject(at:sourceimage:).json": {
       "hash": "ee25327b276827cab95d9d2bf75805812c60997fbf147430c993d2faca0bdbe8",
-      "last_checked": "2026-05-19T07:28:35.987502",
+      "last_checked": "2026-05-22T07:43:00.258754",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3279ab099445e2135659990d2c09912c\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/findobject-atsourceimage.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/finishdetectiontrack().json": {
       "hash": "d6ef856e62d7f4ccdabdac5a9c6d201ddbf84bf729257d5bd8f2b949198bf9c9",
-      "last_checked": "2026-05-19T07:28:36.086977",
+      "last_checked": "2026-05-22T07:43:00.433857",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c31b72bc2084d146eae4a24088689aac\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/finishdetectiontrack.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/resetdetectiontrack().json": {
       "hash": "96f8a4e55e28715ffce4943f02b319a7184448e872b0b9a69c75280535a746f9",
-      "last_checked": "2026-05-19T07:28:36.184702",
+      "last_checked": "2026-05-22T07:43:00.583362",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d5101bd4fab24c946b7b2d4f01874dd1\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/resetdetectiontrack.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/starttracking(at:within:sourceimage:sourcedisparity:).json": {
       "hash": "3cc9e143792db58028bf051a904dae9fcd7401032f58c779823aeaf006b18b83",
-      "last_checked": "2026-05-19T07:28:36.287466",
+      "last_checked": "2026-05-22T07:43:00.763178",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c306a37d4487f89da857d925ae391fb9\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/starttracking-atwithinsourceimagesourcedisparity.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnobjecttracker-1n598/issupported.json": {
       "hash": "31ea9cf053d37b838b503be8ee188f41368b80a4622ecf1226a2abbe7d40df54",
-      "last_checked": "2026-05-19T07:28:36.398131",
+      "last_checked": "2026-05-22T07:43:00.932607",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"66aba1cfa9d164a6a5fd615b2aa01bae\"",
       "file_path": "documentation/Cinematic/cnobjecttracker-1n598/issupported.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/cancelled.json": {
       "hash": "c169fc0225b6b20934a2d2d242e9d4bc23f5f27351e75bb49c9f40ea746333fc",
-      "last_checked": "2026-05-19T07:28:36.444430",
+      "last_checked": "2026-05-22T07:43:01.096276",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f99b991aea0c87eb834566570f1ecb3a\"",
       "file_path": "documentation/Cinematic/cncinematicerror/cancelled.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/errordomain.json": {
       "hash": "6643e17da47ffc40877fbaecd69003b380c55540c410c5ed3ef95af4825d76b3",
-      "last_checked": "2026-05-19T07:28:36.571873",
+      "last_checked": "2026-05-22T07:43:01.397726",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"8c757dfb126a1b769ea4a202ab25ce50\"",
       "file_path": "documentation/Cinematic/cncinematicerror/errordomain.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/incompatible.json": {
       "hash": "0da39855005a359930d4c81092b81a8d9ef7bb911bedbdbf15d5c70cce8dd77d",
-      "last_checked": "2026-05-19T07:28:36.671305",
+      "last_checked": "2026-05-22T07:43:01.644959",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"045cf5e763847298991596f8e9106559\"",
       "file_path": "documentation/Cinematic/cncinematicerror/incompatible.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/incomplete.json": {
       "hash": "c4f947df7159d7075dd2dc04699c3a11ea5f5b81938973db8de714394ac5eccf",
-      "last_checked": "2026-05-19T07:28:36.774642",
+      "last_checked": "2026-05-22T07:43:01.801682",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"aa3d4a5609cb42308cab2258e77db029\"",
       "file_path": "documentation/Cinematic/cncinematicerror/incomplete.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/malformed.json": {
       "hash": "d808e597f2097989d99f0f30b7baa781127019c48ab964a562295a2811b26e2f",
-      "last_checked": "2026-05-19T07:28:36.875655",
+      "last_checked": "2026-05-22T07:43:01.974128",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"729bb2085735f42ce7abfc5507a1833e\"",
       "file_path": "documentation/Cinematic/cncinematicerror/malformed.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/unknown.json": {
       "hash": "9ae8c2157c059cb39d6cd1ad71f55c8a78a95d37fd2883d008dca7ca1e196c20",
-      "last_checked": "2026-05-19T07:28:36.972769",
+      "last_checked": "2026-05-22T07:43:02.143309",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"893324a66c68c27a4a93fbcf021be0e5\"",
       "file_path": "documentation/Cinematic/cncinematicerror/unknown.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/unreadable.json": {
       "hash": "451249d15f151031331214c87f5dfd4a53e52d04e8028956c4869b6c676bed39",
-      "last_checked": "2026-05-19T07:28:37.076070",
+      "last_checked": "2026-05-22T07:43:02.299288",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d73ac6d03ccc3d468f1e4da1265b5676\"",
       "file_path": "documentation/Cinematic/cncinematicerror/unreadable.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/unsupported.json": {
       "hash": "6fbeeb17853a0ebe60279e171ad16c59228727f0c244075ca99ebba4865bb02c",
-      "last_checked": "2026-05-19T07:28:37.228208",
+      "last_checked": "2026-05-22T07:43:02.469056",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3aefe421b43a777e755254a9262f9d35\"",
       "file_path": "documentation/Cinematic/cncinematicerror/unsupported.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality.json": {
       "hash": "65c36adb4665d9840520dc4819ba1e09f8e4eecbe403419f8de76c32c08c67b4",
-      "last_checked": "2026-05-19T07:28:37.326239",
+      "last_checked": "2026-05-22T07:43:02.625377",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"989053339e1586b2c5a4bfbeb29d00c3\"",
       "file_path": "documentation/Cinematic/cnrenderingquality.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code.json": {
       "hash": "ffef85c5bd108b39ddcbc7b4ae6660c2bd72b592976abdfad33908072abe8605",
-      "last_checked": "2026-05-19T07:28:37.418475",
+      "last_checked": "2026-05-22T07:43:02.800348",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"25a0ebc5e89d65546ba5b058fe3f29c0\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerrordomain.json": {
       "hash": "c5ec8a6444061f921360866e86daf9bb10c773151ca37ebb8317512dce4f6be4",
-      "last_checked": "2026-05-19T07:28:37.514738",
+      "last_checked": "2026-05-22T07:43:02.968388",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d4aed0a358dc9d4716ba2188342985ea\"",
       "file_path": "documentation/Cinematic/cncinematicerrordomain.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiongroupid.json": {
       "hash": "eb8761ec030994fbb32e600bb17829ad2d1d9dfe8a8eb9ee6c64bf3ac0da496c",
-      "last_checked": "2026-05-19T07:28:37.611101",
+      "last_checked": "2026-05-22T07:43:03.139050",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d6f270ff92b2abc0325f01efa8ef4c7b\"",
       "file_path": "documentation/Cinematic/cndetectiongroupid.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectionid.json": {
       "hash": "dd4e5993cdf7307d5e95a45e0a971da97af53599a7d993d4e88eeb86b8bf5f35",
-      "last_checked": "2026-05-19T07:28:37.722302",
+      "last_checked": "2026-05-22T07:43:03.310910",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"bc737fff394e1a0eb3b3ab5760e09138\"",
       "file_path": "documentation/Cinematic/cndetectionid.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/init(asset:).json": {
       "hash": "76ea4044254737f1289b50e259b1e4f21396f08f4e787991071f574730a47385",
-      "last_checked": "2026-05-19T07:28:37.770945",
+      "last_checked": "2026-05-22T07:43:03.471821",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ab498d3890b3f7d0ab131a8a501c5aab\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/init-asset.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/defaulteffectintensity.json": {
       "hash": "75f4c2c79b58bc62294e24d23b58cbec40a953bbb5fd1a2bee9ccd95fd2f8de8",
-      "last_checked": "2026-05-19T07:28:37.883518",
+      "last_checked": "2026-05-22T07:43:03.636476",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"bed55c59d918e1929c8bb9174177bc41\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/defaulteffectintensity.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/defaultrenderingstyle.json": {
       "hash": "bb39f61dc7971b0b93cbcf14217bb39f52e157536d1f90a0d6f0f16a88352fc0",
-      "last_checked": "2026-05-19T07:28:37.975523",
+      "last_checked": "2026-05-22T07:43:03.803667",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e83089c134eecaa3ba322d9242e30f7a\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/defaultrenderingstyle.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/defaultspatialaudiotrack.json": {
       "hash": "3b84e0d071427e7708da4449bb65684780387f9d2030f6976ffda17539ee3379",
-      "last_checked": "2026-05-19T07:28:38.024270",
+      "last_checked": "2026-05-22T07:43:03.963144",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"ef22d738db3bbddc8c6fe911bb31c1e8\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/defaultspatialaudiotrack.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/spatialaudiomixmetadata.json": {
       "hash": "9a6d2a1d0317bf4113ff2283e7e7db679f8db677a4b79117d193f09641b4b050",
-      "last_checked": "2026-05-19T07:28:38.176918",
+      "last_checked": "2026-05-22T07:43:04.120958",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"360091d6de37e6e0e4bf1987925e3442\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/spatialaudiomixmetadata.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/assetreaderoutputsettings(for:).json": {
       "hash": "fcd1c6529baa1468441ea75c684e70ee9c32442db2b2e9a7a0e15f7bfcebb493",
-      "last_checked": "2026-05-19T07:28:38.289764",
+      "last_checked": "2026-05-22T07:43:04.289597",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6c85e8d436dd3bbe256af2e71996a2d5\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/assetreaderoutputsettings-for.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/assetwriterinputsettings(for:).json": {
       "hash": "3b1879ed91656e4a0ad863efe33548d00b3b82c7f850c41515a39832e0e3ff69",
-      "last_checked": "2026-05-19T07:28:38.392294",
+      "last_checked": "2026-05-22T07:43:04.442460",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6beb57737ee2e1fbfae56a779649f2c2\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/assetwriterinputsettings-for.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/audiomix(effectintensity:renderingstyle:).json": {
       "hash": "eeab9d2fab149933b110592dcb5ddebe02520a7bf13d89133bae1d9ebd9f0aea",
-      "last_checked": "2026-05-19T07:28:38.505502",
+      "last_checked": "2026-05-22T07:43:04.596259",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"fdbfd4e1fbbab44286e5019d2080e717\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/audiomix-effectintensityrenderingstyle.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/assetcontainsspatialaudio(asset:).json": {
       "hash": "6eea9f38120e176909f9aea29751d540d1e430efb63f8a41c9b26d5c74b574eb",
-      "last_checked": "2026-05-19T07:28:38.720579",
+      "last_checked": "2026-05-22T07:43:04.943482",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b16291c245c51d5a46acc1c260782070\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/assetcontainsspatialaudio-asset.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/checkifcontainsspatialaudio(asset:completionhandler:).json": {
       "hash": "8580c022133210463f6db2f12acf3b6fba82a4d89ba78073bb733c905ea3a20e",
-      "last_checked": "2026-05-19T07:28:38.818459",
+      "last_checked": "2026-05-22T07:43:05.112492",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b80c35145a5fa267110847bfc655e660\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/checkifcontainsspatialaudio-assetcompletionhandler.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiocontenttype/spatial.json": {
       "hash": "25f93b59b57af08b4552a8882d28677412cd813d96ac779878f2263e3fb60c05",
-      "last_checked": "2026-05-19T07:28:38.893516",
+      "last_checked": "2026-05-22T07:43:05.280195",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b76c31a12e4e011df8fa9efbd42f8d45\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype/spatial.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiocontenttype/stereo.json": {
       "hash": "14bcbf950237779faf4200b370c6c4e93a4aae274149343db515f881c21aa444",
-      "last_checked": "2026-05-19T07:28:39.002153",
+      "last_checked": "2026-05-22T07:43:05.446294",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"2f75ad4e7cf2a48a659d958f14f6de12\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype/stereo.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiocontenttype/init(rawvalue:).json": {
       "hash": "62eb666068c0b08cbc41893b98e36996bf8ddc5807dcffc03c2bf17ce796a00b",
-      "last_checked": "2026-05-19T07:28:39.104549",
+      "last_checked": "2026-05-22T07:43:05.608430",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f338aa3d62c11ae500ef72697c63f580\"",
       "file_path": "documentation/Cinematic/cnspatialaudiocontenttype/init-rawvalue.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/cinematic.json": {
       "hash": "e4b2163c3c43acca01dde19105921636c10dd590acddcf948d036226f2221b57",
-      "last_checked": "2026-05-19T07:28:39.160590",
+      "last_checked": "2026-05-22T07:43:05.777790",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"20bec562a9df72c92cb038a8e902b110\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/cinematic.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/cinematicbackgroundstem.json": {
       "hash": "359162cd6babf5f9997b354a6fd093894e63dae705a7a82744569a160a47be45",
-      "last_checked": "2026-05-19T07:28:39.248957",
+      "last_checked": "2026-05-22T07:43:05.945632",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"1a5c57fcedbaba461fd9e761781c3579\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/cinematicbackgroundstem.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/cinematicforegroundstem.json": {
       "hash": "227899e0f07cced2a6d146e4f6277f1af2ccc0f22b02db3d99cbf1f50c2d4653",
-      "last_checked": "2026-05-19T07:28:39.348739",
+      "last_checked": "2026-05-22T07:43:06.093970",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"51d8b79f677817cde5bbb1121ef830c4\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/cinematicforegroundstem.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/inframe.json": {
       "hash": "489eb543c966db0ac39b959f50ba68e05ab8c98b746cf9a916cabcfc688442ab",
-      "last_checked": "2026-05-19T07:28:39.453198",
+      "last_checked": "2026-05-22T07:43:06.253371",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"af3973cbda8cb8af881a61e0be9dfd6c\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/inframe.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/inframebackgroundstem.json": {
       "hash": "2bb3cb04d253ce42121dae6075daddfaaecb22fad9fd0aa76935603302416582",
-      "last_checked": "2026-05-19T07:28:39.499234",
+      "last_checked": "2026-05-22T07:43:06.406219",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"25a24b03417ba7e0275bea37d79a7ad5\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/inframebackgroundstem.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/inframeforegroundstem.json": {
       "hash": "943e1fff4b25362b6d8500a6674c1917c4afeb1c9994d710ac8de7b2d27451de",
-      "last_checked": "2026-05-19T07:28:39.605613",
+      "last_checked": "2026-05-22T07:43:06.569151",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"9c85e2fe3b5318eeb2583bae447e3a11\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/inframeforegroundstem.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/standard.json": {
       "hash": "ab31465a3e9f025227bdf412eeacaf09f78f2241c70baa77564b0d5118a1346f",
-      "last_checked": "2026-05-19T07:28:39.704749",
+      "last_checked": "2026-05-22T07:43:06.729608",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"48fd8854ffd3488be34859de74253883\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/standard.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/studio.json": {
       "hash": "a0fd72e0584bfe405c8901a6f7cdc37530a631d8d3401783997650cf1087d551",
-      "last_checked": "2026-05-19T07:28:39.807921",
+      "last_checked": "2026-05-22T07:43:06.890517",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5d7338c00e42f79775a8d4eb44c52c3d\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/studio.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/studiobackgroundstem.json": {
       "hash": "9f9761a94e860257fbfa0f88b7f6d1ac53c9b86164e07cc7da80a9d2f0464636",
-      "last_checked": "2026-05-19T07:28:39.909021",
+      "last_checked": "2026-05-22T07:43:07.039517",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f7165fe9ecf8d64d90b228aa58437b47\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/studiobackgroundstem.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/studioforegroundstem.json": {
       "hash": "c7e20ccd5b81b3e3301039ae7129cf919638fc256a0ebfd9f4c9cd1acc2bc32a",
-      "last_checked": "2026-05-19T07:28:40.011759",
+      "last_checked": "2026-05-22T07:43:07.210060",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d0645afeacd6653db8454a03c6154e11\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/studioforegroundstem.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnspatialaudiorenderingstyle/init(rawvalue:).json": {
       "hash": "f88148487321b0b459b00d5886de32465f73f38287db4954fba4a2f94655f109",
-      "last_checked": "2026-05-19T07:28:40.152404",
+      "last_checked": "2026-05-22T07:43:07.374839",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"3a46ad6b5edb7cc29645df807cab253d\"",
       "file_path": "documentation/Cinematic/cnspatialaudiorenderingstyle/init-rawvalue.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes/init(datarepresentation:).json": {
       "hash": "bbc52d707d6b7c522a2a712ef594dd4e11f83a099e3092a1cd10784371fe62a1",
-      "last_checked": "2026-05-19T07:28:40.253189",
+      "last_checked": "2026-05-22T07:43:07.531280",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c9ff644462965fe05003fcc04df0be9f\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes/init-datarepresentation.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes/addeddetectiontracks.json": {
       "hash": "761ef600f791f537261fcc6ff6163a7b88460f2506ab867fea2525d594b39f0c",
-      "last_checked": "2026-05-19T07:28:40.369267",
+      "last_checked": "2026-05-22T07:43:07.690505",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a35af7293b1b0cafbd193de81e982f0c\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes/addeddetectiontracks.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes/datarepresentation.json": {
       "hash": "3eafbdd2e2ac076aa8bde5ba36cab17764eb6170233e01aba7667846ba4a5897",
-      "last_checked": "2026-05-19T07:28:40.477972",
+      "last_checked": "2026-05-22T07:43:07.816761",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"660cbeef62dc7f203a2e56bcbd89dda4\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes/datarepresentation.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes/fnumber.json": {
       "hash": "036a16bf1065d2dbaf6350ae0530865e54472b1dba4c3ea0f97ff6e9ae4f86f5",
-      "last_checked": "2026-05-19T07:28:40.524928",
+      "last_checked": "2026-05-22T07:43:08.002651",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"fd431b0d43e67666fce7a34851f9520c\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes/fnumber.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/changes/userdecisions.json": {
       "hash": "a8ed31e9439addc682fb1b1845a291eeaeacffc8a2955816a94b545914fcaac4",
-      "last_checked": "2026-05-19T07:28:40.645401",
+      "last_checked": "2026-05-22T07:43:08.175856",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"1ebe36351db4c814d67207bfc467eddd\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/changes/userdecisions.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/alldetections.json": {
       "hash": "0524b28dabd12f5ed91050ea18112525867540c9b269a46b8f555e18a9960732",
-      "last_checked": "2026-05-19T07:28:40.746029",
+      "last_checked": "2026-05-22T07:43:08.288187",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"99a3212b3af6924646b5c8cd1734c87d\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/alldetections.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/focusdetection.json": {
       "hash": "4acfceed37f91b676e293447674bb740acd68cb6505b6c6c24c02dc94d5f3543",
-      "last_checked": "2026-05-19T07:28:40.847742",
+      "last_checked": "2026-05-22T07:43:08.410100",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"c5ae6955a8b50d785eb3bc7fee4c5ada\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/focusdetection.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/focusdisparity.json": {
       "hash": "46d97ee27dbdcf827c9bae4c9930dd938513c25db832e9107c2c16750e866fa4",
-      "last_checked": "2026-05-19T07:28:40.946302",
+      "last_checked": "2026-05-22T07:43:08.571938",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5c6775985bf1b498e1bbf07ef70b9d19\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/focusdisparity.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/time.json": {
       "hash": "ccab4445373427a5cecd433a236c3266f5b8e133af80a426625508295b77407b",
-      "last_checked": "2026-05-19T07:28:41.046441",
+      "last_checked": "2026-05-22T07:43:08.693301",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a98980e3d2a134abe5f7e3d1085fa8c6\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/time.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/bestdetection(for:).json": {
       "hash": "711c33bd601603c8ba74938bc1f4e61d404361d39c1bfd3a24367cc4355e55bb",
-      "last_checked": "2026-05-19T07:28:41.146483",
+      "last_checked": "2026-05-22T07:43:08.864567",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"67bb564ffc5121e5e0704bd029afe2e6\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/bestdetection-for.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnscript-1ispe/frame/detection(for:).json": {
       "hash": "e831aabc4279898eb4eca4250964c754583889e52001c30143744e2885e80562",
-      "last_checked": "2026-05-19T07:28:41.244480",
+      "last_checked": "2026-05-22T07:43:09.029904",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"1ddcccb5fb0a9fe9acea7f812c3dc794\"",
       "file_path": "documentation/Cinematic/cnscript-1ispe/frame/detection-for.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/attributes/init(asset:).json": {
       "hash": "8e5a0581833b16fb50ef37fef52b7a4147b6857c794a6aed0a6b13b52050e51d",
-      "last_checked": "2026-05-19T07:28:41.342424",
+      "last_checked": "2026-05-22T07:43:09.141356",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"de1dba244a8c6d1cfc4f72316db0c794\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/attributes/init-asset.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/attributes/renderingversion.json": {
       "hash": "e8c4d136d6d6ec088a2ae29de2dce3ff3292a3e9b11822a3a8e76bf6507ebb4c",
-      "last_checked": "2026-05-19T07:28:41.444362",
+      "last_checked": "2026-05-22T07:43:09.303418",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"78fe60a7649c38cb227300303d0ec03d\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/attributes/renderingversion.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/frameattributes/init(samplebuffer:sessionattributes:).json": {
       "hash": "6aaeefe418e9c780e5ece1609ad8900234c76c2fab75b5df064fdc0e01acb7dd",
-      "last_checked": "2026-05-19T07:28:41.545680",
+      "last_checked": "2026-05-22T07:43:09.464201",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5486cfbeda935760f08aa01a0fc03c1e\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/frameattributes/init-samplebuffersessionattributes.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/frameattributes/init(timedmetadatagroup:sessionattributes:).json": {
       "hash": "87e53c537f90191d6b74fa1c723bcd50c3cd923ba73ef1d560cb65100ea35aa3",
-      "last_checked": "2026-05-19T07:28:41.651153",
+      "last_checked": "2026-05-22T07:43:09.567654",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"eefefdd3cfef0e35d8588a4d17648da2\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/frameattributes/init-timedmetadatagroupsessionattributes.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/frameattributes/fnumber.json": {
       "hash": "d8a336a9d1371591d8599931dd27db5738ed9ff49707f08ebd2081351daf845e",
-      "last_checked": "2026-05-19T07:28:41.755739",
+      "last_checked": "2026-05-22T07:43:09.748048",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"fd8dd3ac2dd70a18af328e8cb321319f\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/frameattributes/fnumber.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingsession-1hzh8/frameattributes/focusdisparity.json": {
       "hash": "2a3f7fe1abce8f5c7f2e6dbffa785d1cdac513ec3ac065547bf25cb503934f9c",
-      "last_checked": "2026-05-19T07:28:41.848013",
+      "last_checked": "2026-05-22T07:43:09.867414",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"78d503f1dd9c3367a73ba262322e25e7\"",
       "file_path": "documentation/Cinematic/cnrenderingsession-1hzh8/frameattributes/focusdisparity.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/focusdetectionid-swift.enum/group(_:).json": {
       "hash": "99d97bef17b1624abc5f4f7069dc04f501765cee9c795ae654fe93c52a575017",
-      "last_checked": "2026-05-19T07:28:41.965397",
+      "last_checked": "2026-05-22T07:43:09.995662",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"db7dbc1291ed2d138f4577005ef5637e\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/focusdetectionid-swift.enum/group.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndecision-swift.struct/focusdetectionid-swift.enum/single(_:).json": {
       "hash": "8d90f8e912ad6697d191f882a77ee368a5556d6da819aed34899773631a3e357",
-      "last_checked": "2026-05-19T07:28:42.079182",
+      "last_checked": "2026-05-22T07:43:10.262033",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"331a59835d8807e6d4ae3c91ea8e8b22\"",
       "file_path": "documentation/Cinematic/cndecision-swift.struct/focusdetectionid-swift.enum/single.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality/export.json": {
       "hash": "c1288f68b0411d202c477e9aab1f44c4a007aa9264c1340f8759b223b067275f",
-      "last_checked": "2026-05-19T07:28:42.194248",
+      "last_checked": "2026-05-22T07:43:10.425800",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"07058b0a1c83fc1ccf35d1a404fd5078\"",
       "file_path": "documentation/Cinematic/cnrenderingquality/export.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality/exporthigh.json": {
       "hash": "77fda6c9efa4285ff52990bd908323e06b980856b6a2852fbbef50c0d474e8d0",
-      "last_checked": "2026-05-19T07:28:42.301938",
+      "last_checked": "2026-05-22T07:43:10.590076",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"739d14858f19f5e4f008c201d7cc592d\"",
       "file_path": "documentation/Cinematic/cnrenderingquality/exporthigh.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality/preview.json": {
       "hash": "ceae27cb48107e0eab903eca639d98a43140315ac05d2abb4109dea2a4cbc9be",
-      "last_checked": "2026-05-19T07:28:42.401661",
+      "last_checked": "2026-05-22T07:43:10.708910",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"b80d49cdd6a5b281959730db6d4940bd\"",
       "file_path": "documentation/Cinematic/cnrenderingquality/preview.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality/thumbnail.json": {
       "hash": "5f24698d686b1fd2c4563ed3d45266f08f1c2a29ad06826949ca6b0992fb630c",
-      "last_checked": "2026-05-19T07:28:42.511505",
+      "last_checked": "2026-05-22T07:43:10.834239",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6cd536b2649c75bf14698e47aefd56b4\"",
       "file_path": "documentation/Cinematic/cnrenderingquality/thumbnail.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnrenderingquality/init(rawvalue:).json": {
       "hash": "1f336a15bb8eaa607935c11338eaba4f964356616dd3c904aec594977fabe60d",
-      "last_checked": "2026-05-19T07:28:42.608532",
+      "last_checked": "2026-05-22T07:43:10.959165",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"dc9c67a98c831049da652292007668d3\"",
       "file_path": "documentation/Cinematic/cnrenderingquality/init-rawvalue.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/cancelled.json": {
       "hash": "09b36373e064a64e2e29c9f723452d6bed47dd845a7ad7955fab060cddebff6b",
-      "last_checked": "2026-05-19T07:28:42.668001",
+      "last_checked": "2026-05-22T07:43:11.118301",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f3cab9ccb4d62be97be9636134195bed\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/cancelled.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/incompatible.json": {
       "hash": "30efdf4bcb0f903c0564871efbd3f2acf74e056d2e490ec5c13a833d7a9a9658",
-      "last_checked": "2026-05-19T07:28:42.770331",
+      "last_checked": "2026-05-22T07:43:11.245164",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"6e079cc2005a31d84d8ee85890989afa\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/incompatible.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/incomplete.json": {
       "hash": "0c9adba8eddd503d3ff26b49da695fe22b0b46d6af9f6b1913bdf3efa8f1d2b3",
-      "last_checked": "2026-05-19T07:28:42.817181",
+      "last_checked": "2026-05-22T07:43:11.366429",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"4306c4ea4cf89434fb8132083d9b77a7\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/incomplete.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/malformed.json": {
       "hash": "de3d50dc0d4f376a240ce858356ace37387a52b70dfaed9e6b8caabbd23af86a",
-      "last_checked": "2026-05-19T07:28:42.940288",
+      "last_checked": "2026-05-22T07:43:11.531763",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f4244af46f753eb9791ea6b4a5f98307\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/malformed.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/unknown.json": {
       "hash": "fd9068659868490fc0cf4be8af5f537d376bfddbcb7380a0d3d17ef85de1c27d",
-      "last_checked": "2026-05-19T07:28:43.046118",
+      "last_checked": "2026-05-22T07:43:11.660010",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"1cd5ca6b36f4fd5dfb3c2ce6a3f99982\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/unknown.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/unreadable.json": {
       "hash": "acbbf3d1f15b12b05fbf503c05a9f8ec8265f8169db74b782da717a1827dce37",
-      "last_checked": "2026-05-19T07:28:43.161919",
+      "last_checked": "2026-05-22T07:43:11.796790",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"2cc3bfe8df32f0d30e14ae86baaa744a\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/unreadable.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/unsupported.json": {
       "hash": "3c7142fbb89183ced2fca74c1bfedbbf47cb28061d9b199fdd6501663e7d4f35",
-      "last_checked": "2026-05-19T07:28:43.269655",
+      "last_checked": "2026-05-22T07:43:11.958143",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"e63dd1985bb91baaf566eff2d91292b9\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/unsupported.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cncinematicerror/code/init(rawvalue:).json": {
       "hash": "b3e0f1734666a6e191207ceb39ea8420bb4db01421aeb46973fbe86c11325a68",
-      "last_checked": "2026-05-19T07:28:43.376380",
+      "last_checked": "2026-05-22T07:43:12.112563",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"d8383762b28935d40a7a6a26c987f73d\"",
       "file_path": "documentation/Cinematic/cncinematicerror/code/init-rawvalue.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiongroupid/init(_:).json": {
       "hash": "cdf04dbcd384c196f5c8e0eaab17ff122556905e6373ed922c302f1f2fff0eee",
-      "last_checked": "2026-05-19T07:28:43.478557",
+      "last_checked": "2026-05-22T07:43:12.276654",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"386efe5e52abfde901a528487e49f4f6\"",
       "file_path": "documentation/Cinematic/cndetectiongroupid/init.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectiongroupid/init(rawvalue:).json": {
       "hash": "33b4d983db25661c6fb53ae624f91eef28e884a2f9ef42b21c2258aac626a292",
-      "last_checked": "2026-05-19T07:28:43.586525",
+      "last_checked": "2026-05-22T07:43:12.440340",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"1fccd4267fc23b350c96b3b507cead04\"",
       "file_path": "documentation/Cinematic/cndetectiongroupid/init-rawvalue.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectionid/init(_:).json": {
       "hash": "d171a2a9c0be007b560aa0a9c9baeede7a734a773d3bfdb24e2100550202d851",
-      "last_checked": "2026-05-19T07:28:43.631216",
+      "last_checked": "2026-05-22T07:43:12.594718",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"5f85a07abf4cf201e614ef3d59e6138f\"",
       "file_path": "documentation/Cinematic/cndetectionid/init.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cndetectionid/init(rawvalue:).json": {
       "hash": "f6b13542c75bcc7437e1024d7859e7d21c94c81e200352339228927083512c44",
-      "last_checked": "2026-05-19T07:28:43.758731",
+      "last_checked": "2026-05-22T07:43:12.718565",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"f910ca586f75cdc1051ad6161c3605be\"",
       "file_path": "documentation/Cinematic/cndetectionid/init-rawvalue.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cinematic/cnassetspatialaudioinfo-7hdev/issupported.json": {
       "hash": "c26867f63eed6b9cb6087070122144953c7d9e8503e5120b9e6a7f3fd2d42ebe",
-      "last_checked": "2026-05-19T07:28:38.614354",
+      "last_checked": "2026-05-22T07:43:04.773265",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:21.368538",
+      "session_id": "2026-05-22T07:42:35.889931",
       "etag": "W/\"a42979f68bdd9f9b9e9c41120a5f18b2\"",
       "file_path": "documentation/Cinematic/cnassetspatialaudioinfo-7hdev/issupported.md"
     },

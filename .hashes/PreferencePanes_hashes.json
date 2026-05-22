@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:29:46.425995",
+    "last_updated": "2026-05-22T07:44:50.105230",
     "total_pages": 60,
-    "session_id": "2026-05-19T07:29:43.454437"
+    "session_id": "2026-05-22T07:44:44.921159"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PreferencePanes.json": {
       "hash": "a2b1a20aeff878495591e7b98fcb64ca775dc5d5047b1f2ba3147c93f7d2ff50",
-      "last_checked": "2026-05-19T07:29:43.676752",
+      "last_checked": "2026-05-22T07:44:45.145495",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"1c7ae6a405971965cd8aa6cd4c292cf5\"",
       "file_path": "documentation/PreferencePanes/PreferencePanes.md"
     },
     "https://developer.apple.com/documentation/PreferencePanes": {
       "hash": "a2b1a20aeff878495591e7b98fcb64ca775dc5d5047b1f2ba3147c93f7d2ff50",
-      "last_checked": "2026-05-19T07:29:43.568270",
+      "last_checked": "2026-05-22T07:44:45.043836",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"1c7ae6a405971965cd8aa6cd4c292cf5\"",
       "file_path": "documentation/PreferencePanes/PreferencePanes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane.json": {
       "hash": "63c1bd3fadf1b4428feed404f261a32c0cdb739c2b7006aab35bd500da30aad4",
-      "last_checked": "2026-05-19T07:29:43.920132",
+      "last_checked": "2026-05-22T07:44:45.424446",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"e8134f02ef422bad7ab97e416d407e23\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nsprefpanehelpmenuinfoplistkey.json": {
       "hash": "c8ba8ecb373aa02503b48b383b2f119afac04277b455163fc1279b93bb04e4ac",
-      "last_checked": "2026-05-19T07:29:43.970870",
+      "last_checked": "2026-05-22T07:44:45.593128",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"442e6df0ba72aefcae287640923dd7b1\"",
       "file_path": "documentation/PreferencePanes/nsprefpanehelpmenuinfoplistkey.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nsprefpanehelpmenutitlekey.json": {
       "hash": "61020ef569129c0935a5dca3832a1456a1f98928661f2e196c25b54dab4395f3",
-      "last_checked": "2026-05-19T07:29:44.207587",
+      "last_checked": "2026-05-22T07:44:45.758254",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"9e6ef367f5f3d815844ce960dcf2d90f\"",
       "file_path": "documentation/PreferencePanes/nsprefpanehelpmenutitlekey.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nsprefpanehelpmenuanchorkey.json": {
       "hash": "f9c7ee15229b9845caf2ebdf25b6839e97a4f5becb5b85d851a9c6cc7dfe0de5",
-      "last_checked": "2026-05-19T07:29:44.301455",
+      "last_checked": "2026-05-22T07:44:45.969527",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"86734e4b1fe1d9f2d8d8dae2ab38343e\"",
       "file_path": "documentation/PreferencePanes/nsprefpanehelpmenuanchorkey.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/preferencepanes-constants.json": {
       "hash": "6ee74af1977aa9bca0ef11b6c760a82d81122987a7535c1bbe37ecb0053dbca1",
-      "last_checked": "2026-05-19T07:29:44.350342",
+      "last_checked": "2026-05-22T07:44:46.094405",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"3afa7c7e2569fae39ff61737c17f2f6f\"",
       "file_path": "documentation/PreferencePanes/preferencepanes-constants.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/init(bundle:).json": {
       "hash": "cc8cd6e45ec59ab0db6d152617c548b0103178fd47b01718ffec53f0367ab6a7",
-      "last_checked": "2026-05-19T07:29:44.448673",
+      "last_checked": "2026-05-22T07:44:46.263009",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"185ca2bcd7afb27c2c987f051951261a\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/init-bundle.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/loadmainview().json": {
       "hash": "201dbacd693bb271289dd16fa216b44deeb9ec86a2bc0cd9d80eda58aee8835a",
-      "last_checked": "2026-05-19T07:29:44.506142",
+      "last_checked": "2026-05-22T07:44:46.385632",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"f11101808db9438a313f047794e4a3bc\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/loadmainview.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/assignmainview().json": {
       "hash": "cf578599a4815de4b385ba9eca4631d560e277c242380b35e8ad32399b8bc10e",
-      "last_checked": "2026-05-19T07:29:44.622873",
+      "last_checked": "2026-05-22T07:44:46.522417",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"13650632529d5ae1523d9b3bb2d403ea\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/assignmainview.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/mainviewdidload().json": {
       "hash": "1a364ee2c6d5d4b1fb5a7732703dac88d7ff543aa52bc6e7ab189c7fefde867e",
-      "last_checked": "2026-05-19T07:29:44.743821",
+      "last_checked": "2026-05-22T07:44:46.652324",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"78b7c8ab89c2762834a1695095c988ea\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/mainviewdidload.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/bundle.json": {
       "hash": "2c336c95419b6ad73b8f78c258173415be7cbdbc90849b1938ae1d86cf3340ba",
-      "last_checked": "2026-05-19T07:29:44.805264",
+      "last_checked": "2026-05-22T07:44:46.788366",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"a9294b42800c5d846ba02b1304fcfb8f\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/bundle.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/mainnibname.json": {
       "hash": "de2e2b8639a2522e1b60b383419a18b2fa4b82a3a8f8d7381d4e25c424abb76e",
-      "last_checked": "2026-05-19T07:29:44.907814",
+      "last_checked": "2026-05-22T07:44:47.206722",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"4cc78ff36e813e60dedf9718e4a435e6\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/mainnibname.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/mainview.json": {
       "hash": "be00a582d8a067c5cb4b7b8bad737188ce4e894fb6044de6758f9c2b23ec72cb",
-      "last_checked": "2026-05-19T07:29:45.004968",
+      "last_checked": "2026-05-22T07:44:47.495867",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"5efaa22159a78ccb439efa7b4f440a2f\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/mainview.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/willselect().json": {
       "hash": "072e052a606dad7811cd48fb5a2355856231fb592f8379c8a503e31d30f1e644",
-      "last_checked": "2026-05-19T07:29:45.102156",
+      "last_checked": "2026-05-22T07:44:47.666631",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"f98fc2a95feb85ca645bd29b3fc82078\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/willselect.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/didselect().json": {
       "hash": "c8ef8860946fd9e36997bd55c178447d633a90f833cafa427fd34db3c82ee845",
-      "last_checked": "2026-05-19T07:29:45.212453",
+      "last_checked": "2026-05-22T07:44:47.848707",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"a1350b79d9d0094c3c85e4bd8cc57559\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/didselect.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/willunselect().json": {
       "hash": "9607ac48e684b7076754573da86e7c851d0e98af638172742f53a2497a547b3e",
-      "last_checked": "2026-05-19T07:29:45.317097",
+      "last_checked": "2026-05-22T07:44:48.018942",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"68ba6bd1b40d1151373e7049a39e5fa9\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/willunselect.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/didunselect().json": {
       "hash": "ef7cd8bf341c7086c9bfcff4c6f65d3625c34c9007add0d4ee440cedc80db3a9",
-      "last_checked": "2026-05-19T07:29:45.364624",
+      "last_checked": "2026-05-22T07:44:48.183022",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"15cfc6e31e2c5e6928dfa2a463e64d93\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/didunselect.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/isselected.json": {
       "hash": "9b3569cd6dda3ea9154fbd2c92d74e99688aa185cfe741c7936fa9a61536eaf2",
-      "last_checked": "2026-05-19T07:29:45.421497",
+      "last_checked": "2026-05-22T07:44:48.313531",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"dd7d9a0fd830ba47cebc46a09db684b1\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/isselected.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/shouldunselect.json": {
       "hash": "5931fbaa1db04515f6ad2bf74b71350123ce68d91d57b8fb37bc4d2ff8ceba9d",
-      "last_checked": "2026-05-19T07:29:45.494694",
+      "last_checked": "2026-05-22T07:44:48.472949",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"5edbde237149433b377340a9d332ea9a\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/shouldunselect.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepaneunselectreply.json": {
       "hash": "05a4533f71c2c6e0edb9109f34ab0497dae46b51f2d16108c1cfd5f3b31ff324",
-      "last_checked": "2026-05-19T07:29:45.553418",
+      "last_checked": "2026-05-22T07:44:48.654166",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"1835e33059c1687573dc48d8402ac71d\"",
       "file_path": "documentation/PreferencePanes/nspreferencepaneunselectreply.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/reply(toshouldunselect:).json": {
       "hash": "14bee6fdbe73a73993069d9cf29d0ffbea7ce11acd77140ef8f13c8e80b40960",
-      "last_checked": "2026-05-19T07:29:45.629975",
+      "last_checked": "2026-05-22T07:44:48.772803",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"852a540886c1bd3f886761c8d44114fe\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/reply-toshouldunselect.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/firstkeyview.json": {
       "hash": "d386415cbc71e2407330db6e541e0f90a19467bb30e11db089e898d615788a39",
-      "last_checked": "2026-05-19T07:29:45.761915",
+      "last_checked": "2026-05-22T07:44:48.956277",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"48458595ea7e5070b91b1a1058986158\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/firstkeyview.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/initialkeyview.json": {
       "hash": "fec80b827c5b254300d525f487e2521a1f9dc5db4abd079c349ea6cd7fcb68bf",
-      "last_checked": "2026-05-19T07:29:45.865905",
+      "last_checked": "2026-05-22T07:44:49.111837",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"5752b8ed9e45a20425d3bd988736d303\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/initialkeyview.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/lastkeyview.json": {
       "hash": "29472c57e00ec4da72b854a2638b1b8a195678a8b60fb42b2dabb3e8eb2adb75",
-      "last_checked": "2026-05-19T07:29:45.972624",
+      "last_checked": "2026-05-22T07:44:49.274006",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"5607cd1081eaf52b2f6cf4d60c55e9b0\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/lastkeyview.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/autosavetextfields.json": {
       "hash": "5ab02d1db3807d40cfcbab7b28836ec9f0a725f3e0e28717b1338e6de090a378",
-      "last_checked": "2026-05-19T07:29:46.065815",
+      "last_checked": "2026-05-22T07:44:49.385590",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"167ef3f8e648a27f6f093d756abf0db2\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/autosavetextfields.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepane/updatehelpmenu(with:).json": {
       "hash": "86a0738998c6e2e216b6eb7bc3bc073dd097d4cc87cd422d8464631000ae5862",
-      "last_checked": "2026-05-19T07:29:46.167420",
+      "last_checked": "2026-05-22T07:44:49.499991",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"06c58dd0cbef9695aff24e421b89988a\"",
       "file_path": "documentation/PreferencePanes/nspreferencepane/updatehelpmenu-with.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepaneunselectreply/unselectcancel.json": {
       "hash": "beb5c678319ee160ba0eb7d5795fc3a5068f581485c4789a7c6d6743921b4bdf",
-      "last_checked": "2026-05-19T07:29:46.239771",
+      "last_checked": "2026-05-22T07:44:49.680730",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"f2d968ecc1cff51f335dc6ab8a2262ac\"",
       "file_path": "documentation/PreferencePanes/nspreferencepaneunselectreply/unselectcancel.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepaneunselectreply/unselectnow.json": {
       "hash": "69e7e9a7c6b025c60ee872d557c2545e556db488ad6ce9303b768953dbade2f8",
-      "last_checked": "2026-05-19T07:29:46.286572",
+      "last_checked": "2026-05-22T07:44:49.805246",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"b71ea849e7732000a44ef9a24a305f33\"",
       "file_path": "documentation/PreferencePanes/nspreferencepaneunselectreply/unselectnow.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepaneunselectreply/unselectlater.json": {
       "hash": "9528a7844e9aad2cdb13be928d8bf2386462cb3e3d97b249c712f6f65b8805c5",
-      "last_checked": "2026-05-19T07:29:46.363593",
+      "last_checked": "2026-05-22T07:44:49.914959",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"bcb7f968de027133a0fb558b970084e2\"",
       "file_path": "documentation/PreferencePanes/nspreferencepaneunselectreply/unselectlater.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/preferencepanes/nspreferencepaneunselectreply/init(rawvalue:).json": {
       "hash": "977341d538a0b7d5b5c714cc145cf205d78458acd1f93dada630d8233185d41f",
-      "last_checked": "2026-05-19T07:29:46.424985",
+      "last_checked": "2026-05-22T07:44:50.101402",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:29:43.454437",
+      "session_id": "2026-05-22T07:44:44.921159",
       "etag": "W/\"4444f75e677966bfb1a78c9607d0c7c8\"",
       "file_path": "documentation/PreferencePanes/nspreferencepaneunselectreply/init-rawvalue.md"
     },

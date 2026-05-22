@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:28:00.861497",
+    "last_updated": "2026-05-22T07:42:05.200953",
     "total_pages": 609,
-    "session_id": "2026-05-19T07:27:30.620644"
+    "session_id": "2026-05-22T07:41:14.402131"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/PencilKit.json": {
       "hash": "e7f3abe45a883f73b6f06443e10d859a1c2aac6272cd55a7b1bf700a4925deef",
-      "last_checked": "2026-05-19T07:27:31.004852",
+      "last_checked": "2026-05-22T07:41:14.779462",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7dab43b33aba7f468f645145e8b152e0\"",
       "file_path": "documentation/PencilKit/PencilKit.md"
     },
     "https://developer.apple.com/documentation/PencilKit": {
       "hash": "e7f3abe45a883f73b6f06443e10d859a1c2aac6272cd55a7b1bf700a4925deef",
-      "last_checked": "2026-05-19T07:27:30.903264",
+      "last_checked": "2026-05-22T07:41:14.672428",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7dab43b33aba7f468f645145e8b152e0\"",
       "file_path": "documentation/PencilKit/PencilKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/drawing-with-pencilkit.json": {
       "hash": "b75897645ed531b25164226b25631f9d19340dd667a4c7d08de54435a6348fca",
-      "last_checked": "2026-05-19T07:27:31.221192",
+      "last_checked": "2026-05-22T07:41:15.057591",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ae7dfb711f7b06ef67ed581db48f80ef\"",
       "file_path": "documentation/PencilKit/drawing-with-pencilkit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/customizing-scribble-with-interactions.json": {
       "hash": "fc58c606cf747747684cdadbf2d18ca972a7a1608221cb37d02097ccfdbea354",
-      "last_checked": "2026-05-19T07:27:31.317440",
+      "last_checked": "2026-05-22T07:41:15.248301",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0a371063c8f49b6c9b90c1acbe47ceb8\"",
       "file_path": "documentation/PencilKit/customizing-scribble-with-interactions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/inspecting-modifying-and-constructing-pencilkit-drawings.json": {
       "hash": "f6aa6581ed651adf27ad4c7dbae51fc6da42d1669b2309cf446f338a44656fc1",
-      "last_checked": "2026-05-19T07:27:31.372047",
+      "last_checked": "2026-05-22T07:41:15.419530",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"19fa63fcffddebbf12b9369ee3bf64b7\"",
       "file_path": "documentation/PencilKit/inspecting-modifying-and-constructing-pencilkit-drawings.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview.json": {
       "hash": "6f2fa3a56535b5a04b952fdaffbc85ae0a576502457b44ba6e6ad263ab13ba06",
-      "last_checked": "2026-05-19T07:27:31.624448",
+      "last_checked": "2026-05-22T07:41:15.574548",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e039a865b88a75cb02d85f352845930a\"",
       "file_path": "documentation/PencilKit/pkcanvasview.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct.json": {
       "hash": "89d49f0f771ab8d97baaac3ff3baebccdc84128465af861f36873f122c4fc473",
-      "last_checked": "2026-05-19T07:27:31.677629",
+      "last_checked": "2026-05-22T07:41:15.731766",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"63da35a1777ec2242a5927e62bc444e4\"",
       "file_path": "documentation/PencilKit/pkdrawing-swiftstruct.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct.json": {
       "hash": "fa8ff945b0c9924644f12fd8b5929f8d21b5dcd0014b66dc1d21823a366dcfd1",
-      "last_checked": "2026-05-19T07:27:31.897173",
+      "last_checked": "2026-05-22T07:41:15.878229",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3e7ff0d6153eb2e61092b7577f442c00\"",
       "file_path": "documentation/PencilKit/pkstroke-swiftstruct.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct.json": {
       "hash": "369085e395455d18c68ca7d142208b6137fe8925687cbbde377685cfb4112157",
-      "last_checked": "2026-05-19T07:27:32.128852",
+      "last_checked": "2026-05-22T07:41:16.052792",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"54309b82f409a4c57acb42f7e57c74c5\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swiftstruct.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct.json": {
       "hash": "f5d15adb7710044f61dc5a5e0a4e51c44bfbbd2a0e609e2ad4ac6ef744252312",
-      "last_checked": "2026-05-19T07:27:32.214877",
+      "last_checked": "2026-05-22T07:41:16.207793",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4cd2b46a2d97e70d850ae3520df53d93\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swiftstruct.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct.json": {
       "hash": "3ea0f33e6b5fc8a0d7be8aafff8f28caf624e5b8649014865b59382bcc20d874",
-      "last_checked": "2026-05-19T07:27:32.263411",
+      "last_checked": "2026-05-22T07:41:16.327060",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ed4623515d24831fe633dd1f7a691a34\"",
       "file_path": "documentation/PencilKit/pkink-swiftstruct.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/configuring-the-pencilkit-tool-picker.json": {
       "hash": "b84d542d8055c82f623da07339493d88d2e08a46d3ab369e6a7397c42cbc1e6f",
-      "last_checked": "2026-05-19T07:27:32.370887",
+      "last_checked": "2026-05-22T07:41:16.505421",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d12772e5a1e6972123ee91896a22a826\"",
       "file_path": "documentation/PencilKit/configuring-the-pencilkit-tool-picker.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker.json": {
       "hash": "fc994685b81e39d1a55222470232eca19fe22e94bb5063877e9f9618ab6e018a",
-      "last_checked": "2026-05-19T07:27:32.430485",
+      "last_checked": "2026-05-22T07:41:16.630974",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"89e2da4618a815b574603afe86c71983\"",
       "file_path": "documentation/PencilKit/pktoolpicker.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct.json": {
       "hash": "d113d5253e75b9e16d74d1bd8f3ee677208edb63548225aee7e2348d09c2ce46",
-      "last_checked": "2026-05-19T07:27:32.548896",
+      "last_checked": "2026-05-22T07:41:16.807985",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"acaadc156e29483259d5e303cd3257cc\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swiftstruct.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct.json": {
       "hash": "6d5bc6b3c479982e099df809bdffd22053a917e37566ff3d61830380c7d7b65c",
-      "last_checked": "2026-05-19T07:27:32.657599",
+      "last_checked": "2026-05-22T07:41:17.120242",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9dcd99f684efc99ec4f033184d51250f\"",
       "file_path": "documentation/PencilKit/pkerasertool-swiftstruct.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pklassotool-swift.struct.json": {
       "hash": "411b06cc5b159598a7b102b9d8d3c8d87d86ae5d9fd752725d4a3f8bb0b32c70",
-      "last_checked": "2026-05-19T07:27:32.803490",
+      "last_checked": "2026-05-22T07:41:17.237209",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4af3e9f6021c372f0ea4a668f9d66fea\"",
       "file_path": "documentation/PencilKit/pklassotool-swiftstruct.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktool-swift.protocol.json": {
       "hash": "9e6151f7a5fc7de1d7cdc6e5299430233401027538089a7864327c1940579cbd",
-      "last_checked": "2026-05-19T07:27:32.903074",
+      "last_checked": "2026-05-22T07:41:17.378865",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4e1bed4d8b81f1697970a0ceca936518\"",
       "file_path": "documentation/PencilKit/pktool-swiftprotocol.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/supporting-backward-compatibility-for-ink-types.json": {
       "hash": "8baa583f4b864bf762d0c9c1270abec0941a881a2df9fd82fe042d390ed37450",
-      "last_checked": "2026-05-19T07:27:33.145771",
+      "last_checked": "2026-05-22T07:41:17.540818",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ab4fa4c940113eb07d262b01637c9200\"",
       "file_path": "documentation/PencilKit/supporting-backward-compatibility-for-ink-types.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion.json": {
       "hash": "9d5274e8604c7f5d670f27150c1d8d34913129e52722f02056fa763166fb7602",
-      "last_checked": "2026-05-19T07:27:33.252554",
+      "last_checked": "2026-05-22T07:41:17.704516",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a94edd94eed63d192c11998bbadbb383\"",
       "file_path": "documentation/PencilKit/pkcontentversion.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate.json": {
       "hash": "b1db4bdcfa477bf3cb6dd48e949f41d9dcefb0851a8544b9511dc4a6865d5e5e",
-      "last_checked": "2026-05-19T07:27:33.351954",
+      "last_checked": "2026-05-22T07:41:17.874268",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e41fb2064b0dc025810e8526165d7254\"",
       "file_path": "documentation/PencilKit/pkresponderstate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility.json": {
       "hash": "33b6c0780f51f944635c49c24e7a6ced49257734aff8a9dc4838e2c35d6fa815",
-      "last_checked": "2026-05-19T07:27:33.400299",
+      "last_checked": "2026-05-22T07:41:18.003509",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9fea3e12832a251b612c6303162a708d\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/delegate.json": {
       "hash": "effac0735558bf74a6dbeaedfac70a62a0f6944d5672d3bdbe1286c9f93c883a",
-      "last_checked": "2026-05-19T07:27:33.462353",
+      "last_checked": "2026-05-22T07:41:18.135515",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4c7d4a8af9243e51f4854d173945e231\"",
       "file_path": "documentation/PencilKit/pkcanvasview/delegate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdelegate.json": {
       "hash": "2ea4b2178860d0dae7bbda5eedf4043c51c055403b3baf984e8266ff4ea029be",
-      "last_checked": "2026-05-19T07:27:33.573946",
+      "last_checked": "2026-05-22T07:41:18.277771",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"bbd09e45a3344caaf3dbf141c1bfcfcd\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdelegate.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/tool-1kj57.json": {
       "hash": "5f85f7b7d55532aae13ec3805b3cb082132b38e8794b85734d993d839108a2d4",
-      "last_checked": "2026-05-19T07:27:33.651373",
+      "last_checked": "2026-05-22T07:41:18.433263",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"33a5cf62d0004ed46e953397363d3cbd\"",
       "file_path": "documentation/PencilKit/pkcanvasview/tool-1kj57.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/isruleractive.json": {
       "hash": "fb3f7763b174b954592c7fbc58b728fe641ccb9419c1c2a21dd300732c4a2518",
-      "last_checked": "2026-05-19T07:27:33.748872",
+      "last_checked": "2026-05-22T07:41:18.556150",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"bf8c8f83145f48750415f7e0683339b2\"",
       "file_path": "documentation/PencilKit/pkcanvasview/isruleractive.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/allowsfingerdrawing.json": {
       "hash": "2ad43fba38bede141ecf79078c5d11420bbd8694f2360549703a432e41480170",
-      "last_checked": "2026-05-19T07:27:33.977761",
+      "last_checked": "2026-05-22T07:41:18.734881",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0a1666173a2e8641de2c2e9f36adbd3b\"",
       "file_path": "documentation/PencilKit/pkcanvasview/allowsfingerdrawing.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/drawingpolicy.json": {
       "hash": "2caec1ce235404f35a4b4b5431cdbc3b2990fdadd960df8338e18c8b010567dc",
-      "last_checked": "2026-05-19T07:27:34.080029",
+      "last_checked": "2026-05-22T07:41:18.906946",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8d0eff8f3bdcf3673dfd9a66e17068e6\"",
       "file_path": "documentation/PencilKit/pkcanvasview/drawingpolicy.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdrawingpolicy.json": {
       "hash": "fd147ea2f2980193e9020a01aa514a98d418f4b70e1a286e4b1a0310ac164482",
-      "last_checked": "2026-05-19T07:27:34.128884",
+      "last_checked": "2026-05-22T07:41:19.030950",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"87f4674d1a8d06a86aad48cd813337e0\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdrawingpolicy.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/drawinggesturerecognizer.json": {
       "hash": "ab1432cf3deaecd9e1acb35732986ffb7813074b8acd24ec179b7e5f49428412",
-      "last_checked": "2026-05-19T07:27:34.243566",
+      "last_checked": "2026-05-22T07:41:19.201702",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f0af2b960ba5380f3898f30cc18c9169\"",
       "file_path": "documentation/PencilKit/pkcanvasview/drawinggesturerecognizer.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/drawing.json": {
       "hash": "3aa3d7ed85158e20e97ce841ac1227931d98e6df19af90431e3ee3b63997b1c6",
-      "last_checked": "2026-05-19T07:27:34.352810",
+      "last_checked": "2026-05-22T07:41:19.339720",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"712bed65f794da157519d03c7ed3c55e\"",
       "file_path": "documentation/PencilKit/pkcanvasview/drawing.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/maximumsupportedcontentversion.json": {
       "hash": "a9fbdef24155e13cc0df663763efb196981b5986b26ce23b2f6198d93e7eece0",
-      "last_checked": "2026-05-19T07:27:34.431280",
+      "last_checked": "2026-05-22T07:41:19.504484",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"de4731e3b2ba2b731bb66a7159746087\"",
       "file_path": "documentation/PencilKit/pkcanvasview/maximumsupportedcontentversion.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasview/isdrawingenabled.json": {
       "hash": "8335e666b83089ede88892ab5bfb5522a31d2e0caa2978872da79b61b86d0ec8",
-      "last_checked": "2026-05-19T07:27:34.533558",
+      "last_checked": "2026-05-22T07:41:19.618075",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"deff5526a63eaeb16d58fefaddea4bb5\"",
       "file_path": "documentation/PencilKit/pkcanvasview/isdrawingenabled.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver.json": {
       "hash": "bad9d13f730b4d7b4501ebfcadc1c30edaee3670baff84ad4f0378f34fe7e6d5",
-      "last_checked": "2026-05-19T07:27:34.640789",
+      "last_checked": "2026-05-22T07:41:19.732429",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e5ae3ec1619c9bd0c5face517bd4a421\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/init(strokes:).json": {
       "hash": "f71854afddceb3778a0cde947601604b5debbd3297e62a03ada36cb644dff9b2",
-      "last_checked": "2026-05-19T07:27:35.108627",
+      "last_checked": "2026-05-22T07:41:20.045012",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f2012f5f05e1c69e72877cc6eead755d\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/init-strokes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/init(data:).json": {
       "hash": "4fe5b1158d00106ffc3cd8c9ec3087a8f1a56dd8715af3ef004529635fe3bb6c",
-      "last_checked": "2026-05-19T07:27:35.163909",
+      "last_checked": "2026-05-22T07:41:20.179129",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"95f444672d0bd0c889f419c57a6d3994\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/init-data.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/init().json": {
       "hash": "a4c3a1bece3332c415fa647fc33ccbc5236eeb90c5a95e0e91b3abcc6270a981",
-      "last_checked": "2026-05-19T07:27:35.275129",
+      "last_checked": "2026-05-22T07:41:20.308966",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"68f7efde900c2a0680126add215fc0ce\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/init.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/bounds.json": {
       "hash": "bd21f82a9f35bd586792ca6b45b841f3f242e35fe833816f2d9ebe8af7717df4",
-      "last_checked": "2026-05-19T07:27:35.370085",
+      "last_checked": "2026-05-22T07:41:20.431356",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"082ed1a39fe55f90d4c6734797a0f2ee\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/bounds.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/image(from:scale:)-220d0.json": {
       "hash": "e3a0a1196b86d79914e83ccbef2a2f95c64c4aacdc53b630bd3ed27957dded06",
-      "last_checked": "2026-05-19T07:27:35.601027",
+      "last_checked": "2026-05-22T07:41:20.550171",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ef814140eb5d418768b9d024ef69d83d\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/image-fromscale-220d0.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/image(from:scale:)-6p3zc.json": {
       "hash": "bc2476b86c1c8c1ab862e4aeaa44f28a67f7af54a46668abccb5fecec1ea1efb",
-      "last_checked": "2026-05-19T07:27:35.814978",
+      "last_checked": "2026-05-22T07:41:20.711999",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"691b9b9e39bc3a59c1916dc3ab1484a0\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/image-fromscale-6p3zc.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/strokes.json": {
       "hash": "4678c44df5d980c88f863556c7f86f808aec526fce2fb9f2c59442ae05a893e9",
-      "last_checked": "2026-05-19T07:27:35.914930",
+      "last_checked": "2026-05-22T07:41:20.854183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b9dbb3849f7ad515051af4eb43b91c75\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/strokes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/datarepresentation().json": {
       "hash": "cd3921b0548388e647a3e17622d97bca5335ef173dc5f1b316932d14d20097e5",
-      "last_checked": "2026-05-19T07:27:35.962704",
+      "last_checked": "2026-05-22T07:41:21.171085",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2097c17454468c0bc36548cfc157a807\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/datarepresentation.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkappledrawingtypeidentifier.json": {
       "hash": "1a1cf451f55fbfa94cf16e879790500cd8e8a6ec8d5bf42fb4284fd1afc2e70a",
-      "last_checked": "2026-05-19T07:27:36.079887",
+      "last_checked": "2026-05-22T07:41:21.331689",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"988037934a7e7eb08eb4e48220275a96\"",
       "file_path": "documentation/PencilKit/pkappledrawingtypeidentifier.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/transform(using:).json": {
       "hash": "7855b91bf0aebf5f4167453514ee09a0dd2cd25b80013ffeb90cda2259948b70",
-      "last_checked": "2026-05-19T07:27:36.125534",
+      "last_checked": "2026-05-22T07:41:21.444664",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"57babf7fcefb3a196e0bbca13a669c0d\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/transform-using.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/transformed(using:).json": {
       "hash": "ba8be16147d99fe755655dd237984975c6a9da9afd6f955fcfdbd253f4839978",
-      "last_checked": "2026-05-19T07:27:36.245426",
+      "last_checked": "2026-05-22T07:41:21.554944",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e0e085e8ee30dda77229bfab295d62ef\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/transformed-using.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/append(_:).json": {
       "hash": "5d7d583f0636e73655b9bd27381f34a3c8ce761eca83059985e0fa324bdcd8b0",
-      "last_checked": "2026-05-19T07:27:36.348073",
+      "last_checked": "2026-05-22T07:41:21.702584",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"c10a42672f62c13095fe2fae6e5abaf8\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/append.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/appending(_:).json": {
       "hash": "720bf418e11a475f7267d9658f3dd8548092c1513a42aefc98f054ebd7c7d012",
-      "last_checked": "2026-05-19T07:27:36.394733",
+      "last_checked": "2026-05-22T07:41:21.834911",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"fba7fb39409cee33d30360041c259436\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/appending.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/requiredcontentversion.json": {
       "hash": "82af70c0fdb21f772763ff50c9c4ea4a811c7a85d434a1466a03db217a374a1f",
-      "last_checked": "2026-05-19T07:27:36.523693",
+      "last_checked": "2026-05-22T07:41:22.022370",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3626d2cc65f65912da5af1b78b40b0c2\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/requiredcontentversion.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference.json": {
       "hash": "d12dcec719dfbc71b3a7d946575cb20b5b9a332ec6c730b51d6a89fda9602be8",
-      "last_checked": "2026-05-19T07:27:36.646659",
+      "last_checked": "2026-05-22T07:41:22.146309",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8a2b854f9bf3d0268fb540c8d8ba3b71\"",
       "file_path": "documentation/PencilKit/pkdrawingreference.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-1imp6.json": {
       "hash": "cca6aab9052d86b9e8b4df78a83a0e1476c52d40dca541fa37e806fa6a1cb808",
-      "last_checked": "2026-05-19T07:27:36.844373",
+      "last_checked": "2026-05-22T07:41:22.597034",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9cc622eba5cc5868be59263a57f9fa8a\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init-inkpathtransformmask-1imp6.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:)-w7ti.json": {
       "hash": "fe646c928035ed10a8b0e49b313ab0a1e42f4ca3aee96ee10c1d7652274331c2",
-      "last_checked": "2026-05-19T07:27:36.956029",
+      "last_checked": "2026-05-22T07:41:22.707403",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b611fd95eccff89fde256d1e783e36a3\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init-inkpathtransformmask-w7ti.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-10m5j.json": {
       "hash": "e4691b552d1507813fc485b9ac741828b56df1e56053d149c8b27844f57cb7b2",
-      "last_checked": "2026-05-19T07:27:37.008138",
+      "last_checked": "2026-05-22T07:41:22.874470",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b7dfa202052e2fb7c848dc852297e2c3\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init-inkpathtransformmaskrandomseed-10m5j.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:)-epus.json": {
       "hash": "0f84141efd5936e77ebe4937c59f8053c9f8cc8d25a408880af6854ad7529f39",
-      "last_checked": "2026-05-19T07:27:37.067686",
+      "last_checked": "2026-05-22T07:41:23.025341",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"392aa40498ac179282c6409074655a20\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/init-inkpathtransformmaskrandomseed-epus.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/ink.json": {
       "hash": "48b32fa418eb7968d054efb9c5404b5820dfecf921e34452df541979be956131",
-      "last_checked": "2026-05-19T07:27:37.122104",
+      "last_checked": "2026-05-22T07:41:23.152724",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d6f9736a5b2dba7e2f35cb5a4d35d7af\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/ink.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/mask-8g6sx.json": {
       "hash": "f5c5a045b43ab100e1faeb0b2c3889de6907e63c54bfc0bb390c8e30b177a571",
-      "last_checked": "2026-05-19T07:27:37.186928",
+      "last_checked": "2026-05-22T07:41:23.269915",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"fae0743333ba8a215eb10afe494bb0c4\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/mask-8g6sx.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/mask-16kkz.json": {
       "hash": "5e2faf5b8b1885bd80f5f4d95d2585e6be553e6b6eb170ecdee0def47e1e586b",
-      "last_checked": "2026-05-19T07:27:37.245450",
+      "last_checked": "2026-05-22T07:41:23.402797",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"74bb8c8a5e32e8e90cfb022568677071\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/mask-16kkz.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/maskedpathranges.json": {
       "hash": "952debaf584f2b495cdc34d8e84b8254e979a62cf978a3e28b39097e42714ed1",
-      "last_checked": "2026-05-19T07:27:37.369786",
+      "last_checked": "2026-05-22T07:41:23.521766",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"bd5b530732a0a1b5eab41cff56a105da\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/maskedpathranges.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/path.json": {
       "hash": "be4157f32d9ba1f0e93fc2e0929ef5d104c9cabb2cf7e2747133e043d20ed388",
-      "last_checked": "2026-05-19T07:27:37.468503",
+      "last_checked": "2026-05-22T07:41:23.632466",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8ef83ce4e1f8a76e7788319d8cf77168\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/path.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/renderbounds.json": {
       "hash": "b12569b1cf07f601bf34cb43d209b16a17d1ef84b120b4dbc472e14fff178944",
-      "last_checked": "2026-05-19T07:27:37.565706",
+      "last_checked": "2026-05-22T07:41:23.763939",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"16612a45d8fdc209725a8614ed35b4b4\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/renderbounds.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/transform.json": {
       "hash": "e26d2f61ea7c39227005b9d053aa0f20a3061ed8b92ee555b35b6959b0054859",
-      "last_checked": "2026-05-19T07:27:37.616513",
+      "last_checked": "2026-05-22T07:41:23.882140",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"05531b7b1795a0ebd450175fdf437bd2\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/transform.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/randomseed.json": {
       "hash": "b5a1ba2bbebe49ae49c9a6d98c7a7cf9ef1f33340229a718dd2c9b01ee65889e",
-      "last_checked": "2026-05-19T07:27:37.728502",
+      "last_checked": "2026-05-22T07:41:24.011552",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6dafd0fcfa4078785d15df30d2daae93\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/randomseed.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstroke-swift.struct/requiredcontentversion.json": {
       "hash": "520b720e3ec4a72d4a0b43cb6cb9a9cc1122675017a828ced9eb6b56416d6150",
-      "last_checked": "2026-05-19T07:27:37.787467",
+      "last_checked": "2026-05-22T07:41:24.175165",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2848ff1733a4666e80514b9554db92d5\"",
       "file_path": "documentation/PencilKit/pkstroke-swift.struct/requiredcontentversion.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference.json": {
       "hash": "b5c35fa87fd768310ea044db20e32f54c6c556620890c16ed12f0300f9e46fb7",
-      "last_checked": "2026-05-19T07:27:37.858751",
+      "last_checked": "2026-05-22T07:41:24.294363",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"581b9ec62061c4b15d0e25a1cfd895ab\"",
       "file_path": "documentation/PencilKit/pkstrokereference.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/init().json": {
       "hash": "22a6c0663b4a2ded01a750b2a64094ee3d059f3ea44e8c6e640aa246ce161131",
-      "last_checked": "2026-05-19T07:27:37.920179",
+      "last_checked": "2026-05-22T07:41:24.430188",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0081dc739dda67142a36b5b1947a533b\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/init.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/init(controlpoints:creationdate:).json": {
       "hash": "00e7bce5e991ebb85ae111d59e14195f8df710a72c5b378bcd2cfd41b181651e",
-      "last_checked": "2026-05-19T07:27:38.026369",
+      "last_checked": "2026-05-22T07:41:24.609843",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a4362805e842d268d3ee37eee9dd79a5\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/init-controlpointscreationdate.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/creationdate.json": {
       "hash": "a4bd982f0a350fb1c94a955d95e743d2a1aacfd8e50040cc7655dbe7a82b9e93",
-      "last_checked": "2026-05-19T07:27:38.120848",
+      "last_checked": "2026-05-22T07:41:24.775154",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"eee8179779352dbdda62ddf09cddc831\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/creationdate.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoints(in:by:).json": {
       "hash": "d84f8d3d38a0b90080755c21edc2506e86a32685b763d883ffddb3561e5d711c",
-      "last_checked": "2026-05-19T07:27:38.178516",
+      "last_checked": "2026-05-22T07:41:24.903759",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f986b0f08a0af2467c8518ba8f90112c\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoints-inby.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedlocation(at:).json": {
       "hash": "9f2cb1d38801de43a02a0bd5f73536f59842669b5edaacbf5c868e70230f264e",
-      "last_checked": "2026-05-19T07:27:38.293793",
+      "last_checked": "2026-05-22T07:41:25.030211",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"149065bfd5779518cdaf428646c79c4d\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedlocation-at.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedpoint(at:).json": {
       "hash": "2247cf8e22f3d8d6abb28663032af5c9eefccc189a21982244501bcf78ef7ffb",
-      "last_checked": "2026-05-19T07:27:38.349287",
+      "last_checked": "2026-05-22T07:41:25.223097",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6b31f99148417762a9a8b71e6a19a521\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedpoint-at.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/parametricvalue(_:offsetby:).json": {
       "hash": "a2ac7e7395910f3945aba90fd92144c1b0bebba7e3be88f18e608af2308073d6",
-      "last_checked": "2026-05-19T07:27:38.453781",
+      "last_checked": "2026-05-22T07:41:25.349083",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4934e05c2aa57bdb0ac2e70a6b561c30\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/parametricvalue-offsetby.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice.json": {
       "hash": "181d0885344801b69bf687de75a5a571fa06b3533e5b9430c082767095251ec5",
-      "last_checked": "2026-05-19T07:27:38.501319",
+      "last_checked": "2026-05-22T07:41:25.485920",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4ec305dc966904005545ca890b048746\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-protocol-implementations.json": {
       "hash": "86c6e718a7d3c45655b46b030951d0f58c31f3e10c96fc8161a2beabbabb2555",
-      "last_checked": "2026-05-19T07:27:38.603804",
+      "last_checked": "2026-05-22T07:41:25.610239",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b5991451dd52639796ebb666ad4dccc4\"",
       "file_path": "documentation/PencilKit/pkstrokepath-protocol-implementations.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference.json": {
       "hash": "d16fb097077a2c76f3544a01cfab5312ba7b245ad93885c0d4a581cc60d65233",
-      "last_checked": "2026-05-19T07:27:38.702927",
+      "last_checked": "2026-05-22T07:41:25.742919",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"089a25fbf35e426f64af18996f63e2aa\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:).json": {
       "hash": "6f79fa845916220da7d5cbaa5bbf6b3ca060cd377c75a1636c82cc262915d50c",
-      "last_checked": "2026-05-19T07:27:38.800808",
+      "last_checked": "2026-05-22T07:41:25.872452",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3a94e1a86f6f9e9e9f3142230ea79017\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/init-locationtimeoffsetsizeopacityforceazimuthaltitude.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:).json": {
       "hash": "1a3bbe137ac8c155a71bf04145fadfe71d3e88068b9b432db56f558a413448c2",
-      "last_checked": "2026-05-19T07:27:38.853888",
+      "last_checked": "2026-05-22T07:41:26.005518",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3460f7303f8ab3ac5c8931c909bbb7a6\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/init-locationtimeoffsetsizeopacityforceazimuthaltitudesecondaryscale.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/location.json": {
       "hash": "8cf94d7080ed65ce5f13a7e6d2bbe43a647ee83076735f63b50861c0c0eb15e9",
-      "last_checked": "2026-05-19T07:27:38.957658",
+      "last_checked": "2026-05-22T07:41:26.183528",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5daaa181a67b8e5de515b2c6789ec895\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/location.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/timeoffset.json": {
       "hash": "256c2bbef80e64ad7ff5fceb70b39acaed2f3a87807160c1aa3d4b7123b589f7",
-      "last_checked": "2026-05-19T07:27:39.057576",
+      "last_checked": "2026-05-22T07:41:26.313649",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d07555f2fe5a9377cded9a33756c7949\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/timeoffset.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/altitude.json": {
       "hash": "c571d3f8fb123d089dbca70254c35cfe703c012a992d131ffaac09ccfcc897ee",
-      "last_checked": "2026-05-19T07:27:39.160540",
+      "last_checked": "2026-05-22T07:41:26.439549",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1c77e43a6a23bcff0a1834bdf87a1a56\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/altitude.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/azimuth.json": {
       "hash": "2d7482ac4acf90c50a40ac04edd59e1cf6829985f570c445270695f64d487e0c",
-      "last_checked": "2026-05-19T07:27:39.259825",
+      "last_checked": "2026-05-22T07:41:26.564465",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a4626088ff75903f30d9711a8418a101\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/azimuth.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/force.json": {
       "hash": "4dc2fdfc86a48d7c565a9fb2b1fc52a6015f8a81726ad4c79f26500e32b5bf4a",
-      "last_checked": "2026-05-19T07:27:39.305429",
+      "last_checked": "2026-05-22T07:41:26.698207",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2debcfbac0708cbc63c7b2a54abe107f\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/force.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/size.json": {
       "hash": "3958db68e08c78bbcfb099776055d50c9154927f3603020fbe412514a823fe3b",
-      "last_checked": "2026-05-19T07:27:39.489881",
+      "last_checked": "2026-05-22T07:41:26.812598",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"576feecdade1a0b9c88a573f7f7bf6ed\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/size.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/opacity.json": {
       "hash": "2bff3adfd7dc51c48ce60d68da360e85dd195bcfab44952d95022ee219f27292",
-      "last_checked": "2026-05-19T07:27:39.590346",
+      "last_checked": "2026-05-22T07:41:27.106254",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"56589fb374a326a50ed94661d1535aa7\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/opacity.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/secondaryscale.json": {
       "hash": "c2a52f09316570eae45f22547dc17d604a8ec20e3f66c5043c4148302108bb01",
-      "last_checked": "2026-05-19T07:27:39.697570",
+      "last_checked": "2026-05-22T07:41:27.219509",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6f975aa751a576910c97d893578583b5\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/secondaryscale.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference.json": {
       "hash": "24da48a18074bb1261765cae7a97f997d8abb2c3fcba72512388826d9d096cbc",
-      "last_checked": "2026-05-19T07:27:39.926741",
+      "last_checked": "2026-05-22T07:41:27.535160",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1c7c186322d9e186d66b13806a02aa38\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).json": {
       "hash": "b32eaaac7aa9e46e53ecac1cc7b00d637b0ee38b05720b1b83e52a41b89024ae",
-      "last_checked": "2026-05-19T07:27:40.030247",
+      "last_checked": "2026-05-22T07:41:27.656672",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"db7a2da9cccebb9cf335a3ceedd89b37\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/init-locationtimeoffsetsizeopacityforceazimuthaltitudesecondaryscalethreshold.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepoint-swift.struct/threshold.json": {
       "hash": "035d3a641531ee048b95f2b22bfa5b98144ab661fb934274f397bd806d56197d",
-      "last_checked": "2026-05-19T07:27:40.074642",
+      "last_checked": "2026-05-22T07:41:27.790595",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7f377b56403c616c112b4ab4ea09bef8\"",
       "file_path": "documentation/PencilKit/pkstrokepoint-swift.struct/threshold.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/init(_:color:)-2rx09.json": {
       "hash": "3f71f4d0b0d14f42208742f7c4616bb955ca73418f75dcf593b7637084602276",
-      "last_checked": "2026-05-19T07:27:40.132486",
+      "last_checked": "2026-05-22T07:41:27.919478",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"00eceaaa76cd9dea164ffef072b6cee4\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/init-color-2rx09.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/init(_:color:)-7w46l.json": {
       "hash": "68dc2b8748bb0e940175ddca77c191049dbd8e86a4a592d0cd5b18908767a142",
-      "last_checked": "2026-05-19T07:27:40.257945",
+      "last_checked": "2026-05-22T07:41:28.103428",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"100bf5ac2f675e7692671fe08fa90c76\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/init-color-7w46l.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/inktype-swift.typealias.json": {
       "hash": "327491c48a368b2122c1b37e324e1fdd5e3a80dc2102614c1d407601f25c5d15",
-      "last_checked": "2026-05-19T07:27:40.357524",
+      "last_checked": "2026-05-22T07:41:28.212000",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"65ac82260280ace500088369814478d4\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/inktype-swifttypealias.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/color-cg6f.json": {
       "hash": "ed743c51acc8171736fee01a1c9cb841110cc8ea11a235ef5d301021f98a2948",
-      "last_checked": "2026-05-19T07:27:40.450455",
+      "last_checked": "2026-05-22T07:41:28.364352",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f8b9fd4894435d6f484109fa4b93eda6\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/color-cg6f.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/color-6lmjp.json": {
       "hash": "cb90a8cfe9c9283bbd22281d4035d39b13f6e5966968edba55ddd574a12d8421",
-      "last_checked": "2026-05-19T07:27:40.550191",
+      "last_checked": "2026-05-22T07:41:28.486172",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e607845c4ee3c76fb273c25ce0ba8ac5\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/color-6lmjp.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/inktype-swift.property.json": {
       "hash": "d8423f8d68375026f2300f15160dfc3cb7b87afc101a95c545837b12b62672a7",
-      "last_checked": "2026-05-19T07:27:40.782304",
+      "last_checked": "2026-05-22T07:41:28.640054",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1078e4ec8608b48c9afe49ed2c97e8ba\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/inktype-swiftproperty.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkink-swift.struct/requiredcontentversion.json": {
       "hash": "149e692589485c41216f23a4d0d3fd4937a9ad0d67063e74d0a0ff7cb80558ce",
-      "last_checked": "2026-05-19T07:27:40.885119",
+      "last_checked": "2026-05-22T07:41:28.763926",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ff2aef2b006dc526bf79e1d5939aa1e8\"",
       "file_path": "documentation/PencilKit/pkink-swift.struct/requiredcontentversion.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkreference.json": {
       "hash": "b841e5d74abe937f891f9dec9031a23836e37dc45db45e052d09bdb0db2fd438",
-      "last_checked": "2026-05-19T07:27:40.992644",
+      "last_checked": "2026-05-22T07:41:28.893412",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"cb1f4d36d03f1d92c5e96ae85b3548a6\"",
       "file_path": "documentation/PencilKit/pkinkreference.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/init().json": {
       "hash": "025faa101b1c880e8abc2116a962eb69c134cbfb6a94a106a8fa9d61c1662d1c",
-      "last_checked": "2026-05-19T07:27:41.095140",
+      "last_checked": "2026-05-22T07:41:29.017301",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"dd2117e5162a26f3a078a62192568781\"",
       "file_path": "documentation/PencilKit/pktoolpicker/init.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/init(toolitems:).json": {
       "hash": "7d22eb97b9d50309365010548fb43ebe9e8cd1597cd139217bd6924a040c95f9",
-      "last_checked": "2026-05-19T07:27:41.148130",
+      "last_checked": "2026-05-22T07:41:29.175096",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"015aeb940449c1844dbe4aa92b369989\"",
       "file_path": "documentation/PencilKit/pktoolpicker/init-toolitems.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem.json": {
       "hash": "dd30618397f2ad20b9d1e481561b9471859c3054d443bed6b435a6085b9a134c",
-      "last_checked": "2026-05-19T07:27:41.257769",
+      "last_checked": "2026-05-22T07:41:29.348256",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"abe4a4a5b163cf8f6bc775890cbf1ea3\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickereraseritem.json": {
       "hash": "7d9cf53d46c05497ef8da617035b8e6344f0f0039251bccdf2f9250caa3b11be",
-      "last_checked": "2026-05-19T07:27:41.357268",
+      "last_checked": "2026-05-22T07:41:29.480914",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6bc0ace01e1b4b7d9e4e483f28a842f3\"",
       "file_path": "documentation/PencilKit/pktoolpickereraseritem.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerlassoitem.json": {
       "hash": "0ebbdca9fe98f9279913fc2b281fb2ecbb22060a9cbe54074d13e9f879d2044e",
-      "last_checked": "2026-05-19T07:27:41.459556",
+      "last_checked": "2026-05-22T07:41:29.615984",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"14447562f125a257f6ce39af9aa12445\"",
       "file_path": "documentation/PencilKit/pktoolpickerlassoitem.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerruleritem.json": {
       "hash": "748f9774cd8c0e3e50caba301cd08918e8cbd9b34fc7ed86baf8241cd329b1da",
-      "last_checked": "2026-05-19T07:27:41.507779",
+      "last_checked": "2026-05-22T07:41:29.728277",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"03ad03f7db2f65c616ebfb704a069fb9\"",
       "file_path": "documentation/PencilKit/pktoolpickerruleritem.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerscribbleitem.json": {
       "hash": "28c459347eb6a4f85319fad710f9058aa6d57f24530cdd7b34199f3a7de86c14",
-      "last_checked": "2026-05-19T07:27:41.630295",
+      "last_checked": "2026-05-22T07:41:29.920669",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3e02ed69c8b7b0b9103e1279086fd66c\"",
       "file_path": "documentation/PencilKit/pktoolpickerscribbleitem.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem.json": {
       "hash": "a94a39797396340e928c90005cc1163f67857109c6f26f56b5ba1657e5342036",
-      "last_checked": "2026-05-19T07:27:41.744850",
+      "last_checked": "2026-05-22T07:41:30.090934",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3d1d67dd34bcca77ad1032a4688b43fd\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickeritem.json": {
       "hash": "283cbf94884f594ddac3df90cb958bcb1e366b6b46ce87d2e5d14bd3f20e174b",
-      "last_checked": "2026-05-19T07:27:41.792598",
+      "last_checked": "2026-05-22T07:41:30.224387",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"371a0df5452ac0ee2df2d28c04f2c672\"",
       "file_path": "documentation/PencilKit/pktoolpickeritem.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/toolitems.json": {
       "hash": "2e32def401a368f24ad9f93af3608b789341c5b19d0196c78e2f5fa9c54d23e8",
-      "last_checked": "2026-05-19T07:27:41.915748",
+      "last_checked": "2026-05-22T07:41:30.401263",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"27d9f378c868bd3c539c60dc6f42dd6b\"",
       "file_path": "documentation/PencilKit/pktoolpicker/toolitems.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/addobserver(_:).json": {
       "hash": "214e80354294df0640cc5e5f62c3ed9452d82be1738856c118984cafa877dc52",
-      "last_checked": "2026-05-19T07:27:41.971272",
+      "last_checked": "2026-05-22T07:41:30.574022",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"280e3c9b17df3bb00d17c0cb1505df32\"",
       "file_path": "documentation/PencilKit/pktoolpicker/addobserver.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/removeobserver(_:).json": {
       "hash": "6c46a9a8b7e925ada42e33fe19ef670190568dab052d313661046985819bcf0d",
-      "last_checked": "2026-05-19T07:27:42.093148",
+      "last_checked": "2026-05-22T07:41:30.742298",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"36a02e8ddcd6f303a71a3296c5468e94\"",
       "file_path": "documentation/PencilKit/pktoolpicker/removeobserver.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/setvisible(_:forfirstresponder:).json": {
       "hash": "6f4251f5ded5b0dedbbe0287b5af7c59d5205560f8c73e0fc33ebfba0e0f2445",
-      "last_checked": "2026-05-19T07:27:42.196477",
+      "last_checked": "2026-05-22T07:41:30.899647",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"17b120022ebfc6a7f15902f416387b2b\"",
       "file_path": "documentation/PencilKit/pktoolpicker/setvisible-forfirstresponder.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/isvisible.json": {
       "hash": "dcd63dd3644e61e845bf5316e82eb1a921de9c1d1c77b6196ab57bc73c511e21",
-      "last_checked": "2026-05-19T07:27:42.261469",
+      "last_checked": "2026-05-22T07:41:31.019847",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"865c1ea6b1ff19ec83f620dd47d0c4ab\"",
       "file_path": "documentation/PencilKit/pktoolpicker/isvisible.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/frameobscured(in:).json": {
       "hash": "96657d7c57cd78086d78efed6bfcb611ce8b245c2c9255d62abe9df85229f8c7",
-      "last_checked": "2026-05-19T07:27:42.421359",
+      "last_checked": "2026-05-22T07:41:31.215054",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6d7bf2affe2558766dab703ce549f2d8\"",
       "file_path": "documentation/PencilKit/pktoolpicker/frameobscured-in.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/selectedtoolitem.json": {
       "hash": "7e398f10210344239711ffb37e6377b2f3762bd3faec6aa3680abe34930cfe93",
-      "last_checked": "2026-05-19T07:27:42.470982",
+      "last_checked": "2026-05-22T07:41:31.330008",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"10ea9cd68c41a84cf68a2e51497f3bff\"",
       "file_path": "documentation/PencilKit/pktoolpicker/selectedtoolitem.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/selectedtoolitemidentifier.json": {
       "hash": "7c09eac4d4e83bf6c704bd51b2128b5cec0d566018a8c8ebee1c547047f93b99",
-      "last_checked": "2026-05-19T07:27:42.593934",
+      "last_checked": "2026-05-22T07:41:31.503256",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3dcd11ea4b8ce13bd44ebb5b10de8aaa\"",
       "file_path": "documentation/PencilKit/pktoolpicker/selectedtoolitemidentifier.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/isruleractive.json": {
       "hash": "ef72cd72c4255b9e5cc21dca67010913c6851698a59bc235a4b49a546324b4dc",
-      "last_checked": "2026-05-19T07:27:42.649128",
+      "last_checked": "2026-05-22T07:41:31.619273",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9b9fe2fa0d1a8f760990f9f426a47425\"",
       "file_path": "documentation/PencilKit/pktoolpicker/isruleractive.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/coloruserinterfacestyle.json": {
       "hash": "45134e8238e7dce97c39a977ee736fa9f6921b7468dc3429dd498811a88b9c4a",
-      "last_checked": "2026-05-19T07:27:42.758799",
+      "last_checked": "2026-05-22T07:41:31.807295",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2d0ff798616cf1bf389b64b3692532a8\"",
       "file_path": "documentation/PencilKit/pktoolpicker/coloruserinterfacestyle.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/overrideuserinterfacestyle.json": {
       "hash": "fbadb8baaa6176afe705582a1103411d965ff0c3c57f9bc4532bd97f0a4196eb",
-      "last_checked": "2026-05-19T07:27:42.869800",
+      "last_checked": "2026-05-22T07:41:31.930751",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e3273c971994cb50769ae921ff2c6a01\"",
       "file_path": "documentation/PencilKit/pktoolpicker/overrideuserinterfacestyle.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/showsdrawingpolicycontrols.json": {
       "hash": "c96350e6e21f07faa97a151aa033116f4b5cbe9eaaec6f9865b1246360f4d9be",
-      "last_checked": "2026-05-19T07:27:42.919783",
+      "last_checked": "2026-05-22T07:41:32.041807",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e31352b91566efa7fb890c780074e59e\"",
       "file_path": "documentation/PencilKit/pktoolpicker/showsdrawingpolicycontrols.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/stateautosavename.json": {
       "hash": "f70ca9dde1923c58bec77623c32ad4abb7018b9e58892dfb9bd58b646ea509b8",
-      "last_checked": "2026-05-19T07:27:43.010987",
+      "last_checked": "2026-05-22T07:41:32.164924",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"be9f1f5019fb23334dd51cbd796cf277\"",
       "file_path": "documentation/PencilKit/pktoolpicker/stateautosavename.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/accessoryitem.json": {
       "hash": "cf3f8b0fd88a0fff2749afa4c7ae03bfca98d78424d0b4c79861eaa2c50983fa",
-      "last_checked": "2026-05-19T07:27:43.132143",
+      "last_checked": "2026-05-22T07:41:32.312595",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0b6ab5675caa42bd7f12d85822deb3ce\"",
       "file_path": "documentation/PencilKit/pktoolpicker/accessoryitem.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/maximumsupportedcontentversion.json": {
       "hash": "018c85fe587d3ab53652e50af85861d9ce6150ce90146695b895287d5efa8ef7",
-      "last_checked": "2026-05-19T07:27:43.191238",
+      "last_checked": "2026-05-22T07:41:32.434291",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"49a5ccb1b03791d96bf247d78e188b46\"",
       "file_path": "documentation/PencilKit/pktoolpicker/maximumsupportedcontentversion.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/shared(for:).json": {
       "hash": "bb8a2b07e2a40e527a91ee93875ef5328e712c322ed9cb70eca10b72ef04cc18",
-      "last_checked": "2026-05-19T07:27:43.298773",
+      "last_checked": "2026-05-22T07:41:32.572942",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"603c79bc8412654b3985da59b7ea3670\"",
       "file_path": "documentation/PencilKit/pktoolpicker/shared-for.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/selectedtool-2lptq.json": {
       "hash": "8522c05e6c40fed7e248948b02799a641eb507e6886dc3d2ae0128bbfb32a721",
-      "last_checked": "2026-05-19T07:27:43.396943",
+      "last_checked": "2026-05-22T07:41:32.685558",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6a839d9c5ef2ca379ea4336fa5e5f8c3\"",
       "file_path": "documentation/PencilKit/pktoolpicker/selectedtool-2lptq.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/delegate-swift.protocol.json": {
       "hash": "dca0216902a68e9c8d0316e5d75f13a190821a0514e4d410d34f77beb7943c39",
-      "last_checked": "2026-05-19T07:27:43.442221",
+      "last_checked": "2026-05-22T07:41:32.852640",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9829f2d417e6b0ce73a2197fdc9cc97c\"",
       "file_path": "documentation/PencilKit/pktoolpicker/delegate-swiftprotocol.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/colormaximumlinearexposure.json": {
       "hash": "786cfb99f26a339c1a1c4edb4e3a75e00a92abfdc3771da9e1bdc9c166cb224a",
-      "last_checked": "2026-05-19T07:27:43.510306",
+      "last_checked": "2026-05-22T07:41:32.976743",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2bd3111c932a1c0f48ef37b763af4179\"",
       "file_path": "documentation/PencilKit/pktoolpicker/colormaximumlinearexposure.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/delegate-swift.property.json": {
       "hash": "83a844d20636e5c099771ba6b9a9bf01c3911a9b66c0bb204d6facf4ea8b7091",
-      "last_checked": "2026-05-19T07:27:43.613462",
+      "last_checked": "2026-05-22T07:41:33.126624",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"41c5355472a7b6bc21ac5181f1f99422\"",
       "file_path": "documentation/PencilKit/pktoolpicker/delegate-swiftproperty.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/prefersdismisscontrolvisible.json": {
       "hash": "40e666ddc2f821f214acd1b4f97f1c58202de82482c15a2f966a87d64295df75",
-      "last_checked": "2026-05-19T07:27:43.732882",
+      "last_checked": "2026-05-22T07:41:33.311825",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f4ed4cec5aef8d9a9e3ce858e1638540\"",
       "file_path": "documentation/PencilKit/pktoolpicker/prefersdismisscontrolvisible.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/defaulttoolitems.json": {
       "hash": "689f6a7d38486db20bb363437b23aa63c1a79a10f11d6c5bb9eef3bfec4cab2a",
-      "last_checked": "2026-05-19T07:27:43.834058",
+      "last_checked": "2026-05-22T07:41:33.476649",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"66763162b3e59069a26af77a618fa43f\"",
       "file_path": "documentation/PencilKit/pktoolpicker/defaulttoolitems.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/init(_:color:width:)-2l7v.json": {
       "hash": "1257856d427e40aaf1fc3e4a3e870006107bfcd39a77f6dd038b2aa1d822ffcb",
-      "last_checked": "2026-05-19T07:27:43.884417",
+      "last_checked": "2026-05-22T07:41:33.605964",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"568481f2dc5eaaf20c90cbeae3d46c6e\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/init-colorwidth-2l7v.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/init(_:color:width:)-4i3ft.json": {
       "hash": "aac0e2daa944654f8004c0450e26a9ae1e5ab1cb9c1560e4e37f3bedf22af621",
-      "last_checked": "2026-05-19T07:27:44.001404",
+      "last_checked": "2026-05-22T07:41:33.739642",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"81eeb7975ff5fc0c933ab45f49e0ccf9\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/init-colorwidth-4i3ft.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/init(ink:width:).json": {
       "hash": "1aaea925627b9b34ca7954a1795cfbd071a6e11b3c4d91f5826bcac8b0caa448",
-      "last_checked": "2026-05-19T07:27:44.047947",
+      "last_checked": "2026-05-22T07:41:33.864286",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2a67ef7d2b00e7dc649e41b2207fb44a\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/init-inkwidth.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/defaultwidth.json": {
       "hash": "55778f71efa0608a4ecf0d73aadafe8935d65d9958138d8239c82219cf574ec5",
-      "last_checked": "2026-05-19T07:27:44.128050",
+      "last_checked": "2026-05-22T07:41:33.986886",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"908e1a98508edf07eb48ba7ef70b4ba2\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/defaultwidth.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/validwidthrange.json": {
       "hash": "c2a579e2a53dca4e2faefefb698dc8c494d7c481849492614deaca503c1c3c41",
-      "last_checked": "2026-05-19T07:27:44.365973",
+      "last_checked": "2026-05-22T07:41:34.098101",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"124e8ba6a68b7a20ae14b3dfabe3ee60\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/validwidthrange.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/color-5xmlo.json": {
       "hash": "d75649c390e3f512038dcd4fabcf5c1250f88fb8e61b608affe7942f7f9ebc49",
-      "last_checked": "2026-05-19T07:27:44.411505",
+      "last_checked": "2026-05-22T07:41:34.228124",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a54dbfa3afca318e3dd537ef23722c58\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/color-5xmlo.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/color-22zaw.json": {
       "hash": "15d051d6391a0e86461a39618e4458af8a9a18750f6e9d4acbfe3de5fb3c7f44",
-      "last_checked": "2026-05-19T07:27:44.521812",
+      "last_checked": "2026-05-22T07:41:34.352728",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"56bf456d1dc9daf18d4a6d1ec6a8f736\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/color-22zaw.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/width.json": {
       "hash": "f548338b76814d74da41bbae030bf7cb3ac8cc0590013267e7e765b3eb3a7493",
-      "last_checked": "2026-05-19T07:27:44.626827",
+      "last_checked": "2026-05-22T07:41:34.530583",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"bafb5d5781c923f4b9c4c3cbe5509db6\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/width.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/ink.json": {
       "hash": "2496318bf41e153ce776871a76cb256c603daec0dc856056e0d154c9f3a60ef9",
-      "last_checked": "2026-05-19T07:27:44.730288",
+      "last_checked": "2026-05-22T07:41:34.641231",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"81dfdb1bd7354b9c12d5c774ea19905c\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/ink.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.property.json": {
       "hash": "3f2b48b3c728a66606d880a02ff0955b7166a68d0ec7d551d8e8ac184b0ac9e4",
-      "last_checked": "2026-05-19T07:27:44.781425",
+      "last_checked": "2026-05-22T07:41:34.836169",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7042c3eb99680c5673251c21ca3d571c\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swiftproperty.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum.json": {
       "hash": "7dd8d43e2595e39eff5000406e02a1c973017e77cd81f2cf5dc64217809ac4c9",
-      "last_checked": "2026-05-19T07:27:44.830417",
+      "last_checked": "2026-05-22T07:41:34.948170",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"30466ec7c3cb69c82105c234f74e2db0\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swiftenum.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/convertcolor(_:from:to:).json": {
       "hash": "9e8664b28d2c1ad274ae217aac13ccf2689a9d4ff72266649aa7acdf7521225a",
-      "last_checked": "2026-05-19T07:27:44.945137",
+      "last_checked": "2026-05-22T07:41:35.077617",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e731d0377cdbc48f53ab0cafff2b13b7\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/convertcolor-fromto.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/requiredcontentversion.json": {
       "hash": "1f7828fc14169051d0c17754f7f55fe5ea8d244978d9d18f47038a0138dd9e6b",
-      "last_checked": "2026-05-19T07:27:45.091420",
+      "last_checked": "2026-05-22T07:41:35.199134",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3565453baaaa67ddb13c8a9a06836445\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/requiredcontentversion.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference.json": {
       "hash": "b24d514a4ab9c309e4cfdf403e1dce231e99fc7213ffd037b08589018adf49cd",
-      "last_checked": "2026-05-19T07:27:45.198327",
+      "last_checked": "2026-05-22T07:41:35.328759",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"499242df3548e655bf4bb15dde889537\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/init(_:color:width:azimuth:)-24rf4.json": {
       "hash": "60037214be1474fe5e6d64fb408145a0b49e3e3383324826bc282dc3e4f3f31d",
-      "last_checked": "2026-05-19T07:27:45.318389",
+      "last_checked": "2026-05-22T07:41:35.454350",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6dce6ca674a94232cc239bd6cb145fd4\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/init-colorwidthazimuth-24rf4.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/init(_:color:width:azimuth:)-5dtjs.json": {
       "hash": "f0f67939926f5cbf0494ddf75f8e5c85c82a297e69199b78a9321ba705c66802",
-      "last_checked": "2026-05-19T07:27:45.365834",
+      "last_checked": "2026-05-22T07:41:35.650425",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2c5d3b57efaeaa6df63057cf3f06488d\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/init-colorwidthazimuth-5dtjs.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/azimuth.json": {
       "hash": "bbe4d66493b219a4adf434342da135d94cad985e3645b2cb63d7fa2e072ce812",
-      "last_checked": "2026-05-19T07:27:45.474914",
+      "last_checked": "2026-05-22T07:41:35.762006",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6c0a28b2088ddc0003d07206a3d22b67\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/azimuth.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/init(_:).json": {
       "hash": "c3801e37c15308508a457cbcdaf18de85028dc1047de081fdaafe0ca37fb3e6b",
-      "last_checked": "2026-05-19T07:27:45.524627",
+      "last_checked": "2026-05-22T07:41:35.874822",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"76aebbcc5e54dcadfa95ec5c39e119e2\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/init.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/init(_:width:).json": {
       "hash": "35bbeb8e2d656494e47a70fa6d9230dc9fa7aea8efac65da49386826a16e2ae6",
-      "last_checked": "2026-05-19T07:27:45.630372",
+      "last_checked": "2026-05-22T07:41:36.008835",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f4eb99941ebc29b4bb451233ef4514fa\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/init-width.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.property.json": {
       "hash": "35fec69583704c9283c292b955a519317a7687c815fd0a720780ed99452b92e5",
-      "last_checked": "2026-05-19T07:27:45.723587",
+      "last_checked": "2026-05-22T07:41:36.131677",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7f7bfdc31c3643ce9eb94ab396f73e94\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swiftproperty.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum.json": {
       "hash": "88e70ea06cb3502e5ac093601e560d7cb4f274e66b075256c5a5aebf4c6928fe",
-      "last_checked": "2026-05-19T07:27:45.825523",
+      "last_checked": "2026-05-22T07:41:36.252523",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5b9939e28b5b228b2b400f87305466ae\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swiftenum.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/width.json": {
       "hash": "870bc99bea924790ddda0d67cd3e61d9e9563b1189249b15f15c7902106352f1",
-      "last_checked": "2026-05-19T07:27:45.924946",
+      "last_checked": "2026-05-22T07:41:36.416990",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"618d28602d338d1b7ecf64615e5c1042\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/width.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference.json": {
       "hash": "e49d52182be724aca2dc3fec770d60ab5bec72618ecda6b0f3e37a358889cb30",
-      "last_checked": "2026-05-19T07:27:45.978929",
+      "last_checked": "2026-05-22T07:41:36.555246",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a0e5293f4d294c81486b1bc9bbd2a88c\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pklassotool-swift.struct/init().json": {
       "hash": "9bba104c7838d523c1c8cd419418f656fd566daf47b02cd27deb21fe21a2c75f",
-      "last_checked": "2026-05-19T07:27:46.098558",
+      "last_checked": "2026-05-22T07:41:36.686605",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1391abd832c8d3f42aeb8cccd860608a\"",
       "file_path": "documentation/PencilKit/pklassotool-swift.struct/init.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pklassotoolreference.json": {
       "hash": "288a59a3d550d58d6cec05f65432bb6fb91df4c7be869f8ab3a00dd7c9ba95bd",
-      "last_checked": "2026-05-19T07:27:46.156186",
+      "last_checked": "2026-05-22T07:41:36.849867",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a84eda7370363a5ce791ac3c24c1243d\"",
       "file_path": "documentation/PencilKit/pklassotoolreference.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/latest.json": {
       "hash": "1d1031cbb2f48528a9efaf1adf266115502ce755732a0085a916f79899ce06e8",
-      "last_checked": "2026-05-19T07:27:46.265465",
+      "last_checked": "2026-05-22T07:41:36.976183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6010b9dd7fae65b464dd697628598aba\"",
       "file_path": "documentation/PencilKit/pkcontentversion/latest.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/version1.json": {
       "hash": "2db1f350af6fc4dfb0276c06cb8722a7d8e1a1f9d5d6175ff9c99d2e04b56d44",
-      "last_checked": "2026-05-19T07:27:46.361440",
+      "last_checked": "2026-05-22T07:41:37.115976",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"433a41e3d63368d51c640abd0ec57696\"",
       "file_path": "documentation/PencilKit/pkcontentversion/version1.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/version2.json": {
       "hash": "0eed70bc385c67d4645259d35b35b65cb1026160588b50e7c753ae9967d95dde",
-      "last_checked": "2026-05-19T07:27:46.461241",
+      "last_checked": "2026-05-22T07:41:37.306953",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d2c1df938e09fb82b47ef648df9ac3d0\"",
       "file_path": "documentation/PencilKit/pkcontentversion/version2.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/version3.json": {
       "hash": "89b465b2161cf30d5f821fdb56caab59756dc6db3667273e41c6c692d84cee1d",
-      "last_checked": "2026-05-19T07:27:46.564056",
+      "last_checked": "2026-05-22T07:41:37.471510",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b922365833efd7d739826f887cbf50a5\"",
       "file_path": "documentation/PencilKit/pkcontentversion/version3.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/version4.json": {
       "hash": "210081047d484af944a52f667dca5819a7b11f6d690d9bfc8e9d6b8e0ef2d374",
-      "last_checked": "2026-05-19T07:27:46.667092",
+      "last_checked": "2026-05-22T07:41:37.586402",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"218d3fb4c6197485ab710ca67f0085a4\"",
       "file_path": "documentation/PencilKit/pkcontentversion/version4.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcontentversion/init(rawvalue:).json": {
       "hash": "a8f578753dd9a27c28f6bec55cd23921fb3a2320d5706dfa9b0bccaba7d72b64",
-      "last_checked": "2026-05-19T07:27:46.772687",
+      "last_checked": "2026-05-22T07:41:37.727157",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ed835d5a2ae435a300073cb5bfe081bc\"",
       "file_path": "documentation/PencilKit/pkcontentversion/init-rawvalue.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate/activetoolpicker.json": {
       "hash": "25eca28bf9e79ba16c944c20140ffb38bdc7330fb4081a8e1349a66488a0df2b",
-      "last_checked": "2026-05-19T07:27:46.880540",
+      "last_checked": "2026-05-22T07:41:37.840606",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0d1cf599dd31d56bbeaf06e0f062fad1\"",
       "file_path": "documentation/PencilKit/pkresponderstate/activetoolpicker.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkresponderstate/toolpickervisibility-7cj3c.json": {
       "hash": "13c354602d01f429930847a9c8d5b028ac97ad856c0ad5243fcb877efcfc05d3",
-      "last_checked": "2026-05-19T07:27:46.982271",
+      "last_checked": "2026-05-22T07:41:37.979234",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a76283ef370aa594fc770366d08dc082\"",
       "file_path": "documentation/PencilKit/pkresponderstate/toolpickervisibility-7cj3c.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility/hidden.json": {
       "hash": "1ca8494e054c43676b4c1ebaf7db78e194e4bc21934e97c08f9577435553929a",
-      "last_checked": "2026-05-19T07:27:47.102898",
+      "last_checked": "2026-05-22T07:41:38.109606",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9369964ccd838943fa78212617342e08\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility/hidden.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility/inactive.json": {
       "hash": "ef4c8ace99e924e37b38aad4e909629734f528657a887144732157895bb2eeb9",
-      "last_checked": "2026-05-19T07:27:47.211513",
+      "last_checked": "2026-05-22T07:41:38.269441",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7e813feb943dfcd82d17cdb91d11bd2f\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility/inactive.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility/visible.json": {
       "hash": "0bc92db12621404fb31357280561523f46d982eeffe346496b93822e907cd0f9",
-      "last_checked": "2026-05-19T07:27:47.256698",
+      "last_checked": "2026-05-22T07:41:38.396313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8cae9f029fc0681b55bd7435547e6c50\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility/visible.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility/init(rawvalue:).json": {
       "hash": "88167dd58eacde8c5165a16084c02262c5bf890ffecc35e1339dcf339dc14e81",
-      "last_checked": "2026-05-19T07:27:47.363582",
+      "last_checked": "2026-05-22T07:41:38.516442",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f777c2faa600a3dba19b8b95d4318094\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility/init-rawvalue.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickervisibility/toggle().json": {
       "hash": "590a7180dc73757c3cde6b4deeae2a2943a231ba09e56f1e91bddf154b5089ee",
-      "last_checked": "2026-05-19T07:27:47.439453",
+      "last_checked": "2026-05-22T07:41:38.629383",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"93efc3cd59736a1a0fc20cf93c1e2058\"",
       "file_path": "documentation/PencilKit/pktoolpickervisibility/toggle.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdelegate/canvasviewdrawingdidchange(_:).json": {
       "hash": "0ab9db0113b0e5f9deca15907f6c061b572952c76fd2180d41234277eb0955f3",
-      "last_checked": "2026-05-19T07:27:47.562540",
+      "last_checked": "2026-05-22T07:41:38.754078",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e505d424700909d9c304637b6eb0d1f4\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdelegate/canvasviewdrawingdidchange.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdelegate/canvasviewdidfinishrendering(_:).json": {
       "hash": "367ea0b014d7b6061e87c3455a7d70c98d8f1956827b2473e27a31bf6fe34150",
-      "last_checked": "2026-05-19T07:27:47.609701",
+      "last_checked": "2026-05-22T07:41:38.935227",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9ebffb9bf9751f60e239b36a01c1b142\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdelegate/canvasviewdidfinishrendering.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdelegate/canvasviewdidbeginusingtool(_:).json": {
       "hash": "43b87321e5a1fab2e5fe6c3022e7a7808de3bb90f56a0526da8be87a335e1c60",
-      "last_checked": "2026-05-19T07:27:47.669525",
+      "last_checked": "2026-05-22T07:41:39.059564",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"659bf210a5f22735c7199c3205bc1780\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdelegate/canvasviewdidbeginusingtool.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdelegate/canvasviewdidendusingtool(_:).json": {
       "hash": "d1a6f6d9307d33070d11942cf376643f9c3770ef4c2d8aa29adc3ef65b0c0990",
-      "last_checked": "2026-05-19T07:27:47.795259",
+      "last_checked": "2026-05-22T07:41:39.182955",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a58f5b147bd6493cbb0815e3979f1ff7\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdelegate/canvasviewdidendusingtool.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdrawingpolicy/default.json": {
       "hash": "9732421503e0e924cb7a83b349be411f071b584c1b72c6cbe5c117a7fbdfbe9e",
-      "last_checked": "2026-05-19T07:27:47.843182",
+      "last_checked": "2026-05-22T07:41:39.360652",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d776bb4dd943ede3aee3111567a6cf7f\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdrawingpolicy/default.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdrawingpolicy/anyinput.json": {
       "hash": "9fb2876128873a34e6621de0085f87b236c35d81ab506cfb161f09486c6c83ad",
-      "last_checked": "2026-05-19T07:27:47.904797",
+      "last_checked": "2026-05-22T07:41:39.477005",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"c4da4f7848c7351a432c69364cbb4a65\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdrawingpolicy/anyinput.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdrawingpolicy/pencilonly.json": {
       "hash": "ea68920318715857e3bd5ddfa96db1275da974f2a33bb1377eb0f60282457bdf",
-      "last_checked": "2026-05-19T07:27:48.029034",
+      "last_checked": "2026-05-22T07:41:39.649464",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"335673e697cfcd335fef1fbc33dfd3e5\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdrawingpolicy/pencilonly.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkcanvasviewdrawingpolicy/init(rawvalue:).json": {
       "hash": "f1733c44e90b46d1f87615af98e565bbc9af8b96ddf0b55bf911d1527093369f",
-      "last_checked": "2026-05-19T07:27:48.120974",
+      "last_checked": "2026-05-22T07:41:39.815466",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"cf2f5a91ddef89ee9c7373047d1b16fe\"",
       "file_path": "documentation/PencilKit/pkcanvasviewdrawingpolicy/init-rawvalue.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver/toolpickerselectedtoolitemdidchange(_:).json": {
       "hash": "9ebf0303787c985f9916353f0393d4f6f935c5c9ccc3769ae8c5951d34cc4574",
-      "last_checked": "2026-05-19T07:27:48.222278",
+      "last_checked": "2026-05-22T07:41:39.935374",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8e41b790a21af5827fa8b3ff1f40dca7\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver/toolpickerselectedtoolitemdidchange.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver/toolpickerisruleractivedidchange(_:).json": {
       "hash": "115a5b89366bc4ef924909654d3c9e25c95e8d8f222fc3b5aaab762abb542bb6",
-      "last_checked": "2026-05-19T07:27:48.324469",
+      "last_checked": "2026-05-22T07:41:40.067034",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ad4611da308ef85e23e3ceda29d25394\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver/toolpickerisruleractivedidchange.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver/toolpickervisibilitydidchange(_:).json": {
       "hash": "2837d71ff32af147f036b4a6e87a0efde4d449da085bc50bd4d1f692371b2968",
-      "last_checked": "2026-05-19T07:27:48.426660",
+      "last_checked": "2026-05-22T07:41:40.257384",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0fd97d41d37c2ee5f049c058dbb9b5eb\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver/toolpickervisibilitydidchange.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver/toolpickerframesobscureddidchange(_:).json": {
       "hash": "858108270e936eab6845707a50614c864b0490e0c07bdcbe84235536b26de14c",
-      "last_checked": "2026-05-19T07:27:48.528900",
+      "last_checked": "2026-05-22T07:41:40.390637",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7e7d8b912852f85bc93cbf7d7a20f4f7\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver/toolpickerframesobscureddidchange.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerobserver/toolpickerselectedtooldidchange(_:).json": {
       "hash": "00e9c62509c480b05908c4522a48638340bcbd44376346be374f427d460575d5",
-      "last_checked": "2026-05-19T07:27:48.573998",
+      "last_checked": "2026-05-22T07:41:40.568840",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6585555f096cee63385449b6cf3699a2\"",
       "file_path": "documentation/PencilKit/pktoolpickerobserver/toolpickerselectedtooldidchange.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/init(data:).json": {
       "hash": "9b7895efbd43c5f3410c10de250e645eb4f8bcbd289832e749405cd934544f7d",
-      "last_checked": "2026-05-19T07:27:48.633077",
+      "last_checked": "2026-05-22T07:41:40.704640",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e6d23cf36eef16e0068d4a58bd874ade\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/init-data.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/init(strokes:).json": {
       "hash": "bca2cd4940e0f8450434e8eee8aaa5c7f3d4f5c281cb7478408511174a6ae65a",
-      "last_checked": "2026-05-19T07:27:48.768057",
+      "last_checked": "2026-05-22T07:41:40.867643",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"103476d844cea928e1dab30017460ff7\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/init-strokes.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/init().json": {
       "hash": "e5d217b4db95b73705711b3b71dde327b19cfd63170188fb8c6478ecb392a3a9",
-      "last_checked": "2026-05-19T07:27:48.876945",
+      "last_checked": "2026-05-22T07:41:41.228700",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d19c820c12c9d962663562e2dd461895\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/init.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/bounds.json": {
       "hash": "55181c00a7fd90fe940011bbfc207fb82ce1a3bad1355b246789787a7f6354b8",
-      "last_checked": "2026-05-19T07:27:48.974680",
+      "last_checked": "2026-05-22T07:41:41.333657",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f128d3072acca95007674b9a5d9d51da\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/bounds.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/image(from:scale:).json": {
       "hash": "1a02225c2e1987e45212348cd8256d62415572286e737d5d36707ce9a7edfae1",
-      "last_checked": "2026-05-19T07:27:49.079378",
+      "last_checked": "2026-05-22T07:41:41.518944",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8bfc0b074876a9764c75e66e54dbb6da\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/image-fromscale.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/strokes.json": {
       "hash": "1406d5d3acaa7d135b51a7bd33259588cbb240e53e500d0c464926f9cc0dd6c2",
-      "last_checked": "2026-05-19T07:27:49.181278",
+      "last_checked": "2026-05-22T07:41:41.677226",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"316b88c1845eeda392fc0e1e20c394c6\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/strokes.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/datarepresentation().json": {
       "hash": "1e79130afddff7c152f8e5e3381ffc7e5c960e569b5848f454e1e9832161995e",
-      "last_checked": "2026-05-19T07:27:49.276894",
+      "last_checked": "2026-05-22T07:41:41.827220",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"622354d7200a0921a9f42762a14677ce\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/datarepresentation.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/applying(_:).json": {
       "hash": "d319c2271ef071b62f745e9b06f3dccf97260cd3f231f2785bb1febc8eead30e",
-      "last_checked": "2026-05-19T07:27:49.376638",
+      "last_checked": "2026-05-22T07:41:41.993029",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"3a303053d486296f527ecf1b3ae528e7\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/applying.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/appendingstrokes(_:).json": {
       "hash": "49947b47a293f05c63b9358b88054e1dc4f6c26655ba64247df8de6516c5b567",
-      "last_checked": "2026-05-19T07:27:49.456915",
+      "last_checked": "2026-05-22T07:41:42.157500",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"857065a5bbdbaae36df4b771a7c5f496\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/appendingstrokes.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/appending(_:).json": {
       "hash": "76a816ab8ee17783e513221a1a0ce1d4f5283e116818d64c0f090e74d00aa583",
-      "last_checked": "2026-05-19T07:27:49.556148",
+      "last_checked": "2026-05-22T07:41:42.277514",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"cbff3e06cb11e8e4bef8052cc91cf4a3\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/appending.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/requiredcontentversion.json": {
       "hash": "f18d5c6aa36b8094e54ecdfb9bbe5ad2c5920f1d0c25f950f8f21147ef0b5a67",
-      "last_checked": "2026-05-19T07:27:49.600839",
+      "last_checked": "2026-05-22T07:41:42.407925",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"eb210a896a59f17364a19dba5c7bdf5f\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/requiredcontentversion.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/init(ink:strokepath:transform:mask:).json": {
       "hash": "b0286707f920a8ffb9e95fd6e03a0ccfb8c65ad239848a5f896d92c9c8ca63dc",
-      "last_checked": "2026-05-19T07:27:49.741074",
+      "last_checked": "2026-05-22T07:41:42.898745",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"fdccde1d5cc6f345d85c046dd1fc9f60\"",
       "file_path": "documentation/PencilKit/pkstrokereference/init-inkstrokepathtransformmask.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/init(ink:strokepath:transform:mask:randomseed:).json": {
       "hash": "2c05dbcd6d85eabb378969d09a9c0dee8d0dd75d4ae1488545d4cf83781aa09e",
-      "last_checked": "2026-05-19T07:27:49.876506",
+      "last_checked": "2026-05-22T07:41:43.211263",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d04f5ff908235d49b48c6e6ee3c77aea\"",
       "file_path": "documentation/PencilKit/pkstrokereference/init-inkstrokepathtransformmaskrandomseed.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/ink.json": {
       "hash": "e54545d94334b4459346ca0837b6af9e77eb40d510cd944fcb7a47e6bc4ef4b7",
-      "last_checked": "2026-05-19T07:27:49.925231",
+      "last_checked": "2026-05-22T07:41:43.325631",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a3dd5abcf3824f210d5b6c4082c920af\"",
       "file_path": "documentation/PencilKit/pkstrokereference/ink.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/mask.json": {
       "hash": "793bb42dfdc00300c5e6d01d2b311b54dd3862f9baa5e1d8444905e828e0ad18",
-      "last_checked": "2026-05-19T07:27:50.005472",
+      "last_checked": "2026-05-22T07:41:43.616240",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d9df87b869c59fb00213f9caaadfc77e\"",
       "file_path": "documentation/PencilKit/pkstrokereference/mask.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/maskedpathranges.json": {
       "hash": "acf8bce51793ab701f9631cb9bd8adb57f467becb75abd7a3134a27ced4ba5b5",
-      "last_checked": "2026-05-19T07:27:50.063342",
+      "last_checked": "2026-05-22T07:41:43.766664",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"98ef40ddb9464436da41237a0353cdb4\"",
       "file_path": "documentation/PencilKit/pkstrokereference/maskedpathranges.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/path.json": {
       "hash": "4d20fc72ce3fc5350768b0729bfef2a49cb5dcb1444c863b07c1cd9dd7588f8e",
-      "last_checked": "2026-05-19T07:27:50.207688",
+      "last_checked": "2026-05-22T07:41:44.052676",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ce8a8d01750645418ef11bf2f271bbb6\"",
       "file_path": "documentation/PencilKit/pkstrokereference/path.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/renderbounds.json": {
       "hash": "06c29a62180061472e25d08dad0ba406f0730cdde21b05bf1cbaca8effc40046",
-      "last_checked": "2026-05-19T07:27:50.261704",
+      "last_checked": "2026-05-22T07:41:44.221851",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0b48cc846b5d6b463f00e4c43157113a\"",
       "file_path": "documentation/PencilKit/pkstrokereference/renderbounds.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/transform.json": {
       "hash": "464ed3b2b6ab285075461bffb7f3d34bf99308b9171e735df775e3a3142c3226",
-      "last_checked": "2026-05-19T07:27:50.384072",
+      "last_checked": "2026-05-22T07:41:44.518876",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5dc0c8f1c0471fd5bfde1e23f7d402e5\"",
       "file_path": "documentation/PencilKit/pkstrokereference/transform.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/randomseed.json": {
       "hash": "abb4ea5bce179969aa790e568783c5effc9a967d6772c7d14fef707f9590ec72",
-      "last_checked": "2026-05-19T07:27:50.485930",
+      "last_checked": "2026-05-22T07:41:44.683986",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9b932f2cf5a70ff69e741759d8e8c014\"",
       "file_path": "documentation/PencilKit/pkstrokereference/randomseed.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokereference/requiredcontentversion.json": {
       "hash": "448b16b69e879a7ca56c63985dc3936f71a18b2133e84b52651b6620a7572792",
-      "last_checked": "2026-05-19T07:27:50.591433",
+      "last_checked": "2026-05-22T07:41:44.843663",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6276ef3cb1f13e1fe898ffe1d52f500f\"",
       "file_path": "documentation/PencilKit/pkstrokereference/requiredcontentversion.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride.json": {
       "hash": "6643114c0253cb6501651bb5b5f863140eff630bb45dbbf08121357568d72bf6",
-      "last_checked": "2026-05-19T07:27:50.694843",
+      "last_checked": "2026-05-22T07:41:45.022562",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"728d61a441ee082797a81dd489b15af2\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/interpolatedslice-protocol-implementations.json": {
       "hash": "1b3c67faf839a6ac830b3f0a24e77af3fd26dcc0e19d61f0bdc404e60125f5c6",
-      "last_checked": "2026-05-19T07:27:50.797762",
+      "last_checked": "2026-05-22T07:41:45.314024",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"03fae9aca103dcb20aee7201b3c6674c\"",
       "file_path": "documentation/PencilKit/interpolatedslice-protocol-implementations.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/init(controlpoints:creationdate:).json": {
       "hash": "c84c74d1be36d0a09b6e3586c0a25cbb203f0c136fea5687648e3aac74105f4a",
-      "last_checked": "2026-05-19T07:27:50.844321",
+      "last_checked": "2026-05-22T07:41:45.608360",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"07632149ccb9e1d60be2e48eb5e6372a\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/init-controlpointscreationdate.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/count.json": {
       "hash": "21bf2b45822e60ea1a8ab1277c3271f600da003d85b27f1d33856e9a1dfacb0e",
-      "last_checked": "2026-05-19T07:27:50.964985",
+      "last_checked": "2026-05-22T07:41:45.771372",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1ce3783c5f345ee936355be82fcc9b64\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/count.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/creationdate.json": {
       "hash": "1840f7871f542b9a6f6b0ceae0310faef52ae2b68d5b99c2fdabddb5741f36d6",
-      "last_checked": "2026-05-19T07:27:51.072141",
+      "last_checked": "2026-05-22T07:41:46.070437",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6a25d216587790a345cfce9c864a5fb9\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/creationdate.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebydistance:using:).json": {
       "hash": "31972b8bc5f1ee6762f48663a664ee50efcd25ef122ce28530d4620b3f9d7d5b",
-      "last_checked": "2026-05-19T07:27:51.181212",
+      "last_checked": "2026-05-22T07:41:46.255616",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"921b0acdfd6aa3734bb9f16cf54535eb\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints-instridebydistanceusing.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebyparametricstep:using:).json": {
       "hash": "d2c28f392f13c72559df08f46c6fe1f634776fcea503e5b4e6267187415786fd",
-      "last_checked": "2026-05-19T07:27:51.282650",
+      "last_checked": "2026-05-22T07:41:46.565744",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5d8c99f4d3ae0a9ce28a76dc4fd2ff55\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints-instridebyparametricstepusing.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/enumerateinterpolatedpoints(in:stridebytime:using:).json": {
       "hash": "45377cd679a4dee885e215f3de38152a7e71149422f66226b3c4be1598ff31b8",
-      "last_checked": "2026-05-19T07:27:51.409489",
+      "last_checked": "2026-05-22T07:41:46.908100",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f67afbee3343880295e49ce784029fb5\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/enumerateinterpolatedpoints-instridebytimeusing.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/interpolatedlocation(at:).json": {
       "hash": "ecc2ab695dee9f4a6b5044acc84f8525da327232785fc0788acec021d5fb3144",
-      "last_checked": "2026-05-19T07:27:51.514373",
+      "last_checked": "2026-05-22T07:41:47.072563",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"75b32639287a72eddacb9503ade09796\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/interpolatedlocation-at.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/interpolatedpoint(at:).json": {
       "hash": "de7f4f927a114a0b72799eb4267a0ec9b43de54897ccc0f6e59a1274c885c47e",
-      "last_checked": "2026-05-19T07:27:51.620304",
+      "last_checked": "2026-05-22T07:41:47.369455",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9f5adba044eea7a8cfc0ef95de450eb5\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/interpolatedpoint-at.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/parametricvalue(_:offsetbydistance:).json": {
       "hash": "138d6b3afef630d41fc182b8929268a013c7c701d3d03dd6109221828c4fd7d2",
-      "last_checked": "2026-05-19T07:27:51.819845",
+      "last_checked": "2026-05-22T07:41:47.531744",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d21e8ea859c14b513b5c210fc265e9fe\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/parametricvalue-offsetbydistance.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/parametricvalue(_:offsetbytime:).json": {
       "hash": "d53e4a29685cdd18e08ef8a9307e6bdf32c2bf78d9a659f01dce0aa15ab4c0e7",
-      "last_checked": "2026-05-19T07:27:51.879593",
+      "last_checked": "2026-05-22T07:41:47.708220",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2cafe672e8836c8e6759fa25821aa700\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/parametricvalue-offsetbytime.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/point(at:).json": {
       "hash": "0a74a75f61ff51abd7f19305bf17ef9c3dadb9b5ef094f499165a97699ebcb83",
-      "last_checked": "2026-05-19T07:27:51.985642",
+      "last_checked": "2026-05-22T07:41:47.993815",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a515b614f3e166d7b65b3cb772979e3a\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/point-at.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepathreference/subscript(_:).json": {
       "hash": "ca5086ee4527e9681e0aa7244a495b78f715d91666f5dcbfc5a1a3e3073cc535",
-      "last_checked": "2026-05-19T07:27:52.088351",
+      "last_checked": "2026-05-22T07:41:48.310313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9c8e8fe913eda76c78f0c9220d4f5fcc\"",
       "file_path": "documentation/PencilKit/pkstrokepathreference/subscript.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:).json": {
       "hash": "e020db5debbb5effd78204e45a63dd98717679fa96227dfce11db05698711913",
-      "last_checked": "2026-05-19T07:27:52.187797",
+      "last_checked": "2026-05-22T07:41:48.480279",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6bc1f31f118ca6270fef1956b7daf948\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/init-locationtimeoffsetsizeopacityforceazimuthaltitude.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:).json": {
       "hash": "19756f797841ac7eb04f6a2f74f66c4e4db85665bd867c1028ad2b25a11f1c04",
-      "last_checked": "2026-05-19T07:27:52.304400",
+      "last_checked": "2026-05-22T07:41:48.658730",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4ec1d8fec14ed9d119a0c87e2d6ad7af\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/init-locationtimeoffsetsizeopacityforceazimuthaltitudesecondaryscale.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/location.json": {
       "hash": "26f50abe6b2cb56898de57624372f306c240b5bea31612ec6faafd3162d3c95b",
-      "last_checked": "2026-05-19T07:27:52.401264",
+      "last_checked": "2026-05-22T07:41:48.825212",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b9ad8a0d91d8c2f9b1b442a59b146fd4\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/location.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/timeoffset.json": {
       "hash": "bfd4db688c189d8711eb1170954e65c84b4b5251a8e844566dd732071447b8e6",
-      "last_checked": "2026-05-19T07:27:52.450847",
+      "last_checked": "2026-05-22T07:41:49.256916",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d2aa1718add10ea1f4651b06b721bfc9\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/timeoffset.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/altitude.json": {
       "hash": "2ed207ffdb2d456fd0639c08cb919ea0e8f5c53883565a27215e03b2cfd4ff33",
-      "last_checked": "2026-05-19T07:27:52.572565",
+      "last_checked": "2026-05-22T07:41:49.411856",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8893502f4c1dd6ba83ca3e6b919ee92f\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/altitude.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/azimuth.json": {
       "hash": "4160688638961d35193c7c074e94ccec2c5b84ae0946bd61e757574ab80621d7",
-      "last_checked": "2026-05-19T07:27:52.673754",
+      "last_checked": "2026-05-22T07:41:49.568922",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"157f50e89c51b9a290c4a552dbc75aae\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/azimuth.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/force.json": {
       "hash": "a2d78846a5da5449afd8a8a5ffb8895561cfe3508ceea3113f676a6e3791da4b",
-      "last_checked": "2026-05-19T07:27:52.778961",
+      "last_checked": "2026-05-22T07:41:49.737022",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0b5b68903386308aded6cf50859a3f5b\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/force.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/size.json": {
       "hash": "f70183dddf67df4cda85af37aebcb880c81eebb66d1991dd631a3e6a8d32543c",
-      "last_checked": "2026-05-19T07:27:52.877205",
+      "last_checked": "2026-05-22T07:41:49.906274",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2152284ba9c48c9befcc50adb79e29c4\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/size.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/opacity.json": {
       "hash": "977e8d222c1ba470082e99fcf1cf9468fff85504cb69fa124faf0d24a5e3227a",
-      "last_checked": "2026-05-19T07:27:52.988878",
+      "last_checked": "2026-05-22T07:41:50.065689",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"009e188a97084389dffa77ede4e18f7f\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/opacity.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/secondaryscale.json": {
       "hash": "15087b7efe7ec8dbce7e2bfdd8f5721f3db2385f7dcd23ca3e9c4cc934b12902",
-      "last_checked": "2026-05-19T07:27:53.094338",
+      "last_checked": "2026-05-22T07:41:50.222578",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"61285ddd772b774c5e5831c443aa8839\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/secondaryscale.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).json": {
       "hash": "9d59a5ea3dee5fdab03d53681688acef0a99e87cd26816d5f1cc2f6d8e72f665",
-      "last_checked": "2026-05-19T07:27:53.148665",
+      "last_checked": "2026-05-22T07:41:50.530370",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b2ede3fb71e311583a2ab1d92924deda\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/init-locationtimeoffsetsizeopacityforceazimuthaltitudesecondaryscalethreshold.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepointreference/threshold.json": {
       "hash": "5fd7663000b6196704974a1d5955ae3534afc0e4cfb4ead578f2c0aa5e3727a2",
-      "last_checked": "2026-05-19T07:27:53.195064",
+      "last_checked": "2026-05-22T07:41:50.685322",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5aaa8593414283d7d191612728cf32b3\"",
       "file_path": "documentation/PencilKit/pkstrokepointreference/threshold.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkreference/init(inktype:color:).json": {
       "hash": "eee512f921da2b4eb0920aed93b7f4df78f41d503836978fb9aacdbdb9ae054a",
-      "last_checked": "2026-05-19T07:27:53.324220",
+      "last_checked": "2026-05-22T07:41:50.858581",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"10c2e2fdc35432b0365ded76912baacd\"",
       "file_path": "documentation/PencilKit/pkinkreference/init-inktypecolor.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkreference/color.json": {
       "hash": "24f46defe02cd2c11934928b506287221f854f24ca03691fcfce24835dd76052",
-      "last_checked": "2026-05-19T07:27:53.422681",
+      "last_checked": "2026-05-22T07:41:51.076491",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5e02b57594996172e0f401ebecc2968e\"",
       "file_path": "documentation/PencilKit/pkinkreference/color.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkreference/inktype.json": {
       "hash": "07fdd468256756e38a38be5d1165033ca9d4c66b7621e361e5e5ef02df316d76",
-      "last_checked": "2026-05-19T07:27:53.521534",
+      "last_checked": "2026-05-22T07:41:51.229011",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7297e35f67dade8b5722c45881e8a01e\"",
       "file_path": "documentation/PencilKit/pkinkreference/inktype.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkreference/requiredcontentversion.json": {
       "hash": "137657c5c03bb732b893f5eea58051a4b5ef5a9501b9376f0bc49d6050ccb6f1",
-      "last_checked": "2026-05-19T07:27:53.621501",
+      "last_checked": "2026-05-22T07:41:51.382642",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"a969adb050e83f7fd0816c3984937d71\"",
       "file_path": "documentation/PencilKit/pkinkreference/requiredcontentversion.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/inkingtool-1hcet.json": {
       "hash": "7bec210c391d4814be6c3f0d8b7506f1ec2127a88ad73d795cb9c4d271656147",
-      "last_checked": "2026-05-19T07:27:53.713699",
+      "last_checked": "2026-05-22T07:41:51.552250",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7d791759ddf0aa2ef4331f4575c39206\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/inkingtool-1hcet.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:azimuth:identifier:)-7gkxh.json": {
       "hash": "51c8b6aea14b58ec3499fa1c1fbd3ea8682f21bb07117acd2ee0797bc8101a3f",
-      "last_checked": "2026-05-19T07:27:53.760841",
+      "last_checked": "2026-05-22T07:41:51.848419",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"12d32791c027d6797d0cd8c75d6de84f\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init-typecolorwidthazimuthidentifier-7gkxh.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:azimuth:identifier:)-y8h5.json": {
       "hash": "56ee9355bb73c84fa5e73ba69bbeebef6e8614302fabcc83f6542b446fc11534",
-      "last_checked": "2026-05-19T07:27:53.817959",
+      "last_checked": "2026-05-22T07:41:52.005137",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b58685922d987126ad54143722d513dc\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init-typecolorwidthazimuthidentifier-y8h5.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:identifier:)-1tsup.json": {
       "hash": "85c9fb038e316968a9ed08f6132baba92f9bba75c0f7356005a14d7fbe71bb97",
-      "last_checked": "2026-05-19T07:27:53.932934",
+      "last_checked": "2026-05-22T07:41:52.428522",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e90cc1c9663e812a9b845012fd65957b\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init-typecolorwidthidentifier-1tsup.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/init(type:color:width:identifier:)-7kzdq.json": {
       "hash": "22a7edf0ecd4c57838c09c5d8aee0e6c590943dbfb1baf7eaacd3cc6db53e800",
-      "last_checked": "2026-05-19T07:27:54.035925",
+      "last_checked": "2026-05-22T07:41:52.715184",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8da435bfefd8e583730f90f646dbb490\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/init-typecolorwidthidentifier-7kzdq.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerinkingitem/allowscolorselection.json": {
       "hash": "cad88b7cba58ab7c46c13234ba5c795345756fd4e11319bdcf77d9e3585932f6",
-      "last_checked": "2026-05-19T07:27:54.139406",
+      "last_checked": "2026-05-22T07:41:52.870764",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"01e074e7a48a87b11df7549b5a4d44d3\"",
       "file_path": "documentation/PencilKit/pktoolpickerinkingitem/allowscolorselection.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickereraseritem/init(type:).json": {
       "hash": "3855e8d5a727d4a64e3ad3e294cef6bb3fe773b8b59458b1fc3664b2548edcd0",
-      "last_checked": "2026-05-19T07:27:54.188030",
+      "last_checked": "2026-05-22T07:41:53.163684",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7182155065c3365e59f081472e945cd4\"",
       "file_path": "documentation/PencilKit/pktoolpickereraseritem/init-type.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickereraseritem/init(type:width:).json": {
       "hash": "ea06919684519292379faea561c2b6f007d414c984c5d541908b99b6438598a8",
-      "last_checked": "2026-05-19T07:27:54.310776",
+      "last_checked": "2026-05-22T07:41:53.326684",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6855df792f5c0f8f0f593df1dcf43ee1\"",
       "file_path": "documentation/PencilKit/pktoolpickereraseritem/init-typewidth.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickereraseritem/erasertool-92wqj.json": {
       "hash": "e1500c623a547fc2abd3aec6745ca3dcfc0d994f64c39e3220e8bbf842c14004",
-      "last_checked": "2026-05-19T07:27:54.354618",
+      "last_checked": "2026-05-22T07:41:53.506194",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"d76829ea94893d1886de363e39b97141\"",
       "file_path": "documentation/PencilKit/pktoolpickereraseritem/erasertool-92wqj.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerlassoitem/init().json": {
       "hash": "616b94788fec6f727cff0db8ea74cc469f9a8c000ba99ee079e4c0a29e4fff05",
-      "last_checked": "2026-05-19T07:27:54.432379",
+      "last_checked": "2026-05-22T07:41:53.667001",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b5c2b69fcc4136c8339f7e137065c846\"",
       "file_path": "documentation/PencilKit/pktoolpickerlassoitem/init.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerlassoitem/lassotool-2xuhy.json": {
       "hash": "2fc621d41bcd5efa6f40578cdc1098230d23f67509bf20ff22f629bd16a76e24",
-      "last_checked": "2026-05-19T07:27:54.546411",
+      "last_checked": "2026-05-22T07:41:53.821387",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ead0fe067f895819b93f8663111b89b9\"",
       "file_path": "documentation/PencilKit/pktoolpickerlassoitem/lassotool-2xuhy.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerruleritem/init().json": {
       "hash": "cb834598a1b8581667aa9c80b909bc870b520a79c36553e526d725eddc06e55a",
-      "last_checked": "2026-05-19T07:27:54.679879",
+      "last_checked": "2026-05-22T07:41:53.981035",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"c74001a41c17c712f28677714a1218e8\"",
       "file_path": "documentation/PencilKit/pktoolpickerruleritem/init.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickerscribbleitem/init().json": {
       "hash": "0ece426a9f161e107130600eb44f49f7661cbe4debec619fc22776b9b2cf3f02",
-      "last_checked": "2026-05-19T07:27:54.732866",
+      "last_checked": "2026-05-22T07:41:54.146962",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"17e4eed557bab6149b071a97c01a4935\"",
       "file_path": "documentation/PencilKit/pktoolpickerscribbleitem/init.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/init(configuration:).json": {
       "hash": "c6987451246a8e659e439cdc755fc742a72066606306c73368a391237c7e80cc",
-      "last_checked": "2026-05-19T07:27:54.858789",
+      "last_checked": "2026-05-22T07:41:54.306974",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f2af667447bce79ee165ae65f77dc42e\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/init-configuration.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/color.json": {
       "hash": "955fc3bcdbac24d86d8b2f685262e8a863aeb9e4ecb254f260e6d1c360be148e",
-      "last_checked": "2026-05-19T07:27:54.913247",
+      "last_checked": "2026-05-22T07:41:54.482050",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"31a623d8818fe165aa11ec05c9d67dc0\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/color.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/width.json": {
       "hash": "861ad5e59c002d5844847ff79b23d40b0f002fbd0694b3832c9e8967d5003e1c",
-      "last_checked": "2026-05-19T07:27:54.960509",
+      "last_checked": "2026-05-22T07:41:54.671464",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"98ebda1054c30498dc9115b0f9bcbc87\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/width.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-41nm4.json": {
       "hash": "2ee2f764535caffd2fdb786d7c5acbcaaf888b0e06e5940f9352e88e330e6e7a",
-      "last_checked": "2026-05-19T07:27:55.016167",
+      "last_checked": "2026-05-22T07:41:54.848639",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7e0ffab6f2230b0f638ebdfbeaf61931\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-41nm4.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct.json": {
       "hash": "39e41ee0ea0a5bade108c143b0b48d9caa9783cb2de81cc510c373dfaf646302",
-      "last_checked": "2026-05-19T07:27:55.093899",
+      "last_checked": "2026-05-22T07:41:55.021039",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6dca70bc3878a52f28a34301c34027b5\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swiftstruct.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/reloadimage().json": {
       "hash": "758cdb58290a30a261142205806ce208d226a239e2c29b435479f94bea542453",
-      "last_checked": "2026-05-19T07:27:55.214431",
+      "last_checked": "2026-05-22T07:41:55.179465",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5cc9362b48321e1e13ec938c89ffb254\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/reloadimage.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/controloptions.json": {
       "hash": "9494a1614222a0310545bc9ed85679258803a97c9f0c9b743d3b98a7586db85d",
-      "last_checked": "2026-05-19T07:27:55.311500",
+      "last_checked": "2026-05-22T07:41:55.503938",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8c95b4b53bcd2057b09107ca128cf533\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/controloptions.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/allowscolorselection.json": {
       "hash": "d91c0f709e1fd78577afd7756728f1794f5b3d3c5d62d8ae6c8ed528930806ee",
-      "last_checked": "2026-05-19T07:27:55.358223",
+      "last_checked": "2026-05-22T07:41:55.672806",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"eb14bb169adc9505f1a6e98c4a47d829\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/allowscolorselection.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickeritem/identifier.json": {
       "hash": "75f655760a13f592600ed1985e6b96e10873672389153e545b050013b11c2006",
-      "last_checked": "2026-05-19T07:27:55.471483",
+      "last_checked": "2026-05-22T07:41:55.839623",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"dcf263d83bdff622e5023e5e894ffea2\"",
       "file_path": "documentation/PencilKit/pktoolpickeritem/identifier.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickeritem/tool-2ji9h.json": {
       "hash": "60141c24041986e5479d0e9279a115c5e1fff0adbb11c6fe9a4384609212279c",
-      "last_checked": "2026-05-19T07:27:55.569209",
+      "last_checked": "2026-05-22T07:41:56.004416",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"fea7259f26f07d335ae25ba95ccedeec\"",
       "file_path": "documentation/PencilKit/pktoolpickeritem/tool-2ji9h.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpicker/delegate-swift.protocol/toolpickerwilldismiss(_:).json": {
       "hash": "a234bf677a1260ea8155c796a5d85fb20bb16fa3c903eb309dfd48e084c47e55",
-      "last_checked": "2026-05-19T07:27:55.679495",
+      "last_checked": "2026-05-22T07:41:56.169427",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"01a7a4be37224e6ddc907312d723ea2e\"",
       "file_path": "documentation/PencilKit/pktoolpicker/delegate-swift.protocol/toolpickerwilldismiss.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/marker.json": {
       "hash": "4d5e55ae7ec5e1c2cab795f5d0b4ff87702d57d144fbae87ee9e3f164494a4f1",
-      "last_checked": "2026-05-19T07:27:55.786941",
+      "last_checked": "2026-05-22T07:41:56.347340",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6846d07781a2850a79d3aa7f1e2ecee7\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/marker.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/pen.json": {
       "hash": "c1e03efd7e40656d89d93915e17c67627cdb4628d4f567f054157fca9e5e214b",
-      "last_checked": "2026-05-19T07:27:55.832626",
+      "last_checked": "2026-05-22T07:41:56.503418",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f58b3aeabf98cf9c35b8f739dd247604\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/pen.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/pencil.json": {
       "hash": "0462ad11d3572408ac33a5557329b144b6c1eb9037969df5b2ec446cb7b7abc1",
-      "last_checked": "2026-05-19T07:27:55.935228",
+      "last_checked": "2026-05-22T07:41:56.683049",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"87abbb79a36991a2f8fd4b6da3138ae5\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/pencil.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/monoline.json": {
       "hash": "21686f544e082d901822a2ada537c7f030c359e9d5926674e152c91e21b7bab9",
-      "last_checked": "2026-05-19T07:27:56.026596",
+      "last_checked": "2026-05-22T07:41:56.840681",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1c78cd5a85b3a5ff31b18be2a2bfa51f\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/monoline.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/fountainpen.json": {
       "hash": "ea0f5371654132ac8f00ae2da687aaf9dc36705cb98683b6d0e2d6e6bae94da0",
-      "last_checked": "2026-05-19T07:27:56.070242",
+      "last_checked": "2026-05-22T07:41:57.011898",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"bcaaf9015f89e1c50a8ce1b62b3c5bae\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/fountainpen.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/watercolor.json": {
       "hash": "9ef853b76d369e9642579c498437494ac585aa7b9f19430a6d35cc78e70f9dd1",
-      "last_checked": "2026-05-19T07:27:56.146540",
+      "last_checked": "2026-05-22T07:41:57.198216",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0112d6deb8d31b4328b041c1f818668d\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/watercolor.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/crayon.json": {
       "hash": "b8c623abc04eb1da25fe98ac105be4ebff648c551a69c837d8b197e12799f00b",
-      "last_checked": "2026-05-19T07:27:56.249269",
+      "last_checked": "2026-05-22T07:41:57.476729",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5e193bb50470fb1cdbaf6ca2ff990e98\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/crayon.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/requiredcontentversion.json": {
       "hash": "a3fe0a2a64d5b3fe718fad9820441b78d0168f259b30b9e3a02b089e33b70bd7",
-      "last_checked": "2026-05-19T07:27:56.361148",
+      "last_checked": "2026-05-22T07:41:57.642460",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"25a423b3ae3134dec98bcd9f5ff94a81\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/requiredcontentversion.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtool-swift.struct/inktype-swift.enum/reed.json": {
       "hash": "4981b9de5a95b2a603299ad9ea7a8f81c9964362a9a954f1d623f531e2ea5f2f",
-      "last_checked": "2026-05-19T07:27:56.437943",
+      "last_checked": "2026-05-22T07:41:57.816728",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ff863d2d91cffbb70de8986c752c2552\"",
       "file_path": "documentation/PencilKit/pkinkingtool-swift.struct/inktype-swift.enum/reed.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/init(inktype:color:width:).json": {
       "hash": "f977a6adb24304276c8da1a4dc5868c1e69fd1504a6df90a905161670801bc5d",
-      "last_checked": "2026-05-19T07:27:56.510998",
+      "last_checked": "2026-05-22T07:41:57.981439",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2fe9d12c05c76b3e9d1160deb6ec85aa\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/init-inktypecolorwidth.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/init(inktype:color:).json": {
       "hash": "287b4f725ac231a94c469fe5b29cd6fc7c84d71a24f6807b719b5dfb5ab38584",
-      "last_checked": "2026-05-19T07:27:56.609668",
+      "last_checked": "2026-05-22T07:41:58.157163",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"70a5c189bd9c14621f014a2220c9334c\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/init-inktypecolor.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/init(ink:width:).json": {
       "hash": "faaf14e5715a271fc9148c05f17fa2db83d9e7d5f310b97615256cfd64f68769",
-      "last_checked": "2026-05-19T07:27:56.716178",
+      "last_checked": "2026-05-22T07:41:58.310214",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"1c99bfbafae1bfa80ebe0cee2557de4c\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/init-inkwidth.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/color.json": {
       "hash": "aa232222afa432b90dfe6b7e0da29673374f10c0f72f41e8f40fa2b8d92ea2be",
-      "last_checked": "2026-05-19T07:27:56.818086",
+      "last_checked": "2026-05-22T07:41:58.478004",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e50e7e6340b12222788421864d1ba29f\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/color.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/width.json": {
       "hash": "711bff101512f78aae0521b31e75b0a2c41a99ad45f4576a43a6c847076ccdc8",
-      "last_checked": "2026-05-19T07:27:56.869630",
+      "last_checked": "2026-05-22T07:41:58.634730",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7a43b02a56eb068b409219226e18b073\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/width.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/ink.json": {
       "hash": "c8cc4b0ab5923643688cfdbf5516abfec8eb31ca96ff763378de3a401e3a4a9e",
-      "last_checked": "2026-05-19T07:27:56.996355",
+      "last_checked": "2026-05-22T07:41:58.794861",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"ee91fc199f76242536718c4dd7ef1610\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/ink.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/inktype.json": {
       "hash": "6046dfe8bd74fac3ba1add0ff1eac92bbbe260b8009591e26eed4b7e3266fab3",
-      "last_checked": "2026-05-19T07:27:57.059978",
+      "last_checked": "2026-05-22T07:41:58.979070",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6b07724aa664bb494efe60bd91577360\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/inktype.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/convert(_:from:to:).json": {
       "hash": "2cab635bef18fded7f30c5a68df5894dd35557de000a578405db49651a295acb",
-      "last_checked": "2026-05-19T07:27:57.290986",
+      "last_checked": "2026-05-22T07:41:59.146803",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b2bb6eb84fe5525f0023095639f6cff1\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/convert-fromto.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/defaultwidth(forinktype:).json": {
       "hash": "69cd669faf4a2478557d15dd1c0af0b1498de1389063a7b7a64fb91a01cb2e67",
-      "last_checked": "2026-05-19T07:27:57.401962",
+      "last_checked": "2026-05-22T07:41:59.313806",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8891d737a8bfd4a524f018466f61d943\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/defaultwidth-forinktype.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/minimumwidth(forinktype:).json": {
       "hash": "4a5be07815a977051198793856cbfc1fa4072d0cc1fb25bea22a1de2c68e94aa",
-      "last_checked": "2026-05-19T07:27:57.455691",
+      "last_checked": "2026-05-22T07:41:59.463772",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e9878bb9cacbcd871f3794354ed15b7a\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/minimumwidth-forinktype.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/maximumwidth(forinktype:).json": {
       "hash": "0518d17a45674f79196d30d3614ff4aee01bb22ccdfdef33f01da232bd626a06",
-      "last_checked": "2026-05-19T07:27:57.563090",
+      "last_checked": "2026-05-22T07:41:59.643727",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2dc6145ec7330775e464c1d35bd34e59\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/maximumwidth-forinktype.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/requiredcontentversion.json": {
       "hash": "69533ef72c4b05ee61dc1d4fdc0e9d8660eed0be08ad04c0834b17c88bcfc0e6",
-      "last_checked": "2026-05-19T07:27:57.659347",
+      "last_checked": "2026-05-22T07:41:59.823489",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9217833ea65353fb65991c08333b3381\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/requiredcontentversion.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/init(inktype:color:width:azimuth:).json": {
       "hash": "e24f1cc824478ad9419e98098b939b541c39f4d6dcbf5003e84fc6bb768def65",
-      "last_checked": "2026-05-19T07:27:57.758219",
+      "last_checked": "2026-05-22T07:41:59.994650",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2e4c68858644d907948eaf676e4e6968\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/init-inktypecolorwidthazimuth.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/azimuth.json": {
       "hash": "d10fa17585591026d548112568ea9f309dad349975bf90b65f3e81ccf9095342",
-      "last_checked": "2026-05-19T07:27:57.803466",
+      "last_checked": "2026-05-22T07:42:00.190183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"97c9318ff489cf846678971426e0d006\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/azimuth.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum/vector.json": {
       "hash": "15edb6c7a11c374101c81c92bc2f2f88ba965d0ea1398c8c1eae51b28a7b5462",
-      "last_checked": "2026-05-19T07:27:57.994581",
+      "last_checked": "2026-05-22T07:42:00.568847",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6380fcbece1950ca32bf95dec68a5eba\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swift.enum/vector.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum/bitmap.json": {
       "hash": "9782a8c62fa91cfdca710fbb5a718728a8096b3e6e4f33f3dc4d2a943694e023",
-      "last_checked": "2026-05-19T07:27:58.114228",
+      "last_checked": "2026-05-22T07:42:00.719542",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"6fece675388d6a6e818095844590b31e\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swift.enum/bitmap.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum/fixedwidthbitmap.json": {
       "hash": "8eb42de57d7d434aac6887052ca40ad025165a86a7cdd0791777057229d21b01",
-      "last_checked": "2026-05-19T07:27:58.237385",
+      "last_checked": "2026-05-22T07:42:00.879386",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"b7afd8dc183eca6ee409e5366d0c161d\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swift.enum/fixedwidthbitmap.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum/defaultwidth.json": {
       "hash": "4cba5baa1f5fb7a6945ce2b0c4a84a12691f23f3298cbfab1d4f029d53f8485a",
-      "last_checked": "2026-05-19T07:27:58.282159",
+      "last_checked": "2026-05-22T07:42:01.034693",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"12f42f0f6033abb1d8c05ef9e9aa544d\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swift.enum/defaultwidth.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertool-swift.struct/erasertype-swift.enum/validwidthrange.json": {
       "hash": "418ae6a4e3301deebd4500a8859d86dc37741c6115d163cc92578d6c1e9b5511",
-      "last_checked": "2026-05-19T07:27:58.533688",
+      "last_checked": "2026-05-22T07:42:01.197742",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"abe1abe984dcff07bcbad05e3aacf8d0\"",
       "file_path": "documentation/PencilKit/pkerasertool-swift.struct/erasertype-swift.enum/validwidthrange.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/init(erasertype:).json": {
       "hash": "fe28574009a004db0f1905195db071616282ff8b0af3b5e323b8703539bce40c",
-      "last_checked": "2026-05-19T07:27:58.584107",
+      "last_checked": "2026-05-22T07:42:01.367764",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"af00a6399fc9ea5f9a913ab6a1648ac1\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/init-erasertype.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/init(erasertype:width:).json": {
       "hash": "a373dd5aa9697beda4cfc1afc588f85e52a3f1c709b78aa1ad3c5b17a95012a9",
-      "last_checked": "2026-05-19T07:27:58.696839",
+      "last_checked": "2026-05-22T07:42:01.536695",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e73d97db49a4dc0e310c2c113a6d5249\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/init-erasertypewidth.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/erasertype.json": {
       "hash": "ac91388e4a7ffd8cd91f6449e40c7c29840ed0c0c554cf03509ada930ee29174",
-      "last_checked": "2026-05-19T07:27:58.776650",
+      "last_checked": "2026-05-22T07:42:01.701605",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f61f458a52d98a643d24fd475cdcb9ca\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/erasertype.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/width.json": {
       "hash": "3ba8f77692139ae4693607d056029b438f6df83d6cb23d8aff70cc614d8c0bc9",
-      "last_checked": "2026-05-19T07:27:58.850216",
+      "last_checked": "2026-05-22T07:42:01.851518",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e2033087f46fd851c8364c3b717e4c5d\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/width.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/defaultwidth(for:).json": {
       "hash": "391be5d0148e2135a11ab8f95168d94a1cdf93260267746fb2def275554f1a59",
-      "last_checked": "2026-05-19T07:27:59.077408",
+      "last_checked": "2026-05-22T07:42:02.024457",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"4de90cf3e216832b9771d5a68b631b45\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/defaultwidth-for.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/minimumwidth(for:).json": {
       "hash": "2f5041c96e7cc555424cd74ab6d0be3c3e10df27edd51e1cbc9bb1c9c03d4da1",
-      "last_checked": "2026-05-19T07:27:59.140355",
+      "last_checked": "2026-05-22T07:42:02.179382",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"7294298b2040a97f9f4778090f580bce\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/minimumwidth-for.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkerasertoolreference/maximumwidth(for:).json": {
       "hash": "d06fd02476ff8c974245375c1c9e16050c32d7e0c43b3a1b3e5e02c9fa481ee0",
-      "last_checked": "2026-05-19T07:27:59.244444",
+      "last_checked": "2026-05-22T07:42:02.354555",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"c235dc4224ea6f3e2b9b49ed3f4850f5\"",
       "file_path": "documentation/PencilKit/pkerasertoolreference/maximumwidth-for.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pklassotoolreference/init().json": {
       "hash": "6a5da9a1d246fa19100dc9798a664237b8d58a9591593cc6fb738afe17a2eede",
-      "last_checked": "2026-05-19T07:27:59.358059",
+      "last_checked": "2026-05-22T07:42:02.505349",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"9adf44fd831f6c3c1f841b70b044d210\"",
       "file_path": "documentation/PencilKit/pklassotoolreference/init.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride/distance(_:).json": {
       "hash": "5a497472610ca58bc54841e3a2368405fa96222c0775fcf3938f4b071c03db17",
-      "last_checked": "2026-05-19T07:27:59.414179",
+      "last_checked": "2026-05-22T07:42:02.679388",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5623d9669cb9ae7a0016d1d764c3c6e4\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride/distance.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride/parametricstep(_:).json": {
       "hash": "668416cc39170ab4b19d3c4dcf31fdae093bba45da561ba7d9b45e2bd7943611",
-      "last_checked": "2026-05-19T07:27:59.462483",
+      "last_checked": "2026-05-22T07:42:02.851916",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"f0ca9c46391fb122559061589103ba81\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride/parametricstep.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkstrokepath-swift.struct/interpolatedslice/stride/time(_:).json": {
       "hash": "2f5bf16484db6eabcf5daf67e66405475abcc69abadfdfaf9e6957969e5ab76d",
-      "last_checked": "2026-05-19T07:27:59.668050",
+      "last_checked": "2026-05-22T07:42:03.016538",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"dd6bd2ff02b84b5437c54021832da532\"",
       "file_path": "documentation/PencilKit/pkstrokepath-swift.struct/interpolatedslice/stride/time.md"
     },
@@ -4615,9 +4615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/init(identifier:name:).json": {
       "hash": "19ef9573f5e2e4cc9c3227f4454505112893b29c9731aaef11a327d5b504fe0e",
-      "last_checked": "2026-05-19T07:27:59.770179",
+      "last_checked": "2026-05-22T07:42:03.193646",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8d208391d0a9a1a269612babae6ef20b\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/init-identifiername.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/identifier.json": {
       "hash": "795c947c4e3ca1403c026b47f493f45b6a77b621868641e1e57bd42eb0b73681",
-      "last_checked": "2026-05-19T07:27:59.827173",
+      "last_checked": "2026-05-22T07:42:03.344411",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0dbf6b4a9b4b1b80982377be399cfccc\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/identifier.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/name.json": {
       "hash": "aefc2bd893dd4344a2700ddbd518b4ef73d6fe3403ab9662eb062dd1d1ebcaed",
-      "last_checked": "2026-05-19T07:27:59.874135",
+      "last_checked": "2026-05-22T07:42:03.509245",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"2486ddfb51c8a4d83c4aac14dd666e2f\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/name.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/defaultcolor.json": {
       "hash": "d6cb91e5f8d621940940b5a09c792ce69d012dd2880522bf4cb80f5c1583b7c0",
-      "last_checked": "2026-05-19T07:27:59.983693",
+      "last_checked": "2026-05-22T07:42:03.673183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"abd6dde15e203fa995a4cb54835976fa\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/defaultcolor.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/allowscolorselection.json": {
       "hash": "6c469c6d9d3d0a041ba9726ba31e9506a98acbcbd86ca616f0c54bfc10d8a738",
-      "last_checked": "2026-05-19T07:28:00.037867",
+      "last_checked": "2026-05-22T07:42:03.842267",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8661f2eefa234b5e69affcee7e189269\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/allowscolorselection.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/defaultwidth.json": {
       "hash": "a2c1091d9bda7881cb19810ffeb4bca188af24edb0c48de01cf2addc634c47ce",
-      "last_checked": "2026-05-19T07:28:00.202267",
+      "last_checked": "2026-05-22T07:42:03.999933",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0746a8c7fcc9f3a7d84ec95e8492d100\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/defaultwidth.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/widthvariants.json": {
       "hash": "91c188a6ce8ebc1dad165db2b26f9f4ad6f2529c3e57b2235991e9c3e1afb51d",
-      "last_checked": "2026-05-19T07:28:00.318321",
+      "last_checked": "2026-05-22T07:42:04.172313",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"db9a5372dcc533e523e3432af87e7b99\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/widthvariants.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/imageprovider.json": {
       "hash": "da563237401a91088e0c5569f6bd0ccb8ead88b69df4646fb52b1c84184d2242",
-      "last_checked": "2026-05-19T07:28:00.418289",
+      "last_checked": "2026-05-22T07:42:04.348653",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"5f545de8d143a07fa0f590fbe947724f\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/imageprovider.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/viewcontrollerprovider.json": {
       "hash": "89d0218021d1bd1e5eb792f0ec68ce37001648fbf9ae4959f666cc987f47d3d6",
-      "last_checked": "2026-05-19T07:28:00.524554",
+      "last_checked": "2026-05-22T07:42:04.524670",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"0b80fe8576ca80e44babe6c7dd6162a5\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/viewcontrollerprovider.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/configuration-swift.struct/toolattributecontrols.json": {
       "hash": "43ddfdd8ddbbb09ab7c7016377e6f4b72481ac6ee2a46845659e1aea81069556",
-      "last_checked": "2026-05-19T07:28:00.625934",
+      "last_checked": "2026-05-22T07:42:04.696236",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e4d940a11d95702de911d52e347e2cea\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/configuration-swift.struct/toolattributecontrols.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/controloptions/init(rawvalue:).json": {
       "hash": "88a3431c6c717e80cc5edb440cdcc20733e660818eb6afb30df7b3085bf51c5a",
-      "last_checked": "2026-05-19T07:28:00.675388",
+      "last_checked": "2026-05-22T07:42:04.871520",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"645eb5353c56757ee462ace316257ed9\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/controloptions/init-rawvalue.md"
     },
@@ -4791,9 +4791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/controloptions/opacity.json": {
       "hash": "57d169baf17ea963b86a646c02a7d60728ae902fca3ea8ad4ac1d9671eb50cca",
-      "last_checked": "2026-05-19T07:28:00.739775",
+      "last_checked": "2026-05-22T07:42:05.033572",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"59791fb08ef57b9fc01ba3bf64ea87f4\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/controloptions/opacity.md"
     },
@@ -4807,9 +4807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pktoolpickercustomitem/controloptions/width.json": {
       "hash": "bddde881eab59610e380a2420f692330353cee0000135b504e68c8bd88684048",
-      "last_checked": "2026-05-19T07:28:00.858942",
+      "last_checked": "2026-05-22T07:42:05.198320",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"dcdb765d2b9c9b53581dcb55ad51d1d9\"",
       "file_path": "documentation/PencilKit/pktoolpickercustomitem/controloptions/width.md"
     },
@@ -4823,9 +4823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawing-swift.struct/draw(in:frame:from:darkuserinterfacestyle:).json": {
       "hash": "fd0767e279962fa5764da82c3362871a68932c0ca4af0274dde1eba7dba73c18",
-      "last_checked": "2026-05-19T07:27:36.748459",
+      "last_checked": "2026-05-22T07:41:22.290451",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"e3b52e83df97c38ff12976eefc93ab7f\"",
       "file_path": "documentation/PencilKit/pkdrawing-swift.struct/draw-inframefromdarkuserinterfacestyle.md"
     },
@@ -4839,9 +4839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkinkingtoolreference/invertcolor(_:).json": {
       "hash": "d4de9483a0b6185848124386b9947e495e4de06015cbf81b6e180b207d085d59",
-      "last_checked": "2026-05-19T07:27:57.878531",
+      "last_checked": "2026-05-22T07:42:00.349263",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"59b1c48decd6be553f18ee7ccc8de686\"",
       "file_path": "documentation/PencilKit/pkinkingtoolreference/invertcolor.md"
     },
@@ -4855,15 +4855,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/com.apple.pencilkit/objc(pl)uiappearancecontainer.json": {
       "hash": "",
-      "last_checked": "2026-05-19T07:27:34.982134",
+      "last_checked": "2026-05-22T07:41:19.973376",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/pencilkit/pkdrawingreference/init(coder:).json": {
       "hash": "75f345d9a48a965210cf792fca0515bd11115816f0c36fd7486c2de3651fd69c",
-      "last_checked": "2026-05-19T07:27:49.668461",
+      "last_checked": "2026-05-22T07:41:42.738939",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:27:30.620644",
+      "session_id": "2026-05-22T07:41:14.402131",
       "etag": "W/\"8de99a90b1d7cbe0415947d2086b0a39\"",
       "file_path": "documentation/PencilKit/pkdrawingreference/init-coder.md"
     },

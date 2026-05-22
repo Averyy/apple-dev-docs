@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:28:38.867758",
+    "last_updated": "2026-05-22T07:43:08.077250",
     "total_pages": 436,
-    "session_id": "2026-05-19T07:28:14.672986"
+    "session_id": "2026-05-22T07:42:29.673570"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/IOSurface.json": {
       "hash": "b180901a18954d1ea3de2f2f655d073f0d7ea6739d2002e799846b965d5e06ea",
-      "last_checked": "2026-05-19T07:28:14.937255",
+      "last_checked": "2026-05-22T07:42:29.904144",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"17f5b1e149740d9cdcd02879fb0a17d5\"",
       "file_path": "documentation/IOSurface/IOSurface.md"
     },
     "https://developer.apple.com/documentation/IOSurface": {
       "hash": "b180901a18954d1ea3de2f2f655d073f0d7ea6739d2002e799846b965d5e06ea",
-      "last_checked": "2026-05-19T07:28:14.824861",
+      "last_checked": "2026-05-22T07:42:29.816418",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"17f5b1e149740d9cdcd02879fb0a17d5\"",
       "file_path": "documentation/IOSurface/IOSurface.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface.json": {
       "hash": "57845e5b110c140e3d0ed434fe14403271602b8f6e8d34c98059dfbf262e756b",
-      "last_checked": "2026-05-19T07:28:15.202306",
+      "last_checked": "2026-05-22T07:42:30.204086",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e76690c3fa10748aa4989143edc76274\"",
       "file_path": "documentation/IOSurface/iosurface.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceref.json": {
       "hash": "5090b499a9558877d8a8a7c6ecbbf921c459731bc154811932aeab226a5832f2",
-      "last_checked": "2026-05-19T07:28:15.433612",
+      "last_checked": "2026-05-22T07:42:30.357328",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"5e2a03c45c648a4613c5a6a3be271219\"",
       "file_path": "documentation/IOSurface/iosurfaceref.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions.json": {
       "hash": "6c3e5186cf8fea47a39105867ee609b3ae1fe46d98d8702e4cb90b32141fddbb",
-      "last_checked": "2026-05-19T07:28:15.484964",
+      "last_checked": "2026-05-22T07:42:30.490282",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"47c1d6662be907b8732e88e603695e9a\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey.json": {
       "hash": "d5c7bf1e22296f665fb94c453df2cefcba709583e6b08f75d233da7b0921fc6a",
-      "last_checked": "2026-05-19T07:28:15.715511",
+      "last_checked": "2026-05-22T07:42:30.624154",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"eb79897978c59640e2572c5e6a3e6fde\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate.json": {
       "hash": "fbb6ed61ce59c3fe6fe843d83b8a804bd2110ad20a2a606d644edeb0480c58fd",
-      "last_checked": "2026-05-19T07:28:15.833396",
+      "last_checked": "2026-05-22T07:42:30.789277",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a3e784d0249134d5c9d8ef4639cfec31\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-structures.json": {
       "hash": "f82ec306eddd0bb25e018edc86a405e569ad477c65e5f4cb28ea6dc2dfdb7568",
-      "last_checked": "2026-05-19T07:28:15.930590",
+      "last_checked": "2026-05-22T07:42:30.961883",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"590ce0c5748282e4f9b479dbbb131dfe\"",
       "file_path": "documentation/IOSurface/iosurface-structures.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-constants.json": {
       "hash": "026fd674be45e33bcddab9dbcdf9bb337c17597d406c3eaf318837547086ab03",
-      "last_checked": "2026-05-19T07:28:16.162318",
+      "last_checked": "2026-05-22T07:42:31.135904",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a24aa051be18043b5de13635eecda2bf\"",
       "file_path": "documentation/IOSurface/iosurface-constants.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface-functions.json": {
       "hash": "409c077502c2e1d406b1b2eb9cf29345e0dbe06ea4a6ba59c527f2a6ec6d842a",
-      "last_checked": "2026-05-19T07:28:16.394895",
+      "last_checked": "2026-05-22T07:42:31.300001",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"b7a6dc7d34ef888a04af95c175c2c328\"",
       "file_path": "documentation/IOSurface/iosurface-functions.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecontentheadroom.json": {
       "hash": "7b6081eebc93c59fadc656413aa6b9da168591e93be70fdb9af84fb40ece6702",
-      "last_checked": "2026-05-19T07:28:16.475182",
+      "last_checked": "2026-05-22T07:42:31.464172",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a14d4bca46ecb56bda69dd7ce708c67c\"",
       "file_path": "documentation/IOSurface/kiosurfacecontentheadroom.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecopybackcache.json": {
       "hash": "9e2f6d5b268fd354ae41c9580b611bf8af8fa86c845c6f79672cac860545faa1",
-      "last_checked": "2026-05-19T07:28:16.557130",
+      "last_checked": "2026-05-22T07:42:31.616731",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6472d4539b1fc4caa4462989c415ea2c\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackcache.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecopybackinnercache.json": {
       "hash": "30ddc9075e0067bb2d00b9de55df40500e97250d7bb732cb5d54d8b852194ea4",
-      "last_checked": "2026-05-19T07:28:16.638545",
+      "last_checked": "2026-05-22T07:42:31.731038",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"18e6cc2e432ec5008c933c9fb969eb8f\"",
       "file_path": "documentation/IOSurface/kiosurfacecopybackinnercache.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacedefaultcache.json": {
       "hash": "d4c160372fcd933cbf88c221778e9458e7075c1bca2e65f9f13b499cf0a2d9c0",
-      "last_checked": "2026-05-19T07:28:16.752551",
+      "last_checked": "2026-05-22T07:42:31.902101",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"77e833a6842e174f2cbffdf7cb12d6f0\"",
       "file_path": "documentation/IOSurface/kiosurfacedefaultcache.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceinhibitcache.json": {
       "hash": "df42e11e384c14e44e40ebe9ea20c98dbec3435d809f69237254775dd87e7d05",
-      "last_checked": "2026-05-19T07:28:16.802531",
+      "last_checked": "2026-05-22T07:42:32.062197",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"54aa837656b25d239c5a28b93fdafd3e\"",
       "file_path": "documentation/IOSurface/kiosurfaceinhibitcache.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcacheshift.json": {
       "hash": "8ff0480c885ac89845f9a23e554eda988808f23ef56208278d42bdd9ba897147",
-      "last_checked": "2026-05-19T07:28:17.039439",
+      "last_checked": "2026-05-22T07:42:32.175863",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"511bdb1ac733b87d047678adb9f2670f\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcacheshift.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcopybackcache.json": {
       "hash": "772a1597a76b3dafac86e8900ce19dc2ba2c6fcd05becf22f84456fe882aa905",
-      "last_checked": "2026-05-19T07:28:17.133775",
+      "last_checked": "2026-05-22T07:42:32.306183",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a3a710e11e3475b0bf3320726fe655ce\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackcache.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapcopybackinnercache.json": {
       "hash": "05534afb25d3c3aabcdd11dd29a8e3e67fd8fbcb22e0e6d56c6d2c58a8faf5e3",
-      "last_checked": "2026-05-19T07:28:17.184847",
+      "last_checked": "2026-05-22T07:42:32.446924",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a98432607e177b85c12b931dc27e8f1f\"",
       "file_path": "documentation/IOSurface/kiosurfacemapcopybackinnercache.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapdefaultcache.json": {
       "hash": "a5a2a5874c40dfcab2dee49ce65873f68a92d153c69f6bc184fd803836629f87",
-      "last_checked": "2026-05-19T07:28:17.317243",
+      "last_checked": "2026-05-22T07:42:32.558998",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e88a77502b6e3cac0d844640d77e4f0f\"",
       "file_path": "documentation/IOSurface/kiosurfacemapdefaultcache.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapinhibitcache.json": {
       "hash": "9f61579f811e28e7feca534e61e23d02028b79bcf3381851000e3ae02e5e1656",
-      "last_checked": "2026-05-19T07:28:17.538149",
+      "last_checked": "2026-05-22T07:42:32.736592",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"5c8875681dd7c2e79df433f4701f27c4\"",
       "file_path": "documentation/IOSurface/kiosurfacemapinhibitcache.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapwritecombinecache.json": {
       "hash": "df0f6f7ed083d9f460aab94d3d3659eb40988d35bf7100a9e922502754e50575",
-      "last_checked": "2026-05-19T07:28:17.766322",
+      "last_checked": "2026-05-22T07:42:32.880862",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ebb6b96ceb99de8fb8adbc34755d47f9\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritecombinecache.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacemapwritethrucache.json": {
       "hash": "48e79dc06b0b593e22b50f30d3721ebb5fa9e847189819c9f4535c0ccad53f8c",
-      "last_checked": "2026-05-19T07:28:17.817543",
+      "last_checked": "2026-05-22T07:42:33.051028",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"9a1d1694b032226397c294e86c231fec\"",
       "file_path": "documentation/IOSurface/kiosurfacemapwritethrucache.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewritecombinecache.json": {
       "hash": "9da8c948ad4da454bcfb25e66f0c35656f11b0b87335b56ea3a5d0c75627a82d",
-      "last_checked": "2026-05-19T07:28:17.901917",
+      "last_checked": "2026-05-22T07:42:33.208072",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"020bfc8f22f9675e3cf72a135a4638de\"",
       "file_path": "documentation/IOSurface/kiosurfacewritecombinecache.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewritethrucache.json": {
       "hash": "d8441d76a7610fc817239c5de966b09bba77eb1dc744382ae5921e0ba8fbf369",
-      "last_checked": "2026-05-19T07:28:18.081563",
+      "last_checked": "2026-05-22T07:42:33.345045",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"18291e1139b8fb7abc8025da750753a5\"",
       "file_path": "documentation/IOSurface/kiosurfacewritethrucache.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(properties:).json": {
       "hash": "70d8ab22ab3e889d152f798d5f1be38a1aabe5018725b890ec16b28b3cabe1b3",
-      "last_checked": "2026-05-19T07:28:18.309478",
+      "last_checked": "2026-05-22T07:42:33.529571",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"cc77f17b6a66dc9c279fb7edfa4ad383\"",
       "file_path": "documentation/IOSurface/iosurface/init-properties.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(_:).json": {
       "hash": "c67c9e9c0fdb1f0bef4016c965b158da5d3f720f3d93ea281b9faa8267e8b00f",
-      "last_checked": "2026-05-19T07:28:18.402769",
+      "last_checked": "2026-05-22T07:42:33.661752",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"23709e1b5916c1e80ffffe698eea91e7\"",
       "file_path": "documentation/IOSurface/iosurface/init.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allocationsize.json": {
       "hash": "a913de4b4907f4630d0470270e7f31bad6e85ea066f768a8e4021f53f792e544",
-      "last_checked": "2026-05-19T07:28:18.658681",
+      "last_checked": "2026-05-22T07:42:33.893330",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"103c3d33c7bac7cbecdfccfd08834593\"",
       "file_path": "documentation/IOSurface/iosurface/allocationsize.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allowspixelsizecasting.json": {
       "hash": "019c41b8d63a032265f15e39e36b64b3b3fd6f3830b67beb83961e84a0efd9a0",
-      "last_checked": "2026-05-19T07:28:18.786846",
+      "last_checked": "2026-05-22T07:42:34.049153",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"f73da68009d2455bb3d385dc79df21ab\"",
       "file_path": "documentation/IOSurface/iosurface/allowspixelsizecasting.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/baseaddress.json": {
       "hash": "8be066700a6592cd7f02b03a5d89c1a09424ce6114b6180494641a145ec66497",
-      "last_checked": "2026-05-19T07:28:19.009645",
+      "last_checked": "2026-05-22T07:42:34.199465",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4d1a6ad3385afe972421aa0772eee63a\"",
       "file_path": "documentation/IOSurface/iosurface/baseaddress.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperelement.json": {
       "hash": "479c02930ab9277b1b5c68538225710332914e41b734e5da33106dbd8aff8442",
-      "last_checked": "2026-05-19T07:28:19.063032",
+      "last_checked": "2026-05-22T07:42:34.309626",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"190a3114dc8861b0eb926f3a2c40d36f\"",
       "file_path": "documentation/IOSurface/iosurface/bytesperelement.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperrow.json": {
       "hash": "edee29793126b1b3017fe46ae96b52a247dc76d09d369851d05b4b0dbcb82a35",
-      "last_checked": "2026-05-19T07:28:19.166563",
+      "last_checked": "2026-05-22T07:42:34.436472",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"25b52e6c4f0aa869333796063edb74a7\"",
       "file_path": "documentation/IOSurface/iosurface/bytesperrow.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementheight.json": {
       "hash": "08d7a63c1017546f002694091127a960db681ed6d5f24bd272c5f50ee7206049",
-      "last_checked": "2026-05-19T07:28:19.274500",
+      "last_checked": "2026-05-22T07:42:34.601324",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"9dba360e8780a49b63383f5fdceb32b6\"",
       "file_path": "documentation/IOSurface/iosurface/elementheight.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementwidth.json": {
       "hash": "4f4efd5973a2ea6e3135d6a1906ed9049ef83d8e751cb989e402fddba6d2a101",
-      "last_checked": "2026-05-19T07:28:19.330686",
+      "last_checked": "2026-05-22T07:42:34.753742",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"19fac7b63e3c7bce50b8f35f3a98125f\"",
       "file_path": "documentation/IOSurface/iosurface/elementwidth.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/height.json": {
       "hash": "e1cb7bbd7bee471446e6c1bc3ee2da1213713af4db6152530dd306d02cd3c7dc",
-      "last_checked": "2026-05-19T07:28:19.508766",
+      "last_checked": "2026-05-22T07:42:34.965617",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1f91574e9044eff135fe9237d0fe6936\"",
       "file_path": "documentation/IOSurface/iosurface/height.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/isinuse.json": {
       "hash": "c86de369e7a7a23507ebd2cd6ccf50508859ce471a2be1c7a4b450d8f85ce279",
-      "last_checked": "2026-05-19T07:28:19.610190",
+      "last_checked": "2026-05-22T07:42:35.123580",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d5a3fb52afb4ed3e8b7dad36cfb63ba5\"",
       "file_path": "documentation/IOSurface/iosurface/isinuse.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/localusecount.json": {
       "hash": "034b26383734b3b314e79ccace09a80a5b557a334f4366f2b77b142c0abe17d1",
-      "last_checked": "2026-05-19T07:28:19.710181",
+      "last_checked": "2026-05-22T07:42:35.247170",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d933f7b942ef87567be90d135098386b\"",
       "file_path": "documentation/IOSurface/iosurface/localusecount.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/pixelformat.json": {
       "hash": "4768156a98674d062b0ea7054886f64517f95a1bbf39a92cd25510f78dd69d41",
-      "last_checked": "2026-05-19T07:28:19.810987",
+      "last_checked": "2026-05-22T07:42:35.375859",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"754df052098fd93719a6e62f25e4b1ac\"",
       "file_path": "documentation/IOSurface/iosurface/pixelformat.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/planecount.json": {
       "hash": "ab63a840b1d9d833e7536bdf683333f3732593ef5eec43de28a0d9b1bcf5df75",
-      "last_checked": "2026-05-19T07:28:19.860443",
+      "last_checked": "2026-05-22T07:42:35.503305",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"48bed46267044769c33066b9ff2512de\"",
       "file_path": "documentation/IOSurface/iosurface/planecount.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/seed.json": {
       "hash": "91be96bd68b9a3393be94aad8b3cf74117108d98ec6ef994d8c80803ac41c833",
-      "last_checked": "2026-05-19T07:28:19.929489",
+      "last_checked": "2026-05-22T07:42:35.621512",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"333190e4209d88e9596339bcb086cad1\"",
       "file_path": "documentation/IOSurface/iosurface/seed.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/width.json": {
       "hash": "5f5949c78f39d5dac14823af4d5edd6ceddaf1c3fdaa19e94c0dcd5a875c8faf",
-      "last_checked": "2026-05-19T07:28:20.045421",
+      "last_checked": "2026-05-22T07:42:35.753768",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bb20ef8a00895df89b80ce547e5f47b9\"",
       "file_path": "documentation/IOSurface/iosurface/width.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/surfaceid.json": {
       "hash": "4950c2e8d29fa8942606b9ec2aa726045f25465389f939ecf6b586987fc0703a",
-      "last_checked": "2026-05-19T07:28:20.150538",
+      "last_checked": "2026-05-22T07:42:35.881065",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1dd163216e70adf8b07251827f4fb7c7\"",
       "file_path": "documentation/IOSurface/iosurface/surfaceid.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/allattachments().json": {
       "hash": "755911036cffbf40f9b9d80910288fb7f9e2a992f970dcc7d2f0fa2e608bed36",
-      "last_checked": "2026-05-19T07:28:20.307336",
+      "last_checked": "2026-05-22T07:42:35.997026",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"47c28bdc2f8a712a760291823adedf7f\"",
       "file_path": "documentation/IOSurface/iosurface/allattachments.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/attachment(forkey:).json": {
       "hash": "afa9d65d019cdb661af751241193bb7ad4df2cc4dabd02b989aba8d92d910fff",
-      "last_checked": "2026-05-19T07:28:20.443835",
+      "last_checked": "2026-05-22T07:42:36.139552",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"df631d296f148ab49c220f9349396090\"",
       "file_path": "documentation/IOSurface/iosurface/attachment-forkey.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/baseaddressofplane(at:).json": {
       "hash": "dd654fbfcd22c11593cb971c3553172287070fe6434e05e8ee2f948a0a5fe0b3",
-      "last_checked": "2026-05-19T07:28:20.544444",
+      "last_checked": "2026-05-22T07:42:36.264512",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"064946fec612d6812007e7feb664a4a5\"",
       "file_path": "documentation/IOSurface/iosurface/baseaddressofplane-at.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperelementofplane(at:).json": {
       "hash": "164d7cbbb7e99daf2db9e986d4900b77f8a7bb0c559bbc5e57d6cb6778289419",
-      "last_checked": "2026-05-19T07:28:20.659491",
+      "last_checked": "2026-05-22T07:42:36.388371",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"41e4cc27888b7a9e0ad38a4c680e4a02\"",
       "file_path": "documentation/IOSurface/iosurface/bytesperelementofplane-at.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/bytesperrowofplane(at:).json": {
       "hash": "3858bc7758611266e553996f2f042bc487ac05a5c52f85bda1561838270984d1",
-      "last_checked": "2026-05-19T07:28:20.771669",
+      "last_checked": "2026-05-22T07:42:36.518139",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4995a8933a712dc16c81e9a0eb290fb5\"",
       "file_path": "documentation/IOSurface/iosurface/bytesperrowofplane-at.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/decrementusecount().json": {
       "hash": "52079fc4a7ce25aa095f3e623be95dc010d867e9ece7a027772fb529cece5090",
-      "last_checked": "2026-05-19T07:28:20.824186",
+      "last_checked": "2026-05-22T07:42:36.676350",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e0348f16090f10fc8ba021c4814eaef0\"",
       "file_path": "documentation/IOSurface/iosurface/decrementusecount.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementheightofplane(at:).json": {
       "hash": "0fb1f3ed9495a8c573b9f0b5db8e2e52742768a5a8d8262a663a1f323ea507e7",
-      "last_checked": "2026-05-19T07:28:20.933356",
+      "last_checked": "2026-05-22T07:42:36.790368",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6b75e145aa42f55797b798e50c59ec0e\"",
       "file_path": "documentation/IOSurface/iosurface/elementheightofplane-at.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/elementwidthofplane(at:).json": {
       "hash": "af741f5ff1dc993d79ef2a8f8f1b6c124f84cb9c369f2cf093aef2eddc42d549",
-      "last_checked": "2026-05-19T07:28:21.043502",
+      "last_checked": "2026-05-22T07:42:36.915123",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2993c7baeb897f34fbd188ce55ba9ac1\"",
       "file_path": "documentation/IOSurface/iosurface/elementwidthofplane-at.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/heightofplane(at:).json": {
       "hash": "d63ac0a767ece26a7d71e7e10eef77a46ef33f9031d0c7a32f06583c3ca42395",
-      "last_checked": "2026-05-19T07:28:21.102402",
+      "last_checked": "2026-05-22T07:42:37.033541",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6a1d832f26d8b8acfe496b31889d7eac\"",
       "file_path": "documentation/IOSurface/iosurface/heightofplane-at.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/incrementusecount().json": {
       "hash": "01cd856e011dda8821ebe03c09e9dddbd69a2e87cf6e93deaf973d130d817b2e",
-      "last_checked": "2026-05-19T07:28:21.156397",
+      "last_checked": "2026-05-22T07:42:37.146332",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"f48653d58241247b208aaa5a0e96b379\"",
       "file_path": "documentation/IOSurface/iosurface/incrementusecount.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/lock(options:seed:).json": {
       "hash": "7079b8ed380e8c22b1321876d0aa8ed9288a29a175431018683e5bb5346a5c22",
-      "last_checked": "2026-05-19T07:28:21.280327",
+      "last_checked": "2026-05-22T07:42:37.259146",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a2a85aa5559581426c45ffe96b2bd675\"",
       "file_path": "documentation/IOSurface/iosurface/lock-optionsseed.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/removeallattachments().json": {
       "hash": "b166a34548682413eef50702c69f0f89b870efddf1f74ca5163ed2d1fd81ba2b",
-      "last_checked": "2026-05-19T07:28:21.403815",
+      "last_checked": "2026-05-22T07:42:37.380137",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"da7111b3552daf7ab239822343dbfc77\"",
       "file_path": "documentation/IOSurface/iosurface/removeallattachments.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/removeattachment(forkey:).json": {
       "hash": "bd5ea3a6949d4d883753f1f866c246d4f8e3d278c88f3d0fd37f0bfb1aab313f",
-      "last_checked": "2026-05-19T07:28:21.515202",
+      "last_checked": "2026-05-22T07:42:37.525756",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"dff0ac7f24271524d5e80e5d5f01f3d7\"",
       "file_path": "documentation/IOSurface/iosurface/removeattachment-forkey.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setallattachments(_:).json": {
       "hash": "b513ea80cb24987158fca799aacd39170795cc82341f097b1a09f0d4aa6e473c",
-      "last_checked": "2026-05-19T07:28:21.618524",
+      "last_checked": "2026-05-22T07:42:37.652349",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"19a56f4dd3150178dd867c528e80368e\"",
       "file_path": "documentation/IOSurface/iosurface/setallattachments.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setattachment(_:forkey:).json": {
       "hash": "96996f402731faf8332f5e3869b90c986fc65386dc3ce11c38208604b1cd5211",
-      "last_checked": "2026-05-19T07:28:21.668092",
+      "last_checked": "2026-05-22T07:42:37.771432",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"52efe8ed73f6d44efd16ba97c6cf7e55\"",
       "file_path": "documentation/IOSurface/iosurface/setattachment-forkey.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/setpurgeable(_:oldstate:).json": {
       "hash": "9d3b236560d47f5d9a71d4f1e8a6305ca52f7f4bc432f3490f7e86df90c0a977",
-      "last_checked": "2026-05-19T07:28:21.784159",
+      "last_checked": "2026-05-22T07:42:37.907612",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"802f38056b561fa3405300c35b59de64\"",
       "file_path": "documentation/IOSurface/iosurface/setpurgeable-oldstate.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/unlock(options:seed:).json": {
       "hash": "13bd0a9544697949ef7bd10088fe8f84da0c748f1fc9787b29bc5be93f90f29c",
-      "last_checked": "2026-05-19T07:28:21.961972",
+      "last_checked": "2026-05-22T07:42:38.034022",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"c68f68866143583aee7ca7231d9a0d1f\"",
       "file_path": "documentation/IOSurface/iosurface/unlock-optionsseed.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/widthofplane(at:).json": {
       "hash": "c9188b44b8882764f12ccb0b39d060ead18f35f30b93bec628f80f30678364df",
-      "last_checked": "2026-05-19T07:28:22.019095",
+      "last_checked": "2026-05-22T07:42:38.157647",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bd4f2a051395bb10b67f4969d7061bf8\"",
       "file_path": "documentation/IOSurface/iosurface/widthofplane-at.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceref/init(_:).json": {
       "hash": "9638fef1787ac4102d65283a3703cbe9e59346f01e3b46a99235d213fa731fc1",
-      "last_checked": "2026-05-19T07:28:22.085832",
+      "last_checked": "2026-05-22T07:42:38.334045",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"641becb8d14eeefa27143dfe2c1f8335\"",
       "file_path": "documentation/IOSurface/iosurfaceref/init.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/init(rawvalue:).json": {
       "hash": "974c920315c9c3f8eb3b0c65562dad83e621d4d80695550d33ffff9da6d4c61c",
-      "last_checked": "2026-05-19T07:28:22.192318",
+      "last_checked": "2026-05-22T07:42:38.434850",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"f25a841303fe52a1ec621ab99f788fdd\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/init-rawvalue.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/avoidsync.json": {
       "hash": "40e6d0fb088078eebb44fcb48061af0238312ffa55adbcde31c552b357e9b3c6",
-      "last_checked": "2026-05-19T07:28:22.244591",
+      "last_checked": "2026-05-22T07:42:38.596745",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2f7b7612a8948e63ab732aae9da9ed1b\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/avoidsync.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelockoptions/readonly.json": {
       "hash": "254790fbbafe7ec87c76f4ad23750f1b3895d20c4744dcc7a194696a5c584732",
-      "last_checked": "2026-05-19T07:28:22.365026",
+      "last_checked": "2026-05-22T07:42:38.880050",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"0db6cd54259ebd408065c941c0ef73e4\"",
       "file_path": "documentation/IOSurface/iosurfacelockoptions/readonly.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/init(rawvalue:).json": {
       "hash": "e9ca2fdae8a7b3011ad884216ab1d1834d41fb22cb7e68059e74be80503445eb",
-      "last_checked": "2026-05-19T07:28:22.465637",
+      "last_checked": "2026-05-22T07:42:39.177098",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"43057d05300e72cdc13745c076f5066b\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/init-rawvalue.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/allocsizekey.json": {
       "hash": "2432b58a7f4e0c32df1dde6b6307882f6227c6c3a669bba0fba108c591cb6983",
-      "last_checked": "2026-05-19T07:28:22.571400",
+      "last_checked": "2026-05-22T07:42:39.477305",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1a303e293cea232155d9b99050e62984\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsizekey.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/bytesperelement.json": {
       "hash": "9a61f29c3d8640916d63f60342c275ca802dcf3b2fd2f3e8904ce5bbdf1d597e",
-      "last_checked": "2026-05-19T07:28:22.681265",
+      "last_checked": "2026-05-22T07:42:39.638740",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a8c2bb5e704d11f217214fac8a633020\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperelement.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/bytesperrow.json": {
       "hash": "ddf27ef1ecc27883118cf96d1e5f118c0455a31a1bfaba54c536130d572b3c3b",
-      "last_checked": "2026-05-19T07:28:22.785401",
+      "last_checked": "2026-05-22T07:42:39.959273",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"fe09770d1611c093f0636d2f407827c6\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/bytesperrow.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/cachemode.json": {
       "hash": "b3f27a88ccb6361c26c82f080e8ecbd503607d7a99a86afa70146e61509730e7",
-      "last_checked": "2026-05-19T07:28:22.863254",
+      "last_checked": "2026-05-22T07:42:40.255323",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ceeec0d074e1904444976f98f13d6e34\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/cachemode.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/elementheight.json": {
       "hash": "b24c2c2d217bbb945e29dde1e3a9d55a320d471e57e3897ab46926d0063ee6c7",
-      "last_checked": "2026-05-19T07:28:22.976606",
+      "last_checked": "2026-05-22T07:42:40.575403",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2222cc166329545d4a9f1796ec9d1286\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementheight.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/elementwidth.json": {
       "hash": "46beb5bca1760bd29afd9bf6db590be5b4256d44a39e83ed2689ae3ae786af40",
-      "last_checked": "2026-05-19T07:28:23.081972",
+      "last_checked": "2026-05-22T07:42:40.974316",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"417c8646ca084030263c28a7f949a578\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/elementwidth.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/height.json": {
       "hash": "e26d0358edb394b40a0ba097d9c0f50c996ceb3bd8fbf89d106f283ea4d3e6ee",
-      "last_checked": "2026-05-19T07:28:23.135820",
+      "last_checked": "2026-05-22T07:42:41.262397",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"20e2c9cb45bf9178bbebd1a25bb69108\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/height.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/offset.json": {
       "hash": "df23770a8d35821fa00fb2cc5722f6d9f1ddbc6150d72b7e8ddf6f45fecd6245",
-      "last_checked": "2026-05-19T07:28:23.247398",
+      "last_checked": "2026-05-22T07:42:41.567246",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"b9ec6dc2eac098c1c6b2b5d1a47bf4b1\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/offset.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/pixelformat.json": {
       "hash": "6fa52523a6060bc1188bcb7f06f967c585acf1c43db59413d67a270d37e55734",
-      "last_checked": "2026-05-19T07:28:23.296050",
+      "last_checked": "2026-05-22T07:42:41.870122",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bc9112519519726ccdf15bc890ebd4e1\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelformat.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/pixelsizecastingallowed.json": {
       "hash": "fc478362101cec69b4924d481bffeb01551af481a8b70b4b60c6eaebc61e77a5",
-      "last_checked": "2026-05-19T07:28:23.418833",
+      "last_checked": "2026-05-22T07:42:42.152349",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"cc63903d6ca9451d1f344161fd826f79\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/pixelsizecastingallowed.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebase.json": {
       "hash": "18e54ea564733986580d79b104c4cf0c752d9c8bf11fdc5f2aa1f5bf167c9e14",
-      "last_checked": "2026-05-19T07:28:23.528790",
+      "last_checked": "2026-05-22T07:42:42.318014",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"cb2a9919e1d05351881371e2595234b8\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebase.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebytesperelement.json": {
       "hash": "1343518ee132bb5298df9cb25ff0cb81f089e231ed868bada804327a81bb9864",
-      "last_checked": "2026-05-19T07:28:23.636564",
+      "last_checked": "2026-05-22T07:42:42.653077",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e40f49a939440e08169dc309daa5cb45\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperelement.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planebytesperrow.json": {
       "hash": "af70bee925c6aaee9c878248e0fab1316a2465a06a4d0c5687b780b3b6f6153c",
-      "last_checked": "2026-05-19T07:28:23.681427",
+      "last_checked": "2026-05-22T07:42:42.954511",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"15fee85f3c132bf2f8023ecf3222319f\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planebytesperrow.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeelementheight.json": {
       "hash": "fcd50f547cde97a1c21bafe813af4cf95461b8841ae05f89dc4fad52b8d35382",
-      "last_checked": "2026-05-19T07:28:23.767546",
+      "last_checked": "2026-05-22T07:42:43.254838",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"fd8db397e4b8076c637eb08b05cdce09\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementheight.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeelementwidth.json": {
       "hash": "8f8905e7d7cbb5e103fbe8aa6fc04812ab63524bc3e4ad5932530117c657826d",
-      "last_checked": "2026-05-19T07:28:23.881078",
+      "last_checked": "2026-05-22T07:42:43.556347",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"8916b9e885f8fc1f971fb4a669e2ffae\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeelementwidth.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeheight.json": {
       "hash": "5f6c79ba62b934331a05673e8c50513b2a74827e80d3899ee122290691a3d619",
-      "last_checked": "2026-05-19T07:28:23.989233",
+      "last_checked": "2026-05-22T07:42:43.861046",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"fb3bdf7dbdfe72ca4eca6bc32bd2b816\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeheight.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeinfo.json": {
       "hash": "1df539f2d71adfd311a2facca8e334718e98434e7df42494ff8d5b7f68500ddd",
-      "last_checked": "2026-05-19T07:28:24.106163",
+      "last_checked": "2026-05-22T07:42:44.068513",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e9b802d3a5d69b21c443eb8587bebf3b\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeinfo.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planeoffset.json": {
       "hash": "83593b8088c5d7ee3252eb28585b0f1b855006071b2f09c4c1ebadcce421b123",
-      "last_checked": "2026-05-19T07:28:24.213632",
+      "last_checked": "2026-05-22T07:42:44.355847",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"678f2f064494eb3aa0b138c877dc89b2\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planeoffset.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planesize.json": {
       "hash": "3fb8678b698ce2d55671e180725cebc177c3878b7a99530f2af005916cf9ddae",
-      "last_checked": "2026-05-19T07:28:24.310536",
+      "last_checked": "2026-05-22T07:42:44.593769",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"8286ded9a65dda7bb69bfad15c0e736c\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planesize.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/planewidth.json": {
       "hash": "93f81a9627970b2f53a8e2a4d5966078d7fa178ed1ad56665f8a53054c1c274e",
-      "last_checked": "2026-05-19T07:28:24.409527",
+      "last_checked": "2026-05-22T07:42:44.769744",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7e962aa00f66965aec809212a3e3025c\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/planewidth.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/width.json": {
       "hash": "4f5f37f4bbf5b5f59c7b04b9b6f0047a4b55c3c58dc83327eb1fa7b9e355e0e2",
-      "last_checked": "2026-05-19T07:28:24.513747",
+      "last_checked": "2026-05-22T07:42:44.927861",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"49118a47cf9f989fcbc5adc308fcdc8d\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/width.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/allocsize.json": {
       "hash": "3e073d2bc407e12c447a580dd49533c5ce5c50c3740be5460bb6d93b6663fc44",
-      "last_checked": "2026-05-19T07:28:24.618405",
+      "last_checked": "2026-05-22T07:42:45.096164",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e98703336e409232dcbd923c0c820429\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/allocsize.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepropertykey/name.json": {
       "hash": "1e5ebadf06fdd48c3f018b924a70edfffc1147f4ae89032eb8c61fda1e29e072",
-      "last_checked": "2026-05-19T07:28:24.866966",
+      "last_checked": "2026-05-22T07:42:45.396265",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"3248df5cfdeac1fa84d231c3cd99bbb6\"",
       "file_path": "documentation/IOSurface/iosurfacepropertykey/name.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/init(rawvalue:).json": {
       "hash": "3af2a63449bc529aca5e8a4e30b386f2ec7d6f8b88c9443db3580038470520e4",
-      "last_checked": "2026-05-19T07:28:24.997243",
+      "last_checked": "2026-05-22T07:42:45.689151",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"62297d96179c424c780d514eb8f7e0ca\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/init-rawvalue.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeableempty.json": {
       "hash": "f52a048d01ce9d1f38c213ca2f9855264c9636f1a7a7593340874af32909db54",
-      "last_checked": "2026-05-19T07:28:25.096774",
+      "last_checked": "2026-05-22T07:42:45.850806",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"13e7098b7d37d6096c2dbec3c1e992b5\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeableempty.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeablekeepcurrent.json": {
       "hash": "e525949e8eec54a8a893ad4307ddeebe0f8abcf104f780d7d39ae38286ddaba8",
-      "last_checked": "2026-05-19T07:28:25.200355",
+      "last_checked": "2026-05-22T07:42:46.012457",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4f2e101480e0d314d02f3c4ed1c3c526\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablekeepcurrent.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacepurgeabilitystate/purgeablevolatile.json": {
       "hash": "8a8b1a874e3cdc2e1e909081c51658686e238d458ed0641f38181deb8162c0cc",
-      "last_checked": "2026-05-19T07:28:25.424814",
+      "last_checked": "2026-05-22T07:42:46.316804",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"226793fc744f5bc7ab45ffa42b760c7f\"",
       "file_path": "documentation/IOSurface/iosurfacepurgeabilitystate/purgeablevolatile.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags.json": {
       "hash": "eedd6851d17e4c1c5607b8bd893603339519196a2a25a4acd60d6ada939d5aea",
-      "last_checked": "2026-05-19T07:28:25.528661",
+      "last_checked": "2026-05-22T07:42:46.492385",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"97e249c2b208e55a24e75d24dbfbc73d\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname.json": {
       "hash": "934c7fbe109d0f9da542e6ad9368102d7a972d85d5ce50857b45f15c1dd3c517",
-      "last_checked": "2026-05-19T07:28:35.322216",
+      "last_checked": "2026-05-22T07:43:02.117616",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"665256ea2fd72fcc9dca273bd24a395b\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange.json": {
       "hash": "a19486c1c5edd5a85b377ff0fbef17a05081709e18ec925ed8f506d11b29727a",
-      "last_checked": "2026-05-19T07:28:35.543826",
+      "last_checked": "2026-05-22T07:43:02.290925",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"09968057eae5b606ad25da4cf108c3c1\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype.json": {
       "hash": "4d9fc29554a2e7d921b5b6c2c6361909e1d5b8e75f175e6cf3ac2344196347cb",
-      "last_checked": "2026-05-19T07:28:35.643485",
+      "last_checked": "2026-05-22T07:43:02.468191",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ed66e424cd69bb0fbec72e79fc57d70a\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags.json": {
       "hash": "5cf7ac3d728605669e00d223fc1f0620d74ae29c2b75a83cfbd385c9226b0ebd",
-      "last_checked": "2026-05-19T07:28:35.689516",
+      "last_checked": "2026-05-22T07:43:02.634552",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bd6d840c3eb1ce4f4f874defe5a057e4\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling.json": {
       "hash": "3fe87a6a2661c6f21fe4ed58300de54023c3af238043cbc4d6b873457c352cb9",
-      "last_checked": "2026-05-19T07:28:35.816624",
+      "last_checked": "2026-05-22T07:43:02.799486",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"fa5d7e8b1aa574ffcbef4c36552dd8e8\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceallocsize.json": {
       "hash": "b5045d39888eaf8e1b074681c3e6bda61564582aa50708f5dbf3fa6972b8f5e0",
-      "last_checked": "2026-05-19T07:28:25.631310",
+      "last_checked": "2026-05-22T07:42:46.658528",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"f49b62c97b174c4b02e936196fad58bd\"",
       "file_path": "documentation/IOSurface/kiosurfaceallocsize.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacebytesperelement.json": {
       "hash": "2e94e2c4e569748d98489b963c4e0377895eb13940a90c85c0036c500a14f9b5",
-      "last_checked": "2026-05-19T07:28:25.711526",
+      "last_checked": "2026-05-22T07:42:46.819604",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"8840245c05e2f454b8abf86f0285acd7\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperelement.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacebytesperrow.json": {
       "hash": "332a2c9020c76816bf83df260282b23255e0b82516cfebfc25198225f243fc0f",
-      "last_checked": "2026-05-19T07:28:25.813650",
+      "last_checked": "2026-05-22T07:42:46.976410",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2f8990695c5dada21a78a9793c2d96ee\"",
       "file_path": "documentation/IOSurface/kiosurfacebytesperrow.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecachemode.json": {
       "hash": "63c488780d640ac2afe85ee5c18f8fee5297501e984e12838feebccbb700aa8b",
-      "last_checked": "2026-05-19T07:28:26.037929",
+      "last_checked": "2026-05-22T07:42:47.287645",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7ff9aa7da60720c36a8a4da081b1459e\"",
       "file_path": "documentation/IOSurface/kiosurfacecachemode.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacecolorspace.json": {
       "hash": "3a02e4e240ac2c07d5f24853e10455578577ea0bc51c3281e2bb2728817439c8",
-      "last_checked": "2026-05-19T07:28:26.260561",
+      "last_checked": "2026-05-22T07:42:47.456868",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"fb63ffe675280aab969cbfa903d4527a\"",
       "file_path": "documentation/IOSurface/kiosurfacecolorspace.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceelementheight.json": {
       "hash": "678dbaed1cecd2bede40ea2debb98cd6cd52291a04ccf066b39b19cdbcef53c1",
-      "last_checked": "2026-05-19T07:28:26.361063",
+      "last_checked": "2026-05-22T07:42:47.619457",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"8f079cd7602a6a7d6c1cf5018c3d0fd1\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementheight.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceelementwidth.json": {
       "hash": "438641a04355fd436890db9d75a8c3155b2eac97c148ff5ebdcdb8e45c75234b",
-      "last_checked": "2026-05-19T07:28:26.588220",
+      "last_checked": "2026-05-22T07:42:47.782386",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e699858c400ed5f6054e0245aa31901e\"",
       "file_path": "documentation/IOSurface/kiosurfaceelementwidth.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceheight.json": {
       "hash": "8c41ad0d9d5fb3f0303af24caf7165ebe418dee017b091afa0c0ef213dc9b6e9",
-      "last_checked": "2026-05-19T07:28:26.803566",
+      "last_checked": "2026-05-22T07:42:48.078886",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d8e639321d830bdb8917be738f7a37f3\"",
       "file_path": "documentation/IOSurface/kiosurfaceheight.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceiccprofile.json": {
       "hash": "8c3172d2733f8cd985b37843f76f5783a6d5fcd110f8c67f750d8144ad9a1e6c",
-      "last_checked": "2026-05-19T07:28:26.899343",
+      "last_checked": "2026-05-22T07:42:48.359159",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"0b317f09c0e1bf41ace01dbac071f1a5\"",
       "file_path": "documentation/IOSurface/kiosurfaceiccprofile.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceisglobal.json": {
       "hash": "8c7b9f5402dc048d4de929c56e701abc8c81432838d251ef6ecefc41ae510b32",
-      "last_checked": "2026-05-19T07:28:27.000160",
+      "last_checked": "2026-05-22T07:42:48.517252",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"9d8d422c36085346c2d5008cb9722626\"",
       "file_path": "documentation/IOSurface/kiosurfaceisglobal.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacename.json": {
       "hash": "83214ceaf19470193a1b193f5f8624283360b1ce0ea1351ee6462a791c982785",
-      "last_checked": "2026-05-19T07:28:27.103331",
+      "last_checked": "2026-05-22T07:42:48.686948",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2ce2bb8ec89e6d7e30e45d07555b1db3\"",
       "file_path": "documentation/IOSurface/kiosurfacename.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceoffset.json": {
       "hash": "66759638c63c76b480bd2d326deaed715e466735b5099e0b7f51c0fd7c373d5a",
-      "last_checked": "2026-05-19T07:28:27.211429",
+      "last_checked": "2026-05-22T07:42:48.858616",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"5890ab794149d00b3c00395cd09483ad\"",
       "file_path": "documentation/IOSurface/kiosurfaceoffset.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacepixelformat.json": {
       "hash": "56aa47898dd8bdf33cec20105e988b1a24aba1802989393a40ebcc6daefff1ad",
-      "last_checked": "2026-05-19T07:28:27.308851",
+      "last_checked": "2026-05-22T07:42:49.032931",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"45c749a7784356c59a11b0ffec6469f6\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelformat.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacepixelsizecastingallowed.json": {
       "hash": "fe20ac3d2090ee3cccce6ffd13bb200483bd8ab9ad9144041651483562ce046b",
-      "last_checked": "2026-05-19T07:28:27.412837",
+      "last_checked": "2026-05-22T07:42:49.198615",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"f0a4e120016207893fe68cc4aede7f4f\"",
       "file_path": "documentation/IOSurface/kiosurfacepixelsizecastingallowed.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebase.json": {
       "hash": "bf09bd439c72e3784389be154486ac5452663478acd75271cc559be6e73f0b46",
-      "last_checked": "2026-05-19T07:28:27.524770",
+      "last_checked": "2026-05-22T07:42:49.370506",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"520a5444e3137c91597c58e7afa93bf6\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebase.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebitsperelement.json": {
       "hash": "b2d12f0eb51bec9ad665ad82458b016eb3ea263a96cf5c6909f31368a10844ca",
-      "last_checked": "2026-05-19T07:28:27.622584",
+      "last_checked": "2026-05-22T07:42:49.537115",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d65d83649534cd65af2b1bee9624a505\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebitsperelement.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebytesperelement.json": {
       "hash": "f14f6ad6b2d58a1a3ad0c8372831a64ba84d74706e3cb3566b0640a154faeb0e",
-      "last_checked": "2026-05-19T07:28:27.733354",
+      "last_checked": "2026-05-22T07:42:49.717206",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bfbced9103204c662f3a0535b5424ed8\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperelement.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanebytesperrow.json": {
       "hash": "aaff2f3827195da7d72413dea1a9025df51a49eb0f5d30718ba73f2d2bbd1e0d",
-      "last_checked": "2026-05-19T07:28:27.853622",
+      "last_checked": "2026-05-22T07:42:49.877361",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"cc5049715ec147c3d1c101dd555c48b0\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanebytesperrow.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentbitdepths.json": {
       "hash": "69ccee02af41124bdd0fa878d3818295ae6201491a32149aab979022d2e595b3",
-      "last_checked": "2026-05-19T07:28:27.961383",
+      "last_checked": "2026-05-22T07:42:50.026495",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"b22fd9cc6614228f2f73bc28b37c2c48\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitdepths.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentbitoffsets.json": {
       "hash": "9f5501453eaaa7ef07f66d00da44e4b22328cb5feb3cfc8e77bb952293505807",
-      "last_checked": "2026-05-19T07:28:28.043075",
+      "last_checked": "2026-05-22T07:42:50.328035",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"10b777d906d9a153fa3e44650a56793b\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentbitoffsets.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentnames.json": {
       "hash": "24207be43538b95a7e46277f395140ef0ed34239d0484b34eb9c9bcf25b2ef9c",
-      "last_checked": "2026-05-19T07:28:28.157869",
+      "last_checked": "2026-05-22T07:42:50.504115",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ebdced769ae1aeed80ba4889932d5b97\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentnames.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponentranges.json": {
       "hash": "b28c007b22957b795651d256927b774632f626cd8adb68e1fef4573f8d34c0f3",
-      "last_checked": "2026-05-19T07:28:28.375855",
+      "last_checked": "2026-05-22T07:42:50.673655",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6d9e4be2e8a761c485429301f4fee088\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponentranges.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanecomponenttypes.json": {
       "hash": "7cc6b8db6ecc574b9df1918448aca0c3feb24b9efb357ade5e7bce7ad2feef73",
-      "last_checked": "2026-05-19T07:28:28.428970",
+      "last_checked": "2026-05-22T07:42:50.842092",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"30a392b1a8d4c1125eb15c038f37013f\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanecomponenttypes.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneelementheight.json": {
       "hash": "e936bf7a77ce7916e829c2418d25862aaa0ad81a4f473d6f786066e6801ab598",
-      "last_checked": "2026-05-19T07:28:28.482405",
+      "last_checked": "2026-05-22T07:42:50.995272",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ea94a7fc770e432c78b1bb78572c6ff1\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementheight.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneelementwidth.json": {
       "hash": "f91064fcbf70663f900c5f7b1dbb3f08ca24e5221dff143cdcb4bd4fc28f803a",
-      "last_checked": "2026-05-19T07:28:28.604933",
+      "last_checked": "2026-05-22T07:42:51.158143",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"dc2bd8041cf8cd17669e809e36bc5d61\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneelementwidth.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneheight.json": {
       "hash": "e9444fa07d8fb97aa3eed3b8478b3ab31f666d2f26b05046f3c7f5454f281d93",
-      "last_checked": "2026-05-19T07:28:28.704796",
+      "last_checked": "2026-05-22T07:42:51.328389",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"778cc95b0cf95cf2e1015268ad02d37b\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneheight.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneinfo.json": {
       "hash": "7d1bb9b4b80bf124ff9206e816ef90171d4e4891cf2bf82e3ab46b9bd152802f",
-      "last_checked": "2026-05-19T07:28:28.803673",
+      "last_checked": "2026-05-22T07:42:51.484021",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"60a68b0266f63a4dd6ef0f4aa43fc5f4\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneinfo.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplaneoffset.json": {
       "hash": "48fb6fa851bbef1439a3e24e3dab513926c951e15b809a0df7fe52cf3631df1d",
-      "last_checked": "2026-05-19T07:28:28.899533",
+      "last_checked": "2026-05-22T07:42:51.665312",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"8f2893ffdaa4a312e537a168a35fbd15\"",
       "file_path": "documentation/IOSurface/kiosurfaceplaneoffset.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanesize.json": {
       "hash": "269d62eb96face4176dee7f6c2a5d13fc5268a5e40e89f753c7c34fd400f2015",
-      "last_checked": "2026-05-19T07:28:28.997174",
+      "last_checked": "2026-05-22T07:42:51.832214",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"70dba762641b1a39afbf5679f92b0bc6\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanesize.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfaceplanewidth.json": {
       "hash": "cfb6aa4a133321c7b7a8f77effc0caa7c0d2f5f154a9bdb4fe0481fc65added8",
-      "last_checked": "2026-05-19T07:28:29.099924",
+      "last_checked": "2026-05-22T07:42:51.997304",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"09f861c57e7a82857cee34c5551f916f\"",
       "file_path": "documentation/IOSurface/kiosurfaceplanewidth.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacesubsampling.json": {
       "hash": "4c99a82cb274068d1ebd57924d1dff3ad5344bd8a8a354bad227e58baa1b0f11",
-      "last_checked": "2026-05-19T07:28:29.217903",
+      "last_checked": "2026-05-22T07:42:52.184746",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"aec284c17f4473382f9e9cb19c20aa20\"",
       "file_path": "documentation/IOSurface/kiosurfacesubsampling.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacesuccess.json": {
       "hash": "7cff8c4563aea6ab1eee67785c6d9cab70d9373feb55941a861cbd9086befd7d",
-      "last_checked": "2026-05-19T07:28:29.340150",
+      "last_checked": "2026-05-22T07:42:52.361722",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ec6add0e1e5ab83ea398bea81e6ba7a7\"",
       "file_path": "documentation/IOSurface/kiosurfacesuccess.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/kiosurfacewidth.json": {
       "hash": "c87b0250a0b68ff83bfdbdd449c7d0da6ad940edcd75c71f39d75a5b4bf815c5",
-      "last_checked": "2026-05-19T07:28:29.409362",
+      "last_checked": "2026-05-22T07:42:52.537649",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"9c366aa471c44f4d7d0ab6fb722a424c\"",
       "file_path": "documentation/IOSurface/kiosurfacewidth.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacealignproperty(_:_:).json": {
       "hash": "fcb51437cff4563e6804173b10c85d8425af13367e1cf7bbc322ca9ec3a0bc69",
-      "last_checked": "2026-05-19T07:28:29.632385",
+      "last_checked": "2026-05-22T07:42:52.693716",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"dd66b771cdfc3f3ff62f52be271f7cca\"",
       "file_path": "documentation/IOSurface/iosurfacealignproperty.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceallowspixelsizecasting(_:).json": {
       "hash": "4e49d2f6bd34c6431f311d9e74dcf748084a082c872c5b0f9065aa0fa8ac2851",
-      "last_checked": "2026-05-19T07:28:29.733583",
+      "last_checked": "2026-05-22T07:42:52.844207",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"efdbf8ae61cf261abfe62099f0161291\"",
       "file_path": "documentation/IOSurface/iosurfaceallowspixelsizecasting.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecopyallvalues(_:).json": {
       "hash": "1e5e2129f164dc27d3df3bed2d71602e9dc90a29481ce8e7312e327c7878f9f0",
-      "last_checked": "2026-05-19T07:28:29.787839",
+      "last_checked": "2026-05-22T07:42:53.153155",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ba63a48fc1d9e23571d73b51e48982f4\"",
       "file_path": "documentation/IOSurface/iosurfacecopyallvalues.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecopyvalue(_:_:).json": {
       "hash": "c1d63e5a4211731566110128e89ef0d430e93ae35a054cd817783e82baf4a6bc",
-      "last_checked": "2026-05-19T07:28:29.900685",
+      "last_checked": "2026-05-22T07:42:53.330721",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"3126d2666736898f3b7c3cff5dbc4cea\"",
       "file_path": "documentation/IOSurface/iosurfacecopyvalue.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreate(_:).json": {
       "hash": "2751f35bf5e2bf45741ad113cf3312df44d1370839986763615793c6b6563bad",
-      "last_checked": "2026-05-19T07:28:30.006689",
+      "last_checked": "2026-05-22T07:42:53.488311",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4ce684254ed003677d6f5aadd17755f7\"",
       "file_path": "documentation/IOSurface/iosurfacecreate.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreatemachport(_:).json": {
       "hash": "8d85d3bec8445eb834c363781f0deb24af10c63cac4d9d146ddc1db66b31c3ab",
-      "last_checked": "2026-05-19T07:28:30.139023",
+      "last_checked": "2026-05-22T07:42:53.651252",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"5d2c542feb3abdf136d71599aa8c20fb\"",
       "file_path": "documentation/IOSurface/iosurfacecreatemachport.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecreatexpcobject(_:).json": {
       "hash": "183df506dd404b6fc863d6d87a56394058b1ccd4bf70441e8a59c3adbeebdcc6",
-      "last_checked": "2026-05-19T07:28:30.246881",
+      "last_checked": "2026-05-22T07:42:53.817388",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"ab2015ff2648d0b5a77c3cc1e7f6b361\"",
       "file_path": "documentation/IOSurface/iosurfacecreatexpcobject.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacedecrementusecount(_:).json": {
       "hash": "dd11312c86f334dbe3355a4e2c5733a2a26f656eedc5c2bd9560835154f5bf90",
-      "last_checked": "2026-05-19T07:28:30.356409",
+      "last_checked": "2026-05-22T07:42:53.991001",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"089a7e884062bd5ced24dbca350b70ee\"",
       "file_path": "documentation/IOSurface/iosurfacedecrementusecount.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetallocsize(_:).json": {
       "hash": "e5bc5fda61825c2babbd9ddc808ffea295552fe46fd918c8dc6fca580a1b5409",
-      "last_checked": "2026-05-19T07:28:30.455432",
+      "last_checked": "2026-05-22T07:42:54.148890",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e3e32907ac6742c67038882f1a1bd4dc\"",
       "file_path": "documentation/IOSurface/iosurfacegetallocsize.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbaseaddress(_:).json": {
       "hash": "503439cc41acf59515ab00dea97b74655a7c2ea8f658e2c11fc640c588f57e78",
-      "last_checked": "2026-05-19T07:28:30.555538",
+      "last_checked": "2026-05-22T07:42:54.323240",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"60d84c2a68be38175104296dfec3161e\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddress.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbaseaddressofplane(_:_:).json": {
       "hash": "b20df235a59a490a2f172ce16540d42ac7b039836c18fe0b642e4251e45fbfec",
-      "last_checked": "2026-05-19T07:28:30.656651",
+      "last_checked": "2026-05-22T07:42:54.522506",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"52006ceb5c26fa7ac10eef7d6bf17366\"",
       "file_path": "documentation/IOSurface/iosurfacegetbaseaddressofplane.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbitdepthofcomponentofplane(_:_:_:).json": {
       "hash": "b00619adb42c61567b690631f8c6b4dd8d8b42c640cb2fbbb18123f0593b27c8",
-      "last_checked": "2026-05-19T07:28:30.753573",
+      "last_checked": "2026-05-22T07:42:54.677445",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"eaeb499e41b328532ce6ffc0dde13fe7\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitdepthofcomponentofplane.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbitoffsetofcomponentofplane(_:_:_:).json": {
       "hash": "b0b9015166f198410b43e9474979ad49eb6d5a5005590ee546d286135358f8e3",
-      "last_checked": "2026-05-19T07:28:30.803744",
+      "last_checked": "2026-05-22T07:42:54.848372",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"deba98491d3a072b59aa0d8f7ba9f7d3\"",
       "file_path": "documentation/IOSurface/iosurfacegetbitoffsetofcomponentofplane.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperelement(_:).json": {
       "hash": "228c77496929f575e55e507f8ee006cc922615cdc6969c68a002414268a1b86c",
-      "last_checked": "2026-05-19T07:28:30.932394",
+      "last_checked": "2026-05-22T07:42:55.125574",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"47a454eb05574d5fe41907d91962cee2\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelement.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperelementofplane(_:_:).json": {
       "hash": "eb5efed6ac9079391f25f4a2d242424ded89f29b180d1e2b302c6a7d805dd73a",
-      "last_checked": "2026-05-19T07:28:31.036972",
+      "last_checked": "2026-05-22T07:42:55.311873",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2df78f635e21b298657343ff53315213\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperelementofplane.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperrow(_:).json": {
       "hash": "4366d811d6e445c97ffc3090415ee334c4a28e78fdf683544d4f5e433044f49f",
-      "last_checked": "2026-05-19T07:28:31.206829",
+      "last_checked": "2026-05-22T07:42:55.595162",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bec9930d691927caad8916971aa44d88\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrow.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetbytesperrowofplane(_:_:).json": {
       "hash": "5ec631875635840ca622c1a082c2891d06f2f5cfe4470914d6de0c29fe0d12b0",
-      "last_checked": "2026-05-19T07:28:31.309035",
+      "last_checked": "2026-05-22T07:42:55.755415",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"15ecd2d3a09481d385c58a7ba86b4494\"",
       "file_path": "documentation/IOSurface/iosurfacegetbytesperrowofplane.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementheight(_:).json": {
       "hash": "ee07f7bc5815b3f67a445fb2ccee48044732f39e3cfb8d66e896ddf40e2fc2fe",
-      "last_checked": "2026-05-19T07:28:31.407273",
+      "last_checked": "2026-05-22T07:42:55.928426",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"232dbe085cbd9301ae524419296ba2f7\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheight.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementheightofplane(_:_:).json": {
       "hash": "4c4548e8be745d6daa623ae94b75ed3e106d3f685f97c2110b4391a649e88a64",
-      "last_checked": "2026-05-19T07:28:31.521405",
+      "last_checked": "2026-05-22T07:42:56.095643",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"befa86d90cb120a9873d6cc59df66585\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementheightofplane.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementwidth(_:).json": {
       "hash": "850971776045e158474dabdb717ed455f0c89889bd03cebd5afa30e32e76a983",
-      "last_checked": "2026-05-19T07:28:31.738828",
+      "last_checked": "2026-05-22T07:42:56.261059",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"701f9bded5ecfcabf2704846e7c008ab\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidth.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetelementwidthofplane(_:_:).json": {
       "hash": "ce51d49d69574e48f1cbe5b582f64226dd2ce88324ac99d19419566ab1ab64a7",
-      "last_checked": "2026-05-19T07:28:31.835904",
+      "last_checked": "2026-05-22T07:42:56.423258",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"0bc96f4cf63f0c2bfe19f73df943dabd\"",
       "file_path": "documentation/IOSurface/iosurfacegetelementwidthofplane.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetheight(_:).json": {
       "hash": "95120cd7a4af6818053724a1dfd5283107aa8f71f6e51f62760b5c26fbfbb1aa",
-      "last_checked": "2026-05-19T07:28:31.902341",
+      "last_checked": "2026-05-22T07:42:56.589065",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7755fe304a91c069ba2f6318a12f3ed8\"",
       "file_path": "documentation/IOSurface/iosurfacegetheight.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetheightofplane(_:_:).json": {
       "hash": "27f23aee32a945b9ddc0cafdef25f7a28e8e4035baf48f2d984e95401d8914a4",
-      "last_checked": "2026-05-19T07:28:31.972240",
+      "last_checked": "2026-05-22T07:42:56.759088",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"85c36e6723cf1ac8f8221ecc61a9bf41\"",
       "file_path": "documentation/IOSurface/iosurfacegetheightofplane.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetid(_:).json": {
       "hash": "24c9dbf3ba68c811c4ac1b7a2829ba4a13b7e4220320a33b726a36b7ef17b0e6",
-      "last_checked": "2026-05-19T07:28:32.078755",
+      "last_checked": "2026-05-22T07:42:56.940541",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"44160cb47ade39ea5b6d9b231dc533a3\"",
       "file_path": "documentation/IOSurface/iosurfacegetid.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetnameofcomponentofplane(_:_:_:).json": {
       "hash": "636432bd2711d4ec5587542565b85fa3343e0def46aa312d91b6f0c08d43141d",
-      "last_checked": "2026-05-19T07:28:32.183582",
+      "last_checked": "2026-05-22T07:42:57.114020",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"55a03826d1d34f1cd62d679ab81286a6\"",
       "file_path": "documentation/IOSurface/iosurfacegetnameofcomponentofplane.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetnumberofcomponentsofplane(_:_:).json": {
       "hash": "1a322a54f8a33147cb9820c4d23f1b260994924432f0a55c9cedba6c637e5fc6",
-      "last_checked": "2026-05-19T07:28:32.282284",
+      "last_checked": "2026-05-22T07:42:57.283469",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"65cde1802142631e9c9d77a009ccf99e\"",
       "file_path": "documentation/IOSurface/iosurfacegetnumberofcomponentsofplane.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpixelformat(_:).json": {
       "hash": "daa91a8df49801324ab6d3c6ec0079465759a9afcf49a707be270d0cd458636f",
-      "last_checked": "2026-05-19T07:28:32.381626",
+      "last_checked": "2026-05-22T07:42:57.441242",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"93bc6fc1e9708c89d1adb0c40ab98c21\"",
       "file_path": "documentation/IOSurface/iosurfacegetpixelformat.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetplanecount(_:).json": {
       "hash": "c8e7399a0283a0548a8e76a252ceb4a447584c40a40653ec1496afca252e2dc4",
-      "last_checked": "2026-05-19T07:28:32.432533",
+      "last_checked": "2026-05-22T07:42:57.620021",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2a8084dd2f60497d2493421591c8584e\"",
       "file_path": "documentation/IOSurface/iosurfacegetplanecount.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpropertyalignment(_:).json": {
       "hash": "a13aa157d39d357727c11fd1f6b8a06f916c9ab525dbf959c2a24239ec59bc2c",
-      "last_checked": "2026-05-19T07:28:32.554291",
+      "last_checked": "2026-05-22T07:42:57.778992",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1bb2b8760099cd6e5df46a18626a3fc1\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertyalignment.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetpropertymaximum(_:).json": {
       "hash": "2e2fb5a7b5d8bbfcd6087bf8a4f569da2481c729cf89c21062c9dbf38e8ebe03",
-      "last_checked": "2026-05-19T07:28:32.609244",
+      "last_checked": "2026-05-22T07:42:57.947143",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"cb7e015a2d04800cdf7e16394ca6aba4\"",
       "file_path": "documentation/IOSurface/iosurfacegetpropertymaximum.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetrangeofcomponentofplane(_:_:_:).json": {
       "hash": "cbf3345638e6249a05e8fdb543e9ed5b1cb149953e0c0a5e842b74c471bcdde9",
-      "last_checked": "2026-05-19T07:28:32.725302",
+      "last_checked": "2026-05-22T07:42:58.219917",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7e444ad59d4315eca5ff3dd8e16ce545\"",
       "file_path": "documentation/IOSurface/iosurfacegetrangeofcomponentofplane.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetseed(_:).json": {
       "hash": "592605c90db0dabcd539e7d6760a4f15ac367f5dc24462cb14aa1360fa865f20",
-      "last_checked": "2026-05-19T07:28:32.775064",
+      "last_checked": "2026-05-22T07:42:58.393838",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"763d6882e621ac5b0ec0400e98514d90\"",
       "file_path": "documentation/IOSurface/iosurfacegetseed.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetsubsampling(_:).json": {
       "hash": "5627846f103e681c1bad1c68297a464441ffdbd8b3ecef5dea7581293fa9d189",
-      "last_checked": "2026-05-19T07:28:32.903689",
+      "last_checked": "2026-05-22T07:42:58.555276",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"0540771474dce58ee78f54aa9ab10355\"",
       "file_path": "documentation/IOSurface/iosurfacegetsubsampling.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegettypeid().json": {
       "hash": "749b49486d9cc548d18e1a258e7aa56777001917d6bdec6cb82a90bf1cff5cd6",
-      "last_checked": "2026-05-19T07:28:33.007361",
+      "last_checked": "2026-05-22T07:42:58.716575",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"00028d98ac3fc32537b25135ea45d049\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeid.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegettypeofcomponentofplane(_:_:_:).json": {
       "hash": "4775bb7a71f31a758c6a46e4f9d100e3aec6a415c7f55fe838570d285e0e3819",
-      "last_checked": "2026-05-19T07:28:33.107925",
+      "last_checked": "2026-05-22T07:42:58.886809",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"81a6eb13b095d0f108057de623692c19\"",
       "file_path": "documentation/IOSurface/iosurfacegettypeofcomponentofplane.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetusecount(_:).json": {
       "hash": "0045568a8ad22cc0ea0e7bd5c0a53aae8c63f8c88eb896a63b41026842ba57de",
-      "last_checked": "2026-05-19T07:28:33.233663",
+      "last_checked": "2026-05-22T07:42:59.060602",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"413bb56bf3d8712fdb0f820e9fa91e80\"",
       "file_path": "documentation/IOSurface/iosurfacegetusecount.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetwidth(_:).json": {
       "hash": "8868d3e035ba4e9356770357fb1c1db4a80305ac7b47857f41bd4c360b72fc90",
-      "last_checked": "2026-05-19T07:28:33.381636",
+      "last_checked": "2026-05-22T07:42:59.221659",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1855a9aa9b6c711d3e99286bb3b99707\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidth.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacegetwidthofplane(_:_:).json": {
       "hash": "6777ba522a7ad17545314e41ab45de90428b16dc80694c906e66ba78bd542ab7",
-      "last_checked": "2026-05-19T07:28:33.486664",
+      "last_checked": "2026-05-22T07:42:59.383230",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"c0651929563945199bf1b192586fc780\"",
       "file_path": "documentation/IOSurface/iosurfacegetwidthofplane.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceincrementusecount(_:).json": {
       "hash": "e4c7c85afb133e44f2b3f68e3b0b187b33acf2e9db01dd460c8bbc79d86add71",
-      "last_checked": "2026-05-19T07:28:33.583114",
+      "last_checked": "2026-05-22T07:42:59.555748",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d8492e4ddb27c36791eb1bc88346535c\"",
       "file_path": "documentation/IOSurface/iosurfaceincrementusecount.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceisinuse(_:).json": {
       "hash": "b3d333faccefb94ed47e1735d167d7cb616e82830cad64805bd4eb63ccce1b41",
-      "last_checked": "2026-05-19T07:28:33.747620",
+      "last_checked": "2026-05-22T07:42:59.732493",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a2aa66e2fa8f13941aabd85947fd7779\"",
       "file_path": "documentation/IOSurface/iosurfaceisinuse.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelock(_:_:_:).json": {
       "hash": "79a06c405539eaa6b660089553c7faaf89da4c2ead362b94066c122cac48887b",
-      "last_checked": "2026-05-19T07:28:33.849790",
+      "last_checked": "2026-05-22T07:42:59.903727",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1de09322f7ad4fcf634593d24a73f121\"",
       "file_path": "documentation/IOSurface/iosurfacelock.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookup(_:).json": {
       "hash": "79ed9bc9b35d2fe044c6d3e9a6d70781c19fd90f667b2edbed784447b4cec4b2",
-      "last_checked": "2026-05-19T07:28:33.899280",
+      "last_checked": "2026-05-22T07:43:00.080425",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"811b355bbe038bb913092292a8ed1804\"",
       "file_path": "documentation/IOSurface/iosurfacelookup.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookupfrommachport(_:).json": {
       "hash": "2889eb79bdf8ee1a190f3c9b40aa60b312eda00d4f67d9758fae1f88fb728cab",
-      "last_checked": "2026-05-19T07:28:34.161993",
+      "last_checked": "2026-05-22T07:43:00.272912",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6039c22902e2407ca0de5fd36646849a\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfrommachport.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacelookupfromxpcobject(_:).json": {
       "hash": "6c8b7e09373fe1624b7c91e960a47915563a9d1f402c68bf274edf1f49e03517",
-      "last_checked": "2026-05-19T07:28:34.272379",
+      "last_checked": "2026-05-22T07:43:00.426872",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d4a3aae3950ea5e3546f6bfc6a080ec6\"",
       "file_path": "documentation/IOSurface/iosurfacelookupfromxpcobject.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceremoveallvalues(_:).json": {
       "hash": "a40d9014154fc9cb21eff305d5e9b5b255842c071d1aa423a0a04ba8888d6be1",
-      "last_checked": "2026-05-19T07:28:34.375373",
+      "last_checked": "2026-05-22T07:43:00.593760",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7443e705a496de986bf6472feeb0cd0d\"",
       "file_path": "documentation/IOSurface/iosurfaceremoveallvalues.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceremovevalue(_:_:).json": {
       "hash": "c89dd029070eae5c3f7acf7d3ec54779750f1cc1e77bd5f3e2c06f0c4db8a6ec",
-      "last_checked": "2026-05-19T07:28:34.484088",
+      "last_checked": "2026-05-22T07:43:00.752129",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"77eb6c5558a9cf8af4ab10fa2572fee9\"",
       "file_path": "documentation/IOSurface/iosurfaceremovevalue.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetownershipidentity(_:_:_:_:).json": {
       "hash": "440be96e0805741276f7d62a661f30ce258887e26d8c0f26c2736d95bf8204ea",
-      "last_checked": "2026-05-19T07:28:34.593815",
+      "last_checked": "2026-05-22T07:43:00.930953",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"35c1d1a6fee7ea2637c566afa256b8b6\"",
       "file_path": "documentation/IOSurface/iosurfacesetownershipidentity.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetpurgeable(_:_:_:).json": {
       "hash": "ae8cb6317123bf67043fecca6db4e962c8d2e6cfb409bdc7e7e7219dd85003ca",
-      "last_checked": "2026-05-19T07:28:34.715444",
+      "last_checked": "2026-05-22T07:43:01.100905",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e029c3dc28dedd05e481a2fb8a850fd0\"",
       "file_path": "documentation/IOSurface/iosurfacesetpurgeable.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetvalue(_:_:_:).json": {
       "hash": "5d8f5cd49a8666fbbb57a7e8575218f681f0019dac818ad84283dd13336f7166",
-      "last_checked": "2026-05-19T07:28:34.817605",
+      "last_checked": "2026-05-22T07:43:01.263539",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d7920772ab6c448aa1c53fc9e40e1b3f\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalue.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesetvalues(_:_:).json": {
       "hash": "e3d38d4d520bacb15659cd39c48370c97dcf12b9ead6c05655f2778abd30d2bc",
-      "last_checked": "2026-05-19T07:28:34.920212",
+      "last_checked": "2026-05-22T07:43:01.436607",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"92d8e3acaa28f45fe89ac5ef7cd99963\"",
       "file_path": "documentation/IOSurface/iosurfacesetvalues.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfaceunlock(_:_:_:).json": {
       "hash": "457bda07f056eae18e816ea5a1eb4ad6a1eb061613ff94e415c3590e84c999b7",
-      "last_checked": "2026-05-19T07:28:35.015817",
+      "last_checked": "2026-05-22T07:43:01.602972",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4d47dc2abc65e7fca7de0891f36c415b\"",
       "file_path": "documentation/IOSurface/iosurfaceunlock.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags/nofootprint.json": {
       "hash": "35a89caa760172898beee41c894d53b61b74a346c23a9e03f19cffb4b13bf61b",
-      "last_checked": "2026-05-19T07:28:35.121590",
+      "last_checked": "2026-05-22T07:43:01.774136",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"bf13ace2c183c0b38fa8a9e5be2f4f9e\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/nofootprint.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgerflags/init(rawvalue:).json": {
       "hash": "7b6843ff4eade1f697bdf530d63b31d0807fb39744cbe97eed0b61bb18b1cd11",
-      "last_checked": "2026-05-19T07:28:35.221793",
+      "last_checked": "2026-05-22T07:43:01.938794",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"09c1134d1e35474ff224ccb642968bc2\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgerflags/init-rawvalue.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/alpha.json": {
       "hash": "815c9100e303cc3b63c9119a00cb220da12b4835a48729869ce525c892d0580d",
-      "last_checked": "2026-05-19T07:28:35.865292",
+      "last_checked": "2026-05-22T07:43:02.955165",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"35a37befc0c3583753a0d9afce4c1db6\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/alpha.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/blue.json": {
       "hash": "4bdc81c4817be735dc6a697970f1e6e5de4bb9ffd0e4c15a334a2db69a25f742",
-      "last_checked": "2026-05-19T07:28:35.979151",
+      "last_checked": "2026-05-22T07:43:03.113828",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7ad34143a39076d82d418349951b6881\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/blue.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/chromablue.json": {
       "hash": "cd65542fbbc7e064a6d521ad9de649aa02e05ff3f2b040037625d0354bc3a735",
-      "last_checked": "2026-05-19T07:28:36.079449",
+      "last_checked": "2026-05-22T07:43:03.289423",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"4d5b51fe951411500645d14898a952b9\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromablue.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/chromared.json": {
       "hash": "33d2467dbf378bd4cb9217042ffe86c999cfe11b1c498c6638b07e5d419d0d72",
-      "last_checked": "2026-05-19T07:28:36.131268",
+      "last_checked": "2026-05-22T07:43:03.444828",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"551568c2f91904643d30c6f604c3dbd2\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/chromared.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/green.json": {
       "hash": "075ff18d4d639c199a530669531fc3dbb4128a08e32abb1da0c08e587a6b477a",
-      "last_checked": "2026-05-19T07:28:36.232617",
+      "last_checked": "2026-05-22T07:43:03.600032",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6cd256773e62b5f826fe43af174ac78b\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/green.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/luma.json": {
       "hash": "0ab8400cfea1e4e3aee605675dffc28a4c0d523d8d52cd1fc4396ee4cb76c040",
-      "last_checked": "2026-05-19T07:28:36.328488",
+      "last_checked": "2026-05-22T07:43:03.765099",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"15cd256eb1c8cfcd416e3f19fe6884c4\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/luma.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/red.json": {
       "hash": "3665821c225bcb12c71b49cd2cb70dffe24d1f97e3b5bab3d20dac6f9ef46d27",
-      "last_checked": "2026-05-19T07:28:36.441910",
+      "last_checked": "2026-05-22T07:43:03.933564",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"739a46db5d8f69aeec268ca9293850a6\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/red.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/unknown.json": {
       "hash": "682d702aea8d324ce033a576d565c87cb80b42c07066ec1260360f25321853d4",
-      "last_checked": "2026-05-19T07:28:36.582406",
+      "last_checked": "2026-05-22T07:43:04.093828",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7b49840d3081f0f6709645296151130d\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/unknown.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentname/init(rawvalue:).json": {
       "hash": "1bab3bb018371a332b48c0cd2885afe37a74e5c29683a31ca3522e7339b9e2a6",
-      "last_checked": "2026-05-19T07:28:36.683921",
+      "last_checked": "2026-05-22T07:43:04.260390",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"d086f786672b6aac9d5c2607f38b2b02\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentname/init-rawvalue.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/fullrange.json": {
       "hash": "a74b8648072028904fdbf3d9fe8b2b3987518bb0c901c74d5d36020ffc90713b",
-      "last_checked": "2026-05-19T07:28:36.778015",
+      "last_checked": "2026-05-22T07:43:04.417026",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"be0fa8af59db43b62a6fea1376a14868\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/fullrange.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/unknown.json": {
       "hash": "9ecef53788f6e536b4836932a73430f8e099c9df4de91e008be35b1571ae8888",
-      "last_checked": "2026-05-19T07:28:36.878175",
+      "last_checked": "2026-05-22T07:43:04.572229",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"503ad76f2a64b506b5b3cf94005fcd19\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/unknown.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/videorange.json": {
       "hash": "93011c61c002b582d0a9933fde5a30b4fb297365e6d3128e507753f9988c65b9",
-      "last_checked": "2026-05-19T07:28:36.981539",
+      "last_checked": "2026-05-22T07:43:04.735354",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6f346865a652632e9ff0107d561faaea\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/videorange.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/widerange.json": {
       "hash": "e4562e418e04f049968e7360c4a619694ff355c07cce7b543556265a3cf29910",
-      "last_checked": "2026-05-19T07:28:37.078294",
+      "last_checked": "2026-05-22T07:43:04.907855",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1e3c1c14a15fd3b12982dcec97b676af\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/widerange.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponentrange/init(rawvalue:).json": {
       "hash": "0f60462dadbf82fbd44237da7cc28e43a62a561362f18cb7f489bf3d9b7734b0",
-      "last_checked": "2026-05-19T07:28:37.175768",
+      "last_checked": "2026-05-22T07:43:05.080224",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e39958a961257f7ed1ca52be837e8810\"",
       "file_path": "documentation/IOSurface/iosurfacecomponentrange/init-rawvalue.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/float.json": {
       "hash": "1b8db35da0f495b4027359579a48251904e4a6e3d52645e6cc5129073f375e3d",
-      "last_checked": "2026-05-19T07:28:37.274746",
+      "last_checked": "2026-05-22T07:43:05.250240",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7e8f8ebfbde9fad92201f56a21e422a8\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/float.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/signedinteger.json": {
       "hash": "c661bb916179eb76eec9b4038428f986ece16062b8464b35f4df63b265a94bff",
-      "last_checked": "2026-05-19T07:28:37.391106",
+      "last_checked": "2026-05-22T07:43:05.426246",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"7cca1f68f71f9ea779dba37113899d00\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signedinteger.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/signednormalized.json": {
       "hash": "7ac067d348640655138662959d482903786bd7ddd524fc56bae1988c2d40d98e",
-      "last_checked": "2026-05-19T07:28:37.500640",
+      "last_checked": "2026-05-22T07:43:05.592103",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e561246c4bcf96aa7353c9ec15a6c4dd\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/signednormalized.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/unknown.json": {
       "hash": "0c7fd150c62fa60d225ed3dc921430943385e152a1535b9f5f26770e97dbffb4",
-      "last_checked": "2026-05-19T07:28:37.605392",
+      "last_checked": "2026-05-22T07:43:05.749902",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"1686259ddc06c626333a621fb864cddb\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unknown.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/unsignedinteger.json": {
       "hash": "c6d8174977cebfc190e8f608be3873dd90ad6573d5262eb439871908567ba321",
-      "last_checked": "2026-05-19T07:28:37.707063",
+      "last_checked": "2026-05-22T07:43:05.916316",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e95c2aade2e2ab284941e71fbf7943a6\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/unsignedinteger.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacecomponenttype/init(rawvalue:).json": {
       "hash": "e7a6c71b48095da7df5536b383038b00cfbcca391edcd846d5a6bdf72b83c0ff",
-      "last_checked": "2026-05-19T07:28:37.814562",
+      "last_checked": "2026-05-22T07:43:06.090825",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"335eb1c471f51d8fecc4998da8f80503\"",
       "file_path": "documentation/IOSurface/iosurfacecomponenttype/init-rawvalue.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/default.json": {
       "hash": "01ef1359161fa75e90de473577e96262b4872400e6e3fa0026c7656b754d74b0",
-      "last_checked": "2026-05-19T07:28:37.912620",
+      "last_checked": "2026-05-22T07:43:06.263234",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2c89869b20ae82bfb61c1ebfddcbe5c3\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/default.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/graphics.json": {
       "hash": "866b7e748fde2a3a5379cf2a07f7acddba484c1d1e5b9b3b5f43bafee6294a71",
-      "last_checked": "2026-05-19T07:28:38.015355",
+      "last_checked": "2026-05-22T07:43:06.442917",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"c564071dbbd5531c72ca8fe726b8e062\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/graphics.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/media.json": {
       "hash": "d78806d77cbf3516e7e687092280e506f560661f9d6ecdb8749dc09c3db9a295",
-      "last_checked": "2026-05-19T07:28:38.064266",
+      "last_checked": "2026-05-22T07:43:06.591269",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"b831ec75697ed1e1755a89d4454f3c3c\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/media.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/network.json": {
       "hash": "70ceb1bcfbc268a1b4bf29cdcd6b0d916bf6bcd013abfd8ffe53e837774416f7",
-      "last_checked": "2026-05-19T07:28:38.115862",
+      "last_checked": "2026-05-22T07:43:06.752387",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"06dcf34c6ab3e76135029b3bb40d032a\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/network.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/neural.json": {
       "hash": "9177d3940764d6ef0d1796db89e060759572cedee0f3141ee3b2c471545c5012",
-      "last_checked": "2026-05-19T07:28:38.173184",
+      "last_checked": "2026-05-22T07:43:06.911757",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"a62fb552222236814e50297ef7039b0d\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/neural.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacememoryledgertags/init(rawvalue:).json": {
       "hash": "a65462263a56fdfe659cedcef7e0789ceacac2097c16bc61fbb094b0b3a0eb77",
-      "last_checked": "2026-05-19T07:28:38.296921",
+      "last_checked": "2026-05-22T07:43:07.066319",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"6a6c00b391d7578cbd31adb3de96edc9\"",
       "file_path": "documentation/IOSurface/iosurfacememoryledgertags/init-rawvalue.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling411.json": {
       "hash": "e198e2a92f2ce76813c36475e3f23b774330ac568aba7bb5548adcadf51fc66d",
-      "last_checked": "2026-05-19T07:28:38.401814",
+      "last_checked": "2026-05-22T07:43:07.224849",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e178c6d143fb4d2f3de7811a34fcf7f5\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling411.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling420.json": {
       "hash": "03f11d1adddc5cbef0c67fe84d2c9304a09c5320f13b1721012875bc95645c1e",
-      "last_checked": "2026-05-19T07:28:38.462087",
+      "last_checked": "2026-05-22T07:43:07.410400",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"421c764e917800380c0440ebe9a1124b\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling420.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsampling422.json": {
       "hash": "c87230c891f2df844a2533a4a2145f229278fca21ef4a9b072e4d5551f73cd71",
-      "last_checked": "2026-05-19T07:28:38.568735",
+      "last_checked": "2026-05-22T07:43:07.576351",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"b3291f0935ecaaad9fd2206e751d78c7\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsampling422.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsamplingnone.json": {
       "hash": "3d2f3e4b11279ff2d678d4b1d52463aca6bcd6aa9361cd8e6afe8dccf0eabf0f",
-      "last_checked": "2026-05-19T07:28:38.664231",
+      "last_checked": "2026-05-22T07:43:07.750237",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"0afde9f0af84f1eee0a2f47cfd826b06\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingnone.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/subsamplingunknown.json": {
       "hash": "098d013e0c6fe053747558455a0f3112c19114e875b96e08857c3e0dc4352597",
-      "last_checked": "2026-05-19T07:28:38.769789",
+      "last_checked": "2026-05-22T07:43:07.925038",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"2d67539b9892812f6e542d6021e6803d\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/subsamplingunknown.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurfacesubsampling/init(rawvalue:).json": {
       "hash": "96fb58ca575deb3487588083d8f7b921b3caea3ad8b9c90e5a4a0e6cb3bfebe7",
-      "last_checked": "2026-05-19T07:28:38.866804",
+      "last_checked": "2026-05-22T07:43:08.074691",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"9903ea69879c37f5c1fea6cfd9cf4678\"",
       "file_path": "documentation/IOSurface/iosurfacesubsampling/init-rawvalue.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iosurface/iosurface/init(coder:).json": {
       "hash": "e690a8a026b9febbdd0a0a6fe15ba4656d4953457b10a25f158eecf7272fa93d",
-      "last_checked": "2026-05-19T07:28:18.573887",
+      "last_checked": "2026-05-22T07:42:33.772962",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:28:14.672986",
+      "session_id": "2026-05-22T07:42:29.673570",
       "etag": "W/\"e3905d47b0858abcab64205a24005951\"",
       "file_path": "documentation/IOSurface/iosurface/init-coder.md"
     },

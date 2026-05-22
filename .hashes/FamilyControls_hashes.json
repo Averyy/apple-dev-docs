@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T07:16:40.031450",
+    "last_updated": "2026-05-22T07:21:27.492794",
     "total_pages": 4880,
-    "session_id": "2026-05-19T07:16:32.705000"
+    "session_id": "2026-05-22T07:21:19.456181"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FamilyControls.json": {
       "hash": "877e6a052cfc9267f27ae9c023933c00f771270b0c6be7fe738265a41dabc247",
-      "last_checked": "2026-05-19T07:16:33.067436",
+      "last_checked": "2026-05-22T07:21:19.695214",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"a8dafd454e22cb2ea5d7dfa8c40d917b\"",
       "file_path": "documentation/FamilyControls/FamilyControls.md"
     },
     "https://developer.apple.com/documentation/FamilyControls": {
       "hash": "877e6a052cfc9267f27ae9c023933c00f771270b0c6be7fe738265a41dabc247",
-      "last_checked": "2026-05-19T07:16:32.995834",
+      "last_checked": "2026-05-22T07:21:19.589941",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"a8dafd454e22cb2ea5d7dfa8c40d917b\"",
       "file_path": "documentation/FamilyControls/FamilyControls.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter.json": {
       "hash": "6bc1be8f76e8f30fe79c28f087abfa7c9568bfc04eccd2f680c62578960d3347",
-      "last_checked": "2026-05-19T07:16:33.355800",
+      "last_checked": "2026-05-22T07:21:19.981813",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"212753ba8e5e587a64cc5d3a86c983e7\"",
       "file_path": "documentation/FamilyControls/authorizationcenter.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus.json": {
       "hash": "e6714b9599baa9dfd7df6ac2959008054354ae92c485d3beceb299fea1d8ede4",
-      "last_checked": "2026-05-19T07:16:33.460313",
+      "last_checked": "2026-05-22T07:21:20.129154",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"986bafb80492f4b0dd143664469e11e7\"",
       "file_path": "documentation/FamilyControls/authorizationstatus.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolsmember.json": {
       "hash": "ae80c13088b8a13ebc610798ae6c945ad55179f7af4c650a5acd918083a045d5",
-      "last_checked": "2026-05-19T07:16:33.921784",
+      "last_checked": "2026-05-22T07:21:20.450732",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"4b02f0871e241594bd376dd5b2d88bcd\"",
       "file_path": "documentation/FamilyControls/familycontrolsmember.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker.json": {
       "hash": "c8ca19cce7fdadda2ecea53547d6d7f8624cc76ea5df81946c0ba0d08031c1a8",
-      "last_checked": "2026-05-19T07:16:34.020213",
+      "last_checked": "2026-05-22T07:21:20.560304",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"02e6f2ca9e2281d15684036fd31189f6\"",
       "file_path": "documentation/FamilyControls/familyactivitypicker.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection.json": {
       "hash": "6d42e3e656e717279a9ff32c2f06efb27acbd054798ce8b0ff8deecc3f790cbb",
-      "last_checked": "2026-05-19T07:16:34.258061",
+      "last_checked": "2026-05-22T07:21:20.671038",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"22bcb1a025acb100a40fef86ace03039\"",
       "file_path": "documentation/FamilyControls/familyactivityselection.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/displayingactivitylabels.json": {
       "hash": "42a288f265f3988eaab9576f149856c16f9e7c0de84741da46bd63c5b167f4e3",
-      "last_checked": "2026-05-19T07:16:34.499606",
+      "last_checked": "2026-05-22T07:21:20.834007",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"b51f2f50d6b50c1fe594fd4a357e053a\"",
       "file_path": "documentation/FamilyControls/displayingactivitylabels.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror.json": {
       "hash": "a15d2eaff4ad27e2bcc0cba10dfa7b7b7b633a21640e20720b31ec188dae95fc",
-      "last_checked": "2026-05-19T07:16:34.822896",
+      "last_checked": "2026-05-22T07:21:21.144652",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"b602eb48a79c22a5835b96f2a562850e\"",
       "file_path": "documentation/FamilyControls/familycontrolserror.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/shared.json": {
       "hash": "4c84180f27cbe32b75e1ec289660633ed167ff71fed1d187823305a4309c7bc5",
-      "last_checked": "2026-05-19T07:16:34.957108",
+      "last_checked": "2026-05-22T07:21:21.314193",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"bb4ce273c5bf4443c72b8b693ad6ae04\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/shared.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/requestauthorization(for:).json": {
       "hash": "8880ef316506f9cd01cca03c6a09bb8bf058c72a268e7b0a17d1e5b1a6dc9571",
-      "last_checked": "2026-05-19T07:16:35.178150",
+      "last_checked": "2026-05-22T07:21:21.483557",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"d648e98c308e353bc565a9c16c59fdde\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-for.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/revokeauthorization(completionhandler:).json": {
       "hash": "c1b9cab394211dc75b8d59c79ab754d287f32cd00a8964253b8b474b215f4292",
-      "last_checked": "2026-05-19T07:16:35.282272",
+      "last_checked": "2026-05-22T07:21:21.592911",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2cabeca472420dc20954f7301b0255d3\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/revokeauthorization-completionhandler.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/requestauthorization(completionhandler:).json": {
       "hash": "f0c686a28a7808e171b71803f978a19ef3d97fdcad0a6bdb7f8a72600c9757a1",
-      "last_checked": "2026-05-19T07:16:35.710852",
+      "last_checked": "2026-05-22T07:21:22.034047",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"483b7599ed003b034d23c4d5f42f15d8\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/requestauthorization-completionhandler.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/authorizationstatus.json": {
       "hash": "baab1304b3b95dfaf1374af6ea726e1e532e0c504497aeb3998454851279e7c7",
-      "last_checked": "2026-05-19T07:16:35.382014",
+      "last_checked": "2026-05-22T07:21:21.739542",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"9860a5ff245000e0bd960d4e06d61c94\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/authorizationstatus.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationcenter/$authorizationstatus.json": {
       "hash": "5396dbdc8269aecda6ab0c9067a557a54e8a25ad15e6f2de22a51c100f3ac6af",
-      "last_checked": "2026-05-19T07:16:35.483497",
+      "last_checked": "2026-05-22T07:21:21.870103",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"0ab765737b8dab64b2c0421953f93520\"",
       "file_path": "documentation/FamilyControls/authorizationcenter/authorizationstatus.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus/notdetermined.json": {
       "hash": "8496d49c13d028098edda2e993a06beaceb76700556293a4d007b1c25e656fd2",
-      "last_checked": "2026-05-19T07:16:35.812860",
+      "last_checked": "2026-05-22T07:21:22.194449",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"df0ab222fb669da9fd1da26e7c74d6f3\"",
       "file_path": "documentation/FamilyControls/authorizationstatus/notdetermined.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus/denied.json": {
       "hash": "b30d889f9b00ff538d20a1b8f11bf589e5b922651f15c003aff6c0b5c2f25794",
-      "last_checked": "2026-05-19T07:16:35.929055",
+      "last_checked": "2026-05-22T07:21:22.347470",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"38d03cfd1cb137fb91578018235c10f5\"",
       "file_path": "documentation/FamilyControls/authorizationstatus/denied.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus/approved.json": {
       "hash": "9fe7223d1b3b81de6d54d2bf7ec18d61b41f3bcb2b81a3623d72f73d1eb976f5",
-      "last_checked": "2026-05-19T07:16:36.147651",
+      "last_checked": "2026-05-22T07:21:22.465275",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"95cebca4f89186da91286d92e59d14da\"",
       "file_path": "documentation/FamilyControls/authorizationstatus/approved.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus/description.json": {
       "hash": "bff4f83a08261da0080cbe36d8e2f57d0bcdb4e10a5aa4ed5f6be399bddb89da",
-      "last_checked": "2026-05-19T07:16:36.333134",
+      "last_checked": "2026-05-22T07:21:22.816153",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"35235beb89cafd7fbef0dbe798743937\"",
       "file_path": "documentation/FamilyControls/authorizationstatus/description.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolsmember/child.json": {
       "hash": "553b5c1f5dc4b3602387b8870ff1cc3471e73ac00eb831933ad15b25a762a942",
-      "last_checked": "2026-05-19T07:16:36.561690",
+      "last_checked": "2026-05-22T07:21:22.969648",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"8ec8c7e2006f985efed000437a4e4cf3\"",
       "file_path": "documentation/FamilyControls/familycontrolsmember/child.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolsmember/individual.json": {
       "hash": "a3801e6eead64cc284129ffa4c71ddb049ede508ff68dc7d911728f5e29a11a5",
-      "last_checked": "2026-05-19T07:16:36.670956",
+      "last_checked": "2026-05-22T07:21:23.217875",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2a0fca05ca0948e863c24099df189a73\"",
       "file_path": "documentation/FamilyControls/familycontrolsmember/individual.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolsmember/description.json": {
       "hash": "b3cb37405fb091dc4cf2cad6fda07a8c1a05a5ca422cb4de4aa5a4cf00c98e97",
-      "last_checked": "2026-05-19T07:16:36.893871",
+      "last_checked": "2026-05-22T07:21:23.390513",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"85b48c329c75796348dc21074ddd6eb9\"",
       "file_path": "documentation/FamilyControls/familycontrolsmember/description.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(selection:).json": {
       "hash": "1bac3ad5b1759021bda3c11916236dbaad5797665ce910f83483f83e7cfae364",
-      "last_checked": "2026-05-19T07:16:36.986222",
+      "last_checked": "2026-05-22T07:21:23.509805",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"b705ed34a0ee548f1900612b2f0e3fbd\"",
       "file_path": "documentation/FamilyControls/familyactivitypicker/init-selection.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker-view-modifiers.json": {
       "hash": "d0cb4631a039b0818638fc758039decbd52d42ed5dee52a8dd49985bbd987632",
-      "last_checked": "2026-05-19T07:16:37.443954",
+      "last_checked": "2026-05-22T07:21:23.949456",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"579e7c84858146e6ed4972c78ed644b6\"",
       "file_path": "documentation/FamilyControls/familyactivitypicker-view-modifiers.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/init(headertext:footertext:selection:).json": {
       "hash": "647ab29aa182505a691ec821cf08cdf8d05b6f7ce09ecf111ebcb505799249ff",
-      "last_checked": "2026-05-19T07:16:37.214864",
+      "last_checked": "2026-05-22T07:21:23.690924",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"a8f7c9ccf1a19ad6c8b7a9c879d8d3fc\"",
       "file_path": "documentation/FamilyControls/familyactivitypicker/init-headertextfootertextselection.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/categories.json": {
       "hash": "56385ed5489bfaf526ccb2990051950a57d8f4a94a6486401799597a2718b044",
-      "last_checked": "2026-05-19T07:16:37.542504",
+      "last_checked": "2026-05-22T07:21:24.069933",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"97b7c2986e994cb5845009a104dc18bb\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/categories.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/categorytokens.json": {
       "hash": "324925b676151c4988f4b247126c99b1a8f837d2fe88c4739596061407aec4b1",
-      "last_checked": "2026-05-19T07:16:37.654579",
+      "last_checked": "2026-05-22T07:21:24.194027",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"d0b06cf72a6651c1430961a35276beb0\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/categorytokens.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/applications.json": {
       "hash": "d18a2c12eeecd2cebe310ccb733c48403a7273a95b90ae7be463b8e39befacc4",
-      "last_checked": "2026-05-19T07:16:37.848601",
+      "last_checked": "2026-05-22T07:21:24.426173",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"abcc01876e94e529d10dcc9a7049572d\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/applications.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/applicationtokens.json": {
       "hash": "92a8c57d2a7fabd9ec358af468b2706a62e3c30c1a4cf535bab8b70792ab8252",
-      "last_checked": "2026-05-19T07:16:38.079594",
+      "last_checked": "2026-05-22T07:21:24.593503",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2a7059cdba4f35843564cfe05499a722\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/applicationtokens.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/webdomains.json": {
       "hash": "2d2bbc54a905b4317aa863ec370739f045809d5e9b3fa7287f5357a9eb8b2b68",
-      "last_checked": "2026-05-19T07:16:38.178912",
+      "last_checked": "2026-05-22T07:21:24.784535",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"937e2ad98dd0048e20415a339fed4d58\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/webdomains.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/webdomaintokens.json": {
       "hash": "4df7a8ae25537c55ba45006f63f10b5d1246ddc4a6d94b47156a8fe5c631273d",
-      "last_checked": "2026-05-19T07:16:38.276517",
+      "last_checked": "2026-05-22T07:21:24.917255",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"d478d92862cb3625a835fc85ea967126\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/webdomaintokens.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/init().json": {
       "hash": "c0bb30d06b8686e36a170113b9c1906de82cdc68e36dccb226e66c5f680021a4",
-      "last_checked": "2026-05-19T07:16:38.376436",
+      "last_checked": "2026-05-22T07:21:25.086407",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"64ad07be3dcc2d70b3be1da0292a06ea\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/init.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/init(includeentirecategory:).json": {
       "hash": "935ba5baba821e1ba790f43035c97099c282e86a8d56b404376503ac508836f1",
-      "last_checked": "2026-05-19T07:16:37.750508",
+      "last_checked": "2026-05-22T07:21:24.304011",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"ab7801d92571f85df028b2ed0b4c789f\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/init-includeentirecategory.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityselection/includeentirecategory.json": {
       "hash": "6a153e03a1e8dff1d2fc03286f2f3d375161c471990629aec00ffa1aeca1f03a",
-      "last_checked": "2026-05-19T07:16:38.470511",
+      "last_checked": "2026-05-22T07:21:25.248606",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"91e439cea40b8706e93672c3eee79861\"",
       "file_path": "documentation/FamilyControls/familyactivityselection/includeentirecategory.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitytitleview.json": {
       "hash": "78156bbc32e7053b1183477530644227dbefef968f810cd183005da37dee0f1b",
-      "last_checked": "2026-05-19T07:16:38.573436",
+      "last_checked": "2026-05-22T07:21:25.382787",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2112ac679f8d43bece7957bbfc0b529f\"",
       "file_path": "documentation/FamilyControls/familyactivitytitleview.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivityiconview.json": {
       "hash": "03fde6ff67e632a2e5fa955af30fc433798f6bb5ddb47d91050bbe5096f0506f",
-      "last_checked": "2026-05-19T07:16:38.671773",
+      "last_checked": "2026-05-22T07:21:25.570749",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"6dd6693fc6625609bca2f24361ec4d6f\"",
       "file_path": "documentation/FamilyControls/familyactivityiconview.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/invalidaccounttype.json": {
       "hash": "8ecd1938ae5cd09e2d01f973607b76922930585179686a35de5c830da8603941",
-      "last_checked": "2026-05-19T07:16:39.139934",
+      "last_checked": "2026-05-22T07:21:26.190345",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"e1900ffefd594e5667bd7e0e3485aedd\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/invalidaccounttype.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/authorizationconflict.json": {
       "hash": "1a9fb0759d978b8af901b5a2dc959cdfda7c23eca59128931f28054bcab4795f",
-      "last_checked": "2026-05-19T07:16:39.188447",
+      "last_checked": "2026-05-22T07:21:26.317296",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"81d2fa6bb42f1caa81220fbc38e8af55\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/authorizationconflict.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/authorizationcanceled.json": {
       "hash": "418c886e090084a6843f3ce6f06138c4d1d11276a5da88d85974954b61fc8bde",
-      "last_checked": "2026-05-19T07:16:39.306672",
+      "last_checked": "2026-05-22T07:21:26.449362",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"cb39f85dbafac4c4b7e4a215bbf1cde6\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/authorizationcanceled.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/invalidargument.json": {
       "hash": "c3bf4c2465c2c94780f060a3c9afcdd400ea56f12e17c558cdd95f5e54ce81f4",
-      "last_checked": "2026-05-19T07:16:39.408277",
+      "last_checked": "2026-05-22T07:21:26.619739",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"71e8545fc9d10491d657f2d353d5cc1c\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/invalidargument.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/unavailable.json": {
       "hash": "bf34361bb4d9c09ddcb0420457f7ee2dcb615bc7a8363c38e1a474b22df21b2c",
-      "last_checked": "2026-05-19T07:16:39.485353",
+      "last_checked": "2026-05-22T07:21:26.723485",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"882013640ee51dc5528ae503f56bcef9\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/unavailable.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/restricted.json": {
       "hash": "ee04b578d58291359d6a32f588db5564f6dd0c80a60728a6957bef596678fe3f",
-      "last_checked": "2026-05-19T07:16:39.595640",
+      "last_checked": "2026-05-22T07:21:26.897419",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"20e28aa80e319bfd163b58d6a537aa4e\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/restricted.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/networkerror.json": {
       "hash": "3235fdc028de64ba195c905bee10212e1dc3f58e986104e883d41312525be835",
-      "last_checked": "2026-05-19T07:16:39.642141",
+      "last_checked": "2026-05-22T07:21:27.038509",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2ff0ba7e574448ef6c08d420038a67ca\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/networkerror.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/authenticationmethodunavailable.json": {
       "hash": "9f4e57eff572caad06bae83e084c5404867c5f876d63968096c32fa7fb44996f",
-      "last_checked": "2026-05-19T07:16:39.712653",
+      "last_checked": "2026-05-22T07:21:27.186807",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"3f5b3150607a060a57504424c72ac144\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/authenticationmethodunavailable.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/errordescription.json": {
       "hash": "50aa557d9a9401b3ab941428a8c02c27f140af363f9d2ab48b70c1f468fcfc41",
-      "last_checked": "2026-05-19T07:16:39.930796",
+      "last_checked": "2026-05-22T07:21:27.361927",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"37fbfbd68709d884009434f7341fd9c8\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/errordescription.md"
     },
@@ -38903,9 +38903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/requesting-the-family-controls-entitlement.json": {
       "hash": "9844eba8ffcee48d4a7876d837da974bc3292a272ac31df84cf35b4ca05642dd",
-      "last_checked": "2026-05-19T07:16:33.690390",
+      "last_checked": "2026-05-22T07:21:20.302157",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"a760f970a3c35633e55cc2a7f57b0181\"",
       "file_path": "documentation/FamilyControls/requesting-the-family-controls-entitlement.md"
     },
@@ -38919,9 +38919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitypicker/body.json": {
       "hash": "12a7d1938ddc78d0fc3152f771373aed897ee0bb309a7bb5391f79205b1b7624",
-      "last_checked": "2026-05-19T07:16:37.340989",
+      "last_checked": "2026-05-22T07:21:23.816038",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"2ffbe966872d972c87b04da630740308\"",
       "file_path": "documentation/FamilyControls/familyactivitypicker/body.md"
     },
@@ -38935,9 +38935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitydata.json": {
       "hash": "5319391ba7783cb2a9f74ddb8422a0b685a87253c6d1007bf73e2cd71e7262a5",
-      "last_checked": "2026-05-19T07:16:34.598639",
+      "last_checked": "2026-05-22T07:21:20.995731",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"0a01a8ed7dc1c6c4bddce357916546cc\"",
       "file_path": "documentation/FamilyControls/familyactivitydata.md"
     },
@@ -38951,9 +38951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/authorizationstatus/approvedwithdataaccess.json": {
       "hash": "333029a89b2db8341bb183c3e74828340bfdd21a6f816edc6b943d12d3d2a11a",
-      "last_checked": "2026-05-19T07:16:36.241792",
+      "last_checked": "2026-05-22T07:21:22.593295",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"126a0117db44bbc889fea62192b89687\"",
       "file_path": "documentation/FamilyControls/authorizationstatus/approvedwithdataaccess.md"
     },
@@ -38967,9 +38967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familycontrolserror/unauthorized.json": {
       "hash": "02b665b124be23bfd63d7b1e576e1bf0891049add26b63e8d54011d2621bf7da",
-      "last_checked": "2026-05-19T07:16:40.030489",
+      "last_checked": "2026-05-22T07:21:27.487075",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"131e3104358447686a2df7b86152f18c\"",
       "file_path": "documentation/FamilyControls/familycontrolserror/unauthorized.md"
     },
@@ -38983,9 +38983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitydata/activitycategories.json": {
       "hash": "85715f1fe995704b3f8838dcae18827c2e729a376ebc1d281e57903b4c25c0a8",
-      "last_checked": "2026-05-19T07:16:38.862771",
+      "last_checked": "2026-05-22T07:21:25.795424",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"43e07e9a2a36e4987d343b549958aed8\"",
       "file_path": "documentation/FamilyControls/familyactivitydata/activitycategories.md"
     },
@@ -38999,9 +38999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitydata/installedapplications.json": {
       "hash": "9b5ba41f6b6a39b4cc651d90020eea86ae79c50b249a5f7822083a6a51211d78",
-      "last_checked": "2026-05-19T07:16:38.948085",
+      "last_checked": "2026-05-22T07:21:25.909566",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"19caf380195ba25d905be16178dbdf95\"",
       "file_path": "documentation/FamilyControls/familyactivitydata/installedapplications.md"
     },
@@ -39015,9 +39015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitydata/visitedwebdomains.json": {
       "hash": "cd8fa0b1a1a7adbca117f92ea8caada139e2c4a0e69747e5f8277657bdf7205d",
-      "last_checked": "2026-05-19T07:16:39.048035",
+      "last_checked": "2026-05-22T07:21:26.055570",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"1d383e2ff578d45c35e13dd0db09fd43\"",
       "file_path": "documentation/FamilyControls/familyactivitydata/visitedwebdomains.md"
     },
@@ -39031,9 +39031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/familycontrols/familyactivitydata/shared.json": {
       "hash": "c53961cb71b9fb268aa6a6564a8a50b82f6fe308778de6af478b0bc16628e5d7",
-      "last_checked": "2026-05-19T07:16:38.782848",
+      "last_checked": "2026-05-22T07:21:25.685226",
       "status": "unchanged",
-      "session_id": "2026-05-19T07:16:32.705000",
+      "session_id": "2026-05-22T07:21:19.456181",
       "etag": "W/\"bf6b924bdb0bf48c4f20c2a732c1122d\"",
       "file_path": "documentation/FamilyControls/familyactivitydata/shared.md"
     },
