@@ -17,4 +17,4 @@ init?(rawValue: Int)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.enum/init(rawvalue:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.struct/code/init(rawvalue:))*

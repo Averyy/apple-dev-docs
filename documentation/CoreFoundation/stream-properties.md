@@ -42,6 +42,8 @@ Use [`CFReadStreamCopyProperty(_:_:)`](cfreadstreamcopyproperty(_:_:).md) or [`C
   The key’s value is a `CFHostRef` for the remote host if it is known. If not, its value is `NULL`.
 - [let kCFStreamPropertySocketRemoteNetService: CFString](../CFNetwork/kCFStreamPropertySocketRemoteNetService.md)
   The key’s value is a `CFNetServiceRef` for the remote network service if it is known. If not, its value is `NULL`.
+- [let kCFStreamNetworkServiceType: CFString](../CFNetwork/kCFStreamNetworkServiceType.md)
+  The type of service for the stream. Providing the service type allows the system to properly handle certain attributes of the stream, including routing and suspension behavior. Most streams do not need to set this property. See [Stream Service Types](doc://com.apple.documentation/documentation/CoreFoundation/stream-service-types) for a list of possible values.
 - [let kCFStreamPropertyConnectionIsCellular: CFString](../CFNetwork/kCFStreamPropertyConnectionIsCellular.md)
   A boolean value indicating whether the stream is connected over a cellular (WWAN) interface. This is a read-only property, and is `false` until the connection has been established.
 - [let kCFStreamPropertyNoCellular: CFString](../CFNetwork/kCFStreamPropertyNoCellular.md)

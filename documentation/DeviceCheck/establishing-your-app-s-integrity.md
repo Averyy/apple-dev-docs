@@ -50,7 +50,7 @@ Don’t reuse a key among multiple users on a device because this weakens securi
 
 ##### Certify the Key Pairs As Valid
 
-Before using a key pair, ask Apple to attest to its origin on Apple hardware running an uncompromised version of your app. Because you can’t trust your app’s logic to verify the attestation result, you send the result to your server. To reduce the risk of replay attacks during this procedure, attestation embeds the hash of a unique, one-time challenge from your server. You can create a suitable value using the [`SHA256`](https://developer.apple.com/documentation/cryptokit/sha256) implementation in CryptoKit. The challenge should be at least 16 bytes in length to ensure sufficient entropy to ensure guessing them is infeasible.
+Before using a key pair, ask Apple to attest to its origin on Apple hardware running an uncompromised version of your app. Because you can’t trust your app’s logic to verify the attestation result, you send the result to your server. To reduce the risk of replay attacks during this procedure, attestation embeds the hash of a unique, one-time challenge from your server. You can create a suitable value using the [`SHA256`](https://developer.apple.com/documentation/CryptoKit/SHA256) implementation in CryptoKit. The challenge should be at least 16 bytes in length to ensure sufficient entropy to ensure guessing them is infeasible.
 
 ```swift
 import CryptoKit

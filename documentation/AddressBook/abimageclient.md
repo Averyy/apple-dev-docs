@@ -35,7 +35,7 @@ protocol ABImageClient : NSObjectProtocol
   An immutable representation of a property that might have multiple values.
 - [class ABMutableMultiValue](abmutablemultivalue.md)
   A mutable representation of a property that might have multiple values.
-- [class ABRecord](abrecord-swift.class.md)
+- [class ABRecord](abrecord.md)
   An abstract class that defines the common properties for all Address Book records.
 
 

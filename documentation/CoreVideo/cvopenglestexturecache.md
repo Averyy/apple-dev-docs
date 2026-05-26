@@ -31,7 +31,7 @@ A reference to a Core Video OpenGLES texture cache.
 ## See Also
 
 - [typealias CVEAGLContext](cveaglcontext.md)
-  A type that resolves to an doc://com.apple.documentation/documentation/opengles/eaglcontext pointer when appropriate.
+  A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) pointer when appropriate.
 
 
 ---

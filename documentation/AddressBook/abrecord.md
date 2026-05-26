@@ -23,26 +23,26 @@ The `ABRecord` class is “toll-free bridged” with its procedural C opaque-typ
 ## Topics
 
 ### Creating a Record
-- [init!(addressBook: ABAddressBook!)](abrecord-swift.class/init(addressbook:).md)
+- [init!(addressBook: ABAddressBook!)](abrecord/init(addressbook:).md)
   Initializes a record using the given address book.
-- [init!()](abrecord-swift.class/init.md)
+- [init!()](abrecord/init.md)
   Initializes a record using the shared address book.
 ### Retrieving and Setting Values
-- [func removeValue(forProperty: String!) -> Bool](abrecord-swift.class/removevalue(forproperty:).md)
+- [func removeValue(forProperty: String!) -> Bool](abrecord/removevalue(forproperty:).md)
   Removes the value for a given property.
-- [func setValue(Any!, forProperty: String!) -> Bool](abrecord-swift.class/setvalue(_:forproperty:).md)
+- [func setValue(Any!, forProperty: String!) -> Bool](abrecord/setvalue(_:forproperty:).md)
   Sets the value of a given property for a record.
-- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord-swift.class/setvalue(_:forproperty:error:).md)
+- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord/setvalue(_:forproperty:error:).md)
   Sets the value of a given property for a record, returning error information.
-- [func value(forProperty: String!) -> Any!](abrecord-swift.class/value(forproperty:).md)
+- [func value(forProperty: String!) -> Any!](abrecord/value(forproperty:).md)
   Returns the value of a given property for a record.
 ### Retrieving a Specific Record
-- [func isReadOnly() -> Bool](abrecord-swift.class/isreadonly.md)
+- [func isReadOnly() -> Bool](abrecord/isreadonly.md)
   Returns whether a record is read-only.
 ### Getting Identifying Information
-- [var displayName: String!](abrecord-swift.class/displayname.md)
+- [var displayName: String!](abrecord/displayname.md)
   A user-visible string representing the record.
-- [var uniqueId: String!](abrecord-swift.class/uniqueid.md)
+- [var uniqueId: String!](abrecord/uniqueid.md)
   Returns the unique ID for a record.
 
 ## Relationships
@@ -76,4 +76,4 @@ The `ABRecord` class is “toll-free bridged” with its procedural C opaque-typ
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class)*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord)*

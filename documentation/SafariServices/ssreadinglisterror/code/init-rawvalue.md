@@ -18,4 +18,4 @@ init?(rawValue: Int)
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterrorcode/init(rawvalue:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterror/code/init(rawvalue:))*

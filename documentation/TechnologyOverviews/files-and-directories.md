@@ -141,7 +141,7 @@ To support background downloads, store your files on your company’s servers or
 
 Enable automatic encryption for files you create by assigning an appropriate [`URLFileProtection`](https://developer.apple.com/documentation/Foundation/URLFileProtection) to each one. The system stores your files encrypted on disk, making them accessible only under specific circumstances. For example, you might make files accessible only after someone unlocks their device. Choose a level of protection based on the type of data you’re saving, adopting more strict protection rules for sensitive or personal data.
 
-> **Note**: If your app manages personal or sensitive information, consider [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) for any data you store in files on disk.
+> **Note**: If your app manages personal or sensitive information, consider [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) for any data you store in files on disk.
 
 
 ---

@@ -21,4 +21,4 @@ func isReadOnly() -> Bool
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class/isreadonly())*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord/isreadonly())*

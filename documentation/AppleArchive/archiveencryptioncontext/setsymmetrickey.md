@@ -30,7 +30,7 @@ Use this function to set the encryption key for a context with a symmetric [`pro
 
 ## See Also
 
-- [struct SymmetricKey](../cryptokit/symmetrickey.md)
+- [struct SymmetricKey](../CryptoKit/SymmetricKey.md)
   A symmetric cryptographic key.
 - [var mainKey: SymmetricKey?](archiveencryptioncontext/mainkey.md)
   The main key used to append data to an existing archive.

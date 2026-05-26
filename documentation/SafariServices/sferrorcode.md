@@ -27,10 +27,6 @@ enum SFErrorCode
   The Content Blocker extension returned an [`NSExtensionItem`](https://developer.apple.com/documentation/Foundation/NSExtensionItem) that did not include an attachment.
 - [SFError.Code.noExtensionFound](sferrorcode/noextensionfound.md)
   A Content Blocker or Safari app extension with the specified bundle identifier was not found, or the bundle identifier specified an extension that was not owned by you.
-### Enumeration Cases
-- [SFError.Code.internalError](sferrorcode/internalerror.md)
-- [SFError.Code.maximumAttemptsExceeded](sferrorcode/maximumattemptsexceeded.md)
-- [SFError.Code.missingEntitlement](sferrorcode/missingentitlement.md)
 ### Initializers
 - [init?(rawValue: Int)](sferrorcode/init(rawvalue:).md)
 
@@ -54,4 +50,4 @@ enum SFErrorCode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sferror/code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sferrorcode)*

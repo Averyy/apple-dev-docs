@@ -22,7 +22,7 @@ Core Video uses OpenGL ES texture caches to cache and manage [`CVOpenGLESTexture
 ### Data Types
 - [class CVOpenGLESTextureCache](cvopenglestexturecache.md)
 - [typealias CVEAGLContext](cveaglcontext.md)
-  A type that resolves to an doc://com.apple.documentation/documentation/opengles/eaglcontext pointer when appropriate.
+  A type that resolves to an [`EAGLContext`](https://developer.apple.com/documentation/OpenGLES/EAGLContext) pointer when appropriate.
 ### Constants
 - [Cache Attributes](cvopenglestexturecache-cache-attributes.md)
   Attributes for the texture cache.

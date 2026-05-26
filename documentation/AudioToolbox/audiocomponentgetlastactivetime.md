@@ -24,7 +24,7 @@ func AudioComponentGetLastActiveTime(_ comp: AudioComponent) -> CFAbsoluteTime
   Registers an audio output unit for use by other applications.
 - [func AudioOutputUnitGetHostIcon(AudioUnit, Float) -> UIImage?](audiooutputunitgethosticon(_:_:).md)
   The host app’s icon.
-- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:_:).md)
+- [func AudioComponentGetIcon(AudioComponent, Float) -> UIImage?](audiocomponentgeticon(_:).md)
   The UIImage of the audio component’s icon.
 
 

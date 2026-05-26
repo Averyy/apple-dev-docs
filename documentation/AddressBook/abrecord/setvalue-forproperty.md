@@ -31,14 +31,14 @@ For a list of the available properties, see [`Accessing Address Book Records`](h
 
 ## See Also
 
-- [func removeValue(forProperty: String!) -> Bool](abrecord-swift.class/removevalue(forproperty:).md)
+- [func removeValue(forProperty: String!) -> Bool](abrecord/removevalue(forproperty:).md)
   Removes the value for a given property.
-- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord-swift.class/setvalue(_:forproperty:error:).md)
+- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord/setvalue(_:forproperty:error:).md)
   Sets the value of a given property for a record, returning error information.
-- [func value(forProperty: String!) -> Any!](abrecord-swift.class/value(forproperty:).md)
+- [func value(forProperty: String!) -> Any!](abrecord/value(forproperty:).md)
   Returns the value of a given property for a record.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class/setvalue(_:forproperty:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord/setvalue(_:forproperty:))*

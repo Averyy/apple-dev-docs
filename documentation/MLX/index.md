@@ -1,7 +1,7 @@
 ---
 source: MLX
 framework: MLX
-url: https://ml-explore.github.io/mlx/build/html/index.html
+url: https://ml-explore.github.io/mlx/build/html/
 ---
 
 # MLX

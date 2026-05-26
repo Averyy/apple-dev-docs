@@ -20,7 +20,7 @@ From this panel a user can drag media  into views in their app. The class provid
 
 > **Note**:  The Media Library Browser panel is not an `NSPanel` instance.  It has panel like methods to remotely control the Media Library Browser.  Clients have no direct programmatic access to the panel displaying the Media Library Browser.
 
-For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/MediaLibrary/MLMediaLibrary), [`MLMediaSource`](https://developer.apple.com/documentation/MediaLibrary/MLMediaSource), [`MLMediaGroup`](https://developer.apple.com/documentation/MediaLibrary/MLMediaGroup), and doc://com.apple.documentation/documentation/medialibrary/mlmediaobject in [`Media Library`](https://developer.apple.com/documentation/MediaLibrary).
+For more information see [`MLMediaLibrary`](https://developer.apple.com/documentation/MediaLibrary/MLMediaLibrary), [`MLMediaSource`](https://developer.apple.com/documentation/MediaLibrary/MLMediaSource), [`MLMediaGroup`](https://developer.apple.com/documentation/MediaLibrary/MLMediaGroup), and [`MLMediaObject`](https://developer.apple.com/documentation/MediaLibrary/MLMediaObject) in [`Media Library`](https://developer.apple.com/documentation/MediaLibrary).
 
 ##### Pasteboard Types
 

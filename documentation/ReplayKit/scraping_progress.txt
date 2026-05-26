@@ -1,4 +1,4 @@
 Completed scraping ReplayKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 137
+Total pages scraped: 135
+Pages skipped (unchanged): 2
 Pages failed: 0

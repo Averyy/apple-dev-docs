@@ -15,4 +15,4 @@ init?(pasteboardPropertyList propertyList: Any, ofType type: NSPasteboard.Pasteb
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsurl/init(pasteboardpropertylist:oftype:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/nsattributedstring/init(pasteboardpropertylist:oftype:))*

@@ -42,7 +42,7 @@ As an example, to generate a summary for a long article on device, consider sepa
 One way to budget tokens is to ask the model to produce fewer response tokens. If you notice the model producing long, detailed responses, try:
 
 - Include your target response length in your prompt, for example, “In 3 sentences….” or “List 3 reasons that…”.
-- Add a `@Guide` to any `Generable` arrays (for example, tag lists or name lists) you are generating and specify the max count using [`maximumCount(_:)`](https://developer.apple.com/documentation/FoundationModels/GenerationGuide/maximumCount(_:)).
+- Add a [`Guide(description:)`](https://developer.apple.com/documentation/FoundationModels/Guide(description:)) to any `Generable` arrays (for example, tag lists or name lists) you are generating and specify the max count using [`maximumCount(_:)`](https://developer.apple.com/documentation/FoundationModels/GenerationGuide/maximumCount(_:)).
 
 Use [`maximumResponseTokens`](https://developer.apple.com/documentation/FoundationModels/GenerationOptions/maximumResponseTokens) only when you need to protect against unexpectedly verbose responses and runaway generations, since enforcing a strict token response limit can lead the model to produce malformed results or grammatically incorrect partial responses like “A cat is a small.”
 

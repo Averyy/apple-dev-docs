@@ -22,7 +22,7 @@ var signature: P256.Signing.ECDSASignature { get }
 
 #### Discussion
 
-Use this [`signature`](verificationresult/signature-95r7x.md) with [`Apple CryptoKit`](https://developer.apple.com/documentation/cryptokit) if you verify the signature on the device.
+Use this [`signature`](verificationresult/signature-95r7x.md) with [`Apple CryptoKit`](https://developer.apple.com/documentation/CryptoKit) if you verify the signature on the device.
 
 ## See Also
 

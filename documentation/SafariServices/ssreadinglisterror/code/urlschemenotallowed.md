@@ -15,7 +15,11 @@
 case urlSchemeNotAllowed
 ```
 
+#### Discussion
+
+The URL scheme for the specified URL is not allowed in the reading list.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterrorcode/urlschemenotallowed)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterror/code/urlschemenotallowed)*

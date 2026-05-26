@@ -22,7 +22,7 @@ An attributed string containing the formatted address.
 
 The string’s attributes match address dictionary keys, such as `kABAddressStreetKey`. Each attribute value contains the localized description of the key. (For example, the value of a Canadian `kABAddressZIPKey` field would be “Postal Code”, while the value of a French one would be “Code Postal”.)
 
-To get the dictionary containing a street address for a person record, use [`value(forProperty:)`](abrecord-swift.class/value(forproperty:).md) with the property `kABAddressProperty`, and then getting one of the values from the multivalue that is returned.
+To get the dictionary containing a street address for a person record, use [`value(forProperty:)`](abrecord/value(forproperty:).md) with the property `kABAddressProperty`, and then getting one of the values from the multivalue that is returned.
 
 ## Parameters
 

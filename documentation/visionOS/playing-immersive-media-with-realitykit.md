@@ -105,7 +105,7 @@ For playback in the *Shared Space*, [`ornaments`](https://developer.apple.comhtt
 }
 ```
 
-The *Full Space* presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a doc://com.apple.documentation/realitykit/viewattachmentcomponent for use in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView):
+The *Full Space* presentation uses the same `TransportView`, but it’s incorporated through composition instead. It is added to an outer type, `ImmersiveControlsView`, which is then placed within a [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent) for use in a [`RealityView`](https://developer.apple.com/documentation/RealityKit/RealityView):
 
 ```swift
 private func updateImmersiveControls(with mitigation: VideoPlayerComponent.VideoComfortMitigation? = nil) {

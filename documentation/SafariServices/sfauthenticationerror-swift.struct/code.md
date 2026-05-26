@@ -3,6 +3,8 @@
 **Framework**: Safari Services  
 **Kind**: enum
 
+Messages that describe an authentication error.
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
@@ -14,16 +16,12 @@
 enum SFAuthenticationError
 ```
 
-#### Overview
-
-Error code of the NSError object passed in by SFAuthenticationCompletionHandler.
-
 ## Topics
 
 ### Enumeration Cases
-- [SFAuthenticationError.Code.canceledLogin](sfauthenticationerror-swift.enum/canceledlogin.md)
+- [SFAuthenticationError.Code.canceledLogin](sfauthenticationerror-swift.struct/code/canceledlogin.md)
 ### Initializers
-- [init?(rawValue: Int)](sfauthenticationerror-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](sfauthenticationerror-swift.struct/code/init(rawvalue:).md)
 
 ## Relationships
 
@@ -51,4 +49,4 @@ Error code of the NSError object passed in by SFAuthenticationCompletionHandler.
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.enum)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.struct/code)*
