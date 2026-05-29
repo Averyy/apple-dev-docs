@@ -31,6 +31,8 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Subscription Name | The name of the subscription that the user has subscribed to. Subscription name appears as provided by you during setup in App Store Connect. | `string` | ✔ | ✔ |
 | Subscription Identifier | The unique identifier assigned to the subscription by Apple. | `integer` | ✔ | ✔ |
 | Subscription Duration | Standard duration of the subscription. | `string` | ✔ | ✔ |
+| Billing Frequency | The frequency at which a user is charged for their subscription. | `string` | ✔ | ✔ |
+| Billing Period | The current installment period within a 12-month commitment, ranging from the 1st through the 12th period. This dimension applies exclusively to [`Monthly Subscriptions with a 12-Month Commitment`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription). | `string` | ✔ | ✔ |
 | Subscription Group | The group that the subscription belongs to. Subscription group name appears as provided by you during setup in App Store Connect. | `string` | ✔ | ✔ |
 | Subscription Group Identifier | The unique identifier assigned to the subscription group by Apple. | `integer` | ✔ | ✔ |
 | Offer Type | Type of subscription offer the user has redeemed. | `string` | ✔ | ✔ |
@@ -64,6 +66,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Grouping | Paid Subscriptions from Offers | The number of offers that converted to paid subscriptions. |
 | Event Grouping | Paid Subscription Starts | The number of paid subscriptions that began. |
 | Event Grouping | Renewals | The total number of subscriptions that renewed. |
+| Event Grouping | Commitment-Based Payments | The number of commitment-based subscriptions that made their monthly payment. |
 | Event Grouping | Entered Billing Issue | The total number of subscriptions that entered a grace period or billing retry due to a billing issue. |
 | Event Grouping | Recoveries from Billing Issue | The number of subscriptions that Apple was able to recover following a billing issue. |
 | Event Grouping | Involuntary Churn | The number of subscriptions that were canceled at the end of the 60-day billing retry period. |
@@ -89,6 +92,9 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Preserved Price Renewal from Contingent Price | The number of subscriptions that renewed at a preserved price from a contingent price. |
 | Event Sub Type | Preserved Price Renewal from Full Price | The number of subscriptions that renewed at a preserved price instead of the updated full price. |
 | Event Sub Type | Full Price Renewal from Preserved Price | The number of subscriptions that renewed at full price instead of a preserved price. |
+| Event Sub Type | Full Price Commitment-Based Payments | The number of full price commitment-based subscriptions that made their monthly payment. |
+| Event Sub Type | Contingent Price Commitment-Based Payments | The number of contingent price commitment-based subscriptions that made their monthly payment. |
+| Event Sub Type | Preserved Price Commitment-Based Payments | The number of preserved price commitment-based subscriptions that made their monthly payment. |
 | Event Sub Type | Entered Grace Period from Full Price | The number of full price subscriptions that entered a grace period due to a billing issue at the time of renewal. |
 | Event Sub Type | Entered Grace Period from Contingent Price | The number of contingent price subscriptions that entered a grace period due to a billing issue at the time of renewal. |
 | Event Sub Type | Entered Grace Period from Free Trial | The number of free trials that entered a grace period due to a billing issue at the time of renewal. |
@@ -99,6 +105,10 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Entered Billing Retry from Paid Offer | The number of paid offers that entered billing retry due to a billing issue at the time of renewal or conversion. |
 | Event Sub Type | Entered Billing Retry from Grace Period | The number of subscriptions that didn’t recover from a billing issue during the grace period and moved to billing retry. Apple will continue trying to recover these subscriptions during the billing retry period. |
 | Event Sub Type | Full Price Recoveries from Grace Period | The number of subscriptions that were recovered to full price from a grace period. |
+| Event Sub Type | Payment Issue from Full Price | The number of full price commitment-based subscriptions that missed their most recent payment. |
+| Event Sub Type | Payment Issue from Contingent Price | The number of contingent price commitment-based subscriptions that missed their most recent payment. |
+| Event Sub Type | Payment Issue from Preserved Price | The number of preserved price commitment-based subscriptions that missed their most recent payment. |
+| Event Sub Type | Consecutive Missed Payments | The number of commitment-based subscriptions that missed their last two payments. |
 | Event Sub Type | Contingent Price Recoveries from Grace Period | The number of subscriptions that were recovered to a contingent price from a grace period. |
 | Event Sub Type | Preserved Price Recoveries from Grace Period | The number of subscriptions that were recovered to a preserved price from a grace period. |
 | Event Sub Type | Paid Offer Recoveries from Grace Period | The number of paid offers that were started or renewed from a grace period. |
@@ -108,6 +118,9 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Preserved Price Recoveries from Billing Retry | The number of preserved price subscriptions recovered from billing retry. |
 | Event Sub Type | Paid Offer Recoveries from Billing Retry | The number of paid offers that were started or renewed from billing retry. |
 | Event Sub Type | Free Trial Recoveries from Billing Retry | The number of free trials that were started from a billing retry. |
+| Event Sub Type | Full Price Recoveries from Payment Issue | The number of full price commitment-based subscriptions that were recovered from missed payment(s). |
+| Event Sub Type | Contingent Price Recoveries from Payment Issue | The number of contingent price commitment-based subscriptions that were recovered from missed payment(s). |
+| Event Sub Type | Preserved Price Recoveries from Payment Issue | The number of preserved price commitment-based subscriptions that were recovered from missed payment(s). |
 | Event Sub Type | Involuntary Churn from Free Trials | The number of free trials that were canceled at the end of the 60-day billing retry period. |
 | Event Sub Type | Involuntary Churn from Paid Offers | The number of paid offers that were canceled at the end of the 60-day billing retry period. |
 | Event Sub Type | Involuntary Churn from Full Price | The number of full price subscriptions that were canceled at the end of the 60-day billing retry period. |
@@ -130,7 +143,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Contingent Price Extensions | The number of contingent price subscriptions that were provided with a renewal extension. |
 | Event Sub Type | Preserved Price Extensions | The number of preserved price subscriptions that were provided with a renewal extension. |
 | Family Sharing | Individual | The user is not sharing the subscription with their family. |
-| Family Sharing | Shared with family | The user is sharing they subscription with their family. |
+| Family Sharing | Shared with family | The user is sharing their subscription with their family. |
 | Cancel Reason | Billing Issue | The subscriber could not be billed, and the subscription was automatically canceled after the 60-day billing retry period. |
 | Cancel Reason | Turned off auto-renew | Subscriber canceled their subscription. |
 | Cancel Reason | Price Increase | Subscription automatically ended because the price of the subscription increased and the subscriber did not consent. |

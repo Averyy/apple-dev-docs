@@ -23,6 +23,8 @@ This error can occur if you call [`requestForwarding(for:)`](accessorynotificati
 
 - [AccessoryError.unsupportedAccessory](accessoryerror/unsupportedaccessory.md)
   An error that indicates the system doesn’t support notification forwarding for the provided accessory.
+- [AccessoryError.accessoryNotificationsUnavailable](accessoryerror/accessorynotificationsunavailable.md)
+  An error that indicates accessory notifications aren’t available in the current configuration.
 
 
 ---

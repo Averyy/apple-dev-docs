@@ -20,6 +20,11 @@ case encapsulatedKey
 
 - [Receiving iOS notifications on an accessory](receiving-ios-notifications-on-an-accessory.md)
 
+## See Also
+
+- [SecurityMessage.KeyType.publicKey](securitymessage/keytype-swift.enum/publickey.md)
+  A public key, sent from the accessory to the host.
+
 
 ---
 

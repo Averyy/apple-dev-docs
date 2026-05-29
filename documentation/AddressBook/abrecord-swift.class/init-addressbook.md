@@ -24,10 +24,10 @@ The record is added to `addressBook` but is not visible to other address books u
 
 ## See Also
 
-- [init!()](abrecord/init.md)
+- [init!()](abrecord-swift.class/init.md)
   Initializes a record using the shared address book.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord/init(addressbook:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class/init(addressbook:))*

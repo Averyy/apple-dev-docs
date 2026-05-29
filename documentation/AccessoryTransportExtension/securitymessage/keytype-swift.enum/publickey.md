@@ -16,6 +16,11 @@ A public key, sent from the accessory to the host.
 case publicKey
 ```
 
+## See Also
+
+- [SecurityMessage.KeyType.encapsulatedKey](securitymessage/keytype-swift.enum/encapsulatedkey.md)
+  An encapsulated key, sent from the host to the accessory.
+
 
 ---
 

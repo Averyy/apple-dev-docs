@@ -28,7 +28,7 @@ Implement this protocol in an extension with an `EXExtensionPointIdentifier` val
 
 #### Add the Necessary Target Configuration
 
-In your extension’s target properties, include the `_EXExtensionCapabilities` key with the value `AccessoryNotifications.NotificationsForwarding`:
+In your extension’s target properties, include the `EXCapabilities` key with the value `AccessoryNotifications.NotificationsForwarding`:
 
 ```xml
 <plist>
@@ -63,8 +63,26 @@ struct DataProvider: AccessoryDataProvider {
 }
 
 class MyNotificationsHandler: AccessoryNotificationsHandler {
-    // Your implementation.
+    // Your extension's implementation.
 }
+```
+
+#### Share Data Between the App and the Extension
+
+Configure a shared app group so your companion app can provide information to the extension. The extension has read-only access to the shared container. Use the shared container to store:
+
+- Authentication tokens for your private servers
+- Accessory-specific preferences (max payload size, content filtering)
+- Device-specific configuration
+
+```swift
+// In the companion app, write to the shared container.
+let sharedDefaults = UserDefaults(suiteName: "group.com.yourcompany.accessoryapp")
+sharedDefaults?.set(authToken, forKey: "ServerAuthToken")
+
+// In the extension, read from the shared container.
+let sharedDefaults = UserDefaults(suiteName: "group.com.yourcompany.accessoryapp")
+let authToken = sharedDefaults?.string(forKey: "ServerAuthToken")
 ```
 
 For more information, see [`Receiving iOS notifications on an accessory`](receiving-ios-notifications-on-an-accessory.md).

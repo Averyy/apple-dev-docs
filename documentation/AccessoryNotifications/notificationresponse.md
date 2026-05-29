@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: struct
 
-A person’s response to a notification.
+A structure that represents a person’s response to a notification.
 
 **Availability**:
 - iOS 26.5+
@@ -17,9 +17,9 @@ struct NotificationResponse
 
 #### Overview
 
-Create an instance of this structure when a person responds to a notification on your accessory, and send it back to your app.
+Create an instance of this structure when a person responds to a notification on your accessory. Send it to the system using [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md) after receiving the response data through [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md).
 
-> ❗ **Important**: The Accessory Notifications framework will support this feature in a future release.
+> **Note**: Notification responses currently support Bluetooth transport only. The accessory sends encrypted response data to the transport extension, which forwards it to the data provider for processing.
 
 ## Topics
 

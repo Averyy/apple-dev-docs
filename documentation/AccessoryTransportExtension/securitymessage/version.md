@@ -21,7 +21,7 @@ let version: SecurityMessage.CipherSuite.Version
 - [let cipherSuite: SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.property.md)
   The cipher suite used for key exchange.
 - [SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.enum.md)
-  A cryptographic cipher suite used during key exchange.
+  A cryptographic cipher suite for key exchange.
 
 
 ---

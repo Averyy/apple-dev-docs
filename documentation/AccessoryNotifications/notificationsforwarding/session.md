@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: class
 
-A session object that enables communication between the system and your extension.
+A session object that facilitates bidirectional communication between the system and your extension.
 
 **Availability**:
 - iOS 26.5+
@@ -27,7 +27,7 @@ final class Session
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
-  A protocol that defines methods for handling notification lifecycle events in your extension.
+  A protocol that defines methods for handling notification life cycle events in your extension.
 
 
 ---

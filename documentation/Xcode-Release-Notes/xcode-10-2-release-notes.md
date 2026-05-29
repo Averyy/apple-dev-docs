@@ -122,7 +122,7 @@ Xcode 10.2 includes SDKs for iOS 12.2, watchOS 5.2, macOS 10.14.4, and tvOS 12.2
 - Images with an alignment rectangle specified in the asset catalog correctly render in the Interface Builder canvas. (46595020)
 - Improved the intrinsic size of images in 2x and 3x slots in the Interface Builder canvas if the file name inside the asset catalog doesn’t end in `@2x` or `@3x`. (44759471)
 - Changes to [`NSImageView`](https://developer.apple.com/documentation/AppKit/NSImageView) made using the inspector are now reliably reflected in the canvas without a delay. (30196881)
-- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of doc://com.apple.documentation/documentation/appkit/nscell. (24421623)
+- `ibtool --export-string-file` includes localizer hints that are specified on controls with instances of [`NSCell`](https://developer.apple.com/documentation/AppKit/NSCell). (24421623)
 - Resolved an issue that caused images to display as question marks in storyboards. (42475635)
 - Images rendered in the Interface Builder canvas render with the scale factor matching the chosen device. (18703159)
 - Images marked with the template rendering mode in the asset catalog correctly render in the Interface Builder canvas. (29049562)

@@ -285,6 +285,7 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -298,7 +299,6 @@ For a discussion of all the methods you can use to create `CIImage` objects on i
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-- [Testing.AttachableAsImage](doc://com.apple.coreimage/7Testing17AttachableAsImageP)
 
 ## See Also
 

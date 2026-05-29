@@ -71,8 +71,14 @@ For more information about server-to-server notifications, see [`Processing chan
 
 ## See Also
 
+- [Sign in with Apple JS](../signinwithapplejs/signinwithapplejs.md)
+  Provide users a fast, secure way to sign in to your web service with their Apple Account.
+- [Sign in with Apple REST API](../signinwithapplerestapi/signinwithapplerestapi.md)
+  Communicate between your app servers and Apple’s authentication servers.
 - [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)
   Configure the appearance of Sign in with Apple buttons with CSS styles.
+- [Processing changes for Sign in with Apple accounts](processing-changes-for-sign-in-with-apple-accounts.md)
+  Manage user-initiated modifications to maintain privacy with server-to-server notifications.
 
 
 ---

@@ -16,6 +16,13 @@ Underlying failure with an unknown cause.
 case unknown
 ```
 
+## See Also
+
+- [AccessorySecuritySession.Error.invalidated](accessorysecuritysession/error/invalidated.md)
+  Session was invalidated.
+- [AccessorySecuritySession.Error.unsupported](accessorysecuritysession/error/unsupported.md)
+  Unsupported value, operation, etc.
+
 
 ---
 

@@ -18,7 +18,14 @@ case bluetooth
 
 #### Discussion
 
-All cipher suites support Bluetooth transport.
+This transport method prefers [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cryptography, but supports [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) as a fallback. The system prioritizes this transport method when the accessory connection is active.
+
+## See Also
+
+- [AccessoryTransport.internet](accessorytransport/internet.md)
+  A transport method that uses the internet for data delivery.
+- [AccessoryTransport.localNetwork](accessorytransport/localnetwork.md)
+  A transport method that uses the local network for data delivery.
 
 
 ---

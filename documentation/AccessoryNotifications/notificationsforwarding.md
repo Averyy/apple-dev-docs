@@ -23,14 +23,15 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
 
 ### Creating a notifications forwarding object
 - [init(() -> any NotificationsForwarding.AccessoryNotificationsHandler)](notificationsforwarding/init(_:).md)
+  Initializes a notifications-forwarding capability with a handler factory.
 ### Managing notification sessions
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between the system and your extension.
+  A session object that facilitates bidirectional communication between the system and your extension.
 - [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
-  A protocol that enables communication between your extension and the system.
+  A protocol that enables bidirectional communication between your extension and the system.
 ### Handling notification events
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
-  A protocol that defines methods for handling notification lifecycle events in your extension.
+  A protocol that defines methods for handling notification life cycle events in your extension.
 
 ## Relationships
 
@@ -44,9 +45,9 @@ Implement the [`NotificationsForwarding.AccessoryNotificationsHandler`](notifica
 ## See Also
 
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
-  A protocol that defines methods for handling notification lifecycle events in your extension.
+  A protocol that defines methods for handling notification life cycle events in your extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between the system and your extension.
+  A session object that facilitates bidirectional communication between the system and your extension.
 
 
 ---

@@ -230,6 +230,7 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -247,7 +248,6 @@ static void updateLayerWithImageInWindow1(NSImage *image, CALayer *layer, NSWind
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-- [Testing.AttachableAsImage](doc://com.apple.appkit/7Testing17AttachableAsImageP)
 - [Transferable](../CoreTransferable/Transferable.md)
 
 ## See Also

@@ -18,7 +18,30 @@ func messageHandler(_ message: TransportMessage)
 
 #### Discussion
 
-The system calls this method when your accessory sends data through the transport extension. The message arrives decrypted and ready for processing. Parse the message to determine the response type (notification action, user text input, or alert confirmation) and handle accordingly using the session’s response methods.
+The system calls this method when your accessory sends data through the transport extension using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSession/sendMessageToDataProvider(_:)). The message arrives decrypted and ready for processing.
+
+#### Process Notification Responses
+
+Parse the message to determine the response type (notification dismissal, action selection, or text input). Create a [`NotificationResponse`](notificationresponse.md) instance and send it to the system using [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md):
+
+```swift
+func messageHandler(_ message: AccessoryMessage) {
+    for payload in message.payloads {
+        let parsedResponse = parseResponse(payload.data)
+        
+        let response = NotificationResponse(
+            sourceIdentifier: parsedResponse.sourceID,
+            notificationIdentifier: parsedResponse.notificationID,
+            actionIdentifier: parsedResponse.actionID,
+            userText: parsedResponse.userText
+        )
+        
+        Task {
+            try await session?.sendResponse(response)
+        }
+    }
+}
+```
 
 ## Parameters
 

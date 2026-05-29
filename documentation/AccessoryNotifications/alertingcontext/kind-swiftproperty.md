@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: property
 
-The kind of notification this alerting context represents.
+A classification for the notification type.
 
 **Availability**:
 - iOS 26.5+
@@ -14,6 +14,15 @@ The kind of notification this alerting context represents.
 ```swift
 var kind: AlertingContext.Kind { get }
 ```
+
+#### Discussion
+
+Use this property to apply specialized handling for different notification types such as incoming calls, alarms, or timers.
+
+## See Also
+
+- [AlertingContext.Kind](alertingcontext/kind-swift.enum.md)
+  Notification types for specialized handling.
 
 
 ---

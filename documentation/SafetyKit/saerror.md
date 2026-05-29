@@ -24,6 +24,7 @@ struct SAError
 - [var localizedDescription: String](saerror/localizeddescription.md)
   Retrieve the localized description for this error.
 - [static var errorDomain: String](saerror/errordomain.md)
+  The domain of the error.
 ### Comparing errors
 - [static func != (Self, Self) -> Bool](saerror/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.

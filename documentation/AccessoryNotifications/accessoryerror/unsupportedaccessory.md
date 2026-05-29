@@ -23,6 +23,8 @@ This error indicates that the argument specified in the [`requestForwarding(for:
 
 - [AccessoryError.unsupportedPlatform](accessoryerror/unsupportedplatform.md)
   An error that indicates the current platform doesn’t support notification forwarding.
+- [AccessoryError.accessoryNotificationsUnavailable](accessoryerror/accessorynotificationsunavailable.md)
+  An error that indicates accessory notifications aren’t available in the current configuration.
 
 
 ---

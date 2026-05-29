@@ -43,9 +43,9 @@ Implement this protocol to create a custom capability that your extension suppor
 - [struct TransportMessage](transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
 - [struct SecurityMessage](securitymessage.md)
-  A structure that carries key material for negotiating a secure channel between the system and an accessory.
+  A structure that carries key material for a secure channel between the system and an accessory.
 - [enum AccessoryTransport](accessorytransport.md)
-  Supported transport types.
+  Transport methods for communicating with an accessory.
 
 
 ---

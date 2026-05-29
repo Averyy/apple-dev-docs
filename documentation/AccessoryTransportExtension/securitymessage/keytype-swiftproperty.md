@@ -21,7 +21,7 @@ let keyType: SecurityMessage.KeyType
 - [let key: Data](securitymessage/key.md)
   The key data carried by this message.
 - [SecurityMessage.KeyType](securitymessage/keytype-swift.enum.md)
-  Identifies the type of key carried by a [`SecurityMessage`](securitymessage.md).
+  A type that identifies the key material a security message carries.
 
 
 ---

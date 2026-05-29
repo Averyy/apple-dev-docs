@@ -19,10 +19,10 @@ enum SSReadingListErrorCode
 
 ## Topics
 
-### Constants
-- [SSReadingListError.Code.urlSchemeNotAllowed](ssreadinglisterror/code/urlschemenotallowed.md)
+### Enumeration Cases
+- [SSReadingListError.Code.urlSchemeNotAllowed](ssreadinglisterrorcode/urlschemenotallowed.md)
 ### Initializers
-- [init?(rawValue: Int)](ssreadinglisterror/code/init(rawvalue:).md)
+- [init?(rawValue: Int)](ssreadinglisterrorcode/init(rawvalue:).md)
 
 ## Relationships
 
@@ -46,4 +46,4 @@ enum SSReadingListErrorCode
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterror/code)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/ssreadinglisterrorcode)*

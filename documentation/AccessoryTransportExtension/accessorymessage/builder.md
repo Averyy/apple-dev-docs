@@ -24,9 +24,13 @@ struct Builder
   Builds an accessory message from one or more payload components.
 ### Type Methods - generated
 - [static func buildEither(first: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(first:).md)
+  Builds an accessory message from the first branch of a conditional.
 - [static func buildEither(second: AccessoryMessage) -> AccessoryMessage](accessorymessage/builder/buildeither(second:).md)
+  Builds an accessory message from the second branch of a conditional.
 - [static func buildExpression(AccessoryMessage.Payload) -> AccessoryMessage](accessorymessage/builder/buildexpression(_:).md)
+  Builds an accessory message from a payload expression.
 - [static func buildOptional(AccessoryMessage?) -> AccessoryMessage](accessorymessage/builder/buildoptional(_:).md)
+  Builds an accessory message from an optional component.
 
 ## See Also
 

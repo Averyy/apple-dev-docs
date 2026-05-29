@@ -22,7 +22,14 @@ case localNetwork
 
 #### Discussion
 
-Using this transport requires [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) for enhanced security.
+The system requires [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) cryptography for this transport method.
+
+## See Also
+
+- [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
+  A transport method that uses Bluetooth for data delivery.
+- [AccessoryTransport.internet](accessorytransport/internet.md)
+  A transport method that uses the internet for data delivery.
 
 
 ---

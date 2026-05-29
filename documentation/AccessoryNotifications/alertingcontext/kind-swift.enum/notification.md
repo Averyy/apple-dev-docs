@@ -15,6 +15,15 @@ A standard notification.
 case notification
 ```
 
+## See Also
+
+- [AlertingContext.Kind.incomingCall](alertingcontext/kind-swift.enum/incomingcall.md)
+  An incoming call notification.
+- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
+  A classification for alarm notifications.
+- [AlertingContext.Kind.timer](alertingcontext/kind-swift.enum/timer.md)
+  A timer notification.
+
 
 ---
 

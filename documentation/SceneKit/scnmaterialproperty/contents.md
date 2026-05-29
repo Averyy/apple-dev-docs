@@ -32,7 +32,7 @@ You can set a value for this property using any of the following types:
 - An [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) or [`NSURL`](https://developer.apple.com/documentation/Foundation/NSURL) object specifying the location of an image file
 - A video player ([`AVPlayer`](https://developer.apple.com/documentation/AVFoundation/AVPlayer)) or live video capture preview ([`AVCaptureDevice`](https://developer.apple.com/documentation/AVFoundation/AVCaptureDevice), in iOS only)
 - A Core Animation layer ([`CALayer`](https://developer.apple.com/documentation/QuartzCore/CALayer))
-- A texture ([`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture), [`MDLTexture`](https://developer.apple.com/documentation/ModelIO/MDLTexture), [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture), or doc://com.apple.documentation/documentation/glkit/glktextureinfo)
+- A texture ([`SKTexture`](https://developer.apple.com/documentation/SpriteKit/SKTexture), [`MDLTexture`](https://developer.apple.com/documentation/ModelIO/MDLTexture), [`MTLTexture`](https://developer.apple.com/documentation/Metal/MTLTexture), or [`GLKTextureInfo`](https://developer.apple.com/documentation/GLKit/GLKTextureInfo))
 - A SpriteKit scene ([`SKScene`](https://developer.apple.com/documentation/SpriteKit/SKScene))
 - A specially formatted image or array of six images, specifying the faces of a cube map
 

@@ -80,7 +80,7 @@ struct DataProvider: AccessoryDataProvider {
 class NotificationHandler: AccessoryNotificationsHandler {
     var session: NotificationsForwarding.Session?
     
-    func activate(for session: NotificationsForwarding.Session) {
+    func didActivate(for session: NotificationsForwarding.Session) {
         self.session = session
     }
     
@@ -104,6 +104,10 @@ class NotificationHandler: AccessoryNotificationsHandler {
     func messageHandler(_ message: AccessoryMessage) {
         // Handle messages from the accessory.
     }
+    
+    func didInvalidate() {
+        // Clean up when the session ends.
+    }
 }
 ```
 
@@ -111,12 +115,12 @@ The system requires your app extension to have the [`com.apple.developer.accesso
 
 #### Receive and Process Notifications
 
-When a notification occurs on the iPhone, the system invokes your extension by calling doc://com.apple.documentation/documentation/accessorynotifications/notificationsforwarding/accessorynotificationshandler/activate(for:), passing in a session object. Save a reference to the session for use across multiple notifications.
+When a notification occurs on the iPhone, the system invokes your extension by calling [`didActivate(for:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/didActivate(for:)), passing in a session object. Save a reference to the session for use across multiple notifications.
 
-The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/addNotification(_:alertingContext:)) on your extension, passing in the notification’s details. Parse the <doc://com.apple.documentation/documentation/accessorynotifications/accessorynotification`` structure, selecting just the information your accessory needs. Notification details include:
+The system then calls [`addNotification(_:alertingContext:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/addNotification(_:alertingContext:)) on your extension, passing in the notification’s details. Parse the [`AccessoryNotification`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification) structure, selecting just the information your accessory needs. Notification details include:
 
 - **Display content**: [`title`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/title), [`subtitle`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/subtitle), and [`summary`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/summary) (for Apple Intelligence summaries)
-- **Rich elements**: [`sourceIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/sourceIcon), [`contextIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/contextIcon), [`attachments`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/attachments), and <doc://com.apple.documentation/documentation/accessorynotifications/accessorynotification/body``, which can contain a genmoji through the [`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph) class
+- **Rich elements**: [`sourceIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/sourceIcon), [`contextIcon`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/contextIcon), [`attachments`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/attachments), and [`body`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/body), which can contain a genmoji through the [`NSAdaptiveImageGlyph`](https://developer.apple.comhttps://developer.apple.com/documentation/uikit/nsadaptiveimageglyph) class
 - **Interactive components**: [`actions`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/actions) array
 - **Metadata**: [`identifier`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/identifier-swift.property), [`sourceName`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/sourceName), [`threadIdentifier`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/threadIdentifier), [`deliveryDate`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/deliveryDate), and [`displayDate`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/displayDate-swift.property)
 - **Priority attributes**: [`attributes`](https://developer.apple.com/documentation/AccessoryNotifications/AccessoryNotification/attributes-swift.property) for critical, time-sensitive, or priority notifications
@@ -344,7 +348,7 @@ When your accessory receives the encrypted notification data, it decrypts the da
 The accessory and extension share a secret, that is, a custom string phrase, for the HPKE decryption algorithm. Build the string using information about the protocol and key material:
 
 ```swift
-let cipherSuite = securityMessage.cipherSuite.description  // The value is "XWing" or "P256".
+let cipherSuite = securityMessage.cipherSuite.description  // The value is "xWing" or "p256".
 let version = securityMessage.version.description          
 let identifier = securityMessage.identifier ?? deviceUUID  // The CBPeripheral UUID.
 let protocolInfo = Data("\(cipherSuite)-\(version)-\(identifier)".utf8)
@@ -417,7 +421,7 @@ The [`notificationCanAlert`](https://developer.apple.com/documentation/Accessory
 
 The [`isSuppressedByFocus`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/isSuppressedByFocus) property indicates whether the device’s Focus state suppresses notification alerts.
 
-For incoming call notifications, check doc://com.apple.documentation/documentation/accessorynotifications/AlertingContext/isIncomingCall to apply special handling. Use [`sound`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/sound-swift.property) to determine sound characteristics, including whether the notification should ignore silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Sound-swift.struct/shouldIgnoreSilentMode).
+For specialized notification types, check [`kind`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/kind-swift.property) to apply appropriate handling. For example, use the [`AlertingContext.Kind.incomingCall`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Kind-swift.enum/incomingCall) case for full-screen displays or priority alerts. Use [`sound`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/sound-swift.property) to determine sound characteristics, including whether the notification ignores silent mode with [`shouldIgnoreSilentMode`](https://developer.apple.com/documentation/AccessoryNotifications/AlertingContext/Sound-swift.struct/shouldIgnoreSilentMode).
 
 #### Handle Notification Updates and Removals
 
@@ -459,7 +463,7 @@ The system calls [`removeAllNotifications()`](https://developer.apple.com/docume
 func removeAllNotifications() {
     let clearData = serializeClearAll()
     let message = AccessoryMessage {
-        AccessoryMessage.Payload(transport: .bluetooth, data: clearData)
+        AccessoryMessage.Payload(transport: .bluetooth, data: notificationData)
     }
     Task {
         try await session?.send(message: message)

@@ -44,7 +44,7 @@ The [`NSPointerFunctions`](https://developer.apple.com/documentation/Foundation/
 - [`objectPointerPersonality`](https://developer.apple.com/documentation/Foundation/NSPointerFunctions/Options/objectPointerPersonality)
 - [`strongMemory`](https://developer.apple.com/documentation/Foundation/NSPointerFunctions/Options/strongMemory)
 - [`weakMemory`](https://developer.apple.com/documentation/Foundation/NSPointerFunctions/Options/weakMemory)
-- doc://com.apple.documentation/documentation/foundation/nspointerfunctions/options/copyin (optional)
+- [`copyIn`](https://developer.apple.com/documentation/Foundation/NSPointerFunctions/Options/copyIn) (optional)
 
 > ❗ **Important**: Weak values won’t round-trip as expected unless you strongly reference them elsewhere during unarchival.
 

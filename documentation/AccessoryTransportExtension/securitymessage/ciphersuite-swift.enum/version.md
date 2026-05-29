@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
-Version of cipher suite used.
+A version of the cipher suite protocol.
 
 **Availability**:
 - iOS 26.5+
@@ -16,9 +16,13 @@ Version of cipher suite used.
 enum Version
 ```
 
+#### Overview
+
+The version determines the format of the protocol information string that the system uses for HPKE key derivation. Use [`SecurityMessage.CipherSuite.Version.version1`](securitymessage/ciphersuite-swift.enum/version/version1.md) when creating security messages. On your accessory, format the protocol information as `{cipherSuite}-Version1-{identifier}` when deriving HPKE keys.
+
 ## Topics
 
-### Enumeration Cases
+### Identifying protocol versions
 - [SecurityMessage.CipherSuite.Version.version1](securitymessage/ciphersuite-swift.enum/version/version1.md)
   Version 1 of the cipher suite protocol.
 

@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
-Identifies the type of key carried by a [`SecurityMessage`](securitymessage.md).
+A type that identifies the key material a security message carries.
 
 **Availability**:
 - iOS 26.5+
@@ -16,9 +16,13 @@ Identifies the type of key carried by a [`SecurityMessage`](securitymessage.md).
 enum KeyType
 ```
 
+#### Overview
+
+Use this enumeration to specify the type of cryptographic key when creating a [`SecurityMessage`](securitymessage.md) for the key exchange process. The accessory initiates key exchange by sending a message with [`SecurityMessage.KeyType.publicKey`](securitymessage/keytype-swift.enum/publickey.md). The system responds with a message containing [`SecurityMessage.KeyType.encapsulatedKey`](securitymessage/keytype-swift.enum/encapsulatedkey.md), which completes the exchange.
+
 ## Topics
 
-### Enumeration Cases
+### Identifying key types
 - [SecurityMessage.KeyType.encapsulatedKey](securitymessage/keytype-swift.enum/encapsulatedkey.md)
   An encapsulated key, sent from the host to the accessory.
 - [SecurityMessage.KeyType.publicKey](securitymessage/keytype-swift.enum/publickey.md)

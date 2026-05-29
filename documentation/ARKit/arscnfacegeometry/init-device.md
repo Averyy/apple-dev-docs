@@ -24,7 +24,7 @@ A new SceneKit face geometry, or `nil` if the Metal device is unavailable or ARK
 
 A newly created [`ARSCNFaceGeometry`](arscnfacegeometry.md) instance represents a neutral, generic face; use the [`update(from:)`](arscnfacegeometry/update(from:).md) method to deform the geometry to match a specific facial expression or face shape.
 
-The geometry contains a single geometry element; as such, assigning more than one material has no visible effect (see the inherited doc://com.apple.documentation/documentation/scenekit/scngeometry/materials property).
+The geometry contains a single geometry element; as such, assigning more than one material has no visible effect (see the inherited [`materials`](https://developer.apple.com/documentation/SceneKit/SCNGeometry/materials) property).
 
 Calling this initializer is equivalent to calling the [`init(device:fillMesh:)`](arscnfacegeometry/init(device:fillmesh:).md) initializer and passing [`false`](https://developer.apple.com/documentation/Swift/false) for the `fillMesh` parameter.
 

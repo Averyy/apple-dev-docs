@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
-A cryptographic cipher suite used during key exchange.
+A cryptographic cipher suite for key exchange.
 
 **Availability**:
 - iOS 26.5+
@@ -16,16 +16,20 @@ A cryptographic cipher suite used during key exchange.
 enum CipherSuite
 ```
 
+#### Overview
+
+Choose a cipher suite based on your accessory’s capabilities and the transport methods it supports. Use [`SecurityMessage.CipherSuite.xWing`](securitymessage/ciphersuite-swift.enum/xwing.md) for post-quantum security, which is required for [`AccessoryTransport.internet`](accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) transports. Use [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) as a fallback option for Bluetooth-only accessories that don’t support xWing.
+
 ## Topics
 
-### Enumeration Cases
+### Identifying cipher suite types
 - [SecurityMessage.CipherSuite.p256](securitymessage/ciphersuite-swift.enum/p256.md)
-  A cipher suite using NIST P-256 elliptic curve cryptography.
+  A cipher suite that uses NIST P-256 elliptic curve cryptography.
 - [SecurityMessage.CipherSuite.xWing](securitymessage/ciphersuite-swift.enum/xwing.md)
-  A cipher suite providing XWing hybrid post-quantum key encapsulation.
-### Enumerations
+  A cipher suite that provides xWing hybrid post-quantum key encapsulation.
+### Determining protocol versions
 - [SecurityMessage.CipherSuite.Version](securitymessage/ciphersuite-swift.enum/version.md)
-  Version of cipher suite used.
+  A version of the cipher suite protocol.
 
 ## Relationships
 

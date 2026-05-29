@@ -3,6 +3,8 @@
 **Framework**: SafetyKit  
 **Kind**: property
 
+The domain of the error.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

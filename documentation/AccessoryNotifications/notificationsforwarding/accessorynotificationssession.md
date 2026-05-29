@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: protocol
 
-A protocol that enables communication between your extension and the system.
+A protocol that enables bidirectional communication between your extension and the system.
 
 **Availability**:
 - iOS 26.5+
@@ -17,7 +17,7 @@ protocol AccessoryNotificationsSession : Sendable
 
 #### Overview
 
-Use the session object provided to `NotificationsForwarding/AccessoryNotificationsHandler/activate(for:)` to send messages to your accessory and communicate notification responses back to the system.
+Use the session object provided to [`didActivate(for:)`](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md) to send messages to your accessory and communicate notification responses back to the system.
 
 ## Topics
 
@@ -44,7 +44,7 @@ Use the session object provided to `NotificationsForwarding/AccessoryNotificatio
 ## See Also
 
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between the system and your extension.
+  A session object that facilitates bidirectional communication between the system and your extension.
 
 
 ---

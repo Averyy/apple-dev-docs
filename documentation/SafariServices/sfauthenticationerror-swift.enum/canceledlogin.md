@@ -17,4 +17,4 @@ case canceledLogin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.struct/code/canceledlogin)*
+*[View on Apple Developer](https://developer.apple.com/documentation/safariservices/sfauthenticationerror-swift.enum/canceledlogin)*

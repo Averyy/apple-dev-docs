@@ -109,7 +109,7 @@ Configure the spatial audio experience of audio-only playback APIs using the [`i
 - [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioPlayer/intendedSpatialExperience-27klj)
 - [`intendedSpatialExperience`](https://developer.apple.com/documentation/AVFAudio/AVAudioOutputNode/intendedSpatialExperience-3ts59)
 - [`intendedSpatialExperience`](AUAudioUnit/intendedSpatialExperience-7uqrm.md)
-- CHHapticEngine
+- [`intendedSpatialExperience`](https://developer.apple.com/documentation/CoreHaptics/CHHapticEngine/intendedSpatialExperience-55ca0)
 
 #### Spatialize Audio Playback Apis That Also Have Video
 

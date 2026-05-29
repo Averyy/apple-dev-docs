@@ -47,7 +47,7 @@ When your app calls [`requestForwarding(for:)`](accessorynotificationcenter/requ
 ## See Also
 
 - [class AccessoryNotificationCenter](accessorynotificationcenter.md)
-  A class that enables an app to request permission for notification forwarding.
+  A class that asks a person for permission to forward notifications.
 
 
 ---

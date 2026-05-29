@@ -31,7 +31,7 @@ Background watch connectivity tasks are triggered whenever the paired device sen
 - [`transferCurrentComplicationUserInfo(_:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferCurrentComplicationUserInfo(_:))
 - [`transferFile(_:metadata:)`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/transferFile(_:metadata:))
 
-The background watch connectivity task informs you that your app is given background time. You must use your doc://com.apple.documentation/documentation/watchconnectivity/wcsessiondelegate methods to receive this data. Because of the asynchronous nature of these tasks, defer calling your tasks’s [`setTaskCompleted()`](wkrefreshbackgroundtask/settaskcompleted().md) method until after you’ve activated your session and received all the pending data. Use the [`hasContentPending`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/hasContentPending) property to determine whether you still have any pending data.
+The background watch connectivity task informs you that your app is given background time. You must use your [`WCSessionDelegate`](https://developer.apple.com/documentation/WatchConnectivity/WCSessionDelegate) methods to receive this data. Because of the asynchronous nature of these tasks, defer calling your tasks’s [`setTaskCompleted()`](wkrefreshbackgroundtask/settaskcompleted().md) method until after you’ve activated your session and received all the pending data. Use the [`hasContentPending`](https://developer.apple.com/documentation/WatchConnectivity/WCSession/hasContentPending) property to determine whether you still have any pending data.
 
 ## Relationships
 

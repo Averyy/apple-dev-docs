@@ -182,7 +182,6 @@ The [`NSAttributedString`](nsattributedstring.md) class and its Core Foundation 
   Migrate your code away from using these symbols.
 ### Initializers
 - [init?(coder: NSCoder)](nsattributedstring/init(coder:).md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsattributedstring/init(pasteboardpropertylist:oftype:).md)
 
 ## Relationships
 

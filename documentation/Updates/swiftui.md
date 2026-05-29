@@ -68,14 +68,14 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Change the default initial size and position of a window using the [`defaultWindowPlacement(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultWindowPlacement(_:)) modifier.
 - Change the default behavior for how windows behave when performing a zoom using [`WindowIdealSize`](https://developer.apple.com/documentation/SwiftUI/WindowIdealSize) and provide the placement for the zoomed window with the [`windowIdealPlacement(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/windowIdealPlacement(_:)) modifier.
 - Create utility windows in SwiftUI using the new [`UtilityWindow`](https://developer.apple.com/documentation/SwiftUI/UtilityWindow) scene type and toggle the window’s visibility using the [`WindowVisibilityToggle`](https://developer.apple.com/documentation/SwiftUI/WindowVisibilityToggle).
-- Customize the style of a window using the new doc://com.apple.documentation/documentation/SwiftUI/ContainerBackgroundPlacement/window container background placement, the [`toolbar(removing:)`](https://developer.apple.com/documentation/SwiftUI/View/toolbar(removing:)) view modifier, and the [`plain`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/plain) window style.
+- Customize the style of a window using the new [`window`](https://developer.apple.com/documentation/SwiftUI/ContainerBackgroundPlacement/window) container background placement, the [`toolbar(removing:)`](https://developer.apple.com/documentation/SwiftUI/View/toolbar(removing:)) view modifier, and the [`plain`](https://developer.apple.com/documentation/SwiftUI/WindowStyle/plain) window style.
 - Set the default launch behavior for a scene using the [`defaultLaunchBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/Scene/defaultLaunchBehavior(_:)) modifier.
 - Replace one scene with another using the [`pushWindow`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/pushWindow) method.
 
 ##### Immersive Spaces
 
 - Add an action to perform when the state of the immersion changes using the [`onImmersionChange(_:)`](https://developer.apple.com/documentation/SwiftUI/View/onImmersionChange(_:)) modifier.
-- Apply a custom color or dim a passthrough video in an immersive space using the doc://com.apple.documentation/documentation/SwiftUI/SurroundingsEffect/colorMultiply(_:) and [`dim(intensity:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/dim(intensity:)) initializers.
+- Apply a custom color or dim a passthrough video in an immersive space using the [`colorMultiply(_:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/colorMultiply(_:)) and [`dim(intensity:)`](https://developer.apple.com/documentation/SwiftUI/SurroundingsEffect/dim(intensity:)) initializers.
 
 ##### Documents
 
@@ -277,7 +277,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 
 - Disable selectability of an item in a [`List`](https://developer.apple.com/documentation/SwiftUI/List) or [`Table`](https://developer.apple.com/documentation/SwiftUI/Table) by applying the [`selectionDisabled(_:)`](https://developer.apple.com/documentation/SwiftUI/View/selectionDisabled(_:)) modifier.
 - Collapse or expand a [`Section`](https://developer.apple.com/documentation/SwiftUI/Section) of a list or table using the `isExpanded` binding in the section’s initializer.
-- Configure row or section spacing using the [`listRowSpacing(_:)`](https://developer.apple.com/documentation/SwiftUI/View/listRowSpacing(_:)) and doc://com.apple.documentation/documentation/SwiftUI/View/listSectionSpacing(_:)-5t518 modifiers, respectively.
+- Configure row or section spacing using the [`listRowSpacing(_:)`](https://developer.apple.com/documentation/SwiftUI/View/listRowSpacing(_:)) and [`listSectionSpacing(_:)`](https://developer.apple.com/documentation/SwiftUI/View/listSectionSpacing(_:)-5t518) modifiers, respectively.
 - Set the prominence of a badge using the [`badgeProminence(_:)`](https://developer.apple.com/documentation/SwiftUI/View/badgeProminence(_:)) view modifier.
 - Configure alternating row backgrounds using the [`alternatingRowBackgrounds(_:)`](https://developer.apple.com/documentation/SwiftUI/View/alternatingRowBackgrounds(_:)) modifier.
 - Customize table column visibility and reordering using the [`TableColumnCustomization`](https://developer.apple.com/documentation/SwiftUI/TableColumnCustomization) structure.

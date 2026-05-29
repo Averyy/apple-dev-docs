@@ -3,6 +3,8 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
+An error that occurs during accessory security-session operations.
+
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
@@ -14,18 +16,22 @@
 enum Error
 ```
 
+#### Overview
+
+The framework throws errors of this type when security-session operations fail. Use the error cases to determine the specific cause and handle it appropriately in your accessory transport-security extension.
+
 ## Topics
 
-### Enumeration Cases
+### Interpreting the error cause
 - [AccessorySecuritySession.Error.invalidated](accessorysecuritysession/error/invalidated.md)
   Session was invalidated.
 - [AccessorySecuritySession.Error.unknown](accessorysecuritysession/error/unknown.md)
   Underlying failure with an unknown cause.
 - [AccessorySecuritySession.Error.unsupported](accessorysecuritysession/error/unsupported.md)
   Unsupported value, operation, etc.
-### Instance Properties
+### Accessing error details
 - [var description: String](accessorysecuritysession/error/description.md)
-  String representation.
+  A string that describes the error.
 
 ## Relationships
 

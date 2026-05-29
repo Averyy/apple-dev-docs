@@ -8,7 +8,7 @@ Display a view in your tvOS app that lists available iOS, iPadOS, and watchOS de
 
 The DeviceDiscoveryUI framework provides a view that shows all the available iOS, iPadOS, and watchOS devices on your local network. Present this view in your tvOS app, to let the user select a device. The framework then creates an encrypted connection between your tvOS app and the selected device. This lets user’s enhance the tvOS experience. For example, they could control a tvOS game from their iPad, or send heart rate data from their watchOS app to the tvOS workout app. It also lets your app connect to devices across the local network, without giving your app access to the entire network.
 
-To create a network connection, start by defining which devices your app can connect with. Your app defines one or more application services. Each application service represents a different type of connection that can support a different subset of devices. Next display the list of available devices in a device picker view in your tvOS app using one of the application services. If the user selects a device, the device picker view returns an doc://com.apple.documentation/documentation/networkextension/nwendpoint for the selected device. Use this endpoint to create a connection, and then use the connection to communicate with the device.
+To create a network connection, start by defining which devices your app can connect with. Your app defines one or more application services. Each application service represents a different type of connection that can support a different subset of devices. Next display the list of available devices in a device picker view in your tvOS app using one of the application services. If the user selects a device, the device picker view returns an [`NWEndpoint`](https://developer.apple.com/documentation/NetworkExtension/NWEndpoint) for the selected device. Use this endpoint to create a connection, and then use the connection to communicate with the device.
 
 In your iOS, iPadOS, or watchOS app, declare that your app listens for DeviceDiscoveryUI connections. Then, as soon as your app launches, create an [`NWListener`](https://developer.apple.com/documentation/Network/NWListener). When the tvOS app connects to the listener, the listener returns a connection that your app can use to communicate with the tvOS app.
 
@@ -90,7 +90,7 @@ Display the [`DevicePicker`](devicepicker.md) as a modal view that covers the fu
 
 To create the device picker view, pass an [`NWBrowser.Descriptor`](https://developer.apple.com/documentation/Network/NWBrowser/Descriptor-swift.enum) that you created using the `NWBrowser.Descriptor.applicationService(name:options:)` method. Use the identifier that you defined in your app’s `Info.plist` file for the descriptor’s name.
 
-Next, provide an `onSelect` closure that takes a single doc://com.apple.documentation/documentation/networkextension/nwendpoint value. The system calls this closure after the user selects a device to connect to. Use the closure to set up a connection to the endpoint.
+Next, provide an `onSelect` closure that takes a single [`NWEndpoint`](https://developer.apple.com/documentation/NetworkExtension/NWEndpoint) value. The system calls this closure after the user selects a device to connect to. Use the closure to set up a connection to the endpoint.
 
 Then include a [`Label`](https://developer.apple.com/documentation/SwiftUI/Label) view to represent your app in the device picker view, and pass the default application service parameters using the [`applicationService`](https://developer.apple.com/documentation/Network/NWParameters/applicationService) property. The default parameters create an encrypted, optimized connection between two devices on your local network. You can also add protocols defined with an [`NWProtocolFramer`](https://developer.apple.com/documentation/Network/NWProtocolFramer) to these defaults to support application-level messaging in your app.
 
@@ -141,7 +141,7 @@ Alternatively, you can pass a block to the [`DDDevicePickerViewController`](ddde
 
 ##### Connect to the Provided Endpoint
 
-As soon as the user selects a device, the system passes you an doc://com.apple.documentation/documentation/networkextension/nwendpoint. Use this endpoint to connect to the selected device. Create an [`NWConnection`](https://developer.apple.com/documentation/Network/NWConnection), passing it both the endpoint and the parameters that you used to create the device picker view.
+As soon as the user selects a device, the system passes you an [`NWEndpoint`](https://developer.apple.com/documentation/NetworkExtension/NWEndpoint). Use this endpoint to connect to the selected device. Create an [`NWConnection`](https://developer.apple.com/documentation/Network/NWConnection), passing it both the endpoint and the parameters that you used to create the device picker view.
 
 ```swift
 func connectTo(endpoint: NWEndpoint) {

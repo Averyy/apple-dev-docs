@@ -1,4 +1,4 @@
 Completed scraping Core Graphics!
 Total pages scraped: 1691
-Pages skipped (unchanged): 2
+Pages skipped (unchanged): 1
 Pages failed: 0

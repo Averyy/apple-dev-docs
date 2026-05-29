@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: class
 
-A class that enables an app to request permission for notification forwarding.
+A class that asks a person for permission to forward notifications.
 
 **Availability**:
 - iOS 26.5+
@@ -17,7 +17,7 @@ class AccessoryNotificationCenter
 
 #### Overview
 
-Use this class from your accessory’s companion app to begin the notification forwarding lifecycle by calling [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md).
+Use this class from your accessory’s companion app to begin the notification forwarding life cycle by calling [`requestForwarding(for:)`](accessorynotificationcenter/requestforwarding(for:).md).
 
 ## Topics
 

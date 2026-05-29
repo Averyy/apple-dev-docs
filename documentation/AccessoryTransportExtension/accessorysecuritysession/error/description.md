@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: property
 
-String representation.
+A string that describes the error.
 
 **Availability**:
 - iOS 26.5+

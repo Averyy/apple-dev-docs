@@ -17,7 +17,7 @@ func setDelegate(_ anObject: Any!)
 
 ## Parameters
 
-- `anObject`: The object to receive the delegation messages described in doc://com.apple.documentation/documentation/exceptionhandling/nsexceptionhandlerdelegate#Logging-and-handling-exceptions
+- `anObject`: The object to receive the delegation messages described in [`NSExceptionHandlerDelegate`](nsexceptionhandlerdelegate#Logging-and-handling-exceptions.md)
 
 ## See Also
 

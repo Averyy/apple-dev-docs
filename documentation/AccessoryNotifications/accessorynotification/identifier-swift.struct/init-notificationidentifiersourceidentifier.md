@@ -3,6 +3,8 @@
 **Framework**: Accessory Notifications  
 **Kind**: init
 
+Initializes a notification identifier from its components.
+
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
@@ -12,6 +14,11 @@
 ```swift
 init(notificationIdentifier: String, sourceIdentifier: String)
 ```
+
+## Parameters
+
+- `notificationIdentifier`: An identifier that the source app sets for the notification.
+- `sourceIdentifier`: The bundle identifier of the app that sent the notification.
 
 
 ---

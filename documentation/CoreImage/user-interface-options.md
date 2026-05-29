@@ -7,6 +7,8 @@ Keys or values for the size of the input parameter controls for a filter view.
 ## Topics
 
 ### Constants
+- [let IKUISizeFlavor: String](../Quartz/IKUISizeFlavor.md)
+  A key for the size of the controls in a filter view. The associated value  can be  [`IKUISizeMini`](doc://com.apple.quartz/documentation/Quartz/IKUISizeMini), [`IKUISizeSmall`](doc://com.apple.quartz/documentation/Quartz/IKUISizeSmall), or  [`IKUISizeRegular`](doc://com.apple.quartz/documentation/Quartz/IKUISizeRegular).
 - [let IKUISizeMini: String](../Quartz/IKUISizeMini.md)
   A very small control.
 - [let IKUISizeSmall: String](../Quartz/IKUISizeSmall.md)

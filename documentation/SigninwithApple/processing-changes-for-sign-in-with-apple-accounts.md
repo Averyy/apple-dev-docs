@@ -120,6 +120,10 @@ To indicate when the user disables or permanently deletes their Apple Account, b
   Provide users a fast, secure way to sign in to your web service with their Apple Account.
 - [Sign in with Apple REST API](../signinwithapplerestapi/signinwithapplerestapi.md)
   Communicate between your app servers and Apple’s authentication servers.
+- [Displaying Sign in with Apple buttons on the web](displaying-sign-in-with-apple-buttons-on-the-web.md)
+  Configure the appearance of Sign in with Apple buttons with CSS styles.
+- [Configuring your environment for Sign in with Apple](configuring-your-environment-for-sign-in-with-apple.md)
+  Authenticate users with your web service by associating an existing app with a Services ID and private key.
 
 
 ---

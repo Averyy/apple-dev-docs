@@ -33,9 +33,10 @@ The security session handles a key exchange process (see `AccessorySecurity/Even
 - [AccessorySecuritySession.EventHandler](accessorysecuritysession/eventhandler.md)
   A protocol that defines methods for handling security session events.
 - [AccessorySecuritySession.Error](accessorysecuritysession/error.md)
+  An error that occurs during accessory security-session operations.
 ### Accessing session properties
 - [var description: String](accessorysecuritysession/description.md)
-  String representation.
+  A string that describes the security session.
 ### Managing the session life cycle
 - [func sendSecurityMessage(SecurityMessage) throws(AccessorySecuritySession.Error)](accessorysecuritysession/sendsecuritymessage(_:).md)
   Sends a security message to the system.
@@ -56,9 +57,9 @@ The security session handles a key exchange process (see `AccessorySecurity/Even
 - [struct TransportMessage](transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
 - [struct SecurityMessage](securitymessage.md)
-  A structure that carries key material for negotiating a secure channel between the system and an accessory.
+  A structure that carries key material for a secure channel between the system and an accessory.
 - [enum AccessoryTransport](accessorytransport.md)
-  Supported transport types.
+  Transport methods for communicating with an accessory.
 
 
 ---

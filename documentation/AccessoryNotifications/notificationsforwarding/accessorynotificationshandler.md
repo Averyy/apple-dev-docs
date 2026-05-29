@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: protocol
 
-A protocol that defines methods for handling notification lifecycle events in your extension.
+A protocol that defines methods for handling notification life cycle events in your extension.
 
 **Availability**:
 - iOS 26.5+
@@ -17,10 +17,15 @@ protocol AccessoryNotificationsHandler : Sendable
 
 #### Overview
 
-Implement this protocol in your app’s [`AccessoryDataProvider`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryDataProvider) extension to receive, update, and remove notifications forwarded to your accessory.
+Implement this protocol in your app’s [`didActivate(for:)`](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md) extension to receive, update, and remove notifications forwarded to your accessory.
 
 ## Topics
 
+### Managing the session life cycle
+- [func didActivate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md)
+  Establishes a notification session for communication with the system.
+- [func didInvalidate()](notificationsforwarding/accessorynotificationshandler/didinvalidate.md)
+  Handles notification session termination.
 ### Receiving notifications
 - [func addNotification(AccessoryNotification, alertingContext: AlertingContext) async throws -> Bool](notificationsforwarding/accessorynotificationshandler/addnotification(_:alertingcontext:).md)
   Provides a new notification for display on your accessory.
@@ -35,11 +40,6 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 ### Receiving accessory messages
 - [func messageHandler(TransportMessage)](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md)
   Handles decrypted messages received from the paired accessory.
-### Instance Methods
-- [func didActivate(for: NotificationsForwarding.Session)](notificationsforwarding/accessorynotificationshandler/didactivate(for:).md)
-  Called when a notification session has been established.
-- [func didInvalidate()](notificationsforwarding/accessorynotificationshandler/didinvalidate.md)
-  Called when the notification session has ended.
 
 ## Relationships
 
@@ -52,7 +52,7 @@ Implement this protocol in your app’s [`AccessoryDataProvider`](https://develo
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between the system and your extension.
+  A session object that facilitates bidirectional communication between the system and your extension.
 
 
 ---

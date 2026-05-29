@@ -25,7 +25,7 @@ init(_ purpose: IntervalStep.Purpose, step: WorkoutStep)
 
 ## See Also
 
-- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
+- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
 
 
 ---

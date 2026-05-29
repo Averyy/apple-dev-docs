@@ -35,10 +35,10 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
   Cancels the session.
 ### Accessing session properties
 - [var description: String](accessorytransportsession/description.md)
-  String representation.
+  A string that describes the transport session.
 ### Sending data
 - [func sendMessageToDataProvider(TransportMessage) throws(AccessoryTransportSession.Error)](accessorytransportsession/sendmessagetodataprovider(_:).md)
-  Send message to the data provider.
+  Sends a message to the data provider extension.
 ### Handling errors
 - [AccessoryTransportSession.Error](accessorytransportsession/error.md)
   Errors that can occur with an accessory transport session.
@@ -46,7 +46,7 @@ The [`AccessoryTransportAppExtension`](accessorytransportappextension.md) protoc
 - [var transport: AccessoryTransport?](accessorytransportsession/transport.md)
   A transport method that the session uses to communicate with the accessory.
 - [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
-  State restoration identifier.
+  An optional identifier for restoring transport state across sessions.
 
 ## Relationships
 

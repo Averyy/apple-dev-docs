@@ -16,10 +16,16 @@ A transport method that the session uses to communicate with the accessory.
 var transport: AccessoryTransport?
 ```
 
+#### Discussion
+
+Use this property to determine which transport the current instance handles, and customize your message delivery accordingly. The system may launch your extension in separate processes for different transports.
+
+> **Note**: The system automatically selects transports in this order: Bluetooth (if connected), local network (if available), then internet (if available). The system notifies your extension of the transport method it selects. Customize payload contents based on the selected type.
+
 ## See Also
 
 - [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
-  State restoration identifier.
+  An optional identifier for restoring transport state across sessions.
 
 
 ---

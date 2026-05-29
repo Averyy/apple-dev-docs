@@ -16,7 +16,7 @@ Browse notable changes in [`RealityKit`](https://developer.apple.com/documentati
 - Present popovers from volumes using [`PresentationComponent`](https://developer.apple.com/documentation/RealityKit/PresentationComponent).
 - Manually create instances of entities using [`MeshInstancesComponent`](https://developer.apple.com/documentation/RealityKit/MeshInstancesComponent).
 - Animate entities implicitly using [`animate(_:body:completion:)`](https://developer.apple.com/documentation/RealityKit/Entity/animate(_:body:completion:)).
-- Create and modify attachments in a more streamlined fashion using doc://com.apple.documentation/documentation/realitykit/viewattachmentcomponent.
+- Create and modify attachments in a more streamlined fashion using [`ViewAttachmentComponent`](https://developer.apple.com/documentation/RealityKit/ViewAttachmentComponent).
 - Make entities render behind real-world objects based on depth using [`EnvironmentBlendingComponent`](https://developer.apple.com/documentation/RealityKit/EnvironmentBlendingComponent).
 - Implement post-processing effects using [`RealityViewPostProcessEffect`](https://developer.apple.com/documentation/RealityKit/RealityViewPostProcessEffect) and [`PostProcessEffectContext`](https://developer.apple.com/documentation/RealityKit/PostProcessEffectContext).
 - Attach models together using [`attach(_:to:)`](https://developer.apple.com/documentation/RealityKit/Entity/attach(_:to:)).

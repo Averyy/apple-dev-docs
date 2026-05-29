@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: struct
 
-A structure that carries key material for negotiating a secure channel between the system and an accessory.
+A structure that carries key material for a secure channel between the system and an accessory.
 
 **Availability**:
 - iOS 26.5+
@@ -22,7 +22,13 @@ struct SecurityMessage
 
 #### Overview
 
-Your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension sends instances of this type to initiate key exchange and receives them during [`messageReceived(_:completion:)`](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md) to complete the exchange.
+Your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension provides instances of this type to initiate key exchange and receives them during [`messageReceived(_:completion:)`](accessorysecuritysession/eventhandler/messagereceived(_:completion:).md) to complete the exchange.
+
+#### Derive Encryption Secrets
+
+Export HPKE secrets once during key exchange when handling [`SecurityMessage.KeyType.encapsulatedKey`](securitymessage/keytype-swift.enum/encapsulatedkey.md). Store the exported secrets for both `HostToAccessory` and `AccessoryToHost` directions for all subsequent message encryption and decryption.
+
+> ❗ **Important**: On the accessory, use `recipient.exportSecret(context:outputByteCount:)` to derive secrets. The accessory creates an HPKE recipient; iPhone creates the sender.
 
 ## Topics
 
@@ -35,17 +41,17 @@ Your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension sen
 - [let keyType: SecurityMessage.KeyType](securitymessage/keytype-swift.property.md)
   The type of key carried by this message.
 - [SecurityMessage.KeyType](securitymessage/keytype-swift.enum.md)
-  Identifies the type of key carried by a [`SecurityMessage`](securitymessage.md).
+  A type that identifies the key material a security message carries.
 ### Determining encryption method
 - [let cipherSuite: SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.property.md)
   The cipher suite used for key exchange.
 - [let version: SecurityMessage.CipherSuite.Version](securitymessage/version.md)
   The cipher suite version.
 - [SecurityMessage.CipherSuite](securitymessage/ciphersuite-swift.enum.md)
-  A cryptographic cipher suite used during key exchange.
+  A cryptographic cipher suite for key exchange.
 ### Specifying transport preferences
 - [let supportedTransports: [AccessoryTransport]](securitymessage/supportedtransports.md)
-  An array of transports the accessory supports for sending sensitive information.
+  An array of transports that the accessory supports for sending sensitive information.
 ### Deriving HPKE keys
 - [let identifier: String?](securitymessage/identifier.md)
   An optional Bluetooth identifier that the system uses to derive HPKE keys.
@@ -68,7 +74,7 @@ Your [`AccessoryTransportSecurity`](accessorytransportsecurity.md) extension sen
 - [struct TransportMessage](transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
 - [enum AccessoryTransport](accessorytransport.md)
-  Supported transport types.
+  Transport methods for communicating with an accessory.
 
 
 ---

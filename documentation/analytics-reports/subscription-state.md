@@ -29,6 +29,8 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Subscription Name | The name of the subscription that the user has subscribed to. Subscription name appears as provided by you during setup in App Store Connect. | `string` | ✔ | ✔ |
 | Subscription Identifier | The unique identifier assigned to the subscription by Apple. | `integer` | ✔ | ✔ |
 | Subscription Duration | Standard duration of the subscription. | `string` | ✔ | ✔ |
+| Billing Frequency | The frequency at which a user is charged for their subscription. | `string` | ✔ | ✔ |
+| Billing Period | The current installment period within a 12-month commitment, ranging from the 1st through the 12th period. This dimension applies exclusively to [`Monthly Subscriptions with a 12-Month Commitment`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription). | `string` | ✔ | ✔ |
 | Subscription Group | The group that the subscription belongs to. Subscription group name appears as provided by you during setup in App Store Connect. | `string` | ✔ | ✔ |
 | Subscription Group Identifier | The unique identifier assigned to the subscription group by Apple. | `integer` | ✔ | ✔ |
 | Offer Type | Type of subscription offer the user has redeemed. | `string` | ✔ | ✔ |
@@ -60,14 +62,16 @@ The Analytics Reports framework delivers new portions of report content as insta
 | State Metric | Contingent price | The number of active contingent price subscriptions. |
 | State Metric | Grace period | The number of subscriptions with a billing issue that are in a grace period. |
 | State Metric | Billing retry | The number of subscriptions with a billing issue that are in billing retry. |
-| State Metric | Voluntarily churned | The number of subscriptions that churned within the last 2 years because the user choose to cancel. |
+| State Metric | Payment Issue | The number of commitment-based subscriptions that have missed their most recent payment. |
+| State Metric | Suspended | The number of commitment-based subscriptions that have missed the last two payments. |
+| State Metric | Voluntarily churned | The number of subscriptions that churned within the last 2 years because the user chose to cancel. |
 | State Metric | Involuntarily churned | The number of subscriptions that churned within the last 2 years due to a billing issue and weren’t recovered by Apple within the 60-day retry window. |
 | State Metric Grouping | Subscription offers | The number of active free trials and paid offers. |
 | State Metric Grouping | Paid plans | The number of active full price, preserved price, and contingent price subscriptions. |
 | State Metric Grouping | Billing issue | The number of subscriptions that failed to renew due to a billing issue, and Apple is attempting to recover them. |
 | State Metric Grouping | Churned | The number of subscriptions that churned or became inactive within the last 2 years. |
 | Family Sharing | Individual | The user is not sharing the subscription with their family. |
-| Family Sharing | Shared with family | The user is sharing they subscription with their family. |
+| Family Sharing | Shared with family | The user is sharing their subscription with their family. |
 | Cancel Reason | Billing issue | The subscriber could not be billed, and the subscription was automatically canceled after the 60-day billing retry period. |
 | Cancel Reason | Turned off auto-renew | Subscriber canceled their subscription. |
 | Cancel Reason | Price increase | Subscription automatically ended because the price of the subscription increased and the subscriber did not consent. |

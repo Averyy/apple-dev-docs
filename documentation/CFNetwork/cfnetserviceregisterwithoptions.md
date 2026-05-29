@@ -41,7 +41,7 @@ This function is thread safe.
 
 - `theService`: Network service to register; cannot be `NULL`. The registration will fail if the service doesn’t have a domain, a type, a name, and an IP address.
 - `options`: Bit flags for specifying registration options. Currently, the only registration option is `kCFNetServiceFlagNoAutoRename`. For details, see `CFNetService Registration Options`.
-- `error`: Pointer to a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror structure that will be set to an error code and the error code’s domain if an error occurs; or `NULL` if you don’t want to receive the error code and its domain.
+- `error`: Pointer to a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) structure that will be set to an error code and the error code’s domain if an error occurs; or `NULL` if you don’t want to receive the error code and its domain.
 
 ## See Also
 

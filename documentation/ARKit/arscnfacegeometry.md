@@ -54,8 +54,8 @@ When you modify the geometry with the [`update(from:)`](arscnfacegeometry/update
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [SCNAnimatable](../SceneKit/SCNAnimatable.md)
+- [SCNBoundingVolume](../SceneKit/SCNBoundingVolume.md)
 - [SCNShadable](../SceneKit/SCNShadable.md)
-- [SceneKit.SCNBoundingVolume](doc://com.apple.arkit/objc(pl)SCNBoundingVolume)
 
 ## See Also
 

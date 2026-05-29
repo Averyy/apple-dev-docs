@@ -68,8 +68,7 @@ The dismiss button in `SFAuthenticationSession` always says Cancel. Applications
   Messages that describe a content blocker error.
 - [struct SFAuthenticationError](sfauthenticationerror-swift.struct.md)
   An authentication error.
-- [SFAuthenticationError.Code](sfauthenticationerror-swift.struct/code.md)
-  Messages that describe an authentication error.
+- [SFAuthenticationError.Code](sfauthenticationerror-swift.enum.md)
 - [let SFAuthenticationErrorDomain: String](sfauthenticationerrordomain.md)
   The domain for authentication errors.
 

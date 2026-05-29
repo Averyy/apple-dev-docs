@@ -36,7 +36,7 @@ This function is thread safe as long as another thread does not alter the same `
 - `request`: The request for which the authentication method is to be performed.
 - `auth`: A `CFHTTPAuthentication` object specifying the authentication method to perform.
 - `dict`: A dictionary containing authentication credentials to be applied to the request. For information on the keys in this dictionary, see [`CFHTTPAuthentication`](cfhttpauthentication.md).
-- `error`: If an error occurs, upon return contains a doc://com.apple.documentation/documentation/corefoundation/cfstreamerror object that describes the error and the error’s domain. Pass `NULL` if you don’t want to receive error information.
+- `error`: If an error occurs, upon return contains a [`CFStreamError`](https://developer.apple.com/documentation/CoreFoundation/CFStreamError) object that describes the error and the error’s domain. Pass `NULL` if you don’t want to receive error information.
 
 ## See Also
 

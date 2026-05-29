@@ -27,7 +27,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | App Name | The name of the app provided by you during app setup in App Store Connect. | `string` | ✔ | ✔ |
 | App Apple Identifier | Your app’s Apple ID. | `integer` | ✔ | ✔ |
 | Device | The type of device on which the app was pre-ordered. | `string` | ✔ | ✔ |
-| Platform Verison | The OS version of the device on which the app was pre-ordered. | `string` | ✔ | ✔ |
+| Platform Version | The OS version of the device on which the app was pre-ordered. | `string` | ✔ | ✔ |
 | Source Type | The source type that led the user to discover your app. | `string` | ✔ | ✔ |
 | Source Info | The app referrer or web referrer that led the user to place the pre-order. | `string` |  | ✔ |
 | Campaign | The Campaign Token of the campaign created in  App Analytics. Column available starting November 19, 2024. | `string` |  | ✔ |

@@ -3,7 +3,7 @@
 **Framework**: Accessory Notifications  
 **Kind**: enum
 
-Describes the kind of notification being alerted.
+Notification types for specialized handling.
 
 **Availability**:
 - iOS 26.5+
@@ -17,13 +17,13 @@ enum Kind
 
 ## Topics
 
-### Enumeration Cases
-- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
-  An alarm notification.
-- [AlertingContext.Kind.incomingCall](alertingcontext/kind-swift.enum/incomingcall.md)
-  An incoming call notification.
+### Identifying notification types
 - [AlertingContext.Kind.notification](alertingcontext/kind-swift.enum/notification.md)
   A standard notification.
+- [AlertingContext.Kind.incomingCall](alertingcontext/kind-swift.enum/incomingcall.md)
+  An incoming call notification.
+- [AlertingContext.Kind.alarm](alertingcontext/kind-swift.enum/alarm.md)
+  A classification for alarm notifications.
 - [AlertingContext.Kind.timer](alertingcontext/kind-swift.enum/timer.md)
   A timer notification.
 
@@ -38,6 +38,11 @@ enum Kind
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var kind: AlertingContext.Kind](alertingcontext/kind-swift.property.md)
+  A classification for the notification type.
 
 
 ---

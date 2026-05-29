@@ -16,10 +16,14 @@ A data object that contains the message content.
 let data: Data
 ```
 
+#### Discussion
+
+For messages from the system containing sensitive data, this data is encrypted and ready for transmission to your accessory. For messages from your accessory containing sensitive data, encrypt this data before creating the transport message.
+
 ## See Also
 
 - [let sessionID: UUID](transportmessage/sessionid.md)
-  A unique identifier for tracking messages within a specific session.
+  A unique identifier for the message’s capability session.
 
 
 ---

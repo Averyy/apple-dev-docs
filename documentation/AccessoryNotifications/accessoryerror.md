@@ -22,16 +22,16 @@ enum AccessoryError
   An error that indicates the system doesn’t support notification forwarding for the provided accessory.
 - [AccessoryError.unsupportedPlatform](accessoryerror/unsupportedplatform.md)
   An error that indicates the current platform doesn’t support notification forwarding.
+- [AccessoryError.accessoryNotificationsUnavailable](accessoryerror/accessorynotificationsunavailable.md)
+  An error that indicates accessory notifications aren’t available in the current configuration.
 ### Response errors
-- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
-  An error that indicates alert coordination timed out.
 - [AccessoryError.invalidNotificationResponse](accessoryerror/invalidnotificationresponse.md)
   An error that indicates the system failed to handle a notification response.
+- [AccessoryError.coordinationTimeout](accessoryerror/coordinationtimeout.md)
+  An error that indicates alert coordination timed out.
 ### Communication errors
 - [AccessoryError.internalInconsistency](accessoryerror/internalinconsistency.md)
   An error that indicates an internal inconsistency.
-### Enumeration Cases
-- [AccessoryError.accessoryNotificationsUnavailable](accessoryerror/accessorynotificationsunavailable.md)
 
 ## Relationships
 

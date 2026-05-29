@@ -27,7 +27,7 @@ enum Error
   An error that indicates a failure with an unknown cause.
 ### Describing an error
 - [var description: String](accessorytransportsession/error/description.md)
-  String representation.
+  A string that describes the transport-session error.
 
 ## Relationships
 

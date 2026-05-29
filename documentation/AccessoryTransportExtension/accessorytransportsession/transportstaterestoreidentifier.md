@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: property
 
-State restoration identifier.
+An optional identifier for restoring transport state across sessions.
 
 **Availability**:
 - iOS 26.5+
@@ -15,6 +15,10 @@ State restoration identifier.
 ```swift
 var transportStateRestoreIdentifier: String?
 ```
+
+#### Discussion
+
+Use this identifier to restore connection state if your transport extension needs to relaunch.
 
 ## See Also
 

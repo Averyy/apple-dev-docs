@@ -20,7 +20,7 @@ func removeValue(forProperty property: String!) -> Bool
 
 #### Discussion
 
-When you next call [`value(forProperty:)`](abrecord/value(forproperty:).md) on that property, it returns `nil`.
+When you next call [`value(forProperty:)`](abrecord-swift.class/value(forproperty:).md) on that property, it returns `nil`.
 
 If property is `nil`, this method raises an exception.
 
@@ -32,14 +32,14 @@ For a list of the available properties, see [`Accessing Address Book Records`](h
 
 ## See Also
 
-- [func setValue(Any!, forProperty: String!) -> Bool](abrecord/setvalue(_:forproperty:).md)
+- [func setValue(Any!, forProperty: String!) -> Bool](abrecord-swift.class/setvalue(_:forproperty:).md)
   Sets the value of a given property for a record.
-- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord/setvalue(_:forproperty:error:).md)
+- [func setValue(Any!, forProperty: String!, error: ()) throws](abrecord-swift.class/setvalue(_:forproperty:error:).md)
   Sets the value of a given property for a record, returning error information.
-- [func value(forProperty: String!) -> Any!](abrecord/value(forproperty:).md)
+- [func value(forProperty: String!) -> Any!](abrecord-swift.class/value(forproperty:).md)
   Returns the value of a given property for a record.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord/removevalue(forproperty:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class/removevalue(forproperty:))*

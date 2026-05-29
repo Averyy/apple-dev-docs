@@ -16,10 +16,10 @@ var displayName: String! { get }
 
 ## See Also
 
-- [var uniqueId: String!](abrecord/uniqueid.md)
+- [var uniqueId: String!](abrecord-swift.class/uniqueid.md)
   Returns the unique ID for a record.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord/displayname)*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecord-swift.class/displayname)*

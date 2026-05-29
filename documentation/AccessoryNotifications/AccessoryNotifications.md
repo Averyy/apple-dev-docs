@@ -13,7 +13,7 @@ Receive forwarded iOS system notifications on an accessory that you develop.
 
 The Accessory Notifications framework allows accessory companion apps to request notification forwarding from people, and receive notification content from the system through an extension model. People can choose to forward notifications from all apps, no apps, or a subset of apps on their device.
 
-> ❗ **Important**: This framework supports iPhone only. You can develop and test an app that uses this framework on devices in any region. The framework currently builds only for development or Ad Hoc testing. The framework will support App Store submission and alternative distribution at a later time. Customer installations of your app can use the framework only on devices located in the EU that are signed in with an Apple Account with an EU country or region.
+> ❗ **Important**: This framework supports iPhone only. You can develop and test an app that uses this framework on devices in any region. Customer installations of your app can only use the framework on devices located in the EU that are signed in with an Apple Account with an EU country or region.
 
 #### Request Notification Forwarding
 
@@ -33,7 +33,11 @@ Your handler’s [`addNotification(_:alertingContext:)`](notificationsforwarding
 
 Your accessory receives the encrypted notification data and implements [`HPKE (RFC9180)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/rfc9180/) decryption to parse the notification details. Use [`AlertingContext`](alertingcontext.md) to determine whether to send an alert for the notification. The [`shouldAlert`](alertingcontext/shouldalert.md) property provides the recommended behavior that matches the system’s alerting logic.
 
-For incoming call notifications, check `AlertingContext/isIncomingCall` to apply special handling. Use [`sound`](alertingcontext/sound-swift.property.md) to determine sound characteristics, including whether the notification ignores silent mode.
+For specialized notification types, check [`kind`](alertingcontext/kind-swift.property.md) to apply appropriate handling such as full-screen displays for incoming calls or distinct alert styles for alarms and timers. Use [`sound`](alertingcontext/sound-swift.property.md) to determine sound characteristics, including whether the notification ignores silent mode.
+
+#### Communicate Responses From the Accessory
+
+Your accessory can send information back to the companion app, such as notification actions or user text input. The accessory transmits data over Bluetooth to your transport extension, which forwards it to your data provider extension through [`messageHandler(_:)`](notificationsforwarding/accessorynotificationshandler/messagehandler(_:).md). Parse the message, create a [`NotificationResponse`](notificationresponse.md) instance, and send it to the system using the session’s [`sendResponse(_:)`](notificationsforwarding/accessorynotificationssession/sendresponse(_:).md) method.
 
 ## Topics
 
@@ -42,16 +46,16 @@ For incoming call notifications, check `AlertingContext/isIncomingCall` to apply
   Create custom app extensions that manage iOS system notifications for your accessory.
 ### Authorization
 - [class AccessoryNotificationCenter](accessorynotificationcenter.md)
-  A class that enables an app to request permission for notification forwarding.
+  A class that asks a person for permission to forward notifications.
 - [enum ForwardingDecision](forwardingdecision.md)
   Possible decisions in response to the notification forwarding permission prompt.
 ### Notification receipt
 - [class NotificationsForwarding](notificationsforwarding.md)
   A class for handling notification forwarding in your accessory’s data provider extension.
 - [NotificationsForwarding.AccessoryNotificationsHandler](notificationsforwarding/accessorynotificationshandler.md)
-  A protocol that defines methods for handling notification lifecycle events in your extension.
+  A protocol that defines methods for handling notification life cycle events in your extension.
 - [NotificationsForwarding.Session](notificationsforwarding/session.md)
-  A session object that enables communication between the system and your extension.
+  A session object that facilitates bidirectional communication between the system and your extension.
 ### Data curation and alerting
 - [struct AccessoryNotification](accessorynotification.md)
   A structure that contains the details of a notification that iOS provides to your accessory.
@@ -59,7 +63,7 @@ For incoming call notifications, check `AlertingContext/isIncomingCall` to apply
   A structure that provides guidance for how to alert for a notification.
 ### Interactive support
 - [struct NotificationResponse](notificationresponse.md)
-  A person’s response to a notification.
+  A structure that represents a person’s response to a notification.
 ### Errors
 - [enum AccessoryError](accessoryerror.md)
   Errors the Accessory Notifications framework can throw.

@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: property
 
-String representation.
+A string that describes the transport-session error.
 
 **Availability**:
 - iOS 26.2+

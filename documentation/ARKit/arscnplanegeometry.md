@@ -48,8 +48,8 @@ As your AR session continues to run, ARKit provides refined estimates of a detec
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [SCNAnimatable](../SceneKit/SCNAnimatable.md)
+- [SCNBoundingVolume](../SceneKit/SCNBoundingVolume.md)
 - [SCNShadable](../SceneKit/SCNShadable.md)
-- [SceneKit.SCNBoundingVolume](doc://com.apple.arkit/objc(pl)SCNBoundingVolume)
 
 ## See Also
 

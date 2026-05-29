@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: init
 
-Initializes a payload with a transport method and data.
+Initializes a payload with data and a transport preference.
 
 **Availability**:
 - iOS 26.5+
@@ -16,9 +16,13 @@ Initializes a payload with a transport method and data.
 init(transport: AccessoryTransport = .bluetooth, data: Data)
 ```
 
+#### Discussion
+
+If the specified transport method isn’t available, the system chooses any available transport method.
+
 ## Parameters
 
-- `transport`: The transport method for delivering the payload.
+- `transport`: The preferred transport method for the payload. The default is Bluetooth.
 - `data`: The payload content.
 
 

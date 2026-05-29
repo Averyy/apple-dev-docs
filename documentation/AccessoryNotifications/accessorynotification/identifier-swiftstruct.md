@@ -23,6 +23,7 @@ A notification’s [`identifier`](accessorynotification/identifier-swift.propert
 
 ### Creating an identifier
 - [init(notificationIdentifier: String, sourceIdentifier: String)](accessorynotification/identifier-swift.struct/init(notificationidentifier:sourceidentifier:).md)
+  Initializes a notification identifier from its components.
 ### Accessing identifier components
 - [let notificationIdentifier: String](accessorynotification/identifier-swift.struct/notificationidentifier.md)
   An identifier that the source app sets for the notification.

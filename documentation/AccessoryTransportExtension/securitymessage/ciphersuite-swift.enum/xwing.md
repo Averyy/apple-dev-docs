@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: case
 
-A cipher suite providing XWing hybrid post-quantum key encapsulation.
+A cipher suite that provides xWing hybrid post-quantum key encapsulation.
 
 **Availability**:
 - iOS 26.5+
@@ -22,7 +22,12 @@ case xWing
 
 #### Discussion
 
-Implement this cipher suite to provide post-quantum security. This cipher suite is required for [`AccessoryTransport.internet`](accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) support.
+Implement this cipher suite for post-quantum security. The [`AccessoryTransport.internet`](accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](accessorytransport/localnetwork.md) transport types require this cipher suite. Bluetooth transport supports this cipher suite, but you can alternatively use [`SecurityMessage.CipherSuite.p256`](securitymessage/ciphersuite-swift.enum/p256.md) as a fallback.
+
+## See Also
+
+- [SecurityMessage.CipherSuite.p256](securitymessage/ciphersuite-swift.enum/p256.md)
+  A cipher suite that uses NIST P-256 elliptic curve cryptography.
 
 
 ---

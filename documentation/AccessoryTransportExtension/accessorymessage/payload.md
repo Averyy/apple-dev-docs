@@ -24,7 +24,7 @@ The [`AccessoryMessage`](accessorymessage.md) structure’s [`payloads`](accesso
 
 ### Creating a payload
 - [init(transport: AccessoryTransport, data: Data)](accessorymessage/payload/init(transport:data:).md)
-  Initializes a payload with a transport method and data.
+  Initializes a payload with data and a transport preference.
 ### Accessing payload content
 - [let data: Data](accessorymessage/payload/data.md)
   A data object that contains the payload content.

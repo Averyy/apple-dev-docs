@@ -3,7 +3,7 @@
 **Framework**: Accessory Transport Extension  
 **Kind**: enum
 
-Supported transport types.
+Transport methods for communicating with an accessory.
 
 **Availability**:
 - iOS 26.5+
@@ -16,9 +16,13 @@ Supported transport types.
 enum AccessoryTransport
 ```
 
+#### Overview
+
+The system selects the best available transport for each message by following this order: Bluetooth (if connected), local network (if available), then internet (if available).
+
 ## Topics
 
-### Enumeration Cases
+### Identifying transport types
 - [AccessoryTransport.bluetooth](accessorytransport/bluetooth.md)
   A transport method that uses Bluetooth for data delivery.
 - [AccessoryTransport.internet](accessorytransport/internet.md)
@@ -45,7 +49,7 @@ enum AccessoryTransport
 - [struct TransportMessage](transportmessage.md)
   A structure that represents a message for transmission between the system and an accessory.
 - [struct SecurityMessage](securitymessage.md)
-  A structure that carries key material for negotiating a secure channel between the system and an accessory.
+  A structure that carries key material for a secure channel between the system and an accessory.
 
 
 ---

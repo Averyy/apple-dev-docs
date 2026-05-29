@@ -22,7 +22,7 @@ func add(_ record: ABRecord!) -> Bool
 
 If the `record` argument is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](abaddressbook/save().md) method.
 
-It is more efficient to use the  [`ABRecord`](abrecord.md) method [`init(addressBook:)`](abrecord/init(addressbook:).md) when possible.
+It is more efficient to use the  [`ABRecord`](abrecord-swift.class.md) method [`init(addressBook:)`](abrecord-swift.class/init(addressbook:).md) when possible.
 
 ## Parameters
 

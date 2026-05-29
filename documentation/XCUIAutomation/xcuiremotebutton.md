@@ -75,4 +75,4 @@ enum Button
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremote/button)*
+*[View on Apple Developer](https://developer.apple.com/documentation/xcuiautomation/xcuiremotebutton)*

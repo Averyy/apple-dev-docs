@@ -311,6 +311,7 @@ Image objects don’t provide direct access to their underlying image data. Howe
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
+- [AttachableAsImage](../Testing/AttachableAsImage.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -326,7 +327,6 @@ Image objects don’t provide direct access to their underlying image data. Howe
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-- [Testing.AttachableAsImage](doc://com.apple.uikit/7Testing17AttachableAsImageP)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIItemProviderPresentationSizeProviding](uiitemproviderpresentationsizeproviding.md)
 

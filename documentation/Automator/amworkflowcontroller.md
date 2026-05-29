@@ -56,7 +56,7 @@ You can load and run a workflow with minimal overhead by using the [`AMWorkflow`
 ## Relationships
 
 ### Inherits From
-- [NSController](doc://com.apple.automator/objc(cs)NSController)
+- [NSController](../AppKit/NSController.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
