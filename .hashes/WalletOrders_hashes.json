@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:37.397702",
+    "last_updated": "2026-06-02T07:44:02.021378",
     "total_pages": 62,
-    "session_id": "2026-05-29T07:30:32.733180"
+    "session_id": "2026-06-02T07:43:57.056754"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WalletOrders.json": {
       "hash": "bd9a93a1d26acfd81905361b9364c3b8050035de80a05c599f273f77b7004baf",
-      "last_checked": "2026-05-29T07:30:33.008338",
+      "last_checked": "2026-06-02T07:43:57.268404",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"b724ec06e7e480211778e6e90476ac34\"",
       "file_path": "documentation/WalletOrders/WalletOrders.md"
     },
     "https://developer.apple.com/documentation/WalletOrders": {
       "hash": "bd9a93a1d26acfd81905361b9364c3b8050035de80a05c599f273f77b7004baf",
-      "last_checked": "2026-05-29T07:30:32.889871",
+      "last_checked": "2026-06-02T07:43:57.183932",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"b724ec06e7e480211778e6e90476ac34\"",
       "file_path": "documentation/WalletOrders/WalletOrders.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/creating-the-source-for-an-order.json": {
       "hash": "357489d45f71e7215a98f1dd79443365f3dda92ba0bbe61b3122ba9b664a573c",
-      "last_checked": "2026-05-29T07:30:33.403448",
+      "last_checked": "2026-06-02T07:43:57.560763",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"e1aa91c32963de8b80104972844984be\"",
       "file_path": "documentation/WalletOrders/creating-the-source-for-an-order.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/building-a-distributable-order-package.json": {
       "hash": "d7345ceb70ba4cd7283e1321044108de9287ca506ec154b95a8584367be61131",
-      "last_checked": "2026-05-29T07:30:33.526910",
+      "last_checked": "2026-06-02T07:43:57.741807",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"61a905c5ab422871b097779514064cdd\"",
       "file_path": "documentation/WalletOrders/building-a-distributable-order-package.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/retrieve-the-registrations-for-a-device.json": {
       "hash": "b6974b3e371dbe5917c933cdacaabe2a1b42fb1be14c6bbe80260fc47bb5e6ff",
-      "last_checked": "2026-05-29T07:30:33.636588",
+      "last_checked": "2026-06-02T07:43:57.975864",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"1130492f3b466b35a2df8d8f607b57d2\"",
       "file_path": "documentation/WalletOrders/retrieve-the-registrations-for-a-device.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/retrieve-the-latest-version-of-an-order.json": {
       "hash": "f26310703c746d9ab5ba5194912908e672c9a0c23c14a33e8abc88a2ed542a34",
-      "last_checked": "2026-05-29T07:30:33.743969",
+      "last_checked": "2026-06-02T07:43:58.120643",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"7416beba54c12d78ff037c808edbf3ef\"",
       "file_path": "documentation/WalletOrders/retrieve-the-latest-version-of-an-order.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/order.json": {
       "hash": "6170ddac9dabeb7bcf964816cbf137f08ea0e931586fc1664707900c152db591",
-      "last_checked": "2026-05-29T07:30:33.855257",
+      "last_checked": "2026-06-02T07:43:58.291787",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"27ef172813304ed80c90a2340972a657\"",
       "file_path": "documentation/WalletOrders/order.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/example-order-packages.json": {
       "hash": "abde723e55f488e7140cbb85e0652b6a4e94434f0b301b8a3896f6ff36f4ea48",
-      "last_checked": "2026-05-29T07:30:34.077035",
+      "last_checked": "2026-06-02T07:43:58.402359",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"ec2becda6893b075e9d096ab19c4f435\"",
       "file_path": "documentation/WalletOrders/example-order-packages.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/register-a-device-for-update-notifications.json": {
       "hash": "174ae4b8a4e1676d66c1389b65d6d8d3840c6136ae894173c824f3ae68ff62c5",
-      "last_checked": "2026-05-29T07:30:34.334944",
+      "last_checked": "2026-06-02T07:43:58.579857",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"2d93eb5d320a2d366eb59c29ebd3bd56\"",
       "file_path": "documentation/WalletOrders/register-a-device-for-update-notifications.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/unregister-a-device-from-update-notifications.json": {
       "hash": "d3a67c983b9b6bd77a4b0be67832b4f30b12eab9d3eb9d9350f40a6c11cdbbea",
-      "last_checked": "2026-05-29T07:30:34.441761",
+      "last_checked": "2026-06-02T07:43:58.701940",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"30aa7b3d9e8b66c85a8f1dc5f1099a07\"",
       "file_path": "documentation/WalletOrders/unregister-a-device-from-update-notifications.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/pushtoken.json": {
       "hash": "4731a16ef09f62d58b40f9db48dc3cfe2e2a32c0518a1ee3f42046840c027ba1",
-      "last_checked": "2026-05-29T07:30:34.544201",
+      "last_checked": "2026-06-02T07:43:58.874553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"ea67ecd2f317da9ffa11341f2f5107b9\"",
       "file_path": "documentation/WalletOrders/pushtoken.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/receive-log-messages.json": {
       "hash": "1166f0c7d7ffaf0c6d8e9c3c604b23520f002f623daadfdc1f41a1e9e726954f",
-      "last_checked": "2026-05-29T07:30:34.655098",
+      "last_checked": "2026-06-02T07:43:59.030156",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"0e676c1022a8a500a61496845ccd35e6\"",
       "file_path": "documentation/WalletOrders/receive-log-messages.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/logentries.json": {
       "hash": "5752d2b61804311f150a651f573217e7376de5edc3bef7daa3ac6feee550b474",
-      "last_checked": "2026-05-29T07:30:34.771576",
+      "last_checked": "2026-06-02T07:43:59.153060",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"702de75e766fa7ec1531b04650da3897\"",
       "file_path": "documentation/WalletOrders/logentries.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/customer.json": {
       "hash": "55e1b98ec6ab8a6fd08157491be9a14e76b6bb9da8fe7682635f038e22971a25",
-      "last_checked": "2026-05-29T07:30:34.892331",
+      "last_checked": "2026-06-02T07:43:59.353124",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"7e5019ef184aac7c7355ccbf07c296bf\"",
       "file_path": "documentation/WalletOrders/customer.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/merchant.json": {
       "hash": "74624952116a802ae7b6c530b6d9f23682e938627b2d9082d63af6ad9dcbd712",
-      "last_checked": "2026-05-29T07:30:35.144988",
+      "last_checked": "2026-06-02T07:43:59.517109",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"fb60588310d372099c4f1aa0746eda56\"",
       "file_path": "documentation/WalletOrders/merchant.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/address.json": {
       "hash": "1a83a1fb207c4d173c48bc7d64fe1486d0ed6415afcf72ffcbfcafb2ce3d5078",
-      "last_checked": "2026-05-29T07:30:35.257088",
+      "last_checked": "2026-06-02T07:43:59.653157",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"6104bc8ba4ceb6d43cdb81b68f70c470\"",
       "file_path": "documentation/WalletOrders/address.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/application.json": {
       "hash": "89f9b449c32c88ea60c88ba53b3e64aa96ca710a6b234df14c24802112177d57",
-      "last_checked": "2026-05-29T07:30:35.364877",
+      "last_checked": "2026-06-02T07:43:59.779362",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"d5c4a7f39679133de9f601147d2bc499\"",
       "file_path": "documentation/WalletOrders/application.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/barcode.json": {
       "hash": "8cd1721a0dff559a39482d2837111866155261e38efd72b130ac55bc343b9952",
-      "last_checked": "2026-05-29T07:30:35.467914",
+      "last_checked": "2026-06-02T07:43:59.914397",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"49947dc326d43322d6252ffc17e6895b\"",
       "file_path": "documentation/WalletOrders/barcode.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/currencyamount.json": {
       "hash": "6ff7117a608744a34b24e50c654dab0523404166bae85a66834d84a21a2d2c0b",
-      "last_checked": "2026-05-29T07:30:35.571931",
+      "last_checked": "2026-06-02T07:44:00.041896",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"53a24e9d7890fb50be94b53cfd2ebb28\"",
       "file_path": "documentation/WalletOrders/currencyamount.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/lineitem.json": {
       "hash": "00b56f3532b918b67980e4aa854a5a8f4999d9bed870caceaaf56901e5860cd9",
-      "last_checked": "2026-05-29T07:30:35.680995",
+      "last_checked": "2026-06-02T07:44:00.154331",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"ce3407783ecb00bfa2588df87fd1bb06\"",
       "file_path": "documentation/WalletOrders/lineitem.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/location.json": {
       "hash": "aabf724949a2bd7f79f5054cafaf673830ec69f5cf51c8d7d0f3fb87352656cd",
-      "last_checked": "2026-05-29T07:30:35.936732",
+      "last_checked": "2026-06-02T07:44:00.356746",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"6220b187b0af0e5c1fde558b735dd304\"",
       "file_path": "documentation/WalletOrders/location.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/orderidentifiers.json": {
       "hash": "74926dd44b01a4a167332f30a9ea988605ad9a5d179867087ca37139b1c2c681",
-      "last_checked": "2026-05-29T07:30:36.047459",
+      "last_checked": "2026-06-02T07:44:00.486417",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"7e1c9674c03fc4df4783b97028277bf5\"",
       "file_path": "documentation/WalletOrders/orderidentifiers.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/orderprovider.json": {
       "hash": "f89210bd19771d3f2fa16d480f5d0b9a332e2791f9bba572ec6022e0e75e8bfc",
-      "last_checked": "2026-05-29T07:30:36.271592",
+      "last_checked": "2026-06-02T07:44:00.618886",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"a2adbc3e07f2dde08de2693b879b5859\"",
       "file_path": "documentation/WalletOrders/orderprovider.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/payment.json": {
       "hash": "35069dd2204f2bbc9741697faf19447705816bc61e164f33932616b249036d23",
-      "last_checked": "2026-05-29T07:30:36.380148",
+      "last_checked": "2026-06-02T07:44:00.752825",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"b78166d18de7e5cc86125c9215f62dd9\"",
       "file_path": "documentation/WalletOrders/payment.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/payment/summaryitems-data.dictionary.json": {
       "hash": "8ebc78bf04cd388b6751f4b6b3673dd858b026a36f066c28792e212b7c919d50",
-      "last_checked": "2026-05-29T07:30:36.490044",
+      "last_checked": "2026-06-02T07:44:00.870661",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"b23906e3334b5a45f948ec3b190a6c35\"",
       "file_path": "documentation/WalletOrders/payment/summaryitems-datadictionary.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/paymentmethod.json": {
       "hash": "79b17811301c7be88bf88dc6da10eec11549868866bed6302273cd8fe25d5507",
-      "last_checked": "2026-05-29T07:30:36.742248",
+      "last_checked": "2026-06-02T07:44:01.051238",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"ea157bb59418359000fda1ca67f3e446\"",
       "file_path": "documentation/WalletOrders/paymentmethod.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/paymenttransaction.json": {
       "hash": "cc428c382d405f4b461eb9b34f2c8e8cbf7f4235f1cb22e4eeb7510971aa0e9f",
-      "last_checked": "2026-05-29T07:30:36.842602",
+      "last_checked": "2026-06-02T07:44:01.183498",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"70088e2edb0e9752c2afb2406762e8ba\"",
       "file_path": "documentation/WalletOrders/paymenttransaction.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/pickupfulfillment.json": {
       "hash": "f7e8a3033738c09ba83fe257e5bbe10a610d4b72f2b219774fc33ceb2e3a7971",
-      "last_checked": "2026-05-29T07:30:36.954792",
+      "last_checked": "2026-06-02T07:44:01.314900",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"c98daabd4bf052678d5d80538f8523c8\"",
       "file_path": "documentation/WalletOrders/pickupfulfillment.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/return.json": {
       "hash": "f05d506c414b3d50b9a5f28a0a109d625577888fa728a808c3d7584f907668e5",
-      "last_checked": "2026-05-29T07:30:37.065506",
+      "last_checked": "2026-06-02T07:44:01.442634",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"eecb249854e9f0a17d83982fd344e853\"",
       "file_path": "documentation/WalletOrders/return.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/returninfo.json": {
       "hash": "3e33bcc8e16abab68db49f885db3a5335b8616c373132fee14b632acf9a85d26",
-      "last_checked": "2026-05-29T07:30:37.167452",
+      "last_checked": "2026-06-02T07:44:01.664309",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"d227cbabc33baaaf259a08351122e8f7\"",
       "file_path": "documentation/WalletOrders/returninfo.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/shippingfulfillment.json": {
       "hash": "e5d8a19b74f3e5ba88d081ea529d7b179fc61986a8917f76f385e24a0a4cd95a",
-      "last_checked": "2026-05-29T07:30:37.274333",
+      "last_checked": "2026-06-02T07:44:01.855593",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"aacba455899ae0383cc0a2e95f426c4b\"",
       "file_path": "documentation/WalletOrders/shippingfulfillment.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletorders/shippingfulfillment/recipient-data.dictionary.json": {
       "hash": "4109528d6b1b8449432428080879b39e75fc746801f0103f01182705f25736fc",
-      "last_checked": "2026-05-29T07:30:37.396363",
+      "last_checked": "2026-06-02T07:44:02.018322",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:32.733180",
+      "session_id": "2026-06-02T07:43:57.056754",
       "etag": "W/\"c511fba8ac9bd35f5d0f99aa00c61f59\"",
       "file_path": "documentation/WalletOrders/shippingfulfillment/recipient-datadictionary.md"
     },

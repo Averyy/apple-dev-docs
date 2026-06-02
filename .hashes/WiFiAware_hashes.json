@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:28:42.244253",
+    "last_updated": "2026-06-02T07:40:35.413277",
     "total_pages": 636,
-    "session_id": "2026-05-29T07:28:24.056684"
+    "session_id": "2026-06-02T07:40:07.714205"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WiFiAware.json": {
       "hash": "4bb10f5336549009da8451ff06ef765c680d5dfe67b529899fd2e9e92c1e8549",
-      "last_checked": "2026-05-29T07:28:24.299406",
+      "last_checked": "2026-06-02T07:40:07.962471",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"8315bb3a211cf943afb66a7a9bd8ba8e\"",
       "file_path": "documentation/WiFiAware/WiFiAware.md"
     },
     "https://developer.apple.com/documentation/WiFiAware": {
       "hash": "4bb10f5336549009da8451ff06ef765c680d5dfe67b529899fd2e9e92c1e8549",
-      "last_checked": "2026-05-29T07:28:24.215360",
+      "last_checked": "2026-06-02T07:40:07.866811",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"8315bb3a211cf943afb66a7a9bd8ba8e\"",
       "file_path": "documentation/WiFiAware/WiFiAware.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/building-peer-to-peer-apps.json": {
       "hash": "9e9901beb4a1d7b6894f2dfedd1df35511e1a3afcc8a605bab0d45b45cdd5121",
-      "last_checked": "2026-05-29T07:28:24.552085",
+      "last_checked": "2026-06-02T07:40:08.200687",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"cd3b80923496aa5207a9d2e6285f0db6\"",
       "file_path": "documentation/WiFiAware/building-peer-to-peer-apps.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/connecting-paired-devices.json": {
       "hash": "caa512fc768a6cd50fb6d709e355c871d23e3b79f30adc426dfee400b5fa0422",
-      "last_checked": "2026-05-29T07:28:24.615062",
+      "last_checked": "2026-06-02T07:40:08.369479",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"38ca211df2d51cf1196be249be5431b4\"",
       "file_path": "documentation/WiFiAware/connecting-paired-devices.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/adopting-wi-fi-aware.json": {
       "hash": "07232408a818bade87533820f5fd2acf63450299413e03e78ecd4cc682de43ec",
-      "last_checked": "2026-05-29T07:28:24.724954",
+      "last_checked": "2026-06-02T07:40:08.547084",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"aa806d57a43836be1688f3bc70fc007b\"",
       "file_path": "documentation/WiFiAware/adopting-wi-fi-aware.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities.json": {
       "hash": "5b812a0a66c67ab1e3502f915ad7586f8136db8ff2365739f93e71afea609980",
-      "last_checked": "2026-05-29T07:28:24.829777",
+      "last_checked": "2026-06-02T07:40:08.714374",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"dec6e8384ddd2242a586139d3f706d21\"",
       "file_path": "documentation/WiFiAware/wacapabilities.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/feature.json": {
       "hash": "fa7decb920785ef0934e3730cdab15bff88eef327bc41344ed2a2cd224ea1172",
-      "last_checked": "2026-05-29T07:28:25.042305",
+      "last_checked": "2026-06-02T07:40:08.843573",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"130c2cd26f24fb7aeb9ca7b69084efce\"",
       "file_path": "documentation/WiFiAware/wacapabilities/feature.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waservice.json": {
       "hash": "3120e06fb29734821ec35028f8c21896c61d77043db1f0f61d9f9c3dde45695a",
-      "last_checked": "2026-05-29T07:28:25.152576",
+      "last_checked": "2026-06-02T07:40:09.003581",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9a0674a58262807a6b0712cab63998c6\"",
       "file_path": "documentation/WiFiAware/waservice.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice.json": {
       "hash": "217cb02d7e0495616f14efa925563a9004ac6f26ec1e29447fac35d4c2c55754",
-      "last_checked": "2026-05-29T07:28:25.379705",
+      "last_checked": "2026-06-02T07:40:09.125229",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7547d96752194b75c99e41351c11d607\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice.json": {
       "hash": "7f55cec82347fe391f2951debdd31424c9c0ac1e1fd52a615fab41b47128020d",
-      "last_checked": "2026-05-29T07:28:25.488777",
+      "last_checked": "2026-06-02T07:40:09.259989",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"616dede83e3bc5eb43b91531b21e4129\"",
       "file_path": "documentation/WiFiAware/wapublishableservice.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice.json": {
       "hash": "44562801b89592e7ebd9cdcf7bc2866156a65572c0f02743e03b343b7d37f3e5",
-      "last_checked": "2026-05-29T07:28:25.591242",
+      "last_checked": "2026-06-02T07:40:09.382986",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"3e4db27058c850220f3a0da6ee2c1e5a\"",
       "file_path": "documentation/WiFiAware/wapaireddevice.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devices.json": {
       "hash": "928eceaa641351fc9558cdcf5d6d8bf9cf22ea5e27c794c34fe030970a8829cc",
-      "last_checked": "2026-05-29T07:28:25.712908",
+      "last_checked": "2026-06-02T07:40:09.513256",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"35c2f4a016c65c4b6ca26200b6aafacf\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devices.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence.json": {
       "hash": "66d96d656375403fe6ddbd797d5bef5c71aa5fbb5fdc032cd05ea45f3391355b",
-      "last_checked": "2026-05-29T07:28:25.833240",
+      "last_checked": "2026-06-02T07:40:09.689565",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0f4c47a1e16c86b3943d2cce41684670\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.struct.json": {
       "hash": "cc5af7a496a623fa4088add717f2d1d6213869ed01790d05395c4d7387e32006",
-      "last_checked": "2026-05-29T07:28:25.936637",
+      "last_checked": "2026-06-02T07:40:09.879688",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"63918dcbb981908c560483a91ecae790\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swiftstruct.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser.json": {
       "hash": "fb56fd9f33c773fb6384043746e2f726a602802b7d3528886364d179d79d5816",
-      "last_checked": "2026-05-29T07:28:26.048553",
+      "last_checked": "2026-06-02T07:40:09.987836",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a74916ba8c9f87b32d24d7cbdd04e1e7\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/action.json": {
       "hash": "f65b3c63578f68a965b3924f97d52c14f49d99ef29523551ca61fbc8268bc0bf",
-      "last_checked": "2026-05-29T07:28:26.159594",
+      "last_checked": "2026-06-02T07:40:10.148985",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ea539506d8d6e7d4619ed62d11a510c3\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/action.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices.json": {
       "hash": "2530162baa45405ed4ae949593a73baafd3fef563a965d389a59b83a392d59c2",
-      "last_checked": "2026-05-29T07:28:26.260149",
+      "last_checked": "2026-06-02T07:40:10.290600",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0165aa915bae64b0f7a78fef1cccda0f\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener.json": {
       "hash": "bc6549b1f463bb9c525e3e7ed2253508e7ca568df41a009fdb637c80dff980ab",
-      "last_checked": "2026-05-29T07:28:26.308839",
+      "last_checked": "2026-06-02T07:40:10.405396",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"4b3343db5b8398d1ed2bbdc456ac6251\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/action.json": {
       "hash": "8b6300d40a15784f82469d9f402ce8b8383f55d6d6522d1fe24635c02018e263",
-      "last_checked": "2026-05-29T07:28:26.570626",
+      "last_checked": "2026-06-02T07:40:10.569943",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"22e791e733ce6e3d2d338c1b67ea6f32\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/action.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices.json": {
       "hash": "9b8c98b9ef0479721f8ce21f9e66d4887d7b8ebea27b27113b39a55b671350a2",
-      "last_checked": "2026-05-29T07:28:26.655603",
+      "last_checked": "2026-06-02T07:40:10.739109",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ce61baa34d65278c8fead26b0e631a9d\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/datapathparameters.json": {
       "hash": "46bcbb997f12ac62ce6f81d2500481bf031a9c13d2943de0a13dcee802f2e533",
-      "last_checked": "2026-05-29T07:28:26.884323",
+      "last_checked": "2026-06-02T07:40:10.893481",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7d498af23555af3e4218d3fe1976f805\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/datapathparameters.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waparameters.json": {
       "hash": "e306a4c476a92d727e7738f986340d808600c7f4225c7956a1acec88d9243275",
-      "last_checked": "2026-05-29T07:28:27.125199",
+      "last_checked": "2026-06-02T07:40:11.069675",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7e3997131cc99e514e8b4cdc544f0e8c\"",
       "file_path": "documentation/WiFiAware/waparameters.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint.json": {
       "hash": "7c9293d0d8954f2316f29727d32381f3cf20e4db3bc65eb65860cc0e70c7ce7f",
-      "last_checked": "2026-05-29T07:28:27.207846",
+      "last_checked": "2026-06-02T07:40:11.259299",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c474be22956fab7f52c8779d357e2589\"",
       "file_path": "documentation/WiFiAware/waendpoint.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapath.json": {
       "hash": "b2a666ce032ce6392d386ae6411d9953a25ff97a3a61dcb9c84c4779d7ee27ac",
-      "last_checked": "2026-05-29T07:28:27.576769",
+      "last_checked": "2026-06-02T07:40:11.658911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c4bb15cbca9d544c2bf2c3e3c4becfc4\"",
       "file_path": "documentation/WiFiAware/wapath.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancemode.json": {
       "hash": "53943a35b32d302fe2106cd3b5d90f36cd5229d4a63204258991b40ca7a42195",
-      "last_checked": "2026-05-29T07:28:27.663751",
+      "last_checked": "2026-06-02T07:40:11.769269",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"afccc70e28933057c5042309c8390966\"",
       "file_path": "documentation/WiFiAware/waperformancemode.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waaccesscategory.json": {
       "hash": "b47272eb22a55dd6709e38dee58b32f6b19799e27f3ff732cca834cf7f1ad1ce",
-      "last_checked": "2026-05-29T07:28:27.774240",
+      "last_checked": "2026-06-02T07:40:11.904553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"3a27b93ecb350d435d9350ae9a76f6e7\"",
       "file_path": "documentation/WiFiAware/waaccesscategory.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport.json": {
       "hash": "477e62c6771c81a9aa2ffe13a3f97ad5fa3e61727abbc4c1d94caa8be7c3199f",
-      "last_checked": "2026-05-29T07:28:27.884860",
+      "last_checked": "2026-06-02T07:40:12.014062",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ff65f0c72ca4e8f65ff1060c71994fe2\"",
       "file_path": "documentation/WiFiAware/waperformancereport.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror.json": {
       "hash": "993373b6ffffe7fcd9c8cfd64bbeb45bcbd62ca05ab5aaa7ad39504e5c6749f8",
-      "last_checked": "2026-05-29T07:28:28.126917",
+      "last_checked": "2026-06-02T07:40:12.182831",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c80ff4c1761ab5e20bbddcda10329f87\"",
       "file_path": "documentation/WiFiAware/waerror.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/supportedfeatures.json": {
       "hash": "74bb089b33e1e49ed0d0e9680ef868f1b032bef87f6ea93bd573785a240860a8",
-      "last_checked": "2026-05-29T07:28:28.307199",
+      "last_checked": "2026-06-02T07:40:12.321451",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"269b0181cb2ae3a362cbb882bc6a7795\"",
       "file_path": "documentation/WiFiAware/wacapabilities/supportedfeatures.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/maximumconnectabledevices.json": {
       "hash": "26eb594c7df2d6e1c5e9d25574bf70c5b0ced71b33732eafd72aab49e0e90184",
-      "last_checked": "2026-05-29T07:28:28.407109",
+      "last_checked": "2026-06-02T07:40:12.446573",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5e68cdc9b8fffb2238f8ee3ff9f72a1e\"",
       "file_path": "documentation/WiFiAware/wacapabilities/maximumconnectabledevices.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/maximumpublishableservices.json": {
       "hash": "89a8f868a0b3f095f47efafd33353a759e677c0221468080a2f9a2641f53b3fc",
-      "last_checked": "2026-05-29T07:28:28.518522",
+      "last_checked": "2026-06-02T07:40:12.585244",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d66b2ada14ee66b31bb8caf8d5bcf853\"",
       "file_path": "documentation/WiFiAware/wacapabilities/maximumpublishableservices.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/maximumsubscribableservices.json": {
       "hash": "4f683b043656fec52b9b52c1fde664f77b1f2c7ffe4fa517465dbcb6777bac3f",
-      "last_checked": "2026-05-29T07:28:28.621873",
+      "last_checked": "2026-06-02T07:40:12.723963",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"98fcc482f1b0ec82f06e124f147ea974\"",
       "file_path": "documentation/WiFiAware/wacapabilities/maximumsubscribableservices.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wacapabilities/feature/wifiaware.json": {
       "hash": "24450628b0f5542ce47bf3eafbc06e05852a4bc7905479697a6cf66074eff6e9",
-      "last_checked": "2026-05-29T07:28:28.674665",
+      "last_checked": "2026-06-02T07:40:12.876973",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"78d3ca0f332cf2d7dee092d2789c7061\"",
       "file_path": "documentation/WiFiAware/wacapabilities/feature/wifiaware.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waservice/allservices.json": {
       "hash": "ee9055b633fd0fc0a318e0a94482fce5fae6402e5b3c63cb18281faa9649b579",
-      "last_checked": "2026-05-29T07:28:28.774968",
+      "last_checked": "2026-06-02T07:40:13.077771",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b6b6b323a7d532a33db57c84270f1b56\"",
       "file_path": "documentation/WiFiAware/waservice/allservices.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waservice/name.json": {
       "hash": "6b2d41a35a7fe316475dc6141b62fd396833d37649e046e1b1546fb4b4bb7939",
-      "last_checked": "2026-05-29T07:28:28.885208",
+      "last_checked": "2026-06-02T07:40:13.200843",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"593c02c3420a771b72acde13803cc515\"",
       "file_path": "documentation/WiFiAware/waservice/name.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice/allservices.json": {
       "hash": "117f9db41a0be20ab2e4f5e96ec852e56a959366b22f9189f50684cfe5ce18a6",
-      "last_checked": "2026-05-29T07:28:29.102807",
+      "last_checked": "2026-06-02T07:40:13.325002",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7fe919d4c59de3588fc6105cacac85d6\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice/allservices.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice/id-swift.typealias.json": {
       "hash": "7d4ca53bfb7f693e0103ce3a7359d6cbb4e36079a046313326d7d5ed5ad10f55",
-      "last_checked": "2026-05-29T07:28:29.202464",
+      "last_checked": "2026-06-02T07:40:13.463363",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"08fbd37a08ca4738e627c8478d6779f0\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice/id-swifttypealias.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice/id-swift.property.json": {
       "hash": "f967fa1c41ad04a62bc912fb1ab137030cb09879da7e5412f9b4cd286cfafb35",
-      "last_checked": "2026-05-29T07:28:29.311031",
+      "last_checked": "2026-06-02T07:40:13.631315",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f60b9f1b16e6411ee845dd9b8b4c8c06\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice/id-swiftproperty.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice/name.json": {
       "hash": "14ca65b25afa9942a166aeff235838c6a060c707f0d2ee3b920ee74de8008a2c",
-      "last_checked": "2026-05-29T07:28:29.433095",
+      "last_checked": "2026-06-02T07:40:13.757655",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"76055ea34643bd0dd228edc72edf12a0\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice/name.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscribableservice/description.json": {
       "hash": "f13019032ec75d12674e4fd5d58100169b74e1c5cacefaba43e66859315d6221",
-      "last_checked": "2026-05-29T07:28:29.535180",
+      "last_checked": "2026-06-02T07:40:13.866144",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ed28b78181f11fcca7a860dfe3a1c265\"",
       "file_path": "documentation/WiFiAware/wasubscribableservice/description.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice/allservices.json": {
       "hash": "0f35946b0612f803da66a50355367734474c396823f99874f6a12ea5be638bca",
-      "last_checked": "2026-05-29T07:28:29.637904",
+      "last_checked": "2026-06-02T07:40:14.096991",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f89c27a3720b62e7fa100ae322084535\"",
       "file_path": "documentation/WiFiAware/wapublishableservice/allservices.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice/id-swift.typealias.json": {
       "hash": "7ef7a39111a846b6ca8967cdd0139d9848a0acc0bf7ec38f82dbbf7d95ec0bad",
-      "last_checked": "2026-05-29T07:28:29.738750",
+      "last_checked": "2026-06-02T07:40:14.215825",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"51cfa97332742648f502831e3f42d773\"",
       "file_path": "documentation/WiFiAware/wapublishableservice/id-swifttypealias.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice/id-swift.property.json": {
       "hash": "fc380c1dbea47775f4b8cacb4144b3649f58161aebd4c28ef1de50d62dde2e23",
-      "last_checked": "2026-05-29T07:28:29.850584",
+      "last_checked": "2026-06-02T07:40:14.380950",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"23ca99d19fdee485a45e72950fa06c5b\"",
       "file_path": "documentation/WiFiAware/wapublishableservice/id-swiftproperty.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice/name.json": {
       "hash": "a42c261fdc98a14c40309116e0e58adc74d0c1976a8cb7a949d8093d8e0a1e12",
-      "last_checked": "2026-05-29T07:28:29.907381",
+      "last_checked": "2026-06-02T07:40:14.543966",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"60eb8265563d4826f1f50e1fce60eaf1\"",
       "file_path": "documentation/WiFiAware/wapublishableservice/name.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublishableservice/description.json": {
       "hash": "c8bea6ec886b0ecbc7cc38b943cffb86ef2281e4a8e291540bac3e45e35c5633",
-      "last_checked": "2026-05-29T07:28:30.135444",
+      "last_checked": "2026-06-02T07:40:14.858524",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"bffc0620e0f5b1eb16fc6ae940fb579d\"",
       "file_path": "documentation/WiFiAware/wapublishableservice/description.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/alldevices.json": {
       "hash": "db91f72f3f9427a1e9a8eb1d253393f818efbf69a38848e3b8491913dc613f7a",
-      "last_checked": "2026-05-29T07:28:30.239297",
+      "last_checked": "2026-06-02T07:40:14.994763",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"13455ada86613f320aa25ca1bd2823c9\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/alldevices.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/alldevices(matching:).json": {
       "hash": "095a76839ad672368874e5ae5bb74d67b2ded37948200177efdb34d1c53de569",
-      "last_checked": "2026-05-29T07:28:30.347745",
+      "last_checked": "2026-06-02T07:40:15.132869",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a5cab1ca0c2940041cdac7f62e29822f\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/alldevices-matching.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/id-swift.typealias.json": {
       "hash": "7221794ea37f93411a4f2b88f2c41554625afff60d62d5d36d441bc06614f637",
-      "last_checked": "2026-05-29T07:28:30.454678",
+      "last_checked": "2026-06-02T07:40:15.250128",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"27e09865d6e54cda570d57da5a623915\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/id-swifttypealias.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/id-swift.property.json": {
       "hash": "b2b1f45d55fd21558ac286a378481d55ef890c46199534ad1ead04c7fec7819d",
-      "last_checked": "2026-05-29T07:28:30.589242",
+      "last_checked": "2026-06-02T07:40:15.384693",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c0689e0ab2bb7eb1d5a351d297145c47\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/id-swiftproperty.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/name.json": {
       "hash": "41122849274dbb8b464c2585d5d2d14e875a929e1dc038cde462030f978ab81f",
-      "last_checked": "2026-05-29T07:28:30.696212",
+      "last_checked": "2026-06-02T07:40:15.518582",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"990fa528a1ad0a49aa3d6283a9b194b4\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/name.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.property.json": {
       "hash": "9e79ebfca1febc18db8cc6ecfe5776eb17424337b2d3b7c70971d01ca93500b6",
-      "last_checked": "2026-05-29T07:28:30.745472",
+      "last_checked": "2026-06-02T07:40:15.672120",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"71d425a39be4ebe94daf3edce28e216a\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swiftproperty.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/description.json": {
       "hash": "c44e838d8502041a9f01feb866ef73db68d90d44499b2ae673fe8425fb1f52ac",
-      "last_checked": "2026-05-29T07:28:30.859835",
+      "last_checked": "2026-06-02T07:40:15.835725",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"bcfe5e1a210a55924d9ced8107f40ef4\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/description.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/current().json": {
       "hash": "5a63e39b785515c663679e1e75d180ffc5d42f2e23f30b671be6e3531b1a5fcc",
-      "last_checked": "2026-05-29T07:28:30.923449",
+      "last_checked": "2026-06-02T07:40:15.954641",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"3662fc437cb98cd1cd5f51e822cd0c59\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/current.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/asynciterator.json": {
       "hash": "d4e20a9384b50291ea249206e4f3cce3dffc43608168fa60340a5a553a965f73",
-      "last_checked": "2026-05-29T07:28:31.037350",
+      "last_checked": "2026-06-02T07:40:16.085668",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"2f74bc15395a8b9050bc62d790ef2a11\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/asynciterator.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/makeasynciterator().json": {
       "hash": "dde6eed0082dd39bdb8368dc5b5d956ead65a96739066943d4086f4ddb13b551",
-      "last_checked": "2026-05-29T07:28:31.088303",
+      "last_checked": "2026-06-02T07:40:16.210741",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"da1f5942508a2eb0e21dff30dd8c29ac\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/makeasynciterator.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/element.json": {
       "hash": "94797346dc4daa500ca1d54491f29910afa9749c398e65b3206a69156ba058db",
-      "last_checked": "2026-05-29T07:28:31.212132",
+      "last_checked": "2026-06-02T07:40:16.359325",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b221d5db4ae997ee67a38083ec26a892\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/element.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.struct/vendorname.json": {
       "hash": "2948f8ff5584cc26f7f2462c41d6a3863c7b2a4d2efd7c552167cf59e2a1c8a2",
-      "last_checked": "2026-05-29T07:28:31.272109",
+      "last_checked": "2026-06-02T07:40:16.495934",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d2916d2eb28be7b34866f3bd60e352c8\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swift.struct/vendorname.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.struct/modelname.json": {
       "hash": "0d7fa8ddc28952375e13de88d0928f14095c9fa61f0cdc7047c1829522f03bbb",
-      "last_checked": "2026-05-29T07:28:31.390842",
+      "last_checked": "2026-06-02T07:40:16.699759",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b228c06d2b02ae8560cc471b3b1a2b2a\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swift.struct/modelname.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.struct/pairingname.json": {
       "hash": "4f204c164439ba962a58f7cc10ff1eb43d731be8558f8eaa8754d90701ae0353",
-      "last_checked": "2026-05-29T07:28:31.509678",
+      "last_checked": "2026-06-02T07:40:16.834171",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b04e3c41fcfc85576fb5ec190f71ca01\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swift.struct/pairingname.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/pairinginfo-swift.struct/description.json": {
       "hash": "711694515d1e6278bf18cd53466805373a1b0dfd5704375b78264a43fc926be4",
-      "last_checked": "2026-05-29T07:28:31.616463",
+      "last_checked": "2026-06-02T07:40:16.959761",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"6adc9e93aa83e00bc57327821adc2c0b\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/pairinginfo-swift.struct/description.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/endpoint.json": {
       "hash": "f751e19abc31b0390cb2a495675c06d253a40ed6dd1deec1af435e557c33bae3",
-      "last_checked": "2026-05-29T07:28:31.729007",
+      "last_checked": "2026-06-02T07:40:17.084577",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d0d690d51d58200127db3944a7fa6a5c\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/endpoint.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/makedescriptor().json": {
       "hash": "6af080ac469b80b6a146384d72d229705ce5a577edefe4a5075eeb398380604b",
-      "last_checked": "2026-05-29T07:28:31.849983",
+      "last_checked": "2026-06-02T07:40:17.203139",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"e2f993a1feaf71639639b812c595ce08\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/makedescriptor.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/configureparameters(_:).json": {
       "hash": "b4f155e32d273c6d6da2275df676d8d9fbd9ad137e89b368b251abb9d7c857b5",
-      "last_checked": "2026-05-29T07:28:31.957425",
+      "last_checked": "2026-06-02T07:40:17.324311",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5946c72e62333c71cfe36607261ee8bf\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/configureparameters.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/makeendpoint(from:).json": {
       "hash": "836b3fa7558687c2aa461130082fe70610710b3b3fe5314d3b7e92df90a7eebe",
-      "last_checked": "2026-05-29T07:28:32.061368",
+      "last_checked": "2026-06-02T07:40:17.460223",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"cd7c0b5d4ba7849fc49d30a523be161f\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/makeendpoint-from.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/action/connecting(to:from:).json": {
       "hash": "69b181bb7195cc099016fc80a7286923e369a668a8907ce5ff33592b5184e406",
-      "last_checked": "2026-05-29T07:28:32.177540",
+      "last_checked": "2026-06-02T07:40:17.570049",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"90a455e733b9f4023782db97c3796673\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/action/connecting-tofrom.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices/selected(_:)-8myz8.json": {
       "hash": "dffdef500f1285161b2eb9cb7bb4e5c2c34f844ed4aceb7cec37452cc2e6a046",
-      "last_checked": "2026-05-29T07:28:32.281809",
+      "last_checked": "2026-06-02T07:40:17.714177",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5d2d51de098a132e255c27caeb11d956\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices/selected-8myz8.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices/selected(_:)-5arv0.json": {
       "hash": "1d950d42b0bab78c0f63d63ee1eb6833d705d8ba08fde858b9a4f679de0b322e",
-      "last_checked": "2026-05-29T07:28:32.340990",
+      "last_checked": "2026-06-02T07:40:17.846888",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"45a2e236e78736e24c15185b6d809afc\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices/selected-5arv0.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices/matching(_:).json": {
       "hash": "e80fa6c185bc5ba616bd0a06c9ac07660b59f77a01ab41599cfc78234356f8dc",
-      "last_checked": "2026-05-29T07:28:32.676429",
+      "last_checked": "2026-06-02T07:40:18.102553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ae5b76923671fb5b3f5811f1fc13b10a\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices/matching.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices/allpaireddevices.json": {
       "hash": "bb939427737928ea267c4c330328353b4b23ead5ce1249c5433bc5d8046a42bd",
-      "last_checked": "2026-05-29T07:28:32.779163",
+      "last_checked": "2026-06-02T07:40:18.218487",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"96b99d7447aae40fd9f6459eca73addf\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices/allpaireddevices.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/configureparameters(_:).json": {
       "hash": "a9ea79ee6709eed3283254619df1a9fa0e56ac6a5bd4a43a60d52e9d94ae9812",
-      "last_checked": "2026-05-29T07:28:32.883580",
+      "last_checked": "2026-06-02T07:40:18.339951",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a12a849427350adf5706338b434397f3\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/configureparameters.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/service.json": {
       "hash": "dacaaea623493977821c9cd4e57c00ee91fd64b01048a4e0740bc4ec6b9ff853",
-      "last_checked": "2026-05-29T07:28:32.986759",
+      "last_checked": "2026-06-02T07:40:18.489591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b8aac2289c297eac33b0710d647e3ea6\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/service.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/isapplicationservice.json": {
       "hash": "f7a5d4a84738704d86b49bca831cdd4690119f002b9f7a28d08a13688fa348f2",
-      "last_checked": "2026-05-29T07:28:33.099011",
+      "last_checked": "2026-06-02T07:40:18.618235",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"aa9c105b8ace393bf04e17f397bf978d\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/isapplicationservice.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/action/connecting(to:from:datapath:).json": {
       "hash": "b50fac0e62a9e6b345b8853b64f948158bcfc96ea98e8d1f302432276772e38f",
-      "last_checked": "2026-05-29T07:28:33.209311",
+      "last_checked": "2026-06-02T07:40:18.727233",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9aa0f88aead2785c8a996b35e06f86ff\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/action/connecting-tofromdatapath.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices/selected(_:)-56vig.json": {
       "hash": "d632d7302c7f3cdfec1bb0df3bff53ee60a9b95290809691be43191d84647ab1",
-      "last_checked": "2026-05-29T07:28:33.418226",
+      "last_checked": "2026-06-02T07:40:19.013119",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0a8018a81c9f678e8e5e7b63efc92557\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices/selected-56vig.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices/selected(_:)-1e2.json": {
       "hash": "ad8450c21b88367e51779f7d960ef9e999406241ea90adab58b43b511d39d1ba",
-      "last_checked": "2026-05-29T07:28:33.467338",
+      "last_checked": "2026-06-02T07:40:19.140594",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"fa7f089dca77f956726ee5845ecf2b09\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices/selected-1e2.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices/matching(_:).json": {
       "hash": "d1032f35b2794dd8a5ef2d42689d877d3f65689f126066c9506dca286d90c218",
-      "last_checked": "2026-05-29T07:28:33.720774",
+      "last_checked": "2026-06-02T07:40:19.397250",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"2d8bd03ed1bf46f3639daea481144ec3\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices/matching.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices/allpaireddevices.json": {
       "hash": "a1f8cd217a55f0c5c5af89736fceb3a5892f250c47bdceb9471d8e51962fb584",
-      "last_checked": "2026-05-29T07:28:33.827502",
+      "last_checked": "2026-06-02T07:40:19.517026",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"23b6cd70fa89ca0d279dfd976fad3fd4\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices/allpaireddevices.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/datapathparameters/defaults.json": {
       "hash": "433c09eb3b8f033302cb53cb8d52fb5ed9171db3290aaf2891a909054874ab96",
-      "last_checked": "2026-05-29T07:28:33.926760",
+      "last_checked": "2026-06-02T07:40:19.642121",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9bad5cbdc6b5ae7d83e3c6ded81ae742\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/datapathparameters/defaults.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/datapathparameters/realtime.json": {
       "hash": "215f59ca3df8e058d3b704689e944c5b8bdc70f86b8aff52e1feb957f93905bf",
-      "last_checked": "2026-05-29T07:28:34.028638",
+      "last_checked": "2026-06-02T07:40:19.777068",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"87b85cfbdbebeb9bcc235e58ceeb9571\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/datapathparameters/realtime.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waparameters/defaults.json": {
       "hash": "36e43cbcf72e39e9231715fce7be3d323dd4a8893cdd16674673b024376e7841",
-      "last_checked": "2026-05-29T07:28:34.132503",
+      "last_checked": "2026-06-02T07:40:19.897010",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b9b596649376454c13d941c897ad757e\"",
       "file_path": "documentation/WiFiAware/waparameters/defaults.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waparameters/realtime.json": {
       "hash": "a71537b2e14bec1f576601c6f970ef249118d9c0240ef8bde8ef2759e746b6a8",
-      "last_checked": "2026-05-29T07:28:34.232102",
+      "last_checked": "2026-06-02T07:40:19.999803",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d082ba3487bffe3b85f5b7716791df27\"",
       "file_path": "documentation/WiFiAware/waparameters/realtime.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waparameters/performancemode.json": {
       "hash": "fd56887171ec76746af1fa87fd27da9cdc9e36a9858f01ed89387d5eed2ea4f4",
-      "last_checked": "2026-05-29T07:28:34.351740",
+      "last_checked": "2026-06-02T07:40:20.123339",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"04307c6714375cf768fbd3a1140a9287\"",
       "file_path": "documentation/WiFiAware/waparameters/performancemode.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waparameters/init(performancemode:).json": {
       "hash": "765f770ac698100e8e088abc1ce3558a48768ffa53043a183f9c12c4e743f2b6",
-      "last_checked": "2026-05-29T07:28:34.461500",
+      "last_checked": "2026-06-02T07:40:20.234998",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"1abe4ae2d13ba0da0104c76c99939550\"",
       "file_path": "documentation/WiFiAware/waparameters/init-performancemode.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/publishedservice.json": {
       "hash": "424bbe649d57cc3e7ea6eeeac67dd6975f6aba5d86e002fef3199c2a8b1241cc",
-      "last_checked": "2026-05-29T07:28:34.585239",
+      "last_checked": "2026-06-02T07:40:20.381820",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"250a2fb8f708daf8f23630e48ea81f90\"",
       "file_path": "documentation/WiFiAware/waendpoint/publishedservice.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/subscribedservice.json": {
       "hash": "d47240fc5a247cea8de64c397a254378b2213cdcb07f45550ce11cb24af1490e",
-      "last_checked": "2026-05-29T07:28:34.708686",
+      "last_checked": "2026-06-02T07:40:20.534980",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"e4ee1813d0a68fe502002762619a4ab5\"",
       "file_path": "documentation/WiFiAware/waendpoint/subscribedservice.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/device.json": {
       "hash": "93e4e2cb7b4f5c453aa47397b4ff4b410730a154fba47e9c4cd2301dcab286cc",
-      "last_checked": "2026-05-29T07:28:34.771667",
+      "last_checked": "2026-06-02T07:40:20.646362",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"06ee651dc56bf7e5291dab7c9cc68768\"",
       "file_path": "documentation/WiFiAware/waendpoint/device.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/description.json": {
       "hash": "78e48cb0d3f5b10f86b50771d875a2d0fe5693a38499da1b2e7fd8795f431909",
-      "last_checked": "2026-05-29T07:28:34.877271",
+      "last_checked": "2026-06-02T07:40:20.782730",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9cbc05d16ea8e2ac2370787af5d2977a\"",
       "file_path": "documentation/WiFiAware/waendpoint/description.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/==(_:_:).json": {
       "hash": "60fe1bd2b15fa36a808eb5fa7e29a5780e5f031dee9806bc820cc1ebd9a0ffe0",
-      "last_checked": "2026-05-29T07:28:34.978957",
+      "last_checked": "2026-06-02T07:40:20.911131",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"e12533e3f3c4c45b0f257af08c2c7410\"",
       "file_path": "documentation/WiFiAware/waendpoint/equal.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waendpoint/hash(into:).json": {
       "hash": "05c0b370e88999fca7a44f72e622db31d967efe44b7342740012f91b2e666d84",
-      "last_checked": "2026-05-29T07:28:35.090673",
+      "last_checked": "2026-06-02T07:40:21.092344",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"e65f04f3eceaa0ae8f59b3a2938d6373\"",
       "file_path": "documentation/WiFiAware/waendpoint/hash-into.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapath/endpoint.json": {
       "hash": "115723ed542d86e1eedf6bde43a6903da33c10c626ca04d0ff5a76bcff170e54",
-      "last_checked": "2026-05-29T07:28:35.804871",
+      "last_checked": "2026-06-02T07:40:22.712238",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"38d780c302c7b56f0152c1d91301fea9\"",
       "file_path": "documentation/WiFiAware/wapath/endpoint.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapath/performance.json": {
       "hash": "19eec3b50ee8209e9ba06e4c92dcf943e55e25adc13bc5a1882f47ac7e6c73e8",
-      "last_checked": "2026-05-29T07:28:35.918378",
+      "last_checked": "2026-06-02T07:40:23.021997",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"70c69c6860c2f197c4c1a58d045b5ce8\"",
       "file_path": "documentation/WiFiAware/wapath/performance.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapath/durationactive.json": {
       "hash": "59dbd6027dcb0a630e38330ed3acd8762e8758b030dd3aabdd28011b451ce056",
-      "last_checked": "2026-05-29T07:28:36.019945",
+      "last_checked": "2026-06-02T07:40:23.322178",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"522eb3085f681858d46843c9fc3d59cd\"",
       "file_path": "documentation/WiFiAware/wapath/durationactive.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancemode/bulk.json": {
       "hash": "e27b7c082d8111cc48137a184390c12a38622cae75b8d064c9a330ebe76f29ab",
-      "last_checked": "2026-05-29T07:28:36.126574",
+      "last_checked": "2026-06-02T07:40:23.613836",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ff2791915b71d459b95b379618617738\"",
       "file_path": "documentation/WiFiAware/waperformancemode/bulk.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancemode/realtime.json": {
       "hash": "453792c038e142eaa3bd921b1485c7c8cf299c4e5bdc49e7b59aee0ace31a020",
-      "last_checked": "2026-05-29T07:28:36.243250",
+      "last_checked": "2026-06-02T07:40:23.906524",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f9795f3b5bd4a06971cade39dfa1ed59\"",
       "file_path": "documentation/WiFiAware/waperformancemode/realtime.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waaccesscategory/besteffort.json": {
       "hash": "1c735d1e462757a7978cfa64e46ea8e4da10e5403bf35fa08245d225c36967da",
-      "last_checked": "2026-05-29T07:28:36.357185",
+      "last_checked": "2026-06-02T07:40:24.218934",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"4beeac864b1e8a39e42a165c5ef1716a\"",
       "file_path": "documentation/WiFiAware/waaccesscategory/besteffort.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waaccesscategory/background.json": {
       "hash": "3868d3a1c3071bc5e8714c8107f30b0f1043eb2845d3e65665d37c878b0d3e35",
-      "last_checked": "2026-05-29T07:28:36.470550",
+      "last_checked": "2026-06-02T07:40:24.514784",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b135057908e1c5a52a7518aa54475fa0\"",
       "file_path": "documentation/WiFiAware/waaccesscategory/background.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waaccesscategory/interactivevideo.json": {
       "hash": "384ffd4f63d47c2e3a203086cef290319edd37911e1ed9f2e4432e4b24b93c77",
-      "last_checked": "2026-05-29T07:28:36.580659",
+      "last_checked": "2026-06-02T07:40:24.671747",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d05008511853940fffbfe351b61ca143\"",
       "file_path": "documentation/WiFiAware/waaccesscategory/interactivevideo.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waaccesscategory/interactivevoice.json": {
       "hash": "227d6297a7bbb0feca858b2d12d869efcdf59b5fbbec34a3e8b89d0880fbfb55",
-      "last_checked": "2026-05-29T07:28:36.693815",
+      "last_checked": "2026-06-02T07:40:24.974520",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5395d799cfd8ce856380a20fcbf7d123\"",
       "file_path": "documentation/WiFiAware/waaccesscategory/interactivevoice.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/timestamp.json": {
       "hash": "978a7dd68446451a739ea5de68b7c923c0fcdba4f2a9b6321a719719fab52983",
-      "last_checked": "2026-05-29T07:28:36.802259",
+      "last_checked": "2026-06-02T07:40:25.147390",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a0abbdc3fe1d31478fc098f476f3f15e\"",
       "file_path": "documentation/WiFiAware/waperformancereport/timestamp.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/localtimestamp.json": {
       "hash": "ea0dae98bf592e5a79bf0e727e99b4d79930ff769be6d79832f768e81f579749",
-      "last_checked": "2026-05-29T07:28:36.903689",
+      "last_checked": "2026-06-02T07:40:25.444596",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d8fbad8356a20406f5bf5fdfc882586b\"",
       "file_path": "documentation/WiFiAware/waperformancereport/localtimestamp.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/throughputceiling.json": {
       "hash": "a08a40d304238d4ab31ec977667844de701dd6d103c8344c6ff87e372819c2d5",
-      "last_checked": "2026-05-29T07:28:37.003347",
+      "last_checked": "2026-06-02T07:40:25.614782",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f9a9dd824f29bc0f382fa7109e48583f\"",
       "file_path": "documentation/WiFiAware/waperformancereport/throughputceiling.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/throughputcapacity.json": {
       "hash": "e764a6802c7a4b9e0c4ac67285cd060784c6e751ea71796d73a9f9b172d2d5af",
-      "last_checked": "2026-05-29T07:28:37.120671",
+      "last_checked": "2026-06-02T07:40:25.908578",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"e7ae38e5277136219576f1a7cb68483c\"",
       "file_path": "documentation/WiFiAware/waperformancereport/throughputcapacity.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/throughputcapacityratio.json": {
       "hash": "82fcc7b1f591c3661c7e5383706ff8ab46aa586b856e67d423b07dd9c9036231",
-      "last_checked": "2026-05-29T07:28:37.222462",
+      "last_checked": "2026-06-02T07:40:26.205916",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f89c75cb5d6db3fe20f5e88ed5c355f1\"",
       "file_path": "documentation/WiFiAware/waperformancereport/throughputcapacityratio.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/transmitlatency.json": {
       "hash": "b0020ce10d98042e62262d05f5ca9d8031b9fe7e132ec4ee37960e6a1950f98f",
-      "last_checked": "2026-05-29T07:28:37.323486",
+      "last_checked": "2026-06-02T07:40:26.376361",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"dc5f6a74483e3968c7a495d80ffe2da3\"",
       "file_path": "documentation/WiFiAware/waperformancereport/transmitlatency.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/transmitlatencymetrics.json": {
       "hash": "23eb959d36565831c68b186b1b00fc06797a6c311adf5dcf7b1c0521b2ef49fa",
-      "last_checked": "2026-05-29T07:28:37.431784",
+      "last_checked": "2026-06-02T07:40:26.545641",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7723294b098a6a13f069f364216ef9eb\"",
       "file_path": "documentation/WiFiAware/waperformancereport/transmitlatencymetrics.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/signalstrength.json": {
       "hash": "edd067bcc97b62aead4ab57d4308ecaf339c88f2d78a6b1e776c0d29a0f7929a",
-      "last_checked": "2026-05-29T07:28:37.528959",
+      "last_checked": "2026-06-02T07:40:26.720222",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5eba62f386a4dbef62a87f3381f4ec9a\"",
       "file_path": "documentation/WiFiAware/waperformancereport/signalstrength.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/error(_:).json": {
       "hash": "b826dd0e05908e4388bc7e02455d65e5754b6e4c1837bef6f012da6b966b7297",
-      "last_checked": "2026-05-29T07:28:37.581517",
+      "last_checked": "2026-06-02T07:40:26.883281",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"4519232ce070a6bb3865b836f110e992\"",
       "file_path": "documentation/WiFiAware/waerror/error.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/errordetails.json": {
       "hash": "ed3e63e5e210030347ecadfba93b8382cd67e21e78f970cff74ecc6e92d37da9",
-      "last_checked": "2026-05-29T07:28:37.647157",
+      "last_checked": "2026-06-02T07:40:27.187688",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a44c45d12a203919068d3d350cf8d5dd\"",
       "file_path": "documentation/WiFiAware/waerror/errordetails.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/wifiawareunsupported(_:).json": {
       "hash": "82f7558f0938bb5393e69e09c4e4d028b6f6aca96e779b0dd83009b3396d9993",
-      "last_checked": "2026-05-29T07:28:38.035423",
+      "last_checked": "2026-06-02T07:40:27.721219",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"cf65403c44ece3adb59eea98709f2b6b\"",
       "file_path": "documentation/WiFiAware/waerror/wifiawareunsupported.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/wifiawareunsupporteddetails.json": {
       "hash": "7016d4a3462a7ed502444d3104decc17d2dd989b00e488247c8ad979d4780482",
-      "last_checked": "2026-05-29T07:28:38.154843",
+      "last_checked": "2026-06-02T07:40:27.884546",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9efb9be509e2ef33e06777ba40b1c559\"",
       "file_path": "documentation/WiFiAware/waerror/wifiawareunsupporteddetails.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/noradioresources(_:).json": {
       "hash": "88c1f91d54916728f4f3233489124b0fc6362f275049750d1000c959fde98ad9",
-      "last_checked": "2026-05-29T07:28:38.297553",
+      "last_checked": "2026-06-02T07:40:28.197421",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"09326ba15dd99741b788ba3f08f69154\"",
       "file_path": "documentation/WiFiAware/waerror/noradioresources.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/noradioresourcesdetails.json": {
       "hash": "2e25ac8fe1ae6307e458ba204045a949ac4373a0d74c67799ea39a4b0bc69b1b",
-      "last_checked": "2026-05-29T07:28:38.401575",
+      "last_checked": "2026-06-02T07:40:28.496423",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"4f9ac352ec8e885db913cc364af93e7e\"",
       "file_path": "documentation/WiFiAware/waerror/noradioresourcesdetails.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicenotdeclared(_:).json": {
       "hash": "19f68a678bc99c7359eae84c9ce9005228e18758c2e0a96cd57ecf5d8dc39e03",
-      "last_checked": "2026-05-29T07:28:38.508488",
+      "last_checked": "2026-06-02T07:40:28.793820",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0c169a2473beff51d301dc034b1f80d0\"",
       "file_path": "documentation/WiFiAware/waerror/servicenotdeclared.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicenotdeclareddetails.json": {
       "hash": "a3941dedb325dbd786cc37cb8b3e6d622310106fc7fbee4e54aefb86b7cd0060",
-      "last_checked": "2026-05-29T07:28:38.621229",
+      "last_checked": "2026-06-02T07:40:28.968116",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f343de7206ab113b7782fbeb48dba91a\"",
       "file_path": "documentation/WiFiAware/waerror/servicenotdeclareddetails.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicealreadysubscribing(_:).json": {
       "hash": "8f990c90164e55a64e0dd3d755ac37feef5625aa3af8ba19338463c6e3581809",
-      "last_checked": "2026-05-29T07:28:38.723256",
+      "last_checked": "2026-06-02T07:40:29.128674",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c95bbe80a14ffc413c9aaf698a0b657e\"",
       "file_path": "documentation/WiFiAware/waerror/servicealreadysubscribing.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicealreadysubscribingdetails.json": {
       "hash": "fba221430346af174f1b83478bec4a278151796767bdf5f97b5e7f395656add8",
-      "last_checked": "2026-05-29T07:28:38.831745",
+      "last_checked": "2026-06-02T07:40:29.291939",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ede6b0396e47c64297ba192013efed98\"",
       "file_path": "documentation/WiFiAware/waerror/servicealreadysubscribingdetails.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicealreadypublishing(_:).json": {
       "hash": "c321f14562d1577255a72c81c48ef77eae15a30d02322ee12fb7e47b21f75774",
-      "last_checked": "2026-05-29T07:28:38.938505",
+      "last_checked": "2026-06-02T07:40:29.461018",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d27ae3575d689df6dcb84fc99ca91f5a\"",
       "file_path": "documentation/WiFiAware/waerror/servicealreadypublishing.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/servicealreadypublishingdetails.json": {
       "hash": "44d2f6f5db3c53df08a89fda81888041868903fc2277153082d70e42bfe6051a",
-      "last_checked": "2026-05-29T07:28:39.051194",
+      "last_checked": "2026-06-02T07:40:29.685791",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"b90aff2ab0b3dc89eeef81fc8425ed5e\"",
       "file_path": "documentation/WiFiAware/waerror/servicealreadypublishingdetails.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/nopaireddevices(_:).json": {
       "hash": "2572f31d4e5f567ffadb27642a4ffc92a3b33448b904cb3689d8aa127666e8ce",
-      "last_checked": "2026-05-29T07:28:39.159787",
+      "last_checked": "2026-06-02T07:40:29.854875",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"9d123739fa98d203a3b525d8b62849f4\"",
       "file_path": "documentation/WiFiAware/waerror/nopaireddevices.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/nopaireddevicesdetails.json": {
       "hash": "d19bff8201c1fc3991f34193fbd067b95e8077a1136c69e056cb898b38b423c8",
-      "last_checked": "2026-05-29T07:28:39.313384",
+      "last_checked": "2026-06-02T07:40:30.012213",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0d6ca919eb30580caf2408cd99080169\"",
       "file_path": "documentation/WiFiAware/waerror/nopaireddevicesdetails.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/deviceinvalid(_:).json": {
       "hash": "48f6f6bf4c20f55cf663446e714407dac4ad713fa5db581e4529043c623328c1",
-      "last_checked": "2026-05-29T07:28:39.428957",
+      "last_checked": "2026-06-02T07:40:30.317268",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"94c8b36345aa5efb9d1af4155ae584de\"",
       "file_path": "documentation/WiFiAware/waerror/deviceinvalid.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/deviceinvaliddetails.json": {
       "hash": "e67dab8c7d3096906af78cbf543003cc0ef3ef15b67292994778b44bda4e2f72",
-      "last_checked": "2026-05-29T07:28:39.534595",
+      "last_checked": "2026-06-02T07:40:30.472948",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"8f2d269870c528403d350e98d30c0a35\"",
       "file_path": "documentation/WiFiAware/waerror/deviceinvaliddetails.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/devicenolongeravailable(_:).json": {
       "hash": "6c9333afff29394e39218ee763e4f0d9103bc503f7837c74e0e8222727cdb212",
-      "last_checked": "2026-05-29T07:28:39.634269",
+      "last_checked": "2026-06-02T07:40:30.629734",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5b40aac199a1af88b66a41f633eb20bd\"",
       "file_path": "documentation/WiFiAware/waerror/devicenolongeravailable.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/devicenolongeravailabledetails.json": {
       "hash": "e116fa7c4b1eb3787b585dbb4d4c9befed827cdf2d17e97560a92cc48837f287",
-      "last_checked": "2026-05-29T07:28:39.750354",
+      "last_checked": "2026-06-02T07:40:30.790724",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ed66694278ae574777bbb64134bbadb9\"",
       "file_path": "documentation/WiFiAware/waerror/devicenolongeravailabledetails.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionfailed(_:).json": {
       "hash": "ef9c837729a258d4121fd8e03014ce1f6bd034f109ad539e05ca847d33ab3147",
-      "last_checked": "2026-05-29T07:28:39.852050",
+      "last_checked": "2026-06-02T07:40:30.961957",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5e72a09869457eb4c8be461e129afbca\"",
       "file_path": "documentation/WiFiAware/waerror/connectionfailed.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionfaileddetails.json": {
       "hash": "d02a477310309406e730eab04013610da4eee90ade27312696662560575d788b",
-      "last_checked": "2026-05-29T07:28:39.949243",
+      "last_checked": "2026-06-02T07:40:31.124767",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"8dab6202c9c51fb7a8be3d28ce4dd73e\"",
       "file_path": "documentation/WiFiAware/waerror/connectionfaileddetails.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionidletimeout(_:).json": {
       "hash": "deea682e636711d92b551d13c2011d2dea9e5aabdcec14a50276c5643bacd000",
-      "last_checked": "2026-05-29T07:28:40.003980",
+      "last_checked": "2026-06-02T07:40:31.442309",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"f0c8900dd62029bf18565c13968084ed\"",
       "file_path": "documentation/WiFiAware/waerror/connectionidletimeout.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionidletimeoutdetails.json": {
       "hash": "f057c6e4cbae31a6193cf4ab9dcbe3be26af104a146c1844033675b8076bec1c",
-      "last_checked": "2026-05-29T07:28:40.289252",
+      "last_checked": "2026-06-02T07:40:32.166684",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"88c2d4302a4e95fcdf1d842b6343a23f\"",
       "file_path": "documentation/WiFiAware/waerror/connectionidletimeoutdetails.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionterminateddetails.json": {
       "hash": "623d24ebdbe0dc8b42c25c6402d01a4e2b836268f1aebb2e48d6329aaf637129",
-      "last_checked": "2026-05-29T07:28:40.919460",
+      "last_checked": "2026-06-02T07:40:32.964959",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a9190ce52e08769bc1b0412c801d6f40\"",
       "file_path": "documentation/WiFiAware/waerror/connectionterminateddetails.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/publishertimeoutdetails.json": {
       "hash": "31351ccbb1084261bdfa988549b26630eb339508d38218b4f401cadf60c5b2ee",
-      "last_checked": "2026-05-29T07:28:40.397689",
+      "last_checked": "2026-06-02T07:40:32.342513",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"1ba3d4d38bcc536650cfc00c17e0b80e\"",
       "file_path": "documentation/WiFiAware/waerror/publishertimeoutdetails.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/subscribertimeoutdetails.json": {
       "hash": "564bd37266f8b885b64372f6e1a3dcfab792f97304a6aa1a50b69aab963df322",
-      "last_checked": "2026-05-29T07:28:40.694961",
+      "last_checked": "2026-06-02T07:40:32.644041",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a8bc5fb5411b5772ababa1f2ab24a795\"",
       "file_path": "documentation/WiFiAware/waerror/subscribertimeoutdetails.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/connectionterminated(_:).json": {
       "hash": "1f317566539c7b3a80de0fb41beda94d2c72222a67ce0220c63090b18a48bb40",
-      "last_checked": "2026-05-29T07:28:40.813553",
+      "last_checked": "2026-06-02T07:40:32.794974",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5f3e761b147b868bb19501031e244754\"",
       "file_path": "documentation/WiFiAware/waerror/connectionterminated.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/publishertimeout(_:).json": {
       "hash": "f5e07a1e20a03694ff0940bf0e6908b823b0634b700a9c015515da31cb46c66b",
-      "last_checked": "2026-05-29T07:28:40.055807",
+      "last_checked": "2026-06-02T07:40:31.628213",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"d1371a09fcd0509c338ab74a779d3eec\"",
       "file_path": "documentation/WiFiAware/waerror/publishertimeout.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/subscribertimeout(_:).json": {
       "hash": "8f12b5909b8c1c37afaaa19a66a616ea0b4a1d97333927d36bd8c5b6e9015463",
-      "last_checked": "2026-05-29T07:28:40.183762",
+      "last_checked": "2026-06-02T07:40:31.794871",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"2f5c9b586d3335cb111d2781a97407b1\"",
       "file_path": "documentation/WiFiAware/waerror/subscribertimeout.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/asynciterator/element.json": {
       "hash": "3c8d53193c067c87787994d66ae2f843fb39e88bcf7c435297373d6681a6ce60",
-      "last_checked": "2026-05-29T07:28:40.972621",
+      "last_checked": "2026-06-02T07:40:33.126115",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"cd1f55decf8baa30eafaa72c87cac7a2\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/asynciterator/element.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/asynciterator/next().json": {
       "hash": "428914b524153629217fe4cfaf11c003c18e2bf3fb1c386fb3cb19cda92f956c",
-      "last_checked": "2026-05-29T07:28:41.083188",
+      "last_checked": "2026-06-02T07:40:33.285396",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"c50255cfc0123265181c4e22a3657f60\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/asynciterator/next.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapaireddevice/devicessequence/asynciterator/failure.json": {
       "hash": "ce36c6deff7a184fec4f3b74e360a80437214c366f3eb72f87a24e2662d9b4be",
-      "last_checked": "2026-05-29T07:28:41.184319",
+      "last_checked": "2026-06-02T07:40:33.448012",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"1d98ea8e60107c5a00a88de31f4bdb39\"",
       "file_path": "documentation/WiFiAware/wapaireddevice/devicessequence/asynciterator/failure.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/transmitlatencymetrics/accesscategory.json": {
       "hash": "7c690bb986e150c4a77a61a573d6944694ee451a86221f912f64569ac03a79e3",
-      "last_checked": "2026-05-29T07:28:42.093615",
+      "last_checked": "2026-06-02T07:40:35.096020",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"1a952636aa4fd24147cf643f250b9d7b\"",
       "file_path": "documentation/WiFiAware/waperformancereport/transmitlatencymetrics/accesscategory.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waperformancereport/transmitlatencymetrics/average.json": {
       "hash": "87ca5680686a1be13fa559665b69d2a11909e93bc7f872be83bf3cc086eb1bd7",
-      "last_checked": "2026-05-29T07:28:42.243010",
+      "last_checked": "2026-06-02T07:40:35.410642",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"4a01b07085e94b9ee72f4392cb62cf6e\"",
       "file_path": "documentation/WiFiAware/waperformancereport/transmitlatencymetrics/average.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wasubscriberbrowser/devices/userspecifieddevices.json": {
       "hash": "524bb571c58422d8a0e2cddf58c95e1bb9facff15ec2b6492b6a04a4f58b6e6e",
-      "last_checked": "2026-05-29T07:28:32.448058",
+      "last_checked": "2026-06-02T07:40:17.961335",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a9ff11e6b5cd51e9bb45c2e41918e7e8\"",
       "file_path": "documentation/WiFiAware/wasubscriberbrowser/devices/userspecifieddevices.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/devices/userspecifieddevices.json": {
       "hash": "0918afd40eeabbda10ffa284fdd64e48ebe529badea808ba1e86b45e4afa8646",
-      "last_checked": "2026-05-29T07:28:33.603316",
+      "last_checked": "2026-06-02T07:40:19.259914",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"3b8d077c25e6019a7e01e47d0a1c6f94\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/devices/userspecifieddevices.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/entitlementmissingdetails.json": {
       "hash": "f3e6b8051b8e841540e829a4834839d1dc8cf1b0bbbed7205d5477bca576b91e",
-      "last_checked": "2026-05-29T07:28:37.770823",
+      "last_checked": "2026-06-02T07:40:27.360937",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"992d449ed0010ef1d93416246ae4cc38\"",
       "file_path": "documentation/WiFiAware/waerror/entitlementmissingdetails.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waerror/entitlementmissing(_:).json": {
       "hash": "a89829766190c03445042e74a90939e48626fc6fed72912355e08602e3568789",
-      "last_checked": "2026-05-29T07:28:37.876560",
+      "last_checked": "2026-06-02T07:40:27.540979",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"7102b63c66a9cc2a167221cb9f9aa67d\"",
       "file_path": "documentation/WiFiAware/waerror/entitlementmissing.md"
     },
@@ -4823,9 +4823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waconnection.json": {
       "hash": "917465bd4998229373431208894bd0d640f4e0e16606502af592d44141176d9a",
-      "last_checked": "2026-05-29T07:28:27.309944",
+      "last_checked": "2026-06-02T07:40:11.389506",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"cccfb8516b382653cd0b4ff583451352\"",
       "file_path": "documentation/WiFiAware/waconnection.md"
     },
@@ -4839,9 +4839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret.json": {
       "hash": "cf242c711807a4ff56251b0181d8b4ab22c77b6bb3d3d36e6c274ed96984ff4f",
-      "last_checked": "2026-05-29T07:28:27.418165",
+      "last_checked": "2026-06-02T07:40:11.530219",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0567852b44b72be1de431c87af27076e\"",
       "file_path": "documentation/WiFiAware/washaredsecret.md"
     },
@@ -4855,9 +4855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/wapublisherlistener/action/addingconnections(from:).json": {
       "hash": "5f864c089250b77aadc104380c46d1df2db11e76b172c34815107eae02a3afbd",
-      "last_checked": "2026-05-29T07:28:33.309846",
+      "last_checked": "2026-06-02T07:40:18.885893",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ce28403b3c50d5e80c3fdd1df78a4e35\"",
       "file_path": "documentation/WiFiAware/wapublisherlistener/action/addingconnections-from.md"
     },
@@ -4871,9 +4871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/waconnection/derivesharedsecret(for:method:context:).json": {
       "hash": "d103ff5341f1acc4a09a4e36fcb54ff8de91ef0b37b6a0775113605911649a3b",
-      "last_checked": "2026-05-29T07:28:35.212868",
+      "last_checked": "2026-06-02T07:40:21.423717",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"443bdeee565849041381ac291ab9cddb\"",
       "file_path": "documentation/WiFiAware/waconnection/derivesharedsecret-formethodcontext.md"
     },
@@ -4887,9 +4887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/context.json": {
       "hash": "e349cd5f53ad3756f7c2aca8790a734e38fefb0721d8301f56b3f6536936a747",
-      "last_checked": "2026-05-29T07:28:35.313784",
+      "last_checked": "2026-06-02T07:40:21.531570",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"3fc441f79f8dc9c3e7914c98dcae9fe2\"",
       "file_path": "documentation/WiFiAware/washaredsecret/context.md"
     },
@@ -4903,9 +4903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/derivationmethod.json": {
       "hash": "75f9b8e8ae08acf24a069385ec3677f73be5463cf94d33365a754f4865a021c2",
-      "last_checked": "2026-05-29T07:28:35.368451",
+      "last_checked": "2026-06-02T07:40:21.660777",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"2a3780dce005f960abf8b37bd439194e\"",
       "file_path": "documentation/WiFiAware/washaredsecret/derivationmethod.md"
     },
@@ -4919,9 +4919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/protocolname.json": {
       "hash": "3f9ce875519b6e6e9b197876586f54283393492d68422189476e3ed9303cad01",
-      "last_checked": "2026-05-29T07:28:35.478688",
+      "last_checked": "2026-06-02T07:40:21.991761",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"30350103aa83a70d13d020010c2f661a\"",
       "file_path": "documentation/WiFiAware/washaredsecret/protocolname.md"
     },
@@ -4935,9 +4935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/data.json": {
       "hash": "69868c035dd5d126fd2fa2cd6850e34101be33f19383192ada6074d87ccd45a3",
-      "last_checked": "2026-05-29T07:28:35.586339",
+      "last_checked": "2026-06-02T07:40:22.285255",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"706535436b17935aa9b61c930275f61d\"",
       "file_path": "documentation/WiFiAware/washaredsecret/data.md"
     },
@@ -4951,9 +4951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/derivation.json": {
       "hash": "ddfb9d18c9d955c509a8b474868e9d5f50b494b97fd056ea9e8cb82933a5d1ff",
-      "last_checked": "2026-05-29T07:28:35.686265",
+      "last_checked": "2026-06-02T07:40:22.410759",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"140cfc3d9ded4a41fa02610cef3b949a\"",
       "file_path": "documentation/WiFiAware/washaredsecret/derivation.md"
     },
@@ -4967,9 +4967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/context/init(_:)-74fai.json": {
       "hash": "e398bc0f3398695a5e7f1ee50e8cf707845a7ab3f77b3814c59d6283e7f057ac",
-      "last_checked": "2026-05-29T07:28:41.309964",
+      "last_checked": "2026-06-02T07:40:33.606263",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ff202b596459dc97bfc73c0d4189b922\"",
       "file_path": "documentation/WiFiAware/washaredsecret/context/init-74fai.md"
     },
@@ -4983,9 +4983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/context/init(_:)-8fpqd.json": {
       "hash": "54262afd0195ff20598e7cc3c0c009fde3ffdfc3dc9d80b19c4cec02b9858a34",
-      "last_checked": "2026-05-29T07:28:41.409806",
+      "last_checked": "2026-06-02T07:40:33.774531",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"61f68d719d08b80f595cc13104a9ed49\"",
       "file_path": "documentation/WiFiAware/washaredsecret/context/init-8fpqd.md"
     },
@@ -4999,9 +4999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/context/bundleid.json": {
       "hash": "be4611d82e25a52bb22c8725bcdf0e525632367d2f0e6618ef98288b1aaa0a28",
-      "last_checked": "2026-05-29T07:28:41.461916",
+      "last_checked": "2026-06-02T07:40:34.063797",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"a9f0fb46c2b02480ae8d7ece4df7d109\"",
       "file_path": "documentation/WiFiAware/washaredsecret/context/bundleid.md"
     },
@@ -5015,9 +5015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/derivationmethod/kdfhash256.json": {
       "hash": "20f8589c1a23dae2b3874edcb9fb6fdcbcb9836498d181720d44df1332bf0043",
-      "last_checked": "2026-05-29T07:28:41.582517",
+      "last_checked": "2026-06-02T07:40:34.247608",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"5c4caa7bcc41cf0bfa1373e939a2085c\"",
       "file_path": "documentation/WiFiAware/washaredsecret/derivationmethod/kdfhash256.md"
     },
@@ -5031,9 +5031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/protocolname/init(_:)-648hd.json": {
       "hash": "c4f49cc05c6576ac80022ce05315161a08c3eb5dd0da64e14f0d2c41161dae20",
-      "last_checked": "2026-05-29T07:28:41.695573",
+      "last_checked": "2026-06-02T07:40:34.425854",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"0e93deda801e954fb60b3c5092576958\"",
       "file_path": "documentation/WiFiAware/washaredsecret/protocolname/init-648hd.md"
     },
@@ -5047,9 +5047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/protocolname/init(_:)-7marr.json": {
       "hash": "a3ececf1126e36fbafbcfa3ec27b98dc9537c0a8c6bab9b1a3ffadf8f9d82bd0",
-      "last_checked": "2026-05-29T07:28:41.799336",
+      "last_checked": "2026-06-02T07:40:34.593120",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"ffcf1d0fc5bd1dc1accf75024e7b5daf\"",
       "file_path": "documentation/WiFiAware/washaredsecret/protocolname/init-7marr.md"
     },
@@ -5063,9 +5063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/protocolname/ipsecpsk.json": {
       "hash": "8d67cb75f4f82e9669e973a250d813954949ecc1c19deea7d12aa54bd0db29e2",
-      "last_checked": "2026-05-29T07:28:41.921329",
+      "last_checked": "2026-06-02T07:40:34.763636",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"56f832772e288e73a8b5e9c3a47c652e\"",
       "file_path": "documentation/WiFiAware/washaredsecret/protocolname/ipsecpsk.md"
     },
@@ -5079,9 +5079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wifiaware/washaredsecret/protocolname/tlspsk.json": {
       "hash": "4a5daa3f3f278379dcf94b139d01ec9b7a2b9419371de8f090e7f31143b6ab81",
-      "last_checked": "2026-05-29T07:28:41.984521",
+      "last_checked": "2026-06-02T07:40:34.926927",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:24.056684",
+      "session_id": "2026-06-02T07:40:07.714205",
       "etag": "W/\"80697fb3d599af3f16382744d3997965\"",
       "file_path": "documentation/WiFiAware/washaredsecret/protocolname/tlspsk.md"
     },

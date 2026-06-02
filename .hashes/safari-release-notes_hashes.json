@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:32.731675",
+    "last_updated": "2026-06-02T07:43:57.521408",
     "total_pages": 80,
-    "session_id": "2026-05-29T07:30:26.762958"
+    "session_id": "2026-06-02T07:43:50.990367"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes.json": {
       "hash": "76a70678ab4bbdfe275307be41bb784c0d1674ad1906070189060824fe9a245e",
-      "last_checked": "2026-05-29T07:30:27.046058",
+      "last_checked": "2026-06-02T07:43:51.248313",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"c43792fadd7b1429eff24ccfaf5e461f\"",
       "file_path": "documentation/safari-release-notes/safari-release-notes.md"
     },
     "https://developer.apple.com/documentation/safari-release-notes": {
       "hash": "76a70678ab4bbdfe275307be41bb784c0d1674ad1906070189060824fe9a245e",
-      "last_checked": "2026-05-29T07:30:26.924591",
+      "last_checked": "2026-06-02T07:43:51.148396",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"c43792fadd7b1429eff24ccfaf5e461f\"",
       "file_path": "documentation/safari-release-notes/safari-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26-release-notes.json": {
       "hash": "4fc1d40ff8441b234c7c82e68cf990b4a48c60248cd01d6c85b185d1e727a511",
-      "last_checked": "2026-05-29T07:30:27.700978",
+      "last_checked": "2026-06-02T07:43:52.344429",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"47642c148824e997d00d15f70ef9023d\"",
       "file_path": "documentation/safari-release-notes/safari-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_5-release-notes.json": {
       "hash": "21b6c4ef353a9cc7a49141ecc0976fe419e23cabacb4e74ce5c3d8c34c4e30dd",
-      "last_checked": "2026-05-29T07:30:28.032559",
+      "last_checked": "2026-06-02T07:43:52.671997",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"2e206b9a93835d85647d04c3492ada3e\"",
       "file_path": "documentation/safari-release-notes/safari-18-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_4-release-notes.json": {
       "hash": "b0a26fe03501ef9964099f30805f7016617bd1a22915ae2f38b9ae8cf12c1334",
-      "last_checked": "2026-05-29T07:30:28.149477",
+      "last_checked": "2026-06-02T07:43:52.840155",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"4facd3571ceedd807adc65d34f70dc03\"",
       "file_path": "documentation/safari-release-notes/safari-18-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_3-release-notes.json": {
       "hash": "faf8c583ae3d948e1c945bd109c13b08952d6752c53c29bda1fa3340ac9c6c80",
-      "last_checked": "2026-05-29T07:30:28.377825",
+      "last_checked": "2026-06-02T07:43:53.013650",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"d39006c25f7233e207aae6345e5d93f8\"",
       "file_path": "documentation/safari-release-notes/safari-18-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_2-release-notes.json": {
       "hash": "568bca93c2b69e0112626d931df7242ab907d8ea5a759e2ef8a9a56da7df63a3",
-      "last_checked": "2026-05-29T07:30:28.519334",
+      "last_checked": "2026-06-02T07:43:53.182042",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"d7a97e958581553b993889d9018cf0d8\"",
       "file_path": "documentation/safari-release-notes/safari-18-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_1-release-notes.json": {
       "hash": "089c27808c6d2fd861ec7dcdc777bae76f448c6062edfb535d9d403157d5a3d6",
-      "last_checked": "2026-05-29T07:30:28.678437",
+      "last_checked": "2026-06-02T07:43:53.331701",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"89fe60addcb7afbcbef70e9dc8bcdca6\"",
       "file_path": "documentation/safari-release-notes/safari-18-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_0_1-release-notes.json": {
       "hash": "0c9a66236c58f2ddd7ec65c2554fe3582b211bda0243c3b885ddb1a2c8873b3b",
-      "last_checked": "2026-05-29T07:30:28.926505",
+      "last_checked": "2026-06-02T07:43:53.506242",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"151080f31793bf715c9913e480eda592\"",
       "file_path": "documentation/safari-release-notes/safari-18-0-1-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18-release-notes.json": {
       "hash": "5e69033405577257eb16065a0d95e32c82a95c1aa013ae6b7c67ae1ed2de2d15",
-      "last_checked": "2026-05-29T07:30:29.049699",
+      "last_checked": "2026-06-02T07:43:53.689324",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"a0591ff204e6aead6138a4cc8403172b\"",
       "file_path": "documentation/safari-release-notes/safari-18-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_6-release-notes.json": {
       "hash": "ab70b9b89176190dacb048e2d27ad9d7cb230b113ba2bd308557b147d257e90a",
-      "last_checked": "2026-05-29T07:30:29.162153",
+      "last_checked": "2026-06-02T07:43:53.841228",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"621fec1271d812e6dee8c3dc4876fb14\"",
       "file_path": "documentation/safari-release-notes/safari-17-6-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_5-release-notes.json": {
       "hash": "c2afb6ab58ceaa2ac8385b77e4a2dd94101197ccb51e1c5132c62b79214f296f",
-      "last_checked": "2026-05-29T07:30:29.265658",
+      "last_checked": "2026-06-02T07:43:53.995312",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"6146b197c73357d9bab83597c7ee29f7\"",
       "file_path": "documentation/safari-release-notes/safari-17-5-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_4-release-notes.json": {
       "hash": "bc1c75431b057eca4bd140708dcca7810534ba934486b60443aa90654eceed10",
-      "last_checked": "2026-05-29T07:30:29.381832",
+      "last_checked": "2026-06-02T07:43:54.175786",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"37234dfbfd21f84e46e1376dbb6fb51b\"",
       "file_path": "documentation/safari-release-notes/safari-17-4-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_3-release-notes.json": {
       "hash": "8d410860ccc520bed5c390ae9f80a72b61621d4c16f7053d2806a65b6c4675fa",
-      "last_checked": "2026-05-29T07:30:29.642818",
+      "last_checked": "2026-06-02T07:43:54.321720",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"82fa315b13767b9f8344e25af6a28774\"",
       "file_path": "documentation/safari-release-notes/safari-17-3-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_2-release-notes.json": {
       "hash": "0e8d6e6574458e1e433d360b8aab1984f6bca53d95294bb6002c6129834b6fd2",
-      "last_checked": "2026-05-29T07:30:29.769420",
+      "last_checked": "2026-06-02T07:43:54.456904",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"7605c3d9e25b69b0bde5c7ded8b5fbe1\"",
       "file_path": "documentation/safari-release-notes/safari-17-2-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17_1-release-notes.json": {
       "hash": "881bf9025658709a4b00ebe25963303bb87e1bae350e5afd61bbcd1e048eca35",
-      "last_checked": "2026-05-29T07:30:29.875185",
+      "last_checked": "2026-06-02T07:43:54.629996",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"51ad9f63f250cbfc232003e2485ee0d1\"",
       "file_path": "documentation/safari-release-notes/safari-17-1-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-17-release-notes.json": {
       "hash": "312a83dc086c4e7dfe01c90bb9f4588d1880ac842530f5d77b5db443cc0903b7",
-      "last_checked": "2026-05-29T07:30:29.999121",
+      "last_checked": "2026-06-02T07:43:54.776929",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"9e2e9564ff47f965c5b593c549967045\"",
       "file_path": "documentation/safari-release-notes/safari-17-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_6-release-notes.json": {
       "hash": "e0f9e50cb82b5fe5414e2d7498a63a5cb95bcc327c1890927710f7b0abb24610",
-      "last_checked": "2026-05-29T07:30:30.132914",
+      "last_checked": "2026-06-02T07:43:54.935023",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"1b8c7ff40e9c52226c5066c1370931d6\"",
       "file_path": "documentation/safari-release-notes/safari-16-6-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_5-release-notes.json": {
       "hash": "e79f219166289389efa7c8afc123d1f58b73103f3648c2f799b77954b7fda014",
-      "last_checked": "2026-05-29T07:30:30.357086",
+      "last_checked": "2026-06-02T07:43:55.103797",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"d4ded8246b355ee6ec63658354fe7c8c\"",
       "file_path": "documentation/safari-release-notes/safari-16-5-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_4-release-notes.json": {
       "hash": "b4dd888b240a68ddec2c4c1b1bcdfadd370af17ded02980f7f6b0a64ce9cfdb3",
-      "last_checked": "2026-05-29T07:30:30.503399",
+      "last_checked": "2026-06-02T07:43:55.241768",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"d262698cd5c45edc03fe4b4856b65237\"",
       "file_path": "documentation/safari-release-notes/safari-16-4-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_3-release-notes.json": {
       "hash": "b02096d57887697df012e22c324004fb7b5bc4522daa0fa981f2b315b649bf21",
-      "last_checked": "2026-05-29T07:30:30.608573",
+      "last_checked": "2026-06-02T07:43:55.420887",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"06246e5a3658da39889af45018076baa\"",
       "file_path": "documentation/safari-release-notes/safari-16-3-release-notes.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_2-release-notes.json": {
       "hash": "bdf310bd7845b53e686c3084f801ba9da6ff8f82b2231cea434977e49892405a",
-      "last_checked": "2026-05-29T07:30:30.708222",
+      "last_checked": "2026-06-02T07:43:55.555170",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"549978461a8615f94a958472c0ce96e0\"",
       "file_path": "documentation/safari-release-notes/safari-16-2-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16_1-release-notes.json": {
       "hash": "1dfe7d3aa75b66c0d113a0f585f091a6e8a41fa65dbf7b81d4b05e99e8162820",
-      "last_checked": "2026-05-29T07:30:30.819817",
+      "last_checked": "2026-06-02T07:43:55.749353",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"9b391a35832a9060d70e27a4390db09c\"",
       "file_path": "documentation/safari-release-notes/safari-16-1-release-notes.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-16-release-notes.json": {
       "hash": "af7047452ab77793077cf28697cfa9afb3d61584e4ea007e93d833e82bf309ba",
-      "last_checked": "2026-05-29T07:30:31.034378",
+      "last_checked": "2026-06-02T07:43:55.880806",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"14fca3925ca0d74e88d27c2ca7caf514\"",
       "file_path": "documentation/safari-release-notes/safari-16-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-15_6-release-notes.json": {
       "hash": "67a453b8f795c0ca3716c23c39d100fd7b23bf3d2ea1fa2f9f901eb76decbf35",
-      "last_checked": "2026-05-29T07:30:31.133339",
+      "last_checked": "2026-06-02T07:43:56.003883",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"a15a36833b2a9d50f03e7dd7d97e7569\"",
       "file_path": "documentation/safari-release-notes/safari-15-6-release-notes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-15_5-release-notes.json": {
       "hash": "d9d62383800e9256af90919e656a690b8e28ef1a531970c3db08427c06ba0a94",
-      "last_checked": "2026-05-29T07:30:31.393444",
+      "last_checked": "2026-06-02T07:43:56.184980",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"b53f287151ad71b629c667b40ea39f8a\"",
       "file_path": "documentation/safari-release-notes/safari-15-5-release-notes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-15_4-release-notes.json": {
       "hash": "285eab381e6d8d1928cd1c3f1b6892939296466cb043985e834b54bee41fd98b",
-      "last_checked": "2026-05-29T07:30:31.625933",
+      "last_checked": "2026-06-02T07:43:56.301125",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"580352a2a87b7ca6c0e6bd48ebb7e0a9\"",
       "file_path": "documentation/safari-release-notes/safari-15-4-release-notes.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-15_2-release-notes.json": {
       "hash": "05cd24c735155725d92545d6aee8bd9bc0f37bf657d38c794791404b08eb392d",
-      "last_checked": "2026-05-29T07:30:31.758000",
+      "last_checked": "2026-06-02T07:43:56.427638",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"0a9c0ec3cc96cbe86dde42f4ae20d61b\"",
       "file_path": "documentation/safari-release-notes/safari-15-2-release-notes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-15-release-notes.json": {
       "hash": "4c6cd336a4f53aa65cc8fa088e30a583b3068a0587298a0c339173fa6801988e",
-      "last_checked": "2026-05-29T07:30:31.990108",
+      "last_checked": "2026-06-02T07:43:56.634099",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"5593f41bec9ee7b0433eca0cbb224902\"",
       "file_path": "documentation/safari-release-notes/safari-15-release-notes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-14_1-release-notes.json": {
       "hash": "8b26845c4a097aa5e2a15dbb5e30e2d44c8f88d789d1e2a131994b0c7eb479fa",
-      "last_checked": "2026-05-29T07:30:32.113630",
+      "last_checked": "2026-06-02T07:43:56.702226",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"ca641a0c6f2aef677b8d78fc305b68a5\"",
       "file_path": "documentation/safari-release-notes/safari-14-1-release-notes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-14-release-notes.json": {
       "hash": "0775c025d7cda71931487f24272de5baa18e2b836affcfe139621294a81ba68b",
-      "last_checked": "2026-05-29T07:30:32.232377",
+      "last_checked": "2026-06-02T07:43:56.929486",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"f5e2114031db4f8643bccc071be0763e\"",
       "file_path": "documentation/safari-release-notes/safari-14-release-notes.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-13_1-release_notes.json": {
       "hash": "0e36fd4941c477c2b595cca4265a92c809cf25110e82bd32207eecddeec16d98",
-      "last_checked": "2026-05-29T07:30:32.341322",
+      "last_checked": "2026-06-02T07:43:57.078725",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"16d027d6f66510c48f0caa88683ee2e0\"",
       "file_path": "documentation/safari-release-notes/safari-13-1-release-notes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-13-release-notes.json": {
       "hash": "f3e73b47f5219dc84773f799c0740cac92872f5f83ead76be9979ebe07026d8e",
-      "last_checked": "2026-05-29T07:30:32.500562",
+      "last_checked": "2026-06-02T07:43:57.222652",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"8bd83111e0fe46f5ec3afc5681eb8598\"",
       "file_path": "documentation/safari-release-notes/safari-13-release-notes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-12_1-release-notes.json": {
       "hash": "59ef88e921dc90f303b20f7251886ca19b5de198b6b008dd39688b0f2e489b86",
-      "last_checked": "2026-05-29T07:30:32.616517",
+      "last_checked": "2026-06-02T07:43:57.355495",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"de29885478bc88f5cfa181f2d1c47bce\"",
       "file_path": "documentation/safari-release-notes/safari-12-1-release-notes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-12-release-notes.json": {
       "hash": "255eb91f075ba583cfeebd51f651a2d5db254c4dff9d272f120e3b013679db08",
-      "last_checked": "2026-05-29T07:30:32.725575",
+      "last_checked": "2026-06-02T07:43:57.518556",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"7113ea9d091ee2174ff574861c6f80d5\"",
       "file_path": "documentation/safari-release-notes/safari-12-release-notes.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26_3-release-notes.json": {
       "hash": "d80bf7d96398c7b00f86e64c17dc2f3797cb09f29413c84a0fc6f3fd5618333e",
-      "last_checked": "2026-05-29T07:30:27.390490",
+      "last_checked": "2026-06-02T07:43:51.866059",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"b2f9001f28da0ed63da560929028b56c\"",
       "file_path": "documentation/safari-release-notes/safari-26-3-release-notes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26_2-release-notes.json": {
       "hash": "cbffcb17a1da00d7b5a76634539976f8ebe6150dae8a7d3713336e3f537be1b5",
-      "last_checked": "2026-05-29T07:30:27.454133",
+      "last_checked": "2026-06-02T07:43:52.044568",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"7496b9a848de5d00e1770aec18fdd78e\"",
       "file_path": "documentation/safari-release-notes/safari-26-2-release-notes.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26_1-release-notes.json": {
       "hash": "d4becfec3554e717dcb323877766dc62c8ae39807a128973bc508ea01ea574b2",
-      "last_checked": "2026-05-29T07:30:27.517607",
+      "last_checked": "2026-06-02T07:43:52.178518",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"5ab6e4220a15d7b79f0e037a3482430c\"",
       "file_path": "documentation/safari-release-notes/safari-26-1-release-notes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-18_6-release-notes.json": {
       "hash": "b70723f05933778fdb4c8ef22f5e5abdca7f8c08d888e3a61679fb52479d6c41",
-      "last_checked": "2026-05-29T07:30:27.809034",
+      "last_checked": "2026-06-02T07:43:52.512262",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"9c485f6dd04869f2fe85f02bc546bbce\"",
       "file_path": "documentation/safari-release-notes/safari-18-6-release-notes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26_4-release-notes.json": {
       "hash": "14eb8e05d6e3579dd2ae19fc2a88d2dd6e67c7ea5ff25b303fca5a3ddb8b2c53",
-      "last_checked": "2026-05-29T07:30:27.324907",
+      "last_checked": "2026-06-02T07:43:51.690085",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"15a5d38f23d570029a828946fd9bbd5f\"",
       "file_path": "documentation/safari-release-notes/safari-26-4-release-notes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/safari-release-notes/safari-26_5-release-notes.json": {
       "hash": "91a08eb5f454a95d1ddb260e94f011385d9707d2413f87a44c64f064ff932d00",
-      "last_checked": "2026-05-29T07:30:27.248920",
+      "last_checked": "2026-06-02T07:43:51.503117",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:26.762958",
+      "session_id": "2026-06-02T07:43:50.990367",
       "etag": "W/\"a20a70aa092d4f29c738971e7b957b56\"",
       "file_path": "documentation/safari-release-notes/safari-26-5-release-notes.md"
     },

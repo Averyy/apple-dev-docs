@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:29:02.425171",
+    "last_updated": "2026-06-02T07:41:22.754165",
     "total_pages": 600,
-    "session_id": "2026-05-29T07:28:34.057522"
+    "session_id": "2026-06-02T07:40:31.178372"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/NaturalLanguage.json": {
       "hash": "d0d5b0cfc4546a12ba0e353b35d14d3355555f57261a3a63f58ef61d3b877ddb",
-      "last_checked": "2026-05-29T07:28:34.333936",
+      "last_checked": "2026-06-02T07:40:31.565857",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e449ea6ed0875be39a7d5bdf81ccc11c\"",
       "file_path": "documentation/NaturalLanguage/NaturalLanguage.md"
     },
     "https://developer.apple.com/documentation/NaturalLanguage": {
       "hash": "d0d5b0cfc4546a12ba0e353b35d14d3355555f57261a3a63f58ef61d3b877ddb",
-      "last_checked": "2026-05-29T07:28:34.235398",
+      "last_checked": "2026-06-02T07:40:31.458524",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e449ea6ed0875be39a7d5bdf81ccc11c\"",
       "file_path": "documentation/NaturalLanguage/NaturalLanguage.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/tokenizing-natural-language-text.json": {
       "hash": "bd133c78f3b40d43ce4a626ad58f1b7b24e76c8aa780d41ca74599e5c9f83ea6",
-      "last_checked": "2026-05-29T07:28:34.729407",
+      "last_checked": "2026-06-02T07:40:31.816024",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fef5634f6582f8f0e282627031641e30\"",
       "file_path": "documentation/NaturalLanguage/tokenizing-natural-language-text.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer.json": {
       "hash": "909a0890b0188eaa710d9122b837b2d68be62be2bbe807a5f5c9882c48982fd9",
-      "last_checked": "2026-05-29T07:28:34.966657",
+      "last_checked": "2026-06-02T07:40:31.974610",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6ac6fdbd608e637c8f8a3687cf92d088\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-the-language-in-text.json": {
       "hash": "03b8da1b2d48b94699ea18b129eb1b2134f8a1e62ee1f667bcefeba7f33089fe",
-      "last_checked": "2026-05-29T07:28:35.199104",
+      "last_checked": "2026-06-02T07:40:32.125785",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"82ca0d1438040d17660cdf144dfaccf9\"",
       "file_path": "documentation/NaturalLanguage/identifying-the-language-in-text.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer.json": {
       "hash": "2b3def52dbbda1b5139ec60394fc016070b709abe452e851dcfa5b0b9be46496",
-      "last_checked": "2026-05-29T07:28:35.254328",
+      "last_checked": "2026-06-02T07:40:32.415791",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8ac7f6699b12f1d4b005c43d2ae88b5a\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage.json": {
       "hash": "3c54948af72a92da7643c84512b3efe249b3080e594947b89b15e1062e83ca89",
-      "last_checked": "2026-05-29T07:28:35.519636",
+      "last_checked": "2026-06-02T07:40:32.725779",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ffd3d5782347223eec06349087755e36\"",
       "file_path": "documentation/NaturalLanguage/nllanguage.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-parts-of-speech.json": {
       "hash": "cbc1196c5a577d2e6870b4c5c213ca527d7a1b4dd15ae7695bb00091849d8820",
-      "last_checked": "2026-05-29T07:28:35.626989",
+      "last_checked": "2026-06-02T07:40:32.890574",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"7f686cfee3dbf2526ba5a19380cdd7e8\"",
       "file_path": "documentation/NaturalLanguage/identifying-parts-of-speech.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/identifying-people-places-and-organizations.json": {
       "hash": "0804e1d7c74129c7a3d054a11c64a4623ba2c41c2027eddac95586815351227a",
-      "last_checked": "2026-05-29T07:28:35.698844",
+      "last_checked": "2026-06-02T07:40:33.181025",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"78721a4becacbb366c80545c628f35c0\"",
       "file_path": "documentation/NaturalLanguage/identifying-people-places-and-organizations.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger.json": {
       "hash": "8e2b299acf8c2f06d330a42b6bb7f5068692fe628690cad033611696c2c6df4f",
-      "last_checked": "2026-05-29T07:28:35.964881",
+      "last_checked": "2026-06-02T07:40:33.391754",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4c8063a4b9e1a54b2db55b6f18d28c35\"",
       "file_path": "documentation/NaturalLanguage/nltagger.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/finding-similarities-between-pieces-of-text.json": {
       "hash": "0c49dcd099ae6cf7db9d913806412e13b99043244de353bd7590af0c7328ce6f",
-      "last_checked": "2026-05-29T07:28:36.079273",
+      "last_checked": "2026-06-02T07:40:33.686307",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"62c5555b865e0ccf6586ad2c79a350d0\"",
       "file_path": "documentation/NaturalLanguage/finding-similarities-between-pieces-of-text.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding.json": {
       "hash": "d5249e80fef025bfdc9c155222ab03491b94cfcbc957cd20981f8684cce9145d",
-      "last_checked": "2026-05-29T07:28:36.189438",
+      "last_checked": "2026-06-02T07:40:33.840964",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"490732e7c23abbe72d613672db6475e4\"",
       "file_path": "documentation/NaturalLanguage/nlembedding.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding.json": {
       "hash": "84e83696012d900fdef78eb2b509e83ba0ab2015d979dd7160c26114541b1232",
-      "last_checked": "2026-05-29T07:28:36.334402",
+      "last_checked": "2026-06-02T07:40:33.997320",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1c41083a70f7ec15e12e39ffe5a1ac84\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey.json": {
       "hash": "64108a3651ed240c696fcce389416b7ec7b8b1af1b1306a06ddca86fa4a7d3b6",
-      "last_checked": "2026-05-29T07:28:36.460702",
+      "last_checked": "2026-06-02T07:40:34.165827",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"244bd5f4bfb914d42b61473c0b5e6085\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript.json": {
       "hash": "97c3f5b9a728ee44359af0adc3d24485c86c55dafe20af9c86e1cbf1fca6259a",
-      "last_checked": "2026-05-29T07:28:36.575247",
+      "last_checked": "2026-06-02T07:40:34.461424",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"50a79f3d882284f272c6a68613d7c558\"",
       "file_path": "documentation/NaturalLanguage/nlscript.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel.json": {
       "hash": "2280c0ce7aef25e71420fa9b1ec8176696009000e522eb08221432419e19759c",
-      "last_checked": "2026-05-29T07:28:36.691843",
+      "last_checked": "2026-06-02T07:40:34.759588",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"00c43ac5674f692bdc10d9cddea1ee62\"",
       "file_path": "documentation/NaturalLanguage/nlmodel.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/init(unit:).json": {
       "hash": "9628c8c602175e8a4e55a6f9ccdd565f01c7dded9c1a1a064a95b3b43970d741",
-      "last_checked": "2026-05-29T07:28:36.805276",
+      "last_checked": "2026-06-02T07:40:34.995741",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"463ba685015f4ac0e0a97c1ac3c693d7\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/init-unit.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/string.json": {
       "hash": "318777e98706c0ec6f351643019a0c465ec8e83ce50d003ff7bfd00e05f9485f",
-      "last_checked": "2026-05-29T07:28:36.959878",
+      "last_checked": "2026-06-02T07:40:35.305119",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d669f6a449d2298f9308b260acfcc7bd\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/string.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/setlanguage(_:).json": {
       "hash": "e29e588dcf150820c526b53776e27332b80613f332781dae2c84e403a0814eec",
-      "last_checked": "2026-05-29T07:28:37.061556",
+      "last_checked": "2026-06-02T07:40:35.478367",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cec1ea52880016a581e124bdc813393f\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/setlanguage.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/unit.json": {
       "hash": "60c7ccc2cc9e52f2990e9796ea719b45f72fa32a4f5494eb3c903c9887e5189c",
-      "last_checked": "2026-05-29T07:28:37.286547",
+      "last_checked": "2026-06-02T07:40:35.776998",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"96915b2acf599b215c4c66f249076d23\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/unit.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes.json": {
       "hash": "f8c5afe70d5b9091636d9dd905faf2f46b154f94f79cf255946ff84ba2f56fb1",
-      "last_checked": "2026-05-29T07:28:37.391553",
+      "last_checked": "2026-06-02T07:40:35.955041",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"dce7ba8e86ed3e67c30e4856cad65d50\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/attributes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/enumeratetokens(in:using:).json": {
       "hash": "8dbcb820aed95996e90e010e63acdc9af5b63de1ba0bf53cb533d71ca75e4179",
-      "last_checked": "2026-05-29T07:28:37.452872",
+      "last_checked": "2026-06-02T07:40:36.132281",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a8e86be979bb1ef2eff4eb4138d31d7a\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/enumeratetokens-inusing.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokens(for:).json": {
       "hash": "b1e067cde9648904ae878899f5e68e4da9d5b4baeeb60852746068c8b358afb1",
-      "last_checked": "2026-05-29T07:28:37.563410",
+      "last_checked": "2026-06-02T07:40:36.457053",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5cc95955c5cfe424bfa631e8a76c71fa\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/tokens-for.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokenrange(at:).json": {
       "hash": "1a7da98216710e9d7ba55ba77536e728575d0f22c120db3181f7ef1762364bb2",
-      "last_checked": "2026-05-29T07:28:37.801130",
+      "last_checked": "2026-06-02T07:40:36.768712",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8f11d8a38d18ef89464494f80855f85e\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/tokenrange-at.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/tokenrange(for:).json": {
       "hash": "81586c6615c6c99f6ab563a3f059bf455c9cdc3b841af5ff5e7066bcc1429df9",
-      "last_checked": "2026-05-29T07:28:37.910494",
+      "last_checked": "2026-06-02T07:40:37.055836",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e5eef65314ddf838d51cb4f66901016d\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/tokenrange-for.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/init().json": {
       "hash": "92f08a1e9999feed95eb7cf72fc1c14aa4b7dface51fe3d38e85574b7cd19868",
-      "last_checked": "2026-05-29T07:28:38.016828",
+      "last_checked": "2026-06-02T07:40:37.227459",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9fe4a5a35bc60fabfe224cad6d0371f5\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/init.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage(for:).json": {
       "hash": "da63c6feac4d319e2a4b5a0dd3f41b0fc02cc3c7ef36ac8ec5a784c465d5670d",
-      "last_checked": "2026-05-29T07:28:38.075637",
+      "last_checked": "2026-06-02T07:40:37.394479",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"92cdb656bd4680762ee82bf21c5c0e43\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/dominantlanguage-for.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/processstring(_:).json": {
       "hash": "acb7f770eb0a0e36e07dc7771170b024ac7e7a4817a945d4d21b73029587d3cd",
-      "last_checked": "2026-05-29T07:28:38.182559",
+      "last_checked": "2026-06-02T07:40:37.544326",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"106707cb1977ea9dcd8df106a948d80d\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/processstring.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/dominantlanguage.json": {
       "hash": "8ffbd3f849e78e8f6e17b95e54b6a21f727dd40d70ddb530e084581c920a9896",
-      "last_checked": "2026-05-29T07:28:38.239821",
+      "last_checked": "2026-06-02T07:40:37.837654",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"62a8200d28f88a1786e09364303a6502\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/dominantlanguage.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languagehypotheses(withmaximum:).json": {
       "hash": "7604e2c9fb46a4ab290c0855c58981d6e098ef28d2ed2b248d3abd4f03d950ed",
-      "last_checked": "2026-05-29T07:28:38.300850",
+      "last_checked": "2026-06-02T07:40:38.004917",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"3e73c2ebbc3655bf28d91455bf48ebfb\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/languagehypotheses-withmaximum.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/reset().json": {
       "hash": "c334b2efe3f01a68b39ef79428de3e811acb55e718446a1d604e4baca556d12a",
-      "last_checked": "2026-05-29T07:28:38.405430",
+      "last_checked": "2026-06-02T07:40:38.301605",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d7ec068aeffa945a08a7dd7a4fa1807a\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/reset.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languagehints-7dwgv.json": {
       "hash": "b6333c70b45c4f623591ee8f9d4ac76212adc5be5587ab5102b80fe2ae92f76b",
-      "last_checked": "2026-05-29T07:28:38.516930",
+      "last_checked": "2026-06-02T07:40:38.467698",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"316d424682ba3804d66e93ee659b32d1\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/languagehints-7dwgv.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguagerecognizer/languageconstraints.json": {
       "hash": "2e8c6cf5b502d0ee17a3737ce657dcb9b886eebd1b90432bd80737b14f101212",
-      "last_checked": "2026-05-29T07:28:38.654258",
+      "last_checked": "2026-06-02T07:40:38.620776",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0e1021ad4aa28f5497ceef22addb0d86\"",
       "file_path": "documentation/NaturalLanguage/nllanguagerecognizer/languageconstraints.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/amharic.json": {
       "hash": "237aeb50cacb972e18f06a22a120552ee9174f8b88234f85c4fb962bff581e9f",
-      "last_checked": "2026-05-29T07:28:38.772835",
+      "last_checked": "2026-06-02T07:40:38.921927",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f5725355847d8c42ac0aaea13f528b30\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/amharic.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/arabic.json": {
       "hash": "035c6d4bb2561569b42f3557382eaf4a5f8894f66a55d265bfd3e51f40dd289d",
-      "last_checked": "2026-05-29T07:28:38.893675",
+      "last_checked": "2026-06-02T07:40:39.090800",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"470cfd98c4d42059262fc5603e7a69c6\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/arabic.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/armenian.json": {
       "hash": "96d24ad46643fd33983dea2f315c3d7a242d6cf53939ed9fb1839fb7841d30e9",
-      "last_checked": "2026-05-29T07:28:39.001972",
+      "last_checked": "2026-06-02T07:40:39.244029",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"55ae2a97eb91c8a2e8825bf4bada302e\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/armenian.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/bengali.json": {
       "hash": "1fd1652e7b3320f6b1c59de2e7361fc3d83ca520c219695d46227d65338e9e1d",
-      "last_checked": "2026-05-29T07:28:39.121489",
+      "last_checked": "2026-06-02T07:40:39.525087",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f16c7c7aadd6f48eebd7b90a5e2b148a\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/bengali.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/bulgarian.json": {
       "hash": "9d6bc167a54669827ee3fc09ea8b7b81e47be9368ae915c456738071039c5936",
-      "last_checked": "2026-05-29T07:28:39.211282",
+      "last_checked": "2026-06-02T07:40:39.689673",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6f8e35843eba3b32a3f9126ee186b73e\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/bulgarian.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/burmese.json": {
       "hash": "12c70488a1e87427e89a62ecc0c78ad5a7631513fd62edb9c65b156f23668e67",
-      "last_checked": "2026-05-29T07:28:39.372117",
+      "last_checked": "2026-06-02T07:40:39.876766",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"68710edf12963e4ad9e1b3c682b8e9a6\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/burmese.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/catalan.json": {
       "hash": "1aa869216fe4db7ffce4d645bbd7fc47beb033448ebdf0596d13a73bc56fa184",
-      "last_checked": "2026-05-29T07:28:39.477138",
+      "last_checked": "2026-06-02T07:40:40.055211",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"12e1a590b9ee83398f0a18eb595b1c28\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/catalan.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/cherokee.json": {
       "hash": "450b161f0fa53561d966fe64080e394db6289701f281879499cd72c96fd02ac2",
-      "last_checked": "2026-05-29T07:28:39.701327",
+      "last_checked": "2026-06-02T07:40:40.225451",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2d849683e0949973782065b87bfd023d\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/cherokee.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/croatian.json": {
       "hash": "9ca7282f2d8e79fca478cabb04fffa7f50376482fe294e1f901ffff053e61750",
-      "last_checked": "2026-05-29T07:28:39.939853",
+      "last_checked": "2026-06-02T07:40:40.393093",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"75b1eb1bb2ead15042aea3fff9fac08c\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/croatian.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/czech.json": {
       "hash": "0521e3af3878b91d1b5b210a0c49a672da3b94d9bbba98d64228f7c92f81ceca",
-      "last_checked": "2026-05-29T07:28:39.996951",
+      "last_checked": "2026-06-02T07:40:40.548244",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6a08a66a81c7c80ff9f9c21745a2d72c\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/czech.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/danish.json": {
       "hash": "85a4578a97dcd5bb60a45b46892896148c13490b3f83be486783ba054cfc26a2",
-      "last_checked": "2026-05-29T07:28:40.115081",
+      "last_checked": "2026-06-02T07:40:40.725058",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"10cc2a82a5f2cf1cd98bc2bef162ea42\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/danish.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/dutch.json": {
       "hash": "f67459038cf988165e939b52a0ac9c612e8b5aab982049c3a0472a9d65eb5f69",
-      "last_checked": "2026-05-29T07:28:40.229729",
+      "last_checked": "2026-06-02T07:40:40.888709",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d3f08d28506dc4e780bcc080aead4bfe\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/dutch.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/english.json": {
       "hash": "feaa4624673a82820f0a01f90858ba5b37c54c17829d6ff987137ba3e65c66b6",
-      "last_checked": "2026-05-29T07:28:40.358501",
+      "last_checked": "2026-06-02T07:40:41.066081",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a4d6d72a6db6dbfde37afd0e4a541fa9\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/english.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/finnish.json": {
       "hash": "604b3736fca9740b1a713212d121768c830cdf8c23589dbdeb286267f6e13d3d",
-      "last_checked": "2026-05-29T07:28:40.368020",
+      "last_checked": "2026-06-02T07:40:41.225101",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"538a32d60fed00c8ceff75a5935ab2ec\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/finnish.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/french.json": {
       "hash": "5669dc0738c4e3e1deb217ea5f41ca9ce16043edc4806c26f90f0450ad26780f",
-      "last_checked": "2026-05-29T07:28:40.539581",
+      "last_checked": "2026-06-02T07:40:41.376553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"814a2d926e22019151d2cd51271a63fe\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/french.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/georgian.json": {
       "hash": "f19384f9b6ff84cbb6b762ac77fd6f373532f0e3cfe139a1d3c9ab7c2185d957",
-      "last_checked": "2026-05-29T07:28:40.643834",
+      "last_checked": "2026-06-02T07:40:41.544704",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"049f85c03757e46daa4133fce2604225\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/georgian.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/german.json": {
       "hash": "9b97cbe20516088efc8b9480351dd2a412bf715392bd06baa344d18886f50f7b",
-      "last_checked": "2026-05-29T07:28:40.703875",
+      "last_checked": "2026-06-02T07:40:41.713572",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9f16fac54abfade30e09456dd95182a9\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/german.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/greek.json": {
       "hash": "bac80c046f0e090f7fbd0bc11400903e7edb49ea6cf4651fa10f59131f6e7ee4",
-      "last_checked": "2026-05-29T07:28:40.950802",
+      "last_checked": "2026-06-02T07:40:42.019521",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"662c228c208312e7c90a425f838fdceb\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/greek.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/gujarati.json": {
       "hash": "5721f93e963e00559d28a7b19c32e621b97cf228d4bdd98099d3b624016edfbe",
-      "last_checked": "2026-05-29T07:28:41.017543",
+      "last_checked": "2026-06-02T07:40:42.183066",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0533908182c424e7d7dfb74f58159ee5\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/gujarati.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hebrew.json": {
       "hash": "9046df446637dca703da5c19fd12a3fa5fcc1a1c25679b384b2c061793cfd00f",
-      "last_checked": "2026-05-29T07:28:41.136623",
+      "last_checked": "2026-06-02T07:40:42.346784",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"dac33f00ca2542a5fe2a87465dbd0772\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/hebrew.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hindi.json": {
       "hash": "7f604d439fd97fb6bb71b4661e5362fd7f97226009640a308e159111b2cd052c",
-      "last_checked": "2026-05-29T07:28:41.194226",
+      "last_checked": "2026-06-02T07:40:42.513371",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ad9c21ea4b2b81172acb2a1c7d233064\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/hindi.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/hungarian.json": {
       "hash": "3a0cf7787bdd69ed75b8789a53fe53bb588f4038bbd5c1067fb63027b370b945",
-      "last_checked": "2026-05-29T07:28:41.259284",
+      "last_checked": "2026-06-02T07:40:42.814767",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ab847760b91e04e6cb2da43b6133fd06\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/hungarian.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/icelandic.json": {
       "hash": "616dc3df1a8935a44b10d514614893a80e6e48dcacd96fed2eabd92b84851206",
-      "last_checked": "2026-05-29T07:28:41.313871",
+      "last_checked": "2026-06-02T07:40:43.122614",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"97ab33f05eef6774c15da026a8b65c1c\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/icelandic.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/indonesian.json": {
       "hash": "3f0e89abcc54b94c90b4ae086fb344c255978d642072d7cb834489d143af8669",
-      "last_checked": "2026-05-29T07:28:41.438027",
+      "last_checked": "2026-06-02T07:40:43.301523",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8aa4abc672bdd8c962afc0ed5a99a46b\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/indonesian.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/italian.json": {
       "hash": "fd52bb612b0d57561754db6e15810a0e54cef72605005b509e3f827d6e12dc61",
-      "last_checked": "2026-05-29T07:28:41.558192",
+      "last_checked": "2026-06-02T07:40:43.587227",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2e3e2f583bd5b263e3243fddce468c4e\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/italian.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/japanese.json": {
       "hash": "3b831f640fae397d506b4118e3c108c08882c9a37163b2bc95a0ae0a8521241c",
-      "last_checked": "2026-05-29T07:28:41.614561",
+      "last_checked": "2026-06-02T07:40:43.760728",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e4f50918b766d58be68e70d26487d24b\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/japanese.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/kannada.json": {
       "hash": "113cd82f3ab7413fac0f57a471db7cf6a2bc702e174b2bbd4f45f5bf26718c2e",
-      "last_checked": "2026-05-29T07:28:41.730667",
+      "last_checked": "2026-06-02T07:40:43.919035",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"26585f9df4ee1ff8d134b936f5414460\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/kannada.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/kazakh.json": {
       "hash": "b129d849d52fe6dfed780bf8530c84ed310d02a128bdffcbcc942bd4f773e84e",
-      "last_checked": "2026-05-29T07:28:41.841073",
+      "last_checked": "2026-06-02T07:40:44.098208",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b1ac95276bec3fa074d41a023557cff3\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/kazakh.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/khmer.json": {
       "hash": "a2ab2b5417d821097297c61e20e2d39d9d1da3a876f0f16b9828032af008cf4f",
-      "last_checked": "2026-05-29T07:28:41.946361",
+      "last_checked": "2026-06-02T07:40:44.261458",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0be73fb14b8f0bd92184cdd00bc1fbfd\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/khmer.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/korean.json": {
       "hash": "778a0c0ef5abfd87d2b49cef3888ba97f81a05f3df17b30a91c0ff5b67b67a19",
-      "last_checked": "2026-05-29T07:28:42.012090",
+      "last_checked": "2026-06-02T07:40:44.417720",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cfce3e1528e70936763d45cd02be21b3\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/korean.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/lao.json": {
       "hash": "e7b7534d10c06a85d0699e98d0e8c28fa9f981256c29ecd4e420aec78e69abe1",
-      "last_checked": "2026-05-29T07:28:42.147582",
+      "last_checked": "2026-06-02T07:40:44.586525",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d4f86b458a96119733a57dfc9d0bb895\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/lao.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/malay.json": {
       "hash": "1197194b410d293d7ca3f815f8e46e647ea54b1c10f1e66d583e3b239970fe71",
-      "last_checked": "2026-05-29T07:28:42.282231",
+      "last_checked": "2026-06-02T07:40:44.769426",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"08b11fa86f50cd3f94c186d39afb5132\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/malay.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/malayalam.json": {
       "hash": "11b55635edc3fea47c5aa1221fbe0a068b30b2bb3cd88b391d34e6672e812c74",
-      "last_checked": "2026-05-29T07:28:42.451288",
+      "last_checked": "2026-06-02T07:40:44.937988",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1d92cba7c35a5be1e90f28a1340b626a\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/malayalam.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/marathi.json": {
       "hash": "19b0fa776fcdb884116eb31f8791961a85e43c4484becd7234dec23313951b47",
-      "last_checked": "2026-05-29T07:28:42.574356",
+      "last_checked": "2026-06-02T07:40:45.104923",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"66e5cea521ae265138fcbf3a76aafb94\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/marathi.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/mongolian.json": {
       "hash": "91b312a41b955316cfb0cbe7e8ec0cdc36c66d22f7f4a968b5b216556f3683aa",
-      "last_checked": "2026-05-29T07:28:42.684469",
+      "last_checked": "2026-06-02T07:40:45.277093",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a91a498a69ab9b5b3ecfe19b7a651884\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/mongolian.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/norwegian.json": {
       "hash": "6f4b1754c634e5e486c886d36c7b5f2c144ab42ab0c6d4c557324c2f782581b1",
-      "last_checked": "2026-05-29T07:28:42.790101",
+      "last_checked": "2026-06-02T07:40:45.443960",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5a54410d38d367c2d1b3e47edb5f4f1c\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/norwegian.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/oriya.json": {
       "hash": "728545dee627194a5eac8a119f046960c27775761976ea9308c7c7ee5244a21e",
-      "last_checked": "2026-05-29T07:28:42.918762",
+      "last_checked": "2026-06-02T07:40:45.732158",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"684424c8a73fc65271a83acb25a615e5\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/oriya.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/persian.json": {
       "hash": "ea826fe94f41aedf41a9defd4fb67df0b133e6b8b323afb7f808b26c775c68f1",
-      "last_checked": "2026-05-29T07:28:43.021547",
+      "last_checked": "2026-06-02T07:40:45.889400",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b5e0be7b73c1157fa6099f744dbc3fcc\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/persian.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/polish.json": {
       "hash": "d6f5c8da6d3bb51077cbc8a3a0cd7c28135e0dfad32a8124403160bd6ed88e24",
-      "last_checked": "2026-05-29T07:28:43.079669",
+      "last_checked": "2026-06-02T07:40:46.068412",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"927060326a0b0a6d1325b75b2a83f4f1\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/polish.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/portuguese.json": {
       "hash": "d641dc4047437c2432480736d6e356eaebecab8804ede8838fd6034c17c5dc5a",
-      "last_checked": "2026-05-29T07:28:43.183856",
+      "last_checked": "2026-06-02T07:40:46.238092",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"be5c37b58de46697c47b0f93b33fc3d6\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/portuguese.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/punjabi.json": {
       "hash": "b9d179da96680be16c99e9cce25bfe06cd870e645757cb0cebb1f413a061090b",
-      "last_checked": "2026-05-29T07:28:43.293507",
+      "last_checked": "2026-06-02T07:40:46.405726",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e1094da9fe4cea4a4efb6d14d0737f21\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/punjabi.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/romanian.json": {
       "hash": "75a4ffcf1a7cdff2ffa0c367afd919fd2232de0e5065880c817f44e91cf45451",
-      "last_checked": "2026-05-29T07:28:43.518329",
+      "last_checked": "2026-06-02T07:40:46.574385",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f9dd53fec0cc3c5379d366a7084917a5\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/romanian.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/russian.json": {
       "hash": "ec00dd70cd20a7febe1906d6fa76e012760a84b4125c4243a3b7a384a71bdb23",
-      "last_checked": "2026-05-29T07:28:43.624464",
+      "last_checked": "2026-06-02T07:40:46.745735",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ff53a93f321b46ea41bdc8c2a8800791\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/russian.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/simplifiedchinese.json": {
       "hash": "a23c18ca0a0edaedf6465c1d925ae4f499807d21b43ca688509a8f6c1c4b8235",
-      "last_checked": "2026-05-29T07:28:43.727864",
+      "last_checked": "2026-06-02T07:40:46.926618",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"122190275ce1fe7a847a273d11eb035e\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/simplifiedchinese.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/sinhalese.json": {
       "hash": "d473261e7858efca61114e8a3c2b7c6f8695399e171bca3fbcb95867e61fe2bb",
-      "last_checked": "2026-05-29T07:28:43.836278",
+      "last_checked": "2026-06-02T07:40:47.083022",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e7922bf01bfcbfb9018eefa2e57d3041\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/sinhalese.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/slovak.json": {
       "hash": "cec7ee83bbaa5ee57e0eb8dcc09352240cffd7b4f3fa4f4dc73c09655a527162",
-      "last_checked": "2026-05-29T07:28:43.894570",
+      "last_checked": "2026-06-02T07:40:47.240482",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"04d8d7894bb2bc7d7ba206674aa78728\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/slovak.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/spanish.json": {
       "hash": "a22e1017ae1b181f55e0aba7a93ba83643cc9905c3cd03489e00c05fe8589441",
-      "last_checked": "2026-05-29T07:28:44.013692",
+      "last_checked": "2026-06-02T07:40:47.430085",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9d3f4a4f14206d9038cf0cc55d71e6a3\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/spanish.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/swedish.json": {
       "hash": "c3ff3e30721e6459666a1c2e9a33ab867d847490e801e92242da45dfb14585ed",
-      "last_checked": "2026-05-29T07:28:44.118578",
+      "last_checked": "2026-06-02T07:40:47.617928",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f9fe415a1b336753606147a487b4d464\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/swedish.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/tamil.json": {
       "hash": "9bb9b8c6f1fabb6e8783d4fd21cdf41e85e99aaf99576305f630ea0ead5275cd",
-      "last_checked": "2026-05-29T07:28:44.230347",
+      "last_checked": "2026-06-02T07:40:47.791601",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"262a1e81895f2ca06697ff4b9d21da19\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/tamil.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/telugu.json": {
       "hash": "bbd4b82c1d0af5431cff744aca030150ae1230e2daceabb676f8ff793f559b1d",
-      "last_checked": "2026-05-29T07:28:44.286011",
+      "last_checked": "2026-06-02T07:40:47.958281",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f29489c441d6dc5a30853b9fb9f0c45d\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/telugu.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/thai.json": {
       "hash": "56389cb9850aa1ecd23f62aceb1431c7ae9a42e7b7eac6a6bab7fd1714f1e2f3",
-      "last_checked": "2026-05-29T07:28:44.405289",
+      "last_checked": "2026-06-02T07:40:48.129867",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8665fa30c849412b8a88ae3a39eccc98\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/thai.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/tibetan.json": {
       "hash": "16c0105ec3297944348a4cd06d2b4842103c7e6094ed86c0b9c65752a24deb5c",
-      "last_checked": "2026-05-29T07:28:44.525861",
+      "last_checked": "2026-06-02T07:40:48.286412",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"03c192737ec13d9e214121f821768a19\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/tibetan.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/traditionalchinese.json": {
       "hash": "a8d352b41d45a926e4806be9ffc6c6c19a7257e6723c26e801dbd999c5497f25",
-      "last_checked": "2026-05-29T07:28:44.870932",
+      "last_checked": "2026-06-02T07:40:48.447314",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b109935aa6a81ac90a6a2226e714781f\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/traditionalchinese.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/turkish.json": {
       "hash": "2d43b4a409846bd7d743a9731a35bba76603dadcd1d2821b8277322581e7e662",
-      "last_checked": "2026-05-29T07:28:44.977063",
+      "last_checked": "2026-06-02T07:40:48.597647",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"3ca01e9a5d8c343b32d40982dc94e338\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/turkish.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/ukrainian.json": {
       "hash": "9eddef6a67223d19a66caf3faa6be8edff825f8ee6a8f5ac8e123c0e8cb4b3f7",
-      "last_checked": "2026-05-29T07:28:45.133192",
+      "last_checked": "2026-06-02T07:40:48.768124",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"faa2f062d57f1a97e4387e9292f9f30d\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/ukrainian.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/urdu.json": {
       "hash": "8dfa031fecb4dfb1095ff25c12a87c954054304281b1ed0b9cf5183c8390775d",
-      "last_checked": "2026-05-29T07:28:45.212763",
+      "last_checked": "2026-06-02T07:40:48.933567",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e2780d2f44eea2a2636ff09c5ab9fc0c\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/urdu.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/vietnamese.json": {
       "hash": "59a6cb34aae6d5378df8838d176ddb519a9f082cc6288337463b65afbb3ebf0d",
-      "last_checked": "2026-05-29T07:28:45.409824",
+      "last_checked": "2026-06-02T07:40:49.097523",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4d06b0f20e7fdcdd3390c25e75c61b5d\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/vietnamese.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/undetermined.json": {
       "hash": "71a2e1f3eaa0f2894504dd083fd46ac7ff286633b2564206170534b8ca4feaf1",
-      "last_checked": "2026-05-29T07:28:45.519006",
+      "last_checked": "2026-06-02T07:40:49.259003",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a362e647349ad7951d397fdf463f7980\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/undetermined.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/init(_:).json": {
       "hash": "1442720abf5da2eb3fd560518d29565a0b90f20a1d4e053cad195c87a726efea",
-      "last_checked": "2026-05-29T07:28:45.602210",
+      "last_checked": "2026-06-02T07:40:49.423425",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f59afe8e4a05ff490b58f3f40b501c31\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/init.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nllanguage/init(rawvalue:).json": {
       "hash": "20f3f1b3ce77b0be25f418bcf2409a76d46573a2900b6539bc29352fca54c751",
-      "last_checked": "2026-05-29T07:28:45.712803",
+      "last_checked": "2026-06-02T07:40:49.580331",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e01cbce42a55c1932c3b6f4985fa8c2a\"",
       "file_path": "documentation/NaturalLanguage/nllanguage/init-rawvalue.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/init(tagschemes:).json": {
       "hash": "38a765c05883c5648fa9f2ce57783c2aaed5fd6fa42d497b364744e40c0a40b5",
-      "last_checked": "2026-05-29T07:28:46.002415",
+      "last_checked": "2026-06-02T07:40:49.743522",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"950234dfade6ab3bff0932dbf2e3c7d1\"",
       "file_path": "documentation/NaturalLanguage/nltagger/init-tagschemes.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/string.json": {
       "hash": "949a0ef98a14028316887543db9ebf1a14f965f25d0face5d8994ce5f60bd5cc",
-      "last_checked": "2026-05-29T07:28:46.079920",
+      "last_checked": "2026-06-02T07:40:49.900142",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"da8ecb51f3e8507274a80028eabc537b\"",
       "file_path": "documentation/NaturalLanguage/nltagger/string.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/availabletagschemes(for:language:).json": {
       "hash": "6c7634e98c34f66e7c0a7fc2d71b8d2dcff888e764ab09243f4de875a10e2dc1",
-      "last_checked": "2026-05-29T07:28:46.188997",
+      "last_checked": "2026-06-02T07:40:50.071795",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ab903d8103c89283e78c23ee0655220b\"",
       "file_path": "documentation/NaturalLanguage/nltagger/availabletagschemes-forlanguage.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/requestassets(for:tagscheme:completionhandler:).json": {
       "hash": "0448d4f070a828a6aff403b7ddfd2dd86a02d5e65646ecbfcad6426e018177df",
-      "last_checked": "2026-05-29T07:28:46.268698",
+      "last_checked": "2026-06-02T07:40:50.271355",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0d404bd88754ee26bee9a7f5f8229921\"",
       "file_path": "documentation/NaturalLanguage/nltagger/requestassets-fortagschemecompletionhandler.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult.json": {
       "hash": "2a20708cd2756dfe621af99570c2fb226e64bf35e1b4a70cd2561d35c8ab93de",
-      "last_checked": "2026-05-29T07:28:46.328580",
+      "last_checked": "2026-06-02T07:40:50.444876",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"bfc29f6fb48a83bb04537b33ce035f29\"",
       "file_path": "documentation/NaturalLanguage/nltagger/assetsresult.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tagschemes.json": {
       "hash": "cb35c60223322764b0ce68d9bb17a7b8764937ebf1f69d3853d7c1623df3592c",
-      "last_checked": "2026-05-29T07:28:46.403059",
+      "last_checked": "2026-06-02T07:40:50.601830",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0c0f18fd1723f09eb9ae668c5f70fd03\"",
       "file_path": "documentation/NaturalLanguage/nltagger/tagschemes.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme.json": {
       "hash": "0eb4e92dfc17e2719461dbface0e62d14f6e1d773c4cc01b7fd3276a23c0e89f",
-      "last_checked": "2026-05-29T07:28:46.520793",
+      "last_checked": "2026-06-02T07:40:50.775181",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f0df53797531cff130ef0e45f9257518\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/dominantlanguage.json": {
       "hash": "b760a8271403da272dbdfd97aee189e913a8d53d09b904531ae265df49fab21c",
-      "last_checked": "2026-05-29T07:28:46.600057",
+      "last_checked": "2026-06-02T07:40:51.094598",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5441a7504ffd4eee2f503148a4b27609\"",
       "file_path": "documentation/NaturalLanguage/nltagger/dominantlanguage.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setlanguage(_:range:).json": {
       "hash": "171279f0d70329aba15db0a8f31134876db2ff70c6a499fa4a320bae09bb14c4",
-      "last_checked": "2026-05-29T07:28:46.657149",
+      "last_checked": "2026-06-02T07:40:51.251146",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"71323c1467fb7f02d3dc1444a09353a8\"",
       "file_path": "documentation/NaturalLanguage/nltagger/setlanguage-range.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setorthography(_:range:).json": {
       "hash": "c588e5c6e3da04afc51233486b03f8a6d20f51069e88206977aaeb80f6c6112c",
-      "last_checked": "2026-05-29T07:28:46.706179",
+      "last_checked": "2026-06-02T07:40:51.451720",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"57fb687cf6a299aef8bb8fa0db2bee5b\"",
       "file_path": "documentation/NaturalLanguage/nltagger/setorthography-range.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/enumeratetags(in:unit:scheme:options:using:).json": {
       "hash": "0a3059560f1c448e9a10948f2e192d50462d66978e2f4d3b8be8772bcf6ca74e",
-      "last_checked": "2026-05-29T07:28:46.772469",
+      "last_checked": "2026-06-02T07:40:51.611337",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2c9981a27849517e39a13685cd01c20c\"",
       "file_path": "documentation/NaturalLanguage/nltagger/enumeratetags-inunitschemeoptionsusing.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options.json": {
       "hash": "f58a0736bd24661f93eb83a6d9cf64c65ac5ddd6dc3b976fd2ec5936d16848fa",
-      "last_checked": "2026-05-29T07:28:46.889684",
+      "last_checked": "2026-06-02T07:40:51.769659",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2b8356a02036761bddf57a6abe3eb72a\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag.json": {
       "hash": "a2283d3a08f1cdb457981213b304b01b366572c827c1d06bee28150e8d14ef03",
-      "last_checked": "2026-05-29T07:28:47.051896",
+      "last_checked": "2026-06-02T07:40:51.935244",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"595c5f210681251598190be7dab0d8a6\"",
       "file_path": "documentation/NaturalLanguage/nltag.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tags(in:unit:scheme:options:).json": {
       "hash": "e66a032b6463b9775f500f403bb4d3f19ad9c1e91672f0d319e88cb9d7431bc6",
-      "last_checked": "2026-05-29T07:28:47.132347",
+      "last_checked": "2026-06-02T07:40:52.102854",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"61cb7c7070ed9bdceabb4396988aecb0\"",
       "file_path": "documentation/NaturalLanguage/nltagger/tags-inunitschemeoptions.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tag(at:unit:scheme:).json": {
       "hash": "c8ea4c2d00020ef9cd91bc90c9341eeedb1da49514ed437639bfb78d4157b0b0",
-      "last_checked": "2026-05-29T07:28:47.220674",
+      "last_checked": "2026-06-02T07:40:52.272289",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"bebf515669891f3ad9fcf06191ebcc1f\"",
       "file_path": "documentation/NaturalLanguage/nltagger/tag-atunitscheme.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/taghypotheses(at:unit:scheme:maximumcount:).json": {
       "hash": "769545589f3293b97db423b36f110e9a88b2b8583c838036ea4086eb0b603b33",
-      "last_checked": "2026-05-29T07:28:47.279134",
+      "last_checked": "2026-06-02T07:40:52.443522",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ab4877a666ea6a81254307b29f281537\"",
       "file_path": "documentation/NaturalLanguage/nltagger/taghypotheses-atunitschememaximumcount.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tokenrange(at:unit:).json": {
       "hash": "2a007510cf941c00772ee6d189da7ee7b502d4677ac04d95d65a4999f0621fdb",
-      "last_checked": "2026-05-29T07:28:47.336127",
+      "last_checked": "2026-06-02T07:40:52.602782",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cb52e52b0d05b78edf39ba9b0a1a383e\"",
       "file_path": "documentation/NaturalLanguage/nltagger/tokenrange-atunit.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/tokenrange(for:unit:).json": {
       "hash": "f8196f4dcbfba3a388a00329302b85fce5b05e572a67f1eb1ccf9c918ddf05c7",
-      "last_checked": "2026-05-29T07:28:47.411408",
+      "last_checked": "2026-06-02T07:40:52.767855",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a6510427858fb1dd2f9ebff3262fe851\"",
       "file_path": "documentation/NaturalLanguage/nltagger/tokenrange-forunit.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit.json": {
       "hash": "2f6b69b53b0a2a3d471c7eb830c5a87937d4a6a1c2d4e7292b17d6cd62bd7ec4",
-      "last_checked": "2026-05-29T07:28:47.552358",
+      "last_checked": "2026-06-02T07:40:53.138947",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c7bfd87e3260c6925b06ce5a1db4cfb9\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setmodels(_:fortagscheme:).json": {
       "hash": "93a97cb247a96cc9f9a86020b57b5b0dc0c08ecd20e8e4724ff207cfd2d30ff9",
-      "last_checked": "2026-05-29T07:28:47.596995",
+      "last_checked": "2026-06-02T07:40:53.262012",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c8ceb99269da0470ae84dc2a016836f9\"",
       "file_path": "documentation/NaturalLanguage/nltagger/setmodels-fortagscheme.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/models(fortagscheme:).json": {
       "hash": "6d2948430f67bc08b2c910366dad2b41948971eddc48662f621436dc4ac9d143",
-      "last_checked": "2026-05-29T07:28:47.656415",
+      "last_checked": "2026-06-02T07:40:53.429937",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cfbdd1f87b4dc0cfe6fd53acda97111b\"",
       "file_path": "documentation/NaturalLanguage/nltagger/models-fortagscheme.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/setgazetteers(_:for:).json": {
       "hash": "ac81f625a0156a3789916fba31c9c113c3fcf5d855280e6d1acd088bcf559599",
-      "last_checked": "2026-05-29T07:28:47.730378",
+      "last_checked": "2026-06-02T07:40:53.585635",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"27e71da8a8a49bb3152d1ea5e09bae5d\"",
       "file_path": "documentation/NaturalLanguage/nltagger/setgazetteers-for.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/gazetteers(for:).json": {
       "hash": "2e1e69a7de149aef53bec6a0e83a4b8eda134eaef98f47cf6dd3d65ea1cbcea9",
-      "last_checked": "2026-05-29T07:28:47.929354",
+      "last_checked": "2026-06-02T07:40:53.749480",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c13b7a0f1df125bee4f18956b8c83ea8\"",
       "file_path": "documentation/NaturalLanguage/nltagger/gazetteers-for.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer.json": {
       "hash": "09850bdbe0185b08cc0f9a1d80be4f97787f202461cd864799388f47972cc19d",
-      "last_checked": "2026-05-29T07:28:47.981457",
+      "last_checked": "2026-06-02T07:40:53.881050",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5c8eab57f1cc64d9db19545ea10863c5\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/wordembedding(for:).json": {
       "hash": "278d5276be72a0f19aadd651f60143742c88f28b870ae4ef13bfbb44f7509743",
-      "last_checked": "2026-05-29T07:28:48.039203",
+      "last_checked": "2026-06-02T07:40:54.053643",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f501619ecb22ede65125c709921d5698\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/wordembedding-for.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/wordembedding(for:revision:).json": {
       "hash": "48c8158d09c38732fd0b31323a6a83ff20a4831c636f7ab7b5278b4587af7093",
-      "last_checked": "2026-05-29T07:28:48.095695",
+      "last_checked": "2026-06-02T07:40:54.417466",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"95e782ee0b10eb5d6163071a979bcfe4\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/wordembedding-forrevision.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/init(contentsof:).json": {
       "hash": "d51c99025554720ff68898cd961f187f509267cdfc1d3bd958b4b36ad73a57ef",
-      "last_checked": "2026-05-29T07:28:48.230015",
+      "last_checked": "2026-06-02T07:40:54.596491",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a00d2eb9e7320334dc1e06bd4ee51863\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/init-contentsof.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/sentenceembedding(for:).json": {
       "hash": "7a877419adeaed3e3e1b70a07f68e5295ad78c5114df7b2575146bcbaa72af2d",
-      "last_checked": "2026-05-29T07:28:48.282748",
+      "last_checked": "2026-06-02T07:40:54.756576",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d5902fe8a975c72809902a6192934440\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/sentenceembedding-for.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/sentenceembedding(for:revision:).json": {
       "hash": "ab3305119be2449932b3ca74495d4ddd2f03a1667cc31d033c8ce0dfe8bd9550",
-      "last_checked": "2026-05-29T07:28:48.413761",
+      "last_checked": "2026-06-02T07:40:54.966933",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"01cf9c4fb1f8632e17b8f4d09ea79934\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/sentenceembedding-forrevision.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8f1jc.json": {
       "hash": "ca2c9fafffa9ce71c283b15c7e097bf285dcd77b084825d099d10a819629d216",
-      "last_checked": "2026-05-29T07:28:48.542005",
+      "last_checked": "2026-06-02T07:40:55.138671",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"bb68cedfcff82cc7e6e8758810cc69b2\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/neighbors-formaximumcountdistancetype-8f1jc.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/neighbors(for:maximumcount:distancetype:)-8lp4z.json": {
       "hash": "56ba0b2014bb4cb4076326b58d028c86ae139118a0a6edfe1ac17efe6d84c4c3",
-      "last_checked": "2026-05-29T07:28:48.599916",
+      "last_checked": "2026-06-02T07:40:55.323452",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6902589ec092165811a1e6e447e1cec5\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/neighbors-formaximumcountdistancetype-8lp4z.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-72jda.json": {
       "hash": "969804fb3a5908c8a7535338959377594d27a8b5fc17e4e6609545b8c42e48ab",
-      "last_checked": "2026-05-29T07:28:48.660964",
+      "last_checked": "2026-06-02T07:40:55.517839",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"53f7390de0f6928bf2cc70c8ecfe70fb\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/enumerateneighbors-formaximumcountdistancetypeusing-72jda.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/enumerateneighbors(for:maximumcount:distancetype:using:)-6dy4x.json": {
       "hash": "853f7d11b81c7999fb9bcd493b3f513c8aa11e146825f458ac075e934d4a10e9",
-      "last_checked": "2026-05-29T07:28:48.738935",
+      "last_checked": "2026-06-02T07:40:55.657382",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b15037c14c930b2507261656aa474244\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/enumerateneighbors-formaximumcountdistancetypeusing-6dy4x.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/distance(between:and:distancetype:).json": {
       "hash": "2c9c6afd8aa2ce10adad940257e0a7ec5bd2cbb176ffe8dc04b79beedd5d3501",
-      "last_checked": "2026-05-29T07:28:48.818216",
+      "last_checked": "2026-06-02T07:40:55.816554",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a563c860279fc842bed85d9634dd3b11\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/distance-betweenanddistancetype.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistance.json": {
       "hash": "e93c82133804a85ab86c0ac8554eb24d51eab8d0494a37dea30af686ae996410",
-      "last_checked": "2026-05-29T07:28:48.922871",
+      "last_checked": "2026-06-02T07:40:55.974172",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9c24ea639d5ceaf2d061e9aa802eef21\"",
       "file_path": "documentation/NaturalLanguage/nldistance.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/dimension.json": {
       "hash": "f1f734138f0cc029ce82a4db765ac3b8aef6d78ec447f3320cda516ac6ccbf9a",
-      "last_checked": "2026-05-29T07:28:48.974618",
+      "last_checked": "2026-06-02T07:40:56.127655",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a84f5d3f883b6922bc91d169c8d5f937\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/dimension.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/vocabularysize.json": {
       "hash": "1ff427454e287c494b2b1ad7021c3a7047b1993adfbe16c59f510eb3f3b5f2c1",
-      "last_checked": "2026-05-29T07:28:49.042373",
+      "last_checked": "2026-06-02T07:40:56.238838",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fb3d088dd51efae5cf162e6f95839b3c\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/vocabularysize.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/language.json": {
       "hash": "cfc2717ad3f72f0207fd71562ac0e3cfed0839a392b50048bfae7c9990da9570",
-      "last_checked": "2026-05-29T07:28:49.167259",
+      "last_checked": "2026-06-02T07:40:56.389491",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"70beb5e95a76970a471d34bfe7069b2d\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/language.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/contains(_:).json": {
       "hash": "7c50882495a89dde40cb6bcf5ec80fb8c55f40dd30e226703c8fc1dafc8639f9",
-      "last_checked": "2026-05-29T07:28:49.249559",
+      "last_checked": "2026-06-02T07:40:56.550313",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5980f0f6631d320e5fd4b39ecabf881b\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/contains.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/vector(for:).json": {
       "hash": "796b31568a614059a2c1f9817df6bbb2af9bde9fd77806e001ee3cc1324e3414",
-      "last_checked": "2026-05-29T07:28:49.313907",
+      "last_checked": "2026-06-02T07:40:56.696371",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0c079d186cea3153a09ff630aa843013\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/vector-for.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/revision.json": {
       "hash": "fd6d438d5c2484971f0ebde78a8e72e78a2adc94d97fecb974e2b61ce1b115e2",
-      "last_checked": "2026-05-29T07:28:49.382375",
+      "last_checked": "2026-06-02T07:40:56.849572",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fa48f189854d3d80592a4397c5a55d47\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/revision.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/write(_:language:revision:to:).json": {
       "hash": "2093b7c8da9755c6e94f2b138ab5bb01c63a96a8089f6cf8c42663a4dacdd09a",
-      "last_checked": "2026-05-29T07:28:49.445113",
+      "last_checked": "2026-06-02T07:40:57.016045",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fc62d95785e5abcd1e004a83b1720524\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/write-languagerevisionto.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/currentrevision(for:).json": {
       "hash": "141ae6405d107b47311a463bdad1db91df594542e3be7f3c064a74dcaf954156",
-      "last_checked": "2026-05-29T07:28:49.519404",
+      "last_checked": "2026-06-02T07:40:57.197393",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"454d9823b44c5318e959774ba7f7939d\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/currentrevision-for.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/supportedrevisions(for:).json": {
       "hash": "e5ea7c65807ff57185c3aaa1831b127cda35a5b7e117094fdf71991e999e5808",
-      "last_checked": "2026-05-29T07:28:49.601541",
+      "last_checked": "2026-06-02T07:40:57.373513",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5b2fcef4cf42ddf3bf214d85d60da7ff\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/supportedrevisions-for.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/currentsentenceembeddingrevision(for:).json": {
       "hash": "0f75aebb558a8284839c4f70af8fc7aba79e9f7ee2ff055e55b412e17c851a8f",
-      "last_checked": "2026-05-29T07:28:49.686805",
+      "last_checked": "2026-06-02T07:40:57.510658",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"38f825f452d6a91f1257a15902ae57b0\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/currentsentenceembeddingrevision-for.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/supportedsentenceembeddingrevisions(for:).json": {
       "hash": "07e5523ee606850fa704ea993f6d1a8b17f83cbb233b3ebc9e77f12e30ba24d7",
-      "last_checked": "2026-05-29T07:28:49.738623",
+      "last_checked": "2026-06-02T07:40:57.638854",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a0682da50959d210135037c491f33bb6\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/supportedsentenceembeddingrevisions-for.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(modelidentifier:).json": {
       "hash": "401facce90fb1b630d7b7e0f6d938179294b23d8b5577c12c55fb507d1081b00",
-      "last_checked": "2026-05-29T07:28:49.843379",
+      "last_checked": "2026-06-02T07:40:58.087516",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cca467fcb5cd93a806a4dbd9d78a5596\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/init-modelidentifier.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(language:).json": {
       "hash": "95c0f0ab8bc7f240a43f6431f01eb814b640c5d7efa72b8f3a7c649b30e3997f",
-      "last_checked": "2026-05-29T07:28:49.932926",
+      "last_checked": "2026-06-02T07:40:58.230590",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6e850efddc021f1059b917c1ec549150\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/init-language.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/init(script:).json": {
       "hash": "ac735ffd45c77cfc11f379670dbc5c7720742c3461ef15d8efb126a0960d3885",
-      "last_checked": "2026-05-29T07:28:50.046706",
+      "last_checked": "2026-06-02T07:40:58.402553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"81ae6dc4ea28e2571b09d87bf870f085\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/init-script.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/dimension.json": {
       "hash": "8048eaec9a8da118482eb4c2fb50990e0a58e7c8cb2e8b57c968990a5a106f4f",
-      "last_checked": "2026-05-29T07:28:50.174320",
+      "last_checked": "2026-06-02T07:40:58.771966",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5cbd05167c5a0d4cd424c3171e05e3cc\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/dimension.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/hasavailableassets.json": {
       "hash": "56061fe6bf6e0aedcac8ef4b767718767c78baeb54cd789e5658b19d7237718b",
-      "last_checked": "2026-05-29T07:28:50.242069",
+      "last_checked": "2026-06-02T07:40:58.890381",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b37d23a02d0b3efa8fd0965fe82b7fc6\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/hasavailableassets.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/languages.json": {
       "hash": "5ea690b9948633b3866b56bf4656694021e6565cc1d3be3235e1018ff373513d",
-      "last_checked": "2026-05-29T07:28:50.311974",
+      "last_checked": "2026-06-02T07:40:59.066491",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"322e34c1fa883282036952116466ed94\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/languages.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/maximumsequencelength.json": {
       "hash": "dbde764052921ed7b4856cff159312e5800d6d4763780a8c64b08e05818f766d",
-      "last_checked": "2026-05-29T07:28:50.380760",
+      "last_checked": "2026-06-02T07:40:59.244164",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"bb3f0e4c1609f1ebd8c4e940ac73a24d\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/maximumsequencelength.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/modelidentifier.json": {
       "hash": "519e27493e8be74aed81d2948c0b569a4dc17b054552cdbbaac98e7d10642a46",
-      "last_checked": "2026-05-29T07:28:50.448079",
+      "last_checked": "2026-06-02T07:40:59.373406",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"aec0d9b05e2fad71fdb4c45375b27fe8\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/modelidentifier.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/revision.json": {
       "hash": "28a33d69cefe6a102c9da0be66d2e32fabbd962fa53f1698b71a922cf6c70331",
-      "last_checked": "2026-05-29T07:28:50.511086",
+      "last_checked": "2026-06-02T07:40:59.511662",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"735715bc4d4230f2ad388582d4a19b69\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/revision.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/scripts.json": {
       "hash": "7f8b5c8cafea907f419bfe0f5131e6c80ccb96a8f2d31a3e87a6f7ce97dbcd89",
-      "last_checked": "2026-05-29T07:28:50.648684",
+      "last_checked": "2026-06-02T07:40:59.694551",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6a26df52b21d7fae62b98e41c4c4a6f4\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/scripts.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/requestassets(completionhandler:).json": {
       "hash": "8445d22a2d7347d0d09552511a2ed62cf45b918759b4b609699aee1abc82f812",
-      "last_checked": "2026-05-29T07:28:50.705688",
+      "last_checked": "2026-06-02T07:40:59.833629",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0e512136bbb22a8a18a4d1a24d3425dc\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/requestassets-completionhandler.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult.json": {
       "hash": "55a76aac5e70416aaafd85c5463daee4ee79dbf24c566002f2718954da02e8af",
-      "last_checked": "2026-05-29T07:28:50.762342",
+      "last_checked": "2026-06-02T07:40:59.998697",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2825e23fd230f65285f9aec2df10442e\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/assetsresult.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/load().json": {
       "hash": "f5f552ecbee7cb8da10b235cf0392d47f714a00caf1a8e0fa4f0a392aa5a557c",
-      "last_checked": "2026-05-29T07:28:50.812427",
+      "last_checked": "2026-06-02T07:41:00.168958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9e48518a6234e9ee2ea9fcbda66986b8\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/load.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/unload().json": {
       "hash": "96429da660ab2434d4d8c9da061ffbf1a07cec9510aeb9bf6a5fb2c6a087b48b",
-      "last_checked": "2026-05-29T07:28:50.867861",
+      "last_checked": "2026-06-02T07:41:00.341483",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cde964570513ce54b3267de938555906\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/unload.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/embeddingresult(for:language:).json": {
       "hash": "d2b8570e236227d0a4f990992571daea8676cbc79ffb5bf64724cc56c77888eb",
-      "last_checked": "2026-05-29T07:28:50.944685",
+      "last_checked": "2026-06-02T07:41:00.505670",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9f97d7c7458ee4f38b80d67352ff8ec7\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/embeddingresult-forlanguage.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult.json": {
       "hash": "bd2b129cad295ed0b60793fc8285d5f85ff8ec60b69103627d83f5fa09cdda56",
-      "last_checked": "2026-05-29T07:28:51.030931",
+      "last_checked": "2026-06-02T07:41:00.643553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"772b34b4ef01269f0fdb8e86d3481aae\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/contextualembeddings(forvalues:).json": {
       "hash": "8dc7f193e55c07be9e0087e598af80e77d8d2437e796e9ca3c34e2e320c3f20b",
-      "last_checked": "2026-05-29T07:28:50.099540",
+      "last_checked": "2026-06-02T07:40:58.604513",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c6682a071da384cb729acd6d0df4f7b3\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/contextualembeddings-forvalues.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/languages.json": {
       "hash": "c8fe5675882f94a01fa6a816d6d2519f2784bcd24395de2d7a8bce454ade48aa",
-      "last_checked": "2026-05-29T07:28:51.078954",
+      "last_checked": "2026-06-02T07:41:00.756125",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d656c88cf174828b13a14196eae4a0c4\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey/languages.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/revision.json": {
       "hash": "459a4622371b8823c5915119ca38be97940a550fdc20ccf49d87cd835dcd03d6",
-      "last_checked": "2026-05-29T07:28:51.222876",
+      "last_checked": "2026-06-02T07:41:00.936856",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"aee811990e521cf6aeb2fb62d428ad09\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey/revision.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/scripts.json": {
       "hash": "d8c79ab0fa2b2625012a14ed2567456815433fb6cc6df8bfa5b647981464738e",
-      "last_checked": "2026-05-29T07:28:51.274585",
+      "last_checked": "2026-06-02T07:41:01.050512",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f6d80beac48bfee4c46e9efd2c9ea7e8\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey/scripts.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/init(_:).json": {
       "hash": "6626d572c1515c4e085a9cb23a699c6ef4f25999c2988a746048eee4f6ec030b",
-      "last_checked": "2026-05-29T07:28:51.383488",
+      "last_checked": "2026-06-02T07:41:01.352369",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5494a4f2e908f16919d8f332cf016e6a\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey/init.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingkey/init(rawvalue:).json": {
       "hash": "59b3a2b63bd2cdfd15b5adedac5f7eb7fb57cf18b2410b3ca3ee511eedd708d5",
-      "last_checked": "2026-05-29T07:28:51.434809",
+      "last_checked": "2026-06-02T07:41:01.521438",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"97212393e75d4174d224f753af8945ca\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingkey/init-rawvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/arabic.json": {
       "hash": "39816a842ad9ba61d0912cd86317b926bf8961e1884c6dc60d8631fe72bf8ebd",
-      "last_checked": "2026-05-29T07:28:51.506903",
+      "last_checked": "2026-06-02T07:41:01.651501",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c487d367823d8f9ecb3eeaa87a0d44ba\"",
       "file_path": "documentation/NaturalLanguage/nlscript/arabic.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/armenian.json": {
       "hash": "4649b5bcc4e825a9efa9b44e75af59ad518c9389c3ddb8a91451f4f70ed1022d",
-      "last_checked": "2026-05-29T07:28:51.573605",
+      "last_checked": "2026-06-02T07:41:01.785351",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a2808112c07c503f65503fd57e26d69e\"",
       "file_path": "documentation/NaturalLanguage/nlscript/armenian.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/bengali.json": {
       "hash": "914c66929291b5086b04aed02a7e11c8860961b261cc3ef6ea57e6c12be82da4",
-      "last_checked": "2026-05-29T07:28:51.634653",
+      "last_checked": "2026-06-02T07:41:01.970072",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b2905ec4aec9e66612c4e645a126267b\"",
       "file_path": "documentation/NaturalLanguage/nlscript/bengali.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/canadianaboriginalsyllabics.json": {
       "hash": "045887764cd018a2eb5dfb65d18eaa17990a3cd15db1bfc914d18375c0203eb7",
-      "last_checked": "2026-05-29T07:28:51.758221",
+      "last_checked": "2026-06-02T07:41:02.140047",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8276c33a44e618d765376333498e7c04\"",
       "file_path": "documentation/NaturalLanguage/nlscript/canadianaboriginalsyllabics.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/cherokee.json": {
       "hash": "78e669ac3d521735151e0b4b573895268ca4c00df2988a137e5f44b1e3889c2f",
-      "last_checked": "2026-05-29T07:28:51.805754",
+      "last_checked": "2026-06-02T07:41:02.307672",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"06a98a3afbf2c007efa67afa672df5af\"",
       "file_path": "documentation/NaturalLanguage/nlscript/cherokee.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/cyrillic.json": {
       "hash": "7e0de85c7274d068f92e775a1797566b0e1f310333fb26601d3a07b71e85ef21",
-      "last_checked": "2026-05-29T07:28:51.921130",
+      "last_checked": "2026-06-02T07:41:02.503333",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"936f7e3d06ad9252ef3b48d9f558bd0e\"",
       "file_path": "documentation/NaturalLanguage/nlscript/cyrillic.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/devanagari.json": {
       "hash": "6ff0886cc00b0e031e5daa3e9aa2ea94c749c9941cb109694252ca25f70836ce",
-      "last_checked": "2026-05-29T07:28:52.026567",
+      "last_checked": "2026-06-02T07:41:02.663160",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"dbf624644cc08a69269333b5c2e1b1c7\"",
       "file_path": "documentation/NaturalLanguage/nlscript/devanagari.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/ethiopic.json": {
       "hash": "563c11af24a927168f5f306fae9058d265aefdb5f6dc0a8a3855bbd753c82b8b",
-      "last_checked": "2026-05-29T07:28:52.086019",
+      "last_checked": "2026-06-02T07:41:02.795544",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5826488d96d697d3d8c312e4f22db164\"",
       "file_path": "documentation/NaturalLanguage/nlscript/ethiopic.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/georgian.json": {
       "hash": "554a7d83b402ec360f601db5ddc4d317ecf1df4be6543a1b977399a30232c927",
-      "last_checked": "2026-05-29T07:28:52.148498",
+      "last_checked": "2026-06-02T07:41:02.993839",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e0b6f7c6bcc5b4d8ee5dd28dd454626e\"",
       "file_path": "documentation/NaturalLanguage/nlscript/georgian.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/greek.json": {
       "hash": "63d650335535ca3ae3fa01b765163a7c3d04632ce86605f82124c012c0fd603c",
-      "last_checked": "2026-05-29T07:28:52.214182",
+      "last_checked": "2026-06-02T07:41:03.107011",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"064b07470b74ecc073a4359dd167ef13\"",
       "file_path": "documentation/NaturalLanguage/nlscript/greek.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/gujarati.json": {
       "hash": "2e479fee30f9dadd62e5f28a7bcbbd0e7290c42b455990d6027fcd4c30cd2238",
-      "last_checked": "2026-05-29T07:28:52.274568",
+      "last_checked": "2026-06-02T07:41:03.219498",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"25858008a62e30964b7e49bdb8271a43\"",
       "file_path": "documentation/NaturalLanguage/nlscript/gujarati.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/gurmukhi.json": {
       "hash": "96c401539498d900c2adef0e6a02910b45f20121115f82b2007ac52e99675a21",
-      "last_checked": "2026-05-29T07:28:52.336899",
+      "last_checked": "2026-06-02T07:41:03.400708",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4d9cca354aec1eb9b8b05d2f116a1bd5\"",
       "file_path": "documentation/NaturalLanguage/nlscript/gurmukhi.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/hebrew.json": {
       "hash": "285c55a00327c31cb371b1dbd42a44e2c95490a837bd4ad37bd29622207a6456",
-      "last_checked": "2026-05-29T07:28:52.477237",
+      "last_checked": "2026-06-02T07:41:03.574916",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"00e180316036d5c44c990f09355aa4e2\"",
       "file_path": "documentation/NaturalLanguage/nlscript/hebrew.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/japanese.json": {
       "hash": "8dd585ed260e96fa7476ccf44bc68c4e1300a0aaa22637179e6e785040576a02",
-      "last_checked": "2026-05-29T07:28:52.540129",
+      "last_checked": "2026-06-02T07:41:03.730806",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0cba7dee4e7e196d67a53ebdc6242361\"",
       "file_path": "documentation/NaturalLanguage/nlscript/japanese.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/kannada.json": {
       "hash": "8cf0bd6a833e52dd5086015cf660c97013a01e10f4749d6618ab0f8ff0ec394e",
-      "last_checked": "2026-05-29T07:28:52.610281",
+      "last_checked": "2026-06-02T07:41:03.874580",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9e21607783a3772349dbc149dc8e9add\"",
       "file_path": "documentation/NaturalLanguage/nlscript/kannada.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/khmer.json": {
       "hash": "526b3b970ff33c388fde2f404c725e53c07fec9ca9708ce01847a9863f271e65",
-      "last_checked": "2026-05-29T07:28:52.663891",
+      "last_checked": "2026-06-02T07:41:03.992108",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"78c2f70f57bf1bd54c9ce686de2e81c4\"",
       "file_path": "documentation/NaturalLanguage/nlscript/khmer.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/korean.json": {
       "hash": "29be15824740bf6e12c9dc14465c65ef13cbcb1857bf3258f02da029722c60e6",
-      "last_checked": "2026-05-29T07:28:52.738664",
+      "last_checked": "2026-06-02T07:41:04.163763",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f104e178803541ca07d5c5d903b26875\"",
       "file_path": "documentation/NaturalLanguage/nlscript/korean.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/lao.json": {
       "hash": "1933e837b7a5068db28be74a67966d8b2727fa9b2c44e7ec86a9350f5721eb1f",
-      "last_checked": "2026-05-29T07:28:52.801311",
+      "last_checked": "2026-06-02T07:41:04.278000",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"816aaf09483bb5935e9f252de4bb20ca\"",
       "file_path": "documentation/NaturalLanguage/nlscript/lao.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/latin.json": {
       "hash": "2fc19b0832ce34552e2ab608c284ce2afad30783c9e357707faf7d13024bbeca",
-      "last_checked": "2026-05-29T07:28:52.886854",
+      "last_checked": "2026-06-02T07:41:04.407510",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8aa6c4ae1761481ac392eb7f136f30a7\"",
       "file_path": "documentation/NaturalLanguage/nlscript/latin.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/malayalam.json": {
       "hash": "9c63ed07eaa562fa0d952bbc16879e73482ce2693f74101026bcf6d657c8dad9",
-      "last_checked": "2026-05-29T07:28:52.997174",
+      "last_checked": "2026-06-02T07:41:04.596566",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"834a523a35dd437d6d5aa158c60ea9fa\"",
       "file_path": "documentation/NaturalLanguage/nlscript/malayalam.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/mongolian.json": {
       "hash": "3b11516138ad8ea01887e54ad0dbfd61f4f6647a202b84dec21cbf34c2852f48",
-      "last_checked": "2026-05-29T07:28:53.054582",
+      "last_checked": "2026-06-02T07:41:04.719802",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"07b033e543837bde703a7b02de12470c\"",
       "file_path": "documentation/NaturalLanguage/nlscript/mongolian.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/myanmar.json": {
       "hash": "b22d0af93f0e7b77c9db4e3ece3dbc2283d9bdf0695a9ff0a82b1d6d126560e9",
-      "last_checked": "2026-05-29T07:28:53.216355",
+      "last_checked": "2026-06-02T07:41:04.917170",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fe6b3b58fd6026dcd780e0e6acdb49a2\"",
       "file_path": "documentation/NaturalLanguage/nlscript/myanmar.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/oriya.json": {
       "hash": "409cedb2b5209c7105bb0d3d8dd4cf01ec54512b3c35e044ce7525811823cfeb",
-      "last_checked": "2026-05-29T07:28:53.266823",
+      "last_checked": "2026-06-02T07:41:05.036757",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"12cdfc92a41f02b38a35e93a3d1492a7\"",
       "file_path": "documentation/NaturalLanguage/nlscript/oriya.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/simplifiedchinese.json": {
       "hash": "72163402fc8aaddac06fe3f4abf8d776881b18a5f59630032cf0c5b98faaef15",
-      "last_checked": "2026-05-29T07:28:53.330040",
+      "last_checked": "2026-06-02T07:41:05.166815",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"723cc8a746181c60183470c011f3c091\"",
       "file_path": "documentation/NaturalLanguage/nlscript/simplifiedchinese.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/sinhala.json": {
       "hash": "c5b0d3de4e73926f32407d7b7275b7fa21fe1dacf91de82141cc45142b604576",
-      "last_checked": "2026-05-29T07:28:53.407964",
+      "last_checked": "2026-06-02T07:41:05.305760",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"07adaade9171099978ef4b12e80b49f2\"",
       "file_path": "documentation/NaturalLanguage/nlscript/sinhala.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/tamil.json": {
       "hash": "3a870110886867fb2adf9713a29fae72121fb4990e4ae1e0207e39d929d6a87c",
-      "last_checked": "2026-05-29T07:28:53.466159",
+      "last_checked": "2026-06-02T07:41:05.420222",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ff42b68427ed00e0e538318180014b7b\"",
       "file_path": "documentation/NaturalLanguage/nlscript/tamil.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/telugu.json": {
       "hash": "187ce827a51a21cabcad18e2666ff4d34227b3497f5a61a94f63704832b2f6f9",
-      "last_checked": "2026-05-29T07:28:53.543705",
+      "last_checked": "2026-06-02T07:41:05.534521",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"77dc8c55e85e8ca74564c2be0b09eac1\"",
       "file_path": "documentation/NaturalLanguage/nlscript/telugu.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/thai.json": {
       "hash": "13caef65d3fc09662fa5245e2417442c0ea36075d530cecd960cf9ea255b59e6",
-      "last_checked": "2026-05-29T07:28:53.599680",
+      "last_checked": "2026-06-02T07:41:05.668073",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ac4139fd7319acaa2cdb4acccfe25fff\"",
       "file_path": "documentation/NaturalLanguage/nlscript/thai.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/tibetan.json": {
       "hash": "1a074894a97b643a8570509a3479f0d98f640f372212dd7cd1a819dbceb1f3af",
-      "last_checked": "2026-05-29T07:28:53.667319",
+      "last_checked": "2026-06-02T07:41:05.788957",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"7edd150bbb1a055026e6244d103e49f9\"",
       "file_path": "documentation/NaturalLanguage/nlscript/tibetan.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/traditionalchinese.json": {
       "hash": "b2d197eb74ede2885b43747eb13dfb0405d9117a84167256bda822c7ce36d4f6",
-      "last_checked": "2026-05-29T07:28:53.723955",
+      "last_checked": "2026-06-02T07:41:05.960428",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9aad6c2b23cf1be4828b7f3443bedb23\"",
       "file_path": "documentation/NaturalLanguage/nlscript/traditionalchinese.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/undetermined.json": {
       "hash": "312d7e7ca7488a373b287a4942eaf81b19f6dcedd05eef73d745537759e198e7",
-      "last_checked": "2026-05-29T07:28:53.794104",
+      "last_checked": "2026-06-02T07:41:06.095806",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ee35323c8ae91d80e80c8f4079897bd6\"",
       "file_path": "documentation/NaturalLanguage/nlscript/undetermined.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/init(_:).json": {
       "hash": "05615e89551d2eea4cf12a2df3e9ca7dbf25dc3dfed506be529afaaf25c7415b",
-      "last_checked": "2026-05-29T07:28:53.900613",
+      "last_checked": "2026-06-02T07:41:06.226164",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9973e1c21e4ffd6b2773a28d706fe1ea\"",
       "file_path": "documentation/NaturalLanguage/nlscript/init.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlscript/init(rawvalue:).json": {
       "hash": "6e4b8f5407febfef6e096e571adb1c18a834a4b859e515af870ab3a919aab705",
-      "last_checked": "2026-05-29T07:28:54.007245",
+      "last_checked": "2026-06-02T07:41:06.393925",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9042f54d7b72250ba6092e37af9dc06f\"",
       "file_path": "documentation/NaturalLanguage/nlscript/init-rawvalue.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(contentsof:).json": {
       "hash": "90fcf67e532252eac1a589c76eca312f7829798e922275b38afd35cdebc122b6",
-      "last_checked": "2026-05-29T07:28:54.132485",
+      "last_checked": "2026-06-02T07:41:06.721620",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4cc8252182da73581a380a73a0e21178\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/init-contentsof.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabel(for:).json": {
       "hash": "6437d54d98530215ae0b284182cfcdc2c0cfe7a5c625f1ae9efe7bfad52119ed",
-      "last_checked": "2026-05-29T07:28:54.188483",
+      "last_checked": "2026-06-02T07:41:06.897042",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"702f6e35ed3487e9403219c909126a7a\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/predictedlabel-for.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabels(fortokens:).json": {
       "hash": "78d76b1c760ae69e947b3ff1d3e03e989fc413bbd1fa3f5667bad830ef7160f2",
-      "last_checked": "2026-05-29T07:28:54.313391",
+      "last_checked": "2026-06-02T07:41:07.065570",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2f4eeec08bac321ccb5f538a29b92452\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/predictedlabels-fortokens.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(for:maximumcount:).json": {
       "hash": "505dc1c4585fe898dde4d21b1dc815d6290838d1a909752a1fac2d6c65dfedfa",
-      "last_checked": "2026-05-29T07:28:54.406984",
+      "last_checked": "2026-06-02T07:41:07.202892",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c0e38be11e73a652a4f1c1fab7f5a6b4\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/predictedlabelhypotheses-formaximumcount.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/predictedlabelhypotheses(fortokens:maximumcount:).json": {
       "hash": "be871a35c052df41400c82849999ff4db2235a398cee6642ecc1ab90ff014d7e",
-      "last_checked": "2026-05-29T07:28:54.457444",
+      "last_checked": "2026-06-02T07:41:07.328737",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9520cb87741fb519e2c6b94ace3d6c47\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/predictedlabelhypotheses-fortokensmaximumcount.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/configuration.json": {
       "hash": "ae81c786c25da2dcb8e46577ff96e8b8e0304cb9edbaeb88e40222b97a2075eb",
-      "last_checked": "2026-05-29T07:28:54.581568",
+      "last_checked": "2026-06-02T07:41:07.506944",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"97a4cdfb24e3f3de472bb788b30cc905\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/configuration.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration.json": {
       "hash": "ec889e6202af666c7f525220a7089c55328db188770ded8c6d7fc0894b15ef25",
-      "last_checked": "2026-05-29T07:28:54.688166",
+      "last_checked": "2026-06-02T07:41:07.672050",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ffb25d41632b600b94a906c2a58b9996\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/emoji.json": {
       "hash": "64c99e621e5d9e4b47c9b57b4369eff6b4dbd1c5d8ed2ed99699cb93e34cc744",
-      "last_checked": "2026-05-29T07:28:54.871779",
+      "last_checked": "2026-06-02T07:41:08.028398",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"42de82f2cff37e301917a339fc170086\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/attributes/emoji.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/numeric.json": {
       "hash": "b6d97347b9599edaf24c2dbc09e7714c7bb5ef546a83fe08c949c4b568b3255f",
-      "last_checked": "2026-05-29T07:28:54.927348",
+      "last_checked": "2026-06-02T07:41:08.144899",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a87a36cd2cf80f62cc8cbb4419c65cba\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/attributes/numeric.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/symbolic.json": {
       "hash": "3fba5087ab25f6cc5bffcf6f677610057977d5e9b57cc76d9a86723b5d3fc255",
-      "last_checked": "2026-05-29T07:28:54.994365",
+      "last_checked": "2026-06-02T07:41:08.326422",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"28474fe67a344117d71270bfa22bdb1d\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/attributes/symbolic.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenizer/attributes/init(rawvalue:).json": {
       "hash": "b856b8023a1cda747e473d4bfe2cfe13dfa2cee6bbbf9361038e9af8dd174001",
-      "last_checked": "2026-05-29T07:28:55.051746",
+      "last_checked": "2026-06-02T07:41:08.452796",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"20a24498fe64eb1f1924f08b32f47094\"",
       "file_path": "documentation/NaturalLanguage/nltokenizer/attributes/init-rawvalue.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/available.json": {
       "hash": "e42c146a92d54fdacd2c42d5168f468571a2d263a323f7b6124f7b1f700beadd",
-      "last_checked": "2026-05-29T07:28:55.099054",
+      "last_checked": "2026-06-02T07:41:08.579692",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9ee6c1f6ed055bc9bc31d80d0ea3ed5f\"",
       "file_path": "documentation/NaturalLanguage/nltagger/assetsresult/available.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/notavailable.json": {
       "hash": "4060885370026b93cf041109fb266283a6084838e172502df007c71f4c89522d",
-      "last_checked": "2026-05-29T07:28:55.230575",
+      "last_checked": "2026-06-02T07:41:08.743050",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6bd4824d405b41b053b7a2071e26451e\"",
       "file_path": "documentation/NaturalLanguage/nltagger/assetsresult/notavailable.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/error.json": {
       "hash": "fe7ccdcce142aaee58c3dd5c14f8827fc1faa28de28a14e9e7b7cbcd6ad3aad5",
-      "last_checked": "2026-05-29T07:28:55.334820",
+      "last_checked": "2026-06-02T07:41:08.895284",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"83a604cdc11a08d29b686299d873fd52\"",
       "file_path": "documentation/NaturalLanguage/nltagger/assetsresult/error.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/assetsresult/init(rawvalue:).json": {
       "hash": "8ce909dc892cf9ad72c4cb8d9748d8d9bbd8db42b78f44b9ac74f99ff8e88731",
-      "last_checked": "2026-05-29T07:28:55.397992",
+      "last_checked": "2026-06-02T07:41:09.014608",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a4a34da739d11d4928ebb27edf4a3ed5\"",
       "file_path": "documentation/NaturalLanguage/nltagger/assetsresult/init-rawvalue.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/tokentype.json": {
       "hash": "973ff07469e18065419c538c87cb47d653d9c5bf3ee216813f2ce140be10d8fe",
-      "last_checked": "2026-05-29T07:28:55.497898",
+      "last_checked": "2026-06-02T07:41:09.237006",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fa0d06873a7af35037a31ee199166ca9\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/tokentype.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/lexicalclass.json": {
       "hash": "eb3ccd31daf69a7d5f7a16f41f40bb8e4d15e0764595885927fbddf3459bbc1e",
-      "last_checked": "2026-05-29T07:28:55.634332",
+      "last_checked": "2026-06-02T07:41:09.398962",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"deb5667c81f1518fa2eaf7a05a51af0a\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/lexicalclass.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/nametype.json": {
       "hash": "ba14c5eaee14cd6c62ac0245093d4d0a414ef1142741a816ab3e127483148bd9",
-      "last_checked": "2026-05-29T07:28:55.780073",
+      "last_checked": "2026-06-02T07:41:09.572444",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ece23d391658b48bee308b24fe6faa1b\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/nametype.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/nametypeorlexicalclass.json": {
       "hash": "59d49efb44b20b9d90e2054da1d6426d619a2b0b51f1537ae61ca479805122bd",
-      "last_checked": "2026-05-29T07:28:55.837191",
+      "last_checked": "2026-06-02T07:41:09.690307",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"3344f7e171d01f7863803be9b26f6672\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/nametypeorlexicalclass.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/lemma.json": {
       "hash": "827bd5e558aa5cdad49c722173be54935df6503aa7c9119b2ad62df1318a716f",
-      "last_checked": "2026-05-29T07:28:55.897430",
+      "last_checked": "2026-06-02T07:41:09.839472",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"46799988705e60dd421cef222302a79d\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/lemma.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/language.json": {
       "hash": "16a8ad9d0dd9341dd940134a2351bd2b2b2061f5be48f9c6d5d26bff8ee49b49",
-      "last_checked": "2026-05-29T07:28:55.970410",
+      "last_checked": "2026-06-02T07:41:09.954923",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c48fd6b3ed9d3beee6d07fca65e72ed0\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/language.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/script.json": {
       "hash": "f1b1274a4de9fdd25b64eda4c448b7bb048b7571714e05711534f2b77c48786d",
-      "last_checked": "2026-05-29T07:28:56.037440",
+      "last_checked": "2026-06-02T07:41:10.125772",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6a42c3b67cdd80ed7bcf1c75951117b4\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/script.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/sentimentscore.json": {
       "hash": "09508b3d04937346c7f762c02746bfdf729412ab027711800da295ee805ba91e",
-      "last_checked": "2026-05-29T07:28:56.146812",
+      "last_checked": "2026-06-02T07:41:10.251348",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4359ac23704d502ca661dddb99913989\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/sentimentscore.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/init(_:).json": {
       "hash": "b4cebdc575076091fffd89ba71ca7918fb2f1f5c8f2d507b231e9d8da7ebf823",
-      "last_checked": "2026-05-29T07:28:56.206404",
+      "last_checked": "2026-06-02T07:41:10.414489",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ce637809c7d92d7fd8d598645c08ebd3\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/init.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagscheme/init(rawvalue:).json": {
       "hash": "431539bcce218c5ae9d5d8c6e22e2899e7522e985414694a14365b2b98cf06cc",
-      "last_checked": "2026-05-29T07:28:56.263561",
+      "last_checked": "2026-06-02T07:41:10.542827",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a3ab1b2fa3a2351f2ef08d8e0397d20c\"",
       "file_path": "documentation/NaturalLanguage/nltagscheme/init-rawvalue.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitwords.json": {
       "hash": "07a711fe47502c50abb11a6bca9d0f2f74aed7f9fc23bd9fff12e19786d09614",
-      "last_checked": "2026-05-29T07:28:56.352109",
+      "last_checked": "2026-06-02T07:41:10.709120",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0982cf68f0591b9a706a982579bc4270\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/omitwords.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitpunctuation.json": {
       "hash": "c7e86192b399158a0fdd761827e0d246dc2f7b11c124decfb651bf96cdf69bfe",
-      "last_checked": "2026-05-29T07:28:56.410934",
+      "last_checked": "2026-06-02T07:41:10.827643",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8d439ea7795f668ba31539ff2f10b709\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/omitpunctuation.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitwhitespace.json": {
       "hash": "55ddc4f780b5200e98efae2fb8a60a7726ce6858381ef8d333cadf7c8137b786",
-      "last_checked": "2026-05-29T07:28:56.480999",
+      "last_checked": "2026-06-02T07:41:10.991650",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5afd0a657c0fff70ed9f55cd6be3b220\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/omitwhitespace.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/omitother.json": {
       "hash": "d4895f9630a08d0475b7475fa7dfea2205fe50540017b06e3d3d2ff5697ff6b6",
-      "last_checked": "2026-05-29T07:28:56.595282",
+      "last_checked": "2026-06-02T07:41:11.160784",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4cef8d2b34378f68cd39f3874d0bad01\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/omitother.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/joinnames.json": {
       "hash": "f5e93b78d6bc4822488c3a50aaa07f67c7ddf67c15abbaac6efe1b65c76defea",
-      "last_checked": "2026-05-29T07:28:56.647216",
+      "last_checked": "2026-06-02T07:41:11.279070",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4f7316e0827f8e71e0aa1914fa6f2987\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/joinnames.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/joincontractions.json": {
       "hash": "b33738ab3843bceda36d3391948668d3c9ee4bb9800ac0d7ed13e02d94d0c295",
-      "last_checked": "2026-05-29T07:28:56.997404",
+      "last_checked": "2026-06-02T07:41:11.475365",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a81efa7a9e3b3f01e4febefd553a6ca2\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/joincontractions.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltagger/options/init(rawvalue:).json": {
       "hash": "7e4fd60b92fe5dcde2cce3dbe60e0a86fbb35b5c8d6256fc827b35304f369143",
-      "last_checked": "2026-05-29T07:28:57.045109",
+      "last_checked": "2026-06-02T07:41:11.586722",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e487cda06892a4156891b4e68a9c255c\"",
       "file_path": "documentation/NaturalLanguage/nltagger/options/init-rawvalue.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/word.json": {
       "hash": "ca0f7f8fa24dfa9c59ec079084608a48cc8c002237b3b613235f20eb5726e04e",
-      "last_checked": "2026-05-29T07:28:57.106105",
+      "last_checked": "2026-06-02T07:41:11.788917",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d5e32561d374920afb55bd9a3cdf8efb\"",
       "file_path": "documentation/NaturalLanguage/nltag/word.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/punctuation.json": {
       "hash": "ee58453d0dbeec1921a47c3050071066a242fc5a2bb65df361bd033e99cf5ca6",
-      "last_checked": "2026-05-29T07:28:57.229875",
+      "last_checked": "2026-06-02T07:41:11.954546",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ba956eb553201b0c0d5a6aa347161fe8\"",
       "file_path": "documentation/NaturalLanguage/nltag/punctuation.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/whitespace.json": {
       "hash": "332e6ef5c0b3bb05f200a8901dd06b24e539b0d7333f8bcf34c43683a7bca89f",
-      "last_checked": "2026-05-29T07:28:57.333115",
+      "last_checked": "2026-06-02T07:41:12.109802",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"badcef02b39843ef6fad42f50e2e4c0f\"",
       "file_path": "documentation/NaturalLanguage/nltag/whitespace.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/other.json": {
       "hash": "dc038ca57c754defc95c04dadda0d430d22045304600521a221d527bdd5ed26d",
-      "last_checked": "2026-05-29T07:28:57.397021",
+      "last_checked": "2026-06-02T07:41:12.221127",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c7777229902b5cbb96bb750b76d0bd32\"",
       "file_path": "documentation/NaturalLanguage/nltag/other.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/noun.json": {
       "hash": "2339b01ed600b200d22f96c893a3ec2a7ae700166353a48ffb69a10f3312b97c",
-      "last_checked": "2026-05-29T07:28:57.464561",
+      "last_checked": "2026-06-02T07:41:12.347256",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5e4abef012c7823851059799a006ec8c\"",
       "file_path": "documentation/NaturalLanguage/nltag/noun.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/verb.json": {
       "hash": "7c89568b485b9146425f073f8b5cc69c41c864fd66fcdd4a9babeb630d1c3c5d",
-      "last_checked": "2026-05-29T07:28:57.527561",
+      "last_checked": "2026-06-02T07:41:12.523698",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2efdbfe95a079c60b1e5fca01df3024b\"",
       "file_path": "documentation/NaturalLanguage/nltag/verb.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/adjective.json": {
       "hash": "bed69a309f0fc5688474d7bbcb5a85801b11b6ab84d92e2d3b36ef7816500ac5",
-      "last_checked": "2026-05-29T07:28:57.601196",
+      "last_checked": "2026-06-02T07:41:12.655692",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6c4f1836fc7194bb8021151aed5739a2\"",
       "file_path": "documentation/NaturalLanguage/nltag/adjective.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/adverb.json": {
       "hash": "1abfc4f571245d3c0f5b6cfe9add2970ef0723a254741e96bd6c0ffa94a87923",
-      "last_checked": "2026-05-29T07:28:57.673160",
+      "last_checked": "2026-06-02T07:41:12.783899",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c51e23864817ca287f3635e5a447dc32\"",
       "file_path": "documentation/NaturalLanguage/nltag/adverb.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/pronoun.json": {
       "hash": "5434d3151b2bcf93ed48bf56661b368a9a00ce2ef62d77045a49e40a5c77246c",
-      "last_checked": "2026-05-29T07:28:57.779350",
+      "last_checked": "2026-06-02T07:41:12.943853",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"652d75393c2b2432639cf7195e82970f\"",
       "file_path": "documentation/NaturalLanguage/nltag/pronoun.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/determiner.json": {
       "hash": "a3b82c6f9b647c6b0411ee0d15125ea41deb852b1f16c634582d525c8a330f83",
-      "last_checked": "2026-05-29T07:28:57.910651",
+      "last_checked": "2026-06-02T07:41:13.111029",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6648451fe7c6343a1cee27a4c95bb03c\"",
       "file_path": "documentation/NaturalLanguage/nltag/determiner.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/particle.json": {
       "hash": "eda0ebcc722bc32bcdce7ce0d50e2b8f7e477ea65d69253463305515420eb9ff",
-      "last_checked": "2026-05-29T07:28:57.966494",
+      "last_checked": "2026-06-02T07:41:13.283451",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ec018cd8b6be75f0a2decff82e8664c8\"",
       "file_path": "documentation/NaturalLanguage/nltag/particle.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/preposition.json": {
       "hash": "74ef40b24c18b7181b3d863a8f70b025dca77ddf29ff7763721c1769d3a8e5a0",
-      "last_checked": "2026-05-29T07:28:58.017884",
+      "last_checked": "2026-06-02T07:41:13.444071",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e0691c782eeb74a3397392329a02340d\"",
       "file_path": "documentation/NaturalLanguage/nltag/preposition.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/number.json": {
       "hash": "902b783c2f5d545aa60b81d3e7274f5b91c135bfa2391a8b4942f99635bcecfe",
-      "last_checked": "2026-05-29T07:28:58.083461",
+      "last_checked": "2026-06-02T07:41:13.567353",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"39efb236a62e6fc44dda4b7774d1aca9\"",
       "file_path": "documentation/NaturalLanguage/nltag/number.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/conjunction.json": {
       "hash": "9537e9c38441d5fd183d3a4a0172e65065abf2c035c4d693ad128180618f3ac8",
-      "last_checked": "2026-05-29T07:28:58.138623",
+      "last_checked": "2026-06-02T07:41:13.686388",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"4e4aab62ff01b2a20756cdfe0d12c49d\"",
       "file_path": "documentation/NaturalLanguage/nltag/conjunction.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/interjection.json": {
       "hash": "37cbc120f9b018cca7442fdb0bcc096dca2cc9ac05a505abca7261628878f184",
-      "last_checked": "2026-05-29T07:28:58.262858",
+      "last_checked": "2026-06-02T07:41:13.869054",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"fad6e6773d22abaef23aafdac52767ca\"",
       "file_path": "documentation/NaturalLanguage/nltag/interjection.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/classifier.json": {
       "hash": "52c8e7e19eeda10fcbd063e35028f5f905742a76e714ba4c451ecd3ff7b18828",
-      "last_checked": "2026-05-29T07:28:58.315952",
+      "last_checked": "2026-06-02T07:41:14.034332",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"477e7f912647a379bc5222ad91a247d4\"",
       "file_path": "documentation/NaturalLanguage/nltag/classifier.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/idiom.json": {
       "hash": "89df3f5451e1a5668a6684469d7258c4f12b2375f5da101f79e9d22beb80880d",
-      "last_checked": "2026-05-29T07:28:58.376962",
+      "last_checked": "2026-06-02T07:41:14.156659",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c0fd34e51db6912e9ebc34b1a6c604ae\"",
       "file_path": "documentation/NaturalLanguage/nltag/idiom.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherword.json": {
       "hash": "39f2b47ec918a25ce9f1926df89329add06cbd6b3bcdb02c97bfe63b4d52ad61",
-      "last_checked": "2026-05-29T07:28:58.430457",
+      "last_checked": "2026-06-02T07:41:14.295683",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ff912a9601799d7cbf5acb13aed9276f\"",
       "file_path": "documentation/NaturalLanguage/nltag/otherword.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/sentenceterminator.json": {
       "hash": "f6bd930b92c115c642ed7c760de230676fe1c0056057a9200daf73a6f1b22990",
-      "last_checked": "2026-05-29T07:28:58.492331",
+      "last_checked": "2026-06-02T07:41:14.452255",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b58dffe7a297b4d41e27ced144fe9cf3\"",
       "file_path": "documentation/NaturalLanguage/nltag/sentenceterminator.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/openquote.json": {
       "hash": "4db442d7f3db1884074abec7a3c7300e9a44674a546809c5b4089b0499565022",
-      "last_checked": "2026-05-29T07:28:58.569938",
+      "last_checked": "2026-06-02T07:41:14.580926",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ca76bc6c2ccf38f9ca8c9e06af73f407\"",
       "file_path": "documentation/NaturalLanguage/nltag/openquote.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/closequote.json": {
       "hash": "6f9f04665ca22e8619f4f153c71c560608639c087b194298493a64623a5f3229",
-      "last_checked": "2026-05-29T07:28:58.626085",
+      "last_checked": "2026-06-02T07:41:14.713078",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"de0d82a4583293898b334c7d2089a284\"",
       "file_path": "documentation/NaturalLanguage/nltag/closequote.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/openparenthesis.json": {
       "hash": "21b87e2e80c320c3b68eaba285195c95cad1c796c28fa70ef7eb1941447df90c",
-      "last_checked": "2026-05-29T07:28:58.723582",
+      "last_checked": "2026-06-02T07:41:14.894176",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"903a7fc01307c16409b60cc0f41f0534\"",
       "file_path": "documentation/NaturalLanguage/nltag/openparenthesis.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/closeparenthesis.json": {
       "hash": "e95edfcd760b90578e6993dc5ac43fb1283e50c86db6528be4c9c88b2612f622",
-      "last_checked": "2026-05-29T07:28:58.850270",
+      "last_checked": "2026-06-02T07:41:15.100213",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"7a70edc588c5677c51743c4adbfd9644\"",
       "file_path": "documentation/NaturalLanguage/nltag/closeparenthesis.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/wordjoiner.json": {
       "hash": "f69150f0e04b3e18d79e112644bfa17ffbd2f6083295c2604032aba73b719919",
-      "last_checked": "2026-05-29T07:28:58.903222",
+      "last_checked": "2026-06-02T07:41:15.225920",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"8bf59622178f241ba14a6e6ce853ec4b\"",
       "file_path": "documentation/NaturalLanguage/nltag/wordjoiner.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/dash.json": {
       "hash": "7b27239d4305cfd1d3e7e1aaee4b769ab72ffd319fefccb749ecc1e9bd97f2ed",
-      "last_checked": "2026-05-29T07:28:58.964710",
+      "last_checked": "2026-06-02T07:41:15.352833",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f8b0f4b2e9d34a9a0799f9d78a067088\"",
       "file_path": "documentation/NaturalLanguage/nltag/dash.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherpunctuation.json": {
       "hash": "3a46d7194f45feb07944e26f42c2549a3afac829bf2bb2a36c8ab1cf2f891cee",
-      "last_checked": "2026-05-29T07:28:59.035148",
+      "last_checked": "2026-06-02T07:41:15.465356",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"891bdad8f946a9ed2d8499c4950fdd70\"",
       "file_path": "documentation/NaturalLanguage/nltag/otherpunctuation.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/paragraphbreak.json": {
       "hash": "580aed593ab1e3085342a6962fd50fcaf8694057a9b2345d984afaeb5c7c376c",
-      "last_checked": "2026-05-29T07:28:59.112351",
+      "last_checked": "2026-06-02T07:41:15.638029",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"950f6b426f6e35bd698108eda2c6834a\"",
       "file_path": "documentation/NaturalLanguage/nltag/paragraphbreak.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/otherwhitespace.json": {
       "hash": "8bf21477feab2bca2e399db9e3eeba4f3e389c77c3c470b3be72d550a3282052",
-      "last_checked": "2026-05-29T07:28:59.216079",
+      "last_checked": "2026-06-02T07:41:15.774531",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9aa6c1e01698bfcbc78d23d82396f395\"",
       "file_path": "documentation/NaturalLanguage/nltag/otherwhitespace.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/personalname.json": {
       "hash": "c3c63ea83b19a9b0067a6dfb0099d45f7f89244f213af73dfafa6538fe4dfe57",
-      "last_checked": "2026-05-29T07:28:59.276142",
+      "last_checked": "2026-06-02T07:41:15.936403",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"aa48d391a8a0b9764402c319587b6ee2\"",
       "file_path": "documentation/NaturalLanguage/nltag/personalname.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/organizationname.json": {
       "hash": "e22bc13888812af09dc1e111608595f4d38f5f442036fc60786fc9e0a4541150",
-      "last_checked": "2026-05-29T07:28:59.380711",
+      "last_checked": "2026-06-02T07:41:16.098278",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"ad0f5d7f9bf6e6a10da51e6f3e46b6a2\"",
       "file_path": "documentation/NaturalLanguage/nltag/organizationname.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/placename.json": {
       "hash": "6946e5e5f158624fa8f91be4a080bbae163c3776c69a0242888e2757b01e8b93",
-      "last_checked": "2026-05-29T07:28:59.438009",
+      "last_checked": "2026-06-02T07:41:16.212805",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d32f7608b7323c1bd079b4669cc4b199\"",
       "file_path": "documentation/NaturalLanguage/nltag/placename.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/init(_:).json": {
       "hash": "04d3348718dca03f50380cb9e9caf29f40053616145555727e8fb08adc0be71d",
-      "last_checked": "2026-05-29T07:28:59.514072",
+      "last_checked": "2026-06-02T07:41:16.403099",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0b6be34e5f48c0e5a7a8160660132d0d\"",
       "file_path": "documentation/NaturalLanguage/nltag/init.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltag/init(rawvalue:).json": {
       "hash": "37c0427fecd41386b1d20cbbfbc6dd8db78b68f72ec358bc50733d56679861c1",
-      "last_checked": "2026-05-29T07:28:59.562663",
+      "last_checked": "2026-06-02T07:41:16.528346",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b58939bc79d0b8417d2454c0ea4f61b3\"",
       "file_path": "documentation/NaturalLanguage/nltag/init-rawvalue.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/word.json": {
       "hash": "5ff161a0ed6b94078ea752bd1d1b4df0e2a145d6d9b9e9a3f7a96134e95b6466",
-      "last_checked": "2026-05-29T07:28:59.646285",
+      "last_checked": "2026-06-02T07:41:16.657051",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e12f62dd2dfe97d2012bd6d07cd1730d\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit/word.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/sentence.json": {
       "hash": "f3800f44ac083093c3399aa91b3f3e92fb5a44f9fc18feec3df70cba5896f8e8",
-      "last_checked": "2026-05-29T07:28:59.805526",
+      "last_checked": "2026-06-02T07:41:16.816652",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"dc210b16da6b610887af994032f565d1\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit/sentence.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/paragraph.json": {
       "hash": "22c4406d5e5896a55ecd90c907a5c10148327a42c15187d5460f9394b32285f6",
-      "last_checked": "2026-05-29T07:28:59.868495",
+      "last_checked": "2026-06-02T07:41:17.109216",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"18f2b8ba3cb68df0f537977f80f46e81\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit/paragraph.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/document.json": {
       "hash": "3a4f651eb35af2aa7ec457aa3fc7291d2ccfdd225e342e1e11d7a417360387b1",
-      "last_checked": "2026-05-29T07:28:59.924003",
+      "last_checked": "2026-06-02T07:41:17.233368",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2c0eb4f0f5c2ff3b08c07fcdc067b104\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit/document.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nltokenunit/init(rawvalue:).json": {
       "hash": "fa639591216aae86f81df0f567fd9a77a30cd1517301ea34dbac21c4d72c6fc9",
-      "last_checked": "2026-05-29T07:28:59.973898",
+      "last_checked": "2026-06-02T07:41:17.364725",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"9d56b4a0650df541201da33789f972bc\"",
       "file_path": "documentation/NaturalLanguage/nltokenunit/init-rawvalue.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(contentsof:).json": {
       "hash": "8c806930212f2326fb4119610110130eef2d92645b548fe8b7640b8d0b82887d",
-      "last_checked": "2026-05-29T07:29:00.041219",
+      "last_checked": "2026-06-02T07:41:17.553114",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"35db84df1ced597064e1a0cc0fcb11c5\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/init-contentsof.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(data:).json": {
       "hash": "f1ff16d6b26c87864812e08543a6b14082bad29c6e6535be9074b253b090efb5",
-      "last_checked": "2026-05-29T07:29:00.114126",
+      "last_checked": "2026-06-02T07:41:17.727801",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"6daf5a3271b91feb2f963cd63f50354c\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/init-data.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(dictionary:language:).json": {
       "hash": "1e8c3b62274cf8f62d5e20a078ab717e2c8daa6cfaa194c12cd584af88b9fd99",
-      "last_checked": "2026-05-29T07:29:00.199162",
+      "last_checked": "2026-06-02T07:41:17.854651",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1b5bf0e54361b2996560f96b70473be3\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/init-dictionarylanguage.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/write(_:language:to:).json": {
       "hash": "0f56623926d925bae972e0c8c9e786e3c0946f94e2343c479ef98d72e6597925",
-      "last_checked": "2026-05-29T07:29:00.321566",
+      "last_checked": "2026-06-02T07:41:18.049684",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"97e19bea35bf150b6a932e45936bae10\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/write-languageto.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/label(for:).json": {
       "hash": "1330ff56173d3f6f4e9214521bdb2976592ac8b3b61ec0c29c7ef3872632a1a6",
-      "last_checked": "2026-05-29T07:29:00.373983",
+      "last_checked": "2026-06-02T07:41:18.208139",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"b0f43c7967bc6ed5414419676272caab\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/label-for.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/data.json": {
       "hash": "1b0f14edf5577dd7ec44af2f969e924019b987202495b4f8eee9c0b15ed8bc8c",
-      "last_checked": "2026-05-29T07:29:00.428695",
+      "last_checked": "2026-06-02T07:41:18.382446",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2c56700f0d28eae21138cbd8b4fbe598\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/data.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/language.json": {
       "hash": "a3e5e65ec2de01782b701448c02b6ee178a3758cf5a48602d982ce6f8468b9e4",
-      "last_checked": "2026-05-29T07:29:00.543775",
+      "last_checked": "2026-06-02T07:41:18.502912",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"aebb5395425b3f01be33781da51856e7\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/language.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype.json": {
       "hash": "e6eee9963f1f4513f48d5342c768297f312b6f849c8afecb77f76bcdf3f6056c",
-      "last_checked": "2026-05-29T07:29:00.722086",
+      "last_checked": "2026-06-02T07:41:18.910767",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"bbb30dcae132d9786ea97954dd815774\"",
       "file_path": "documentation/NaturalLanguage/nldistancetype.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/available.json": {
       "hash": "543e273e1762d2473c1679bd35580aec324bdee5181cd4dbc3035aa77cf9bfb7",
-      "last_checked": "2026-05-29T07:29:00.834945",
+      "last_checked": "2026-06-02T07:41:19.088882",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"504c9199560abd80147a54749bd09046\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/assetsresult/available.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/notavailable.json": {
       "hash": "f7452614c1c4afc6ef31961e116d8937d5ec3a694e82376f56e0a2adc41d3e91",
-      "last_checked": "2026-05-29T07:29:00.943665",
+      "last_checked": "2026-06-02T07:41:19.252911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"cf2845fdaa2dc4e52b623bc1d0c7d1de\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/assetsresult/notavailable.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/error.json": {
       "hash": "a5caaa3ca81d30c74df18d536a6a9eecf3843f9189b68f6ce8cac913debe5c4d",
-      "last_checked": "2026-05-29T07:29:01.000602",
+      "last_checked": "2026-06-02T07:41:19.540250",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5676d419acd9d904cb6f4ca904d48afc\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/assetsresult/error.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembedding/assetsresult/init(rawvalue:).json": {
       "hash": "f252354183718a5da9ebc67f55b5e6782104be0a55b60da62945c8919881c75b",
-      "last_checked": "2026-05-29T07:29:01.121914",
+      "last_checked": "2026-06-02T07:41:19.753580",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1e2f006b830100bd772355a852f02d1c\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembedding/assetsresult/init-rawvalue.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/language.json": {
       "hash": "14a9c3519a79dc64459a2b9e5938132adab56b9b7876eb914600205b508da991",
-      "last_checked": "2026-05-29T07:29:01.169825",
+      "last_checked": "2026-06-02T07:41:19.879602",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a654815ea08b81fd18b34852f849171d\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult/language.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/sequencelength.json": {
       "hash": "68b55df44ed1d5b86d06c3017261e934e983bd49b9a2f8961d6426478bfe0dcf",
-      "last_checked": "2026-05-29T07:29:01.243899",
+      "last_checked": "2026-06-02T07:41:20.187891",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1d622df95270c6234c8db51cc932fd1e\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult/sequencelength.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/string.json": {
       "hash": "a4515f76ef9487011ba8bb97d269a9158dd9f91e4de20968ab649bc9abb1dc71",
-      "last_checked": "2026-05-29T07:29:01.297538",
+      "last_checked": "2026-06-02T07:41:20.345813",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"c60003df3cebef145969eaca686c4a85\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult/string.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/enumeratetokenvectors(in:using:).json": {
       "hash": "cf2ea487a8b9bdedcc8f8319553d505c09bda3878270139f6131bac1653f1b55",
-      "last_checked": "2026-05-29T07:29:01.352822",
+      "last_checked": "2026-06-02T07:41:20.507802",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"687dd778a512b2ebc669bdc2aa67b09d\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult/enumeratetokenvectors-inusing.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlcontextualembeddingresult/tokenvector(at:).json": {
       "hash": "858daf66aa73c33d3361e082131fec7377d1fe4a2600cdfce4560b5a5d6a02e8",
-      "last_checked": "2026-05-29T07:29:01.484780",
+      "last_checked": "2026-06-02T07:41:20.682674",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"860302874ff2d161d393f4656a780cd3\"",
       "file_path": "documentation/NaturalLanguage/nlcontextualembeddingresult/tokenvector-at.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/language.json": {
       "hash": "85105e1793cc7aa7aff21e7093df36be08b86eb6bd609f50043b95a2adbaa3f0",
-      "last_checked": "2026-05-29T07:29:01.544568",
+      "last_checked": "2026-06-02T07:41:20.820236",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"76665b9ada22610239f93cf53e5d2bce\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/language.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/revision.json": {
       "hash": "bb4fd68f8d16325e5660fdb9a7c47aba3878633c48538e1a19228cd99d8d1338",
-      "last_checked": "2026-05-29T07:29:01.619948",
+      "last_checked": "2026-06-02T07:41:20.961460",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"24cc1dc589120e68d515c1878ba6af36\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/revision.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/supportedrevisions(for:).json": {
       "hash": "e08a42280bf20ab17875fb1d3e51a25f9521233db3cf7fea5e8b194c15915c1b",
-      "last_checked": "2026-05-29T07:29:01.731401",
+      "last_checked": "2026-06-02T07:41:21.126632",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1c27169bc8e133bcb9d35bb3b6ee8a12\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/supportedrevisions-for.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/currentrevision(for:).json": {
       "hash": "507aa14ca9596e50f8feee31c4ea8f1efc5732507cb41804a48b6fc79028ee27",
-      "last_checked": "2026-05-29T07:29:01.865485",
+      "last_checked": "2026-06-02T07:41:21.290383",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"965f97df627a97619ca8afe46d1f35ad\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/currentrevision-for.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/type.json": {
       "hash": "8138641f5084100d9eb3c1d0ecfe414fb1631d7b04109d2efc158b51ba98fd6a",
-      "last_checked": "2026-05-29T07:29:01.922378",
+      "last_checked": "2026-06-02T07:41:21.464556",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"e625bd41503c491e676dac430341fc33\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/type.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype.json": {
       "hash": "f848af4837a77c4652a7146b933587f92891e05fc6a2acd3bb5801db5e5d6758",
-      "last_checked": "2026-05-29T07:29:01.980984",
+      "last_checked": "2026-06-02T07:41:21.608837",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"46349d57fd6c02c4e571a31a5245ac7f\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/modeltype.md"
     },
@@ -4615,9 +4615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype/cosine.json": {
       "hash": "c339f4769c5277d846c8548c06a25c2dbdc260a8a82a9d08440ea42c320b6943",
-      "last_checked": "2026-05-29T07:29:02.114031",
+      "last_checked": "2026-06-02T07:41:22.119064",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"d4d8ca0ea9bd406a099792b8d13a67b1\"",
       "file_path": "documentation/NaturalLanguage/nldistancetype/cosine.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nldistancetype/init(rawvalue:).json": {
       "hash": "3842d0940900b5e5c580a78d338cf4f4f14faf572c8b6890ce72f2414516f7b7",
-      "last_checked": "2026-05-29T07:29:02.159930",
+      "last_checked": "2026-06-02T07:41:22.271446",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"2450b76d24b376c53bd457c8bbbf970b\"",
       "file_path": "documentation/NaturalLanguage/nldistancetype/init-rawvalue.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/sequence.json": {
       "hash": "e53a44247dabba928be30aa3d2e088516d0a07ebacbacd6c41dbdfe43e952ee3",
-      "last_checked": "2026-05-29T07:29:02.238777",
+      "last_checked": "2026-06-02T07:41:22.438737",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"66d4f53cdfde9ae42f8fb9a87d1bb5a0\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/modeltype/sequence.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/classifier.json": {
       "hash": "48fbf4fb35f1ce5e46b2a946c5a924b86ef8d62a7853abb05bd64d99b1231803",
-      "last_checked": "2026-05-29T07:29:02.300206",
+      "last_checked": "2026-06-02T07:41:22.612327",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"16f495fbaf93f19ab7e6afcedd1c1a75\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/modeltype/classifier.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/modeltype/init(rawvalue:).json": {
       "hash": "5a6ad00fb8aba73d55740c33c8636c97e6c0b72aa1b7af0460c2717258b14b16",
-      "last_checked": "2026-05-29T07:29:02.423106",
+      "last_checked": "2026-06-02T07:41:22.743891",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"5cd50728de8b3943c83577d5ad65b6b9\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/modeltype/init-rawvalue.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlembedding/init(contentsofurl:).json": {
       "hash": "95a5d1cf200ba28baf53bfb27dae9a52ae406ed5ee6336268542ae8153ea7193",
-      "last_checked": "2026-05-29T07:28:49.790061",
+      "last_checked": "2026-06-02T07:40:57.942381",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"1cc3959ae9de57d51b1b89491313cced\"",
       "file_path": "documentation/NaturalLanguage/nlembedding/init-contentsofurl.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(mlmodel:)-9tpjr.json": {
       "hash": "ce673c5cbb6344bd01631de4cdc8761ab9dd04206a35cf67bb592db2cddaa38e",
-      "last_checked": "2026-05-29T07:28:54.058108",
+      "last_checked": "2026-06-02T07:41:06.556376",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"0ff6768d1853a623cbde769c486d17bf\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/init-mlmodel-9tpjr.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(mlmodel:)-4o6g8.json": {
       "hash": "32313e244ba1825b45e67442a2b18272a611b437e038b6af69ef7b77f64321b6",
-      "last_checked": "2026-05-29T07:28:54.739052",
+      "last_checked": "2026-06-02T07:41:07.784763",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"f3c314b6626d25e254cf57afdd81ef37\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/init-mlmodel-4o6g8.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodel/init(contentsofurl:).json": {
       "hash": "2731c24e636836774ac99319f6914da7835788e76a6802341513fc975240f01d",
-      "last_checked": "2026-05-29T07:28:54.803479",
+      "last_checked": "2026-06-02T07:41:07.901653",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"a72fd16e915c724c45b161d48f58f435\"",
       "file_path": "documentation/NaturalLanguage/nlmodel/init-contentsofurl.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(contentsofurl:)-13iyg.json": {
       "hash": "ca0337cb8c5e1d02d42b74d26668a99820efba5628e49cf2405a317955f17843",
-      "last_checked": "2026-05-29T07:29:00.592451",
+      "last_checked": "2026-06-02T07:41:18.659484",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"121fc9fe73edaa779189da8bbf500635\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/init-contentsofurl-13iyg.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlgazetteer/init(contentsofurl:)-3inpk.json": {
       "hash": "372103e7438e818fc9b7391405c67976b64c3452b826b92f10268de36590b18a",
-      "last_checked": "2026-05-29T07:29:00.663606",
+      "last_checked": "2026-06-02T07:41:18.789702",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"043714f47e7711eec57aa645bb874700\"",
       "file_path": "documentation/NaturalLanguage/nlgazetteer/init-contentsofurl-3inpk.md"
     },
@@ -4791,9 +4791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/naturallanguage/nlmodelconfiguration/init(coder:).json": {
       "hash": "e0f65b96a2ece83de383ba826a3525d29a222d4d7e4dcefc256ba9a7a349f0d3",
-      "last_checked": "2026-05-29T07:29:02.046219",
+      "last_checked": "2026-06-02T07:41:21.779800",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:34.057522",
+      "session_id": "2026-06-02T07:40:31.178372",
       "etag": "W/\"3b16dadbe874d46bcd8ef575d067ffe0\"",
       "file_path": "documentation/NaturalLanguage/nlmodelconfiguration/init-coder.md"
     },

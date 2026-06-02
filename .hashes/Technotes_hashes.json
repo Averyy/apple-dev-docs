@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:17.569475",
+    "last_updated": "2026-06-02T07:43:37.352269",
     "total_pages": 152,
-    "session_id": "2026-05-29T07:30:06.836284"
+    "session_id": "2026-06-02T07:43:23.369851"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Technotes.json": {
       "hash": "d6f48848157f71fcfdf16f57c09b24b954fb0d409c02cca58fd0eb035a4b556f",
-      "last_checked": "2026-05-29T07:30:07.136673",
+      "last_checked": "2026-06-02T07:43:23.755297",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"199eb741a49cd49a7d4d73a9d732017c\"",
       "file_path": "documentation/Technotes/Technotes.md"
     },
     "https://developer.apple.com/documentation/Technotes": {
       "hash": "d6f48848157f71fcfdf16f57c09b24b954fb0d409c02cca58fd0eb035a4b556f",
-      "last_checked": "2026-05-29T07:30:07.016702",
+      "last_checked": "2026-06-02T07:43:23.639006",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"199eb741a49cd49a7d4d73a9d732017c\"",
       "file_path": "documentation/Technotes/Technotes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3189-managing-mail-background-traffic-load.json": {
       "hash": "6958df642d645352c8ab626b4198d585a3661b487812a99c503c90f226f8709f",
-      "last_checked": "2026-05-29T07:30:09.203047",
+      "last_checked": "2026-06-02T07:43:26.487774",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"8e835dc80070e8ba630433210d065f1f\"",
       "file_path": "documentation/Technotes/tn3189-managing-mail-background-traffic-load.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.json": {
       "hash": "012231d75625229fb9a55568c47876047d90d72cc4ff0f5988f454c869da1617",
-      "last_checked": "2026-05-29T07:30:09.452237",
+      "last_checked": "2026-06-02T07:43:26.657448",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"e0fb2904ec35ecd9234195e9f91faaee\"",
       "file_path": "documentation/Technotes/tn3187-migrating-to-the-uikit-scene-based-life-cycle.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.json": {
       "hash": "f6749fd67fbe5adb63159c3534a3418beacdd76dd20fdcaf7b1ea051acc8a436",
-      "last_checked": "2026-05-29T07:30:09.565331",
+      "last_checked": "2026-06-02T07:43:26.828528",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"ce666c19507edb23ee3cf8dcd8e2865d\"",
       "file_path": "documentation/Technotes/tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.json": {
       "hash": "a3350af403263c59dfd1d54b3975dd9c39a54a0b79cdf232fe23fd25d21b8a7f",
-      "last_checked": "2026-05-29T07:30:09.617280",
+      "last_checked": "2026-06-02T07:43:27.000346",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"ad92f614f892784a76178ddcb2cf9f76\"",
       "file_path": "documentation/Technotes/tn3186-troubleshooting-in-app-purchases-availability-in-the-sandbox.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode.json": {
       "hash": "ffa7c72d82e27ca1f676e1e401e301828b76ba2ff1fb279becff20c7266989df",
-      "last_checked": "2026-05-29T07:30:09.732753",
+      "last_checked": "2026-06-02T07:43:27.172290",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"bcf131210ff31362f7ee5d42a42e6cdb\"",
       "file_path": "documentation/Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.json": {
       "hash": "029a67df61ea6c579e349b897d9888ac0ee4387c780ecd902af3c656200e0b54",
-      "last_checked": "2026-05-29T07:30:09.816509",
+      "last_checked": "2026-06-02T07:43:27.342751",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"78b6ec55d6ef84fad2ed66e2c5c2af87\"",
       "file_path": "documentation/Technotes/tn3182-adding-privacy-tracking-keys-to-your-privacy-manifest.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.json": {
       "hash": "387e95405da7b22bc1745ebfc019163cbb534342fd1b24cc21708c75e8cca2b1",
-      "last_checked": "2026-05-29T07:30:09.872734",
+      "last_checked": "2026-06-02T07:43:27.547406",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"0b891c31654c2d50027ae7d9e551844e\"",
       "file_path": "documentation/Technotes/tn3183-adding-required-reason-api-entries-to-your-privacy-manifest.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest.json": {
       "hash": "22b3d63a2002d2b62aa682b65098b57336a624c854e57c853f6004444fdd45ce",
-      "last_checked": "2026-05-29T07:30:09.943327",
+      "last_checked": "2026-06-02T07:43:27.721800",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"3f3c3dcea7a8846962e778227b8bba8e\"",
       "file_path": "documentation/Technotes/tn3184-adding-data-collection-details-to-your-privacy-manifest.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3181-debugging-invalid-privacy-manifest.json": {
       "hash": "0ae60ebde7cbc7369f12c67fa234aa9553b6d9f64c4f50f2eed047df03c804cf",
-      "last_checked": "2026-05-29T07:30:10.174055",
+      "last_checked": "2026-06-02T07:43:28.025817",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"cb403743f782bbc9f56ddf74e49f7159\"",
       "file_path": "documentation/Technotes/tn3181-debugging-invalid-privacy-manifest.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3180-reverting-app-store-server-notifications-v1.json": {
       "hash": "4b487b805ae05da8cb30cd0619d09971216a6be676947ed539e1fb8be0b8f254",
-      "last_checked": "2026-05-29T07:30:10.285313",
+      "last_checked": "2026-06-02T07:43:28.198808",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"2c2ca04dc246b23ee561a60e6af111c4\"",
       "file_path": "documentation/Technotes/tn3180-reverting-app-store-server-notifications-v1.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3179-understanding-local-network-privacy.json": {
       "hash": "ddf5eedabc0ef67ab59a1fed47ce2bc2fc4fc5edfb9fc3cbae871b628575abc3",
-      "last_checked": "2026-05-29T07:30:07.698015",
+      "last_checked": "2026-06-02T07:43:24.525621",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"293bca507a673b9573e8bd30f404599d\"",
       "file_path": "documentation/Technotes/tn3179-understanding-local-network-privacy.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3178-checking-for-and-resolving-build-uuid-problems.json": {
       "hash": "c3f069cca2892beb31d7a21993d918a27934c45312571f46fad762b50ea91a8e",
-      "last_checked": "2026-05-29T07:30:10.386551",
+      "last_checked": "2026-06-02T07:43:28.356449",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"47a6bc93dfd25c32c4485179032b8d89\"",
       "file_path": "documentation/Technotes/tn3178-checking-for-and-resolving-build-uuid-problems.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files.json": {
       "hash": "91a47218cdefc09e32f19061497b3c16c8d565d03672a213731c8c1b58e18467",
-      "last_checked": "2026-05-29T07:30:10.499266",
+      "last_checked": "2026-06-02T07:43:28.512261",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"5d500ebd6aec08e59a7f631b0762475a\"",
       "file_path": "documentation/Technotes/tn3177-understanding-alternate-audio-track-groups-in-movie-files.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3111-ios-wifi-api-overview.json": {
       "hash": "e394a39eadca8cb59798584bcbcb91d8e3a9752a75ad562d8a92509269a624a0",
-      "last_checked": "2026-05-29T07:30:08.699337",
+      "last_checked": "2026-06-02T07:43:25.997478",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"2080c02ffaa9b6cac777ae3789d7c57c\"",
       "file_path": "documentation/Technotes/tn3111-ios-wifi-api-overview.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3176-troubleshooting-apple-pay-payment-processing-issues.json": {
       "hash": "1dc740a56ff03841274d4e338ad1948a7062982bb780455d5fa5c5b6ec7b5ba8",
-      "last_checked": "2026-05-29T07:30:10.743704",
+      "last_checked": "2026-06-02T07:43:28.685515",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f64c6cfd7dbd5b6c16cf5f8a9bc276ba\"",
       "file_path": "documentation/Technotes/tn3176-troubleshooting-apple-pay-payment-processing-issues.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.json": {
       "hash": "36bc59cca103edf5f21bdbb36f15fbe0fb68422731ae434d8f3594fe3a38a3a9",
-      "last_checked": "2026-05-29T07:30:11.016593",
+      "last_checked": "2026-06-02T07:43:28.850551",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"e8d91bc504eb6e58bc794e9c86edd04b\"",
       "file_path": "documentation/Technotes/tn3175-diagnosing-issues-with-displaying-the-apple-pay-button-on-your-website.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.json": {
       "hash": "5b8a678271d8adc6ca6366aa7d2397f8353f89a02c0a3834935fe1c9ec2252a5",
-      "last_checked": "2026-05-29T07:30:11.078692",
+      "last_checked": "2026-06-02T07:43:29.030589",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"da0a34a46e3e0b0c2346631e182f5605\"",
       "file_path": "documentation/Technotes/tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration.json": {
       "hash": "760c88d5e79c9394b2c03373416ba73a7b7f70f4145136ee259fb1e3eb34183e",
-      "last_checked": "2026-05-29T07:30:11.181091",
+      "last_checked": "2026-06-02T07:43:29.211146",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"735aca4d0d422b13922bf0626348c9f0\"",
       "file_path": "documentation/Technotes/tn3173-troubleshooting-issues-with-your-apple-pay-merchant-id-configuration.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3168-making-your-app-clip-available-app-store.json": {
       "hash": "95537d6e7a987ace856375e904032aa21a661fd10c28c6e6abaca5327a2f064b",
-      "last_checked": "2026-05-29T07:30:11.323395",
+      "last_checked": "2026-06-02T07:43:29.383138",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"9efbf9d33bfd16979afd226d99ebe39d\"",
       "file_path": "documentation/Technotes/tn3168-making-your-app-clip-available-app-store.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3124-debugging-coordinate-transformations.json": {
       "hash": "91a1ac6cea2bb8afda5957c6707a2904ecbbe87187c533994133f06ed39dbc6a",
-      "last_checked": "2026-05-29T07:30:11.436349",
+      "last_checked": "2026-06-02T07:43:29.552952",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"df931877f5bfcb7778d909256ee677aa\"",
       "file_path": "documentation/Technotes/tn3124-debugging-coordinate-transformations.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3158-resolving-xcode-15-device-connection-issues.json": {
       "hash": "ed5e33ea0d44659d8c7b73cb085ebebc5dbecf723c7fb982a68cd6dc4d445115",
-      "last_checked": "2026-05-29T07:30:11.578192",
+      "last_checked": "2026-06-02T07:43:29.718566",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"d832f29290ae02c302c24dc6f5e45d59\"",
       "file_path": "documentation/Technotes/tn3158-resolving-xcode-15-device-connection-issues.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3165-packet-filter-is-not-api.json": {
       "hash": "17a5b15b3c68c1675e22a543dfd962d62c8b265964940356e1be9055097fee58",
-      "last_checked": "2026-05-29T07:30:11.825740",
+      "last_checked": "2026-06-02T07:43:29.909344",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"8869c63a1e3971227ac6a87ce37c48da\"",
       "file_path": "documentation/Technotes/tn3165-packet-filter-is-not-api.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer.json": {
       "hash": "d9012732b858581929ab79f935a4f3189e1257a08baa48365be303aad1a89b87",
-      "last_checked": "2026-05-29T07:30:11.954401",
+      "last_checked": "2026-06-02T07:43:30.075343",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"d07199ba886a63b407f9a04c14e8410e\"",
       "file_path": "documentation/Technotes/tn3164-debugging-the-synchronization-of-nspersistentcloudkitcontainer.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.json": {
       "hash": "7f632c120f99a0c246c8dc3587bef88bdf150ec220b22249c4fc55089954e144",
-      "last_checked": "2026-05-29T07:30:12.046913",
+      "last_checked": "2026-06-02T07:43:30.257490",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"67884a6df13d4041f5d00a9c7f3541d7\"",
       "file_path": "documentation/Technotes/tn3163-understanding-the-synchronization-of-nspersistentcloudkitcontainer.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3161-inside-code-signing-certificates.json": {
       "hash": "9f05124da29bea0d54a367351c10edf88d080448a5a97a0ecc27cec1221af7ee",
-      "last_checked": "2026-05-29T07:30:12.163159",
+      "last_checked": "2026-06-02T07:43:30.459099",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"b15f5ab4f5ecb3ede24292ff598750d4\"",
       "file_path": "documentation/Technotes/tn3161-inside-code-signing-certificates.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3162-understanding-cloudkit-throttles.json": {
       "hash": "c655d7f71689927fdd5089876d4f79053c389addbdaeab853205f072d2caefaf",
-      "last_checked": "2026-05-29T07:30:12.286581",
+      "last_checked": "2026-06-02T07:43:30.619235",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"2479f70f92055d1112a13ff0370b3890\"",
       "file_path": "documentation/Technotes/tn3162-understanding-cloudkit-throttles.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer.json": {
       "hash": "a5664ee3e0e21aa1aeec8dc7276fc245db76a9d2ef5bdcab6d7a221ecfc72d56",
-      "last_checked": "2026-05-29T07:30:12.484351",
+      "last_checked": "2026-06-02T07:43:30.793816",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"cf361e406684f3b42a2a4d037cf2a000\"",
       "file_path": "documentation/Technotes/tn3159-migrating-sign-in-with-apple-users-for-an-app-transfer.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3156-create-rich-previews-for-messages.json": {
       "hash": "1bd9d3e5e09072ba08a59661e59c41ede3072f1cbc9d5b1dae0c7c167123b033",
-      "last_checked": "2026-05-29T07:30:12.612895",
+      "last_checked": "2026-06-02T07:43:30.969127",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"ccd9cafe4c7cc570a641ff9a9d6cd47c\"",
       "file_path": "documentation/Technotes/tn3156-create-rich-previews-for-messages.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit.json": {
       "hash": "950927e4df0b4168b623b6d5b65fc7a0c78d245611640fe1390c5c1ca5e8c2f8",
-      "last_checked": "2026-05-29T07:30:12.676036",
+      "last_checked": "2026-06-02T07:43:31.143700",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"c28e91b41ad0c925b7d3f7cb93cb8eed\"",
       "file_path": "documentation/Technotes/tn3157-updating-your-watchos-project-for-swiftui-and-widgetkit.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3155-debugging-universal-links.json": {
       "hash": "e6299f023ae100d669104141fd6dee494aa4fc968e264857498cf1cdcfbbfac1",
-      "last_checked": "2026-05-29T07:30:12.789736",
+      "last_checked": "2026-06-02T07:43:31.360332",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"75c279e8829092e1344dee449757b0e6\"",
       "file_path": "documentation/Technotes/tn3155-debugging-universal-links.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3138-handling-app-store-receipt-signing-certificate-changes.json": {
       "hash": "69844706af95befc5ca373b4fb87add74f733b0493e5564adda786bd7d849e49",
-      "last_checked": "2026-05-29T07:30:12.898871",
+      "last_checked": "2026-06-02T07:43:31.520946",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f0c657ac292e300764fe9e652e9fc5d0\"",
       "file_path": "documentation/Technotes/tn3138-handling-app-store-receipt-signing-certificate-changes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3154-adopting-swiftui-navigation-split-view.json": {
       "hash": "bc4017d8579e7f55afc85fc2f03e25ddf5907a38a9f009d716577fbe0637c289",
-      "last_checked": "2026-05-29T07:30:13.005918",
+      "last_checked": "2026-06-02T07:43:31.739694",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"1a4214f278cdf1b9e680ba5655e48550\"",
       "file_path": "documentation/Technotes/tn3154-adopting-swiftui-navigation-split-view.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos.json": {
       "hash": "6406385a620906c0056b45a9307af24b6b56c17d287c21d085c84b27d098dc39",
-      "last_checked": "2026-05-29T07:30:13.114695",
+      "last_checked": "2026-06-02T07:43:31.900155",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"efda4be2d3c084fa52458f27bc7e991e\"",
       "file_path": "documentation/Technotes/tn3153-adopting-api-changes-for-eventkit-in-ios-macos-and-watchos.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3152-migrating-to-the-latest-calendar-access-levels.json": {
       "hash": "7e65589786f8b706f15398e08374b95395037292eed9b16bb554eeef48c13309",
-      "last_checked": "2026-05-29T07:30:13.174534",
+      "last_checked": "2026-06-02T07:43:32.071059",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"d5101a9c33cf22bcb50a5ced88a1a1be\"",
       "file_path": "documentation/Technotes/tn3152-migrating-to-the-latest-calendar-access-levels.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3151-choosing-the-right-networking-api.json": {
       "hash": "54f696a576e2c445be81f328f4f79a1c4b4b6fb232cd9b2c1543602fbbfdccf1",
-      "last_checked": "2026-05-29T07:30:08.589196",
+      "last_checked": "2026-06-02T07:43:25.840879",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"0476109dbd6d369e9a8eb5f3f889887f\"",
       "file_path": "documentation/Technotes/tn3151-choosing-the-right-networking-api.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3149-fetching-change-history-events.json": {
       "hash": "46bc0110fc08a2710b96b72a03b8ab540f166e3b1720b91718bd15b7d3067474",
-      "last_checked": "2026-05-29T07:30:13.304208",
+      "last_checked": "2026-06-02T07:43:32.230810",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"4838f316c08507515b103ac77d09ed08\"",
       "file_path": "documentation/Technotes/tn3149-fetching-change-history-events.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3150-getting-ready-for-data-less-files.json": {
       "hash": "ac636e13a0e18f81e2774f836bf50c11e1f0d04d8871e46ccbe54798845c27bf",
-      "last_checked": "2026-05-29T07:30:13.415849",
+      "last_checked": "2026-06-02T07:43:32.411805",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"ec8ed8037982b03d7e0e722fd1a5ec0d\"",
       "file_path": "documentation/Technotes/tn3150-getting-ready-for-data-less-files.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon.json": {
       "hash": "ca92e60ad40cebf1f04667baa88192d76bb7bb176020f76ac0fe33c8e46d05c9",
-      "last_checked": "2026-05-29T07:30:13.523204",
+      "last_checked": "2026-06-02T07:43:32.582765",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"49bd43807f2195fb7b5622c33a3a0e61\"",
       "file_path": "documentation/Technotes/tn3117-resolving-build-errors-for-apple-silicon.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool.json": {
       "hash": "7f05d3d9c83f9f5e70462aa94eb348b19056a17d6c52d6ae152fb94ab4522c0f",
-      "last_checked": "2026-05-29T07:30:13.657902",
+      "last_checked": "2026-06-02T07:43:32.775777",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"c01ba2a8c4a9cbec36f52387d853a0c8\"",
       "file_path": "documentation/Technotes/tn3147-migrating-to-the-latest-notarization-tool.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3145-hdr-video-metadata.json": {
       "hash": "df2c455777cb5d3d7bfd5efe97d15ed6260482fbf4e9d7138360dec54902800d",
-      "last_checked": "2026-05-29T07:30:13.764788",
+      "last_checked": "2026-06-02T07:43:32.935649",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"db0a83d1421cf88580b9a176c58f36f9\"",
       "file_path": "documentation/Technotes/tn3145-hdr-video-metadata.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3133-packaging-a-renderer.json": {
       "hash": "12a639ad8898a0dff159dabbe5e9023c2c3348dfe88c884eab690e99890e4a10",
-      "last_checked": "2026-05-29T07:30:13.892886",
+      "last_checked": "2026-06-02T07:43:33.087414",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"ff64bb49eb5902e6e5e0d813d0e99014\"",
       "file_path": "documentation/Technotes/tn3133-packaging-a-renderer.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3137-on-mac-keychains.json": {
       "hash": "a13766d53c9b0f8bb22e514d3fbc58a4f382a361a2724d865fc46b076f672ec4",
-      "last_checked": "2026-05-29T07:30:14.000397",
+      "last_checked": "2026-06-02T07:43:33.265961",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f730edc58e7cf58c29b2a183e87c075f\"",
       "file_path": "documentation/Technotes/tn3137-on-mac-keychains.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3136-avaudioconverter-performing-sample-rate-conversions.json": {
       "hash": "83a9ff771bd8358a1558e4bdb70e318681d12a6815aaa5b725016a4545c3772c",
-      "last_checked": "2026-05-29T07:30:14.263112",
+      "last_checked": "2026-06-02T07:43:33.446672",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"9bea0a0bc4d268e953a29fd8fc728745\"",
       "file_path": "documentation/Technotes/tn3136-avaudioconverter-performing-sample-rate-conversions.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3135-low-level-networking-on-watchos.json": {
       "hash": "e1586532e7168c43fb2a347d61c219f077b1fdb62bb14ad1110ba96ede6ed64a",
-      "last_checked": "2026-05-29T07:30:14.383190",
+      "last_checked": "2026-06-02T07:43:33.605803",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f0e1c6488f224eb2b97b12898aa97680\"",
       "file_path": "documentation/Technotes/tn3135-low-level-networking-on-watchos.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3128-starting-shareplay-without-an-existing-facetime-call.json": {
       "hash": "319ce1ecb19c692f461c1c81380e2c99f46f5bf469998b22ab824e345dcedd22",
-      "last_checked": "2026-05-29T07:30:14.495384",
+      "last_checked": "2026-06-02T07:43:33.923589",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"bd62a2496fdd2a51199d14d8d10696e9\"",
       "file_path": "documentation/Technotes/tn3128-starting-shareplay-without-an-existing-facetime-call.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3134-network-extension-provider-deployment.json": {
       "hash": "7945d8253cec122714e40b6b3de9a0cee57e12e7d560b0a5b0f173a7e31782f3",
-      "last_checked": "2026-05-29T07:30:09.086452",
+      "last_checked": "2026-06-02T07:43:26.314679",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"d12b43c985215a01831ee78d5e6bfc9b\"",
       "file_path": "documentation/Technotes/tn3134-network-extension-provider-deployment.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3132-changes-eventkit-and-eventkitui-in-ios16.json": {
       "hash": "fe430b26465685f9d80d8a71682b23859f99656d6e9b3b8638685ad8691050ba",
-      "last_checked": "2026-05-29T07:30:14.730645",
+      "last_checked": "2026-06-02T07:43:34.079175",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"7b43e40caae21abf9b398d9dd729bb27\"",
       "file_path": "documentation/Technotes/tn3132-changes-eventkit-and-eventkitui-in-ios16.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3130-changes-to-eventkit-in-macos13-ventura.json": {
       "hash": "6a66cd056d582466bda3109c1062cf21ec8e466f4e5248d9a2369ce20202501f",
-      "last_checked": "2026-05-29T07:30:14.855577",
+      "last_checked": "2026-06-02T07:43:34.250756",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"b2d829f060052dbf63c29702d0757b2b\"",
       "file_path": "documentation/Technotes/tn3130-changes-to-eventkit-in-macos13-ventura.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud.json": {
       "hash": "7cb48df598fffbf374c8b82e3ba8d9149dfdcc0c48351c8ec2b98cae9f951d2a",
-      "last_checked": "2026-05-29T07:30:14.958363",
+      "last_checked": "2026-06-02T07:43:34.408537",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"c1af5c0bc0b93e4979a10a5dced0c10f\"",
       "file_path": "documentation/Technotes/tn3129-resolving-build-errors-from-helper-tools-in-xcode-cloud.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3125-inside-code-signing-provisioning-profiles.json": {
       "hash": "477f341c78297cc8b358d3f79c8d6490c31150f59f2729cc9021e6dfe0604177",
-      "last_checked": "2026-05-29T07:30:15.104254",
+      "last_checked": "2026-06-02T07:43:34.584738",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"b018c935706b4c475d427722783fc790\"",
       "file_path": "documentation/Technotes/tn3125-inside-code-signing-provisioning-profiles.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3126-inside-code-signing-hashes.json": {
       "hash": "1b84dac240aa2283575e4db71d3728b4a12fca26f119fa3e1f8d4cc3f641faee",
-      "last_checked": "2026-05-29T07:30:15.214382",
+      "last_checked": "2026-06-02T07:43:34.747933",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"0994bba9b61c3d88730a833d20f4cfb0\"",
       "file_path": "documentation/Technotes/tn3126-inside-code-signing-hashes.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3127-inside-code-signing-requirements.json": {
       "hash": "cbad12d567dd2153eae3d9df829662405adb5a36b2861888375635f7795200c9",
-      "last_checked": "2026-05-29T07:30:15.468366",
+      "last_checked": "2026-06-02T07:43:34.915801",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"af913f0aa14aea1b1e0fe69f28ad34dc\"",
       "file_path": "documentation/Technotes/tn3127-inside-code-signing-requirements.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code.json": {
       "hash": "2e014d60e6b7d048b04e2c92f426bd2eea8169151af1948bb97d19626b751ae0",
-      "last_checked": "2026-05-29T07:30:15.591104",
+      "last_checked": "2026-06-02T07:43:35.083942",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"aee20eeb5db8e5efb55cdee4cad0d614\"",
       "file_path": "documentation/Technotes/tn3122-receipt-validation-with-the-app-store-fails-with-a-non-zero-error-code.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3113-testing-xpc-code-with-an-anonymous-listener.json": {
       "hash": "dee3c343eb56b59dd2589d15660b4aff4f877fe12dc5dd89ecc640a03ccd0da6",
-      "last_checked": "2026-05-29T07:30:15.708216",
+      "last_checked": "2026-06-02T07:43:35.234996",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f3356ad6ced3dd65fbf593775ccf32e6\"",
       "file_path": "documentation/Technotes/tn3113-testing-xpc-code-with-an-anonymous-listener.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput.json": {
       "hash": "60de2218163d1eecd290a62d4e4dc257ebbb50ae950dbc07a4485b031fcf464d",
-      "last_checked": "2026-05-29T07:30:15.819243",
+      "last_checked": "2026-06-02T07:43:35.388145",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"8220f9e1318460d295a689513f24e165\"",
       "file_path": "documentation/Technotes/tn3121-selecting-a-pixel-format-for-an-avcapturevideodataoutput.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3123-refactoring-your-storyboard.json": {
       "hash": "e69f0e003393c78de2767e20bfc6b37f76a7758241f6581862c38e81f10be436",
-      "last_checked": "2026-05-29T07:30:15.928276",
+      "last_checked": "2026-06-02T07:43:35.514344",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"1634406af516677643b446140bd2d4e6\"",
       "file_path": "documentation/Technotes/tn3123-refactoring-your-storyboard.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3120-expected-use-cases-for-network-extension-packet-tunnel-providers.json": {
       "hash": "009a997a14328c27256383db60a29fa5ceae688616dd7041f3ef825ae623b933",
-      "last_checked": "2026-05-29T07:30:16.041525",
+      "last_checked": "2026-06-02T07:43:35.684515",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"5f2bf516aa86daae19a6d9e4c8c70a1a\"",
       "file_path": "documentation/Technotes/tn3120-expected-use-cases-for-network-extension-packet-tunnel-providers.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3106-customizing-uinavigationbar-appearance.json": {
       "hash": "91dc5987dbe0db927b822a41766304d226471cd1f2a5197cf62ab905cfa66b39",
-      "last_checked": "2026-05-29T07:30:16.055244",
+      "last_checked": "2026-06-02T07:43:35.871780",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"72c6a7f83f76d5387889a0afd11ec29c\"",
       "file_path": "documentation/Technotes/tn3106-customizing-uinavigationbar-appearance.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3105-customizing-uistatusbar-syle.json": {
       "hash": "7476da6b796ee2b44c80f8867073a392dd3fd90a7a3a1ec8ec1f69d90f82fd8e",
-      "last_checked": "2026-05-29T07:30:16.355170",
+      "last_checked": "2026-06-02T07:43:36.040514",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"b8d3ecc097d553c362ee40d62449c533\"",
       "file_path": "documentation/Technotes/tn3105-customizing-uistatusbar-syle.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3118-debugging-your-apps-launch-screen.json": {
       "hash": "95b3eedecef2529f0865d9690132da762929a430db9ec95b56f8cfbccf5679fa",
-      "last_checked": "2026-05-29T07:30:16.485121",
+      "last_checked": "2026-06-02T07:43:36.172689",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"eaa83b0118d2b4358c260fa77493bef4\"",
       "file_path": "documentation/Technotes/tn3118-debugging-your-apps-launch-screen.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3107-resolving-sign-in-with-apple-response-errors.json": {
       "hash": "d549975335b1fe6de381d362793a11c38fb8da50a9dcb4a2380f5016c3f23839",
-      "last_checked": "2026-05-29T07:30:16.596436",
+      "last_checked": "2026-06-02T07:43:36.304478",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"d3335b443f56ce816caef523d70192e2\"",
       "file_path": "documentation/Technotes/tn3107-resolving-sign-in-with-apple-response-errors.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3115-bluetooth-state-restoration-app-relaunch-rules.json": {
       "hash": "087ad61aa3591165ccc5b3c51bd94c0ad5dc22f851b6d589809b07c1e240108b",
-      "last_checked": "2026-05-29T07:30:08.283609",
+      "last_checked": "2026-06-02T07:43:25.488065",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"5eb89642b7c9a5b9e39c6894a67d0b8e\"",
       "file_path": "documentation/Technotes/tn3115-bluetooth-state-restoration-app-relaunch-rules.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3110-resolving-generic-xcode-archive-issue.json": {
       "hash": "65c7936d35e9cfd88e562466cda05325004dcff94633ac7012bdb42b1f0d4305",
-      "last_checked": "2026-05-29T07:30:16.704753",
+      "last_checked": "2026-06-02T07:43:36.478492",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"635c758497c47160a13eacedb486f292\"",
       "file_path": "documentation/Technotes/tn3110-resolving-generic-xcode-archive-issue.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3109-resolving-common-archiving-issues.json": {
       "hash": "2b230aabe6b2c5a8713c3c6fa8cad8b8cdc609dfff98a5d734978b4bf4eb510b",
-      "last_checked": "2026-05-29T07:30:16.822997",
+      "last_checked": "2026-06-02T07:43:36.646880",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"dbe84d6909868fbb0cc6f2ce3a12946c\"",
       "file_path": "documentation/Technotes/tn3109-resolving-common-archiving-issues.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3108-viewing-the-interface-of-your-swift-code.json": {
       "hash": "e8cdcaa0cd46ed35d86452260aac45bf13781ba70867668a61b3b3b10ebc6285",
-      "last_checked": "2026-05-29T07:30:16.925663",
+      "last_checked": "2026-06-02T07:43:36.809293",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"46f20d2b592b5c4f39ecd5faa300cbcc\"",
       "file_path": "documentation/Technotes/tn3108-viewing-the-interface-of-your-swift-code.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3104-recording-video-in-apple-prores.json": {
       "hash": "f4d55ece12ab158a1e15caf8627c1c5d42a2aa2dd833328c00083e508d87bed9",
-      "last_checked": "2026-05-29T07:30:17.034254",
+      "last_checked": "2026-06-02T07:43:36.987365",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"a2b8a2aadc494086aba633aa409ccb40\"",
       "file_path": "documentation/Technotes/tn3104-recording-video-in-apple-prores.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide.json": {
       "hash": "f4b5b30da53117f3a5975e3cd62d88f91e0f04b5df165d44952025bb63900dab",
-      "last_checked": "2026-05-29T07:30:17.158877",
+      "last_checked": "2026-06-02T07:43:37.154973",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"fb3aa0eace73093b9ff20d9c19f6e8ed\"",
       "file_path": "documentation/Technotes/tn3103-apple-pay-on-the-web-troubleshooting-guide.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3102-http3-in-your-app.json": {
       "hash": "ea5e1683f43217418bf6e1f9820e221774ccf51388e35949f960acebd62b83d4",
-      "last_checked": "2026-05-29T07:30:17.568147",
+      "last_checked": "2026-06-02T07:43:37.348915",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"f2cd295c563099da4db617938eb72d61\"",
       "file_path": "documentation/Technotes/tn3102-http3-in-your-app.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3190-usb-audio-device-design-considerations.json": {
       "hash": "062dfd2cec58c70ec7aec988e0d6c2aee81be021be864759c3ed58d34690525a",
-      "last_checked": "2026-05-29T07:30:07.810914",
+      "last_checked": "2026-06-02T07:43:24.699815",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"b6eda3e5ea86fb351cfeb26a8909a001\"",
       "file_path": "documentation/Technotes/tn3190-usb-audio-device-design-considerations.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.json": {
       "hash": "7f45e42d230fe1c579e7cfde041d4612f9aad912c7d1ccfb2eced69295a81e89",
-      "last_checked": "2026-05-29T07:30:07.923174",
+      "last_checked": "2026-06-02T07:43:24.992352",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"c9da0dd25f69cfa759419164cfd15ab6\"",
       "file_path": "documentation/Technotes/tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.json": {
       "hash": "9531a586cebfa99e15d807227c580da0c7c9a7f3f5245b5ebb8fc4e8a326be2a",
-      "last_checked": "2026-05-29T07:30:08.158551",
+      "last_checked": "2026-06-02T07:43:25.166553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"a007b30b1408ad6f7379ca9263b39cf3\"",
       "file_path": "documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.json": {
       "hash": "0d4f782933ab771abb992c2e7be4316eaf838707cb7377a98a0214a1f75cb1ee",
-      "last_checked": "2026-05-29T07:30:08.508212",
+      "last_checked": "2026-06-02T07:43:25.676617",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"db5856d47cd8c9a6384272b8e2c0d887\"",
       "file_path": "documentation/Technotes/tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3191-imap-extensions-supported-by-mail.json": {
       "hash": "311139e57bfa4059108ae00766539719563efa444dc833bb27729731711f002f",
-      "last_checked": "2026-05-29T07:30:08.938344",
+      "last_checked": "2026-06-02T07:43:26.157010",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"15233793cfb8f18a804bbca3233d27ba\"",
       "file_path": "documentation/Technotes/tn3191-imap-extensions-supported-by-mail.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3206-updating-apple-pay-certificates.json": {
       "hash": "5aa19fcb7df5dc56efb111d576e3fc45524de81b539bb405ebc9ef19b576d112",
-      "last_checked": "2026-05-29T07:30:07.605238",
+      "last_checked": "2026-06-02T07:43:24.219985",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"c0d0a7154b6ed9ecac119f60e27823f1\"",
       "file_path": "documentation/Technotes/tn3206-updating-apple-pay-certificates.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/technotes/tn3205-low-latency-communication-with-rdma-over-thunderbolt.json": {
       "hash": "b35d85d8bc6148533f0a18eae12ebcd1bb9e118bf54c0a4c6133869a829088ba",
-      "last_checked": "2026-05-29T07:30:07.542766",
+      "last_checked": "2026-06-02T07:43:24.036964",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:06.836284",
+      "session_id": "2026-06-02T07:43:23.369851",
       "etag": "W/\"a9879710108fc7bc3d3af5690583db08\"",
       "file_path": "documentation/Technotes/tn3205-low-latency-communication-with-rdma-over-thunderbolt.md"
     },

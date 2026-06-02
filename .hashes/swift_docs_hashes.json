@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-05-19T08:47:29.881356",
+    "last_updated": "2026-06-02T08:50:40.042047",
     "total_files": 46,
     "source": "scrape_swift_docs.py"
   },
@@ -12,7 +12,7 @@
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/ClassesAndStructures.md": "3dccadb0090fbe820570193c366a7d1b9ecff725af267b1fa61b0323c0b60de5",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Closures.md": "301b636069570c5b8ec56b0a80a4d3ee3596f049f668b646512f8c41c34a63cf",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/CollectionTypes.md": "fbd735570831e8752671b8ac132d937e76a6e9cd352882db0a69816647c0341e",
-    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Concurrency.md": "d1c645e1efe899eb90cb7de6590c7c97c539c5b8de8984429945294815912ee4",
+    "swiftlang/swift-book:TSPL.docc/LanguageGuide/Concurrency.md": "4ab6920d6906816c385147acca0d8463d5bc69e5f8e21dc13cd1264434fa3ca1",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/ControlFlow.md": "d64bf2bfff753c6000fb77639e2221db75bc5740b41c461238e8d6fffb396465",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Deinitialization.md": "f7f6b0df9518653fd3443988cf98cc2d7e06809aa6cfde52d66c98f236a366dc",
     "swiftlang/swift-book:TSPL.docc/LanguageGuide/Enumerations.md": "02613db1e56d42fe4cf0dd36343f7b9b93e67aa5a9247c10ae30ec87ae8cda05",

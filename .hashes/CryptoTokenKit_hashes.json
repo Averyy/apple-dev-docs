@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:28:55.164878",
+    "last_updated": "2026-06-02T07:41:03.525846",
     "total_pages": 624,
-    "session_id": "2026-05-29T07:28:27.085793"
+    "session_id": "2026-06-02T07:40:14.830167"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CryptoTokenKit.json": {
       "hash": "0a845ec832a9e450755eb251c2a674bdb39dee69114873e8d569323282906ea5",
-      "last_checked": "2026-05-29T07:28:27.374486",
+      "last_checked": "2026-06-02T07:40:15.060523",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"17d2e107f16ddea55c3044166619fe2f\"",
       "file_path": "documentation/CryptoTokenKit/CryptoTokenKit.md"
     },
     "https://developer.apple.com/documentation/CryptoTokenKit": {
       "hash": "0a845ec832a9e450755eb251c2a674bdb39dee69114873e8d569323282906ea5",
-      "last_checked": "2026-05-29T07:28:27.261540",
+      "last_checked": "2026-06-02T07:40:14.944380",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"17d2e107f16ddea55c3044166619fe2f\"",
       "file_path": "documentation/CryptoTokenKit/CryptoTokenKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/using-cryptographic-assets-stored-on-a-smart-card.json": {
       "hash": "b4423666cab91bed39a941d48f6912d8131e51d7bedd0d2b10948763e5245672",
-      "last_checked": "2026-05-29T07:28:27.666770",
+      "last_checked": "2026-06-02T07:40:15.288924",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9771aa45f9efc8b2d690a298c7636d34\"",
       "file_path": "documentation/CryptoTokenKit/using-cryptographic-assets-stored-on-a-smart-card.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager.json": {
       "hash": "2f49724e8dbc80ecdd3c616b32ef3c0656691f5553f5553875d0b7669b34df2e",
-      "last_checked": "2026-05-29T07:28:27.770924",
+      "last_checked": "2026-06-02T07:40:15.526422",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"921e921802e4c9a9143831ccfac84b95\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot.json": {
       "hash": "4977a7c74b7513118ad5604a0890bbe76368f9193c97f054a9a729aed5a68195",
-      "last_checked": "2026-05-29T07:28:28.045395",
+      "last_checked": "2026-06-02T07:40:15.654605",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"44e6d478bd1eb9b014926a2d82ac5c1b\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard.json": {
       "hash": "ed429045afda101d1a37f818296777ff4e5702c40492964e3e1cab4027cca464",
-      "last_checked": "2026-05-29T07:28:28.231568",
+      "last_checked": "2026-06-02T07:40:15.778389",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7ebcebfd1ff7ae0e3f3c4793b85e90c3\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/authenticating-users-with-a-cryptographic-token.json": {
       "hash": "9fd84a1ace027bdf1d88e76f007fda035fbc8bf9950a183bc3247fd8cc3c738d",
-      "last_checked": "2026-05-29T07:28:28.468479",
+      "last_checked": "2026-06-02T07:40:15.896877",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8573529dbc69fcb8c9107a52532bfd3e\"",
       "file_path": "documentation/CryptoTokenKit/authenticating-users-with-a-cryptographic-token.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/configuring-smart-card-authentication.json": {
       "hash": "03d54386a9ef2fb26acc1d49647885a86ead7f6649d563384765085f5b927eb7",
-      "last_checked": "2026-05-29T07:28:28.570935",
+      "last_checked": "2026-06-02T07:40:16.009753",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"249798e59bfd42b80a65e398cd720684\"",
       "file_path": "documentation/CryptoTokenKit/configuring-smart-card-authentication.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokendriver.json": {
       "hash": "3f91b0df2f40422db525c5848113f82f2625849a08399fd87beb792efd7fa433",
-      "last_checked": "2026-05-29T07:28:28.698805",
+      "last_checked": "2026-06-02T07:40:16.133685",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4ef2c21e166d22728fbeaa871a6765b6\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokendriver.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtoken.json": {
       "hash": "984c79ba66913107f27673fa1a4a00f06c258d2212532f12ce027a9b0cc426e6",
-      "last_checked": "2026-05-29T07:28:28.977908",
+      "last_checked": "2026-06-02T07:40:16.291400",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a84d51cac444ad349f407550b46094cb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtoken.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokensession.json": {
       "hash": "33384e0325268a19e5b16494b1e4041f062a6360600d28785b1966f22622dd7a",
-      "last_checked": "2026-05-29T07:28:29.099898",
+      "last_checked": "2026-06-02T07:40:16.429063",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0a2f380baa8a35815d1fc06b94f88077\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokensession.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher.json": {
       "hash": "bd35d147a3cb4b5fcfde9aa323bdfe9d23bed150f1b9bdc2dc7809fccfe2e1f7",
-      "last_checked": "2026-05-29T07:28:29.185442",
+      "last_checked": "2026-06-02T07:40:16.543644",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0fbc034410f31e7cfafbedbd90f85332\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver.json": {
       "hash": "b45fd42a8648cca6d5b78658fc717f2d223f5685dcce4531a5e919706c494d50",
-      "last_checked": "2026-05-29T07:28:29.343567",
+      "last_checked": "2026-06-02T07:40:16.657114",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"80d7aaaa6c86c47107bb531485d8bfa9\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken.json": {
       "hash": "ba0b8eec7a3953fc5cd252b9fcf80d4366ef74b6a9eb9145afc1698d8001385e",
-      "last_checked": "2026-05-29T07:28:29.461355",
+      "last_checked": "2026-06-02T07:40:16.787883",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b3653b11fd5426748f8625536a231074\"",
       "file_path": "documentation/CryptoTokenKit/tktoken.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensession.json": {
       "hash": "a7124f3af8dc597372149e1d682af50cf5db671901a13cec9f327e596bf22a17",
-      "last_checked": "2026-05-29T07:28:29.778316",
+      "last_checked": "2026-06-02T07:40:16.945781",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"20f43fec068ce85710ee2dad67f6f5cd\"",
       "file_path": "documentation/CryptoTokenKit/tktokensession.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror.json": {
       "hash": "e352267be7c6114b753a8252d44265defb1d1f4d27d243ef1d51e14b467349ae",
-      "last_checked": "2026-05-29T07:28:29.890496",
+      "last_checked": "2026-06-02T07:40:17.065980",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a20b2c078e0f224e9a32e69882bdb397\"",
       "file_path": "documentation/CryptoTokenKit/tkerror.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerrordomain.json": {
       "hash": "f837ee20d942715cd7e27736495c1c8eeb34fc0e1c22afd60396cd8071bf9716",
-      "last_checked": "2026-05-29T07:28:29.944664",
+      "last_checked": "2026-06-02T07:40:17.206809",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a777920e0cd8e157e5ba18a7e04624d6\"",
       "file_path": "documentation/CryptoTokenKit/tkerrordomain.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code.json": {
       "hash": "91464560b0f5ba43469542fc02b34f13da8e0d8197818be02d7b7f3b27076de1",
-      "last_checked": "2026-05-29T07:28:30.089880",
+      "last_checked": "2026-06-02T07:40:17.332856",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f3c58dbd8a007649f6c590a88cce6de4\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotnfcsession.json": {
       "hash": "74b20bea189e1c2b6694565520a7048eaf7df7008035081bc734695531be53ae",
-      "last_checked": "2026-05-29T07:28:30.327830",
+      "last_checked": "2026-06-02T07:40:17.461389",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"85625694fe1a9b69658fc754082e14ff\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotnfcsession.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokenregistrationmanager.json": {
       "hash": "dab42a156348a70656298aacc1e11f4355658fd97fddde244a9a75e3450c6386",
-      "last_checked": "2026-05-29T07:28:30.432063",
+      "last_checked": "2026-06-02T07:40:17.592253",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"971fb0429d722cc3030eecf9732278e2\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokenregistrationmanager.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenobjectid-8mo7f.json": {
       "hash": "c2f9815e9606302303bfb9aa66e86fc523d60843235c5d1e29f172666e4d525b",
-      "last_checked": "2026-05-29T07:28:30.650037",
+      "last_checked": "2026-06-02T07:40:17.715429",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7bba5d261c8e1961a6972a9403fa54e8\"",
       "file_path": "documentation/CryptoTokenKit/tktokenobjectid-8mo7f.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/default.json": {
       "hash": "66db196ff76bc96d482175f1df82cee04cc186f30bc6fe60b4474d4235526d03",
-      "last_checked": "2026-05-29T07:28:30.747162",
+      "last_checked": "2026-06-02T07:40:17.827578",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0642786eb2c18eb4220863d2cf9d7c6e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/default.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/slotnames.json": {
       "hash": "50d874222a6fed6847b9fd5064e0fc549c22f350cf1d793d6d12af0513e52fe4",
-      "last_checked": "2026-05-29T07:28:30.847634",
+      "last_checked": "2026-06-02T07:40:17.933896",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"130c312d6773ece2bb7e1299a68af68a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/slotnames.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/getslot(withname:reply:).json": {
       "hash": "0d537418968f294a8c75a28010a31f0d5cd5a153cd0101b4441276db48bfdeec",
-      "last_checked": "2026-05-29T07:28:30.931848",
+      "last_checked": "2026-06-02T07:40:18.075870",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ca3bc37b00d4be67a945eb7526fae430\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/getslot-withnamereply.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/slotnamed(_:).json": {
       "hash": "64fbb8c9079334d8c74689bea9ee0f1bebdddaff5eb57d8fa65eb6ed60f7b388",
-      "last_checked": "2026-05-29T07:28:30.987452",
+      "last_checked": "2026-06-02T07:40:18.201265",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"aefc6ba5c9f616d817ce2e7aab6e320f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/slotnamed.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/createnfcslot(message:completion:).json": {
       "hash": "b049623da563cc7b99147bb4bc5b969d1363de4e13c38cd171d8208a193700f4",
-      "last_checked": "2026-05-29T07:28:31.091241",
+      "last_checked": "2026-06-02T07:40:18.329933",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"364d801d08e5a4b60b4a7a77f6aba35a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/createnfcslot-messagecompletion.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotmanager/isnfcsupported().json": {
       "hash": "fdf81786967c615f9ebd65d87cc1566000008d6f98cc775dab91e16605dcd6aa",
-      "last_checked": "2026-05-29T07:28:31.198216",
+      "last_checked": "2026-06-02T07:40:18.476678",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"66e70f9d622804525cd543f3065f086c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotmanager/isnfcsupported.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/makesmartcard().json": {
       "hash": "98f6d40ec5840231fa337bbefd062da15fd818c37b5d5647576b07fd76d34bc5",
-      "last_checked": "2026-05-29T07:28:31.300994",
+      "last_checked": "2026-06-02T07:40:18.599016",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"27029206b2d2056509b2f4a58a7cc9fb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/makesmartcard.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.property.json": {
       "hash": "946407568a1cc903d7f32347e771291a171e3359127782ff03a8708e3aea0408",
-      "last_checked": "2026-05-29T07:28:31.407559",
+      "last_checked": "2026-06-02T07:40:18.769643",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b69d4127a53def8dac0ee1100a3e533c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swiftproperty.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum.json": {
       "hash": "0bebd895a9414b42e0c415ac62d6d6b191fd309e655909cbe7379f9a9fe50a30",
-      "last_checked": "2026-05-29T07:28:31.513407",
+      "last_checked": "2026-06-02T07:40:18.902157",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"dcc8cf5199456fc6087025b19d3d0821\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swiftenum.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/name.json": {
       "hash": "e7a25815f505ad8a6e88574d8e1261a4a1e3fa1cf50cfaec495bedc83ecb0902",
-      "last_checked": "2026-05-29T07:28:31.612226",
+      "last_checked": "2026-06-02T07:40:19.028675",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b78c2f5aa2d7e659b3c7affc3e3ade7a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/name.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/maxinputlength.json": {
       "hash": "e50f32d35cc52734fd482def54161c71de212acc81bc0038ce819d531294c4ed",
-      "last_checked": "2026-05-29T07:28:31.734114",
+      "last_checked": "2026-06-02T07:40:19.200874",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c4f0c3a1b05466bbbaf2a4f4d5c11f94\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/maxinputlength.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/maxoutputlength.json": {
       "hash": "4c3560dee5db942f320411009f0eeb71e9db21258e11f3d484d0b25ae1a595db",
-      "last_checked": "2026-05-29T07:28:31.788842",
+      "last_checked": "2026-06-02T07:40:19.323091",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"921937d8c740d1d3b2072c4d6f5b3213\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/maxoutputlength.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/atr.json": {
       "hash": "db87a91f79d6ce10f5e00291e7185aa214c0e32b47f4e250584c574c211bbd30",
-      "last_checked": "2026-05-29T07:28:31.915086",
+      "last_checked": "2026-06-02T07:40:19.500445",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"30f9808262012724554c745cf68f39f4\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/atr.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr.json": {
       "hash": "64ca75dcb0539a2e00c59db1281aad8d6c0be7e5e14df57dd3c32e7a5cf3099b",
-      "last_checked": "2026-05-29T07:28:32.018084",
+      "last_checked": "2026-06-02T07:40:19.613918",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"880d1d3a2e5cf9176dfba826201c724a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/slot.json": {
       "hash": "24a29b76668138cc7ab46e0280487bdb300066a4d7e1ec95ff269fd947fbc544",
-      "last_checked": "2026-05-29T07:28:32.134881",
+      "last_checked": "2026-06-02T07:40:19.732284",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9c8c07583e2af43069d4977a75496823\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/slot.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/isvalid.json": {
       "hash": "05b38b0df60aa3c6339810cb1dc1cb2c9504dd323cc173ce5c27b4cc6c4d1c16",
-      "last_checked": "2026-05-29T07:28:32.390943",
+      "last_checked": "2026-06-02T07:40:19.865476",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b4f4d8bde8d86843a70372337225c567\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/isvalid.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/issensitive.json": {
       "hash": "b607d4fe72280f58a78d9a41cb1993948de89fd3b8b70ee8cfabdb555f45412c",
-      "last_checked": "2026-05-29T07:28:32.578278",
+      "last_checked": "2026-06-02T07:40:19.997591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"08fb7e947811068355f57dee6e62b832\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/issensitive.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/context.json": {
       "hash": "5fc03645361a40c9398e16da4ae7d77b6aa1765a786edf50cd2c29ab3e559502",
-      "last_checked": "2026-05-29T07:28:32.684179",
+      "last_checked": "2026-06-02T07:40:20.128595",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b3cfb2213d8ff5a35a628c49d3226e7f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/context.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/allowedprotocols.json": {
       "hash": "cfceb589aed1d33ba4605d572d8550e2118cae0983cc02759612aef4d069fa2c",
-      "last_checked": "2026-05-29T07:28:32.851778",
+      "last_checked": "2026-06-02T07:40:20.257598",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"99f9622f7ecdfaed8d126c51fe86342f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/allowedprotocols.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/currentprotocol.json": {
       "hash": "f0ebe80a89bf9d1375b8dba0eaefda813ed632c0d4e385e45da95a7cd9bf6355",
-      "last_checked": "2026-05-29T07:28:32.949429",
+      "last_checked": "2026-06-02T07:40:20.368272",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c284cc680d85d654721d2c68792336df\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/currentprotocol.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol.json": {
       "hash": "4a055364fb794361baf817f0d4dc563420a1efa88583056550d09959bbe25ace",
-      "last_checked": "2026-05-29T07:28:33.052938",
+      "last_checked": "2026-06-02T07:40:20.492945",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e22da781c8d517f6169b77c7fc5939e6\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/beginsession(reply:).json": {
       "hash": "38632275c91cd4bc9e68dae536eeebd225329296189dd9432bc2b2a04a2a7242",
-      "last_checked": "2026-05-29T07:28:33.149703",
+      "last_checked": "2026-06-02T07:40:20.662204",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a9dc85e509294790c6ad6aea106e4cfb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/beginsession-reply.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/transmit(_:reply:).json": {
       "hash": "de303c92878927a6952a497519a923f1d60485f10df5e42f567e7c20b460a6f1",
-      "last_checked": "2026-05-29T07:28:33.257352",
+      "last_checked": "2026-06-02T07:40:20.800922",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fddf5881a42dc780ac5b11084fd6fcc0\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/transmit-reply.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/endsession().json": {
       "hash": "2e3d15a068ef7eb0272a3bb7b7b491cc4fc6daaaed1e4eb10d6495503f3dd9e5",
-      "last_checked": "2026-05-29T07:28:33.319252",
+      "last_checked": "2026-06-02T07:40:20.922911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0463de99bdf4dfa7ea8a4469c6022943\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/endsession.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/userinteractionforsecurepinverification(_:apdu:pinbyteoffset:).json": {
       "hash": "7acccb96eea4d4acec25116e67d2f3ca30cf68b4ead4cdf2c4e5b46919c974f7",
-      "last_checked": "2026-05-29T07:28:33.426756",
+      "last_checked": "2026-06-02T07:40:21.075615",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"57de590d6b6c982b4c5c85703ecf9c6f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/userinteractionforsecurepinverification-apdupinbyteoffset.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/userinteractionforsecurepinchange(_:apdu:currentpinbyteoffset:newpinbyteoffset:).json": {
       "hash": "971a45dd7a57ca4425ff32eda95979de8d31fdf646b40dcb71150f5979a47af0",
-      "last_checked": "2026-05-29T07:28:33.541458",
+      "last_checked": "2026-06-02T07:40:21.213757",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"16cec6eb010ddf8e416aa0b1f178ea62\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/userinteractionforsecurepinchange-apducurrentpinbyteoffsetnewpinbyteoffset.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat.json": {
       "hash": "4d929837d1e5da0f55c418a4446af742b3a26009eee08d30d314e23fbd1633f9",
-      "last_checked": "2026-05-29T07:28:33.656125",
+      "last_checked": "2026-06-02T07:40:21.323470",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6456173a35bfa8880991822453533d81\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction.json": {
       "hash": "99b016949651b4b33c5cf43d31471d96cc8be0e370fc051d3bdaef44e6f464ec",
-      "last_checked": "2026-05-29T07:28:33.773291",
+      "last_checked": "2026-06-02T07:40:21.471487",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"86d7c1c5c4abc55af49606d38854bc1c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation.json": {
       "hash": "53b907032e65754b5f1f05167b1d25709bbc8f3a1108c211beb22ef93993690d",
-      "last_checked": "2026-05-29T07:28:34.002463",
+      "last_checked": "2026-06-02T07:40:21.625464",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"51a09ab4b1314be11f95408f1c175683\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange.json": {
       "hash": "06899dd36f5e1e8409941094ccab907d970a44c631472378cfa8efdbc4692610",
-      "last_checked": "2026-05-29T07:28:34.114557",
+      "last_checked": "2026-06-02T07:40:21.802504",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"26ebf7257d1a895962b71512f0b02afb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinverification.json": {
       "hash": "bf9a68719b2e6aba4091a24ce44a1380e24c97bc1d5dadbb856606b815a098c0",
-      "last_checked": "2026-05-29T07:28:34.218305",
+      "last_checked": "2026-06-02T07:40:22.097921",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c05ba1d4869e7af807f6551d1cbfd15d\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinverification.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/cla.json": {
       "hash": "66176a987f247acdaa49a2fda9a2ee7d028f324c2bc47056f830147e50b0b680",
-      "last_checked": "2026-05-29T07:28:34.314870",
+      "last_checked": "2026-06-02T07:40:22.214620",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8aa111d10a4982e03e3d0aeeef51572c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/cla.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/useextendedlength.json": {
       "hash": "e89e5d22953bbcaaffc0f8008498dbdd187c9b79552d45cc1759287143efb691",
-      "last_checked": "2026-05-29T07:28:34.365341",
+      "last_checked": "2026-06-02T07:40:22.342660",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a566ea403a00099772f30408a2e58556\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/useextendedlength.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/usecommandchaining.json": {
       "hash": "f3b2efa8cd4af0c3eaf3aac3d56a41903dfe0e3523e247cc22d5f8c6b1169c86",
-      "last_checked": "2026-05-29T07:28:34.502776",
+      "last_checked": "2026-06-02T07:40:22.626353",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"2197e3d219d44517cc6daed8bc8aa4f2\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/usecommandchaining.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/send(ins:p1:p2:data:le:reply:).json": {
       "hash": "9db99fa5f6a91ba449a5ef922b9a0e359797185f3775971954fd2e1da2c1ec28",
-      "last_checked": "2026-05-29T07:28:34.559734",
+      "last_checked": "2026-06-02T07:40:22.803130",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6701c74eb4daefe04d6203959d3b539c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/send-insp1p2datalereply.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/send(ins:p1:p2:data:le:).json": {
       "hash": "1a4c678e2a8d609abc15b5ef1b2984e29717106fc248919a65b2c25f36c59ffa",
-      "last_checked": "2026-05-29T07:28:34.643437",
+      "last_checked": "2026-06-02T07:40:23.107996",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"42fedd033ef4091f86cb4fcb3ac975d3\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/send-insp1p2datale.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcard/withsession(_:).json": {
       "hash": "2e22a77ac50b34ab97b41ef2262d8579798e8076730350f4fda1931d215a3238",
-      "last_checked": "2026-05-29T07:28:34.753749",
+      "last_checked": "2026-06-02T07:40:23.395874",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"520a319893697205af14022cb85979cc\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcard/withsession.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokendriverdelegate.json": {
       "hash": "24aca03787502f81988d16ce4a5c35d45898a30782dbd7233197080b44022d52",
-      "last_checked": "2026-05-29T07:28:34.805870",
+      "last_checked": "2026-06-02T07:40:23.680261",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"70406ec89925d5c430b39822849eaf92\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokendriverdelegate.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtoken/aid.json": {
       "hash": "5bb80c6bc9472fffd72dce2a28da365da0700dd77abc46c0831a47846209749e",
-      "last_checked": "2026-05-29T07:28:34.971799",
+      "last_checked": "2026-06-02T07:40:24.147118",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d0879b3399eea7a84b82fb2f171bf529\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtoken/aid.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord.json": {
       "hash": "59ed2e9208a6c8431553c5945b700c47e2701a1a06f8335b29f1f978156802cf",
-      "last_checked": "2026-05-29T07:28:35.026206",
+      "last_checked": "2026-06-02T07:40:24.321135",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a7df92d8aa8744272c91615ce8cc2155\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkbertlvrecord.json": {
       "hash": "c7ad19648eb5374e5369d4ad1a0e592a1da1cd380204b3da67c54b0d66cffbbc",
-      "last_checked": "2026-05-29T07:28:35.140437",
+      "last_checked": "2026-06-02T07:40:24.611744",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"387a18a210ecabdd03b1793e4ba613ce\"",
       "file_path": "documentation/CryptoTokenKit/tkbertlvrecord.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkcompacttlvrecord.json": {
       "hash": "26f8735357093cf278c9fbfe5c2f6200499e1ddcc48a35616bf07e06b2150366",
-      "last_checked": "2026-05-29T07:28:35.250262",
+      "last_checked": "2026-06-02T07:40:24.772850",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"3f2ba1dcbe41c25557f1aae6000eeaa4\"",
       "file_path": "documentation/CryptoTokenKit/tkcompacttlvrecord.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksimpletlvrecord.json": {
       "hash": "362dd58c5bba1a863dd05a2295f0732fb3db1566f7e147109aef36ac994a5b89",
-      "last_checked": "2026-05-29T07:28:35.355740",
+      "last_checked": "2026-06-02T07:40:24.941716",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5ae0f9b8c60fd363535cb0e171d13c91\"",
       "file_path": "documentation/CryptoTokenKit/tksimpletlvrecord.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokensession/smartcard.json": {
       "hash": "e6b2e0abb1955cf3fcaeb4988b27f938517a2d788daf9c114cf7e1332272e914",
-      "last_checked": "2026-05-29T07:28:35.631115",
+      "last_checked": "2026-06-02T07:40:25.395740",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"482b197e862732b55962c1d8ac1b37a3\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokensession/smartcard.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokensession/getsmartcard().json": {
       "hash": "3d332bec3ed043f81f9b12523580b0ec26a6c9637fda8bfbe014b35be60accbf",
-      "last_checked": "2026-05-29T07:28:35.744502",
+      "last_checked": "2026-06-02T07:40:25.671859",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"de5e98a0a6f705f6e8a1f389cd2a8028\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokensession/getsmartcard.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/init().json": {
       "hash": "0613f8cb3870d4d324c8ae40efea6ff33742b23b2cbe847723c08258cf894da3",
-      "last_checked": "2026-05-29T07:28:35.849525",
+      "last_checked": "2026-06-02T07:40:25.827682",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"13099d14313dff67d25b729076f251b3\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/init.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/init(insertionhandler:).json": {
       "hash": "35bc0c486d71a805e95c1c04cec4af6283baf22ebd1375b3a2802fd3381adcdc",
-      "last_checked": "2026-05-29T07:28:35.953512",
+      "last_checked": "2026-06-02T07:40:26.130289",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9ebd5fd755816921cc3e281c2813b092\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/init-insertionhandler.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokenids.json": {
       "hash": "57cef93a387cf476fb121d9158bef8d2f9c56763c023588dad389da7e61db187",
-      "last_checked": "2026-05-29T07:28:36.058139",
+      "last_checked": "2026-06-02T07:40:26.301674",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"37ed1df2ae625c7cf3c30082e3efb49b\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokenids.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/addremovalhandler(_:fortokenid:).json": {
       "hash": "534f34e16187a4cca43f49560024472de28f049a41839c3a7f9016b2d8134f9a",
-      "last_checked": "2026-05-29T07:28:36.110794",
+      "last_checked": "2026-06-02T07:40:26.468106",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"872678e197ae6849a2f9b61c04982e78\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/addremovalhandler-fortokenid.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/setinsertionhandler(_:).json": {
       "hash": "5b3fafe66d38c8bee6d2e961fcf1bbf52b6b0f2f2d57b4281791ac32b7c774d6",
-      "last_checked": "2026-05-29T07:28:36.229244",
+      "last_checked": "2026-06-02T07:40:26.775268",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"90c2d17743da0914f0a55ff08f8ca019\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/setinsertionhandler.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokeninfo.json": {
       "hash": "1da545e70b4c78bdeaef4c1d484727b34b20351943c24532ae054a97612052fc",
-      "last_checked": "2026-05-29T07:28:36.349781",
+      "last_checked": "2026-06-02T07:40:27.104254",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a4c8f138a34ec355c3d79f088b073f17\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokeninfo.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokeninfo(fortokenid:).json": {
       "hash": "2e0748a77024183ea91732204e9e2746931a0813ecb2813785109a77b7b18efb",
-      "last_checked": "2026-05-29T07:28:36.405530",
+      "last_checked": "2026-06-02T07:40:27.268104",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"de306db26918d544e2e796405f04021f\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokeninfo-fortokenid.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/delegate.json": {
       "hash": "fadff2706b285068c8a8c4dbc17ac7db9b538299e801fc9409a468f2998c55e6",
-      "last_checked": "2026-05-29T07:28:36.466554",
+      "last_checked": "2026-06-02T07:40:27.567578",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"02e2c24679a3f02d47e0b90007da6376\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/delegate.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriverdelegate.json": {
       "hash": "efb3d7a2b310512d6a7feff0d8afe33c3281f7c561188c1cc8d49a3ac13df299",
-      "last_checked": "2026-05-29T07:28:36.596198",
+      "last_checked": "2026-06-02T07:40:27.862099",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5e8e6a1c5b934d93b22dfd2b61349744\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriverdelegate.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/classid.json": {
       "hash": "f79e293d81f0be18ea91f6cca84a8c1c982b7e8934119f67ab6b1e4efdbcc7d4",
-      "last_checked": "2026-05-29T07:28:36.708199",
+      "last_checked": "2026-06-02T07:40:28.013745",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b53a717e2c8a85a7d06d6cdaf63d3203\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/classid.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration.json": {
       "hash": "67c271faae353d9dd2dd5a859f28dd2e62002f5c3223c9bc335748c12ee45395",
-      "last_checked": "2026-05-29T07:28:36.822010",
+      "last_checked": "2026-06-02T07:40:28.315911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cbeaf7a0d98ed5014946c04404501100\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/init(tokendriver:instanceid:).json": {
       "hash": "e44dcc6485277a61cf716c86a8aed8954a3dad0eb0f86f208096b02e635e7c7f",
-      "last_checked": "2026-05-29T07:28:36.940380",
+      "last_checked": "2026-06-02T07:40:28.468015",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f32f80245f649dbd3eb05090987df014\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/init-tokendriverinstanceid.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/instanceid.json": {
       "hash": "5c415970b0fe0578c4881e685cdb3e94cb29e4fac8e368b5ef48aba32cda268e",
-      "last_checked": "2026-05-29T07:28:37.046880",
+      "last_checked": "2026-06-02T07:40:28.633512",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"134d66628688910cce2bfa0ea2b62e89\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/instanceid.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/delegate.json": {
       "hash": "708fe7459d341b9ee8a53a42bd0e405bced7cf324df9e1e892fe70065617369a",
-      "last_checked": "2026-05-29T07:28:37.153995",
+      "last_checked": "2026-06-02T07:40:28.805739",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"3da8a878f6fccd32d94894e942ff8141\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/delegate.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendelegate.json": {
       "hash": "3ca01e45179286defbce5a00de536602244e906424fb8b2eb48baf2fdc6bdc8c",
-      "last_checked": "2026-05-29T07:28:37.274695",
+      "last_checked": "2026-06-02T07:40:28.978234",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"eb8398dfa567f5e1d77f4ec8edf2779c\"",
       "file_path": "documentation/CryptoTokenKit/tktokendelegate.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/tokendriver.json": {
       "hash": "f4012b6245e21ae3f06be9c189889f77436d9da4c41d7777c267da7dc3c302b4",
-      "last_checked": "2026-05-29T07:28:37.383784",
+      "last_checked": "2026-06-02T07:40:29.147109",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"92cc77b8f8a808279219161d3f663adf\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/tokendriver.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/keychaincontents.json": {
       "hash": "5178fc7538fdc0ddafe262287e72213638fea0b6e1892e3d27061bacc115c8f9",
-      "last_checked": "2026-05-29T07:28:37.488262",
+      "last_checked": "2026-06-02T07:40:29.308129",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6c500ceb5303e19e7dbc2c86ca33dbce\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/keychaincontents.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincontents.json": {
       "hash": "b9d827673c7a446b3cb0d05767d9c72d1c6980bb0403bd7c49b8a79134f44107",
-      "last_checked": "2026-05-29T07:28:37.599893",
+      "last_checked": "2026-06-02T07:40:29.626947",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9f0c90d18ad73b8b85e1e57a88072358\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincontents.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainitem.json": {
       "hash": "718567f52f86ed145ca04359711d7485eb8fa4a60971484ff1dd88b108be3e78",
-      "last_checked": "2026-05-29T07:28:37.716198",
+      "last_checked": "2026-06-02T07:40:29.913509",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"46dc6dbd6ef3715777bdf67d006cadff\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainitem.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincertificate.json": {
       "hash": "a45a9d2511c688e480c242fc7f47bd717e08c8161313dfedbe10efd54fda6ad4",
-      "last_checked": "2026-05-29T07:28:37.833791",
+      "last_checked": "2026-06-02T07:40:30.211812",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cb6fc343d90e97797d724820fdf44767\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincertificate.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey.json": {
       "hash": "5302e3e2a7a7e95ebe9d3426b723b4ac2cc64541eefdebb74d51d7246430312c",
-      "last_checked": "2026-05-29T07:28:37.957458",
+      "last_checked": "2026-06-02T07:40:30.386954",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9d91bf7fb12c9b967958ded6083c77e9\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/objectid.json": {
       "hash": "565cc71403857d8f2b937226b550ade7d0871c6b9ed1fb6b47d7b88309724622",
-      "last_checked": "2026-05-29T07:28:38.068754",
+      "last_checked": "2026-06-02T07:40:30.690565",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"634786ce857729737301ec4521dd07a6\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/objectid.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.property.json": {
       "hash": "e574313f8f2937eed5ea3effc14c6c3b58719931a50672a7bb59460cac46687d",
-      "last_checked": "2026-05-29T07:28:38.179482",
+      "last_checked": "2026-06-02T07:40:30.867897",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4fd5679a638894d77b3aedb901855eda\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swiftproperty.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class.json": {
       "hash": "32c9bb7658dd74ae153024b3d1a3d47e1a4e968acb5afc896f6a781ce349a123",
-      "last_checked": "2026-05-29T07:28:38.289275",
+      "last_checked": "2026-06-02T07:40:31.033379",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5f9e74b6b178d7cb43121c01626a4bd9\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swiftclass.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensession/init(token:).json": {
       "hash": "6db29f61bd024ee72cdb7af262c665846007ef503351b5f1276375549a38d04b",
-      "last_checked": "2026-05-29T07:28:38.397829",
+      "last_checked": "2026-06-02T07:40:31.204787",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ffb291caaf3affbcd6b5c79c55995457\"",
       "file_path": "documentation/CryptoTokenKit/tktokensession/init-token.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensession/delegate.json": {
       "hash": "4fef534b99e64ec672ef766da19757751be542ec6993cc3010585f8c9cd80c07",
-      "last_checked": "2026-05-29T07:28:38.505512",
+      "last_checked": "2026-06-02T07:40:31.380957",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"575e3410c68d9fec01f73fe7a1948237\"",
       "file_path": "documentation/CryptoTokenKit/tktokensession/delegate.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate.json": {
       "hash": "0ae09c2e093f57a5206841794cf0bd924d6ea82ac51ad90d9e5008c6acecdca5",
-      "last_checked": "2026-05-29T07:28:38.697261",
+      "last_checked": "2026-06-02T07:40:31.533338",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1797be30c4906a4b46df04a0c112f4ea\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensession/token.json": {
       "hash": "184ad00ff9db3f07f810ffcb40c9ea50b9cae63c8ad06ef823fe07f02bdff89b",
-      "last_checked": "2026-05-29T07:28:38.830015",
+      "last_checked": "2026-06-02T07:40:31.728426",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a7cb105bc93a346971246e188eeef2fe\"",
       "file_path": "documentation/CryptoTokenKit/tktokensession/token.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/notimplemented.json": {
       "hash": "9a72e2f5889d92d4c19575ffbd71ad2d5b73dd2ce8b509c0f9676aaf19a04661",
-      "last_checked": "2026-05-29T07:28:38.896827",
+      "last_checked": "2026-06-02T07:40:31.886941",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8a8a0dcfe7c4da3f7c2aad1d868a7dae\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/notimplemented.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/communicationerror.json": {
       "hash": "0da9bfe0d3f044141d4cbe8449b1f38f0681ad488a4b7b01b8f8ea0b33f1412e",
-      "last_checked": "2026-05-29T07:28:39.024067",
+      "last_checked": "2026-06-02T07:40:32.205464",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"076a58462ed1dd6f946da7a2f5dae762\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/communicationerror.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/corrupteddata.json": {
       "hash": "e1a165c5bbb784b1ce07fda5c204440228acdef66aab9e87d11c25e03e89bf2c",
-      "last_checked": "2026-05-29T07:28:39.088506",
+      "last_checked": "2026-06-02T07:40:32.362765",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"3ba1288e73e64e200128d6b23de98c4d\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/corrupteddata.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/canceledbyuser.json": {
       "hash": "ba67c4339fea117421e4ccf439c84a43a2473abec6d69f1af1b1e20f1f229368",
-      "last_checked": "2026-05-29T07:28:39.204111",
+      "last_checked": "2026-06-02T07:40:32.527870",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a06fd978cdbb11cdc3bb79c6824874fc\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/canceledbyuser.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/authenticationfailed.json": {
       "hash": "3aa2e2269941425637740b4447177a0965a9a5b33b8300fd199ea6987ecddce0",
-      "last_checked": "2026-05-29T07:28:39.310466",
+      "last_checked": "2026-06-02T07:40:32.689148",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7c1261684500e73cbe97ed82c8e10840\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/authenticationfailed.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/objectnotfound.json": {
       "hash": "f285ab1b8005c432fccb964911aa7f069d5f78e805c597ef503e46069d230cd3",
-      "last_checked": "2026-05-29T07:28:39.414942",
+      "last_checked": "2026-06-02T07:40:32.885021",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ec0ec32e1e75b9942460b7820e9bf9d7\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/objectnotfound.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/tokennotfound.json": {
       "hash": "f8bd0e22c01a0bdaf919d6d5565f405dcf99b67389738a43d8c493def85f3f7c",
-      "last_checked": "2026-05-29T07:28:39.471038",
+      "last_checked": "2026-06-02T07:40:33.038575",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"46f6c3b6aae10335d05490bbeb9f51b3\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/tokennotfound.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/badparameter.json": {
       "hash": "9b80dba9e8ac73376ab200ded91873c2a14a9bd7391aed6e6559983fa4fdb073",
-      "last_checked": "2026-05-29T07:28:39.582763",
+      "last_checked": "2026-06-02T07:40:33.212798",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"634b46b97fb00e8bc4bc615f8736da14\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/badparameter.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/authenticationneeded.json": {
       "hash": "54feef3658aa8df229204c37292cfc9a21bf02723ea4c54e7f77282392ead9aa",
-      "last_checked": "2026-05-29T07:28:39.688813",
+      "last_checked": "2026-06-02T07:40:33.371353",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"898e58cb908dbae07585ce7775d9c849\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/authenticationneeded.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/tkerrorauthenticationfailed.json": {
       "hash": "bb4cf2deef4792888f2c84eb07e61696ee88ad2230add179bfe1bd3508d6fe72",
-      "last_checked": "2026-05-29T07:28:39.747967",
+      "last_checked": "2026-06-02T07:40:33.541905",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"2d60c2215666add1c164d41d9633a737\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/tkerrorauthenticationfailed.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/tkerrorobjectnotfound.json": {
       "hash": "ce42215f206b11741077b4a92793225b47db87435867628957944a0342c5ad65",
-      "last_checked": "2026-05-29T07:28:39.858181",
+      "last_checked": "2026-06-02T07:40:33.762453",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6736d89cbce2241097a447ec1679b472\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/tkerrorobjectnotfound.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/tkerrortokennotfound.json": {
       "hash": "2239afae4b1fd532b0c93f6adddb8c960d2964f74a004f3ebc69addcbefc3a04",
-      "last_checked": "2026-05-29T07:28:39.964679",
+      "last_checked": "2026-06-02T07:40:34.074767",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b49ce829fa568c7e000e43a2307c89b5\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/tkerrortokennotfound.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/errordomain.json": {
       "hash": "07a58168e18f62201e9ef81f2e462120eb27dfed274e39f3d8c9868b8962a4b7",
-      "last_checked": "2026-05-29T07:28:40.118233",
+      "last_checked": "2026-06-02T07:40:34.229021",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f77714fcebbd738206d3cc495f5566c3\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/errordomain.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/notimplemented.json": {
       "hash": "98052a7262d62316da9a932b7c3a0808cf52ca6a1cc8c7605201c56583151a2c",
-      "last_checked": "2026-05-29T07:28:40.173031",
+      "last_checked": "2026-06-02T07:40:34.382121",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"df9740e03649f2b1fff4b3fc686d2da2\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/notimplemented.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/communicationerror.json": {
       "hash": "aa86cb006e701c6e307d36196f2d31de80e61765154783d2659b1584bbf9ad9a",
-      "last_checked": "2026-05-29T07:28:40.292614",
+      "last_checked": "2026-06-02T07:40:34.542752",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"230b54801c42cf581ace487510713eea\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/communicationerror.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/corrupteddata.json": {
       "hash": "c50f93c52bf62161feb825ead18877c16b2f2ea2a38180a30e78b261a0b9e835",
-      "last_checked": "2026-05-29T07:28:40.403441",
+      "last_checked": "2026-06-02T07:40:34.823172",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cdce9480529d00ee6cb9dd756d63980f\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/corrupteddata.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/canceledbyuser.json": {
       "hash": "5760c3087285df0cb56c223c0358462917c361978a7db256f73f1a0d3525b102",
-      "last_checked": "2026-05-29T07:28:40.505003",
+      "last_checked": "2026-06-02T07:40:34.992242",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"07fb4dc740c7e38d27794676b54da01b\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/canceledbyuser.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/authenticationfailed.json": {
       "hash": "54b3258b2ae05ade3795fbe552479fc77e64c1b9f73cb065e5f07f0a0da76313",
-      "last_checked": "2026-05-29T07:28:40.562542",
+      "last_checked": "2026-06-02T07:40:35.292271",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fc213be1a89a3a14e6811c00d7653e69\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/authenticationfailed.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/objectnotfound.json": {
       "hash": "b724a0f2b3e4ac11b77d24460b08be504b90c26010929e41c6d3a15f9279c596",
-      "last_checked": "2026-05-29T07:28:40.671961",
+      "last_checked": "2026-06-02T07:40:35.478815",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6b262a83224a461c4aae5241fe0519cc\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/objectnotfound.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/tokennotfound.json": {
       "hash": "617395c15c0c30dd37960e031fdd3cdbf5ddc0cd18e5366879e5a216be1f79bd",
-      "last_checked": "2026-05-29T07:28:40.770781",
+      "last_checked": "2026-06-02T07:40:35.639342",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b9d03648aaddf0440858d9c5d3a07880\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/tokennotfound.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/badparameter.json": {
       "hash": "adc9a29c5d9a234b343b087eb6289d2ae3c9a59307ec76c78e03065f2a64b6cb",
-      "last_checked": "2026-05-29T07:28:40.875479",
+      "last_checked": "2026-06-02T07:40:35.803838",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6f43dc8665c0cadf4eead0271e21e7ec\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/badparameter.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/authenticationneeded.json": {
       "hash": "6876f33f183078fc04afddab1d353cd985637cdb57d22a4f4dc7811cf079aeab",
-      "last_checked": "2026-05-29T07:28:40.981558",
+      "last_checked": "2026-06-02T07:40:35.963844",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fc4e0c28dfb834286c286b6290882a38\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/authenticationneeded.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/tkerrorauthenticationfailed.json": {
       "hash": "bd427029eca45d41e299cc648f21b37088c08cbb96af9a22c2ddedd72d1cb74e",
-      "last_checked": "2026-05-29T07:28:41.041160",
+      "last_checked": "2026-06-02T07:40:36.118317",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c8683f1a05ef5455548f5aa3c2d55a50\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/tkerrorauthenticationfailed.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/tkerrorobjectnotfound.json": {
       "hash": "1adc7ee515175fcf1c849b330b8c2cb060acd5684bd89050bc3c569d9caaa430",
-      "last_checked": "2026-05-29T07:28:41.157825",
+      "last_checked": "2026-06-02T07:40:36.289662",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"3be0d48630edb08c6b63b7fc86a8e6d7\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/tkerrorobjectnotfound.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/tkerrortokennotfound.json": {
       "hash": "53b1c6e9046b164921be7404501c79aa16d456922244d7db47ce1808d7b57e62",
-      "last_checked": "2026-05-29T07:28:41.212391",
+      "last_checked": "2026-06-02T07:40:36.458459",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1725bf31cbf75dad51e4202189636dfa\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/tkerrortokennotfound.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkerror/code/init(rawvalue:).json": {
       "hash": "98ad9074e4f8acaa4926512f71145ec609b4265a0734724ff3b242d14e364e23",
-      "last_checked": "2026-05-29T07:28:41.274964",
+      "last_checked": "2026-06-02T07:40:36.624445",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fea0c9e8d109a91d27a1dc9117722d1a\"",
       "file_path": "documentation/CryptoTokenKit/tkerror/code/init-rawvalue.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotnfcsession/slotname.json": {
       "hash": "b292334469dc67488d274892dfa6e05224efab455f7940d1951cd42a1e6f695f",
-      "last_checked": "2026-05-29T07:28:41.396496",
+      "last_checked": "2026-06-02T07:40:36.788628",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7f7c1fca89584c9cbd77f90ccd620c6b\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotnfcsession/slotname.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotnfcsession/end().json": {
       "hash": "f778bcdb157affde1bd2114ea2ae848eac762210a8142796657164f39210abe4",
-      "last_checked": "2026-05-29T07:28:41.499341",
+      "last_checked": "2026-06-02T07:40:36.980540",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b9a5dfb3ad8676a238fbd774e1e9cba4\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotnfcsession/end.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslotnfcsession/update(message:).json": {
       "hash": "c21fcac322f2298b6249cc9ef3ccc7b0ba015ae3f0fe2d1a4b8724be817d2439",
-      "last_checked": "2026-05-29T07:28:41.604782",
+      "last_checked": "2026-06-02T07:40:37.148620",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ed77488429ff5688000f066eddd1e20c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslotnfcsession/update-message.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokenregistrationmanager/registeredsmartcardtokens.json": {
       "hash": "fffbf8baf5ace81bae0ff11037f9f5120e18a6d5585d9023581f8cbe4325cc36",
-      "last_checked": "2026-05-29T07:28:41.708734",
+      "last_checked": "2026-06-02T07:40:37.436804",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"871d23d8b243ff1b10399420409879ae\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokenregistrationmanager/registeredsmartcardtokens.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokenregistrationmanager/registersmartcard(tokenid:promptmessage:).json": {
       "hash": "619664e7ab95ed588e8c8528c57e6a44605a013b88a67b7baa093ea8a707454c",
-      "last_checked": "2026-05-29T07:28:41.822253",
+      "last_checked": "2026-06-02T07:40:37.610891",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cf6c39f649efeea3d73ed2f8f7af066d\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokenregistrationmanager/registersmartcard-tokenidpromptmessage.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokenregistrationmanager/unregistersmartcard(tokenid:).json": {
       "hash": "275cb8dc52ae455877fa4c1f9cead7174e7249cd37da964f867f285cb5d39f02",
-      "last_checked": "2026-05-29T07:28:41.923867",
+      "last_checked": "2026-06-02T07:40:37.775085",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f4bdae9e3056021211415bd6d55227b3\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokenregistrationmanager/unregistersmartcard-tokenid.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokenregistrationmanager/default.json": {
       "hash": "300a3bd77d60c11d58673baeb0498b0380220b9c932d0b026da26f29e1882d1f",
-      "last_checked": "2026-05-29T07:28:42.027612",
+      "last_checked": "2026-06-02T07:40:37.943516",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4e4b18e2bb654708cfe3da3e84e0c68c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokenregistrationmanager/default.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/missing.json": {
       "hash": "9a84ee8e0daebaedf34a018c55ddca27f4fe7a84f8099eb8b593275677aa4660",
-      "last_checked": "2026-05-29T07:28:42.078356",
+      "last_checked": "2026-06-02T07:40:38.106337",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0d097d8dfa6e0d4a74fdb25749fc6664\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/missing.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/empty.json": {
       "hash": "b2c7e1e1c9f0795accb56c58dacab4ec775e38a42d99cd2ac7b9e56205625ee8",
-      "last_checked": "2026-05-29T07:28:42.219080",
+      "last_checked": "2026-06-02T07:40:38.270856",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"122a08ce41202461d1f7f266e0226568\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/empty.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/probing.json": {
       "hash": "d2dcaa7e8c9aeea174a5da28cd013e5b419d28e2e60abd666be06cdf3e9542dd",
-      "last_checked": "2026-05-29T07:28:42.323989",
+      "last_checked": "2026-06-02T07:40:38.439601",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1054e1d23049dbf889d226bbf6efd5b0\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/probing.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/mutecard.json": {
       "hash": "25f3b79cfb157ddd4648f73d7ea40e3ff3fc0f2fcca48c56c8539c36a7580acf",
-      "last_checked": "2026-05-29T07:28:42.471678",
+      "last_checked": "2026-06-02T07:40:38.600468",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5683899b417ae27bfd283486168c934a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/mutecard.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/validcard.json": {
       "hash": "d090146d4cfca49de9443fe4482c0bcb0817ebd949f48e3051009c5aa008acb0",
-      "last_checked": "2026-05-29T07:28:42.619417",
+      "last_checked": "2026-06-02T07:40:38.776098",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"866149e58e754035d1be3520db8fa87a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/validcard.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardslot/state-swift.enum/init(rawvalue:).json": {
       "hash": "8c0c76e44239e7e86263328b2eb6c2c11d707d110b70cb74e20815db217e82af",
-      "last_checked": "2026-05-29T07:28:42.725216",
+      "last_checked": "2026-06-02T07:40:39.011545",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"36f14ff26bececab07d306a4a0c9cf5e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardslot/state-swift.enum/init-rawvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/init(bytes:).json": {
       "hash": "61dfacf71d2ffbc0f5d9ea9a1ba05f254c8cee5801d6b2c898944905d9983d72",
-      "last_checked": "2026-05-29T07:28:42.835917",
+      "last_checked": "2026-06-02T07:40:39.241653",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1cb8bac542e31208000390df81e4276c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/init-bytes.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/init(source:).json": {
       "hash": "11f4af9a6d6eda505ccbe60a37c2df534402b13f9f3dd3fafdb7af0e1516ce24",
-      "last_checked": "2026-05-29T07:28:42.952231",
+      "last_checked": "2026-06-02T07:40:39.415737",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"99ba96cd2408fe9c3f48c6de2be8cd94\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/init-source.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/protocols.json": {
       "hash": "55003eabc9cc4e961e9562e0865bb2cbe79aaa6f21fc95fe13dd8389873bbef0",
-      "last_checked": "2026-05-29T07:28:43.063646",
+      "last_checked": "2026-06-02T07:40:39.735237",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c8bf7ad5db69094d84467407b1e31cf5\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/protocols.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/bytes.json": {
       "hash": "d55fb875b1fef35eba901e5224078c823cea12f0a08e1cb9020ef6dbfa5dd8a3",
-      "last_checked": "2026-05-29T07:28:43.169265",
+      "last_checked": "2026-06-02T07:40:39.892640",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"27dc58d92643f0936c1b2eb1c6345ef6\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/bytes.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/historicalbytes.json": {
       "hash": "7c66f7aa36334e6d557a27733c7912da584bcefe9b96642a74298fd4c938ecff",
-      "last_checked": "2026-05-29T07:28:43.225127",
+      "last_checked": "2026-06-02T07:40:40.068395",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"70fabbf842fcf9c9a7d35569b223e29b\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/historicalbytes.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/historicalrecords.json": {
       "hash": "f0e569a609617c85ab2036ce6f450df8fa3a63c13f9beefa9238463715ae2eb7",
-      "last_checked": "2026-05-29T07:28:43.342056",
+      "last_checked": "2026-06-02T07:40:40.223449",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7f5c072bcaee633e32b9756c7caf84ba\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/historicalrecords.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup(at:).json": {
       "hash": "94ec4c6fa50d08d3e41d88aaa039114978f65f02b8ca6255a8a39d3704ddbff6",
-      "last_checked": "2026-05-29T07:28:43.460151",
+      "last_checked": "2026-06-02T07:40:40.386303",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f838345ff7ec8ab27e8f38a808649922\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup-at.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup(for:).json": {
       "hash": "a09094cbc342d37bf4cb739255020219fa1a771e8a2d391a461f0dec30808e3a",
-      "last_checked": "2026-05-29T07:28:43.571876",
+      "last_checked": "2026-06-02T07:40:40.536031",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4a40bce610d03f567e72a1d34dc6fbab\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup-for.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup.json": {
       "hash": "3b815a70e22facb010371a905df90ed85634a0275b611fe4e581bb90355a10a4",
-      "last_checked": "2026-05-29T07:28:43.627652",
+      "last_checked": "2026-06-02T07:40:40.719825",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7659df8ee5bb9b9cd9218e039b667be2\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol/t0.json": {
       "hash": "e8acc981582c59f990db5cfa94d5c6c4ef8be18a558e3b60102da2ea26ee2b52",
-      "last_checked": "2026-05-29T07:28:43.737382",
+      "last_checked": "2026-06-02T07:40:40.890208",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d337e7d03030c25c913b70a40c3c1f89\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol/t0.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol/t1.json": {
       "hash": "b6b548ac491399498b1c25d7bf5504f7f3f70ea4b6e798fef7fab5587fe8962f",
-      "last_checked": "2026-05-29T07:28:43.842476",
+      "last_checked": "2026-06-02T07:40:41.054130",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"867100881b1cf3c5ae651f6c244923d0\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol/t1.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol/t15.json": {
       "hash": "b33ae48076903ae462ed836cba336f946df6e4d396aa8a1505243f138ec542f1",
-      "last_checked": "2026-05-29T07:28:43.998631",
+      "last_checked": "2026-06-02T07:40:41.213339",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"42c592ad3c8f357a9774ec5db32b913d\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol/t15.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol/any.json": {
       "hash": "6437ee9993dad3fd48624ddbe8b461e4005cf49d398cffb4da59631562d2ed29",
-      "last_checked": "2026-05-29T07:28:44.109971",
+      "last_checked": "2026-06-02T07:40:41.373093",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d9465069f23a99522d7d43451d04a13f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol/any.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardprotocol/init(rawvalue:).json": {
       "hash": "6c3ff336e901455e4dbcb0f4c45118c800ea17aa6db43a8197877a55125baba1",
-      "last_checked": "2026-05-29T07:28:44.213075",
+      "last_checked": "2026-06-02T07:40:41.535449",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cebac1794ba63711f2669725c9e04efb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardprotocol/init-rawvalue.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.property.json": {
       "hash": "55dc8d6f1e96d05ce6119d1753b2d0cf46565735ad6f8e152eb529c2c42a8b13",
-      "last_checked": "2026-05-29T07:28:44.333425",
+      "last_checked": "2026-06-02T07:40:41.707911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fec18dfd02735dd17d4dcce080e4fc43\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swiftproperty.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.property.json": {
       "hash": "990cdaa6d4b7f56f7e89cfe24c647669b128aaebaa7731f8dc2d5da9bf37defd",
-      "last_checked": "2026-05-29T07:28:44.435971",
+      "last_checked": "2026-06-02T07:40:41.866642",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e128c0995c02ffe76e7834a8fd44e223\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swiftproperty.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/minpinlength.json": {
       "hash": "5e9dc40fa5a11d6c3dd84aeaadda75202e584fc1f91f3dec34f132e390d758f8",
-      "last_checked": "2026-05-29T07:28:44.557707",
+      "last_checked": "2026-06-02T07:40:42.025874",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"866fb0f3f250231c0b3abe82ec264d61\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/minpinlength.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/maxpinlength.json": {
       "hash": "bfdc8d8ec6581e11066bfd8282a0bb0e7e9ef7a981eb300cc6c35af593125359",
-      "last_checked": "2026-05-29T07:28:44.728397",
+      "last_checked": "2026-06-02T07:40:42.189841",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0a86678f73455f864068e427db8c9938\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/maxpinlength.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/pinblockbytelength.json": {
       "hash": "f6b75cc2ff6ff493dae9fa334231480475c73983f490e8cd52769af97f1252e0",
-      "last_checked": "2026-05-29T07:28:44.839633",
+      "last_checked": "2026-06-02T07:40:42.342917",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c0853355951d7709eb3f7fe9c56d6392\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/pinblockbytelength.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/pinjustification.json": {
       "hash": "a9786c502e04f4cd0df70469b937a69767593dadc199541f02c8598c3845ce2b",
-      "last_checked": "2026-05-29T07:28:44.949358",
+      "last_checked": "2026-06-02T07:40:42.510076",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"20a47965822e744175b46afb45c65b40\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/pinjustification.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/pinbitoffset.json": {
       "hash": "e678f3e791ecf98d064e417a171f740caa285ba56ef32da6f05dd909a37c2ee4",
-      "last_checked": "2026-05-29T07:28:45.061566",
+      "last_checked": "2026-06-02T07:40:42.673139",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d01dff3e2f6a9ef6c4075b6eb4652560\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/pinbitoffset.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/pinlengthbitoffset.json": {
       "hash": "e0fbe094aeb23fd5302615d8d5e1f7d76cda44a4c1d5ff79311aea01691959ee",
-      "last_checked": "2026-05-29T07:28:45.167994",
+      "last_checked": "2026-06-02T07:40:42.843110",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d96d535839c643e4709897d1446f875c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/pinlengthbitoffset.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/pinlengthbitsize.json": {
       "hash": "63f1dbf4aab0238c5b017c2221e26c37434cc6c38ef61d4b6ffe8b271adac35f",
-      "last_checked": "2026-05-29T07:28:45.282824",
+      "last_checked": "2026-06-02T07:40:43.018163",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b6284832f467dca263a10dbdcdf3e0e1\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/pinlengthbitsize.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.enum.json": {
       "hash": "abf23833250a15e69917ea4d705a0406478ebc499b3da34e211353db8b35cb95",
-      "last_checked": "2026-05-29T07:28:45.342444",
+      "last_checked": "2026-06-02T07:40:43.181263",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"db1d4e48d2ff4449bf2f3a8a1b99f1b4\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swiftenum.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.enum.json": {
       "hash": "3ff2192db1536fc4a4481713c4bc3f5d63dffeae7dd154a025b42ce37a5f9265",
-      "last_checked": "2026-05-29T07:28:45.434606",
+      "last_checked": "2026-06-02T07:40:43.349391",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1dee1c53698cdd280f48245f44e5ba34\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swiftenum.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/justification.json": {
       "hash": "bc1e095bf99747a94b2d5c56a20a06649afa9b83cd096f66928d7a19c143deb5",
-      "last_checked": "2026-05-29T07:28:45.544175",
+      "last_checked": "2026-06-02T07:40:43.559894",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8cc92cddd346c6883b1dc20f6aeedc57\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/justification.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction/delegate.json": {
       "hash": "ca827ddad93c08043f542b797ce3be812cbb36a6b675262390eae7637f2537ed",
-      "last_checked": "2026-05-29T07:28:45.668799",
+      "last_checked": "2026-06-02T07:40:43.710451",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"76d5a7270057221f4a5d1fc67fde478b\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction/delegate.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate.json": {
       "hash": "80c0667c9deb594bf2402603e22386879df905a685348e8a8f594258aa59e2e3",
-      "last_checked": "2026-05-29T07:28:45.781931",
+      "last_checked": "2026-06-02T07:40:43.861723",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d33b3946efb519c7c9841aeb06a0d3db\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction/initialtimeout.json": {
       "hash": "e4f988dde44d1dbaaf9b896eb38e47d3e8661a36afc12dcccd485e26718e7721",
-      "last_checked": "2026-05-29T07:28:45.865300",
+      "last_checked": "2026-06-02T07:40:44.029605",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e4850037bb8dfc6d7bd5fc8bc1254292\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction/initialtimeout.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction/interactiontimeout.json": {
       "hash": "46bc2da184a57ff0c66623815387b07ff694826caf641b295a80ad429da444c7",
-      "last_checked": "2026-05-29T07:28:45.955998",
+      "last_checked": "2026-06-02T07:40:44.202155",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"064f3b927000e09f7644994954b88ada\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction/interactiontimeout.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction/run(reply:).json": {
       "hash": "15c0c5bbc802c3ded24334a01a555501b3c298add9ba64ccd1f9401a45eadfe1",
-      "last_checked": "2026-05-29T07:28:46.047743",
+      "last_checked": "2026-06-02T07:40:44.368914",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0eeab945de73c4be431b8ed3a63d55ce\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction/run-reply.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteraction/cancel().json": {
       "hash": "4e9c3d998195f854a79a00cfcd57f35ad45a4cd20dfaed86025082f25de53672",
-      "last_checked": "2026-05-29T07:28:46.132484",
+      "last_checked": "2026-06-02T07:40:44.528231",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ebbe75a7601c3fd33c26a46034c877ab\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteraction/cancel.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/pincompletion.json": {
       "hash": "9fd57ce9fa5491c855913a6975a3b2e2a219baacd2d4f5b9fd53b33ebd8dbe71",
-      "last_checked": "2026-05-29T07:28:46.190659",
+      "last_checked": "2026-06-02T07:40:44.696286",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a27fcd3f223e3fe3ca649dff4ad28057\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/pincompletion.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/completion.json": {
       "hash": "6a5b14f5dd2ad07e96d15eeafbbeac7e643732613b860cb33c226c27b3dd8248",
-      "last_checked": "2026-05-29T07:28:46.278135",
+      "last_checked": "2026-06-02T07:40:44.862320",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4c06f68d5430e49e97946b218fe1d516\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/completion.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/pinmessageindices.json": {
       "hash": "7ed7876820e2087baa5c9013955515b3acb2c19059c6d5ef1a45d78503e69d5d",
-      "last_checked": "2026-05-29T07:28:46.394119",
+      "last_checked": "2026-06-02T07:40:45.026481",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"11da4b93eff75ba47b6cff05e9291f7e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/pinmessageindices.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/locale.json": {
       "hash": "2d257c02e869144be6234634114667a306ef4ea9910e3d8dd19acdb3b1fafce6",
-      "last_checked": "2026-05-29T07:28:46.544329",
+      "last_checked": "2026-06-02T07:40:45.199542",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"57b2c06588fd54f21fa6087cdf2399d8\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/locale.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/resultsw.json": {
       "hash": "d12eb70aeec930da6f2ab82f1ac56962d7f73420e00ebe99ba05a4aee07d02a4",
-      "last_checked": "2026-05-29T07:28:46.597315",
+      "last_checked": "2026-06-02T07:40:45.363682",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"91bd41d614ffbf6d790e53b683b24bc2\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/resultsw.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/resultdata.json": {
       "hash": "90ea51646eda34f7ba4f1f30605b02b7addc297fdb5c25e45804a956af5fbc6e",
-      "last_checked": "2026-05-29T07:28:46.721791",
+      "last_checked": "2026-06-02T07:40:45.535308",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"742ee18abfc79ac8e87af9fc2d5e05ce\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/resultdata.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange/pinconfirmation.json": {
       "hash": "d493bb1a65cf1dd9729bbcbe4f537cfa989f1d4608a7d3a8ff02b4d2fffe6acd",
-      "last_checked": "2026-05-29T07:28:46.800480",
+      "last_checked": "2026-06-02T07:40:45.709351",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9a1b7ac964dd8263cdfd27edd7c48e7c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange/pinconfirmation.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange/confirmation.json": {
       "hash": "795d155aaabcb256d52f6ff5cd36e1af914a2371d9d8cb225b2a64a2bd0a1cc7",
-      "last_checked": "2026-05-29T07:28:47.041356",
+      "last_checked": "2026-06-02T07:40:45.863145",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fc5e50906e1926416479e86f9967fda2\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange/confirmation.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtokendriverdelegate/tokendriver(_:createtokenfor:aid:).json": {
       "hash": "31cc0bf7122099b19224cf6e7bf1036037cfec2dd1d5707090998e3a0ac5b7fe",
-      "last_checked": "2026-05-29T07:28:47.093237",
+      "last_checked": "2026-06-02T07:40:46.035088",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"11268197d129295192ec310c25ce77cb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtokendriverdelegate/tokendriver-createtokenforaid.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/sequenceofrecords(from:).json": {
       "hash": "5d98096951948a6a9234a47d51ed5010319c38c4c0cf1b9fb186bcb904d4deb1",
-      "last_checked": "2026-05-29T07:28:47.224295",
+      "last_checked": "2026-06-02T07:40:46.203826",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d8d98e4bf7ba9e9f67b840abb2b2ea45\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/sequenceofrecords-from.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/init(from:).json": {
       "hash": "ab64a25b1d7c12551dcba17085e4800ecfb220ab066a524b20b691305905995d",
-      "last_checked": "2026-05-29T07:28:47.306270",
+      "last_checked": "2026-06-02T07:40:46.403601",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7f0ce4c12bb0688bd476d5d71aed3341\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/init-from.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/tag.json": {
       "hash": "eb701a6e1cd18ced84eb706ca8c9b5812082bf50eee30831346208b1db40fc73",
-      "last_checked": "2026-05-29T07:28:47.364482",
+      "last_checked": "2026-06-02T07:40:46.571596",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8f10c43034eb29f0686a6b4295ede9cd\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/tag.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvtag.json": {
       "hash": "73eb468aecb9cfce00e1cfc6c1698af74cc59b2ffbd7b388da45a71b3d342fd6",
-      "last_checked": "2026-05-29T07:28:47.437392",
+      "last_checked": "2026-06-02T07:40:46.720987",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"88b940ba35c5a15b575817d2764c12e6\"",
       "file_path": "documentation/CryptoTokenKit/tktlvtag.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/value.json": {
       "hash": "f855bdd412b1d554455ae15d57635b0209e917d1a101927101099dda37a523a7",
-      "last_checked": "2026-05-29T07:28:47.493920",
+      "last_checked": "2026-06-02T07:40:46.902692",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0609cf22885a26e299d0c9c872cad3f1\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/value.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/data.json": {
       "hash": "35e1c6bdccfe0d76ff1b215c4dd7495764dfa48da07e76c11e1abba5ac547619",
-      "last_checked": "2026-05-29T07:28:47.577438",
+      "last_checked": "2026-06-02T07:40:47.072347",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"81c5725a189d457f37a37ae3f27d45b6\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/data.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkbertlvrecord/init(tag:value:).json": {
       "hash": "95887122c44e2c948d6eae6732257465db97b4c72e60a657891fee2fc4b7ef33",
-      "last_checked": "2026-05-29T07:28:47.740861",
+      "last_checked": "2026-06-02T07:40:47.375149",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0eb4a0ef0221093afefbda1050b170d6\"",
       "file_path": "documentation/CryptoTokenKit/tkbertlvrecord/init-tagvalue.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkbertlvrecord/init(tag:records:).json": {
       "hash": "e18f9d7554b08dba01bd7c7493463a93050cdaae2384a3de9694cc3271a5c1cc",
-      "last_checked": "2026-05-29T07:28:47.866269",
+      "last_checked": "2026-06-02T07:40:47.556751",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"534589081ca183d21310cb114e960429\"",
       "file_path": "documentation/CryptoTokenKit/tkbertlvrecord/init-tagrecords.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkbertlvrecord/data(fortag:).json": {
       "hash": "6593c698bc7c3c3cbe5fe9426f2899dcdacec4ba97b015ed61f3fdde146bd491",
-      "last_checked": "2026-05-29T07:28:47.973892",
+      "last_checked": "2026-06-02T07:40:47.726117",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5a0448270c613d9e6cd79f932f9aefa3\"",
       "file_path": "documentation/CryptoTokenKit/tkbertlvrecord/data-fortag.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tkcompacttlvrecord/init(tag:value:).json": {
       "hash": "2dcbb42815b293a5270c666d64f737043c0caecdac96fc605220f10a0f6fe7b4",
-      "last_checked": "2026-05-29T07:28:48.049364",
+      "last_checked": "2026-06-02T07:40:47.913640",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d4cede383887243e7b33e789e1640090\"",
       "file_path": "documentation/CryptoTokenKit/tkcompacttlvrecord/init-tagvalue.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksimpletlvrecord/init(tag:value:).json": {
       "hash": "d72de8da718c90dbe708bcc2506e35a0a33441d2a9e503aa8d465b949210c7b6",
-      "last_checked": "2026-05-29T07:28:48.100029",
+      "last_checked": "2026-06-02T07:40:48.089730",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d9a324a178723603c65c360a3cff4668\"",
       "file_path": "documentation/CryptoTokenKit/tksimpletlvrecord/init-tagvalue.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokeninfo/drivername.json": {
       "hash": "35ad08f6bb6edfbad8383f5b825cd9b8fc8b763f88240b39fbd31946539487a5",
-      "last_checked": "2026-05-29T07:28:48.166548",
+      "last_checked": "2026-06-02T07:40:48.257081",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"23ac758fcd44338c205c1cc175c3c0d4\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokeninfo/drivername.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokeninfo/slotname.json": {
       "hash": "0851f5ac26e954349d6c614317f61d8322ed09ea6884f08ede07afe321e6b876",
-      "last_checked": "2026-05-29T07:28:48.241176",
+      "last_checked": "2026-06-02T07:40:48.428796",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"79cd1fc068d01c07b7823088d28e71cc\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokeninfo/slotname.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenwatcher/tokeninfo/tokenid.json": {
       "hash": "c0be8bd729660ca755b5154f75f9d07dc234e0ecd2eccffb7ac50a5e89186d26",
-      "last_checked": "2026-05-29T07:28:48.300462",
+      "last_checked": "2026-06-02T07:40:48.605723",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"72e5b646e23dc6d7399a9d9010cd9589\"",
       "file_path": "documentation/CryptoTokenKit/tktokenwatcher/tokeninfo/tokenid.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriverdelegate/tokendriver(_:terminatetoken:).json": {
       "hash": "72d184e5f153b0e61206687b15349d884d7df620a89c4d52aaaeca5f8dbb73be",
-      "last_checked": "2026-05-29T07:28:48.397100",
+      "last_checked": "2026-06-02T07:40:48.780960",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f41736ca8b151f59e80c21f65ebb3744\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriverdelegate/tokendriver-terminatetoken.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriverdelegate/tokendriver(_:tokenfor:).json": {
       "hash": "599c71310f544c7d7127a053ca3562581a1586e37c2067bd2a8a9b787e6cdeda",
-      "last_checked": "2026-05-29T07:28:48.451866",
+      "last_checked": "2026-06-02T07:40:48.942039",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cfa589e9c027a489b534f53868e9380d\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriverdelegate/tokendriver-tokenfor.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration/classid.json": {
       "hash": "75c108d67b4d928a2e903c03794e0d620111ead8850c6183f92bbe29b477848d",
-      "last_checked": "2026-05-29T07:28:48.528094",
+      "last_checked": "2026-06-02T07:40:49.110540",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f0fdd0bd950a7753a913af4b868b9329\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration/classid.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration/tokenconfigurations.json": {
       "hash": "87c56af62745617548f63e446096c8299003e7832941cce06a634519b77ea6da",
-      "last_checked": "2026-05-29T07:28:48.587567",
+      "last_checked": "2026-06-02T07:40:49.270090",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"aff479e8f97374d90892d7caf9e2dcbd\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration/tokenconfigurations.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration/driverconfigurations.json": {
       "hash": "1a063e20d841429cfda521dcd408c43aa2217e85db4ceb52524f7281fda5184f",
-      "last_checked": "2026-05-29T07:28:48.714151",
+      "last_checked": "2026-06-02T07:40:49.441269",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"dcb7de5df8f774719dca9d9c7305242a\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration/driverconfigurations.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration/addtokenconfiguration(for:).json": {
       "hash": "5baaf98062333c386c48d037ec0bb9a68effe3934ce1dcdb8fad17a4a359ba19",
-      "last_checked": "2026-05-29T07:28:48.767307",
+      "last_checked": "2026-06-02T07:40:49.613971",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c47766a086e2610e1f781dde25286cac\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration/addtokenconfiguration-for.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendriver/configuration/removetokenconfiguration(for:).json": {
       "hash": "268bf94a70e500c9711c27ab55e3e0de3f81d412a6a23558c04c31828609512b",
-      "last_checked": "2026-05-29T07:28:48.893401",
+      "last_checked": "2026-06-02T07:40:49.787158",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fb7e21b54f1db47616708471fe31f412\"",
       "file_path": "documentation/CryptoTokenKit/tktokendriver/configuration/removetokenconfiguration-for.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendelegate/createsession(_:).json": {
       "hash": "c473aafd1c9fdff0dec8b01a4ce923af91fe4db33b50293dde08a0679945dc96",
-      "last_checked": "2026-05-29T07:28:48.945405",
+      "last_checked": "2026-06-02T07:40:49.961581",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c3d165a1dd1b238349b54446f7d607b3\"",
       "file_path": "documentation/CryptoTokenKit/tktokendelegate/createsession.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokendelegate/token(_:terminatesession:).json": {
       "hash": "4f5aec2853c0ed4f3572925ad1d3f9ca1f80216488e5ed3d1cf1d674a07e3a5d",
-      "last_checked": "2026-05-29T07:28:49.026422",
+      "last_checked": "2026-06-02T07:40:50.075612",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"912451efcfeeac2f5cef0ff747943021\"",
       "file_path": "documentation/CryptoTokenKit/tktokendelegate/token-terminatesession.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincontents/fill(with:).json": {
       "hash": "f4be03d061bf8425987b3ad6627c622ee9290966c3d7f0be2c3e986cb246c933",
-      "last_checked": "2026-05-29T07:28:49.148777",
+      "last_checked": "2026-06-02T07:40:50.266591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e85c91c590f0c694ee15145c9e57fec4\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincontents/fill-with.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincontents/items.json": {
       "hash": "fa8f6b92d2c20bc4cdc9cd6f6293d18b57c157455cc049cd92217807016f84a6",
-      "last_checked": "2026-05-29T07:28:49.255003",
+      "last_checked": "2026-06-02T07:40:50.429374",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9235ad0f88733d02ca3702e0d387383d\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincontents/items.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincontents/key(forobjectid:).json": {
       "hash": "77f716aff3eaf2bb7854289cc877093c4a6c07c1321560c7b5f88648ec2171f0",
-      "last_checked": "2026-05-29T07:28:49.330638",
+      "last_checked": "2026-06-02T07:40:50.597643",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6d5be15ecd0ff3905c2f733ff72d9d18\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincontents/key-forobjectid.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincontents/certificate(forobjectid:).json": {
       "hash": "32fe65219df18cb7322e3719086d81d29c5dc3864ce127d159a3126ce4a84762",
-      "last_checked": "2026-05-29T07:28:49.386178",
+      "last_checked": "2026-06-02T07:40:50.770618",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c8513fff99c8cdad8502c94027360f71\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincontents/certificate-forobjectid.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainitem/init(objectid:).json": {
       "hash": "a26e8b7da1ca1fd81242c8a6779fb3257b8c39d605e230526a3f2ab720d0a19e",
-      "last_checked": "2026-05-29T07:28:49.464275",
+      "last_checked": "2026-06-02T07:40:50.951520",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b15055b7ffcd0f17c717e422fabca7cf\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainitem/init-objectid.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainitem/objectid.json": {
       "hash": "91bee5ddf91080dab9e702bc619b4387d2f6bfc77d08d57520e66560dc76a120",
-      "last_checked": "2026-05-29T07:28:49.521800",
+      "last_checked": "2026-06-02T07:40:51.108332",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"721fdf19515de02b08605fbb1e0c771b\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainitem/objectid.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainitem/label.json": {
       "hash": "86ed9ae62f635f838f92b17db8cda81f4e89f2a68fc7c1e22e0a961538a9b0d5",
-      "last_checked": "2026-05-29T07:28:49.586146",
+      "last_checked": "2026-06-02T07:40:51.225173",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6226e37efa9073d58ae7f42566cf98e6\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainitem/label.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainitem/constraints.json": {
       "hash": "5f6075e39cbc88edc73b2e0b8ac1a78ad75c026cd012567334396b681ae2db49",
-      "last_checked": "2026-05-29T07:28:49.637136",
+      "last_checked": "2026-06-02T07:40:51.386162",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cfc3446f32b98246c4f93657962612f6\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainitem/constraints.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincertificate/init(certificate:objectid:).json": {
       "hash": "77dea9f5e3d89af9972626526ebc7753e450a35c33cf97a73be0a6712450edde",
-      "last_checked": "2026-05-29T07:28:49.729845",
+      "last_checked": "2026-06-02T07:40:51.504534",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b16466447582e959f14402d6035830b2\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincertificate/init-certificateobjectid.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychaincertificate/data.json": {
       "hash": "081e54f49a6324fa83b9594ffa806466cd02d995313a4aec2f96af153f578f20",
-      "last_checked": "2026-05-29T07:28:49.798601",
+      "last_checked": "2026-06-02T07:40:51.671930",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6c2d2a10422d0d69e449ed06e7e10e26\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychaincertificate/data.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/init(certificate:objectid:).json": {
       "hash": "8fc859f3db05c812042328eb4cb415bb052a364e7dd426a78b1ad0d1d8b62139",
-      "last_checked": "2026-05-29T07:28:49.849820",
+      "last_checked": "2026-06-02T07:40:51.831685",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a53ef7b60fde0dc20ade6decd121bb5c\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/init-certificateobjectid.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/keytype.json": {
       "hash": "95bca2fe186aa959360f76695f7761ec7db9103e9d3a09a02792d5bb7fe5676e",
-      "last_checked": "2026-05-29T07:28:49.921172",
+      "last_checked": "2026-06-02T07:40:51.961565",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fa331ac9273df0618b2d2d190fb3efd8\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/keytype.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/keysizeinbits.json": {
       "hash": "5d02a606fe974f7e3439e7881fb7a32c33082b774eab0c86d519ea29efb51bbb",
-      "last_checked": "2026-05-29T07:28:49.980555",
+      "last_checked": "2026-06-02T07:40:52.143706",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"937c767e74bf639c67c57fddca95e8a8\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/keysizeinbits.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/applicationtag.json": {
       "hash": "efa415aeafe1e0c5dd0636c19c9335f79bc4d6ed47602ca4c6250d1ebc7fdee4",
-      "last_checked": "2026-05-29T07:28:50.033407",
+      "last_checked": "2026-06-02T07:40:52.291439",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9b008c60406810b4b0113a94561aa3f4\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/applicationtag.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/publickeydata.json": {
       "hash": "b1d514219b034a2dd395adf64f42c268dee5c70c3ac7776b283a488559d786a2",
-      "last_checked": "2026-05-29T07:28:50.088661",
+      "last_checked": "2026-06-02T07:40:52.456591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b5acb0c1d1d0fb8ce445e80e714266ea\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/publickeydata.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/publickeyhash.json": {
       "hash": "091f1169ab2c89e7783325addcddce3d38b381d9df5c339734bb201dd8b089c6",
-      "last_checked": "2026-05-29T07:28:50.178749",
+      "last_checked": "2026-06-02T07:40:52.614231",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"46f4af1588e694ac4a6b8034873f9abe\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/publickeyhash.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/candecrypt.json": {
       "hash": "dc062b0ecd8804f2fffa20502ac01707e5693cad9baab1e4647c2d0d577264c2",
-      "last_checked": "2026-05-29T07:28:50.243600",
+      "last_checked": "2026-06-02T07:40:52.779710",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e5e8ef1b509d71fecf805256575be0cc\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/candecrypt.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/cansign.json": {
       "hash": "bdfa4de1b153eb7f551048d4019fa9e7328645420d759fd67d68dcebfb92d17f",
-      "last_checked": "2026-05-29T07:28:50.294313",
+      "last_checked": "2026-06-02T07:40:52.937443",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4514b488fcf62526b6e4639281071c05\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/cansign.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/canperformkeyexchange.json": {
       "hash": "47f890e9bf56f5338434c9deee616e3f96ef64af75b361909e2a6608b7300ae6",
-      "last_checked": "2026-05-29T07:28:50.365953",
+      "last_checked": "2026-06-02T07:40:53.110839",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a5d54eb879d1e57bbc0af63b84e0fc97\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/canperformkeyexchange.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeychainkey/issuitableforlogin.json": {
       "hash": "0225ca8d71ac779b6bcb3fa3a2346ba6b203c27b077fc12bd2d3649ebfedb2af",
-      "last_checked": "2026-05-29T07:28:50.464893",
+      "last_checked": "2026-06-02T07:40:53.282844",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b47e3af574a8b6db64be0f30a2b08c24\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeychainkey/issuitableforlogin.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class/instanceid.json": {
       "hash": "1b1ace1838a2c9d58fa46a7fd823d133c08ae5d28eaec52e29a46830dece0df9",
-      "last_checked": "2026-05-29T07:28:50.521848",
+      "last_checked": "2026-06-02T07:40:53.451106",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"47fa1a9f470aade3d2b17b76f3519772\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swift.class/instanceid.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class/configurationdata.json": {
       "hash": "052ba9db87d691332231f798b93dd0dd7433f576f6cd0413dba9661d3e2758ed",
-      "last_checked": "2026-05-29T07:28:50.586196",
+      "last_checked": "2026-06-02T07:40:53.624706",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"66c9bbf9de980c8b11cc0f0ad2b738b9\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swift.class/configurationdata.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class/keychainitems.json": {
       "hash": "68c26c656ca283321d9989485fee7169c17dab963f89e72a8420f863e01c949c",
-      "last_checked": "2026-05-29T07:28:50.703778",
+      "last_checked": "2026-06-02T07:40:53.781751",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cea2b85ad6b2ed04df6e267a158216bd\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swift.class/keychainitems.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class/certificate(for:).json": {
       "hash": "f7a81cf561ee05e05415bb5f0aad9feca4297f47df7be85184fcc22a89a52cda",
-      "last_checked": "2026-05-29T07:28:50.760537",
+      "last_checked": "2026-06-02T07:40:53.916513",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5f3d30bab1a4de6cdbe74e3eba198957\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swift.class/certificate-for.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktoken/configuration-swift.class/key(for:).json": {
       "hash": "d1637ad38890541b3c547c819029d2953ada02c9495852c317c7032c626a993e",
-      "last_checked": "2026-05-29T07:28:50.818760",
+      "last_checked": "2026-06-02T07:40:54.068441",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"613325d5de28b9015ebbe6a055a50361\"",
       "file_path": "documentation/CryptoTokenKit/tktoken/configuration-swift.class/key-for.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate/tokensession(_:supports:keyobjectid:algorithm:).json": {
       "hash": "e802006db47ba8f7eef47b0b44237d862c9f5f6983530b033b45c59ac7dd9c38",
-      "last_checked": "2026-05-29T07:28:50.879837",
+      "last_checked": "2026-06-02T07:40:54.416563",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"947f6b3e654d5437614b97a738b1c420\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate/tokensession-supportskeyobjectidalgorithm.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation.json": {
       "hash": "42d424f330588b408d58e16b4b2e2cc517ff335867ce02f7c02b077c1dd6b064",
-      "last_checked": "2026-05-29T07:28:50.990397",
+      "last_checked": "2026-06-02T07:40:54.569137",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"ced7d63c74e403c3369660117005f7da\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyalgorithm.json": {
       "hash": "248e20007ec25a09e0d166ec7cdc63d24ff7b13f3b94be9628f41dcb73ec69d6",
-      "last_checked": "2026-05-29T07:28:51.048217",
+      "last_checked": "2026-06-02T07:40:54.733645",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"87516caaf86c0fbf40c5c7f2b03a8bb1\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyalgorithm.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate/tokensession(_:beginauthfor:constraint:).json": {
       "hash": "0b899a0cfe8ecb8193d552e9a5eb3aefa9c636fd75c0a5d999a371fe45d76ff9",
-      "last_checked": "2026-05-29T07:28:51.125672",
+      "last_checked": "2026-06-02T07:40:54.908729",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"71c73780ed21db15520635ff69671f55\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate/tokensession-beginauthforconstraint.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperationconstraint.json": {
       "hash": "d90d702b0ff5e8e244dab79ab8fee58ce89356b2ef8ab0b365e10ba70b73a48c",
-      "last_checked": "2026-05-29T07:28:51.189998",
+      "last_checked": "2026-06-02T07:40:55.036009",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"521674519c265f8c33523729b8a5be20\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperationconstraint.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenauthoperation.json": {
       "hash": "8e8d57909e804ee896e412ed6f8a17b05938fcbd57fe67f334aac8f42b5e8260",
-      "last_checked": "2026-05-29T07:28:51.268636",
+      "last_checked": "2026-06-02T07:40:55.159462",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1944fb75f89453626483eed9491705c1\"",
       "file_path": "documentation/CryptoTokenKit/tktokenauthoperation.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenpasswordauthoperation.json": {
       "hash": "7c9c5dcc3873ab65afb7c9e28a5a7e13ca8d20c303d16a47e3781a4c2d65ba00",
-      "last_checked": "2026-05-29T07:28:51.325594",
+      "last_checked": "2026-06-02T07:40:55.363302",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"065b26523aca2df9231b5237b0e1d427\"",
       "file_path": "documentation/CryptoTokenKit/tktokenpasswordauthoperation.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation.json": {
       "hash": "e52d3e79cb53f875e0feecd1642cbc6c3cd925105d085ce581e1d186a9fe80ec",
-      "last_checked": "2026-05-29T07:28:51.449838",
+      "last_checked": "2026-06-02T07:40:55.520930",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"070765270905854d93cb560a9ef653c7\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate/tokensession(_:sign:keyobjectid:algorithm:).json": {
       "hash": "ff6d5060ea11254e6f41ba189289936e65d0b4332fc2e8e339dd7fa531b314de",
-      "last_checked": "2026-05-29T07:28:51.523341",
+      "last_checked": "2026-06-02T07:40:55.733557",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"9db9606fca68eb4f8839fb11545b2073\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate/tokensession-signkeyobjectidalgorithm.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate/tokensession(_:decrypt:keyobjectid:algorithm:).json": {
       "hash": "b52beb0b6aedb2d106027aa870c9f78518796a7f3b9cd4f03674e3ac9e57a670",
-      "last_checked": "2026-05-29T07:28:51.650485",
+      "last_checked": "2026-06-02T07:40:55.861634",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c2d4339d3b483c687f31e102d7ee0599\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate/tokensession-decryptkeyobjectidalgorithm.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensessiondelegate/tokensession(_:performkeyexchange:keyobjectid:algorithm:parameters:).json": {
       "hash": "1c8064a93ee5dd9777eba5deb8d8bfd0e7f2fcc50d5e49d2280b5ee51f06c5ce",
-      "last_checked": "2026-05-29T07:28:51.715336",
+      "last_checked": "2026-06-02T07:40:56.040062",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"19b67017f6f15c639b192106d2473983\"",
       "file_path": "documentation/CryptoTokenKit/tktokensessiondelegate/tokensession-performkeyexchangekeyobjectidalgorithmparameters.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyexchangeparameters.json": {
       "hash": "6a7503d4a7300c3fe2c6b5538248a146111f9d09ce0787d455d97c5a557040a0",
-      "last_checked": "2026-05-29T07:28:51.850670",
+      "last_checked": "2026-06-02T07:40:56.213357",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1f77779c2e84fe4d5ae568ad34ea8daf\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyexchangeparameters.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup/protocol.json": {
       "hash": "8926bc625aea70e7615b37900b77b0065b1fc229d9c5c191d9e0830baba1ef8f",
-      "last_checked": "2026-05-29T07:28:51.906526",
+      "last_checked": "2026-06-02T07:40:56.364500",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"623575aa04077acf244c8d2f2719487f\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup/protocol.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup/ta.json": {
       "hash": "b2689f1d32b3ab6c725192d35785e46c101e53a7a64736c3217f2c3526baa185",
-      "last_checked": "2026-05-29T07:28:51.956442",
+      "last_checked": "2026-06-02T07:40:56.488289",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cd2e3e1c542d74f15f4440cc35285080\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup/ta.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup/tb.json": {
       "hash": "cbb8a5667b5cb4fdd25d3550055f9b546af7e22ddeed664c11397b6afe6b92ff",
-      "last_checked": "2026-05-29T07:28:52.046818",
+      "last_checked": "2026-06-02T07:40:56.692362",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e61f16e06b834e678a505c095de946ca\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup/tb.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardatr/interfacegroup/tc.json": {
       "hash": "de13978cfe0d272ffc6a6ed3ffa2fa7e947947e7e426f7c97b3022e405305845",
-      "last_checked": "2026-05-29T07:28:52.102946",
+      "last_checked": "2026-06-02T07:40:56.851553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"63a73fc03dbe4869d07105e1c52377d9\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardatr/interfacegroup/tc.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.enum/numeric.json": {
       "hash": "da30acb3e4fe0e593716e32859e43b9bb7101c79c5c533aea61bce3905198dae",
-      "last_checked": "2026-05-29T07:28:52.173436",
+      "last_checked": "2026-06-02T07:40:56.973003",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"96e434c57c86cab0f8b53a8416999c2d\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swift.enum/numeric.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.enum/alphanumeric.json": {
       "hash": "6ca8610a7a4d7986a18a10f617dc7ed34a4319076006b6c22161576c62ecca62",
-      "last_checked": "2026-05-29T07:28:52.281674",
+      "last_checked": "2026-06-02T07:40:57.128250",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"6ffc7ca0a4148f17f67353c3670f64e9\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swift.enum/alphanumeric.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.enum/upperalphanumeric.json": {
       "hash": "2a6fa0875226cf4a54b4e84fe765277de801570d1bb468652f5ae5697e352a76",
-      "last_checked": "2026-05-29T07:28:52.330821",
+      "last_checked": "2026-06-02T07:40:57.280905",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"31b21a728faf2efbc9a4c30285c7f866\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swift.enum/upperalphanumeric.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/charset-swift.enum/init(rawvalue:).json": {
       "hash": "ee7cbc98b892a77914ed3c51a2e032cf3b20c23d82cac9c9dbefba74225f859a",
-      "last_checked": "2026-05-29T07:28:52.394612",
+      "last_checked": "2026-06-02T07:40:57.467839",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4f05bb7e677aad2065ab84d7a2152d26\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/charset-swift.enum/init-rawvalue.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.enum/binary.json": {
       "hash": "1530a4f19e3fbf1acd9c1242471a8c7c526bad4e71c53210990fd21b4f99acfc",
-      "last_checked": "2026-05-29T07:28:52.479820",
+      "last_checked": "2026-06-02T07:40:57.616501",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"caa9400463d80ff411e27d45b0524abd\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swift.enum/binary.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.enum/ascii.json": {
       "hash": "f429cb819e4f8098cb9b9d16e13a4e28f31556bfba3a9c6406c0a7d644fcfa90",
-      "last_checked": "2026-05-29T07:28:52.542396",
+      "last_checked": "2026-06-02T07:40:57.740938",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"19ec3812d42f87bc75dffe66a665eb1e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swift.enum/ascii.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.enum/bcd.json": {
       "hash": "74e35d300bc06b6ba6111783e819d533634721d1c5e71cc4e15e68ea103dc68d",
-      "last_checked": "2026-05-29T07:28:52.652393",
+      "last_checked": "2026-06-02T07:40:57.895681",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e54957d3261280166952e1a769a788a1\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swift.enum/bcd.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/encoding-swift.enum/init(rawvalue:).json": {
       "hash": "973ae9f0d3d6d5a2b2f0350a085b80f0d1e77dd0fbe17bdb90eb970b501753ea",
-      "last_checked": "2026-05-29T07:28:52.715404",
+      "last_checked": "2026-06-02T07:40:58.064539",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c87f82eac3c060e7d20550ebba009a4e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/encoding-swift.enum/init-rawvalue.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/justification/left.json": {
       "hash": "7ad92b941b7e4cde701c11c69f000112a9d5a910bae13668dc4a17ace4afa9d7",
-      "last_checked": "2026-05-29T07:28:52.770903",
+      "last_checked": "2026-06-02T07:40:58.200517",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"bfe74a159cf73f4e09e5c9ba98323066\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/justification/left.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/justification/right.json": {
       "hash": "f0c74906e0f0507c7bae59cb141bf218af5764814b7c1b3028eb5762c6319277",
-      "last_checked": "2026-05-29T07:28:52.829536",
+      "last_checked": "2026-06-02T07:40:58.371754",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c0fac7deea2c24ea2137245c3d4f7282\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/justification/right.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardpinformat/justification/init(rawvalue:).json": {
       "hash": "761872d67779f4701173e28614cfdf86f46f753aadfa2b283461ca4ce3d4b54b",
-      "last_checked": "2026-05-29T07:28:52.898623",
+      "last_checked": "2026-06-02T07:40:58.494382",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"48228c94d1c37b3f22e428eb6f3a0cf4\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardpinformat/justification/init-rawvalue.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/characterentered(in:).json": {
       "hash": "ed671e60f2cf318499922f3f84c394c391a9d3ca2e0444aca74dbf01493697a2",
-      "last_checked": "2026-05-29T07:28:52.964997",
+      "last_checked": "2026-06-02T07:40:58.618880",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"a645621f510b62bc3c395638e9528f86\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/characterentered-in.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/correctionkeypressed(in:).json": {
       "hash": "7093fc68721799def058945dd678ef0c45d026adf5da939afcb6fad265a0df8f",
-      "last_checked": "2026-05-29T07:28:53.027368",
+      "last_checked": "2026-06-02T07:40:58.782918",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"cfb02794b02eb73d0a6042a4a5a36f86\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/correctionkeypressed-in.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/validationkeypressed(in:).json": {
       "hash": "618f3345de5d51ff8d0f22e0c9886ac3a1490365bed5564a1c6d89a373663fd2",
-      "last_checked": "2026-05-29T07:28:53.096585",
+      "last_checked": "2026-06-02T07:40:58.950136",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0f9c2d31e59e9afcc7c69b01afd7aa8b\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/validationkeypressed-in.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/invalidcharacterentered(in:).json": {
       "hash": "110f113c9bf806e2fedb414507c2ab71657273c6b8151f91d80ffdb0ad5246f5",
-      "last_checked": "2026-05-29T07:28:53.145816",
+      "last_checked": "2026-06-02T07:40:59.077162",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"96d5e2f9ad943920f301620230f8a0fb\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/invalidcharacterentered-in.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/oldpinrequested(in:).json": {
       "hash": "411178b78abeb27f6aa6fd0e537dddd6cdb331d00d61f179b1babfa08d3fc1bf",
-      "last_checked": "2026-05-29T07:28:53.206774",
+      "last_checked": "2026-06-02T07:40:59.209381",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"318874b6d31639894ded2b92ddb0719a\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/oldpinrequested-in.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/newpinrequested(in:).json": {
       "hash": "d8787e5af6ba10e943fd81d8ebb975de0f0ba43bbb15350455fc6c05f5c71842",
-      "last_checked": "2026-05-29T07:28:53.259902",
+      "last_checked": "2026-06-02T07:40:59.352045",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"89b5ec778a0be7260ad24b9b68d917ba\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/newpinrequested-in.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractiondelegate/newpinconfirmationrequested(in:).json": {
       "hash": "af3a1d72cb9e39fddd084aa3cc74550da69d0feba1817a4b9ba0e3f5e7492310",
-      "last_checked": "2026-05-29T07:28:53.411704",
+      "last_checked": "2026-06-02T07:40:59.524929",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"2390b16d63ddf431462aff417e9d6fea\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractiondelegate/newpinconfirmationrequested-in.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/completion/key.json": {
       "hash": "7899cb81806754b836cfd97ef7e1918d37ef082f997799d0d7bc5ffa0afb527a",
-      "last_checked": "2026-05-29T07:28:53.461506",
+      "last_checked": "2026-06-02T07:40:59.710759",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"8e080278b58d9ee47d3c7911e66d9d85\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/completion/key.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/completion/maxlength.json": {
       "hash": "bdf0d6496b6581d016b513b0f81f7421663610fe05b0f7ef6dbf7281e0dbae5a",
-      "last_checked": "2026-05-29T07:28:53.546316",
+      "last_checked": "2026-06-02T07:40:59.887901",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"540e6be5d4337d8b63dfd6c04bcbfcc5\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/completion/maxlength.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/completion/timeout.json": {
       "hash": "5722a937780cfb85d187decb9d05e961cdf48ad4b9c7dcbb7007ef650b484cc2",
-      "last_checked": "2026-05-29T07:28:53.606683",
+      "last_checked": "2026-06-02T07:41:00.089903",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"29e69a96d434f6b4c5d176de26aa83d1\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/completion/timeout.md"
     },
@@ -4599,9 +4599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforpinoperation/completion/init(rawvalue:).json": {
       "hash": "5608e54678f0ea4d6681b590fce648420335a926367c77dc995cbe53f4d6cd9b",
-      "last_checked": "2026-05-29T07:28:53.665849",
+      "last_checked": "2026-06-02T07:41:00.259172",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"fe7e22c39509f48572d288f90bc4c36c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforpinoperation/completion/init-rawvalue.md"
     },
@@ -4615,9 +4615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange/confirmation/current.json": {
       "hash": "7f6daa8d0964e9c50708314ff1ca89cd7e2988e82760ba6e876d9d2750ceb96e",
-      "last_checked": "2026-05-29T07:28:53.728144",
+      "last_checked": "2026-06-02T07:41:00.440465",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"906429041af16b89547cf2ae6436c438\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange/confirmation/current.md"
     },
@@ -4631,9 +4631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange/confirmation/new.json": {
       "hash": "c8acb4b041d2bc493d183782fdff36b6466621857b50609d3a43131b406affa8",
-      "last_checked": "2026-05-29T07:28:53.805568",
+      "last_checked": "2026-06-02T07:41:00.580799",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"e3ee560f283faa23627ecdff0b132884\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange/confirmation/new.md"
     },
@@ -4647,9 +4647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcarduserinteractionforsecurepinchange/confirmation/init(rawvalue:).json": {
       "hash": "ebf73295fb4cd32c5da3900dba53304fd808505015209f5ae60cfb5aba5559cf",
-      "last_checked": "2026-05-29T07:28:53.860751",
+      "last_checked": "2026-06-02T07:41:00.752577",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"d4026bbb039d2b2db9d97e3c9569ab9e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcarduserinteractionforsecurepinchange/confirmation/init-rawvalue.md"
     },
@@ -4663,9 +4663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/none.json": {
       "hash": "f4947af9d57963c2003ceace377b9d453e5acd0eddfd22f9820886633cf505a9",
-      "last_checked": "2026-05-29T07:28:53.994156",
+      "last_checked": "2026-06-02T07:41:00.918746",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"59e93a700ac046382d2ed0f4de1bb094\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/none.md"
     },
@@ -4679,9 +4679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/readdata.json": {
       "hash": "07a19077b77d874b3af799e1e056122de6238df0fb0a934950ba1a2e629dd2fc",
-      "last_checked": "2026-05-29T07:28:54.054324",
+      "last_checked": "2026-06-02T07:41:01.076369",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"49f04008d433fa247805289473390d4f\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/readdata.md"
     },
@@ -4695,9 +4695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/signdata.json": {
       "hash": "be53e5108ef8fa82c570fa557d72725feb0cde4c159ee9bb52391ff578e39496",
-      "last_checked": "2026-05-29T07:28:54.106190",
+      "last_checked": "2026-06-02T07:41:01.245562",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"4057f6536c933a4a84405413c60589f6\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/signdata.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/decryptdata.json": {
       "hash": "bfb703145aef2e428784c8bcc168842e264ca5eef98087ca27c0af0b9948ef5f",
-      "last_checked": "2026-05-29T07:28:54.166348",
+      "last_checked": "2026-06-02T07:41:01.414290",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c258769eba93efc76acf0e38a34b6cde\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/decryptdata.md"
     },
@@ -4727,9 +4727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/performkeyexchange.json": {
       "hash": "3432274480c0aa98c33b346cde5820ddd7e152697263b75c23c9151435dba123",
-      "last_checked": "2026-05-29T07:28:54.247472",
+      "last_checked": "2026-06-02T07:41:01.529799",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"2434f7d5f2bfe8bfb35ab67e6cb927bd\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/performkeyexchange.md"
     },
@@ -4743,9 +4743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenoperation/init(rawvalue:).json": {
       "hash": "5abc680a24e7cebc4c8f6d1a62f8dca4bdb89b935721d6a5bfb98f65f1c8918b",
-      "last_checked": "2026-05-29T07:28:54.298246",
+      "last_checked": "2026-06-02T07:41:01.686556",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"839ba74f968a9506a591b6c949da8521\"",
       "file_path": "documentation/CryptoTokenKit/tktokenoperation/init-rawvalue.md"
     },
@@ -4759,9 +4759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyalgorithm/isalgorithm(_:).json": {
       "hash": "c5f957be5af11d28514343e93d1adc38db3e02088d2515a618ebf7cf8f44bf29",
-      "last_checked": "2026-05-29T07:28:54.397793",
+      "last_checked": "2026-06-02T07:41:01.854117",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"c516341c1188d31b1d29b8d8b565d9b7\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyalgorithm/isalgorithm.md"
     },
@@ -4775,9 +4775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyalgorithm/supportsalgorithm(_:).json": {
       "hash": "71cd4d4f0477993e442a1cfd9fcee37dd9f07d70e733fb08b6d1f5f68ea60a83",
-      "last_checked": "2026-05-29T07:28:54.451331",
+      "last_checked": "2026-06-02T07:41:01.983292",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"424bc5d72195c759d064675757817861\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyalgorithm/supportsalgorithm.md"
     },
@@ -4791,9 +4791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenauthoperation/finish().json": {
       "hash": "2a8028a82234738ad15e7cdceb571c7b39cfdab19393957c00a0a80c4f005109",
-      "last_checked": "2026-05-29T07:28:54.507042",
+      "last_checked": "2026-06-02T07:41:02.194477",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"535c130a5d2c522e37a70cfdad1f17d9\"",
       "file_path": "documentation/CryptoTokenKit/tktokenauthoperation/finish.md"
     },
@@ -4807,9 +4807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenpasswordauthoperation/password.json": {
       "hash": "ba138104cbbe13394a295ea19030f9ca10bffd9a2ecd254167f12c24be8de66d",
-      "last_checked": "2026-05-29T07:28:54.665256",
+      "last_checked": "2026-06-02T07:41:02.482783",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"76c1f1c66a8f2113b306f04e46f80e34\"",
       "file_path": "documentation/CryptoTokenKit/tktokenpasswordauthoperation/password.md"
     },
@@ -4823,9 +4823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation/pinformat.json": {
       "hash": "1cb5073f5613cc77ac0d320d8909c1a74fdf760e8405b86a963e27841b7ee237",
-      "last_checked": "2026-05-29T07:28:54.725579",
+      "last_checked": "2026-06-02T07:41:02.608163",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"3e9fe76312bfea8e666441823804a5a9\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation/pinformat.md"
     },
@@ -4839,9 +4839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation/apdutemplate.json": {
       "hash": "b2007b73b75b148346d4c887e7bebea189b7087cf8d6e59750b2af8444f0c7ef",
-      "last_checked": "2026-05-29T07:28:54.784664",
+      "last_checked": "2026-06-02T07:41:02.794545",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b70f016264f15321fa096172f421bc41\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation/apdutemplate.md"
     },
@@ -4855,9 +4855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation/pinbyteoffset.json": {
       "hash": "2830574d20c76b19df918234ed231a3760a91ef48f3bddda8fecaaf7a0d15ad9",
-      "last_checked": "2026-05-29T07:28:54.848304",
+      "last_checked": "2026-06-02T07:41:02.955792",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"b848430702b89ef9368c63cde51e3904\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation/pinbyteoffset.md"
     },
@@ -4871,9 +4871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation/smartcard.json": {
       "hash": "fbbf761bad8a3babd99196f0b0a6b2744c3a5b221440654c83f852c64bfa9e75",
-      "last_checked": "2026-05-29T07:28:54.897502",
+      "last_checked": "2026-06-02T07:41:03.077648",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"0b7b0a99b01510898c1e53a130c88c79\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation/smartcard.md"
     },
@@ -4887,9 +4887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokensmartcardpinauthoperation/pin.json": {
       "hash": "30e85475cb4e345c1ee7682ee30cba91cd81b834d98c217ef1653fcf3b5c80f1",
-      "last_checked": "2026-05-29T07:28:55.010811",
+      "last_checked": "2026-06-02T07:41:03.231317",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"80f1b2176233cbe86d66a13dfba95771\"",
       "file_path": "documentation/CryptoTokenKit/tktokensmartcardpinauthoperation/pin.md"
     },
@@ -4903,9 +4903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyexchangeparameters/requestedsize.json": {
       "hash": "8e4826f3f5646eee25e0f9b97c58939b1e685e53d3ac6c25db9b688557ba70aa",
-      "last_checked": "2026-05-29T07:28:55.056633",
+      "last_checked": "2026-06-02T07:41:03.362141",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"5a083339dd7ec77df24b6562f358e653\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyexchangeparameters/requestedsize.md"
     },
@@ -4919,9 +4919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenkeyexchangeparameters/sharedinfo.json": {
       "hash": "d7bfffb7a7f5cf6d8f3ae5862c6f157556909344bcd7b19252fb0344337d54e7",
-      "last_checked": "2026-05-29T07:28:55.163761",
+      "last_checked": "2026-06-02T07:41:03.522912",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"7790c57609ed3a8ca942d343fd15ac72\"",
       "file_path": "documentation/CryptoTokenKit/tktokenkeyexchangeparameters/sharedinfo.md"
     },
@@ -4935,9 +4935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-38ak2.json": {
       "hash": "794baf3b01be99c0cae176a940c456834445319869b700a0628d4b7d42b7652c",
-      "last_checked": "2026-05-29T07:28:34.858678",
+      "last_checked": "2026-06-02T07:40:23.850140",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"32393acbfd5eea2c6b12667858cb8d7c\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtoken/init-smartcardaidinstanceidtokendriver-38ak2.md"
     },
@@ -4951,9 +4951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tksmartcardtoken/init(smartcard:aid:instanceid:tokendriver:)-90hza.json": {
       "hash": "d5ab50b34a8367d83774e3a4f64a5af1ac0b1046dd5e3e334a7220e94553ffc0",
-      "last_checked": "2026-05-29T07:28:35.451213",
+      "last_checked": "2026-06-02T07:40:25.096444",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"71273605746238d704438220a6612a4e\"",
       "file_path": "documentation/CryptoTokenKit/tksmartcardtoken/init-smartcardaidinstanceidtokendriver-90hza.md"
     },
@@ -4967,9 +4967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktlvrecord/init(fromdata:).json": {
       "hash": "f59f9ab64475dfbd10ba6ad8c372c90cd15b22bfebceb6491ab352e1ab92f52c",
-      "last_checked": "2026-05-29T07:28:47.627995",
+      "last_checked": "2026-06-02T07:40:47.202459",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"f37daee130de3c9510fbbe8028415fa4\"",
       "file_path": "documentation/CryptoTokenKit/tktlvrecord/init-fromdata.md"
     },
@@ -4983,9 +4983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/cryptotokenkit/tktokenauthoperation/init(coder:).json": {
       "hash": "c1c8054c986db5a2c1aaf358a87cbbfe23056c5a89478f22fc5101a4c3fd18a2",
-      "last_checked": "2026-05-29T07:28:54.587327",
+      "last_checked": "2026-06-02T07:41:02.325144",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:28:27.085793",
+      "session_id": "2026-06-02T07:40:14.830167",
       "etag": "W/\"1a51dd4d3492d1f627f98721a1fa6558\"",
       "file_path": "documentation/CryptoTokenKit/tktokenauthoperation/init-coder.md"
     },

@@ -312,6 +312,10 @@ Report column position might change over time. Rely on column names instead of c
   Analyze playback errors that your app receives.
 - [Launch Image Over Memory Limit](launch-image-over-memory-limit.md)
   Analyze how often your app fails to load because it’s over the memory limit.
+- [Media Device Extension Errors](media-device-extension-errors.md)
+  Analyze Media Device Extension errors in your apps.
+- [Media Device Extension Performance](media-device-extension-performance.md)
+  Review Media Device Extension performance in your apps.
 - [Networking Connection Activity](networking-connection-activity.md)
   Review how your app uses network connections.
 - [Spotlight Query Performance](spotlight-query-performance.md)

@@ -1,4 +1,4 @@
 Completed scraping Shared with You!
-Total pages scraped: 123
-Pages skipped (unchanged): 16
+Total pages scraped: 0
+Pages skipped (unchanged): 139
 Pages failed: 0

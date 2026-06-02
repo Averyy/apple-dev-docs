@@ -62,8 +62,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | State Metric | Contingent price | The number of active contingent price subscriptions. |
 | State Metric | Grace period | The number of subscriptions with a billing issue that are in a grace period. |
 | State Metric | Billing retry | The number of subscriptions with a billing issue that are in billing retry. |
-| State Metric | Payment Issue | The number of commitment-based subscriptions that have missed their most recent payment. |
-| State Metric | Suspended | The number of commitment-based subscriptions that have missed the last two payments. |
+| State Metric | Suspended | The number of commitment-based subscriptions that have missed their payments. |
 | State Metric | Voluntarily churned | The number of subscriptions that churned within the last 2 years because the user chose to cancel. |
 | State Metric | Involuntarily churned | The number of subscriptions that churned within the last 2 years due to a billing issue and weren’t recovered by Apple within the 60-day retry window. |
 | State Metric Grouping | Subscription offers | The number of active free trials and paid offers. |

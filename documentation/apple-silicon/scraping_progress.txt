@@ -1,4 +1,4 @@
 Completed scraping Apple silicon!
-Total pages scraped: 17
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 18
 Pages failed: 0

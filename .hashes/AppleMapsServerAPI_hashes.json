@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:32.276850",
+    "last_updated": "2026-06-02T07:43:55.261103",
     "total_pages": 96,
-    "session_id": "2026-05-29T07:30:24.740299"
+    "session_id": "2026-06-02T07:43:47.421619"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppleMapsServerAPI.json": {
       "hash": "91a4a3d0e4872d58f7e7910b31610b5eb153bae05ad782c76e8590106543fc20",
-      "last_checked": "2026-05-29T07:30:25.020994",
+      "last_checked": "2026-06-02T07:43:47.647441",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"901ea721a73e58cd9a83ca18acca60ea\"",
       "file_path": "documentation/AppleMapsServerAPI/AppleMapsServerAPI.md"
     },
     "https://developer.apple.com/documentation/AppleMapsServerAPI": {
       "hash": "91a4a3d0e4872d58f7e7910b31610b5eb153bae05ad782c76e8590106543fc20",
-      "last_checked": "2026-05-29T07:30:24.894678",
+      "last_checked": "2026-06-02T07:43:47.560608",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"901ea721a73e58cd9a83ca18acca60ea\"",
       "file_path": "documentation/AppleMapsServerAPI/AppleMapsServerAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/creating-and-using-tokens-with-maps-server-api.json": {
       "hash": "e4f34571c00ed1acd1f3d71d1ff781bfc136a80450708a70d3b047d77e57824f",
-      "last_checked": "2026-05-29T07:30:25.448486",
+      "last_checked": "2026-06-02T07:43:47.894365",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"d8a0be1fa7c014fd9d5b502bdf7752f4\"",
       "file_path": "documentation/AppleMapsServerAPI/creating-and-using-tokens-with-maps-server-api.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/creating-a-maps-identifier-and-a-private-key.json": {
       "hash": "277c349f90349987bdacd29765049af9355306125511949ee090f151c9b490c4",
-      "last_checked": "2026-05-29T07:30:25.683114",
+      "last_checked": "2026-06-02T07:43:48.070490",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"1d498d6e1355ae569ceb37b16453363f\"",
       "file_path": "documentation/AppleMapsServerAPI/creating-a-maps-identifier-and-a-private-key.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-token.json": {
       "hash": "d649a830c4f5f6a37bf4ba732c1d540b113b72992863ca299c34a7499a950970",
-      "last_checked": "2026-05-29T07:30:25.880573",
+      "last_checked": "2026-06-02T07:43:48.203935",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"3872d854dd2899e8ff3ddc81d3fc21fb\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-token.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/debugging-an-invalid-token.json": {
       "hash": "8c86aa132b2d1c46320216751146ae33149a52d07f71a7fc6091680636201290",
-      "last_checked": "2026-05-29T07:30:26.108796",
+      "last_checked": "2026-06-02T07:43:48.396885",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"37e620e4a59e5e9ba3b5c19570e68d67\"",
       "file_path": "documentation/AppleMapsServerAPI/debugging-an-invalid-token.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/common-objects.json": {
       "hash": "70640a14bef819a5229034fbc2ecf49632a3d7eb4b684d4ca46ca25c79f45960",
-      "last_checked": "2026-05-29T07:30:26.221549",
+      "last_checked": "2026-06-02T07:43:48.567566",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"d13520fdc90514fea0a799adf5633a5b\"",
       "file_path": "documentation/AppleMapsServerAPI/common-objects.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/integrating-the-apple-maps-server-api-into-java-server-applications.json": {
       "hash": "13f6eedd6d023920dda881b9bbbaed1f25a94f7184d59bbcb9c9ae070166fcc4",
-      "last_checked": "2026-05-29T07:30:26.358829",
+      "last_checked": "2026-06-02T07:43:48.725204",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"9021bdc0c539b5caee2b137a4b4772cf\"",
       "file_path": "documentation/AppleMapsServerAPI/integrating-the-apple-maps-server-api-into-java-server-applications.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-geocode.json": {
       "hash": "f670a15ca1dc41daa9d3039cf08de3f101dd046db4456a83551780c5a1fbe372",
-      "last_checked": "2026-05-29T07:30:26.598214",
+      "last_checked": "2026-06-02T07:43:48.890787",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"fc0e4f23212d259d1c9e6c6870b02de3\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-geocode.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-reversegeocode.json": {
       "hash": "0913644e8cefc1b422dd503208677ef64e4bd398088d60e047475d76bee70098",
-      "last_checked": "2026-05-29T07:30:26.732221",
+      "last_checked": "2026-06-02T07:43:49.078788",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"33e185207d8f6db1e11a66822c5859b0\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-reversegeocode.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/addresscategory.json": {
       "hash": "f2af1bcd015743664e574ccdf0e73494ff282623a285e2d1cca77b6947b90e92",
-      "last_checked": "2026-05-29T07:30:26.839599",
+      "last_checked": "2026-06-02T07:43:49.211052",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"c521e3ba5c6605b2fa8723bfe667269b\"",
       "file_path": "documentation/AppleMapsServerAPI/addresscategory.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchacresulttype.json": {
       "hash": "e11b12c184af699be1b8673307d6f023f3393502793d7505ab31d0dee7092de4",
-      "last_checked": "2026-05-29T07:30:26.936258",
+      "last_checked": "2026-06-02T07:43:49.342655",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"23c630e0f1b75e04632fc35f16ed0002\"",
       "file_path": "documentation/AppleMapsServerAPI/searchacresulttype.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresulttype.json": {
       "hash": "a712dbcd660502899bc0b294673f6e03c5177a19281d4e73c701e41d92781c45",
-      "last_checked": "2026-05-29T07:30:27.195100",
+      "last_checked": "2026-06-02T07:43:49.595941",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"f1edc4a9c37fc49f7559e8f63f62c396\"",
       "file_path": "documentation/AppleMapsServerAPI/searchresulttype.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/alternateidsresponse.json": {
       "hash": "89b23da5d204d4261dd6c817e6aaa0f6be751b4f4bbe8850836a26c5bb8f21c3",
-      "last_checked": "2026-05-29T07:30:27.457439",
+      "last_checked": "2026-06-02T07:43:49.759322",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"cde30de265a8ac8a548b5aac9d875f85\"",
       "file_path": "documentation/AppleMapsServerAPI/alternateidsresponse.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/alternateidsresponse/alternateids.json": {
       "hash": "e2787160df0b9c91a0122b8f3adb6f1a91ac27bf892a9de16d4e4f40a8c50d87",
-      "last_checked": "2026-05-29T07:30:27.574559",
+      "last_checked": "2026-06-02T07:43:49.928900",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"963bb15b41528bc21fc10936267b1aec\"",
       "file_path": "documentation/AppleMapsServerAPI/alternateidsresponse/alternateids.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/placesresponse.json": {
       "hash": "2da5aa936d0ef13b0fc9a4b451a0e07104e19f5c18e7e7428e553d2851518a83",
-      "last_checked": "2026-05-29T07:30:27.689205",
+      "last_checked": "2026-06-02T07:43:50.106545",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"6ab640c23589484ec73cf2d321209898\"",
       "file_path": "documentation/AppleMapsServerAPI/placesresponse.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/placesresponse/placelookuperror.json": {
       "hash": "4df03d68093b192aa1fd233c192bc829aabaa40fda676e44e04b0777412ff52a",
-      "last_checked": "2026-05-29T07:30:27.817058",
+      "last_checked": "2026-06-02T07:43:50.254905",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"2b7a5cb6b8f3dbee626ea049cdee5a0a\"",
       "file_path": "documentation/AppleMapsServerAPI/placesresponse/placelookuperror.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-search.json": {
       "hash": "611a7f1d2d03f3b24f9c3090fab0a66161630135546e429e47c307fd34883425",
-      "last_checked": "2026-05-29T07:30:27.953701",
+      "last_checked": "2026-06-02T07:43:50.385717",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"eb43dbdad7b5fd3af69b5eb8f51fa21f\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-search.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-searchautocomplete.json": {
       "hash": "5e4de5c1743ec76e9afcc3b9bc3397c7d172ac4753a6dfd990c399b8d1b9dee6",
-      "last_checked": "2026-05-29T07:30:28.178954",
+      "last_checked": "2026-06-02T07:43:50.549821",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"1efc66fc95a3618a125c6798fcb8222d\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-searchautocomplete.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-place-:id.json": {
       "hash": "a03b8f7f500708cf7e2041834c3bd80f5e88519aa75c87d3a0cc4e1b2af4af61",
-      "last_checked": "2026-05-29T07:30:28.290822",
+      "last_checked": "2026-06-02T07:43:50.717540",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"4a6fc1f64891da62aa01bd9aacaad040\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-place-id.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-place.json": {
       "hash": "ee7db5263d3689e0b33379690f9ec6e871c57dc858ab82f5878077c734450b52",
-      "last_checked": "2026-05-29T07:30:28.442508",
+      "last_checked": "2026-06-02T07:43:50.846783",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"144c08c7615f11448d12a76b4934ce86\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-place.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-place-alternateids.json": {
       "hash": "5aee1020f5bbef9b7db8ebe7fcfc9c0ed628b01fa08bc2e86ae88133de67b2d9",
-      "last_checked": "2026-05-29T07:30:28.557307",
+      "last_checked": "2026-06-02T07:43:50.974741",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"35517211ea3177f49cb1521f68491588\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-place-alternateids.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-directions.json": {
       "hash": "4f9db7078c09abe837825fdd9d9829801c025a038147d98cac253ff93ed559f1",
-      "last_checked": "2026-05-29T07:30:28.673764",
+      "last_checked": "2026-06-02T07:43:51.141267",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"d10ce809bc3697180b04d18d0a369bc1\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-directions.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/-v1-etas.json": {
       "hash": "97363806a3fbf9c9b171e1c0ac689868fb41be4684d477e5d8e5e9a1b738ee47",
-      "last_checked": "2026-05-29T07:30:28.796581",
+      "last_checked": "2026-06-02T07:43:51.269106",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"3010e5a95073ed01ae88d962dd769c1b\"",
       "file_path": "documentation/AppleMapsServerAPI/v1-etas.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/tokenresponse.json": {
       "hash": "4c2ac97155ee0548e2706c5d1722d16609770a0aac1733b37d414d1fbc8bee2d",
-      "last_checked": "2026-05-29T07:30:28.902515",
+      "last_checked": "2026-06-02T07:43:51.473950",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"f3e456b562974f49f4977d86a5c3930a\"",
       "file_path": "documentation/AppleMapsServerAPI/tokenresponse.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/autocompleteresult.json": {
       "hash": "2090728a3dfaadc67f3b4b27aabd6941f7994edc62200bc53e1bb5ff01fc8dd2",
-      "last_checked": "2026-05-29T07:30:29.026907",
+      "last_checked": "2026-06-02T07:43:51.595786",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"1125e767948dd9c2f459803fd5dc71ad\"",
       "file_path": "documentation/AppleMapsServerAPI/autocompleteresult.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/directionsresponse.json": {
       "hash": "d3f95a90d398e0e52f7fc1199582e3cac968b43e0d0da2e7e76409d1cb9bc51d",
-      "last_checked": "2026-05-29T07:30:29.132515",
+      "last_checked": "2026-06-02T07:43:51.779481",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"940ab2d8b78b8341b6a0c0e1ff27a679\"",
       "file_path": "documentation/AppleMapsServerAPI/directionsresponse.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/etaresponse.json": {
       "hash": "3f51c90e5d4d7ff637676f41d6e32a7f8bf66c8dc4fc98656f3d02f5c61d495b",
-      "last_checked": "2026-05-29T07:30:29.242311",
+      "last_checked": "2026-06-02T07:43:51.896775",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"90811ab7354234b19c779ea763dda879\"",
       "file_path": "documentation/AppleMapsServerAPI/etaresponse.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/location.json": {
       "hash": "cce908bc4cc5e903eabaef436a6c4d025629adb83b618cc9624fc67ce23480df",
-      "last_checked": "2026-05-29T07:30:29.463471",
+      "last_checked": "2026-06-02T07:43:52.069151",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"427bcf1f54fd36339b794fac01cd027b\"",
       "file_path": "documentation/AppleMapsServerAPI/location.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/mapregion.json": {
       "hash": "bfab301ca3c3cdc8908534bf077802de2ff8bdccee84da6bdae8379bcc00c8e5",
-      "last_checked": "2026-05-29T07:30:29.682404",
+      "last_checked": "2026-06-02T07:43:52.236911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"43c18793f91c356dfcd37d5bcd80569f\"",
       "file_path": "documentation/AppleMapsServerAPI/mapregion.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/place.json": {
       "hash": "b4b8c6eeb8bb4bf7b3ec0e56768f55710cc2143cbcb94cb7cff973e3bcd5d795",
-      "last_checked": "2026-05-29T07:30:29.785522",
+      "last_checked": "2026-06-02T07:43:52.361958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"fc5db0c3c8832e77d4ac7e8a56c64248\"",
       "file_path": "documentation/AppleMapsServerAPI/place.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/placeresults.json": {
       "hash": "90854eb15a404be9bb5af593da50ef4198bf4e29db967961c18bbe36e6ab2eb2",
-      "last_checked": "2026-05-29T07:30:29.903691",
+      "last_checked": "2026-06-02T07:43:52.496021",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"a8fdd791327aa111a468b1ba5fa84f15\"",
       "file_path": "documentation/AppleMapsServerAPI/placeresults.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchautocompleteresponse.json": {
       "hash": "ab66de8be8d1134e53af6bda4266bcb369cead57e3d8f0309bcc61fb310267ec",
-      "last_checked": "2026-05-29T07:30:30.014152",
+      "last_checked": "2026-06-02T07:43:52.665842",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"651776bfb958e771ac065d628da235af\"",
       "file_path": "documentation/AppleMapsServerAPI/searchautocompleteresponse.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchmapregion.json": {
       "hash": "aa155675f6d51b17042b0c6b7e1b3e63edd6315298e44c9bb918b6a2ec4c538f",
-      "last_checked": "2026-05-29T07:30:30.128143",
+      "last_checked": "2026-06-02T07:43:52.829932",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"7f93f3e2c04632c52ac402119ce5b7fb\"",
       "file_path": "documentation/AppleMapsServerAPI/searchmapregion.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresponse.json": {
       "hash": "14e9d69b3b64719eb98c635a1262fde73e08cc7b8290beb913548ce5a350cfa5",
-      "last_checked": "2026-05-29T07:30:30.361897",
+      "last_checked": "2026-06-02T07:43:53.014113",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"315ea706b5036d47502be7a6f05feb64\"",
       "file_path": "documentation/AppleMapsServerAPI/searchresponse.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/structuredaddress.json": {
       "hash": "1cb6ff833c0461924d694aac54ad370490c5a8b882fe3ab86eb44750014760cc",
-      "last_checked": "2026-05-29T07:30:30.506640",
+      "last_checked": "2026-06-02T07:43:53.136088",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"cc39beaca8b4ebf6c69d9ae462fe8994\"",
       "file_path": "documentation/AppleMapsServerAPI/structuredaddress.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/countrycode.json": {
       "hash": "6e3e0977a884ae8891b0e0ff979500ae22a5d1a321e8c0d717a1679b5e89ca8a",
-      "last_checked": "2026-05-29T07:30:30.749234",
+      "last_checked": "2026-06-02T07:43:53.673162",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"861d6218de39c5374ed146896b034cdb\"",
       "file_path": "documentation/AppleMapsServerAPI/countrycode.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/directionsavoid.json": {
       "hash": "ae012a0ed902992b82572a224e9f1b64c54f5d1a6bc8b1ea9a8622065c122398",
-      "last_checked": "2026-05-29T07:30:30.894069",
+      "last_checked": "2026-06-02T07:43:53.825664",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"6659c87ff33916a41b11b53700b6baba\"",
       "file_path": "documentation/AppleMapsServerAPI/directionsavoid.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/lang.json": {
       "hash": "17c6b1d6b8ef45cc7abc2ac2a52ce10099570ffa8972cc6dd75d0cfaf9e0a55f",
-      "last_checked": "2026-05-29T07:30:30.998218",
+      "last_checked": "2026-06-02T07:43:53.952608",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"467eb58dc658b9f6a4c8ce5a86afe328\"",
       "file_path": "documentation/AppleMapsServerAPI/lang.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/poicategory.json": {
       "hash": "93f6a16a762d4bcd0d3e1100622fa625cf473d3dc7300db624422bf30404ffc1",
-      "last_checked": "2026-05-29T07:30:31.186445",
+      "last_checked": "2026-06-02T07:43:54.062053",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"001df9fb969cde71c4fda68f18ccbfa9\"",
       "file_path": "documentation/AppleMapsServerAPI/poicategory.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchlocation.json": {
       "hash": "d80d82036e4e656ceeb126b30186a89b690c0e2ae5749767d2467079ebf8fd35",
-      "last_checked": "2026-05-29T07:30:31.305042",
+      "last_checked": "2026-06-02T07:43:54.195275",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"47e4d71fc02706b07444b0854663e995\"",
       "file_path": "documentation/AppleMapsServerAPI/searchlocation.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchregion.json": {
       "hash": "6e882c7daab7cda7a80019e07c8524a6f24c2baa26251845ce506451a304d594",
-      "last_checked": "2026-05-29T07:30:31.525673",
+      "last_checked": "2026-06-02T07:43:54.350322",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"2f5cd4a743cee9a134e5445e8a9e6546\"",
       "file_path": "documentation/AppleMapsServerAPI/searchregion.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/userlocation.json": {
       "hash": "480d83ed5facf61cfdbfc7cbf2c4fd369a13791914573ac81ed2bbe164e3ef09",
-      "last_checked": "2026-05-29T07:30:31.630173",
+      "last_checked": "2026-06-02T07:43:54.484337",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"e2f30783258f2a8add462a2da59ca197\"",
       "file_path": "documentation/AppleMapsServerAPI/userlocation.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/errorresponse.json": {
       "hash": "2c9cd9fa86e64555a09146fc2ad5f0c967b52a0376ac99360b7c58f89471954c",
-      "last_checked": "2026-05-29T07:30:31.742571",
+      "last_checked": "2026-06-02T07:43:54.603882",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"ea74313fc5a577f546d463bcf4d996b3\"",
       "file_path": "documentation/AppleMapsServerAPI/errorresponse.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/directionsresponse/route.json": {
       "hash": "e0a76e6a88a6c7e4ca7bc5234a70ac0c595fa338c4c4e34f7bcb1071657e172b",
-      "last_checked": "2026-05-29T07:30:31.849963",
+      "last_checked": "2026-06-02T07:43:54.726304",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"e6eff8374225ab9ea6b7db5b49f0ea9d\"",
       "file_path": "documentation/AppleMapsServerAPI/directionsresponse/route.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/directionsresponse/step.json": {
       "hash": "6eba3a981b33e5555bc4c559a90efaa25dbe1a6c3cd231cb177d2c7fe9d4fcb9",
-      "last_checked": "2026-05-29T07:30:31.949428",
+      "last_checked": "2026-06-02T07:43:54.846022",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"35c566502be6e3ce49afebf337d56ab5\"",
       "file_path": "documentation/AppleMapsServerAPI/directionsresponse/step.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/etaresponse/eta.json": {
       "hash": "7a6da64204b9d01fc1eef8e6e360bf4f9c996827d25502b378f3ddc28d738dad",
-      "last_checked": "2026-05-29T07:30:32.055077",
+      "last_checked": "2026-06-02T07:43:54.966783",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"8df8ef6273a426879740f77e87d6160e\"",
       "file_path": "documentation/AppleMapsServerAPI/etaresponse/eta.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresponse/place.json": {
       "hash": "c8777da12dfe501744a1e81b17fc062ac454b75f029b1b015f71f8da9793f463",
-      "last_checked": "2026-05-29T07:30:32.172472",
+      "last_checked": "2026-06-02T07:43:55.099315",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"f343dcb4e6317a57bdbb40e83787e8e7\"",
       "file_path": "documentation/AppleMapsServerAPI/searchresponse/place.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applemapsserverapi/searchresponse/paginationinfo-data.dictionary.json": {
       "hash": "009c29386ed4434ae8e4dab7a1a1ff812c25856a6485eb0b918b871feddb162b",
-      "last_checked": "2026-05-29T07:30:32.275639",
+      "last_checked": "2026-06-02T07:43:55.257008",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:24.740299",
+      "session_id": "2026-06-02T07:43:47.421619",
       "etag": "W/\"2b5ca62460a5f8b54529d4365af561fd\"",
       "file_path": "documentation/AppleMapsServerAPI/searchresponse/paginationinfo-datadictionary.md"
     },

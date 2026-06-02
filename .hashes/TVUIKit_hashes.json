@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:29:51.289575",
+    "last_updated": "2026-06-02T07:43:02.645978",
     "total_pages": 253,
-    "session_id": "2026-05-29T07:29:38.778362"
+    "session_id": "2026-06-02T07:42:38.204867"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TVUIKit.json": {
       "hash": "41fec8850d496c67476676f4ccf9c0a067c189faa882cd9bf98c8ef1b7d55265",
-      "last_checked": "2026-05-29T07:29:39.095978",
+      "last_checked": "2026-06-02T07:42:38.470170",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"69f1bc97667d233f184771873ccc53a5\"",
       "file_path": "documentation/TVUIKit/TVUIKit.md"
     },
     "https://developer.apple.com/documentation/TVUIKit": {
       "hash": "41fec8850d496c67476676f4ccf9c0a067c189faa882cd9bf98c8ef1b7d55265",
-      "last_checked": "2026-05-29T07:29:38.975031",
+      "last_checked": "2026-06-02T07:42:38.348541",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"69f1bc97667d233f184771873ccc53a5\"",
       "file_path": "documentation/TVUIKit/TVUIKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/creating-immersive-experiences-using-a-full-screen-layout.json": {
       "hash": "0e54d713fda153878deaa58d4724ae056f5fb77276c2a71dad3e1c864d74f647",
-      "last_checked": "2026-05-29T07:29:39.297851",
+      "last_checked": "2026-06-02T07:42:38.888914",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"04d744d3a0fd38f52963dbfeb98042a8\"",
       "file_path": "documentation/TVUIKit/creating-immersive-experiences-using-a-full-screen-layout.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout.json": {
       "hash": "0518941efd76bba0ff8b6a2ecca4f0c249b040a007cb8f9d980d97f9f0ee2d33",
-      "last_checked": "2026-05-29T07:29:39.378934",
+      "last_checked": "2026-06-02T07:42:39.046102",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"f04f2fc04be046c5b4bc63ca00ebc2eb\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewdelegatefullscreenlayout.json": {
       "hash": "40ee5768ab56b4ff01386cae8c7de64ed2794582967742da5e772cb5a2a22e97",
-      "last_checked": "2026-05-29T07:29:39.445313",
+      "last_checked": "2026-06-02T07:42:39.170151",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"971bedc9d1f8b5a84e5662a29e6ebb83\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewdelegatefullscreenlayout.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell.json": {
       "hash": "e653a0e12b75ebdddd4f6a6a2c357f449f290736046fa74f661157042995d40f",
-      "last_checked": "2026-05-29T07:29:39.504583",
+      "last_checked": "2026-06-02T07:42:39.488313",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ffff5ad7861e54ce2679d47dc73dd5e1\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes.json": {
       "hash": "8061f17218c544918bae9951465e2c17f8bff06732fc1eb68f511ae3db686819",
-      "last_checked": "2026-05-29T07:29:39.627623",
+      "last_checked": "2026-06-02T07:42:39.789534",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6a38729b9f8db7071926120b003e6949\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentview.json": {
       "hash": "7829e3c4aeb34f2b85d4d85840a458f8c2c9900dece072e91ffac11ada5f03d0",
-      "last_checked": "2026-05-29T07:29:39.724523",
+      "last_checked": "2026-06-02T07:42:40.102436",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4360098adf2eec2c463c7ffef73ebd0c\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentview.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview.json": {
       "hash": "64d58c93cf99cfaf23dbcaf04172933d2c98d15794fb3e8e4623dd07beb8a085",
-      "last_checked": "2026-05-29T07:29:39.840067",
+      "last_checked": "2026-06-02T07:42:40.415032",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"0a861af16f4803c666255d8ba468dfd0\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentview.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller.json": {
       "hash": "99d5274467ca2d8e453f76e37b2b98ff18b4ff64fd86f995de2b5fcdd662fc17",
-      "last_checked": "2026-05-29T07:29:39.923368",
+      "last_checked": "2026-06-02T07:42:40.580621",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ac81ca50661e066fe5dd6e7fa6c066b7\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview.json": {
       "hash": "3c453fe17b215603980c20b7ccbc1ee4a29a536746411ad69959ce6a2f744b10",
-      "last_checked": "2026-05-29T07:29:39.983230",
+      "last_checked": "2026-06-02T07:42:40.835349",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"a3aee2ff09f03bcbdaa3a605ce8c5840\"",
       "file_path": "documentation/TVUIKit/tvlockupview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupviewcomponent.json": {
       "hash": "f033c9522defcac5e19831abda742ac2759eea26af3f18827fd7dc9f9981b686",
-      "last_checked": "2026-05-29T07:29:40.081924",
+      "last_checked": "2026-06-02T07:42:41.017716",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"457fecd229a8f467702757bda3c9cf03\"",
       "file_path": "documentation/TVUIKit/tvlockupviewcomponent.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupheaderfooterview.json": {
       "hash": "42430ebba09803186c1a77dea6405aae911e9cc8ea86addbced71ee86ee40d51",
-      "last_checked": "2026-05-29T07:29:40.149148",
+      "last_checked": "2026-06-02T07:42:41.129886",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"25f8d171fe1d1783e1e5caaf658326e0\"",
       "file_path": "documentation/TVUIKit/tvlockupheaderfooterview.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview.json": {
       "hash": "e55d93f134bda2ee435d99e15e6afe9afc725d602f46afac2b7fab97ff5924dd",
-      "last_checked": "2026-05-29T07:29:40.280688",
+      "last_checked": "2026-06-02T07:42:41.251722",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"79fb4e50f8157912a762bcb3940a3bf0\"",
       "file_path": "documentation/TVUIKit/tvcardview.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview.json": {
       "hash": "ef6d95ea554b38d515e258a4c71023623da529e18880473a5cb02054bfe617cb",
-      "last_checked": "2026-05-29T07:29:40.360500",
+      "last_checked": "2026-06-02T07:42:41.379683",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6fbd03f157338b25b3d3d61572aa20f2\"",
       "file_path": "documentation/TVUIKit/tvposterview.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview.json": {
       "hash": "2f06abdaf55ac9128b8e68d04e8f5bfde518dbab2e7d8438668a749f4814c9eb",
-      "last_checked": "2026-05-29T07:29:40.420207",
+      "last_checked": "2026-06-02T07:42:41.699461",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"94b6c49538b4ba6b45c966851c0cbc5a\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview.json": {
       "hash": "259c6a451e6959355361342697e67ceeef4f3e3ec553f140bf76d623f985d7b2",
-      "last_checked": "2026-05-29T07:29:40.501800",
+      "last_checked": "2026-06-02T07:42:41.871792",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"635dd5aef6a665dc7deddb2d1ca916fb\"",
       "file_path": "documentation/TVUIKit/tvmonogramview.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/interitemspacing.json": {
       "hash": "11d72aa2f11a61eca874e9762618b90a8eefca76d960edb1167847ba0c826a35",
-      "last_checked": "2026-05-29T07:29:40.568173",
+      "last_checked": "2026-06-02T07:42:42.003955",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"d743d5b69bcee8ad6d97a12b638730fa\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/interitemspacing.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/centerindexpath.json": {
       "hash": "f57cc424c5ea843095d7a843e8f8b48e7ef357e2f82c61745ffc1bc446053740",
-      "last_checked": "2026-05-29T07:29:40.618769",
+      "last_checked": "2026-06-02T07:42:42.342136",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3b9d96540a935d80ca6eea9497eeaecb\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/centerindexpath.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/maskamount.json": {
       "hash": "cae23659419667bafe02206d08149c065719917274af96fc600ae320a138c429",
-      "last_checked": "2026-05-29T07:29:40.687866",
+      "last_checked": "2026-06-02T07:42:42.506754",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"8a828859b91dc2b29df95059e07cc9ad\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/maskamount.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/maskinset.json": {
       "hash": "06676d304e30153576402af62bb144aef9067c3302a253da24bd5ea54866ecb3",
-      "last_checked": "2026-05-29T07:29:40.762927",
+      "last_checked": "2026-06-02T07:42:42.673866",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6f42c0f90acbe11da59543d36a4a3338\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/maskinset.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/cornerradius.json": {
       "hash": "e233e680f3fbc12e6cdcf2cf21ea0621d485c6c2df664a6de167d1a8dc4788d0",
-      "last_checked": "2026-05-29T07:29:40.828618",
+      "last_checked": "2026-06-02T07:42:42.980934",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"521ef1d9d0513d913fd1784e83712d6f\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/cornerradius.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/parallaxfactor.json": {
       "hash": "34c3d41abb3855de42de0663411262ea5746dd5acc3e8755c358a6187d8b6874",
-      "last_checked": "2026-05-29T07:29:40.935700",
+      "last_checked": "2026-06-02T07:42:43.279958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"67cfae84728f79d2373df796aafaad7e\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/parallaxfactor.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayout/istransitioningtocenterindexpath.json": {
       "hash": "aeb8bed453e95930d41e8df6c2dee662be5fb978083d66b9d6da5cd256b2f90e",
-      "last_checked": "2026-05-29T07:29:41.004693",
+      "last_checked": "2026-06-02T07:42:43.455247",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"038f1d3fcbbe71b72a3b7a758a21dbd8\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayout/istransitioningtocenterindexpath.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewdelegatefullscreenlayout/collectionview(_:layout:willcentercellat:).json": {
       "hash": "728973fe92298bad7f34ad53ad650200c4093867ee6bc71d8e52d23b5f5dbac2",
-      "last_checked": "2026-05-29T07:29:41.063552",
+      "last_checked": "2026-06-02T07:42:43.639226",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c92207bc60cdf8dbe318bcd034f0a3f2\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewdelegatefullscreenlayout/collectionview-layoutwillcentercellat.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewdelegatefullscreenlayout/collectionview(_:layout:didcentercellat:).json": {
       "hash": "fac187bce7cfe21da319144b62bc3030fc248de471bc9a2714cd47f854299aac",
-      "last_checked": "2026-05-29T07:29:41.132427",
+      "last_checked": "2026-06-02T07:42:43.923479",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c4dd37286e2c8200527728a62792d3d4\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewdelegatefullscreenlayout/collectionview-layoutdidcentercellat.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/contentbleed.json": {
       "hash": "daf512d9ef775f748d10d19ff8e3ac2947d978c30bb4d7d2b27ca04d789a10ea",
-      "last_checked": "2026-05-29T07:29:41.236383",
+      "last_checked": "2026-06-02T07:42:44.236946",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3b3e66faf4f8aeedfc416765113a4d21\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/contentbleed.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/cornerradius.json": {
       "hash": "6e897e926a1328da7d5906d52ad1d9855a9924414a4b66251a7cb19355b897ae",
-      "last_checked": "2026-05-29T07:29:41.337566",
+      "last_checked": "2026-06-02T07:42:44.543626",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3c25b49d49f18d3069217087de2b742d\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/cornerradius.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/maskamount.json": {
       "hash": "690dd6016dbc7b1cba97fd413eb07b06bde2b67cd763662c1f77d9e7dcc0fd95",
-      "last_checked": "2026-05-29T07:29:41.394410",
+      "last_checked": "2026-06-02T07:42:44.713177",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3f6e765beadae02e571eb4f27c1ff5bb\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/maskamount.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/maskedcontentview.json": {
       "hash": "a7a06208eb2c422d559fa5200b25d121ec22360806b4696d77342943d860ae94",
-      "last_checked": "2026-05-29T07:29:41.460423",
+      "last_checked": "2026-06-02T07:42:44.883878",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"481a9486ee65646eb6b42773dd350202\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/maskedcontentview.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/maskedbackgroundview.json": {
       "hash": "c12ff96d4aecf7c5d8843b7cf796183263e07bc8f1410916f955e5aa3fdd825e",
-      "last_checked": "2026-05-29T07:29:41.521828",
+      "last_checked": "2026-06-02T07:42:45.186579",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ea59c45b721619557d64a688f74ce4a3\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/maskedbackgroundview.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/normalizedposition.json": {
       "hash": "2006739599246de3a20e1de19137e373553c489588597d685101972633030721",
-      "last_checked": "2026-05-29T07:29:41.589666",
+      "last_checked": "2026-06-02T07:42:45.484484",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"5d1579c295c7cdc699885517bd770e72\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/normalizedposition.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/normalizedpositiondidchange().json": {
       "hash": "a3cb8d79510ed9889204ccde4da453fa76ffaa1cd18aaa0de18a87b98d30eb3b",
-      "last_checked": "2026-05-29T07:29:41.642562",
+      "last_checked": "2026-06-02T07:42:45.784879",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6f903f708765292f6608a44a042ecb0a\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/normalizedpositiondidchange.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/normalizedpositionwillchange(_:).json": {
       "hash": "a0efab49c60729d1e9accd9fd9e8f55712487da33a0486f584b56be9ce5951a1",
-      "last_checked": "2026-05-29T07:29:41.716260",
+      "last_checked": "2026-06-02T07:42:45.947317",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4460ff654d5413b9c01a486f9f39f6d7\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/normalizedpositionwillchange.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/maskamountdidchange().json": {
       "hash": "513e5f82e53012efe3276c6690abba27e493d4a5cee02b4ef9d35ee18b652611",
-      "last_checked": "2026-05-29T07:29:41.777513",
+      "last_checked": "2026-06-02T07:42:46.105080",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"34339127c8198d4c6e51fb5fa8b8ce93\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/maskamountdidchange.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/maskamountwillchange(_:).json": {
       "hash": "32eaf656ae8cfa31ebd8c3ecccf0a3c0e39789e055841a42fbd9d49c3c762ebe",
-      "last_checked": "2026-05-29T07:29:41.869949",
+      "last_checked": "2026-06-02T07:42:46.279323",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"d39a38aa3fbe45145f5747010c0a7d54\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/maskamountwillchange.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreencell/parallaxoffset.json": {
       "hash": "e4a944422750c76065595eb11686b837acf22c687aeb53ddb4a532006bea2b16",
-      "last_checked": "2026-05-29T07:29:41.943782",
+      "last_checked": "2026-06-02T07:42:46.459511",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"942dceef00ce0b383ae75f945be670d6\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreencell/parallaxoffset.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes/contentbleed.json": {
       "hash": "b0d9e1f2300ea323f67c2a6d9e42c7d55eefb7f0c0fb8a4a68e467aee6e9f3ca",
-      "last_checked": "2026-05-29T07:29:42.009903",
+      "last_checked": "2026-06-02T07:42:46.619591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"a0a96d6d5555c82cc31721b5ca3aed1f\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes/contentbleed.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes/cornerradius.json": {
       "hash": "1bb8d4973668d8a12372c129e76fd5dcc8bedf52e94fe94e10a87ad865affbc6",
-      "last_checked": "2026-05-29T07:29:42.062765",
+      "last_checked": "2026-06-02T07:42:46.793171",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"2b9d9db842fce81ee524c234c1a0265c\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes/cornerradius.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes/maskamount.json": {
       "hash": "47d0d7fd5e64ff3637e2bbc97e7ad4adc33ce1b0518aaa88911464543dc54f0c",
-      "last_checked": "2026-05-29T07:29:42.125795",
+      "last_checked": "2026-06-02T07:42:46.947494",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"00110d1752b6279b3e5370dc7a096146\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes/maskamount.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes/parallaxoffset.json": {
       "hash": "d82354baa05712eafefd68fb2d1a9432a4db514cb1f63a59f528fa23def70bab",
-      "last_checked": "2026-05-29T07:29:42.195947",
+      "last_checked": "2026-06-02T07:42:47.262355",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"177f2b7b091cabad7c87980a70dbb1a0\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes/parallaxoffset.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcollectionviewfullscreenlayoutattributes/normalizedposition.json": {
       "hash": "8f9ec7e0f71ef5de889e39943caf822cbee1260f57d19563ba1630d5af59386a",
-      "last_checked": "2026-05-29T07:29:42.442117",
+      "last_checked": "2026-06-02T07:42:47.413565",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"26b5774b64d3e717f6f3726f9dc5cfcd\"",
       "file_path": "documentation/TVUIKit/tvcollectionviewfullscreenlayoutattributes/normalizedposition.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentview/init(configuration:).json": {
       "hash": "3079a155493f33b6540863123db7845215cee5234685ec66e506778770bd24e3",
-      "last_checked": "2026-05-29T07:29:42.493847",
+      "last_checked": "2026-06-02T07:42:47.584858",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"343bf757539c2299a8a25b098205f6be\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentview/init-configuration.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct.json": {
       "hash": "55502c0df9396b36ad46a9bbcdbc68e2a5d9dbd3c2806c4fc9a69ae829192680",
-      "last_checked": "2026-05-29T07:29:42.547838",
+      "last_checked": "2026-06-02T07:42:47.754607",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4b2342d7538cbc720f397a5f64d18ea4\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swiftstruct.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentview/focusedframeguide.json": {
       "hash": "6c74b733e14ac940d65ce672a230da3a8fe9535c7cf9688628ac677ccddae1c7",
-      "last_checked": "2026-05-29T07:29:42.645615",
+      "last_checked": "2026-06-02T07:42:48.040456",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"85645e4e5677bc39e5ebd4cfb2599de7\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentview/focusedframeguide.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview/init(configuration:).json": {
       "hash": "284daf005b342b48eaf34a44eaafeb67dceccb457a2a5addf85d5d9995fdd656",
-      "last_checked": "2026-05-29T07:29:42.705758",
+      "last_checked": "2026-06-02T07:42:48.319961",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c66d7a55bf7f64b3d1013f90a4588629\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/init-configuration.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct.json": {
       "hash": "08daca3b98e1e7f0885aeda6e3d5e8974853ac924392466e860f62b1510566aa",
-      "last_checked": "2026-05-29T07:29:42.782421",
+      "last_checked": "2026-06-02T07:42:48.611120",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b2fab7fe953523bdd5abecafdaac2328\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swiftstruct.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentview/focusedframeguide.json": {
       "hash": "987f9b11d809b69161ceea9fb429b6608b415bf78ab683595661f1e87cdc4b2a",
-      "last_checked": "2026-05-29T07:29:42.839587",
+      "last_checked": "2026-06-02T07:42:48.784736",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"549b02212a140867b7802598c2e150e9\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentview/focusedframeguide.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/numberofdigits.json": {
       "hash": "41692568e1ca04c8022386cb69175affa86e2571fce6fecea6aa2fef3c20fd98",
-      "last_checked": "2026-05-29T07:29:42.907567",
+      "last_checked": "2026-06-02T07:42:48.960891",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4ae864aa6fa940e6c02445381ce7fcd1\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/numberofdigits.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/titletext.json": {
       "hash": "0b89550f387a3e474e6039d58ce79031688ec7230154faec574e8410671af0bf",
-      "last_checked": "2026-05-29T07:29:42.997578",
+      "last_checked": "2026-06-02T07:42:49.141951",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"26cf5d70e77f1360ad2b2f6f3722f95c\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/titletext.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/prompttext.json": {
       "hash": "ccc6da698eddc8d588ac4dde2adabed4f075493757529e4ca2b4976a55d8d9ab",
-      "last_checked": "2026-05-29T07:29:43.102176",
+      "last_checked": "2026-06-02T07:42:49.307480",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"cc949ef9b87be1f7bccc551c885b44c8\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/prompttext.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/issecuredigitentry.json": {
       "hash": "fce427acf25d078161294707df463c8160c3ca6d04279081832a8134a588aa0f",
-      "last_checked": "2026-05-29T07:29:43.157795",
+      "last_checked": "2026-06-02T07:42:49.461339",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3bc63984cc42c48d926fc2265206c6c3\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/issecuredigitentry.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/entrycompletionhandler.json": {
       "hash": "d2a6ff6910c2b500a52bac5e18d28d805e7831cb92ecd0e9d33e5d349fe8820f",
-      "last_checked": "2026-05-29T07:29:43.208073",
+      "last_checked": "2026-06-02T07:42:49.624012",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4aea6f66ea222bd24e2c2f55580511d5\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/entrycompletionhandler.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvdigitentryviewcontroller/clearentry(animated:).json": {
       "hash": "f348adf851ec4e6bebae6aee4311da090850dd6779a85753885fb30cb337c064",
-      "last_checked": "2026-05-29T07:29:43.283657",
+      "last_checked": "2026-06-02T07:42:49.791162",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c0993e4b863477f12ac3f9b4f86a50a1\"",
       "file_path": "documentation/TVUIKit/tvdigitentryviewcontroller/clearentry-animated.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/contentsize.json": {
       "hash": "78cb63aa46e74798e54829f84524419b33792bd48e316d77bec5c06392015870",
-      "last_checked": "2026-05-29T07:29:43.356258",
+      "last_checked": "2026-06-02T07:42:49.961509",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"7b5addf05d3b4ced3f87c1863db66eaa\"",
       "file_path": "documentation/TVUIKit/tvlockupview/contentsize.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/contentviewinsets.json": {
       "hash": "e5776a20b96ca2ede4c602aa94479339ef4a2873cd45be4d4ddbad96624f2239",
-      "last_checked": "2026-05-29T07:29:43.410481",
+      "last_checked": "2026-06-02T07:42:50.120814",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"abb66f53e4722341816723dae96a2169\"",
       "file_path": "documentation/TVUIKit/tvlockupview/contentviewinsets.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/focussizeincrease.json": {
       "hash": "1f5a3ec78c8b2a3c07ddfdaa56808bd2023937323caa5d45c78310d33f2235ae",
-      "last_checked": "2026-05-29T07:29:43.493140",
+      "last_checked": "2026-06-02T07:42:50.278575",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"80e9fd6a829a94187cd53797f0f7bda2\"",
       "file_path": "documentation/TVUIKit/tvlockupview/focussizeincrease.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/contentview.json": {
       "hash": "aee2b18ba307a1af17bf7c6a80f9bf6ff5edafa854a5c6b1443b5399af5897c4",
-      "last_checked": "2026-05-29T07:29:43.559059",
+      "last_checked": "2026-06-02T07:42:50.450236",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b5f20ff42cd2105c9a5c974942965e07\"",
       "file_path": "documentation/TVUIKit/tvlockupview/contentview.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/headerview.json": {
       "hash": "f097f9f3f3bc48dfa4751ef2d744098ff4555fbea46874172bdceba22c2d065c",
-      "last_checked": "2026-05-29T07:29:43.679955",
+      "last_checked": "2026-06-02T07:42:50.643506",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b81cb5d1ad8996e3ab85d3d1cecd50e2\"",
       "file_path": "documentation/TVUIKit/tvlockupview/headerview.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupview/footerview.json": {
       "hash": "8233088ae5e4eaa21b64dbb85e59be22c6aa9df42093ee693daf3a17e8642016",
-      "last_checked": "2026-05-29T07:29:43.785738",
+      "last_checked": "2026-06-02T07:42:50.806614",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"7729d2b742ff2d64331b232d40ef2680\"",
       "file_path": "documentation/TVUIKit/tvlockupview/footerview.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupviewcomponent/updateappearance(forlockupviewstate:).json": {
       "hash": "4d00fb097a982a0ef2b7454822f85a18e7458cfd256d8a84a02c22f39b7d7fe0",
-      "last_checked": "2026-05-29T07:29:43.879453",
+      "last_checked": "2026-06-02T07:42:50.959974",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"f46286e5b0582afd1dcadac045198223\"",
       "file_path": "documentation/TVUIKit/tvlockupviewcomponent/updateappearance-forlockupviewstate.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupheaderfooterview/titlelabel.json": {
       "hash": "3d1795f20e5fc37228ea70f846e80de7bb1e894e0f9d2379a6664db873ec058e",
-      "last_checked": "2026-05-29T07:29:43.931472",
+      "last_checked": "2026-06-02T07:42:51.137018",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"cdf3e953faf82073b4d2af372eaf4732\"",
       "file_path": "documentation/TVUIKit/tvlockupheaderfooterview/titlelabel.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupheaderfooterview/subtitlelabel.json": {
       "hash": "f51cea76b6c3d1fb7cd0fb47b70e851324ee2aeddc36a9fdeefbc71cc8f542e7",
-      "last_checked": "2026-05-29T07:29:44.000933",
+      "last_checked": "2026-06-02T07:42:51.285016",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6dbf9187a8f9399b00a4e72ea864f3de\"",
       "file_path": "documentation/TVUIKit/tvlockupheaderfooterview/subtitlelabel.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvlockupheaderfooterview/showsonlywhenancestorfocused.json": {
       "hash": "86ff53d0fb930bc4ba78d9c822cf46caf3c40d24accade0781b1b9174fd14f6f",
-      "last_checked": "2026-05-29T07:29:44.079343",
+      "last_checked": "2026-06-02T07:42:51.449065",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"70a8ddf60ba61f7305feb968262cfa9d\"",
       "file_path": "documentation/TVUIKit/tvlockupheaderfooterview/showsonlywhenancestorfocused.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcardview/cardbackgroundcolor.json": {
       "hash": "335f416660f3911737d28379540ada13485a2c3b8ccdb6e5a68138a0c79b46b7",
-      "last_checked": "2026-05-29T07:29:44.144684",
+      "last_checked": "2026-06-02T07:42:51.741592",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"9f33c04e9a574eb3fd9ebb4dfd76772e\"",
       "file_path": "documentation/TVUIKit/tvcardview/cardbackgroundcolor.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview/init(image:).json": {
       "hash": "6549036468d567926682cdefd9104b521701fa3ee85d52047976b42c5ef83720",
-      "last_checked": "2026-05-29T07:29:44.197191",
+      "last_checked": "2026-06-02T07:42:51.901499",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6db4637a3a9fe886907e1efa951be604\"",
       "file_path": "documentation/TVUIKit/tvposterview/init-image.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview/image.json": {
       "hash": "360ea78719f3d447617b8169f4781811d74fcb96f864b9f79bde2938bf268aa0",
-      "last_checked": "2026-05-29T07:29:44.273578",
+      "last_checked": "2026-06-02T07:42:52.079455",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"23724b4a50c548ac5d103a1e0bc812db\"",
       "file_path": "documentation/TVUIKit/tvposterview/image.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview/imageview.json": {
       "hash": "c1b3714c61b570eb4801a6240c3d1b487494ae2fe11758c09640aa60fa988de5",
-      "last_checked": "2026-05-29T07:29:44.333614",
+      "last_checked": "2026-06-02T07:42:52.239518",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"98d7bf63d505a5111f6eef2954d3cfc8\"",
       "file_path": "documentation/TVUIKit/tvposterview/imageview.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview/title.json": {
       "hash": "5a77fbe6f22403bb28959e9029aa7aeb2fea809a21f84557f8b664dc12ac5099",
-      "last_checked": "2026-05-29T07:29:44.576791",
+      "last_checked": "2026-06-02T07:42:52.410285",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6cab81ebda86da127cab60918f5bbfa4\"",
       "file_path": "documentation/TVUIKit/tvposterview/title.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvposterview/subtitle.json": {
       "hash": "2b836500131f642c845487c055126143d144f8a06c6047b024ce0be54f97670f",
-      "last_checked": "2026-05-29T07:29:44.626862",
+      "last_checked": "2026-06-02T07:42:52.582143",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ed1e0c7bd1eb9de6fed90d81d0dea94a\"",
       "file_path": "documentation/TVUIKit/tvposterview/subtitle.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/motiondirection.json": {
       "hash": "178d1ffce3275d50ca5a08a80be8437218950c9e4ae7c6d9e150c2648bf7d536",
-      "last_checked": "2026-05-29T07:29:44.687030",
+      "last_checked": "2026-06-02T07:42:52.748429",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"225c45c8f26505204f9f90c11ca67466\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview/motiondirection.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection.json": {
       "hash": "2dcbeb77ce8fe63f72a41ec99751df6e75222cc1140c7e4944d78d5d7bfcdffa",
-      "last_checked": "2026-05-29T07:29:44.743933",
+      "last_checked": "2026-06-02T07:42:52.904433",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"2f93a8642aeb5a39d22d64488d759dfa\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/contentimage.json": {
       "hash": "1ad4614055992b0e7bf463c1fe8e83fba00d3c2893957f7afc9eecb5c3960b22",
-      "last_checked": "2026-05-29T07:29:44.870394",
+      "last_checked": "2026-06-02T07:42:53.074676",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"f79974583173bfc6dbd3a3be84959606\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview/contentimage.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/contenttext.json": {
       "hash": "a19558b126cddf5b1e23d3deefda04b8449ae39086fde622d11df97837cd5fb3",
-      "last_checked": "2026-05-29T07:29:44.981757",
+      "last_checked": "2026-06-02T07:42:53.248717",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3f4788f04d839d1bbaaa3274d8fb11a2\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview/contenttext.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/title.json": {
       "hash": "5981c303e2ce9baae7e2882dd99ac4563093dab050788809254fd784e31fa906",
-      "last_checked": "2026-05-29T07:29:45.201486",
+      "last_checked": "2026-06-02T07:42:53.420072",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"368517ede4f353844b131543531137df\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview/title.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonview/subtitle.json": {
       "hash": "7afe61cfef0a966ba61b80f039d3872ecf6fb9953f679881edbf18f9c20576fc",
-      "last_checked": "2026-05-29T07:29:45.399598",
+      "last_checked": "2026-06-02T07:42:53.582698",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e8d0f389341741f02cc88b44fa7d8ab3\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonview/subtitle.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/personnamecomponents.json": {
       "hash": "6b077e676bc27c6799ed5dd502a725c8d26305b9379f2d02771f83f879097659",
-      "last_checked": "2026-05-29T07:29:45.628799",
+      "last_checked": "2026-06-02T07:42:53.739735",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"79ecd114a8d7c6ad9a843aa71f143da2\"",
       "file_path": "documentation/TVUIKit/tvmonogramview/personnamecomponents.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/image.json": {
       "hash": "95126594195864715c02b073d97fef3685789c8dd96092a874cc6e2bd885af1e",
-      "last_checked": "2026-05-29T07:29:45.679940",
+      "last_checked": "2026-06-02T07:42:53.942041",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e9aeaa501b91bced8f47b9e4a670d654\"",
       "file_path": "documentation/TVUIKit/tvmonogramview/image.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/title.json": {
       "hash": "b578152bcca7968e0f2651efb05fcfc2c098faf2246b86692f3e5b9cfe29cc3a",
-      "last_checked": "2026-05-29T07:29:45.785100",
+      "last_checked": "2026-06-02T07:42:54.146983",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3ed732151bcea36ef0a9306366437cfb\"",
       "file_path": "documentation/TVUIKit/tvmonogramview/title.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramview/subtitle.json": {
       "hash": "3acc16eb566049d26f764447e97c45fa83e97a2f4aaf75875237211db80f1b72",
-      "last_checked": "2026-05-29T07:29:45.904766",
+      "last_checked": "2026-06-02T07:42:54.320952",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e73cdac4c14ae422a2b915f76e0ac14b\"",
       "file_path": "documentation/TVUIKit/tvmonogramview/subtitle.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/widecell().json": {
       "hash": "01e19b75dbec9cb8431fb7ad1c1fe2678fd513d9a23ac39d7476a4419db67206",
-      "last_checked": "2026-05-29T07:29:46.127132",
+      "last_checked": "2026-06-02T07:42:54.488158",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c71c9cf34b2eaee167bb1cf9d193f0d3\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/widecell.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/image.json": {
       "hash": "9e23b09fa80a7264a2b9f2146338ecea0cf3275802055e421e66effadc367e28",
-      "last_checked": "2026-05-29T07:29:46.351561",
+      "last_checked": "2026-06-02T07:42:54.653844",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b8329ba1650ab2b7e8ebd86db48542b4\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/image.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/text.json": {
       "hash": "3eca6e510c8c06686420e08d5c00e65dc1b2d1b7c78178fa1548a91dd0fc78ca",
-      "last_checked": "2026-05-29T07:29:46.453995",
+      "last_checked": "2026-06-02T07:42:54.823421",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"92cd2ac253efc6c32333803f1c41fb6a\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/text.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/secondarytext.json": {
       "hash": "2e9e2642339238ee9d7ce59535a00348e5c975d94284a57237e05757ebf6253d",
-      "last_checked": "2026-05-29T07:29:46.695772",
+      "last_checked": "2026-06-02T07:42:54.998159",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ffeefb4f60f8649cde83ed4f08fc98fc\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/secondarytext.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgetext.json": {
       "hash": "79e175f009a9574a1f69a490fc267b6e9bd218a948ace339c34ced6c2f1edfa0",
-      "last_checked": "2026-05-29T07:29:46.755605",
+      "last_checked": "2026-06-02T07:42:55.163590",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c1f71fdd6ef28817f8cb5e731afbd675\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgetext.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.property.json": {
       "hash": "a38f52c15819a5dbf562c2b5f9efe4c02c9caa1c0723655291e687c5b275c8d7",
-      "last_checked": "2026-05-29T07:29:46.869579",
+      "last_checked": "2026-06-02T07:42:55.470319",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6c213ac3cffceb89daa61b271e9f2d12\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swiftproperty.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct.json": {
       "hash": "186ecb99c65b4c5d754d0944f4ba139551a9287feab249924ee7d470cb6f66c2",
-      "last_checked": "2026-05-29T07:29:46.928041",
+      "last_checked": "2026-06-02T07:42:55.777125",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b4ada5a7377f25ec1d5ead7a20cf2e15\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swiftstruct.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/overlayview.json": {
       "hash": "c2d6e0c5e6bd22d4a7c28172d60f2afd7127c7fddb3a2c78ef078b3c9afae6aa",
-      "last_checked": "2026-05-29T07:29:47.170845",
+      "last_checked": "2026-06-02T07:42:55.944052",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e639e76922c23f28f569f5d92b8ad8f7\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/overlayview.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/playbackprogress.json": {
       "hash": "c1f1f5bbce2c9aff4d15fbbf573d3eeb0e9fcc0753732d1f6af6e8061ee187a2",
-      "last_checked": "2026-05-29T07:29:47.278976",
+      "last_checked": "2026-06-02T07:42:56.101246",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"1e2a56775ab6b6ea0c466d8db3b63467\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/playbackprogress.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct.json": {
       "hash": "548c150e99b679aba0443a435166f24f33d0c2330d27bc8e65d5b0d204ae01e5",
-      "last_checked": "2026-05-29T07:29:47.334528",
+      "last_checked": "2026-06-02T07:42:56.269816",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"1bfd8bf70a1fca61b8da525e07dff124\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swiftstruct.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.property.json": {
       "hash": "e4a576887cc437e86d8037c4ee8cfd0a11eee7e9245d05b5139de5f01a49017d",
-      "last_checked": "2026-05-29T07:29:47.455026",
+      "last_checked": "2026-06-02T07:42:56.449485",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"2036be29a8bd7b495876bf3187fb2d28\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swiftproperty.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/secondarytextproperties.json": {
       "hash": "380562a43ae9ac064cefd604a712af6e1204d28b2c20242c936bd7ab314adb88",
-      "last_checked": "2026-05-29T07:29:47.553886",
+      "last_checked": "2026-06-02T07:42:56.623335",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ca78ee26bea82d07f7757d166afd43d4\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/secondarytextproperties.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/makecontentview().json": {
       "hash": "876ffce75f65fecfd255cb5980181b84b416a700370a7f5fd416012d9b483455",
-      "last_checked": "2026-05-29T07:29:47.658958",
+      "last_checked": "2026-06-02T07:42:56.796032",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"3b15baed6412bd40f92470d77b58f531\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/makecontentview.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/cell().json": {
       "hash": "f7b0ade8beb99bf5f495b8c72149773c92988da2f413574c9f45ae11e3171b64",
-      "last_checked": "2026-05-29T07:29:47.714870",
+      "last_checked": "2026-06-02T07:42:56.970175",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c3de0e74645f200ec92e3e062db0cdd9\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/cell.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/image.json": {
       "hash": "18434e02ee66e90e17ac17af6ceabd7994059bc88b0267214f2adfe09ac3a392",
-      "last_checked": "2026-05-29T07:29:47.831296",
+      "last_checked": "2026-06-02T07:42:57.126323",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ee2886306e6f987dcf9f5185ea9de0b4\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/image.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/text.json": {
       "hash": "6e573ec1478a2d1c4d37b42e0433c61756b13855fe4e2e02700d7330bc9de198",
-      "last_checked": "2026-05-29T07:29:47.934048",
+      "last_checked": "2026-06-02T07:42:57.290699",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"fed652e076636bd2769810e25357e61d\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/text.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/secondarytext.json": {
       "hash": "2beaf3d290e0ed354ac3c55ea71a0f148941bcbe55f83df03685a27776c7bd29",
-      "last_checked": "2026-05-29T07:29:48.033292",
+      "last_checked": "2026-06-02T07:42:57.607084",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"10a1c6c096219fbed59780b7aef69633\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/secondarytext.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/personnamecomponents.json": {
       "hash": "9226a51704cee9f06f6ffccaa595f7b46c3cf8786b07385c97d416fc35bb54aa",
-      "last_checked": "2026-05-29T07:29:48.089609",
+      "last_checked": "2026-06-02T07:42:57.780595",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"636cac42c05a8fc5c5f7df18454bd1b1\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/personnamecomponents.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.property.json": {
       "hash": "53081776ee31db3ed9d10179bb129fc03b5afe20953200bd5d6d7809c8cbb529",
-      "last_checked": "2026-05-29T07:29:48.152312",
+      "last_checked": "2026-06-02T07:42:57.949562",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"cefcaa0a99f026b88a5cff2316d598c3\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swiftproperty.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/secondarytextproperties.json": {
       "hash": "bf89619ecf4a1685fd68aafb586d2e58e52a446498d19a8cc015f9287dc1106a",
-      "last_checked": "2026-05-29T07:29:48.257619",
+      "last_checked": "2026-06-02T07:42:58.113945",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"366de48fe69085f3e3da5dd856ca7b34\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/secondarytextproperties.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct.json": {
       "hash": "7a02e4fd62fe964b41e36462671cd95ad6ad49fd6e960b185cd439e2c8943c03",
-      "last_checked": "2026-05-29T07:29:48.364446",
+      "last_checked": "2026-06-02T07:42:58.284792",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"017da9dbea9a72758769c97d17ac9204\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swiftstruct.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection/all.json": {
       "hash": "371c91714d3b8159bee3725a62cebb3fc133ee86063ff17529c1dfe76a808de9",
-      "last_checked": "2026-05-29T07:29:48.465674",
+      "last_checked": "2026-06-02T07:42:58.450308",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"54a0a598dcbb5e6738d588e0c6913263\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection/all.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection/horizontal.json": {
       "hash": "086982c5a9892d672e10351334818edc5732aabd8120683cc2b5b1bb20d0ac2b",
-      "last_checked": "2026-05-29T07:29:48.515237",
+      "last_checked": "2026-06-02T07:42:58.616456",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"5941664375bdbbd9cf88ca84c4e731f1\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection/horizontal.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection/none.json": {
       "hash": "7add441a9077a223d19698f48ccdc0dc7c2dbde116b9546a765d7b2d1b92a70b",
-      "last_checked": "2026-05-29T07:29:48.639441",
+      "last_checked": "2026-06-02T07:42:58.789063",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"6a9e62e450acd1e49e294b978dc2931d\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection/none.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection/vertical.json": {
       "hash": "4a4247b12d934ecb27af06175af7de332c9638429010fa8ac3485f5c8d0b3d3a",
-      "last_checked": "2026-05-29T07:29:48.860014",
+      "last_checked": "2026-06-02T07:42:58.957527",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"0859e0029742199a8c9a3f8fe7d21b12\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection/vertical.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvcaptionbuttonviewmotiondirection/init(rawvalue:).json": {
       "hash": "29d3d3ba19f851f215aee2ccda321fb71ccf4bf685d27575bb2c7ae1d39f3152",
-      "last_checked": "2026-05-29T07:29:48.915297",
+      "last_checked": "2026-06-02T07:42:59.120675",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"a32bf8d385dd538448c74556bacc5cdd\"",
       "file_path": "documentation/TVUIKit/tvcaptionbuttonviewmotiondirection/init-rawvalue.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/default().json": {
       "hash": "5971864d9dee8908c6316b77c31ccc969013bcb01ebbcd1196812b0ee221527a",
-      "last_checked": "2026-05-29T07:29:48.978447",
+      "last_checked": "2026-06-02T07:42:59.289395",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"93de2d1aab245ec72334a8f6bcb36dca\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/default.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/livecontent().json": {
       "hash": "03824c17b5a2466a2700642cb9fd54b66afa92e1b576747afb7c3aa26b755283",
-      "last_checked": "2026-05-29T07:29:49.235774",
+      "last_checked": "2026-06-02T07:42:59.439918",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"5023f9738e2473cde2dfb20e3bde984b\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/livecontent.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/font.json": {
       "hash": "8e78a78a0ee9e57f4dc5ecc3f1fd26ddc5c1901d5de8c3f8b69104ba0237a4b1",
-      "last_checked": "2026-05-29T07:29:49.338172",
+      "last_checked": "2026-06-02T07:42:59.606544",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"aab614b7bf58bbed6086983530b1abe9\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/font.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/color.json": {
       "hash": "35274f81f6d740dde9e11aebb50bcf507f27f686215f299217cee9c43d4b662b",
-      "last_checked": "2026-05-29T07:29:49.437174",
+      "last_checked": "2026-06-02T07:42:59.780316",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e6e8cfb7aa028db9077b745ff6f686f5\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/color.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/backgroundcolor.json": {
       "hash": "1bd99eaf83304f3494f8239538177cb82d56dda3359d3c9fb36f07a880ad2e73",
-      "last_checked": "2026-05-29T07:29:49.489224",
+      "last_checked": "2026-06-02T07:42:59.952483",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"d067a95c8bf5033c5e80fde9b0a70708\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/backgroundcolor.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/transform.json": {
       "hash": "fe7019ee5b7ba1f5c0256030ea5bacb87d3df52cb5907cc2b08e72480332b5b8",
-      "last_checked": "2026-05-29T07:29:49.752228",
+      "last_checked": "2026-06-02T07:43:00.152816",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"c532997b7527e59044bc5327112dc8c7\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/badgeproperties-swift.struct/transform.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.json": {
       "hash": "a7a3ebb1ab66b7eb41ddcf14dd69d4aabcc4014824bfc22cf689538c64a6fa9f",
-      "last_checked": "2026-05-29T07:29:49.857495",
+      "last_checked": "2026-06-02T07:43:00.329536",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"469231e9a6d0788f6f758367f9430e91\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/font.json": {
       "hash": "11c79d18f0141a17a60525f8a988247263509baef9c5f861ba9630ceddb6c847",
-      "last_checked": "2026-05-29T07:29:49.957886",
+      "last_checked": "2026-06-02T07:43:00.492963",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"5b5abbc938bea3ccbc19ffde3e29a438\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/font.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/color.json": {
       "hash": "65312e0670bc63d39e2b6ed79e4fa4fc615dbe32d7c1b76999806c02216ef900",
-      "last_checked": "2026-05-29T07:29:50.008121",
+      "last_checked": "2026-06-02T07:43:00.661330",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"fe1c42e2239402d298226c23248ed74d\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/color.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/transform.json": {
       "hash": "4e9d0a4451d1d87a59ecd2331571b12418961444e264ddfa8d318864a24c859d",
-      "last_checked": "2026-05-29T07:29:50.125219",
+      "last_checked": "2026-06-02T07:43:00.825235",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"4566affd1d46c8f9172254976f65f2c8\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/transform.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/font.json": {
       "hash": "28e7a5ccc21dc16bbf5cf65a40e26d1cb5e1b343bd7a0f287c747c8de31b1798",
-      "last_checked": "2026-05-29T07:29:50.186381",
+      "last_checked": "2026-06-02T07:43:00.997854",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e9e42a4cc7c249020e9abbbe1bb2ba4d\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/font.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/color.json": {
       "hash": "9e5d28d3e14a785f015740f44400999aa0083dda01f4e56f080410e6ebf54409",
-      "last_checked": "2026-05-29T07:29:50.289815",
+      "last_checked": "2026-06-02T07:43:01.167892",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"70605de12f975f7826515c8dbc612703\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/color.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.json": {
       "hash": "91c0936d9c8112536cffdb0f79252a4706e36cf64b1401793c37fa8988114b96",
-      "last_checked": "2026-05-29T07:29:50.341195",
+      "last_checked": "2026-06-02T07:43:01.326000",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"ab29310bbedecfec133e0862279d23d9\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.json": {
       "hash": "113cbef72bb7d9f5d4ed433a498aee34f2f9b3481c0184f73a856b68d094a44b",
-      "last_checked": "2026-05-29T07:29:50.444311",
+      "last_checked": "2026-06-02T07:43:01.480287",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"e34f9ac14da3ed0ae1f423543a8c7ca2\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.json": {
       "hash": "74b39d3639a97f36fe4ac61e352d5c83bce87c7f0c66d052c01ea99f38032617",
-      "last_checked": "2026-05-29T07:29:50.545979",
+      "last_checked": "2026-06-02T07:43:01.652764",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"033da30b5607a3b44f848f6ec93a2ce3\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.json": {
       "hash": "1b6baaa597f707c859a824decb5e3e6e2098a28c891d4ce679a94979d4d7e7d2",
-      "last_checked": "2026-05-29T07:29:50.600165",
+      "last_checked": "2026-06-02T07:43:01.807280",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"fdcc8989acbc6508f6d8037693fa8bb1\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.json": {
       "hash": "1d0d3446317570ce38545ca3b79bc8fbc3ba2885100c7da528531adb2d1b41bc",
-      "last_checked": "2026-05-29T07:29:50.721601",
+      "last_checked": "2026-06-02T07:43:01.957621",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"2d319597b5f063f77608b5ff557b738d\"",
       "file_path": "documentation/TVUIKit/tvmediaitemcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.json": {
       "hash": "9e12e38bce8211570a80223c4b44e46a47652cad3fcd216aa185d47dbb2dbde5",
-      "last_checked": "2026-05-29T07:29:50.831340",
+      "last_checked": "2026-06-02T07:43:02.132221",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"0a1e5ec64786fc9fc17a4e48844d04cc\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/none.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.json": {
       "hash": "0a70a6444960b12780dd3a4d4efa39e7aff0d75e4e3c50a75a0e9bd37f0bbb03",
-      "last_checked": "2026-05-29T07:29:51.059029",
+      "last_checked": "2026-06-02T07:43:02.310312",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b2557b6b75dd6f9f24ca19c68d5b270d\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/capitalized.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.json": {
       "hash": "a556087a0e768b87edc3bad91d66651bda089e3a57f98ff4af06fbdebc2dff3d",
-      "last_checked": "2026-05-29T07:29:51.162566",
+      "last_checked": "2026-06-02T07:43:02.481009",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"b354f06ea18354321969696229f6f12b\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/lowercase.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvuikit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.json": {
       "hash": "41e203262ef121261ee4bbbbf112f85c5a1ca94c843805833d726541ba7d05b5",
-      "last_checked": "2026-05-29T07:29:51.288431",
+      "last_checked": "2026-06-02T07:43:02.643441",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:38.778362",
+      "session_id": "2026-06-02T07:42:38.204867",
       "etag": "W/\"f2dff583998d795648ae9ba4eda711b0\"",
       "file_path": "documentation/TVUIKit/tvmonogramcontentconfiguration-swift.struct/textproperties-swift.struct/texttransform/uppercase.md"
     },

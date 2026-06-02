@@ -105,10 +105,6 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Entered Billing Retry from Paid Offer | The number of paid offers that entered billing retry due to a billing issue at the time of renewal or conversion. |
 | Event Sub Type | Entered Billing Retry from Grace Period | The number of subscriptions that didn’t recover from a billing issue during the grace period and moved to billing retry. Apple will continue trying to recover these subscriptions during the billing retry period. |
 | Event Sub Type | Full Price Recoveries from Grace Period | The number of subscriptions that were recovered to full price from a grace period. |
-| Event Sub Type | Payment Issue from Full Price | The number of full price commitment-based subscriptions that missed their most recent payment. |
-| Event Sub Type | Payment Issue from Contingent Price | The number of contingent price commitment-based subscriptions that missed their most recent payment. |
-| Event Sub Type | Payment Issue from Preserved Price | The number of preserved price commitment-based subscriptions that missed their most recent payment. |
-| Event Sub Type | Consecutive Missed Payments | The number of commitment-based subscriptions that missed their last two payments. |
 | Event Sub Type | Contingent Price Recoveries from Grace Period | The number of subscriptions that were recovered to a contingent price from a grace period. |
 | Event Sub Type | Preserved Price Recoveries from Grace Period | The number of subscriptions that were recovered to a preserved price from a grace period. |
 | Event Sub Type | Paid Offer Recoveries from Grace Period | The number of paid offers that were started or renewed from a grace period. |
@@ -118,9 +114,6 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Event Sub Type | Preserved Price Recoveries from Billing Retry | The number of preserved price subscriptions recovered from billing retry. |
 | Event Sub Type | Paid Offer Recoveries from Billing Retry | The number of paid offers that were started or renewed from billing retry. |
 | Event Sub Type | Free Trial Recoveries from Billing Retry | The number of free trials that were started from a billing retry. |
-| Event Sub Type | Full Price Recoveries from Payment Issue | The number of full price commitment-based subscriptions that were recovered from missed payment(s). |
-| Event Sub Type | Contingent Price Recoveries from Payment Issue | The number of contingent price commitment-based subscriptions that were recovered from missed payment(s). |
-| Event Sub Type | Preserved Price Recoveries from Payment Issue | The number of preserved price commitment-based subscriptions that were recovered from missed payment(s). |
 | Event Sub Type | Involuntary Churn from Free Trials | The number of free trials that were canceled at the end of the 60-day billing retry period. |
 | Event Sub Type | Involuntary Churn from Paid Offers | The number of paid offers that were canceled at the end of the 60-day billing retry period. |
 | Event Sub Type | Involuntary Churn from Full Price | The number of full price subscriptions that were canceled at the end of the 60-day billing retry period. |

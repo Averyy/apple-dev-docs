@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:29:35.836129",
+    "last_updated": "2026-06-02T07:42:31.677967",
     "total_pages": 378,
-    "session_id": "2026-05-29T07:29:22.003512"
+    "session_id": "2026-06-02T07:41:59.564280"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/TVML.json": {
       "hash": "47150067f8a1b220748e579a673468167e21faa2c6463426cc8b89ce7097ac3e",
-      "last_checked": "2026-05-29T07:29:22.244616",
+      "last_checked": "2026-06-02T07:41:59.822263",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"dde34bffdadd393d9b6e8f4f54ac24ed\"",
       "file_path": "documentation/TVML/TVML.md"
     },
     "https://developer.apple.com/documentation/TVML": {
       "hash": "47150067f8a1b220748e579a673468167e21faa2c6463426cc8b89ce7097ac3e",
-      "last_checked": "2026-05-29T07:29:22.163424",
+      "last_checked": "2026-06-02T07:41:59.728370",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"dde34bffdadd393d9b6e8f4f54ac24ed\"",
       "file_path": "documentation/TVML/TVML.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/alerttemplate.json": {
       "hash": "558e1038f6240ab46c6fd699429a9ddb20429d25a722678f0713883ffba601b6",
-      "last_checked": "2026-05-29T07:29:22.478290",
+      "last_checked": "2026-06-02T07:42:00.063716",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6090acaf83e8494df17fbd01849e89b9\"",
       "file_path": "documentation/TVML/alerttemplate.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/catalogtemplate.json": {
       "hash": "67f07ea4f268832126b10618e57ed1dc5de0db3c3b130e4f23230922b9f4dd75",
-      "last_checked": "2026-05-29T07:29:22.634415",
+      "last_checked": "2026-06-02T07:42:00.395775",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a5af9cefcd438653c3b077683c85114f\"",
       "file_path": "documentation/TVML/catalogtemplate.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/compilationtemplate.json": {
       "hash": "25a83eae6a640cf0ae5305ba98071ee8c26048541ed3054822db739d203045b5",
-      "last_checked": "2026-05-29T07:29:22.693795",
+      "last_checked": "2026-06-02T07:42:00.562270",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"3aeecccb508cbd9ac7bca150fead1a5a\"",
       "file_path": "documentation/TVML/compilationtemplate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/descriptivealerttemplate.json": {
       "hash": "9c656857eb1519349deba3d0044ed84fd2784ddbf49e0ceb7eb2c1b16d918454",
-      "last_checked": "2026-05-29T07:29:22.804002",
+      "last_checked": "2026-06-02T07:42:00.669691",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8121f8471af82977d92d146322b23ced\"",
       "file_path": "documentation/TVML/descriptivealerttemplate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/divtemplate.json": {
       "hash": "be78a365631dce5409e44b23703e859260c340437f315cd9b270b2ca51b92d77",
-      "last_checked": "2026-05-29T07:29:22.861495",
+      "last_checked": "2026-06-02T07:42:00.798085",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5edc2f15cc0a6c2c90b9356ccc4770a6\"",
       "file_path": "documentation/TVML/divtemplate.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/formtemplate.json": {
       "hash": "ca769760a9505b7bf7b357154154ebabf8a46b62e5a5f78e59ece3031cffa288",
-      "last_checked": "2026-05-29T07:29:22.928816",
+      "last_checked": "2026-06-02T07:42:00.909672",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"024aaf725793df48daadc689af55c439\"",
       "file_path": "documentation/TVML/formtemplate.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/listtemplate.json": {
       "hash": "fc5ce7beb0aee6e7feeba9bd20e9533395a5ac29c4ba1fa301717021bb2a334f",
-      "last_checked": "2026-05-29T07:29:23.034025",
+      "last_checked": "2026-06-02T07:42:01.064270",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"500dfb96cbe2ec6d6bee1c18c5cb8433\"",
       "file_path": "documentation/TVML/listtemplate.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/loadingtemplate.json": {
       "hash": "e519475df814fb6c141909492969f513c095c3bfb71253014cd70da02c6e699d",
-      "last_checked": "2026-05-29T07:29:23.095035",
+      "last_checked": "2026-06-02T07:42:01.376739",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8c3c80d9be3788b9e0177c02fc6b78c4\"",
       "file_path": "documentation/TVML/loadingtemplate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/maintemplate.json": {
       "hash": "6cb5d01bc8ed179b2b725bd5583e57f984e189c90dce83f819d67b7f9894babd",
-      "last_checked": "2026-05-29T07:29:23.143016",
+      "last_checked": "2026-06-02T07:42:01.510722",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"11082b1d2b018ed6ac3665ad3a974125\"",
       "file_path": "documentation/TVML/maintemplate.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/menubartemplate.json": {
       "hash": "4f444793d948e513805bd5a4e404b43eaf657e44ba9711ca72b0b6f129f4d20a",
-      "last_checked": "2026-05-29T07:29:23.218914",
+      "last_checked": "2026-06-02T07:42:01.657669",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a62b292eec107970fe8c5c7db5e1b951\"",
       "file_path": "documentation/TVML/menubartemplate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/oneuptemplate.json": {
       "hash": "126123f8de90eba7b2ff7fc882c049bde3396626fb09f4d0b4caefa1f285fb2e",
-      "last_checked": "2026-05-29T07:29:23.286817",
+      "last_checked": "2026-06-02T07:42:01.770624",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a7b3cf7280dbf8a146fefa37c74f95dd\"",
       "file_path": "documentation/TVML/oneuptemplate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/paradetemplate.json": {
       "hash": "ca6f22d13cf4df4740e343d4f711a5288ddd0076ba6b4ef7beedfebef8686e2d",
-      "last_checked": "2026-05-29T07:29:23.389929",
+      "last_checked": "2026-06-02T07:42:01.951963",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"255530ded6b37a9252d6cecaa6d65e4e\"",
       "file_path": "documentation/TVML/paradetemplate.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/productbundletemplate.json": {
       "hash": "de331036638df9cbbefff8c56438e6a97921bbdb71c4b407378b372fa89e8f0d",
-      "last_checked": "2026-05-29T07:29:23.443791",
+      "last_checked": "2026-06-02T07:42:02.128204",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2415768d3d3a14aa7c70f58edf351b0d\"",
       "file_path": "documentation/TVML/productbundletemplate.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/producttemplate.json": {
       "hash": "4592a4459254be455260fd4b6d2050da403a74299b030a50d8f68f122574305a",
-      "last_checked": "2026-05-29T07:29:23.520172",
+      "last_checked": "2026-06-02T07:42:02.255976",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"3155e62df259f97e1591d86a024d6d32\"",
       "file_path": "documentation/TVML/producttemplate.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/ratingtemplate.json": {
       "hash": "eae9010e39b2a58660a09413bd333cedcf13257525ed83e76756b442fb81bfb8",
-      "last_checked": "2026-05-29T07:29:23.593218",
+      "last_checked": "2026-06-02T07:42:02.411339",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"93c58634c5af52b2af2d9d098c43ffba\"",
       "file_path": "documentation/TVML/ratingtemplate.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/searchtemplate.json": {
       "hash": "fdb8090a7b369b382d84c72d0aa1e79286e6d778836e7d1787362acb87b0cf4b",
-      "last_checked": "2026-05-29T07:29:23.649179",
+      "last_checked": "2026-06-02T07:42:02.578034",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4e867a6dae1ed9836801c2541d9ad5ea\"",
       "file_path": "documentation/TVML/searchtemplate.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/showcasetemplate.json": {
       "hash": "c594fba472dc5bd2ee8bf1e1cb9ce4bca9a5d24d4fbcadf01ef2dab180f41089",
-      "last_checked": "2026-05-29T07:29:23.708007",
+      "last_checked": "2026-06-02T07:42:04.641229",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0503ecfcfc4502707829d8f828c5c228\"",
       "file_path": "documentation/TVML/showcasetemplate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/stacktemplate.json": {
       "hash": "e819e8241c5bd81b8f4748a877d50534ba1884e6a8fd657c8281b6a63df7ccf8",
-      "last_checked": "2026-05-29T07:29:23.777886",
+      "last_checked": "2026-06-02T07:42:04.950712",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8d5304012eb70b9358dcd2e111b76b1e\"",
       "file_path": "documentation/TVML/stacktemplate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/displaying-a-product-or-bundle-in-a-full-page-template.json": {
       "hash": "f43cb7bf9d3d1e72023ef4d11568aef551888c88694a2ad57dd5f7b50e105e75",
-      "last_checked": "2026-05-29T07:29:23.838963",
+      "last_checked": "2026-06-02T07:42:05.120553",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"70a19d6b84c8629cac097f67981ebc54\"",
       "file_path": "documentation/TVML/displaying-a-product-or-bundle-in-a-full-page-template.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/background-elements.json": {
       "hash": "b76c2b994b265b24e2dd1c76821dbe456be1e4fe47f565e44eaf3fc53f719efb",
-      "last_checked": "2026-05-29T07:29:23.948563",
+      "last_checked": "2026-06-02T07:42:05.280668",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"bb16718599a0d8c3a49297a2be3949e6\"",
       "file_path": "documentation/TVML/background-elements.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/banner-and-header-elements.json": {
       "hash": "a5596752f0546c5da811db91a79e8e38eae78f30cb686e6b20f73df4832e86bc",
-      "last_checked": "2026-05-29T07:29:23.994118",
+      "last_checked": "2026-06-02T07:42:05.454233",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5634ad41bb0f4d64431326b4bbcf3f2c\"",
       "file_path": "documentation/TVML/banner-and-header-elements.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/information-elements.json": {
       "hash": "f419f2dcdcda874aa4422dd5e32d7e279c261d8f505fdc15b10b2ecb7090b3d8",
-      "last_checked": "2026-05-29T07:29:24.084516",
+      "last_checked": "2026-06-02T07:42:05.624134",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a22d35ca3be7a832e0c29d43d8bba5de\"",
       "file_path": "documentation/TVML/information-elements.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/layout-elements.json": {
       "hash": "169fdf25b5c2ebcd2b68868668c19b855715c161ee93646f9c84e24462188d0f",
-      "last_checked": "2026-05-29T07:29:24.133744",
+      "last_checked": "2026-06-02T07:42:05.790107",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"714137002170846fa142962c44ee9d8b\"",
       "file_path": "documentation/TVML/layout-elements.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/lockup-elements.json": {
       "hash": "2b6d4f81fec57e81b7319fd2df0ce21cff58bccf7c1c233e5f3eb1fc4666b367",
-      "last_checked": "2026-05-29T07:29:24.207525",
+      "last_checked": "2026-06-02T07:42:05.920568",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"39c0faa63b69a6e862cb5c7fa7c9d8b1\"",
       "file_path": "documentation/TVML/lockup-elements.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/display-elements.json": {
       "hash": "4abbff0681e790ec137d7001c21cb4c5d846ca7ef215ee35bd2ba3256febb72d",
-      "last_checked": "2026-05-29T07:29:24.277669",
+      "last_checked": "2026-06-02T07:42:06.049021",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"593601da78b6404bdb4cba964d31ac5c\"",
       "file_path": "documentation/TVML/display-elements.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/multimedia-elements.json": {
       "hash": "8ffe8f93c9346d9494a82f6c12d6d2d391c8e9e04561e7279d984934fc2abf00",
-      "last_checked": "2026-05-29T07:29:24.341882",
+      "last_checked": "2026-06-02T07:42:06.371169",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"7f5b58d60ac2417944fd735db276d16f\"",
       "file_path": "documentation/TVML/multimedia-elements.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text-elements.json": {
       "hash": "8dca48e128229427613f44294562f50add6499c0672900365304a8624459e18d",
-      "last_checked": "2026-05-29T07:29:24.448335",
+      "last_checked": "2026-06-02T07:42:06.527203",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"65db5e4dec1aeec3b9645cd4db112eb7\"",
       "file_path": "documentation/TVML/text-elements.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/color-styles.json": {
       "hash": "61dc87c0eba5ba8822ab0f42dd1309c2235624c3c49126d86f1ece8a6da194b9",
-      "last_checked": "2026-05-29T07:29:24.507427",
+      "last_checked": "2026-06-02T07:42:06.656117",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b7c4a8936d05e81d5aea1e8f1b422253\"",
       "file_path": "documentation/TVML/color-styles.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text-styles.json": {
       "hash": "28841089de0ee29c6ee0fd19c584f6ec2e2ced63d52c5ee1ae13f485bd1ebbaa",
-      "last_checked": "2026-05-29T07:29:24.592986",
+      "last_checked": "2026-06-02T07:42:06.767310",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"40b23eefea1223134264ddea9bb2abff\"",
       "file_path": "documentation/TVML/text-styles.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping.json": {
       "hash": "297c00288b6d6432563d7217edb4bd6590196d7e41bd82c3fbcd01c2e738fe2c",
-      "last_checked": "2026-05-29T07:29:24.649411",
+      "last_checked": "2026-06-02T07:42:06.940928",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5f6e170ed2b66a128e616c1505b352d6\"",
       "file_path": "documentation/TVML/element-shaping.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-alignment-and-spacing.json": {
       "hash": "6633c2167f96be0814a6f7509cd21dd24fcf423553c0c2b651386fd13c182ba8",
-      "last_checked": "2026-05-29T07:29:24.761058",
+      "last_checked": "2026-06-02T07:42:07.241330",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4a1653371d9bdaf2ce3efff090d7b318\"",
       "file_path": "documentation/TVML/element-alignment-and-spacing.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-placeholder.json": {
       "hash": "8b37d586dab8366d713b2afef4e5743417ccbf8668e030cc58e321d067d97888",
-      "last_checked": "2026-05-29T07:29:25.166440",
+      "last_checked": "2026-06-02T07:42:07.535963",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"183c3416157c1adf405870a9e051856b\"",
       "file_path": "documentation/TVML/tv-placeholder.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-rating-style.json": {
       "hash": "60bd727642f6d8c30cfef0fb6ca908faf68b16de792ac4e931ada3c62bcdb7a2",
-      "last_checked": "2026-05-29T07:29:25.223766",
+      "last_checked": "2026-06-02T07:42:07.666010",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"dbf76620fa4ad006663a7efbb4eba61d\"",
       "file_path": "documentation/TVML/tv-rating-style.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-transition.json": {
       "hash": "68383d80ca31c06edbdd3844c5cba94f9a67293e4c8b8019b1fdea585152107c",
-      "last_checked": "2026-05-29T07:29:25.327906",
+      "last_checked": "2026-06-02T07:42:07.810252",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"9114b39477fe86fa0980a8c85ea8bfcd\"",
       "file_path": "documentation/TVML/tv-transition.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-text-highlight-style.json": {
       "hash": "a958c43d6e418c2749c2485f4188ad4e1323b26fb489fc2d2e4eab2ec25f37bc",
-      "last_checked": "2026-05-29T07:29:25.404474",
+      "last_checked": "2026-06-02T07:42:08.107199",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b1f4367f7636630b28cc02cac6e44861\"",
       "file_path": "documentation/TVML/tv-text-highlight-style.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-scrollable-bounds-inset.json": {
       "hash": "9c16bd39dbe643bc3bc5e7c2daacc8d4ae27528abf0851727fd6b7bc2afe795b",
-      "last_checked": "2026-05-29T07:29:25.466293",
+      "last_checked": "2026-06-02T07:42:08.266550",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"cec8da2a5eec509b887de191862bb595\"",
       "file_path": "documentation/TVML/tv-scrollable-bounds-inset.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/image-attributes.json": {
       "hash": "561840ddb4d6e1bac159a92369d1bd509388e2e164b98f34dc35f652500e00a9",
-      "last_checked": "2026-05-29T07:29:25.547711",
+      "last_checked": "2026-06-02T07:42:08.384655",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4e0b48b6c4ab49bdd9ec7960aea26e7f\"",
       "file_path": "documentation/TVML/image-attributes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text-attributes.json": {
       "hash": "5399b384f0f0e5fc7a846f40a018f09ddcfec0f1ff6b819c637eacbe05a8de32",
-      "last_checked": "2026-05-29T07:29:25.610458",
+      "last_checked": "2026-06-02T07:42:08.687334",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4e9b7bb06568a531a2775c970a9f173e\"",
       "file_path": "documentation/TVML/text-attributes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/focus-attributes.json": {
       "hash": "87dc042e67dab0cfbc92f75883897d66746c1f34141f39dd5faf032b4248eafc",
-      "last_checked": "2026-05-29T07:29:25.687247",
+      "last_checked": "2026-06-02T07:42:08.993640",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"74ce87d7385babea06ce654505869ad3\"",
       "file_path": "documentation/TVML/focus-attributes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/binding-and-dom-manipulation.json": {
       "hash": "6049b42e87960b2938c18960ceb22461c2759ace92f201e84627a3768f83d712",
-      "last_checked": "2026-05-29T07:29:25.743387",
+      "last_checked": "2026-06-02T07:42:09.114665",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b986f88079345ba80a325d8c4d3931e2\"",
       "file_path": "documentation/TVML/binding-and-dom-manipulation.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/inline-playback.json": {
       "hash": "36a995534be9baaa1c650bdb6713f2a7bbb91767319c23ef7cfd4790b79d1f13",
-      "last_checked": "2026-05-29T07:29:25.803259",
+      "last_checked": "2026-06-02T07:42:09.238486",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"574206093352bc3ba244623968fa4d46\"",
       "file_path": "documentation/TVML/inline-playback.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/alignment-scrolling-and-coloring.json": {
       "hash": "108186d3bd4eca6a624375ab652d2e93bb8b401dfe1c1ae41f3df2ccaec76e16",
-      "last_checked": "2026-05-29T07:29:25.871037",
+      "last_checked": "2026-06-02T07:42:09.403084",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c19635f5378381ece8e6240152142427\"",
       "file_path": "documentation/TVML/alignment-scrolling-and-coloring.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/media-queries.json": {
       "hash": "33f9cee5f63deb92c8c90207d0400a1a07462e892e5bbdd47431896248862fba",
-      "last_checked": "2026-05-29T07:29:25.946460",
+      "last_checked": "2026-06-02T07:42:09.554126",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8bf8f9bd795a03dc6e62d3f436c96516\"",
       "file_path": "documentation/TVML/media-queries.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/data-binding-queries.json": {
       "hash": "c61e8ffe7d48188e981fcd0dc6fb831007c357ec6ea09dd54c3375e88ea98cee",
-      "last_checked": "2026-05-29T07:29:26.021010",
+      "last_checked": "2026-06-02T07:42:09.703060",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"7dd78b3ebac1e4906ac3be659a68cd19\"",
       "file_path": "documentation/TVML/data-binding-queries.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/adding-resource-icons.json": {
       "hash": "73d0e2bc2289d6b2620101ddcf3363cb71d3a960c0646282f2518fbd37b9ff3e",
-      "last_checked": "2026-05-29T07:29:26.080936",
+      "last_checked": "2026-06-02T07:42:09.870330",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2eea0e3b352862525a750068a0be3854\"",
       "file_path": "documentation/TVML/adding-resource-icons.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/button-icons.json": {
       "hash": "a65bac3cbdba373589cf893b43794b29dc8f3e881996ce1f9a592e4ec512abdf",
-      "last_checked": "2026-05-29T07:29:26.148703",
+      "last_checked": "2026-06-02T07:42:10.021323",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"229eb5807136c888ce85377fc749817d\"",
       "file_path": "documentation/TVML/button-icons.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/movie-rating-icons-united-states.json": {
       "hash": "7f0088fa1eb9cfabde114e4f2d23f8cddc3ec0aaadfd1d1d541cf7c47dfba693",
-      "last_checked": "2026-05-29T07:29:26.216061",
+      "last_checked": "2026-06-02T07:42:10.331662",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"9caf638152cebc067bc9c7dc9b7346a1\"",
       "file_path": "documentation/TVML/movie-rating-icons-united-states.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/television-rating-icons-united-states.json": {
       "hash": "e119a595dd3618e1fb7b3ac66319c50e1629a1972324a52bdec96adef6d2eb8a",
-      "last_checked": "2026-05-29T07:29:26.269754",
+      "last_checked": "2026-06-02T07:42:10.491830",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"472de752368aaf8a48c272038551b521\"",
       "file_path": "documentation/TVML/television-rating-icons-united-states.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rating-icons-new-zealand.json": {
       "hash": "6805883bb952d6823a910e6176d59a52cce4700401b6c741335642c4db96c715",
-      "last_checked": "2026-05-29T07:29:26.361205",
+      "last_checked": "2026-06-02T07:42:10.654701",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"01862f0e4ef1a8f9a97e6b9084352b79\"",
       "file_path": "documentation/TVML/rating-icons-new-zealand.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rating-icons-united-kingdom.json": {
       "hash": "baf2a1b1ffd84ad5feb25d96f025c67501b827eab7f684fdeced001706ea1e7e",
-      "last_checked": "2026-05-29T07:29:26.416495",
+      "last_checked": "2026-06-02T07:42:10.770958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"fb94966dd28ceb56d7e619dda83b375f\"",
       "file_path": "documentation/TVML/rating-icons-united-kingdom.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rating-icons-brazil.json": {
       "hash": "8bb366b392f06847f909d546f65af858546d6e18b635e0b0788bed028491c1e2",
-      "last_checked": "2026-05-29T07:29:26.484393",
+      "last_checked": "2026-06-02T07:42:10.889626",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"58e76d1ca2035946f48d95edfaed01a2\"",
       "file_path": "documentation/TVML/rating-icons-brazil.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rotten-tomatoes-rating-icons.json": {
       "hash": "a5474705af19927fcba88efea865137097f0b419fe46e6f329222bf9bd848c87",
-      "last_checked": "2026-05-29T07:29:26.536423",
+      "last_checked": "2026-06-02T07:42:11.048056",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e88a21f75ab784c1257bbfefb00d7e71\"",
       "file_path": "documentation/TVML/rotten-tomatoes-rating-icons.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/miscellaneous-icons.json": {
       "hash": "e9f5ff670a8c4125e906f0107e2ff852b2b47cde6e54acf7265db193bbbcd992",
-      "last_checked": "2026-05-29T07:29:26.613997",
+      "last_checked": "2026-06-02T07:42:11.168924",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"1658bbcca3ef42e558a4ca302d0ce248\"",
       "file_path": "documentation/TVML/miscellaneous-icons.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/autohighlight.json": {
       "hash": "7b5484ece08f91cc6dc9174abfa3ce268caf9bc32c14f8ae99f986e520526301",
-      "last_checked": "2026-05-29T07:29:26.665512",
+      "last_checked": "2026-06-02T07:42:11.291928",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"de2ab7e2f657095c39e628ecdf0922ce\"",
       "file_path": "documentation/TVML/autohighlight.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/binding.json": {
       "hash": "909deebb39e020771a8685f22d12ad56f4784724a94b5f8bad4aab5c710ea3b9",
-      "last_checked": "2026-05-29T07:29:26.740229",
+      "last_checked": "2026-06-02T07:42:11.436244",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5049f3acf8d5b83d92a5b799e4260fdf\"",
       "file_path": "documentation/TVML/binding.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/layoutdirection.json": {
       "hash": "2e5634233f2bdc8e8d5702605990bf485912fe1a08e9e26897050f43b130c460",
-      "last_checked": "2026-05-29T07:29:26.825501",
+      "last_checked": "2026-06-02T07:42:11.615816",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e3e20b478c4fc92d8fbcfe16e96cadfa\"",
       "file_path": "documentation/TVML/layoutdirection.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/prototype.json": {
       "hash": "c54db42662bd8bfa603e46003f1521211c397687b0eed8e253e4766be1d7146e",
-      "last_checked": "2026-05-29T07:29:26.883603",
+      "last_checked": "2026-06-02T07:42:11.774578",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8713fc7de9f5f1a61dac4b518f14d0d7\"",
       "file_path": "documentation/TVML/prototype.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/theme.json": {
       "hash": "12fb2ed3c7aa48f36d08677ef9efbd15ab4f986c0e164771c511bb2f93b8bf8a",
-      "last_checked": "2026-05-29T07:29:26.961046",
+      "last_checked": "2026-06-02T07:42:11.954404",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8f4e7bf0e3cc0740f9bb5abb9288fce1\"",
       "file_path": "documentation/TVML/theme.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-align.json": {
       "hash": "ac67ce7b622b785f9176946a3c35dc55cbaa91188327d24a94f135a845d5730c",
-      "last_checked": "2026-05-29T07:29:27.016070",
+      "last_checked": "2026-06-02T07:42:12.072114",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"d8f7d70b779bb374e8ea92646436e608\"",
       "file_path": "documentation/TVML/tv-align.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-position.json": {
       "hash": "4b8f8a98736e4376b072b28db65c1893c51277f00529b33a66af838572192e7a",
-      "last_checked": "2026-05-29T07:29:27.083236",
+      "last_checked": "2026-06-02T07:42:12.238484",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"12288c05dd0aafd2bef101cdb58ad58b\"",
       "file_path": "documentation/TVML/tv-position.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/mode.json": {
       "hash": "1df00d932e17790e92e75e1644854beafcab0b5bde1d288208a2a67e22b2453c",
-      "last_checked": "2026-05-29T07:29:27.134397",
+      "last_checked": "2026-06-02T07:42:12.346383",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8b92dc68951570427c11ae8b2a266ed1\"",
       "file_path": "documentation/TVML/mode.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/itemid.json": {
       "hash": "60055800a05a6fc8f8fabd3d66ca8d74401c18949faae57ce3fd00ab1dcd2073",
-      "last_checked": "2026-05-29T07:29:27.208258",
+      "last_checked": "2026-06-02T07:42:12.502040",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0745c7f8390f848eed21286301e0f272\"",
       "file_path": "documentation/TVML/itemid.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/needsmorethreshold.json": {
       "hash": "1867221247103d3a7c037476823815e9c589a58344a974e0aa8d8db8e63f1117",
-      "last_checked": "2026-05-29T07:29:27.287118",
+      "last_checked": "2026-06-02T07:42:12.641592",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5d9904bef72927a2726d48f9a503bb23\"",
       "file_path": "documentation/TVML/needsmorethreshold.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/audio.json": {
       "hash": "9b72ef9fe7f867b316552973cec9154955d1af5e2705d776809f359e17df9c4d",
-      "last_checked": "2026-05-29T07:29:27.337417",
+      "last_checked": "2026-06-02T07:42:12.775164",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ee3edccff1250f990809cdc981181bcd\"",
       "file_path": "documentation/TVML/audio.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/background.json": {
       "hash": "f0977d83034538991c80885cfa10e61b9d138b3da65c37f00aded30266c803b3",
-      "last_checked": "2026-05-29T07:29:27.406973",
+      "last_checked": "2026-06-02T07:42:12.895093",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f5e4cc8bbbf68d6d207d2994036326ab\"",
       "file_path": "documentation/TVML/background.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/banner.json": {
       "hash": "12a719d4482a22ecf4d514deb65443ca9a2655b2b2863f4bf92d5576bd44e7a1",
-      "last_checked": "2026-05-29T07:29:27.465403",
+      "last_checked": "2026-06-02T07:42:13.045002",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ad9fbea6cac4443274ea770b627114bc\"",
       "file_path": "documentation/TVML/banner.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/identitybanner.json": {
       "hash": "f172faf5eb680b8d25355cde5dbb5046e3ac148239d917c89c86bad2b8b9e42f",
-      "last_checked": "2026-05-29T07:29:27.525909",
+      "last_checked": "2026-06-02T07:42:13.178941",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ef0e4d18ed1334a21714b52120968337\"",
       "file_path": "documentation/TVML/identitybanner.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/itembanner.json": {
       "hash": "dcb8c90d6f932d5e1bee493e0bb47f4ecdd11ba1568840f1f35e9970979a7af1",
-      "last_checked": "2026-05-29T07:29:27.593809",
+      "last_checked": "2026-06-02T07:42:13.347614",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5517ef32d89f094fb2dcacd8c49445d5\"",
       "file_path": "documentation/TVML/itembanner.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/footer.json": {
       "hash": "f91c098049145ec9a117b55134bc7172ecaadaa03f48ab0843e486d4214cc106",
-      "last_checked": "2026-05-29T07:29:27.656813",
+      "last_checked": "2026-06-02T07:42:13.514227",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"992c61d036b67042d3d6a08000b3cb63\"",
       "file_path": "documentation/TVML/footer.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/header.json": {
       "hash": "e9b276c115c560c502b0dd71225c281c8a7ab7df68f632163c938f3bc860cc46",
-      "last_checked": "2026-05-29T07:29:27.705362",
+      "last_checked": "2026-06-02T07:42:13.699787",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"797bb11862fd4a4f200947e52f829eed\"",
       "file_path": "documentation/TVML/header.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/info.json": {
       "hash": "f34c033ae2e741766121dd88e98eb09e49e484201d2d2ec600073440d7491d6e",
-      "last_checked": "2026-05-29T07:29:27.819396",
+      "last_checked": "2026-06-02T07:42:13.859560",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"39d92bcd744bcb5b10e01d91b2733df9\"",
       "file_path": "documentation/TVML/info.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/productinfo.json": {
       "hash": "74ef0736fa6f4c32a486edca969cccd76ac6448f09f0f0ca676985c118f962a4",
-      "last_checked": "2026-05-29T07:29:27.896796",
+      "last_checked": "2026-06-02T07:42:14.032368",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"bd5e2e582dfd8fc67140a6820f404ca3\"",
       "file_path": "documentation/TVML/productinfo.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/prototypes.json": {
       "hash": "6b3d42c719aec21b7d0caad3d87d56a8c312741883a4c4fdbaf27f308dfd8ea6",
-      "last_checked": "2026-05-29T07:29:27.950209",
+      "last_checked": "2026-06-02T07:42:14.141326",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"46611376bdae7762d068c4d4ebb558ea\"",
       "file_path": "documentation/TVML/prototypes.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rules.json": {
       "hash": "8a55e7a0a9635fd01b0fe77baf3617ff032543c3f6a3ff2701b6c4410c17de94",
-      "last_checked": "2026-05-29T07:29:28.049611",
+      "last_checked": "2026-06-02T07:42:14.296882",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a6b1d7685addaf2d6f9a4295f27befca\"",
       "file_path": "documentation/TVML/rules.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/specialize.json": {
       "hash": "3a6663a9752af92f2df0c6b8ef375e3d0e80bfcf257b86454d446cba8c2af7f3",
-      "last_checked": "2026-05-29T07:29:28.104794",
+      "last_checked": "2026-06-02T07:42:14.482813",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"540eb3ad0bb041d209c0b27e03d8e6bc\"",
       "file_path": "documentation/TVML/specialize.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/card.json": {
       "hash": "31b594a9003f7fa4b1b7bc6494db1ac5ee2c0ae594a9fd553d66f973467fb6fe",
-      "last_checked": "2026-05-29T07:29:28.165023",
+      "last_checked": "2026-06-02T07:42:14.595337",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8f64770622a1bef9d73a86f8d13278a7\"",
       "file_path": "documentation/TVML/card.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/reviewcard.json": {
       "hash": "729cecebaf776f97c787672dcbebc838a3ce63901a7408f6562813061efe4cc3",
-      "last_checked": "2026-05-29T07:29:28.238422",
+      "last_checked": "2026-06-02T07:42:14.717529",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4dae42f3029255d0b78e9f23de85eb11\"",
       "file_path": "documentation/TVML/reviewcard.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/ratingcard.json": {
       "hash": "2edeff1e6b68a7103118a620be09154248b9c269b89e864964c250ce64393df3",
-      "last_checked": "2026-05-29T07:29:28.287502",
+      "last_checked": "2026-06-02T07:42:14.884413",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2e49e4c2bcabbe4215765c9b8c153c17\"",
       "file_path": "documentation/TVML/ratingcard.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/placeholder.json": {
       "hash": "e707efc25db4fd59cb1dce9a69dc34f67f829fb0ac71ee4787aa48efeceb9039",
-      "last_checked": "2026-05-29T07:29:28.335792",
+      "last_checked": "2026-06-02T07:42:15.046408",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"fef164e9be91d789cb67302c2b3ba80c\"",
       "file_path": "documentation/TVML/placeholder.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/relatedcontent.json": {
       "hash": "7403322db47a9b7430e46241281833b06deb184548a11f79291ae0c84b3d3e10",
-      "last_checked": "2026-05-29T07:29:28.451265",
+      "last_checked": "2026-06-02T07:42:15.208367",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e4ef11ec851ef86ee5dcb1bbfe9ad9ea\"",
       "file_path": "documentation/TVML/relatedcontent.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/carousel.json": {
       "hash": "0f0dd4c32551d33fdf2200916dad5e6d2e78559f10483e415e435c347ebbac3e",
-      "last_checked": "2026-05-29T07:29:28.506261",
+      "last_checked": "2026-06-02T07:42:15.328816",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f6f8c728ec1d97938788cbf974632bde\"",
       "file_path": "documentation/TVML/carousel.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/grid.json": {
       "hash": "322cec439b773b97b12da94a54cceb5bda80d5ec8e458ae866f13fe8187e7fc2",
-      "last_checked": "2026-05-29T07:29:28.577499",
+      "last_checked": "2026-06-02T07:42:15.635240",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"3a3a95323eb00767534a26a6144580ef\"",
       "file_path": "documentation/TVML/grid.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/imgdeck.json": {
       "hash": "77e4e9571462ae897d8a2656e15c90927df0422ba06447b96b87a81847106092",
-      "last_checked": "2026-05-29T07:29:28.640674",
+      "last_checked": "2026-06-02T07:42:15.813880",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a45e0e829f42c14766a7c2b0fb0f9809\"",
       "file_path": "documentation/TVML/imgdeck.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/infotable.json": {
       "hash": "a8dd9c2add0bfe09cdd3eac77747577fb6fa8c5a6db4964f49b4c246ac73e00f",
-      "last_checked": "2026-05-29T07:29:28.701207",
+      "last_checked": "2026-06-02T07:42:15.937839",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"18aeb8342065a63e57785122ad029f72\"",
       "file_path": "documentation/TVML/infotable.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/organizer.json": {
       "hash": "a55adf585eda5f0eea9de575444e1c00a65fcecc5971b1f661e5298eb507608b",
-      "last_checked": "2026-05-29T07:29:28.761406",
+      "last_checked": "2026-06-02T07:42:16.065409",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"54ea4136eb0bbbf1b2b86c79b44fcead\"",
       "file_path": "documentation/TVML/organizer.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/row.json": {
       "hash": "9db8e3317a4749e30104ef6257b03e51a26db78caf30de3ab4404c463df9b006",
-      "last_checked": "2026-05-29T07:29:28.834678",
+      "last_checked": "2026-06-02T07:42:16.179039",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"17669b9a8579426e3391701fc11ab887\"",
       "file_path": "documentation/TVML/row.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/section.json": {
       "hash": "f672073af878660640ad5f6e4357411f8ed498940eb94e6b8e2e4acc587d495b",
-      "last_checked": "2026-05-29T07:29:28.905233",
+      "last_checked": "2026-06-02T07:42:16.494991",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"821bef2dfdd0843781f97e14e87203e2\"",
       "file_path": "documentation/TVML/section.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/stack.json": {
       "hash": "f5c5c07666edb757f3beb4fc6e959c04e9e7e338a6192aa17b9390123e2be5df",
-      "last_checked": "2026-05-29T07:29:28.977158",
+      "last_checked": "2026-06-02T07:42:16.646492",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a8b1e3f4405efab7f7713638d9bf2b8a\"",
       "file_path": "documentation/TVML/stack.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/shelf.json": {
       "hash": "fabc32db714fc876ef8750184d890dfc884e59feae94b39a5f80d306d068539e",
-      "last_checked": "2026-05-29T07:29:29.049741",
+      "last_checked": "2026-06-02T07:42:16.763339",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"92c93d2ec7e4adfacaff3554ec7a66eb\"",
       "file_path": "documentation/TVML/shelf.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/menubar.json": {
       "hash": "6c57c97431322210ad6890e8525cce3650055c50ee3c9ff22701abfecef0420f",
-      "last_checked": "2026-05-29T07:29:29.104490",
+      "last_checked": "2026-06-02T07:42:16.945400",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"768f80d15f064002b7b1ac9e65ac608d\"",
       "file_path": "documentation/TVML/menubar.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/menuitem.json": {
       "hash": "2a4a67de64036453fe572c7d3f7f0c71c7735725631e08cb08019e13ee34813e",
-      "last_checked": "2026-05-29T07:29:29.186201",
+      "last_checked": "2026-06-02T07:42:17.102929",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"24635c2550845f1c5fddc7d4f34fe185\"",
       "file_path": "documentation/TVML/menuitem.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/nowplayingmenuitem.json": {
       "hash": "54c0a39e6fd97e7d73620e9086ae07a7fd536f7aa81ecc29ecc2e910d468940d",
-      "last_checked": "2026-05-29T07:29:29.242811",
+      "last_checked": "2026-06-02T07:42:17.221290",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0278da9f3ff357d4bb6fb27602965c14\"",
       "file_path": "documentation/TVML/nowplayingmenuitem.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/segmentbar.json": {
       "hash": "2c22194f7be5efe64d80a1694102269ec29ed04efce95b4745ff9b42eff00fc4",
-      "last_checked": "2026-05-29T07:29:29.297772",
+      "last_checked": "2026-06-02T07:42:17.378527",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"33ae9248f4313b939593d91d77bc1a51\"",
       "file_path": "documentation/TVML/segmentbar.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/segmentbarheader.json": {
       "hash": "30c137f4f01deaa8a1a641ef736b3a51f66ea6657b140d30a86c18ded30949c4",
-      "last_checked": "2026-05-29T07:29:29.368526",
+      "last_checked": "2026-06-02T07:42:17.538199",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"1caf373de092b96417ecd5a0248e01fa\"",
       "file_path": "documentation/TVML/segmentbarheader.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/segmentbaritem.json": {
       "hash": "6457cefb283570490d99fc4e0bc55f771d63f1124ab36ac11b52141d25637018",
-      "last_checked": "2026-05-29T07:29:29.438565",
+      "last_checked": "2026-06-02T07:42:17.835223",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f854f621e767ee1ac41aa2d442a13d0b\"",
       "file_path": "documentation/TVML/segmentbaritem.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tumblerbar.json": {
       "hash": "16cb99992b22acf2f0ee2ef8dc36ab6018bf7c9063161655317a9b5cb44a07d0",
-      "last_checked": "2026-05-29T07:29:29.487774",
+      "last_checked": "2026-06-02T07:42:17.987885",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b1ae645d1feb449af73ab31802cdd89d\"",
       "file_path": "documentation/TVML/tumblerbar.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tumbleritem.json": {
       "hash": "7c90bb340494f708a075f88738637a47daf31feed0672452f3a5890229eb1b59",
-      "last_checked": "2026-05-29T07:29:29.556402",
+      "last_checked": "2026-06-02T07:42:18.138332",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"26a4b8afcb3e322b08af3f08b5110e84\"",
       "file_path": "documentation/TVML/tumbleritem.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/collectionlist.json": {
       "hash": "9aff27fb344b7ee207d82fc2cec924a3e4eef909af72a88396978a61426502fb",
-      "last_checked": "2026-05-29T07:29:29.610840",
+      "last_checked": "2026-06-02T07:42:18.294528",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"006675b80ec69fe54b8e0d8f0fb24ec7\"",
       "file_path": "documentation/TVML/collectionlist.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/infolist.json": {
       "hash": "b4e809a7534876e8346cd57e2ee3427b458f22adf86324f3af8e448d30fab25b",
-      "last_checked": "2026-05-29T07:29:29.720462",
+      "last_checked": "2026-06-02T07:42:18.410322",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ad343f9017e8cc9d59519a6518ffcebc\"",
       "file_path": "documentation/TVML/infolist.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/list.json": {
       "hash": "c23e1d0eda7a2cf58c8def8beeb70da54d26ee95f8162f4c7b3cdf5ea6815c88",
-      "last_checked": "2026-05-29T07:29:29.768880",
+      "last_checked": "2026-06-02T07:42:18.576908",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0a5900d3a6e1d3ac8da1bfd699ef2b5f\"",
       "file_path": "documentation/TVML/list.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/button.json": {
       "hash": "c62aed0e6fc0378c14c5472c1ef2b5a07cfefbfcd3ab796b1ffb104bf67fc390",
-      "last_checked": "2026-05-29T07:29:29.837732",
+      "last_checked": "2026-06-02T07:42:18.865529",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"48e2a1aed051d86ebb7831c43bcf1205\"",
       "file_path": "documentation/TVML/button.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/buttonlockup.json": {
       "hash": "2f63525f37e0000ef3e1469abfbc0cfdbc5913c18a3148e98f9303215c52bf62",
-      "last_checked": "2026-05-29T07:29:29.897647",
+      "last_checked": "2026-06-02T07:42:18.987557",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"611d7d442dd939db31b62b4fbd01273f\"",
       "file_path": "documentation/TVML/buttonlockup.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/listitemlockup.json": {
       "hash": "32f27d4edd652bd0daf9ccb94b96c765c369dad0a29c5d1fe7aa2cdf539b235b",
-      "last_checked": "2026-05-29T07:29:29.961396",
+      "last_checked": "2026-06-02T07:42:19.303844",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e68cf61259111a162e120faae1c0fab1\"",
       "file_path": "documentation/TVML/listitemlockup.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/lockup.json": {
       "hash": "684b695317da27766b2c7990c405a19f772ec08b6271829963a67ccc709fd1e7",
-      "last_checked": "2026-05-29T07:29:30.024573",
+      "last_checked": "2026-06-02T07:42:19.427460",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"7c0f161650cdc4612cb0f54febcea089\"",
       "file_path": "documentation/TVML/lockup.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/monogramlockup.json": {
       "hash": "28a9abc4dabd5b0b97c56c0f02d561e5fdacb412f190a8d7bc9a3c3a4445359f",
-      "last_checked": "2026-05-29T07:29:30.084049",
+      "last_checked": "2026-06-02T07:42:19.617663",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"7234ac549176d733eaef4b5d0241cddc\"",
       "file_path": "documentation/TVML/monogramlockup.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/overlay.json": {
       "hash": "a9d721aaf6d779eb9a2cf17b39f74e38d01990b39b5e727f4008a02b2b7f373d",
-      "last_checked": "2026-05-29T07:29:30.142381",
+      "last_checked": "2026-06-02T07:42:19.773456",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0c674358b37f34f1047baf87f01bfc9c\"",
       "file_path": "documentation/TVML/overlay.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/decorationimage.json": {
       "hash": "12cb4809104f08ad942048de23c9915ae7e678949f3c3d0fc84e1df4e7bf5c0c",
-      "last_checked": "2026-05-29T07:29:30.195412",
+      "last_checked": "2026-06-02T07:42:19.934589",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4fa27ea2873e762b4fac128aa8dee519\"",
       "file_path": "documentation/TVML/decorationimage.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/fullscreenimg.json": {
       "hash": "b8f9e0cbaf695927a0b050a527dc4d2fadc92925cf9dc54072e966c0ce447c2b",
-      "last_checked": "2026-05-29T07:29:30.250864",
+      "last_checked": "2026-06-02T07:42:20.051040",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"84675d7839ecad456bc8ac5cbe7aa92e\"",
       "file_path": "documentation/TVML/fullscreenimg.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/heroimg.json": {
       "hash": "eb3cf62592caa98b184e34d13ee5c708dc80f6389f1c7e1156963df293d36af2",
-      "last_checked": "2026-05-29T07:29:30.338622",
+      "last_checked": "2026-06-02T07:42:20.335044",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"bcb126a27733847e8eee66d99676047a\"",
       "file_path": "documentation/TVML/heroimg.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/img.json": {
       "hash": "7037c11c8aec058b6943b76a8ad144151f619892adc73ceca12311e556ea4f0d",
-      "last_checked": "2026-05-29T07:29:30.412964",
+      "last_checked": "2026-06-02T07:42:20.453864",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"480ca7727095f912f4079ac7e940d89e\"",
       "file_path": "documentation/TVML/img.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/badge.json": {
       "hash": "2519f8903721af7bed505cf72094c666955e0ab2324ea700783e37b690d81ca5",
-      "last_checked": "2026-05-29T07:29:30.466647",
+      "last_checked": "2026-06-02T07:42:20.581114",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6770b56541ccde1d2fe4e5fc95e74ddc\"",
       "file_path": "documentation/TVML/badge.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/ratingbadge.json": {
       "hash": "44b80ebf109faad92717b8a7935b7a4f4aa4325d3bf36c040f50c358934c29e1",
-      "last_checked": "2026-05-29T07:29:30.522936",
+      "last_checked": "2026-06-02T07:42:20.725349",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"13493d07d7c079d5637964aa182bad75\"",
       "file_path": "documentation/TVML/ratingbadge.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/seasonbadge.json": {
       "hash": "13df78b9bf7cb2c7aa729a58e5cda7c634f8c5eb48ae42460ab9b548f2cba245",
-      "last_checked": "2026-05-29T07:29:30.582315",
+      "last_checked": "2026-06-02T07:42:20.894614",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a9ecc24eb3ba296e9478474e28232043\"",
       "file_path": "documentation/TVML/seasonbadge.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/textbadge.json": {
       "hash": "3a82cacec01af702a814d7a8d6d304501f3a68bc825f6b224ff43bda299992f3",
-      "last_checked": "2026-05-29T07:29:30.644574",
+      "last_checked": "2026-06-02T07:42:21.006469",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"973b1c9753218e895149659aacdf6b0a\"",
       "file_path": "documentation/TVML/textbadge.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/activityindicator.json": {
       "hash": "6b5227a696c732fd95f7f2910d5488c70a64c7a47e1c2b61ca37ffcd958dc95f",
-      "last_checked": "2026-05-29T07:29:30.724620",
+      "last_checked": "2026-06-02T07:42:21.174852",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"48fadf59ca3b15a11d2cd70367d570d0\"",
       "file_path": "documentation/TVML/activityindicator.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/progressbar.json": {
       "hash": "47c1afecc8c90438bb0f161029e19149b85c90f5c058ce86de9f8df0552cc9d3",
-      "last_checked": "2026-05-29T07:29:30.774251",
+      "last_checked": "2026-06-02T07:42:21.348538",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b880dc8875ed4ec3013f1525588a9fd2\"",
       "file_path": "documentation/TVML/progressbar.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/separator.json": {
       "hash": "e16b57490ae43fe38b24b861241d8cdfbba95003dfb8120d0fa1dab93b82b6ff",
-      "last_checked": "2026-05-29T07:29:30.868655",
+      "last_checked": "2026-06-02T07:42:21.469497",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"d026c7971d5394d363b46d6db70b2bdb\"",
       "file_path": "documentation/TVML/separator.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/asset.json": {
       "hash": "b16b9f80e53e6ffcd70110b32880aa66f5e3a738ed735e6882ead0c837758244",
-      "last_checked": "2026-05-29T07:29:30.922975",
+      "last_checked": "2026-06-02T07:42:21.632157",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"82565b86e9909424f3603aa1a51295e3\"",
       "file_path": "documentation/TVML/asset.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/relatedcontenturl.json": {
       "hash": "5ca684c46f750d493e66591cb4a3b832ab4f47b136c5da0f2a71a21ccd94d6c8",
-      "last_checked": "2026-05-29T07:29:31.009945",
+      "last_checked": "2026-06-02T07:42:21.750920",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2b695407f4cc7ce37666584a87182e0c\"",
       "file_path": "documentation/TVML/relatedcontenturl.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/searchfield.json": {
       "hash": "0e90647ce2e3e6952045493b6a5755888eb3bbbedbafa463fa9012501da7b0fd",
-      "last_checked": "2026-05-29T07:29:31.069435",
+      "last_checked": "2026-06-02T07:42:21.923558",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"dda32522eb4e4a6df51c7a1ea072df20\"",
       "file_path": "documentation/TVML/searchfield.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/textfield.json": {
       "hash": "9039fc647c1e079a01c6e73558201fd7a98b12004d9313b41e7fa59da38f843e",
-      "last_checked": "2026-05-29T07:29:31.160335",
+      "last_checked": "2026-06-02T07:42:22.058355",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"1a7c97c82bdb23e2ea5e3f87a091147a\"",
       "file_path": "documentation/TVML/textfield.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/mediacontent.json": {
       "hash": "ae2092e946811fb1eda88c1eec7a5b02f580291a6d2627c512abb8da87915ea4",
-      "last_checked": "2026-05-29T07:29:31.245664",
+      "last_checked": "2026-06-02T07:42:22.251475",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f41f23acf3bf6ffa1dd715b5a6fa7f32\"",
       "file_path": "documentation/TVML/mediacontent.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/decorationlabel.json": {
       "hash": "c0bd03ba7d10d2d48cc06110e6567c2ba5e7dfc377d648b8e2032c4651ce7a6c",
-      "last_checked": "2026-05-29T07:29:31.307441",
+      "last_checked": "2026-06-02T07:42:22.370814",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"df14ef2671dab693db743d1367cf345c\"",
       "file_path": "documentation/TVML/decorationlabel.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/description.json": {
       "hash": "c888dc207114357f28e0ebe5264b66df90778d4e1b58e9be9122ba33d4433887",
-      "last_checked": "2026-05-29T07:29:31.369287",
+      "last_checked": "2026-06-02T07:42:22.504526",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c35350103fc800dc33fa8664e28c7ecc\"",
       "file_path": "documentation/TVML/description.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/date.json": {
       "hash": "d1c9915a7aa23afb4cc44cc241e37afc52cd94033c230cb0d927b7e1ab9ccc5f",
-      "last_checked": "2026-05-29T07:29:31.436388",
+      "last_checked": "2026-06-02T07:42:22.633992",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c25fbaaae1b0618d5fbcb96978f097ed\"",
       "file_path": "documentation/TVML/date.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/monogram.json": {
       "hash": "405d7deb5432b6dc9c157b3b96763e4b1c5a926e83a5dd7a635bc2c3789a3cc3",
-      "last_checked": "2026-05-29T07:29:31.507342",
+      "last_checked": "2026-06-02T07:42:22.747403",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"0b427499f6928d14c5aa333382187ae2\"",
       "file_path": "documentation/TVML/monogram.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/ordinal.json": {
       "hash": "5fd58a66b442ca2fd9213e0a8009f7575c743d708ed91456b310ade6f8d591c9",
-      "last_checked": "2026-05-29T07:29:31.560655",
+      "last_checked": "2026-06-02T07:42:22.874869",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ef1a081c949f06490b5ac6dd2c63c5f2\"",
       "file_path": "documentation/TVML/ordinal.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/strike.json": {
       "hash": "aaa45c001aee3ddd990eeec3eed2bb1c7890a894e92d53907c150a754295e64f",
-      "last_checked": "2026-05-29T07:29:31.626123",
+      "last_checked": "2026-06-02T07:42:23.043954",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b281d72121a1266b75305352b2e45646\"",
       "file_path": "documentation/TVML/strike.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/subtitle.json": {
       "hash": "85328c05975bfa3c633dc14b346ad060d0e6a2a537adbfb7b8fbd07dcb879ac8",
-      "last_checked": "2026-05-29T07:29:31.711581",
+      "last_checked": "2026-06-02T07:42:23.209706",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"14db3c5a075ed76ab0da5976367e5023\"",
       "file_path": "documentation/TVML/subtitle.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text.json": {
       "hash": "1339171e7da15bfe9bc7da7aae91b32564c9cfa123927a4982261b4fd3173a44",
-      "last_checked": "2026-05-29T07:29:31.800376",
+      "last_checked": "2026-06-02T07:42:23.327756",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"67970c0e7730d5cdf5de3ec69f4b8ecd\"",
       "file_path": "documentation/TVML/text.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/title.json": {
       "hash": "6e3908db881582c97e468be988b1ece06533a5eb1d8c403ff4c123e47b13b776",
-      "last_checked": "2026-05-29T07:29:31.883784",
+      "last_checked": "2026-06-02T07:42:23.488613",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"a5ca92b4078b2c9376a956f87b70d87e\"",
       "file_path": "documentation/TVML/title.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/background-color.json": {
       "hash": "f90adf2b272db13354fd3506a12c1519ef49e9a389662fbc2aef6cfdb256f50a",
-      "last_checked": "2026-05-29T07:29:31.951550",
+      "last_checked": "2026-06-02T07:42:23.605648",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"3b0549b77f269b3c711568229926e6d8\"",
       "file_path": "documentation/TVML/background-color.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/color.json": {
       "hash": "97777e1cc3bae3e37b80242dc697fd69487e1318667e0dc423a27d312c312d50",
-      "last_checked": "2026-05-29T07:29:32.011990",
+      "last_checked": "2026-06-02T07:42:23.764758",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"9f91d5eee36d8c02efc593137b6ba5cd\"",
       "file_path": "documentation/TVML/color.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-highlight-color.json": {
       "hash": "36924b71205797d5c95717e692e8ff70f3a83447c9bc93adb89eb86784642a0c",
-      "last_checked": "2026-05-29T07:29:32.084448",
+      "last_checked": "2026-06-02T07:42:23.893272",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"09421be960f13fb979f0113657aa6cc3\"",
       "file_path": "documentation/TVML/tv-highlight-color.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-tint-color.json": {
       "hash": "2235afbd4a94834ae6d1fb959c7a244b27140116ec6245931320f76caa188f90",
-      "last_checked": "2026-05-29T07:29:32.147430",
+      "last_checked": "2026-06-02T07:42:24.016851",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"363ca24148d4bb5acfb0d614fdadcf95\"",
       "file_path": "documentation/TVML/tv-tint-color.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/font-family.json": {
       "hash": "a4d81a3ee3b5a111cb43ba44774aab7915bb52e63f3a73485c3a3f6567ab259e",
-      "last_checked": "2026-05-29T07:29:32.212974",
+      "last_checked": "2026-06-02T07:42:24.131916",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e27b0636da56c31bb950318bfb2de3c4\"",
       "file_path": "documentation/TVML/font-family.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/font-size.json": {
       "hash": "0798c108499f5db08335c141ee595da9b424bf977e46341ee021202b3d2598f3",
-      "last_checked": "2026-05-29T07:29:32.268224",
+      "last_checked": "2026-06-02T07:42:24.266551",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f541ec65aee52150c9181ae5328c54af\"",
       "file_path": "documentation/TVML/font-size.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/font-weight.json": {
       "hash": "7a4823d19bfd63dada8d366d40aec0eea216a6cbce83ff4480512c59051ced49",
-      "last_checked": "2026-05-29T07:29:32.331673",
+      "last_checked": "2026-06-02T07:42:24.436949",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"d2bba9370863677d10865658647c2a71\"",
       "file_path": "documentation/TVML/font-weight.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-minimum-scale-factor.json": {
       "hash": "81810bcf194cb31dee08f5b02d40bf3571c401958a628b8e29686b0f8bbcf98f",
-      "last_checked": "2026-05-29T07:29:32.410705",
+      "last_checked": "2026-06-02T07:42:24.589986",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6f10a39db07b553f874b111fba7fe2bd\"",
       "file_path": "documentation/TVML/tv-minimum-scale-factor.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-text-style.json": {
       "hash": "1a31937225b489cb30bda65099f462fb6490c1f4a303fce552e0d8588b97f6ab",
-      "last_checked": "2026-05-29T07:29:32.457517",
+      "last_checked": "2026-06-02T07:42:24.758976",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"d6a69cca9b481ae86a601c027092f2cb\"",
       "file_path": "documentation/TVML/tv-text-style.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-text-max-lines.json": {
       "hash": "92f107b9c050d826fa561838531eaad695b10c724a044adfd8f2368fa15ac717",
-      "last_checked": "2026-05-29T07:29:32.513574",
+      "last_checked": "2026-06-02T07:42:24.895642",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"75ce31d5c6e3fc9af06f7756bf5f59ef\"",
       "file_path": "documentation/TVML/tv-text-max-lines.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text-shadow.json": {
       "hash": "44f35b145ed6227fe3e1391101fce9e0345820aa90bb77b56cc64b0eabfe8362",
-      "last_checked": "2026-05-29T07:29:32.590549",
+      "last_checked": "2026-06-02T07:42:25.032371",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"71290725f40662eb984b18d1ac436d3a\"",
       "file_path": "documentation/TVML/text-shadow.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-height.json": {
       "hash": "78c9eb9403c1ff762a7b4689affcd8901a28cdca303ad920fe9918eeee1f393f",
-      "last_checked": "2026-05-29T07:29:32.642365",
+      "last_checked": "2026-06-02T07:42:25.148678",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6a4221ec492fe7455f0054455f918234\"",
       "file_path": "documentation/TVML/element-shaping-height.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-max-height.json": {
       "hash": "60434669a76442e95e7e0528f9281d355135265118853903d4130e95461e3747",
-      "last_checked": "2026-05-29T07:29:32.708919",
+      "last_checked": "2026-06-02T07:42:25.280389",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"21262c99ea9355a319ed2cb2afab7045\"",
       "file_path": "documentation/TVML/element-shaping-max-height.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-max-width.json": {
       "hash": "f8f44c35d6583e402b357cb48bc4c3a07728aa07d001e2f66cd5468d001eac8f",
-      "last_checked": "2026-05-29T07:29:32.766185",
+      "last_checked": "2026-06-02T07:42:25.408973",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c5b599f0205ec2f06c0dee75408becd2\"",
       "file_path": "documentation/TVML/element-shaping-max-width.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-min-height.json": {
       "hash": "d078e0c18cf47d44cf3f715e9c275bc8239730599d07ba857a8b86eee8cc70b3",
-      "last_checked": "2026-05-29T07:29:32.832372",
+      "last_checked": "2026-06-02T07:42:25.579300",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"4e61273a0e4119cd449b79e0c8ca7fa0\"",
       "file_path": "documentation/TVML/element-shaping-min-height.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-min-width.json": {
       "hash": "0b61e880afdd86762e14e56fee24a30e5186070bbf07baf51c007d7370cc56ab",
-      "last_checked": "2026-05-29T07:29:32.900700",
+      "last_checked": "2026-06-02T07:42:25.694066",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"cab031de21957550a651b9ae0198b980\"",
       "file_path": "documentation/TVML/element-shaping-min-width.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/element-shaping-width.json": {
       "hash": "d62338c6abc3507b62123748b731f0f959e81a36501086beec59af4240e09239",
-      "last_checked": "2026-05-29T07:29:33.045343",
+      "last_checked": "2026-06-02T07:42:25.869287",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8072da009673881459f65aad5fe22b1f\"",
       "file_path": "documentation/TVML/element-shaping-width.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/border-radius.json": {
       "hash": "3a209a63a77cd1296b31535ca3063d710ae9d9dbb25afbd6d953adf4c41d2921",
-      "last_checked": "2026-05-29T07:29:33.112381",
+      "last_checked": "2026-06-02T07:42:25.996079",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6ae5c87f2f8f8b0d1a1b2737106338f9\"",
       "file_path": "documentation/TVML/border-radius.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/text-align.json": {
       "hash": "d67fd0cff84038595e5d3862ace8f9ac44f2a2ba24379bbfe98ad80cea76456b",
-      "last_checked": "2026-05-29T07:29:33.245273",
+      "last_checked": "2026-06-02T07:42:26.126298",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"13fa91e6505900510adde17ea864c15a\"",
       "file_path": "documentation/TVML/text-align.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-content-align.json": {
       "hash": "b6c895e99ac56b4d4b781173e0d4a33fc73fa9a6ff68174821ab62d861c8c423",
-      "last_checked": "2026-05-29T07:29:33.299701",
+      "last_checked": "2026-06-02T07:42:26.286395",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"39fb892df5919615c9216603b2908ef2\"",
       "file_path": "documentation/TVML/tv-content-align.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/margin.json": {
       "hash": "ac7260bc8b9b9b3591cf59e27e62a12793e79ce62e302398dff9bfdefd57894b",
-      "last_checked": "2026-05-29T07:29:33.359890",
+      "last_checked": "2026-06-02T07:42:26.414928",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2aac4b4daa70c8ce1efa7d9f32663845\"",
       "file_path": "documentation/TVML/margin.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/padding.json": {
       "hash": "cbab2a30513cd5ee25028547cd775f4931a628d18647f0252a43876a141bf755",
-      "last_checked": "2026-05-29T07:29:33.433343",
+      "last_checked": "2026-06-02T07:42:26.528738",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ffc51a18cd51521d4980bb556d02de10\"",
       "file_path": "documentation/TVML/padding.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-focus-margin.json": {
       "hash": "8a6e7727aed44b2668cf2206f7dc1458a15a3f3602e92acdcb6208a058e1ffe0",
-      "last_checked": "2026-05-29T07:29:33.526468",
+      "last_checked": "2026-06-02T07:42:26.665122",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"cd49f58cafe83273353aaabb172709f7\"",
       "file_path": "documentation/TVML/tv-focus-margin.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-interitem-spacing.json": {
       "hash": "0455c401bcc9c7646aa6072c1602ea37b824595e36e8ad011f8ce86ac28aefde",
-      "last_checked": "2026-05-29T07:29:33.654552",
+      "last_checked": "2026-06-02T07:42:26.848362",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"be416aef7d348ead3bb2131292babf64\"",
       "file_path": "documentation/TVML/tv-interitem-spacing.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-line-spacing.json": {
       "hash": "a9894bfa879e554ae7e873064ee732a668c41965dce03065834de6b3a8468952",
-      "last_checked": "2026-05-29T07:29:33.704638",
+      "last_checked": "2026-06-02T07:42:26.964285",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8625e2b0a5ceb8dbce4f701c69739849\"",
       "file_path": "documentation/TVML/tv-line-spacing.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-scrollable-bounds-inset-top.json": {
       "hash": "4b8aa55f12c121d57cfbda44833b383d9b6a66f71c72a1513f6e29599f935f08",
-      "last_checked": "2026-05-29T07:29:33.763996",
+      "last_checked": "2026-06-02T07:42:27.133695",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c224573f67a712e4f47987699936c24b\"",
       "file_path": "documentation/TVML/tv-scrollable-bounds-inset-top.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-scrollable-bounds-inset-bottom.json": {
       "hash": "0c56c039d8d6c7e5140ed677dd212d7433f8ddb1219b42c178db66fe86175bd5",
-      "last_checked": "2026-05-29T07:29:33.821210",
+      "last_checked": "2026-06-02T07:42:27.248308",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"fc59f6bd16bf7c36665470a273451f11\"",
       "file_path": "documentation/TVML/tv-scrollable-bounds-inset-bottom.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/image-attributes-height.json": {
       "hash": "c3f6b5070e4ff9289f6bad73e881aa5148e20af1698d0acba93fda7d9dd080b1",
-      "last_checked": "2026-05-29T07:29:33.889795",
+      "last_checked": "2026-06-02T07:42:27.375911",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"c4c0ee101b587a534988c3acec802d68\"",
       "file_path": "documentation/TVML/image-attributes-height.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/image-attributes-width.json": {
       "hash": "657373e7b7b144c51c5e2036f1773b21dc140661ee2814cc6c51c9a23164b077",
-      "last_checked": "2026-05-29T07:29:33.958510",
+      "last_checked": "2026-06-02T07:42:27.527772",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ed3d1cd69d64e8c2308669f51839c91c\"",
       "file_path": "documentation/TVML/image-attributes-width.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/aspectratio.json": {
       "hash": "00aff4473d2804c8be788fe6fb6841c14840ff9b43b24cbd622484ce1c8e869b",
-      "last_checked": "2026-05-29T07:29:34.030732",
+      "last_checked": "2026-06-02T07:42:27.635076",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"fa570791dd5e282c5dd7dc062bf15be1\"",
       "file_path": "documentation/TVML/aspectratio.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/aspectfill.json": {
       "hash": "20fb61a9591a61e634c384ec43422d905befc06aeb294dfd4baf63c57ca3e685",
-      "last_checked": "2026-05-29T07:29:34.094317",
+      "last_checked": "2026-06-02T07:42:27.757756",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"812720662934d22fc5986e4d9120b7f0\"",
       "file_path": "documentation/TVML/aspectfill.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/contentsmode.json": {
       "hash": "846073cf69a54911b9b5452d1b5929d628ca51ee52dedd01c7fc160db1e2d346",
-      "last_checked": "2026-05-29T07:29:34.151423",
+      "last_checked": "2026-06-02T07:42:27.931805",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"2317ee824cd8c2cd61c07ec764fa4985\"",
       "file_path": "documentation/TVML/contentsmode.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/opaque.json": {
       "hash": "f8bba1a7010f377716a4f81bcaa34e18526e4966c84b414ad1ac6ad1c6580ba8",
-      "last_checked": "2026-05-29T07:29:34.224594",
+      "last_checked": "2026-06-02T07:42:28.059154",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6b8d798c2beb2a07296b2a45ba838fc9\"",
       "file_path": "documentation/TVML/opaque.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/type.json": {
       "hash": "99d5ebc6497a479f4e8664223d5e718a2fccd91309c67d0570e4956123fdfde8",
-      "last_checked": "2026-05-29T07:29:34.279805",
+      "last_checked": "2026-06-02T07:42:28.232656",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"961e172bba47ee5dbce4f203d862ba4c\"",
       "file_path": "documentation/TVML/type.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/value.json": {
       "hash": "57e690fac2d0c1401574f875347dd37580e1e72736ea6a50c5f9de4044116d24",
-      "last_checked": "2026-05-29T07:29:34.341155",
+      "last_checked": "2026-06-02T07:42:28.354486",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8fee89b497a6b244cee19f7b15fc80c7\"",
       "file_path": "documentation/TVML/value.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/src.json": {
       "hash": "ea8e8340950180101cad5b46b69b1edde4556ab38e387d817268907c150c1939",
-      "last_checked": "2026-05-29T07:29:34.422452",
+      "last_checked": "2026-06-02T07:42:28.494831",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"36e46d9c29ca177f196b0ba4a582bdcc\"",
       "file_path": "documentation/TVML/src.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/srcset.json": {
       "hash": "ae6913d047694be1ed9c576a168ec62b62ee73f10f82e8a9f70510d9f588a466",
-      "last_checked": "2026-05-29T07:29:34.491040",
+      "last_checked": "2026-06-02T07:42:28.649917",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"ddc01b177f4e11cf6b50d4ee224aa1e5\"",
       "file_path": "documentation/TVML/srcset.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/accessibilitytext.json": {
       "hash": "292e7828452bc5c8631ab099a870a6735daebac62a785dd72fa004aec5d16d4b",
-      "last_checked": "2026-05-29T07:29:34.561945",
+      "last_checked": "2026-06-02T07:42:28.808354",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"44da5d8908bb0762d70eae3199772213\"",
       "file_path": "documentation/TVML/accessibilitytext.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/firstname.json": {
       "hash": "6eefd4b249a33a5010290735f905db7dbbeb6e304378b77ddd54c7d611e55d84",
-      "last_checked": "2026-05-29T07:29:34.634455",
+      "last_checked": "2026-06-02T07:42:28.937801",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"148918cd817bc01e4f0c1bafc4880402\"",
       "file_path": "documentation/TVML/firstname.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/lastname.json": {
       "hash": "983a0c5c751600201f9c9a9f3afe7adf2c0090e3d9d2637d2a0e0dcc72302f43",
-      "last_checked": "2026-05-29T07:29:34.684230",
+      "last_checked": "2026-06-02T07:42:29.099731",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"9b1cf10324e022a825250b50d66aeebd\"",
       "file_path": "documentation/TVML/lastname.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/secure.json": {
       "hash": "3653766b0fcd844620b2e83230f450134251e05e7ef39271991f686cbb7e99ee",
-      "last_checked": "2026-05-29T07:29:34.744926",
+      "last_checked": "2026-06-02T07:42:29.250629",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b19150e37822a7f323621a41c7e3c0f3\"",
       "file_path": "documentation/TVML/secure.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/showspinner.json": {
       "hash": "36f3b1dcabd243d7be228a657676a9d2f137c2ef078738b327393b11eec18880",
-      "last_checked": "2026-05-29T07:29:34.797530",
+      "last_checked": "2026-06-02T07:42:29.400598",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"cca571c323934cb1f92bd59b46012915\"",
       "file_path": "documentation/TVML/showspinner.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/format.json": {
       "hash": "d4b9298e72c57ccc3f2777da262e822fc68699b7b71af4c7d44cef189d8dfce2",
-      "last_checked": "2026-05-29T07:29:34.874799",
+      "last_checked": "2026-06-02T07:42:29.516524",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"1bfea0c8950bbb92f0ea7735cfed20f1\"",
       "file_path": "documentation/TVML/format.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/locale.json": {
       "hash": "3683f0ccdbcbdd608982b7a3117d45071eb17d4476e03bbd9a07851b15cf43ef",
-      "last_checked": "2026-05-29T07:29:34.925325",
+      "last_checked": "2026-06-02T07:42:29.700827",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"f3229fe517f70ca10d840097cf041781\"",
       "file_path": "documentation/TVML/locale.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/keyboardtype.json": {
       "hash": "d57cf891718bd82b7c4f605c0a55bead446b83ac6965bf4de16b4ddb1ab627f4",
-      "last_checked": "2026-05-29T07:29:34.987744",
+      "last_checked": "2026-06-02T07:42:29.881982",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"bd762ac949a1f4caebc65609e1d07691\"",
       "file_path": "documentation/TVML/keyboardtype.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/disabled.json": {
       "hash": "62d29e92d75b86155119580699e6a357a899307053693ae3b2b711bf76642c66",
-      "last_checked": "2026-05-29T07:29:35.084124",
+      "last_checked": "2026-06-02T07:42:30.029737",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"77ff989450ae3fea26f79bc18b413fc5\"",
       "file_path": "documentation/TVML/disabled.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/handlesoverflow.json": {
       "hash": "812320c541bfd8ec1e49b772a32e9e1414ed38abe0c13b4599ca95e7214b06fc",
-      "last_checked": "2026-05-29T07:29:35.131707",
+      "last_checked": "2026-06-02T07:42:30.197657",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"1d7e3fb0b3fa450a565eac3dd1c8fc4d\"",
       "file_path": "documentation/TVML/handlesoverflow.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/audiomode.json": {
       "hash": "120516d203067ecbdf97bc0ce0caf1f4fc7058c7d04b0f9ba05254367c6af382",
-      "last_checked": "2026-05-29T07:29:35.214534",
+      "last_checked": "2026-06-02T07:42:30.315655",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"40de434953e83f0f79938d404d304a89\"",
       "file_path": "documentation/TVML/audiomode.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/playbackmode.json": {
       "hash": "7508047acbafbc6dd0e77f06fe1e16c33e46f437913416f72367bfc48012c16a",
-      "last_checked": "2026-05-29T07:29:35.280742",
+      "last_checked": "2026-06-02T07:42:30.493936",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"00f7450833fa7ad62d0b9e7c9f06df7b\"",
       "file_path": "documentation/TVML/playbackmode.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/centered.json": {
       "hash": "d2069cf105a8be569e80054a3db90f3b46153558776a3fb8437fa576e608698f",
-      "last_checked": "2026-05-29T07:29:35.344573",
+      "last_checked": "2026-06-02T07:42:30.644407",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"aac237802a32f9b946b0b9fc509260ce\"",
       "file_path": "documentation/TVML/centered.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/minlength.json": {
       "hash": "a297cba95fce99f8ff6a4e54101bc24ee6ba5348ffd190470b3b56c214830dfb",
-      "last_checked": "2026-05-29T07:29:35.415135",
+      "last_checked": "2026-06-02T07:42:30.814620",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"8319def83e738decb686a28660a2efce\"",
       "file_path": "documentation/TVML/minlength.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/rowcount.json": {
       "hash": "11c62b25157acf17d6e6f4b5b75fa4429fb8c2d8878a0e19d15cfc36ac1e9ffd",
-      "last_checked": "2026-05-29T07:29:35.478534",
+      "last_checked": "2026-06-02T07:42:30.944424",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"612fe4e144422216b68889b31df3d741\"",
       "file_path": "documentation/TVML/rowcount.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/indextitles.json": {
       "hash": "566ab51cc4fddae49c2021b9cfa57055f2984d54f8c59947e0bdb36a1abe9091",
-      "last_checked": "2026-05-29T07:29:35.530374",
+      "last_checked": "2026-06-02T07:42:31.057147",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"6fe4bdec03a6f38d6a5847b7df2236e2\"",
       "file_path": "documentation/TVML/indextitles.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/showsscrollindicator.json": {
       "hash": "0f406ed79fe399efd0d640e9ab0c39710f17754f5cf29c1dbd00f7b08b12b998",
-      "last_checked": "2026-05-29T07:29:35.605449",
+      "last_checked": "2026-06-02T07:42:31.225576",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"b18cdbf3f9fccfce9248ffc29ce6da19\"",
       "file_path": "documentation/TVML/showsscrollindicator.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/layout-direction.json": {
       "hash": "5a2da79fb1917f3d2507da203e0683c6986416877a2c3221c89b686649de54ee",
-      "last_checked": "2026-05-29T07:29:35.691443",
+      "last_checked": "2026-06-02T07:42:31.389149",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"5c3775ae857844bc87c8d899f130808b\"",
       "file_path": "documentation/TVML/layout-direction.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/tv-theme.json": {
       "hash": "30b85f2d3675ca6d4252cc4992b5b5392fc8c5ac7e18fa728b7bdcf2e23c1477",
-      "last_checked": "2026-05-29T07:29:35.762767",
+      "last_checked": "2026-06-02T07:42:31.501784",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"62921b60ddc3c0f5e4c3f7edf1e237de\"",
       "file_path": "documentation/TVML/tv-theme.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvml/property-path.json": {
       "hash": "9b03bada72e5eb0669c1f1d73f55096c8b9446a53893561d4413c321a5eb8b80",
-      "last_checked": "2026-05-29T07:29:35.833144",
+      "last_checked": "2026-06-02T07:42:31.671552",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:22.003512",
+      "session_id": "2026-06-02T07:41:59.564280",
       "etag": "W/\"e06ba8182c01e42335d7c33beae460e3\"",
       "file_path": "documentation/TVML/property-path.md"
     },

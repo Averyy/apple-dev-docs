@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:42.861475",
+    "last_updated": "2026-06-02T07:44:06.933464",
     "total_pages": 26,
-    "session_id": "2026-05-29T07:30:40.481585"
+    "session_id": "2026-06-02T07:44:04.728328"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/RealityComposerPro.json": {
       "hash": "15e652fbbb953237e5a93b72f7dc34f743198550964c6d2ef906edd6d216fa9b",
-      "last_checked": "2026-05-29T07:30:40.862928",
+      "last_checked": "2026-06-02T07:44:04.979698",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"de1cad587755d4ae97a9a9c282e43a63\"",
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md"
     },
     "https://developer.apple.com/documentation/RealityComposerPro": {
       "hash": "15e652fbbb953237e5a93b72f7dc34f743198550964c6d2ef906edd6d216fa9b",
-      "last_checked": "2026-05-29T07:30:40.747292",
+      "last_checked": "2026-06-02T07:44:04.872826",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"de1cad587755d4ae97a9a9c282e43a63\"",
       "file_path": "documentation/RealityComposerPro/RealityComposerPro.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-a-reality-composer-pro-package-in-your-app.json": {
       "hash": "c3a12eeeab0ac824d219e5e32d6b88381cb927671d837e26469116c92c1b5100",
-      "last_checked": "2026-05-29T07:30:41.165408",
+      "last_checked": "2026-06-02T07:44:05.311988",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"e81da6cc87b8477c0b7221c2579d437f\"",
       "file_path": "documentation/RealityComposerPro/creating-a-reality-composer-pro-package-in-your-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/configure-the-reality-composer-pro-project-window.json": {
       "hash": "10aee3ae3ef944878c6cb487bd53d9ac6f28b6b63549516be14298e2728a29ba",
-      "last_checked": "2026-05-29T07:30:41.405505",
+      "last_checked": "2026-06-02T07:44:05.481497",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"6354429d7a16689a0c7cf49218584b77\"",
       "file_path": "documentation/RealityComposerPro/configure-the-reality-composer-pro-project-window.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/adding-assets-into-your-reality-composer-pro-scene.json": {
       "hash": "c3caebe037106871d1f267789b804f61fc2b7d6882ef800ed037c68e48e7990a",
-      "last_checked": "2026-05-29T07:30:41.530247",
+      "last_checked": "2026-06-02T07:44:05.645276",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"6fee67e3838d2c6031e5e12b77a36254\"",
       "file_path": "documentation/RealityComposerPro/adding-assets-into-your-reality-composer-pro-scene.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/build-and-run-reality-composer-pro-scenes-in-your-app.json": {
       "hash": "ef0aaca09dd869878ea3595b28afb51880dbb926e47faa80ec1135d0d7524186",
-      "last_checked": "2026-05-29T07:30:41.639770",
+      "last_checked": "2026-06-02T07:44:05.775580",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"8b1f8850b4bb7b9544052a1154dfdc82\"",
       "file_path": "documentation/RealityComposerPro/build-and-run-reality-composer-pro-scenes-in-your-app.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/editor_projectbrowser.json": {
       "hash": "26ceba9c6b5108fd00ff7186a5966467bee29c55df3aae54e44162095769a9f8",
-      "last_checked": "2026-05-29T07:30:41.768951",
+      "last_checked": "2026-06-02T07:44:05.894342",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"3cb8621a764d518bc08825d26d008868\"",
       "file_path": "documentation/RealityComposerPro/editor-projectbrowser.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/editor_shadergraph.json": {
       "hash": "45abfd28942f000ffc80ec3046ea5945a93f8a7f3cf4a938d014c8741fd6b549",
-      "last_checked": "2026-05-29T07:30:42.045515",
+      "last_checked": "2026-06-02T07:44:06.085908",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"e2c5d93690b37e85a791f8e921ea978e\"",
       "file_path": "documentation/RealityComposerPro/editor-shadergraph.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/building-materials.json": {
       "hash": "4aaed03f7d4a09575fdc8b447f1fb2b23dbb37e8965afa0a64fb14676fd6aca0",
-      "last_checked": "2026-05-29T07:30:42.301878",
+      "last_checked": "2026-06-02T07:44:06.213125",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"063bd624f8a48247b3aa4ea0412a0ee2\"",
       "file_path": "documentation/RealityComposerPro/building-materials.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/applying-realitykit-materials-on-imported-assets.json": {
       "hash": "2c6389f82723f12834008389cdf92ab268f3de1b2a41de95c2106378838a060f",
-      "last_checked": "2026-05-29T07:30:42.413430",
+      "last_checked": "2026-06-02T07:44:06.354574",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"0cd85235c1a202e591e80c138b06b884\"",
       "file_path": "documentation/RealityComposerPro/applying-realitykit-materials-on-imported-assets.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/loading-entities-with-shadergraph-materials.json": {
       "hash": "1e754af274e023e72b815b0c4690965fcae12d763ea10e7aa7e51b51669ed0b9",
-      "last_checked": "2026-05-29T07:30:42.511079",
+      "last_checked": "2026-06-02T07:44:06.497092",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"86bc159f94c91899154c60be8113518e\"",
       "file_path": "documentation/RealityComposerPro/loading-entities-with-shadergraph-materials.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-a-fresnel-outline-effect-with-shader-graph.json": {
       "hash": "927591b885b9e077e361a55c71af13959f4f161469f3222082fec40849d550b6",
-      "last_checked": "2026-05-29T07:30:42.611180",
+      "last_checked": "2026-06-02T07:44:06.616642",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"4160328e30e8750367f5fe6b8f7f0025\"",
       "file_path": "documentation/RealityComposerPro/creating-a-fresnel-outline-effect-with-shader-graph.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/creating-a-vertex-displacement-material-with-shader-graph.json": {
       "hash": "80e2f0522fb22a9dd325095cbb6f8b9eda2aebe049d443d1fe4fdc3a4307de75",
-      "last_checked": "2026-05-29T07:30:42.749528",
+      "last_checked": "2026-06-02T07:44:06.793713",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"4fff0d19c7555cffe9eec617d2736410\"",
       "file_path": "documentation/RealityComposerPro/creating-a-vertex-displacement-material-with-shader-graph.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/realitycomposerpro/correcting-normals-after-vertex-displacement-with-shader-graph.json": {
       "hash": "e433b7c598389dffe8ca6b919d8011c17599c7780bbfe0e3063a84e7b85ce6c9",
-      "last_checked": "2026-05-29T07:30:42.860220",
+      "last_checked": "2026-06-02T07:44:06.930676",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:30:40.481585",
+      "session_id": "2026-06-02T07:44:04.728328",
       "etag": "W/\"ad396a906f667b017cb301f24b697652\"",
       "file_path": "documentation/RealityComposerPro/correcting-normals-after-vertex-displacement-with-shader-graph.md"
     },

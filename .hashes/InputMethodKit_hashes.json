@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-05-29T07:30:05.716387",
+    "last_updated": "2026-06-02T07:43:22.845412",
     "total_pages": 202,
-    "session_id": "2026-05-29T07:29:54.710917"
+    "session_id": "2026-06-02T07:43:02.648927"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/InputMethodKit.json": {
       "hash": "d2c2237374b690b5e1299d3b16a2c1ed7258d8b014a2e77381ea99c014243abf",
-      "last_checked": "2026-05-29T07:29:54.980773",
+      "last_checked": "2026-06-02T07:43:03.021419",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2ca24a07c6d07aed3f4dd230810e8ec5\"",
       "file_path": "documentation/InputMethodKit/InputMethodKit.md"
     },
     "https://developer.apple.com/documentation/InputMethodKit": {
       "hash": "d2c2237374b690b5e1299d3b16a2c1ed7258d8b014a2e77381ea99c014243abf",
-      "last_checked": "2026-05-29T07:29:54.865150",
+      "last_checked": "2026-06-02T07:43:02.938629",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2ca24a07c6d07aed3f4dd230810e8ec5\"",
       "file_path": "documentation/InputMethodKit/InputMethodKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates.json": {
       "hash": "2613234011f71dc29cd1832e50bc4cc90be255eedf363825b505985170a6e2c8",
-      "last_checked": "2026-05-29T07:29:55.278087",
+      "last_checked": "2026-06-02T07:43:03.445537",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"df4bf0a8e444fb664606f56ff5929a74\"",
       "file_path": "documentation/InputMethodKit/imkcandidates.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller.json": {
       "hash": "ec9f2aa8bdcee792a2df18c6d6c78c869b6f5f34921ceb89a698103e9016da3a",
-      "last_checked": "2026-05-29T07:29:55.352297",
+      "last_checked": "2026-06-02T07:43:03.758896",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"21728ddc4384046bcd57a1c7129814aa\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver.json": {
       "hash": "9512432b829ab31622614e34b4f404dfd2df71a60dc923f74b6814814bc74c5f",
-      "last_checked": "2026-05-29T07:29:55.586081",
+      "last_checked": "2026-06-02T07:43:04.061279",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"a6a87f1549541c4a7238e112268959d1\"",
       "file_path": "documentation/InputMethodKit/imkserver.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkmousehandling.json": {
       "hash": "8599f411e45eb5a6acf924d7a26ec3bb250886dfd80d34116cc6e478ae191ffe",
-      "last_checked": "2026-05-29T07:29:55.807606",
+      "last_checked": "2026-06-02T07:43:04.381552",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"377bc055900aed659252819c25f3de47\"",
       "file_path": "documentation/InputMethodKit/imkmousehandling.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserverinput.json": {
       "hash": "e37d9e39713259d3701bf4a8f1944c2ac839a2d51325224cb92c50c001249436",
-      "last_checked": "2026-05-29T07:29:55.856283",
+      "last_checked": "2026-06-02T07:43:04.678771",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"0a5b59c378fff6a9ecdabe31d85bc696\"",
       "file_path": "documentation/InputMethodKit/imkserverinput.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting.json": {
       "hash": "2db113cc1398714088ab43ec716dd7199c1728be026d0b8c199a23dba916993a",
-      "last_checked": "2026-05-29T07:29:55.924370",
+      "last_checked": "2026-06-02T07:43:04.989291",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"132600754d7041896a036d81faa2d911\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-enumerations.json": {
       "hash": "81e6cfb12054e0f0369e7a3f43e7e97e888a392434a5954e52b7077e18c194c0",
-      "last_checked": "2026-05-29T07:29:56.065388",
+      "last_checked": "2026-06-02T07:43:05.164157",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"797782201ca32883fa126d70b6129994\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-enumerations.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-constants.json": {
       "hash": "7850d0faf5f4fe0a0ee983a9e2229b54d90a16f47c4a4c84f5323b42aad4550c",
-      "last_checked": "2026-05-29T07:29:56.131370",
+      "last_checked": "2026-06-02T07:43:05.478139",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"586a36f7860c1bd55884bfa03019a522\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-constants.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-data_types.json": {
       "hash": "19bbb97a65e9c96a08eeb1012fdb948a41b196ae4b71eb46a97a349312c94f83",
-      "last_checked": "2026-05-29T07:29:56.191201",
+      "last_checked": "2026-06-02T07:43:05.632703",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f9e52799e02e73fa51019e05cdef6d47\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-data-types.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/init(server:paneltype:).json": {
       "hash": "03f893f8432c85b3434dc4a4ae7a6865e4cbc858ea28f13349aa9486a99ff8b9",
-      "last_checked": "2026-05-29T07:29:56.442355",
+      "last_checked": "2026-06-02T07:43:05.922635",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"6ce306be806d23d4e5ff030ce115149b\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/init-serverpaneltype.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setselectionkeys(_:).json": {
       "hash": "463e3ae627ae28c69ae924123e3a161e0d501a9fe16373d9bb5d70d8afbfbe18",
-      "last_checked": "2026-05-29T07:29:56.501372",
+      "last_checked": "2026-06-02T07:43:06.079599",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"b6859d430df75ff8b0d70cc6ca5f1034\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setselectionkeys.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectionkeys().json": {
       "hash": "90948bcb4435e2d940e4550c85ae9c70054c4b1db8cd89c18f936f35b04e97a9",
-      "last_checked": "2026-05-29T07:29:56.552784",
+      "last_checked": "2026-06-02T07:43:06.241835",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"8a457825a08e0e2e86afe418662b4aa2\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectionkeys.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setselectionkeyskeylayout(_:).json": {
       "hash": "be6eae67374ebd1338b5f31957af3e54415152589afe33bad72fa1f6436bda85",
-      "last_checked": "2026-05-29T07:29:56.810403",
+      "last_checked": "2026-06-02T07:43:06.558204",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"32b942d985a7d4184e5a78e3eeb96fb6\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setselectionkeyskeylayout.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectionkeyskeylayout().json": {
       "hash": "bb8b41b4dfab15cfc4da8c85990e0f704fc816747313c96bd89c12abb9a97200",
-      "last_checked": "2026-05-29T07:29:56.911696",
+      "last_checked": "2026-06-02T07:43:06.738958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"5882408d22d81a2c20fb3138580f22ed\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectionkeyskeylayout.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/show(_:).json": {
       "hash": "23bcba9e6e6664d5039e5034879e6fa4f309c1d1835b9d8799302d2fac2f8ec7",
-      "last_checked": "2026-05-29T07:29:57.136342",
+      "last_checked": "2026-06-02T07:43:07.031981",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f6f666a7b4329395b897344005f9168d\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/show.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/hide().json": {
       "hash": "af3dfcd31f9b680473521df696a64ec20abaf747d4d4252bf907168b5c46b880",
-      "last_checked": "2026-05-29T07:29:57.234652",
+      "last_checked": "2026-06-02T07:43:07.192332",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c0b3d4172337b777481290e98fd2045b\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/hide.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/isvisible().json": {
       "hash": "2913811ecf32703aa8016940d53b73834ccc97f74dbeff317ebec1a44fbd47ab",
-      "last_checked": "2026-05-29T07:29:57.285898",
+      "last_checked": "2026-06-02T07:43:07.365473",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"3ec3ef96a1cdec53f4ee626f137b5ca9\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/isvisible.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setdismissesautomatically(_:).json": {
       "hash": "5848970c35650f9bf98498c5a96d51f1e76e792739fd0bb15150ae2f975a51c7",
-      "last_checked": "2026-05-29T07:29:57.405679",
+      "last_checked": "2026-06-02T07:43:07.534561",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"191416384c48261ff9c42a71f118fd63\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setdismissesautomatically.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/dismissesautomatically().json": {
       "hash": "3155dbf9e3d1167b68992c49df5f4b983eccf911ec00fde7b0dea1b897b5318b",
-      "last_checked": "2026-05-29T07:29:57.456150",
+      "last_checked": "2026-06-02T07:43:07.712761",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"0ee2921b1ad03277e68b96eee1bac9eb\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/dismissesautomatically.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/update().json": {
       "hash": "d80e3132012c0debced54b149e4828f451eb40258b3eff6fcddb30852885445a",
-      "last_checked": "2026-05-29T07:29:57.692547",
+      "last_checked": "2026-06-02T07:43:07.879988",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"186680ac717ba7e59a1b6928ecf7ed1b\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/update.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/paneltype().json": {
       "hash": "2366e4de1e9e9c85f2d57402b3e0b26ff789fefd2da81f32f8039d34b56910ba",
-      "last_checked": "2026-05-29T07:29:57.932341",
+      "last_checked": "2026-06-02T07:43:08.087893",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c3d693bba93c305a6f4686867de3ece7\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/paneltype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setpaneltype(_:).json": {
       "hash": "58636559cf53091bcd12bf6c0d8783edf047a7b72e35cee075e68d6329b30b97",
-      "last_checked": "2026-05-29T07:29:57.981441",
+      "last_checked": "2026-06-02T07:43:08.380403",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c4afe0ebe9ac1c770c07fbdc6dbed495\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setpaneltype.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setattributes(_:).json": {
       "hash": "24fe01617e41779f161940de80735dfa7aa0ff7ab838de1b6f8bda3b4fb03f1a",
-      "last_checked": "2026-05-29T07:29:58.117499",
+      "last_checked": "2026-06-02T07:43:08.556769",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c1e0f312686a8c6c10257e10863b1dd5\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setattributes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/attributes().json": {
       "hash": "bdbfcbd315b312527576b72dadb21faa15cb3b9f8bede0d2b29827114150c2e1",
-      "last_checked": "2026-05-29T07:29:58.167642",
+      "last_checked": "2026-06-02T07:43:08.736964",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f2544c9e8873c506b6e138b8a7fedfc2\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/attributes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/showannotation(_:).json": {
       "hash": "df5ba37b48f3fb44338c456bf0b94dcf40b44ab22a4983e27c92adff88138e94",
-      "last_checked": "2026-05-29T07:29:58.297243",
+      "last_checked": "2026-06-02T07:43:08.905753",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"829c59996186f755a0113eef15b3d94d\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/showannotation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidatepaneltype.json": {
       "hash": "55e5c87ce36220555687d4ec32ed4ce2a8c9b9d74ee6bb6f957741089c55a43b",
-      "last_checked": "2026-05-29T07:29:58.344953",
+      "last_checked": "2026-06-02T07:43:09.084450",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ab860dfeec78eda945e576716dd743b6\"",
       "file_path": "documentation/InputMethodKit/imkcandidatepaneltype.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidateslocationhint.json": {
       "hash": "19f59513ee2839c69426955702dbe11c210c902ef9bf26602ce06431d9b90423",
-      "last_checked": "2026-05-29T07:29:58.475679",
+      "last_checked": "2026-06-02T07:43:09.257268",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2ef54d114501afc797508173923b1adf\"",
       "file_path": "documentation/InputMethodKit/imkcandidateslocationhint.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidatesopacityattributename.json": {
       "hash": "3a488c4d49269ddb0988398d5922a0f382b882dde9dbc2e51d5134f4375051ae",
-      "last_checked": "2026-05-29T07:30:03.945344",
+      "last_checked": "2026-06-02T07:43:19.802872",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"5ac3b6e6e16c1a95b9d752f1b3051dcf\"",
       "file_path": "documentation/InputMethodKit/imkcandidatesopacityattributename.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/init(server:paneltype:styletype:).json": {
       "hash": "338395be54e79cb6f3e894ae11955aa0349e47037add95585187f18ba8acf3a9",
-      "last_checked": "2026-05-29T07:29:58.528689",
+      "last_checked": "2026-06-02T07:43:09.429895",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f2bae85b2e8eb2ee67733f1f7275d42d\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/init-serverpaneltypestyletype.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/attachchild(_:tocandidate:type:).json": {
       "hash": "6f92f2cd7f0d5be927ca56004a3dc17fd3bcd21291e87f8f9784e3cf3b528348",
-      "last_checked": "2026-05-29T07:29:58.647753",
+      "last_checked": "2026-06-02T07:43:09.607008",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ab5edfa638e233910907cba29bffb8dd\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/attachchild-tocandidatetype.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/candidateframe().json": {
       "hash": "1198fb7cd08c69cd5c1a99cd4f4bc8fda160815dedaf7c98c61cd68c776e309b",
-      "last_checked": "2026-05-29T07:29:58.758669",
+      "last_checked": "2026-06-02T07:43:09.772797",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f34d40a645a3426525f28e9f5e281c25\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/candidateframe.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/candidateidentifier(atlinenumber:).json": {
       "hash": "69b7c59b199a2b01ff716bdffcb5f7ae6db343fb87b485416d086974edd767c2",
-      "last_checked": "2026-05-29T07:29:58.989822",
+      "last_checked": "2026-06-02T07:43:09.930797",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f6d353b3c93240599d8d4e13c213758b\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/candidateidentifier-atlinenumber.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/candidatestringidentifier(_:).json": {
       "hash": "479dc48fc64ce2311f935a8a17bd9c6a5ad6b830d0d7005d29e04c04bd0d86d6",
-      "last_checked": "2026-05-29T07:29:59.223782",
+      "last_checked": "2026-06-02T07:43:10.090479",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"8e78b5e4bc48c7518ed8503601872a49\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/candidatestringidentifier.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/clearselection().json": {
       "hash": "cf697977036d01919de01de580cf7a8013c00d419b174556e3b907e1f20abe49",
-      "last_checked": "2026-05-29T07:29:59.328159",
+      "last_checked": "2026-06-02T07:43:10.417754",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c553e8b117f5d4736a29786ffdc66091\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/clearselection.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/detachchild(_:).json": {
       "hash": "9b0844142c40b8106db91ee2a6fa7dbb2809518f596d964d7a1a52e6b857ec22",
-      "last_checked": "2026-05-29T07:29:59.437626",
+      "last_checked": "2026-06-02T07:43:10.583574",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"8ec4284d6d48039d80f91376233a04ef\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/detachchild.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/hidechild().json": {
       "hash": "def247dde89d4e71b22c0de4c74d3b18f47dd03b35ac3ba875b51ca3eba7fde6",
-      "last_checked": "2026-05-29T07:29:59.547495",
+      "last_checked": "2026-06-02T07:43:10.762542",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"32753d113ac056a5c6974c505445776d\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/hidechild.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/linenumberforcandidate(withidentifier:).json": {
       "hash": "8886d463a0f03fe8d92e187fe3e224cc445e0effc16ab52f57dd4300b0a2ac16",
-      "last_checked": "2026-05-29T07:29:59.595317",
+      "last_checked": "2026-06-02T07:43:11.060958",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ed8884a519f0335c1a9b1df31d7eb140\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/linenumberforcandidate-withidentifier.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectcandidate(_:).json": {
       "hash": "31f8478525cd0d6e290960071c0c20f1bbd305844a9a16eafc64610065a542b7",
-      "last_checked": "2026-05-29T07:29:59.716269",
+      "last_checked": "2026-06-02T07:43:11.231912",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"80174c60d810d89bee340aa485bb5b49\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectcandidate.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectcandidate(withidentifier:).json": {
       "hash": "affaa529e7d175d4ddab7083fa517c996a1251d27824e85dd7a0fb0f4c99e6bc",
-      "last_checked": "2026-05-29T07:29:59.821148",
+      "last_checked": "2026-06-02T07:43:11.411947",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"55625772995a1c613afe54cd2d9fb296\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectcandidate-withidentifier.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectedcandidate().json": {
       "hash": "8cb3ddc4d2572f6d408ab51bf407798b5ff8fb7f873f63fc9884ec5ba868b667",
-      "last_checked": "2026-05-29T07:29:59.929783",
+      "last_checked": "2026-06-02T07:43:11.578620",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"d453a5fb2e20b4c0bf8984758bb8259c\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectedcandidate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/selectedcandidatestring().json": {
       "hash": "98d66fb87441158c2f76f4610eb803f3e37270a5091514e4aa41e09c1361f0d4",
-      "last_checked": "2026-05-29T07:29:59.990321",
+      "last_checked": "2026-06-02T07:43:11.745049",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"58b1fdb267f681cd80432003cb1a1b66\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/selectedcandidatestring.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setcandidatedata(_:).json": {
       "hash": "9f251b1f77528c6fbdf807c5deafcc0fa8d1a4968440c1ed4487cbfa4fdee994",
-      "last_checked": "2026-05-29T07:30:00.042260",
+      "last_checked": "2026-06-02T07:43:11.896798",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"596b7521c7622387595f026ff468c4ef\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setcandidatedata.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/setcandidateframetopleft(_:).json": {
       "hash": "ce8ce8f5b36de13e785efd4f2043db9569a840f4d3f1822178f6e09b4258976f",
-      "last_checked": "2026-05-29T07:30:00.116791",
+      "last_checked": "2026-06-02T07:43:12.073626",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"184bba8283111a1000a28007517e9a31\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/setcandidateframetopleft.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/show().json": {
       "hash": "67747c67bb4e2927e37522e8d45016ab60f6d835991dacadbd8154bce7e033cb",
-      "last_checked": "2026-05-29T07:30:00.256970",
+      "last_checked": "2026-06-02T07:43:12.254894",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"7113e614930948355f359812d7c017cd\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/show.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/showchild().json": {
       "hash": "f7b13f5cc46a1562a84099cbf67d3ef74ca1b892c2484bf309b8d166bec32c35",
-      "last_checked": "2026-05-29T07:30:00.361965",
+      "last_checked": "2026-06-02T07:43:12.430591",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"e1eefabd308e2fbfb367db991f5a6f25\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/showchild.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidates/showsublist(_:sublistdelegate:).json": {
       "hash": "ddb7db7d6c4fc32154ac1acb1c1fc0642221ec9884708265768279080baca83d",
-      "last_checked": "2026-05-29T07:30:00.471982",
+      "last_checked": "2026-06-02T07:43:12.733884",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"d944b35c27a761e517d7ec7a3e52b3f0\"",
       "file_path": "documentation/InputMethodKit/imkcandidates/showsublist-sublistdelegate.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/init(server:delegate:client:).json": {
       "hash": "02f7a150096684a6d16bfd94a456577fe665e9457a61ae7037329ae75b3c03a4",
-      "last_checked": "2026-05-29T07:30:00.534749",
+      "last_checked": "2026-06-02T07:43:13.101988",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2be7f20e36c94457bb780a08b61dac15\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/init-serverdelegateclient.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/compositionattributes(at:).json": {
       "hash": "475cc1af974507626dafeb4d1c66f3ddbfc90634e2eab1a51ca54139d7a028c7",
-      "last_checked": "2026-05-29T07:30:00.644849",
+      "last_checked": "2026-06-02T07:43:13.263430",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"a384bbd3e1f5204be3fa3e44c0992188\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/compositionattributes-at.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/selectionrange().json": {
       "hash": "b0b84198b7bde938de3e235424af9020b718a40c840f122830e3d8b6ec44a06d",
-      "last_checked": "2026-05-29T07:30:00.695179",
+      "last_checked": "2026-06-02T07:43:13.439153",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"d4afa963ba44cbc8031c535184894ca9\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/selectionrange.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/replacementrange().json": {
       "hash": "ee5c3eba12c76d9996c03810fb353b873401ea10c25b7ce7b0040b35fa29fd0a",
-      "last_checked": "2026-05-29T07:30:00.811168",
+      "last_checked": "2026-06-02T07:43:13.595969",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"be5259ff438a68385fa2f23bcdcdcdf7\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/replacementrange.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/mark(forstyle:at:).json": {
       "hash": "d3a1efb4538734bc8c309d6f4f9df220f816e71377d86599438fbbc49764bd1a",
-      "last_checked": "2026-05-29T07:30:00.923808",
+      "last_checked": "2026-06-02T07:43:13.760966",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"5475b0e78e41bef55f3521090d8b68dc\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/mark-forstyleat.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/delegate().json": {
       "hash": "13892b54e8fc3264b909207f87cfcdf8624309ea55dbef025458055018e4da34",
-      "last_checked": "2026-05-29T07:30:01.026207",
+      "last_checked": "2026-06-02T07:43:13.928547",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"9c6c61275db01b5bf2eec7fe4640ec1d\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/delegate.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/setdelegate(_:).json": {
       "hash": "9fbb8f84cafdcea855b0bb54be1da098fb9f82402fdbb1cd0a856ea8226947dc",
-      "last_checked": "2026-05-29T07:30:01.137560",
+      "last_checked": "2026-06-02T07:43:14.234421",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"781e427d68d9e19440a4b82377a413f1\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/setdelegate.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/server().json": {
       "hash": "59019e0062040abb3000b5fd3b4417df1801cb3682bbfdc29e65572603fc444c",
-      "last_checked": "2026-05-29T07:30:01.239784",
+      "last_checked": "2026-06-02T07:43:14.389667",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ed341d317e6512fab45be0e9969d0b4e\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/server.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/client().json": {
       "hash": "d24c324cf004cb8682185966ab9cb877c09b377fd482871fa97d7bebbc247c99",
-      "last_checked": "2026-05-29T07:30:01.393249",
+      "last_checked": "2026-06-02T07:43:14.563202",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"18126e74142858f7d12b2c49800ed196\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/client.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/annotationselected(_:forcandidate:).json": {
       "hash": "0f3d6c93cd5f2b1b8bbcb57055c7c239705274214217e29e4ea5354f79726696",
-      "last_checked": "2026-05-29T07:30:01.536495",
+      "last_checked": "2026-06-02T07:43:14.862471",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"5cb60c0f323915347b0527d021024a86\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/annotationselected-forcandidate.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/candidateselectionchanged(_:).json": {
       "hash": "8169d24ca736fc7610bd9e2716a09006adeb8d9c844b814eec83922bceb606f2",
-      "last_checked": "2026-05-29T07:30:01.600938",
+      "last_checked": "2026-06-02T07:43:15.031989",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"b0115d10f373e52bae34b598a4506d60\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/candidateselectionchanged.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/candidateselected(_:).json": {
       "hash": "ce60c915f367e4febb89a5c34e8422688156e132c4b1cf666ebb4927b2880863",
-      "last_checked": "2026-05-29T07:30:01.703684",
+      "last_checked": "2026-06-02T07:43:15.192498",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"507c3554112a1b8c0522c44d00af1e21\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/candidateselected.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/updatecomposition().json": {
       "hash": "d86501138503e0d9f4758b9cca763a52f9e25cd4af2b38af006988d130f48019",
-      "last_checked": "2026-05-29T07:30:01.756373",
+      "last_checked": "2026-06-02T07:43:15.374652",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"8357abbfdfc2e0652843ea5997c71fbc\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/updatecomposition.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/cancelcomposition().json": {
       "hash": "b0ca291db7d04719fd029ee0e4c4bc71c130f6471dafb1b0f417454769022c0c",
-      "last_checked": "2026-05-29T07:30:01.834232",
+      "last_checked": "2026-06-02T07:43:15.531360",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"d48f083467c09e4e8e58e02d55022687\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/cancelcomposition.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/hidepalettes().json": {
       "hash": "5a418ab65f9b45171ee5894442b6d862d9b8fe7b54cbcf9630a74d107d6dd77b",
-      "last_checked": "2026-05-29T07:30:01.952112",
+      "last_checked": "2026-06-02T07:43:15.719716",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"75ae2a009694a07f86010a59da5bd44d\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/hidepalettes.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/docommand(by:command:).json": {
       "hash": "5b434d4860ee5100031c54ac3464d13dc02d1f9659aa15d9be534746cfb7ff46",
-      "last_checked": "2026-05-29T07:30:02.006437",
+      "last_checked": "2026-06-02T07:43:15.882964",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"a2871c6b780f4512a2d417ca382dbddc\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/docommand-bycommand.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/menu().json": {
       "hash": "0f05d43a382eed811e72e73cc75ba0e9de352c6dd929838efe5a8198a84c22c7",
-      "last_checked": "2026-05-29T07:30:02.073204",
+      "last_checked": "2026-06-02T07:43:16.043494",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"85649fb40a173754ec5b599c59bacaf5\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/menu.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkinputcontroller/inputcontrollerwillclose().json": {
       "hash": "5c5bdad7d1c6cc751ade793ab60d43f0893ce231c48caa2475c6793c00c8f24d",
-      "last_checked": "2026-05-29T07:30:02.147790",
+      "last_checked": "2026-06-02T07:43:16.227790",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"80309c2f4adcf1056986cf2cd129c80b\"",
       "file_path": "documentation/InputMethodKit/imkinputcontroller/inputcontrollerwillclose.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver/init(name:bundleidentifier:).json": {
       "hash": "9b10f7c66c83f0a94e194677f514eee094f655537f502f5ded9cb5efd1934ea4",
-      "last_checked": "2026-05-29T07:30:02.282516",
+      "last_checked": "2026-06-02T07:43:16.377366",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c54f2ea42e25b872f2aefdb038a194a6\"",
       "file_path": "documentation/InputMethodKit/imkserver/init-namebundleidentifier.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver/init(name:controllerclass:delegateclass:).json": {
       "hash": "2de2f8858f321004394198bd1727384c0f0b01268a57c28759982bb086db87ae",
-      "last_checked": "2026-05-29T07:30:02.393144",
+      "last_checked": "2026-06-02T07:43:16.544222",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2c763b204fc1113acb3c393c2b859087\"",
       "file_path": "documentation/InputMethodKit/imkserver/init-namecontrollerclassdelegateclass.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver/bundle().json": {
       "hash": "1e42b8712906c7e28f0332502411674b0bb3f88ba7da70018636395e7b955d35",
-      "last_checked": "2026-05-29T07:30:02.438937",
+      "last_checked": "2026-06-02T07:43:16.853663",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"3485fcf3e5ffe4f68d7bb0e42a3a41b6\"",
       "file_path": "documentation/InputMethodKit/imkserver/bundle.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkmodedictionary.json": {
       "hash": "870b904f563138b8a9ef67a1df6995eb6fd55442c356c39a052404bdb5e5e6f3",
-      "last_checked": "2026-05-29T07:30:04.479279",
+      "last_checked": "2026-06-02T07:43:20.656554",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"4cbc398dff2ae50f16d89f47406d9aa1\"",
       "file_path": "documentation/InputMethodKit/imkmodedictionary.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcontrollerclass.json": {
       "hash": "7d1709c8850ab2c270787eea9f1c551b29a9dc09b6aaace947d9f0002fec3473",
-      "last_checked": "2026-05-29T07:30:04.265162",
+      "last_checked": "2026-06-02T07:43:20.325771",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"b52d52c297c22fa962b89a2739308f7f\"",
       "file_path": "documentation/InputMethodKit/imkcontrollerclass.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkdelegateclass.json": {
       "hash": "2ba9375a7b7ff46a02869ae8689405fbc5aae08bcf027370087474d0ff756a3e",
-      "last_checked": "2026-05-29T07:30:04.366803",
+      "last_checked": "2026-06-02T07:43:20.492007",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"0c146219f215e7cdf729869749b5a2ce\"",
       "file_path": "documentation/InputMethodKit/imkdelegateclass.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver/lastkeyeventwasdeadkey().json": {
       "hash": "87462b56aacd29abbdb44e4e16ba0616f38c5596ed9bb5406e2bcd844b7fc891",
-      "last_checked": "2026-05-29T07:30:02.518245",
+      "last_checked": "2026-06-02T07:43:17.004677",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"d34c733313123741bd8948bda141eecd\"",
       "file_path": "documentation/InputMethodKit/imkserver/lastkeyeventwasdeadkey.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkserver/palettewillterminate().json": {
       "hash": "c351847dc3df49686432ba856c2c9b6c93768994c23c59c4fce1b63ed9ea5353",
-      "last_checked": "2026-05-29T07:30:02.600124",
+      "last_checked": "2026-06-02T07:43:17.160249",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"089f058cbdbdd297de51d568c6d8205b\"",
       "file_path": "documentation/InputMethodKit/imkserver/palettewillterminate.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkmousehandling/mousedown(oncharacterindex:coordinate:withmodifier:continuetracking:client:).json": {
       "hash": "f1ee2f61d04a46ee6ca9bb718c772814cb39273630f9ac9b2602e3f4d46aa9af",
-      "last_checked": "2026-05-29T07:30:02.718982",
+      "last_checked": "2026-06-02T07:43:17.334717",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"1d88457a71f18f5aa8599e3d1dc13a44\"",
       "file_path": "documentation/InputMethodKit/imkmousehandling/mousedown-oncharacterindexcoordinatewithmodifiercontinuetrackingclient.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkmousehandling/mouseup(oncharacterindex:coordinate:withmodifier:client:).json": {
       "hash": "c897412269ee8fbd6c68798528a39a59c13f38f6a4ab5ced6c0844e1de47fea1",
-      "last_checked": "2026-05-29T07:30:02.827004",
+      "last_checked": "2026-06-02T07:43:17.512068",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"80c236297c5af53a092fa08e9149f0a5\"",
       "file_path": "documentation/InputMethodKit/imkmousehandling/mouseup-oncharacterindexcoordinatewithmodifierclient.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkmousehandling/mousemoved(oncharacterindex:coordinate:withmodifier:client:).json": {
       "hash": "7ffc71cda4de5c9d6f3dbb6747e469af2acf71a040ad0627eb3c6927430fe651",
-      "last_checked": "2026-05-29T07:30:02.884357",
+      "last_checked": "2026-06-02T07:43:17.660568",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"1e39587ca587a8ebe9ae969aebbdc093\"",
       "file_path": "documentation/InputMethodKit/imkmousehandling/mousemoved-oncharacterindexcoordinatewithmodifierclient.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/info-dictionary-keys.json": {
       "hash": "f381c94e7c611a1997004c20492029499d66870045e24d7307fd78e44d2a7769",
-      "last_checked": "2026-05-29T07:30:02.943877",
+      "last_checked": "2026-06-02T07:43:17.823808",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"a8b5fe3b9175fdf8d18b75b48f4a438d\"",
       "file_path": "documentation/InputMethodKit/info-dictionary-keys.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/activateserver(_:).json": {
       "hash": "5cab4ab8ecd5ad9e38ade640820748f1e106285420b77926a619c534c25eb5ae",
-      "last_checked": "2026-05-29T07:30:03.005900",
+      "last_checked": "2026-06-02T07:43:18.018560",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"90e79291ee78b2d81583f326d2918db3\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/activateserver.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/deactivateserver(_:).json": {
       "hash": "767f24716835b6fa3736935b0be8847e4bcdd929f9868b1668662f22279101a6",
-      "last_checked": "2026-05-29T07:30:03.120780",
+      "last_checked": "2026-06-02T07:43:18.177271",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ec9f6a7513074db27eb7f28c087f28e5\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/deactivateserver.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/showpreferences(_:).json": {
       "hash": "41cfffe5badde780ca616bdba884db3d4c6f13cfe7590139846fd501a19e0de4",
-      "last_checked": "2026-05-29T07:30:03.221143",
+      "last_checked": "2026-06-02T07:43:18.359571",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"77a9115e5434bbdc39fdbe8df65186f0\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/showpreferences.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/recognizedevents(_:).json": {
       "hash": "ea5b3ad5fdb036cb67447a2ad70c5be58078a1a1753ecd93909ae2db284efd07",
-      "last_checked": "2026-05-29T07:30:03.272395",
+      "last_checked": "2026-06-02T07:43:18.524980",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"b2d5dee8fb45751d43d27c3c1f83d67c\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/recognizedevents.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/modes(_:).json": {
       "hash": "15d2b5f012be42083b839749559f61ef2c4260b5e2a85c27901aace3877fc78b",
-      "last_checked": "2026-05-29T07:30:03.397184",
+      "last_checked": "2026-06-02T07:43:18.684606",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"f5c34976895bb64344a8ba6fd750b444\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/modes.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/value(fortag:client:).json": {
       "hash": "9d40a1deda8537e30a05b64500034189fe74d436dbc1e366e8844866f2f4080c",
-      "last_checked": "2026-05-29T07:30:03.448009",
+      "last_checked": "2026-06-02T07:43:18.860260",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"932450110232caf279c56ed1bdd36e96\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/value-fortagclient.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstatesetting/setvalue(_:fortag:client:).json": {
       "hash": "55fd26f0ed00843014a04b56c51ec345f738d90314e81aca83d78f198609e8d1",
-      "last_checked": "2026-05-29T07:30:03.514014",
+      "last_checked": "2026-06-02T07:43:19.027917",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"7f32707b47c9ff8022fec81c58b17cc0\"",
       "file_path": "documentation/InputMethodKit/imkstatesetting/setvalue-fortagclient.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-enumerations-1448298-anonymous.json": {
       "hash": "f7c43f2ac8679574a95635afce67831897ddbeb655721fdaf019afaf451f824d",
-      "last_checked": "2026-05-29T07:30:03.611786",
+      "last_checked": "2026-06-02T07:43:19.188792",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"5efcd0a343f4f1360fd48bdb68b1ec8c\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-enumerations-1448298-anonymous.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-enumerations-1448307-anonymous.json": {
       "hash": "673c650251dc6cd961041e4059a4914ba86f11d84c214b07edbd867daf0c0c02",
-      "last_checked": "2026-05-29T07:30:03.667074",
+      "last_checked": "2026-06-02T07:43:19.353412",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"10c89a093d719469ed1da3d0922955c6\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-enumerations-1448307-anonymous.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/inputmethodkit-enumerations-1448301-anonymous.json": {
       "hash": "f73814cfb8fd8a4c52b5a1a5426e693d7ddaaea0238dfd4d574499d5a3fa726f",
-      "last_checked": "2026-05-29T07:30:03.892156",
+      "last_checked": "2026-06-02T07:43:19.638702",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"64fe2ffe0851a43eed5b4d9dcc1f7bbb\"",
       "file_path": "documentation/InputMethodKit/inputmethodkit-enumerations-1448301-anonymous.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkcandidatessendserverkeyeventfirst.json": {
       "hash": "99069c6d9a07a1524717ec8e51efb7320ee0509625076a69644a19d5ac7cc654",
-      "last_checked": "2026-05-29T07:30:04.158211",
+      "last_checked": "2026-06-02T07:43:20.010703",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"cee2c9e345e31e578cbcd2ee5184fb22\"",
       "file_path": "documentation/InputMethodKit/imkcandidatessendserverkeyeventfirst.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/imkstyletype.json": {
       "hash": "d585feae330a5f3335b584fb2c437bf7edd63c3030f7718177e6c981d1775397",
-      "last_checked": "2026-05-29T07:30:04.586671",
+      "last_checked": "2026-06-02T07:43:20.818146",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"a76c56cac34689f0240f1fc89b994a9a\"",
       "file_path": "documentation/InputMethodKit/imkstyletype.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimksinglecolumnscrollingcandidatepanel.json": {
       "hash": "400c9663e8efcf467014d3e9214b56ae982a5519c47625d4bf72ca54c864ecb2",
-      "last_checked": "2026-05-29T07:30:04.685971",
+      "last_checked": "2026-06-02T07:43:20.988136",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"0377ef6a0bc04a565ae91515014922f5\"",
       "file_path": "documentation/InputMethodKit/kimksinglecolumnscrollingcandidatepanel.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimkscrollinggridcandidatepanel.json": {
       "hash": "c6a7d9288ce7772090571e593a79192d3e83a51af4175718db30de54b860f058",
-      "last_checked": "2026-05-29T07:30:04.735986",
+      "last_checked": "2026-06-02T07:43:21.156132",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"fe512f822f77a82eee1cae0628481a6d\"",
       "file_path": "documentation/InputMethodKit/kimkscrollinggridcandidatepanel.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimksinglerowsteppingcandidatepanel.json": {
       "hash": "c4eeaad5e830374cd6bae6dc72d5475af8f9ea2910d3c70b34e88f0e31a54336",
-      "last_checked": "2026-05-29T07:30:04.855042",
+      "last_checked": "2026-06-02T07:43:21.302463",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"df0c12d439e74d8d5b52391d860cbdb2\"",
       "file_path": "documentation/InputMethodKit/kimksinglerowsteppingcandidatepanel.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimklocatecandidatesabovehint.json": {
       "hash": "53d997a83ccaebf14300d8fef86ebdd5799eaad1898820c44bdf97379c3c8afe",
-      "last_checked": "2026-05-29T07:30:04.959931",
+      "last_checked": "2026-06-02T07:43:21.498370",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"435cdca1bf1673310d3b3be96f1cb038\"",
       "file_path": "documentation/InputMethodKit/kimklocatecandidatesabovehint.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimklocatecandidatesbelowhint.json": {
       "hash": "6767df7fd126eb8fd56da057f74d7bfdfc95df3c74d9f942dfde8f7f2c2ece9b",
-      "last_checked": "2026-05-29T07:30:05.012204",
+      "last_checked": "2026-06-02T07:43:21.657006",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"c35c2b69ebae9bfb304edc450a692407\"",
       "file_path": "documentation/InputMethodKit/kimklocatecandidatesbelowhint.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimklocatecandidateslefthint.json": {
       "hash": "dd2c96c464d4c49d345a5bc7fcc791399bf2afd7a54ee733194a3faa87ba72bb",
-      "last_checked": "2026-05-29T07:30:05.209038",
+      "last_checked": "2026-06-02T07:43:21.804367",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"94d942761c7c49ee8a7b155684c9594e\"",
       "file_path": "documentation/InputMethodKit/kimklocatecandidateslefthint.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimklocatecandidatesrighthint.json": {
       "hash": "9e1bacd7e239ad605322ad33f47f2dffd946b7f775a608bc43bddf4d1e2954cf",
-      "last_checked": "2026-05-29T07:30:05.269215",
+      "last_checked": "2026-06-02T07:43:21.980542",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"16ed54867bfe13326931117a215059e0\"",
       "file_path": "documentation/InputMethodKit/kimklocatecandidatesrighthint.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimkcommandmenuitemname.json": {
       "hash": "ee6bbe1e1404e0d66d7d1ce14fa264b15eab131317e124526335e173ed8fbb55",
-      "last_checked": "2026-05-29T07:30:05.374384",
+      "last_checked": "2026-06-02T07:43:22.150240",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"2d46904adeb8cb10dfa2b1d19bb33136\"",
       "file_path": "documentation/InputMethodKit/kimkcommandmenuitemname.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimkcommandclientname.json": {
       "hash": "4947217393be056d9990d5bc87dca1307673df6d6bc495f41d8558804ddb9c8d",
-      "last_checked": "2026-05-29T07:30:05.430469",
+      "last_checked": "2026-06-02T07:43:22.311057",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"ded5434c29d0f70847d2ab09f62f7c0e\"",
       "file_path": "documentation/InputMethodKit/kimkcommandclientname.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimkannotation.json": {
       "hash": "41fc93bf13043dee480dbc0e5ff408cdb09013d6fae6fe36bd51d3245b99cb67",
-      "last_checked": "2026-05-29T07:30:05.551321",
+      "last_checked": "2026-06-02T07:43:22.526338",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"fd406d41813d4080ec395d0ce9e1241d\"",
       "file_path": "documentation/InputMethodKit/kimkannotation.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimkmain.json": {
       "hash": "223d93e30166787393c11b8e7a0cb32ef00bd5ffaa4d50d770ca65c9dd915971",
-      "last_checked": "2026-05-29T07:30:05.604612",
+      "last_checked": "2026-06-02T07:43:22.680009",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"13c981153d2588879ca08463ca5a8ba6\"",
       "file_path": "documentation/InputMethodKit/kimkmain.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/inputmethodkit/kimksublist.json": {
       "hash": "92633aee3b5373f095bf8d6911f4fe1437e7effb8880f24d9809541be7149cc3",
-      "last_checked": "2026-05-29T07:30:05.715370",
+      "last_checked": "2026-06-02T07:43:22.842658",
       "status": "unchanged",
-      "session_id": "2026-05-29T07:29:54.710917",
+      "session_id": "2026-06-02T07:43:02.648927",
       "etag": "W/\"55c8cab1b5fc6a66f3411d94eea0e5c4\"",
       "file_path": "documentation/InputMethodKit/kimksublist.md"
     },
