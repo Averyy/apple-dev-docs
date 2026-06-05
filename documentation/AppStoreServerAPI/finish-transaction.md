@@ -6,7 +6,7 @@
 Notifies the App Store server that your system has finished processing the customer’s transaction.
 
 **Availability**:
-- App Store Server API 1.20+ - Deprecated
+- App Store Server API 1.20+
 
 ## Mentions
 

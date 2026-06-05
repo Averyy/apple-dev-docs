@@ -353,7 +353,6 @@ if (!success) {
 - [init(fileURLWithFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeToURL: URL?)](nsurl/init(fileurlwithfilesystemrepresentation:isdirectory:relativetourl:).md)
 - [init(fileURLWithPath: String, isDirectory: Bool, relativeToURL: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativetourl:).md)
 - [init(fileURLWithPath: String, relativeToURL: URL?)](nsurl/init(fileurlwithpath:relativetourl:).md)
-- [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nsurl/init(pasteboardpropertylist:oftype:).md)
 - [convenience init?(string: String, relativeToURL: URL?)](nsurl/init(string:relativetourl:)-48a3i.md)
 - [init?(string: String, relativeToURL: URL?)](nsurl/init(string:relativetourl:)-6beup.md)
 

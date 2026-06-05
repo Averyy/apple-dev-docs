@@ -57,27 +57,27 @@ This type is a representation of `Credential` as defined in the Credential Excha
   A type to represent credit card information.
 ### Structures
 - [ASImportableCredential.APIKey](asimportablecredential/apikey.md)
-  A representation of APIKey as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
+  A representation of APIKey as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
 - [ASImportableCredential.Address](asimportablecredential/address.md)
-  A representation of Address as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a physical address.
+  A representation of Address as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a physical address.
 - [ASImportableCredential.CustomFields](asimportablecredential/customfields.md)
-  A representation of CustomFields as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
+  A representation of CustomFields as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
 - [ASImportableCredential.DriversLicense](asimportablecredential/driverslicense.md)
-  A representation of DriversLicense as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
+  A representation of DriversLicense as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
 - [ASImportableCredential.GeneratedPassword](asimportablecredential/generatedpassword.md)
-  A representation of GeneratedPassword as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a machine-generated password.
+  A representation of GeneratedPassword as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a machine-generated password.
 - [ASImportableCredential.IdentityDocument](asimportablecredential/identitydocument.md)
-  A representation of IdentityDocument as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents any kind of document that can be used for identification.
+  A representation of IdentityDocument as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents any kind of document that can be used for identification.
 - [ASImportableCredential.ItemReference](asimportablecredential/itemreference.md)
-  A representation of ItemReference as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This is a pointer to another Item.
+  A representation of ItemReference as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This is a pointer to another Item.
 - [ASImportableCredential.Passport](asimportablecredential/passport.md)
-  A representation of Passport as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a passport document.
+  A representation of Passport as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a passport document.
 - [ASImportableCredential.PersonName](asimportablecredential/personname.md)
-  A representation of PersonName as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a person’s name.
+  A representation of PersonName as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a person’s name.
 - [ASImportableCredential.SSHKey](asimportablecredential/sshkey.md)
-  A representation of SSHKey as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
+  A representation of SSHKey as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html)
 - [ASImportableCredential.WiFi](asimportablecredential/wifi.md)
-  A representation of Wi-Fi Passphrase as defined in the [`Credential Exchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a credential for a WiFi network..
+  A representation of Wi-Fi Passphrase as defined in the [`CredentialExchange Format (CXF) specs`](https://developer.apple.comhttps://fidoalliance.org/specs/cx/cxf-v1.0-rd-20250313.html) This represents a credential for a WiFi network..
 ### Enumeration Cases
 - [case address(ASImportableCredential.Address)](asimportablecredential/address(_:).md)
 - [case apiKey(ASImportableCredential.APIKey)](asimportablecredential/apikey(_:).md)

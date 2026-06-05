@@ -15,7 +15,7 @@ Requests permission to access Crash Detection information.
 ## Declaration
 
 ```swift
-func requestAuthorization(completionHandler handler: @escaping (SAAuthorizationStatus, (any Error)?) -> Void)
+func requestAuthorization() async throws -> SAAuthorizationStatus
 ```
 
 #### Discussion

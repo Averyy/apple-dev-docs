@@ -1,4 +1,4 @@
 Completed scraping PDFKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 718
+Total pages scraped: 717
+Pages skipped (unchanged): 1
 Pages failed: 0

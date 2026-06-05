@@ -1,4 +1,4 @@
 Completed scraping RealityKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 4310
+Total pages scraped: 4305
+Pages skipped (unchanged): 5
 Pages failed: 0
